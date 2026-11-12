@@ -41,13 +41,13 @@ export default async function result(el: HTMLElement, [key]: string[]) {
     const items = s.questionIds.map((id, i) => ({ id, i, q: lookup(id), a: s.answers[i] }))
       .filter((x) => x.q && (filter === 'all' || (filter === 'wrong' && x.a !== null && x.a !== x.q.answer) || (filter === 'skipped' && x.a === null) || (filter === 'marked' && s.marked[x.i])));
     render(html`<div class="page">
-      <div class="kicker">Result · ${e.name} · ${new Date(m.submittedAt!).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</div>
+      <div class="kicker">${e.name}, ${new Date(m.submittedAt!).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</div>
       <h1><span class="hl">${sc.total.toFixed(1).replace(/\.0$/, '')}</span> / ${sc.max}</h1>
       <div class="grid" style="margin-bottom:1rem">
         ${sc.sections.map((x) => html`<div class="card">
           <div class="kicker">${dot(x.subject)} ${SUBJECTS[x.subject].short}${EXAMS[m.exam].sections.find((y) => y.subject === x.subject)?.qualifying ? ' (qualifying)' : ''}</div>
           <div class="big">${x.score.toFixed(1).replace(/\.0$/, '')}<span class="small muted"> / ${x.max}</span></div>
-          <div class="small">${x.correct} right · ${x.wrong} wrong · ${x.skipped} skipped · accuracy ${pct(accuracy(x.correct, x.wrong))}</div>
+          <div class="small">${x.correct} right, ${x.wrong} wrong, ${x.skipped} skipped. Accuracy ${pct(accuracy(x.correct, x.wrong))}</div>
           <div class="small muted">Time used ${fmtMs(m.sections.find((y) => y.subject === x.subject)!.msSpent.reduce((a, b) => a + b, 0))}</div>
         </div>`)}
       </div>
@@ -57,7 +57,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
       ${lostTopics.length ? html`<section class="paper" style="margin:1rem 0"><h2>Where the marks went</h2>
         ${lostTopics.map((x) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
           <a href="#/topic/${x.t}/learn">${TOPIC_MAP[x.t]?.name ?? x.t}</a>
-          <span class="small">${x.r.w} wrong · ${x.r.s} skipped · <b>−${x.lost.toFixed(1)}</b> marks</span></div>`)}</section>` : nothing}
+          <span class="small">${x.r.w} wrong, ${x.r.s} skipped: <b>−${x.lost.toFixed(1)}</b> marks</span></div>`)}</section>` : nothing}
       <div class="row" style="margin-bottom:1.5rem">
         <button class="btn primary" @click=${() => retry('wrong')}>Retry wrong & skipped</button>
         <a class="btn" href="#/analysis">Full analysis</a>
@@ -67,7 +67,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
       <nav class="tabs">${m.sections.map((x, k) => html`<button class=${k === secIdx ? 'on' : ''} @click=${() => { secIdx = k; draw(); }}>${SUBJECTS[x.subject].short}</button>`)}</nav>
       <div class="seg" style="margin-bottom:1rem">${(['wrong', 'skipped', 'marked', 'all'] as const).map((f) => html`<button class=${filter === f ? 'on' : ''} @click=${() => { filter = f; draw(); }}>${f[0].toUpperCase() + f.slice(1)}</button>`)}</div>
       ${items.length ? items.map((x) => html`<section class="paper" style="margin-bottom:1rem">
-        ${questionView(x.q!, { chosen: x.a, reveal: true, head: html`<div class="q-head"><span>Q${x.i + 1} · ${TOPIC_MAP[x.q!.topic]?.name}</span><span>${Math.round(s.msSpent[x.i] / 1000)}s</span></div>` })}</section>`)
+        ${questionView(x.q!, { chosen: x.a, reveal: true, head: html`<div class="q-head"><span>Q${x.i + 1}, ${TOPIC_MAP[x.q!.topic]?.name}</span><span>${Math.round(s.msSpent[x.i] / 1000)}s</span></div>` })}</section>`)
         : html`<p class="muted">Nothing to show for this filter.</p>`}
     </div>`, el);
   };

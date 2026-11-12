@@ -16,6 +16,19 @@ export const weightChips = (t: Topic) => html`
   ${t.mains[1] ? html`<span class="chip" title="Expected questions in Tier 2">T2 ${rangeText(t.mains)}</span>` : nothing}
   ${t.stats[1] ? html`<span class="chip" title="Expected questions in Paper 2">P2 ${rangeText(t.stats)}</span>` : nothing}`;
 
+/** Plain words: how many questions a topic usually gets in the student's target paper. */
+export function weightText(t: Topic, target: 'pre' | 'mains' | 'stats') {
+  const paper = target === 'pre' ? 'Tier 1' : target === 'mains' ? 'Tier 2' : 'Paper 2';
+  const r = t[target];
+  if (!r[1]) {
+    const other = target === 'pre' ? t.mains : t.pre;
+    return other[1] ? `Not in ${paper}. ${target === 'pre' ? 'Tier 2' : 'Tier 1'} only` : `Not in ${paper}`;
+  }
+  if (r[0] === r[1]) return `About ${r[0]} question${r[0] === 1 ? '' : 's'} in ${paper}`;
+  return r[0] ? `${r[0]} to ${r[1]} questions in ${paper}` : `Up to ${r[1]} question${r[1] === 1 ? '' : 's'} in ${paper}`;
+}
+export const isImp = (t: Topic, target: 'pre' | 'mains' | 'stats') => topicPriority(t) === 'high' && t[target][1] > 0;
+
 export const accBar = (acc: number) =>
   html`<span class="bar ${acc < 0.5 ? 'bad' : acc < 0.75 ? 'warn' : ''}" role="img" aria-label="Accuracy ${Math.round(acc * 100)}%"><i style="width:${Math.round(acc * 100)}%"></i></span>`;
 

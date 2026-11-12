@@ -42,7 +42,7 @@ export default async function revise(el: HTMLElement, [deckArg]: string[]) {
         const total = cards.filter((c) => c.deck === d).length;
         const learnt = cards.filter((c) => c.deck === d && (app.cards.get(c.id)?.reps ?? 0) > 0).length;
         return html`<a class="card" href="#/revise/${encodeURIComponent(d)}">
-          <div class="kicker">${total} cards · ${learnt} learnt</div>
+          <div class="kicker">${learnt} of ${total} learnt</div>
           <h3>${DECK_NAMES[d] ?? d}</h3>
           <div>${q.length ? html`<b>${q.length}</b> to review now` : html`<span class="muted">All done for today</span>`}</div></a>`;
       })}</div>` : html`<p class="muted">No flashcards yet.</p>`}

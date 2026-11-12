@@ -1,9 +1,10 @@
 import { html, render, nothing } from 'lit-html';
 import { SUBJECTS, SUBJECT_ORDER, sectionsOf } from '../core/syllabus';
+import { isImp, weightText } from '../ui/components';
 import type { SubjectId } from '../core/types';
 import { app } from '../app/state';
-import { getManifest, hasGenerator } from '../content/bank';
-import { accBar, dot, priorityChip, weightChips } from '../ui/components';
+import { getManifest } from '../content/bank';
+
 import { pct } from '../ui/html';
 import { isDue } from '../core/srs';
 import { mistakes } from '../core/mistakes';
@@ -15,32 +16,36 @@ export default function syllabus(el: HTMLElement, [subj]: string[]) {
   const stats = app.stats;
   const dueCards = [...app.cards.values()].filter((c) => isDue(c)).length;
   const nMistakes = mistakes(app.attempts).length;
+  const target = app.settings.target;
+  const key = target === 'pre' ? 'pre' : target === 'mains' ? 'mains' : 'stats';
+  const progress = (id: string, count: number) => {
+    const st = stats[id];
+    if (st) return html`<span class=${st.accuracy < 0.5 ? 'hand' : ''}>${pct(st.accuracy)}</span><br><span class="small">${st.attempts} done</span>`;
+    return count ? html`<span>Not started</span>` : html`<span>Notes coming</span>`;
+  };
+
   render(html`<div class="page">
     <h1>Study</h1>
     <div class="hub">
-      <a class="hub-tile" href="#/revise"><b>Flashcards</b><span>${dueCards ? `${dueCards} due today` : 'Vocab, GA facts, formulas'}</span></a>
-      <a class="hub-tile" href="#/formulas"><b>Formula sheets</b><span>Squares, cubes, trig, per topic</span></a>
-      <a class="hub-tile" href="#/mistakes"><b>My mistakes</b><span>${nMistakes ? `${nMistakes} to fix` : 'None yet'}</span></a>
+      <a class="hub-tile" href="#/revise"><b>Flashcards</b>${dueCards ? html`<span class="due">${dueCards} due</span>` : nothing}</a>
+      <a class="hub-tile" href="#/formulas"><b>Formula sheets</b></a>
+      <a class="hub-tile" href="#/mistakes"><b>My mistakes</b>${nMistakes ? html`<span class="due">${nMistakes} to fix</span>` : nothing}</a>
     </div>
-    <h2 style="margin-top:1.2rem">Syllabus</h2>
-    <p class="muted small">Every topic, with the number of questions expected in each paper (from previous-year trends). High-priority topics carry the most marks.</p>
-    <nav class="tabs" aria-label="Subjects">
-      ${subjects.map((s) => html`<a href="#/syllabus/${s}" class=${s === subject ? 'on' : ''}>${dot(s)} ${SUBJECTS[s].short}</a>`)}
+    <nav class="tabs" aria-label="Subjects" style="margin-top:1.4rem">
+      ${subjects.map((s) => html`<a href="#/syllabus/${s}" class=${s === subject ? 'on' : ''}>${SUBJECTS[s].short}</a>`)}
     </nav>
-    ${SUBJECTS[subject].mainsOnly ? html`<p class="chip">${subject === 'statistics' ? 'Tier 2 Paper 2 (JSO / SI Gr. II) only' : 'Tier 2 only (qualifying section)'}</p>` : nothing}
+    ${SUBJECTS[subject].mainsOnly ? html`<p class="small muted">${subject === 'statistics' ? 'Only for JSO and Statistical Investigator posts (Tier 2 Paper 2).' : 'Tier 2 only. You need to pass this section, but it doesn\'t add to your score.'}</p>` : nothing}
     ${sectionsOf(subject).map((sec) => html`
-      <section class="paper" style="margin-bottom:1rem">
-        <h2>${sec.name}</h2>
+      <div class="sec-head"><h2>${sec.name}</h2></div>
+      <section class="paper" style="padding:.2rem 1rem .2rem .6rem">
         ${sec.topics.map((t) => {
-          const s = stats[t.id];
-          const entry = m?.topics[t.id];
-          const count = entry?.questions ?? 0;
+          const count = m?.topics[t.id]?.questions ?? 0;
+          const imp = isImp(t, key);
           return html`<a class="topic-row" href="#/topic/${t.id}">
+            ${imp ? html`<span class="imp" aria-label="Important">IMP</span>` : nothing}
             <span class="name">${t.name}</span>
-            <span class="small muted">${s ? html`${pct(s.accuracy)} · ${s.attempts} done` : count ? 'Not started' : html`<span class="chip">No content yet</span>`}</span>
-            <span class="meta">${priorityChip(t)} ${weightChips(t)}
-              <span class="chip">${count} Qs${hasGenerator(t.id) ? ' + generated' : ''}</span>
-              ${s ? accBar(s.accuracy) : nothing}</span>
+            <span class="prog">${progress(t.id, count)}</span>
+            <span class="meta">${weightText(t, key)}</span>
           </a>`;
         })}
       </section>`)}

@@ -28,7 +28,7 @@ test('works offline after the first visit, including screens never opened', asyn
 
   await context.setOffline(true);
   await page.reload();
-  await expect(page.getByRole('heading', { name: "Today's plan" })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Next up' })).toBeVisible();
   await page.goto('/#/mocks');
   await expect(page.getByRole('heading', { name: 'Mocks' })).toBeVisible();
   await page.goto('/#/formulas/squares');

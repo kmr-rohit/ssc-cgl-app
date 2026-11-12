@@ -5,7 +5,7 @@ import { app } from '../app/state';
 import { go, setTitle } from '../app/router';
 import { session } from '../app/session';
 import { loadTopic, typesOf } from '../content/bank';
-import { accBar, dot, priorityChip, weightChips } from '../ui/components';
+import { isImp, weightText } from '../ui/components';
 import { img, pct, rich } from '../ui/html';
 
 export default async function topicView(el: HTMLElement, [id, tabArg]: string[]) {
@@ -56,7 +56,7 @@ export default async function topicView(el: HTMLElement, [id, tabArg]: string[])
         ${types.map((ty) => {
           const st = s?.byType[ty.type];
           return html`<div class="spread" style="border-bottom:1px solid var(--rule);padding:.5rem 0">
-            <span><b>${ty.name}</b> <span class="small muted">${ty.curated} written${ty.generated ? ' · unlimited generated' : ''}${st ? ` · ${pct(st.correct / st.attempts)} of ${st.attempts}` : ''}</span></span>
+            <span><b>${ty.name}</b> <span class="small muted">${ty.curated} questions${ty.generated ? ', plus unlimited new ones' : ''}${st ? `. You got ${pct(st.correct / st.attempts)} of ${st.attempts} right` : ''}</span></span>
             <button class="btn sm" ?disabled=${!ty.curated && !ty.generated} @click=${() => start(ty.type)}>Practise</button></div>`;
         })}` : nothing}
     </div>`;
@@ -67,10 +67,9 @@ export default async function topicView(el: HTMLElement, [id, tabArg]: string[])
   </div>`;
 
   const draw = () => render(html`<div class="page">
-    <p class="small"><a href="#/syllabus/${t.subject}">${dot(t.subject)} ${SUBJECTS[t.subject].name}</a> · ${t.section}</p>
+    <p class="small"><a href="#/syllabus/${t.subject}">${SUBJECTS[t.subject].name}</a>, ${t.section}</p>
     <h1>${t.name}</h1>
-    <div class="row" style="margin-bottom:1rem">${priorityChip(t)} ${weightChips(t)}
-      ${s ? html`<span class="small muted">Accuracy ${pct(s.accuracy)} · ${Math.round(s.avgSec)}s/question</span>${accBar(s.accuracy)}` : nothing}</div>
+    <p class="muted" style="margin:-.2rem 0 1rem">${isImp(t, app.settings.target) ? html`<span class="hand">IMP</span> ` : nothing}${weightText(t, app.settings.target)}.${s ? html` You've answered ${s.attempts}, ${pct(s.accuracy)} correct, about ${Math.round(s.avgSec)} seconds each.` : nothing}</p>
     <nav class="tabs">
       <a href="#/topic/${id}/learn" class=${tab === 'learn' ? 'on' : ''}>Learn</a>
       <a href="#/topic/${id}/practice" class=${tab === 'practice' ? 'on' : ''}>Practice</a>

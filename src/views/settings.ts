@@ -72,7 +72,7 @@ export default function settings(el: HTMLElement) {
       </section>
       <section class="paper stack" style="margin-top:1rem">
         <h2>Appearance</h2>
-        <div class="seg">${(['auto', 'light', 'dark'] as const).map((t) => html`<button class=${s.theme === t ? 'on' : ''} @click=${() => save({ theme: t })}>${t[0].toUpperCase() + t.slice(1)}</button>`)}</div>
+        <div class="seg">${(['light', 'dark'] as const).map((t) => html`<button class=${(s.theme === 'dark' ? 'dark' : 'light') === t ? 'on' : ''} @click=${() => save({ theme: t })}>${t === 'light' ? 'Light' : 'Dark (night study)'}</button>`)}</div>
       </section>
       <section class="paper stack" style="margin-top:1rem">
         <h2>Your data</h2>
@@ -83,7 +83,7 @@ export default function settings(el: HTMLElement) {
           <button class="btn danger" @click=${async () => { if (await confirmDialog(auth.user ? 'Delete all progress on this device AND in your account on all devices? This cannot be undone.' : 'Delete all progress on this device? This cannot be undone.', 'Delete everything')) { await app.wipe(); toast('All progress deleted'); draw(); } }}>Reset progress</button>
         </div>
       </section>
-      <p class="small muted" style="margin-top:1rem">Content version ${getManifest()?.version ?? '—'} · Test data, not yet reviewed by a subject expert.</p>
+      <p class="small muted" style="margin-top:1rem">Content version ${getManifest()?.version ?? '—'}. Test data, not yet reviewed by a subject expert.</p>
     </div>`, el);
   };
   draw();

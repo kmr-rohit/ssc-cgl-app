@@ -50,34 +50,33 @@ export default function analysis(el: HTMLElement) {
       <h1>Progress</h1>
       ${progressTabs('overview')}
       <div class="seg" style="margin-bottom:1rem">${(app.settings.paper2 ? ['pre', 'mains', 'stats'] : ['pre', 'mains']).map((x) => html`<button class=${exam === x ? 'on' : ''} @click=${() => { exam = x as ExamId; draw(); }}>${EXAMS[x as ExamId].short}</button>`)}</div>
-      ${!app.attempts.length ? html`<div class="paper"><p>No data yet. Practise a topic or take a mock and your analysis will appear here.</p><a class="btn primary" href="#/mocks">Take a mock</a></div>` : html`
+      ${!app.attempts.length ? html`<div class="paper empty"><h2>Nothing to analyse yet</h2><p>Answer 10 questions in any topic, or take today's mock. Your accuracy, speed and the topics losing you marks will show up here.</p><div class="row"><a class="btn primary" href="#/mocks">Take today's mock</a><a class="btn" href="#/study">Practise a topic</a></div></div>` : html`
       <section class="paper" style="margin-bottom:1rem">
         <div class="spread"><h2>Mock scores</h2>${avg !== null ? html`<span class="small">Estimated score band (last ${recent.length}): <b>${Math.max(0, avg - 8).toFixed(0)}–${(avg + 8).toFixed(0)}</b> <span class="muted">· an estimate, not a prediction</span></span>` : nothing}</div>
-        ${done.length ? trendChart(done, exam) : html`<p class="muted small">Take daily mocks to see your trend.</p>`}
+        ${done.length ? trendChart(done, exam) : html`<p class="muted small">Your score line starts after your first full mock. <a href="#/mocks">Take one</a></p>`}
       </section>
 
       <div class="grid" style="margin-bottom:1rem">
         <section class="paper"><h2>Biggest mark leaks</h2>
           ${weak.length ? weak.map((w) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
             <span>${dot(w.topic.subject)} <a href="#/topic/${w.topic.id}">${w.topic.name}</a></span>
-            <span class="small">${pct(w.stat!.accuracy)} · <b>~${w.lost!.toFixed(1)}</b> marks/paper</span></div>`) : html`<p class="muted small">Need at least 4 attempts per topic.</p>`}
+            <span class="small">${pct(w.stat!.accuracy)} correct, costs you <b>~${w.lost!.toFixed(1)}</b> marks a paper</span></div>`) : html`<p class="muted small">Answer at least 4 questions in a topic to see what it costs you.</p>`}
         </section>
         <section class="paper"><h2>Weakest question types</h2>
           ${types.length ? types.map((t) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
-            <span><a href="#/topic/${t.topic}/practice">${TOPIC_MAP[t.topic]?.name}</a> · ${t.type.replace(/-/g, ' ')}</span><span class="small">${pct(t.acc)} of ${t.n}</span></div>`) : html`<p class="muted small">Need at least 3 attempts per type.</p>`}
+            <span><a href="#/topic/${t.topic}/practice">${TOPIC_MAP[t.topic]?.name}</a>, ${t.type.replace(/-/g, ' ')}</span><span class="small">${pct(t.acc)} of ${t.n}</span></div>`) : html`<p class="muted small">Shows up once you've tried a question type 3 times.</p>`}
           ${wrong ? html`<p class="trap small" style="margin-top:1rem"><b>${careless}</b> of your ${wrong} wrong answers took less than a third of the target time. Slow down on those: they are likely careless errors.</p>` : nothing}
         </section>
       </div>
 
-      ${SUBJECT_ORDER.filter((s) => EXAMS[exam].sections.some((x) => x.subject === s)).map((s) => html`
+      ${SUBJECT_ORDER.filter((s) => EXAMS[exam].sections.some((x) => x.subject === s) && topicsOf(s).some((t) => stats[t.id])).map((s) => html`
         <section class="paper" style="margin-bottom:1rem"><h2>${dot(s)} ${SUBJECTS[s].name}</h2>
           <table style="display:table;width:100%"><thead><tr><th>Topic</th><th>Done</th><th>Accuracy</th><th>Avg time</th></tr></thead><tbody>
           ${topicsOf(s).filter((t) => stats[t.id]).map((t) => { const x = stats[t.id]; return html`<tr>
             <td><a href="#/topic/${t.id}">${t.name}</a></td><td>${x.attempts}</td>
             <td><span class="row">${accBar(x.accuracy)} ${pct(x.accuracy)}</span></td>
-            <td class=${x.slow ? 'chip medium' : ''}>${Math.round(x.avgSec)}s <span class="muted small">/ ${TARGET_SEC[s]}s</span></td></tr>`; })}
+            <td class=${x.slow ? 'hand' : ''}>${Math.round(x.avgSec)}s <span class="muted small">/ ${TARGET_SEC[s]}s</span></td></tr>`; })}
           </tbody></table>
-          ${!topicsOf(s).some((t) => stats[t.id]) ? html`<p class="muted small">No attempts yet.</p>` : nothing}
         </section>`)}`}
     </div>`, el);
   };

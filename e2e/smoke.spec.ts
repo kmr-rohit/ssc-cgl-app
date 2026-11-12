@@ -4,7 +4,7 @@ test('syllabus → topic notes → learn-mode practice records an attempt', asyn
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('/#/syllabus/quant');
-  await expect(page.getByRole('heading', { name: 'Syllabus' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Study', exact: true })).toBeVisible();
   await page.getByRole('link', { name: /Percentage/ }).first().click();
   await expect(page.getByRole('heading', { name: 'Percentage' })).toBeVisible();
   await page.getByRole('link', { name: 'Practice', exact: true }).click();
@@ -112,17 +112,17 @@ test('first run: setup builds the roadmap, then Today shows a task checklist', a
   }
   await tour.getByRole('button', { name: "Let's start" }).click();
   await expect(tour).toHaveCount(0);
-  await expect(page.getByRole('heading', { name: "Today's plan" })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Next up' })).toBeVisible();
   // tour doesn't come back; roadmap reflects setup
   await page.reload();
-  await expect(page.getByRole('heading', { name: "Today's plan" })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Next up' })).toBeVisible();
   await expect(page.getByRole('dialog')).toHaveCount(0);
   await page.goto('/#/roadmap');
   await expect(page.getByText('Tier 2 Paper 1 (Mains)')).toBeVisible();
   await page.goto('/#/');
   await expect(page.locator('.countdown b')).toHaveText(/\d+/);
-  await expect(page.locator('.task-list li').first()).toContainText('Learn & practise');
-  await expect(page.locator('.task-list li')).not.toHaveCount(0);
+  await expect(page.getByRole('region', { name: 'Next up' })).toContainText('Learn & practise');
+  await expect(page.getByRole('button', { name: 'Read the notes' })).toBeVisible();
   expect(errors).toEqual([]);
 });
 

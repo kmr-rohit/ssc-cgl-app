@@ -79,7 +79,7 @@ export default async function practice(el: HTMLElement) {
     const wrong = qs.filter((_, k) => answers[k] !== null && answers[k] !== qs[k].answer).length;
     const time = ms.reduce((a, b) => a + b, 0);
     return html`<div class="page">
-      <div class="kicker">${t?.name ?? 'Practice'} · results</div>
+      <div class="kicker">${t?.name ?? 'Practice'} results</div>
       <h1>${correct} / ${qs.length} correct</h1>
       <div class="grid" style="margin-bottom:1rem">
         <div class="card"><div class="kicker">Accuracy</div><div class="big">${pct(correct + wrong ? correct / (correct + wrong) : 0)}</div></div>
@@ -102,13 +102,13 @@ export default async function practice(el: HTMLElement) {
     const left = totalMs - (performance.now() - startedAt);
     render(html`<div class="page" style="max-width:820px">
       <div class="spread" style="margin-bottom:.6rem">
-        <div><div class="kicker">${cfg.title ?? t?.name ?? 'Practice'} · ${cfg.mode === 'learn' ? 'Learn mode' : 'Test mode'}</div>
+        <div><div class="kicker">${cfg.mode === 'learn' ? 'Learn mode: the answer shows after each question' : 'Test mode: timed, answers at the end'}</div>
           <div class="small muted">Question ${i + 1} of ${qs.length}</div></div>
         ${cfg.mode === 'test' ? html`<div class="chip" aria-live="off">⏱ ${fmtMs(left)}</div>` : nothing}
       </div>
       <section class="paper">
         ${questionView(q, { chosen: answers[i], reveal: revealed[i], onPick: pick,
-          head: html`<div class="q-head"><span>Level ${q.level} · ${q.type.replace(/-/g, ' ')}</span>${revealed[i] ? stamp(answers[i] === q.answer ? 'ok' : 'no') : nothing}</div>` })}
+          head: html`<div class="q-head"><span>Level ${q.level}, ${q.type.replace(/-/g, ' ')}</span>${revealed[i] ? stamp(answers[i] === q.answer ? 'ok' : 'no') : nothing}</div>` })}
         <div class="exam-actions">
           <button class="btn" ?disabled=${i === 0} @click=${() => move(-1)}>Previous</button>
           ${i < qs.length - 1

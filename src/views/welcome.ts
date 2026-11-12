@@ -35,7 +35,7 @@ export default function welcome(el: HTMLElement) {
       <div>
         <h2>1. Which exam are you preparing for?</h2>
         <div class="choice-grid">
-          ${([['pre', 'Tier 1', 'Prelims · 100 Qs · 60 min'], ['mains', 'Tier 2', 'Mains Paper 1 · 150 Qs']] as const).map(([id, t, sub]) => html`
+          ${([['pre', 'Tier 1', 'Prelims: 100 questions in 60 minutes'], ['mains', 'Tier 2', 'Mains Paper 1: 150 questions']] as const).map(([id, t, sub]) => html`
             <button class="choice ${target === id ? 'on' : ''}" aria-pressed=${target === id} @click=${() => { target = id; draw(); }}><b>${t}</b><span>${sub}</span></button>`)}
         </div>
         <label class="check small" style="margin-top:.6rem"><input type="checkbox" .checked=${paper2} @change=${(e: Event) => { paper2 = (e.target as HTMLInputElement).checked; draw(); }} /> I'm also applying for JSO / Statistical Investigator (Paper 2: Statistics)</label>

@@ -43,7 +43,7 @@ export default async function mistakesView(el: HTMLElement) {
             const q = lookup(m.questionId);
             const t = TOPIC_MAP[m.topic];
             return html`<button class="mistake card" @click=${() => retry([m.questionId])}>
-              <div class="small muted">${t ? html`${dot(t.subject)} ${t.name}` : m.topic} · ${m.skipped ? 'skipped' : 'wrong'}${m.wrongCount > 1 ? ` ${m.wrongCount}×` : ''} · ${niceDate(m.lastAt)}</div>
+              <div class="small muted">${t ? t.name : m.topic}, ${m.skipped ? 'skipped' : 'wrong'}${m.wrongCount > 1 ? ` ${m.wrongCount} times` : ''}, ${niceDate(m.lastAt)}</div>
               <div class="mistake-q">${q ? rich(q.q.replace(/<div class="fig">[\s\S]*?<\/div>/g, '[figure]')) : 'Question unavailable'}</div>
             </button>`;
           })}

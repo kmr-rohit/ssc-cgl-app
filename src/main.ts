@@ -1,6 +1,11 @@
-import '@fontsource-variable/archivo/wdth.css';
-import '@fontsource/atkinson-hyperlegible/400.css';
-import '@fontsource/atkinson-hyperlegible/700.css';
+// Indian-made type: Martel (headings), Mukta (body), Kalam (red-pen notes). Latin subsets only for now.
+import '@fontsource/martel/latin-800.css';
+import '@fontsource/martel/latin-900.css';
+import '@fontsource/mukta/latin-400.css';
+import '@fontsource/mukta/latin-500.css';
+import '@fontsource/mukta/latin-600.css';
+import '@fontsource/mukta/latin-700.css';
+import '@fontsource/kalam/latin-700.css';
 import './ui/styles.css';
 import { app } from './app/state';
 import { dispatch, route } from './app/router';

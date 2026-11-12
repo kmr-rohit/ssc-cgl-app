@@ -17,8 +17,9 @@
     "test:db": "npx supabase test db"
   },
   "dependencies": {
-    "@fontsource-variable/archivo": "^5.3.0",
-    "@fontsource/atkinson-hyperlegible": "^5.3.0",
+    "@fontsource/kalam": "^5.3.0",
+    "@fontsource/martel": "^5.3.0",
+    "@fontsource/mukta": "^5.3.0",
     "@supabase/supabase-js": "^2.119.0",
     "dompurify": "^3.4.17",
     "idb-keyval": "^6.3.0",

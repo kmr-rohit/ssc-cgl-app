@@ -30,7 +30,11 @@ SSC CGL exam-prep app (Tier 1, Tier 2 Paper 1, Paper 2 Statistics). Delivery ord
 - Views never import Capacitor or Supabase directly; go through `platform.ts` / `StorageAdapter`.
 - AI calls only via Supabase Edge Functions using the official `@anthropic-ai/sdk`. Never put an API key in client code. Default model `claude-opus-5-5`; change it only when the owner says so.
 - Mobile-first: test at 360 px width. Respect the perf budget in TECHNICAL_DESIGN §2.7.
-- Keep the "aspirant's register" design language (admit cards, ruled pages, OMR, stamps).
+- Design language: "the aspirant's register" (see the header of `src/ui/styles.css`). Rules:
+  - Palette tokens only: desk, paper, ruling, ballpoint ink, pen blue (actions), red pen (attention, mistakes), stamp violet (verdicts), green only for correct. Light is the default theme; dark ("night study") is opt-in.
+  - Type: Martel (headings), Mukta (body), Kalam handwriting **only** for red-pen notes (countdown, IMP, ticks). Never use Kalam for body text.
+  - Avoid generic-UI tells: no ALL-CAPS eyebrow labels, no `·`-joined meta strings or `→` on buttons, no rows of stat tiles, no chip soup, no card shadows. Write plain sentences ("2 to 4 questions in Tier 1").
+  - One primary action per screen. Empty states say what to do next and link to it.
 - Small PRs: one TODO item per branch, named `m<N>/<short-slug>`.
 
 ## Current working mode (owner instruction, 2026-11-12)

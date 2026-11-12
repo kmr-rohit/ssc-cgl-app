@@ -45,20 +45,28 @@ export default async function today(el: HTMLElement) {
     if (t.action.kind === 'practice') { session.practice = { topic: t.action.topic, level: 0, mode: 'learn', n: 10 }; go('#/practice'); }
   };
 
+  // hero: the first unfinished task. The rest of today's list sits below it.
+  const next = tasks.find((t) => !t.done);
+  const rest = tasks.filter((t) => t !== next);
+  const left = Math.round(tasks.filter((t) => !t.done).reduce((a, t) => a + t.minutes, 0) / 5) * 5;
+  const nextTopic = next?.action.kind === 'practice' ? TOPIC_MAP[next.action.topic] : null;
+  const ctaText = (t: Task) => t.action.kind === 'practice' ? 'Read the notes' : t.action.kind === 'mock' ? 'Start the mock' : t.action.kind === 'retry' ? 'Retry them now' : 'Open flashcards';
+  const dateText = new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' });
+
   render(html`<div class="page today">
-    <div class="spread">
+    <header class="today-head">
       <div>
-        <div class="kicker">${new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' })}</div>
+        <div class="date">${dateText}</div>
         <h1>${s.name ? `Namaste, ${s.name}` : 'Today'}</h1>
       </div>
       <div class="countdown" title=${plan.assumedDate ? 'Set your exam date in Profile' : `Exam on ${plan.examDate}`}>
-        ${daysLeft !== null ? html`<b>${daysLeft}</b><span>days to ${EXAMS[exam].short}</span>` : html`<a href="#/profile">Set exam date</a>`}
+        ${daysLeft !== null ? html`<b>${daysLeft} days</b><span>to ${EXAMS[exam].short}</span>` : html`<a href="#/profile">Set your exam date</a>`}
       </div>
-    </div>
+    </header>
 
     ${resumable ? html`<button class="resume" @click=${() => go(`#/exam/${encodeURIComponent(resumable.key)}`)}>
-      <span><b>Resume your ${EXAMS[resumable.exam].short} mock</b><span class="small">Question ${resumable.current.index + 1} of section ${resumable.current.section + 1}: the timer is paused</span></span>
-      <span aria-hidden="true">→</span></button>` : nothing}
+      <span><b>Resume your ${EXAMS[resumable.exam].short} mock</b><span class="small">Paused at question ${resumable.current.index + 1}, section ${resumable.current.section + 1}. The timer waits for you.</span></span>
+      <span class="btn sm">Resume</span></button>` : nothing}
 
     ${s.toured && shouldOfferInstall() ? html`<section class="install-banner" aria-label="Install the app">
       <div><b>Install CGL Prep</b><span class="small"> for one-tap access from your home screen. Works offline.</span></div>
@@ -66,26 +74,49 @@ export default async function today(el: HTMLElement) {
       <button class="btn ghost sm close" aria-label="Dismiss" @click=${() => { dismissInstall(); dispatch(); }}>✕</button>
     </section>` : nothing}
 
-    <section class="paper tasks" aria-label="Today's tasks">
-      <div class="spread"><h2>Today's plan</h2><span class="small muted">${done}/${tasks.length} done · ~${Math.round(tasks.filter((t) => !t.done).reduce((a, t) => a + t.minutes, 0) / 5) * 5} min left</span></div>
-      <ol class="task-list">
-        ${tasks.map((t) => html`<li class=${t.done ? 'done' : ''}>
-          <span class="tick" aria-hidden="true">${t.done ? '✓' : ''}</span>
-          <button class="task-main" @click=${() => act(t)}>
-            <b>${t.action.kind === 'practice' && TOPIC_MAP[t.action.topic] ? html`${dot(TOPIC_MAP[t.action.topic].subject)} ` : nothing}${t.label}</b>
-            <span class="small muted">${t.detail}</span>
-          </button>
-          ${t.action.kind === 'practice' && !t.done ? html`<button class="btn sm" @click=${() => quickPractice(t)}>Practise</button>` : nothing}
-          <span class="sr-only">${t.done ? 'done' : 'not done'}</span>
-        </li>`)}
-      </ol>
-      ${done === tasks.length ? html`<p class="tip">All done for today. Great work! Extra practice from your <a href="#/roadmap">roadmap</a> always helps.</p>` : nothing}
-    </section>
+    <div class="today-cols">
+      <div>
+        ${next ? html`<section class="paper ruled next-up" aria-label="Next up">
+          <p class="label">Next up${nextTopic ? html`, ${nextTopic.section}` : nothing}</p>
+          <h2>${next.label}</h2>
+          <p>${next.detail}. About ${next.minutes} minutes.</p>
+          <div class="row">
+            <button class="btn primary big-cta" @click=${() => act(next)}>${ctaText(next)}</button>
+            ${next.action.kind === 'practice' ? html`<button class="btn ghost" @click=${() => quickPractice(next)}>Skip to 10 questions</button>` : nothing}
+          </div>
+        </section>` : html`<section class="paper ruled next-up">
+          <p class="label">Today's plan is done</p>
+          <h2>Well done. That's all for today.</h2>
+          <p>If you have time left, take a sectional test or revise from your roadmap.</p>
+          <a class="btn primary big-cta" href="#/mocks">Take a sectional test</a>
+        </section>`}
 
-    <div class="stat-row">
-      <a class="card" href="#/progress"><div class="kicker">Streak</div><div class="big">${st}<span class="small muted"> day${st === 1 ? '' : 's'}</span></div></a>
-      <a class="card" href="#/progress"><div class="kicker">Answered today</div><div class="big">${answeredToday}</div></a>
-      <a class="card" href="#/roadmap"><div class="kicker">Roadmap</div><div class="big">Wk ${week.index}<span class="small muted"> / ${plan.weeks.length}</span></div></a>
+        ${rest.length ? html`<section class="paper tasks" aria-label="Today's tasks">
+          <div class="spread"><h2>Also today</h2><span class="small muted">${done} of ${tasks.length} done${left ? `, about ${left} min left` : ''}</span></div>
+          <ul class="task-list">
+            ${rest.map((t) => html`<li class=${t.done ? 'done' : ''}>
+              <span class="tick" aria-hidden="true">${t.done ? '✓' : ''}</span>
+              <button class="task-main" @click=${() => act(t)}>
+                <b>${t.label}</b>
+                <span class="small muted">${t.detail}</span>
+              </button>
+              <span class="sr-only">${t.done ? 'done' : 'not done'}</span>
+            </li>`)}
+          </ul>
+        </section>` : nothing}
+
+        <p class="stat-line">
+          <span><b>${st}</b> day streak</span>
+          <span><b>${answeredToday}</b> answered today</span>
+          <a href="#/progress">See progress</a>
+        </p>
+      </div>
+
+      <aside class="paper week-card" aria-label="This week">
+        <div class="spread"><h2>Week ${week.index} of ${plan.weeks.length}</h2><a class="small" href="#/roadmap">Roadmap</a></div>
+        <ol>${week.topics.slice(0, 6).map((t) => html`<li>${dot(t.topic.subject)} <a href="#/topic/${t.topic.id}">${t.topic.name}</a>${(app.stats[t.topic.id]?.attempts ?? 0) >= 10 ? html` <span class="hand">✓</span>` : nothing}</li>`)}</ol>
+        ${week.topics.length > 6 ? html`<a class="small" href="#/roadmap">${week.topics.length - 6} more this week</a>` : nothing}
+      </aside>
     </div>
   </div>`, el);
   const off = onInstallChange(() => dispatch());

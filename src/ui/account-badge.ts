@@ -13,7 +13,7 @@ export function renderAccountBadge(sync: SyncedAdapter, auth: typeof Auth) {
     b.textContent = u ? (u.email ?? 'Signed in') : 'Profile';
     const s = document.createElement('span');
     s.className = 'muted';
-    s.textContent = u ? syncText(sync.status) : 'Sign in to sync · settings';
+    s.textContent = u ? syncText(sync.status) : 'Settings and sign-in';
     el.append(b, s);
   };
   auth.onChange(draw);

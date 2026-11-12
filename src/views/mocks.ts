@@ -5,7 +5,7 @@ import type { ExamId, MockRecord, SubjectId } from '../core/types';
 import { app } from '../app/state';
 import { go, toast } from '../app/router';
 import { buildMock } from '../content/bank';
-import { confirmDialog, dot } from '../ui/components';
+import { confirmDialog } from '../ui/components';
 import { niceDate } from '../ui/html';
 
 export const dailyKey = (exam: ExamId, day = dayKey()) => `${exam}-${day}`;
@@ -29,7 +29,7 @@ export default function mocks(el: HTMLElement) {
     const e = EXAMS[exam];
     const status = !m ? 'Not started' : m.status === 'submitted' ? `Scored ${m.score!.total.toFixed(1).replace(/\.0$/, '')}/${m.score!.max}` : m.status === 'in-progress' ? 'In progress' : 'Ready';
     return html`<div class="ticket">
-      <div class="kicker">Admit card · ${day === today ? 'Today' : niceDate(day)}</div>
+      <div class="kicker">Admit card, ${day === today ? 'today' : niceDate(day)}</div>
       <h3>${e.name}</h3>
       <dl><dt>Questions</dt><dd>${e.sections.reduce((a, s) => a + s.count, 0)}</dd>
         <dt>Time</dt><dd>${e.sections.reduce((a, s) => a + s.minutes, 0)} min</dd>
@@ -51,24 +51,29 @@ export default function mocks(el: HTMLElement) {
 
   render(html`<div class="page">
     <h1>Mocks</h1>
-    <p class="muted">A new Tier 1 and Tier 2 paper every day, on the latest pattern. Same date = same paper.</p>
-    <h2>Today</h2>
+    <p class="muted">A fresh paper every day on the latest SSC pattern.</p>
+    <h2>Today's papers</h2>
     <div class="grid">${exams.map((x) => ticket(x, today))}</div>
 
     <h2 style="margin-top:1.5rem">Sectional tests</h2>
     <div class="paper">
       ${exams.map((x) => html`<div class="spread" style="padding:.4rem 0;border-bottom:1px solid var(--rule)">
         <b>${EXAMS[x].short}</b>
-        <span class="row">${EXAMS[x].sections.map((s) => html`<button class="btn sm" @click=${() => sectional(x, s.subject)}>${dot(s.subject)} ${SUBJECTS[s.subject].short} · ${s.minutes}m</button>`)}</span>
+        <span class="row">${EXAMS[x].sections.map((s) => html`<button class="btn sm" @click=${() => sectional(x, s.subject)}>${SUBJECTS[s.subject].short}, ${s.minutes} min</button>`)}</span>
       </div>`)}
     </div>
 
-    <h2 style="margin-top:1.5rem">Missed days</h2>
-    <div class="grid">${missed.flatMap((d) => app.mocks.get(dailyKey('pre', d))?.status === 'submitted' ? [] : [ticket('pre', d)])}</div>
+    ${(() => {
+      const open = missed.filter((d) => app.mocks.get(dailyKey('pre', d))?.status !== 'submitted');
+      return open.length ? html`<h2 style="margin-top:1.5rem">Missed papers</h2>
+        <div class="paper" style="padding:.3rem 1rem">${open.map((d) => html`<div class="spread" style="padding:.45rem 0;border-bottom:1px solid var(--rule)">
+          <span>Tier 1 paper of ${niceDate(d)}</span>
+          <button class="btn sm" @click=${() => openMock(dailyKey('pre', d), () => buildMock({ exam: 'pre', kind: 'daily', key: dailyKey('pre', d), seed: dailyKey('pre', d) }))}>${app.mocks.get(dailyKey('pre', d))?.status === 'in-progress' ? 'Resume' : 'Take it'}</button></div>`)}</div>` : nothing;
+    })()}
 
     ${past.length ? html`<h2 style="margin-top:1.5rem">History</h2>
       <div class="paper">${past.map((m) => html`<div class="spread" style="padding:.45rem 0;border-bottom:1px solid var(--rule)">
-        <span><b>${EXAMS[m.exam].short}</b> ${m.kind === 'sectional' ? html`· ${SUBJECTS[m.sections[0]?.subject]?.short} sectional` : html`· daily`} <span class="small muted">${niceDate(m.startedAt ?? m.updatedAt)}</span></span>
+        <span><b>${EXAMS[m.exam].short}</b> ${m.kind === 'sectional' ? html`${SUBJECTS[m.sections[0]?.subject]?.short} sectional` : html`daily paper`} <span class="small muted">${niceDate(m.startedAt ?? m.updatedAt)}</span></span>
         <span class="row">
           ${m.status === 'submitted' ? html`<a class="btn sm" href="#/result/${encodeURIComponent(m.key)}">${m.score!.total.toFixed(1).replace(/\.0$/, '')}/${m.score!.max}</a>`
             : html`<a class="btn sm" href="#/exam/${encodeURIComponent(m.key)}">${m.status === 'in-progress' ? 'Resume' : 'Start'}</a>`}

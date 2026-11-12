@@ -41,7 +41,7 @@ export default function planView(el: HTMLElement) {
       </div>
       ${w.topics.length ? html`<div class="week-topics">${w.topics.map((t) => html`<div class="spread week-topic">
         <span>${dot(t.topic.subject)} <a href="#/topic/${t.topic.id}">${t.topic.name}</a>
-          <span class="small muted">${SUBJECTS[t.topic.subject].short} · ~${t.hours} h${t.reason === 'weak' ? ' · weak' : t.reason === 'revise' ? ' · revise' : ''}</span></span>
+          <span class="small muted">${SUBJECTS[t.topic.subject].short}, about ${t.hours} h${t.reason === 'weak' ? ', needs work' : t.reason === 'revise' ? ', revision' : ''}</span></span>
         ${done(t.topic.id) && t.reason !== 'revise' ? html`<span class="stamp ok">Done</span>` : w === now ? html`<button class="btn sm" @click=${() => practise(t.topic.id)}>Practise</button>` : nothing}
       </div>`)}</div>`
         : html`<p class="small muted">${w.phase === 'final' ? 'Daily full mocks, review mistakes, revise formula sheets and flashcards. Sleep well before the exam.' : 'Mocks and analysis.'}</p>`}

@@ -45,7 +45,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   if (m.status === 'not-started') {
     await new Promise<void>((resolve) => render(html`<div class="page" style="max-width:720px">
       <div class="ticket">
-        <div class="kicker">Admit card · ${m.kind === 'daily' ? 'Daily mock' : 'Sectional test'}</div>
+        <div class="kicker">Admit card, ${m.kind === 'daily' ? 'daily mock' : 'sectional test'}</div>
         <h1>${e.name}</h1>
         <dl>
           <dt>Sections</dt><dd>${m.sections.map((s) => html`${dot(s.subject)} ${SUBJECTS[s.subject].short} (${s.questionIds.length}) `)}</dd>
@@ -129,7 +129,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
         <span class="row">${examMode && !document.fullscreenElement && document.fullscreenEnabled ? html`<button class="btn sm" @click=${() => { enterFullscreen(); warning = null; draw(); }}>Full screen</button>` : nothing}
         <button class="btn sm" @click=${() => { warning = null; draw(); }}>Continue</button></span></div>` : nothing}
       <div class="exam-bar">
-        <span><b>${e.short}</b> · ${dot(s.subject)} ${SUBJECTS[s.subject].short} <span class="small">(section ${m.current.section + 1}/${m.sections.length})</span></span>
+        <span><b>${e.short}</b> ${SUBJECTS[s.subject].short} <span class="small">(section ${m.current.section + 1}/${m.sections.length})</span></span>
         <span class="timer ${s.remainingMs < 60000 ? 'low' : ''}" role="timer" aria-label="Time left in section">${fmtMs(s.remainingMs)}</span>
         <span class="row">
           <button class="btn sm pal-toggle" @click=${() => { palOpen = !palOpen; draw(); }}>Palette ${answered}/${s.questionIds.length}</button>

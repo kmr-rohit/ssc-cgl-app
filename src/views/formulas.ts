@@ -19,7 +19,7 @@ const TABLES: Record<string, { name: string; view: () => unknown }> = {
   powers: { name: 'Powers of 2', view: () => grid(powersOf2().map((x) => [`2^${x.n}`, x.v])) },
   trig: { name: 'Trigonometric values', view: () => html`<table class="sheet"><thead><tr><th></th>${TRIG_ANGLES.map((a) => html`<th>${a}</th>`)}</tr></thead>
     <tbody>${trigTable.map((r) => html`<tr><th>${r.f}</th>${r.v.map((v) => html`<td>${v}</td>`)}</tr>`)}</tbody></table>` },
-  alphabet: { name: 'Alphabet positions', view: () => grid(alphabet().map((x) => [x.l, `${x.pos} · ${x.rev}`]), 'Letter: position from A · position from Z') },
+  alphabet: { name: 'Alphabet positions', view: () => grid(alphabet().map((x) => [x.l, `${x.pos}, ${x.rev}`]), 'Each letter: position from A, then position from Z') },
 };
 
 function grid(cells: [string, string | number][], caption?: string) {
@@ -38,7 +38,7 @@ export default async function formulas(el: HTMLElement, [arg]: string[]) {
     const t = TOPIC_MAP[id];
     const c = getTopic(id);
     if (!t || !c?.formulas?.length) return html`<h1>Not found</h1><p class="muted">No formula sheet for this topic.</p>`;
-    return html`<p class="small no-print">${dot(t.subject)} ${SUBJECTS[t.subject].short} · <a href="#/topic/${t.id}/learn">Open notes</a></p>
+    return html`<p class="small no-print">${SUBJECTS[t.subject].short}. <a href="#/topic/${t.id}/learn">Open the notes</a></p>
       <h1>${t.name}</h1>
       <div class="paper">${c.formulas.map((f) => html`<div class="formula"><span>${f.name}</span><code>${rich(f.expr)}</code></div>`)}</div>
       ${c.notes.traps.length ? html`<h2>Watch out</h2>${c.notes.traps.map((x) => html`<div class="trap">${rich(x)}</div>`)}` : nothing}`;
