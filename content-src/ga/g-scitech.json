@@ -1,0 +1,72 @@
+{
+  "topic": "g-scitech",
+  "notes": {
+    "summary": "Science &amp; Technology gives <b>1–2 questions</b>: India's space programme (ISRO missions), nuclear and defence milestones, famous inventions and inventors, and full forms of technical terms.",
+    "concepts": [
+      {
+        "title": "India in space",
+        "body": "<ul><li><b>ISRO</b> was set up in <b>1969</b>; HQ <b>Bengaluru</b>. <b>Vikram Sarabhai</b> is the father of India's space programme.</li><li>First rocket launch: <b>Thumba</b> (Kerala), 1963. Main launch site: <b>Satish Dhawan Space Centre, Sriharikota</b> (Andhra Pradesh).</li></ul><table><thead><tr><th>Mission</th><th>Key fact</th></tr></thead><tbody><tr><td>Aryabhata (1975)</td><td>India's first satellite; launched by a Soviet rocket</td></tr><tr><td>Chandrayaan-1 (2008)</td><td>First Indian Moon mission; found evidence of water molecules</td></tr><tr><td>Mangalyaan / Mars Orbiter Mission (2013)</td><td>Reached Mars orbit in 2014; India first Asian nation to do so, and first country on its first attempt</td></tr><tr><td>Chandrayaan-3 (2023)</td><td>Vikram lander touched down near the lunar south pole on 23 August 2023 — now National Space Day</td></tr></tbody></table>Launch vehicles: <b>PSLV</b> (workhorse, polar orbits), <b>GSLV</b> (heavier satellites to geosynchronous orbits).",
+        "img": "ga/scitech-orbits.svg"
+      },
+      {
+        "title": "Nuclear and defence",
+        "body": "<ul><li><b>Homi J. Bhabha</b>: father of India's nuclear programme. <b>BARC</b> is at Trombay, Mumbai. <b>Apsara</b> (1956) was India's first research reactor.</li><li>Nuclear tests at <b>Pokhran</b> (Rajasthan): 1974 ('Smiling Buddha') and 1998 (Pokhran-II, 'Operation Shakti').</li><li><b>DRDO</b> was formed in <b>1958</b>. The Integrated Guided Missile Development Programme (1983) was led by <b>Dr. A.P.J. Abdul Kalam</b>, the 'Missile Man of India'.</li></ul><table><thead><tr><th>Missile</th><th>Type</th></tr></thead><tbody><tr><td>Agni</td><td>Surface-to-surface ballistic</td></tr><tr><td>Prithvi</td><td>Short-range surface-to-surface ballistic</td></tr><tr><td>Akash</td><td>Surface-to-air</td></tr><tr><td>Nag</td><td>Anti-tank</td></tr><tr><td>BrahMos</td><td>Supersonic cruise missile (India–Russia; Brahmaputra + Moskva)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Inventions and full forms",
+        "body": "<table><thead><tr><th>Invention / discovery</th><th>By</th></tr></thead><tbody><tr><td>Telephone</td><td>Alexander Graham Bell</td></tr><tr><td>Radio (wireless telegraphy)</td><td>Guglielmo Marconi</td></tr><tr><td>World Wide Web</td><td>Tim Berners-Lee</td></tr><tr><td>Penicillin</td><td>Alexander Fleming</td></tr><tr><td>X-rays</td><td>Wilhelm Röntgen</td></tr><tr><td>Smallpox vaccine</td><td>Edward Jenner</td></tr><tr><td>Dynamite</td><td>Alfred Nobel</td></tr></tbody></table>Full forms: <b>LASER</b> = Light Amplification by Stimulated Emission of Radiation; <b>RADAR</b> = Radio Detection And Ranging; <b>SONAR</b> = Sound Navigation And Ranging; <b>GPS</b> = Global Positioning System."
+      }
+    ],
+    "varieties": [
+      {
+        "type": "space",
+        "name": "Space missions",
+        "how": "Link each mission to its year and one 'first'.",
+        "example": { "q": "What was India's first satellite?", "steps": ["Launched in 1975 on a Soviet rocket", "Named after the ancient astronomer"], "answer": "Aryabhata" }
+      },
+      {
+        "type": "defence-nuclear",
+        "name": "Nuclear and defence",
+        "how": "Recall the missile type table and the Pokhran years.",
+        "example": { "q": "Akash is which type of missile?", "steps": ["Akash = sky", "It hits aircraft: surface-to-air"], "answer": "Surface-to-air missile" }
+      },
+      {
+        "type": "inventions",
+        "name": "Inventions and full forms",
+        "how": "Pair each invention with its inventor; expand acronyms word by word.",
+        "example": { "q": "Who discovered penicillin?", "steps": ["Discovered in 1928 from Penicillium mould"], "answer": "Alexander Fleming" }
+      }
+    ],
+    "tips": [
+      "Missile names give hints: Akash (sky) = surface-to-air; Nag (cobra) = anti-tank.",
+      "Sarabhai = space; Bhabha = nuclear; Kalam = missiles.",
+      "Mangalyaan: launched 2013, reached Mars 2014."
+    ],
+    "traps": [
+      "Aryabhata was India's satellite but was launched from the USSR, not from India.",
+      "Thumba (Kerala) saw the first rocket launch; Sriharikota (Andhra Pradesh) is today's main spaceport.",
+      "Tim Berners-Lee invented the World Wide Web, not the Internet itself."
+    ]
+  },
+  "questions": [
+    { "id": "g-scitech-001", "rev": 1, "topic": "g-scitech", "type": "space", "level": 1, "q": "Who is known as the father of the Indian space programme?", "options": ["Homi J. Bhabha", "A.P.J. Abdul Kalam", "Vikram Sarabhai", "Satish Dhawan"], "answer": 2, "solution": "Dr. Vikram Sarabhai founded India's space research effort, leading to ISRO in 1969.<br><b>Memory hook:</b> <b>S</b>arabhai = <b>S</b>pace; <b>B</b>habha = <b>B</b>omb/nuclear.", "source": "test-data" },
+    { "id": "g-scitech-002", "rev": 1, "topic": "g-scitech", "type": "inventions", "level": 1, "q": "Who invented the telephone?", "options": ["Thomas Edison", "Alexander Graham Bell", "Guglielmo Marconi", "Nikola Tesla"], "answer": 1, "solution": "Alexander Graham Bell is credited with inventing the telephone (patented 1876).<br><b>Memory hook:</b> A phone 'rings' like a Bell.", "source": "test-data" },
+    { "id": "g-scitech-003", "rev": 1, "topic": "g-scitech", "type": "space", "level": 1, "q": "Where is the headquarters of ISRO?", "options": ["Sriharikota", "Thiruvananthapuram", "Ahmedabad", "Bengaluru"], "answer": 3, "solution": "ISRO is headquartered in Bengaluru. Sriharikota is the launch site; Thiruvananthapuram hosts the Vikram Sarabhai Space Centre.<br><b>Memory hook:</b> Bengaluru — India's tech capital — runs the space agency.", "source": "test-data" },
+    { "id": "g-scitech-004", "rev": 1, "topic": "g-scitech", "type": "defence-nuclear", "level": 2, "q": "India's first nuclear test in 1974 at Pokhran was code-named:", "options": ["Operation Shakti", "Smiling Buddha", "Operation Vijay", "Operation Meghdoot"], "answer": 1, "solution": "The 1974 test was 'Smiling Buddha'. The 1998 tests (Pokhran-II) were 'Operation Shakti'.<br><b>Memory hook:</b> First test was peaceful in name — the Buddha smiled.", "source": "test-data" },
+    { "id": "g-scitech-005", "rev": 1, "topic": "g-scitech", "type": "defence-nuclear", "level": 2, "q": "BrahMos, jointly developed by India and Russia, is a:", "options": ["Supersonic cruise missile", "Anti-tank guided missile", "Intercontinental ballistic missile", "Surface-to-air missile"], "answer": 0, "solution": "BrahMos is a supersonic cruise missile; its name joins the Brahmaputra and Moskva rivers.<br><b>Memory hook:</b> Brahma(putra) + Mos(kva) = two rivers, two countries.", "source": "test-data" },
+    { "id": "g-scitech-006", "rev": 1, "topic": "g-scitech", "type": "inventions", "level": 2, "q": "What does 'LASER' stand for?", "options": ["Light Amplified by Single Energy Radiation", "Light Amplification by Stimulated Emission of Radiation", "Low Amplitude Stimulated Energy Ray", "Light Absorption by Stimulated Electron Resonance"], "answer": 1, "solution": "LASER = Light Amplification by Stimulated Emission of Radiation.<br><b>Memory hook:</b> L-A-S-E-R: Light, Amplification, Stimulated, Emission, Radiation.", "source": "test-data" },
+    { "id": "g-scitech-007", "rev": 1, "topic": "g-scitech", "type": "space", "level": 3, "q": "With the Mars Orbiter Mission (Mangalyaan), India became:", "options": ["The first country to land a rover on Mars", "The first Asian nation to reach Mars orbit, and the first country to do so on its first attempt", "The second country after the USA to reach Mars", "The first country to bring back samples from Mars"], "answer": 1, "solution": "Mangalyaan, launched by PSLV in November 2013, entered Mars orbit in September 2014. India was the first Asian nation to reach Mars orbit and the first to succeed in its maiden attempt.<br><b>Memory hook:</b> 'Mangal' on the first try — 2013 launch, 2014 arrival.", "source": "test-data" },
+    { "id": "g-scitech-008", "rev": 1, "topic": "g-scitech", "type": "space", "level": 3, "q": "Satellites in geostationary orbit appear fixed over one point because:", "img": "ga/scitech-orbits.svg", "options": ["They do not move at all", "They orbit at about 2,000 km above the poles", "They orbit above the equator with a period of one day, at about 35,786 km", "They are tied to Earth's magnetic field"], "answer": 2, "solution": "A geostationary satellite circles above the equator at about 35,786 km with a period equal to Earth's rotation (one day), so it seems to stay still. This is ideal for communication and weather satellites.<br><b>Memory hook:</b> Geo-STATIONARY = moves with Earth, so it looks 'stationary'.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-scitech-1", "front": "India's first satellite (1975)", "back": "Aryabhata", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-2", "front": "Chandrayaan-3 landing date (National Space Day)", "back": "23 August 2023", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-3", "front": "Father of India's nuclear programme", "back": "Homi J. Bhabha", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-4", "front": "Main Indian launch site", "back": "Satish Dhawan Space Centre, Sriharikota (Andhra Pradesh)", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-5", "front": "Nag missile type", "back": "Anti-tank guided missile", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-6", "front": "Inventor of the World Wide Web", "back": "Tim Berners-Lee", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-7", "front": "RADAR full form", "back": "Radio Detection And Ranging", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-8", "front": "Discoverer of X-rays", "back": "Wilhelm Röntgen", "deck": "ga-facts" },
+    { "id": "fc-g-scitech-9", "front": "DRDO formed in", "back": "1958", "deck": "ga-facts" }
+  ]
+}

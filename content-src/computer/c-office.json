@@ -1,0 +1,264 @@
+{
+ "topic": "c-office",
+ "notes": {
+  "summary": "MS Office (Word, Excel, PowerPoint) gives 4–6 questions in Tier 2. Most are keyboard shortcuts (standard Windows ones), Excel functions and cell references, file extensions, and PowerPoint slide-show keys.",
+  "concepts": [
+   {
+    "title": "Common shortcuts (Windows)",
+    "body": "<table><tr><th>Keys</th><th>Action</th></tr><tr><td>Ctrl+C / Ctrl+X / Ctrl+V</td><td>Copy / Cut / Paste</td></tr><tr><td>Ctrl+Z / Ctrl+Y</td><td>Undo / Redo</td></tr><tr><td>Ctrl+B / Ctrl+I / Ctrl+U</td><td>Bold / Italic / Underline</td></tr><tr><td>Ctrl+S / Ctrl+O / Ctrl+N / Ctrl+P</td><td>Save / Open / New / Print</td></tr><tr><td>Ctrl+F / Ctrl+H</td><td>Find / Replace</td></tr><tr><td>Ctrl+A</td><td>Select all</td></tr><tr><td>Ctrl+K</td><td>Insert hyperlink</td></tr><tr><td>F12</td><td>Save As</td></tr></table>"
+   },
+   {
+    "title": "MS Word",
+    "body": "<ul><li>Alignment: <b>Ctrl+L</b> left, <b>Ctrl+E</b> centre, <b>Ctrl+R</b> right, <b>Ctrl+J</b> justify.</li><li><b>Ctrl+Enter</b> page break; <b>F7</b> spelling and grammar; <b>Shift+F3</b> change case; <b>Ctrl+]</b> / <b>Ctrl+[</b> increase / decrease font size by 1 point.</li><li>Default extension: <b>.docx</b> (older .doc); templates <b>.dotx</b>.</li></ul>"
+   },
+   {
+    "title": "MS Excel",
+    "body": "<ul><li>A cell address is column letter + row number (e.g. B3). A range is written A1:A10.</li><li>References: <b>A1</b> relative, <b>$A$1</b> absolute, <b>$A1</b> / <b>A$1</b> mixed. <b>F4</b> cycles through them.</li><li><b>F2</b> edit cell; <b>Ctrl+;</b> current date; <b>Ctrl+Shift+;</b> current time; <b>Alt+=</b> AutoSum; <b>Shift+F11</b> new worksheet.</li><li>COUNT counts numbers only; COUNTA counts all non-empty cells; COUNTBLANK counts empty cells.</li><li>Every formula starts with <b>=</b>. Extension <b>.xlsx</b>.</li></ul>"
+   },
+   {
+    "title": "MS PowerPoint",
+    "body": "<ul><li><b>F5</b> starts the slide show from the first slide; <b>Shift+F5</b> from the current slide; <b>Esc</b> ends it.</li><li><b>Ctrl+M</b> inserts a new slide.</li><li>Views: Normal, Slide Sorter, Reading, Slide Show, Outline.</li><li>Extension <b>.pptx</b>; show file <b>.ppsx</b>.</li></ul>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "word",
+    "name": "MS Word shortcuts and features",
+    "how": "Learn the alignment set (L, E, R, J) and the formatting set (B, I, U) as groups.",
+    "example": {
+     "q": "Which shortcut right-aligns a paragraph in MS Word?",
+     "steps": [
+      "Alignment keys: L = left, E = centre, R = right, J = justify.",
+      "Right → Ctrl+R."
+     ],
+     "answer": "Ctrl+R"
+    }
+   },
+   {
+    "type": "excel",
+    "name": "Excel functions, references and keys",
+    "how": "Read the function name carefully (COUNT vs COUNTA) and check which cells are numbers, text or blank.",
+    "example": {
+     "q": "Cells A1:A4 contain 5, 10, 15 and 20. What does =AVERAGE(A1:A4) return?",
+     "steps": [
+      "Sum = 5 + 10 + 15 + 20 = 50",
+      "Count = 4",
+      "50 ÷ 4 = 12.5"
+     ],
+     "answer": "12.5"
+    }
+   },
+   {
+    "type": "powerpoint",
+    "name": "PowerPoint keys and views",
+    "how": "F5 = from beginning, Shift+F5 = from current slide, Ctrl+M = new slide.",
+    "example": {
+     "q": "Which key ends a running slide show?",
+     "steps": [
+      "Esc leaves the slide show and returns to the previous view."
+     ],
+     "answer": "Esc"
+    }
+   }
+  ],
+  "tips": [
+   "Ctrl+E is centre in Word; in Excel 2013+ it is Flash Fill.",
+   "Ctrl+H opens Replace in Word and Excel.",
+   "In Excel, ##### in a cell means the column is too narrow for the number."
+  ],
+  "traps": [
+   "Ctrl+Y is Redo, not Undo.",
+   "Ctrl+; inserts the date; Ctrl+Shift+; inserts the time.",
+   "F5 in Word opens Go To, but F5 in PowerPoint starts the slide show.",
+   "COUNT ignores text; COUNTA counts text too."
+  ]
+ },
+ "questions": [
+  {
+   "id": "c-office-001",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "word",
+   "level": 1,
+   "q": "Which keyboard shortcut makes selected text bold in MS Word?",
+   "options": [
+    "Ctrl+D",
+    "Ctrl+B",
+    "Ctrl+T",
+    "Ctrl+G"
+   ],
+   "answer": 1,
+   "solution": "Ctrl+B = Bold, Ctrl+I = Italic, Ctrl+U = Underline.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-office-002",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "word",
+   "level": 1,
+   "q": "The shortcut Ctrl+Z is used to:",
+   "options": [
+    "Undo the last action",
+    "Zoom in",
+    "Close the document",
+    "Redo the last action"
+   ],
+   "answer": 0,
+   "solution": "Ctrl+Z undoes the last action. Ctrl+Y redoes it.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-office-003",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "powerpoint",
+   "level": 1,
+   "q": "In MS PowerPoint, which key starts the slide show from the first slide?",
+   "options": [
+    "F7",
+    "F2",
+    "F12",
+    "F5"
+   ],
+   "answer": 3,
+   "solution": "F5 starts the slide show from the beginning. Shift+F5 starts from the current slide.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-office-004",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "excel",
+   "level": 2,
+   "q": "In MS Excel, the reference $A$1 is a(n):",
+   "options": [
+    "Relative reference",
+    "Mixed reference",
+    "Absolute reference",
+    "Circular reference"
+   ],
+   "answer": 2,
+   "solution": "The $ sign before both the column (A) and the row (1) locks both, so $A$1 is an absolute reference. It does not change when the formula is copied.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-office-005",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "word",
+   "level": 2,
+   "q": "In MS Word, Ctrl+J is used to:",
+   "options": [
+    "Jump to a page",
+    "Justify the paragraph",
+    "Insert a hyperlink",
+    "Centre the paragraph"
+   ],
+   "answer": 1,
+   "solution": "Ctrl+J aligns text to both left and right margins (justify). Ctrl+E is centre and Ctrl+K inserts a hyperlink.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-office-006",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "excel",
+   "level": 2,
+   "q": "Which shortcut inserts the current date in an Excel cell?",
+   "options": [
+    "Ctrl+;",
+    "Ctrl+D",
+    "Alt+=",
+    "Ctrl+Shift+;"
+   ],
+   "answer": 0,
+   "solution": "Ctrl+; (semicolon) enters today's date. Ctrl+Shift+; enters the current time, Ctrl+D fills down and Alt+= is AutoSum.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-office-007",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "excel",
+   "level": 3,
+   "q": "In Excel, A1 = 10, A2 = 20, A3 = \"abc\", A4 is blank and A5 = 30. What does =COUNTA(A1:A5) return?",
+   "options": [
+    "60",
+    "3",
+    "5",
+    "4"
+   ],
+   "answer": 3,
+   "solution": "COUNTA counts every non-empty cell: A1, A2, A3 (text) and A5 = 4 cells. (=COUNT would give 3 because it counts numbers only.)",
+   "source": "test-data"
+  },
+  {
+   "id": "c-office-008",
+   "rev": 1,
+   "topic": "c-office",
+   "type": "powerpoint",
+   "level": 3,
+   "q": "Which shortcut starts a PowerPoint slide show from the current slide?",
+   "options": [
+    "Ctrl+F5",
+    "Alt+F5",
+    "Shift+F5",
+    "F5"
+   ],
+   "answer": 2,
+   "solution": "Shift+F5 starts the show from the slide you are on. F5 alone starts from slide 1.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-coffice-1",
+   "front": "Ctrl+E / Ctrl+J / Ctrl+L / Ctrl+R in Word",
+   "back": "Centre / Justify / Left / Right align",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-coffice-2",
+   "front": "Ctrl+Enter in Word",
+   "back": "Insert a page break",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-coffice-3",
+   "front": "F7 in Word",
+   "back": "Spelling and grammar check",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-coffice-4",
+   "front": "F4 in an Excel formula",
+   "back": "Cycles a reference: A1 → $A$1 → A$1 → $A1",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-coffice-5",
+   "front": "Ctrl+; and Ctrl+Shift+; in Excel",
+   "back": "Current date; current time",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-coffice-6",
+   "front": "F5 vs Shift+F5 in PowerPoint",
+   "back": "From first slide vs from current slide",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-coffice-7",
+   "front": "Ctrl+M in PowerPoint",
+   "back": "Insert a new slide",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-coffice-8",
+   "front": "F12 in Office",
+   "back": "Save As",
+   "deck": "computer"
+  }
+ ]
+}

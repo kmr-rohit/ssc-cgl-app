@@ -1,0 +1,258 @@
+{
+ "topic": "c-fundamentals",
+ "notes": {
+  "summary": "This topic covers the basic parts of a computer (input, CPU, memory, output), the types of memory and their units, and number systems. Tier 2 asks 4–6 direct, one-line questions here, so learn the facts and the conversions.",
+  "concepts": [
+   {
+    "title": "Parts of a computer",
+    "body": "Every computer follows the <b>Input → Process → Output</b> cycle.<ul><li><b>CPU</b> (the \"brain\") has the <b>Control Unit</b> (directs all operations) and the <b>ALU</b> (does arithmetic and logic). <b>Registers</b> are tiny, very fast storage inside the CPU.</li><li><b>Input devices</b>: keyboard, mouse, scanner, light pen, joystick, microphone, OMR, MICR, barcode reader.</li><li><b>Output devices</b>: monitor, printer, plotter, speaker, projector.</li></ul>",
+    "img": "computer/cpu-block.svg"
+   },
+   {
+    "title": "Types of memory",
+    "body": "<ul><li><b>Primary memory</b>: RAM (volatile, read-write, loses data when power goes) and ROM (non-volatile, holds the BIOS/firmware). Types of ROM: PROM, EPROM (erased by UV light), EEPROM (erased electrically).</li><li><b>Cache</b>: very fast memory between CPU and RAM.</li><li><b>Secondary memory</b>: HDD, SSD, pen drive, CD/DVD; non-volatile and large.</li></ul>Speed order (fastest first): <b>Register &gt; Cache &gt; RAM &gt; SSD &gt; HDD</b>. Cost per byte follows the same order."
+   },
+   {
+    "title": "Memory units",
+    "body": "1 nibble = 4 bits; 1 byte = 8 bits.<br>1 KB = 1024 bytes; 1 MB = 1024 KB; 1 GB = 1024 MB; 1 TB = 1024 GB; 1 PB = 1024 TB.<br>So 1 KB = 2<sup>10</sup> bytes, 1 MB = 2<sup>20</sup>, 1 GB = 2<sup>30</sup>, 1 TB = 2<sup>40</sup> bytes."
+   },
+   {
+    "title": "Number systems",
+    "body": "<table><tr><th>System</th><th>Base</th><th>Digits</th></tr><tr><td>Binary</td><td>2</td><td>0, 1</td></tr><tr><td>Octal</td><td>8</td><td>0–7</td></tr><tr><td>Decimal</td><td>10</td><td>0–9</td></tr><tr><td>Hexadecimal</td><td>16</td><td>0–9, A–F (A = 10 … F = 15)</td></tr></table>To convert to decimal, multiply each digit by the place value (power of the base) and add."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "hardware",
+    "name": "Hardware and devices",
+    "how": "Know the CPU parts and classify each device as input, output or storage.",
+    "example": {
+     "q": "Which unit of the CPU performs addition and comparison?",
+     "steps": [
+      "Arithmetic (addition) and logic (comparison) are done by the Arithmetic Logic Unit.",
+      "The Control Unit only directs; it does not calculate."
+     ],
+     "answer": "ALU"
+    }
+   },
+   {
+    "type": "memory",
+    "name": "Memory types and units",
+    "how": "Remember volatile vs non-volatile, the speed order, and that each unit is 1024 times the previous one.",
+    "example": {
+     "q": "How many KB are there in 2 MB?",
+     "steps": [
+      "1 MB = 1024 KB",
+      "2 MB = 2 × 1024 = 2048 KB"
+     ],
+     "answer": "2048 KB"
+    }
+   },
+   {
+    "type": "number-systems",
+    "name": "Number system conversion",
+    "how": "Write place values (powers of the base) from the right, multiply by each digit and add.",
+    "example": {
+     "q": "Convert (1101)<sub>2</sub> to decimal.",
+     "steps": [
+      "Place values from right: 1, 2, 4, 8",
+      "1×8 + 1×4 + 0×2 + 1×1 = 13"
+     ],
+     "answer": "13"
+    }
+   }
+  ],
+  "tips": [
+   "For hex, remember A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.",
+   "Group binary digits in 3s for octal and in 4s for hexadecimal conversion.",
+   "BIOS is stored in ROM; the operating system is loaded into RAM during booting."
+  ],
+  "traps": [
+   "1 KB is 1024 bytes in computer memory questions, not 1000.",
+   "Plotter and speaker are output devices; light pen and joystick are input devices.",
+   "Cache is faster than RAM but registers are faster than cache."
+  ]
+ },
+ "questions": [
+  {
+   "id": "c-fundamentals-001",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "hardware",
+   "level": 1,
+   "q": "Which part of a computer is called its \"brain\"?",
+   "options": [
+    "Hard disk",
+    "RAM",
+    "Monitor",
+    "CPU"
+   ],
+   "answer": 3,
+   "solution": "The Central Processing Unit (CPU) controls and processes all instructions, so it is called the brain of the computer.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-fundamentals-002",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "memory",
+   "level": 1,
+   "q": "1 kilobyte (KB) is equal to:",
+   "options": [
+    "1000 bytes",
+    "1024 bits",
+    "1024 bytes",
+    "1000 bits"
+   ],
+   "answer": 2,
+   "solution": "1 KB = 2<sup>10</sup> bytes = 1024 bytes.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-fundamentals-003",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "memory",
+   "level": 1,
+   "q": "Which memory loses its contents when the power is switched off?",
+   "options": [
+    "Hard disk",
+    "RAM",
+    "EPROM",
+    "ROM"
+   ],
+   "answer": 1,
+   "solution": "RAM is volatile memory. ROM, EPROM and hard disk are non-volatile and keep data without power.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-fundamentals-004",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "hardware",
+   "level": 2,
+   "q": "Which of the following is NOT an input device?",
+   "options": [
+    "Plotter",
+    "Joystick",
+    "Scanner",
+    "Light pen"
+   ],
+   "answer": 0,
+   "solution": "A plotter draws large graphics on paper, so it is an output device. Scanner, light pen and joystick send data into the computer.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-fundamentals-005",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "memory",
+   "level": 2,
+   "q": "Which of these is the fastest memory?",
+   "options": [
+    "RAM",
+    "Solid state drive",
+    "Cache memory",
+    "CPU registers"
+   ],
+   "answer": 3,
+   "solution": "Speed order: Registers &gt; Cache &gt; RAM &gt; SSD. Registers are inside the CPU itself, so they are the fastest.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-fundamentals-006",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "number-systems",
+   "level": 2,
+   "q": "The binary number (1011)<sub>2</sub> is equal to which decimal number?",
+   "options": [
+    "10",
+    "9",
+    "11",
+    "13"
+   ],
+   "answer": 2,
+   "solution": "Place values from the right: 1, 2, 4, 8.<br>1×8 + 0×4 + 1×2 + 1×1 = 8 + 0 + 2 + 1 = 11.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-fundamentals-007",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "number-systems",
+   "level": 3,
+   "q": "The hexadecimal number (2F)<sub>16</sub> is equal to which decimal number?",
+   "options": [
+    "215",
+    "47",
+    "32",
+    "45"
+   ],
+   "answer": 1,
+   "solution": "F = 15. Place values: 16 and 1.<br>2×16 + 15×1 = 32 + 15 = 47.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-fundamentals-008",
+   "rev": 1,
+   "topic": "c-fundamentals",
+   "type": "memory",
+   "level": 3,
+   "q": "A memory of 4 GB is equal to how many MB?",
+   "options": [
+    "4096 MB",
+    "2048 MB",
+    "40960 MB",
+    "4000 MB"
+   ],
+   "answer": 0,
+   "solution": "1 GB = 1024 MB.<br>4 GB = 4 × 1024 = 4096 MB.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-cfund-1",
+   "front": "Two parts of the CPU",
+   "back": "Control Unit (CU) and Arithmetic Logic Unit (ALU), plus registers",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-cfund-2",
+   "front": "1 byte = ? bits; 1 nibble = ? bits",
+   "back": "8 bits; 4 bits",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-cfund-3",
+   "front": "1 TB in bytes (power of 2)",
+   "back": "2<sup>40</sup> bytes (1 TB = 1024 GB)",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-cfund-4",
+   "front": "Memory speed order",
+   "back": "Register > Cache > RAM > SSD > HDD",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-cfund-5",
+   "front": "EPROM is erased by…",
+   "back": "Ultraviolet (UV) light. EEPROM is erased electrically.",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-cfund-6",
+   "front": "Where is the BIOS stored?",
+   "back": "In ROM (firmware)",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-cfund-7",
+   "front": "Hexadecimal digit F = ?",
+   "back": "15 (A = 10 … F = 15)",
+   "deck": "computer"
+  }
+ ]
+}

@@ -1,0 +1,193 @@
+{
+ "topic": "r-math-ops",
+ "notes": {
+  "summary": "These questions replace signs with other symbols, ask which two signs to <b>interchange</b>, or hide a number in a pattern. Always apply <b>BODMAS</b> after substituting.",
+  "concepts": [
+   {
+    "title": "BODMAS",
+    "body": "Order: Brackets, Of, Division, Multiplication, Addition, Subtraction. Do ÷ and × (left to right) before + and −."
+   },
+   {
+    "title": "Symbol substitution",
+    "body": "Rewrite the whole expression with the real signs <b>first</b>, then solve with BODMAS."
+   },
+   {
+    "title": "Missing number",
+    "body": "Find a rule that works for every complete row or pair (sum of squares, product, a × b + c), then apply it to the incomplete one."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "symbol-substitution",
+    "name": "Symbol substitution",
+    "how": "Replace each symbol with its meaning, then use BODMAS.",
+    "example": {
+     "q": "If + means ×, × means +, find 4 + 3 × 2.",
+     "steps": [
+      "Rewrite: 4 × 3 + 2",
+      "12 + 2 = 14"
+     ],
+     "answer": "14"
+    }
+   },
+   {
+    "type": "interchange-signs",
+    "name": "Interchange of signs",
+    "how": "Swap the two signs in the given expression for each option and solve; the correct one equals the right side.",
+    "example": {
+     "q": "Which swap makes 16 + 4 × 3 − 6 ÷ 2 = 11 true?",
+     "steps": [
+      "Swap − and ×: 16 + 4 − 3 × 6 ÷ 2",
+      "= 16 + 4 − 9 = 11 ✓"
+     ],
+     "answer": "− and ×"
+    }
+   },
+   {
+    "type": "missing-number",
+    "name": "Missing number",
+    "how": "Test sum, product, squares on the complete rows.",
+    "example": {
+     "q": "3 * 4 = 25, 5 * 12 = 169, 6 * 8 = ?",
+     "steps": [
+      "3² + 4² = 25; 5² + 12² = 169",
+      "6² + 8² = 36 + 64"
+     ],
+     "answer": "100"
+    }
+   }
+  ],
+  "tips": [
+   "Rewrite the expression on paper before solving; most mistakes come from mixing old and new signs.",
+   "In interchange questions, use the options: only 4 swaps to test."
+  ],
+  "traps": [
+   "Do not solve left to right ignoring BODMAS.",
+   "A rule must work for every given row, not just one."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-math-ops-001",
+   "rev": 1,
+   "topic": "r-math-ops",
+   "type": "symbol-substitution",
+   "level": 1,
+   "q": "If '+' means '×', '−' means '+', '×' means '÷' and '÷' means '−', then find the value of:<br>8 + 2 − 6 × 3 ÷ 1",
+   "options": [
+    "15",
+    "17",
+    "19",
+    "21"
+   ],
+   "answer": 1,
+   "solution": "Rewrite with real signs: 8 × 2 + 6 ÷ 3 − 1.<br>8 × 2 = 16; 6 ÷ 3 = 2.<br>16 + 2 − 1 = 17.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-math-ops-002",
+   "rev": 1,
+   "topic": "r-math-ops",
+   "type": "missing-number",
+   "level": 1,
+   "q": "If 3 * 4 = 25 and 5 * 12 = 169, then 6 * 8 = ?",
+   "options": [
+    "64",
+    "96",
+    "48",
+    "100"
+   ],
+   "answer": 3,
+   "solution": "Rule: a * b = a² + b².<br>3² + 4² = 9 + 16 = 25 ✓; 5² + 12² = 25 + 144 = 169 ✓.<br>6² + 8² = 36 + 64 = 100.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-math-ops-003",
+   "rev": 1,
+   "topic": "r-math-ops",
+   "type": "interchange-signs",
+   "level": 2,
+   "q": "Which two signs should be interchanged to make the following equation correct?<br>16 + 4 × 3 − 6 ÷ 2 = 11",
+   "options": [
+    "+ and ÷",
+    "− and ×",
+    "+ and −",
+    "÷ and ×"
+   ],
+   "answer": 1,
+   "solution": "Swap − and ×: 16 + 4 − 3 × 6 ÷ 2.<br>3 × 6 ÷ 2 = 9.<br>16 + 4 − 9 = 11 ✓.<br>(Other swaps give 8, 7 and about 5.33.)",
+   "source": "test-data"
+  },
+  {
+   "id": "r-math-ops-004",
+   "rev": 1,
+   "topic": "r-math-ops",
+   "type": "missing-number",
+   "level": 2,
+   "q": "Select the number that can replace the question mark (?) in the following table.<table><tbody><tr><td>4</td><td>5</td><td>41</td></tr><tr><td>6</td><td>2</td><td>40</td></tr><tr><td>3</td><td>7</td><td>?</td></tr></tbody></table>",
+   "options": [
+    "58",
+    "52",
+    "49",
+    "60"
+   ],
+   "answer": 0,
+   "solution": "Rule: third = (first)² + (second)².<br>Row 1: 16 + 25 = 41 ✓. Row 2: 36 + 4 = 40 ✓.<br>Row 3: 9 + 49 = 58.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-math-ops-005",
+   "rev": 1,
+   "topic": "r-math-ops",
+   "type": "symbol-substitution",
+   "level": 3,
+   "q": "If A $ B means A + B, A # B means A − B and A @ B means A × B, then what is the value of:<br>12 @ 3 # 18 $ 4",
+   "options": [
+    "14",
+    "26",
+    "22",
+    "30"
+   ],
+   "answer": 2,
+   "solution": "Rewrite: 12 × 3 − 18 + 4.<br>12 × 3 = 36.<br>36 − 18 + 4 = 22.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-math-ops-006",
+   "rev": 1,
+   "topic": "r-math-ops",
+   "type": "interchange-signs",
+   "level": 3,
+   "q": "Which two signs should be interchanged to make the following equation correct?<br>18 ÷ 3 − 4 × 2 + 5 = 9",
+   "options": [
+    "+ and −",
+    "− and ×",
+    "+ and ÷",
+    "÷ and ×"
+   ],
+   "answer": 0,
+   "solution": "Swap + and −: 18 ÷ 3 + 4 × 2 − 5.<br>18 ÷ 3 = 6; 4 × 2 = 8.<br>6 + 8 − 5 = 9 ✓.<br>(Other swaps give 27, 19.4 and 57.)",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-math-ops-1",
+   "front": "BODMAS order",
+   "back": "Brackets, Of, Division, Multiplication, Addition, Subtraction",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-math-ops-2",
+   "front": "Symbol questions: first step",
+   "back": "Rewrite the full expression with real signs, then solve.",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-math-ops-3",
+   "front": "Missing number in a table",
+   "back": "Find one rule that fits every full row (try a² + b², a × b, a + b + c).",
+   "deck": "reasoning"
+  }
+ ]
+}

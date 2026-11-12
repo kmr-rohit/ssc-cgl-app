@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" width="300" height="220" font-family="sans-serif" font-size="13">
+  <polygon points="120,30 30,190 270,190" fill="none" stroke="#000" stroke-width="1.5"/>
+  <line x1="120" y1="30" x2="126" y2="190" stroke="#000" stroke-width="1.5"/>
+  <text x="115" y="22">A</text><text x="16" y="204">B</text><text x="274" y="204">C</text><text x="121" y="206">D</text>
+  <text x="58" y="106">6</text><text x="200" y="106">9</text>
+  <text x="72" y="184">?</text><text x="150" y="216">BC = 10</text>
+</svg>

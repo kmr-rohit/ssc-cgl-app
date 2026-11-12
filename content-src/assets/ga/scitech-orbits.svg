@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" font-family="Arial, Helvetica, sans-serif" font-size="13">
+  <rect width="560" height="340" fill="#ffffff"/>
+  <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">Satellite orbits (not to scale)</text>
+  <circle cx="200" cy="185" r="140" fill="none" stroke="#8e44ad" stroke-width="2" stroke-dasharray="7 5"/>
+  <circle cx="200" cy="185" r="70" fill="none" stroke="#e67e22" stroke-width="2" stroke-dasharray="5 4"/>
+  <circle cx="200" cy="185" r="45" fill="#4a90d9"/>
+  <text x="200" y="190" text-anchor="middle" fill="#ffffff" font-weight="bold">Earth</text>
+  <circle cx="270" cy="185" r="6" fill="#e67e22"/>
+  <circle cx="340" cy="185" r="6" fill="#8e44ad"/>
+  <g font-size="12">
+    <text x="360" y="80" fill="#e67e22" font-weight="bold">Low Earth Orbit (LEO)</text>
+    <text x="360" y="97" fill="#333">up to about 2,000 km</text>
+    <text x="360" y="114" fill="#333">e.g. ISS, remote-sensing satellites</text>
+    <text x="360" y="200" fill="#8e44ad" font-weight="bold">Geostationary orbit (GEO)</text>
+    <text x="360" y="217" fill="#333">about 35,786 km above equator</text>
+    <text x="360" y="234" fill="#333">period = one day, looks fixed</text>
+    <text x="360" y="251" fill="#333">e.g. communication satellites</text>
+  </g>
+</svg>

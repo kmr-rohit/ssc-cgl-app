@@ -1,0 +1,52 @@
+{
+  "topic": "e-synonyms",
+  "notes": {
+    "summary": "A <b>synonym</b> is a word with the same or nearly the same meaning. SSC gives a word (alone or in a sentence) and asks for its synonym. Regular reading plus daily flashcards is the only reliable preparation; roots and elimination help on the day.",
+    "concepts": [
+      { "title": "Same meaning, same part of speech", "body": "The answer must match the given word's <b>part of speech</b>. If the word is an adjective (<i>candid</i>), the synonym is an adjective (<i>frank</i>), not a noun (<i>frankness</i>)." },
+      { "title": "Use roots and prefixes", "body": "<ul><li><b>bene-</b> = good (<i>benevolent</i> = kind)</li><li><b>mal-</b> = bad (<i>malicious</i> = spiteful)</li><li><b>loqu-</b> = speak (<i>loquacious</i> = talkative)</li><li><b>-cide</b> = kill; <b>omni-</b> = all; <b>chron-</b> = time</li></ul>" },
+      { "title": "Context sentences", "body": "When the word is in a sentence, the meaning in <b>that</b> sentence counts. <i>The <u>novel</u> idea impressed everyone</i> → novel = new, not 'book'." }
+    ],
+    "varieties": [
+      { "type": "direct", "name": "Direct word", "how": "Recall the meaning; if unsure, use roots and eliminate options with the opposite sense.", "example": { "q": "Synonym of <b>BENEVOLENT</b>", "steps": ["<i>bene</i> = good, <i>vol</i> = wish.", "Wishing good → kind."], "answer": "Kind" } },
+      { "type": "in-sentence", "name": "Word in a sentence", "how": "Read the sentence, decide the meaning used there, then match.", "example": { "q": "The old man's <b>frugal</b> habits helped him save a fortune.", "steps": ["Saving a fortune suggests careful spending.", "Frugal = thrifty."], "answer": "Thrifty" } }
+    ],
+    "tips": [
+      "Eliminate any option that is an antonym; SSC often places the antonym as a trap.",
+      "Learn words in pairs (word + synonym) from flashcards daily.",
+      "Check part of speech before choosing."
+    ],
+    "traps": [
+      "Words that look or sound similar: <i>eminent</i> (famous) vs <i>imminent</i> (about to happen).",
+      "A word with a related but different meaning: <i>stingy</i> is not a synonym of <i>frugal</i> in a positive context."
+    ]
+  },
+  "questions": [
+    { "id": "e-synonyms-001", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 1, "q": "Select the most appropriate synonym of the given word.<br><b>Candid</b>", "options": ["Frank", "Secretive", "Cruel", "Timid"], "answer": 0, "solution": "<b>Candid</b> means honest and straightforward = <b>Frank</b>. <i>Secretive</i> is close to its opposite.", "source": "test-data" },
+    { "id": "e-synonyms-002", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 1, "q": "Select the most appropriate synonym of the given word.<br><b>Abundant</b>", "options": ["Scarce", "Plentiful", "Empty", "Narrow"], "answer": 1, "solution": "<b>Abundant</b> = existing in large quantities = <b>Plentiful</b>. <i>Scarce</i> is the antonym.", "source": "test-data" },
+    { "id": "e-synonyms-003", "rev": 1, "topic": "e-synonyms", "type": "in-sentence", "level": 2, "q": "Select the most appropriate synonym of the bold word.<br>Her <b>meticulous</b> notes made it easy for the team to repeat the experiment.", "options": ["Careless", "Hasty", "Painstaking", "Brief"], "answer": 2, "solution": "Notes that let others repeat an experiment must be very detailed and careful. <b>Meticulous</b> = <b>Painstaking</b>.", "source": "test-data" },
+    { "id": "e-synonyms-004", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 2, "q": "Select the most appropriate synonym of the given word.<br><b>Loquacious</b>", "options": ["Reserved", "Talkative", "Angry", "Clever"], "answer": 1, "solution": "Root <i>loqu</i> = speak. <b>Loquacious</b> = fond of talking = <b>Talkative</b>.", "source": "test-data" },
+    { "id": "e-synonyms-005", "rev": 1, "topic": "e-synonyms", "type": "in-sentence", "level": 3, "q": "Select the most appropriate synonym of the bold word.<br>The committee's decision was <b>arbitrary</b>; no one could explain the reasons behind it.", "options": ["Unanimous", "Capricious", "Judicious", "Lawful"], "answer": 1, "solution": "A decision without explainable reasons is based on whim. <b>Arbitrary</b> = <b>Capricious</b>. <i>Judicious</i> (wise, well judged) is nearly the opposite.", "source": "test-data" },
+    { "id": "e-synonyms-006", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 3, "q": "Select the most appropriate synonym of the given word.<br><b>Ephemeral</b>", "options": ["Eternal", "Transient", "Ethereal", "Essential"], "answer": 1, "solution": "<b>Ephemeral</b> = lasting a very short time = <b>Transient</b>. <i>Ethereal</i> (delicate, heavenly) is a look-alike trap; <i>Eternal</i> is the antonym.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-syn-01", "front": "Candid", "back": "Frank, honest", "deck": "vocab" },
+    { "id": "fc-e-syn-02", "front": "Abundant", "back": "Plentiful, ample", "deck": "vocab" },
+    { "id": "fc-e-syn-03", "front": "Meticulous", "back": "Painstaking, very careful", "deck": "vocab" },
+    { "id": "fc-e-syn-04", "front": "Loquacious", "back": "Talkative, garrulous", "deck": "vocab" },
+    { "id": "fc-e-syn-05", "front": "Arbitrary", "back": "Capricious, random, based on whim", "deck": "vocab" },
+    { "id": "fc-e-syn-06", "front": "Ephemeral", "back": "Transient, short-lived", "deck": "vocab" },
+    { "id": "fc-e-syn-07", "front": "Benevolent", "back": "Kind, generous", "deck": "vocab" },
+    { "id": "fc-e-syn-08", "front": "Frugal", "back": "Thrifty, economical", "deck": "vocab" },
+    { "id": "fc-e-syn-09", "front": "Obstinate", "back": "Stubborn, headstrong", "deck": "vocab" },
+    { "id": "fc-e-syn-10", "front": "Diligent", "back": "Hard-working, industrious", "deck": "vocab" },
+    { "id": "fc-e-syn-11", "front": "Lethargic", "back": "Sluggish, lazy, inactive", "deck": "vocab" },
+    { "id": "fc-e-syn-12", "front": "Audacious", "back": "Bold, daring", "deck": "vocab" },
+    { "id": "fc-e-syn-13", "front": "Feeble", "back": "Weak, frail", "deck": "vocab" },
+    { "id": "fc-e-syn-14", "front": "Vindicate", "back": "Clear of blame, justify", "deck": "vocab" },
+    { "id": "fc-e-syn-15", "front": "Pristine", "back": "Spotless, unspoiled, in original condition", "deck": "vocab" },
+    { "id": "fc-e-syn-16", "front": "Lucid", "back": "Clear, easy to understand", "deck": "vocab" },
+    { "id": "fc-e-syn-17", "front": "Placid", "back": "Calm, peaceful", "deck": "vocab" },
+    { "id": "fc-e-syn-18", "front": "Ostentatious", "back": "Showy, pretentious", "deck": "vocab" }
+  ]
+}

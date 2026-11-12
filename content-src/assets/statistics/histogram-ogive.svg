@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" width="360" height="230" font-family="sans-serif" font-size="11">
+  <line x1="40" y1="190" x2="340" y2="190" stroke="#333"/>
+  <line x1="40" y1="190" x2="40" y2="15" stroke="#333"/>
+  <g fill="#bfdbfe" stroke="#1e3a8a">
+    <rect x="40" y="165" width="50" height="25"/>
+    <rect x="90" y="150" width="50" height="40"/>
+    <rect x="140" y="130" width="50" height="60"/>
+    <rect x="190" y="140" width="50" height="50"/>
+    <rect x="240" y="165" width="50" height="25"/>
+  </g>
+  <polyline points="40,190 90,168 140,133 190,81 240,37 290,15" fill="none" stroke="#c2410c" stroke-width="2"/>
+  <g fill="#c2410c"><circle cx="40" cy="190" r="3"/><circle cx="90" cy="168" r="3"/><circle cx="140" cy="133" r="3"/><circle cx="190" cy="81" r="3"/><circle cx="240" cy="37" r="3"/><circle cx="290" cy="15" r="3"/></g>
+  <g text-anchor="middle"><text x="40" y="205">0</text><text x="90" y="205">10</text><text x="140" y="205">20</text><text x="190" y="205">30</text><text x="240" y="205">40</text><text x="290" y="205">50</text></g>
+  <text x="190" y="224" text-anchor="middle">Class boundaries</text>
+  <text x="60" y="60" fill="#c2410c">Less-than ogive (cf)</text>
+  <text x="245" y="120" fill="#1e3a8a" font-size="10">Histogram (f)</text>
+</svg>

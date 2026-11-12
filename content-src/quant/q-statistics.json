@@ -1,0 +1,202 @@
+{
+ "topic": "q-statistics",
+ "notes": {
+  "summary": "Statistics in Quant covers mean, median, mode and range for small data sets. 0–1 questions in Tier 1, 1–2 in Tier 2.",
+  "concepts": [
+   {
+    "title": "Mean",
+    "body": "Mean = sum of observations / number of observations. For a frequency table, mean = Σfx / Σf."
+   },
+   {
+    "title": "Median and mode",
+    "body": "<b>Median</b>: arrange in order; middle value (odd n) or average of the two middle values (even n). <b>Mode</b>: the value that occurs most often."
+   },
+   {
+    "title": "Empirical relation",
+    "body": "For a moderately skewed distribution: <b>Mode = 3 Median − 2 Mean</b>."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "mean",
+    "name": "Mean and corrected mean",
+    "how": "Work with the total; fix wrong entries by subtracting the wrong value and adding the right one.",
+    "example": {
+     "q": "Mean of 2, 4, 6, 8?",
+     "steps": [
+      "Sum = 20",
+      "20/4 = 5"
+     ],
+     "answer": "5"
+    }
+   },
+   {
+    "type": "median-mode",
+    "name": "Median and mode",
+    "how": "Sort the data first; count frequencies for mode.",
+    "example": {
+     "q": "Median of 9, 2, 7, 4, 5?",
+     "steps": [
+      "Sorted: 2, 4, 5, 7, 9",
+      "Middle value"
+     ],
+     "answer": "5"
+    }
+   },
+   {
+    "type": "empirical",
+    "name": "Mean–median–mode relation",
+    "how": "Use Mode = 3 Median − 2 Mean.",
+    "example": {
+     "q": "Mean 20, median 22. Mode?",
+     "steps": [
+      "3 × 22 − 2 × 20 = 66 − 40"
+     ],
+     "answer": "26"
+    }
+   }
+  ],
+  "tips": [
+   "Always sort before finding the median.",
+   "For a frequency table, multiply each value by its frequency before adding."
+  ],
+  "traps": [
+   "For an even count, the median is the average of the two middle values.",
+   "Mode = 3 Median − 2 Mean, not 3 Mean − 2 Median."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Mean (frequency)",
+   "expr": "Σfx / Σf"
+  },
+  {
+   "name": "Empirical relation",
+   "expr": "Mode = 3 Median − 2 Mean"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-statistics-001",
+   "rev": 1,
+   "topic": "q-statistics",
+   "type": "mean",
+   "level": 1,
+   "q": "What is the mean of 4, 8, 12, 16 and 20?",
+   "options": [
+    "10",
+    "12",
+    "14",
+    "16"
+   ],
+   "answer": 1,
+   "solution": "Sum = 4 + 8 + 12 + 16 + 20 = 60.<br>Mean = 60/5 = 12.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-statistics-002",
+   "rev": 1,
+   "topic": "q-statistics",
+   "type": "median-mode",
+   "level": 1,
+   "q": "What is the median of 7, 3, 9, 5, 11, 2?",
+   "options": [
+    "5",
+    "7",
+    "6",
+    "6.5"
+   ],
+   "answer": 2,
+   "solution": "Sorted: 2, 3, 5, 7, 9, 11 (6 values).<br>Median = (5 + 7)/2 = 6.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-statistics-003",
+   "rev": 1,
+   "topic": "q-statistics",
+   "type": "median-mode",
+   "level": 2,
+   "q": "Find the mode of the data: 2, 3, 3, 5, 7, 7, 7, 8, 9.",
+   "options": [
+    "3",
+    "5",
+    "8",
+    "7"
+   ],
+   "answer": 3,
+   "solution": "3 occurs twice, 7 occurs three times, the rest once.<br>Mode = 7.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-statistics-004",
+   "rev": 1,
+   "topic": "q-statistics",
+   "type": "mean",
+   "level": 2,
+   "q": "The mean of 10 observations is 20. Later it was found that one observation, 25, was wrongly copied as 52. What is the correct mean?",
+   "options": [
+    "17.3",
+    "22.7",
+    "19.7",
+    "20.3"
+   ],
+   "answer": 0,
+   "solution": "Wrong total = 10 × 20 = 200.<br>Correct total = 200 − 52 + 25 = 173.<br>Correct mean = 173/10 = 17.3.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-statistics-005",
+   "rev": 1,
+   "topic": "q-statistics",
+   "type": "empirical",
+   "level": 3,
+   "q": "For a moderately skewed distribution, the mean is 30 and the median is 28. What is the mode (approximately)?",
+   "options": [
+    "26",
+    "32",
+    "24",
+    "34"
+   ],
+   "answer": 2,
+   "solution": "Mode = 3 Median − 2 Mean.<br>= 3 × 28 − 2 × 30 = 84 − 60 = 24.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-statistics-006",
+   "rev": 1,
+   "topic": "q-statistics",
+   "type": "mean",
+   "level": 3,
+   "q": "Find the mean of the following data — values (x): 10, 20, 30, 40; frequencies (f): 3, 5, 8, 4.",
+   "options": [
+    "25",
+    "26.5",
+    "27",
+    "28.5"
+   ],
+   "answer": 1,
+   "solution": "Σf = 3 + 5 + 8 + 4 = 20.<br>Σfx = 30 + 100 + 240 + 160 = 530.<br>Mean = 530/20 = 26.5.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stat-1",
+   "front": "Empirical relation",
+   "back": "Mode = 3 Median − 2 Mean",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stat-2",
+   "front": "Median for even n",
+   "back": "Average of the two middle values",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stat-3",
+   "front": "Mean of a frequency table",
+   "back": "Σfx / Σf",
+   "deck": "formulas"
+  }
+ ]
+}

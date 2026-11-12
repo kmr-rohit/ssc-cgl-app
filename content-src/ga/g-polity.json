@@ -1,0 +1,75 @@
+{
+  "topic": "g-polity",
+  "notes": {
+    "summary": "Polity gives about <b>2–3 questions</b>. Focus on the making of the Constitution, important Articles, sources of borrowed features, key amendments, and the President, Parliament and constitutional bodies.",
+    "concepts": [
+      {
+        "title": "Making of the Constitution",
+        "body": "<ul><li>Constituent Assembly first met on <b>9 December 1946</b>; <b>Dr. Rajendra Prasad</b> was its permanent President.</li><li><b>Dr. B.R. Ambedkar</b> chaired the Drafting Committee.</li><li>Constitution adopted on <b>26 November 1949</b> (now Constitution Day) and came into force on <b>26 January 1950</b> (Republic Day).</li><li>The Preamble begins 'We, the people of India'. The words <i>socialist</i>, <i>secular</i> and <i>integrity</i> were added by the <b>42nd Amendment (1976)</b>.</li></ul>"
+      },
+      {
+        "title": "Important Articles",
+        "body": "<table><thead><tr><th>Article</th><th>Subject</th></tr></thead><tbody><tr><td>14</td><td>Equality before law</td></tr><tr><td>17</td><td>Abolition of untouchability</td></tr><tr><td>19</td><td>Six freedoms (speech, assembly, etc.)</td></tr><tr><td>21</td><td>Protection of life and personal liberty</td></tr><tr><td>21A</td><td>Free and compulsory education (6–14 years)</td></tr><tr><td>32</td><td>Right to constitutional remedies ('heart and soul' — Ambedkar)</td></tr><tr><td>51A</td><td>Fundamental Duties</td></tr><tr><td>72</td><td>Pardoning power of the President</td></tr><tr><td>112</td><td>Annual Financial Statement (Union Budget)</td></tr><tr><td>280</td><td>Finance Commission</td></tr><tr><td>324</td><td>Election Commission</td></tr><tr><td>352 / 356 / 360</td><td>National / State (President's rule) / Financial emergency</td></tr><tr><td>368</td><td>Amendment of the Constitution</td></tr></tbody></table>"
+      },
+      {
+        "title": "Borrowed features",
+        "body": "<table><thead><tr><th>Source</th><th>Feature</th></tr></thead><tbody><tr><td>Britain</td><td>Parliamentary system, rule of law, single citizenship</td></tr><tr><td>USA</td><td>Fundamental Rights, judicial review, independence of judiciary</td></tr><tr><td>Ireland</td><td>Directive Principles of State Policy</td></tr><tr><td>Canada</td><td>Federation with a strong Centre</td></tr><tr><td>Australia</td><td>Concurrent List</td></tr><tr><td>USSR</td><td>Fundamental Duties</td></tr><tr><td>Weimar Germany</td><td>Suspension of Fundamental Rights during emergency</td></tr><tr><td>South Africa</td><td>Procedure for amendment</td></tr><tr><td>France</td><td>Republic; liberty, equality, fraternity</td></tr></tbody></table>"
+      },
+      {
+        "title": "Key amendments and numbers",
+        "body": "<ul><li><b>42nd (1976)</b>: 'mini-constitution'; added Fundamental Duties.</li><li><b>44th (1978)</b>: Right to Property removed from Fundamental Rights.</li><li><b>52nd (1985)</b>: Anti-defection law (Tenth Schedule).</li><li><b>61st (1989)</b>: Voting age lowered from 21 to 18.</li><li><b>73rd / 74th (1992)</b>: Panchayats / Municipalities.</li><li><b>86th (2002)</b>: Article 21A, right to education.</li><li><b>101st (2016)</b>: GST.</li></ul>Numbers: Eighth Schedule lists <b>22</b> languages; minimum age for President is <b>35</b>; Rajya Sabha maximum strength is <b>250</b>."
+      }
+    ],
+    "varieties": [
+      {
+        "type": "articles",
+        "name": "Article ↔ subject",
+        "how": "Recall the Article table; questions name the subject or the number.",
+        "example": { "q": "Which Article abolishes untouchability?", "steps": ["Articles 14–18 = Right to Equality", "Article 17 = abolition of untouchability"], "answer": "Article 17" }
+      },
+      {
+        "type": "sources",
+        "name": "Borrowed features",
+        "how": "Pair each country with its feature; DPSP = Ireland and Fundamental Duties = USSR are the most asked.",
+        "example": { "q": "The idea of Directive Principles was taken from which constitution?", "steps": ["DPSP came from the Irish Constitution"], "answer": "Ireland" }
+      },
+      {
+        "type": "amendments",
+        "name": "Amendments and institutions",
+        "how": "Link each amendment number to one change; link each body to its Article.",
+        "example": { "q": "Which amendment lowered the voting age from 21 to 18?", "steps": ["Voting age change came in 1989", "1989 = 61st Amendment"], "answer": "61st Amendment" }
+      }
+    ],
+    "tips": [
+      "Article 32 is the 'heart and soul' of the Constitution in Ambedkar's words.",
+      "Emergency Articles go 352 → 356 → 360 (national, state, financial).",
+      "42nd Amendment is the most-asked amendment; learn its three Preamble words."
+    ],
+    "traps": [
+      "The Constitution was adopted on 26 Nov 1949 but came into force on 26 Jan 1950.",
+      "Fundamental Duties came from the USSR, not the USA.",
+      "Rajendra Prasad was President of the Constituent Assembly; Ambedkar chaired only the Drafting Committee."
+    ]
+  },
+  "questions": [
+    { "id": "g-polity-001", "rev": 1, "topic": "g-polity", "type": "articles", "level": 1, "q": "Which Article of the Indian Constitution abolishes untouchability?", "options": ["Article 14", "Article 17", "Article 19", "Article 21"], "answer": 1, "solution": "Article 17 abolishes untouchability and forbids its practice in any form.<br><b>Memory hook:</b> 17 = 'end of untouchability' — the middle of the equality block 14–18.", "source": "test-data" },
+    { "id": "g-polity-002", "rev": 1, "topic": "g-polity", "type": "sources", "level": 1, "q": "The Fundamental Duties in the Indian Constitution were inspired by the constitution of:", "options": ["USA", "Ireland", "Former USSR", "Canada"], "answer": 2, "solution": "Fundamental Duties (Article 51A) were added by the 42nd Amendment, inspired by the constitution of the former USSR.<br><b>Memory hook:</b> Soviet = duty to the state.", "source": "test-data" },
+    { "id": "g-polity-003", "rev": 1, "topic": "g-polity", "type": "amendments", "level": 1, "q": "Who was the Chairman of the Drafting Committee of the Constitution?", "options": ["Dr. Rajendra Prasad", "Jawaharlal Nehru", "Sardar Patel", "Dr. B.R. Ambedkar"], "answer": 3, "solution": "Dr. B.R. Ambedkar chaired the Drafting Committee. Dr. Rajendra Prasad was the President of the Constituent Assembly.<br><b>Memory hook:</b> Ambedkar = Architect (both start with A).", "source": "test-data" },
+    { "id": "g-polity-004", "rev": 1, "topic": "g-polity", "type": "articles", "level": 2, "q": "Dr. B.R. Ambedkar called which Article the 'heart and soul' of the Constitution?", "options": ["Article 32", "Article 21", "Article 14", "Article 368"], "answer": 0, "solution": "Article 32 (Right to Constitutional Remedies) lets a person go directly to the Supreme Court to enforce Fundamental Rights.<br><b>Memory hook:</b> 32 teeth protect the mouth; Article 32 protects your rights.", "source": "test-data" },
+    { "id": "g-polity-005", "rev": 1, "topic": "g-polity", "type": "amendments", "level": 2, "q": "Which Constitutional Amendment reduced the voting age from 21 to 18 years?", "options": ["42nd", "44th", "61st", "73rd"], "answer": 2, "solution": "The 61st Amendment Act, 1988 (in force 1989) reduced the voting age to 18.<br><b>Memory hook:</b> say it as one line — 'Sixty-one made eighteen vote'.", "source": "test-data" },
+    { "id": "g-polity-006", "rev": 1, "topic": "g-polity", "type": "sources", "level": 2, "q": "The concept of the Concurrent List in the Indian Constitution was borrowed from:", "options": ["Canada", "Australia", "USA", "Britain"], "answer": 1, "solution": "The Concurrent List (and joint sitting of Parliament) was borrowed from Australia. Canada gave the idea of a federation with a strong Centre.<br><b>Memory hook:</b> <b>A</b>ustralia = <b>A</b>ll share (Concurrent).", "source": "test-data" },
+    { "id": "g-polity-007", "rev": 1, "topic": "g-polity", "type": "amendments", "level": 3, "q": "Which amendment added the words 'socialist', 'secular' and 'integrity' to the Preamble?", "options": ["44th Amendment", "52nd Amendment", "24th Amendment", "42nd Amendment"], "answer": 3, "solution": "The 42nd Amendment (1976) added 'socialist', 'secular' and 'integrity'. It is called the 'mini-constitution'.<br><b>Memory hook:</b> 42 = the 'mini-constitution' that touched even the Preamble.", "source": "test-data" },
+    { "id": "g-polity-008", "rev": 1, "topic": "g-polity", "type": "articles", "level": 3, "q": "Which pair (Article — subject) is <b>incorrectly</b> matched?", "options": ["Article 280 — Finance Commission", "Article 324 — Election Commission", "Article 360 — National Emergency", "Article 112 — Annual Financial Statement"], "answer": 2, "solution": "Article 360 deals with <b>Financial</b> Emergency. National Emergency is Article 352.<br><b>Memory hook:</b> 360° covers all the money — Financial Emergency.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-polity-1", "front": "Constitution came into force on", "back": "26 January 1950", "deck": "ga-facts" },
+    { "id": "fc-g-polity-2", "front": "President of the Constituent Assembly", "back": "Dr. Rajendra Prasad", "deck": "ga-facts" },
+    { "id": "fc-g-polity-3", "front": "Article 21A", "back": "Free and compulsory education for children aged 6–14 (86th Amendment, 2002)", "deck": "ga-facts" },
+    { "id": "fc-g-polity-4", "front": "Directive Principles borrowed from", "back": "Ireland", "deck": "ga-facts" },
+    { "id": "fc-g-polity-5", "front": "Anti-defection law (Tenth Schedule) added by", "back": "52nd Amendment, 1985", "deck": "ga-facts" },
+    { "id": "fc-g-polity-6", "front": "Right to Property removed from Fundamental Rights by", "back": "44th Amendment, 1978", "deck": "ga-facts" },
+    { "id": "fc-g-polity-7", "front": "Number of languages in the Eighth Schedule", "back": "22", "deck": "ga-facts" },
+    { "id": "fc-g-polity-8", "front": "Minimum age to become President of India", "back": "35 years", "deck": "ga-facts" },
+    { "id": "fc-g-polity-9", "front": "Article for the Election Commission", "back": "Article 324", "deck": "ga-facts" }
+  ]
+}

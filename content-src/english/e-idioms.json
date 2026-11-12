@@ -1,0 +1,51 @@
+{
+  "topic": "e-idioms",
+  "notes": {
+    "summary": "An <b>idiom</b> is a group of words whose meaning is different from the meanings of the individual words. <i>Break the ice</i> has nothing to do with ice; it means to start a conversation. SSC asks for the meaning of an idiom, often inside a sentence.",
+    "concepts": [
+      { "title": "Do not read literally", "body": "The literal meaning is almost always a trap option. Ask: what does this phrase <b>suggest</b> about a person or situation?" },
+      { "title": "Use the sentence", "body": "If the idiom is in a sentence, the situation tells you whether the meaning is positive or negative. <i>After the failure, he was <u>down in the dumps</u></i> → negative feeling → sad." },
+      { "title": "Learn in groups", "body": "Group idioms by theme to remember them:<ul><li><b>Difficulty</b>: <i>in hot water, in a fix, between the devil and the deep sea</i></li><li><b>Ease</b>: <i>a piece of cake, plain sailing</i></li><li><b>Secrecy</b>: <i>let the cat out of the bag, spill the beans</i></li></ul>" }
+    ],
+    "varieties": [
+      { "type": "meaning", "name": "Meaning of the idiom", "how": "Recall the figurative meaning; eliminate the literal option.", "example": { "q": "<b>To burn the midnight oil</b>", "steps": ["Not about oil or lamps.", "It means working or studying late into the night."], "answer": "To work late into the night" } },
+      { "type": "in-sentence", "name": "Idiom in a sentence", "how": "Read the context for tone, then pick the matching figurative meaning.", "example": { "q": "The new manager <b>turned over a new leaf</b> after the warning.", "steps": ["A warning suggests he changed his behaviour.", "Turn over a new leaf = start behaving better."], "answer": "Reformed himself" } }
+    ],
+    "tips": [
+      "Revise 10 idioms a day with flashcards; meanings rarely change.",
+      "If unsure, decide the tone (positive/negative) and remove options with the wrong tone."
+    ],
+    "traps": [
+      "The literal option (e.g. 'to actually spill beans') is placed to catch guessers.",
+      "Similar idioms with different meanings: <i>at sea</i> (confused) vs <i>all at sea</i> (completely confused) vs <i>a drop in the ocean</i> (tiny amount)."
+    ]
+  },
+  "questions": [
+    { "id": "e-idioms-001", "rev": 1, "topic": "e-idioms", "type": "meaning", "level": 1, "q": "Select the most appropriate meaning of the given idiom.<br><b>A piece of cake</b>", "options": ["Something very easy", "A small reward", "A sweet dish", "A tiny share"], "answer": 0, "solution": "<b>A piece of cake</b> means a task that is very easy to do.", "source": "test-data" },
+    { "id": "e-idioms-002", "rev": 1, "topic": "e-idioms", "type": "in-sentence", "level": 1, "q": "Select the most appropriate meaning of the bold idiom.<br>Nobody knew about the surprise party until Rahul <b>let the cat out of the bag</b>.", "options": ["Released a pet", "Revealed a secret", "Created confusion", "Cancelled the plan"], "answer": 1, "solution": "<b>Let the cat out of the bag</b> = reveal a secret by mistake. The context (surprise party) confirms it.", "source": "test-data" },
+    { "id": "e-idioms-003", "rev": 1, "topic": "e-idioms", "type": "meaning", "level": 2, "q": "Select the most appropriate meaning of the given idiom.<br><b>To hit the nail on the head</b>", "options": ["To hurt oneself", "To work very hard", "To say exactly the right thing", "To lose one's temper"], "answer": 2, "solution": "<b>Hit the nail on the head</b> = describe exactly what is causing a situation; to be precisely correct.", "source": "test-data" },
+    { "id": "e-idioms-004", "rev": 1, "topic": "e-idioms", "type": "in-sentence", "level": 2, "q": "Select the most appropriate meaning of the bold idiom.<br>With exams next week, Priya is <b>burning the candle at both ends</b>.", "options": ["Wasting money", "Exhausting herself by working too much", "Studying by candlelight", "Avoiding her work"], "answer": 1, "solution": "<b>Burn the candle at both ends</b> = overwork by staying up late and getting up early, wearing oneself out.", "source": "test-data" },
+    { "id": "e-idioms-005", "rev": 1, "topic": "e-idioms", "type": "meaning", "level": 3, "q": "Select the most appropriate meaning of the given idiom.<br><b>A red herring</b>", "options": ["A rare opportunity", "Something that misleads or distracts", "A dangerous enemy", "An embarrassing mistake"], "answer": 1, "solution": "<b>A red herring</b> is a clue or issue that draws attention away from the real question.", "source": "test-data" },
+    { "id": "e-idioms-006", "rev": 1, "topic": "e-idioms", "type": "in-sentence", "level": 3, "q": "Select the most appropriate meaning of the bold idiom.<br>The opposition's promises turned out to be <b>a flash in the pan</b>; nothing came of them.", "options": ["A sudden success that does not last", "A dangerous plan", "A well-kept secret", "A long-term achievement"], "answer": 0, "solution": "<b>A flash in the pan</b> = something that looks impressive at first but quickly fails or fades. <i>nothing came of them</i> confirms it.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-idm-01", "front": "A piece of cake", "back": "Something very easy", "deck": "idioms" },
+    { "id": "fc-e-idm-02", "front": "Let the cat out of the bag", "back": "Reveal a secret by mistake", "deck": "idioms" },
+    { "id": "fc-e-idm-03", "front": "Hit the nail on the head", "back": "Say or do exactly the right thing", "deck": "idioms" },
+    { "id": "fc-e-idm-04", "front": "Burn the candle at both ends", "back": "Overwork oneself; exhaust one's energy", "deck": "idioms" },
+    { "id": "fc-e-idm-05", "front": "A red herring", "back": "Something that misleads or distracts", "deck": "idioms" },
+    { "id": "fc-e-idm-06", "front": "A flash in the pan", "back": "A short-lived success", "deck": "idioms" },
+    { "id": "fc-e-idm-07", "front": "Break the ice", "back": "Start a conversation in an awkward situation", "deck": "idioms" },
+    { "id": "fc-e-idm-08", "front": "Burn the midnight oil", "back": "Work or study late into the night", "deck": "idioms" },
+    { "id": "fc-e-idm-09", "front": "Turn over a new leaf", "back": "Change one's behaviour for the better", "deck": "idioms" },
+    { "id": "fc-e-idm-10", "front": "In hot water", "back": "In trouble", "deck": "idioms" },
+    { "id": "fc-e-idm-11", "front": "Once in a blue moon", "back": "Very rarely", "deck": "idioms" },
+    { "id": "fc-e-idm-12", "front": "Bite the bullet", "back": "Face a painful situation bravely", "deck": "idioms" },
+    { "id": "fc-e-idm-13", "front": "Cry over spilt milk", "back": "Regret something that cannot be changed", "deck": "idioms" },
+    { "id": "fc-e-idm-14", "front": "At the eleventh hour", "back": "At the last possible moment", "deck": "idioms" },
+    { "id": "fc-e-idm-15", "front": "Spill the beans", "back": "Reveal secret information", "deck": "idioms" },
+    { "id": "fc-e-idm-16", "front": "A blessing in disguise", "back": "Something that seems bad but turns out good", "deck": "idioms" },
+    { "id": "fc-e-idm-17", "front": "Beat about the bush", "back": "Avoid coming to the main point", "deck": "idioms" },
+    { "id": "fc-e-idm-18", "front": "Hold one's horses", "back": "Wait; be patient", "deck": "idioms" }
+  ]
+}

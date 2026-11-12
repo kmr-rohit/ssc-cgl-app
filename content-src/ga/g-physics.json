@@ -1,0 +1,76 @@
+{
+  "topic": "g-physics",
+  "notes": {
+    "summary": "Physics gives <b>1–2 questions</b>, mostly NCERT class 6–10 level: SI units, Newton's laws, light (lenses, reflection, scattering), sound and electricity. Learn the 'why' behind daily-life examples.",
+    "concepts": [
+      {
+        "title": "SI units",
+        "body": "<table><thead><tr><th>Quantity</th><th>SI unit</th></tr></thead><tbody><tr><td>Force</td><td>newton (N)</td></tr><tr><td>Work / energy</td><td>joule (J)</td></tr><tr><td>Power</td><td>watt (W)</td></tr><tr><td>Pressure</td><td>pascal (Pa)</td></tr><tr><td>Frequency</td><td>hertz (Hz)</td></tr><tr><td>Electric current</td><td>ampere (A)</td></tr><tr><td>Charge</td><td>coulomb (C)</td></tr><tr><td>Resistance</td><td>ohm (Ω)</td></tr><tr><td>Temperature</td><td>kelvin (K)</td></tr><tr><td>Luminous intensity</td><td>candela (cd)</td></tr></tbody></table>1 horsepower ≈ 746 W. A <b>light year</b> is a unit of <b>distance</b>, not time."
+      },
+      {
+        "title": "Motion and Newton's laws",
+        "body": "<ul><li><b>First law</b> (law of inertia): a body stays at rest or in uniform motion unless a force acts. Example: passengers lurch forward when a bus brakes suddenly.</li><li><b>Second law</b>: F = m × a.</li><li><b>Third law</b>: every action has an equal and opposite reaction. Example: a rocket moves up as gases rush down; recoil of a gun.</li><li>Acceleration due to gravity on Earth, g ≈ 9.8 m/s².</li></ul>"
+      },
+      {
+        "title": "Light",
+        "body": "<ul><li><b>Convex lens</b> converges light; corrects <b>hypermetropia</b> (long-sightedness). <b>Concave lens</b> diverges light; corrects <b>myopia</b> (short-sightedness).</li><li><b>Total internal reflection</b>: used in optical fibres; explains the sparkle of diamonds and mirages.</li><li><b>Scattering</b>: the sky looks blue because air scatters blue light more than red. Danger signals are red because red scatters least.</li><li><b>Dispersion</b>: a prism splits white light into seven colours (VIBGYOR); a rainbow forms the same way in raindrops.</li></ul>",
+        "img": "ga/phy-convex-lens.svg"
+      },
+      {
+        "title": "Sound and electricity",
+        "body": "<ul><li>Sound needs a medium; it <b>cannot travel in a vacuum</b>. It travels fastest in <b>solids</b>, then liquids, then gases.</li><li>Human hearing: <b>20 Hz to 20,000 Hz</b>. Below 20 Hz = infrasound; above 20 kHz = ultrasound (used by bats, SONAR).</li><li><b>Ohm's law</b>: V = I × R.</li><li>Household appliances are connected in <b>parallel</b> so each gets the full voltage. A fuse works on the heating effect of current.</li></ul>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "units",
+        "name": "Units and measurement",
+        "how": "Recall the SI unit table and common conversions.",
+        "example": { "q": "The SI unit of power is:", "steps": ["Power = work / time", "joule per second = watt"], "answer": "Watt" }
+      },
+      {
+        "type": "light-optics",
+        "name": "Light and optics",
+        "how": "Identify the phenomenon (reflection, refraction, TIR, scattering, dispersion), then the example or lens.",
+        "example": { "q": "Which lens is used to correct myopia?", "steps": ["Myopia: image forms in front of the retina", "A diverging (concave) lens pushes it back onto the retina"], "answer": "Concave lens" }
+      },
+      {
+        "type": "laws-concepts",
+        "name": "Laws and everyday physics",
+        "how": "Match the daily-life example to the law or property it shows.",
+        "example": { "q": "A rocket works on which law?", "steps": ["Gases pushed down (action)", "Rocket pushed up (reaction)"], "answer": "Newton's third law" }
+      }
+    ],
+    "tips": [
+      "Myopia = Minus lens (concave, negative power); Hypermetropia = Plus lens (convex, positive power).",
+      "Blue sky = scattering; rainbow = dispersion + reflection + refraction.",
+      "Sound speed order: solid > liquid > gas > vacuum (zero)."
+    ],
+    "traps": [
+      "Light year measures distance, not time.",
+      "Sound cannot travel in vacuum, but light can.",
+      "Kilowatt-hour (kWh) is a unit of energy, not power."
+    ]
+  },
+  "questions": [
+    { "id": "g-physics-001", "rev": 1, "topic": "g-physics", "type": "units", "level": 1, "q": "What is the SI unit of force?", "options": ["Joule", "Newton", "Watt", "Pascal"], "answer": 1, "solution": "Force is measured in newton (N). 1 N = 1 kg·m/s².<br><b>Memory hook:</b> Newton gave the laws of force, so force carries his name.", "source": "test-data" },
+    { "id": "g-physics-002", "rev": 1, "topic": "g-physics", "type": "light-optics", "level": 1, "q": "The sky appears blue because of:", "options": ["Reflection of light", "Refraction of light", "Scattering of light", "Dispersion of light"], "answer": 2, "solution": "Air molecules scatter shorter wavelengths (blue) much more than longer ones (red), so the sky looks blue.<br><b>Memory hook:</b> 'Blue is scattered all over the sky.'", "source": "test-data" },
+    { "id": "g-physics-003", "rev": 1, "topic": "g-physics", "type": "laws-concepts", "level": 1, "q": "Sound travels fastest in:", "options": ["Vacuum", "Air", "Water", "Steel"], "answer": 3, "solution": "Sound travels fastest in solids like steel, slower in liquids, slower still in gases, and not at all in a vacuum.<br><b>Memory hook:</b> Tightly packed particles pass the sound fastest.", "source": "test-data" },
+    { "id": "g-physics-004", "rev": 1, "topic": "g-physics", "type": "light-optics", "level": 2, "q": "Optical fibres work on the principle of:", "options": ["Total internal reflection", "Dispersion", "Diffraction", "Scattering"], "answer": 0, "solution": "Light inside an optical fibre keeps hitting the walls at angles above the critical angle and is totally internally reflected, so it travels long distances.<br><b>Memory hook:</b> Fibre, diamond, mirage — the TIR trio.", "source": "test-data" },
+    { "id": "g-physics-005", "rev": 1, "topic": "g-physics", "type": "laws-concepts", "level": 2, "q": "Passengers fall forward when a moving bus stops suddenly. This is explained by:", "options": ["Newton's third law", "Law of conservation of energy", "Newton's first law (inertia)", "Ohm's law"], "answer": 2, "solution": "The upper body tends to keep moving (inertia of motion) while the feet stop with the bus — Newton's first law.<br><b>Memory hook:</b> First law = bodies 'want' to keep doing what they were doing.", "source": "test-data" },
+    { "id": "g-physics-006", "rev": 1, "topic": "g-physics", "type": "units", "level": 2, "q": "A light year is a unit of:", "options": ["Time", "Distance", "Speed", "Intensity of light"], "answer": 1, "solution": "A light year is the distance light travels in one year (about 9.46 × 10<sup>12</sup> km).<br><b>Memory hook:</b> 'Year' fools you — it is how far, not how long.", "source": "test-data" },
+    { "id": "g-physics-007", "rev": 1, "topic": "g-physics", "type": "light-optics", "level": 3, "q": "An object is placed beyond 2F of a convex lens. The image formed is:", "img": "ga/phy-convex-lens.svg", "options": ["Between F and 2F, real, inverted, diminished", "Beyond 2F, real, inverted, enlarged", "At 2F, real, inverted, same size", "On the same side, virtual, erect, enlarged"], "answer": 0, "solution": "For an object beyond 2F, the convex lens forms a real, inverted and smaller image between F and 2F on the other side (used in cameras).<br><b>Memory hook:</b> Far object → small image close to F (like a camera).", "source": "test-data" },
+    { "id": "g-physics-008", "rev": 1, "topic": "g-physics", "type": "units", "level": 3, "q": "1 horsepower is approximately equal to:", "options": ["1000 W", "500 W", "746 W", "100 W"], "answer": 2, "solution": "1 horsepower ≈ 746 watts.<br><b>Memory hook:</b> 746 W is about three-quarters of a kilowatt.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-physics-1", "front": "SI unit of pressure", "back": "Pascal (Pa)", "deck": "ga-facts" },
+    { "id": "fc-g-physics-2", "front": "SI unit of electrical resistance", "back": "Ohm (Ω)", "deck": "ga-facts" },
+    { "id": "fc-g-physics-3", "front": "Lens to correct hypermetropia", "back": "Convex lens", "deck": "ga-facts" },
+    { "id": "fc-g-physics-4", "front": "Range of human hearing", "back": "20 Hz to 20,000 Hz", "deck": "ga-facts" },
+    { "id": "fc-g-physics-5", "front": "Why are danger signals red?", "back": "Red light is scattered least, so it is seen from far away", "deck": "ga-facts" },
+    { "id": "fc-g-physics-6", "front": "Ohm's law", "back": "V = I × R", "deck": "ga-facts" },
+    { "id": "fc-g-physics-7", "front": "Principle of a rocket", "back": "Newton's third law (action–reaction)", "deck": "ga-facts" },
+    { "id": "fc-g-physics-8", "front": "Sound above 20 kHz is called", "back": "Ultrasound", "deck": "ga-facts" },
+    { "id": "fc-g-physics-9", "front": "Kilowatt-hour measures", "back": "Electrical energy (1 kWh = 3.6 × 10⁶ J)", "deck": "ga-facts" }
+  ]
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="260" height="220" font-family="sans-serif" font-size="13">
+  <polygon points="100,46 40,190 208,190" fill="none" stroke="#000" stroke-width="1.5"/>
+  <text x="95" y="38">A</text><text x="26" y="204">B</text><text x="212" y="204">C</text>
+  <text x="50" y="118">13 cm</text><text x="160" y="118">15 cm</text><text x="108" y="208">14 cm</text>
+</svg>

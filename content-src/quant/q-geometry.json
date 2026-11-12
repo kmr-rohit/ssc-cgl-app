@@ -1,0 +1,230 @@
+{
+ "topic": "q-geometry",
+ "notes": {
+  "summary": "Geometry is the biggest Advanced Maths topic: 2–4 questions in Tier 1 and 3–5 in Tier 2. Most questions use a handful of triangle and circle theorems. Figures are not to scale; trust the given values.",
+  "concepts": [
+   {
+    "title": "Triangle angles",
+    "body": "Angles of a triangle add to 180°. An <b>exterior angle</b> equals the sum of the two opposite interior angles.",
+    "img": "quant/geo-triangle-exterior.svg"
+   },
+   {
+    "title": "Circle theorems",
+    "body": "<ul><li>Angle at the centre = 2 × angle at the circumference on the same arc.</li><li>Angle in a semicircle = 90°.</li><li>Radius ⟂ tangent at the point of contact; two tangents from an outside point are equal.</li></ul>"
+   },
+   {
+    "title": "Similarity and proportional segments",
+    "body": "<b>Basic Proportionality Theorem</b>: if DE ∥ BC in ΔABC, then AD/DB = AE/EC. <b>Angle bisector theorem</b>: if AD bisects ∠A, then BD/DC = AB/AC. In similar triangles, areas are in the ratio of the squares of sides."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "triangles",
+    "name": "Angles in triangles",
+    "how": "Use angle sum 180° and the exterior angle property.",
+    "example": {
+     "q": "In ΔABC, ∠A = 60° and ∠B = 45°. Find the exterior angle at C.",
+     "steps": [
+      "Exterior angle = ∠A + ∠B",
+      "60° + 45°"
+     ],
+     "answer": "105°"
+    }
+   },
+   {
+    "type": "circles",
+    "name": "Circle theorems",
+    "how": "Spot the theorem: centre angle, semicircle, or tangent ⟂ radius (then use Pythagoras).",
+    "example": {
+     "q": "A tangent from a point 10 cm from the centre of a circle of radius 6 cm. Tangent length?",
+     "steps": [
+      "Radius ⟂ tangent",
+      "√(10<sup>2</sup> − 6<sup>2</sup>) = √64"
+     ],
+     "answer": "8 cm"
+    }
+   },
+   {
+    "type": "similarity",
+    "name": "BPT and angle bisector",
+    "how": "Set up the ratio of segments and cross-multiply.",
+    "example": {
+     "q": "In ΔABC, DE ∥ BC with AD = 2, DB = 3, AE = 4. Find EC.",
+     "steps": [
+      "2/3 = 4/EC",
+      "EC = 6"
+     ],
+     "answer": "6"
+    }
+   }
+  ],
+  "tips": [
+   "Mark the right angles first: semicircle, tangent–radius, altitude.",
+   "Learn the triplets 3-4-5, 5-12-13, 8-15-17, 7-24-25."
+  ],
+  "traps": [
+   "The angle at the circumference is half the centre angle only when both stand on the same arc.",
+   "In BPT, compare AD/DB with AE/EC, not AD/AB with AE/EC (both work, but do not mix them)."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Exterior angle",
+   "expr": "Sum of opposite interior angles"
+  },
+  {
+   "name": "Centre angle",
+   "expr": "2 × angle at circumference"
+  },
+  {
+   "name": "Tangent length",
+   "expr": "√(d² − r²)"
+  },
+  {
+   "name": "Angle bisector theorem",
+   "expr": "BD/DC = AB/AC"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-geometry-001",
+   "rev": 1,
+   "topic": "q-geometry",
+   "type": "triangles",
+   "level": 1,
+   "q": "In the given figure, ∠BAC = 50° and ∠ABC = 70°. Side BC is extended to D. What is ∠ACD?",
+   "img": "quant/geo-triangle-exterior.svg",
+   "options": [
+    "110°",
+    "120°",
+    "60°",
+    "130°"
+   ],
+   "answer": 1,
+   "solution": "Exterior angle ∠ACD = ∠BAC + ∠ABC.<br>= 50° + 70° = 120°.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-geometry-002",
+   "rev": 1,
+   "topic": "q-geometry",
+   "type": "circles",
+   "level": 1,
+   "q": "In the given figure, AB is a diameter of the circle with centre O and C is a point on the circle. If ∠CAB = 35°, what is ∠CBA?",
+   "img": "quant/geo-semicircle.svg",
+   "options": [
+    "35°",
+    "45°",
+    "55°",
+    "65°"
+   ],
+   "answer": 2,
+   "solution": "Angle in a semicircle: ∠ACB = 90°.<br>∠CBA = 180° − 90° − 35° = 55°.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-geometry-003",
+   "rev": 1,
+   "topic": "q-geometry",
+   "type": "similarity",
+   "level": 2,
+   "q": "In ΔABC, DE ∥ BC with D on AB and E on AC. If AD = 4 cm, DB = 6 cm and AE = 6 cm, find EC.",
+   "img": "quant/geo-bpt.svg",
+   "options": [
+    "8 cm",
+    "9 cm",
+    "4 cm",
+    "10 cm"
+   ],
+   "answer": 1,
+   "solution": "By the Basic Proportionality Theorem, AD/DB = AE/EC.<br>4/6 = 6/EC → EC = 36/4 = 9 cm.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-geometry-004",
+   "rev": 1,
+   "topic": "q-geometry",
+   "type": "circles",
+   "level": 2,
+   "q": "A point P is 13 cm from the centre O of a circle of radius 5 cm. What is the length of the tangent PT drawn from P to the circle?",
+   "img": "quant/geo-tangents.svg",
+   "options": [
+    "8 cm",
+    "10 cm",
+    "12 cm",
+    "√194 cm"
+   ],
+   "answer": 2,
+   "solution": "OT ⟂ PT (radius ⟂ tangent).<br>PT = √(OP<sup>2</sup> − OT<sup>2</sup>) = √(169 − 25) = √144 = 12 cm.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-geometry-005",
+   "rev": 1,
+   "topic": "q-geometry",
+   "type": "circles",
+   "level": 3,
+   "q": "In the given figure, O is the centre of the circle and ∠AOB = 110°. C is a point on the major arc. What is ∠ACB?",
+   "img": "quant/geo-central-angle.svg",
+   "options": [
+    "110°",
+    "55°",
+    "70°",
+    "125°"
+   ],
+   "answer": 1,
+   "solution": "The angle at the centre is twice the angle at the circumference on the same arc AB.<br>∠ACB = 110°/2 = 55°.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-geometry-006",
+   "rev": 1,
+   "topic": "q-geometry",
+   "type": "similarity",
+   "level": 3,
+   "q": "In ΔABC, AD is the bisector of ∠A meeting BC at D. If AB = 6 cm, AC = 9 cm and BC = 10 cm, find BD.",
+   "img": "quant/geo-angle-bisector.svg",
+   "options": [
+    "4 cm",
+    "5 cm",
+    "6 cm",
+    "3.6 cm"
+   ],
+   "answer": 0,
+   "solution": "Angle bisector theorem: BD/DC = AB/AC = 6/9 = 2/3.<br>BD = 10 × 2/(2 + 3) = 4 cm.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-geo-1",
+   "front": "Angle in a semicircle",
+   "back": "90°",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-geo-2",
+   "front": "Angle at centre vs circumference",
+   "back": "Centre angle = 2 × circumference angle (same arc)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-geo-3",
+   "front": "Tangent length from distance d, radius r",
+   "back": "√(d² − r²)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-geo-4",
+   "front": "Angle bisector theorem",
+   "back": "BD/DC = AB/AC",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-geo-5",
+   "front": "Areas of similar triangles",
+   "back": "Ratio of squares of corresponding sides",
+   "deck": "formulas"
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "topic": "st-sampling",
+ "notes": {
+  "summary": "Sampling theory is about choosing a part of the population and measuring how reliable the sample results are. JSO asks on sampling methods (random and non-random), allocation in stratified sampling, and standard errors.",
+  "concepts": [
+   {
+    "title": "Sampling methods",
+    "body": "<ul><li><b>Random (probability)</b>: simple random (lottery, random numbers), stratified, systematic, cluster, multistage.</li><li><b>Non-random</b>: judgment (purposive), quota, convenience.</li><li><b>Systematic</b>: pick every k-th unit after a random start, k = N/n.</li><li><b>Stratified</b>: split into homogeneous strata, sample from each. Proportional allocation: n<sub>i</sub> = n × N<sub>i</sub>/N.</li><li><b>Cluster</b>: randomly select whole groups (clusters).</li></ul>"
+   },
+   {
+    "title": "Errors and standard error",
+    "body": "<ul><li><b>Sampling error</b>: arises because only a sample is studied; falls as n grows. <b>Non-sampling error</b>: mistakes in measurement, response, processing; present even in a census.</li><li>SE of mean = σ/√n. With finite population (SRSWOR) multiply by √((N − n)/(N − 1)).</li><li>SE of proportion = √(pq/n).</li><li>Number of SRSWOR samples of size n from N = <sup>N</sup>C<sub>n</sub>; with replacement = N<sup>n</sup>.</li></ul>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "methods",
+    "name": "Identify the sampling method",
+    "how": "Ask: does every unit have a known chance (random) or is choice by judgment / quota (non-random)?",
+    "example": {
+     "q": "An interviewer is told to interview 30 men and 20 women, chosen as he likes. Which method?",
+     "steps": [
+      "Fixed numbers from each group, but free choice inside the group.",
+      "That is quota sampling (non-random)."
+     ],
+     "answer": "Quota sampling"
+    }
+   },
+   {
+    "type": "allocation",
+    "name": "Systematic interval and stratified allocation",
+    "how": "k = N/n; proportional n_i = n × N_i/N.",
+    "example": {
+     "q": "Strata of size 300 and 700; total sample 40 (proportional). Find each sample size.",
+     "steps": [
+      "n1 = 40 × 300/1000 = 12",
+      "n2 = 40 × 700/1000 = 28"
+     ],
+     "answer": "12 and 28"
+    }
+   },
+   {
+    "type": "standard-error",
+    "name": "Standard error",
+    "how": "SE(x̄) = σ/√n, SE(p) = √(pq/n); SE varies as 1/√n.",
+    "example": {
+     "q": "σ = 20, n = 25. Find SE of the mean.",
+     "steps": [
+      "SE = 20/√25 = 20/5",
+      "= 4"
+     ],
+     "answer": "4"
+    }
+   }
+  ],
+  "tips": [
+   "To halve the SE, make the sample 4 times larger.",
+   "Stratified sampling works best when strata are internally similar (homogeneous) but differ from each other.",
+   "Cluster sampling works best when each cluster is internally varied (heterogeneous)."
+  ],
+  "traps": [
+   "Judgment and quota sampling are NOT random sampling methods.",
+   "Non-sampling errors do not go away in a census; they may even increase.",
+   "SE of proportion uses pq/n inside the square root, not p/n."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "SE of mean",
+   "expr": "σ / √n  (× √((N − n)/(N − 1)) for finite population)"
+  },
+  {
+   "name": "SE of proportion",
+   "expr": "√(pq / n)"
+  },
+  {
+   "name": "Systematic interval",
+   "expr": "k = N / n"
+  },
+  {
+   "name": "Proportional allocation",
+   "expr": "nᵢ = n × Nᵢ / N"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-sampling-001",
+   "rev": 1,
+   "topic": "st-sampling",
+   "type": "methods",
+   "level": 1,
+   "q": "Which of the following is a NON-random sampling method?",
+   "options": [
+    "Simple random sampling",
+    "Stratified sampling",
+    "Quota sampling",
+    "Systematic sampling"
+   ],
+   "answer": 2,
+   "solution": "In quota sampling the interviewer chooses units by his own judgment within fixed quotas, so units do not have a known chance of selection. The others are probability methods.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-sampling-002",
+   "rev": 1,
+   "topic": "st-sampling",
+   "type": "allocation",
+   "level": 1,
+   "q": "A systematic sample of 60 units is to be drawn from a list of 1,200 units. The sampling interval k is:",
+   "options": [
+    "12",
+    "20",
+    "60",
+    "120"
+   ],
+   "answer": 1,
+   "solution": "k = N/n = 1200/60 = 20. After a random start between 1 and 20, every 20th unit is taken.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-sampling-003",
+   "rev": 1,
+   "topic": "st-sampling",
+   "type": "standard-error",
+   "level": 2,
+   "q": "A population has SD 12. The standard error of the mean for a random sample of size 36 is:",
+   "options": [
+    "2",
+    "6",
+    "0.33",
+    "3"
+   ],
+   "answer": 0,
+   "solution": "SE = σ/√n = 12/√36 = 12/6 = 2.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-sampling-004",
+   "rev": 1,
+   "topic": "st-sampling",
+   "type": "allocation",
+   "level": 2,
+   "q": "A population has two strata of sizes 600 and 400. A sample of 50 is taken with proportional allocation. The sample sizes from the two strata are:",
+   "options": [
+    "35 and 15",
+    "20 and 30",
+    "25 and 25",
+    "30 and 20"
+   ],
+   "answer": 3,
+   "solution": "N = 1000.<br>n<sub>1</sub> = 50 × 600/1000 = 30; n<sub>2</sub> = 50 × 400/1000 = 20.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-sampling-005",
+   "rev": 1,
+   "topic": "st-sampling",
+   "type": "standard-error",
+   "level": 3,
+   "q": "In a sample of 96 people, 40% are found to be smokers. The standard error of the sample proportion is:",
+   "options": [
+    "0.24",
+    "0.04",
+    "0.05",
+    "0.025"
+   ],
+   "answer": 2,
+   "solution": "SE = √(pq/n) = √(0.4 × 0.6/96) = √(0.24/96) = √0.0025 = 0.05.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-sampling-006",
+   "rev": 1,
+   "topic": "st-sampling",
+   "type": "standard-error",
+   "level": 3,
+   "q": "A sample of size 100 gives a certain standard error of the mean. To reduce this standard error to half, the sample size must be:",
+   "options": [
+    "200",
+    "400",
+    "50",
+    "150"
+   ],
+   "answer": 1,
+   "solution": "SE ∝ 1/√n. Halving SE needs √n to double, i.e. n to become 4 times.<br>New n = 4 × 100 = 400.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stsamp-1",
+   "front": "SE of mean",
+   "back": "σ/√n",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stsamp-2",
+   "front": "SE of proportion",
+   "back": "√(pq/n)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stsamp-3",
+   "front": "Number of SRSWOR samples",
+   "back": "ᴺCₙ",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stsamp-4",
+   "front": "To halve SE",
+   "back": "Multiply sample size by 4",
+   "deck": "formulas"
+  }
+ ]
+}

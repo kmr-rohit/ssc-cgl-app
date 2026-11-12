@@ -1,0 +1,193 @@
+{
+ "topic": "r-blood-relations",
+ "notes": {
+  "summary": "Blood relation questions describe family links in words, codes or by \"pointing to a person\". Draw a small <b>family tree</b> and you will rarely go wrong. About 1 question in Tier 1.",
+  "concepts": [
+   {
+    "title": "Draw a family tree",
+    "body": "Use <b>+</b> for male and <b>−</b> for female, a horizontal line for married couples, a vertical line for parent–child, and a dashed line for siblings. Fill in one statement at a time."
+   },
+   {
+    "title": "Key terms",
+    "body": "Father's or mother's brother = uncle. Mother's brother = <b>maternal</b> uncle. Son's wife = daughter-in-law. Daughter's husband = son-in-law. Wife's brother = brother-in-law."
+   },
+   {
+    "title": "Pointing questions",
+    "body": "Start from the <b>end</b> of the sentence (\"my father's only son\" = me, if I am male) and work back to the person pointed at."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "pointing",
+    "name": "Pointing / introducing",
+    "how": "Break the sentence from \"my …\" and simplify step by step.",
+    "example": {
+     "q": "Pointing to a boy, Meena says, \"He is the son of my mother's only son.\" Who is the boy?",
+     "steps": [
+      "Mother's only son = Meena's brother.",
+      "His son = Meena's nephew."
+     ],
+     "answer": "Nephew"
+    }
+   },
+   {
+    "type": "direct-relation",
+    "name": "Direct statements",
+    "how": "Put each statement into the family tree; note genders.",
+    "example": {
+     "q": "A is the son of B. B is the sister of C. How is C related to A?",
+     "steps": [
+      "B is A's mother.",
+      "C is a sibling of B, gender not given."
+     ],
+     "answer": "Maternal uncle or aunt"
+    }
+   },
+   {
+    "type": "coded-relation",
+    "name": "Coded relations",
+    "how": "Decode each symbol into a sentence, then draw the tree.",
+    "example": {
+     "q": "P + Q means P is the father of Q; P − Q means P is the wife of Q. What is A − B + C?",
+     "steps": [
+      "A is the wife of B; B is the father of C.",
+      "So A is C's mother."
+     ],
+     "answer": "A is C's mother"
+    }
+   }
+  ],
+  "tips": [
+   "Mark gender only when it is clearly given; otherwise the answer may be \"parent\" or \"cannot be determined\".",
+   "In coded questions, write the decoded sentence under each symbol before drawing."
+  ],
+  "traps": [
+   "\"Only son of my father\" can be the speaker himself.",
+   "Being someone's sibling does not tell you your gender."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-blood-relations-001",
+   "rev": 1,
+   "topic": "r-blood-relations",
+   "type": "pointing",
+   "level": 1,
+   "q": "Pointing to a man, Rita said, \"He is the son of my grandfather's only son.\" How is the man related to Rita?",
+   "options": [
+    "Cousin",
+    "Brother",
+    "Uncle",
+    "Son"
+   ],
+   "answer": 1,
+   "solution": "Rita's grandfather's only son = Rita's father.<br>The son of Rita's father = Rita's brother.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-blood-relations-002",
+   "rev": 1,
+   "topic": "r-blood-relations",
+   "type": "direct-relation",
+   "level": 1,
+   "q": "A is the brother of B. B is the daughter of C. How is C related to A?",
+   "options": [
+    "Father",
+    "Mother",
+    "Uncle",
+    "Father or Mother"
+   ],
+   "answer": 3,
+   "solution": "B is the daughter of C, so C is B's parent.<br>A is B's brother, so C is also A's parent.<br>C's gender is not given, so C is A's father or mother.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-blood-relations-003",
+   "rev": 1,
+   "topic": "r-blood-relations",
+   "type": "coded-relation",
+   "level": 2,
+   "q": "P + Q means P is the father of Q; P − Q means P is the wife of Q; P × Q means P is the brother of Q; P ÷ Q means P is the daughter of Q.<br>If A + B × C − D, how is D related to A?",
+   "options": [
+    "Son",
+    "Brother-in-law",
+    "Son-in-law",
+    "Nephew"
+   ],
+   "answer": 2,
+   "solution": "A + B: A is the father of B.<br>B × C: B is the brother of C, so C is also A's child.<br>C − D: C is the wife of D, so C is A's daughter.<br>D is the husband of A's daughter = A's son-in-law.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-blood-relations-004",
+   "rev": 1,
+   "topic": "r-blood-relations",
+   "type": "pointing",
+   "level": 2,
+   "q": "Introducing a woman, Raj said, \"She is the wife of the only son of my father.\" How is the woman related to Raj?",
+   "options": [
+    "Sister",
+    "Wife",
+    "Sister-in-law",
+    "Mother"
+   ],
+   "answer": 1,
+   "solution": "The only son of Raj's father is Raj himself.<br>So the woman is Raj's wife.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-blood-relations-005",
+   "rev": 1,
+   "topic": "r-blood-relations",
+   "type": "direct-relation",
+   "level": 3,
+   "q": "In a family, P is the father of Q. Q is the mother of R and S. R is a boy and S is a girl. T is the brother of P. U is the wife of P. How is S related to U?",
+   "options": [
+    "Daughter",
+    "Niece",
+    "Granddaughter",
+    "Grandson"
+   ],
+   "answer": 2,
+   "solution": "U is the wife of P, and P is the father of Q, so Q is U's child.<br>S is Q's child, so S is U's grandchild.<br>S is a girl, so S is U's granddaughter.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-blood-relations-006",
+   "rev": 1,
+   "topic": "r-blood-relations",
+   "type": "coded-relation",
+   "level": 3,
+   "q": "A @ B means A is the mother of B; A # B means A is the husband of B; A $ B means A is the daughter of B; A % B means A is the brother of B.<br>If M % N @ O # P $ Q, how is M related to O?",
+   "options": [
+    "Father",
+    "Maternal uncle",
+    "Paternal uncle",
+    "Brother-in-law"
+   ],
+   "answer": 1,
+   "solution": "M % N: M is the brother of N.<br>N @ O: N is the mother of O.<br>So M is the brother of O's mother = O's maternal uncle.<br>(O # P $ Q only tells us about O's wife P and her parent Q.)",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-blood-relations-1",
+   "front": "Mother's brother",
+   "back": "Maternal uncle",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-blood-relations-2",
+   "front": "Daughter's husband",
+   "back": "Son-in-law",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-blood-relations-3",
+   "front": "\"My father's only son\" (male speaker)",
+   "back": "The speaker himself",
+   "deck": "reasoning"
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+{
+ "topic": "q-simplification",
+ "notes": {
+  "summary": "Simplification tests BODMAS, laws of indices and surds. These are speed questions: aim for 30 seconds each.",
+  "concepts": [
+   {
+    "title": "BODMAS",
+    "body": "Order: <b>B</b>rackets → <b>O</b>f → <b>D</b>ivision and <b>M</b>ultiplication (left to right) → <b>A</b>ddition and <b>S</b>ubtraction (left to right)."
+   },
+   {
+    "title": "Laws of indices",
+    "body": "a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup>; a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup>; (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>; a<sup>0</sup> = 1; a<sup>−n</sup> = 1/a<sup>n</sup>."
+   },
+   {
+    "title": "Surds",
+    "body": "To remove a root from the denominator, multiply by the <b>conjugate</b>: 1/(√a + √b) = (√a − √b)/(a − b). To compare roots, raise all to the LCM of the root orders."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "bodmas",
+    "name": "BODMAS",
+    "how": "Solve brackets first, then ÷ and × from left to right, then + and −.",
+    "example": {
+     "q": "Simplify 20 − 12 ÷ 4 × 2.",
+     "steps": [
+      "12 ÷ 4 = 3",
+      "3 × 2 = 6",
+      "20 − 6 = 14"
+     ],
+     "answer": "14"
+    }
+   },
+   {
+    "type": "indices",
+    "name": "Indices and exponent equations",
+    "how": "Bring both sides to the same base, then equate powers.",
+    "example": {
+     "q": "If 3<sup>x</sup> = 81, find x.",
+     "steps": [
+      "81 = 3<sup>4</sup>",
+      "x = 4"
+     ],
+     "answer": "4"
+    }
+   },
+   {
+    "type": "surds",
+    "name": "Surds and comparison",
+    "how": "Rationalise using the conjugate; for comparison, raise to a common power.",
+    "example": {
+     "q": "Rationalise 1/(√5 − √3).",
+     "steps": [
+      "Multiply by (√5 + √3)/(√5 + √3)",
+      "Denominator = 5 − 3 = 2",
+      "= (√5 + √3)/2"
+     ],
+     "answer": "(√5 + √3)/2"
+    }
+   }
+  ],
+  "tips": [
+   "Division and multiplication have equal priority: go left to right.",
+   "For infinite roots √(a + √(a + …)), solve x² = a + x."
+  ],
+  "traps": [
+   "18 ÷ 3 × 2 is 12, not 3.",
+   "(a + b)<sup>2</sup> ≠ a<sup>2</sup> + b<sup>2</sup>, and √(a + b) ≠ √a + √b."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Product of powers",
+   "expr": "a^m × a^n = a^(m+n)"
+  },
+  {
+   "name": "Power of power",
+   "expr": "(a^m)^n = a^(mn)"
+  },
+  {
+   "name": "Rationalise",
+   "expr": "1/(√a + √b) = (√a − √b)/(a − b)"
+  },
+  {
+   "name": "Infinite nested root",
+   "expr": "√(a + √(a + …)) = x where x² − x − a = 0"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-simplification-001",
+   "rev": 1,
+   "topic": "q-simplification",
+   "type": "bodmas",
+   "level": 1,
+   "q": "Simplify: 18 ÷ 3 × 2 + 4 − 6",
+   "options": [
+    "1",
+    "10",
+    "7",
+    "12"
+   ],
+   "answer": 1,
+   "solution": "18 ÷ 3 = 6 (left to right).<br>6 × 2 = 12.<br>12 + 4 − 6 = 10.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-simplification-002",
+   "rev": 1,
+   "topic": "q-simplification",
+   "type": "indices",
+   "level": 1,
+   "q": "What is the value of (2<sup>5</sup> × 2<sup>3</sup>) ÷ 2<sup>6</sup>?",
+   "options": [
+    "2",
+    "8",
+    "16",
+    "4"
+   ],
+   "answer": 3,
+   "solution": "2<sup>5</sup> × 2<sup>3</sup> = 2<sup>8</sup>.<br>2<sup>8</sup> ÷ 2<sup>6</sup> = 2<sup>2</sup> = 4.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-simplification-003",
+   "rev": 1,
+   "topic": "q-simplification",
+   "type": "surds",
+   "level": 2,
+   "q": "1/(√3 + √2) is equal to:",
+   "options": [
+    "√3 + √2",
+    "√3 − √2",
+    "(√3 − √2)/5",
+    "1/(√3 − √2)"
+   ],
+   "answer": 1,
+   "solution": "Multiply numerator and denominator by (√3 − √2).<br>Denominator = (√3)<sup>2</sup> − (√2)<sup>2</sup> = 3 − 2 = 1.<br>Result = √3 − √2.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-simplification-004",
+   "rev": 1,
+   "topic": "q-simplification",
+   "type": "indices",
+   "level": 2,
+   "q": "If 2<sup>x + 3</sup> = 32<sup>x − 1</sup>, then x is:",
+   "options": [
+    "1",
+    "3",
+    "2",
+    "4"
+   ],
+   "answer": 2,
+   "solution": "32 = 2<sup>5</sup>, so 32<sup>x − 1</sup> = 2<sup>5x − 5</sup>.<br>Equate powers: x + 3 = 5x − 5.<br>4x = 8 → x = 2.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-simplification-005",
+   "rev": 1,
+   "topic": "q-simplification",
+   "type": "surds",
+   "level": 3,
+   "q": "Which of the following is the largest: √3, ∛4, ⁴√6?",
+   "options": [
+    "√3",
+    "∛4",
+    "⁴√6",
+    "All are equal"
+   ],
+   "answer": 0,
+   "solution": "LCM of 2, 3, 4 = 12. Raise each to the 12th power:<br>(√3)<sup>12</sup> = 3<sup>6</sup> = 729; (∛4)<sup>12</sup> = 4<sup>4</sup> = 256; (⁴√6)<sup>12</sup> = 6<sup>3</sup> = 216.<br>Largest is √3.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-simplification-006",
+   "rev": 1,
+   "topic": "q-simplification",
+   "type": "surds",
+   "level": 3,
+   "q": "Find the value of √(12 + √(12 + √(12 + …∞))).",
+   "options": [
+    "3",
+    "6",
+    "2√3",
+    "4"
+   ],
+   "answer": 3,
+   "solution": "Let x = √(12 + x).<br>x<sup>2</sup> = 12 + x → x<sup>2</sup> − x − 12 = 0 → (x − 4)(x + 3) = 0.<br>x is positive, so x = 4.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-simp-1",
+   "front": "a<sup>m</sup> × a<sup>n</sup>",
+   "back": "a<sup>m+n</sup>",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-simp-2",
+   "front": "a<sup>−n</sup>",
+   "back": "1/a<sup>n</sup>",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-simp-3",
+   "front": "1/(√a + √b)",
+   "back": "(√a − √b)/(a − b)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-simp-4",
+   "front": "√(n(n+1) + √(n(n+1) + …))",
+   "back": "n + 1",
+   "deck": "formulas"
+  }
+ ]
+}

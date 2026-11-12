@@ -1,0 +1,226 @@
+{
+ "topic": "st-central",
+ "notes": {
+  "summary": "Measures of central tendency give one value that represents the whole data: arithmetic mean, median, mode, geometric mean and harmonic mean. JSO asks direct computations (raw and grouped data), the empirical relation, and properties.",
+  "concepts": [
+   {
+    "title": "The means",
+    "body": "<ul><li><b>Arithmetic mean</b> x̄ = Σx/n (raw), Σfx/Σf (grouped, using class marks).</li><li><b>Combined mean</b> = (n<sub>1</sub>x̄<sub>1</sub> + n<sub>2</sub>x̄<sub>2</sub>)/(n<sub>1</sub> + n<sub>2</sub>).</li><li><b>Geometric mean</b> = (x<sub>1</sub>x<sub>2</sub>…x<sub>n</sub>)<sup>1/n</sup>; used for ratios and growth rates.</li><li><b>Harmonic mean</b> = n / Σ(1/x); used for average speed over equal distances.</li><li>For positive values: <b>AM ≥ GM ≥ HM</b>, and for two numbers GM² = AM × HM.</li></ul>"
+   },
+   {
+    "title": "Median and mode",
+    "body": "<ul><li><b>Median</b>: middle value after sorting. For even n, the average of the two middle values.</li><li>Grouped median = L + ((N/2 − cf)/f) × h, where cf is the cumulative frequency before the median class.</li><li><b>Mode</b>: most frequent value. Grouped mode = L + ((f<sub>1</sub> − f<sub>0</sub>)/(2f<sub>1</sub> − f<sub>0</sub> − f<sub>2</sub>)) × h.</li><li><b>Empirical relation</b> (moderately skewed data): Mode = 3 Median − 2 Mean.</li></ul>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "mean",
+    "name": "AM, GM, HM and combined mean",
+    "how": "Pick the right formula; for combined mean, weight each group mean by its size.",
+    "example": {
+     "q": "Group A (30 students) has mean 40; group B (20 students) has mean 50. Find the combined mean.",
+     "steps": [
+      "Total marks = 30 × 40 + 20 × 50 = 1200 + 1000 = 2200",
+      "Total students = 50",
+      "Combined mean = 2200/50 = 44"
+     ],
+     "answer": "44"
+    }
+   },
+   {
+    "type": "median-mode",
+    "name": "Median, mode and the empirical relation",
+    "how": "Sort before finding the median; use Mode = 3 Median − 2 Mean when two of the three are given.",
+    "example": {
+     "q": "Mean = 20, Mode = 14. Find the median.",
+     "steps": [
+      "14 = 3 Median − 2 × 20",
+      "3 Median = 54",
+      "Median = 18"
+     ],
+     "answer": "18"
+    }
+   },
+   {
+    "type": "grouped",
+    "name": "Grouped median and mode",
+    "how": "Build the cumulative frequency column, locate the median (N/2) or modal (highest f) class, then apply the formula.",
+    "example": {
+     "q": "Median class 40–50, N = 60, cf before it = 22, f = 16. Find the median.",
+     "steps": [
+      "N/2 = 30",
+      "Median = 40 + ((30 − 22)/16) × 10",
+      "= 40 + 5 = 45"
+     ],
+     "answer": "45"
+    }
+   }
+  ],
+  "tips": [
+   "For two numbers a and b: AM = (a+b)/2, GM = √(ab), HM = 2ab/(a+b).",
+   "Median is not affected by extreme values; the mean is.",
+   "In a symmetric distribution, mean = median = mode."
+  ],
+  "traps": [
+   "Always sort the data before picking the median.",
+   "In the grouped median formula, cf is the cumulative frequency of the class BEFORE the median class.",
+   "GM is zero or undefined if any value is zero or negative."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Arithmetic mean",
+   "expr": "x̄ = Σfx / Σf"
+  },
+  {
+   "name": "Combined mean",
+   "expr": "(n₁x̄₁ + n₂x̄₂) / (n₁ + n₂)"
+  },
+  {
+   "name": "Grouped median",
+   "expr": "L + ((N/2 − cf) / f) × h"
+  },
+  {
+   "name": "Grouped mode",
+   "expr": "L + ((f₁ − f₀) / (2f₁ − f₀ − f₂)) × h"
+  },
+  {
+   "name": "Empirical relation",
+   "expr": "Mode = 3 Median − 2 Mean"
+  },
+  {
+   "name": "Two numbers",
+   "expr": "GM² = AM × HM"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-central-001",
+   "rev": 1,
+   "topic": "st-central",
+   "type": "mean",
+   "level": 1,
+   "q": "The arithmetic mean of 4, 8, 12, 16 and 20 is:",
+   "options": [
+    "14",
+    "60",
+    "10",
+    "12"
+   ],
+   "answer": 3,
+   "solution": "Sum = 4 + 8 + 12 + 16 + 20 = 60. Mean = 60/5 = 12.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-central-002",
+   "rev": 1,
+   "topic": "st-central",
+   "type": "median-mode",
+   "level": 1,
+   "q": "The median of 7, 3, 9, 5, 11, 13 is:",
+   "options": [
+    "9",
+    "7",
+    "8",
+    "8.5"
+   ],
+   "answer": 2,
+   "solution": "Sorted: 3, 5, 7, 9, 11, 13. n = 6 (even), so median = average of 3rd and 4th values = (7 + 9)/2 = 8.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-central-003",
+   "rev": 1,
+   "topic": "st-central",
+   "type": "median-mode",
+   "level": 2,
+   "q": "For a moderately skewed distribution, mean = 40 and median = 38. The mode is approximately:",
+   "options": [
+    "39",
+    "34",
+    "36",
+    "42"
+   ],
+   "answer": 1,
+   "solution": "Mode = 3 Median − 2 Mean = 3 × 38 − 2 × 40 = 114 − 80 = 34.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-central-004",
+   "rev": 1,
+   "topic": "st-central",
+   "type": "mean",
+   "level": 2,
+   "q": "The geometric mean of 2, 8 and 32 is:",
+   "options": [
+    "8",
+    "4",
+    "14",
+    "16"
+   ],
+   "answer": 0,
+   "solution": "GM = (2 × 8 × 32)<sup>1/3</sup> = (512)<sup>1/3</sup> = 8.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-central-005",
+   "rev": 1,
+   "topic": "st-central",
+   "type": "grouped",
+   "level": 3,
+   "q": "Find the median of the distribution:<table><tr><th>Class</th><th>f</th></tr><tr><td>0–10</td><td>5</td></tr><tr><td>10–20</td><td>8</td></tr><tr><td>20–30</td><td>12</td></tr><tr><td>30–40</td><td>10</td></tr><tr><td>40–50</td><td>5</td></tr></table>",
+   "options": [
+    "26.67",
+    "24.17",
+    "25.00",
+    "25.83"
+   ],
+   "answer": 3,
+   "solution": "N = 40, N/2 = 20. Cumulative frequencies: 5, 13, 25, 35, 40.<br>Median class = 20–30 (cf first reaches 20). L = 20, cf = 13, f = 12, h = 10.<br>Median = 20 + ((20 − 13)/12) × 10 = 20 + 70/12 = 20 + 5.83 = 25.83.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-central-006",
+   "rev": 1,
+   "topic": "st-central",
+   "type": "grouped",
+   "level": 3,
+   "q": "For the same distribution (0–10: 5, 10–20: 8, 20–30: 12, 30–40: 10, 40–50: 5), the mode is:",
+   "options": [
+    "28.00",
+    "25.83",
+    "26.67",
+    "25.00"
+   ],
+   "answer": 2,
+   "solution": "Modal class = 20–30 (highest f = 12). L = 20, f<sub>1</sub> = 12, f<sub>0</sub> = 8, f<sub>2</sub> = 10, h = 10.<br>Mode = 20 + ((12 − 8)/(24 − 8 − 10)) × 10 = 20 + (4/6) × 10 = 20 + 6.67 = 26.67.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stcent-1",
+   "front": "Grouped median formula",
+   "back": "L + ((N/2 − cf)/f) × h",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stcent-2",
+   "front": "Grouped mode formula",
+   "back": "L + ((f₁ − f₀)/(2f₁ − f₀ − f₂)) × h",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stcent-3",
+   "front": "Empirical relation",
+   "back": "Mode = 3 Median − 2 Mean",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stcent-4",
+   "front": "Order of AM, GM, HM",
+   "back": "AM ≥ GM ≥ HM (equal only if all values are equal)",
+   "deck": "formulas"
+  }
+ ]
+}

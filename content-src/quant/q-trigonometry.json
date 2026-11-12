@@ -1,0 +1,215 @@
+{
+ "topic": "q-trigonometry",
+ "notes": {
+  "summary": "Trigonometry includes standard values, identities and heights & distances. 2–3 questions in Tier 1 and 2–4 in Tier 2. Most identity questions collapse to 1 or 0 with the right identity.",
+  "concepts": [
+   {
+    "title": "Standard values",
+    "body": "<table><tr><th>θ</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr><tr><td>sin</td><td>0</td><td>1/2</td><td>1/√2</td><td>√3/2</td><td>1</td></tr><tr><td>cos</td><td>1</td><td>√3/2</td><td>1/√2</td><td>1/2</td><td>0</td></tr><tr><td>tan</td><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>—</td></tr></table>"
+   },
+   {
+    "title": "Identities",
+    "body": "sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1; sec<sup>2</sup>θ − tan<sup>2</sup>θ = 1; cosec<sup>2</sup>θ − cot<sup>2</sup>θ = 1. Complementary angles: sin(90° − θ) = cos θ, tan(90° − θ) = cot θ."
+   },
+   {
+    "title": "Heights and distances",
+    "body": "Angle of elevation is measured up from the horizontal; angle of depression is measured down from the horizontal and equals the elevation from the other point. Use tan θ = height / base.",
+    "img": "quant/trig-tower-60.svg"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "trig-values",
+    "name": "Standard values and ratios",
+    "how": "Use the table or draw a right triangle from the given ratio.",
+    "example": {
+     "q": "If cos θ = 5/13 (θ acute), find tan θ.",
+     "steps": [
+      "Opposite = √(169 − 25) = 12",
+      "tan θ = 12/5"
+     ],
+     "answer": "12/5"
+    }
+   },
+   {
+    "type": "identities",
+    "name": "Identities",
+    "how": "Use sec θ + tan θ and sec θ − tan θ are reciprocals; pair complementary angles.",
+    "example": {
+     "q": "Find sin<sup>2</sup>30° + cos<sup>2</sup>30°.",
+     "steps": [
+      "sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1"
+     ],
+     "answer": "1"
+    }
+   },
+   {
+    "type": "heights",
+    "name": "Heights and distances",
+    "how": "Draw the figure, then tan θ = height / base for each right triangle.",
+    "example": {
+     "q": "A 10 m pole casts a shadow of 10√3 m. Sun’s elevation?",
+     "steps": [
+      "tan θ = 10/(10√3) = 1/√3"
+     ],
+     "answer": "30°"
+    }
+   }
+  ],
+  "tips": [
+   "(sec θ + tan θ)(sec θ − tan θ) = 1.",
+   "sin<sup>2</sup>1° + … + sin<sup>2</sup>89° pairs up into 1s: answer 44.5.",
+   "Remember √3 ≈ 1.732 for numeric options."
+  ],
+  "traps": [
+   "Angle of depression is NOT measured from the vertical.",
+   "tan 90° is not defined; do not put it in calculations."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Pythagorean identity",
+   "expr": "sin²θ + cos²θ = 1"
+  },
+  {
+   "name": "Secant identity",
+   "expr": "sec²θ − tan²θ = 1"
+  },
+  {
+   "name": "Height",
+   "expr": "h = base × tan θ"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-trigonometry-001",
+   "rev": 1,
+   "topic": "q-trigonometry",
+   "type": "trig-values",
+   "level": 1,
+   "q": "What is the value of sin 30° + cos 60°?",
+   "options": [
+    "1/2",
+    "√3",
+    "1",
+    "(1 + √3)/2"
+   ],
+   "answer": 2,
+   "solution": "sin 30° = 1/2 and cos 60° = 1/2.<br>Sum = 1/2 + 1/2 = 1.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-trigonometry-002",
+   "rev": 1,
+   "topic": "q-trigonometry",
+   "type": "trig-values",
+   "level": 1,
+   "q": "If sin θ = 3/5 and θ is acute, then tan θ is:",
+   "options": [
+    "3/4",
+    "4/3",
+    "4/5",
+    "5/3"
+   ],
+   "answer": 0,
+   "solution": "Opposite = 3, hypotenuse = 5 → adjacent = √(25 − 9) = 4.<br>tan θ = 3/4.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-trigonometry-003",
+   "rev": 1,
+   "topic": "q-trigonometry",
+   "type": "identities",
+   "level": 2,
+   "q": "If sec θ + tan θ = 5, then sec θ is:",
+   "options": [
+    "12/5",
+    "13/5",
+    "5/13",
+    "26/5"
+   ],
+   "answer": 1,
+   "solution": "(sec θ + tan θ)(sec θ − tan θ) = 1 → sec θ − tan θ = 1/5.<br>Adding: 2 sec θ = 5 + 1/5 = 26/5.<br>sec θ = 13/5.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-trigonometry-004",
+   "rev": 1,
+   "topic": "q-trigonometry",
+   "type": "heights",
+   "level": 2,
+   "q": "The angle of elevation of the top of a tower from a point 30 m away from its foot on level ground is 60°. What is the height of the tower?",
+   "img": "quant/trig-tower-60.svg",
+   "options": [
+    "30 m",
+    "10√3 m",
+    "30√3 m",
+    "60 m"
+   ],
+   "answer": 2,
+   "solution": "tan 60° = h/30.<br>h = 30 × √3 = 30√3 m.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-trigonometry-005",
+   "rev": 1,
+   "topic": "q-trigonometry",
+   "type": "heights",
+   "level": 3,
+   "q": "From the top of a building 60 m high, the angle of depression of a car changes from 30° to 45° as the car moves straight towards the building. How far did the car move?",
+   "img": "quant/trig-depression.svg",
+   "options": [
+    "60(√3 − 1) m",
+    "60√3 m",
+    "60(√3 + 1) m",
+    "30(√3 − 1) m"
+   ],
+   "answer": 0,
+   "solution": "At 30°: distance = 60/tan 30° = 60√3 m.<br>At 45°: distance = 60/tan 45° = 60 m.<br>Distance moved = 60√3 − 60 = 60(√3 − 1) m ≈ 43.9 m.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-trigonometry-006",
+   "rev": 1,
+   "topic": "q-trigonometry",
+   "type": "identities",
+   "level": 3,
+   "q": "What is the value of sin<sup>2</sup>1° + sin<sup>2</sup>2° + sin<sup>2</sup>3° + … + sin<sup>2</sup>89°?",
+   "options": [
+    "44",
+    "45",
+    "89/2",
+    "89"
+   ],
+   "answer": 2,
+   "solution": "Pair sin<sup>2</sup>θ with sin<sup>2</sup>(90° − θ) = cos<sup>2</sup>θ: each pair (1°, 89°), …, (44°, 46°) gives 1 → 44 pairs = 44.<br>Middle term sin<sup>2</sup>45° = 1/2.<br>Total = 44 + 1/2 = 89/2.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-trig-1",
+   "front": "sin 60°",
+   "back": "√3/2",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-trig-2",
+   "front": "tan 30°",
+   "back": "1/√3",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-trig-3",
+   "front": "sec θ − tan θ if sec θ + tan θ = k",
+   "back": "1/k",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-trig-4",
+   "front": "sin²1° + sin²2° + … + sin²89°",
+   "back": "44.5",
+   "deck": "formulas"
+  }
+ ]
+}

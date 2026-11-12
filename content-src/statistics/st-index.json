@@ -1,0 +1,223 @@
+{
+ "topic": "st-index",
+ "notes": {
+  "summary": "Index numbers show the relative change in prices, quantities or values compared to a base period (index = 100). JSO asks on simple and weighted indices (Laspeyres, Paasche, Fisher), the tests an index should pass, and uses such as deflating and base shifting.",
+  "concepts": [
+   {
+    "title": "Simple indices",
+    "body": "<ul><li>Price relative = (p<sub>1</sub>/p<sub>0</sub>) × 100.</li><li>Simple aggregative = (Σp<sub>1</sub>/Σp<sub>0</sub>) × 100.</li><li>Simple average of relatives = Σ(p<sub>1</sub>/p<sub>0</sub> × 100)/n.</li><li>The base year index is always <b>100</b>.</li></ul>"
+   },
+   {
+    "title": "Weighted indices",
+    "body": "<ul><li><b>Laspeyres</b> (base-year quantities): Σp<sub>1</sub>q<sub>0</sub>/Σp<sub>0</sub>q<sub>0</sub> × 100. Tends to overstate change (upward bias).</li><li><b>Paasche</b> (current-year quantities): Σp<sub>1</sub>q<sub>1</sub>/Σp<sub>0</sub>q<sub>1</sub> × 100. Tends to understate.</li><li><b>Fisher</b> = √(Laspeyres × Paasche). Called the <b>ideal</b> index: it satisfies both the <b>time reversal</b> and <b>factor reversal</b> tests.</li><li>Marshall–Edgeworth uses (q<sub>0</sub> + q<sub>1</sub>) as weights.</li></ul>"
+   },
+   {
+    "title": "Tests and uses",
+    "body": "<ul><li><b>Time reversal</b>: P<sub>01</sub> × P<sub>10</sub> = 1. <b>Factor reversal</b>: P<sub>01</sub> × Q<sub>01</sub> = V<sub>01</sub> (value ratio). <b>Circular test</b>: met by simple aggregative and fixed-weight indices, not by Fisher.</li><li><b>Real wage</b> = (money wage / CPI) × 100 (deflating).</li><li><b>Base shifting</b>: new index = (old index / old index of new base year) × 100.</li><li>Chain index uses link relatives and is good for long periods.</li></ul>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "simple",
+    "name": "Simple indices",
+    "how": "Divide current by base and multiply by 100.",
+    "example": {
+     "q": "Price of rice was ₹40 in 2015 and ₹52 in 2024. Find the price relative (2015 = 100).",
+     "steps": [
+      "52/40 × 100",
+      "= 130"
+     ],
+     "answer": "130"
+    }
+   },
+   {
+    "type": "weighted",
+    "name": "Laspeyres, Paasche and Fisher",
+    "how": "Make columns p0q0, p1q0, p0q1, p1q1, add them, then apply the formulas.",
+    "example": {
+     "q": "Laspeyres = 125 and Paasche = 121. Find Fisher's index.",
+     "steps": [
+      "Fisher = √(125 × 121)",
+      "= √15125 ≈ 122.98"
+     ],
+     "answer": "≈ 122.98"
+    }
+   },
+   {
+    "type": "tests-uses",
+    "name": "Tests, deflating and base shifting",
+    "how": "Remember which index passes which test; for real wage divide by CPI/100.",
+    "example": {
+     "q": "A worker earns ₹24,000; CPI is 120. Find the real wage.",
+     "steps": [
+      "Real wage = 24000/120 × 100",
+      "= 20,000"
+     ],
+     "answer": "₹20,000"
+    }
+   }
+  ],
+  "tips": [
+   "Laspeyres → base quantities (q₀); Paasche → current quantities (q₁). \"L\" comes before \"P\", base comes before current.",
+   "Fisher lies between Laspeyres and Paasche.",
+   "CPI is used to find real wages and dearness allowance."
+  ],
+  "traps": [
+   "Fisher's index does NOT satisfy the circular test.",
+   "Real wage divides by the index, then multiplies by 100.",
+   "Laspeyres uses base-year weights even for the current-year prices."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Laspeyres",
+   "expr": "Σp₁q₀ / Σp₀q₀ × 100"
+  },
+  {
+   "name": "Paasche",
+   "expr": "Σp₁q₁ / Σp₀q₁ × 100"
+  },
+  {
+   "name": "Fisher",
+   "expr": "√(L × P)"
+  },
+  {
+   "name": "Real wage",
+   "expr": "(Money wage / CPI) × 100"
+  },
+  {
+   "name": "Base shifting",
+   "expr": "(Old index / old index of new base) × 100"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-index-001",
+   "rev": 1,
+   "topic": "st-index",
+   "type": "simple",
+   "level": 1,
+   "q": "The index number for the base year is always:",
+   "options": [
+    "1",
+    "100",
+    "1000",
+    "0"
+   ],
+   "answer": 1,
+   "solution": "The base period is the point of comparison, so its index is taken as 100.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-index-002",
+   "rev": 1,
+   "topic": "st-index",
+   "type": "simple",
+   "level": 1,
+   "q": "The sum of prices of a group of goods is ₹120 in the base year and ₹150 in the current year. The simple aggregative price index is:",
+   "options": [
+    "125",
+    "130",
+    "150",
+    "80"
+   ],
+   "answer": 0,
+   "solution": "Index = (Σp<sub>1</sub>/Σp<sub>0</sub>) × 100 = (150/120) × 100 = 125.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-index-003",
+   "rev": 1,
+   "topic": "st-index",
+   "type": "weighted",
+   "level": 2,
+   "q": "Find Laspeyres' price index:<table><tr><th>Item</th><th>p<sub>0</sub></th><th>q<sub>0</sub></th><th>p<sub>1</sub></th><th>q<sub>1</sub></th></tr><tr><td>A</td><td>10</td><td>5</td><td>12</td><td>6</td></tr><tr><td>B</td><td>8</td><td>10</td><td>10</td><td>8</td></tr></table>",
+   "options": [
+    "122.83",
+    "125.00",
+    "122.58",
+    "123.08"
+   ],
+   "answer": 3,
+   "solution": "Σp<sub>1</sub>q<sub>0</sub> = 12×5 + 10×10 = 60 + 100 = 160.<br>Σp<sub>0</sub>q<sub>0</sub> = 10×5 + 8×10 = 50 + 80 = 130.<br>Laspeyres = 160/130 × 100 = 123.08.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-index-004",
+   "rev": 1,
+   "topic": "st-index",
+   "type": "tests-uses",
+   "level": 2,
+   "q": "Which index number satisfies both the time reversal test and the factor reversal test?",
+   "options": [
+    "Laspeyres",
+    "Paasche",
+    "Fisher",
+    "Simple aggregative"
+   ],
+   "answer": 2,
+   "solution": "Fisher's ideal index √(L × P) satisfies both the time reversal and factor reversal tests. Laspeyres and Paasche satisfy neither.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-index-005",
+   "rev": 1,
+   "topic": "st-index",
+   "type": "weighted",
+   "level": 3,
+   "q": "For the same data (A: p<sub>0</sub> = 10, q<sub>0</sub> = 5, p<sub>1</sub> = 12, q<sub>1</sub> = 6; B: p<sub>0</sub> = 8, q<sub>0</sub> = 10, p<sub>1</sub> = 10, q<sub>1</sub> = 8), Fisher's ideal price index is approximately:",
+   "options": [
+    "123.08",
+    "122.83",
+    "122.50",
+    "122.58"
+   ],
+   "answer": 1,
+   "solution": "Laspeyres = 160/130 × 100 = 123.08.<br>Σp<sub>1</sub>q<sub>1</sub> = 72 + 80 = 152; Σp<sub>0</sub>q<sub>1</sub> = 60 + 64 = 124; Paasche = 152/124 × 100 = 122.58.<br>Fisher = √(123.08 × 122.58) ≈ 122.83.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-index-006",
+   "rev": 1,
+   "topic": "st-index",
+   "type": "tests-uses",
+   "level": 3,
+   "q": "A worker's monthly wage is ₹30,000 and the consumer price index (base = 100) is 150. His real wage is:",
+   "options": [
+    "₹20,000",
+    "₹15,000",
+    "₹30,000",
+    "₹45,000"
+   ],
+   "answer": 0,
+   "solution": "Real wage = (Money wage / CPI) × 100 = (30000/150) × 100 = ₹20,000.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stidx-1",
+   "front": "Laspeyres vs Paasche weights",
+   "back": "Laspeyres: base-year q₀. Paasche: current-year q₁.",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stidx-2",
+   "front": "Fisher's ideal index",
+   "back": "√(Laspeyres × Paasche); passes time and factor reversal tests",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stidx-3",
+   "front": "Real wage",
+   "back": "(Money wage / CPI) × 100",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stidx-4",
+   "front": "Factor reversal test",
+   "back": "P₀₁ × Q₀₁ = Σp₁q₁/Σp₀q₀",
+   "deck": "formulas"
+  }
+ ]
+}

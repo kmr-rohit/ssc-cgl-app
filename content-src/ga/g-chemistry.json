@@ -1,0 +1,76 @@
+{
+  "topic": "g-chemistry",
+  "notes": {
+    "summary": "Chemistry gives <b>1–2 questions</b> at NCERT class 8–10 level: atoms and the periodic table, acids, bases and pH, common names and formulas of compounds, alloys, ores and everyday gases.",
+    "concepts": [
+      {
+        "title": "Atoms and the periodic table",
+        "body": "<ul><li>Electron discovered by <b>J.J. Thomson</b>; proton (nucleus) by <b>Ernest Rutherford</b>; neutron by <b>James Chadwick</b>.</li><li><b>Mendeleev</b> arranged elements by atomic mass; the <b>modern periodic table</b> is based on <b>atomic number</b> (Moseley).</li><li>Group 1 = alkali metals; Group 17 = halogens; Group 18 = noble (inert) gases.</li><li>Lightest element: <b>hydrogen</b>. Liquid metal at room temperature: <b>mercury</b>. Liquid non-metal: <b>bromine</b>. Hardest natural substance: <b>diamond</b> (a form of carbon).</li></ul>"
+      },
+      {
+        "title": "Acids, bases and pH",
+        "body": "pH runs from 0 to 14. <b>pH 7 = neutral</b>, below 7 = acidic, above 7 = basic. Human blood is slightly basic (about 7.4).<table><thead><tr><th>Natural source</th><th>Acid</th></tr></thead><tbody><tr><td>Vinegar</td><td>Acetic acid</td></tr><tr><td>Lemon, orange</td><td>Citric acid</td></tr><tr><td>Tamarind</td><td>Tartaric acid</td></tr><tr><td>Sour milk, curd</td><td>Lactic acid</td></tr><tr><td>Tomato</td><td>Oxalic acid</td></tr><tr><td>Ant sting, nettle sting</td><td>Methanoic (formic) acid</td></tr><tr><td>Stomach</td><td>Hydrochloric acid</td></tr></tbody></table>",
+        "img": "ga/chem-ph-scale.svg"
+      },
+      {
+        "title": "Common names of compounds",
+        "body": "<table><thead><tr><th>Common name</th><th>Chemical name</th><th>Formula</th></tr></thead><tbody><tr><td>Common salt</td><td>Sodium chloride</td><td>NaCl</td></tr><tr><td>Baking soda</td><td>Sodium hydrogen carbonate</td><td>NaHCO<sub>3</sub></td></tr><tr><td>Washing soda</td><td>Sodium carbonate decahydrate</td><td>Na<sub>2</sub>CO<sub>3</sub>·10H<sub>2</sub>O</td></tr><tr><td>Bleaching powder</td><td>Calcium oxychloride</td><td>CaOCl<sub>2</sub></td></tr><tr><td>Plaster of Paris</td><td>Calcium sulphate hemihydrate</td><td>CaSO<sub>4</sub>·½H<sub>2</sub>O</td></tr><tr><td>Gypsum</td><td>Calcium sulphate dihydrate</td><td>CaSO<sub>4</sub>·2H<sub>2</sub>O</td></tr><tr><td>Quicklime</td><td>Calcium oxide</td><td>CaO</td></tr><tr><td>Slaked lime</td><td>Calcium hydroxide</td><td>Ca(OH)<sub>2</sub></td></tr><tr><td>Dry ice</td><td>Solid carbon dioxide</td><td>CO<sub>2</sub></td></tr><tr><td>Laughing gas</td><td>Nitrous oxide</td><td>N<sub>2</sub>O</td></tr></tbody></table>"
+      },
+      {
+        "title": "Alloys, ores and fuels",
+        "body": "<table><thead><tr><th>Alloy</th><th>Made of</th></tr></thead><tbody><tr><td>Brass</td><td>Copper + Zinc</td></tr><tr><td>Bronze</td><td>Copper + Tin</td></tr><tr><td>Stainless steel</td><td>Iron + Chromium + Nickel (+ a little carbon)</td></tr><tr><td>Solder</td><td>Lead + Tin</td></tr></tbody></table><table><thead><tr><th>Ore</th><th>Metal</th></tr></thead><tbody><tr><td>Bauxite</td><td>Aluminium</td></tr><tr><td>Haematite</td><td>Iron</td></tr><tr><td>Cinnabar</td><td>Mercury</td></tr><tr><td>Galena</td><td>Lead</td></tr></tbody></table>Fuels: <b>CNG</b> and <b>biogas</b> are mainly methane; <b>LPG</b> is mainly butane (with propane). <b>Galvanisation</b> = coating iron with zinc to stop rusting."
+      }
+    ],
+    "varieties": [
+      {
+        "type": "compounds",
+        "name": "Common names and formulas",
+        "how": "Recall the compound table; watch the water molecules in hydrates.",
+        "example": { "q": "What is the chemical formula of baking soda?", "steps": ["Baking soda = sodium hydrogen carbonate", "Formula NaHCO₃"], "answer": "NaHCO₃" }
+      },
+      {
+        "type": "acids-ph",
+        "name": "Acids, bases and pH",
+        "how": "Locate the substance on the pH scale; for natural acids use the source table.",
+        "example": { "q": "Which acid is present in tamarind?", "steps": ["Tamarind → tartaric acid (both start with 'ta')"], "answer": "Tartaric acid" }
+      },
+      {
+        "type": "elements-alloys",
+        "name": "Elements, alloys and ores",
+        "how": "Pair alloys with their metals and ores with the metal extracted.",
+        "example": { "q": "Bronze is an alloy of:", "steps": ["Brass = Cu + Zn", "Bronze = Cu + Sn (tin)"], "answer": "Copper and tin" }
+      }
+    ],
+    "tips": [
+      "Tamarind → Tartaric; Lemon → Citric; Lactic → milk (lacto = milk).",
+      "Plaster of Paris has half a water molecule; gypsum has two.",
+      "Discoverers: Thomson–electron, Rutherford–proton/nucleus, Chadwick–neutron."
+    ],
+    "traps": [
+      "Brass has zinc, bronze has tin — not the other way round.",
+      "Washing soda (Na₂CO₃·10H₂O) and baking soda (NaHCO₃) are often swapped.",
+      "The modern periodic table uses atomic number, not atomic mass."
+    ]
+  },
+  "questions": [
+    { "id": "g-chemistry-001", "rev": 1, "topic": "g-chemistry", "type": "compounds", "level": 1, "q": "The chemical name of common salt is:", "options": ["Sodium carbonate", "Sodium chloride", "Potassium chloride", "Calcium chloride"], "answer": 1, "solution": "Common salt is sodium chloride, NaCl.<br><b>Memory hook:</b> Na + Cl = the salt on your table.", "source": "test-data" },
+    { "id": "g-chemistry-002", "rev": 1, "topic": "g-chemistry", "type": "acids-ph", "level": 1, "q": "The pH of pure water at 25 °C is:", "img": "ga/chem-ph-scale.svg", "options": ["0", "14", "7", "1"], "answer": 2, "solution": "Pure water is neutral, pH 7. Below 7 is acidic, above 7 is basic.<br><b>Memory hook:</b> 7 sits in the middle of 0–14.", "source": "test-data" },
+    { "id": "g-chemistry-003", "rev": 1, "topic": "g-chemistry", "type": "elements-alloys", "level": 1, "q": "Which metal is liquid at room temperature?", "options": ["Mercury", "Sodium", "Lead", "Aluminium"], "answer": 0, "solution": "Mercury (Hg) is the only metal liquid at room temperature. Bromine is the liquid non-metal.<br><b>Memory hook:</b> Mercury's old name is 'quicksilver' — silver that flows.", "source": "test-data" },
+    { "id": "g-chemistry-004", "rev": 1, "topic": "g-chemistry", "type": "acids-ph", "level": 2, "q": "Which acid is found in an ant sting?", "options": ["Citric acid", "Lactic acid", "Acetic acid", "Methanoic (formic) acid"], "answer": 3, "solution": "Ant and nettle stings contain methanoic acid (formic acid). A mild base like baking soda gives relief.<br><b>Memory hook:</b> <i>Formica</i> is Latin for ant — formic acid.", "source": "test-data" },
+    { "id": "g-chemistry-005", "rev": 1, "topic": "g-chemistry", "type": "elements-alloys", "level": 2, "q": "Brass is an alloy of:", "options": ["Copper and tin", "Copper and zinc", "Iron and nickel", "Lead and tin"], "answer": 1, "solution": "Brass = copper + zinc. Bronze = copper + tin. Solder = lead + tin.<br><b>Memory hook:</b> Brass taps shine with zinc; the bronze medal is cast with tin.", "source": "test-data" },
+    { "id": "g-chemistry-006", "rev": 1, "topic": "g-chemistry", "type": "compounds", "level": 2, "q": "Which compound is known as 'laughing gas'?", "options": ["Nitrous oxide", "Nitric oxide", "Nitrogen dioxide", "Carbon monoxide"], "answer": 0, "solution": "Nitrous oxide (N<sub>2</sub>O) is laughing gas, used as a mild anaesthetic.<br><b>Memory hook:</b> N<sub>2</sub>O — 'two N's make you grin'.", "source": "test-data" },
+    { "id": "g-chemistry-007", "rev": 1, "topic": "g-chemistry", "type": "compounds", "level": 3, "q": "Plaster of Paris is chemically:", "options": ["CaSO<sub>4</sub>·2H<sub>2</sub>O", "CaCO<sub>3</sub>", "CaSO<sub>4</sub>·½H<sub>2</sub>O", "CaOCl<sub>2</sub>"], "answer": 2, "solution": "Plaster of Paris is calcium sulphate hemihydrate, CaSO<sub>4</sub>·½H<sub>2</sub>O. Heating gypsum (CaSO<sub>4</sub>·2H<sub>2</sub>O) gives it; adding water sets it back into gypsum.<br><b>Memory hook:</b> 'Hemi' = half a water.", "source": "test-data" },
+    { "id": "g-chemistry-008", "rev": 1, "topic": "g-chemistry", "type": "elements-alloys", "level": 3, "q": "Which pair (ore — metal) is <b>incorrectly</b> matched?", "options": ["Bauxite — Aluminium", "Haematite — Iron", "Galena — Lead", "Cinnabar — Copper"], "answer": 3, "solution": "Cinnabar (HgS) is the ore of mercury, not copper.<br><b>Memory hook:</b> Cinnabar is the bright red ore from which quicksilver (mercury) is roasted out.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-chemistry-1", "front": "Formula of washing soda", "back": "Na₂CO₃·10H₂O", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-2", "front": "Chemical name of bleaching powder", "back": "Calcium oxychloride (CaOCl₂)", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-3", "front": "Quicklime", "back": "Calcium oxide (CaO)", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-4", "front": "Acid in vinegar", "back": "Acetic acid", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-5", "front": "Acid in tomato", "back": "Oxalic acid", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-6", "front": "Who discovered the neutron?", "back": "James Chadwick", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-7", "front": "Main gas in CNG and biogas", "back": "Methane", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-8", "front": "Galvanisation", "back": "Coating iron with zinc to prevent rusting", "deck": "ga-facts" },
+    { "id": "fc-g-chemistry-9", "front": "Ore of aluminium", "back": "Bauxite", "deck": "ga-facts" }
+  ]
+}

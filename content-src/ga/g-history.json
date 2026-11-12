@@ -1,0 +1,76 @@
+{
+  "topic": "g-history",
+  "notes": {
+    "summary": "History gives about <b>3–4 questions</b> in SSC CGL. Most come from the Indus Valley, Buddhism and Jainism, the Mauryas and Guptas, the Delhi Sultanate and Mughals, and the freedom struggle (1857–1947). Learn <b>who, where and when</b> for each big event.",
+    "concepts": [
+      {
+        "title": "Ancient India: Indus Valley to the Guptas",
+        "body": "<ul><li><b>Indus Valley (Harappan) Civilisation</b>: Bronze Age, town planning with grid streets and covered drains. Harappa was excavated first by <b>Daya Ram Sahni (1921)</b>; Mohenjo-daro by <b>R.D. Banerji (1922)</b>. The Great Bath is at Mohenjo-daro; a dockyard at Lothal (Gujarat).</li><li><b>Buddha</b>: born at Lumbini, enlightenment at Bodh Gaya, first sermon at Sarnath, death (mahaparinirvana) at Kushinagar.</li><li><b>Mahavira</b> was the 24th Jain tirthankara; Rishabhanatha was the first.</li><li><b>Maurya Empire</b>: founded by Chandragupta Maurya with the help of Chanakya (Kautilya, author of the <i>Arthashastra</i>). Megasthenes wrote <i>Indica</i>. Ashoka turned to Buddhism after the <b>Kalinga war</b>.</li><li><b>Gupta Empire</b>: called the 'Golden Age'. Aryabhata (astronomer) and Kalidasa (poet) belong to this period.</li></ul>"
+      },
+      {
+        "title": "Medieval India: Sultanate and Mughals",
+        "body": "<table><thead><tr><th>Ruler</th><th>Remember for</th></tr></thead><tbody><tr><td>Qutb-ud-din Aibak</td><td>Founder of Slave (Mamluk) dynasty; began the Qutub Minar</td></tr><tr><td>Iltutmish</td><td>Completed Qutub Minar; introduced silver <i>tanka</i> and copper <i>jital</i></td></tr><tr><td>Alauddin Khilji</td><td>Market control reforms</td></tr><tr><td>Muhammad bin Tughlaq</td><td>Token currency; shifted capital from Delhi to Daulatabad</td></tr><tr><td>Babur</td><td>Founded Mughal Empire after First Battle of Panipat (1526)</td></tr><tr><td>Akbar</td><td>Din-i-Ilahi, Mansabdari system, Second Battle of Panipat (1556)</td></tr><tr><td>Shah Jahan</td><td>Taj Mahal, Red Fort (Delhi)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Modern India: the freedom struggle",
+        "body": "<ul><li><b>1857</b>: Revolt began at Meerut.</li><li><b>1885</b>: Indian National Congress founded by A.O. Hume; first session at Bombay, president <b>W.C. Bonnerjee</b>.</li><li><b>1905</b>: Partition of Bengal by Lord Curzon; Swadeshi movement.</li><li><b>1919</b>: Rowlatt Act; Jallianwala Bagh massacre at Amritsar (13 April).</li><li><b>1920</b>: Non-Cooperation Movement (withdrawn after Chauri Chaura, 1922).</li><li><b>1930</b>: Dandi (Salt) March, start of Civil Disobedience.</li><li><b>1942</b>: Quit India Movement ('Do or Die').</li><li><b>1947</b>: Independence on 15 August.</li></ul>",
+        "img": "ga/history-freedom-timeline.svg"
+      },
+      {
+        "title": "Governors-General and Viceroys (selected)",
+        "body": "<table><thead><tr><th>Name</th><th>Linked event</th></tr></thead><tbody><tr><td>Warren Hastings</td><td>First Governor-General of Bengal</td></tr><tr><td>Lord William Bentinck</td><td>Abolition of Sati (1829)</td></tr><tr><td>Lord Dalhousie</td><td>Doctrine of Lapse; first railway (1853)</td></tr><tr><td>Lord Canning</td><td>Governor-General during 1857; first Viceroy</td></tr><tr><td>Lord Curzon</td><td>Partition of Bengal (1905)</td></tr><tr><td>Lord Mountbatten</td><td>Last Viceroy; first Governor-General of free India</td></tr></tbody></table>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "ancient",
+        "name": "Ancient India facts",
+        "how": "Link each site or person to one key fact (place, discoverer, book).",
+        "example": { "q": "Where did Gautama Buddha deliver his first sermon?", "steps": ["Birth: Lumbini; enlightenment: Bodh Gaya", "First sermon: Sarnath (near Varanasi)"], "answer": "Sarnath" }
+      },
+      {
+        "type": "medieval",
+        "name": "Medieval rulers and their works",
+        "how": "Use the ruler table: one famous reform or building per ruler.",
+        "example": { "q": "Which Sultan introduced token currency?", "steps": ["Token currency of copper/bronze is linked with the Tughlaq experiments", "Muhammad bin Tughlaq also moved the capital to Daulatabad"], "answer": "Muhammad bin Tughlaq" }
+      },
+      {
+        "type": "modern",
+        "name": "Freedom struggle and chronology",
+        "how": "Memorise the timeline of years; for order questions write the year next to each event first.",
+        "example": { "q": "Arrange: Quit India, Dandi March, Partition of Bengal.", "steps": ["Partition of Bengal = 1905", "Dandi March = 1930", "Quit India = 1942"], "answer": "Partition of Bengal, Dandi March, Quit India" }
+      }
+    ],
+    "tips": [
+      "For chronology questions, write the year beside each option event before comparing.",
+      "Buddha's four places in order of life: Lumbini, Bodh Gaya, Sarnath, Kushinagar (L-B-S-K).",
+      "Viceroy questions usually ask the event linked to the name; learn them in pairs."
+    ],
+    "traps": [
+      "Harappa (Daya Ram Sahni, 1921) and Mohenjo-daro (R.D. Banerji, 1922) are often swapped in options.",
+      "Qutub Minar was begun by Aibak but completed by Iltutmish.",
+      "The first session of INC was presided by W.C. Bonnerjee, not by A.O. Hume, who founded it."
+    ]
+  },
+  "questions": [
+    { "id": "g-history-001", "rev": 1, "topic": "g-history", "type": "ancient", "level": 1, "q": "Who led the first excavation at Harappa in 1921?", "options": ["Daya Ram Sahni", "R.D. Banerji", "Mortimer Wheeler", "John Marshall"], "answer": 0, "solution": "Harappa was first excavated by Daya Ram Sahni in 1921 (under John Marshall as ASI Director-General). R.D. Banerji excavated Mohenjo-daro in 1922.<br><b>Memory hook:</b> <i>H</i>arappa came first, so the first name, Sahni, goes with 1921.", "source": "test-data" },
+    { "id": "g-history-002", "rev": 1, "topic": "g-history", "type": "medieval", "level": 1, "q": "The Mughal Empire in India was founded after which battle?", "options": ["Battle of Plassey", "Battle of Talikota", "First Battle of Panipat", "Battle of Haldighati"], "answer": 2, "solution": "Babur defeated Ibrahim Lodi in the First Battle of Panipat (1526) and founded the Mughal Empire.<br><b>Memory hook:</b> 1526: Babur's 'first' Panipat = first Mughal.", "source": "test-data" },
+    { "id": "g-history-003", "rev": 1, "topic": "g-history", "type": "modern", "level": 1, "q": "Who presided over the first session of the Indian National Congress (1885)?", "options": ["A.O. Hume", "W.C. Bonnerjee", "Dadabhai Naoroji", "Surendranath Banerjee"], "answer": 1, "solution": "The first INC session was held at Bombay in 1885 and was presided over by W.C. Bonnerjee. A.O. Hume was the founder.<br><b>Memory hook:</b> Hume <i>founded</i>, Bonnerjee <i>presided</i>.", "source": "test-data" },
+    { "id": "g-history-004", "rev": 1, "topic": "g-history", "type": "ancient", "level": 2, "q": "Which ruler adopted Buddhism after the Kalinga war?", "options": ["Chandragupta Maurya", "Bindusara", "Samudragupta", "Ashoka"], "answer": 3, "solution": "The bloodshed of the Kalinga war (c. 261 BCE) moved Ashoka to adopt Buddhism and follow Dhamma.<br><b>Memory hook:</b> Kalinga changed Ashoka from 'Chandashoka' (fierce) to 'Dharmashoka'.", "source": "test-data" },
+    { "id": "g-history-005", "rev": 1, "topic": "g-history", "type": "medieval", "level": 2, "q": "Which Delhi Sultan shifted his capital from Delhi to Daulatabad?", "options": ["Alauddin Khilji", "Muhammad bin Tughlaq", "Firoz Shah Tughlaq", "Iltutmish"], "answer": 1, "solution": "Muhammad bin Tughlaq moved the capital to Daulatabad (Devagiri) and also issued token currency. Both experiments failed.<br><b>Memory hook:</b> Muhammad bin Tughlaq = 'ideas ahead of time': token money and a new capital.", "source": "test-data" },
+    { "id": "g-history-006", "rev": 1, "topic": "g-history", "type": "modern", "level": 2, "q": "In which year did the Jallianwala Bagh massacre take place?", "options": ["1917", "1922", "1919", "1920"], "answer": 2, "solution": "The massacre took place at Amritsar on 13 April 1919 (Baisakhi day) under General Dyer, after protests against the Rowlatt Act.<br><b>Memory hook:</b> Rowlatt Act and Jallianwala are both 1919.", "source": "test-data" },
+    { "id": "g-history-007", "rev": 1, "topic": "g-history", "type": "modern", "level": 3, "q": "Arrange in chronological order:<br>1. Quit India Movement<br>2. Partition of Bengal<br>3. Dandi March<br>4. Jallianwala Bagh massacre", "img": "ga/history-freedom-timeline.svg", "options": ["2, 4, 3, 1", "4, 2, 3, 1", "2, 3, 4, 1", "2, 4, 1, 3"], "answer": 0, "solution": "Partition of Bengal 1905 → Jallianwala Bagh 1919 → Dandi March 1930 → Quit India 1942. So 2, 4, 3, 1.<br><b>Memory hook:</b> 05 – 19 – 30 – 42: each gap grows by about a decade.", "source": "test-data" },
+    { "id": "g-history-008", "rev": 1, "topic": "g-history", "type": "ancient", "level": 3, "q": "Which pair is <b>incorrectly</b> matched (place — event in Buddha's life)?", "options": ["Lumbini — Birth", "Bodh Gaya — Enlightenment", "Sarnath — First sermon", "Kushinagar — Enlightenment"], "answer": 3, "solution": "Kushinagar is where Buddha attained mahaparinirvana (death). Enlightenment was at Bodh Gaya.<br><b>Memory hook:</b> L-B-S-K follows his life: born, enlightened, taught, passed away.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-history-1", "front": "Who excavated Mohenjo-daro (1922)?", "back": "R.D. Banerji", "deck": "ga-facts" },
+    { "id": "fc-g-history-2", "front": "Where is the Harappan dockyard?", "back": "Lothal (Gujarat)", "deck": "ga-facts" },
+    { "id": "fc-g-history-3", "front": "Author of Arthashastra", "back": "Kautilya (Chanakya)", "deck": "ga-facts" },
+    { "id": "fc-g-history-4", "front": "Greek ambassador who wrote Indica", "back": "Megasthenes", "deck": "ga-facts" },
+    { "id": "fc-g-history-5", "front": "Who completed the Qutub Minar?", "back": "Iltutmish (begun by Qutb-ud-din Aibak)", "deck": "ga-facts" },
+    { "id": "fc-g-history-6", "front": "Second Battle of Panipat year", "back": "1556 (Akbar's side defeated Hemu)", "deck": "ga-facts" },
+    { "id": "fc-g-history-7", "front": "Governor-General who abolished Sati (1829)", "back": "Lord William Bentinck", "deck": "ga-facts" },
+    { "id": "fc-g-history-8", "front": "Viceroy who partitioned Bengal (1905)", "back": "Lord Curzon", "deck": "ga-facts" },
+    { "id": "fc-g-history-9", "front": "Event that led to withdrawal of Non-Cooperation Movement", "back": "Chauri Chaura incident (1922)", "deck": "ga-facts" }
+  ]
+}

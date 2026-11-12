@@ -1,0 +1,173 @@
+{
+ "topic": "r-order-ranking",
+ "notes": {
+  "summary": "Ranking questions give positions from the left/right or top/bottom, or compare people (taller, heavier). Use simple formulas and a quick line diagram.",
+  "concepts": [
+   {
+    "title": "Position formulas",
+    "body": "Total = (position from left) + (position from right) − 1.<br>Position from right = Total − (position from left) + 1."
+   },
+   {
+    "title": "Persons between two people",
+    "body": "If both positions are counted from the same end, persons between = difference − 1."
+   },
+   {
+    "title": "Comparison ranking",
+    "body": "Write the names on a line from greatest to smallest as you read each clue: D &gt; A &gt; B &gt; C."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "position-in-row",
+    "name": "Position in a row",
+    "how": "Use Total = L + R − 1, or convert both positions to the same end.",
+    "example": {
+     "q": "Ram is 15th from the left in a row of 40. Position from right?",
+     "steps": [
+      "Right = 40 − 15 + 1",
+      "= 26"
+     ],
+     "answer": "26th"
+    }
+   },
+   {
+    "type": "comparison-ranking",
+    "name": "Comparison",
+    "how": "Arrange all persons on one line using every clue.",
+    "example": {
+     "q": "A is taller than B; B is taller than C. Who is shortest?",
+     "steps": [
+      "A > B > C"
+     ],
+     "answer": "C"
+    }
+   }
+  ],
+  "tips": [
+   "Convert all positions to the same end before comparing.",
+   "For \"interchange\" questions, the new position belongs to the other person's old place."
+  ],
+  "traps": [
+   "Do not forget the −1 (the person is counted from both ends).",
+   "\"Heavier than only T\" means exactly one person (T) is lighter."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-order-ranking-001",
+   "rev": 1,
+   "topic": "r-order-ranking",
+   "type": "position-in-row",
+   "level": 1,
+   "q": "In a row of 40 students, Ram is 15th from the left end. What is his position from the right end?",
+   "options": [
+    "25th",
+    "26th",
+    "24th",
+    "27th"
+   ],
+   "answer": 1,
+   "solution": "Position from right = 40 − 15 + 1 = 26th.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-order-ranking-002",
+   "rev": 1,
+   "topic": "r-order-ranking",
+   "type": "position-in-row",
+   "level": 1,
+   "q": "In a class, Rohan is 12th from the top and 18th from the bottom. How many students are there in the class?",
+   "options": [
+    "30",
+    "28",
+    "29",
+    "31"
+   ],
+   "answer": 2,
+   "solution": "Total = 12 + 18 − 1 = 29.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-order-ranking-003",
+   "rev": 1,
+   "topic": "r-order-ranking",
+   "type": "comparison-ranking",
+   "level": 2,
+   "q": "A is taller than B. C is shorter than B. D is taller than A. E is shorter than C. Who is in the middle when they are arranged by height?",
+   "options": [
+    "A",
+    "C",
+    "D",
+    "B"
+   ],
+   "answer": 3,
+   "solution": "D > A (D taller than A), A > B, B > C, C > E.<br>Order: D > A > B > C > E.<br>B is in the middle.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-order-ranking-004",
+   "rev": 1,
+   "topic": "r-order-ranking",
+   "type": "position-in-row",
+   "level": 2,
+   "q": "In a row, A is 10th from the left and B is 15th from the right. When they interchange their positions, A becomes 20th from the left. How many people are in the row?",
+   "options": [
+    "35",
+    "33",
+    "30",
+    "34"
+   ],
+   "answer": 3,
+   "solution": "After interchange, A is at B's old place.<br>So B's old place is 20th from the left and 15th from the right.<br>Total = 20 + 15 − 1 = 34.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-order-ranking-005",
+   "rev": 1,
+   "topic": "r-order-ranking",
+   "type": "position-in-row",
+   "level": 3,
+   "q": "In a row of 50 children, P is 18th from the left end and Q is 20th from the right end. How many children are there between P and Q?",
+   "options": [
+    "12",
+    "13",
+    "11",
+    "10"
+   ],
+   "answer": 0,
+   "solution": "Q from the left = 50 − 20 + 1 = 31st.<br>P is 18th from the left.<br>Children between = 31 − 18 − 1 = 12.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-order-ranking-006",
+   "rev": 1,
+   "topic": "r-order-ranking",
+   "type": "comparison-ranking",
+   "level": 3,
+   "q": "P, Q, R, S and T each have a different weight. Q is heavier than only T. P is heavier than R but lighter than S. Who is the heaviest?",
+   "options": [
+    "P",
+    "R",
+    "S",
+    "Q"
+   ],
+   "answer": 2,
+   "solution": "\"Q is heavier than only T\" → T is the lightest and Q is 4th.<br>The top three are P, R and S. S > P > R.<br>Order: S > P > R > Q > T. S is the heaviest.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-order-ranking-1",
+   "front": "Total in a row",
+   "back": "Left position + Right position − 1",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-order-ranking-2",
+   "front": "Position from right",
+   "back": "Total − Left position + 1",
+   "deck": "reasoning"
+  }
+ ]
+}

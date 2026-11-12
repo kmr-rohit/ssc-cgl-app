@@ -1,0 +1,193 @@
+{
+ "topic": "r-calendar-clock",
+ "notes": {
+  "summary": "Calendar questions use <b>odd days</b> (extra days after full weeks) to find a day of the week. Clock questions use the speeds of the hands. Usually 0–1 question.",
+  "concepts": [
+   {
+    "title": "Odd days",
+    "body": "Ordinary year = 365 days = 52 weeks + <b>1</b> odd day. Leap year = <b>2</b> odd days. Month odd days: 31 days → 3, 30 days → 2, February → 0 (or 1 in a leap year).<br>Odd days in 100 years = 5, 200 = 3, 300 = 1, 400 = 0."
+   },
+   {
+    "title": "Leap year",
+    "body": "A year divisible by 4 is a leap year; a century year (1900, 2100) must be divisible by <b>400</b> (2000 is a leap year, 1900 is not)."
+   },
+   {
+    "title": "Clock hands",
+    "body": "Minute hand moves 6° per minute; hour hand moves 0.5° per minute. Angle at H hours M minutes = |30H − 5.5M|. Hands meet every 65 5/11 minutes."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "calendar-day",
+    "name": "Day of the week",
+    "how": "Count odd days between the two dates and move forward that many days.",
+    "example": {
+     "q": "1 Jan 2025 is Wednesday. What day is 1 Feb 2025?",
+     "steps": [
+      "January has 31 days = 3 odd days.",
+      "Wednesday + 3 = Saturday"
+     ],
+     "answer": "Saturday"
+    }
+   },
+   {
+    "type": "clock-angle",
+    "name": "Angle between hands",
+    "how": "Use θ = |30H − 5.5M|; if more than 180°, take 360° − θ.",
+    "example": {
+     "q": "Angle at 3:30?",
+     "steps": [
+      "|30×3 − 5.5×30| = |90 − 165|",
+      "= 75°"
+     ],
+     "answer": "75°"
+    }
+   },
+   {
+    "type": "clock-time",
+    "name": "Hands together / opposite",
+    "how": "Hands together between H and H+1 at (60H/11) minutes past H.",
+    "example": {
+     "q": "When are the hands together between 2 and 3?",
+     "steps": [
+      "60 × 2 / 11 = 120/11",
+      "= 10 10/11 min"
+     ],
+     "answer": "10 10/11 min past 2"
+    }
+   }
+  ],
+  "tips": [
+   "Days code: Sunday = 0, Monday = 1 … Saturday = 6.",
+   "Mirror time = 11:60 − given time (for times between 1:00 and 11:00)."
+  ],
+  "traps": [
+   "When moving one year forward, the extra day of a leap year counts only if 29 February lies in between.",
+   "1900 was not a leap year."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-calendar-clock-001",
+   "rev": 1,
+   "topic": "r-calendar-clock",
+   "type": "calendar-day",
+   "level": 1,
+   "q": "If 1 January 2025 was a Wednesday, what day of the week was 1 March 2025?",
+   "options": [
+    "Friday",
+    "Saturday",
+    "Sunday",
+    "Thursday"
+   ],
+   "answer": 1,
+   "solution": "Days from 1 January to 1 March = 31 (Jan) + 28 (Feb, 2025 is not a leap year) = 59.<br>59 = 8 weeks + 3 odd days.<br>Wednesday + 3 = Saturday.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-calendar-clock-002",
+   "rev": 1,
+   "topic": "r-calendar-clock",
+   "type": "clock-angle",
+   "level": 1,
+   "q": "What is the angle between the hour hand and the minute hand of a clock at 3:30?",
+   "options": [
+    "90°",
+    "75°",
+    "60°",
+    "105°"
+   ],
+   "answer": 1,
+   "solution": "θ = |30H − 5.5M| = |30 × 3 − 5.5 × 30|.<br>= |90 − 165| = 75°.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-calendar-clock-003",
+   "rev": 1,
+   "topic": "r-calendar-clock",
+   "type": "calendar-day",
+   "level": 2,
+   "q": "If 15 August 2023 was a Tuesday, what day of the week was 15 August 2024?",
+   "options": [
+    "Wednesday",
+    "Friday",
+    "Thursday",
+    "Monday"
+   ],
+   "answer": 2,
+   "solution": "From 15 Aug 2023 to 15 Aug 2024 the period includes 29 February 2024.<br>So it has 366 days = 52 weeks + 2 odd days.<br>Tuesday + 2 = Thursday.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-calendar-clock-004",
+   "rev": 1,
+   "topic": "r-calendar-clock",
+   "type": "clock-angle",
+   "level": 2,
+   "q": "What is the angle between the two hands of a clock at 7:20?",
+   "options": [
+    "90°",
+    "110°",
+    "120°",
+    "100°"
+   ],
+   "answer": 3,
+   "solution": "θ = |30 × 7 − 5.5 × 20| = |210 − 110| = 100°.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-calendar-clock-005",
+   "rev": 1,
+   "topic": "r-calendar-clock",
+   "type": "clock-time",
+   "level": 3,
+   "q": "At what time between 4 o'clock and 5 o'clock will the hands of a clock be together?",
+   "options": [
+    "20 minutes past 4",
+    "21 3/11 minutes past 4",
+    "21 9/11 minutes past 4",
+    "22 2/11 minutes past 4"
+   ],
+   "answer": 2,
+   "solution": "At 4:00 the hour hand is 20 minute-spaces ahead.<br>The minute hand gains 11/12 of a minute-space every minute.<br>Time = 20 × 12/11 = 240/11 = 21 9/11 minutes past 4.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-calendar-clock-006",
+   "rev": 1,
+   "topic": "r-calendar-clock",
+   "type": "calendar-day",
+   "level": 3,
+   "q": "What day of the week was 26 January 1950?",
+   "options": [
+    "Wednesday",
+    "Friday",
+    "Thursday",
+    "Monday"
+   ],
+   "answer": 2,
+   "solution": "Odd days up to 31 Dec 1949:<br>1600 years → 0; next 300 years → 1; 49 years = 12 leap + 37 ordinary → 24 + 37 = 61 → 61 mod 7 = 5.<br>Total so far = 0 + 1 + 5 = 6.<br>26 January → 26 mod 7 = 5.<br>Total = 11 → 11 mod 7 = 4 → Thursday (Sunday = 0).",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-calendar-clock-1",
+   "front": "Odd days: ordinary / leap year",
+   "back": "1 / 2",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-calendar-clock-2",
+   "front": "Angle between clock hands",
+   "back": "|30H − 5.5M|",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-calendar-clock-3",
+   "front": "Mirror image of 4:20",
+   "back": "7:40 (11:60 − 4:20)",
+   "deck": "reasoning"
+  }
+ ]
+}

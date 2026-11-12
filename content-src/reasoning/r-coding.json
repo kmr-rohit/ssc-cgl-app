@@ -1,0 +1,193 @@
+{
+ "topic": "r-coding",
+ "notes": {
+  "summary": "In coding-decoding, a word or number is written in a secret code. Find the rule from the given example and apply it. SSC asks 2–3 questions every shift.",
+  "concepts": [
+   {
+    "title": "Letter shift",
+    "body": "Each letter moves forward or backward by a fixed number (CAT → DBU is +1). Write positions A=1 … Z=26 to see the shift. After Z, go back to A."
+   },
+   {
+    "title": "Pattern coding",
+    "body": "The word may be <b>reversed</b> (GARDEN → NEDRAG), letters may be replaced by their <b>opposite</b> letter (A↔Z, B↔Y; positions add to 27), or by their position numbers."
+   },
+   {
+    "title": "Substitution",
+    "body": "Real words stand for other words: \"sky is called sea\". Answer with the <b>code name</b> of the real answer, not the real word."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "letter-shift",
+    "name": "Letter shift",
+    "how": "Find the shift for each letter from the example; apply the same shift.",
+    "example": {
+     "q": "If CAT is DBU, code DOG.",
+     "steps": [
+      "C→D, A→B, T→U: +1",
+      "D→E, O→P, G→H"
+     ],
+     "answer": "EPH"
+    }
+   },
+   {
+    "type": "pattern-coding",
+    "name": "Reverse / opposite / number",
+    "how": "Check reversal, opposite letters (sum 27) and positions.",
+    "example": {
+     "q": "If LAMP is OZNK, code DESK.",
+     "steps": [
+      "L(12)→O(15): 12+15 = 27, opposite letters",
+      "D→W, E→V, S→H, K→P"
+     ],
+     "answer": "WVHP"
+    }
+   },
+   {
+    "type": "substitution",
+    "name": "Substitution",
+    "how": "Find the real answer, then give its code name.",
+    "example": {
+     "q": "If water is called air, what do fish live in?",
+     "steps": [
+      "Fish live in water.",
+      "Water is called air."
+     ],
+     "answer": "Air"
+    }
+   }
+  ],
+  "tips": [
+   "Check the rule on every letter of the example, not just the first one.",
+   "Opposite pairs: A–Z, B–Y, C–X, D–W, E–V, F–U, G–T, H–S, I–R, J–Q, K–P, L–O, M–N."
+  ],
+  "traps": [
+   "In substitution, the answer is the code word, not the real word.",
+   "When shifting past Z, wrap around to A (Y + 3 = B)."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-coding-001",
+   "rev": 1,
+   "topic": "r-coding",
+   "type": "letter-shift",
+   "level": 1,
+   "q": "In a certain code language, CAT is written as DBU. How will DOG be written in that language?",
+   "options": [
+    "EOH",
+    "EPH",
+    "FPH",
+    "EPG"
+   ],
+   "answer": 1,
+   "solution": "C→D, A→B, T→U: each letter +1.<br>D+1 = E, O+1 = P, G+1 = H.<br>DOG → EPH.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-coding-002",
+   "rev": 1,
+   "topic": "r-coding",
+   "type": "pattern-coding",
+   "level": 1,
+   "q": "In a certain code, BAD is written as 214. How will FED be written in that code?",
+   "options": [
+    "645",
+    "564",
+    "654",
+    "456"
+   ],
+   "answer": 2,
+   "solution": "Each letter is replaced by its position: B=2, A=1, D=4.<br>F=6, E=5, D=4.<br>FED → 654.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-coding-003",
+   "rev": 1,
+   "topic": "r-coding",
+   "type": "letter-shift",
+   "level": 2,
+   "q": "In a certain code language, PAPER is written as SDSHU. How will PENCIL be written in that language?",
+   "options": [
+    "SHQFLO",
+    "SHQFLN",
+    "SGQFLO",
+    "RHQFLO"
+   ],
+   "answer": 0,
+   "solution": "P→S, A→D, P→S, E→H, R→U: each letter +3.<br>P+3 = S, E+3 = H, N+3 = Q, C+3 = F, I+3 = L, L+3 = O.<br>PENCIL → SHQFLO.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-coding-004",
+   "rev": 1,
+   "topic": "r-coding",
+   "type": "pattern-coding",
+   "level": 2,
+   "q": "In a certain code language, GARDEN is written as NEDRAG. How will FLOWER be written in that language?",
+   "options": [
+    "REWLOF",
+    "REWOLF",
+    "ERWOLF",
+    "REOWLF"
+   ],
+   "answer": 1,
+   "solution": "GARDEN written backwards is NEDRAG: the word is reversed.<br>FLOWER reversed = REWOLF.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-coding-005",
+   "rev": 1,
+   "topic": "r-coding",
+   "type": "substitution",
+   "level": 3,
+   "q": "If 'sky' is called 'sea', 'sea' is called 'water', 'water' is called 'air' and 'air' is called 'cloud', then where do fish live?",
+   "options": [
+    "Water",
+    "Sea",
+    "Air",
+    "Cloud"
+   ],
+   "answer": 2,
+   "solution": "Fish live in water.<br>In this language, water is called 'air'.<br>So the answer is Air.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-coding-006",
+   "rev": 1,
+   "topic": "r-coding",
+   "type": "pattern-coding",
+   "level": 3,
+   "q": "In a certain code language, LAMP is written as OZNK. How will DESK be written in that language?",
+   "options": [
+    "WVHQ",
+    "WVHP",
+    "XVHP",
+    "WUHP"
+   ],
+   "answer": 1,
+   "solution": "L(12)→O(15), A(1)→Z(26), M(13)→N(14), P(16)→K(11): positions add to 27, so each letter becomes its opposite letter.<br>D(4)→W(23), E(5)→V(22), S(19)→H(8), K(11)→P(16).<br>DESK → WVHP.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-coding-1",
+   "front": "Opposite letters rule",
+   "back": "Positions add to 27: A–Z, M–N, D–W, K–P",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-coding-2",
+   "front": "Substitution coding",
+   "back": "Find the real answer, then reply with its code name.",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-coding-3",
+   "front": "Wrap-around shift",
+   "back": "After Z comes A: X + 4 = B",
+   "deck": "reasoning"
+  }
+ ]
+}

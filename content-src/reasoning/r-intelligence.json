@@ -1,0 +1,193 @@
+{
+ "topic": "r-intelligence",
+ "notes": {
+  "summary": "These Tier 2 questions test <b>critical thinking</b> (what logically follows, strong vs weak arguments) and <b>emotional and social intelligence</b> (the most mature response in a situation). Choose the calm, fair, constructive option.",
+  "concepts": [
+   {
+    "title": "Critical thinking",
+    "body": "Separate what is <b>stated</b> from what is <b>assumed</b>. \"All who trained got a bonus\" does not mean \"everyone with a bonus trained\". A strong argument is relevant, important and directly linked to the question."
+   },
+   {
+    "title": "Emotional intelligence",
+    "body": "Know and manage your own feelings: stay calm, accept mistakes, learn from failure, and respond rather than react."
+   },
+   {
+    "title": "Social intelligence",
+    "body": "Understand others and work well with them: listen, include people, solve conflicts fairly and respect everyone."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "critical-thinking",
+    "name": "Logical inference and arguments",
+    "how": "Accept only what the facts guarantee; reject arguments based on likes, popularity or extremes.",
+    "example": {
+     "q": "All toppers revise daily. Asha revises daily. Is Asha a topper?",
+     "steps": [
+      "The rule goes one way only: topper → revises.",
+      "Revising daily does not prove she is a topper."
+     ],
+     "answer": "Not necessarily"
+    }
+   },
+   {
+    "type": "emotional-intelligence",
+    "name": "Emotional intelligence",
+    "how": "Pick the option that is calm, honest and focused on improvement.",
+    "example": {
+     "q": "You get a low score in a mock test. Best response?",
+     "steps": [
+      "Avoid blame or giving up.",
+      "Analyse mistakes and plan."
+     ],
+     "answer": "Review mistakes and adjust your study plan"
+    }
+   },
+   {
+    "type": "social-intelligence",
+    "name": "Social intelligence",
+    "how": "Pick the option that includes others, listens and solves the problem fairly.",
+    "example": {
+     "q": "A teammate is struggling with a task. Best action?",
+     "steps": [
+      "Do not ignore or mock.",
+      "Offer help respectfully."
+     ],
+     "answer": "Offer help and share what you know"
+    }
+   }
+  ],
+  "tips": [
+   "Avoid extreme options (shouting, quitting, ignoring) in situation questions.",
+   "In argument questions, \"everyone likes it\" or \"it is fashionable\" is a weak argument."
+  ],
+  "traps": [
+   "Do not reverse a rule: \"If A then B\" does not give \"If B then A\".",
+   "The \"nicest\" option is not always right; the best option also solves the problem."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-intelligence-001",
+   "rev": 1,
+   "topic": "r-intelligence",
+   "type": "emotional-intelligence",
+   "level": 1,
+   "q": "In a meeting, your colleague presents your work as his own. What is the most appropriate response?",
+   "options": [
+    "Shout at him in front of everyone",
+    "Talk to him calmly in private, and inform the manager with facts if needed",
+    "Stop working with him for ever",
+    "Say nothing but complain about him to others"
+   ],
+   "answer": 1,
+   "solution": "Shouting or gossip harms everyone and avoiding him does not fix the problem.<br>A calm private talk, with facts shared with the manager if needed, protects your work and keeps the relationship professional.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-intelligence-002",
+   "rev": 1,
+   "topic": "r-intelligence",
+   "type": "social-intelligence",
+   "level": 1,
+   "q": "A new student in your class sits alone during lunch every day. What should you do?",
+   "options": [
+    "Ignore the student; it is not your concern",
+    "Tell others that the student is unfriendly",
+    "Invite the student to join your group",
+    "Wait for the teacher to do something"
+   ],
+   "answer": 2,
+   "solution": "Including a newcomer is the socially intelligent choice.<br>Inviting the student helps them feel welcome; the other options leave them isolated.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-intelligence-003",
+   "rev": 1,
+   "topic": "r-intelligence",
+   "type": "critical-thinking",
+   "level": 2,
+   "q": "All employees who completed the training received a bonus. Ravi received a bonus. Which of the following is definitely true?",
+   "options": [
+    "Ravi completed the training",
+    "Ravi may or may not have completed the training",
+    "Ravi did not complete the training",
+    "Only Ravi received a bonus"
+   ],
+   "answer": 1,
+   "solution": "The rule says: training → bonus. It does not say bonus → training.<br>Others may get a bonus for other reasons.<br>So Ravi may or may not have completed the training.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-intelligence-004",
+   "rev": 1,
+   "topic": "r-intelligence",
+   "type": "emotional-intelligence",
+   "level": 2,
+   "q": "You fail an important exam despite working hard. Which is the most emotionally intelligent response?",
+   "options": [
+    "Decide that exams are unfair and stop preparing",
+    "Blame your teachers for the result",
+    "Analyse your mistakes and make a better plan for the next attempt",
+    "Pretend it does not matter to you"
+   ],
+   "answer": 2,
+   "solution": "Accepting the result and learning from it is a mature response.<br>Blaming others, quitting or hiding feelings does not help improvement.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-intelligence-005",
+   "rev": 1,
+   "topic": "r-intelligence",
+   "type": "critical-thinking",
+   "level": 3,
+   "q": "<b>Question:</b> Should mobile phones be banned inside classrooms?<br><b>Arguments:</b><br>I. Yes, phones distract students during lessons.<br>II. No, all students like to have their phones.",
+   "options": [
+    "Only argument I is strong",
+    "Only argument II is strong",
+    "Both arguments are strong",
+    "Neither argument is strong"
+   ],
+   "answer": 0,
+   "solution": "I is directly linked to learning in class and is important: strong.<br>II is based only on what students like, not on any real benefit: weak.<br>Only I is strong.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-intelligence-006",
+   "rev": 1,
+   "topic": "r-intelligence",
+   "type": "social-intelligence",
+   "level": 3,
+   "q": "You lead a team. Two members strongly disagree about how to finish a project, and the deadline is near. What is the best action?",
+   "options": [
+    "Pick the plan of the senior member without discussion",
+    "Let them argue until one gives up",
+    "Listen to both, compare the plans against the goal and deadline, decide, and explain the reason",
+    "Do the whole project yourself"
+   ],
+   "answer": 2,
+   "solution": "A good leader hears both sides, decides on clear criteria and explains the decision.<br>This solves the conflict fairly and keeps the team working together before the deadline.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-intelligence-1",
+   "front": "\"If A then B\" — does \"B\" prove \"A\"?",
+   "back": "No. Reversing the rule is a common logical error.",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-intelligence-2",
+   "front": "Strong argument test",
+   "back": "Relevant, important and directly linked to the question; not based on likes or popularity.",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-intelligence-3",
+   "front": "Best option in situation questions",
+   "back": "Calm, fair, solves the problem, respects everyone.",
+   "deck": "reasoning"
+  }
+ ]
+}

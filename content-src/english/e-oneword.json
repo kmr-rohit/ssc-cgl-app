@@ -1,0 +1,51 @@
+{
+  "topic": "e-oneword",
+  "notes": {
+    "summary": "In <b>One Word Substitution</b> a phrase or definition is given and you choose the single word that means the same. Words come in families (people, fear/phobias, killing, government, study of), so learning them by group is fastest.",
+    "concepts": [
+      { "title": "Learn by families", "body": "<ul><li><b>-cide</b> (killing): <i>homicide, regicide, fratricide, infanticide</i></li><li><b>-logy</b> (study of): <i>ornithology</i> (birds), <i>entomology</i> (insects), <i>seismology</i> (earthquakes)</li><li><b>-cracy</b> (rule by): <i>autocracy, democracy, plutocracy</i> (rule by the rich)</li><li><b>-phobia</b> (fear): <i>acrophobia</i> (heights), <i>claustrophobia</i> (closed spaces)</li></ul>" },
+      { "title": "Break the definition", "body": "Find the key idea in the definition (who? what? which action?) and match it with the root. <i>One who cannot be corrected</i> → key idea 'cannot be corrected' → <i>incorrigible</i>." }
+    ],
+    "varieties": [
+      { "type": "person", "name": "Words for people", "how": "Identify the role or habit described, then recall the word.", "example": { "q": "One who walks in sleep", "steps": ["<i>somnus</i> = sleep, <i>ambulare</i> = walk."], "answer": "Somnambulist" } },
+      { "type": "root-family", "name": "Root families (-cide, -logy, -cracy, -phobia)", "how": "Match the subject (bird, king, fear) with the right root.", "example": { "q": "Killing of one's own brother", "steps": ["Killing → <i>-cide</i>.", "Brother → <i>frater</i>."], "answer": "Fratricide" } },
+      { "type": "general", "name": "General definitions", "how": "Focus on the key idea; eliminate words from a different family.", "example": { "q": "A speech made without preparation", "steps": ["No preparation → off-hand."], "answer": "Extempore" } }
+    ],
+    "tips": [
+      "Revise one family (e.g. all -cide words) at a time.",
+      "Options often come from the same family; know the exact root to choose correctly."
+    ],
+    "traps": [
+      "<i>Philanthropist</i> (loves mankind, helps others) vs <i>misanthrope</i> (hates mankind).",
+      "<i>Amateur</i> (does it for pleasure) vs <i>novice</i> (a beginner)."
+    ]
+  },
+  "questions": [
+    { "id": "e-oneword-001", "rev": 1, "topic": "e-oneword", "type": "root-family", "level": 1, "q": "Select the word that can substitute the given group of words.<br>The study of birds", "options": ["Entomology", "Ornithology", "Zoology", "Anthropology"], "answer": 1, "solution": "<i>ornith</i> = bird, <i>-logy</i> = study. <b>Ornithology</b>. Entomology = insects; Anthropology = humans.", "source": "test-data" },
+    { "id": "e-oneword-002", "rev": 1, "topic": "e-oneword", "type": "person", "level": 1, "q": "Select the word that can substitute the given group of words.<br>A person who loves mankind and works for its welfare", "options": ["Misanthrope", "Philatelist", "Philanthropist", "Atheist"], "answer": 2, "solution": "<i>phil</i> = love, <i>anthropos</i> = man. <b>Philanthropist</b>. A misanthrope hates mankind; a philatelist collects stamps.", "source": "test-data" },
+    { "id": "e-oneword-003", "rev": 1, "topic": "e-oneword", "type": "general", "level": 2, "q": "Select the word that can substitute the given group of words.<br>That which cannot be read", "options": ["Illegible", "Ineligible", "Inaudible", "Invisible"], "answer": 0, "solution": "<b>Illegible</b> = cannot be read (of handwriting). <i>Ineligible</i> = not qualified; <i>inaudible</i> = cannot be heard.", "source": "test-data" },
+    { "id": "e-oneword-004", "rev": 1, "topic": "e-oneword", "type": "root-family", "level": 2, "q": "Select the word that can substitute the given group of words.<br>Government by the wealthy", "options": ["Autocracy", "Bureaucracy", "Plutocracy", "Aristocracy"], "answer": 2, "solution": "<i>plutos</i> = wealth, <i>-cracy</i> = rule. <b>Plutocracy</b>. Aristocracy = rule by nobles; autocracy = rule by one person.", "source": "test-data" },
+    { "id": "e-oneword-005", "rev": 1, "topic": "e-oneword", "type": "person", "level": 3, "q": "Select the word that can substitute the given group of words.<br>A person who is unable to be corrected or reformed", "options": ["Incorrigible", "Invincible", "Indefatigable", "Inexorable"], "answer": 0, "solution": "<b>Incorrigible</b> = cannot be corrected. <i>Invincible</i> = cannot be defeated; <i>indefatigable</i> = never tired; <i>inexorable</i> = cannot be stopped or persuaded.", "source": "test-data" },
+    { "id": "e-oneword-006", "rev": 1, "topic": "e-oneword", "type": "general", "level": 3, "q": "Select the word that can substitute the given group of words.<br>A list of items to be discussed at a meeting", "options": ["Manifesto", "Agenda", "Inventory", "Catalogue"], "answer": 1, "solution": "<b>Agenda</b> = list of items to be discussed at a meeting. <i>Inventory</i> = list of goods in stock; <i>manifesto</i> = public declaration of policy.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-ow-01", "front": "Study of birds", "back": "Ornithology", "deck": "oneword" },
+    { "id": "fc-e-ow-02", "front": "Study of insects", "back": "Entomology", "deck": "oneword" },
+    { "id": "fc-e-ow-03", "front": "One who loves mankind", "back": "Philanthropist", "deck": "oneword" },
+    { "id": "fc-e-ow-04", "front": "One who hates mankind", "back": "Misanthrope", "deck": "oneword" },
+    { "id": "fc-e-ow-05", "front": "Cannot be read", "back": "Illegible", "deck": "oneword" },
+    { "id": "fc-e-ow-06", "front": "Government by the wealthy", "back": "Plutocracy", "deck": "oneword" },
+    { "id": "fc-e-ow-07", "front": "Cannot be corrected", "back": "Incorrigible", "deck": "oneword" },
+    { "id": "fc-e-ow-08", "front": "Killing of a king", "back": "Regicide", "deck": "oneword" },
+    { "id": "fc-e-ow-09", "front": "Killing of one's brother", "back": "Fratricide", "deck": "oneword" },
+    { "id": "fc-e-ow-10", "front": "Fear of heights", "back": "Acrophobia", "deck": "oneword" },
+    { "id": "fc-e-ow-11", "front": "Fear of closed spaces", "back": "Claustrophobia", "deck": "oneword" },
+    { "id": "fc-e-ow-12", "front": "One who walks in sleep", "back": "Somnambulist", "deck": "oneword" },
+    { "id": "fc-e-ow-13", "front": "Speech made without preparation", "back": "Extempore", "deck": "oneword" },
+    { "id": "fc-e-ow-14", "front": "One who collects stamps", "back": "Philatelist", "deck": "oneword" },
+    { "id": "fc-e-ow-15", "front": "Never tired", "back": "Indefatigable", "deck": "oneword" },
+    { "id": "fc-e-ow-16", "front": "Cannot be defeated", "back": "Invincible", "deck": "oneword" },
+    { "id": "fc-e-ow-17", "front": "Life history written by oneself", "back": "Autobiography", "deck": "oneword" },
+    { "id": "fc-e-ow-18", "front": "One who eats only plants", "back": "Herbivore (animal) / Vegetarian (person)", "deck": "oneword" }
+  ]
+}

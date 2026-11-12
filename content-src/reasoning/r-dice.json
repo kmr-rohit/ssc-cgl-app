@@ -1,0 +1,208 @@
+{
+ "topic": "r-dice",
+ "notes": {
+  "summary": "Dice and cube questions ask which face is <b>opposite</b> another (from views or an open net), or how many small cubes of a painted cube have 0, 1, 2 or 3 faces painted.",
+  "concepts": [
+   {
+    "title": "Opposite faces from views",
+    "body": "Faces seen together in one view are <b>adjacent</b>, never opposite. A face is opposite the one number that never appears with it. If two views share a common face, the faces in the same position are opposite."
+   },
+   {
+    "title": "Open net (cube net)",
+    "body": "In a straight row of three squares, the 1st and 3rd are <b>opposite</b>. Two squares touching each other are adjacent.",
+    "img": "reasoning/dice-net-cross.svg"
+   },
+   {
+    "title": "Painted cube cut into n × n × n",
+    "body": "3 faces painted = 8 (corners). 2 faces = 12(n − 2). 1 face = 6(n − 2)². No face = (n − 2)³.",
+    "img": "reasoning/cube-painted.svg"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "opposite-faces",
+    "name": "Opposite face from positions",
+    "how": "List all faces adjacent to the given face; the missing one is opposite.",
+    "example": {
+     "q": "Views show 1 with 2, 3, 4 and 5. Which is opposite 1?",
+     "steps": [
+      "Adjacent to 1: 2, 3, 4, 5",
+      "Only 6 is left"
+     ],
+     "answer": "6",
+     "img": "reasoning/dice-two-views.svg"
+    }
+   },
+   {
+    "type": "cube-net",
+    "name": "Open net",
+    "how": "Skip one square in a straight line to find opposite pairs; use them to reject impossible cubes.",
+    "example": {
+     "q": "In the net, which number is opposite 3?",
+     "steps": [
+      "Column 1, 3, 5, 6: skip one → 3 and 6 opposite",
+      "Also 1–5 and 2–4"
+     ],
+     "answer": "6",
+     "img": "reasoning/dice-net-cross.svg"
+    }
+   },
+   {
+    "type": "cube-cutting",
+    "name": "Painted cube",
+    "how": "Find n (cube root of total pieces), then use the formulas.",
+    "example": {
+     "q": "A painted cube is cut into 27 equal cubes. How many have no face painted?",
+     "steps": [
+      "n = 3",
+      "(3 − 2)³ = 1"
+     ],
+     "answer": "1"
+    }
+   }
+  ],
+  "tips": [
+   "Two faces seen together in any view can never be opposite.",
+   "In a net, opposite pairs are found by skipping exactly one square in a straight line.",
+   "Corners (3 faces painted) are always 8, whatever n is."
+  ],
+  "traps": [
+   "A cube option is wrong if it shows two opposite faces together.",
+   "Even with no opposite faces shown, the order around a corner (clockwise vs anticlockwise) can make a cube impossible."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-dice-001",
+   "rev": 1,
+   "topic": "r-dice",
+   "type": "opposite-faces",
+   "level": 1,
+   "q": "Two different positions of the same die are shown. Which number is on the face opposite to 1?",
+   "options": [
+    "6",
+    "2",
+    "4",
+    "5"
+   ],
+   "answer": 0,
+   "solution": "In both views, 1 is on top.<br>Faces seen with 1: 2, 3 (view i) and 4, 5 (view ii).<br>So 2, 3, 4, 5 are adjacent to 1 and the remaining number 6 is opposite 1.",
+   "source": "test-data",
+   "img": "reasoning/dice-two-views.svg"
+  },
+  {
+   "id": "r-dice-002",
+   "rev": 1,
+   "topic": "r-dice",
+   "type": "cube-net",
+   "level": 1,
+   "q": "The given sheet is folded to form a cube. Which number will be on the face opposite to 2?",
+   "options": [
+    "1",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 1,
+   "solution": "2, 3, 4 lie in one straight row. Skip one square: 2 and 4 are opposite.<br>(Other pairs: 1–5 and 3–6.)",
+   "source": "test-data",
+   "img": "reasoning/dice-net-cross.svg"
+  },
+  {
+   "id": "r-dice-003",
+   "rev": 1,
+   "topic": "r-dice",
+   "type": "cube-cutting",
+   "level": 2,
+   "q": "A cube painted on all its faces is cut into 64 identical small cubes. How many small cubes have exactly two faces painted?",
+   "options": [
+    "8",
+    "16",
+    "24",
+    "32"
+   ],
+   "answer": 2,
+   "solution": "64 = 4³, so n = 4.<br>Two faces painted = 12(n − 2) = 12 × 2 = 24.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-dice-004",
+   "rev": 1,
+   "topic": "r-dice",
+   "type": "opposite-faces",
+   "level": 2,
+   "q": "Three different positions of the same die are shown. Which number is on the face opposite to 4?",
+   "options": [
+    "5",
+    "3",
+    "6",
+    "1"
+   ],
+   "answer": 1,
+   "solution": "View (ii): 4 is with 1 and 2.<br>View (iii): 4 is with 5 and 6.<br>So 1, 2, 5, 6 are adjacent to 4. The remaining number, 3, is opposite 4.<br>(Check: 3 never appears with 4 in any view.)",
+   "source": "test-data",
+   "img": "reasoning/dice-three-views.svg"
+  },
+  {
+   "id": "r-dice-005",
+   "rev": 1,
+   "topic": "r-dice",
+   "type": "cube-net",
+   "level": 3,
+   "q": "The sheet shown in the figure is folded to form a cube. Which of the following cubes can be formed?",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 1,
+   "solution": "Opposite pairs from the net: 1–5, 2–4, 3–6.<br>(a) shows 3 and 6 together ✗. (d) shows 1 and 5 together ✗.<br>(b) and (c) both show 2, 3, 5. Fold the net with 3 on top: 5 is in front, 4 on the right, 2 on the left, 1 at the back.<br>Turn the cube so 2 is on top (roll it to the right): 3 comes to the right face and 5 stays in front → top 2, front 5, right 3 = cube (b).<br>Cube (c) has 3 and 5 swapped, which is the mirror arrangement and cannot be made.",
+   "source": "test-data",
+   "img": "reasoning/dice-net-cross.svg",
+   "optionImgs": [
+    "reasoning/dice-net-opt-a.svg",
+    "reasoning/dice-net-opt-b.svg",
+    "reasoning/dice-net-opt-c.svg",
+    "reasoning/dice-net-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-dice-006",
+   "rev": 1,
+   "topic": "r-dice",
+   "type": "cube-cutting",
+   "level": 3,
+   "q": "A cube of side 5 cm is painted red on all faces and then cut into small cubes of side 1 cm. How many small cubes have exactly one face painted?",
+   "options": [
+    "54",
+    "27",
+    "36",
+    "48"
+   ],
+   "answer": 0,
+   "solution": "n = 5 / 1 = 5.<br>One face painted = 6(n − 2)² = 6 × 3² = 54.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-dice-1",
+   "front": "Painted n×n×n cube: one face painted",
+   "back": "6(n − 2)²",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-dice-2",
+   "front": "Painted cube: two faces painted",
+   "back": "12(n − 2)",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-dice-3",
+   "front": "Opposite faces in a net",
+   "back": "Skip one square in a straight line",
+   "deck": "reasoning"
+  }
+ ]
+}

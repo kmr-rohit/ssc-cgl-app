@@ -1,0 +1,170 @@
+{
+ "topic": "r-word-order",
+ "notes": {
+  "summary": "Dictionary order asks you to arrange words as they appear in a dictionary. Word formation asks which word can (or cannot) be made from the letters of a given word. About 1 question in Tier 1.",
+  "concepts": [
+   {
+    "title": "Dictionary order",
+    "body": "Compare the first letter; if same, compare the second; and so on. A shorter word comes first if it is the start of a longer one (<b>Mon</b> before <b>Money</b>)."
+   },
+   {
+    "title": "Word formation",
+    "body": "Count each letter in the given word. A new word can use a letter <b>only as many times</b> as it appears in the given word."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "dictionary-order",
+    "name": "Dictionary order",
+    "how": "Compare letter by letter from the left until two words differ.",
+    "example": {
+     "q": "Arrange: Bring, Bread, Brake",
+     "steps": [
+      "All start with \"Br\".",
+      "Third letters: i, e, a → a < e < i"
+     ],
+     "answer": "Brake, Bread, Bring"
+    }
+   },
+   {
+    "type": "word-formation",
+    "name": "Word formation",
+    "how": "Count letters in the given word, then check each option letter by letter.",
+    "example": {
+     "q": "Can MOTION be made from EXAMINATION?",
+     "steps": [
+      "EXAMINATION has only one O.",
+      "MOTION needs two Os."
+     ],
+     "answer": "No"
+    }
+   }
+  ],
+  "tips": [
+   "Write the common starting letters once and compare only what differs.",
+   "In word formation, first look for a letter that is not in the given word at all."
+  ],
+  "traps": [
+   "Monetary comes before Money (t comes before y).",
+   "A letter used twice in the option must appear twice in the given word."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-word-order-001",
+   "rev": 1,
+   "topic": "r-word-order",
+   "type": "dictionary-order",
+   "level": 1,
+   "q": "Select the correct sequence of the following words as they would appear in an English dictionary.<br>1. Bread 2. Bring 3. Brake 4. Breath",
+   "options": [
+    "3, 4, 1, 2",
+    "1, 3, 4, 2",
+    "3, 1, 2, 4",
+    "3, 1, 4, 2"
+   ],
+   "answer": 3,
+   "solution": "All start with \"Br\". Third letters: Bread (e), Bring (i), Brake (a), Breath (e).<br>Brake (a) comes first, Bring (i) last.<br>Bread vs Breath: \"Brea-d\" vs \"Brea-t\" → d before t, so Bread then Breath.<br>Order: Brake, Bread, Breath, Bring = 3, 1, 4, 2.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-word-order-002",
+   "rev": 1,
+   "topic": "r-word-order",
+   "type": "word-formation",
+   "level": 1,
+   "q": "Which of the following words CANNOT be formed using the letters of the word EXAMINATION?",
+   "options": [
+    "NATION",
+    "ANIMATE",
+    "MOTION",
+    "TAXI"
+   ],
+   "answer": 2,
+   "solution": "EXAMINATION has: E, X, A×2, M, I×2, N×2, T, O×1.<br>MOTION needs O twice, but there is only one O.<br>NATION, ANIMATE and TAXI can all be formed.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-word-order-003",
+   "rev": 1,
+   "topic": "r-word-order",
+   "type": "dictionary-order",
+   "level": 2,
+   "q": "Arrange the following words in the order in which they appear in an English dictionary.<br>1. Peculiar 2. Pebble 3. Pedestal 4. Peck 5. Pedal",
+   "options": [
+    "2, 4, 1, 5, 3",
+    "2, 4, 1, 3, 5",
+    "4, 2, 1, 5, 3",
+    "2, 1, 4, 5, 3"
+   ],
+   "answer": 0,
+   "solution": "All start with \"Pe\". Third letters: Peculiar (c), Pebble (b), Pedestal (d), Peck (c), Pedal (d).<br>b: Pebble first.<br>c: Peck vs Peculiar → \"Peck\" (k) vs \"Pecu\" (u) → Peck, then Peculiar.<br>d: Pedal vs Pedestal → \"Peda\" vs \"Pede\" → Pedal, then Pedestal.<br>Order: 2, 4, 1, 5, 3.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-word-order-004",
+   "rev": 1,
+   "topic": "r-word-order",
+   "type": "dictionary-order",
+   "level": 2,
+   "q": "Which word will come THIRD in the dictionary order?<br>Excel, Exact, Exceed, Exalt",
+   "options": [
+    "Excel",
+    "Exceed",
+    "Exalt",
+    "Exact"
+   ],
+   "answer": 1,
+   "solution": "\"Exa…\" words come before \"Exc…\" words.<br>Exact vs Exalt: c before l → Exact, Exalt.<br>Exceed vs Excel: \"Excee\" vs \"Excel\" → e before l → Exceed, Excel.<br>Order: Exact, Exalt, Exceed, Excel. Third = Exceed.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-word-order-005",
+   "rev": 1,
+   "topic": "r-word-order",
+   "type": "word-formation",
+   "level": 3,
+   "q": "Which of the following words CANNOT be formed using the letters of the word CONSTITUTION?",
+   "options": [
+    "TUITION",
+    "NOTION",
+    "CONSTANT",
+    "COUNTS"
+   ],
+   "answer": 2,
+   "solution": "CONSTITUTION has: C, O×2, N×2, S, T×3, I×2, U.<br>CONSTANT needs the letter A, which is not present.<br>TUITION, NOTION and COUNTS can all be formed.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-word-order-006",
+   "rev": 1,
+   "topic": "r-word-order",
+   "type": "dictionary-order",
+   "level": 3,
+   "q": "Which word will come FOURTH in the dictionary order?<br>Monitor, Money, Monarch, Monetary, Monastery",
+   "options": [
+    "Monetary",
+    "Monitor",
+    "Monastery",
+    "Money"
+   ],
+   "answer": 3,
+   "solution": "All start with \"Mon\". Fourth letters: a (Monarch, Monastery), e (Money, Monetary), i (Monitor).<br>Monarch vs Monastery: r before s → Monarch, Monastery.<br>Monetary vs Money: \"Monet\" vs \"Money\" → t before y → Monetary, Money.<br>Order: Monarch, Monastery, Monetary, Money, Monitor. Fourth = Money.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-word-order-1",
+   "front": "Dictionary order rule",
+   "back": "Compare letter by letter; at the first difference, the earlier alphabet letter wins.",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-word-order-2",
+   "front": "Word formation rule",
+   "back": "Each letter can be used only as many times as it appears in the given word.",
+   "deck": "reasoning"
+  }
+ ]
+}

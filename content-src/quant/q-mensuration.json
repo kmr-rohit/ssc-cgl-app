@@ -1,0 +1,230 @@
+{
+ "topic": "q-mensuration",
+ "notes": {
+  "summary": "Mensuration covers areas of 2D shapes and volumes / surface areas of 3D solids. 2–3 questions in Tier 1, 2–4 in Tier 2. Use π = 22/7 unless told otherwise.",
+  "concepts": [
+   {
+    "title": "2D shapes",
+    "body": "<ul><li>Circle: area πr<sup>2</sup>, circumference 2πr.</li><li>Triangle with sides a, b, c: area = √(s(s − a)(s − b)(s − c)), s = (a + b + c)/2 (Heron).</li><li>Rectangle: area lb, diagonal √(l<sup>2</sup> + b<sup>2</sup>).</li></ul>",
+    "img": "quant/mens-triangle-131415.svg"
+   },
+   {
+    "title": "3D solids",
+    "body": "<ul><li>Cube: volume a<sup>3</sup>, TSA 6a<sup>2</sup>.</li><li>Cylinder: volume πr<sup>2</sup>h, CSA 2πrh.</li><li>Cone: volume ⅓πr<sup>2</sup>h, CSA πrl.</li><li>Sphere: volume (4/3)πr<sup>3</sup>, surface 4πr<sup>2</sup>.</li></ul>",
+    "img": "quant/mens-cylinder.svg"
+   },
+   {
+    "title": "Melting and recasting",
+    "body": "When a solid is melted and recast, the <b>volume stays the same</b>. Number of new pieces = big volume ÷ small volume."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "area-2d",
+    "name": "Areas of plane figures",
+    "how": "Pick the right formula; for paths, subtract inner area from outer area.",
+    "example": {
+     "q": "Area of a triangle with sides 5, 12, 13?",
+     "steps": [
+      "5<sup>2</sup> + 12<sup>2</sup> = 13<sup>2</sup>, so right-angled",
+      "Area = ½ × 5 × 12"
+     ],
+     "answer": "30 sq units"
+    }
+   },
+   {
+    "type": "volume-3d",
+    "name": "Volumes and recasting",
+    "how": "Equate volumes before and after melting.",
+    "example": {
+     "q": "Volume of a cylinder with r = 7 cm, h = 4 cm?",
+     "steps": [
+      "22/7 × 49 × 4"
+     ],
+     "answer": "616 cm³"
+    }
+   },
+   {
+    "type": "surface-area",
+    "name": "Surface areas",
+    "how": "CSA is the side only; TSA adds the top/bottom faces.",
+    "example": {
+     "q": "TSA of a cube of edge 5 cm?",
+     "steps": [
+      "6 × 25"
+     ],
+     "answer": "150 cm²"
+    }
+   }
+  ],
+  "tips": [
+   "With π = 22/7, choose r as a multiple of 7 to cancel quickly.",
+   "A path of width w outside an l × b rectangle has area (l + 2w)(b + 2w) − lb."
+  ],
+  "traps": [
+   "Do not confuse diameter with radius.",
+   "CSA of a cylinder does not include the two circular ends."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Heron",
+   "expr": "√(s(s − a)(s − b)(s − c))"
+  },
+  {
+   "name": "Cylinder volume",
+   "expr": "πr²h"
+  },
+  {
+   "name": "Cylinder CSA",
+   "expr": "2πrh"
+  },
+  {
+   "name": "Cone volume",
+   "expr": "⅓πr²h"
+  },
+  {
+   "name": "Sphere volume",
+   "expr": "(4/3)πr³"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-mensuration-001",
+   "rev": 1,
+   "topic": "q-mensuration",
+   "type": "area-2d",
+   "level": 1,
+   "q": "What is the area of a circle of radius 7 cm? (Take π = 22/7)",
+   "options": [
+    "44 cm²",
+    "154 cm²",
+    "144 cm²",
+    "308 cm²"
+   ],
+   "answer": 1,
+   "solution": "Area = πr<sup>2</sup> = 22/7 × 7 × 7.<br>= 154 cm<sup>2</sup>.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mensuration-002",
+   "rev": 1,
+   "topic": "q-mensuration",
+   "type": "volume-3d",
+   "level": 1,
+   "q": "What is the volume of a cube whose edge is 6 cm?",
+   "options": [
+    "36 cm³",
+    "108 cm³",
+    "216 cm³",
+    "196 cm³"
+   ],
+   "answer": 2,
+   "solution": "Volume = a<sup>3</sup> = 6 × 6 × 6 = 216 cm<sup>3</sup>.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mensuration-003",
+   "rev": 1,
+   "topic": "q-mensuration",
+   "type": "area-2d",
+   "level": 2,
+   "q": "Find the area of a triangle whose sides are 13 cm, 14 cm and 15 cm.",
+   "img": "quant/mens-triangle-131415.svg",
+   "options": [
+    "84 cm²",
+    "91 cm²",
+    "78 cm²",
+    "96 cm²"
+   ],
+   "answer": 0,
+   "solution": "s = (13 + 14 + 15)/2 = 21.<br>Area = √(21 × 8 × 7 × 6) = √7056 = 84 cm<sup>2</sup>.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mensuration-004",
+   "rev": 1,
+   "topic": "q-mensuration",
+   "type": "surface-area",
+   "level": 2,
+   "q": "Find the curved surface area of a cylinder with radius 7 cm and height 10 cm. (Take π = 22/7)",
+   "img": "quant/mens-cylinder.svg",
+   "options": [
+    "220 cm²",
+    "1540 cm²",
+    "748 cm²",
+    "440 cm²"
+   ],
+   "answer": 3,
+   "solution": "CSA = 2πrh = 2 × 22/7 × 7 × 10.<br>= 440 cm<sup>2</sup>.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mensuration-005",
+   "rev": 1,
+   "topic": "q-mensuration",
+   "type": "volume-3d",
+   "level": 3,
+   "q": "A solid metal sphere of radius 6 cm is melted and recast into small cones, each of radius 3 cm and height 4 cm. How many cones are made?",
+   "options": [
+    "18",
+    "24",
+    "36",
+    "12"
+   ],
+   "answer": 1,
+   "solution": "Volume of sphere = (4/3)π × 6<sup>3</sup> = 288π.<br>Volume of one cone = (1/3)π × 3<sup>2</sup> × 4 = 12π.<br>Number of cones = 288π / 12π = 24.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mensuration-006",
+   "rev": 1,
+   "topic": "q-mensuration",
+   "type": "area-2d",
+   "level": 3,
+   "q": "A rectangular garden 40 m × 30 m has a path 2 m wide running all around it on the outside. What is the area of the path?",
+   "img": "quant/mens-path.svg",
+   "options": [
+    "280 m²",
+    "296 m²",
+    "304 m²",
+    "316 m²"
+   ],
+   "answer": 1,
+   "solution": "Outer rectangle = (40 + 4) × (30 + 4) = 44 × 34 = 1496 m<sup>2</sup>.<br>Garden = 40 × 30 = 1200 m<sup>2</sup>.<br>Path = 1496 − 1200 = 296 m<sup>2</sup>.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-mens-1",
+   "front": "Heron’s formula",
+   "back": "√(s(s − a)(s − b)(s − c)), s = half perimeter",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-mens-2",
+   "front": "Cone volume",
+   "back": "⅓πr²h",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-mens-3",
+   "front": "Sphere volume / surface area",
+   "back": "(4/3)πr³ / 4πr²",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-mens-4",
+   "front": "Cylinder CSA / volume",
+   "back": "2πrh / πr²h",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-mens-5",
+   "front": "Outer path area (width w)",
+   "back": "(l + 2w)(b + 2w) − lb",
+   "deck": "formulas"
+  }
+ ]
+}

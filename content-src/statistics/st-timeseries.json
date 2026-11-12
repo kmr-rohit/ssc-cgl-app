@@ -1,0 +1,208 @@
+{
+ "topic": "st-timeseries",
+ "notes": {
+  "summary": "A time series is data recorded over time (years, quarters, months). We split it into trend, seasonal, cyclical and irregular parts. JSO asks on identifying components, moving averages, least-squares trend and seasonal indices.",
+  "concepts": [
+   {
+    "title": "Components",
+    "body": "<ul><li><b>Secular trend (T)</b>: long-term upward or downward movement (population growth).</li><li><b>Seasonal (S)</b>: regular pattern within a year (more umbrellas sold in monsoon).</li><li><b>Cyclical (C)</b>: business-cycle waves lasting more than a year (boom, recession, depression, recovery).</li><li><b>Irregular (I)</b>: random, unpredictable (floods, strikes, pandemics).</li><li>Models: multiplicative Y = T × S × C × I; additive Y = T + S + C + I.</li></ul>"
+   },
+   {
+    "title": "Measuring trend",
+    "body": "<ul><li><b>Moving averages</b>: average of consecutive k values, placed at the middle. Even k needs centring.</li><li><b>Least squares</b>: fit y = a + bx. With x coded so Σx = 0: a = Σy/n, b = Σxy/Σx².</li><li>Semi-averages and freehand methods are simpler but less exact.</li></ul>"
+   },
+   {
+    "title": "Seasonal indices",
+    "body": "Methods: simple averages, ratio-to-trend, ratio-to-moving-average, link relatives. Quarterly indices add up to <b>400</b>; monthly indices add up to <b>1200</b> (average 100)."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "components",
+    "name": "Identify the component",
+    "how": "Within a year and repeating → seasonal; multi-year waves → cyclical; long-term → trend; sudden → irregular.",
+    "example": {
+     "q": "Sales fall sharply after an earthquake. Which component?",
+     "steps": [
+      "Earthquakes are sudden and unpredictable."
+     ],
+     "answer": "Irregular variation"
+    }
+   },
+   {
+    "type": "moving-average",
+    "name": "Moving averages and seasonal indices",
+    "how": "Average each consecutive block; seasonal indices must total 400 (quarters) or 1200 (months).",
+    "example": {
+     "q": "Find the 3-year moving averages of 4, 6, 8, 10.",
+     "steps": [
+      "(4 + 6 + 8)/3 = 6",
+      "(6 + 8 + 10)/3 = 8"
+     ],
+     "answer": "6, 8"
+    }
+   },
+   {
+    "type": "trend",
+    "name": "Least-squares trend",
+    "how": "Code years so Σx = 0, compute a and b, then substitute x for the target year.",
+    "example": {
+     "q": "Trend y = 120 + 5x, origin 2022, x in years. Estimate for 2026.",
+     "steps": [
+      "x = 2026 − 2022 = 4",
+      "y = 120 + 5 × 4 = 140"
+     ],
+     "answer": "140"
+    }
+   }
+  ],
+  "tips": [
+   "For an odd number of years, take the middle year as origin (x = 0).",
+   "Moving averages smooth out cycles whose length equals the period of the average.",
+   "A trend line cannot predict irregular events."
+  ],
+  "traps": [
+   "Seasonal means within one year, not \"every few years\" (that is cyclical).",
+   "A 4-year moving average needs centring to line up with actual years.",
+   "Check the unit of x (half-years, years) before substituting."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Multiplicative model",
+   "expr": "Y = T × S × C × I"
+  },
+  {
+   "name": "Least-squares trend (Σx = 0)",
+   "expr": "a = Σy/n,  b = Σxy/Σx²"
+  },
+  {
+   "name": "Seasonal index totals",
+   "expr": "Quarterly 400, monthly 1200"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-timeseries-001",
+   "rev": 1,
+   "topic": "st-timeseries",
+   "type": "components",
+   "level": 1,
+   "q": "More woollen clothes are sold every winter. This variation is:",
+   "options": [
+    "Seasonal variation",
+    "Cyclical variation",
+    "Irregular variation",
+    "Secular trend"
+   ],
+   "answer": 0,
+   "solution": "The pattern repeats every year within the year, so it is seasonal variation.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-timeseries-002",
+   "rev": 1,
+   "topic": "st-timeseries",
+   "type": "components",
+   "level": 1,
+   "q": "Fluctuations caused by business cycles (boom, recession, depression, recovery) are called:",
+   "options": [
+    "Secular trend",
+    "Seasonal variations",
+    "Irregular variations",
+    "Cyclical variations"
+   ],
+   "answer": 3,
+   "solution": "Business-cycle waves last more than a year and are called cyclical variations.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-timeseries-003",
+   "rev": 1,
+   "topic": "st-timeseries",
+   "type": "moving-average",
+   "level": 2,
+   "q": "Sales for 5 years are 10, 14, 18, 16, 20. The 3-year moving average centred on the 3rd year is:",
+   "options": [
+    "15",
+    "14",
+    "16",
+    "18"
+   ],
+   "answer": 2,
+   "solution": "3rd-year centred average = average of years 2, 3, 4 = (14 + 18 + 16)/3 = 48/3 = 16.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-timeseries-004",
+   "rev": 1,
+   "topic": "st-timeseries",
+   "type": "trend",
+   "level": 2,
+   "q": "A trend equation is y = 50 + 4x with origin 2020 and x in years. The trend value for 2025 is:",
+   "options": [
+    "54",
+    "70",
+    "74",
+    "66"
+   ],
+   "answer": 1,
+   "solution": "x = 2025 − 2020 = 5. y = 50 + 4 × 5 = 70.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-timeseries-005",
+   "rev": 1,
+   "topic": "st-timeseries",
+   "type": "trend",
+   "level": 3,
+   "q": "Values for 2019–2023 are 10, 12, 15, 17, 21. Fitting a straight-line trend by least squares (origin 2021), the estimate for 2025 is:",
+   "options": [
+    "25.8",
+    "24.4",
+    "26.5",
+    "23.7"
+   ],
+   "answer": 0,
+   "solution": "x = −2, −1, 0, 1, 2 (Σx = 0, Σx² = 10).<br>a = Σy/n = 75/5 = 15.<br>Σxy = −20 − 12 + 0 + 17 + 42 = 27, so b = 27/10 = 2.7.<br>Trend: y = 15 + 2.7x. For 2025, x = 4: y = 15 + 10.8 = 25.8.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-timeseries-006",
+   "rev": 1,
+   "topic": "st-timeseries",
+   "type": "moving-average",
+   "level": 3,
+   "q": "Seasonal indices for Q1, Q2 and Q3 are 90, 110 and 120. The index for Q4 is:",
+   "options": [
+    "120",
+    "90",
+    "100",
+    "80"
+   ],
+   "answer": 3,
+   "solution": "Quarterly seasonal indices add up to 400.<br>Q4 = 400 − (90 + 110 + 120) = 400 − 320 = 80.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stts-1",
+   "front": "Four components of a time series",
+   "back": "Trend, Seasonal, Cyclical, Irregular",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stts-2",
+   "front": "Least-squares a and b (Σx = 0)",
+   "back": "a = Σy/n; b = Σxy/Σx²",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stts-3",
+   "front": "Sum of quarterly seasonal indices",
+   "back": "400 (monthly: 1200)",
+   "deck": "formulas"
+  }
+ ]
+}

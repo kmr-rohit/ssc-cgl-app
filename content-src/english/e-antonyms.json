@@ -1,0 +1,52 @@
+{
+  "topic": "e-antonyms",
+  "notes": {
+    "summary": "An <b>antonym</b> is a word with the opposite meaning. SSC gives a word (alone or in a sentence) and asks for its opposite. The most common mistake is choosing the synonym by habit — always remind yourself you want the <b>opposite</b>.",
+    "concepts": [
+      { "title": "Opposite, same part of speech", "body": "The antonym of an adjective is an adjective: <i>generous ↔ stingy</i>. The antonym of a verb is a verb: <i>expand ↔ contract</i>." },
+      { "title": "Prefix antonyms", "body": "Some antonyms are formed with prefixes: <i>un-, in-, im-, il-, ir-, dis-, mis-</i>. <i>legal ↔ illegal</i>, <i>regular ↔ irregular</i>, <i>honest ↔ dishonest</i>. But options may also give a different root word with the opposite meaning." },
+      { "title": "Degree matters", "body": "Pick the <b>direct</b> opposite, not a weaker related idea. The antonym of <i>ancient</i> is <i>modern</i>, not <i>young</i>." }
+    ],
+    "varieties": [
+      { "type": "direct", "name": "Direct word", "how": "Find the meaning first, then look for the option that means its opposite. Strike out the synonym trap.", "example": { "q": "Antonym of <b>OPTIMISTIC</b>", "steps": ["Optimistic = hopeful.", "Opposite = expecting the worst."], "answer": "Pessimistic" } },
+      { "type": "in-sentence", "name": "Word in a sentence", "how": "Decide the meaning in that sentence, then choose its opposite.", "example": { "q": "The road was <b>deserted</b> at midnight.", "steps": ["Deserted = empty of people.", "Opposite = full of people."], "answer": "Crowded" } }
+    ],
+    "tips": [
+      "Write 'OPP' in your rough sheet as a reminder while solving antonym questions.",
+      "Learn antonym pairs together: <i>affluent ↔ indigent</i>, <i>verbose ↔ concise</i>.",
+      "If two options are synonyms of the given word, both are wrong."
+    ],
+    "traps": [
+      "The synonym is almost always present among the options.",
+      "Prefix forms can mislead: <i>inflammable</i> means <b>easily set on fire</b>, the same as flammable, not its opposite."
+    ]
+  },
+  "questions": [
+    { "id": "e-antonyms-001", "rev": 1, "topic": "e-antonyms", "type": "direct", "level": 1, "q": "Select the most appropriate antonym of the given word.<br><b>Generous</b>", "options": ["Kind", "Stingy", "Wealthy", "Liberal"], "answer": 1, "solution": "<b>Generous</b> = willing to give. Opposite = unwilling to spend or give = <b>Stingy</b>. <i>Liberal</i> and <i>Kind</i> are near-synonyms.", "source": "test-data" },
+    { "id": "e-antonyms-002", "rev": 1, "topic": "e-antonyms", "type": "direct", "level": 1, "q": "Select the most appropriate antonym of the given word.<br><b>Expand</b>", "options": ["Enlarge", "Extend", "Contract", "Explain"], "answer": 2, "solution": "<b>Expand</b> = become larger. Opposite = <b>Contract</b> (become smaller).", "source": "test-data" },
+    { "id": "e-antonyms-003", "rev": 1, "topic": "e-antonyms", "type": "in-sentence", "level": 2, "q": "Select the most appropriate antonym of the bold word.<br>His speech was so <b>verbose</b> that half the audience fell asleep.", "options": ["Wordy", "Concise", "Loud", "Boring"], "answer": 1, "solution": "<b>Verbose</b> = using more words than needed. Opposite = <b>Concise</b> (brief and clear). <i>Wordy</i> is the synonym trap.", "source": "test-data" },
+    { "id": "e-antonyms-004", "rev": 1, "topic": "e-antonyms", "type": "direct", "level": 2, "q": "Select the most appropriate antonym of the given word.<br><b>Affluent</b>", "options": ["Indigent", "Prosperous", "Fluent", "Influential"], "answer": 0, "solution": "<b>Affluent</b> = rich. Opposite = <b>Indigent</b> (very poor). <i>Fluent</i> is a look-alike trap.", "source": "test-data" },
+    { "id": "e-antonyms-005", "rev": 1, "topic": "e-antonyms", "type": "in-sentence", "level": 3, "q": "Select the most appropriate antonym of the bold word.<br>The manager gave a <b>tacit</b> approval to the plan by simply nodding.", "options": ["Silent", "Implied", "Explicit", "Reluctant"], "answer": 2, "solution": "<b>Tacit</b> = understood without being stated. Opposite = <b>Explicit</b> (stated clearly). <i>Silent</i> and <i>Implied</i> are synonyms.", "source": "test-data" },
+    { "id": "e-antonyms-006", "rev": 1, "topic": "e-antonyms", "type": "direct", "level": 3, "q": "Select the most appropriate antonym of the given word.<br><b>Ameliorate</b>", "options": ["Improve", "Aggravate", "Alleviate", "Amend"], "answer": 1, "solution": "<b>Ameliorate</b> = make a bad situation better. Opposite = <b>Aggravate</b> (make worse). <i>Improve, Alleviate, Amend</i> are all close in meaning to ameliorate.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-ant-01", "front": "Generous ↔ ?", "back": "Stingy, miserly", "deck": "vocab" },
+    { "id": "fc-e-ant-02", "front": "Verbose ↔ ?", "back": "Concise, terse", "deck": "vocab" },
+    { "id": "fc-e-ant-03", "front": "Affluent ↔ ?", "back": "Indigent, impoverished", "deck": "vocab" },
+    { "id": "fc-e-ant-04", "front": "Tacit ↔ ?", "back": "Explicit, expressed", "deck": "vocab" },
+    { "id": "fc-e-ant-05", "front": "Ameliorate ↔ ?", "back": "Aggravate, worsen", "deck": "vocab" },
+    { "id": "fc-e-ant-06", "front": "Optimistic ↔ ?", "back": "Pessimistic", "deck": "vocab" },
+    { "id": "fc-e-ant-07", "front": "Ancient ↔ ?", "back": "Modern", "deck": "vocab" },
+    { "id": "fc-e-ant-08", "front": "Humble ↔ ?", "back": "Arrogant, haughty", "deck": "vocab" },
+    { "id": "fc-e-ant-09", "front": "Transparent ↔ ?", "back": "Opaque", "deck": "vocab" },
+    { "id": "fc-e-ant-10", "front": "Scarcity ↔ ?", "back": "Abundance, plenty", "deck": "vocab" },
+    { "id": "fc-e-ant-11", "front": "Lethargic ↔ ?", "back": "Energetic, active", "deck": "vocab" },
+    { "id": "fc-e-ant-12", "front": "Obscure ↔ ?", "back": "Clear, famous (depending on sense)", "deck": "vocab" },
+    { "id": "fc-e-ant-13", "front": "Benign ↔ ?", "back": "Malignant, harmful", "deck": "vocab" },
+    { "id": "fc-e-ant-14", "front": "Exonerate ↔ ?", "back": "Convict, blame", "deck": "vocab" },
+    { "id": "fc-e-ant-15", "front": "Frivolous ↔ ?", "back": "Serious, grave", "deck": "vocab" },
+    { "id": "fc-e-ant-16", "front": "Hostile ↔ ?", "back": "Friendly, amicable", "deck": "vocab" },
+    { "id": "fc-e-ant-17", "front": "Prudent ↔ ?", "back": "Rash, reckless", "deck": "vocab" },
+    { "id": "fc-e-ant-18", "front": "Zenith ↔ ?", "back": "Nadir (lowest point)", "deck": "vocab" }
+  ]
+}

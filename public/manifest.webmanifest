@@ -1,0 +1,2 @@
+{ "name": "CGL Prep", "short_name": "CGL Prep", "start_url": "/", "display": "standalone", "background_color": "#eef0f4", "theme_color": "#1f3a5f",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }] }

@@ -1,0 +1,194 @@
+{
+ "topic": "r-analogy",
+ "notes": {
+  "summary": "An analogy question gives a pair with a hidden <b>relationship</b> and asks you to find another pair with the <b>same</b> relationship. SSC asks 2–3 analogy questions in Tier 1 (word, number and letter types).",
+  "concepts": [
+   {
+    "title": "Find the rule first",
+    "body": "Look at the first pair and say the link in one short sentence: \"A works in B\", \"B is the square of A\", \"each letter moves +1\". Then apply the <b>same</b> sentence to the second pair."
+   },
+   {
+    "title": "Common number rules",
+    "body": "Square (n²), cube (n³), n² ± n, n³ ± 1, ×2 +1, sum of digits. Check the rule on the given pair before using it."
+   },
+   {
+    "title": "Common letter rules",
+    "body": "Each letter moves forward/backward by a fixed number, or the shift grows (+1, +2, +3). Use the position table: A=1 … Z=26. Opposite letter pairs add to 27 (A–Z, B–Y)."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "word-analogy",
+    "name": "Word analogy",
+    "how": "State the link (worker–place, tool–use, part–whole, product–raw material) and apply it.",
+    "example": {
+     "q": "Pen : Write :: Knife : ?",
+     "steps": [
+      "A pen is used to write.",
+      "A knife is used to cut."
+     ],
+     "answer": "Cut"
+    }
+   },
+   {
+    "type": "number-analogy",
+    "name": "Number analogy",
+    "how": "Test squares, cubes and n³ ± n on the first pair.",
+    "example": {
+     "q": "5 : 125 :: 7 : ?",
+     "steps": [
+      "125 = 5³",
+      "7³ = 343"
+     ],
+     "answer": "343"
+    }
+   },
+   {
+    "type": "letter-analogy",
+    "name": "Letter analogy",
+    "how": "Write letter positions and find the shift for each letter.",
+    "example": {
+     "q": "CAT : DBU :: PEN : ?",
+     "steps": [
+      "C→D, A→B, T→U: each +1",
+      "P→Q, E→F, N→O"
+     ],
+     "answer": "QFO"
+    }
+   }
+  ],
+  "tips": [
+   "Check your rule on the first pair before applying it; many wrong options fit a \"nearly right\" rule.",
+   "For letters, write positions (A=1 … Z=26) under each letter: shifts become obvious.",
+   "For number pairs, try n², n³, n² + 1, n³ + n in that order."
+  ],
+  "traps": [
+   "Do not reverse the order of the pair: Doctor : Hospital is not the same as Hospital : Doctor.",
+   "In letter analogies the shift may be different for each letter (+1, +2, +3)."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-analogy-001",
+   "rev": 1,
+   "topic": "r-analogy",
+   "type": "word-analogy",
+   "level": 1,
+   "q": "Select the option that is related to the third word in the same way as the second word is related to the first word.<br>Doctor : Hospital :: Teacher : ?",
+   "options": [
+    "School",
+    "Book",
+    "Student",
+    "Chalk"
+   ],
+   "answer": 0,
+   "solution": "A doctor works in a hospital.<br>A teacher works in a school.<br>So the answer is School.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-analogy-002",
+   "rev": 1,
+   "topic": "r-analogy",
+   "type": "number-analogy",
+   "level": 1,
+   "q": "Select the number that can replace the question mark (?).<br>4 : 16 :: 7 : ?",
+   "options": [
+    "42",
+    "56",
+    "49",
+    "64"
+   ],
+   "answer": 2,
+   "solution": "Rule: second number = square of the first.<br>4² = 16.<br>7² = 49.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-analogy-003",
+   "rev": 1,
+   "topic": "r-analogy",
+   "type": "letter-analogy",
+   "level": 2,
+   "q": "Select the option that is related to the third letter-cluster in the same way as the second letter-cluster is related to the first.<br>ACE : BDF :: GIK : ?",
+   "options": [
+    "HIJ",
+    "HJL",
+    "IKM",
+    "GHJ"
+   ],
+   "answer": 1,
+   "solution": "A→B, C→D, E→F: each letter +1.<br>G+1 = H, I+1 = J, K+1 = L.<br>Answer: HJL.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-analogy-004",
+   "rev": 1,
+   "topic": "r-analogy",
+   "type": "number-analogy",
+   "level": 2,
+   "q": "Select the number that can replace the question mark (?).<br>3 : 28 :: 5 : ?",
+   "options": [
+    "125",
+    "124",
+    "130",
+    "126"
+   ],
+   "answer": 3,
+   "solution": "Rule: n³ + 1.<br>3³ + 1 = 27 + 1 = 28 ✓.<br>5³ + 1 = 125 + 1 = 126.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-analogy-005",
+   "rev": 1,
+   "topic": "r-analogy",
+   "type": "letter-analogy",
+   "level": 3,
+   "q": "In a certain way, CAT is related to DCW. In the same way, DOG is related to:",
+   "options": [
+    "EQJ",
+    "EPJ",
+    "FQJ",
+    "EQK"
+   ],
+   "answer": 0,
+   "solution": "C→D (+1), A→C (+2), T→W (+3).<br>Apply +1, +2, +3 to DOG:<br>D+1 = E, O+2 = Q, G+3 = J.<br>Answer: EQJ.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-analogy-006",
+   "rev": 1,
+   "topic": "r-analogy",
+   "type": "number-analogy",
+   "level": 3,
+   "q": "Select the number that can replace the question mark (?).<br>6 : 222 :: 8 : ?",
+   "options": [
+    "512",
+    "520",
+    "528",
+    "516"
+   ],
+   "answer": 1,
+   "solution": "Rule: n³ + n.<br>6³ + 6 = 216 + 6 = 222 ✓.<br>8³ + 8 = 512 + 8 = 520.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-analogy-1",
+   "front": "Analogy: first step?",
+   "back": "Say the relation of the first pair in one sentence, test it, then apply it to the second pair.",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-analogy-2",
+   "front": "Letter positions: E, J, O, T, Y",
+   "back": "5, 10, 15, 20, 25 (remember \"EJOTY\")",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-analogy-3",
+   "front": "Opposite letter rule",
+   "back": "Positions of a letter and its opposite add to 27 (A–Z, M–N).",
+   "deck": "reasoning"
+  }
+ ]
+}

@@ -1,0 +1,247 @@
+{
+ "topic": "c-software",
+ "notes": {
+  "summary": "Software is the set of programs that tell the hardware what to do. Tier 2 asks 2–4 questions on types of software, operating system functions and terms, and language translators.",
+  "concepts": [
+   {
+    "title": "Types of software",
+    "body": "<ul><li><b>System software</b>: runs the computer itself. Examples: operating system, device drivers, BIOS/firmware, utilities (antivirus, disk defragmenter), language translators.</li><li><b>Application software</b>: does a user task. Examples: MS Word, Excel, Tally, Photoshop, web browsers.</li><li><b>Open source</b>: source code is free to see and change (Linux, LibreOffice, Firefox). <b>Proprietary</b>: owned by a company (Windows, MS Office). <b>Freeware</b> is free to use; <b>shareware</b> is free for a trial period.</li></ul>"
+   },
+   {
+    "title": "Operating system",
+    "body": "The OS manages memory, processes, files and devices, and gives the user an interface (CLI like MS-DOS, or GUI like Windows).<ul><li><b>Booting</b>: loading the OS from disk into RAM. Cold boot = from power off; warm boot = restart.</li><li><b>Multitasking</b>: many tasks at once for one user. <b>Multiprogramming</b>: many programs kept in memory. <b>Time-sharing</b>: CPU time split among users.</li><li><b>Virtual memory</b>: uses part of the hard disk as if it were RAM.</li><li><b>Spooling</b> (Simultaneous Peripheral Operations On-Line): jobs (e.g. printing) are queued on disk.</li></ul>"
+   },
+   {
+    "title": "Language translators",
+    "body": "<table><tr><th>Translator</th><th>Converts</th><th>How</th></tr><tr><td>Compiler</td><td>High-level → machine code</td><td>Whole program at once</td></tr><tr><td>Interpreter</td><td>High-level → machine code</td><td>Line by line</td></tr><tr><td>Assembler</td><td>Assembly → machine code</td><td>Mnemonics to binary</td></tr></table>Machine language (0s and 1s) is the 1st generation; assembly is the 2nd; high-level languages (C, Java, Python) are the 3rd."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "types",
+    "name": "Types of software",
+    "how": "Ask: does it run the computer (system) or do a user job (application)? Then check the licence type.",
+    "example": {
+     "q": "Is a device driver system software or application software?",
+     "steps": [
+      "A driver lets the OS talk to hardware.",
+      "It runs the computer, not a user task."
+     ],
+     "answer": "System software"
+    }
+   },
+   {
+    "type": "os",
+    "name": "Operating system terms",
+    "how": "Match the term to its one-line meaning: booting, multitasking, virtual memory, spooling, GUI.",
+    "example": {
+     "q": "What is warm booting?",
+     "steps": [
+      "Cold boot starts the computer from power off.",
+      "Warm boot restarts a computer that is already on (e.g. Ctrl+Alt+Del / Restart)."
+     ],
+     "answer": "Restarting a running computer"
+    }
+   },
+   {
+    "type": "languages",
+    "name": "Languages and translators",
+    "how": "Compiler = whole program, interpreter = line by line, assembler = assembly language.",
+    "example": {
+     "q": "Which translator shows errors one line at a time and stops at the first error?",
+     "steps": [
+      "An interpreter executes one line at a time.",
+      "So it stops as soon as a line has an error."
+     ],
+     "answer": "Interpreter"
+    }
+   }
+  ],
+  "tips": [
+   "Linux, Android, Windows, macOS, iOS, Unix and MS-DOS are operating systems; MS Excel and Oracle Database are not.",
+   "Android is based on the Linux kernel.",
+   "Files deleted in Windows go to the Recycle Bin; Shift+Delete removes them permanently."
+  ],
+  "traps": [
+   "A compiler is not faster to translate, but the compiled program runs faster than interpreted code.",
+   "Antivirus is utility (system) software, not application software, in most SSC keys.",
+   "Freeware is not the same as open source: freeware may hide its source code."
+  ]
+ },
+ "questions": [
+  {
+   "id": "c-software-001",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "types",
+   "level": 1,
+   "q": "Which of the following is system software?",
+   "options": [
+    "Adobe Photoshop",
+    "Tally",
+    "MS Word",
+    "Operating system"
+   ],
+   "answer": 3,
+   "solution": "The operating system manages the hardware and runs the computer, so it is system software. The others do user tasks and are application software.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-software-002",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "os",
+   "level": 1,
+   "q": "Which of the following is NOT an operating system?",
+   "options": [
+    "Windows 11",
+    "Android",
+    "MS Excel",
+    "Linux"
+   ],
+   "answer": 2,
+   "solution": "MS Excel is a spreadsheet application. Linux, Windows 11 and Android are operating systems.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-software-003",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "languages",
+   "level": 1,
+   "q": "A translator that converts the whole high-level program into machine code in one go is called a(n):",
+   "options": [
+    "Assembler",
+    "Compiler",
+    "Loader",
+    "Interpreter"
+   ],
+   "answer": 1,
+   "solution": "A compiler translates the entire program at once. An interpreter goes line by line; an assembler converts assembly language.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-software-004",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "os",
+   "level": 2,
+   "q": "The small program that starts the computer and checks the hardware, stored in ROM, is the:",
+   "options": [
+    "BIOS",
+    "Kernel",
+    "Device driver",
+    "Shell"
+   ],
+   "answer": 0,
+   "solution": "BIOS (Basic Input/Output System) is firmware in ROM. It runs the POST check and then loads the operating system into RAM.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-software-005",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "languages",
+   "level": 2,
+   "q": "An assembler converts:",
+   "options": [
+    "Machine language to high-level language",
+    "Source code to bytecode only",
+    "High-level language to assembly language",
+    "Assembly language to machine language"
+   ],
+   "answer": 3,
+   "solution": "An assembler translates assembly language mnemonics (like ADD, MOV) into machine code (binary).",
+   "source": "test-data"
+  },
+  {
+   "id": "c-software-006",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "os",
+   "level": 2,
+   "q": "In operating systems, SPOOL stands for:",
+   "options": [
+    "System Program Of Online Loading",
+    "Sequential Peripheral Output On-Line",
+    "Simultaneous Peripheral Operations On-Line",
+    "Serial Processing Of Output Lines"
+   ],
+   "answer": 2,
+   "solution": "SPOOL = Simultaneous Peripheral Operations On-Line. Jobs such as print jobs are stored on disk in a queue and sent to the slow device one by one.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-software-007",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "types",
+   "level": 3,
+   "q": "Which of the following is open-source software?",
+   "options": [
+    "Microsoft Office",
+    "LibreOffice",
+    "Adobe Photoshop",
+    "Windows 10"
+   ],
+   "answer": 1,
+   "solution": "LibreOffice's source code is freely available and can be changed. MS Office, Photoshop and Windows are proprietary.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-software-008",
+   "rev": 1,
+   "topic": "c-software",
+   "type": "os",
+   "level": 3,
+   "q": "Virtual memory lets a computer use part of the ___ as an extension of RAM.",
+   "options": [
+    "Hard disk",
+    "CPU registers",
+    "Cache",
+    "ROM"
+   ],
+   "answer": 0,
+   "solution": "Virtual memory uses space on secondary storage (hard disk / SSD), called the page file or swap space, as if it were extra RAM.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-csoft-1",
+   "front": "System software vs application software",
+   "back": "System software runs the computer (OS, drivers, utilities); application software does user tasks (Word, Excel, Tally).",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csoft-2",
+   "front": "Compiler vs interpreter",
+   "back": "Compiler: whole program at once. Interpreter: line by line.",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csoft-3",
+   "front": "Booting",
+   "back": "Loading the operating system into RAM. Cold boot = from off; warm boot = restart.",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csoft-4",
+   "front": "Virtual memory",
+   "back": "Part of the hard disk used as an extension of RAM",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csoft-5",
+   "front": "Kernel",
+   "back": "The core of the operating system that controls hardware, memory and processes",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csoft-6",
+   "front": "Shareware",
+   "back": "Software free for a trial period; then you must pay",
+   "deck": "computer"
+  }
+ ]
+}

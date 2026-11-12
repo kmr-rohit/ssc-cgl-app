@@ -1,0 +1,72 @@
+{
+  "topic": "g-environment",
+  "notes": {
+    "summary": "Environment usually gives <b>1 question</b>: ecosystem basics, pollution and its diseases, global environmental agreements, and India's national parks and wildlife projects.",
+    "concepts": [
+      {
+        "title": "Ecosystem and food chain",
+        "body": "<ul><li><b>Producers</b> (green plants) make food by photosynthesis; <b>consumers</b> eat others; <b>decomposers</b> (bacteria, fungi) break down dead matter.</li><li>Energy flows in one direction: Sun → producers → herbivores → carnivores.</li><li><b>10% law</b> (Lindeman): only about 10% of energy passes to the next trophic level; the rest is lost mostly as heat. So food chains are short.</li><li>An <b>energy pyramid</b> is always upright.</li></ul>",
+        "img": "ga/env-energy-pyramid.svg"
+      },
+      {
+        "title": "Pollution and global agreements",
+        "body": "<ul><li><b>Greenhouse gases</b>: carbon dioxide, methane, nitrous oxide, water vapour, CFCs.</li><li><b>Ozone depletion</b> is caused mainly by CFCs.</li><li><b>Acid rain</b>: sulphur dioxide and nitrogen oxides.</li></ul><table><thead><tr><th>Disease</th><th>Cause</th></tr></thead><tbody><tr><td>Minamata disease</td><td>Mercury</td></tr><tr><td>Itai-itai</td><td>Cadmium</td></tr><tr><td>Blue baby syndrome</td><td>Nitrate in water</td></tr></tbody></table><table><thead><tr><th>Agreement</th><th>Year</th><th>Subject</th></tr></thead><tbody><tr><td>Ramsar Convention</td><td>1971</td><td>Wetlands</td></tr><tr><td>Montreal Protocol</td><td>1987</td><td>Ozone-depleting substances</td></tr><tr><td>Earth Summit, Rio</td><td>1992</td><td>Climate (UNFCCC), biodiversity (CBD)</td></tr><tr><td>Kyoto Protocol</td><td>1997</td><td>Greenhouse gas cuts</td></tr><tr><td>Paris Agreement</td><td>2015</td><td>Limit warming well below 2 °C</td></tr></tbody></table>"
+      },
+      {
+        "title": "Protected areas and wildlife projects",
+        "body": "<table><thead><tr><th>Place</th><th>Known for</th></tr></thead><tbody><tr><td>Jim Corbett NP (Uttarakhand)</td><td>India's first national park, 1936 (as Hailey NP)</td></tr><tr><td>Kaziranga NP (Assam)</td><td>One-horned rhinoceros</td></tr><tr><td>Gir NP (Gujarat)</td><td>Asiatic lion — Gir region is its only wild home</td></tr><tr><td>Sundarbans (West Bengal)</td><td>Mangroves, Royal Bengal tiger</td></tr><tr><td>Silent Valley (Kerala)</td><td>Tropical evergreen forest, lion-tailed macaque</td></tr></tbody></table><ul><li><b>Project Tiger</b>: 1973. <b>Project Elephant</b>: 1992.</li><li><b>Wildlife (Protection) Act</b>: 1972. <b>Environment (Protection) Act</b>: 1986, passed after the Bhopal gas tragedy (1984, methyl isocyanate).</li><li><b>Chipko Movement</b> (1973, Uttarakhand): people hugged trees to stop felling; linked with Sunderlal Bahuguna.</li><li>India has parts of <b>4 biodiversity hotspots</b>: Himalaya, Western Ghats–Sri Lanka, Indo-Burma, Sundaland.</li></ul>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "ecology-basics",
+        "name": "Ecology basics",
+        "how": "Place each organism at its trophic level and apply the 10% law.",
+        "example": { "q": "If plants trap 10,000 J, how much energy reaches the secondary consumer?", "steps": ["Primary consumer: 10% of 10,000 = 1,000 J", "Secondary consumer: 10% of 1,000 = 100 J"], "answer": "100 J" }
+      },
+      {
+        "type": "pollution-conventions",
+        "name": "Pollution and conventions",
+        "how": "Link each pollutant to its effect and each agreement to its year and subject.",
+        "example": { "q": "The Montreal Protocol deals with:", "steps": ["1987 agreement", "Phases out CFCs and other ozone-depleting substances"], "answer": "Protection of the ozone layer" }
+      },
+      {
+        "type": "protected-areas",
+        "name": "National parks and projects",
+        "how": "Pair each park with its state and star animal.",
+        "example": { "q": "Kaziranga National Park is famous for:", "steps": ["Kaziranga is in Assam", "Home of the one-horned rhinoceros"], "answer": "One-horned rhinoceros" }
+      }
+    ],
+    "tips": [
+      "Agreements in year order: Ramsar 1971 → Montreal 1987 → Rio 1992 → Kyoto 1997 → Paris 2015.",
+      "Gir = lions, Kaziranga = rhinos, Sundarbans = tigers in mangroves.",
+      "Minamata = Mercury (both start with M)."
+    ],
+    "traps": [
+      "Montreal is about ozone; Kyoto and Paris are about climate (greenhouse gases).",
+      "The energy pyramid is always upright; a pyramid of numbers or biomass may be inverted.",
+      "Jim Corbett, not Kaziranga, was India's first national park."
+    ]
+  },
+  "questions": [
+    { "id": "g-environment-001", "rev": 1, "topic": "g-environment", "type": "protected-areas", "level": 1, "q": "Gir National Park is famous for which animal?", "options": ["Bengal tiger", "Asiatic lion", "One-horned rhinoceros", "Snow leopard"], "answer": 1, "solution": "Gir National Park and the surrounding Gir forest region of Gujarat form the only wild home of the Asiatic lion.<br><b>Memory hook:</b> Gir — 'Gir-r-r' is the lion's roar.", "source": "test-data" },
+    { "id": "g-environment-002", "rev": 1, "topic": "g-environment", "type": "ecology-basics", "level": 1, "q": "In an ecosystem, green plants are called:", "options": ["Producers", "Primary consumers", "Decomposers", "Secondary consumers"], "answer": 0, "solution": "Green plants make their own food by photosynthesis, so they are producers.<br><b>Memory hook:</b> Plants Produce.", "source": "test-data" },
+    { "id": "g-environment-003", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 1, "q": "Which gas is mainly responsible for depletion of the ozone layer?", "options": ["Carbon dioxide", "Methane", "Chlorofluorocarbons (CFCs)", "Nitrogen"], "answer": 2, "solution": "CFCs release chlorine in the stratosphere, which breaks down ozone. They were used in fridges and sprays.<br><b>Memory hook:</b> Chlorine from CFCs 'chews' ozone.", "source": "test-data" },
+    { "id": "g-environment-004", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 2, "q": "Minamata disease is caused by poisoning from:", "options": ["Lead", "Cadmium", "Arsenic", "Mercury"], "answer": 3, "solution": "Minamata disease (Japan) was caused by mercury in fish from polluted water. Itai-itai is due to cadmium.<br><b>Memory hook:</b> <b>M</b>inamata = <b>M</b>ercury.", "source": "test-data" },
+    { "id": "g-environment-005", "rev": 1, "topic": "g-environment", "type": "protected-areas", "level": 2, "q": "Which was the first national park of India?", "options": ["Jim Corbett National Park", "Kaziranga National Park", "Kanha National Park", "Gir National Park"], "answer": 0, "solution": "Jim Corbett National Park (Uttarakhand) was set up in 1936 as Hailey National Park — India's first. Project Tiger was launched here in 1973.<br><b>Memory hook:</b> Corbett: first park, first Project Tiger reserve.", "source": "test-data" },
+    { "id": "g-environment-006", "rev": 1, "topic": "g-environment", "type": "ecology-basics", "level": 2, "q": "According to Lindeman's 10% law, if producers trap 20,000 J of energy, how much will reach the secondary consumers?", "img": "ga/env-energy-pyramid.svg", "options": ["2,000 J", "200 J", "20 J", "10,000 J"], "answer": 1, "solution": "Primary consumers get 10% of 20,000 = 2,000 J. Secondary consumers get 10% of 2,000 = 200 J.<br><b>Memory hook:</b> Drop one zero at each step up the pyramid.", "source": "test-data" },
+    { "id": "g-environment-007", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 3, "q": "Which international agreement is specifically aimed at protecting the ozone layer?", "options": ["Kyoto Protocol", "Ramsar Convention", "Montreal Protocol", "Paris Agreement"], "answer": 2, "solution": "The Montreal Protocol (1987) phases out ozone-depleting substances such as CFCs. Kyoto and Paris deal with greenhouse gases; Ramsar with wetlands.<br><b>Memory hook:</b> 'O' in Ozone — the 'O' in mOntreal.", "source": "test-data" },
+    { "id": "g-environment-008", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 3, "q": "The Environment (Protection) Act of India was passed in 1986 after which disaster?", "options": ["Chernobyl nuclear accident", "Bhopal gas tragedy", "Minamata poisoning", "Kedarnath floods"], "answer": 1, "solution": "The Bhopal gas tragedy (December 1984, methyl isocyanate leak from Union Carbide) led to the Environment (Protection) Act, 1986.<br><b>Memory hook:</b> Bhopal '84 → Act '86.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-environment-1", "front": "Kaziranga National Park — state and animal", "back": "Assam; one-horned rhinoceros", "deck": "ga-facts" },
+    { "id": "fc-g-environment-2", "front": "Project Tiger launched in", "back": "1973", "deck": "ga-facts" },
+    { "id": "fc-g-environment-3", "front": "Ramsar Convention is about", "back": "Wetlands (1971)", "deck": "ga-facts" },
+    { "id": "fc-g-environment-4", "front": "Gas leaked in the Bhopal tragedy", "back": "Methyl isocyanate (MIC)", "deck": "ga-facts" },
+    { "id": "fc-g-environment-5", "front": "Wildlife (Protection) Act year", "back": "1972", "deck": "ga-facts" },
+    { "id": "fc-g-environment-6", "front": "Gases causing acid rain", "back": "Sulphur dioxide and nitrogen oxides", "deck": "ga-facts" },
+    { "id": "fc-g-environment-7", "front": "Itai-itai disease is caused by", "back": "Cadmium", "deck": "ga-facts" },
+    { "id": "fc-g-environment-8", "front": "Chipko Movement", "back": "1973, Uttarakhand — tree-hugging to stop felling", "deck": "ga-facts" },
+    { "id": "fc-g-environment-9", "front": "Number of biodiversity hotspots with parts in India", "back": "4 (Himalaya, Western Ghats–Sri Lanka, Indo-Burma, Sundaland)", "deck": "ga-facts" }
+  ]
+}

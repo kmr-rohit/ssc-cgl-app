@@ -1,0 +1,230 @@
+{
+ "topic": "r-figural",
+ "notes": {
+  "summary": "Figural reasoning uses pictures in a <b>series</b> (what comes next), an <b>analogy</b> (A : B :: C : ?), or asks which simple figure is <b>embedded</b> (hidden) in a complex figure.",
+  "concepts": [
+   {
+    "title": "Figure series",
+    "body": "Track each element separately: rotation (45° or 90° each step, clockwise or anticlockwise), movement around corners, and number of lines or shapes increasing."
+   },
+   {
+    "title": "Figure analogy",
+    "body": "Find what changed from the first figure to the second (rotated, flipped, shapes swapped, shaded) and make the <b>same change</b> to the third figure."
+   },
+   {
+    "title": "Embedded figure",
+    "body": "The option must appear in the big figure in the <b>same size and same orientation</b>. Trace every side of the option along lines that really exist in the figure."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "figure-series",
+    "name": "Figure series",
+    "how": "Watch one element at a time: its direction, position and count.",
+    "example": {
+     "q": "An arrow points up, then 45° clockwise, then 90°, then 135°. What next?",
+     "steps": [
+      "Each step: +45° clockwise",
+      "135° + 45° = 180°"
+     ],
+     "answer": "Arrow pointing down",
+     "img": "reasoning/fseries1-q.svg"
+    }
+   },
+   {
+    "type": "figure-analogy",
+    "name": "Figure analogy",
+    "how": "Describe the change in words, then apply it.",
+    "example": {
+     "q": "Big circle with small square : big square with small circle :: big triangle with small circle : ?",
+     "steps": [
+      "Rule: the inner shape becomes the outer one, and the outer becomes the inner.",
+      "Small circle → big circle; big triangle → small triangle."
+     ],
+     "answer": "Big circle with small triangle",
+     "img": "reasoning/fanalogy1-q.svg"
+    }
+   },
+   {
+    "type": "embedded-figure",
+    "name": "Embedded figure",
+    "how": "Check each side of the option against the lines of the big figure; mirror images do not count.",
+    "example": {
+     "q": "Is a small square with one diagonal hidden in a figure with no such diagonal?",
+     "steps": [
+      "Every line of the option must exist in the figure."
+     ],
+     "answer": "No"
+    }
+   }
+  ],
+  "tips": [
+   "In series, write the change under each frame (e.g. +45°, dot moves one corner clockwise).",
+   "In embedded figures, reject options that need a line the figure does not have."
+  ],
+  "traps": [
+   "A mirror image of the hidden figure is not the same figure.",
+   "Clockwise vs anticlockwise: check the direction of the first two steps carefully."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-figural-001",
+   "rev": 1,
+   "topic": "r-figural",
+   "type": "figure-series",
+   "level": 1,
+   "q": "Select the figure that will come next in the given series.",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 1,
+   "solution": "The arrow turns 45° clockwise at each step: up → up-right → right → down-right.<br>Next: another 45° clockwise → pointing straight down: option (b).",
+   "source": "test-data",
+   "img": "reasoning/fseries1-q.svg",
+   "optionImgs": [
+    "reasoning/fseries1-opt-a.svg",
+    "reasoning/fseries1-opt-b.svg",
+    "reasoning/fseries1-opt-c.svg",
+    "reasoning/fseries1-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-figural-002",
+   "rev": 1,
+   "topic": "r-figural",
+   "type": "figure-analogy",
+   "level": 1,
+   "q": "Select the figure that is related to the third figure in the same way as the second figure is related to the first figure.",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 2,
+   "solution": "Figure 1: big circle with a small square inside. Figure 2: big square with a small circle inside.<br>Rule: the outer and inner shapes swap.<br>Figure 3: big triangle with a small circle → big circle with a small triangle: option (c).",
+   "source": "test-data",
+   "img": "reasoning/fanalogy1-q.svg",
+   "optionImgs": [
+    "reasoning/fanalogy1-opt-a.svg",
+    "reasoning/fanalogy1-opt-b.svg",
+    "reasoning/fanalogy1-opt-c.svg",
+    "reasoning/fanalogy1-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-figural-003",
+   "rev": 1,
+   "topic": "r-figural",
+   "type": "figure-series",
+   "level": 2,
+   "q": "Select the figure that will come next in the given series.",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 3,
+   "solution": "Dot: moves one corner clockwise each step (top-left → top-right → bottom-right → bottom-left), so next it returns to top-left.<br>Lines: 1, 2, 3, 4 → next 5.<br>Option (d): dot at top-left with 5 lines.",
+   "source": "test-data",
+   "img": "reasoning/fseries2-q.svg",
+   "optionImgs": [
+    "reasoning/fseries2-opt-a.svg",
+    "reasoning/fseries2-opt-b.svg",
+    "reasoning/fseries2-opt-c.svg",
+    "reasoning/fseries2-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-figural-004",
+   "rev": 1,
+   "topic": "r-figural",
+   "type": "figure-analogy",
+   "level": 2,
+   "q": "Select the figure that is related to the third figure in the same way as the second figure is related to the first figure.",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 3,
+   "solution": "The upward arrow becomes a right-pointing arrow: a 90° clockwise rotation.<br>Rotate the flag 90° clockwise: the pole becomes horizontal with the flag at the right end, pointing down, and the base at the left: option (d).<br>(a) is 90° anticlockwise, (b) is a mirror image and (c) is 180°.",
+   "source": "test-data",
+   "img": "reasoning/fanalogy2-q.svg",
+   "optionImgs": [
+    "reasoning/fanalogy2-opt-a.svg",
+    "reasoning/fanalogy2-opt-b.svg",
+    "reasoning/fanalogy2-opt-c.svg",
+    "reasoning/fanalogy2-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-figural-005",
+   "rev": 1,
+   "topic": "r-figural",
+   "type": "embedded-figure",
+   "level": 3,
+   "q": "Select the option figure that is embedded in the given figure (rotation is not allowed).",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 2,
+   "solution": "The figure has: the outer square, one diagonal from top-left to bottom-right, a vertical middle line, and a horizontal middle line on the right half only.<br>(c) a small square with a top-left to bottom-right diagonal = the bottom-right quarter of the figure ✓.<br>(a) needs the other diagonal ✗. (b) needs a steep slanted line ✗. (d) needs a line from top-right to bottom-left ✗.",
+   "source": "test-data",
+   "img": "reasoning/embed1-q.svg",
+   "optionImgs": [
+    "reasoning/embed1-opt-a.svg",
+    "reasoning/embed1-opt-b.svg",
+    "reasoning/embed1-opt-c.svg",
+    "reasoning/embed1-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-figural-006",
+   "rev": 1,
+   "topic": "r-figural",
+   "type": "embedded-figure",
+   "level": 3,
+   "q": "Select the option figure that is embedded in the given figure (rotation is not allowed).",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 1,
+   "solution": "The figure has: the outer square, the diagonal from top-right to bottom-left, and a shorter parallel line cutting off the top-left corner.<br>(b) is the strip between the two slanted lines, closed by part of the top side and part of the left side ✓.<br>(a) is the mirror image (slants the other way) ✗. (c) needs a slanted line near the bottom-right corner ✗. (d) needs the top-left to bottom-right diagonal ✗.",
+   "source": "test-data",
+   "img": "reasoning/embed2-q.svg",
+   "optionImgs": [
+    "reasoning/embed2-opt-a.svg",
+    "reasoning/embed2-opt-b.svg",
+    "reasoning/embed2-opt-c.svg",
+    "reasoning/embed2-opt-d.svg"
+   ]
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-figural-1",
+   "front": "Figure series: first step",
+   "back": "Track each element (rotation, position, count) separately.",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-figural-2",
+   "front": "Embedded figure rule",
+   "back": "Same size and same orientation; every line must exist in the figure.",
+   "deck": "reasoning"
+  }
+ ]
+}

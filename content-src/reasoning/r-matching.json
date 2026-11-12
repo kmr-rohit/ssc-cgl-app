@@ -1,0 +1,170 @@
+{
+ "topic": "r-matching",
+ "notes": {
+  "summary": "These questions test speed and accuracy: spotting <b>identical</b> names, addresses, numbers or dates, and reading letters from a <b>number matrix</b>. Usually 0–1 question.",
+  "concepts": [
+   {
+    "title": "Identical pairs",
+    "body": "Compare in small chunks (3–4 characters at a time). Watch for swapped digits (4471 / 4417), changed vowels (Kumar / Kumer) and changed punctuation."
+   },
+   {
+    "title": "Matrix indexing",
+    "body": "Each letter is given by <b>row number first, then column number</b>. For \"27\", go to row 2, column 7. A letter that appears twice in a matrix can have more than one code."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "identical-pairs",
+    "name": "Identical pairs / address match",
+    "how": "Compare each pair chunk by chunk; count only exact matches.",
+    "example": {
+     "q": "Are 4573821 and 4573281 the same?",
+     "steps": [
+      "457-3821 vs 457-3281",
+      "\"82\" vs \"28\" differ"
+     ],
+     "answer": "Not the same"
+    }
+   },
+   {
+    "type": "matrix-indexing",
+    "name": "Matrix indexing",
+    "how": "For each number, read row then column; check every letter of the word.",
+    "example": {
+     "q": "In a matrix, row 2 column 7 is T. What does 27 represent?",
+     "steps": [
+      "First digit = row 2",
+      "Second digit = column 7"
+     ],
+     "answer": "T"
+    }
+   }
+  ],
+  "tips": [
+   "Use your finger or pen to move across both items together.",
+   "In matrix questions, check the odd-looking option first; usually one number points to a wrong letter."
+  ],
+  "traps": [
+   "Swapped digits and similar spellings (Kamla / Kamala) are the most common traps.",
+   "Do not read column first: the row number always comes first."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-matching-001",
+   "rev": 1,
+   "topic": "r-matching",
+   "type": "identical-pairs",
+   "level": 1,
+   "q": "How many of the following pairs are exactly the same?<br>(1) 4573821 – 4573821<br>(2) Rajesh Kumar – Rajesh Kumer<br>(3) 12/09/2025 – 12/09/2025<br>(4) MNOPQ – MNOQP",
+   "options": [
+    "1",
+    "3",
+    "2",
+    "4"
+   ],
+   "answer": 2,
+   "solution": "(1) Same.<br>(2) Kumar vs Kumer: different.<br>(3) Same.<br>(4) MNOPQ vs MNOQP: P and Q swapped, different.<br>So 2 pairs are the same.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-matching-002",
+   "rev": 1,
+   "topic": "r-matching",
+   "type": "identical-pairs",
+   "level": 1,
+   "q": "Which option is exactly the same as the given address?<br><b>Anil Sharma, 24/B, Gandhi Nagar, Jaipur – 302015</b>",
+   "options": [
+    "Anil Sharma, 24/B, Gandhi Nagar, Jaipur – 302051",
+    "Anil Sharma, 24/B, Gandhi Nagar, Jaipur – 302015",
+    "Anil Sarma, 24/B, Gandhi Nagar, Jaipur – 302015",
+    "Anil Sharma, 42/B, Gandhi Nagar, Jaipur – 302015"
+   ],
+   "answer": 1,
+   "solution": "(a) PIN 302051 ≠ 302015.<br>(b) Exactly the same.<br>(c) Sarma ≠ Sharma.<br>(d) 42/B ≠ 24/B.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-matching-003",
+   "rev": 1,
+   "topic": "r-matching",
+   "type": "matrix-indexing",
+   "level": 2,
+   "q": "A word is represented by a set of numbers. Each letter is given by its row number followed by its column number in the matrix below. Which set represents the word <b>MAP</b>?<table><thead><tr><th></th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><th>0</th><td>S</td><td>T</td><td>A</td><td>R</td><td>E</td></tr><tr><th>1</th><td>M</td><td>O</td><td>N</td><td>E</td><td>T</td></tr><tr><th>2</th><td>R</td><td>A</td><td>T</td><td>I</td><td>O</td></tr><tr><th>3</th><td>P</td><td>L</td><td>A</td><td>N</td><td>S</td></tr><tr><th>4</th><td>E</td><td>M</td><td>I</td><td>T</td><td>S</td></tr></tbody></table>",
+   "options": [
+    "46, 27, 35",
+    "15, 37, 36",
+    "46, 26, 35",
+    "16, 07, 35"
+   ],
+   "answer": 2,
+   "solution": "M = 15 or 46; A = 07, 26 or 37; P = 35.<br>(a) 27 = T ✗. (b) 36 = L ✗. (d) 16 = O ✗.<br>(c) 46 = M, 26 = A, 35 = P ✓.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-matching-004",
+   "rev": 1,
+   "topic": "r-matching",
+   "type": "identical-pairs",
+   "level": 2,
+   "q": "A form shows a date of birth as 05-11-1998 (DD-MM-YYYY). Which of the following is the same date?",
+   "options": [
+    "11 May 1998",
+    "5 October 1998",
+    "5 November 1998",
+    "11 November 1998"
+   ],
+   "answer": 2,
+   "solution": "DD = 05, MM = 11, YYYY = 1998.<br>Month 11 = November.<br>So the date is 5 November 1998.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-matching-005",
+   "rev": 1,
+   "topic": "r-matching",
+   "type": "matrix-indexing",
+   "level": 3,
+   "q": "Each letter is given by its row number followed by its column number in the matrix below. Which set does NOT represent the word <b>RAT</b>?<table><thead><tr><th></th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><th>0</th><td>S</td><td>T</td><td>A</td><td>R</td><td>E</td></tr><tr><th>1</th><td>M</td><td>O</td><td>N</td><td>E</td><td>T</td></tr><tr><th>2</th><td>R</td><td>A</td><td>T</td><td>I</td><td>O</td></tr><tr><th>3</th><td>P</td><td>L</td><td>A</td><td>N</td><td>S</td></tr><tr><th>4</th><td>E</td><td>M</td><td>I</td><td>T</td><td>S</td></tr></tbody></table>",
+   "options": [
+    "08, 26, 27",
+    "25, 37, 19",
+    "08, 07, 48",
+    "25, 26, 36"
+   ],
+   "answer": 3,
+   "solution": "R = 08 or 25; A = 07, 26 or 37; T = 06, 19, 27 or 48.<br>(a) R, A, T ✓. (b) R, A, T ✓. (c) R, A, T ✓.<br>(d) 36 = row 3, column 6 = L, not T. So (d) does not represent RAT.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-matching-006",
+   "rev": 1,
+   "topic": "r-matching",
+   "type": "identical-pairs",
+   "level": 3,
+   "q": "In how many of the following pairs are both entries exactly the same?<br>(1) 8920436 – 8920436<br>(2) Kamla Devi – Kamala Devi<br>(3) Plot 7/C, Sector 12 – Plot 7/C, Sector 21<br>(4) PQ-4471-ZX – PQ-4471-ZX<br>(5) 23.05.2019 – 23.05.2019",
+   "options": [
+    "2",
+    "4",
+    "5",
+    "3"
+   ],
+   "answer": 3,
+   "solution": "(1) Same. (2) Kamla vs Kamala: different. (3) Sector 12 vs 21: different. (4) Same. (5) Same.<br>So 3 pairs are the same.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-matching-1",
+   "front": "Matrix code \"27\"",
+   "back": "Row 2, column 7 (row first)",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-matching-2",
+   "front": "Fast comparison",
+   "back": "Compare in chunks of 3–4 characters; watch swapped digits.",
+   "deck": "reasoning"
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+  "topic": "e-error",
+  "notes": {
+    "summary": "In <b>Error Spotting</b> a sentence is split into three parts and a fourth option says <b>No error</b>. Find the part with the grammar mistake. SSC asks 2–3 such questions in Tier 1 and 3–4 in Tier 2, and nearly all of them test a small set of fixed rules.",
+    "concepts": [
+      { "title": "Read the whole sentence first", "body": "Do not judge each part alone. Read the full sentence, find the <b>real subject</b> and its <b>main verb</b>, then check the small words.<ol><li>Subject and verb: singular or plural?</li><li>Tense: does it match the time words (<i>yesterday, since, by next year</i>)?</li><li>Articles, prepositions and pronouns.</li><li>Fixed pairs: <i>no sooner…than, hardly…when, not only…but also</i>.</li></ol>" },
+      { "title": "Subject–verb agreement", "body": "The verb agrees with the real subject, not with the nearest noun.<ul><li><i>The quality of the mangoes <b>is</b> good.</i> (subject = quality)</li><li>Words joined by <i>as well as, along with, together with</i> do not change the subject: <i>The teacher, along with his students, <b>was</b> present.</i></li><li><i>Each, every, either, neither, everyone</i> take a singular verb.</li></ul>" },
+      { "title": "Tense and time words", "body": "<ul><li><i>Since / for</i> with a period up to now → present perfect: <i>I <b>have lived</b> here since 2015.</i></li><li>A past time word (<i>yesterday, last year, in 2010</i>) → simple past, never present perfect.</li><li>After <i>if</i> in a future condition, use simple present: <i>If it <b>rains</b>, we will stay in.</i></li></ul>" },
+      { "title": "Pronouns and comparison", "body": "After <i>than / as</i>, the pronoun case follows the hidden verb: <i>He is taller than <b>I</b> (am).</i> After prepositions use the object form: <i>between you and <b>me</b></i>. In comparisons compare like with like: <i>The climate of Shimla is better than <b>that of</b> Delhi.</i>" }
+    ],
+    "varieties": [
+      { "type": "subject-verb", "name": "Subject–verb agreement", "how": "Find the true subject (skip phrases with <i>of, along with, as well as</i>) and match the verb to it.", "example": { "q": "(A) One of my friends / (B) have gone / (C) to Canada for studies. / (D) No error", "steps": ["Real subject is <i>One</i>, which is singular.", "<i>have gone</i> must be <i>has gone</i>."], "answer": "(B)" } },
+      { "type": "tense", "name": "Tense errors", "how": "Look for time words. <i>Since/for</i> → perfect tense; a fixed past time → simple past; <i>if</i>-clause about future → simple present.", "example": { "q": "(A) I have seen / (B) that film / (C) last Sunday. / (D) No error", "steps": ["<i>last Sunday</i> is a fixed past time.", "Use simple past: <i>I saw</i>."], "answer": "(A)" } },
+      { "type": "pronoun-preposition", "name": "Pronouns, prepositions and comparison", "how": "Check pronoun case after prepositions and <i>than</i>; check fixed prepositions (<i>superior to, prefer to, married to</i>); compare like with like.", "example": { "q": "(A) This matter is / (B) strictly between / (C) you and I. / (D) No error", "steps": ["<i>between</i> is a preposition, so it needs the object form.", "<i>you and I</i> → <i>you and me</i>."], "answer": "(C)" } }
+    ],
+    "tips": [
+      "Always locate the subject–verb pair first; it is the most tested rule.",
+      "Mark 'No error' only after you have checked articles, prepositions and tense; SSC does use it as the correct answer sometimes.",
+      "Words like <i>superior, inferior, senior, junior, prefer</i> take <b>to</b>, not <b>than</b>."
+    ],
+    "traps": [
+      "The noun closest to the verb is often a decoy: in <i>The box of pencils is…</i> the verb follows <i>box</i>, not <i>pencils</i>.",
+      "<i>Hardly</i> and <i>scarcely</i> pair with <b>when</b>, but <i>no sooner</i> pairs with <b>than</b>."
+    ]
+  },
+  "questions": [
+    { "id": "e-error-001", "rev": 1, "topic": "e-error", "type": "subject-verb", "level": 1, "q": "Identify the part of the sentence that contains an error.<br>The list of selected candidates / have been put up / on the notice board.", "options": ["The list of selected candidates", "have been put up", "on the notice board", "No error"], "answer": 1, "solution": "The subject is <b>list</b> (singular); <i>of selected candidates</i> only describes it. So the verb should be <b>has been put up</b>.", "source": "test-data" },
+    { "id": "e-error-002", "rev": 1, "topic": "e-error", "type": "tense", "level": 1, "q": "Identify the part of the sentence that contains an error.<br>My uncle has visited us / last month and stayed / for a week.", "options": ["My uncle has visited us", "last month and stayed", "for a week", "No error"], "answer": 0, "solution": "<i>last month</i> is a fixed point in the past, so the simple past is needed: <b>My uncle visited us</b>. Present perfect cannot be used with a definite past time.", "source": "test-data" },
+    { "id": "e-error-003", "rev": 1, "topic": "e-error", "type": "subject-verb", "level": 2, "q": "Identify the part of the sentence that contains an error.<br>The manager, as well as his assistants, / were present / at the annual meeting.", "options": ["The manager, as well as his assistants,", "were present", "at the annual meeting", "No error"], "answer": 1, "solution": "When two nouns are joined by <i>as well as</i>, the verb agrees with the first noun. <b>The manager</b> is singular, so use <b>was present</b>.", "source": "test-data" },
+    { "id": "e-error-004", "rev": 1, "topic": "e-error", "type": "pronoun-preposition", "level": 2, "q": "Identify the part of the sentence that contains an error.<br>Many people believe that / village life is superior / than city life.", "options": ["Many people believe that", "village life is superior", "than city life", "No error"], "answer": 2, "solution": "<i>Superior</i> is a Latin comparative and takes <b>to</b>, not <i>than</i>: <b>superior to city life</b>.", "source": "test-data" },
+    { "id": "e-error-005", "rev": 1, "topic": "e-error", "type": "tense", "level": 3, "q": "Identify the part of the sentence that contains an error.<br>No sooner had the bell rung / when the children rushed / out of their classrooms.", "options": ["No sooner had the bell rung", "when the children rushed", "out of their classrooms", "No error"], "answer": 1, "solution": "<i>No sooner</i> is always followed by <b>than</b>, not <i>when</i>: <b>than the children rushed</b>. (<i>Hardly/Scarcely</i> take <i>when</i>.)", "source": "test-data" },
+    { "id": "e-error-006", "rev": 1, "topic": "e-error", "type": "pronoun-preposition", "level": 3, "q": "Identify the part of the sentence that contains an error.<br>The population of Mumbai / is larger than / any other city in India.", "options": ["The population of Mumbai", "is larger than", "any other city in India", "No error"], "answer": 2, "solution": "We must compare population with population, not population with a city. Correct: <b>that of any other city in India</b>.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-error-1", "front": "No sooner … ?", "back": "No sooner … <b>than</b> (Hardly / Scarcely … <b>when</b>)", "deck": "grammar" },
+    { "id": "fc-e-error-2", "front": "Verb after 'A, as well as B'", "back": "Agrees with <b>A</b> (the first subject).", "deck": "grammar" },
+    { "id": "fc-e-error-3", "front": "superior / inferior / prefer — which preposition?", "back": "<b>to</b> (never 'than')", "deck": "grammar" }
+  ]
+}

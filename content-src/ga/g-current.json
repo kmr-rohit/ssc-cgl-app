@@ -1,0 +1,76 @@
+{
+  "topic": "g-current",
+  "notes": {
+    "summary": "Current Affairs gives <b>2–4 questions</b>, usually on events of the last 6–12 months. <b>This app does not carry monthly news</b> — take that from a reliable external source (a monthly current-affairs compilation, PIB releases, a national newspaper). What this topic covers is the <b>stable background</b> that every news question leans on: which body publishes which index or report, and where international organisations are headquartered.",
+    "concepts": [
+      {
+        "title": "How to study current affairs",
+        "body": "<ul><li>Use <b>one</b> monthly compilation from a trusted source; revise the last <b>12 months</b> before the exam.</li><li>Make short notes under fixed heads: <b>appointments, awards, sports, summits, schemes, indices and rankings, defence exercises, obituaries, science</b>.</li><li>For every index in the news, note three things: <b>publisher, India's rank, the top country</b>. Ranks change every year; the publisher does not — learn that here.</li><li>For every summit, note the <b>host city and country</b> and link the organisation to its HQ from the table below.</li><li>Revise with flashcards weekly; old months fade fast.</li></ul>"
+      },
+      {
+        "title": "Who publishes which index or report",
+        "body": "<table><thead><tr><th>Index / report</th><th>Published by</th></tr></thead><tbody><tr><td>Human Development Index (Human Development Report)</td><td>UNDP</td></tr><tr><td>Global Gender Gap Report</td><td>World Economic Forum</td></tr><tr><td>Global Risks Report</td><td>World Economic Forum</td></tr><tr><td>World Happiness Report</td><td>UN Sustainable Development Solutions Network (with partners)</td></tr><tr><td>Global Hunger Index</td><td>Concern Worldwide and Welthungerhilfe</td></tr><tr><td>World Press Freedom Index</td><td>Reporters Without Borders (RSF)</td></tr><tr><td>Corruption Perceptions Index</td><td>Transparency International</td></tr><tr><td>Global Innovation Index</td><td>WIPO</td></tr><tr><td>Global Peace Index</td><td>Institute for Economics and Peace</td></tr><tr><td>World Economic Outlook</td><td>IMF</td></tr><tr><td>World Development Report</td><td>World Bank</td></tr></tbody></table>"
+      },
+      {
+        "title": "Headquarters of international organisations",
+        "body": "<table><thead><tr><th>Organisation</th><th>Headquarters</th></tr></thead><tbody><tr><td>United Nations, UNICEF</td><td>New York</td></tr><tr><td>WHO, ILO, WTO, ICRC (Red Cross)</td><td>Geneva</td></tr><tr><td>UNESCO, OECD</td><td>Paris</td></tr><tr><td>IMF, World Bank</td><td>Washington, D.C.</td></tr><tr><td>FAO</td><td>Rome</td></tr><tr><td>UNEP</td><td>Nairobi</td></tr><tr><td>IAEA, OPEC</td><td>Vienna</td></tr><tr><td>International Court of Justice</td><td>The Hague</td></tr><tr><td>NATO, European Union (main seat)</td><td>Brussels</td></tr><tr><td>Interpol</td><td>Lyon</td></tr><tr><td>ASEAN</td><td>Jakarta</td></tr><tr><td>SAARC</td><td>Kathmandu</td></tr><tr><td>BIMSTEC</td><td>Dhaka</td></tr><tr><td>Asian Development Bank</td><td>Manila</td></tr><tr><td>New Development Bank (BRICS)</td><td>Shanghai</td></tr><tr><td>AIIB</td><td>Beijing</td></tr><tr><td>IUCN, WWF International</td><td>Gland (Switzerland)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Indian bodies and their regular reports",
+        "body": "<table><thead><tr><th>Report / data</th><th>Released by</th></tr></thead><tbody><tr><td>Economic Survey</td><td>Ministry of Finance (before the Union Budget)</td></tr><tr><td>Consumer Price Index, Index of Industrial Production, Periodic Labour Force Survey</td><td>National Statistics Office (MoSPI)</td></tr><tr><td>Wholesale Price Index</td><td>Office of the Economic Adviser, DPIIT</td></tr><tr><td>Financial Stability Report, Monetary Policy Statement</td><td>Reserve Bank of India</td></tr><tr><td>India State of Forest Report (every two years)</td><td>Forest Survey of India</td></tr><tr><td>Swachh Survekshan (cleanliness ranking of cities)</td><td>Ministry of Housing and Urban Affairs</td></tr></tbody></table>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "indices",
+        "name": "Index ↔ publisher",
+        "how": "Recall the publisher table. In a news question, the rank changes each year but the publisher is fixed.",
+        "example": { "q": "The Global Gender Gap Report is published by:", "steps": ["Gender Gap, Global Risks → World Economic Forum", "HDI → UNDP"], "answer": "World Economic Forum" }
+      },
+      {
+        "type": "organisations",
+        "name": "Organisation ↔ headquarters",
+        "how": "Group by city: Geneva (WHO, ILO, WTO), Vienna (IAEA, OPEC), Washington (IMF, World Bank).",
+        "example": { "q": "Where is the headquarters of the International Atomic Energy Agency?", "steps": ["IAEA and OPEC are both in Vienna"], "answer": "Vienna" }
+      },
+      {
+        "type": "india-reports",
+        "name": "Indian reports and data",
+        "how": "Link each regular report to the ministry or body that releases it.",
+        "example": { "q": "Who releases the India State of Forest Report?", "steps": ["Prepared every two years", "By the Forest Survey of India (Ministry of Environment)"], "answer": "Forest Survey of India" }
+      }
+    ],
+    "tips": [
+      "Monthly news is not in this app — use one trusted external monthly source and revise the last 12 months.",
+      "WEF publishes the Gender Gap and Global Risks reports; its annual meeting is at Davos.",
+      "Geneva hosts the most UN-linked bodies: WHO, ILO, WTO (WTO is not a UN agency but sits there too)."
+    ],
+    "traps": [
+      "UNESCO is in Paris, but UNICEF is in New York.",
+      "IMF and World Bank are both in Washington, D.C., not New York.",
+      "World Happiness Report is not published by WHO or UNDP."
+    ]
+  },
+  "questions": [
+    { "id": "g-current-001", "rev": 1, "topic": "g-current", "type": "organisations", "level": 1, "q": "Where is the headquarters of the World Health Organization (WHO)?", "options": ["New York", "Geneva", "Paris", "Rome"], "answer": 1, "solution": "WHO is headquartered in Geneva, Switzerland.<br><b>Memory hook:</b> Geneva = 'Gene' = health.", "source": "test-data" },
+    { "id": "g-current-002", "rev": 1, "topic": "g-current", "type": "indices", "level": 1, "q": "The Human Development Index (HDI) is published by:", "options": ["World Bank", "IMF", "UNDP", "WHO"], "answer": 2, "solution": "HDI appears in the Human Development Report of the United Nations Development Programme (UNDP).<br><b>Memory hook:</b> Human <b>D</b>evelopment — UN<b>D</b>P.", "source": "test-data" },
+    { "id": "g-current-003", "rev": 1, "topic": "g-current", "type": "india-reports", "level": 1, "q": "The Economic Survey of India is presented by which ministry?", "options": ["Ministry of Finance", "Ministry of Commerce and Industry", "NITI Aayog", "Reserve Bank of India"], "answer": 0, "solution": "The Economic Survey is prepared by the Department of Economic Affairs, Ministry of Finance, and presented before the Union Budget.<br><b>Memory hook:</b> Survey before Budget — both from the Finance Ministry.", "source": "test-data" },
+    { "id": "g-current-004", "rev": 1, "topic": "g-current", "type": "indices", "level": 2, "q": "The World Press Freedom Index is released by:", "options": ["Amnesty International", "Transparency International", "Freedom House", "Reporters Without Borders"], "answer": 3, "solution": "The World Press Freedom Index is published by Reporters Without Borders (RSF), based in Paris. Transparency International publishes the Corruption Perceptions Index.<br><b>Memory hook:</b> Press = Reporters.", "source": "test-data" },
+    { "id": "g-current-005", "rev": 1, "topic": "g-current", "type": "organisations", "level": 2, "q": "Which pair of organisations both have their headquarters in Vienna?", "options": ["IAEA and OPEC", "ILO and WTO", "IMF and World Bank", "UNESCO and OECD"], "answer": 0, "solution": "IAEA and OPEC are in Vienna. ILO and WTO are in Geneva; IMF and World Bank in Washington, D.C.; UNESCO and OECD in Paris.<br><b>Memory hook:</b> Vienna runs on Atoms and Oil.", "source": "test-data" },
+    { "id": "g-current-006", "rev": 1, "topic": "g-current", "type": "indices", "level": 2, "q": "The Global Innovation Index is published by:", "options": ["UNESCO", "World Intellectual Property Organization (WIPO)", "World Economic Forum", "OECD"], "answer": 1, "solution": "The Global Innovation Index is published by WIPO, a UN agency based in Geneva.<br><b>Memory hook:</b> Innovation → patents → intellectual property → WIPO.", "source": "test-data" },
+    { "id": "g-current-007", "rev": 1, "topic": "g-current", "type": "organisations", "level": 3, "q": "Which pair (organisation — headquarters) is <b>incorrectly</b> matched?", "options": ["ASEAN — Jakarta", "SAARC — Kathmandu", "Asian Development Bank — Manila", "New Development Bank — Beijing"], "answer": 3, "solution": "The New Development Bank (set up by BRICS) is headquartered in Shanghai. Beijing hosts the AIIB.<br><b>Memory hook:</b> BRICS bank by the sea — Shanghai; AIIB in the capital — Beijing.", "source": "test-data" },
+    { "id": "g-current-008", "rev": 1, "topic": "g-current", "type": "india-reports", "level": 3, "q": "Which of the following is released by the National Statistics Office (MoSPI)?", "options": ["Wholesale Price Index", "Financial Stability Report", "Index of Industrial Production", "India State of Forest Report"], "answer": 2, "solution": "NSO releases the IIP, CPI and the Periodic Labour Force Survey. WPI comes from DPIIT, the Financial Stability Report from RBI, and the forest report from the Forest Survey of India.<br><b>Memory hook:</b> Statistics Office counts output, prices for consumers, and jobs.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-current-1", "front": "Global Hunger Index publishers", "back": "Concern Worldwide and Welthungerhilfe", "deck": "ga-facts" },
+    { "id": "fc-g-current-2", "front": "Corruption Perceptions Index publisher", "back": "Transparency International", "deck": "ga-facts" },
+    { "id": "fc-g-current-3", "front": "Global Peace Index publisher", "back": "Institute for Economics and Peace", "deck": "ga-facts" },
+    { "id": "fc-g-current-4", "front": "World Economic Outlook publisher", "back": "IMF", "deck": "ga-facts" },
+    { "id": "fc-g-current-5", "front": "UNESCO headquarters", "back": "Paris", "deck": "ga-facts" },
+    { "id": "fc-g-current-6", "front": "FAO headquarters", "back": "Rome", "deck": "ga-facts" },
+    { "id": "fc-g-current-7", "front": "UNEP headquarters", "back": "Nairobi", "deck": "ga-facts" },
+    { "id": "fc-g-current-8", "front": "International Court of Justice seat", "back": "The Hague (Netherlands)", "deck": "ga-facts" },
+    { "id": "fc-g-current-9", "front": "Interpol headquarters", "back": "Lyon (France)", "deck": "ga-facts" },
+    { "id": "fc-g-current-10", "front": "Swachh Survekshan is conducted by", "back": "Ministry of Housing and Urban Affairs", "deck": "ga-facts" }
+  ]
+}

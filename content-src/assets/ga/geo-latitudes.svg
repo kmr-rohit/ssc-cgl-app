@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" font-family="Arial, Helvetica, sans-serif" font-size="13">
+  <rect width="560" height="400" fill="#ffffff"/>
+  <circle cx="200" cy="200" r="150" fill="#e6f2ff" stroke="#3a7bd5" stroke-width="2"/>
+  <line x1="141" y1="62" x2="260" y2="62" stroke="#5b8def" stroke-width="2"/>
+  <line x1="62" y1="140" x2="338" y2="140" stroke="#e67e22" stroke-width="2"/>
+  <line x1="50" y1="200" x2="350" y2="200" stroke="#c0392b" stroke-width="3"/>
+  <line x1="62" y1="260" x2="338" y2="260" stroke="#e67e22" stroke-width="2"/>
+  <line x1="141" y1="338" x2="260" y2="338" stroke="#5b8def" stroke-width="2"/>
+  <g fill="#222">
+    <text x="200" y="40" text-anchor="middle">North Pole 90°N</text>
+    <text x="200" y="372" text-anchor="middle">South Pole 90°S</text>
+    <text x="270" y="66">Arctic Circle 66½°N</text>
+    <text x="348" y="144">Tropic of Cancer 23½°N</text>
+    <text x="358" y="204" font-weight="bold">Equator 0°</text>
+    <text x="348" y="264">Tropic of Capricorn 23½°S</text>
+    <text x="270" y="342">Antarctic Circle 66½°S</text>
+  </g>
+  <text x="348" y="160" fill="#555" font-size="11">passes through 8 Indian states</text>
+  <text x="280" y="392" text-anchor="middle" fill="#555" font-size="11">Schematic, not to scale</text>
+</svg>

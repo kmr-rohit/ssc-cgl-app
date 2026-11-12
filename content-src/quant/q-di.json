@@ -1,0 +1,221 @@
+{
+ "topic": "q-di",
+ "notes": {
+  "summary": "Data Interpretation gives a table or chart and 3–5 questions on it. 2–4 questions in Tier 1 and 3–5 in Tier 2. Read the units and the title before calculating.",
+  "concepts": [
+   {
+    "title": "Reading the data",
+    "body": "Check the <b>units</b> (thousands, lakhs, %), the years and the labels. Write the needed values down before calculating."
+   },
+   {
+    "title": "Percentage change",
+    "body": "% change = (New − Old)/Old × 100. The base is always the <b>earlier</b> (or “compared to”) value."
+   },
+   {
+    "title": "Ratio and average",
+    "body": "Ratio: write both values and cancel common factors. Average: total ÷ number of items."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "average",
+    "name": "Average from data",
+    "how": "Add the required values and divide by their count.",
+    "example": {
+     "q": "Values 20, 30, 40. Average?",
+     "steps": [
+      "Sum = 90",
+      "90/3 = 30"
+     ],
+     "answer": "30"
+    }
+   },
+   {
+    "type": "percent-change",
+    "name": "Percentage change",
+    "how": "(New − Old)/Old × 100.",
+    "example": {
+     "q": "Sales rose from 80 to 100. % increase?",
+     "steps": [
+      "20/80 × 100"
+     ],
+     "answer": "25%"
+    }
+   },
+   {
+    "type": "ratio",
+    "name": "Ratio",
+    "how": "Write the two quantities and reduce by their HCF.",
+    "example": {
+     "q": "Ratio of 45 to 75?",
+     "steps": [
+      "HCF = 15",
+      "3 : 5"
+     ],
+     "answer": "3 : 5"
+    }
+   }
+  ],
+  "tips": [
+   "Approximate when options are far apart.",
+   "Use fraction equivalents (1/8 = 12.5%, 1/6 = 16.67%) for % change."
+  ],
+  "traps": [
+   "% increase from A to B uses A as the base; % decrease from B to A uses B.",
+   "Do not mix totals of different years or units."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Percentage change",
+   "expr": "(New − Old)/Old × 100"
+  },
+  {
+   "name": "Average",
+   "expr": "Sum / Count"
+  }
+ ],
+ "passages": [
+  {
+   "id": "q-di-p1",
+   "title": "Production of Company X",
+   "text": "Study the bar chart and answer the questions. The chart shows the production of Company X (in thousand units) from 2019 to 2023: 2019 – 40, 2020 – 55, 2021 – 50, 2022 – 70, 2023 – 85.",
+   "img": "quant/di-production-bar.svg"
+  },
+  {
+   "id": "q-di-p2",
+   "title": "Sales of four shops",
+   "text": "Study the table and answer the questions. Sales of four shops (in ₹ lakh):<table><thead><tr><th>Shop</th><th>2022</th><th>2023</th></tr></thead><tbody><tr><td>A</td><td>120</td><td>150</td></tr><tr><td>B</td><td>80</td><td>100</td></tr><tr><td>C</td><td>150</td><td>135</td></tr><tr><td>D</td><td>100</td><td>140</td></tr></tbody></table>"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-di-001",
+   "rev": 1,
+   "topic": "q-di",
+   "type": "average",
+   "level": 1,
+   "q": "What is the average annual production of Company X from 2019 to 2023 (in thousand units)?",
+   "options": [
+    "55",
+    "60",
+    "62",
+    "65"
+   ],
+   "answer": 1,
+   "solution": "Total = 40 + 55 + 50 + 70 + 85 = 300.<br>Average = 300/5 = 60 thousand units.",
+   "passageId": "q-di-p1",
+   "source": "test-data"
+  },
+  {
+   "id": "q-di-002",
+   "rev": 1,
+   "topic": "q-di",
+   "type": "ratio",
+   "level": 1,
+   "q": "What is the ratio of the sales of shop A to the sales of shop B in 2023?",
+   "options": [
+    "3 : 2",
+    "4 : 3",
+    "6 : 5",
+    "5 : 4"
+   ],
+   "answer": 0,
+   "solution": "A (2023) = 150, B (2023) = 100.<br>Ratio = 150 : 100 = 3 : 2.",
+   "passageId": "q-di-p2",
+   "source": "test-data"
+  },
+  {
+   "id": "q-di-003",
+   "rev": 1,
+   "topic": "q-di",
+   "type": "percent-change",
+   "level": 2,
+   "q": "By what percent did the production of Company X increase from 2021 to 2022?",
+   "options": [
+    "20%",
+    "28.6%",
+    "40%",
+    "35%"
+   ],
+   "answer": 2,
+   "solution": "Increase = 70 − 50 = 20 thousand.<br>% increase = 20/50 × 100 = 40%.",
+   "passageId": "q-di-p1",
+   "source": "test-data"
+  },
+  {
+   "id": "q-di-004",
+   "rev": 1,
+   "topic": "q-di",
+   "type": "average",
+   "level": 2,
+   "q": "What is the average sales per shop in 2022 (in ₹ lakh)?",
+   "options": [
+    "112.5",
+    "131.25",
+    "115",
+    "110"
+   ],
+   "answer": 0,
+   "solution": "Total 2022 = 120 + 80 + 150 + 100 = 450.<br>Average = 450/4 = 112.5 lakh.",
+   "passageId": "q-di-p2",
+   "source": "test-data"
+  },
+  {
+   "id": "q-di-005",
+   "rev": 1,
+   "topic": "q-di",
+   "type": "ratio",
+   "level": 3,
+   "q": "What is the ratio of the total production in 2019 and 2020 together to the total production in 2022 and 2023 together?",
+   "options": [
+    "19 : 31",
+    "17 : 31",
+    "19 : 29",
+    "11 : 17"
+   ],
+   "answer": 0,
+   "solution": "2019 + 2020 = 40 + 55 = 95.<br>2022 + 2023 = 70 + 85 = 155.<br>Ratio = 95 : 155 = 19 : 31.",
+   "passageId": "q-di-p1",
+   "source": "test-data"
+  },
+  {
+   "id": "q-di-006",
+   "rev": 1,
+   "topic": "q-di",
+   "type": "percent-change",
+   "level": 3,
+   "q": "By what percent did the total sales of all four shops increase from 2022 to 2023?",
+   "options": [
+    "15%",
+    "14 2/7 %",
+    "16 2/3 %",
+    "18%"
+   ],
+   "answer": 2,
+   "solution": "Total 2022 = 450; total 2023 = 150 + 100 + 135 + 140 = 525.<br>Increase = 75.<br>% increase = 75/450 × 100 = 16 2/3 %.",
+   "passageId": "q-di-p2",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-di-1",
+   "front": "% change formula",
+   "back": "(New − Old)/Old × 100",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-di-2",
+   "front": "1/6 as a percent",
+   "back": "16.67% (16⅔%)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-di-3",
+   "front": "1/7 as a percent",
+   "back": "14.29% (14 2/7 %)",
+   "deck": "formulas"
+  }
+ ]
+}

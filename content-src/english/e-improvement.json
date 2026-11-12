@@ -1,0 +1,37 @@
+{
+  "topic": "e-improvement",
+  "notes": {
+    "summary": "In <b>Sentence Improvement</b> a part of the sentence is underlined or bold. You choose the option that corrects it, or 'No improvement' if it is already correct. The tested rules are the same as error spotting, but here you must also pick the right fix.",
+    "concepts": [
+      { "title": "Check the underlined part only", "body": "The rest of the sentence is correct and gives you clues (tense, number, subject). Your answer must fit smoothly into it. Read the full sentence with each option in place." },
+      { "title": "Common areas", "body": "<ul><li><b>Conditionals</b>: <i>If I were you, I would…</i>; <i>If he had studied, he would have passed.</i></li><li><b>Tense sequence</b>: a past main verb usually takes a past verb in the reported clause.</li><li><b>Redundancy</b>: <i>return back, repeat again, cousin brother</i> are wrong.</li><li><b>Idiomatic forms</b>: <i>look forward to <u>meeting</u></i>, <i>used to <u>living</u></i> (when 'used to' means accustomed).</li></ul>" },
+      { "title": "'No improvement' is a real option", "body": "If the underlined part is grammatically correct and natural, choose 'No improvement'. Do not change a correct sentence just because another option also sounds fine." }
+    ],
+    "varieties": [
+      { "type": "conditional", "name": "Conditionals and tense", "how": "Match the <i>if</i>-clause with the main clause: present–will, past–would, past perfect–would have.", "example": { "q": "If she <b>would have left</b> early, she would have caught the train.", "steps": ["Main clause is <i>would have caught</i> (type 3, unreal past).", "The if-clause needs past perfect: <i>had left</i>."], "answer": "had left" } },
+      { "type": "redundancy", "name": "Redundancy and idiom", "how": "Remove words that repeat a meaning already present, and use the fixed English form.", "example": { "q": "Please <b>return back</b> the book by Monday.", "steps": ["<i>Return</i> already means 'give back'.", "Drop <i>back</i>."], "answer": "return" } },
+      { "type": "no-improvement", "name": "Spotting a correct sentence", "how": "Check subject, verb, tense, preposition. If all are right, choose 'No improvement'.", "example": { "q": "He has been working here <b>since 2019</b>.", "steps": ["<i>since</i> + a point in time with present perfect continuous is correct."], "answer": "No improvement" } }
+    ],
+    "tips": [
+      "Eliminate options that introduce a new error; usually two options can be dropped quickly.",
+      "After <i>look forward to, object to, be used to, with a view to</i>, the verb takes <b>-ing</b>."
+    ],
+    "traps": [
+      "<i>Would</i> never goes in the <i>if</i>-clause of a conditional.",
+      "<i>Used to + verb</i> (past habit) and <i>be used to + -ing</i> (accustomed) mean different things."
+    ]
+  },
+  "questions": [
+    { "id": "e-improvement-001", "rev": 1, "topic": "e-improvement", "type": "redundancy", "level": 1, "q": "Select the most appropriate option to improve the bold part.<br>The teacher asked the boy to <b>repeat again</b> his answer.", "options": ["repeat once again", "repeat", "again repeat", "No improvement"], "answer": 1, "solution": "<i>Repeat</i> already means 'say again', so <i>again</i> is redundant. Correct: <b>repeat</b> his answer.", "source": "test-data" },
+    { "id": "e-improvement-002", "rev": 1, "topic": "e-improvement", "type": "no-improvement", "level": 1, "q": "Select the most appropriate option to improve the bold part.<br>She <b>has been living</b> in Pune for ten years.", "options": ["is living", "lives", "was living", "No improvement"], "answer": 3, "solution": "<i>for ten years</i> describes an action that started in the past and continues now, so the present perfect continuous <b>has been living</b> is correct. No improvement.", "source": "test-data" },
+    { "id": "e-improvement-003", "rev": 1, "topic": "e-improvement", "type": "conditional", "level": 2, "q": "Select the most appropriate option to improve the bold part.<br>If I <b>was</b> the Prime Minister, I would build more schools.", "options": ["am", "were", "had been", "No improvement"], "answer": 1, "solution": "For an imaginary present situation, English uses the subjunctive <b>were</b> for all persons: <i>If I were…, I would…</i>", "source": "test-data" },
+    { "id": "e-improvement-004", "rev": 1, "topic": "e-improvement", "type": "redundancy", "level": 2, "q": "Select the most appropriate option to improve the bold part.<br>We are looking forward to <b>meet</b> you at the conference.", "options": ["meeting", "have met", "be meeting", "No improvement"], "answer": 0, "solution": "In <i>look forward to</i>, <b>to</b> is a preposition, so it takes a gerund: <b>looking forward to meeting</b>.", "source": "test-data" },
+    { "id": "e-improvement-005", "rev": 1, "topic": "e-improvement", "type": "conditional", "level": 3, "q": "Select the most appropriate option to improve the bold part.<br>Had he <b>listened to</b> his doctor, he <b>will not fall</b> ill.", "options": ["would not fall", "would not have fallen", "will not have fallen", "No improvement"], "answer": 1, "solution": "<i>Had he listened</i> = <i>If he had listened</i> (type 3, unreal past). The main clause must be <b>would not have fallen</b>.", "source": "test-data" },
+    { "id": "e-improvement-006", "rev": 1, "topic": "e-improvement", "type": "no-improvement", "level": 3, "q": "Select the most appropriate option to improve the bold part.<br>Hardly <b>had we reached</b> the station when the train left.", "options": ["we had reached", "did we reach", "we reached", "No improvement"], "answer": 3, "solution": "With a negative adverb like <i>Hardly</i> at the start, the auxiliary comes before the subject: <b>Hardly had we reached … when</b>. The sentence is already correct.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-impr-1", "front": "If I ___ you, I would…", "back": "If I <b>were</b> you (subjunctive)", "deck": "grammar" },
+    { "id": "fc-e-impr-2", "front": "Type 3 conditional pattern", "back": "If + had + V3, … would have + V3", "deck": "grammar" },
+    { "id": "fc-e-impr-3", "front": "look forward to ___ (meet)", "back": "look forward to <b>meeting</b> — 'to' is a preposition here", "deck": "grammar" }
+  ]
+}

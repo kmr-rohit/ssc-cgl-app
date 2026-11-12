@@ -1,0 +1,221 @@
+{
+ "topic": "st-random",
+ "notes": {
+  "summary": "A random variable assigns a number to each outcome. JSO asks on expectation and variance, and on the three standard distributions: binomial, Poisson and normal (mean, variance, probabilities and properties).",
+  "concepts": [
+   {
+    "title": "Expectation and variance",
+    "body": "<ul><li>E(X) = Σx p(x); E(X²) = Σx² p(x).</li><li>Var(X) = E(X²) − [E(X)]².</li><li>E(aX + b) = aE(X) + b; Var(aX + b) = a² Var(X).</li></ul>"
+   },
+   {
+    "title": "Binomial and Poisson",
+    "body": "<ul><li><b>Binomial</b> B(n, p): P(X = r) = <sup>n</sup>C<sub>r</sub> p<sup>r</sup> q<sup>n−r</sup>, q = 1 − p. Mean = np, variance = npq. Mean &gt; variance.</li><li><b>Poisson</b> (λ): P(X = r) = e<sup>−λ</sup>λ<sup>r</sup>/r!. Mean = variance = λ. Limit of binomial when n is large and p small (λ = np).</li></ul>"
+   },
+   {
+    "title": "Normal distribution",
+    "body": "<ul><li>Bell-shaped and symmetric; mean = median = mode; β<sub>2</sub> = 3.</li><li>Standardise: Z = (X − μ)/σ, Z ~ N(0, 1).</li><li>μ ± σ covers 68.27%, μ ± 2σ covers 95.45%, μ ± 3σ covers 99.73%.</li><li>Useful areas: P(0 &lt; Z &lt; 1) = 0.3413, P(0 &lt; Z &lt; 1.96) = 0.475, P(0 &lt; Z &lt; 2) = 0.4772.</li></ul>",
+    "img": "statistics/normal-curve.svg"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "expectation",
+    "name": "Expectation and variance",
+    "how": "Multiply each value by its probability and add; for variance use E(X²) − [E(X)]².",
+    "example": {
+     "q": "X takes 0 and 1 with probabilities 0.3 and 0.7. Find Var(X).",
+     "steps": [
+      "E(X) = 0.7",
+      "E(X²) = 0.7",
+      "Var = 0.7 − 0.49 = 0.21"
+     ],
+     "answer": "0.21"
+    }
+   },
+   {
+    "type": "binomial-poisson",
+    "name": "Binomial and Poisson",
+    "how": "Use mean = np, var = npq (binomial) or mean = var = λ (Poisson); plug into the PMF for exact probabilities.",
+    "example": {
+     "q": "X ~ Poisson with P(X = 1) = P(X = 2). Find the mean.",
+     "steps": [
+      "e<sup>−λ</sup>λ = e<sup>−λ</sup>λ²/2",
+      "λ = 2"
+     ],
+     "answer": "2"
+    }
+   },
+   {
+    "type": "normal",
+    "name": "Normal distribution",
+    "how": "Convert X to Z, then use the standard area table and symmetry.",
+    "example": {
+     "q": "X ~ N(100, 15²). Find P(X &lt; 100).",
+     "steps": [
+      "Z = (100 − 100)/15 = 0",
+      "Half the area lies below the mean."
+     ],
+     "answer": "0.5"
+    }
+   }
+  ],
+  "tips": [
+   "If mean = variance, think Poisson.",
+   "In a binomial, variance/mean = q gives p quickly.",
+   "The normal curve is symmetric, so P(Z &gt; a) = P(Z &lt; −a)."
+  ],
+  "traps": [
+   "For a binomial, variance can never exceed the mean.",
+   "Var(aX + b) uses a², and the constant b vanishes.",
+   "Z uses σ (SD), not σ² (variance), in the denominator."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Variance",
+   "expr": "Var(X) = E(X²) − [E(X)]²"
+  },
+  {
+   "name": "Binomial",
+   "expr": "P(X=r) = ⁿCᵣ pʳ qⁿ⁻ʳ;  mean np, variance npq"
+  },
+  {
+   "name": "Poisson",
+   "expr": "P(X=r) = e^(−λ) λʳ / r!;  mean = variance = λ"
+  },
+  {
+   "name": "Standard normal",
+   "expr": "Z = (X − μ) / σ"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-random-001",
+   "rev": 1,
+   "topic": "st-random",
+   "type": "expectation",
+   "level": 1,
+   "q": "X takes the values 1, 2, 3 with probabilities 0.2, 0.5, 0.3. E(X) is:",
+   "options": [
+    "2.1",
+    "2.3",
+    "1.9",
+    "2.0"
+   ],
+   "answer": 0,
+   "solution": "E(X) = 1 × 0.2 + 2 × 0.5 + 3 × 0.3 = 0.2 + 1.0 + 0.9 = 2.1.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-random-002",
+   "rev": 1,
+   "topic": "st-random",
+   "type": "binomial-poisson",
+   "level": 1,
+   "q": "For a binomial distribution with n = 10 and p = 0.4, the variance is:",
+   "options": [
+    "6",
+    "1.55",
+    "4",
+    "2.4"
+   ],
+   "answer": 3,
+   "solution": "Variance = npq = 10 × 0.4 × 0.6 = 2.4. (Mean = np = 4.)",
+   "source": "test-data"
+  },
+  {
+   "id": "st-random-003",
+   "rev": 1,
+   "topic": "st-random",
+   "type": "binomial-poisson",
+   "level": 2,
+   "q": "A Poisson variable has mean 2. P(X = 0) is approximately:",
+   "options": [
+    "0.5000",
+    "0.2707",
+    "0.1353",
+    "0.0183"
+   ],
+   "answer": 2,
+   "solution": "P(X = 0) = e<sup>−λ</sup>λ<sup>0</sup>/0! = e<sup>−2</sup> ≈ 0.1353.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-random-004",
+   "rev": 1,
+   "topic": "st-random",
+   "type": "binomial-poisson",
+   "level": 2,
+   "q": "A binomial distribution has mean 6 and variance 4.2. The value of n is:",
+   "options": [
+    "15",
+    "20",
+    "30",
+    "10"
+   ],
+   "answer": 1,
+   "solution": "npq/np = q = 4.2/6 = 0.7, so p = 0.3.<br>n = mean/p = 6/0.3 = 20.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-random-005",
+   "rev": 1,
+   "topic": "st-random",
+   "type": "normal",
+   "level": 3,
+   "q": "X ~ N(50, 10²). Given P(0 &lt; Z &lt; 2) = 0.4772, P(X &gt; 70) is:",
+   "options": [
+    "0.0228",
+    "0.9772",
+    "0.1587",
+    "0.4772"
+   ],
+   "answer": 0,
+   "solution": "Z = (70 − 50)/10 = 2.<br>P(Z &gt; 2) = 0.5 − 0.4772 = 0.0228.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-random-006",
+   "rev": 1,
+   "topic": "st-random",
+   "type": "binomial-poisson",
+   "level": 3,
+   "q": "A fair coin is tossed 4 times. The probability of exactly 2 heads is:",
+   "options": [
+    "1/4",
+    "5/16",
+    "1/2",
+    "3/8"
+   ],
+   "answer": 3,
+   "solution": "P(X = 2) = <sup>4</sup>C<sub>2</sub> (1/2)²(1/2)² = 6 × 1/16 = 6/16 = 3/8.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-strand-1",
+   "front": "Binomial mean, variance",
+   "back": "np, npq",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-strand-2",
+   "front": "Poisson mean, variance",
+   "back": "Both λ",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-strand-3",
+   "front": "Normal: μ ± 1σ, 2σ, 3σ",
+   "back": "68.27%, 95.45%, 99.73%",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-strand-4",
+   "front": "Var(aX + b)",
+   "back": "a² Var(X)",
+   "deck": "formulas"
+  }
+ ]
+}

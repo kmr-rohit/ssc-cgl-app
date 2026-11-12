@@ -1,0 +1,180 @@
+{
+ "topic": "r-syllogism",
+ "notes": {
+  "summary": "Syllogism gives two or three statements (assume them true, even if they sound odd) and asks which conclusions <b>definitely</b> follow. Draw quick Venn circles. 1–2 questions per paper.",
+  "concepts": [
+   {
+    "title": "Four statement types",
+    "body": "<b>All A are B</b>: circle A inside B.<br><b>No A is B</b>: A and B separate.<br><b>Some A are B</b>: A and B overlap.<br><b>Some A are not B</b>: part of A lies outside B."
+   },
+   {
+    "title": "Definite vs possible",
+    "body": "A conclusion \"follows\" only if it is true in <b>every</b> possible diagram. A \"possibility\" conclusion follows if it is true in <b>at least one</b> diagram that fits the statements."
+   },
+   {
+    "title": "Either–or pair",
+    "body": "If two conclusions are about the same two groups, neither follows alone, and one is \"Some\" while the other is \"No\" (or \"All\" and \"Some not\"), then the answer is <b>either I or II</b>."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "two-statement",
+    "name": "Definite conclusions",
+    "how": "Draw the minimum diagram, then try to break each conclusion with another diagram.",
+    "example": {
+     "q": "All cats are dogs. All dogs are animals. Does \"All cats are animals\" follow?",
+     "steps": [
+      "Cats ⊂ Dogs ⊂ Animals",
+      "Every cat is inside Animals."
+     ],
+     "answer": "Yes, it follows"
+    }
+   },
+   {
+    "type": "possibility",
+    "name": "Possibility conclusions",
+    "how": "A possibility follows if you can draw one valid diagram where it is true and no statement forbids it.",
+    "example": {
+     "q": "No apple is a mango. Is \"Some mangoes are apples\" a possibility?",
+     "steps": [
+      "\"No apple is a mango\" forbids any overlap."
+     ],
+     "answer": "Not possible"
+    }
+   }
+  ],
+  "tips": [
+   "Never use real-world knowledge; use only the statements.",
+   "\"Some\" means \"at least one, possibly all\".",
+   "\"All A are B\" gives \"Some B are A\" as a definite conclusion."
+  ],
+  "traps": [
+   "\"All A are B\" does NOT mean \"All B are A\".",
+   "Two \"Some\" statements give no definite link between the end groups."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-syllogism-001",
+   "rev": 1,
+   "topic": "r-syllogism",
+   "type": "two-statement",
+   "level": 1,
+   "q": "<b>Statements:</b><br>All cats are dogs.<br>All dogs are animals.<br><b>Conclusions:</b><br>I. All cats are animals.<br>II. Some animals are cats.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 2,
+   "solution": "Cats ⊂ Dogs ⊂ Animals.<br>I: every cat is inside Animals ✓.<br>II: since all cats are animals, some animals are cats ✓.<br>Both follow.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-syllogism-002",
+   "rev": 1,
+   "topic": "r-syllogism",
+   "type": "two-statement",
+   "level": 1,
+   "q": "<b>Statements:</b><br>All pens are books.<br>No book is a table.<br><b>Conclusions:</b><br>I. No pen is a table.<br>II. Some tables are pens.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 0,
+   "solution": "Pens lie inside Books, and Books do not touch Tables.<br>So Pens cannot touch Tables: I follows.<br>II says some tables are pens, which is impossible.<br>Only I follows.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-syllogism-003",
+   "rev": 1,
+   "topic": "r-syllogism",
+   "type": "two-statement",
+   "level": 2,
+   "q": "<b>Statements:</b><br>Some boys are players.<br>All players are tall.<br><b>Conclusions:</b><br>I. Some boys are tall.<br>II. All tall persons are boys.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 0,
+   "solution": "The boys who are players are inside Players, and all players are tall.<br>So some boys are tall: I follows.<br>Tall persons may include non-boys: II does not follow.<br>Only I follows.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-syllogism-004",
+   "rev": 1,
+   "topic": "r-syllogism",
+   "type": "two-statement",
+   "level": 2,
+   "q": "<b>Statements:</b><br>Some flowers are red.<br>Some red things are roses.<br><b>Conclusions:</b><br>I. Some flowers are roses.<br>II. No rose is a flower.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 2,
+   "solution": "Two \"Some\" statements give no definite link between Flowers and Roses, so neither I nor II follows alone.<br>But I (\"Some\") and II (\"No\") are about the same two groups and one of them must be true.<br>So either I or II follows.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-syllogism-005",
+   "rev": 1,
+   "topic": "r-syllogism",
+   "type": "possibility",
+   "level": 3,
+   "q": "<b>Statements:</b><br>All teachers are doctors.<br>Some doctors are engineers.<br><b>Conclusions:</b><br>I. Some teachers being engineers is a possibility.<br>II. All engineers being teachers is a possibility.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 2,
+   "solution": "Teachers ⊂ Doctors; Engineers overlap Doctors.<br>I: we can draw Engineers overlapping Teachers ✓ possible.<br>II: we can draw Engineers fully inside Teachers (still inside Doctors, so \"some doctors are engineers\" stays true) ✓ possible.<br>Both follow.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-syllogism-006",
+   "rev": 1,
+   "topic": "r-syllogism",
+   "type": "possibility",
+   "level": 3,
+   "q": "<b>Statements:</b><br>No apple is a mango.<br>All mangoes are fruits.<br>Some fruits are bananas.<br><b>Conclusions:</b><br>I. Some fruits are not apples.<br>II. Some mangoes being apples is a possibility.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 0,
+   "solution": "All mangoes are fruits, and no mango is an apple.<br>So the mangoes are fruits that are not apples: I follows.<br>II is impossible because \"No apple is a mango\" forbids any overlap.<br>Only I follows.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-syllogism-1",
+   "front": "\"All A are B\" gives which definite conclusion?",
+   "back": "Some B are A (not \"All B are A\")",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-syllogism-2",
+   "front": "Some + Some",
+   "back": "No definite conclusion between the end groups",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-syllogism-3",
+   "front": "Either–or condition",
+   "back": "Same two groups, neither follows alone, and they are a Some/No or All/Some-not pair",
+   "deck": "reasoning"
+  }
+ ]
+}

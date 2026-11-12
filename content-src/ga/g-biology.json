@@ -1,0 +1,77 @@
+{
+  "topic": "g-biology",
+  "notes": {
+    "summary": "Biology is the biggest science area in GA, with <b>2–3 questions</b>. Expect cell organelles, human body facts, vitamins and deficiency diseases, diseases and their causes, and basic classification.",
+    "concepts": [
+      {
+        "title": "The cell",
+        "body": "<ul><li>Cell discovered by <b>Robert Hooke</b> (1665); nucleus by <b>Robert Brown</b>. Cell theory: <b>Schleiden and Schwann</b>.</li></ul><table><thead><tr><th>Organelle</th><th>Job</th></tr></thead><tbody><tr><td>Mitochondria</td><td>'Powerhouse of the cell' — makes ATP</td></tr><tr><td>Ribosome</td><td>Protein synthesis</td></tr><tr><td>Lysosome</td><td>'Suicide bag' — digestive enzymes</td></tr><tr><td>Chloroplast</td><td>Photosynthesis (plants only)</td></tr><tr><td>Nucleus</td><td>Contains DNA; controls the cell</td></tr></tbody></table>Plant cells have a <b>cell wall</b> (cellulose), <b>chloroplasts</b> and a large <b>vacuole</b>; animal cells have centrioles."
+      },
+      {
+        "title": "Human body: key numbers",
+        "body": "<table><thead><tr><th>Fact</th><th>Answer</th></tr></thead><tbody><tr><td>Bones in an adult</td><td>206</td></tr><tr><td>Longest bone</td><td>Femur (thigh)</td></tr><tr><td>Smallest bone</td><td>Stapes (middle ear)</td></tr><tr><td>Largest organ</td><td>Skin</td></tr><tr><td>Largest gland</td><td>Liver</td></tr><tr><td>'Master gland'</td><td>Pituitary</td></tr><tr><td>Insulin made by</td><td>Pancreas (beta cells of islets of Langerhans)</td></tr><tr><td>Life of a red blood cell</td><td>About 120 days</td></tr><tr><td>Normal body temperature</td><td>37 °C (98.6 °F)</td></tr></tbody></table>The heart has <b>4 chambers</b>: two atria above, two ventricles below. Blood groups were discovered by <b>Karl Landsteiner</b>; <b>O−</b> is the universal donor and <b>AB+</b> the universal recipient.",
+        "img": "ga/bio-heart.svg"
+      },
+      {
+        "title": "Vitamins and deficiency diseases",
+        "body": "<table><thead><tr><th>Vitamin</th><th>Deficiency disease</th></tr></thead><tbody><tr><td>A</td><td>Night blindness</td></tr><tr><td>B1 (thiamine)</td><td>Beriberi</td></tr><tr><td>B3 (niacin)</td><td>Pellagra</td></tr><tr><td>B12</td><td>Pernicious anaemia</td></tr><tr><td>C</td><td>Scurvy (bleeding gums)</td></tr><tr><td>D</td><td>Rickets (children)</td></tr><tr><td>K</td><td>Blood does not clot properly</td></tr></tbody></table>Fat-soluble vitamins: <b>A, D, E, K</b>. Water-soluble: <b>B and C</b>. Iodine deficiency causes goitre; iron deficiency causes anaemia."
+      },
+      {
+        "title": "Diseases and their causes",
+        "body": "<table><thead><tr><th>Cause</th><th>Diseases</th></tr></thead><tbody><tr><td>Bacteria</td><td>Tuberculosis, cholera, typhoid, tetanus, diphtheria</td></tr><tr><td>Virus</td><td>Polio, measles, rabies, chickenpox, dengue, AIDS</td></tr><tr><td>Protozoa</td><td>Malaria (<i>Plasmodium</i>, spread by female <i>Anopheles</i> mosquito)</td></tr><tr><td>Fungi</td><td>Ringworm, athlete's foot</td></tr></tbody></table>Dengue is spread by the <i>Aedes</i> mosquito. Classification: <b>Five-kingdom</b> system by R.H. Whittaker; binomial naming by Carolus <b>Linnaeus</b>."
+      }
+    ],
+    "varieties": [
+      {
+        "type": "cell-classification",
+        "name": "Cell and classification",
+        "how": "Match each organelle to its job; remember who discovered what.",
+        "example": { "q": "Which organelle is called the 'powerhouse of the cell'?", "steps": ["Energy (ATP) is made by cellular respiration", "This happens in the mitochondria"], "answer": "Mitochondria" }
+      },
+      {
+        "type": "human-body",
+        "name": "Human body",
+        "how": "Recall the key-number table and the path of blood through the heart.",
+        "example": { "q": "Which is the largest gland in the human body?", "steps": ["Largest organ = skin", "Largest gland = liver"], "answer": "Liver" }
+      },
+      {
+        "type": "nutrition-disease",
+        "name": "Vitamins and diseases",
+        "how": "Use the vitamin table and classify each disease by its cause (bacteria / virus / protozoa / fungi).",
+        "example": { "q": "Scurvy is caused by deficiency of which vitamin?", "steps": ["Scurvy: bleeding gums, found in sailors without fresh fruit", "Citrus fruits supply vitamin C"], "answer": "Vitamin C" }
+      }
+    ],
+    "tips": [
+      "Vitamin chain: A-night blindness, B1-beriberi, C-scurvy, D-rickets, K-clotting.",
+      "Bacterial diseases often asked: TB, cholera, typhoid, tetanus, diphtheria ('TCT-TD').",
+      "Malaria is caused by a protozoan, not a virus or bacterium; the mosquito only carries it."
+    ],
+    "traps": [
+      "Largest organ is skin, but largest gland is liver — options mix them.",
+      "Male Anopheles mosquitoes do not spread malaria; only females bite for blood.",
+      "Vitamin K helps blood clot; it is not linked to vision (that is vitamin A)."
+    ]
+  },
+  "questions": [
+    { "id": "g-biology-001", "rev": 1, "topic": "g-biology", "type": "cell-classification", "level": 1, "q": "Which organelle is known as the 'powerhouse of the cell'?", "options": ["Ribosome", "Mitochondria", "Golgi body", "Lysosome"], "answer": 1, "solution": "Mitochondria carry out cellular respiration and produce energy as ATP.<br><b>Memory hook:</b> Mighty-chondria = the mighty power plant.", "source": "test-data" },
+    { "id": "g-biology-002", "rev": 1, "topic": "g-biology", "type": "nutrition-disease", "level": 1, "q": "Night blindness is caused by deficiency of:", "options": ["Vitamin A", "Vitamin B1", "Vitamin C", "Vitamin D"], "answer": 0, "solution": "Vitamin A is needed for the light-sensitive pigment in the retina; its lack causes night blindness. Carrots are a good source.<br><b>Memory hook:</b> A for 'Aankh' (eye).", "source": "test-data" },
+    { "id": "g-biology-003", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 1, "q": "How many bones are there in the body of an adult human?", "options": ["212", "300", "206", "186"], "answer": 2, "solution": "An adult has 206 bones. A newborn has about 300; many fuse as the child grows.<br><b>Memory hook:</b> babies start with about 300 bones; fusing brings it down to 206.", "source": "test-data" },
+    { "id": "g-biology-004", "rev": 1, "topic": "g-biology", "type": "nutrition-disease", "level": 2, "q": "Malaria is caused by:", "options": ["A virus", "A bacterium", "A fungus", "A protozoan"], "answer": 3, "solution": "Malaria is caused by the protozoan <i>Plasmodium</i> and spread by the bite of the female <i>Anopheles</i> mosquito.<br><b>Memory hook:</b> P for Plasmodium, P for Protozoan.", "source": "test-data" },
+    { "id": "g-biology-005", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 2, "q": "The smallest bone in the human body is the:", "options": ["Stapes", "Femur", "Incus", "Patella"], "answer": 0, "solution": "The stapes (stirrup) in the middle ear is the smallest bone. The femur (thigh) is the longest.<br><b>Memory hook:</b> Stapes is shaped like a tiny stirrup in your ear.", "source": "test-data" },
+    { "id": "g-biology-006", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 2, "q": "Insulin is produced by which organ?", "options": ["Liver", "Pancreas", "Kidney", "Thyroid"], "answer": 1, "solution": "Insulin is made by the beta cells of the islets of Langerhans in the pancreas. Its lack causes diabetes.<br><b>Memory hook:</b> 'Islets in the Pancreas sea' produce insulin.", "source": "test-data" },
+    { "id": "g-biology-007", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 3, "q": "Which chamber of the human heart pumps oxygenated blood to the whole body through the aorta?", "img": "ga/bio-heart.svg", "options": ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"], "answer": 3, "solution": "The left ventricle pumps oxygen-rich blood into the aorta. It has the thickest muscular wall because it pushes blood to the whole body.<br><b>Memory hook:</b> the Left ventricle is the Largest pump — thickest wall, sends blood to the whole body.", "source": "test-data" },
+    { "id": "g-biology-008", "rev": 1, "topic": "g-biology", "type": "nutrition-disease", "level": 3, "q": "Which of the following diseases is caused by a <b>bacterium</b>?", "options": ["Measles", "Polio", "Typhoid", "Chickenpox"], "answer": 2, "solution": "Typhoid is caused by the bacterium <i>Salmonella typhi</i>. Measles, polio and chickenpox are viral diseases.<br><b>Memory hook:</b> Bacterial set 'TCT-TD': TB, Cholera, Typhoid, Tetanus, Diphtheria.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-biology-1", "front": "Longest bone in the human body", "back": "Femur (thigh bone)", "deck": "ga-facts" },
+    { "id": "fc-g-biology-2", "front": "Largest organ of the human body", "back": "Skin", "deck": "ga-facts" },
+    { "id": "fc-g-biology-3", "front": "'Master gland' of the body", "back": "Pituitary gland", "deck": "ga-facts" },
+    { "id": "fc-g-biology-4", "front": "Deficiency of vitamin D causes", "back": "Rickets", "deck": "ga-facts" },
+    { "id": "fc-g-biology-5", "front": "Beriberi is due to lack of", "back": "Vitamin B1 (thiamine)", "deck": "ga-facts" },
+    { "id": "fc-g-biology-6", "front": "Universal blood donor group", "back": "O negative", "deck": "ga-facts" },
+    { "id": "fc-g-biology-7", "front": "Who discovered blood groups?", "back": "Karl Landsteiner", "deck": "ga-facts" },
+    { "id": "fc-g-biology-8", "front": "Vector of dengue", "back": "Aedes mosquito", "deck": "ga-facts" },
+    { "id": "fc-g-biology-9", "front": "Five-kingdom classification proposed by", "back": "R.H. Whittaker (1969)", "deck": "ga-facts" },
+    { "id": "fc-g-biology-10", "front": "Lifespan of a red blood cell", "back": "About 120 days", "deck": "ga-facts" }
+  ]
+}

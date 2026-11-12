@@ -1,0 +1,229 @@
+{
+ "topic": "r-nonverbal",
+ "notes": {
+  "summary": "Non-verbal questions use pictures: <b>mirror and water images</b>, <b>paper folding and punching</b>, and <b>counting figures</b> (triangles, squares). 1–2 questions per paper; all can be solved with a clear method.",
+  "concepts": [
+   {
+    "title": "Mirror image",
+    "body": "A mirror placed on the <b>right or left</b> (vertical line) swaps left and right; top and bottom stay the same. Text reads backwards and each letter is flipped."
+   },
+   {
+    "title": "Water image",
+    "body": "Water (a horizontal line below) swaps top and bottom; left and right stay the same. The figure appears upside down but is <b>not</b> rotated."
+   },
+   {
+    "title": "Paper folding and punching",
+    "body": "Each fold doubles the holes. Unfold one step at a time: every hole gets a partner reflected across the fold line."
+   },
+   {
+    "title": "Counting triangles",
+    "body": "For a triangle with lines from the top corner to the base: triangles = (number of lines from the corner choose 2) × (number of horizontal lines). For a square with both diagonals: 8 triangles."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "mirror-water",
+    "name": "Mirror and water image",
+    "how": "Mirror (vertical line): flip left–right only. Water (horizontal line): flip top–bottom only.",
+    "example": {
+     "q": "Mirror image of \"AB12\" with the mirror on the right?",
+     "steps": [
+      "Order reverses: 2, 1, B, A",
+      "Each character is flipped left–right"
+     ],
+     "answer": "21BA written with each character flipped"
+    }
+   },
+   {
+    "type": "paper-folding",
+    "name": "Paper folding and punching",
+    "how": "Unfold in reverse order; reflect every hole across each fold line.",
+    "example": {
+     "q": "A square sheet is folded once (left onto right) and one hole is punched. How many holes after unfolding?",
+     "steps": [
+      "One fold → 2 layers",
+      "Each layer gets a hole"
+     ],
+     "answer": "2 holes, mirror images across the fold",
+     "img": "reasoning/fold1-q.svg"
+    }
+   },
+   {
+    "type": "figure-counting",
+    "name": "Counting figures",
+    "how": "Label the corners and count in a fixed order (single parts, then combinations).",
+    "example": {
+     "q": "How many triangles are in a square with both diagonals?",
+     "steps": [
+      "4 small triangles",
+      "4 triangles made of two small ones (each half of the square)"
+     ],
+     "answer": "8",
+     "img": "reasoning/count-square.svg"
+    }
+   }
+  ],
+  "tips": [
+   "For mirror questions, look at one corner or one unique part (like a dot) and check where it moves.",
+   "For counting, use a formula when lines meet at one corner; otherwise label points and count systematically."
+  ],
+  "traps": [
+   "A mirror image is not a 180° rotation: in a mirror, top stays on top.",
+   "After two folds, the paper has 4 layers, so one punch gives 4 holes."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-nonverbal-001",
+   "rev": 1,
+   "topic": "r-nonverbal",
+   "type": "mirror-water",
+   "level": 1,
+   "q": "Select the correct mirror image of the given figure when the mirror is placed at MN as shown.",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 1,
+   "solution": "A mirror on the right side (vertical line MN) swaps left and right only; top and bottom stay the same.<br>So \"REASON 47\" appears in reverse order with every character flipped left to right, still upright: option (b).<br>(a) is a 180° turn (upside down), (c) only reverses the order without flipping, (d) is the water image.",
+   "source": "test-data",
+   "img": "reasoning/mirror-q.svg",
+   "optionImgs": [
+    "reasoning/mirror-opt-a.svg",
+    "reasoning/mirror-opt-b.svg",
+    "reasoning/mirror-opt-c.svg",
+    "reasoning/mirror-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-nonverbal-002",
+   "rev": 1,
+   "topic": "r-nonverbal",
+   "type": "figure-counting",
+   "level": 1,
+   "q": "How many triangles are there in the given figure (a square with both diagonals)?",
+   "options": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "answer": 2,
+   "solution": "Small triangles formed at the centre: 4.<br>Triangles made of two small ones (half of the square cut by one diagonal): ABC, BCD, CDA, DAB = 4.<br>Total = 4 + 4 = 8.",
+   "source": "test-data",
+   "img": "reasoning/count-square.svg"
+  },
+  {
+   "id": "r-nonverbal-003",
+   "rev": 1,
+   "topic": "r-nonverbal",
+   "type": "mirror-water",
+   "level": 2,
+   "q": "Select the correct water image of the given figure (MN is the water surface).",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 3,
+   "solution": "Water image: top and bottom swap, left and right stay the same.<br>The flag (top-left) moves to the bottom-left, the circle (bottom-right) moves to the top-right, and the flag still points right: option (d).<br>(a) is the mirror image, (b) is a 180° rotation, (c) is a 90° rotation.",
+   "source": "test-data",
+   "img": "reasoning/water-q.svg",
+   "optionImgs": [
+    "reasoning/water-opt-a.svg",
+    "reasoning/water-opt-b.svg",
+    "reasoning/water-opt-c.svg",
+    "reasoning/water-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-nonverbal-004",
+   "rev": 1,
+   "topic": "r-nonverbal",
+   "type": "paper-folding",
+   "level": 2,
+   "q": "A square sheet of paper is folded along the dotted line (left half onto the right half) and then a hole is punched as shown. How will the sheet look when unfolded?",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 1,
+   "solution": "The fold line is vertical, in the middle.<br>The hole is in the upper part of the folded sheet, near the top.<br>On unfolding, it gets a partner reflected across the middle line at the same height.<br>So there are two holes at the same height, one on each side: option (b).",
+   "source": "test-data",
+   "img": "reasoning/fold1-q.svg",
+   "optionImgs": [
+    "reasoning/fold1-opt-a.svg",
+    "reasoning/fold1-opt-b.svg",
+    "reasoning/fold1-opt-c.svg",
+    "reasoning/fold1-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-nonverbal-005",
+   "rev": 1,
+   "topic": "r-nonverbal",
+   "type": "paper-folding",
+   "level": 3,
+   "q": "A square sheet is folded twice as shown (first left half onto right half, then top half onto bottom half) and a hole is punched. How will the sheet look when unfolded?",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 2,
+   "solution": "Two folds → 4 layers → 4 holes.<br>Unfold fold 2 (horizontal line): the hole gets a partner reflected across the middle horizontal line, so the two holes are just below and just above the centre line on the right side.<br>Unfold fold 1 (vertical line): both holes get partners on the left side.<br>Result: 4 holes, two near the centre line on each side, the same distance from the middle line: option (c).",
+   "source": "test-data",
+   "img": "reasoning/fold2-q.svg",
+   "optionImgs": [
+    "reasoning/fold2-opt-a.svg",
+    "reasoning/fold2-opt-b.svg",
+    "reasoning/fold2-opt-c.svg",
+    "reasoning/fold2-opt-d.svg"
+   ]
+  },
+  {
+   "id": "r-nonverbal-006",
+   "rev": 1,
+   "topic": "r-nonverbal",
+   "type": "figure-counting",
+   "level": 3,
+   "q": "How many triangles are there in the given figure?",
+   "options": [
+    "16",
+    "18",
+    "20",
+    "24"
+   ],
+   "answer": 2,
+   "solution": "From the top corner there are 5 lines (2 sides + 3 inside lines).<br>They are cut by 2 horizontal lines (the base and the middle line).<br>Each triangle uses 2 corner lines and 1 horizontal line: C(5, 2) × 2 = 10 × 2 = 20.",
+   "source": "test-data",
+   "img": "reasoning/count-triangle.svg"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-nonverbal-1",
+   "front": "Mirror on the right/left",
+   "back": "Left–right swap only; top stays on top",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-nonverbal-2",
+   "front": "Water image",
+   "back": "Top–bottom swap only; left stays left",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-nonverbal-3",
+   "front": "Triangles: n lines from a corner, k cross lines",
+   "back": "C(n, 2) × k",
+   "deck": "reasoning"
+  }
+ ]
+}

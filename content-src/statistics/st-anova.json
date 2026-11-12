@@ -1,0 +1,209 @@
+{
+ "topic": "st-anova",
+ "notes": {
+  "summary": "Analysis of Variance (ANOVA, by R.A. Fisher) tests whether three or more group means are equal by splitting total variation into \"between groups\" and \"within groups\" parts and comparing them with an F-ratio.",
+  "concepts": [
+   {
+    "title": "One-way ANOVA",
+    "body": "<ul><li>TSS = SSB (between / treatments) + SSW (within / error).</li><li>With k groups and N total observations: df between = k − 1, df within = N − k, df total = N − 1.</li><li>MSB = SSB/(k − 1), MSW = SSW/(N − k), F = MSB/MSW.</li><li>If F &gt; table F, reject H<sub>0</sub> that all means are equal.</li></ul><table><tr><th>Source</th><th>SS</th><th>df</th><th>MS</th><th>F</th></tr><tr><td>Between</td><td>SSB</td><td>k − 1</td><td>MSB</td><td>MSB/MSW</td></tr><tr><td>Within</td><td>SSW</td><td>N − k</td><td>MSW</td><td></td></tr><tr><td>Total</td><td>TSS</td><td>N − 1</td><td></td><td></td></tr></table>"
+   },
+   {
+    "title": "Two-way ANOVA (one observation per cell)",
+    "body": "With r rows and c columns: df rows = r − 1, df columns = c − 1, df error = (r − 1)(c − 1), df total = rc − 1. TSS = SSR + SSC + SSE.<br><b>Assumptions</b> of ANOVA: normal populations, equal variances (homoscedasticity), independent observations."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "basics",
+    "name": "Basics and assumptions",
+    "how": "Remember ANOVA uses the F-distribution and the three assumptions.",
+    "example": {
+     "q": "Who developed ANOVA?",
+     "steps": [
+      "Analysis of variance and the F-test are named after R. A. Fisher."
+     ],
+     "answer": "R. A. Fisher"
+    }
+   },
+   {
+    "type": "one-way",
+    "name": "One-way ANOVA table",
+    "how": "Fill df first, then MS = SS/df, then F = MSB/MSW.",
+    "example": {
+     "q": "k = 3, N = 15, SSB = 40, SSW = 60. Find F.",
+     "steps": [
+      "MSB = 40/2 = 20",
+      "MSW = 60/12 = 5",
+      "F = 20/5 = 4"
+     ],
+     "answer": "4"
+    }
+   },
+   {
+    "type": "two-way",
+    "name": "Two-way ANOVA df",
+    "how": "Rows r − 1, columns c − 1, error (r − 1)(c − 1).",
+    "example": {
+     "q": "4 fertilisers tried on 3 plots each (one observation per cell). Total df?",
+     "steps": [
+      "rc − 1 = 12 − 1",
+      "= 11"
+     ],
+     "answer": "11"
+    }
+   }
+  ],
+  "tips": [
+   "Degrees of freedom add up just like sums of squares.",
+   "F is always non-negative; F close to 1 suggests no difference among means.",
+   "For two groups, one-way ANOVA F equals t²."
+  ],
+  "traps": [
+   "MSW uses N − k, not N − 1.",
+   "Total SS is not the sum of mean squares.",
+   "ANOVA tests equality of MEANS, though it does so by comparing variances."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Total variation",
+   "expr": "TSS = SSB + SSW"
+  },
+  {
+   "name": "Mean squares",
+   "expr": "MSB = SSB/(k − 1),  MSW = SSW/(N − k)"
+  },
+  {
+   "name": "F ratio",
+   "expr": "F = MSB / MSW"
+  },
+  {
+   "name": "Two-way error df",
+   "expr": "(r − 1)(c − 1)"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-anova-001",
+   "rev": 1,
+   "topic": "st-anova",
+   "type": "basics",
+   "level": 1,
+   "q": "In analysis of variance, the test statistic used is:",
+   "options": [
+    "χ²",
+    "F",
+    "z",
+    "t"
+   ],
+   "answer": 1,
+   "solution": "ANOVA compares the between-group mean square with the within-group mean square; their ratio follows the F-distribution.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-anova-002",
+   "rev": 1,
+   "topic": "st-anova",
+   "type": "one-way",
+   "level": 1,
+   "q": "In a one-way ANOVA with 4 treatments and 20 observations in all, the degrees of freedom for error (within) are:",
+   "options": [
+    "16",
+    "4",
+    "3",
+    "19"
+   ],
+   "answer": 0,
+   "solution": "df within = N − k = 20 − 4 = 16. (df between = 3, df total = 19.)",
+   "source": "test-data"
+  },
+  {
+   "id": "st-anova-003",
+   "rev": 1,
+   "topic": "st-anova",
+   "type": "one-way",
+   "level": 2,
+   "q": "One-way ANOVA: k = 4 groups, N = 24, SSB = 60, SSW = 120. The F-ratio is:",
+   "options": [
+    "2",
+    "6",
+    "0.5",
+    "3.33"
+   ],
+   "answer": 3,
+   "solution": "MSB = 60/(4 − 1) = 20.<br>MSW = 120/(24 − 4) = 6.<br>F = 20/6 = 3.33.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-anova-004",
+   "rev": 1,
+   "topic": "st-anova",
+   "type": "one-way",
+   "level": 2,
+   "q": "In a one-way ANOVA, total sum of squares = 200 and between-group sum of squares = 80. The within-group sum of squares is:",
+   "options": [
+    "40",
+    "280",
+    "120",
+    "2.5"
+   ],
+   "answer": 2,
+   "solution": "TSS = SSB + SSW, so SSW = 200 − 80 = 120.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-anova-005",
+   "rev": 1,
+   "topic": "st-anova",
+   "type": "two-way",
+   "level": 3,
+   "q": "In a two-way ANOVA with 5 rows and 4 columns (one observation per cell), the error degrees of freedom are:",
+   "options": [
+    "20",
+    "12",
+    "19",
+    "7"
+   ],
+   "answer": 1,
+   "solution": "df error = (r − 1)(c − 1) = 4 × 3 = 12.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-anova-006",
+   "rev": 1,
+   "topic": "st-anova",
+   "type": "one-way",
+   "level": 3,
+   "q": "Three groups: A = {2, 4, 6}, B = {5, 7, 9}, C = {8, 10, 12}. The F-ratio for one-way ANOVA is:",
+   "options": [
+    "6.75",
+    "2.25",
+    "13.5",
+    "4.5"
+   ],
+   "answer": 0,
+   "solution": "Group means: 4, 7, 10. Grand mean = 63/9 = 7.<br>SSB = 3[(4−7)² + (7−7)² + (10−7)²] = 3 × 18 = 54.<br>SSW: each group has deviations −2, 0, 2 ⇒ 8 per group ⇒ 24.<br>MSB = 54/2 = 27; MSW = 24/(9 − 3) = 4.<br>F = 27/4 = 6.75.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stanova-1",
+   "front": "One-way ANOVA df",
+   "back": "Between k − 1; within N − k; total N − 1",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stanova-2",
+   "front": "F in ANOVA",
+   "back": "MSB / MSW",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stanova-3",
+   "front": "ANOVA assumptions",
+   "back": "Normality, equal variances, independence",
+   "deck": "formulas"
+  }
+ ]
+}

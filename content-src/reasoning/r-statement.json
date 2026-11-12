@@ -1,0 +1,169 @@
+{
+ "topic": "r-statement",
+ "notes": {
+  "summary": "A statement is followed by conclusions or assumptions. Treat the statement as <b>true</b> and decide what definitely follows from it (conclusion) or what the speaker takes for granted (assumption). 0–2 questions.",
+  "concepts": [
+   {
+    "title": "Conclusion",
+    "body": "A conclusion follows only if it can be <b>directly drawn</b> from the statement. Words like \"only\", \"all\", \"always\", \"never\" usually make a conclusion too strong."
+   },
+   {
+    "title": "Assumption",
+    "body": "An assumption is something the speaker <b>believes before</b> making the statement; without it the statement would not make sense. An advertisement assumes people will read it and want the product."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "statement-conclusion",
+    "name": "Statement and conclusion",
+    "how": "Ask: is this definitely true from the given facts alone?",
+    "example": {
+     "q": "Statement: 25% of students failed. Conclusion: 75% passed.",
+     "steps": [
+      "If 25% failed, the rest passed."
+     ],
+     "answer": "Follows"
+    }
+   },
+   {
+    "type": "statement-assumption",
+    "name": "Statement and assumption",
+    "how": "Ask: why would anyone say this? What must they believe?",
+    "example": {
+     "q": "Notice: \"Keep the lights off when not needed.\"",
+     "steps": [
+      "The writer assumes people will read and follow it.",
+      "The writer assumes saving power is useful."
+     ],
+     "answer": "Both are implicit"
+    }
+   }
+  ],
+  "tips": [
+   "Do not add outside facts; stay inside the statement.",
+   "Extreme words (only, all, never, definitely) usually make a conclusion or assumption fail."
+  ],
+  "traps": [
+   "A conclusion can be reasonable in real life but still not follow from the statement.",
+   "A repeated fact from the statement does follow as a conclusion."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-statement-001",
+   "rev": 1,
+   "topic": "r-statement",
+   "type": "statement-conclusion",
+   "level": 1,
+   "q": "<b>Statement:</b> Regular exercise keeps the body fit.<br><b>Conclusions:</b><br>I. People who exercise regularly are generally fit.<br>II. Only exercise can keep a person fit.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 0,
+   "solution": "I restates the statement: follows.<br>II adds \"only\"; the statement does not say other ways (diet, sleep) fail. II does not follow.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-statement-002",
+   "rev": 1,
+   "topic": "r-statement",
+   "type": "statement-assumption",
+   "level": 1,
+   "q": "<b>Statement:</b> \"Use XYZ toothpaste for whiter teeth.\" — an advertisement.<br><b>Assumptions:</b><br>I. People want whiter teeth.<br>II. People read or notice advertisements.",
+   "options": [
+    "Only assumption I is implicit",
+    "Only assumption II is implicit",
+    "Both I and II are implicit",
+    "Neither I nor II is implicit"
+   ],
+   "answer": 2,
+   "solution": "The advert promises whiter teeth, so it assumes people want them (I).<br>An advert is made only if people notice adverts (II).<br>Both are implicit.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-statement-003",
+   "rev": 1,
+   "topic": "r-statement",
+   "type": "statement-conclusion",
+   "level": 2,
+   "q": "<b>Statement:</b> The government has made helmets compulsory for pillion riders on two-wheelers too.<br><b>Conclusions:</b><br>I. Head injuries to pillion riders are a concern.<br>II. All pillion riders will stop travelling on two-wheelers.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 0,
+   "solution": "A safety rule for pillion riders shows their head injuries are a concern: I follows.<br>Nothing suggests people will stop travelling: II does not follow.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-statement-004",
+   "rev": 1,
+   "topic": "r-statement",
+   "type": "statement-assumption",
+   "level": 2,
+   "q": "<b>Statement:</b> The school has decided to hold extra classes for weak students on Saturdays.<br><b>Assumptions:</b><br>I. Extra classes will help weak students improve.<br>II. Weak students do not want to come to school on Saturdays.",
+   "options": [
+    "Only assumption I is implicit",
+    "Only assumption II is implicit",
+    "Both I and II are implicit",
+    "Neither I nor II is implicit"
+   ],
+   "answer": 0,
+   "solution": "The school would arrange extra classes only if it believes they help: I is implicit.<br>II goes against the plan; the school assumes students will attend. II is not implicit.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-statement-005",
+   "rev": 1,
+   "topic": "r-statement",
+   "type": "statement-conclusion",
+   "level": 3,
+   "q": "<b>Statement:</b> Of the 1,200 students who took the test, only 300 passed.<br><b>Conclusions:</b><br>I. The test was too difficult.<br>II. 25% of the students passed the test.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Neither conclusion I nor II follows"
+   ],
+   "answer": 1,
+   "solution": "300/1200 = 1/4 = 25%: II follows.<br>Low results may be due to poor preparation or many other reasons; I does not definitely follow.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-statement-006",
+   "rev": 1,
+   "topic": "r-statement",
+   "type": "statement-assumption",
+   "level": 3,
+   "q": "<b>Statement:</b> A teacher tells students, \"If you want to score well in the exam, solve previous years' papers.\"<br><b>Assumptions:</b><br>I. Previous years' papers help students understand the exam pattern.<br>II. Students want to score well.",
+   "options": [
+    "Only assumption I is implicit",
+    "Only assumption II is implicit",
+    "Both I and II are implicit",
+    "Neither I nor II is implicit"
+   ],
+   "answer": 2,
+   "solution": "The advice makes sense only if old papers are useful (I) and students care about scoring well (II).<br>Both are implicit.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-statement-1",
+   "front": "Conclusion test",
+   "back": "Is it definitely true from the statement alone?",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-statement-2",
+   "front": "Assumption test",
+   "back": "Would the statement make sense if this were false? If not, it is implicit.",
+   "deck": "reasoning"
+  }
+ ]
+}

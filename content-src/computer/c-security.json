@@ -1,0 +1,253 @@
+{
+ "topic": "c-security",
+ "notes": {
+  "summary": "Computer security covers harmful software (malware), common attacks, and the tools that protect us. Tier 2 asks 2–3 direct questions, mostly \"which malware/attack is this?\" and \"what does a firewall/encryption do?\".",
+  "concepts": [
+   {
+    "title": "Malware",
+    "body": "<ul><li><b>Virus</b>: attaches to a host file and spreads when that file runs.</li><li><b>Worm</b>: copies itself across networks on its own, without a host file.</li><li><b>Trojan horse</b>: looks like useful software but does harm in the background.</li><li><b>Ransomware</b>: encrypts your files and demands payment (e.g. WannaCry, 2017).</li><li><b>Spyware / Keylogger</b>: secretly records activity or keystrokes. <b>Adware</b>: shows unwanted ads.</li><li>The first PC virus is usually cited as <b>Brain</b> (1986, from Pakistan); <b>Creeper</b> was the first self-replicating program.</li></ul>"
+   },
+   {
+    "title": "Attacks",
+    "body": "<ul><li><b>Phishing</b>: fake email/website to steal passwords or card details. <b>Vishing</b> = by voice call; <b>Smishing</b> = by SMS.</li><li><b>DoS / DDoS</b>: flooding a server so real users cannot use it (DDoS uses many computers, often a botnet).</li><li><b>Spoofing</b>: faking an identity (email, IP). <b>Man-in-the-middle</b>: secretly intercepting communication.</li><li><b>Hacking</b>: unauthorised access. Ethical (white-hat) hackers test systems with permission.</li></ul>"
+   },
+   {
+    "title": "Protection",
+    "body": "<ul><li><b>Firewall</b>: hardware or software that filters network traffic by rules.</li><li><b>Antivirus</b>: detects and removes malware.</li><li><b>Encryption</b>: turns plaintext into unreadable ciphertext; decryption reverses it. Symmetric = one shared key; asymmetric = public key + private key.</li><li><b>Digital signature</b>: made with the sender's <b>private key</b>, checked with the sender's public key.</li><li><b>Two-factor authentication</b> (2FA): password + OTP / fingerprint. <b>CAPTCHA</b> tells humans from bots.</li></ul>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "malware",
+    "name": "Identify the malware",
+    "how": "Look for the key behaviour: needs a host (virus), spreads alone (worm), disguised (trojan), asks for money (ransomware).",
+    "example": {
+     "q": "A program secretly records every key a user presses. What is it?",
+     "steps": [
+      "It records keystrokes, so it is spyware.",
+      "The specific name is keylogger."
+     ],
+     "answer": "Keylogger"
+    }
+   },
+   {
+    "type": "attacks",
+    "name": "Identify the attack",
+    "how": "Match the method: fake message (phishing), flooding (DoS), fake identity (spoofing).",
+    "example": {
+     "q": "You get an SMS saying \"Your bank KYC expires today, click this link\". What attack is this?",
+     "steps": [
+      "It is a phishing attempt.",
+      "Because it comes by SMS, it is called smishing."
+     ],
+     "answer": "Smishing"
+    }
+   },
+   {
+    "type": "protection",
+    "name": "Security tools",
+    "how": "Know what each tool does and which key is used where in encryption and signatures.",
+    "example": {
+     "q": "To send a secret message to Ravi using public-key encryption, which key do you use?",
+     "steps": [
+      "Anyone may encrypt with Ravi's public key.",
+      "Only Ravi's private key can decrypt it."
+     ],
+     "answer": "Ravi's public key"
+    }
+   }
+  ],
+  "tips": [
+   "Worm = \"walks\" on its own; virus needs a host file.",
+   "WannaCry (2017) is the standard ransomware example.",
+   "Encrypt with the receiver's public key; sign with your own private key."
+  ],
+  "traps": [
+   "A firewall is not an antivirus: it filters traffic, it does not clean infected files.",
+   "A Trojan does not replicate itself, unlike a virus or worm.",
+   "Phishing is an attack (social engineering), not a type of malware."
+  ]
+ },
+ "questions": [
+  {
+   "id": "c-security-001",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "malware",
+   "level": 1,
+   "q": "Malware that copies itself and spreads across a network on its own, without attaching to a host file, is a:",
+   "options": [
+    "Trojan horse",
+    "Adware",
+    "Virus",
+    "Worm"
+   ],
+   "answer": 3,
+   "solution": "A worm is self-replicating and travels across networks by itself. A virus needs a host file to spread.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-security-002",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "protection",
+   "level": 1,
+   "q": "The main job of a firewall is to:",
+   "options": [
+    "Back up data",
+    "Remove viruses from files",
+    "Filter incoming and outgoing network traffic",
+    "Speed up the internet"
+   ],
+   "answer": 2,
+   "solution": "A firewall checks network traffic against rules and blocks what is not allowed. Removing viruses is the job of antivirus software.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-security-003",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "attacks",
+   "level": 1,
+   "q": "Sending fake emails that look like they come from a bank, to steal passwords, is called:",
+   "options": [
+    "Spamming",
+    "Phishing",
+    "Hacking",
+    "Spoofing"
+   ],
+   "answer": 1,
+   "solution": "Phishing uses fake messages or websites to trick people into revealing passwords or card details.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-security-004",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "malware",
+   "level": 2,
+   "q": "A program that pretends to be a useful game but secretly harms the computer is a:",
+   "options": [
+    "Trojan horse",
+    "Ransomware",
+    "Boot sector virus",
+    "Worm"
+   ],
+   "answer": 0,
+   "solution": "A Trojan horse hides harmful code inside software that looks useful, like the wooden horse of Troy.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-security-005",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "protection",
+   "level": 2,
+   "q": "Converting readable data (plaintext) into an unreadable form (ciphertext) is called:",
+   "options": [
+    "Authentication",
+    "Decryption",
+    "Compression",
+    "Encryption"
+   ],
+   "answer": 3,
+   "solution": "Encryption converts plaintext to ciphertext so only someone with the key can read it. Decryption is the reverse.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-security-006",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "attacks",
+   "level": 2,
+   "q": "An attack that floods a website with so much traffic that real users cannot reach it is a:",
+   "options": [
+    "Keylogging",
+    "Phishing attack",
+    "Denial of Service (DoS) attack",
+    "Man-in-the-middle attack"
+   ],
+   "answer": 2,
+   "solution": "A DoS attack overloads a server. When many computers (a botnet) do it together, it is a DDoS attack.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-security-007",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "malware",
+   "level": 3,
+   "q": "WannaCry (2017), which locked files on computers worldwide and demanded Bitcoin payment, is an example of:",
+   "options": [
+    "Adware",
+    "Ransomware",
+    "Rootkit",
+    "Spyware"
+   ],
+   "answer": 1,
+   "solution": "WannaCry encrypted victims' files and demanded a ransom in Bitcoin, which is exactly what ransomware does.",
+   "source": "test-data"
+  },
+  {
+   "id": "c-security-008",
+   "rev": 1,
+   "topic": "c-security",
+   "type": "protection",
+   "level": 3,
+   "q": "A digital signature is created using the:",
+   "options": [
+    "Sender's private key",
+    "Receiver's private key",
+    "Sender's public key",
+    "Receiver's public key"
+   ],
+   "answer": 0,
+   "solution": "The sender signs with their own private key. Anyone can then verify the signature with the sender's public key, which proves who sent it and that it was not changed.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-csec-1",
+   "front": "Virus vs worm",
+   "back": "Virus needs a host file; worm spreads on its own over networks",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csec-2",
+   "front": "Trojan horse",
+   "back": "Malware disguised as useful software; does not self-replicate",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csec-3",
+   "front": "Ransomware example",
+   "back": "WannaCry (2017): encrypts files, demands Bitcoin",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csec-4",
+   "front": "Phishing / Vishing / Smishing",
+   "back": "Fake email or website / voice call / SMS",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csec-5",
+   "front": "DDoS",
+   "back": "Distributed Denial of Service: many machines flood a server",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csec-6",
+   "front": "Firewall",
+   "back": "Filters network traffic by rules",
+   "deck": "computer"
+  },
+  {
+   "id": "fc-csec-7",
+   "front": "Digital signature key",
+   "back": "Signed with sender's private key, verified with sender's public key",
+   "deck": "computer"
+  }
+ ]
+}

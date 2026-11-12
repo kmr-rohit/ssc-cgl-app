@@ -1,0 +1,224 @@
+{
+ "topic": "st-inference",
+ "notes": {
+  "summary": "Statistical inference draws conclusions about a population from a sample: estimating parameters (point and interval) and testing hypotheses with z, t, χ² and F tests. JSO asks definitions, confidence intervals, test statistics and degrees of freedom.",
+  "concepts": [
+   {
+    "title": "Estimation",
+    "body": "<ul><li>A good estimator is <b>unbiased</b>, <b>consistent</b>, <b>efficient</b> and <b>sufficient</b>.</li><li>Sample mean is unbiased for μ. s² = Σ(x − x̄)²/(n − 1) is unbiased for σ².</li><li>Confidence interval for μ (σ known): x̄ ± z × σ/√n. z = 1.645 (90%), 1.96 (95%), 2.576 (99%).</li></ul>"
+   },
+   {
+    "title": "Hypothesis testing",
+    "body": "<ul><li>H<sub>0</sub> (null) vs H<sub>1</sub> (alternative).</li><li><b>Type I error</b>: reject H<sub>0</sub> when it is true; probability α = level of significance.</li><li><b>Type II error</b>: accept H<sub>0</sub> when it is false; probability β. <b>Power</b> = 1 − β.</li><li>p-value &lt; α ⇒ reject H<sub>0</sub>.</li></ul>"
+   },
+   {
+    "title": "Common tests",
+    "body": "<table><tr><th>Test</th><th>Use</th><th>df</th></tr><tr><td>z-test</td><td>Mean, large sample or σ known</td><td>—</td></tr><tr><td>t-test (one sample)</td><td>Mean, small sample, σ unknown</td><td>n − 1</td></tr><tr><td>t-test (two independent samples)</td><td>Difference of means</td><td>n<sub>1</sub> + n<sub>2</sub> − 2</td></tr><tr><td>χ² independence</td><td>r × c contingency table</td><td>(r − 1)(c − 1)</td></tr><tr><td>χ² goodness of fit</td><td>k classes</td><td>k − 1 − (parameters estimated)</td></tr><tr><td>F-test</td><td>Ratio of two variances</td><td>(n<sub>1</sub> − 1, n<sub>2</sub> − 1)</td></tr></table>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "concepts",
+    "name": "Errors and properties",
+    "how": "Type I = rejecting a true H₀ (α); Type II = accepting a false H₀ (β).",
+    "example": {
+     "q": "A court convicts an innocent person (H₀: innocent). Which error?",
+     "steps": [
+      "H₀ \"innocent\" is true.",
+      "It is rejected."
+     ],
+     "answer": "Type I error"
+    }
+   },
+   {
+    "type": "estimation",
+    "name": "Confidence intervals",
+    "how": "x̄ ± z × SE; choose z from the confidence level.",
+    "example": {
+     "q": "x̄ = 80, σ = 12, n = 36. Find the 95% CI.",
+     "steps": [
+      "SE = 12/6 = 2",
+      "1.96 × 2 = 3.92",
+      "CI = 80 ± 3.92 = (76.08, 83.92)"
+     ],
+     "answer": "(76.08, 83.92)"
+    }
+   },
+   {
+    "type": "tests",
+    "name": "Test statistics and df",
+    "how": "z = (x̄ − μ₀)/(σ/√n); look up the df rule for t, χ² and F.",
+    "example": {
+     "q": "Degrees of freedom of a one-sample t-test with n = 15?",
+     "steps": [
+      "df = n − 1",
+      "= 14"
+     ],
+     "answer": "14"
+    }
+   }
+  ],
+  "tips": [
+   "Remember 1.645, 1.96, 2.576 for 90%, 95%, 99% (two-tailed).",
+   "A wider confidence interval means more confidence but less precision.",
+   "α and β move in opposite directions for a fixed n; only a larger n reduces both."
+  ],
+  "traps": [
+   "\"Accepting H₀\" does not prove it true; it only means there is not enough evidence against it.",
+   "Unbiased sample variance divides by n − 1, not n.",
+   "χ² df for a contingency table is (r − 1)(c − 1), not rc − 1."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "CI for mean (σ known)",
+   "expr": "x̄ ± z(α/2) · σ/√n"
+  },
+  {
+   "name": "z statistic",
+   "expr": "z = (x̄ − μ₀) / (σ/√n)"
+  },
+  {
+   "name": "Two-sample t df",
+   "expr": "n₁ + n₂ − 2"
+  },
+  {
+   "name": "χ² contingency df",
+   "expr": "(r − 1)(c − 1)"
+  },
+  {
+   "name": "Power of a test",
+   "expr": "1 − β"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-inference-001",
+   "rev": 1,
+   "topic": "st-inference",
+   "type": "concepts",
+   "level": 1,
+   "q": "A Type I error is committed when:",
+   "options": [
+    "H<sub>0</sub> is accepted when it is false",
+    "H<sub>0</sub> is rejected when it is true",
+    "H<sub>1</sub> is rejected when it is false",
+    "The sample is too small"
+   ],
+   "answer": 1,
+   "solution": "Type I error = rejecting a true null hypothesis. Its probability is α, the level of significance.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-inference-002",
+   "rev": 1,
+   "topic": "st-inference",
+   "type": "estimation",
+   "level": 1,
+   "q": "For a 95% confidence interval using the normal distribution, the critical value z is:",
+   "options": [
+    "1.96",
+    "2.33",
+    "2.576",
+    "1.645"
+   ],
+   "answer": 0,
+   "solution": "Two-tailed 95%: 2.5% in each tail, so z = 1.96. (1.645 is for 90%, 2.576 for 99%.)",
+   "source": "test-data"
+  },
+  {
+   "id": "st-inference-003",
+   "rev": 1,
+   "topic": "st-inference",
+   "type": "estimation",
+   "level": 2,
+   "q": "A sample of 100 gives mean 50. The population SD is 10. The 95% confidence interval for the population mean is:",
+   "options": [
+    "(48.36, 51.64)",
+    "(30.4, 69.6)",
+    "(49.02, 50.98)",
+    "(48.04, 51.96)"
+   ],
+   "answer": 3,
+   "solution": "SE = σ/√n = 10/10 = 1.<br>CI = 50 ± 1.96 × 1 = (48.04, 51.96).",
+   "source": "test-data"
+  },
+  {
+   "id": "st-inference-004",
+   "rev": 1,
+   "topic": "st-inference",
+   "type": "tests",
+   "level": 2,
+   "q": "A sample of 64 has mean 52. Testing H<sub>0</sub>: μ = 50 with known σ = 8, the value of the z statistic is:",
+   "options": [
+    "4",
+    "0.25",
+    "2",
+    "1"
+   ],
+   "answer": 2,
+   "solution": "SE = 8/√64 = 8/8 = 1.<br>z = (52 − 50)/1 = 2.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-inference-005",
+   "rev": 1,
+   "topic": "st-inference",
+   "type": "tests",
+   "level": 3,
+   "q": "Two independent samples of sizes 10 and 12 are compared with a t-test (equal variances). The degrees of freedom are:",
+   "options": [
+    "21",
+    "20",
+    "11",
+    "22"
+   ],
+   "answer": 1,
+   "solution": "df = n<sub>1</sub> + n<sub>2</sub> − 2 = 10 + 12 − 2 = 20.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-inference-006",
+   "rev": 1,
+   "topic": "st-inference",
+   "type": "tests",
+   "level": 3,
+   "q": "For a χ² test of independence in a 3 × 4 contingency table, the degrees of freedom are:",
+   "options": [
+    "6",
+    "12",
+    "11",
+    "7"
+   ],
+   "answer": 0,
+   "solution": "df = (r − 1)(c − 1) = (3 − 1)(4 − 1) = 2 × 3 = 6.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stinf-1",
+   "front": "Type I vs Type II error",
+   "back": "Type I: reject true H₀ (α). Type II: accept false H₀ (β).",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stinf-2",
+   "front": "z for 90%, 95%, 99%",
+   "back": "1.645, 1.96, 2.576",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stinf-3",
+   "front": "χ² df for r × c table",
+   "back": "(r − 1)(c − 1)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stinf-4",
+   "front": "Power of a test",
+   "back": "1 − β",
+   "deck": "formulas"
+  }
+ ]
+}

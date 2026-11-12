@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" font-family="Arial, Helvetica, sans-serif" font-size="13">
+  <rect width="560" height="360" fill="#ffffff"/>
+  <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">Human heart: four chambers (schematic, front view)</text>
+  <rect x="150" y="60" width="125" height="100" rx="10" fill="#cfe0ff" stroke="#2c5aa0" stroke-width="2"/>
+  <rect x="150" y="170" width="125" height="130" rx="10" fill="#cfe0ff" stroke="#2c5aa0" stroke-width="2"/>
+  <rect x="285" y="60" width="125" height="100" rx="10" fill="#ffd2cc" stroke="#b03a2e" stroke-width="2"/>
+  <rect x="285" y="170" width="125" height="130" rx="10" fill="#ffd2cc" stroke="#b03a2e" stroke-width="2"/>
+  <g fill="#222" text-anchor="middle">
+    <text x="212" y="105">Right</text><text x="212" y="122">atrium</text>
+    <text x="212" y="230">Right</text><text x="212" y="247">ventricle</text>
+    <text x="347" y="105">Left</text><text x="347" y="122">atrium</text>
+    <text x="347" y="230">Left</text><text x="347" y="247">ventricle</text>
+  </g>
+  <g font-size="12">
+    <text x="10" y="100" fill="#2c5aa0">From body</text>
+    <text x="10" y="116" fill="#2c5aa0">(vena cava) →</text>
+    <text x="10" y="240" fill="#2c5aa0">To lungs ←</text>
+    <text x="10" y="256" fill="#2c5aa0">(pulmonary artery)</text>
+    <text x="418" y="100" fill="#b03a2e">← From lungs</text>
+    <text x="418" y="116" fill="#b03a2e">(pulmonary veins)</text>
+    <text x="418" y="240" fill="#b03a2e">→ To body</text>
+    <text x="418" y="256" fill="#b03a2e">(aorta)</text>
+  </g>
+  <text x="280" y="325" text-anchor="middle" fill="#555" font-size="12">Blue = deoxygenated blood, red = oxygenated blood</text>
+  <text x="280" y="345" text-anchor="middle" fill="#555" font-size="12">The left ventricle has the thickest wall: it pumps blood to the whole body</text>
+</svg>

@@ -1,0 +1,196 @@
+{
+ "topic": "r-series",
+ "notes": {
+  "summary": "A series question gives terms that follow a pattern and asks for the <b>next</b> or <b>missing</b> term. SSC asks 2–4 questions: number, letter and mixed (alphanumeric) series.",
+  "concepts": [
+   {
+    "title": "Differences first",
+    "body": "Write the difference between terms. If the differences form a pattern (same, +2 each time, squares 1, 4, 9 …), you have the rule."
+   },
+   {
+    "title": "Multiply-add patterns",
+    "body": "If terms grow fast, try ×2, ×3, or ×2 + 1. Example: 3, 7, 15, 31 → each term ×2 + 1."
+   },
+   {
+    "title": "Letter and mixed series",
+    "body": "Change letters to positions (A=1 … Z=26) and treat each part (letter, number, letter) as its <b>own</b> series."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "number-series",
+    "name": "Number series",
+    "how": "Check differences, then ratios, then ×a + b.",
+    "example": {
+     "q": "2, 6, 12, 20, 30, ?",
+     "steps": [
+      "Differences: 4, 6, 8, 10",
+      "Next difference 12",
+      "30 + 12 = 42"
+     ],
+     "answer": "42"
+    }
+   },
+   {
+    "type": "letter-series",
+    "name": "Letter series",
+    "how": "Convert to positions and find the step.",
+    "example": {
+     "q": "B, E, H, K, ?",
+     "steps": [
+      "Positions 2, 5, 8, 11: +3 each",
+      "11 + 3 = 14 = N"
+     ],
+     "answer": "N"
+    }
+   },
+   {
+    "type": "mixed-series",
+    "name": "Alphanumeric series",
+    "how": "Split each term into parts and solve each part separately.",
+    "example": {
+     "q": "A1Z, C3X, E5V, ?",
+     "steps": [
+      "First letters A, C, E: +2 → G",
+      "Numbers 1, 3, 5 → 7",
+      "Last letters Z, X, V: −2 → T"
+     ],
+     "answer": "G7T"
+    }
+   }
+  ],
+  "tips": [
+   "If differences are not equal, take differences of differences.",
+   "Squares (1, 4, 9, 16, 25) and cubes appear often in differences.",
+   "For letter series, remember EJOTY: E=5, J=10, O=15, T=20, Y=25."
+  ],
+  "traps": [
+   "Do not stop at the first rule that fits two terms; check it on every term.",
+   "In mixed series, letters and numbers usually follow different rules."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-series-001",
+   "rev": 1,
+   "topic": "r-series",
+   "type": "number-series",
+   "level": 1,
+   "q": "Select the number that will come next in the following series.<br>2, 6, 12, 20, 30, ?",
+   "options": [
+    "40",
+    "44",
+    "42",
+    "36"
+   ],
+   "answer": 2,
+   "solution": "Differences: 4, 6, 8, 10 (increase by 2).<br>Next difference = 12.<br>30 + 12 = 42.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-series-002",
+   "rev": 1,
+   "topic": "r-series",
+   "type": "letter-series",
+   "level": 1,
+   "q": "Select the letter that will come next in the series.<br>B, E, H, K, ?",
+   "options": [
+    "M",
+    "N",
+    "O",
+    "P"
+   ],
+   "answer": 1,
+   "solution": "B=2, E=5, H=8, K=11: each step +3.<br>11 + 3 = 14 = N.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-series-003",
+   "rev": 1,
+   "topic": "r-series",
+   "type": "number-series",
+   "level": 2,
+   "q": "Select the number that will come next.<br>3, 7, 15, 31, 63, ?",
+   "options": [
+    "127",
+    "125",
+    "126",
+    "131"
+   ],
+   "answer": 0,
+   "solution": "Rule: each term × 2 + 1.<br>3×2+1 = 7, 7×2+1 = 15, 15×2+1 = 31, 31×2+1 = 63.<br>63×2+1 = 127.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-series-004",
+   "rev": 1,
+   "topic": "r-series",
+   "type": "letter-series",
+   "level": 2,
+   "q": "Select the letter-cluster that will come next.<br>AZ, BY, CX, ?",
+   "options": [
+    "DX",
+    "EW",
+    "DV",
+    "DW"
+   ],
+   "answer": 3,
+   "solution": "First letters: A, B, C → D (+1).<br>Second letters: Z, Y, X → W (−1).<br>Answer: DW.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-series-005",
+   "rev": 1,
+   "topic": "r-series",
+   "type": "number-series",
+   "level": 3,
+   "q": "Select the number that will come next.<br>1, 2, 6, 15, 31, ?",
+   "options": [
+    "52",
+    "56",
+    "57",
+    "63"
+   ],
+   "answer": 1,
+   "solution": "Differences: 1, 4, 9, 16 = 1², 2², 3², 4².<br>Next difference = 5² = 25.<br>31 + 25 = 56.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-series-006",
+   "rev": 1,
+   "topic": "r-series",
+   "type": "mixed-series",
+   "level": 3,
+   "q": "Select the term that will come next.<br>A1Z, C3X, E5V, G7T, ?",
+   "options": [
+    "I8R",
+    "H9S",
+    "I9R",
+    "I9S"
+   ],
+   "answer": 2,
+   "solution": "First letters: A, C, E, G → I (+2).<br>Numbers: 1, 3, 5, 7 → 9.<br>Last letters: Z, X, V, T → R (−2).<br>Answer: I9R.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-series-1",
+   "front": "Series: first check",
+   "back": "Differences → second differences → ratios → ×a + b",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-series-2",
+   "front": "3, 7, 15, 31 rule",
+   "back": "×2 + 1 (also 2ⁿ − 1)",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-series-3",
+   "front": "Differences 1, 4, 9, 16 …",
+   "back": "Squares: the next difference is the next square",
+   "deck": "reasoning"
+  }
+ ]
+}

@@ -1,0 +1,272 @@
+{
+ "topic": "g-geography",
+ "notes": {
+  "summary": "Geography gives about <b>2–3 questions</b>: India's location and latitudes, rivers and dams, soils, the atmosphere, and a few 'largest / longest / highest' world facts.",
+  "concepts": [
+   {
+    "title": "India's location and latitude lines",
+    "body": "<ul><li>India lies entirely in the <b>Northern and Eastern hemispheres</b>.</li><li>The <b>Tropic of Cancer (23½°N)</b> passes through <b>8 states</b>: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram.</li><li>Indian Standard Time is based on <b>82°30′E</b>, which passes near Mirzapur (Uttar Pradesh). IST is <b>5 h 30 min ahead of GMT</b>.</li><li>Largest state by area: <b>Rajasthan</b>. Longest coastline: <b>Gujarat</b>.</li></ul>",
+    "img": "ga/geo-latitudes.svg"
+   },
+   {
+    "title": "Rivers of India",
+    "body": "<ul><li><b>Himalayan rivers</b> (Indus, Ganga, Brahmaputra) are perennial — fed by snow and rain.</li><li>The Ganga is formed at <b>Devprayag</b> where the Bhagirathi and Alaknanda meet. It is India's longest river.</li><li>The Brahmaputra is called <b>Tsangpo</b> in Tibet.</li><li><b>Peninsular rivers</b>: Mahanadi, Godavari, Krishna and Kaveri flow <b>east</b> to the Bay of Bengal and form deltas. <b>Narmada and Tapi</b> flow <b>west</b> through rift valleys into the Arabian Sea and form estuaries.</li><li>Godavari is the longest peninsular river ('Dakshin Ganga'). Narmada rises at <b>Amarkantak</b>.</li></ul><table><thead><tr><th>Dam</th><th>River</th></tr></thead><tbody><tr><td>Bhakra Nangal</td><td>Sutlej</td></tr><tr><td>Hirakud</td><td>Mahanadi</td></tr><tr><td>Tehri</td><td>Bhagirathi</td></tr><tr><td>Sardar Sarovar</td><td>Narmada</td></tr><tr><td>Nagarjuna Sagar</td><td>Krishna</td></tr></tbody></table>",
+    "img": "ga/geo-peninsular-rivers.svg"
+   },
+   {
+    "title": "Soils and the atmosphere",
+    "body": "<table><thead><tr><th>Soil</th><th>Key fact</th></tr></thead><tbody><tr><td>Alluvial</td><td>Most widespread soil in India; very fertile (northern plains)</td></tr><tr><td>Black (regur)</td><td>Holds moisture; best for <b>cotton</b> (Deccan plateau)</td></tr><tr><td>Red</td><td>Red colour from iron oxide</td></tr><tr><td>Laterite</td><td>Formed by heavy leaching in high-rainfall areas</td></tr></tbody></table>Layers of the atmosphere from the ground up: <b>Troposphere → Stratosphere → Mesosphere → Thermosphere → Exosphere</b>. Weather happens in the troposphere; the <b>ozone layer</b> is in the stratosphere."
+   },
+   {
+    "title": "World 'superlatives'",
+    "body": "<table><thead><tr><th>Feature</th><th>Answer</th></tr></thead><tbody><tr><td>Largest ocean</td><td>Pacific</td></tr><tr><td>Longest river</td><td>Nile</td></tr><tr><td>Largest hot desert</td><td>Sahara</td></tr><tr><td>Highest peak</td><td>Mount Everest</td></tr><tr><td>Deepest point</td><td>Challenger Deep, Mariana Trench (Pacific)</td></tr><tr><td>Largest continent</td><td>Asia</td></tr></tbody></table>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "india-physical",
+    "name": "India: location, soils, atmosphere",
+    "how": "Recall the fixed facts: Tropic of Cancer states, IST meridian, soil types, atmosphere layers.",
+    "example": {
+     "q": "Which soil is best suited for growing cotton?",
+     "steps": [
+      "Cotton needs soil that holds moisture",
+      "Black (regur) soil of the Deccan holds moisture"
+     ],
+     "answer": "Black soil"
+    }
+   },
+   {
+    "type": "rivers",
+    "name": "Rivers and dams",
+    "how": "Classify the river (Himalayan / east-flowing / west-flowing), then recall its dam or source.",
+    "example": {
+     "q": "Which river flows westward into the Arabian Sea?",
+     "steps": [
+      "East-flowing: Mahanadi, Godavari, Krishna, Kaveri",
+      "West-flowing: Narmada, Tapi"
+     ],
+     "answer": "Narmada"
+    }
+   },
+   {
+    "type": "world",
+    "name": "World geography",
+    "how": "Learn the superlatives table; read the question carefully for 'hot' desert or 'deepest' vs 'highest'.",
+    "example": {
+     "q": "Which is the largest ocean?",
+     "steps": [
+      "Pacific covers about a third of Earth's surface"
+     ],
+     "answer": "Pacific Ocean"
+    }
+   }
+  ],
+  "tips": [
+   "Tropic of Cancer states, west to east: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram.",
+   "West-flowing peninsular rivers = Narmada and Tapi (N–T); all big ones else flow east.",
+   "Ozone is in the stratosphere; weather is in the troposphere."
+  ],
+  "traps": [
+   "Odisha and Bihar are NOT crossed by the Tropic of Cancer.",
+   "Godavari, not Krishna, is the longest peninsular river.",
+   "West-flowing Narmada and Tapi form estuaries, not deltas."
+  ]
+ },
+ "questions": [
+  {
+   "id": "g-geography-001",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "rivers",
+   "level": 1,
+   "q": "The Bhakra Nangal Dam is built on which river?",
+   "options": [
+    "Beas",
+    "Sutlej",
+    "Ravi",
+    "Chenab"
+   ],
+   "answer": 1,
+   "solution": "Bhakra Nangal Dam is on the Sutlej river (Himachal Pradesh–Punjab).<br><b>Memory hook:</b> Two Punjab dams, two rivers: Bhakra on Sutlej, Pong on Beas.",
+   "source": "test-data"
+  },
+  {
+   "id": "g-geography-002",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "world",
+   "level": 1,
+   "q": "Which is the longest river in the world?",
+   "options": [
+    "Amazon",
+    "Yangtze",
+    "Nile",
+    "Mississippi"
+   ],
+   "answer": 2,
+   "solution": "The Nile (Africa) is generally taken as the longest river in the world; the Amazon carries the most water.<br><b>Memory hook:</b> Nile = Length, Amazon = Amount of water.",
+   "source": "test-data"
+  },
+  {
+   "id": "g-geography-003",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "india-physical",
+   "level": 1,
+   "q": "In which layer of the atmosphere is the ozone layer found?",
+   "options": [
+    "Troposphere",
+    "Stratosphere",
+    "Mesosphere",
+    "Exosphere"
+   ],
+   "answer": 1,
+   "solution": "The ozone layer lies in the stratosphere and absorbs harmful ultraviolet rays.<br><b>Memory hook:</b> <b>S</b>tratosphere <b>S</b>hields us from UV.",
+   "source": "test-data"
+  },
+  {
+   "id": "g-geography-004",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "rivers",
+   "level": 2,
+   "q": "Which of these rivers flows <b>westward</b> into the Arabian Sea?",
+   "img": "ga/geo-peninsular-rivers.svg",
+   "options": [
+    "Godavari",
+    "Krishna",
+    "Mahanadi",
+    "Tapi"
+   ],
+   "answer": 3,
+   "solution": "Tapi and Narmada flow west through rift valleys into the Arabian Sea. Godavari, Krishna and Mahanadi flow east into the Bay of Bengal.<br><b>Memory hook:</b> N–T go West (Narmada, Tapi).",
+   "source": "test-data"
+  },
+  {
+   "id": "g-geography-005",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "india-physical",
+   "level": 2,
+   "q": "The Tropic of Cancer does <b>NOT</b> pass through which state?",
+   "img": "ga/geo-latitudes.svg",
+   "options": [
+    "Odisha",
+    "Jharkhand",
+    "Tripura",
+    "Chhattisgarh"
+   ],
+   "answer": 0,
+   "solution": "The Tropic of Cancer passes through Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram. Odisha lies south of it.<br><b>Memory hook:</b> The line jumps from Jharkhand to West Bengal — Odisha is left below.",
+   "source": "test-data"
+  },
+  {
+   "id": "g-geography-006",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "india-physical",
+   "level": 2,
+   "q": "Black soil is also known as:",
+   "options": [
+    "Bhangar",
+    "Khadar",
+    "Regur",
+    "Laterite"
+   ],
+   "answer": 2,
+   "solution": "Black soil is called regur (or black cotton soil). It holds moisture and suits cotton. Bhangar and Khadar are old and new alluvium.<br><b>Memory hook:</b> Regur — 'Real cotton grower'.",
+   "source": "test-data"
+  },
+  {
+   "id": "g-geography-007",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "rivers",
+   "level": 3,
+   "q": "At which place do the Bhagirathi and Alaknanda meet to form the Ganga?",
+   "options": [
+    "Rudraprayag",
+    "Devprayag",
+    "Karnaprayag",
+    "Haridwar"
+   ],
+   "answer": 1,
+   "solution": "The Bhagirathi and Alaknanda meet at Devprayag (Uttarakhand); from here the river is called the Ganga.<br><b>Memory hook:</b> The holy river is born at the 'Dev' (god) prayag.",
+   "source": "test-data"
+  },
+  {
+   "id": "g-geography-008",
+   "rev": 1,
+   "topic": "g-geography",
+   "type": "india-physical",
+   "level": 3,
+   "q": "The Indian Standard Time meridian (82°30′E) is ahead of Greenwich Mean Time by:",
+   "options": [
+    "5 h 00 min",
+    "4 h 30 min",
+    "6 h 00 min",
+    "5 h 30 min"
+   ],
+   "answer": 3,
+   "solution": "Earth turns 1° in 4 minutes. 82.5° × 4 min = 330 min = 5 h 30 min.<br><b>Memory hook:</b> 82.5 × 4 = 330 minutes.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-g-geography-1",
+   "front": "Number of states crossed by the Tropic of Cancer",
+   "back": "8",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-2",
+   "front": "Longest peninsular river of India",
+   "back": "Godavari ('Dakshin Ganga')",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-3",
+   "front": "Source of the Narmada",
+   "back": "Amarkantak",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-4",
+   "front": "Hirakud Dam is on",
+   "back": "Mahanadi",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-5",
+   "front": "Brahmaputra is called ___ in Tibet",
+   "back": "Tsangpo",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-6",
+   "front": "Most widespread soil in India",
+   "back": "Alluvial soil",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-7",
+   "front": "Indian state with the longest coastline",
+   "back": "Gujarat",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-8",
+   "front": "Deepest point on Earth",
+   "back": "Challenger Deep, Mariana Trench (Pacific)",
+   "deck": "ga-facts"
+  },
+  {
+   "id": "fc-g-geography-9",
+   "front": "Largest hot desert",
+   "back": "Sahara",
+   "deck": "ga-facts"
+  }
+ ]
+}

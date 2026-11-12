@@ -1,0 +1,197 @@
+{
+ "topic": "r-venn",
+ "notes": {
+  "summary": "Venn diagram questions ask you to pick the diagram that best shows the relation between three groups, or to read numbers from a given diagram. About 1 question per paper.",
+  "concepts": [
+   {
+    "title": "Three basic relations",
+    "body": "<b>Inside</b>: every A is a B (Dog inside Animal).<br><b>Overlap</b>: some A are B (Women and Doctors).<br><b>Separate</b>: no A is B (Cat and Dog)."
+   },
+   {
+    "title": "Check every pair",
+    "body": "With three items, decide the relation for each of the three pairs (A–B, B–C, A–C), then find the diagram that shows all three correctly."
+   },
+   {
+    "title": "Reading a numbered diagram",
+    "body": "A number inside only one circle belongs to that group only. A number in the overlap of two circles belongs to both. \"Exactly two\" means overlaps of two circles, not the centre.",
+    "img": "reasoning/venn-numbers.svg"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "best-diagram",
+    "name": "Best representing diagram",
+    "how": "Decide inside / overlap / separate for every pair, then match the picture.",
+    "example": {
+     "q": "Dog, Cat, Animal",
+     "steps": [
+      "Dog inside Animal; Cat inside Animal.",
+      "Dog and Cat are separate."
+     ],
+     "answer": "One big circle with two separate circles inside",
+     "img": "reasoning/venn-oneTwo.svg"
+    }
+   },
+   {
+    "type": "region-counting",
+    "name": "Numbers in a diagram",
+    "how": "Mark the regions asked for and add only those numbers.",
+    "example": {
+     "q": "In the figure, how many people are singers and dancers but not actors?",
+     "steps": [
+      "Overlap of Singers and Dancers only, outside Actors."
+     ],
+     "answer": "5",
+     "img": "reasoning/venn-numbers.svg"
+    }
+   }
+  ],
+  "tips": [
+   "Write the relation of each pair before looking at the options.",
+   "In counting questions, shade the required region with your finger first."
+  ],
+  "traps": [
+   "\"Some\" items overlap; do not draw one inside the other unless \"all\" is true.",
+   "\"Exactly two groups\" excludes the centre region (all three)."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-venn-001",
+   "rev": 1,
+   "topic": "r-venn",
+   "type": "best-diagram",
+   "level": 1,
+   "q": "Which of the following diagrams best represents the relationship between <b>Mothers, Women and Doctors</b>?",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 2,
+   "solution": "Every mother is a woman → Mothers inside Women.<br>Some women are doctors and some mothers are doctors → Doctors overlap both.<br>Diagram (c) shows a small circle inside a big circle, and a third circle overlapping both.",
+   "source": "test-data",
+   "optionImgs": [
+    "reasoning/venn-separate.svg",
+    "reasoning/venn-concentric.svg",
+    "reasoning/venn-nestInt.svg",
+    "reasoning/venn-three.svg"
+   ]
+  },
+  {
+   "id": "r-venn-002",
+   "rev": 1,
+   "topic": "r-venn",
+   "type": "best-diagram",
+   "level": 1,
+   "q": "Which of the following diagrams best represents the relationship between <b>Dog, Animal and Cat</b>?",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 3,
+   "solution": "Dogs are animals and cats are animals → both inside Animal.<br>No dog is a cat → the two small circles are separate.<br>Diagram (d) shows this.",
+   "source": "test-data",
+   "optionImgs": [
+    "reasoning/venn-separate.svg",
+    "reasoning/venn-concentric.svg",
+    "reasoning/venn-nestInt.svg",
+    "reasoning/venn-oneTwo.svg"
+   ]
+  },
+  {
+   "id": "r-venn-003",
+   "rev": 1,
+   "topic": "r-venn",
+   "type": "region-counting",
+   "level": 2,
+   "q": "Study the diagram. How many people are singers and dancers but NOT actors?",
+   "options": [
+    "3",
+    "8",
+    "12",
+    "5"
+   ],
+   "answer": 3,
+   "solution": "Singers ∩ Dancers, outside Actors = the region marked 5.<br>(The 3 in the centre are also actors, so they are not counted.)",
+   "source": "test-data",
+   "img": "reasoning/venn-numbers.svg"
+  },
+  {
+   "id": "r-venn-004",
+   "rev": 1,
+   "topic": "r-venn",
+   "type": "region-counting",
+   "level": 2,
+   "q": "Study the diagram. How many singers are also actors?",
+   "options": [
+    "7",
+    "4",
+    "3",
+    "10"
+   ],
+   "answer": 0,
+   "solution": "Singers ∩ Actors = the region with 4 (singer and actor only) + the centre 3 (all three).<br>4 + 3 = 7.",
+   "source": "test-data",
+   "img": "reasoning/venn-numbers.svg"
+  },
+  {
+   "id": "r-venn-005",
+   "rev": 1,
+   "topic": "r-venn",
+   "type": "best-diagram",
+   "level": 3,
+   "q": "Which diagram best represents the relationship between <b>Graduates, Teachers and Unemployed persons</b>?",
+   "options": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)"
+   ],
+   "answer": 1,
+   "solution": "Some teachers are graduates and some unemployed persons are graduates → Graduates overlaps both.<br>A teacher has a job, so no teacher is unemployed → Teachers and Unemployed are separate.<br>Diagram (b): a middle circle overlapping two circles that do not touch each other.",
+   "source": "test-data",
+   "optionImgs": [
+    "reasoning/venn-three.svg",
+    "reasoning/venn-chain.svg",
+    "reasoning/venn-oneTwo.svg",
+    "reasoning/venn-nestInt.svg"
+   ]
+  },
+  {
+   "id": "r-venn-006",
+   "rev": 1,
+   "topic": "r-venn",
+   "type": "region-counting",
+   "level": 3,
+   "q": "Study the diagram. How many people belong to exactly two of the three groups?",
+   "options": [
+    "19",
+    "16",
+    "13",
+    "12"
+   ],
+   "answer": 1,
+   "solution": "Exactly two groups = the three overlap regions that exclude the centre.<br>Singers–Dancers only: 5; Dancers–Actors only: 7; Singers–Actors only: 4.<br>5 + 7 + 4 = 16.",
+   "source": "test-data",
+   "img": "reasoning/venn-numbers.svg"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-venn-1",
+   "front": "Three relations in Venn diagrams",
+   "back": "Inside (all), Overlap (some), Separate (none)",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-venn-2",
+   "front": "\"Exactly two groups\" region",
+   "back": "Pairwise overlaps only, not the centre",
+   "deck": "reasoning"
+  }
+ ]
+}

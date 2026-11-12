@@ -1,0 +1,215 @@
+{
+ "topic": "q-tsd",
+ "notes": {
+  "summary": "Distance = Speed × Time. Trains, boats and average speed are all built on this one idea. 1–2 questions per tier.",
+  "concepts": [
+   {
+    "title": "Units",
+    "body": "km/h to m/s: multiply by <b>5/18</b>. m/s to km/h: multiply by <b>18/5</b>."
+   },
+   {
+    "title": "Trains",
+    "body": "Crossing a pole or man: distance = train length. Crossing a platform or another train: distance = sum of lengths. Relative speed: <b>add</b> for opposite directions, <b>subtract</b> for the same direction."
+   },
+   {
+    "title": "Boats and streams",
+    "body": "Downstream = u + v, Upstream = u − v. So boat speed u = (D + U)/2, stream speed v = (D − U)/2."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "speed-basic",
+    "name": "Speed, unit change and average speed",
+    "how": "Average speed = total distance / total time. Equal distances: 2xy/(x + y).",
+    "example": {
+     "q": "Convert 36 km/h to m/s.",
+     "steps": [
+      "36 × 5/18 = 10"
+     ],
+     "answer": "10 m/s"
+    }
+   },
+   {
+    "type": "trains",
+    "name": "Trains",
+    "how": "Time = (sum of lengths) / relative speed, in m and m/s.",
+    "example": {
+     "q": "A 200 m train at 72 km/h crosses a pole in?",
+     "steps": [
+      "72 km/h = 20 m/s",
+      "200/20 = 10"
+     ],
+     "answer": "10 s"
+    }
+   },
+   {
+    "type": "boats",
+    "name": "Boats and streams",
+    "how": "Boat = (D + U)/2, stream = (D − U)/2.",
+    "example": {
+     "q": "Downstream 10 km/h, upstream 6 km/h. Boat speed in still water?",
+     "steps": [
+      "(10 + 6)/2 = 8"
+     ],
+     "answer": "8 km/h"
+    }
+   }
+  ],
+  "tips": [
+   "Always convert to the same units before dividing.",
+   "For equal distances at speeds x and y, average speed = 2xy/(x + y)."
+  ],
+  "traps": [
+   "Average speed is NOT (x + y)/2 when the distances are equal.",
+   "For a platform, add the platform length to the train length."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Distance",
+   "expr": "Speed × Time"
+  },
+  {
+   "name": "km/h to m/s",
+   "expr": "× 5/18"
+  },
+  {
+   "name": "Average speed (equal distances)",
+   "expr": "2xy/(x + y)"
+  },
+  {
+   "name": "Boat and stream",
+   "expr": "u = (D + U)/2, v = (D − U)/2"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-tsd-001",
+   "rev": 1,
+   "topic": "q-tsd",
+   "type": "speed-basic",
+   "level": 1,
+   "q": "A speed of 72 km/h is equal to:",
+   "options": [
+    "18 m/s",
+    "20 m/s",
+    "25 m/s",
+    "24 m/s"
+   ],
+   "answer": 1,
+   "solution": "72 × 5/18 = 4 × 5 = 20 m/s.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-tsd-002",
+   "rev": 1,
+   "topic": "q-tsd",
+   "type": "speed-basic",
+   "level": 1,
+   "q": "A car covers 360 km in 4 hours 30 minutes. What is its speed?",
+   "options": [
+    "80 km/h",
+    "90 km/h",
+    "75 km/h",
+    "72 km/h"
+   ],
+   "answer": 0,
+   "solution": "Time = 4.5 h.<br>Speed = 360/4.5 = 80 km/h.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-tsd-003",
+   "rev": 1,
+   "topic": "q-tsd",
+   "type": "trains",
+   "level": 2,
+   "q": "A train 150 m long is running at 54 km/h. How long will it take to cross a platform 300 m long?",
+   "options": [
+    "20 s",
+    "25 s",
+    "30 s",
+    "36 s"
+   ],
+   "answer": 2,
+   "solution": "Speed = 54 × 5/18 = 15 m/s.<br>Distance = 150 + 300 = 450 m.<br>Time = 450/15 = 30 s.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-tsd-004",
+   "rev": 1,
+   "topic": "q-tsd",
+   "type": "boats",
+   "level": 2,
+   "q": "A boat goes downstream at 18 km/h and upstream at 12 km/h. What is the speed of the stream?",
+   "options": [
+    "6 km/h",
+    "15 km/h",
+    "2 km/h",
+    "3 km/h"
+   ],
+   "answer": 3,
+   "solution": "Stream speed = (Downstream − Upstream)/2.<br>= (18 − 12)/2 = 3 km/h.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-tsd-005",
+   "rev": 1,
+   "topic": "q-tsd",
+   "type": "trains",
+   "level": 3,
+   "q": "Two trains 120 m and 180 m long are running in opposite directions at 40 km/h and 50 km/h. In how many seconds will they cross each other?",
+   "options": [
+    "10 s",
+    "12 s",
+    "15 s",
+    "18 s"
+   ],
+   "answer": 1,
+   "solution": "Relative speed = 40 + 50 = 90 km/h = 90 × 5/18 = 25 m/s.<br>Distance = 120 + 180 = 300 m.<br>Time = 300/25 = 12 s.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-tsd-006",
+   "rev": 1,
+   "topic": "q-tsd",
+   "type": "speed-basic",
+   "level": 3,
+   "q": "A man goes from A to B at 40 km/h and returns from B to A at 60 km/h. What is his average speed for the whole journey?",
+   "options": [
+    "50 km/h",
+    "48 km/h",
+    "45 km/h",
+    "52 km/h"
+   ],
+   "answer": 1,
+   "solution": "Equal distances, so average speed = 2xy/(x + y).<br>= 2 × 40 × 60 / 100 = 48 km/h.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-tsd-1",
+   "front": "km/h to m/s",
+   "back": "Multiply by 5/18",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-tsd-2",
+   "front": "Average speed for equal distances",
+   "back": "2xy/(x + y)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-tsd-3",
+   "front": "Speed of stream",
+   "back": "(Downstream − Upstream)/2",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-tsd-4",
+   "front": "Trains in opposite directions",
+   "back": "Add speeds",
+   "deck": "formulas"
+  }
+ ]
+}

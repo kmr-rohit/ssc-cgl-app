@@ -1,0 +1,13 @@
+node_modules/
+dist/
+public/content/
+test-results/
+playwright-report/
+.vercel/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+# old claude.ai artifact snapshot: reference only, not part of the new codebase
+reference/

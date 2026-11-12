@@ -1,0 +1,75 @@
+{
+  "topic": "g-culture",
+  "notes": {
+    "summary": "Art & Culture gives <b>1–2 questions</b>. The favourites are classical and folk dances with their states, famous monuments and who built them, musicians and their instruments, and state festivals.",
+    "concepts": [
+      {
+        "title": "Classical dances of India",
+        "body": "The Sangeet Natak Akademi recognises <b>eight</b> classical dances:<table><thead><tr><th>Dance</th><th>State</th></tr></thead><tbody><tr><td>Bharatanatyam</td><td>Tamil Nadu</td></tr><tr><td>Kathak</td><td>Uttar Pradesh (North India)</td></tr><tr><td>Kathakali</td><td>Kerala</td></tr><tr><td>Mohiniyattam</td><td>Kerala</td></tr><tr><td>Kuchipudi</td><td>Andhra Pradesh</td></tr><tr><td>Odissi</td><td>Odisha</td></tr><tr><td>Manipuri</td><td>Manipur</td></tr><tr><td>Sattriya</td><td>Assam</td></tr></tbody></table>Kerala has <b>two</b> classical forms."
+      },
+      {
+        "title": "Folk dances and festivals",
+        "body": "<table><thead><tr><th>State</th><th>Folk dance</th><th>Festival</th></tr></thead><tbody><tr><td>Assam</td><td>Bihu</td><td>Bihu</td></tr><tr><td>Gujarat</td><td>Garba</td><td>Navratri</td></tr><tr><td>Punjab</td><td>Bhangra, Giddha</td><td>Baisakhi (Vaisakhi)</td></tr><tr><td>Rajasthan</td><td>Ghoomar, Kalbelia</td><td>Teej</td></tr><tr><td>Maharashtra</td><td>Lavani</td><td>Ganesh Chaturthi</td></tr><tr><td>Kerala</td><td>—</td><td>Onam</td></tr><tr><td>Tamil Nadu</td><td>Kummi</td><td>Pongal</td></tr><tr><td>Nagaland</td><td>—</td><td>Hornbill Festival</td></tr></tbody></table>"
+      },
+      {
+        "title": "Monuments and builders",
+        "body": "<table><thead><tr><th>Monument</th><th>Place</th><th>Built by</th></tr></thead><tbody><tr><td>Taj Mahal</td><td>Agra</td><td>Shah Jahan</td></tr><tr><td>Qutub Minar</td><td>Delhi</td><td>Aibak (begun), Iltutmish (completed)</td></tr><tr><td>Brihadeeswarar Temple</td><td>Thanjavur</td><td>Rajaraja I (Chola)</td></tr><tr><td>Konark Sun Temple</td><td>Odisha</td><td>Narasimhadeva I (Eastern Ganga)</td></tr><tr><td>Khajuraho temples</td><td>Madhya Pradesh</td><td>Chandela rulers</td></tr><tr><td>Buland Darwaza</td><td>Fatehpur Sikri</td><td>Akbar</td></tr><tr><td>Gol Gumbaz</td><td>Vijayapura (Bijapur)</td><td>Muhammad Adil Shah</td></tr></tbody></table>Ajanta caves (Maharashtra) are famous for Buddhist paintings; Ellora has Hindu, Buddhist and Jain caves, including the Kailasa temple."
+      },
+      {
+        "title": "Musicians and their instruments",
+        "body": "<table><thead><tr><th>Instrument</th><th>Maestro</th></tr></thead><tbody><tr><td>Sitar</td><td>Pt. Ravi Shankar</td></tr><tr><td>Shehnai</td><td>Ustad Bismillah Khan</td></tr><tr><td>Tabla</td><td>Ustad Zakir Hussain, Ustad Alla Rakha</td></tr><tr><td>Santoor</td><td>Pt. Shivkumar Sharma</td></tr><tr><td>Flute (bansuri)</td><td>Pt. Hariprasad Chaurasia</td></tr><tr><td>Sarod</td><td>Ustad Amjad Ali Khan</td></tr></tbody></table>Indian classical music has two streams: <b>Hindustani</b> (North) and <b>Carnatic</b> (South)."
+      }
+    ],
+    "varieties": [
+      {
+        "type": "dance",
+        "name": "Dance ↔ state",
+        "how": "Recall the eight classical dances with states, then common folk dances.",
+        "example": { "q": "Sattriya is a classical dance of which state?", "steps": ["Sattriya grew in the Vaishnava monasteries (sattras) of Assam"], "answer": "Assam" }
+      },
+      {
+        "type": "monuments",
+        "name": "Monument ↔ builder / place",
+        "how": "Link the monument to its dynasty, then the ruler.",
+        "example": { "q": "Who built the Brihadeeswarar Temple at Thanjavur?", "steps": ["Thanjavur was the Chola capital", "Great Chola builder: Rajaraja I"], "answer": "Rajaraja I" }
+      },
+      {
+        "type": "music-festivals",
+        "name": "Musicians and festivals",
+        "how": "Pair each maestro with one instrument; pair each festival with its state.",
+        "example": { "q": "Ustad Bismillah Khan is associated with which instrument?", "steps": ["Bismillah Khan of Varanasi made the shehnai famous on the concert stage"], "answer": "Shehnai" }
+      }
+    ],
+    "tips": [
+      "Kerala has two classical dances: Kathakali (dance-drama, heavy make-up) and Mohiniyattam (graceful, solo female).",
+      "Kuchipudi takes its name from a village in Andhra Pradesh.",
+      "Questions on maestros usually pick from the six in the table; learn them as pairs."
+    ],
+    "traps": [
+      "Bihu is both a dance and a festival of Assam; Sattriya, not Bihu, is the classical dance of Assam.",
+      "Kathakali (Kerala) and Kathak (North India) sound alike but are different.",
+      "Yakshagana (Karnataka) is a traditional theatre form, not one of the eight classical dances."
+    ]
+  },
+  "questions": [
+    { "id": "g-culture-001", "rev": 1, "topic": "g-culture", "type": "dance", "level": 1, "q": "Kuchipudi is a classical dance form of which state?", "options": ["Tamil Nadu", "Karnataka", "Andhra Pradesh", "Kerala"], "answer": 2, "solution": "Kuchipudi comes from the village of Kuchipudi in Andhra Pradesh.<br><b>Memory hook:</b> Kuchipudi is named after its home village in AP.", "source": "test-data" },
+    { "id": "g-culture-002", "rev": 1, "topic": "g-culture", "type": "monuments", "level": 1, "q": "The Taj Mahal was built by:", "options": ["Akbar", "Jahangir", "Aurangzeb", "Shah Jahan"], "answer": 3, "solution": "Shah Jahan built the Taj Mahal at Agra in memory of his wife Mumtaz Mahal.<br><b>Memory hook:</b> Shah Jahan, the 'builder emperor': Taj Mahal and the Red Fort of Delhi.", "source": "test-data" },
+    { "id": "g-culture-003", "rev": 1, "topic": "g-culture", "type": "music-festivals", "level": 1, "q": "Pandit Shivkumar Sharma was a famous player of which instrument?", "options": ["Santoor", "Sarod", "Sitar", "Flute"], "answer": 0, "solution": "Pt. Shivkumar Sharma popularised the santoor, a hammered string instrument from Jammu and Kashmir, in classical music.<br><b>Memory hook:</b> <b>S</b>hivkumar <b>S</b>harma — <b>S</b>antoor.", "source": "test-data" },
+    { "id": "g-culture-004", "rev": 1, "topic": "g-culture", "type": "dance", "level": 2, "q": "Which state has <b>two</b> classical dance forms recognised by the Sangeet Natak Akademi?", "options": ["Tamil Nadu", "Kerala", "Odisha", "Assam"], "answer": 1, "solution": "Kerala has Kathakali and Mohiniyattam.<br><b>Memory hook:</b> Kerala = 'K' and 'M': Kathakali and Mohiniyattam.", "source": "test-data" },
+    { "id": "g-culture-005", "rev": 1, "topic": "g-culture", "type": "music-festivals", "level": 2, "q": "The Hornbill Festival is celebrated in:", "options": ["Mizoram", "Arunachal Pradesh", "Nagaland", "Meghalaya"], "answer": 2, "solution": "The Hornbill Festival is held every December in Nagaland and showcases its tribes.<br><b>Memory hook:</b> The hornbill bird is honoured in Naga culture: Hornbill = Nagaland.", "source": "test-data" },
+    { "id": "g-culture-006", "rev": 1, "topic": "g-culture", "type": "monuments", "level": 2, "q": "The Konark Sun Temple is located in which state?", "options": ["Odisha", "West Bengal", "Andhra Pradesh", "Gujarat"], "answer": 0, "solution": "The Konark Sun Temple is in Odisha; it was built by King Narasimhadeva I of the Eastern Ganga dynasty in the 13th century. It is a UNESCO World Heritage Site.<br><b>Memory hook:</b> Konark is shaped like the Sun God's chariot, on the Odisha coast.", "source": "test-data" },
+    { "id": "g-culture-007", "rev": 1, "topic": "g-culture", "type": "dance", "level": 3, "q": "Which of the following pairs (dance — state) is <b>incorrectly</b> matched?", "options": ["Sattriya — Assam", "Odissi — Odisha", "Lavani — Maharashtra", "Ghoomar — Gujarat"], "answer": 3, "solution": "Ghoomar is a folk dance of Rajasthan. Gujarat's famous folk dance is Garba.<br><b>Memory hook:</b> Ghoomar 'twirls' in the royal courts of Rajasthan.", "source": "test-data" },
+    { "id": "g-culture-008", "rev": 1, "topic": "g-culture", "type": "monuments", "level": 3, "q": "The Kailasa temple, carved out of a single rock, is part of which cave complex?", "options": ["Ajanta", "Elephanta", "Ellora", "Udayagiri"], "answer": 2, "solution": "The Kailasa temple (Cave 16) at Ellora, Maharashtra, was carved from one rock under the Rashtrakuta king Krishna I.<br><b>Memory hook:</b> Ajanta = paintings, Ellora = rock-cut Kailasa.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-culture-1", "front": "Classical dance of Manipur", "back": "Manipuri", "deck": "ga-facts" },
+    { "id": "fc-g-culture-2", "front": "Bharatanatyam belongs to which state?", "back": "Tamil Nadu", "deck": "ga-facts" },
+    { "id": "fc-g-culture-3", "front": "Garba is a folk dance of", "back": "Gujarat", "deck": "ga-facts" },
+    { "id": "fc-g-culture-4", "front": "Ustad Amjad Ali Khan plays", "back": "Sarod", "deck": "ga-facts" },
+    { "id": "fc-g-culture-5", "front": "Pt. Hariprasad Chaurasia plays", "back": "Flute (bansuri)", "deck": "ga-facts" },
+    { "id": "fc-g-culture-6", "front": "Onam is the harvest festival of", "back": "Kerala", "deck": "ga-facts" },
+    { "id": "fc-g-culture-7", "front": "Who built the Buland Darwaza?", "back": "Akbar (at Fatehpur Sikri)", "deck": "ga-facts" },
+    { "id": "fc-g-culture-8", "front": "Khajuraho temples were built by", "back": "Chandela rulers (Madhya Pradesh)", "deck": "ga-facts" },
+    { "id": "fc-g-culture-9", "front": "Ajanta caves are famous for", "back": "Buddhist wall paintings (Maharashtra)", "deck": "ga-facts" }
+  ]
+}

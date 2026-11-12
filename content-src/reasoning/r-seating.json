@@ -1,0 +1,198 @@
+{
+ "topic": "r-seating",
+ "notes": {
+  "summary": "Seating arrangement and puzzles place people in a <b>row</b>, around a <b>circle</b> or on <b>floors</b> using clues. Draw the places first, fix the definite clues, then try the rest. 1–3 questions per paper.",
+  "concepts": [
+   {
+    "title": "Linear row",
+    "body": "Facing North: your right is the viewer's right. Facing South: left and right are reversed. \"Immediate right\" means the very next seat."
+   },
+   {
+    "title": "Circle facing the centre",
+    "body": "For people facing the centre, <b>left = clockwise</b> and <b>right = anticlockwise</b>. In a circle of n people (n even), the person n/2 places away sits opposite.",
+    "img": "reasoning/seat-circle8.svg"
+   },
+   {
+    "title": "Floor puzzles",
+    "body": "Ground floor = 1, top floor = n. Write the floors as a column and fill fixed clues first (\"M is two floors above K\")."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "linear-seating",
+    "name": "Linear arrangement",
+    "how": "Draw blanks left to right; fix extreme-end clues first.",
+    "example": {
+     "q": "A, B, C sit in a row facing North. A is at the left end; C is not next to A. Who is in the middle?",
+     "steps": [
+      "Seats: A _ _",
+      "C is not next to A → C at the right end."
+     ],
+     "answer": "B"
+    }
+   },
+   {
+    "type": "circular-seating",
+    "name": "Circular arrangement",
+    "how": "Draw a circle, place one person, then use left = clockwise (facing centre).",
+    "example": {
+     "q": "In the figure (facing the centre), who is third to the left of B?",
+     "steps": [
+      "Left = clockwise.",
+      "B → C → D → E"
+     ],
+     "answer": "E",
+     "img": "reasoning/seat-circle8.svg"
+    }
+   },
+   {
+    "type": "floor-puzzle",
+    "name": "Floor puzzle",
+    "how": "Column of floors; place the person with the most fixed clue first.",
+    "example": {
+     "q": "X lives just above Y; Y is on floor 1 of 3. Where is X?",
+     "steps": [
+      "Y = 1",
+      "X = 2"
+     ],
+     "answer": "Floor 2"
+    }
+   }
+  ],
+  "tips": [
+   "Start with clues that fix an exact seat (ends, opposite, \"third to the right\").",
+   "If two cases are possible, keep both drawings and let later clues remove one.",
+   "Re-check the final arrangement against every clue."
+  ],
+  "traps": [
+   "For a circle facing outward, left and right are reversed (left = anticlockwise).",
+   "\"Second to the right\" skips one seat; it is not the next seat."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-seating-001",
+   "rev": 1,
+   "topic": "r-seating",
+   "type": "linear-seating",
+   "level": 1,
+   "q": "Five friends A, B, C, D and E sit in a row facing North. C sits in the middle. A sits at the extreme left end. B sits to the immediate right of A. E does not sit at the extreme right end. Who sits at the extreme right end?",
+   "options": [
+    "E",
+    "B",
+    "D",
+    "C"
+   ],
+   "answer": 2,
+   "solution": "Seats 1–5 from the left: A = 1, B = 2, C = 3.<br>E is not at 5, so E = 4 and D = 5.<br>D sits at the extreme right end.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-seating-002",
+   "rev": 1,
+   "topic": "r-seating",
+   "type": "circular-seating",
+   "level": 1,
+   "q": "Six persons sit around a circular table facing the centre, as shown in the figure. Who sits opposite to Q?",
+   "options": [
+    "S",
+    "U",
+    "R",
+    "T"
+   ],
+   "answer": 3,
+   "solution": "In a circle of 6, the opposite person is 3 places away.<br>Going round from Q: R (1), S (2), T (3).<br>So T sits opposite Q.",
+   "source": "test-data",
+   "img": "reasoning/seat-circle6.svg"
+  },
+  {
+   "id": "r-seating-003",
+   "rev": 1,
+   "topic": "r-seating",
+   "type": "linear-seating",
+   "level": 2,
+   "q": "Six persons P, Q, R, S, T and U sit in a row facing North. R sits at one of the extreme ends. P sits third to the right of R. Q sits to the immediate left of S. T is not an immediate neighbour of P. T sits at one of the extreme ends. Who sits between S and U?",
+   "options": [
+    "Q",
+    "T",
+    "P",
+    "R"
+   ],
+   "answer": 2,
+   "solution": "P is third to the right of R, so R must be at the left end (seat 1) and P at seat 4.<br>T is at an extreme end and not next to P → T = 6.<br>Q is immediately left of S: free seats 2, 3, 5 → Q = 2, S = 3, U = 5.<br>Row: R Q S P U T. P sits between S and U.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-seating-004",
+   "rev": 1,
+   "topic": "r-seating",
+   "type": "circular-seating",
+   "level": 2,
+   "q": "Eight persons sit around a circular table facing the centre, as shown in the figure. Who sits third to the right of D?",
+   "options": [
+    "G",
+    "F",
+    "A",
+    "B"
+   ],
+   "answer": 2,
+   "solution": "Facing the centre, right = anticlockwise.<br>From D going anticlockwise: C (1), B (2), A (3).<br>A is third to the right of D.",
+   "source": "test-data",
+   "img": "reasoning/seat-circle8.svg"
+  },
+  {
+   "id": "r-seating-005",
+   "rev": 1,
+   "topic": "r-seating",
+   "type": "circular-seating",
+   "level": 3,
+   "q": "A, B, C, D, E and F sit around a circular table facing the centre. A sits opposite D. B sits to the immediate left of A. C sits second to the right of B. E does not sit to the immediate right of D. Who sits opposite F?",
+   "options": [
+    "B",
+    "E",
+    "A",
+    "C"
+   ],
+   "answer": 3,
+   "solution": "Number seats 0–5 clockwise; facing the centre, left = clockwise.<br>A = 0, D = 3 (opposite).<br>B is immediately left of A → B = 1.<br>C is second to the right (anticlockwise) of B → C = 5.<br>Seats 2 and 4 remain for E and F. D's immediate right is seat 2, so E ≠ 2 → E = 4, F = 2.<br>Opposite of seat 2 is seat 5 = C.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-seating-006",
+   "rev": 1,
+   "topic": "r-seating",
+   "type": "floor-puzzle",
+   "level": 3,
+   "q": "K, L, M, N and O live on different floors of a 5-storey building (ground floor = 1, top floor = 5). M lives two floors above K. L lives on a floor above N. O lives neither on the top floor nor on the ground floor. N and O live on adjacent floors. K does not live on the ground floor. Who lives on the top floor?",
+   "options": [
+    "L",
+    "K",
+    "O",
+    "M"
+   ],
+   "answer": 3,
+   "solution": "K ≠ 1 and M = K + 2 ≤ 5 → K = 2 or 3.<br>If K = 2, M = 4: O must be 3 (not 1 or 5); N adjacent to O → N = 2 or 4, both taken ✗.<br>So K = 3, M = 5. O is 2 or 4; O = 4 would need N = 3 or 5 (taken) ✗, so O = 2.<br>N adjacent to O → N = 1, and L = 4 (above N ✓).<br>Top floor: M.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-seating-1",
+   "front": "Circle facing centre: left is …",
+   "back": "Clockwise (right is anticlockwise)",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-seating-2",
+   "front": "Opposite seat in a circle of n",
+   "back": "n/2 places away",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-seating-3",
+   "front": "Seating: which clue first?",
+   "back": "The one that fixes an exact position (ends, opposite).",
+   "deck": "reasoning"
+  }
+ ]
+}

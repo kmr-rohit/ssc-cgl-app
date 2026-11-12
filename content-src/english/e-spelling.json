@@ -1,0 +1,48 @@
+{
+  "topic": "e-spelling",
+  "notes": {
+    "summary": "In <b>Spelling</b> questions SSC gives four words and asks you to pick the <b>correctly spelt</b> one (or sometimes the misspelt one). The words tested are commonly confused ones with double letters, silent letters or <i>-ance/-ence</i> endings.",
+    "concepts": [
+      { "title": "Double letters", "body": "Most errors are about how many letters repeat. Learn the tricky ones: <i>accommodate</i> (cc, mm), <i>committee</i> (mm, tt, ee), <i>embarrass</i> (rr, ss), <i>occurrence</i> (cc, rr), <i>necessary</i> (one c, ss)." },
+      { "title": "Common patterns", "body": "<ul><li><b>i before e except after c</b>: <i>believe, receive</i> (exceptions: <i>seize, weird</i>).</li><li><b>Drop the silent e</b> before <i>-ing</i>: <i>write → writing</i>; but keep it in <i>noticeable, manageable</i>.</li><li><b>-ance / -ence</b>: <i>maintenance, guidance</i> vs <i>existence, independence</i>.</li></ul>" }
+    ],
+    "varieties": [
+      { "type": "correct", "name": "Choose the correct spelling", "how": "Check double letters and vowel endings one word at a time; trust only the version you are sure of.", "example": { "q": "Accomodate / Accommodate / Acommodate / Accommadate", "steps": ["Rule: double c and double m.", "Ending is <i>-date</i> with <i>o</i> before it."], "answer": "Accommodate" } },
+      { "type": "incorrect", "name": "Choose the misspelt word", "how": "Three words are correct; find the odd one with a wrong letter.", "example": { "q": "Receive / Believe / Achieve / Recieve", "steps": ["After c → <i>ei</i>: <i>receive</i>.", "<i>Recieve</i> breaks the rule."], "answer": "Recieve" } }
+    ],
+    "tips": [
+      "Keep a personal list of words you get wrong and revise it weekly.",
+      "Say the word slowly in syllables: <i>ac-com-mo-date</i>."
+    ],
+    "traps": [
+      "SSC often asks for the <b>incorrect</b> spelling; read the question instruction carefully.",
+      "Close variants differ by one letter only; compare letter by letter, not by overall look."
+    ]
+  },
+  "questions": [
+    { "id": "e-spelling-001", "rev": 1, "topic": "e-spelling", "type": "correct", "level": 1, "q": "Select the correctly spelt word.", "options": ["Neccessary", "Necessary", "Necesary", "Neccesary"], "answer": 1, "solution": "<b>Necessary</b>: one <i>c</i>, double <i>s</i>.", "source": "test-data" },
+    { "id": "e-spelling-002", "rev": 1, "topic": "e-spelling", "type": "incorrect", "level": 1, "q": "Select the incorrectly spelt word.", "options": ["Believe", "Receive", "Acheive", "Deceive"], "answer": 2, "solution": "The correct spelling is <b>Achieve</b> (i before e, no c before it). <i>Receive</i> and <i>Deceive</i> follow 'ei after c'.", "source": "test-data" },
+    { "id": "e-spelling-003", "rev": 1, "topic": "e-spelling", "type": "correct", "level": 2, "q": "Select the correctly spelt word.", "options": ["Embarassment", "Embarrasment", "Embarrassment", "Embaressment"], "answer": 2, "solution": "<b>Embarrassment</b>: double <i>r</i> and double <i>s</i>.", "source": "test-data" },
+    { "id": "e-spelling-004", "rev": 1, "topic": "e-spelling", "type": "incorrect", "level": 2, "q": "Select the incorrectly spelt word.", "options": ["Maintenance", "Existence", "Guidance", "Independance"], "answer": 3, "solution": "The correct spelling is <b>Independence</b> (ends in <i>-ence</i>).", "source": "test-data" },
+    { "id": "e-spelling-005", "rev": 1, "topic": "e-spelling", "type": "correct", "level": 3, "q": "Select the correctly spelt word.", "options": ["Occurence", "Occurrence", "Ocurrence", "Occurrance"], "answer": 1, "solution": "<b>Occurrence</b>: double <i>c</i>, double <i>r</i>, ending <i>-ence</i>.", "source": "test-data" },
+    { "id": "e-spelling-006", "rev": 1, "topic": "e-spelling", "type": "incorrect", "level": 3, "q": "Select the incorrectly spelt word.", "options": ["Conscientious", "Millennium", "Questionnaire", "Liaision"], "answer": 3, "solution": "The correct spelling is <b>Liaison</b> (l-i-a-i-s-o-n). The other three are correct.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-sp-01", "front": "Necessary — tricky letters?", "back": "One c, double s: ne-c-e-ss-ary", "deck": "spelling" },
+    { "id": "fc-e-sp-02", "front": "Accommodate", "back": "Double c, double m", "deck": "spelling" },
+    { "id": "fc-e-sp-03", "front": "Embarrassment", "back": "Double r, double s", "deck": "spelling" },
+    { "id": "fc-e-sp-04", "front": "Occurrence", "back": "Double c, double r, -ence", "deck": "spelling" },
+    { "id": "fc-e-sp-05", "front": "Committee", "back": "Double m, double t, double e", "deck": "spelling" },
+    { "id": "fc-e-sp-06", "front": "Achieve / Receive", "back": "i before e, except after c", "deck": "spelling" },
+    { "id": "fc-e-sp-07", "front": "Independence", "back": "Ends in -ence", "deck": "spelling" },
+    { "id": "fc-e-sp-08", "front": "Maintenance", "back": "main-ten-ance (not maintainance)", "deck": "spelling" },
+    { "id": "fc-e-sp-09", "front": "Millennium", "back": "Double l, double n", "deck": "spelling" },
+    { "id": "fc-e-sp-10", "front": "Liaison", "back": "l-i-a-i-s-o-n", "deck": "spelling" },
+    { "id": "fc-e-sp-11", "front": "Questionnaire", "back": "Double n", "deck": "spelling" },
+    { "id": "fc-e-sp-12", "front": "Conscientious", "back": "con-sci-en-tious", "deck": "spelling" },
+    { "id": "fc-e-sp-13", "front": "Separate", "back": "sep-A-rate (not seperate)", "deck": "spelling" },
+    { "id": "fc-e-sp-14", "front": "Definitely", "back": "defin-ITE-ly (not definately)", "deck": "spelling" },
+    { "id": "fc-e-sp-15", "front": "Privilege", "back": "privi-LEGE (no d)", "deck": "spelling" },
+    { "id": "fc-e-sp-16", "front": "Noticeable", "back": "Keep the e: notice + able", "deck": "spelling" }
+  ]
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" font-family="Arial, Helvetica, sans-serif" font-size="13">
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">Peninsular rivers: direction of flow</text>
+  <rect x="10" y="50" width="120" height="200" rx="8" fill="#d6eaff"/>
+  <text x="70" y="150" text-anchor="middle" fill="#1d4f91" font-weight="bold">Arabian Sea</text>
+  <rect x="430" y="50" width="120" height="200" rx="8" fill="#d6eaff"/>
+  <text x="490" y="150" text-anchor="middle" fill="#1d4f91" font-weight="bold">Bay of Bengal</text>
+  <rect x="200" y="60" width="160" height="180" rx="8" fill="#f3ead9" stroke="#b08a4a"/>
+  <text x="280" y="155" text-anchor="middle" fill="#6b4f1d">Western Ghats /</text>
+  <text x="280" y="172" text-anchor="middle" fill="#6b4f1d">central highlands</text>
+  <g stroke="#2a6fdb" stroke-width="3" fill="#2a6fdb">
+    <line x1="200" y1="95" x2="140" y2="95"/><polygon points="132,95 144,89 144,101"/>
+    <line x1="200" y1="125" x2="140" y2="125"/><polygon points="132,125 144,119 144,131"/>
+    <line x1="360" y1="85" x2="420" y2="85"/><polygon points="428,85 416,79 416,91"/>
+    <line x1="360" y1="125" x2="420" y2="125"/><polygon points="428,125 416,119 416,131"/>
+    <line x1="360" y1="165" x2="420" y2="165"/><polygon points="428,165 416,159 416,171"/>
+    <line x1="360" y1="205" x2="420" y2="205"/><polygon points="428,205 416,199 416,211"/>
+  </g>
+  <g fill="#222" font-size="12">
+    <text x="146" y="88">Narmada</text><text x="146" y="118">Tapi</text>
+    <text x="364" y="78">Mahanadi</text><text x="364" y="118">Godavari</text>
+    <text x="364" y="158">Krishna</text><text x="364" y="198">Kaveri</text>
+  </g>
+  <text x="70" y="275" text-anchor="middle" fill="#555" font-size="12">form estuaries</text>
+  <text x="490" y="275" text-anchor="middle" fill="#555" font-size="12">form deltas</text>
+  <text x="280" y="292" text-anchor="middle" fill="#888" font-size="11">Schematic diagram, not a map</text>
+</svg>

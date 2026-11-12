@@ -1,0 +1,38 @@
+{
+  "topic": "e-fillers",
+  "notes": {
+    "summary": "In <b>Fill in the Blanks</b> you choose the word that best completes a sentence. SSC tests three things: <b>meaning</b> (vocabulary in context), <b>grammar</b> (prepositions, tense, articles) and <b>collocation</b> (words that naturally go together).",
+    "concepts": [
+      { "title": "Read for clues", "body": "Every blank has a clue in the sentence. Look for:<ul><li><b>Contrast words</b> — <i>but, although, yet, despite</i>: the blank has the opposite sense.</li><li><b>Support words</b> — <i>and, because, so, also</i>: the blank continues the same sense.</li><li><b>Definitions</b> — a phrase after a comma or dash that explains the blank.</li></ul>" },
+      { "title": "Grammar first, meaning second", "body": "Eliminate options that do not fit grammatically (wrong part of speech, wrong tense, wrong preposition). Then choose between the remaining ones by meaning. This often leaves only one option." },
+      { "title": "Collocations", "body": "Some words simply go together in English: <i>pay attention</i>, <i>make a decision</i>, <i>take a risk</i>, <i>commit a crime</i>, <i>heavy rain</i>, <i>strong tea</i>. A synonym that 'means the same' can still be wrong if it does not collocate (<i>do a decision</i> is wrong)." }
+    ],
+    "varieties": [
+      { "type": "vocab-context", "name": "Vocabulary in context", "how": "Find the contrast or support clue, predict a word of your own, then match it to the options.", "example": { "q": "Although he was usually talkative, at the meeting he remained ______.", "steps": ["<i>Although</i> signals contrast with <i>talkative</i>.", "We need a word meaning 'quiet'.", "Options: reticent / vocal / cheerful / eloquent → <i>reticent</i>."], "answer": "reticent" } },
+      { "type": "preposition", "name": "Prepositions and grammar", "how": "Many verbs and adjectives take a fixed preposition. Learn the common ones: <i>abide by, comply with, accused of, charged with, insist on, aware of</i>.", "example": { "q": "Every citizen must abide ______ the law.", "steps": ["<i>Abide</i> in the sense of 'obey' takes <b>by</b>."], "answer": "by" } },
+      { "type": "collocation", "name": "Collocations", "how": "Pick the word that native speakers naturally pair with the given noun or verb.", "example": { "q": "The doctor advised him to ______ a break from work.", "steps": ["English says <i>take a break</i>, not <i>do / make / have done</i> a break."], "answer": "take" } }
+    ],
+    "tips": [
+      "Predict the answer before looking at the options; it stops you from being pulled by a tempting wrong word.",
+      "If two options are synonyms of each other, often neither is correct.",
+      "Read the sentence again with your choice filled in; it must sound natural."
+    ],
+    "traps": [
+      "Look-alike words: <i>affect/effect, principal/principle, complement/compliment, stationary/stationery</i>.",
+      "A word with the right meaning but wrong collocation (e.g. <i>big rain</i> instead of <i>heavy rain</i>)."
+    ]
+  },
+  "questions": [
+    { "id": "e-fillers-001", "rev": 1, "topic": "e-fillers", "type": "preposition", "level": 1, "q": "Select the most appropriate option to fill in the blank.<br>The new employee was not aware ______ the office rules.", "options": ["of", "about", "with", "for"], "answer": 0, "solution": "The adjective <i>aware</i> takes the preposition <b>of</b>: <i>aware of something</i>.", "source": "test-data" },
+    { "id": "e-fillers-002", "rev": 1, "topic": "e-fillers", "type": "collocation", "level": 1, "q": "Select the most appropriate option to fill in the blank.<br>Before buying a house, you should ______ a careful decision.", "options": ["do", "make", "take out", "give"], "answer": 1, "solution": "The natural collocation is <b>make a decision</b>. <i>Do a decision</i> or <i>give a decision</i> (in this sense) is not standard English.", "source": "test-data" },
+    { "id": "e-fillers-003", "rev": 1, "topic": "e-fillers", "type": "vocab-context", "level": 2, "q": "Select the most appropriate option to fill in the blank.<br>The minister's speech was so ______ that the audience could not understand what he actually meant.", "options": ["lucid", "ambiguous", "concise", "candid"], "answer": 1, "solution": "The audience could not understand the meaning, so the speech was unclear: <b>ambiguous</b> (open to more than one meaning). <i>Lucid</i> and <i>concise</i> suggest clarity; <i>candid</i> means frank.", "source": "test-data" },
+    { "id": "e-fillers-004", "rev": 1, "topic": "e-fillers", "type": "preposition", "level": 2, "q": "Select the most appropriate option to fill in the blank.<br>The shopkeeper was charged ______ selling adulterated food.", "options": ["of", "for", "with", "on"], "answer": 2, "solution": "The fixed phrase is <b>charged with</b> an offence. (Compare: <i>accused of</i> an offence.)", "source": "test-data" },
+    { "id": "e-fillers-005", "rev": 1, "topic": "e-fillers", "type": "vocab-context", "level": 3, "q": "Select the most appropriate option to fill in the blank.<br>Far from being ______ by the early failures, the young scientist became even more determined to succeed.", "options": ["encouraged", "daunted", "inspired", "elated"], "answer": 1, "solution": "<i>Far from being X … became more determined</i> means she was <b>not</b> discouraged. The blank needs a word meaning 'discouraged': <b>daunted</b>. The other three are positive and break the contrast.", "source": "test-data" },
+    { "id": "e-fillers-006", "rev": 1, "topic": "e-fillers", "type": "collocation", "level": 3, "q": "Select the most appropriate option to fill in the blank.<br>The police have launched an inquiry, and anyone found guilty will have to ______ the consequences.", "options": ["face", "meet", "confront with", "suffer from"], "answer": 0, "solution": "The standard collocation is <b>face the consequences</b>. <i>Confront with</i> and <i>suffer from</i> add wrong prepositions; <i>meet the consequences</i> is unidiomatic.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-e-fillers-1", "front": "accused ___ / charged ___", "back": "accused <b>of</b> / charged <b>with</b>", "deck": "grammar" },
+    { "id": "fc-e-fillers-2", "front": "Contrast signal words", "back": "although, but, yet, despite, however, far from", "deck": "grammar" },
+    { "id": "fc-e-fillers-3", "front": "___ a decision / ___ a risk / ___ attention", "back": "<b>make</b> a decision / <b>take</b> a risk / <b>pay</b> attention", "deck": "grammar" }
+  ]
+}

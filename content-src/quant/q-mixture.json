@@ -1,0 +1,199 @@
+{
+ "topic": "q-mixture",
+ "notes": {
+  "summary": "Alligation is a quick way to find the ratio in which two things at different prices (or strengths) must be mixed to get a given mean. 0–2 questions in SSC.",
+  "concepts": [
+   {
+    "title": "Rule of alligation",
+    "body": "Cheaper : Dearer = (Dearer − Mean) : (Mean − Cheaper). Works for prices, percentages, speeds, profits — any weighted average of two groups."
+   },
+   {
+    "title": "Replacement",
+    "body": "If x litres are taken out of V litres of pure liquid and replaced with water, n times, the pure liquid left = <b>V(1 − x/V)<sup>n</sup></b>."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "alligation",
+    "name": "Alligation ratio",
+    "how": "Write the two values and the mean; cross-subtract to get the ratio.",
+    "example": {
+     "q": "In what ratio must tea at ₹ 60/kg be mixed with tea at ₹ 75/kg to get tea worth ₹ 70/kg?",
+     "steps": [
+      "(75 − 70) : (70 − 60)",
+      "= 5 : 10 = 1 : 2"
+     ],
+     "answer": "1 : 2"
+    }
+   },
+   {
+    "type": "replacement",
+    "name": "Repeated replacement",
+    "how": "Final pure quantity = V(1 − x/V)<sup>n</sup>.",
+    "example": {
+     "q": "A 40 L can of milk: 4 L is replaced with water once. Milk left?",
+     "steps": [
+      "40 × (1 − 4/40) = 40 × 0.9"
+     ],
+     "answer": "36 L"
+    }
+   },
+   {
+    "type": "mixing",
+    "name": "Adding to a mixture",
+    "how": "Keep the quantity that does not change fixed and adjust the other.",
+    "example": {
+     "q": "20 L mixture has milk : water = 3 : 1. How much water to add to make it 3 : 2?",
+     "steps": [
+      "Milk = 15, water = 5",
+      "Need water = 10",
+      "Add 5 L"
+     ],
+     "answer": "5 L"
+    }
+   }
+  ],
+  "tips": [
+   "Water has cost 0 in price-based alligation.",
+   "When mixing two mixtures in equal quantity, average the fractions of each component."
+  ],
+  "traps": [
+   "Keep the order: the ratio (Dearer − Mean) belongs to the CHEAPER item.",
+   "In replacement, the formula gives the quantity left, not the quantity removed."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Alligation",
+   "expr": "Cheaper : Dearer = (D − M) : (M − C)"
+  },
+  {
+   "name": "Replacement",
+   "expr": "Left = V(1 − x/V)^n"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-mixture-001",
+   "rev": 1,
+   "topic": "q-mixture",
+   "type": "alligation",
+   "level": 1,
+   "q": "Rice at ₹ 20 per kg is mixed with rice at ₹ 25 per kg to get a mixture worth ₹ 22 per kg. In what ratio are they mixed?",
+   "options": [
+    "2 : 3",
+    "3 : 2",
+    "1 : 2",
+    "4 : 3"
+   ],
+   "answer": 1,
+   "solution": "Cheaper : Dearer = (25 − 22) : (22 − 20).<br>= 3 : 2.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mixture-002",
+   "rev": 1,
+   "topic": "q-mixture",
+   "type": "mixing",
+   "level": 1,
+   "q": "A 60-litre mixture contains milk and water in the ratio 2 : 1. How much water must be added to make the ratio 1 : 2?",
+   "options": [
+    "40 L",
+    "20 L",
+    "60 L",
+    "80 L"
+   ],
+   "answer": 2,
+   "solution": "Milk = 40 L, water = 20 L.<br>For milk : water = 1 : 2, water must be 80 L.<br>Water to add = 80 − 20 = 60 L.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mixture-003",
+   "rev": 1,
+   "topic": "q-mixture",
+   "type": "replacement",
+   "level": 2,
+   "q": "A vessel contains 80 litres of pure milk. 8 litres are taken out and replaced with water. This is done once more. How much milk is now in the vessel?",
+   "options": [
+    "64 L",
+    "64.8 L",
+    "65.6 L",
+    "72 L"
+   ],
+   "answer": 1,
+   "solution": "Milk left = 80 × (1 − 8/80)<sup>2</sup>.<br>= 80 × 0.9 × 0.9 = 64.8 L.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mixture-004",
+   "rev": 1,
+   "topic": "q-mixture",
+   "type": "alligation",
+   "level": 2,
+   "q": "In what ratio must water be mixed with milk costing ₹ 60 per litre to get a mixture worth ₹ 50 per litre?",
+   "options": [
+    "1 : 6",
+    "5 : 1",
+    "1 : 5",
+    "6 : 5"
+   ],
+   "answer": 2,
+   "solution": "Water costs ₹ 0. Water : Milk = (60 − 50) : (50 − 0).<br>= 10 : 50 = 1 : 5.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mixture-005",
+   "rev": 1,
+   "topic": "q-mixture",
+   "type": "mixing",
+   "level": 3,
+   "q": "Two vessels contain milk and water in the ratios 3 : 1 and 5 : 3. If equal quantities from both vessels are mixed, what is the ratio of milk to water in the new mixture?",
+   "options": [
+    "9 : 7",
+    "11 : 5",
+    "7 : 3",
+    "15 : 7"
+   ],
+   "answer": 1,
+   "solution": "Milk fraction: 3/4 in the first, 5/8 in the second.<br>Take 8 L of each: milk = 6 + 5 = 11, water = 2 + 3 = 5.<br>Ratio = 11 : 5.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-mixture-006",
+   "rev": 1,
+   "topic": "q-mixture",
+   "type": "alligation",
+   "level": 3,
+   "q": "A merchant has 1000 kg of sugar. He sells a part at 8% profit and the rest at 18% profit, gaining 14% overall. How much sugar did he sell at 18% profit?",
+   "options": [
+    "400 kg",
+    "500 kg",
+    "600 kg",
+    "650 kg"
+   ],
+   "answer": 2,
+   "solution": "By alligation, (8% part) : (18% part) = (18 − 14) : (14 − 8) = 4 : 6 = 2 : 3.<br>18% part = 1000 × 3/5 = 600 kg.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-mix-1",
+   "front": "Rule of alligation",
+   "back": "Cheaper : Dearer = (Dearer − Mean) : (Mean − Cheaper)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-mix-2",
+   "front": "Repeated replacement (x from V, n times)",
+   "back": "V(1 − x/V)^n left",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-mix-3",
+   "front": "Cost of water in alligation",
+   "back": "0",
+   "deck": "formulas"
+  }
+ ]
+}

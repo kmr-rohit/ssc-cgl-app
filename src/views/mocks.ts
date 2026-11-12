@@ -1,0 +1,78 @@
+import { html, render, nothing } from 'lit-html';
+import { EXAMS, SUBJECTS } from '../core/syllabus';
+import { dayKey, addDays } from '../core/srs';
+import type { ExamId, MockRecord, SubjectId } from '../core/types';
+import { app } from '../app/state';
+import { go, toast } from '../app/router';
+import { buildMock } from '../content/bank';
+import { confirmDialog, dot } from '../ui/components';
+import { niceDate } from '../ui/html';
+
+export const dailyKey = (exam: ExamId, day = dayKey()) => `${exam}-${day}`;
+
+export async function openMock(key: string, make: () => Promise<MockRecord>) {
+  if (!app.mocks.has(key)) {
+    toast('Preparing paper…');
+    const m = await make();
+    await app.saveMock(m);
+  }
+  go(`#/exam/${encodeURIComponent(key)}`);
+}
+
+export default function mocks(el: HTMLElement) {
+  const today = dayKey();
+  const exams: ExamId[] = app.settings.paper2 ? ['pre', 'mains', 'stats'] : ['pre', 'mains'];
+
+  const ticket = (exam: ExamId, day: string) => {
+    const key = dailyKey(exam, day);
+    const m = app.mocks.get(key);
+    const e = EXAMS[exam];
+    const status = !m ? 'Not started' : m.status === 'submitted' ? `Scored ${m.score!.total.toFixed(1).replace(/\.0$/, '')}/${m.score!.max}` : m.status === 'in-progress' ? 'In progress' : 'Ready';
+    return html`<div class="ticket">
+      <div class="kicker">Admit card · ${day === today ? 'Today' : niceDate(day)}</div>
+      <h3>${e.name}</h3>
+      <dl><dt>Questions</dt><dd>${e.sections.reduce((a, s) => a + s.count, 0)}</dd>
+        <dt>Time</dt><dd>${e.sections.reduce((a, s) => a + s.minutes, 0)} min</dd>
+        <dt>Status</dt><dd>${status}</dd></dl>
+      ${m?.status === 'submitted'
+        ? html`<a class="btn" href="#/result/${encodeURIComponent(key)}">View result</a>`
+        : html`<button class="btn primary" @click=${() => openMock(key, () => buildMock({ exam, kind: 'daily', key, seed: key }))}>${m?.status === 'in-progress' ? 'Resume' : 'Start'}</button>`}
+    </div>`;
+  };
+
+  const sectional = (exam: ExamId, subject: SubjectId) => {
+    const key = `sec-${exam}-${subject}-${Date.now()}`;
+    openMock(key, () => buildMock({ exam, kind: 'sectional', key, seed: key, subjects: [subject] }));
+  };
+
+  const past = [...app.mocks.values()].filter((m) => !(m.kind === 'daily' && m.key.endsWith(today)))
+    .sort((a, b) => (b.startedAt ?? b.updatedAt).localeCompare(a.startedAt ?? a.updatedAt));
+  const missed = [1, 2, 3].map((d) => addDays(today, -d));
+
+  render(html`<div class="page">
+    <h1>Mocks</h1>
+    <p class="muted">A new Tier 1 and Tier 2 paper every day, on the latest pattern. Same date = same paper.</p>
+    <h2>Today</h2>
+    <div class="grid">${exams.map((x) => ticket(x, today))}</div>
+
+    <h2 style="margin-top:1.5rem">Sectional tests</h2>
+    <div class="paper">
+      ${exams.map((x) => html`<div class="spread" style="padding:.4rem 0;border-bottom:1px solid var(--rule)">
+        <b>${EXAMS[x].short}</b>
+        <span class="row">${EXAMS[x].sections.map((s) => html`<button class="btn sm" @click=${() => sectional(x, s.subject)}>${dot(s.subject)} ${SUBJECTS[s.subject].short} · ${s.minutes}m</button>`)}</span>
+      </div>`)}
+    </div>
+
+    <h2 style="margin-top:1.5rem">Missed days</h2>
+    <div class="grid">${missed.flatMap((d) => app.mocks.get(dailyKey('pre', d))?.status === 'submitted' ? [] : [ticket('pre', d)])}</div>
+
+    ${past.length ? html`<h2 style="margin-top:1.5rem">History</h2>
+      <div class="paper">${past.map((m) => html`<div class="spread" style="padding:.45rem 0;border-bottom:1px solid var(--rule)">
+        <span><b>${EXAMS[m.exam].short}</b> ${m.kind === 'sectional' ? html`· ${SUBJECTS[m.sections[0]?.subject]?.short} sectional` : html`· daily`} <span class="small muted">${niceDate(m.startedAt ?? m.updatedAt)}</span></span>
+        <span class="row">
+          ${m.status === 'submitted' ? html`<a class="btn sm" href="#/result/${encodeURIComponent(m.key)}">${m.score!.total.toFixed(1).replace(/\.0$/, '')}/${m.score!.max}</a>`
+            : html`<a class="btn sm" href="#/exam/${encodeURIComponent(m.key)}">${m.status === 'in-progress' ? 'Resume' : 'Start'}</a>`}
+          ${m.status !== 'submitted' ? html`<button class="btn sm ghost" aria-label="Delete" @click=${async () => { if (await confirmDialog('Delete this unfinished mock?', 'Delete')) { await app.deleteMock(m.key); mocks(el); } }}>✕</button>` : nothing}
+        </span></div>`)}</div>` : nothing}
+  </div>`, el);
+}

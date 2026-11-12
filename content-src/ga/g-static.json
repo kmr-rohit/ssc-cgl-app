@@ -1,0 +1,76 @@
+{
+  "topic": "g-static",
+  "notes": {
+    "summary": "Static GK gives <b>2–3 questions</b>: sports (players per team, trophies, terms), national awards, books and authors, and important days. These are pure memory facts — revise them with flashcards.",
+    "concepts": [
+      {
+        "title": "Sports: team size, trophies, terms",
+        "body": "<table><thead><tr><th>Game</th><th>Players per side</th></tr></thead><tbody><tr><td>Cricket, Football, Hockey</td><td>11</td></tr><tr><td>Kabaddi, Netball, Water polo</td><td>7</td></tr><tr><td>Volleyball</td><td>6</td></tr><tr><td>Basketball</td><td>5</td></tr><tr><td>Polo</td><td>4</td></tr></tbody></table><table><thead><tr><th>Trophy</th><th>Sport</th></tr></thead><tbody><tr><td>Durand Cup, Santosh Trophy</td><td>Football</td></tr><tr><td>Ranji Trophy, Duleep Trophy</td><td>Cricket</td></tr><tr><td>Thomas Cup (men), Uber Cup (women)</td><td>Badminton</td></tr><tr><td>Davis Cup</td><td>Tennis (men's team)</td></tr><tr><td>Ryder Cup</td><td>Golf</td></tr><tr><td>Beighton Cup</td><td>Hockey</td></tr></tbody></table>Terms: <i>checkmate</i> (chess), <i>deuce, love</i> (tennis), <i>googly, LBW</i> (cricket), <i>penalty corner</i> (hockey)."
+      },
+      {
+        "title": "National awards",
+        "body": "<ul><li><b>Bharat Ratna</b>: highest civilian award, instituted in <b>1954</b>. First recipients: C. Rajagopalachari, Dr. S. Radhakrishnan and Dr. C.V. Raman.</li><li><b>Dadasaheb Phalke Award</b>: cinema; first given in 1969 to <b>Devika Rani</b>.</li><li><b>Jnanpith Award</b>: literature; first given in 1965 to <b>G. Sankara Kurup</b> (Malayalam).</li><li>Sports: <b>Major Dhyan Chand Khel Ratna</b> (highest sports honour; renamed in 2021), <b>Arjuna Award</b> (sportspersons), <b>Dronacharya Award</b> (coaches).</li></ul>"
+      },
+      {
+        "title": "Books and authors",
+        "body": "<table><thead><tr><th>Book</th><th>Author</th></tr></thead><tbody><tr><td>Gitanjali</td><td>Rabindranath Tagore</td></tr><tr><td>The Discovery of India</td><td>Jawaharlal Nehru</td></tr><tr><td>The Story of My Experiments with Truth</td><td>M.K. Gandhi</td></tr><tr><td>Wings of Fire</td><td>A.P.J. Abdul Kalam (with Arun Tiwari)</td></tr><tr><td>India Wins Freedom</td><td>Maulana Abul Kalam Azad</td></tr><tr><td>Anandamath</td><td>Bankim Chandra Chattopadhyay</td></tr><tr><td>Godaan</td><td>Munshi Premchand</td></tr><tr><td>Akbarnama</td><td>Abul Fazl</td></tr></tbody></table>"
+      },
+      {
+        "title": "Important days",
+        "body": "<table><thead><tr><th>Date</th><th>Day</th></tr></thead><tbody><tr><td>12 January</td><td>National Youth Day (Swami Vivekananda's birthday)</td></tr><tr><td>15 January</td><td>Army Day</td></tr><tr><td>28 February</td><td>National Science Day (Raman Effect, 1928)</td></tr><tr><td>8 March</td><td>International Women's Day</td></tr><tr><td>22 April</td><td>Earth Day</td></tr><tr><td>5 June</td><td>World Environment Day</td></tr><tr><td>21 June</td><td>International Yoga Day</td></tr><tr><td>29 August</td><td>National Sports Day (Major Dhyan Chand's birthday)</td></tr><tr><td>5 September</td><td>Teachers' Day (Dr. S. Radhakrishnan's birthday)</td></tr><tr><td>14 September</td><td>Hindi Diwas</td></tr><tr><td>14 November</td><td>Children's Day (Nehru's birthday)</td></tr><tr><td>26 November</td><td>Constitution Day</td></tr><tr><td>10 December</td><td>Human Rights Day</td></tr></tbody></table>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "sports",
+        "name": "Sports facts",
+        "how": "Recall team size, the sport for each trophy, and sport-specific terms.",
+        "example": { "q": "The Thomas Cup is associated with which sport?", "steps": ["Thomas Cup = men's badminton team championship", "Uber Cup = women's version"], "answer": "Badminton" }
+      },
+      {
+        "type": "awards-books",
+        "name": "Awards and books",
+        "how": "Pair each award with its field and first winner; pair each book with its author.",
+        "example": { "q": "Who wrote 'The Discovery of India'?", "steps": ["Written by Jawaharlal Nehru in Ahmednagar Fort jail (1944)"], "answer": "Jawaharlal Nehru" }
+      },
+      {
+        "type": "days",
+        "name": "Important days",
+        "how": "Link the day to the person or event behind it — that makes the date easy to recall.",
+        "example": { "q": "National Science Day is celebrated on:", "steps": ["It marks C.V. Raman's discovery of the Raman Effect", "Announced on 28 February 1928"], "answer": "28 February" }
+      }
+    ],
+    "tips": [
+      "Birthday days: 12 Jan Vivekananda, 29 Aug Dhyan Chand, 5 Sep Radhakrishnan, 14 Nov Nehru.",
+      "Badminton trophies: Thomas = men, Uber = women.",
+      "Durand Cup is the oldest football tournament in Asia."
+    ],
+    "traps": [
+      "National Science Day (28 Feb) is not C.V. Raman's birthday; it marks his discovery.",
+      "Ranji Trophy is cricket, Santosh Trophy is football — both are domestic Indian tournaments.",
+      "Dronacharya Award is for coaches, Arjuna Award for players."
+    ]
+  },
+  "questions": [
+    { "id": "g-static-001", "rev": 1, "topic": "g-static", "type": "sports", "level": 1, "q": "How many players are there on each side in a volleyball match?", "options": ["5", "6", "7", "9"], "answer": 1, "solution": "Volleyball has 6 players per side on court. Basketball has 5 and kabaddi has 7.<br><b>Memory hook:</b> Volleyball court has 2 rows of 3 = 6.", "source": "test-data" },
+    { "id": "g-static-002", "rev": 1, "topic": "g-static", "type": "days", "level": 1, "q": "National Sports Day in India is celebrated on the birthday of:", "options": ["Milkha Singh", "Sachin Tendulkar", "Major Dhyan Chand", "P.T. Usha"], "answer": 2, "solution": "National Sports Day is on 29 August, the birthday of hockey wizard Major Dhyan Chand.<br><b>Memory hook:</b> The Khel Ratna also carries his name — Dhyan Chand owns Indian sports honours.", "source": "test-data" },
+    { "id": "g-static-003", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 1, "q": "Who wrote 'Gitanjali'?", "options": ["Bankim Chandra Chattopadhyay", "Sarojini Naidu", "Rabindranath Tagore", "Munshi Premchand"], "answer": 2, "solution": "Rabindranath Tagore wrote Gitanjali; its English version won him the Nobel Prize in Literature in 1913.<br><b>Memory hook:</b> Gitanjali = 'song offerings' by Gurudev Tagore.", "source": "test-data" },
+    { "id": "g-static-004", "rev": 1, "topic": "g-static", "type": "sports", "level": 2, "q": "The Durand Cup is associated with which sport?", "options": ["Hockey", "Football", "Cricket", "Golf"], "answer": 1, "solution": "The Durand Cup is a football tournament, one of the oldest in the world and the oldest in Asia (first held in 1888).<br><b>Memory hook:</b> Durand and Santosh — India's two classic football cups.", "source": "test-data" },
+    { "id": "g-static-005", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 2, "q": "Who was the first recipient of the Dadasaheb Phalke Award?", "options": ["Prithviraj Kapoor", "Devika Rani", "Satyajit Ray", "Raj Kapoor"], "answer": 1, "solution": "Devika Rani received the first Dadasaheb Phalke Award in 1969. She is called the 'First Lady of Indian Cinema'.<br><b>Memory hook:</b> First award, First Lady of Indian Cinema.", "source": "test-data" },
+    { "id": "g-static-006", "rev": 1, "topic": "g-static", "type": "days", "level": 2, "q": "National Science Day is celebrated on 28 February to mark:", "options": ["Birthday of C.V. Raman", "Launch of Aryabhata", "Discovery of the Raman Effect", "Founding of ISRO"], "answer": 2, "solution": "C.V. Raman announced the Raman Effect on 28 February 1928. His birthday is 7 November.<br><b>Memory hook:</b> Science Day celebrates the discovery, not the man's birthday.", "source": "test-data" },
+    { "id": "g-static-007", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 3, "q": "Which of the following was <b>NOT</b> among the first recipients of the Bharat Ratna in 1954?", "options": ["C. Rajagopalachari", "Dr. S. Radhakrishnan", "Dr. C.V. Raman", "Jawaharlal Nehru"], "answer": 3, "solution": "The first Bharat Ratna awards (1954) went to C. Rajagopalachari, Dr. S. Radhakrishnan and Dr. C.V. Raman. Nehru received it in 1955.<br><b>Memory hook:</b> 'R-R-R': Rajagopalachari, Radhakrishnan, Raman.", "source": "test-data" },
+    { "id": "g-static-008", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 3, "q": "Which pair (book — author) is <b>incorrectly</b> matched?", "options": ["Anandamath — Bankim Chandra Chattopadhyay", "India Wins Freedom — Jawaharlal Nehru", "Godaan — Munshi Premchand", "Wings of Fire — A.P.J. Abdul Kalam"], "answer": 1, "solution": "'India Wins Freedom' is the autobiography of Maulana Abul Kalam Azad. Nehru wrote 'The Discovery of India'.<br><b>Memory hook:</b> Azad = freedom; 'India Wins Freedom' belongs to Azad.", "source": "test-data" }
+  ],
+  "flashcards": [
+    { "id": "fc-g-static-1", "front": "Players per side in kabaddi", "back": "7", "deck": "ga-facts" },
+    { "id": "fc-g-static-2", "front": "Uber Cup — sport", "back": "Badminton (women's team)", "deck": "ga-facts" },
+    { "id": "fc-g-static-3", "front": "Ryder Cup — sport", "back": "Golf", "deck": "ga-facts" },
+    { "id": "fc-g-static-4", "front": "First Jnanpith Award winner (1965)", "back": "G. Sankara Kurup (Malayalam)", "deck": "ga-facts" },
+    { "id": "fc-g-static-5", "front": "Bharat Ratna instituted in", "back": "1954", "deck": "ga-facts" },
+    { "id": "fc-g-static-6", "front": "Dronacharya Award is given to", "back": "Sports coaches", "deck": "ga-facts" },
+    { "id": "fc-g-static-7", "front": "Author of Akbarnama", "back": "Abul Fazl", "deck": "ga-facts" },
+    { "id": "fc-g-static-8", "front": "National Youth Day", "back": "12 January (Swami Vivekananda's birthday)", "deck": "ga-facts" },
+    { "id": "fc-g-static-9", "front": "World Environment Day", "back": "5 June", "deck": "ga-facts" },
+    { "id": "fc-g-static-10", "front": "Constitution Day (Samvidhan Divas)", "back": "26 November", "deck": "ga-facts" }
+  ]
+}

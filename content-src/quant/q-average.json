@@ -1,0 +1,207 @@
+{
+ "topic": "q-average",
+ "notes": {
+  "summary": "Average = Sum ÷ Count. Almost every average question is solved by thinking in terms of the total. 1–2 questions per tier.",
+  "concepts": [
+   {
+    "title": "Work with totals",
+    "body": "Total = Average × Number. When someone joins, leaves or is replaced, find the change in total."
+   },
+   {
+    "title": "Consecutive numbers",
+    "body": "For numbers in AP (consecutive, consecutive odd/even), the average is the <b>middle term</b> = (first + last)/2. Average of first n natural numbers = (n + 1)/2."
+   },
+   {
+    "title": "Replacement shortcut",
+    "body": "If one person is replaced and the average of n people rises by d, then New − Old = n × d."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "basic",
+    "name": "Sum and average",
+    "how": "Convert averages to totals and subtract.",
+    "example": {
+     "q": "Average of 4 numbers is 20. One more number makes the average 22. Find it.",
+     "steps": [
+      "Old total = 80",
+      "New total = 110",
+      "Number = 30"
+     ],
+     "answer": "30"
+    }
+   },
+   {
+    "type": "replacement",
+    "name": "Joining, leaving, replacement",
+    "how": "New person = old average + (new count × change) or use New − Old = n × d.",
+    "example": {
+     "q": "Average weight of 10 boys rises by 2 kg when a 50 kg boy is replaced. New boy’s weight?",
+     "steps": [
+      "50 + 10 × 2"
+     ],
+     "answer": "70 kg"
+    }
+   },
+   {
+    "type": "consecutive",
+    "name": "Consecutive numbers and innings",
+    "how": "Use the middle term for AP sets; for cricket, set the old average as x.",
+    "example": {
+     "q": "Average of 5 consecutive even numbers is 16. Largest?",
+     "steps": [
+      "Middle = 16",
+      "Numbers: 12, 14, 16, 18, 20"
+     ],
+     "answer": "20"
+    }
+   }
+  ],
+  "tips": [
+   "Always convert average to total first.",
+   "For a new member raising average by d: new member = old average + (new count) × d."
+  ],
+  "traps": [
+   "When the teacher is included, the count becomes n + 1.",
+   "Average speed is not always the simple average of speeds."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Average",
+   "expr": "Sum / Number of items"
+  },
+  {
+   "name": "First n natural numbers",
+   "expr": "(n + 1)/2"
+  },
+  {
+   "name": "Replacement",
+   "expr": "New − Old = n × change in average"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-average-001",
+   "rev": 1,
+   "topic": "q-average",
+   "type": "consecutive",
+   "level": 1,
+   "q": "What is the average of the first 10 natural numbers?",
+   "options": [
+    "5",
+    "5.5",
+    "6",
+    "10"
+   ],
+   "answer": 1,
+   "solution": "Sum = 10 × 11 / 2 = 55.<br>Average = 55/10 = 5.5.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-average-002",
+   "rev": 1,
+   "topic": "q-average",
+   "type": "basic",
+   "level": 1,
+   "q": "The average of 5 numbers is 27. If one number is excluded, the average of the remaining numbers becomes 25. What is the excluded number?",
+   "options": [
+    "25",
+    "30",
+    "35",
+    "27"
+   ],
+   "answer": 2,
+   "solution": "Total of 5 numbers = 5 × 27 = 135.<br>Total of 4 numbers = 4 × 25 = 100.<br>Excluded number = 135 − 100 = 35.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-average-003",
+   "rev": 1,
+   "topic": "q-average",
+   "type": "replacement",
+   "level": 2,
+   "q": "The average age of 30 students in a class is 15 years. When the teacher’s age is included, the average becomes 16 years. What is the teacher’s age?",
+   "options": [
+    "46 years",
+    "45 years",
+    "31 years",
+    "48 years"
+   ],
+   "answer": 0,
+   "solution": "Total for students = 30 × 15 = 450.<br>Total with teacher = 31 × 16 = 496.<br>Teacher’s age = 496 − 450 = 46 years.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-average-004",
+   "rev": 1,
+   "topic": "q-average",
+   "type": "consecutive",
+   "level": 2,
+   "q": "The average of 7 consecutive odd numbers is 33. What is the largest of these numbers?",
+   "options": [
+    "37",
+    "41",
+    "39",
+    "35"
+   ],
+   "answer": 2,
+   "solution": "Middle (4th) number = average = 33.<br>Numbers: 27, 29, 31, 33, 35, 37, 39.<br>Largest = 39.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-average-005",
+   "rev": 1,
+   "topic": "q-average",
+   "type": "consecutive",
+   "level": 3,
+   "q": "A batsman scores 87 runs in his 17th innings and thereby increases his average by 3. What is his average after the 17th innings?",
+   "options": [
+    "36",
+    "39",
+    "42",
+    "38"
+   ],
+   "answer": 1,
+   "solution": "Let the average after 16 innings be x.<br>16x + 87 = 17(x + 3) → x = 87 − 51 = 36.<br>New average = 36 + 3 = 39.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-average-006",
+   "rev": 1,
+   "topic": "q-average",
+   "type": "replacement",
+   "level": 3,
+   "q": "The average weight of 8 persons increases by 2.5 kg when a new person comes in place of one of them weighing 65 kg. What is the weight of the new person?",
+   "options": [
+    "75 kg",
+    "80 kg",
+    "85 kg",
+    "90 kg"
+   ],
+   "answer": 2,
+   "solution": "Increase in total = 8 × 2.5 = 20 kg.<br>New person = 65 + 20 = 85 kg.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-avg-1",
+   "front": "Average of first n natural numbers",
+   "back": "(n + 1)/2",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-avg-2",
+   "front": "Average of an AP",
+   "back": "(first + last)/2 = middle term",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-avg-3",
+   "front": "Replacement: average of n rises by d",
+   "back": "New − Old = n × d",
+   "deck": "formulas"
+  }
+ ]
+}

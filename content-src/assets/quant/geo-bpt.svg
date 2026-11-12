@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" width="300" height="220" font-family="sans-serif" font-size="13">
+  <polygon points="150,30 50,200 250,200" fill="none" stroke="#000" stroke-width="1.5"/>
+  <line x1="110" y1="98" x2="190" y2="98" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="22">A</text><text x="36" y="214">B</text><text x="254" y="214">C</text>
+  <text x="96" y="100">D</text><text x="196" y="100">E</text>
+  <text x="108" y="66">4</text><text x="66" y="152">6</text>
+  <text x="176" y="66">6</text><text x="228" y="152">?</text>
+  <text x="128" y="92" font-size="11">DE ∥ BC</text>
+</svg>

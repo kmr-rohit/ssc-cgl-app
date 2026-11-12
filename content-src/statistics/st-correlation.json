@@ -1,0 +1,220 @@
+{
+ "topic": "st-correlation",
+ "notes": {
+  "summary": "Correlation measures how strongly two variables move together; regression gives the line used to predict one from the other. JSO asks on Karl Pearson's r, Spearman's rank correlation, regression coefficients and finding means and r from two regression lines.",
+  "concepts": [
+   {
+    "title": "Karl Pearson's correlation",
+    "body": "<ul><li>r = Cov(x, y)/(σ<sub>x</sub>σ<sub>y</sub>); −1 ≤ r ≤ 1.</li><li>r = +1 perfect positive, −1 perfect negative, 0 no <i>linear</i> relation.</li><li>r is unaffected by change of origin and scale (sign flips if exactly one scale factor is negative).</li><li>A <b>scatter diagram</b> shows the direction and strength visually.</li></ul>",
+    "img": "statistics/scatter.svg"
+   },
+   {
+    "title": "Spearman's rank correlation",
+    "body": "R = 1 − 6Σd²/(n(n² − 1)), where d = difference in ranks. Used for qualitative data (beauty, honesty) or ranks. For tied ranks, add the correction m(m² − 1)/12 to Σd² for each tie."
+   },
+   {
+    "title": "Regression",
+    "body": "<ul><li>Line of y on x: y − ȳ = b<sub>yx</sub>(x − x̄), b<sub>yx</sub> = r σ<sub>y</sub>/σ<sub>x</sub>.</li><li>Line of x on y: x − x̄ = b<sub>xy</sub>(y − ȳ), b<sub>xy</sub> = r σ<sub>x</sub>/σ<sub>y</sub>.</li><li>r = ±√(b<sub>yx</sub> × b<sub>xy</sub>), same sign as the coefficients. Their product cannot exceed 1.</li><li>Both lines pass through (x̄, ȳ), so the means are found by solving them together.</li></ul>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "karl-pearson",
+    "name": "Karl Pearson's r",
+    "how": "Use r = Cov/(σxσy) and remember the range and properties.",
+    "example": {
+     "q": "Cov(x, y) = 12, σx = 3, σy = 5. Find r.",
+     "steps": [
+      "r = 12/(3 × 5) = 12/15",
+      "= 0.8"
+     ],
+     "answer": "0.8"
+    }
+   },
+   {
+    "type": "rank",
+    "name": "Spearman's rank correlation",
+    "how": "Find d for each pair, square and add, then use 1 − 6Σd²/(n(n² − 1)).",
+    "example": {
+     "q": "n = 6, Σd² = 14. Find R.",
+     "steps": [
+      "R = 1 − 6 × 14/(6 × 35)",
+      "= 1 − 84/210 = 1 − 0.4 = 0.6"
+     ],
+     "answer": "0.6"
+    }
+   },
+   {
+    "type": "regression",
+    "name": "Regression coefficients and lines",
+    "how": "Solve the two lines for the means; to find r, decide which line is y on x so that b_yx × b_xy ≤ 1.",
+    "example": {
+     "q": "byx = 0.9 and bxy = 0.4. Find r.",
+     "steps": [
+      "r² = 0.9 × 0.4 = 0.36",
+      "Both positive, so r = +0.6"
+     ],
+     "answer": "0.6"
+    }
+   }
+  ],
+  "tips": [
+   "r is the geometric mean of the two regression coefficients.",
+   "If r = ±1 the two regression lines coincide; if r = 0 they are perpendicular.",
+   "Check your guess of which line is y on x: if b_yx × b_xy &gt; 1, swap."
+  ],
+  "traps": [
+   "r = 0 does not mean \"no relation\", only no linear relation.",
+   "Both regression coefficients and r always have the same sign.",
+   "In Spearman's formula the denominator is n(n² − 1), not n² − 1."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Karl Pearson's r",
+   "expr": "r = Cov(x,y) / (σx σy)"
+  },
+  {
+   "name": "Spearman's rank",
+   "expr": "R = 1 − 6Σd² / (n(n² − 1))"
+  },
+  {
+   "name": "Regression coefficients",
+   "expr": "byx = r σy/σx,  bxy = r σx/σy"
+  },
+  {
+   "name": "r from coefficients",
+   "expr": "r = ±√(byx × bxy)"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-correlation-001",
+   "rev": 1,
+   "topic": "st-correlation",
+   "type": "karl-pearson",
+   "level": 1,
+   "q": "Karl Pearson's coefficient of correlation always lies between:",
+   "options": [
+    "−∞ and +∞",
+    "0 and ∞",
+    "0 and 1",
+    "−1 and +1"
+   ],
+   "answer": 3,
+   "solution": "−1 ≤ r ≤ +1. r = +1 is perfect positive and r = −1 perfect negative correlation.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-correlation-002",
+   "rev": 1,
+   "topic": "st-correlation",
+   "type": "regression",
+   "level": 1,
+   "q": "The two regression coefficients are b<sub>xy</sub> = 0.8 and b<sub>yx</sub> = 0.2. The correlation coefficient r is:",
+   "options": [
+    "−0.4",
+    "0.16",
+    "0.4",
+    "0.5"
+   ],
+   "answer": 2,
+   "solution": "r = √(b<sub>xy</sub> × b<sub>yx</sub>) = √(0.8 × 0.2) = √0.16 = 0.4. Positive, because both coefficients are positive.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-correlation-003",
+   "rev": 1,
+   "topic": "st-correlation",
+   "type": "rank",
+   "level": 2,
+   "q": "For 5 pairs of ranks, Σd² = 10. Spearman's rank correlation coefficient is:",
+   "options": [
+    "0.4",
+    "0.5",
+    "0.6",
+    "0.75"
+   ],
+   "answer": 1,
+   "solution": "R = 1 − 6Σd²/(n(n² − 1)) = 1 − (6 × 10)/(5 × 24) = 1 − 60/120 = 0.5.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-correlation-004",
+   "rev": 1,
+   "topic": "st-correlation",
+   "type": "regression",
+   "level": 2,
+   "q": "r = 0.6, σ<sub>x</sub> = 4 and σ<sub>y</sub> = 8. The regression coefficient of y on x is:",
+   "options": [
+    "1.2",
+    "2.4",
+    "0.6",
+    "0.3"
+   ],
+   "answer": 0,
+   "solution": "b<sub>yx</sub> = r σ<sub>y</sub>/σ<sub>x</sub> = 0.6 × 8/4 = 1.2.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-correlation-005",
+   "rev": 1,
+   "topic": "st-correlation",
+   "type": "regression",
+   "level": 3,
+   "q": "The two regression lines are 3x + 2y = 26 and 6x + y = 31. The means x̄ and ȳ are:",
+   "options": [
+    "x̄ = 5, ȳ = 5.5",
+    "x̄ = 3, ȳ = 8.5",
+    "x̄ = 7, ȳ = 4",
+    "x̄ = 4, ȳ = 7"
+   ],
+   "answer": 3,
+   "solution": "Both lines pass through (x̄, ȳ). From the second: y = 31 − 6x.<br>Put in the first: 3x + 2(31 − 6x) = 26 ⇒ 3x + 62 − 12x = 26 ⇒ −9x = −36 ⇒ x = 4.<br>y = 31 − 24 = 7. So x̄ = 4, ȳ = 7.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-correlation-006",
+   "rev": 1,
+   "topic": "st-correlation",
+   "type": "regression",
+   "level": 3,
+   "q": "For the regression lines 3x + 2y = 26 and 6x + y = 31, the correlation coefficient r is:",
+   "options": [
+    "0.5",
+    "−0.25",
+    "−0.5",
+    "−2"
+   ],
+   "answer": 2,
+   "solution": "Try 3x + 2y = 26 as y on x: y = 13 − 1.5x, so b<sub>yx</sub> = −1.5.<br>Then 6x + y = 31 as x on y: x = 31/6 − y/6, so b<sub>xy</sub> = −1/6.<br>Product = 1.5/6 = 0.25 ≤ 1, so this choice is valid (the other choice gives product 4 &gt; 1).<br>r = −√0.25 = −0.5 (negative, same sign as the coefficients).",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stcorr-1",
+   "front": "Spearman's rank correlation",
+   "back": "1 − 6Σd²/(n(n² − 1))",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stcorr-2",
+   "front": "r from regression coefficients",
+   "back": "±√(byx · bxy), sign same as the coefficients",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stcorr-3",
+   "front": "byx formula",
+   "back": "r σy / σx",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stcorr-4",
+   "front": "Regression lines meet at…",
+   "back": "(x̄, ȳ)",
+   "deck": "formulas"
+  }
+ ]
+}

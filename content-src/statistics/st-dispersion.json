@@ -1,0 +1,224 @@
+{
+ "topic": "st-dispersion",
+ "notes": {
+  "summary": "Dispersion measures how spread out the data is. Absolute measures (range, quartile deviation, mean deviation, standard deviation) carry units; relative measures (coefficients, CV) are unit-free and used to compare series.",
+  "concepts": [
+   {
+    "title": "Absolute measures",
+    "body": "<ul><li><b>Range</b> = Largest − Smallest.</li><li><b>Quartile deviation</b> (semi-interquartile range) QD = (Q<sub>3</sub> − Q<sub>1</sub>)/2.</li><li><b>Mean deviation</b> = Σ|x − A|/n, usually about mean or median. It is least when taken about the median.</li><li><b>Standard deviation</b> σ = √(Σ(x − x̄)²/n) = √(Σx²/n − x̄²). <b>Variance</b> = σ².</li></ul>"
+   },
+   {
+    "title": "Relative measures",
+    "body": "<ul><li>Coefficient of range = (L − S)/(L + S).</li><li>Coefficient of QD = (Q<sub>3</sub> − Q<sub>1</sub>)/(Q<sub>3</sub> + Q<sub>1</sub>).</li><li><b>Coefficient of variation</b> CV = (σ / x̄) × 100. The series with lower CV is more consistent.</li></ul>"
+   },
+   {
+    "title": "Properties of SD",
+    "body": "<ul><li>Adding or subtracting a constant does <b>not</b> change SD (change of origin).</li><li>Multiplying by k multiplies SD by |k| and variance by k² (change of scale).</li><li>If y = a + bx, then σ<sub>y</sub> = |b| σ<sub>x</sub>.</li><li>For normal data: QD ≈ (2/3)σ and MD ≈ (4/5)σ.</li></ul>"
+   }
+  ],
+  "varieties": [
+   {
+    "type": "absolute",
+    "name": "Range, QD, MD and SD",
+    "how": "Compute the mean first, then deviations; for SD square them, for MD take absolute values.",
+    "example": {
+     "q": "Q1 = 20, Q3 = 50. Find QD and coefficient of QD.",
+     "steps": [
+      "QD = (50 − 20)/2 = 15",
+      "Coefficient = (50 − 20)/(50 + 20) = 30/70 = 0.43"
+     ],
+     "answer": "QD = 15, coefficient = 0.43"
+    }
+   },
+   {
+    "type": "relative",
+    "name": "Coefficient of variation",
+    "how": "CV = σ/x̄ × 100; lower CV means more consistent.",
+    "example": {
+     "q": "Batsman A: mean 50, SD 10. Batsman B: mean 40, SD 6. Who is more consistent?",
+     "steps": [
+      "CV(A) = 10/50 × 100 = 20%",
+      "CV(B) = 6/40 × 100 = 15%",
+      "Lower CV is more consistent."
+     ],
+     "answer": "B"
+    }
+   },
+   {
+    "type": "properties",
+    "name": "Change of origin and scale",
+    "how": "Ignore added constants; multiply SD by |b|, variance by b².",
+    "example": {
+     "q": "SD of x is 3. Find SD of y = 5 + 2x.",
+     "steps": [
+      "The +5 does not affect SD.",
+      "σy = |2| × 3 = 6"
+     ],
+     "answer": "6"
+    }
+   }
+  ],
+  "tips": [
+   "Variance = mean of squares − square of mean.",
+   "SD is never negative; it is zero only if all values are equal.",
+   "Mean deviation is least about the median; sum of squared deviations is least about the mean."
+  ],
+  "traps": [
+   "A negative multiplier still gives a positive SD: use |b|.",
+   "Do not add the constant to SD when every value is shifted.",
+   "Variance is in squared units; SD is in the original units."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Range",
+   "expr": "L − S;  coefficient = (L − S)/(L + S)"
+  },
+  {
+   "name": "Quartile deviation",
+   "expr": "(Q₃ − Q₁)/2;  coefficient = (Q₃ − Q₁)/(Q₃ + Q₁)"
+  },
+  {
+   "name": "Standard deviation",
+   "expr": "σ = √(Σx²/n − x̄²)"
+  },
+  {
+   "name": "Coefficient of variation",
+   "expr": "CV = (σ / x̄) × 100"
+  },
+  {
+   "name": "Linear change",
+   "expr": "y = a + bx ⇒ σy = |b| σx, Var(y) = b² Var(x)"
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-dispersion-001",
+   "rev": 1,
+   "topic": "st-dispersion",
+   "type": "absolute",
+   "level": 1,
+   "q": "The range of 12, 7, 25, 18, 3 is:",
+   "options": [
+    "22",
+    "25",
+    "13",
+    "18"
+   ],
+   "answer": 0,
+   "solution": "Largest = 25, smallest = 3. Range = 25 − 3 = 22.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-dispersion-002",
+   "rev": 1,
+   "topic": "st-dispersion",
+   "type": "properties",
+   "level": 1,
+   "q": "If 10 is added to every observation of a data set, its standard deviation:",
+   "options": [
+    "Decreases by 10",
+    "Increases by 10",
+    "Is multiplied by 10",
+    "Does not change"
+   ],
+   "answer": 3,
+   "solution": "Adding a constant shifts every value and the mean equally, so the deviations x − x̄ stay the same. SD is unaffected by change of origin.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-dispersion-003",
+   "rev": 1,
+   "topic": "st-dispersion",
+   "type": "absolute",
+   "level": 2,
+   "q": "The standard deviation of 2, 4, 4, 4, 5, 5, 7, 9 is:",
+   "options": [
+    "2.5",
+    "4",
+    "2",
+    "1.5"
+   ],
+   "answer": 2,
+   "solution": "Mean = 40/8 = 5.<br>Squared deviations: 9, 1, 1, 1, 0, 0, 4, 16; sum = 32.<br>Variance = 32/8 = 4, so SD = √4 = 2.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-dispersion-004",
+   "rev": 1,
+   "topic": "st-dispersion",
+   "type": "relative",
+   "level": 2,
+   "q": "A series has mean 50 and standard deviation 10. Its coefficient of variation is:",
+   "options": [
+    "5%",
+    "20%",
+    "50%",
+    "10%"
+   ],
+   "answer": 1,
+   "solution": "CV = (σ/x̄) × 100 = (10/50) × 100 = 20%.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-dispersion-005",
+   "rev": 1,
+   "topic": "st-dispersion",
+   "type": "absolute",
+   "level": 3,
+   "q": "The mean deviation about the mean of 3, 5, 7, 9, 11 is:",
+   "options": [
+    "2.4",
+    "2.8",
+    "3.0",
+    "2.0"
+   ],
+   "answer": 0,
+   "solution": "Mean = 35/5 = 7.<br>|x − 7| = 4, 2, 0, 2, 4; sum = 12.<br>MD = 12/5 = 2.4.",
+   "source": "test-data"
+  },
+  {
+   "id": "st-dispersion-006",
+   "rev": 1,
+   "topic": "st-dispersion",
+   "type": "properties",
+   "level": 3,
+   "q": "The SD of x is 4. If y = 7 − 3x, the variance of y is:",
+   "options": [
+    "48",
+    "12",
+    "−12",
+    "144"
+   ],
+   "answer": 3,
+   "solution": "σ<sub>y</sub> = |−3| × 4 = 12.<br>Variance of y = 12² = 144. (Equivalently, Var(y) = (−3)² × 16 = 144.)",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-stdisp-1",
+   "front": "Coefficient of variation",
+   "back": "CV = σ/x̄ × 100",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stdisp-2",
+   "front": "Coefficient of QD",
+   "back": "(Q₃ − Q₁)/(Q₃ + Q₁)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stdisp-3",
+   "front": "SD of y = a + bx",
+   "back": "|b| × SD of x",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-stdisp-4",
+   "front": "Variance shortcut",
+   "back": "Σx²/n − x̄²",
+   "deck": "formulas"
+  }
+ ]
+}

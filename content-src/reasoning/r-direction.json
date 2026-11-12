@@ -1,0 +1,196 @@
+{
+ "topic": "r-direction",
+ "notes": {
+  "summary": "Direction questions trace a person's walk and ask for the final <b>direction</b> or the <b>shortest distance</b> from the start. Draw the path as you read. Usually 1 question in Tier 1 and Tier 2.",
+  "concepts": [
+   {
+    "title": "The compass",
+    "body": "North is up, South down, East right, West left. NE, NW, SE, SW lie between them. A right turn = 90° clockwise; a left turn = 90° anticlockwise.",
+    "img": "reasoning/compass.svg"
+   },
+   {
+    "title": "Shortest distance",
+    "body": "Add all East–West moves and all North–South moves separately. The shortest distance is √(x² + y²) (Pythagoras). Learn the triples 3-4-5, 5-12-13, 8-15-17, 6-8-10."
+   },
+   {
+    "title": "Shadows",
+    "body": "The sun rises in the East. In the <b>morning</b> shadows fall to the <b>West</b>; in the <b>evening</b> they fall to the <b>East</b>. At noon there is almost no shadow."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "final-direction",
+    "name": "Final facing direction",
+    "how": "Track only the turns: right = +90° clockwise, left = −90°.",
+    "example": {
+     "q": "Facing North, a man turns right, then right again. Where does he face?",
+     "steps": [
+      "North → right → East",
+      "East → right → South"
+     ],
+     "answer": "South"
+    }
+   },
+   {
+    "type": "shortest-distance",
+    "name": "Distance and direction from start",
+    "how": "Draw the path, find net x and net y, then use Pythagoras.",
+    "example": {
+     "q": "Walk 3 km North, then 4 km East. Distance from start?",
+     "steps": [
+      "Net: 4 East, 3 North",
+      "√(16 + 9) = 5"
+     ],
+     "answer": "5 km, North-East"
+    }
+   },
+   {
+    "type": "shadow",
+    "name": "Shadow based",
+    "how": "Morning sun in the East → shadow to the West. Evening → shadow to the East.",
+    "example": {
+     "q": "In the morning, Ravi's shadow falls to his left. Which way is he facing?",
+     "steps": [
+      "Shadow points West.",
+      "If West is on his left, he faces North."
+     ],
+     "answer": "North"
+    }
+   }
+  ],
+  "tips": [
+   "Always draw a rough sketch, even for easy questions.",
+   "Turning \"left\" depends on the way the person is facing, not on your page.",
+   "For direction of B from A, place yourself at A and look at B."
+  ],
+  "traps": [
+   "Direction of A from B is the opposite of the direction of B from A.",
+   "Do not add all distances; find the straight-line distance."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-direction-001",
+   "rev": 1,
+   "topic": "r-direction",
+   "type": "final-direction",
+   "level": 1,
+   "q": "Ravi is facing North. He turns 90° clockwise and then 180° anticlockwise. Which direction is he facing now?",
+   "options": [
+    "East",
+    "West",
+    "South",
+    "North"
+   ],
+   "answer": 1,
+   "solution": "North → 90° clockwise → East.<br>East → 180° anticlockwise → West.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-direction-002",
+   "rev": 1,
+   "topic": "r-direction",
+   "type": "shortest-distance",
+   "level": 1,
+   "q": "A man walks 3 km towards North and then 4 km towards East. How far is he from his starting point?",
+   "options": [
+    "7 km",
+    "6 km",
+    "5 km",
+    "1 km"
+   ],
+   "answer": 2,
+   "solution": "The two moves are at right angles.<br>Distance = √(3² + 4²) = √25 = 5 km.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-direction-003",
+   "rev": 1,
+   "topic": "r-direction",
+   "type": "shortest-distance",
+   "level": 2,
+   "q": "Sita walks 10 m towards South. She turns left and walks 6 m, then turns left and walks 18 m, and then turns right and walks 9 m. How far and in which direction is she from her starting point?",
+   "options": [
+    "15 m, North-East",
+    "17 m, South-East",
+    "17 m, North-East",
+    "23 m, North"
+   ],
+   "answer": 2,
+   "solution": "South 10 m: (0, −10).<br>Facing South, left = East: 6 m → (6, −10).<br>Facing East, left = North: 18 m → (6, 8).<br>Facing North, right = East: 9 m → (15, 8).<br>Distance = √(15² + 8²) = √289 = 17 m, towards North-East.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-direction-004",
+   "rev": 1,
+   "topic": "r-direction",
+   "type": "shortest-distance",
+   "level": 2,
+   "q": "Study the figure. A person walks from P to Q (5 km East) and then from Q to R (12 km North). What is the shortest distance between P and R, and in which direction is R from P?",
+   "options": [
+    "13 km, North-East",
+    "17 km, North-East",
+    "13 km, North-West",
+    "12 km, North"
+   ],
+   "answer": 0,
+   "solution": "Net movement: 5 km East and 12 km North.<br>PR = √(5² + 12²) = √169 = 13 km.<br>R is up and to the right of P, so R is North-East of P.",
+   "source": "test-data",
+   "img": "reasoning/direction-map.svg"
+  },
+  {
+   "id": "r-direction-005",
+   "rev": 1,
+   "topic": "r-direction",
+   "type": "shadow",
+   "level": 3,
+   "q": "One morning after sunrise, Rahul was standing facing a pole. The shadow of the pole fell exactly to his right. Which direction was Rahul facing?",
+   "options": [
+    "North",
+    "East",
+    "West",
+    "South"
+   ],
+   "answer": 3,
+   "solution": "In the morning the sun is in the East, so shadows fall towards the West.<br>The shadow is on Rahul's right, so his right side is West.<br>A person whose right is West is facing South.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-direction-006",
+   "rev": 1,
+   "topic": "r-direction",
+   "type": "shortest-distance",
+   "level": 3,
+   "q": "Point A is 8 m West of point B. Point C is 12 m North of B. Point D is 8 m East of C. What is the distance between A and D, and in which direction is D from A?",
+   "options": [
+    "20 m, North-West",
+    "20 m, North-East",
+    "16 m, East",
+    "28 m, North-East"
+   ],
+   "answer": 1,
+   "solution": "Take B = (0, 0). Then A = (−8, 0), C = (0, 12), D = (8, 12).<br>From A to D: 16 m East and 12 m North.<br>AD = √(16² + 12²) = √400 = 20 m, towards North-East.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-direction-1",
+   "front": "Morning shadow direction",
+   "back": "Towards the West (sun in the East)",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-direction-2",
+   "front": "Common Pythagorean triples",
+   "back": "3-4-5, 5-12-13, 8-15-17, 7-24-25, 6-8-10",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-direction-3",
+   "front": "Facing South, a left turn faces …",
+   "back": "East",
+   "deck": "reasoning"
+  }
+ ]
+}

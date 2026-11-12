@@ -1,0 +1,215 @@
+{
+ "topic": "q-probability",
+ "notes": {
+  "summary": "Probability = favourable outcomes / total outcomes. Rare in Tier 1, about one question in Tier 2. Coins, dice, cards and balls cover almost everything.",
+  "concepts": [
+   {
+    "title": "Basics",
+    "body": "P(E) = favourable / total, always between 0 and 1. P(not E) = 1 − P(E). P(A or B) = P(A) + P(B) − P(A and B)."
+   },
+   {
+    "title": "Sample spaces",
+    "body": "One coin: 2; two coins: 4; three coins: 8. One die: 6; two dice: 36. A deck has 52 cards: 4 suits × 13, 4 kings, 12 face cards, 26 red."
+   },
+   {
+    "title": "Drawing without replacement",
+    "body": "Use combinations: number of ways to choose r from n = <sup>n</sup>C<sub>r</sub> = n! / (r!(n − r)!)."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "coins-dice",
+    "name": "Coins and dice",
+    "how": "List or count outcomes from the sample space (2<sup>n</sup> for coins, 36 for two dice).",
+    "example": {
+     "q": "Probability of getting a sum of 7 with two dice?",
+     "steps": [
+      "(1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6",
+      "6/36"
+     ],
+     "answer": "1/6"
+    }
+   },
+   {
+    "type": "cards",
+    "name": "Cards",
+    "how": "Count favourable cards; for “or”, subtract the overlap.",
+    "example": {
+     "q": "Probability of drawing a red card?",
+     "steps": [
+      "26/52"
+     ],
+     "answer": "1/2"
+    }
+   },
+   {
+    "type": "balls",
+    "name": "Balls from a bag",
+    "how": "Use combinations for drawing more than one ball.",
+    "example": {
+     "q": "Bag: 3 red, 2 green. One ball drawn. P(green)?",
+     "steps": [
+      "2/5"
+     ],
+     "answer": "2/5"
+    }
+   }
+  ],
+  "tips": [
+   "“At least one” = 1 − P(none).",
+   "Doubles in two dice: 6 out of 36."
+  ],
+  "traps": [
+   "In “king or heart”, the king of hearts is counted twice; subtract it once.",
+   "Two dice give 36 outcomes, not 12."
+  ]
+ },
+ "formulas": [
+  {
+   "name": "Probability",
+   "expr": "favourable / total"
+  },
+  {
+   "name": "Complement",
+   "expr": "P(not E) = 1 − P(E)"
+  },
+  {
+   "name": "Addition rule",
+   "expr": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)"
+  },
+  {
+   "name": "Combinations",
+   "expr": "nCr = n!/(r!(n − r)!)"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-probability-001",
+   "rev": 1,
+   "topic": "q-probability",
+   "type": "coins-dice",
+   "level": 1,
+   "q": "A die is thrown once. What is the probability of getting a prime number?",
+   "options": [
+    "1/3",
+    "1/2",
+    "2/3",
+    "1/6"
+   ],
+   "answer": 1,
+   "solution": "Primes on a die: 2, 3, 5 → 3 outcomes.<br>P = 3/6 = 1/2.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-probability-002",
+   "rev": 1,
+   "topic": "q-probability",
+   "type": "coins-dice",
+   "level": 1,
+   "q": "Two coins are tossed together. What is the probability of getting at least one head?",
+   "options": [
+    "1/2",
+    "1/4",
+    "3/4",
+    "2/3"
+   ],
+   "answer": 2,
+   "solution": "Outcomes: HH, HT, TH, TT.<br>P(no head) = 1/4.<br>P(at least one head) = 1 − 1/4 = 3/4.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-probability-003",
+   "rev": 1,
+   "topic": "q-probability",
+   "type": "coins-dice",
+   "level": 2,
+   "q": "Two dice are thrown together. What is the probability that the sum of the numbers is 8?",
+   "options": [
+    "1/6",
+    "5/36",
+    "1/9",
+    "7/36"
+   ],
+   "answer": 1,
+   "solution": "Favourable: (2,6), (3,5), (4,4), (5,3), (6,2) = 5.<br>Total = 36.<br>P = 5/36.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-probability-004",
+   "rev": 1,
+   "topic": "q-probability",
+   "type": "cards",
+   "level": 2,
+   "q": "A card is drawn from a well-shuffled pack of 52 cards. What is the probability that it is a king or a heart?",
+   "options": [
+    "17/52",
+    "1/4",
+    "4/13",
+    "1/13"
+   ],
+   "answer": 2,
+   "solution": "Kings = 4, hearts = 13, king of hearts counted twice.<br>Favourable = 4 + 13 − 1 = 16.<br>P = 16/52 = 4/13.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-probability-005",
+   "rev": 1,
+   "topic": "q-probability",
+   "type": "balls",
+   "level": 3,
+   "q": "A bag contains 5 red and 3 blue balls. Two balls are drawn at random. What is the probability that both are red?",
+   "options": [
+    "5/14",
+    "25/64",
+    "5/8",
+    "3/14"
+   ],
+   "answer": 0,
+   "solution": "Total ways = <sup>8</sup>C<sub>2</sub> = 28.<br>Ways to choose 2 red = <sup>5</sup>C<sub>2</sub> = 10.<br>P = 10/28 = 5/14.",
+   "source": "test-data"
+  },
+  {
+   "id": "q-probability-006",
+   "rev": 1,
+   "topic": "q-probability",
+   "type": "balls",
+   "level": 3,
+   "q": "A bag contains 4 white and 6 black balls. Two balls are drawn at random. What is the probability that one is white and the other is black?",
+   "options": [
+    "12/25",
+    "8/15",
+    "2/5",
+    "7/15"
+   ],
+   "answer": 1,
+   "solution": "Total ways = <sup>10</sup>C<sub>2</sub> = 45.<br>Favourable = 4 × 6 = 24.<br>P = 24/45 = 8/15.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-prob-1",
+   "front": "Outcomes when two dice are thrown",
+   "back": "36",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-prob-2",
+   "front": "P(at least one)",
+   "back": "1 − P(none)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-prob-3",
+   "front": "Face cards in a deck",
+   "back": "12 (J, Q, K of 4 suits)",
+   "deck": "formulas"
+  },
+  {
+   "id": "fc-prob-4",
+   "front": "P(A or B)",
+   "back": "P(A) + P(B) − P(A and B)",
+   "deck": "formulas"
+  }
+ ]
+}

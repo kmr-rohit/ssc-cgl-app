@@ -1,0 +1,193 @@
+{
+ "topic": "r-classification",
+ "notes": {
+  "summary": "Classification means finding the <b>odd one out</b>: three options follow one common rule and one does not. Expect 2–3 questions in Tier 1 with words, numbers or letter groups.",
+  "concepts": [
+   {
+    "title": "Find the common rule",
+    "body": "Look for what <b>three</b> items share: same category (fruits, planets), same property (prime, perfect square), or same letter gap. The item that breaks the rule is the answer."
+   },
+   {
+    "title": "Number properties to test",
+    "body": "Prime / composite, even / odd, perfect square / cube, divisible by a number, sum of digits, n² + 1 type pairs."
+   },
+   {
+    "title": "Letter groups",
+    "body": "Write positions (A=1 … Z=26) and check the gap between letters. Example: BDF has gaps +2, +2."
+   }
+  ],
+  "varieties": [
+   {
+    "type": "word-odd",
+    "name": "Odd word out",
+    "how": "Name the group for each word; the one that does not fit is odd.",
+    "example": {
+     "q": "Rose, Lotus, Mango, Lily",
+     "steps": [
+      "Rose, Lotus, Lily are flowers.",
+      "Mango is a fruit."
+     ],
+     "answer": "Mango"
+    }
+   },
+   {
+    "type": "number-odd",
+    "name": "Odd number / pair out",
+    "how": "Test prime, square, cube and simple rules like n² + 1.",
+    "example": {
+     "q": "11, 13, 15, 17",
+     "steps": [
+      "11, 13, 17 are prime.",
+      "15 = 3 × 5 is not prime."
+     ],
+     "answer": "15"
+    }
+   },
+   {
+    "type": "letter-odd",
+    "name": "Odd letter group out",
+    "how": "Write positions and compare the gaps.",
+    "example": {
+     "q": "ACE, GIK, MOQ, RTW",
+     "steps": [
+      "A C E: +2, +2; G I K: +2, +2; M O Q: +2, +2",
+      "R T W: +2, +3"
+     ],
+     "answer": "RTW"
+    }
+   }
+  ],
+  "tips": [
+   "Try the simplest rule first (category, prime, square) before complex ones.",
+   "If two rules seem to work, pick the one that leaves exactly one item out."
+  ],
+  "traps": [
+   "1 is neither prime nor composite.",
+   "Do not pick an item just because it \"looks\" different; there must be a clear rule."
+  ]
+ },
+ "questions": [
+  {
+   "id": "r-classification-001",
+   "rev": 1,
+   "topic": "r-classification",
+   "type": "word-odd",
+   "level": 1,
+   "q": "Select the odd word from the given alternatives.",
+   "options": [
+    "Rose",
+    "Lotus",
+    "Mango",
+    "Lily"
+   ],
+   "answer": 2,
+   "solution": "Rose, Lotus and Lily are flowers.<br>Mango is a fruit, so it is the odd one.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-classification-002",
+   "rev": 1,
+   "topic": "r-classification",
+   "type": "number-odd",
+   "level": 1,
+   "q": "Select the odd number from the given alternatives.",
+   "options": [
+    "13",
+    "17",
+    "21",
+    "29"
+   ],
+   "answer": 2,
+   "solution": "13, 17 and 29 are prime numbers.<br>21 = 3 × 7 is not prime.<br>So 21 is the odd one.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-classification-003",
+   "rev": 1,
+   "topic": "r-classification",
+   "type": "letter-odd",
+   "level": 2,
+   "q": "Select the odd letter-cluster.",
+   "options": [
+    "BDF",
+    "HJL",
+    "RTW",
+    "MOQ"
+   ],
+   "answer": 2,
+   "solution": "B D F: +2, +2. H J L: +2, +2. M O Q: +2, +2.<br>R T W: R+2 = T, but T+3 = W.<br>So RTW is odd.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-classification-004",
+   "rev": 1,
+   "topic": "r-classification",
+   "type": "number-odd",
+   "level": 2,
+   "q": "Select the odd number.",
+   "options": [
+    "144",
+    "27",
+    "64",
+    "125"
+   ],
+   "answer": 0,
+   "solution": "27 = 3³, 64 = 4³, 125 = 5³: all perfect cubes.<br>144 = 12² is a perfect square, not a cube.<br>So 144 is odd.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-classification-005",
+   "rev": 1,
+   "topic": "r-classification",
+   "type": "number-odd",
+   "level": 3,
+   "q": "Select the number-pair in which the two numbers are NOT related in the same way as in the other pairs.",
+   "options": [
+    "3 – 10",
+    "5 – 26",
+    "6 – 35",
+    "7 – 50"
+   ],
+   "answer": 2,
+   "solution": "Rule: second = (first)² + 1.<br>3² + 1 = 10 ✓, 5² + 1 = 26 ✓, 7² + 1 = 50 ✓.<br>6² + 1 = 37, not 35.<br>So 6 – 35 is odd.",
+   "source": "test-data"
+  },
+  {
+   "id": "r-classification-006",
+   "rev": 1,
+   "topic": "r-classification",
+   "type": "word-odd",
+   "level": 3,
+   "q": "Select the odd word.",
+   "options": [
+    "Tiger",
+    "Wolf",
+    "Leopard",
+    "Lion"
+   ],
+   "answer": 1,
+   "solution": "Tiger, Leopard and Lion belong to the cat family.<br>Wolf belongs to the dog family.<br>So Wolf is odd.",
+   "source": "test-data"
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "fc-r-classification-1",
+   "front": "Primes between 1 and 50",
+   "back": "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-classification-2",
+   "front": "Cubes 1 to 10",
+   "back": "1, 8, 27, 64, 125, 216, 343, 512, 729, 1000",
+   "deck": "reasoning"
+  },
+  {
+   "id": "fc-r-classification-3",
+   "front": "Odd one out method",
+   "back": "Find the rule shared by three; the one that breaks it is the answer.",
+   "deck": "reasoning"
+  }
+ ]
+}
