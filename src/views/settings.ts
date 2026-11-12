@@ -51,6 +51,7 @@ export default function settings(el: HTMLElement) {
         <label class="field">Exam date<input type="date" .value=${s.examDate ?? ''} @change=${(e: Event) => save({ examDate: (e.target as HTMLInputElement).value || null })} /></label>
         <label class="field">Study hours per day<input type="number" min="1" max="14" .value=${String(s.dailyHours)} @change=${(e: Event) => save({ dailyHours: Math.min(14, Math.max(1, Number((e.target as HTMLInputElement).value) || 3)) })} /></label>
         <label class="field">New flashcards per deck per day<input type="number" min="0" max="50" .value=${String(s.newWordsPerDay)} @change=${(e: Event) => save({ newWordsPerDay: Math.min(50, Math.max(0, Number((e.target as HTMLInputElement).value) || 0)) })} /></label>
+        <label class="row"><input type="checkbox" .checked=${s.examMode} @change=${(e: Event) => save({ examMode: (e.target as HTMLInputElement).checked })} /> Exam mode for mocks (full screen; leaving the test is counted and shown in results)</label>
         <label class="row"><input type="checkbox" .checked=${s.paper2} @change=${(e: Event) => save({ paper2: (e.target as HTMLInputElement).checked })} /> Show Statistics (Paper 2, for JSO / SI Gr. II)</label>
       </section>
       <section class="paper stack" style="margin-top:1rem">

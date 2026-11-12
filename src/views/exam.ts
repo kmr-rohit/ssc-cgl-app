@@ -10,6 +10,11 @@ import { uid } from '../data/storage';
 import { confirmDialog, dot, questionView } from '../ui/components';
 import { fmtMs } from '../ui/html';
 
+function enterFullscreen() {
+  // must run inside the click handler (user gesture); unsupported on iPhone Safari, which is fine
+  document.documentElement.requestFullscreen?.({ navigationUI: 'hide' }).catch(() => {});
+}
+
 export async function submitMock(m: MockRecord) {
   m.sections.forEach((s) => (s.done = true));
   m.status = 'submitted';
@@ -55,7 +60,8 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
         </ul>
         ${m.sections.some((s) => s.questionIds.length < (e.sections.find((x) => x.subject === s.subject)?.count ?? 0))
           ? html`<p class="chip medium">Test data is limited: some sections have fewer questions than the real paper.</p>` : nothing}
-        <div class="row"><button class="btn primary" @click=${() => resolve()}>I am ready to begin</button><a class="btn ghost" href="#/mocks">Not now</a></div>
+        ${app.settings.examMode ? html`<p class="small"><b>Exam mode is on:</b> the test opens full screen. Leaving the tab or full screen is counted and shown in your result. The timer keeps running while you are away.</p>` : nothing}
+        <div class="row"><button class="btn primary" @click=${() => { if (app.settings.examMode) enterFullscreen(); resolve(); }}>I am ready to begin</button><a class="btn ghost" href="#/mocks">Not now</a></div>
       </div></div>`, el));
     m.status = 'in-progress';
     m.startedAt = new Date().toISOString();
@@ -64,6 +70,10 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
 
   // ---------------------------------------------------------------- live
   document.body.dataset.route = 'exam-live';
+  const examMode = app.settings.examMode;
+  m.integrity ??= { leaves: 0, awayMs: 0, fsExits: 0 };
+  let leftAt = 0;
+  let warning: string | null = null;
   let palOpen = false;
   let last = performance.now();
   let dirty = false;
@@ -115,6 +125,9 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
     const q = lookup(s.questionIds[m.current.index]);
     const answered = s.answers.filter((x) => x !== null).length;
     render(html`
+      ${warning ? html`<div class="exam-warning" role="alert"><span>⚠ ${warning}</span>
+        <span class="row">${examMode && !document.fullscreenElement && document.fullscreenEnabled ? html`<button class="btn sm" @click=${() => { enterFullscreen(); warning = null; draw(); }}>Full screen</button>` : nothing}
+        <button class="btn sm" @click=${() => { warning = null; draw(); }}>Continue</button></span></div>` : nothing}
       <div class="exam-bar">
         <span><b>${e.short}</b> · ${dot(s.subject)} ${SUBJECTS[s.subject].short} <span class="small">(section ${m.current.section + 1}/${m.sections.length})</span></span>
         <span class="timer ${s.remainingMs < 60000 ? 'low' : ''}" role="timer" aria-label="Time left in section">${fmtMs(s.remainingMs)}</span>
@@ -158,9 +171,28 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
 
   const timer = window.setInterval(tick, 1000);
   const autosave = window.setInterval(() => { if (dirty) save(); else app.saveMock(m); }, 10000);
-  const onHide = () => { if (document.hidden) save(); };
+  const onHide = () => {
+    if (document.hidden) { save(); if (examMode) leftAt = Date.now(); return; }
+    if (examMode && leftAt) {
+      m.integrity!.leaves++; m.integrity!.awayMs += Date.now() - leftAt; leftAt = 0;
+      warning = `You left the test (${m.integrity!.leaves} time${m.integrity!.leaves === 1 ? '' : 's'}). The timer kept running. In the real CBT you cannot leave the screen.`;
+      save(); draw();
+    }
+  };
+  const onFs = () => {
+    if (!examMode || document.fullscreenElement) return;
+    m.integrity!.fsExits++;
+    warning = 'You left full screen. Return to full screen to continue like the real exam.';
+    save(); draw();
+  };
+  if (examMode) document.addEventListener('fullscreenchange', onFs);
   document.addEventListener('visibilitychange', onHide);
-  function stop() { clearInterval(timer); clearInterval(autosave); document.removeEventListener('visibilitychange', onHide); }
+  function stop() {
+    clearInterval(timer); clearInterval(autosave);
+    document.removeEventListener('visibilitychange', onHide);
+    document.removeEventListener('fullscreenchange', onFs);
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  }
   async function pause() { stop(); await app.saveMock(m); toast('Paused. Resume from the Mocks page.'); go('#/mocks'); }
 
   sec().visited[m.current.index] = true;

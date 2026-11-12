@@ -144,6 +144,7 @@ export interface MockRecord {
   startedAt?: string;
   submittedAt?: string;
   score?: MockScore;
+  integrity?: { leaves: number; awayMs: number; fsExits: number };
   updatedAt: string;
 }
 
@@ -171,4 +172,5 @@ export interface Settings {
   theme: 'auto' | 'light' | 'dark';
   paper2: boolean;
   newWordsPerDay: number;
+  examMode: boolean;     // fullscreen + leave-tab warnings during full mocks
 }

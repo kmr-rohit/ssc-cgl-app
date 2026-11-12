@@ -61,3 +61,26 @@ test('formula sheets and study plan', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'This week' })).toBeVisible();
   expect(errors).toEqual([]);
 });
+
+test('exam mode counts leaving the tab and shows it in the result', async ({ page }) => {
+  await page.goto('/#/mocks');
+  await page.locator('.ticket').filter({ hasText: 'Tier 1' }).first().getByRole('button', { name: /Start|Resume/ }).click();
+  await page.getByRole('button', { name: 'I am ready to begin' }).click();
+  await expect(page.locator('.exam-bar')).toBeVisible();
+  // simulate switching away and back
+  await page.evaluate(() => {
+    Object.defineProperty(document, 'hidden', { configurable: true, get: () => true });
+    document.dispatchEvent(new Event('visibilitychange'));
+    Object.defineProperty(document, 'hidden', { configurable: true, get: () => false });
+    document.dispatchEvent(new Event('visibilitychange'));
+  });
+  await expect(page.locator('.exam-warning')).toContainText('You left the test (1 time)');
+  await page.locator('.exam-warning').getByRole('button', { name: 'Continue' }).click();
+  for (let s = 0; s < 4; s++) {
+    const pal = page.locator('.pal-toggle').first();
+    if (await pal.isVisible()) await pal.click();
+    await page.locator('.palette .btn.danger').click();
+    await page.locator('dialog .btn.primary').click();
+  }
+  await expect(page.getByText(/left the test 1 time/)).toBeVisible({ timeout: 15_000 });
+});

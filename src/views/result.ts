@@ -51,6 +51,8 @@ export default async function result(el: HTMLElement, [key]: string[]) {
           <div class="small muted">Time used ${fmtMs(m.sections.find((y) => y.subject === x.subject)!.msSpent.reduce((a, b) => a + b, 0))}</div>
         </div>`)}
       </div>
+      ${m.integrity && (m.integrity.leaves || m.integrity.fsExits) ? html`<p class="trap"><b>Exam discipline:</b> left the test ${m.integrity.leaves} time${m.integrity.leaves === 1 ? '' : 's'} (${Math.round(m.integrity.awayMs / 1000)}s away)${m.integrity.fsExits ? `, exited full screen ${m.integrity.fsExits} time${m.integrity.fsExits === 1 ? '' : 's'}` : ''}. In the real CBT this isn't possible, so practise staying on the screen.</p>`
+        : m.integrity ? html`<p class="tip">Exam discipline: you stayed on the test the whole time.</p>` : nothing}
       ${wrongTotal ? html`<p class="trap">Negative marking cost you <b>${(wrongTotal * e.negative).toFixed(1)}</b> marks (${wrongTotal} wrong answers).</p>` : nothing}
       ${lostTopics.length ? html`<section class="paper" style="margin:1rem 0"><h2>Where the marks went</h2>
         ${lostTopics.map((x) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
