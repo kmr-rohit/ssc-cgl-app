@@ -6,6 +6,8 @@ import { getManifest } from '../content/bank';
 import { confirmDialog } from '../ui/components';
 import { applyTheme } from '../ui/theme';
 import { auth } from '../app/auth';
+import { startTour } from '../ui/tour';
+import { go } from '../app/router';
 
 export default function settings(el: HTMLElement) {
   const save = async (patch: Partial<Settings>) => {
@@ -57,6 +59,11 @@ export default function settings(el: HTMLElement) {
         <label class="field">New flashcards per deck per day<input type="number" min="0" max="50" .value=${String(s.newWordsPerDay)} @change=${(e: Event) => save({ newWordsPerDay: Math.min(50, Math.max(0, Number((e.target as HTMLInputElement).value) || 0)) })} /></label>
         <label class="check"><input type="checkbox" .checked=${s.examMode} @change=${(e: Event) => save({ examMode: (e.target as HTMLInputElement).checked })} /> Exam mode for mocks (full screen; leaving the test is counted and shown in results)</label>
         <label class="check"><input type="checkbox" .checked=${s.paper2} @change=${(e: Event) => save({ paper2: (e.target as HTMLInputElement).checked })} /> Show Statistics (Paper 2, for JSO / SI Gr. II)</label>
+      </section>
+      <section class="paper stack" style="margin-top:1rem">
+        <h2>Help</h2>
+        <p class="small muted">A 30-second walkthrough of what each tab does.</p>
+        <button class="btn" @click=${() => { go('#/'); setTimeout(() => startTour(() => app.saveSettings({ toured: true })), 300); }}>Take the app tour</button>
       </section>
       <section class="paper stack" style="margin-top:1rem">
         <h2>Appearance</h2>

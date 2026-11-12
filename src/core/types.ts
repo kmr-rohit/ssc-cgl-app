@@ -174,4 +174,5 @@ export interface Settings {
   newWordsPerDay: number;
   examMode: boolean;     // fullscreen + leave-tab warnings during full mocks
   onboarded: boolean;    // finished the first-run setup
+  toured: boolean;       // saw (or skipped) the guided app tour
 }

@@ -4,7 +4,7 @@ import { createStore, del, entries, get, set, setMany, clear, type UseStore } fr
 import type { Attempt, CardState, MockRecord, Settings } from '../core/types';
 
 export const DEFAULT_SETTINGS: Settings = {
-  name: '', target: 'pre', examDate: null, dailyHours: 3, theme: 'auto', paper2: false, newWordsPerDay: 10, examMode: true, onboarded: false,
+  name: '', target: 'pre', examDate: null, dailyHours: 3, theme: 'auto', paper2: false, newWordsPerDay: 10, examMode: true, onboarded: false, toured: false,
 };
 
 export interface BackupFile {

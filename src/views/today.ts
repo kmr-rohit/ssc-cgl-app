@@ -10,6 +10,7 @@ import { go } from '../app/router';
 import { buildMock } from '../content/bank';
 import { dot } from '../ui/components';
 import { dailyKey, openMock } from './mocks';
+import { startTour } from '../ui/tour';
 
 export default async function today(el: HTMLElement) {
   const s = app.settings;
@@ -80,4 +81,10 @@ export default async function today(el: HTMLElement) {
       <a class="card" href="#/roadmap"><div class="kicker">Roadmap</div><div class="big">Wk ${week.index}<span class="small muted"> / ${plan.weeks.length}</span></div></a>
     </div>
   </div>`, el);
+  if (!s.toured) {
+    // let the page paint first so the spotlight lands on real elements
+    // mark as seen when it starts: closing the app mid-tour shouldn't bring it back (replay lives in Profile)
+    app.saveSettings({ toured: true });
+    requestAnimationFrame(() => startTour(() => {}));
+  }
 }

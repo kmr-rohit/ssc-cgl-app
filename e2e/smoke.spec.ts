@@ -101,10 +101,25 @@ test('first run: setup builds the roadmap, then Today shows a task checklist', a
   await page.getByRole('button', { name: 'In 6 months' }).click();
   await page.getByRole('button', { name: '4h' }).click();
   await page.getByRole('button', { name: 'Create my roadmap' }).click();
-  await expect(page.getByRole('heading', { name: 'Roadmap', exact: true })).toBeVisible();
-  await expect(page.getByText('Tier 2 Paper 1 (Mains)')).toBeVisible();
-  await page.getByRole('link', { name: 'Today' }).first().click();
+  // guided tour: 8 steps, each spotlighting a tab
+  const tour = page.getByRole('dialog');
+  await expect(tour).toContainText('Your roadmap is ready');
+  await tour.getByRole('button', { name: 'Show me' }).click();
+  for (const name of ['Today', 'Roadmap', 'Study', 'Mocks', 'Progress', 'Profile']) {
+    await expect(tour.getByRole('heading')).toHaveText(name);
+    await expect(page.locator('.tour-spot')).toBeVisible();
+    await tour.getByRole('button', { name: 'Next' }).click();
+  }
+  await tour.getByRole('button', { name: "Let's start" }).click();
+  await expect(tour).toHaveCount(0);
   await expect(page.getByRole('heading', { name: "Today's plan" })).toBeVisible();
+  // tour doesn't come back; roadmap reflects setup
+  await page.reload();
+  await expect(page.getByRole('heading', { name: "Today's plan" })).toBeVisible();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await page.goto('/#/roadmap');
+  await expect(page.getByText('Tier 2 Paper 1 (Mains)')).toBeVisible();
+  await page.goto('/#/');
   await expect(page.locator('.countdown b')).toHaveText(/\d+/);
   await expect(page.locator('.task-list li').first()).toContainText('Learn & practise');
   await expect(page.locator('.task-list li')).not.toHaveCount(0);
@@ -141,4 +156,17 @@ test('phone: top bar shows the topic title and Back returns', async ({ page }) =
   await expect(page.getByRole('heading', { name: 'Study', exact: true })).toBeVisible();
   await page.locator('.topbar .tb-avatar').click();
   await expect(page.getByRole('heading', { name: 'Profile' })).toBeVisible();
+});
+
+test('tour can be skipped with Escape and replayed from Profile', async ({ page }) => {
+  await page.goto('/#/welcome');
+  await page.getByRole('button', { name: 'Skip for now' }).click();
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await page.goto('/#/profile');
+  await page.getByRole('button', { name: 'Take the app tour' }).click();
+  await expect(page.getByRole('dialog')).toContainText('Your roadmap is ready');
+  await page.getByRole('button', { name: 'Skip tour' }).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
 });

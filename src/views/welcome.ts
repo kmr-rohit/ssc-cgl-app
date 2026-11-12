@@ -17,7 +17,7 @@ export default function welcome(el: HTMLElement) {
 
   const finish = async (skip = false) => {
     await app.saveSettings(skip ? { onboarded: true } : { onboarded: true, target, paper2: paper2 || target === 'stats', examDate, dailyHours: hours, name: name.trim().slice(0, 40) });
-    go(skip ? '#/' : '#/roadmap');
+    go('#/'); // Today, where the guided tour starts
   };
 
   const quick = [
