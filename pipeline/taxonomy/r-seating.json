@@ -1,0 +1,73 @@
+{
+ "topic": "r-seating",
+ "types": [
+  {
+   "type": "linear-row",
+   "name": "Single row",
+   "description": "People sit or stand in one straight line facing north or south (or some each way), and clues say \"third to the left\", \"at an extreme end\", \"between\".",
+   "concepts": [
+    "linear-single-row"
+   ]
+  },
+  {
+   "type": "parallel-rows",
+   "name": "Two parallel rows",
+   "description": "People sit in two rows that face each other (for example one row facing north, the other south), and clues say who \"faces\" whom.",
+   "concepts": [
+    "parallel-two-rows"
+   ]
+  },
+  {
+   "type": "circular-facing-centre",
+   "name": "Circle facing the centre",
+   "description": "People sit around a circular table or stand in a circle, all facing the centre, and you find neighbours, opposites or \"second to the right\".",
+   "concepts": [
+    "circular-facing-centre"
+   ]
+  },
+  {
+   "type": "circular-facing-outside",
+   "name": "Circle facing outside or mixed",
+   "description": "People sit around a circle with their backs to the centre (facing outside), or some face the centre and some face outside.",
+   "concepts": [
+    "circular-facing-outside"
+   ]
+  },
+  {
+   "type": "square-table",
+   "name": "Square or rectangular table",
+   "description": "People sit at the corners and/or the middle of the sides of a square, rectangular or other polygon-shaped table.",
+   "concepts": [
+    "square-polygonal-table"
+   ]
+  },
+  {
+   "type": "floor-puzzle",
+   "name": "Floors of a building",
+   "description": "People live on different floors of a building (ground or lowest floor numbered 1), with clues like \"two floors above\" or \"lives below\".",
+   "concepts": [
+    "floor-building-puzzles"
+   ]
+  },
+  {
+   "type": "scheduling-puzzle",
+   "name": "Days, months or order of events",
+   "description": "Events, exams or meetings fall on different days of a week, months or dates, with clues like \"only one person between A and B\".",
+   "concepts": [
+    "scheduling-puzzles"
+   ]
+  },
+  {
+   "type": "grouping-puzzle",
+   "name": "Matching people to attributes",
+   "description": "Each person is matched to two or more details (city, colour, job, subject) from a list of clues, and you fill a grid with no seating order.",
+   "concepts": []
+  },
+  {
+   "type": "comparison-puzzle",
+   "name": "Comparisons and inequalities",
+   "description": "People or things are compared by height, weight, age or marks (\"taller than\", \"heavier than\"), or letters are joined by signs like >, <, ≥, = and you check conclusions.",
+   "concepts": []
+  }
+ ]
+}

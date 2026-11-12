@@ -1,0 +1,99 @@
+{
+  "topic": "q-profit-loss",
+  "types": [
+    {
+      "type": "cp-sp-basics",
+      "name": "Cost price, selling price and profit percent",
+      "description": "Gives cost price and selling price (or one of them and the profit or loss percent, maybe with repair or transport costs) and asks for the other or the profit or loss percent, with no marked price.",
+      "concepts": [
+        "basic-cp-sp-profit-loss",
+        "profit-percentage-calculations",
+        "loss-percentage-calculations"
+      ]
+    },
+    {
+      "type": "cp-sp-change",
+      "name": "Change in selling or cost price",
+      "description": "Says that had the article been sold for some rupees more or less (or bought for less), the profit or loss would have been different, or compares two selling prices, and asks for the cost price.",
+      "concepts": [
+        "difference-between-sp-and-cp-sp-shifts",
+        "sp-differential-equations-if-cp-were-x-less-and-sp-y-more"
+      ]
+    },
+    {
+      "type": "markup-discount",
+      "name": "Marked price and discount",
+      "description": "Involves a marked or list price with a single discount and asks for the selling price, marked price, discount or profit percent, or how far above cost the goods are marked.",
+      "concepts": [
+        "markup-discount",
+        "dishonest-shopkeeper-markup-discount-false-weight-combined"
+      ]
+    },
+    {
+      "type": "successive-discount",
+      "name": "Successive discounts",
+      "description": "Two or more discounts are given one after another on a marked price and the single equivalent discount, the final price, the marked price or a missing discount is asked.",
+      "concepts": [
+        "successive-discount"
+      ]
+    },
+    {
+      "type": "false-weights",
+      "name": "Dishonest dealer and false weights",
+      "description": "A seller uses a false weight or measure (for example 900 g for 1 kg), sometimes along with a markup, and the gain percent or the weight used is asked.",
+      "concepts": [
+        "dishonest-shopkeeper-false-weights-only"
+      ]
+    },
+    {
+      "type": "articles-count",
+      "name": "Cost of x articles equals price of y articles",
+      "description": "Compares the cost price of some number of articles with the selling price of another number, or gives buying and selling rates like \"10 for ₹15\", and asks the profit or loss percent or number of articles.",
+      "concepts": [
+        "cp-of-x-articles-sp-of-y-articles"
+      ]
+    },
+    {
+      "type": "partial-sale",
+      "name": "Part sold at profit, rest at loss",
+      "description": "Parts of a stock are sold at different profit or loss percents (or at marked price and at a discount) and the overall profit percent or the cost of the stock is asked.",
+      "concepts": [
+        "part-of-goods-sold-at-profit-remaining-at-loss"
+      ]
+    },
+    {
+      "type": "two-articles",
+      "name": "Two articles at the same price",
+      "description": "Two articles are sold at the same selling price (or bought at the same or given cost prices) with a gain on one and a loss on the other, and the overall result or a cost price is asked.",
+      "concepts": [
+        "selling-multiple-articles-at-same-sp",
+        "selling-multiple-articles-at-same-cp"
+      ]
+    },
+    {
+      "type": "chain-of-sale",
+      "name": "Chain of sale",
+      "description": "An article passes from one seller to the next (manufacturer, wholesaler, retailer, customer), or the money from one sale buys the next item, each with its own profit or loss percent.",
+      "concepts": [
+        "successive-selling-chain-of-sale",
+        "manufacture-to-retailer-profit-chain"
+      ]
+    },
+    {
+      "type": "free-articles",
+      "name": "Buy some, get some free",
+      "description": "An offer like \"buy 5 get 1 free\" or extra items free is given and the effective discount or profit percent is asked.",
+      "concepts": [
+        "freebies-goods-free"
+      ]
+    },
+    {
+      "type": "profit-on-sp",
+      "name": "Profit or loss on selling price",
+      "description": "The profit or loss is stated as a percent of the selling price instead of the cost price and must be converted, or the question asks to find it on the selling price.",
+      "concepts": [
+        "profit-loss-calculated-on-selling-price-sp"
+      ]
+    }
+  ]
+}

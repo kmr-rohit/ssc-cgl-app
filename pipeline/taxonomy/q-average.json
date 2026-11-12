@@ -1,0 +1,76 @@
+{
+  "topic": "q-average",
+  "types": [
+    {
+      "type": "basic-average",
+      "name": "Basic average and sums",
+      "description": "Find an average, a sum or a missing number from given averages, including averages of squares, cubes, multiples, or after every number is changed by the same amount.",
+      "concepts": [
+        "basic-average-ap-averages"
+      ]
+    },
+    {
+      "type": "consecutive-numbers",
+      "name": "Consecutive numbers and first n numbers",
+      "description": "Average of consecutive numbers, consecutive odd or even numbers, or the first n natural, even or odd numbers; or a term found from such an average.",
+      "concepts": [
+        "average-of-consecutive-numbers-middle-term"
+      ]
+    },
+    {
+      "type": "combined-groups",
+      "name": "Average of combined groups",
+      "description": "Two or more groups (boys and girls, sections, workers) with their own averages are combined, or the size of a group is found from the overall average.",
+      "concepts": []
+    },
+    {
+      "type": "entry-exit",
+      "name": "A member joins or leaves",
+      "description": "One or more people or numbers are added to or removed from a group, changing the average; find the new average or the person who joined or left.",
+      "concepts": [
+        "average-member-entry-exit",
+        "inclusion-exclusion-of-person-observation"
+      ]
+    },
+    {
+      "type": "replacement",
+      "name": "One member replaced by another",
+      "description": "A person in a group is replaced by a new person (group size stays the same) and the average rises or falls; find the new person’s value.",
+      "concepts": [
+        "replacement-of-person-observation"
+      ]
+    },
+    {
+      "type": "wrong-entry",
+      "name": "Wrong entry corrected",
+      "description": "Some numbers were copied or read wrongly while finding an average; find the correct average or the correct number.",
+      "concepts": [
+        "wrong-reading-incorrect-observation-correction"
+      ]
+    },
+    {
+      "type": "overlapping",
+      "name": "Overlapping parts of a list",
+      "description": "Averages of the whole list and of its first few and last few (or middle) numbers are given; find a common or particular number.",
+      "concepts": [
+        "overlapping-averages-first-n1-and-last-n2"
+      ]
+    },
+    {
+      "type": "cricket",
+      "name": "Batting average and run rate",
+      "description": "Cricket context: batting or bowling average after an innings, runs needed to change an average, or required run rate in remaining overs.",
+      "concepts": [
+        "batting-bowling-average-in-cricket"
+      ]
+    },
+    {
+      "type": "ages",
+      "name": "Average age",
+      "description": "Average ages of people or a family now, years ago, or after a birth or marriage; find one person’s age.",
+      "concepts": [
+        "average-age-calculations"
+      ]
+    }
+  ]
+}

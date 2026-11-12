@@ -1,0 +1,53 @@
+{
+  "topic": "q-mixture",
+  "types": [
+    {
+      "type": "alligation-basic",
+      "name": "Alligation of two prices or strengths",
+      "description": "Two kinds (prices per kg, percent purity) are mixed; find the mixing ratio, the quantity of one kind, or the mean price of the mixture.",
+      "concepts": [
+        "basic-alligation-of-two-qualities"
+      ]
+    },
+    {
+      "type": "alligation-applied",
+      "name": "Alligation with profit, interest or speed",
+      "description": "Alligation used on profit percents, interest rates, speeds or a selling price with a gain, rather than plain cost prices.",
+      "concepts": [
+        "alligation-in-profit-loss-si-speed-percentage"
+      ]
+    },
+    {
+      "type": "add-ingredient",
+      "name": "Adding water or one ingredient",
+      "description": "Pure water (or pure milk, acid or one ingredient) is added to a mixture to reach a new percent or ratio; one component stays fixed.",
+      "concepts": [
+        "adding-pure-water-or-solvent-to-dilute-concentration"
+      ]
+    },
+    {
+      "type": "mixing-mixtures",
+      "name": "Mixing two mixtures",
+      "description": "Two vessels or alloys with different ratios or percents are mixed in a given ratio (or a ratio must be found) to get a new mixture.",
+      "concepts": [
+        "mixing-two-mixtures-of-different-ratios"
+      ]
+    },
+    {
+      "type": "replacement",
+      "name": "Removal and replacement",
+      "description": "Part of a liquid is taken out and replaced by water (or another liquid), once or several times, or the part to replace must be found.",
+      "concepts": [
+        "replacement-removal-replacement-formula"
+      ]
+    },
+    {
+      "type": "remove-and-add",
+      "name": "Remove some mixture, then add different amounts",
+      "description": "Some mixture is removed and then different quantities of one or more ingredients are added (or moved to another vessel); track each ingredient step by step.",
+      "concepts": [
+        "multi-stage-replacement-with-different-quantities"
+      ]
+    }
+  ]
+}

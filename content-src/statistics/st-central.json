@@ -1,96 +1,180 @@
 {
  "topic": "st-central",
  "notes": {
-  "summary": "Measures of central tendency give one value that represents the whole data: arithmetic mean, median, mode, geometric mean and harmonic mean. JSO asks direct computations (raw and grouped data), the empirical relation, and properties.",
+  "summary": "<p>A measure of central tendency is one value that represents the whole data. Paper 2 asks 8 to 12 questions on the arithmetic, geometric and harmonic means, median, mode, the mean-median-mode relation and partition values (quartiles, deciles, percentiles). About half are short computations from a list or a frequency table; the rest test properties.</p><p>Learn each formula for raw data and for grouped data, and the properties each average has.</p>",
   "concepts": [
    {
-    "title": "The means",
-    "body": "<ul><li><b>Arithmetic mean</b> x̄ = Σx/n (raw), Σfx/Σf (grouped, using class marks).</li><li><b>Combined mean</b> = (n<sub>1</sub>x̄<sub>1</sub> + n<sub>2</sub>x̄<sub>2</sub>)/(n<sub>1</sub> + n<sub>2</sub>).</li><li><b>Geometric mean</b> = (x<sub>1</sub>x<sub>2</sub>…x<sub>n</sub>)<sup>1/n</sup>; used for ratios and growth rates.</li><li><b>Harmonic mean</b> = n / Σ(1/x); used for average speed over equal distances.</li><li>For positive values: <b>AM ≥ GM ≥ HM</b>, and for two numbers GM² = AM × HM.</li></ul>"
+    "title": "What a good average needs",
+    "body": "<p>A good average (Yule's conditions) is rigidly defined, easy to understand and compute, based on all observations, suitable for further algebra, little affected by sampling changes and not unduly affected by extreme values.</p><table><tr><th>Average</th><th>Uses all values?</th><th>Hit by extreme values?</th><th>Best for</th></tr><tr><td>Arithmetic mean</td><td>Yes</td><td>Yes, strongly</td><td>Most purposes; further algebra</td></tr><tr><td>Median</td><td>No (position only)</td><td>No</td><td>Skewed data, income, open-end classes, ordinal data</td></tr><tr><td>Mode</td><td>No</td><td>No</td><td>Most common size (shoes, shirts), nominal data</td></tr><tr><td>Geometric mean</td><td>Yes</td><td>Less than AM</td><td>Rates of growth, ratios, index numbers</td></tr><tr><td>Harmonic mean</td><td>Yes</td><td>Gives large weight to small values</td><td>Average speed, rates per unit</td></tr></table>"
    },
    {
-    "title": "Median and mode",
-    "body": "<ul><li><b>Median</b>: middle value after sorting. For even n, the average of the two middle values.</li><li>Grouped median = L + ((N/2 − cf)/f) × h, where cf is the cumulative frequency before the median class.</li><li><b>Mode</b>: most frequent value. Grouped mode = L + ((f<sub>1</sub> − f<sub>0</sub>)/(2f<sub>1</sub> − f<sub>0</sub> − f<sub>2</sub>)) × h.</li><li><b>Empirical relation</b> (moderately skewed data): Mode = 3 Median − 2 Mean.</li></ul>"
+    "title": "Arithmetic mean",
+    "body": "<ul><li>Raw data: x̄ = Σx ÷ n. Discrete series: x̄ = Σfx ÷ Σf. Grouped data: use class marks for x.</li><li><b>Assumed mean (short-cut)</b>: x̄ = A + Σfd ÷ Σf, where d = x − A.</li><li><b>Step deviation</b>: x̄ = A + (Σfu ÷ Σf) × h, where u = (x − A) ÷ h.</li><li><b>Weighted mean</b>: x̄<sub>w</sub> = Σwx ÷ Σw.</li><li><b>Combined mean</b> of two groups: x̄ = (n<sub>1</sub>x̄<sub>1</sub> + n<sub>2</sub>x̄<sub>2</sub>) ÷ (n<sub>1</sub> + n<sub>2</sub>).</li><li><b>Corrected mean</b>: new mean = (n × old mean − wrong value + correct value) ÷ n.</li></ul><p><b>Properties</b>: Σ(x − x̄) = 0 (deviations from the mean add to zero). Σ(x − A)² is least when A = x̄. If every value is increased by k, the mean increases by k; if every value is multiplied by k, the mean is multiplied by k. If y = a + bx, then ȳ = a + b x̄.</p><p>Mini example: 25 values have mean 40; one value 64 was copied as 46. Correct mean = (1000 − 46 + 64) ÷ 25 = 1018 ÷ 25 = 40.72.</p>"
+   },
+   {
+    "title": "Geometric and harmonic means",
+    "body": "<ul><li><b>Geometric mean</b> GM = (x<sub>1</sub> × x<sub>2</sub> × … × x<sub>n</sub>)<sup>1/n</sup>, or log GM = Σlog x ÷ n. It is zero if any value is zero and is not used with negative values.</li><li>GM of 4 and 9 = √36 = 6. GM of 2, 8, 32 = ∛512 = 8.</li><li>GM of ratios: GM(x/y) = GM(x) ÷ GM(y). This is why the GM is used for index numbers.</li><li><b>Harmonic mean</b> HM = n ÷ Σ(1/x). For two numbers, HM = 2ab ÷ (a + b).</li><li>Average speed when equal distances are covered at speeds a and b = 2ab ÷ (a + b) (the HM). Over equal times it is (a + b) ÷ 2 (the AM).</li></ul><p><b>Relations</b> (positive values): AM ≥ GM ≥ HM, with equality only when all values are equal. For two numbers, GM² = AM × HM.</p><p>Mini example: AM = 10 and HM = 6.4 for two numbers, so GM = √64 = 8.</p>"
+   },
+   {
+    "title": "Median",
+    "body": "<p>The median is the middle value after arranging the data in order. Half the values lie below it.</p><ul><li>n odd: median = ((n + 1)/2)th value. For 3, 7, 9, 12, 20 it is the 3rd value, 9.</li><li>n even: median = average of the (n/2)th and (n/2 + 1)th values. For 5, 7, 9, 12, 15, 20 it is (9 + 12) ÷ 2 = 10.5.</li><li>Discrete series: find the cumulative frequency just greater than (N + 1)/2; that value is the median.</li><li>Grouped data: median = L + ((N/2 − cf) ÷ f) × h, where L = lower boundary of the median class, cf = cumulative frequency before it, f = its frequency, h = width.</li></ul><p><b>Property</b>: Σ|x − A| is least when A = median. The median can be found graphically where the two ogives cross, and works with open-end classes.</p>"
+   },
+   {
+    "title": "Mode",
+    "body": "<p>The mode is the value that occurs most often. In 2, 3, 3, 5, 5, 5, 7 the mode is 5. Data can have no mode, one mode (unimodal), two (bimodal) or more.</p><ul><li>Grouped data: mode = L + ((f<sub>1</sub> − f<sub>0</sub>) ÷ (2f<sub>1</sub> − f<sub>0</sub> − f<sub>2</sub>)) × h, where f<sub>1</sub> = frequency of the modal class (the highest), f<sub>0</sub> = the class before, f<sub>2</sub> = the class after.</li><li>When frequencies are irregular, the <b>grouping method</b> finds the modal class.</li><li>The mode is read from a histogram: draw the two crossing lines inside the tallest bar.</li></ul>"
+   },
+   {
+    "title": "Mean, median and mode together",
+    "body": "<p><b>Empirical relation</b> (Karl Pearson) for a moderately skewed distribution:</p><p><b>Mode = 3 Median − 2 Mean</b>, or Mean − Mode = 3(Mean − Median).</p><ul><li>Symmetric distribution: mean = median = mode.</li><li>Positively skewed (long right tail): mean &gt; median &gt; mode.</li><li>Negatively skewed (long left tail): mean &lt; median &lt; mode.</li><li>The median always lies between the mean and the mode, and is nearer the mean.</li></ul><p>Mini example: mean 52, mode 46. Median = (2 × 52 + 46) ÷ 3 = 150 ÷ 3 = 50.</p>"
+   },
+   {
+    "title": "Worked grouped example",
+    "body": "<p>Use this table for mean, median and mode:</p><table><tr><th>Class</th><th>f</th><th>Class mark x</th><th>fx</th><th>cf</th></tr><tr><td>0–10</td><td>4</td><td>5</td><td>20</td><td>4</td></tr><tr><td>10–20</td><td>6</td><td>15</td><td>90</td><td>10</td></tr><tr><td>20–30</td><td>10</td><td>25</td><td>250</td><td>20</td></tr><tr><td>30–40</td><td>7</td><td>35</td><td>245</td><td>27</td></tr><tr><td>40–50</td><td>3</td><td>45</td><td>135</td><td>30</td></tr></table><ul><li>Mean = 740 ÷ 30 = 24.67.</li><li>Median: N/2 = 15 falls in 20–30. Median = 20 + ((15 − 10) ÷ 10) × 10 = 25.</li><li>Mode: modal class 20–30, f<sub>1</sub> = 10, f<sub>0</sub> = 6, f<sub>2</sub> = 7. Mode = 20 + (4 ÷ 7) × 10 = 25.71.</li><li>Q<sub>1</sub>: N/4 = 7.5 falls in 10–20. Q<sub>1</sub> = 10 + ((7.5 − 4) ÷ 6) × 10 = 15.83.</li></ul>"
+   },
+   {
+    "title": "Partition values",
+    "body": "<p>Partition values cut ordered data into equal parts.</p><table><tr><th>Measure</th><th>Parts</th><th>Number of values</th><th>Position (raw data)</th><th>Grouped data uses</th></tr><tr><td>Quartiles Q<sub>1</sub>, Q<sub>2</sub>, Q<sub>3</sub></td><td>4</td><td>3</td><td>Q<sub>k</sub>: k(n + 1)/4 th value</td><td>kN/4</td></tr><tr><td>Deciles D<sub>1</sub> to D<sub>9</sub></td><td>10</td><td>9</td><td>D<sub>k</sub>: k(n + 1)/10 th value</td><td>kN/10</td></tr><tr><td>Percentiles P<sub>1</sub> to P<sub>99</sub></td><td>100</td><td>99</td><td>P<sub>k</sub>: k(n + 1)/100 th value</td><td>kN/100</td></tr></table><ul><li>Q<sub>2</sub> = D<sub>5</sub> = P<sub>50</sub> = median. Q<sub>1</sub> = P<sub>25</sub>, Q<sub>3</sub> = P<sub>75</sub>.</li><li>Grouped formula has the same shape as the median: Q<sub>k</sub> = L + ((kN/4 − cf) ÷ f) × h.</li><li>A position like 3.5th means halfway between the 3rd and 4th values.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "mean",
-    "name": "AM, GM, HM and combined mean",
-    "how": "Pick the right formula; for combined mean, weight each group mean by its size.",
+    "type": "arithmetic-mean",
+    "name": "Arithmetic mean, weighted, combined and corrected",
+    "how": "Work with totals: total = n × mean. Combine or correct the totals, then divide by the new count.",
     "example": {
-     "q": "Group A (30 students) has mean 40; group B (20 students) has mean 50. Find the combined mean.",
+     "q": "Section A has 30 students with mean marks 60 and section B has 20 students with mean marks 70. Find the combined mean.",
      "steps": [
-      "Total marks = 30 × 40 + 20 × 50 = 1200 + 1000 = 2200",
-      "Total students = 50",
-      "Combined mean = 2200/50 = 44"
+      "Total of A = 30 × 60 = 1,800; total of B = 20 × 70 = 1,400.",
+      "Combined total = 3,200 for 50 students.",
+      "Combined mean = 3,200 ÷ 50 = 64."
      ],
-     "answer": "44"
+     "answer": "64"
+    }
+   },
+   {
+    "type": "gm-hm",
+    "name": "Geometric and harmonic means",
+    "how": "GM = nth root of the product; HM = n ÷ Σ(1/x). For two numbers, GM² = AM × HM.",
+    "example": {
+     "q": "The AM of two numbers is 10 and their GM is 8. Find their HM.",
+     "steps": [
+      "For two numbers GM² = AM × HM.",
+      "64 = 10 × HM.",
+      "HM = 6.4."
+     ],
+     "answer": "6.4"
     }
    },
    {
     "type": "median-mode",
-    "name": "Median, mode and the empirical relation",
-    "how": "Sort before finding the median; use Mode = 3 Median − 2 Mean when two of the three are given.",
+    "name": "Median and mode of raw data",
+    "how": "Sort first. For an even count, average the two middle values. The mode is the most frequent value.",
     "example": {
-     "q": "Mean = 20, Mode = 14. Find the median.",
+     "q": "Find the median of 12, 5, 9, 15, 7, 20.",
      "steps": [
-      "14 = 3 Median − 2 × 20",
-      "3 Median = 54",
-      "Median = 18"
+      "Sorted: 5, 7, 9, 12, 15, 20 (n = 6, even).",
+      "Middle values are the 3rd and 4th: 9 and 12.",
+      "Median = (9 + 12) ÷ 2 = 10.5."
      ],
-     "answer": "18"
+     "answer": "10.5"
     }
    },
    {
-    "type": "grouped",
-    "name": "Grouped median and mode",
-    "how": "Build the cumulative frequency column, locate the median (N/2) or modal (highest f) class, then apply the formula.",
+    "type": "grouped-data",
+    "name": "Mean, median and mode of grouped data",
+    "how": "Median: find N/2 in the cumulative frequency column, then L + ((N/2 − cf) ÷ f) × h. Mode: L + ((f₁ − f₀) ÷ (2f₁ − f₀ − f₂)) × h.",
     "example": {
-     "q": "Median class 40–50, N = 60, cf before it = 22, f = 16. Find the median.",
+     "q": "Classes 0–10, 10–20, 20–30, 30–40, 40–50 have frequencies 4, 6, 10, 7, 3. Find the median.",
      "steps": [
-      "N/2 = 30",
-      "Median = 40 + ((30 − 22)/16) × 10",
-      "= 40 + 5 = 45"
+      "N = 30, so N/2 = 15.",
+      "Cumulative frequencies: 4, 10, 20, 27, 30. The first cf above 15 is 20, so the median class is 20–30.",
+      "L = 20, cf before = 10, f = 10, h = 10.",
+      "Median = 20 + ((15 − 10) ÷ 10) × 10 = 25."
      ],
-     "answer": "45"
+     "answer": "25"
+    }
+   },
+   {
+    "type": "empirical-relation",
+    "name": "Mean, median and mode relation",
+    "how": "Use Mode = 3 Median − 2 Mean and rearrange for the missing value.",
+    "example": {
+     "q": "In a moderately skewed distribution, mean = 52 and mode = 46. Find the median.",
+     "steps": [
+      "Mode = 3 Median − 2 Mean, so 3 Median = Mode + 2 Mean.",
+      "3 Median = 46 + 104 = 150.",
+      "Median = 50."
+     ],
+     "answer": "50"
+    }
+   },
+   {
+    "type": "partition-values",
+    "name": "Quartiles, deciles and percentiles",
+    "how": "Sort the data, find the position k(n + 1)/4 (or /10, /100), and read off that value. For grouped data use kN/4 in the median-type formula.",
+    "example": {
+     "q": "Find Q₁ and Q₃ of 3, 5, 8, 10, 12, 15, 18, 20, 22, 25, 30.",
+     "steps": [
+      "n = 11, already sorted.",
+      "Q₁ position = (11 + 1)/4 = 3rd value = 8.",
+      "Q₃ position = 3 × 12/4 = 9th value = 22."
+     ],
+     "answer": "Q₁ = 8, Q₃ = 22"
     }
    }
   ],
   "tips": [
-   "For two numbers a and b: AM = (a+b)/2, GM = √(ab), HM = 2ab/(a+b).",
-   "Median is not affected by extreme values; the mean is.",
-   "In a symmetric distribution, mean = median = mode."
+   "Most mean questions are fastest with totals: total = count × mean.",
+   "For grouped median, mode and quartiles, write the cumulative frequency column first; it locates the right class in seconds.",
+   "Mode = 3 Median − 2 Mean. Rearranged: Median = (Mode + 2 Mean) ÷ 3, Mean = (3 Median − Mode) ÷ 2.",
+   "For two positive numbers, AM ≥ GM ≥ HM and GM² = AM × HM.",
+   "Average speed for equal distances is the HM of the speeds, not the AM.",
+   "The median and quartiles are the right averages for open-end classes and for skewed data like incomes."
   ],
   "traps": [
-   "Always sort the data before picking the median.",
-   "In the grouped median formula, cf is the cumulative frequency of the class BEFORE the median class.",
-   "GM is zero or undefined if any value is zero or negative."
+   "Sort the data before finding the median; the middle of the unsorted list is wrong.",
+   "In the grouped median formula, cf is the cumulative frequency of the class before the median class, not of the median class itself.",
+   "In the mode formula, the denominator is 2f₁ − f₀ − f₂, not f₁ − f₀ − f₂.",
+   "If the classes are inclusive (10–19), convert to boundaries (9.5–19.5) before using L.",
+   "The GM cannot be found when a value is zero or negative; then the GM is either zero or undefined."
   ]
  },
  "formulas": [
   {
    "name": "Arithmetic mean",
-   "expr": "x̄ = Σfx / Σf"
+   "expr": "x̄ = Σfx ÷ Σf;  short-cut: A + (Σfu ÷ Σf) × h, u = (x − A)/h"
   },
   {
    "name": "Combined mean",
-   "expr": "(n₁x̄₁ + n₂x̄₂) / (n₁ + n₂)"
+   "expr": "(n₁x̄₁ + n₂x̄₂) ÷ (n₁ + n₂)"
   },
   {
-   "name": "Grouped median",
-   "expr": "L + ((N/2 − cf) / f) × h"
+   "name": "Geometric mean",
+   "expr": "(x₁x₂…xₙ)^(1/n);  log GM = Σ log x ÷ n"
   },
   {
-   "name": "Grouped mode",
-   "expr": "L + ((f₁ − f₀) / (2f₁ − f₀ − f₂)) × h"
+   "name": "Harmonic mean",
+   "expr": "n ÷ Σ(1/x);  two numbers: 2ab ÷ (a + b)"
+  },
+  {
+   "name": "AM, GM, HM",
+   "expr": "AM ≥ GM ≥ HM;  two numbers: GM² = AM × HM"
+  },
+  {
+   "name": "Median (grouped)",
+   "expr": "L + ((N/2 − cf) ÷ f) × h"
+  },
+  {
+   "name": "Mode (grouped)",
+   "expr": "L + ((f₁ − f₀) ÷ (2f₁ − f₀ − f₂)) × h"
   },
   {
    "name": "Empirical relation",
    "expr": "Mode = 3 Median − 2 Mean"
   },
   {
-   "name": "Two numbers",
-   "expr": "GM² = AM × HM"
+   "name": "Quartile (grouped)",
+   "expr": "Qₖ = L + ((kN/4 − cf) ÷ f) × h"
   }
  ],
  "questions": [
@@ -98,7 +182,7 @@
    "id": "st-central-001",
    "rev": 1,
    "topic": "st-central",
-   "type": "mean",
+   "type": "arithmetic-mean",
    "level": 1,
    "q": "The arithmetic mean of 4, 8, 12, 16 and 20 is:",
    "options": [
@@ -132,7 +216,7 @@
    "id": "st-central-003",
    "rev": 1,
    "topic": "st-central",
-   "type": "median-mode",
+   "type": "empirical-relation",
    "level": 2,
    "q": "For a moderately skewed distribution, mean = 40 and median = 38. The mode is approximately:",
    "options": [
@@ -149,7 +233,7 @@
    "id": "st-central-004",
    "rev": 1,
    "topic": "st-central",
-   "type": "mean",
+   "type": "gm-hm",
    "level": 2,
    "q": "The geometric mean of 2, 8 and 32 is:",
    "options": [
@@ -166,7 +250,7 @@
    "id": "st-central-005",
    "rev": 1,
    "topic": "st-central",
-   "type": "grouped",
+   "type": "grouped-data",
    "level": 3,
    "q": "Find the median of the distribution:<table><tr><th>Class</th><th>f</th></tr><tr><td>0–10</td><td>5</td></tr><tr><td>10–20</td><td>8</td></tr><tr><td>20–30</td><td>12</td></tr><tr><td>30–40</td><td>10</td></tr><tr><td>40–50</td><td>5</td></tr></table>",
    "options": [
@@ -183,7 +267,7 @@
    "id": "st-central-006",
    "rev": 1,
    "topic": "st-central",
-   "type": "grouped",
+   "type": "grouped-data",
    "level": 3,
    "q": "For the same distribution (0–10: 5, 10–20: 8, 20–30: 12, 30–40: 10, 40–50: 5), the mode is:",
    "options": [

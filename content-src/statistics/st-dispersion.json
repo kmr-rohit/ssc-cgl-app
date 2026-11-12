@@ -1,72 +1,141 @@
 {
  "topic": "st-dispersion",
  "notes": {
-  "summary": "Dispersion measures how spread out the data is. Absolute measures (range, quartile deviation, mean deviation, standard deviation) carry units; relative measures (coefficients, CV) are unit-free and used to compare series.",
+  "summary": "<p>Dispersion tells how spread out the values are around the centre. Two data sets can have the same mean and very different spread. Paper 2 asks 8 to 12 questions here: range, quartile deviation, mean deviation, standard deviation and variance, the coefficient of variation, combined SD of two groups and the effect of adding or multiplying by a constant.</p><p><b>Absolute measures</b> (range, QD, MD, SD) are in the units of the data. <b>Relative measures</b> (coefficients, CV) have no units and are used to compare two series.</p>",
   "concepts": [
    {
-    "title": "Absolute measures",
-    "body": "<ul><li><b>Range</b> = Largest − Smallest.</li><li><b>Quartile deviation</b> (semi-interquartile range) QD = (Q<sub>3</sub> − Q<sub>1</sub>)/2.</li><li><b>Mean deviation</b> = Σ|x − A|/n, usually about mean or median. It is least when taken about the median.</li><li><b>Standard deviation</b> σ = √(Σ(x − x̄)²/n) = √(Σx²/n − x̄²). <b>Variance</b> = σ².</li></ul>"
+    "title": "Absolute and relative measures",
+    "body": "<table><tr><th>Absolute measure</th><th>Relative measure (unit-free)</th></tr><tr><td>Range = L − S</td><td>Coefficient of range = (L − S) ÷ (L + S)</td></tr><tr><td>Quartile deviation = (Q<sub>3</sub> − Q<sub>1</sub>) ÷ 2</td><td>Coefficient of QD = (Q<sub>3</sub> − Q<sub>1</sub>) ÷ (Q<sub>3</sub> + Q<sub>1</sub>)</td></tr><tr><td>Mean deviation about A</td><td>Coefficient of MD = MD ÷ A (A = mean or median)</td></tr><tr><td>Standard deviation σ</td><td>Coefficient of SD = σ ÷ x̄; coefficient of variation = (σ ÷ x̄) × 100</td></tr></table><p>Use absolute measures to describe one series and relative measures to compare series with different units or very different means.</p>"
    },
    {
-    "title": "Relative measures",
-    "body": "<ul><li>Coefficient of range = (L − S)/(L + S).</li><li>Coefficient of QD = (Q<sub>3</sub> − Q<sub>1</sub>)/(Q<sub>3</sub> + Q<sub>1</sub>).</li><li><b>Coefficient of variation</b> CV = (σ / x̄) × 100. The series with lower CV is more consistent.</li></ul>"
+    "title": "Range and quartile deviation",
+    "body": "<ul><li><b>Range</b> = largest − smallest. Quick, but depends only on two extreme values. Used in quality control and for daily share prices and temperatures.</li><li><b>Interquartile range</b> = Q<sub>3</sub> − Q<sub>1</sub>; it covers the middle 50% of the data.</li><li><b>Quartile deviation</b> (semi-interquartile range) = (Q<sub>3</sub> − Q<sub>1</sub>) ÷ 2. Not affected by extreme values and can be found for open-end classes.</li></ul><p>Mini example: 12, 7, 25, 18, 3. Range = 25 − 3 = 22. Coefficient of range = 22 ÷ 28 = 0.79.</p>"
    },
    {
-    "title": "Properties of SD",
-    "body": "<ul><li>Adding or subtracting a constant does <b>not</b> change SD (change of origin).</li><li>Multiplying by k multiplies SD by |k| and variance by k² (change of scale).</li><li>If y = a + bx, then σ<sub>y</sub> = |b| σ<sub>x</sub>.</li><li>For normal data: QD ≈ (2/3)σ and MD ≈ (4/5)σ.</li></ul>"
+    "title": "Mean deviation",
+    "body": "<p>Mean deviation (average deviation) = Σ|x − A| ÷ n, where A is usually the mean or the median. For a frequency table, MD = Σf|x − A| ÷ Σf.</p><ul><li>Signs are ignored (absolute values), which is its main weakness for algebra.</li><li>Mean deviation is <b>least when taken about the median</b>.</li><li>Mini example: 4, 7, 9, 10, 15. Median = 9, absolute deviations 5, 2, 0, 1, 6, total 14. MD about median = 14 ÷ 5 = 2.8.</li></ul>"
+   },
+   {
+    "title": "Standard deviation and variance",
+    "body": "<p>SD is the root of the mean of squared deviations from the mean. It uses every value and suits further algebra, so it is the best and most used measure.</p><ul><li>σ = √(Σ(x − x̄)² ÷ n) = √(Σx² ÷ n − x̄²). <b>Variance</b> = σ².</li><li>Frequency table: σ² = Σfx² ÷ N − (Σfx ÷ N)².</li><li>Step deviation: σ = h × √(Σfu² ÷ N − (Σfu ÷ N)²), u = (x − A) ÷ h.</li><li>SD of the first n natural numbers = √((n² − 1) ÷ 12). For 1 to 7: √(48 ÷ 12) = 2.</li><li>SD of two values a and b = |a − b| ÷ 2.</li><li><b>Root mean square deviation</b> s = √(Σ(x − A)² ÷ n) and s² = σ² + (x̄ − A)². So the RMS deviation is least (equal to σ) when A = x̄.</li></ul><p>Mini example: 4, 8, 10, 12, 16. Mean 10, squared deviations 36, 4, 0, 4, 36, total 80. Variance = 16, SD = 4.</p>"
+   },
+   {
+    "title": "Effect of origin and scale",
+    "body": "<p>If every value is changed to y = a + bx:</p><table><tr><th>Measure</th><th>Adding a constant a</th><th>Multiplying by b</th></tr><tr><td>Mean</td><td>Increases by a</td><td>Multiplied by b</td></tr><tr><td>Range, QD, MD, SD</td><td>No change</td><td>Multiplied by |b|</td></tr><tr><td>Variance</td><td>No change</td><td>Multiplied by b²</td></tr><tr><td>CV</td><td>Changes</td><td>No change (if b &gt; 0)</td></tr></table><p>So σ<sub>y</sub> = |b| σ<sub>x</sub> and Var(y) = b² Var(x). Example: σ<sub>x</sub> = 4, y = 7 − 3x gives σ<sub>y</sub> = 12 and Var(y) = 144.</p>"
+   },
+   {
+    "title": "Coefficient of variation",
+    "body": "<p>CV = (σ ÷ x̄) × 100. It is a percentage, so it compares spread across series with different means or units.</p><ul><li>Lower CV = more consistent, more uniform, more stable.</li><li>Higher CV = more variable, less consistent.</li><li>Mini example: Batsman A mean 50, SD 10 gives CV 20%. Batsman B mean 40, SD 6 gives CV 15%. B is more consistent even though A scores more.</li></ul>"
+   },
+   {
+    "title": "Combined mean and SD of two groups",
+    "body": "<p>Groups of sizes n<sub>1</sub>, n<sub>2</sub> with means x̄<sub>1</sub>, x̄<sub>2</sub> and SDs σ<sub>1</sub>, σ<sub>2</sub>:</p><ul><li>Combined mean x̄ = (n<sub>1</sub>x̄<sub>1</sub> + n<sub>2</sub>x̄<sub>2</sub>) ÷ (n<sub>1</sub> + n<sub>2</sub>).</li><li>d<sub>1</sub> = x̄<sub>1</sub> − x̄, d<sub>2</sub> = x̄<sub>2</sub> − x̄.</li><li>Combined variance = [n<sub>1</sub>(σ<sub>1</sub>² + d<sub>1</sub>²) + n<sub>2</sub>(σ<sub>2</sub>² + d<sub>2</sub>²)] ÷ (n<sub>1</sub> + n<sub>2</sub>).</li></ul><p>The d² terms matter: two groups with the same SD but different means give a larger combined SD.</p>"
+   },
+   {
+    "title": "Comparing the measures",
+    "body": "<ul><li>For any data: SD ≥ MD about mean ≥ MD about median, and SD is never negative.</li><li>For a normal (symmetric bell) distribution: QD ≈ (2/3)σ and MD ≈ (4/5)σ, so 4 SD = 5 MD = 6 QD roughly.</li><li>In a normal distribution, mean ± 1σ covers about 68.27%, ± 2σ about 95.45%, ± 3σ about 99.73% of the values.</li><li>SD = 0 only when all values are equal.</li><li><b>Lorenz curve</b> is a graphic measure of dispersion for income and wealth.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "absolute",
-    "name": "Range, QD, MD and SD",
-    "how": "Compute the mean first, then deviations; for SD square them, for MD take absolute values.",
+    "type": "range-qd",
+    "name": "Range and quartile deviation",
+    "how": "Range = L − S. QD = (Q₃ − Q₁) ÷ 2. Coefficients divide the difference by the sum.",
     "example": {
-     "q": "Q1 = 20, Q3 = 50. Find QD and coefficient of QD.",
+     "q": "Q₁ = 20 and Q₃ = 50. Find the quartile deviation and its coefficient.",
      "steps": [
-      "QD = (50 − 20)/2 = 15",
-      "Coefficient = (50 − 20)/(50 + 20) = 30/70 = 0.43"
+      "QD = (50 − 20) ÷ 2 = 15.",
+      "Coefficient of QD = (50 − 20) ÷ (50 + 20) = 30 ÷ 70 = 0.43."
      ],
      "answer": "QD = 15, coefficient = 0.43"
     }
    },
    {
-    "type": "relative",
+    "type": "mean-deviation",
+    "name": "Mean deviation",
+    "how": "Find the mean or median, take absolute deviations, add them and divide by n.",
+    "example": {
+     "q": "Find the mean deviation about the median of 4, 7, 9, 10, 15.",
+     "steps": [
+      "Median = 9 (middle of 5 sorted values).",
+      "Absolute deviations: 5, 2, 0, 1, 6; total = 14.",
+      "MD = 14 ÷ 5 = 2.8."
+     ],
+     "answer": "2.8"
+    }
+   },
+   {
+    "type": "sd-variance",
+    "name": "Standard deviation and variance",
+    "how": "Find the mean, square each deviation, average the squares (variance), then take the square root. Or use Σx²/n − x̄².",
+    "example": {
+     "q": "Find the standard deviation of 4, 8, 10, 12, 16.",
+     "steps": [
+      "Mean = 50 ÷ 5 = 10.",
+      "Squared deviations: 36, 4, 0, 4, 36; total = 80.",
+      "Variance = 80 ÷ 5 = 16, so SD = 4."
+     ],
+     "answer": "4"
+    }
+   },
+   {
+    "type": "coefficient-variation",
     "name": "Coefficient of variation",
-    "how": "CV = σ/x̄ × 100; lower CV means more consistent.",
+    "how": "CV = σ ÷ x̄ × 100. The lower CV is more consistent.",
     "example": {
      "q": "Batsman A: mean 50, SD 10. Batsman B: mean 40, SD 6. Who is more consistent?",
      "steps": [
-      "CV(A) = 10/50 × 100 = 20%",
-      "CV(B) = 6/40 × 100 = 15%",
-      "Lower CV is more consistent."
+      "CV(A) = 10 ÷ 50 × 100 = 20%.",
+      "CV(B) = 6 ÷ 40 × 100 = 15%.",
+      "Lower CV means more consistent."
      ],
      "answer": "B"
     }
    },
    {
-    "type": "properties",
-    "name": "Change of origin and scale",
-    "how": "Ignore added constants; multiply SD by |b|, variance by b².",
+    "type": "combined-sd",
+    "name": "Combined mean and SD",
+    "how": "Find the combined mean first, then the gaps d₁, d₂ of each group mean from it, then use [n₁(σ₁² + d₁²) + n₂(σ₂² + d₂²)] ÷ (n₁ + n₂).",
     "example": {
-     "q": "SD of x is 3. Find SD of y = 5 + 2x.",
+     "q": "Group 1: 60 values, mean 40, SD 5. Group 2: 40 values, mean 50, SD 5. Find the combined SD.",
      "steps": [
-      "The +5 does not affect SD.",
-      "σy = |2| × 3 = 6"
+      "Combined mean = (2400 + 2000) ÷ 100 = 44.",
+      "d₁ = 40 − 44 = −4, d₂ = 50 − 44 = 6.",
+      "Combined variance = [60(25 + 16) + 40(25 + 36)] ÷ 100 = (2460 + 2440) ÷ 100 = 49.",
+      "Combined SD = √49 = 7."
      ],
-     "answer": "6"
+     "answer": "7"
+    }
+   },
+   {
+    "type": "origin-scale",
+    "name": "Change of origin and scale",
+    "how": "Ignore the added constant. Multiply SD, MD, QD and range by |b| and variance by b².",
+    "example": {
+     "q": "The SD of x is 20. Find the SD of y = (x − 100) ÷ 5.",
+     "steps": [
+      "y = −20 + 0.2x, so a = −20 and b = 0.2.",
+      "Subtracting 100 does not change the SD.",
+      "σy = 0.2 × 20 = 4."
+     ],
+     "answer": "4"
     }
    }
   ],
   "tips": [
-   "Variance = mean of squares − square of mean.",
-   "SD is never negative; it is zero only if all values are equal.",
-   "Mean deviation is least about the median; sum of squared deviations is least about the mean."
+   "Variance = mean of squares − square of mean: σ² = Σx²/n − x̄².",
+   "SD of the first n natural numbers = √((n² − 1)/12); variance of 1 to n = (n² − 1)/12.",
+   "Mean deviation is least about the median; the sum of squared deviations is least about the mean.",
+   "Lower CV wins every \"more consistent\" or \"more uniform\" question.",
+   "For two groups, compute the combined mean first; forgetting the d² terms is the commonest mistake.",
+   "For a normal distribution, QD : MD : SD ≈ 10 : 12 : 15 (from QD = 2σ/3 and MD = 4σ/5)."
   ],
   "traps": [
-   "A negative multiplier still gives a positive SD: use |b|.",
-   "Do not add the constant to SD when every value is shifted.",
-   "Variance is in squared units; SD is in the original units."
+   "A negative multiplier still gives a positive SD: use |b|. Variance uses b², which is always positive.",
+   "Do not add a constant to the SD when every value is shifted; only the mean moves.",
+   "Variance is in squared units; SD is in the original units.",
+   "QD is half the interquartile range, not the full Q₃ − Q₁.",
+   "A larger SD does not mean less consistent when means differ; compare CVs instead."
   ]
  },
  "formulas": [
@@ -79,12 +148,24 @@
    "expr": "(Q₃ − Q₁)/2;  coefficient = (Q₃ − Q₁)/(Q₃ + Q₁)"
   },
   {
+   "name": "Mean deviation",
+   "expr": "Σf|x − A| ÷ N,  A = mean or median"
+  },
+  {
    "name": "Standard deviation",
    "expr": "σ = √(Σx²/n − x̄²)"
   },
   {
+   "name": "SD of 1, 2, …, n",
+   "expr": "√((n² − 1)/12)"
+  },
+  {
    "name": "Coefficient of variation",
    "expr": "CV = (σ / x̄) × 100"
+  },
+  {
+   "name": "Combined variance",
+   "expr": "[n₁(σ₁² + d₁²) + n₂(σ₂² + d₂²)] ÷ (n₁ + n₂),  dᵢ = x̄ᵢ − x̄"
   },
   {
    "name": "Linear change",
@@ -96,7 +177,7 @@
    "id": "st-dispersion-001",
    "rev": 1,
    "topic": "st-dispersion",
-   "type": "absolute",
+   "type": "range-qd",
    "level": 1,
    "q": "The range of 12, 7, 25, 18, 3 is:",
    "options": [
@@ -113,7 +194,7 @@
    "id": "st-dispersion-002",
    "rev": 1,
    "topic": "st-dispersion",
-   "type": "properties",
+   "type": "origin-scale",
    "level": 1,
    "q": "If 10 is added to every observation of a data set, its standard deviation:",
    "options": [
@@ -130,7 +211,7 @@
    "id": "st-dispersion-003",
    "rev": 1,
    "topic": "st-dispersion",
-   "type": "absolute",
+   "type": "sd-variance",
    "level": 2,
    "q": "The standard deviation of 2, 4, 4, 4, 5, 5, 7, 9 is:",
    "options": [
@@ -147,7 +228,7 @@
    "id": "st-dispersion-004",
    "rev": 1,
    "topic": "st-dispersion",
-   "type": "relative",
+   "type": "coefficient-variation",
    "level": 2,
    "q": "A series has mean 50 and standard deviation 10. Its coefficient of variation is:",
    "options": [
@@ -164,7 +245,7 @@
    "id": "st-dispersion-005",
    "rev": 1,
    "topic": "st-dispersion",
-   "type": "absolute",
+   "type": "mean-deviation",
    "level": 3,
    "q": "The mean deviation about the mean of 3, 5, 7, 9, 11 is:",
    "options": [
@@ -181,7 +262,7 @@
    "id": "st-dispersion-006",
    "rev": 1,
    "topic": "st-dispersion",
-   "type": "properties",
+   "type": "origin-scale",
    "level": 3,
    "q": "The SD of x is 4. If y = 7 − 3x, the variance of y is:",
    "options": [

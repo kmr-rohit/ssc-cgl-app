@@ -1,0 +1,47 @@
+{
+  "topic": "e-spelling",
+  "types": [
+    {
+      "type": "find-misspelt",
+      "name": "Find the misspelt word",
+      "description": "The options are four different words and the question asks which one is incorrectly, wrongly or misspelt (e.g. 'Select the INCORRECTLY spelt word. Descendant / Deceased / Decimate / Desedent').",
+      "concepts": []
+    },
+    {
+      "type": "find-correct",
+      "name": "Choose the correct spelling",
+      "description": "The options are four spellings of the same word and the question asks for the correctly spelt one (e.g. 'Select the correctly spelt word. propotion / proportion / preportion / proporsion').",
+      "concepts": []
+    },
+    {
+      "type": "misspelt-in-sentence",
+      "name": "Misspelt word in a sentence",
+      "description": "A sentence is given (sometimes with words underlined or labelled A to D) and the question asks you to identify the incorrectly spelt word in it; the options are words or labels from the sentence.",
+      "concepts": []
+    },
+    {
+      "type": "correct-the-word",
+      "name": "Correct the misspelt word",
+      "description": "A sentence contains a misspelt word (often underlined) and the options are corrected spellings of that word, sometimes with 'No error' or 'No improvement' as one option.",
+      "concepts": []
+    },
+    {
+      "type": "fill-blank",
+      "name": "Correctly spelt word for a blank",
+      "description": "A sentence has a blank and the options are spellings of one word (or similar-sounding words); choose the correctly spelt word that fills the blank.",
+      "concepts": []
+    },
+    {
+      "type": "correct-by-meaning",
+      "name": "Correct spelling of a word with a given meaning",
+      "description": "The question gives a meaning (e.g. 'a word meaning to make less severe') and asks for the correct spelling; the options are four spellings of the same word.",
+      "concepts": []
+    },
+    {
+      "type": "error-free-sentence",
+      "name": "Sentence with no spelling error",
+      "description": "The four options are full sentences and the question asks which sentence has no spelling error, or which one has a spelling error.",
+      "concepts": []
+    }
+  ]
+}

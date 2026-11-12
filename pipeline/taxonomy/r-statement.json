@@ -1,0 +1,65 @@
+{
+ "topic": "r-statement",
+ "types": [
+  {
+   "type": "statement-conclusion",
+   "name": "Statement and conclusions",
+   "description": "A statement or situation is followed by conclusions I and II, and you decide which conclusion logically follows from it.",
+   "concepts": []
+  },
+  {
+   "type": "statement-assumption",
+   "name": "Statement and assumptions",
+   "description": "A statement is followed by assumptions, and you decide which are implicit, that is, taken for granted by the speaker.",
+   "concepts": [
+    "statement-assumption"
+   ]
+  },
+  {
+   "type": "course-of-action",
+   "name": "Courses of action",
+   "description": "A problem or situation is followed by courses of action I and II, and you decide which ones should be pursued.",
+   "concepts": []
+  },
+  {
+   "type": "cause-effect",
+   "name": "Cause and effect",
+   "description": "Two events are given (or a statement with possible reasons), and you decide which is the cause, which is the effect, or whether they share a common cause.",
+   "concepts": [
+    "cause-effect"
+   ]
+  },
+  {
+   "type": "statement-argument",
+   "name": "Statement and arguments",
+   "description": "A question such as \"Should X be done?\" is followed by \"Yes\" and \"No\" arguments, and you decide which arguments are strong.",
+   "concepts": [
+    "statement-argument"
+   ]
+  },
+  {
+   "type": "statement-inference",
+   "name": "Statement and inferences",
+   "description": "A statement or short passage is followed by inferences, or asks \"which of the following can be inferred\", and you pick what is true or most likely true.",
+   "concepts": [
+    "statement-inference"
+   ]
+  },
+  {
+   "type": "data-sufficiency",
+   "name": "Data sufficiency",
+   "description": "A question is followed by two statements I and II, and you decide whether one, either, both together or neither is enough to answer it, without fully solving it.",
+   "concepts": [
+    "data-sufficiency-two-statement"
+   ]
+  },
+  {
+   "type": "inequality",
+   "name": "Inequality statements",
+   "description": "Letters are joined by signs such as >, <, ≥, ≤, = (or coded symbols standing for them), and you check which conclusions are definitely true.",
+   "concepts": [
+    "inequality"
+   ]
+  }
+ ]
+}

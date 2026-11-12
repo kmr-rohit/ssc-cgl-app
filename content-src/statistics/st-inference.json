@@ -1,90 +1,204 @@
 {
  "topic": "st-inference",
  "notes": {
-  "summary": "Statistical inference draws conclusions about a population from a sample: estimating parameters (point and interval) and testing hypotheses with z, t, χ² and F tests. JSO asks definitions, confidence intervals, test statistics and degrees of freedom.",
+  "summary": "Statistical inference draws conclusions about a population from a sample. Paper 2 covers estimation (point and interval estimates, and what makes a good estimator) and testing of hypotheses (null and alternative hypotheses, Type I and Type II errors, level of significance, power, and the z, t, χ² and F tests). Most questions are either definitions or one-line computations of a test statistic, a confidence interval or degrees of freedom.",
   "concepts": [
    {
-    "title": "Estimation",
-    "body": "<ul><li>A good estimator is <b>unbiased</b>, <b>consistent</b>, <b>efficient</b> and <b>sufficient</b>.</li><li>Sample mean is unbiased for μ. s² = Σ(x − x̄)²/(n − 1) is unbiased for σ².</li><li>Confidence interval for μ (σ known): x̄ ± z × σ/√n. z = 1.645 (90%), 1.96 (95%), 2.576 (99%).</li></ul>"
+    "title": "Point and interval estimation",
+    "body": "<ul><li>An <b>estimator</b> is a rule (formula) using the sample, such as x̄. An <b>estimate</b> is the number it gives for one sample, such as x̄ = 52.</li><li><b>Point estimate</b>: a single value for the parameter.</li><li><b>Interval estimate</b> (confidence interval): a range that is expected to contain the parameter with a stated confidence, such as 95%.</li><li>Methods of finding estimators: method of moments, <b>maximum likelihood</b> (MLE), least squares.</li></ul>"
    },
    {
-    "title": "Hypothesis testing",
-    "body": "<ul><li>H<sub>0</sub> (null) vs H<sub>1</sub> (alternative).</li><li><b>Type I error</b>: reject H<sub>0</sub> when it is true; probability α = level of significance.</li><li><b>Type II error</b>: accept H<sub>0</sub> when it is false; probability β. <b>Power</b> = 1 − β.</li><li>p-value &lt; α ⇒ reject H<sub>0</sub>.</li></ul>"
+    "title": "Properties of a good estimator",
+    "body": "<table><tr><th>Property</th><th>Meaning</th><th>Example</th></tr><tr><td>Unbiased</td><td>E(T) = θ: on average it hits the true value</td><td>x̄ for μ; s² = Σ(x − x̄)²/(n − 1) for σ²; sample proportion p for P</td></tr><tr><td>Consistent</td><td>T gets closer to θ as n grows (Var → 0 for an unbiased T)</td><td>x̄ for μ</td></tr><tr><td>Efficient</td><td>Smallest variance among unbiased estimators</td><td>For a normal population, the mean is more efficient than the median</td></tr><tr><td>Sufficient</td><td>Uses all the information in the sample about θ</td><td>Σx for the Poisson λ or the binomial p</td></tr></table><ul><li>Σ(x − x̄)²/n is a <b>biased</b> estimator of σ²; dividing by n − 1 removes the bias.</li><li>An unbiased estimator with the least variance is called MVUE. The Cramér–Rao inequality gives the lowest possible variance.</li><li>Sufficiency is checked with the Fisher–Neyman factorisation theorem.</li><li>Maximum likelihood estimators are consistent and, for large samples, efficient; they need not be unbiased.</li></ul>"
    },
    {
-    "title": "Common tests",
-    "body": "<table><tr><th>Test</th><th>Use</th><th>df</th></tr><tr><td>z-test</td><td>Mean, large sample or σ known</td><td>—</td></tr><tr><td>t-test (one sample)</td><td>Mean, small sample, σ unknown</td><td>n − 1</td></tr><tr><td>t-test (two independent samples)</td><td>Difference of means</td><td>n<sub>1</sub> + n<sub>2</sub> − 2</td></tr><tr><td>χ² independence</td><td>r × c contingency table</td><td>(r − 1)(c − 1)</td></tr><tr><td>χ² goodness of fit</td><td>k classes</td><td>k − 1 − (parameters estimated)</td></tr><tr><td>F-test</td><td>Ratio of two variances</td><td>(n<sub>1</sub> − 1, n<sub>2</sub> − 1)</td></tr></table>"
+    "title": "Confidence intervals",
+    "body": "<table><tr><th>Case</th><th>Interval</th></tr><tr><td>Mean, σ known (or n large)</td><td>x̄ ± z × σ/√n</td></tr><tr><td>Mean, σ unknown, small n (normal population)</td><td>x̄ ± t<sub>n−1</sub> × s/√n</td></tr><tr><td>Proportion (n large)</td><td>p ± z × √(pq/n)</td></tr></table><table><tr><th>Confidence</th><th>z</th></tr><tr><td>90%</td><td>1.645</td></tr><tr><td>95%</td><td>1.96</td></tr><tr><td>99%</td><td>2.576 (often 2.58)</td></tr></table><ul><li>Higher confidence gives a wider interval; a larger n gives a narrower one.</li><li>Width = 2 × z × σ/√n. Margin of error = z × σ/√n.</li></ul><p>Example: n = 100, x̄ = 50, σ = 10. 95% CI = 50 ± 1.96 × 1 = (48.04, 51.96).</p>"
+   },
+   {
+    "title": "Hypotheses and significance",
+    "body": "<ul><li><b>Null hypothesis</b> H<sub>0</sub>: the claim of no difference or no effect, tested directly (μ = 50).</li><li><b>Alternative hypothesis</b> H<sub>1</sub>: what we accept if H<sub>0</sub> is rejected. μ ≠ 50 gives a <b>two-tailed</b> test; μ &gt; 50 or μ &lt; 50 gives a <b>one-tailed</b> (right or left) test.</li><li><b>Test statistic</b>: the value computed from the sample (z, t, χ², F).</li><li><b>Critical region</b> (rejection region): values of the statistic that lead to rejecting H<sub>0</sub>.</li><li><b>Level of significance</b> α: the probability of the critical region when H<sub>0</sub> is true, usually 5% or 1%.</li><li><b>p-value</b>: the probability, under H<sub>0</sub>, of a result at least as extreme as the one seen. Reject H<sub>0</sub> if p-value ≤ α.</li></ul><table><tr><th>α</th><th>Two-tailed z</th><th>One-tailed z</th></tr><tr><td>5%</td><td>1.96</td><td>1.645</td></tr><tr><td>1%</td><td>2.58</td><td>2.33</td></tr></table>"
+   },
+   {
+    "title": "Errors and power",
+    "body": "<table><tr><th></th><th>H<sub>0</sub> true</th><th>H<sub>0</sub> false</th></tr><tr><td>Reject H<sub>0</sub></td><td><b>Type I error</b> (probability α)</td><td>Correct decision (probability 1 − β = power)</td></tr><tr><td>Accept H<sub>0</sub></td><td>Correct decision (probability 1 − α)</td><td><b>Type II error</b> (probability β)</td></tr></table><ul><li>Type I error is also called the <b>producer's risk</b> (a good lot is rejected); Type II is the <b>consumer's risk</b> (a bad lot is accepted).</li><li><b>Power</b> = 1 − β = P(reject H<sub>0</sub> when it is false).</li><li>For a fixed n, lowering α raises β. Increasing n can lower both.</li></ul>"
+   },
+   {
+    "title": "Large-sample z tests",
+    "body": "<table><tr><th>Test</th><th>z statistic</th></tr><tr><td>One mean</td><td>(x̄ − μ<sub>0</sub>) / (σ/√n)</td></tr><tr><td>Two means</td><td>(x̄<sub>1</sub> − x̄<sub>2</sub>) / √(σ<sub>1</sub>²/n<sub>1</sub> + σ<sub>2</sub>²/n<sub>2</sub>)</td></tr><tr><td>One proportion</td><td>(p − P<sub>0</sub>) / √(P<sub>0</sub>Q<sub>0</sub>/n)</td></tr><tr><td>Two proportions</td><td>(p<sub>1</sub> − p<sub>2</sub>) / √(p̂q̂(1/n<sub>1</sub> + 1/n<sub>2</sub>)), p̂ = pooled proportion</td></tr></table><p>Used when n is large (usually n &gt; 30) or σ is known. Compare |z| with 1.96 (5%) or 2.58 (1%) for a two-tailed test.</p>"
+   },
+   {
+    "title": "t tests (small samples)",
+    "body": "<ul><li>Used when the population is normal, σ is unknown and n is small.</li><li>One sample: t = (x̄ − μ<sub>0</sub>) / (s/√n), with s² = Σ(x − x̄)²/(n − 1); <b>df = n − 1</b>.</li><li>Two independent samples (equal variances): t = (x̄<sub>1</sub> − x̄<sub>2</sub>) / (s<sub>p</sub>√(1/n<sub>1</sub> + 1/n<sub>2</sub>)); <b>df = n<sub>1</sub> + n<sub>2</sub> − 2</b>.</li><li>Paired t test (before and after on the same units): work with the differences d; df = n − 1.</li><li>Testing a correlation coefficient: t = r√(n − 2)/√(1 − r²), df = n − 2.</li><li>The t distribution is symmetric about 0, has heavier tails than the normal, and approaches the normal as df grows. Its variance is ν/(ν − 2) for ν &gt; 2.</li></ul>"
+   },
+   {
+    "title": "Chi-square tests",
+    "body": "<ul><li>χ² = Σ (O − E)² / E. It is never negative.</li><li><b>Goodness of fit</b>: df = (number of classes) − 1 − (parameters estimated from the data).</li><li><b>Independence of attributes</b> in an r × c contingency table: E = row total × column total ÷ grand total; <b>df = (r − 1)(c − 1)</b>. A 2 × 2 table has 1 df (Yates' correction is used when cell counts are small).</li><li><b>Variance of a normal population</b>: χ² = (n − 1)s²/σ<sub>0</sub>² with n − 1 df.</li><li>Each expected frequency should be at least 5; merge classes otherwise.</li><li>A χ² variable with ν df has mean ν and variance 2ν. Its curve is positively skewed.</li></ul>"
+   },
+   {
+    "title": "F test",
+    "body": "<ul><li>Tests whether two normal populations have equal variances: <b>F = s<sub>1</sub>² / s<sub>2</sub>²</b>, with the larger variance on top so F ≥ 1.</li><li>Degrees of freedom: (n<sub>1</sub> − 1, n<sub>2</sub> − 1), numerator first.</li><li>F is also the test statistic in analysis of variance.</li><li>F is never negative. The square of t with ν df is F with (1, ν) df.</li></ul><table><tr><th>Test</th><th>Distribution</th><th>df</th></tr><tr><td>One-sample t</td><td>t</td><td>n − 1</td></tr><tr><td>Two-sample t</td><td>t</td><td>n<sub>1</sub> + n<sub>2</sub> − 2</td></tr><tr><td>Goodness of fit</td><td>χ²</td><td>k − 1 − m</td></tr><tr><td>Contingency table</td><td>χ²</td><td>(r − 1)(c − 1)</td></tr><tr><td>Equality of variances</td><td>F</td><td>(n<sub>1</sub> − 1, n<sub>2</sub> − 1)</td></tr></table>"
    }
   ],
   "varieties": [
    {
-    "type": "concepts",
-    "name": "Errors and properties",
-    "how": "Type I = rejecting a true H₀ (α); Type II = accepting a false H₀ (β).",
+    "type": "estimators",
+    "name": "Properties of estimators",
+    "how": "Unbiased: E(T) = θ. Consistent: improves as n grows. Efficient: least variance. Sufficient: uses all the information. Divide by n − 1 for an unbiased variance.",
     "example": {
-     "q": "A court convicts an innocent person (H₀: innocent). Which error?",
+     "q": "A sample gives 2, 4 and 6. Find the unbiased estimate of the population variance.",
      "steps": [
-      "H₀ \"innocent\" is true.",
-      "It is rejected."
+      "x̄ = 12/3 = 4.",
+      "Σ(x − x̄)² = 4 + 0 + 4 = 8.",
+      "Unbiased estimate s² = 8/(3 − 1) = 4."
      ],
-     "answer": "Type I error"
+     "answer": "4"
     }
    },
    {
-    "type": "estimation",
+    "type": "confidence-interval",
     "name": "Confidence intervals",
-    "how": "x̄ ± z × SE; choose z from the confidence level.",
+    "how": "Interval = estimate ± (critical value × standard error). Pick z = 1.645, 1.96 or 2.576 for 90%, 95% or 99%.",
     "example": {
-     "q": "x̄ = 80, σ = 12, n = 36. Find the 95% CI.",
+     "q": "A sample of 36 has mean 80. The population SD is 12. Find the 99% confidence interval for the mean (z = 2.58).",
      "steps": [
-      "SE = 12/6 = 2",
-      "1.96 × 2 = 3.92",
-      "CI = 80 ± 3.92 = (76.08, 83.92)"
+      "SE = 12/√36 = 2.",
+      "Margin = 2.58 × 2 = 5.16.",
+      "Interval = 80 ± 5.16 = (74.84, 85.16)."
      ],
-     "answer": "(76.08, 83.92)"
+     "answer": "(74.84, 85.16)"
     }
    },
    {
-    "type": "tests",
-    "name": "Test statistics and df",
-    "how": "z = (x̄ − μ₀)/(σ/√n); look up the df rule for t, χ² and F.",
+    "type": "hypothesis-concepts",
+    "name": "Hypotheses, errors and power",
+    "how": "Type I = reject a true H<sub>0</sub> (α). Type II = accept a false H<sub>0</sub> (β). Power = 1 − β.",
     "example": {
-     "q": "Degrees of freedom of a one-sample t-test with n = 15?",
+     "q": "A test has α = 0.05 and β = 0.20. What is its power?",
      "steps": [
-      "df = n − 1",
-      "= 14"
+      "Power = 1 − β.",
+      "= 1 − 0.20 = 0.80."
      ],
-     "answer": "14"
+     "answer": "0.80"
+    }
+   },
+   {
+    "type": "z-test",
+    "name": "Large-sample z tests",
+    "how": "z = (statistic − hypothesised value) ÷ standard error. Compare |z| with the critical value.",
+    "example": {
+     "q": "A coin is tossed 100 times and shows 60 heads. Test whether it is fair at the 5% level.",
+     "steps": [
+      "H<sub>0</sub>: P = 0.5. p = 0.6.",
+      "SE = √(0.5 × 0.5/100) = 0.05.",
+      "z = (0.6 − 0.5)/0.05 = 2.",
+      "|z| = 2 &gt; 1.96, so reject H<sub>0</sub>: the coin is not fair."
+     ],
+     "answer": "z = 2, reject H<sub>0</sub>"
+    }
+   },
+   {
+    "type": "t-test",
+    "name": "t tests and their degrees of freedom",
+    "how": "One sample: t = (x̄ − μ)/(s/√n), df n − 1. Two samples: df n<sub>1</sub> + n<sub>2</sub> − 2. Paired: df n − 1.",
+    "example": {
+     "q": "A sample of 16 has mean 53 and s = 8. Find t for testing H<sub>0</sub>: μ = 50, and its degrees of freedom.",
+     "steps": [
+      "SE = s/√n = 8/4 = 2.",
+      "t = (53 − 50)/2 = 1.5.",
+      "df = 16 − 1 = 15."
+     ],
+     "answer": "t = 1.5 with 15 df"
+    }
+   },
+   {
+    "type": "chi-square",
+    "name": "Chi-square tests",
+    "how": "χ² = Σ(O − E)²/E. df = k − 1 for goodness of fit (minus estimated parameters) and (r − 1)(c − 1) for a contingency table.",
+    "example": {
+     "q": "A die is thrown 60 times. Faces 1 to 6 appear 8, 12, 9, 11, 6 and 14 times. Find χ² for testing that the die is fair.",
+     "steps": [
+      "Expected = 60/6 = 10 for each face.",
+      "(O − E)² = 4, 4, 1, 1, 16, 16; sum = 42.",
+      "χ² = 42/10 = 4.2 with 6 − 1 = 5 df."
+     ],
+     "answer": "4.2 (5 df)"
+    }
+   },
+   {
+    "type": "f-test",
+    "name": "F test for variances",
+    "how": "F = larger s² ÷ smaller s², with df (n − 1) of the numerator sample first.",
+    "example": {
+     "q": "Sample 1: n = 11, s² = 20. Sample 2: n = 9, s² = 8. Find F and its degrees of freedom.",
+     "steps": [
+      "F = 20/8 = 2.5.",
+      "df = (11 − 1, 9 − 1) = (10, 8)."
+     ],
+     "answer": "F = 2.5 with (10, 8) df"
     }
    }
   ],
   "tips": [
-   "Remember 1.645, 1.96, 2.576 for 90%, 95%, 99% (two-tailed).",
-   "A wider confidence interval means more confidence but less precision.",
-   "α and β move in opposite directions for a fixed n; only a larger n reduces both."
+   "Learn the four critical values: 1.645, 1.96, 2.33, 2.58.",
+   "\"Not equal\" in H<sub>1</sub> means two-tailed; \"more than\" or \"less than\" means one-tailed.",
+   "Degrees of freedom: subtract one for each quantity estimated from the data.",
+   "Halving the margin of error needs four times the sample size.",
+   "χ² and F are never negative; t and z can be negative.",
+   "If the p-value is smaller than α, reject H<sub>0</sub>."
   ],
   "traps": [
-   "\"Accepting H₀\" does not prove it true; it only means there is not enough evidence against it.",
-   "Unbiased sample variance divides by n − 1, not n.",
-   "χ² df for a contingency table is (r − 1)(c − 1), not rc − 1."
+   "Type I is rejecting a true H<sub>0</sub>; Type II is accepting a false one. Do not swap them.",
+   "Power is 1 − β, not 1 − α.",
+   "For an unbiased variance divide by n − 1, not n.",
+   "In a contingency table df = (r − 1)(c − 1), not rc − 1.",
+   "Accepting H<sub>0</sub> does not prove it true; it only means the data are not strong enough to reject it."
   ]
  },
  "formulas": [
   {
    "name": "CI for mean (σ known)",
-   "expr": "x̄ ± z(α/2) · σ/√n"
+   "expr": "x̄ ± z × σ/√n"
   },
   {
-   "name": "z statistic",
+   "name": "CI for mean (σ unknown, small n)",
+   "expr": "x̄ ± t(n−1) × s/√n"
+  },
+  {
+   "name": "CI for proportion",
+   "expr": "p ± z × √(pq/n)"
+  },
+  {
+   "name": "Unbiased variance",
+   "expr": "s² = Σ(x − x̄)² / (n − 1)"
+  },
+  {
+   "name": "z for one mean",
    "expr": "z = (x̄ − μ₀) / (σ/√n)"
+  },
+  {
+   "name": "z for one proportion",
+   "expr": "z = (p − P₀) / √(P₀Q₀/n)"
+  },
+  {
+   "name": "One-sample t",
+   "expr": "t = (x̄ − μ₀) / (s/√n),  df = n − 1"
   },
   {
    "name": "Two-sample t df",
    "expr": "n₁ + n₂ − 2"
   },
   {
+   "name": "Chi-square",
+   "expr": "χ² = Σ (O − E)² / E"
+  },
+  {
    "name": "χ² contingency df",
    "expr": "(r − 1)(c − 1)"
+  },
+  {
+   "name": "F test",
+   "expr": "F = s₁² / s₂² (larger on top),  df (n₁ − 1, n₂ − 1)"
   },
   {
    "name": "Power of a test",
@@ -96,7 +210,7 @@
    "id": "st-inference-001",
    "rev": 1,
    "topic": "st-inference",
-   "type": "concepts",
+   "type": "hypothesis-concepts",
    "level": 1,
    "q": "A Type I error is committed when:",
    "options": [
@@ -113,7 +227,7 @@
    "id": "st-inference-002",
    "rev": 1,
    "topic": "st-inference",
-   "type": "estimation",
+   "type": "confidence-interval",
    "level": 1,
    "q": "For a 95% confidence interval using the normal distribution, the critical value z is:",
    "options": [
@@ -130,7 +244,7 @@
    "id": "st-inference-003",
    "rev": 1,
    "topic": "st-inference",
-   "type": "estimation",
+   "type": "confidence-interval",
    "level": 2,
    "q": "A sample of 100 gives mean 50. The population SD is 10. The 95% confidence interval for the population mean is:",
    "options": [
@@ -147,7 +261,7 @@
    "id": "st-inference-004",
    "rev": 1,
    "topic": "st-inference",
-   "type": "tests",
+   "type": "z-test",
    "level": 2,
    "q": "A sample of 64 has mean 52. Testing H<sub>0</sub>: μ = 50 with known σ = 8, the value of the z statistic is:",
    "options": [
@@ -164,7 +278,7 @@
    "id": "st-inference-005",
    "rev": 1,
    "topic": "st-inference",
-   "type": "tests",
+   "type": "t-test",
    "level": 3,
    "q": "Two independent samples of sizes 10 and 12 are compared with a t-test (equal variances). The degrees of freedom are:",
    "options": [
@@ -181,7 +295,7 @@
    "id": "st-inference-006",
    "rev": 1,
    "topic": "st-inference",
-   "type": "tests",
+   "type": "chi-square",
    "level": 3,
    "q": "For a χ² test of independence in a 3 × 4 contingency table, the degrees of freedom are:",
    "options": [

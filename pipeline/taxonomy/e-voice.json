@@ -1,0 +1,100 @@
+{
+  "topic": "e-voice",
+  "types": [
+    {
+      "type": "simple-present",
+      "name": "Simple present",
+      "description": "The given sentence is in simple present: active uses V1 or V1+s/es (do/does in negatives and questions) and passive uses is/am/are + past participle, e.g. 'The gardener waters the plants' or 'English is spoken here'.",
+      "concepts": [
+        "simple-present"
+      ]
+    },
+    {
+      "type": "simple-past",
+      "name": "Simple past",
+      "description": "The given sentence is in simple past: active uses the past form V2 (did in negatives) and passive uses was/were + past participle, e.g. 'Marvel Comics created Superman' or 'The match was won by our team'.",
+      "concepts": [
+        "simple-past"
+      ]
+    },
+    {
+      "type": "future",
+      "name": "Future tenses",
+      "description": "The given sentence uses will/shall: simple future (will + V1 / will be + V3) or future perfect (will have + V3 / will have been + V3), e.g. 'They will announce the results tomorrow'.",
+      "concepts": [
+        "simple-future",
+        "future-perfect"
+      ]
+    },
+    {
+      "type": "present-continuous",
+      "name": "Present continuous",
+      "description": "The given sentence uses is/am/are + -ing in active, or is/am/are being + past participle in passive, e.g. 'The workers are repairing the bridge'.",
+      "concepts": [
+        "present-continuous"
+      ]
+    },
+    {
+      "type": "past-continuous",
+      "name": "Past continuous",
+      "description": "The given sentence uses was/were + -ing in active, or was/were being + past participle in passive, e.g. 'She was cooking dinner'.",
+      "concepts": [
+        "past-continuous"
+      ]
+    },
+    {
+      "type": "present-perfect",
+      "name": "Present perfect",
+      "description": "The given sentence uses has/have + past participle in active, or has/have been + past participle in passive, e.g. 'They have completed the building'.",
+      "concepts": [
+        "present-perfect"
+      ]
+    },
+    {
+      "type": "past-perfect",
+      "name": "Past perfect",
+      "description": "The given sentence uses had + past participle in active, or had been + past participle in passive, e.g. 'The sailors had never encountered such a rough sea'.",
+      "concepts": [
+        "past-perfect"
+      ]
+    },
+    {
+      "type": "modals",
+      "name": "Modal verbs",
+      "description": "The verb phrase has a modal such as can, could, may, might, must, should, would, ought to, has to or is to, with passive form modal + be + past participle, e.g. 'We can buy books online' or 'My request should be considered'.",
+      "concepts": [
+        "modal-verbs"
+      ]
+    },
+    {
+      "type": "two-objects",
+      "name": "Verbs with two objects",
+      "description": "The verb takes two objects, a person and a thing (give, send, offer, teach, show, tell, lend, award, ask), so the passive can start with either object, e.g. 'She gave me a pen'.",
+      "concepts": [
+        "di-transitive-verbs"
+      ]
+    },
+    {
+      "type": "imperative",
+      "name": "Commands and requests",
+      "description": "The given sentence is an order, request, advice or prohibition that starts with a verb or with please/do not/let, and the passive uses 'Let ... be + past participle' or 'You are requested/advised/ordered to', e.g. 'Shut the door'.",
+      "concepts": [
+        "imperative-sentences"
+      ]
+    },
+    {
+      "type": "interrogative",
+      "name": "Questions",
+      "description": "The given sentence is a question (yes/no question with do/does/did/is/has/can, or a wh-question with who/what/why/when/where/how), and the answer must stay a question, e.g. 'Who wrote this letter?' or 'Did you hear that noise?'.",
+      "concepts": [
+        "interrogative-sentences"
+      ]
+    },
+    {
+      "type": "special-structures",
+      "name": "Special structures",
+      "description": "The sentence has a structure beyond a plain tense change: an infinitive or gerund (want someone to do, need to be done), a prepositional or phrasal verb (laugh at, look after), 'It is said / People say that', verbs like know/please/surprise that take with/at/to instead of by, or a negative with nobody/no one.",
+      "concepts": []
+    }
+  ]
+}

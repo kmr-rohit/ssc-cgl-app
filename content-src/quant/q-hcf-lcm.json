@@ -1,212 +1,361 @@
 {
- "topic": "q-hcf-lcm",
- "notes": {
-  "summary": "HCF is the largest number that divides all the given numbers; LCM is the smallest number that all of them divide. Usually 0–1 question, but easy marks.",
-  "concepts": [
-   {
-    "title": "Finding HCF and LCM",
-    "body": "Write each number as a product of primes. <b>HCF</b> = product of common primes with the <b>lowest</b> powers. <b>LCM</b> = product of all primes with the <b>highest</b> powers."
-   },
-   {
-    "title": "Product rule",
-    "body": "For two numbers only: <b>HCF × LCM = first number × second number</b>."
-   },
-   {
-    "title": "Fractions",
-    "body": "HCF of fractions = HCF of numerators / LCM of denominators. LCM of fractions = LCM of numerators / HCF of denominators."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "basic",
-    "name": "Direct HCF / LCM and product rule",
-    "how": "Use prime factors, or HCF × LCM = a × b.",
-    "example": {
-     "q": "HCF of two numbers is 6 and LCM is 72. One number is 24. Find the other.",
-     "steps": [
-      "Other = 6 × 72 / 24",
-      "= 432 / 24 = 18"
-     ],
-     "answer": "18"
+  "topic": "q-hcf-lcm",
+  "notes": {
+    "summary": "HCF is the biggest number that divides given numbers; LCM is the smallest number they all divide. SSC asks 0 to 1 question in each tier, often as a remainder or \"together again\" word problem. Decide first whether the question wants the HCF or the LCM; the rest is quick.",
+    "concepts": [
+      {
+        "title": "What HCF and LCM mean",
+        "body": "<p>A <b>factor</b> of a number divides it exactly: factors of 12 are 1, 2, 3, 4, 6, 12. A <b>multiple</b> is the number times 1, 2, 3, ...: multiples of 12 are 12, 24, 36, ...</p>\n<p><b>HCF</b> (highest common factor, also called GCD) is the biggest number that divides all the given numbers. <b>LCM</b> (least common multiple) is the smallest number that all the given numbers divide.</p>\n<p>The HCF always divides the LCM. The HCF is never bigger than the smallest number; the LCM is never smaller than the biggest number. If two numbers are co-prime (HCF 1), their LCM is their product.</p>"
+      },
+      {
+        "title": "Prime factor method",
+        "body": "<p>Write each number as a product of prime powers.</p>\n<ul><li><b>HCF</b> = common primes, each with its <b>lowest</b> power.</li><li><b>LCM</b> = all primes that appear, each with its <b>highest</b> power.</li></ul>\n<p>Example: 12 = 2<sup>2</sup> × 3, 18 = 2 × 3<sup>2</sup>, 30 = 2 × 3 × 5.<br>HCF = 2 × 3 = 6. LCM = 2<sup>2</sup> × 3<sup>2</sup> × 5 = 180.</p>\n<p>The same works when the numbers are given in power form, such as 2<sup>3</sup> × 9<sup>2</sup> × 13. First turn 9<sup>2</sup> into 3<sup>4</sup> so that every base is prime.</p>"
+      },
+      {
+        "title": "Division method for big numbers",
+        "body": "<p>For two large numbers, divide the larger by the smaller, then divide the last divisor by the remainder, and repeat. The last non-zero divisor is the HCF. In short, HCF(a, b) = HCF(b, remainder of a ÷ b).</p>\n<p>Example: HCF of 1071 and 462.<br>1071 = 2 × 462 + 147<br>462 = 3 × 147 + 21<br>147 = 7 × 21 + 0<br>HCF = 21.</p>\n<p>For three numbers, find the HCF of two, then the HCF of that answer with the third. LCM can be built the same way: LCM(a, b, c) = LCM(LCM(a, b), c).</p>\n<p>Useful fact: HCF(a, b) also divides a − b and a + b.</p>"
+      },
+      {
+        "title": "HCF × LCM = product of two numbers",
+        "body": "<p>For <b>two</b> numbers a and b: <b>HCF × LCM = a × b</b>.</p>\n<p>Example: HCF 12, LCM 924, one number 84. Other number = 12 × 924 ÷ 84 = 132.</p>\n<p>This rule does <b>not</b> hold for three or more numbers. For example 2, 4, 6 have HCF 2 and LCM 12, so HCF × LCM = 24, but the product is 48.</p>\n<p>Check for impossible data: the LCM must be a multiple of the HCF. HCF 8 with LCM 60 cannot happen.</p>"
+      },
+      {
+        "title": "Numbers in a ratio, and counting pairs",
+        "body": "<p>If the HCF of two numbers is h, the numbers are <b>h × a</b> and <b>h × b</b>, where a and b are co-prime. Then <b>LCM = h × a × b</b>.</p>\n<p>Example: numbers in the ratio 3 : 4 with LCM 180. Numbers are 3h and 4h; LCM = 12h = 180, so h = 15 and the numbers are 45 and 60.</p>\n<p><b>Counting pairs.</b> Product 1500, HCF 10. Then h<sup>2</sup> × a × b = 1500, so a × b = 15. Co-prime pairs with product 15: (1, 15) and (3, 5). So 2 pairs: (10, 150) and (30, 50).</p>\n<p>With a sum: HCF 12, sum 96. Then 12(a + b) = 96, a + b = 8. Co-prime pairs: (1, 7) and (3, 5). Numbers (12, 84) and (36, 60). The pair (2, 6) is not allowed because 2 and 6 are not co-prime.</p>"
+      },
+      {
+        "title": "HCF and LCM of fractions and decimals",
+        "body": "<p>Write each fraction in its lowest terms first.</p>\n<ul><li><b>HCF of fractions</b> = HCF of numerators ÷ LCM of denominators</li><li><b>LCM of fractions</b> = LCM of numerators ÷ HCF of denominators</li></ul>\n<p>Example: 2/3, 4/9, 5/6. HCF = HCF(2, 4, 5)/LCM(3, 9, 6) = 1/18. LCM = LCM(2, 4, 5)/HCF(3, 9, 6) = 20/3.</p>\n<p><b>Decimals:</b> make the number of decimal places equal, remove the point, find the HCF or LCM, then put back the same number of decimal places.<br>Example: HCF of 0.6, 0.9 and 1.5: think of 6, 9, 15, HCF 3, so the answer is 0.3.</p>"
+      },
+      {
+        "title": "Greatest number that divides with remainders (HCF type)",
+        "body": "<table><thead><tr><th>Condition</th><th>Answer</th></tr></thead><tbody>\n<tr><td>Divides a, b, c exactly</td><td>HCF(a, b, c)</td></tr>\n<tr><td>Leaves the same given remainder r</td><td>HCF(a − r, b − r, c − r)</td></tr>\n<tr><td>Leaves remainders r<sub>1</sub>, r<sub>2</sub>, r<sub>3</sub></td><td>HCF(a − r<sub>1</sub>, b − r<sub>2</sub>, c − r<sub>3</sub>)</td></tr>\n<tr><td>Leaves the same remainder, not given</td><td>HCF of the differences: HCF(b − a, c − b, c − a)</td></tr>\n</tbody></table>\n<p>The answer must be larger than every remainder, so check it.</p>\n<p>Example: greatest number dividing 43, 91 and 183 with the same remainder. Differences 48, 92, 140. HCF = 4.</p>"
+      },
+      {
+        "title": "Least number that leaves remainders (LCM type)",
+        "body": "<table><thead><tr><th>Condition</th><th>Answer</th></tr></thead><tbody>\n<tr><td>Divisible by a, b, c</td><td>LCM(a, b, c)</td></tr>\n<tr><td>Leaves the same remainder r each time</td><td>LCM + r (in general, k × LCM + r)</td></tr>\n<tr><td>Remainders fall short of each divisor by the same amount k (for example 5 leaves 3, 6 leaves 4: short by 2)</td><td>LCM − k</td></tr>\n</tbody></table>\n<p>If the number must also be divisible by another number m, try k = 1, 2, 3, ... in k × LCM + r until it divides by m.</p>\n<p>Example: least number which leaves 8 when divided by 12, 15, 20 and 54. LCM = 540, so 540 + 8 = 548.</p>\n<p><b>Greatest n-digit number</b> divisible by a, b, c: take L = LCM, then 999...9 minus its remainder on division by L. <b>Smallest n-digit</b>: 100...0 plus (L − remainder).</p>"
+      },
+      {
+        "title": "Things happening together (LCM)",
+        "body": "<p>When events repeat every a, b and c units of time, they happen together again after <b>LCM(a, b, c)</b>.</p>\n<p>Example: bells toll every 6, 8 and 12 minutes and toll together at 9:00 a.m. LCM = 24 minutes, so next at 9:24 a.m.</p>\n<p><b>How many times together</b> in a period T (counting the start) = [T ÷ LCM] + 1.<br>Runners on a circular track meet at the starting point after the LCM of their lap times.</p>\n<p>Keep units the same: change hours to minutes or minutes to seconds before taking the LCM.</p>"
+      },
+      {
+        "title": "Largest equal pieces and fewest tiles (HCF)",
+        "body": "<p>When things must be cut, packed, or measured into the <b>largest equal</b> parts with nothing left over, use the <b>HCF</b>.</p>\n<ul><li>Largest measuring jar for 403 L, 434 L and 465 L of milk: HCF = 31 L.</li>\n<li>Least number of square tiles for a floor = floor area ÷ (side of tile)<sup>2</sup>, where the tile side = HCF of length and breadth.</li>\n<li>Least number of rows with equal students of one kind each = total ÷ HCF.</li></ul>\n<p>Example: a floor 6 m 24 cm by 4 m 32 cm. HCF(624, 432) = 48 cm. Tiles = (624 ÷ 48) × (432 ÷ 48) = 13 × 9 = 117.</p>\n<p>Quick test: \"largest\", \"maximum size\", \"greatest length\" suggests HCF; \"least time\", \"next together\", \"smallest number of\" (of a common multiple) suggests LCM.</p>"
+      },
+      {
+        "title": "HCF and LCM of algebraic expressions",
+        "body": "<p>Factorise each expression fully, then treat the factors like primes: HCF takes common factors with the lowest powers, LCM takes all factors with the highest powers.</p>\n<p>Example: x<sup>2</sup> − 8x + 15 = (x − 3)(x − 5) and x<sup>2</sup> − 5x + 6 = (x − 2)(x − 3).<br>HCF = (x − 3). LCM = (x − 2)(x − 3)(x − 5).</p>\n<p>The product rule also holds for two expressions: HCF × LCM = product of the two expressions (up to a constant sign).</p>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "hcf-lcm-basic",
+        "name": "Find the HCF or LCM",
+        "how": "Factorise each number into primes. HCF: common primes with lowest powers. LCM: every prime with its highest power.",
+        "example": {
+          "q": "Find the HCF and LCM of 72, 108 and 180.",
+          "steps": [
+            "72 = 2<sup>3</sup> × 3<sup>2</sup>, 108 = 2<sup>2</sup> × 3<sup>3</sup>, 180 = 2<sup>2</sup> × 3<sup>2</sup> × 5.",
+            "HCF = 2<sup>2</sup> × 3<sup>2</sup> = 36.",
+            "LCM = 2<sup>3</sup> × 3<sup>3</sup> × 5 = 1080."
+          ],
+          "answer": "HCF 36, LCM 1080"
+        }
+      },
+      {
+        "type": "product-rule",
+        "name": "HCF × LCM = product",
+        "how": "For two numbers only: other number = HCF × LCM ÷ given number.",
+        "example": {
+          "q": "The HCF of two numbers is 16 and their LCM is 384. One number is 128. Find the other.",
+          "steps": [
+            "Other = 16 × 384 ÷ 128.",
+            "16 × 384 = 6144; 6144 ÷ 128 = 48.",
+            "Check: HCF(128, 48) = 16 and LCM = 384."
+          ],
+          "answer": "48"
+        }
+      },
+      {
+        "type": "ratio-sum-pairs",
+        "name": "Numbers from ratio, sum or pairs",
+        "how": "Write the numbers as h × a and h × b with a, b co-prime. Then LCM = h × a × b. Use the given sum, product or LCM to find h, or to list the co-prime pairs.",
+        "example": {
+          "q": "Two numbers are in the ratio 3 : 4 and their LCM is 180. Find the numbers.",
+          "steps": [
+            "Let the numbers be 3h and 4h; 3 and 4 are co-prime.",
+            "LCM = 3 × 4 × h = 12h = 180, so h = 15.",
+            "Numbers = 45 and 60."
+          ],
+          "answer": "45 and 60"
+        }
+      },
+      {
+        "type": "fractions-decimals",
+        "name": "HCF and LCM of fractions and decimals",
+        "how": "HCF of fractions = HCF of numerators ÷ LCM of denominators. LCM of fractions = LCM of numerators ÷ HCF of denominators. For decimals, equalise decimal places first.",
+        "example": {
+          "q": "Find the LCM of 2/3, 4/9 and 5/6.",
+          "steps": [
+            "LCM of numerators 2, 4, 5 = 20.",
+            "HCF of denominators 3, 9, 6 = 3.",
+            "LCM = 20/3."
+          ],
+          "answer": "20/3"
+        }
+      },
+      {
+        "type": "greatest-divisor-remainder",
+        "name": "Greatest number that divides with remainders",
+        "how": "Subtract each remainder from its number and take the HCF. If the remainder is the same but not given, take the HCF of the differences between the numbers.",
+        "example": {
+          "q": "Find the greatest number that divides 43, 91 and 183 leaving the same remainder in each case.",
+          "steps": [
+            "Differences: 91 − 43 = 48, 183 − 91 = 92, 183 − 43 = 140.",
+            "HCF(48, 92, 140) = 4.",
+            "Check: each number leaves remainder 3 on division by 4."
+          ],
+          "answer": "4"
+        }
+      },
+      {
+        "type": "least-number-remainder",
+        "name": "Least number that leaves remainders",
+        "how": "Find the LCM. Same remainder r: answer is k × LCM + r. Fixed shortfall k: answer is LCM − k. If it must also divide by another number, try k = 1, 2, 3, ...",
+        "example": {
+          "q": "Find the least number which leaves remainder 2 when divided by 6, 9, 15 and 18, but is exactly divisible by 7.",
+          "steps": [
+            "LCM(6, 9, 15, 18) = 90, so the number is 90k + 2.",
+            "k = 1: 92, not divisible by 7.",
+            "k = 2: 182 = 7 × 26. Divisible by 7."
+          ],
+          "answer": "182"
+        }
+      },
+      {
+        "type": "lcm-application",
+        "name": "Bells, lights and runners together",
+        "how": "Bring all intervals to the same unit and take their LCM. Add the LCM to the starting time.",
+        "example": {
+          "q": "Three runners complete one lap of a track in 30 s, 45 s and 60 s. They start together from the same point. After how long will they next be together at the start?",
+          "steps": [
+            "LCM(30, 45, 60) = 180 s.",
+            "180 s = 3 minutes."
+          ],
+          "answer": "3 minutes"
+        }
+      },
+      {
+        "type": "hcf-application",
+        "name": "Largest equal pieces and fewest tiles",
+        "how": "Convert to the same small unit. The largest equal piece is the HCF. Number of pieces or tiles = total ÷ piece (for tiles: area ÷ side<sup>2</sup>).",
+        "example": {
+          "q": "A floor is 6 m 24 cm long and 4 m 32 cm wide. Find the least number of equal square tiles that will cover it exactly.",
+          "steps": [
+            "Length 624 cm, breadth 432 cm.",
+            "Largest tile side = HCF(624, 432) = 48 cm.",
+            "Tiles = (624 ÷ 48) × (432 ÷ 48) = 13 × 9 = 117."
+          ],
+          "answer": "117"
+        }
+      },
+      {
+        "type": "algebraic-hcf-lcm",
+        "name": "HCF and LCM of algebraic expressions",
+        "how": "Factorise each expression. HCF: common factors. LCM: every factor once, with its highest power.",
+        "example": {
+          "q": "Find the LCM of x<sup>2</sup> − 8x + 15 and x<sup>2</sup> − 5x + 6.",
+          "steps": [
+            "x<sup>2</sup> − 8x + 15 = (x − 3)(x − 5).",
+            "x<sup>2</sup> − 5x + 6 = (x − 2)(x − 3).",
+            "LCM = (x − 2)(x − 3)(x − 5)."
+          ],
+          "answer": "(x − 2)(x − 3)(x − 5)"
+        }
+      }
+    ],
+    "tips": [
+      "Words like \"greatest\", \"largest size\" or \"maximum length\" point to HCF; \"least\", \"next together\" or \"smallest number divisible\" point to LCM.",
+      "HCF × LCM = product works only for two numbers.",
+      "In option questions, the LCM must be a multiple of the HCF; strike out options that break this.",
+      "For \"same remainder, not given\", take the HCF of the differences between the numbers.",
+      "For a fixed shortfall (divisor − remainder is the same each time), the answer is LCM − shortfall.",
+      "Convert all lengths or times to one unit before finding HCF or LCM."
+    ],
+    "traps": [
+      "Reduce fractions to lowest terms before finding their HCF or LCM.",
+      "When counting pairs from a given HCF, the two multipliers must be co-prime.",
+      "In bell questions, adding the LCM to a clock time can cross the hour; count minutes carefully.",
+      "The greatest divisor must be larger than every remainder; check it."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Two numbers",
+      "expr": "HCF × LCM = first number × second number"
+    },
+    {
+      "name": "Numbers with HCF h",
+      "expr": "ha and hb (a, b co-prime), LCM = hab"
+    },
+    {
+      "name": "HCF of fractions",
+      "expr": "HCF of numerators ÷ LCM of denominators"
+    },
+    {
+      "name": "LCM of fractions",
+      "expr": "LCM of numerators ÷ HCF of denominators"
+    },
+    {
+      "name": "Greatest divisor leaving remainders r₁, r₂, r₃",
+      "expr": "HCF(a − r₁, b − r₂, c − r₃)"
+    },
+    {
+      "name": "Greatest divisor leaving the same remainder",
+      "expr": "HCF(b − a, c − b, c − a)"
+    },
+    {
+      "name": "Least number leaving remainder r",
+      "expr": "k × LCM + r"
+    },
+    {
+      "name": "Least number with fixed shortfall k",
+      "expr": "LCM − k"
+    },
+    {
+      "name": "Least number of square tiles",
+      "expr": "(length × breadth) ÷ HCF(length, breadth)²"
     }
-   },
-   {
-    "type": "remainder",
-    "name": "Remainder-based",
-    "how": "Same remainder: take HCF of the differences. Same remainder r with all divisors: LCM + r.",
-    "example": {
-     "q": "Least number which leaves remainder 3 when divided by 4, 6 and 9?",
-     "steps": [
-      "LCM(4, 6, 9) = 36",
-      "Answer = 36 + 3 = 39"
-     ],
-     "answer": "39"
-    }
-   },
-   {
-    "type": "application",
-    "name": "Bells, lights and tiles",
-    "how": "Things happening together again → LCM. Largest equal piece / tile → HCF.",
-    "example": {
-     "q": "Three lights blink every 10, 15 and 20 seconds. After how many seconds do they blink together again?",
-     "steps": [
-      "LCM(10, 15, 20) = 60"
-     ],
-     "answer": "60 seconds"
-    }
-   }
   ],
-  "tips": [
-   "HCF always divides the LCM.",
-   "Check options: the LCM must be a multiple of every given number."
+  "questions": [
+    {
+      "id": "q-hcf-lcm-001",
+      "rev": 1,
+      "topic": "q-hcf-lcm",
+      "type": "product-rule",
+      "level": 1,
+      "q": "The HCF and LCM of two numbers are 12 and 924 respectively. If one of the numbers is 84, the other number is:",
+      "options": [
+        "144",
+        "132",
+        "156",
+        "124"
+      ],
+      "answer": 1,
+      "solution": "Other number = (HCF × LCM) / first number.<br>= (12 × 924) / 84 = 11088 / 84 = 132.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-hcf-lcm-002",
+      "rev": 1,
+      "topic": "q-hcf-lcm",
+      "type": "hcf-lcm-basic",
+      "level": 1,
+      "q": "What is the LCM of 12, 18 and 30?",
+      "options": [
+        "90",
+        "360",
+        "180",
+        "120"
+      ],
+      "answer": 2,
+      "solution": "12 = 2<sup>2</sup> × 3, 18 = 2 × 3<sup>2</sup>, 30 = 2 × 3 × 5.<br>LCM = 2<sup>2</sup> × 3<sup>2</sup> × 5 = 180.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-hcf-lcm-003",
+      "rev": 1,
+      "topic": "q-hcf-lcm",
+      "type": "greatest-divisor-remainder",
+      "level": 2,
+      "q": "Find the greatest number that divides 1305, 4665 and 6905 leaving the same remainder in each case.",
+      "options": [
+        "1120",
+        "1210",
+        "560",
+        "280"
+      ],
+      "answer": 0,
+      "solution": "Differences: 4665 − 1305 = 3360, 6905 − 4665 = 2240, 6905 − 1305 = 5600.<br>HCF(3360, 2240) = 1120 and 5600 = 5 × 1120.<br>Required number = 1120 (each leaves remainder 185).",
+      "source": "test-data"
+    },
+    {
+      "id": "q-hcf-lcm-004",
+      "rev": 1,
+      "topic": "q-hcf-lcm",
+      "type": "lcm-application",
+      "level": 2,
+      "q": "Three bells toll at intervals of 6, 8 and 12 minutes. If they toll together at 9:00 a.m., when will they next toll together?",
+      "options": [
+        "9:48 a.m.",
+        "9:36 a.m.",
+        "9:12 a.m.",
+        "9:24 a.m."
+      ],
+      "answer": 3,
+      "solution": "They toll together after LCM(6, 8, 12) minutes.<br>LCM = 24 minutes.<br>9:00 a.m. + 24 min = 9:24 a.m.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-hcf-lcm-005",
+      "rev": 1,
+      "topic": "q-hcf-lcm",
+      "type": "least-number-remainder",
+      "level": 3,
+      "q": "What is the least number which, when divided by 12, 15, 20 and 54, leaves a remainder of 8 in each case?",
+      "options": [
+        "548",
+        "540",
+        "532",
+        "1088"
+      ],
+      "answer": 0,
+      "solution": "LCM(12, 15, 20, 54): 12 = 2<sup>2</sup>·3, 15 = 3·5, 20 = 2<sup>2</sup>·5, 54 = 2·3<sup>3</sup>.<br>LCM = 2<sup>2</sup> × 3<sup>3</sup> × 5 = 540.<br>Required number = 540 + 8 = 548.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-hcf-lcm-006",
+      "rev": 1,
+      "topic": "q-hcf-lcm",
+      "type": "fractions-decimals",
+      "level": 3,
+      "q": "What is the HCF of 2/3, 8/9 and 16/81?",
+      "options": [
+        "2/3",
+        "16/81",
+        "2/81",
+        "8/27"
+      ],
+      "answer": 2,
+      "solution": "HCF of fractions = HCF of numerators / LCM of denominators.<br>HCF(2, 8, 16) = 2; LCM(3, 9, 81) = 81.<br>HCF = 2/81.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "HCF × LCM = product works only for two numbers, not three.",
-   "For “same remainder” questions, use differences of the numbers, not the numbers themselves."
+  "flashcards": [
+    {
+      "id": "fc-hcf-1",
+      "front": "HCF × LCM (two numbers)",
+      "back": "Product of the two numbers",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-hcf-2",
+      "front": "HCF of fractions",
+      "back": "HCF of numerators / LCM of denominators",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-hcf-3",
+      "front": "Greatest number leaving same remainder",
+      "back": "HCF of the differences of the numbers",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-hcf-4",
+      "front": "Least number leaving remainder r with each divisor",
+      "back": "LCM of divisors + r",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Two numbers",
-   "expr": "HCF × LCM = a × b"
-  },
-  {
-   "name": "HCF of fractions",
-   "expr": "HCF(numerators) / LCM(denominators)"
-  },
-  {
-   "name": "LCM of fractions",
-   "expr": "LCM(numerators) / HCF(denominators)"
-  }
- ],
- "questions": [
-  {
-   "id": "q-hcf-lcm-001",
-   "rev": 1,
-   "topic": "q-hcf-lcm",
-   "type": "basic",
-   "level": 1,
-   "q": "The HCF and LCM of two numbers are 12 and 924 respectively. If one of the numbers is 84, the other number is:",
-   "options": [
-    "144",
-    "132",
-    "156",
-    "124"
-   ],
-   "answer": 1,
-   "solution": "Other number = (HCF × LCM) / first number.<br>= (12 × 924) / 84 = 11088 / 84 = 132.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-hcf-lcm-002",
-   "rev": 1,
-   "topic": "q-hcf-lcm",
-   "type": "basic",
-   "level": 1,
-   "q": "What is the LCM of 12, 18 and 30?",
-   "options": [
-    "90",
-    "360",
-    "180",
-    "120"
-   ],
-   "answer": 2,
-   "solution": "12 = 2<sup>2</sup> × 3, 18 = 2 × 3<sup>2</sup>, 30 = 2 × 3 × 5.<br>LCM = 2<sup>2</sup> × 3<sup>2</sup> × 5 = 180.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-hcf-lcm-003",
-   "rev": 1,
-   "topic": "q-hcf-lcm",
-   "type": "remainder",
-   "level": 2,
-   "q": "Find the greatest number that divides 1305, 4665 and 6905 leaving the same remainder in each case.",
-   "options": [
-    "1120",
-    "1210",
-    "560",
-    "280"
-   ],
-   "answer": 0,
-   "solution": "Differences: 4665 − 1305 = 3360, 6905 − 4665 = 2240, 6905 − 1305 = 5600.<br>HCF(3360, 2240) = 1120 and 5600 = 5 × 1120.<br>Required number = 1120 (each leaves remainder 185).",
-   "source": "test-data"
-  },
-  {
-   "id": "q-hcf-lcm-004",
-   "rev": 1,
-   "topic": "q-hcf-lcm",
-   "type": "application",
-   "level": 2,
-   "q": "Three bells toll at intervals of 6, 8 and 12 minutes. If they toll together at 9:00 a.m., when will they next toll together?",
-   "options": [
-    "9:48 a.m.",
-    "9:36 a.m.",
-    "9:12 a.m.",
-    "9:24 a.m."
-   ],
-   "answer": 3,
-   "solution": "They toll together after LCM(6, 8, 12) minutes.<br>LCM = 24 minutes.<br>9:00 a.m. + 24 min = 9:24 a.m.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-hcf-lcm-005",
-   "rev": 1,
-   "topic": "q-hcf-lcm",
-   "type": "remainder",
-   "level": 3,
-   "q": "What is the least number which, when divided by 12, 15, 20 and 54, leaves a remainder of 8 in each case?",
-   "options": [
-    "548",
-    "540",
-    "532",
-    "1088"
-   ],
-   "answer": 0,
-   "solution": "LCM(12, 15, 20, 54): 12 = 2<sup>2</sup>·3, 15 = 3·5, 20 = 2<sup>2</sup>·5, 54 = 2·3<sup>3</sup>.<br>LCM = 2<sup>2</sup> × 3<sup>3</sup> × 5 = 540.<br>Required number = 540 + 8 = 548.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-hcf-lcm-006",
-   "rev": 1,
-   "topic": "q-hcf-lcm",
-   "type": "basic",
-   "level": 3,
-   "q": "What is the HCF of 2/3, 8/9 and 16/81?",
-   "options": [
-    "2/3",
-    "16/81",
-    "2/81",
-    "8/27"
-   ],
-   "answer": 2,
-   "solution": "HCF of fractions = HCF of numerators / LCM of denominators.<br>HCF(2, 8, 16) = 2; LCM(3, 9, 81) = 81.<br>HCF = 2/81.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-hcf-1",
-   "front": "HCF × LCM (two numbers)",
-   "back": "Product of the two numbers",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-hcf-2",
-   "front": "HCF of fractions",
-   "back": "HCF of numerators / LCM of denominators",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-hcf-3",
-   "front": "Greatest number leaving same remainder",
-   "back": "HCF of the differences of the numbers",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-hcf-4",
-   "front": "Least number leaving remainder r with each divisor",
-   "back": "LCM of divisors + r",
-   "deck": "formulas"
-  }
- ]
 }

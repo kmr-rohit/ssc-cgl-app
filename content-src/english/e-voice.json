@@ -1,38 +1,258 @@
 {
   "topic": "e-voice",
   "notes": {
-    "summary": "<b>Active voice</b>: the subject does the action (<i>Ravi wrote a letter</i>). <b>Passive voice</b>: the object becomes the subject and receives the action (<i>A letter was written by Ravi</i>). SSC gives a sentence and asks for its correct conversion.",
+    "summary": "<p>In the <b>active voice</b> the subject does the action: <i>Ravi wrote a letter.</i> In the <b>passive voice</b> the receiver of the action becomes the subject: <i>A letter was written by Ravi.</i></p><p>SSC gives one sentence and asks for its passive (sometimes its active) form. You get 1 to 2 questions in Tier 1 and a few more in Tier 2. Almost every wrong option changes the <b>tense</b>, breaks <b>agreement</b> (is/are, was/were), uses <i>being</i> or <i>been</i> in the wrong place, or forgets to keep a question as a question. If you know the tense table below, most questions take under 30 seconds.</p>",
     "concepts": [
-      { "title": "The basic method", "body": "<ol><li>Swap subject and object.</li><li>Keep the <b>tense</b> of the original sentence.</li><li>Use <b>be + past participle (V3)</b>, with the form of <i>be</i> matching the tense.</li><li>Add <i>by + agent</i> (change pronoun case: he → him, they → them).</li></ol>" },
-      { "title": "Tense table", "body": "<table><thead><tr><th>Tense</th><th>Passive form</th></tr></thead><tbody><tr><td>Simple present</td><td>is/am/are + V3</td></tr><tr><td>Present continuous</td><td>is/am/are being + V3</td></tr><tr><td>Present perfect</td><td>has/have been + V3</td></tr><tr><td>Simple past</td><td>was/were + V3</td></tr><tr><td>Past continuous</td><td>was/were being + V3</td></tr><tr><td>Past perfect</td><td>had been + V3</td></tr><tr><td>Future / modals</td><td>will/can/must + be + V3</td></tr></tbody></table>Perfect continuous tenses and future continuous are normally not changed to passive." },
-      { "title": "Special cases", "body": "<ul><li><b>Imperative</b>: <i>Shut the door.</i> → <i>Let the door be shut.</i></li><li><b>Questions</b>: <i>Who wrote this?</i> → <i>By whom was this written?</i></li><li><b>Two objects</b>: <i>She gave me a pen.</i> → <i>I was given a pen by her.</i> / <i>A pen was given to me by her.</i></li></ul>" }
+      {
+        "title": "The five-step method",
+        "body": "<ol><li><b>Find the verb and its tense.</b> Underline the main verb and its helpers (<i>is writing, had seen, will be sent</i>).</li><li><b>Find the object.</b> Only verbs with an object (transitive verbs) can become passive. <i>He sleeps</i> has no passive.</li><li><b>Make the object the new subject.</b> Change pronoun case: me → I, us → we, him → he, her → she, them → they.</li><li><b>Write the verb as a form of <i>be</i> + past participle (V3).</b> The form of <i>be</i> carries the original tense and agrees with the new subject.</li><li><b>Add <i>by</i> + the old subject</b> in object case (I → me, he → him, they → them). Drop it if the doer is unknown or obvious (<i>someone, people, they</i> in a general sense).</li></ol><p>Example: <i>She <b>is cleaning</b> the rooms.</i> → present continuous, plural new subject → <i>The rooms <b>are being cleaned</b> by her.</i></p>"
+      },
+      {
+        "title": "Full tense table",
+        "body": "<table><thead><tr><th>Tense</th><th>Active</th><th>Passive</th></tr></thead><tbody><tr><td>Simple present</td><td>He <b>writes</b> a letter.</td><td>A letter <b>is written</b> by him.</td></tr><tr><td>Present continuous</td><td>He <b>is writing</b> a letter.</td><td>A letter <b>is being written</b> by him.</td></tr><tr><td>Present perfect</td><td>He <b>has written</b> a letter.</td><td>A letter <b>has been written</b> by him.</td></tr><tr><td>Simple past</td><td>He <b>wrote</b> a letter.</td><td>A letter <b>was written</b> by him.</td></tr><tr><td>Past continuous</td><td>He <b>was writing</b> a letter.</td><td>A letter <b>was being written</b> by him.</td></tr><tr><td>Past perfect</td><td>He <b>had written</b> a letter.</td><td>A letter <b>had been written</b> by him.</td></tr><tr><td>Simple future</td><td>He <b>will write</b> a letter.</td><td>A letter <b>will be written</b> by him.</td></tr><tr><td>Future perfect</td><td>He <b>will have written</b> a letter.</td><td>A letter <b>will have been written</b> by him.</td></tr><tr><td>Going to</td><td>He <b>is going to write</b> a letter.</td><td>A letter <b>is going to be written</b> by him.</td></tr><tr><td>Modals</td><td>He <b>can / must / should write</b> a letter.</td><td>A letter <b>can / must / should be written</b> by him.</td></tr><tr><td>Perfect modals</td><td>He <b>should have written</b> a letter.</td><td>A letter <b>should have been written</b> by him.</td></tr></tbody></table><p>No usual passive: present perfect continuous, past perfect continuous, future continuous and future perfect continuous. If an option gives <i>has been being written</i>, it is wrong.</p>"
+      },
+      {
+        "title": "Being, been and be",
+        "body": "<p>Most traps are about these three words. Learn one line each:</p><ul><li><b>being</b> appears only in <b>continuous</b> passives: <i>is being repaired, was being repaired</i>.</li><li><b>been</b> appears only in <b>perfect</b> passives: <i>has been repaired, had been repaired, will have been repaired</i>.</li><li><b>be</b> (plain form) comes after <b>will, shall and every modal</b>: <i>will be repaired, must be repaired, ought to be repaired</i>.</li></ul><table><thead><tr><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>The road <b>is being</b> widened.</td><td>The road <b>is been</b> widened.</td></tr><tr><td>The work <b>has been</b> finished.</td><td>The work <b>has being</b> finished.</td></tr><tr><td>The form <b>must be</b> signed.</td><td>The form <b>must been</b> signed.</td></tr><tr><td>A market <b>was being</b> operated.</td><td>A market <b>was been</b> operated.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Agreement, pronouns and the agent",
+        "body": "<ul><li>The <b>new subject</b> decides the helper: <i>The plants <b>are</b> watered</i> (plural), <i>The plant <b>is</b> watered</i> (singular). Do not copy the number of the old subject.</li><li>Pronoun case changes both ways. Active subject <i>they</i> becomes <i>by them</i>; active object <i>him</i> becomes subject <i>he</i>.<br>Correct: <i>He was helped by us.</i> Incorrect: <i>Him was helped by we.</i></li><li>Drop the agent when it adds nothing: <i>Someone has stolen my bag.</i> → <i>My bag has been stolen.</i> (not <i>by someone</i>). <i>People speak English all over the world.</i> → <i>English is spoken all over the world.</i></li><li>Words like <i>every morning, yesterday, already, never</i> stay in the passive sentence, usually in the same position: <i>The sailors had never encountered such a rough sea.</i> → <i>Such a rough sea had never been encountered by the sailors.</i></li><li>Only the clause with the object changes. In <i>The committee was reviewing the proposal when the chairman arrived</i>, the clause <i>the chairman arrived</i> stays as it is (<i>arrive</i> has no object).</li></ul>"
+      },
+      {
+        "title": "Negatives and questions",
+        "body": "<p><b>Negatives</b>: <i>not</i> goes after the first helper.</p><ul><li><i>She does not like tea.</i> → <i>Tea <b>is not liked</b> by her.</i> (do/does/did disappear in the passive)</li><li><i>They did not invite me.</i> → <i>I <b>was not invited</b> by them.</i></li><li><i>Nobody saw him.</i> → <i>He <b>was not seen</b> by anybody.</i> (nobody becomes <i>not ... by anybody</i>)</li></ul><p><b>Yes/no questions</b>: start with the helper of the passive.</p><ul><li><i>Do you know him?</i> → <i>Is he known to you?</i></li><li><i>Did you hear that noise?</i> → <i>Was that noise heard by you?</i></li><li><i>Have they finished the work?</i> → <i>Has the work been finished by them?</i></li><li><i>Can you solve this sum?</i> → <i>Can this sum be solved by you?</i></li></ul><p><b>Wh-questions</b>: keep the question word.</p><table><thead><tr><th>Active</th><th>Passive</th></tr></thead><tbody><tr><td><b>Who</b> wrote this letter?</td><td><b>By whom</b> was this letter written?</td></tr><tr><td><b>Whom</b> did you invite?</td><td><b>Who</b> was invited by you?</td></tr><tr><td><b>What</b> are you doing?</td><td>What is being done by you?</td></tr><tr><td><b>Why</b> did he beat the dog?</td><td>Why was the dog beaten by him?</td></tr><tr><td><b>When</b> will you finish the job?</td><td>When will the job be finished by you?</td></tr></tbody></table><p>A passive question must still end with a question mark and keep question order (helper before subject). <i>By whom you were invited?</i> is wrong; <i>By whom were you invited?</i> is right.</p>"
+      },
+      {
+        "title": "Commands and requests (imperatives)",
+        "body": "<p>Two accepted patterns:</p><ol><li><b>Let + object + be + V3</b>: <i>Shut the door.</i> → <i>Let the door be shut.</i></li><li><b>You are + requested / ordered / advised / forbidden + to + V1</b>, chosen by the tone:<ul><li>Request (please, kindly): <i>Please help me.</i> → <i>You are requested to help me.</i></li><li>Order: <i>Leave the room.</i> → <i>You are ordered to leave the room.</i></li><li>Advice: <i>Work hard.</i> → <i>You are advised to work hard.</i></li></ul></li></ol><p>Negative commands:</p><ul><li><i>Do not touch the wire.</i> → <i>Let the wire not be touched.</i> or <i>You are warned not to touch the wire.</i></li><li><i>Don't tell lies.</i> → <i>Let lies not be told.</i></li></ul><p>Sentences that already start with <i>Let</i>: <i>Let him do the work.</i> → <i>Let the work be done by him.</i></p><p>Without an object, use the second pattern: <i>Go there.</i> → <i>You are ordered to go there.</i></p>"
+      },
+      {
+        "title": "Verbs with two objects",
+        "body": "<p>Verbs like <i>give, send, offer, show, teach, tell, lend, pay, promise, award, ask, bring</i> take a person (indirect object) and a thing (direct object). Either can become the subject.</p><table><thead><tr><th>Active</th><th>Passive (person first)</th><th>Passive (thing first)</th></tr></thead><tbody><tr><td>She gave me a pen.</td><td>I was given a pen by her.</td><td>A pen was given to me by her.</td></tr><tr><td>The teacher taught us grammar.</td><td>We were taught grammar by the teacher.</td><td>Grammar was taught to us by the teacher.</td></tr><tr><td>They have offered him a job.</td><td>He has been offered a job.</td><td>A job has been offered to him.</td></tr><tr><td>The jury awarded her the prize.</td><td>She was awarded the prize by the jury.</td><td>The prize was awarded to her by the jury.</td></tr></tbody></table><p>When the thing comes first, add <i>to</i> (or <i>for</i> with <i>buy, make, get</i>) before the person. Both forms are correct; SSC options usually contain only one of them.</p>"
+      },
+      {
+        "title": "Infinitives, gerunds and prepositional verbs",
+        "body": "<ul><li><b>Infinitive object</b>: <i>I want you to write a letter.</i> → <i>I want a letter to be written by you.</i></li><li><b>Need / deserve + -ing</b> already has a passive meaning: <i>The car needs washing</i> = <i>The car needs to be washed.</i></li><li><b>Gerund</b>: <i>She hates people laughing at her.</i> → <i>She hates being laughed at.</i></li><li><b>Prepositional and phrasal verbs</b> keep their particle, so two prepositions can sit together: <i>They laughed at the beggar.</i> → <i>The beggar was laughed at by them.</i> <i>She looks after the child.</i> → <i>The child is looked after by her.</i> <i>They put off the meeting.</i> → <i>The meeting was put off.</i></li><li><b>Reporting verbs</b> (say, believe, know, think): <i>People say that he is honest.</i> → <i>It is said that he is honest.</i> or <i>He is said to be honest.</i></li><li><b>Make, help, see, hear</b> + bare infinitive take <i>to</i> in the passive: <i>They made him work.</i> → <i>He was made <b>to</b> work.</i> <i>I saw her dance.</i> → <i>She was seen <b>to</b> dance.</i></li></ul>"
+      },
+      {
+        "title": "Agents that do not take by",
+        "body": "<p>Some past participles behave like adjectives and take a fixed preposition instead of <i>by</i>:</p><table><thead><tr><th>Active</th><th>Passive</th></tr></thead><tbody><tr><td>I know him.</td><td>He is known <b>to</b> me.</td></tr><tr><td>His work pleased me.</td><td>I was pleased <b>with</b> his work.</td></tr><tr><td>The news surprised us.</td><td>We were surprised <b>at</b> the news.</td></tr><tr><td>Water filled the tank.</td><td>The tank was filled <b>with</b> water.</td></tr><tr><td>Music interests her.</td><td>She is interested <b>in</b> music.</td></tr><tr><td>The result disappointed him.</td><td>He was disappointed <b>with / at</b> the result.</td></tr><tr><td>Snow covered the hills.</td><td>The hills were covered <b>with</b> snow.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Passive to active",
+        "body": "<ol><li>Find the doer after <i>by</i>. It becomes the subject (change case: by him → he).</li><li>Read the tense from the passive helper: <i>is written</i> → simple present, <i>was being written</i> → past continuous, <i>will have been written</i> → future perfect.</li><li>Write the active verb in that tense, agreeing with the new subject.</li></ol><ul><li><i>The thief was caught by the police.</i> → <i>The police caught the thief.</i></li><li><i>English is taught by Mr Rao.</i> → <i>Mr Rao teaches English.</i></li><li><i>Let the gate be opened.</i> → <i>Open the gate.</i></li><li><i>By whom were you taught English?</i> → <i>Who taught you English?</i></li><li><i>My request should be considered.</i> (no agent) → <i>You should consider my request.</i> or <i>They should consider my request.</i> Choose the option that keeps the modal.</li></ul>"
+      },
+      {
+        "title": "Sentences that cannot be made passive",
+        "body": "<ul><li><b>Intransitive verbs</b> (no object): <i>die, arrive, sleep, go, come, happen, laugh, rise, exist</i>. <i>The baby slept.</i> has no passive.</li><li><b>Linking verbs</b>: <i>He became a doctor.</i> <i>She seems tired.</i></li><li>Some <b>state verbs</b> with <i>have, resemble, fit, lack</i>: <i>She has a car.</i> is not changed to <i>A car is had by her.</i> <i>He resembles his father.</i> has no passive.</li></ul><p>If the given sentence has two clauses, change only the clause with a transitive verb, and leave the other clause untouched.</p>"
+      }
     ],
     "varieties": [
-      { "type": "active-to-passive", "name": "Active to passive", "how": "Identify the tense, swap subject and object, use the matching <i>be</i> + V3.", "example": { "q": "The workers are repairing the bridge.", "steps": ["Tense: present continuous → <i>is/are being + V3</i>.", "Object <i>the bridge</i> (singular) becomes subject → <i>is being repaired</i>.", "Agent: <i>by the workers</i>."], "answer": "The bridge is being repaired by the workers." } },
-      { "type": "passive-to-active", "name": "Passive to active", "how": "Take the agent after <i>by</i> as the new subject and put the verb back in the same tense.", "example": { "q": "The thief was caught by the police.", "steps": ["Agent <i>the police</i> becomes subject.", "<i>was caught</i> is simple past → <i>caught</i>."], "answer": "The police caught the thief." } },
-      { "type": "special", "name": "Imperatives and questions", "how": "Imperative → <i>Let + object + be + V3</i>. Wh-question → keep the question word and use passive word order.", "example": { "q": "Post this letter at once.", "steps": ["Imperative order.", "Pattern: <i>Let + object + be + V3</i>."], "answer": "Let this letter be posted at once." } }
+      {
+        "type": "simple-present",
+        "name": "Simple present",
+        "how": "Active V1/V1+s becomes <b>is/am/are + V3</b>. <i>do/does</i> in negatives and questions disappear.",
+        "example": {
+          "q": "Select the passive form: The gardener waters the plants every morning.",
+          "steps": [
+            "<i>waters</i> is simple present.",
+            "New subject <i>the plants</i> is plural, so use <i>are</i>.",
+            "<i>are + watered</i>, agent <i>by the gardener</i>, time phrase stays."
+          ],
+          "answer": "The plants are watered by the gardener every morning."
+        }
+      },
+      {
+        "type": "simple-past",
+        "name": "Simple past",
+        "how": "Active V2 becomes <b>was/were + V3</b>. Going back, <i>was/were + V3</i> becomes V2.",
+        "example": {
+          "q": "Select the passive form: Marvel Comics created Superman.",
+          "steps": [
+            "<i>created</i> is simple past.",
+            "New subject <i>Superman</i> is singular, so use <i>was</i>.",
+            "<i>was created by Marvel Comics</i>."
+          ],
+          "answer": "Superman was created by Marvel Comics."
+        }
+      },
+      {
+        "type": "future",
+        "name": "Future tenses",
+        "how": "Simple future: <b>will/shall + be + V3</b>. Future perfect: <b>will/shall + have been + V3</b>. <i>will</i> never changes with number.",
+        "example": {
+          "q": "Select the passive form: By next June, they will have built the new flyover.",
+          "steps": [
+            "<i>will have built</i> is future perfect.",
+            "Pattern: <i>will have been + V3</i>.",
+            "Agent <i>by them</i> can stay or be dropped; options keep it."
+          ],
+          "answer": "By next June, the new flyover will have been built by them."
+        }
+      },
+      {
+        "type": "present-continuous",
+        "name": "Present continuous",
+        "how": "<b>is/am/are + being + V3</b>. Look for <i>being</i>; an option with <i>been</i> is wrong.",
+        "example": {
+          "q": "Select the passive form: The workers are repairing the bridge.",
+          "steps": [
+            "<i>are repairing</i> is present continuous.",
+            "New subject <i>the bridge</i> is singular, so use <i>is being</i>.",
+            "<i>is being repaired by the workers</i>."
+          ],
+          "answer": "The bridge is being repaired by the workers."
+        }
+      },
+      {
+        "type": "past-continuous",
+        "name": "Past continuous",
+        "how": "<b>was/were + being + V3</b>. Change only the clause that has an object.",
+        "example": {
+          "q": "Select the passive form: The committee was reviewing the proposal when the chairman arrived.",
+          "steps": [
+            "Main clause <i>was reviewing</i> is past continuous.",
+            "<i>The proposal was being reviewed by the committee</i>.",
+            "<i>arrived</i> has no object, so that clause stays as it is."
+          ],
+          "answer": "The proposal was being reviewed by the committee when the chairman arrived."
+        }
+      },
+      {
+        "type": "present-perfect",
+        "name": "Present perfect",
+        "how": "<b>has/have + been + V3</b>, with <i>has</i> or <i>have</i> chosen by the new subject.",
+        "example": {
+          "q": "Select the passive form: They have completed the new library building.",
+          "steps": [
+            "<i>have completed</i> is present perfect.",
+            "New subject <i>the building</i> is singular, so <i>has been</i>.",
+            "Agent <i>by them</i>."
+          ],
+          "answer": "The new library building has been completed by them."
+        }
+      },
+      {
+        "type": "past-perfect",
+        "name": "Past perfect",
+        "how": "<b>had + been + V3</b> for every subject. Adverbs like <i>never, already</i> stay between <i>had</i> and <i>been</i>.",
+        "example": {
+          "q": "Select the passive form: The sailors had never encountered such a rough sea.",
+          "steps": [
+            "<i>had encountered</i> is past perfect.",
+            "Pattern: <i>had been + V3</i>, with <i>never</i> after <i>had</i>.",
+            "New subject <i>such a rough sea</i>, agent <i>by the sailors</i>."
+          ],
+          "answer": "Such a rough sea had never been encountered by the sailors."
+        }
+      },
+      {
+        "type": "modals",
+        "name": "Modal verbs",
+        "how": "<b>modal + be + V3</b>; perfect modals become <b>modal + have been + V3</b>. Keep the same modal.",
+        "example": {
+          "q": "Select the passive form: We can buy books online.",
+          "steps": [
+            "Modal <i>can</i> + <i>buy</i>.",
+            "Pattern: <i>can be + V3</i>, so <i>can be bought</i>.",
+            "<i>by us</i> is obvious and is usually dropped."
+          ],
+          "answer": "Books can be bought online."
+        }
+      },
+      {
+        "type": "two-objects",
+        "name": "Verbs with two objects",
+        "how": "Either object can lead. Person first: <i>I was given a pen.</i> Thing first: add <i>to</i>: <i>A pen was given to me.</i>",
+        "example": {
+          "q": "Select the passive form: The principal awarded Meena a gold medal.",
+          "steps": [
+            "<i>awarded</i> is simple past with two objects: <i>Meena</i> (person) and <i>a gold medal</i> (thing).",
+            "Person first: <i>Meena was awarded a gold medal by the principal</i>.",
+            "Thing first would be <i>A gold medal was awarded to Meena by the principal</i>; both are correct, pick the one in the options."
+          ],
+          "answer": "Meena was awarded a gold medal by the principal."
+        }
+      },
+      {
+        "type": "imperative",
+        "name": "Commands and requests",
+        "how": "<b>Let + object + be + V3</b>, or <b>You are requested / ordered / advised + to + V1</b> by tone. Negative: <i>Let ... not be + V3</i>.",
+        "example": {
+          "q": "Select the passive form: Please submit the form by Friday.",
+          "steps": [
+            "It is a polite request (<i>please</i>).",
+            "Pattern: <i>You are requested to + V1</i>.",
+            "<i>Let the form be submitted</i> is also possible, but it loses the politeness; prefer the request form when <i>please</i> is present."
+          ],
+          "answer": "You are requested to submit the form by Friday."
+        }
+      },
+      {
+        "type": "interrogative",
+        "name": "Questions",
+        "how": "Keep it a question. Yes/no: start with the passive helper (<i>Was the noise heard...?</i>). <i>Who</i> becomes <i>By whom</i>; <i>whom</i> becomes <i>who</i>.",
+        "example": {
+          "q": "Select the passive form: Did you hear that noise?",
+          "steps": [
+            "<i>Did + hear</i> is simple past, so the helper is <i>was</i>.",
+            "Question order: <i>Was + that noise + heard</i>.",
+            "Agent <i>by you</i> and the question mark stay."
+          ],
+          "answer": "Was that noise heard by you?"
+        }
+      },
+      {
+        "type": "special-structures",
+        "name": "Special structures",
+        "how": "Keep particles (<i>laughed at</i>), add <i>to</i> after <i>made/seen</i>, use <i>It is said that</i> for reporting verbs, and use <i>known to, pleased with</i> instead of <i>by</i>.",
+        "example": {
+          "q": "Select the passive form: The children laughed at the joker.",
+          "steps": [
+            "<i>laugh at</i> is a prepositional verb; <i>at</i> stays with the verb.",
+            "Simple past: <i>was laughed at</i>.",
+            "Then <i>by the children</i>, so <i>at by</i> appear together, which is correct."
+          ],
+          "answer": "The joker was laughed at by the children."
+        }
+      }
     ],
     "tips": [
-      "Check the tense first; most wrong options change the tense.",
-      "Check number agreement: the new subject decides <i>is/are, was/were</i>.",
-      "When the agent is obvious or unknown (<i>someone, people</i>), it is usually dropped."
+      "Name the tense first. Then strike out every option whose helper shows a different tense; usually two options go at once.",
+      "Look at the new subject before choosing is/are or was/were. The number of the old subject does not matter.",
+      "If a question is given, the answer must also be a question with a question mark.",
+      "With please or kindly, prefer 'You are requested to ...'; with a plain command, 'Let ... be + V3' is the safe choice.",
+      "Drop 'by someone', 'by people' and 'by us' when the doer is general; SSC answers usually drop them.",
+      "For passive to active, the word after 'by' becomes the subject. If there is no 'by', use a sensible subject (they, you, someone) and keep the same tense.",
+      "Time words (yesterday, every day, already) never change. An option that changes them is wrong."
     ],
     "traps": [
-      "<i>being</i> appears only in continuous tenses; <i>been</i> appears only in perfect tenses.",
-      "In questions, do not forget to keep the question form: <i>Did he write…?</i> → <i>Was … written by him?</i>"
+      "Being belongs only to continuous tenses and been only to perfect tenses. 'Is been written' and 'has being written' are always wrong.",
+      "Do not change the tense: 'They have completed' becomes 'has been completed', not 'was completed'.",
+      "Who becomes 'By whom', not 'Whom by' or 'By who'. 'Whom did you call?' becomes 'Who was called by you?'",
+      "Prepositional verbs keep their preposition: 'The child was looked after', not 'The child was looked'.",
+      "After make, see, hear and help, the passive needs 'to': 'He was made to work', not 'He was made work'.",
+      "Some sentences have no passive (die, arrive, sleep, become, resemble). If only one clause has an object, change only that clause."
     ]
   },
   "questions": [
-    { "id": "e-voice-001", "rev": 1, "topic": "e-voice", "type": "active-to-passive", "level": 1, "q": "Select the option that expresses the given sentence in passive voice.<br>The gardener waters the plants every morning.", "options": ["The plants are watered by the gardener every morning.", "The plants were watered by the gardener every morning.", "The plants are being watered by the gardener every morning.", "The plants have been watered by the gardener every morning."], "answer": 0, "solution": "Simple present → <b>are + V3</b> (plural subject <i>plants</i>). So: <i>The plants are watered by the gardener every morning.</i>", "source": "test-data" },
-    { "id": "e-voice-002", "rev": 1, "topic": "e-voice", "type": "passive-to-active", "level": 1, "q": "Select the option that expresses the given sentence in active voice.<br>The match was won by our team.", "options": ["Our team wins the match.", "Our team has won the match.", "Our team won the match.", "Our team had won the match."], "answer": 2, "solution": "<i>was won</i> is simple past passive. The active form keeps the simple past: <b>Our team won the match.</b>", "source": "test-data" },
-    { "id": "e-voice-003", "rev": 1, "topic": "e-voice", "type": "active-to-passive", "level": 2, "q": "Select the option that expresses the given sentence in passive voice.<br>They have completed the new library building.", "options": ["The new library building was completed by them.", "The new library building has been completed by them.", "The new library building had been completed by them.", "The new library building is being completed by them."], "answer": 1, "solution": "Present perfect → <b>has/have been + V3</b>. Subject <i>building</i> is singular: <i>has been completed by them</i>.", "source": "test-data" },
-    { "id": "e-voice-004", "rev": 1, "topic": "e-voice", "type": "special", "level": 2, "q": "Select the option that expresses the given sentence in passive voice.<br>Switch off the lights before leaving.", "options": ["The lights are switched off before leaving.", "Let the lights switch off before leaving.", "Let the lights be switched off before leaving.", "The lights should switch off before leaving."], "answer": 2, "solution": "An imperative becomes <b>Let + object + be + V3</b>: <i>Let the lights be switched off before leaving.</i>", "source": "test-data" },
-    { "id": "e-voice-005", "rev": 1, "topic": "e-voice", "type": "special", "level": 3, "q": "Select the option that expresses the given sentence in passive voice.<br>Who invited you to the party?", "options": ["By whom were you invited to the party?", "Who were you invited by the party?", "By whom you were invited to the party?", "Whom has invited you to the party?"], "answer": 0, "solution": "<i>Who</i> becomes <b>By whom</b>; simple past passive in question order is <i>were you invited</i>. So: <i>By whom were you invited to the party?</i>", "source": "test-data" },
-    { "id": "e-voice-006", "rev": 1, "topic": "e-voice", "type": "active-to-passive", "level": 3, "q": "Select the option that expresses the given sentence in passive voice.<br>The committee was reviewing the proposal when the chairman arrived.", "options": ["The proposal had been reviewed by the committee when the chairman arrived.", "The proposal was reviewed by the committee when the chairman was arrived.", "The proposal was being reviewed by the committee when the chairman arrived.", "The proposal is being reviewed by the committee when the chairman arrived."], "answer": 2, "solution": "Only the main clause changes. Past continuous → <b>was/were being + V3</b>: <i>was being reviewed</i>. <i>arrived</i> is intransitive and stays unchanged.", "source": "test-data" }
+    {"id":"e-voice-001","rev":1,"topic":"e-voice","type":"simple-present","level":1,"q":"Select the option that expresses the given sentence in passive voice.<br>The gardener waters the plants every morning.","options":["The plants are watered by the gardener every morning.","The plants were watered by the gardener every morning.","The plants are being watered by the gardener every morning.","The plants have been watered by the gardener every morning."],"answer":0,"solution":"Simple present → <b>are + V3</b> (plural subject <i>plants</i>). So: <i>The plants are watered by the gardener every morning.</i>","source":"test-data"},
+    {"id":"e-voice-002","rev":1,"topic":"e-voice","type":"simple-past","level":1,"q":"Select the option that expresses the given sentence in active voice.<br>The match was won by our team.","options":["Our team wins the match.","Our team has won the match.","Our team won the match.","Our team had won the match."],"answer":2,"solution":"<i>was won</i> is simple past passive. The active form keeps the simple past: <b>Our team won the match.</b>","source":"test-data"},
+    {"id":"e-voice-003","rev":1,"topic":"e-voice","type":"present-perfect","level":2,"q":"Select the option that expresses the given sentence in passive voice.<br>They have completed the new library building.","options":["The new library building was completed by them.","The new library building has been completed by them.","The new library building had been completed by them.","The new library building is being completed by them."],"answer":1,"solution":"Present perfect → <b>has/have been + V3</b>. Subject <i>building</i> is singular: <i>has been completed by them</i>.","source":"test-data"},
+    {"id":"e-voice-004","rev":1,"topic":"e-voice","type":"imperative","level":2,"q":"Select the option that expresses the given sentence in passive voice.<br>Switch off the lights before leaving.","options":["The lights are switched off before leaving.","Let the lights switch off before leaving.","Let the lights be switched off before leaving.","The lights should switch off before leaving."],"answer":2,"solution":"An imperative becomes <b>Let + object + be + V3</b>: <i>Let the lights be switched off before leaving.</i>","source":"test-data"},
+    {"id":"e-voice-005","rev":1,"topic":"e-voice","type":"interrogative","level":3,"q":"Select the option that expresses the given sentence in passive voice.<br>Who invited you to the party?","options":["By whom were you invited to the party?","Who were you invited by the party?","By whom you were invited to the party?","Whom has invited you to the party?"],"answer":0,"solution":"<i>Who</i> becomes <b>By whom</b>; simple past passive in question order is <i>were you invited</i>. So: <i>By whom were you invited to the party?</i>","source":"test-data"},
+    {"id":"e-voice-006","rev":1,"topic":"e-voice","type":"past-continuous","level":3,"q":"Select the option that expresses the given sentence in passive voice.<br>The committee was reviewing the proposal when the chairman arrived.","options":["The proposal had been reviewed by the committee when the chairman arrived.","The proposal was reviewed by the committee when the chairman was arrived.","The proposal was being reviewed by the committee when the chairman arrived.","The proposal is being reviewed by the committee when the chairman arrived."],"answer":2,"solution":"Only the main clause changes. Past continuous → <b>was/were being + V3</b>: <i>was being reviewed</i>. <i>arrived</i> is intransitive and stays unchanged.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-voice-1", "front": "Passive of present continuous", "back": "is/am/are <b>being</b> + V3", "deck": "grammar" },
-    { "id": "fc-e-voice-2", "front": "Passive of an imperative", "back": "Let + object + be + V3", "deck": "grammar" },
-    { "id": "fc-e-voice-3", "front": "Passive of present perfect", "back": "has/have <b>been</b> + V3", "deck": "grammar" }
+    {"id":"fc-e-voice-1","front":"Passive of present continuous","back":"is/am/are <b>being</b> + V3","deck":"grammar"},
+    {"id":"fc-e-voice-2","front":"Passive of an imperative","back":"Let + object + be + V3","deck":"grammar"},
+    {"id":"fc-e-voice-3","front":"Passive of present perfect","back":"has/have <b>been</b> + V3","deck":"grammar"},
+    {"id":"fc-e-voice-4","front":"Passive of past continuous","back":"was/were <b>being</b> + V3","deck":"grammar"},
+    {"id":"fc-e-voice-5","front":"Passive of a modal (can, must, should)","back":"modal + <b>be</b> + V3: <i>can be done, must be finished</i>","deck":"grammar"},
+    {"id":"fc-e-voice-6","front":"Passive of future perfect","back":"will/shall + <b>have been</b> + V3","deck":"grammar"},
+    {"id":"fc-e-voice-7","front":"Who wrote it? (passive)","back":"<b>By whom</b> was it written?","deck":"grammar"},
+    {"id":"fc-e-voice-8","front":"Prepositions after known, pleased, surprised, filled (passive)","back":"known <b>to</b>, pleased <b>with</b>, surprised <b>at</b>, filled <b>with</b>, interested <b>in</b> (not <i>by</i>)","deck":"grammar"},
+    {"id":"fc-e-voice-9","front":"Which tenses have no usual passive?","back":"All perfect continuous tenses and future continuous. Intransitive verbs (die, go, sleep, arrive) have no passive at all.","deck":"grammar"}
   ]
 }

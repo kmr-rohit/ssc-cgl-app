@@ -1,0 +1,47 @@
+{
+ "topic": "r-analogy",
+ "types": [
+  {
+   "type": "word-analogy",
+   "name": "Word analogy",
+   "description": "Meaningful English words linked by meaning (A : B :: C : ?, or pick the word-pair with the same relationship), such as worker and tool, part and whole, synonym or antonym.",
+   "concepts": [
+    "word-semantic-analogy"
+   ]
+  },
+  {
+   "type": "letter-analogy",
+   "name": "Letter-cluster analogy",
+   "description": "Letter-clusters or words where letters are shifted, reversed or rearranged (PDK : QFN :: SJQ : ?, WOLF : FLOW, or # and % to be found); the meaning of the words does not matter.",
+   "concepts": [
+    "letter-alphabet-analogy"
+   ]
+  },
+  {
+   "type": "number-pair-analogy",
+   "name": "Number-pair analogy",
+   "description": "Two or three pairs of single numbers related by arithmetic (4 : 49 :: 6 : ?, or \"17 is related to 21 following a certain logic\").",
+   "concepts": []
+  },
+  {
+   "type": "number-set-analogy",
+   "name": "Number-set (triad) analogy",
+   "description": "Sets of three or four numbers in brackets such as (24, 15, 120); asks for the set whose numbers are related in the same way.",
+   "concepts": []
+  },
+  {
+   "type": "letter-number-analogy",
+   "name": "Word-to-number analogy",
+   "description": "A word or letter-cluster is paired with a number (CAT : 24 :: DOG : ?), usually from letter positions, their sum or product, or the count of letters.",
+   "concepts": []
+  },
+  {
+   "type": "figure-analogy",
+   "name": "Figure analogy",
+   "description": "Figures: figure A is related to figure B, and the same change must turn figure C into the answer figure.",
+   "concepts": [
+    "analogy-verbal"
+   ]
+  }
+ ]
+}

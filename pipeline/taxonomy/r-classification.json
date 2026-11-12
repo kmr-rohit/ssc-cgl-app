@@ -1,0 +1,46 @@
+{
+ "topic": "r-classification",
+ "types": [
+  {
+   "type": "word-odd",
+   "name": "Odd word out",
+   "description": "Four (sometimes five) meaningful words or names; three belong to one group by meaning and one does not.",
+   "concepts": [
+    "word-classification",
+    "classification-odd-one-out"
+   ]
+  },
+  {
+   "type": "word-pair-odd",
+   "name": "Odd word-pair",
+   "description": "Four word-pairs (Cow : Calf, Dog : Puppy …); three pairs share the same relationship and one pair does not.",
+   "concepts": []
+  },
+  {
+   "type": "letter-odd",
+   "name": "Odd letter-cluster",
+   "description": "Four letter-clusters such as BDF, HJL, RTW, MOQ; three follow the same letter-gap pattern and one is different.",
+   "concepts": [
+    "classification-letter"
+   ]
+  },
+  {
+   "type": "number-odd",
+   "name": "Odd number",
+   "description": "Four single numbers; three share a property (prime, square, cube, multiple of a number) and one does not.",
+   "concepts": []
+  },
+  {
+   "type": "number-pair-odd",
+   "name": "Odd number-pair or set",
+   "description": "Four number-pairs (3 – 10) or number sets (4, 9, 13) where the second number comes from the first by an operation; one pair or set does not follow it.",
+   "concepts": []
+  },
+  {
+   "type": "figure-odd",
+   "name": "Odd figure",
+   "description": "Four or five figures; all but one are alike in some way (rotation, count of lines, shading) and the odd figure must be chosen.",
+   "concepts": []
+  }
+ ]
+}

@@ -1,52 +1,160 @@
 {
   "topic": "e-cloze",
   "notes": {
-    "summary": "A <b>Cloze Test</b> is a short passage with five blanks. For each blank you choose the best word from four options. Tier 1 always has one cloze passage (5 questions). Blanks test vocabulary, grammar (tense, prepositions, connectors) and the logic of the passage.",
+    "summary": "A <b>cloze test</b> is a short passage with five blanks. For each blank you choose the best of four options. Tier 1 usually has one cloze passage (five questions) and Tier 2 has more. Some blanks test vocabulary (which word fits the meaning, which word goes with its neighbour). Others test grammar: verb forms, connectors, prepositions, articles and pronouns. The secret is to read the whole passage first, decide what kind of word each blank needs, and only then look at the meaning.",
     "concepts": [
-      { "title": "Read the whole passage first", "body": "Read the full passage once without filling anything. Understand the topic and tone (positive, critical, narrative). Many blanks are decided by a sentence that comes <b>after</b> the blank." },
-      { "title": "Grammar check, then meaning", "body": "For each blank:<ol><li>What part of speech is needed? (noun, verb, adjective, connector)</li><li>Does the verb agree with its subject and tense?</li><li>Which remaining option fits the meaning and tone?</li></ol>" },
-      { "title": "Connectors", "body": "<i>but, however, although</i> → contrast; <i>and, also, moreover</i> → addition; <i>so, therefore, as a result</i> → result; <i>because, since</i> → reason. Choosing the right connector depends on how the two ideas relate." }
+      {
+        "title": "Read the whole passage first",
+        "body": "Read the passage once from start to end without filling anything. Decide three things:<ol><li><b>Topic</b>: what is it about?</li><li><b>Tone</b>: positive, critical, worried, neutral, a story?</li><li><b>Time</b>: is it in the past (a story) or present (general facts)?</li></ol>Many blanks are decided by a sentence that comes <b>after</b> the blank. For example, <i>The plan was ___. Within a year, it had doubled the village's income.</i> The next sentence tells you the plan was a success."
+      },
+      {
+        "title": "Step 1: what kind of word does the blank need?",
+        "body": "Look at the words just before and after the blank.<table><thead><tr><th>Before the blank</th><th>Word needed</th><th>Example</th></tr></thead><tbody><tr><td>a / an / the / adjective</td><td>noun</td><td>a serious ___ (problem)</td></tr><tr><td>subject (he, the farmers)</td><td>verb</td><td>The farmers ___ (grow) rice.</td></tr><tr><td>is / was / very / too</td><td>adjective</td><td>She was very ___ (kind).</td></tr><tr><td>to</td><td>base verb (V1), usually</td><td>how to ___ (use)</td></tr><tr><td>has / have / had</td><td>past participle (V3)</td><td>has ___ (grown)</td></tr><tr><td>between two clauses</td><td>connector</td><td>It rained, ___ we stayed in.</td></tr></tbody></table>Options that are the wrong part of speech can be crossed out at once."
+      },
+      {
+        "title": "Step 2: grammar checks",
+        "body": "<ul><li><b>Subject-verb agreement</b>: <i>A single tap <u>wastes</u></i> (singular subject, -s verb); <i>Taps <u>waste</u></i>.</li><li><b>Tense</b>: keep the passage's time. A story in the past needs past verbs.</li><li><b>Active or passive</b>: <i>The school <u>opened</u> a new room</i> (the school did it). <i>A new room <u>was opened</u></i> (someone did it to the room).</li><li><b>After a relative pronoun</b>, the verb agrees with the noun it refers to: <i>drip irrigation, which <u>delivers</u> water</i>.</li><li><b>Fixed patterns</b>: <i>how to + V1</i>, <i>look forward to + -ing</i>, <i>used to + V1</i>, <i>be used to + -ing</i>.</li></ul>"
+      },
+      {
+        "title": "Step 3: meaning and tone",
+        "body": "When two or three options pass the grammar check, choose by meaning.<ul><li>Does the word fit the <b>logic</b>? <i>A dripping tap can ___ thousands of litres</i> → <b>waste</b>, not <i>save</i>.</li><li>Does it fit the <b>tone</b>? A passage praising a teacher needs positive words.</li><li>Is it too strong or too weak? <i>The news was ___ received</i>: <i>warmly</i> fits a happy passage, <i>ecstatically</i> is usually too much.</li></ul>"
+      },
+      {
+        "title": "Connectors",
+        "body": "<table><thead><tr><th>Relation</th><th>Connectors</th><th>Example</th></tr></thead><tbody><tr><td>Addition</td><td>and, also, moreover, besides, in addition</td><td>The plan is cheap. <u>Moreover</u>, it is quick.</td></tr><tr><td>Contrast</td><td>but, yet, however, although, though, whereas, while, despite</td><td><u>Although</u> he was tired, he kept working.</td></tr><tr><td>Result</td><td>so, therefore, thus, hence, as a result, consequently</td><td>It rained, <u>so</u> the match was cancelled.</td></tr><tr><td>Reason</td><td>because, since, as, due to, owing to</td><td>He was absent <u>because</u> he was ill.</td></tr><tr><td>Time</td><td>when, while, after, before, until, as soon as</td><td>Turn off the tap <u>while</u> you brush.</td></tr><tr><td>Condition</td><td>if, unless, provided that, in case</td><td><u>Unless</u> you hurry, you will miss it.</td></tr><tr><td>Choice</td><td>or, either…or, neither…nor</td><td><u>Neither</u> he <u>nor</u> I went.</td></tr></tbody></table>Key pairs: <i>not X <b>but</b> Y</i>; <i>not only X <b>but also</b> Y</i>; <i>both X <b>and</b> Y</i>; <i>hardly… <b>when</b></i>; <i>no sooner… <b>than</b></i>.<br><b>while</b> and <b>during</b>: <i>while</i> + clause (<i>while we were eating</i>), <i>during</i> + noun (<i>during lunch</i>).<br><b>although</b> and <b>despite</b>: <i>although</i> + clause, <i>despite</i> + noun or -ing (<i>despite the rain</i>). Never <i>despite of</i>."
+      },
+      {
+        "title": "Collocations: words that go together",
+        "body": "Some words simply go with certain other words. Meaning alone cannot decide these.<table><thead><tr><th>Use</th><th>Not</th></tr></thead><tbody><tr><td>make a decision, make a mistake, make progress, make an effort</td><td>do a decision</td></tr><tr><td>do homework, do your duty, do business, do harm</td><td>make homework</td></tr><tr><td>take a risk, take care, take part, take a step</td><td>make a risk</td></tr><tr><td>pay attention, pay a visit, pay a compliment</td><td>give attention (less natural)</td></tr><tr><td>heavy rain, strong tea, high temperature, deep sleep</td><td>strong rain, high tea (different meaning)</td></tr><tr><td>known for, famous for, rich in, proud of, afraid of</td><td>known by (for a quality)</td></tr><tr><td>commit a crime, raise a question, reach a decision</td><td>do a crime</td></tr></tbody></table>"
+      },
+      {
+        "title": "Prepositions in passages",
+        "body": "<ul><li><b>Time</b>: <i>at</i> 6 o'clock, <i>on</i> Monday / 5 May, <i>in</i> May / 2024 / the morning; <i>since</i> 2015 (point), <i>for</i> ten years (period).</li><li><b>Place</b>: <i>at</i> the station (point), <i>in</i> the room (inside), <i>on</i> the table (surface).</li><li><b>Fixed</b>: <i>interested in, good at, depend on, consist of, aware of, capable of, responsible for, similar to, different from, prefer X to Y, insist on, succeed in, accused of, charged with</i>.</li></ul>"
+      },
+      {
+        "title": "Articles, pronouns and quantifiers",
+        "body": "<ul><li><b>a</b> before a consonant sound (<i>a university, a one-day trip</i>); <b>an</b> before a vowel sound (<i>an hour, an MLA</i>).</li><li><b>the</b> for something already mentioned or unique: <i>a pump… <u>the</u> pump</i>; <i>the sun, the Ganga, the best</i>.</li><li><b>Pronouns</b> must agree with the noun they replace: <i>The students… <u>their</u> books</i>; <i>The committee… <u>its</u> report</i> (one body).</li><li><b>which</b> for things, <b>who</b> for people, <b>whose</b> for possession.</li><li><b>much / little</b> with uncountable nouns (<i>much water, little time</i>); <b>many / few</b> with countable plurals (<i>many trees, few people</i>).</li><li><b>a few</b> = some (positive); <b>few</b> = hardly any (negative). Same for <i>a little</i> and <i>little</i>.</li></ul>"
+      },
+      {
+        "title": "Final check",
+        "body": "After filling all five blanks, read the whole passage once more with your answers in it. It should read smoothly, keep one tense and one tone, and not contradict itself. If one blank sounds odd, look at it again; the other four answers often give the clue."
+      }
     ],
     "varieties": [
-      { "type": "cloze-vocab", "name": "Vocabulary blanks", "how": "Use the passage's meaning and tone to choose between words of the same part of speech.", "example": { "q": "The festival was a great success; thousands of people ___ the stalls.", "steps": ["'Great success' suggests many visitors.", "Options: avoided / visited / closed / feared → visited."], "answer": "visited" } },
-      { "type": "cloze-grammar", "name": "Grammar and connector blanks", "how": "Check the subject–verb agreement, tense and the logical link between clauses.", "example": { "q": "She was tired, ___ she kept working.", "steps": ["Tired vs kept working → contrast.", "Options: so / because / but / and → but."], "answer": "but" } }
+      {
+        "type": "cloze-meaning",
+        "name": "Word that fits the meaning",
+        "how": "All options are the same part of speech. Read the sentences around the blank and choose the word that fits the logic and tone of the passage.",
+        "example": {
+          "q": "A single dripping tap can ___ thousands of litres in a year. (save / waste / produce / hold)",
+          "steps": [
+            "The passage is about careless use of water.",
+            "A dripping tap loses water; it does not save or produce it.",
+            "<i>hold</i> does not fit a dripping tap."
+          ],
+          "answer": "waste"
+        }
+      },
+      {
+        "type": "cloze-collocation",
+        "name": "Word that goes with its neighbour",
+        "how": "The options mean almost the same. Look at the word right next to the blank and pick the one that naturally goes with it.",
+        "example": {
+          "q": "He was ___ for his patience. (aware / known / proud / afraid)",
+          "steps": [
+            "The blank is followed by <i>for</i>.",
+            "<i>known for</i> a quality is a fixed pair. <i>aware of, proud of, afraid of</i> take <i>of</i>."
+          ],
+          "answer": "known"
+        }
+      },
+      {
+        "type": "cloze-verb-form",
+        "name": "Verb form and tense",
+        "how": "Find the subject and the time of the passage. Check agreement, tense, active or passive, and any fixed pattern like <i>to + V1</i>.",
+        "example": {
+          "q": "Farmers use drip irrigation, which ___ water directly to the roots. (deliver / delivering / delivered / delivers)",
+          "steps": [
+            "<i>which</i> refers to <i>drip irrigation</i>, a singular noun.",
+            "The passage is in the simple present.",
+            "Singular present verb: <i>delivers</i>."
+          ],
+          "answer": "delivers"
+        }
+      },
+      {
+        "type": "cloze-connector",
+        "name": "Connector",
+        "how": "Decide how the two ideas are related: addition, contrast, result, reason, time or condition. Then pick the connector of that kind.",
+        "example": {
+          "q": "‘Learning,’ he said, ‘is not a race ___ a journey.’ (and / but / or / so)",
+          "steps": [
+            "The pattern is <i>not X but Y</i>: one idea is rejected and the other is accepted."
+          ],
+          "answer": "but"
+        }
+      },
+      {
+        "type": "cloze-preposition",
+        "name": "Preposition",
+        "how": "Check whether the word before the blank takes a fixed preposition (<i>depend on, consist of</i>). If not, decide by time or place rules.",
+        "example": {
+          "q": "The village has depended ___ the river for centuries. (in / on / at / with)",
+          "steps": [
+            "<i>depend</i> always takes <i>on</i>."
+          ],
+          "answer": "on"
+        }
+      },
+      {
+        "type": "cloze-determiner",
+        "name": "Article, pronoun or quantifier",
+        "how": "Check whether the noun is countable, singular or already mentioned, and which noun a pronoun refers to.",
+        "example": {
+          "q": "There was ___ water left in the tank, so we had to be careful. (few / a few / little / many)",
+          "steps": [
+            "<i>water</i> is uncountable, so <i>few, a few, many</i> are out.",
+            "<i>had to be careful</i> shows hardly any water was left, so <i>little</i>."
+          ],
+          "answer": "little"
+        }
+      }
     ],
     "tips": [
-      "Re-read the complete passage with all your answers filled in before moving on.",
-      "If an option makes the passage contradict itself, it is wrong even if it fits the single sentence."
+      "Read the full passage once before filling any blank.",
+      "Decide the part of speech the blank needs; cross out options that do not fit.",
+      "Keep the passage's tense. A story in the past stays in the past.",
+      "For connectors, name the relation (contrast, result, reason) before reading the options.",
+      "Look at the sentence after the blank; it often settles the meaning.",
+      "Re-read the whole passage with all five answers filled in."
     ],
     "traps": [
-      "Options that fit the sentence alone but not the passage's overall tone.",
-      "Two near-synonyms where only one collocates with the next word (e.g. <i>make</i> vs <i>do</i>)."
+      "An option that fits the single sentence but contradicts the passage's tone or the next sentence.",
+      "Near-synonyms where only one goes with the next word (<i>make</i> vs <i>do</i>, <i>known for</i> vs <i>known by</i>).",
+      "<i>during</i> before a clause: it should be <i>while</i>.",
+      "Verb forms that agree with the nearest noun instead of the real subject.",
+      "<i>few</i> vs <i>a few</i> and <i>little</i> vs <i>a little</i>: the positive and negative meanings are opposite."
     ]
   },
   "passages": [
-    {
-      "id": "e-cloze-p1",
-      "title": "Saving Water",
-      "text": "<p>Water is one of our most precious resources, yet we often <b>(1)</b>___ it carelessly. A single dripping tap can <b>(2)</b>___ thousands of litres in a year. Simple habits, such as turning off the tap <b>(3)</b>___ we brush our teeth, can make a real difference. Farmers, too, are learning to use drip irrigation, which <b>(4)</b>___ water directly to the roots of plants instead of flooding whole fields. If each of us takes small steps today, the growing problem of water <b>(5)</b>___ can be greatly reduced.</p>"
-    },
-    {
-      "id": "e-cloze-p2",
-      "title": "The Old Teacher",
-      "text": "<p>Mr. Iyer had taught in the village school for thirty years. He was <b>(1)</b>___ for his patience; no matter how many times a child got a sum wrong, he would explain it again with a smile. When the school <b>(2)</b>___ a new computer room, many expected the old teacher to retire. Instead, he spent his evenings learning how to type and how to <b>(3)</b>___ the internet. Within a few months he was helping the younger teachers prepare their lessons. His students noticed that he was never <b>(4)</b>___ to admit that he did not know something. ‘Learning,’ he often told them, ‘is not a race <b>(5)</b>___ a journey.’</p>"
-    }
+    {"id":"e-cloze-p1","title":"Saving Water","text":"<p>Water is one of our most precious resources, yet we often <b>(1)</b>___ it carelessly. A single dripping tap can <b>(2)</b>___ thousands of litres in a year. Simple habits, such as turning off the tap <b>(3)</b>___ we brush our teeth, can make a real difference. Farmers, too, are learning to use drip irrigation, which <b>(4)</b>___ water directly to the roots of plants instead of flooding whole fields. If each of us takes small steps today, the growing problem of water <b>(5)</b>___ can be greatly reduced.</p>"},
+    {"id":"e-cloze-p2","title":"The Old Teacher","text":"<p>Mr. Iyer had taught in the village school for thirty years. He was <b>(1)</b>___ for his patience; no matter how many times a child got a sum wrong, he would explain it again with a smile. When the school <b>(2)</b>___ a new computer room, many expected the old teacher to retire. Instead, he spent his evenings learning how to type and how to <b>(3)</b>___ the internet. Within a few months he was helping the younger teachers prepare their lessons. His students noticed that he was never <b>(4)</b>___ to admit that he did not know something. ‘Learning,’ he often told them, ‘is not a race <b>(5)</b>___ a journey.’</p>"}
   ],
   "questions": [
-    { "id": "e-cloze-001", "rev": 1, "topic": "e-cloze", "type": "cloze-vocab", "level": 1, "passageId": "e-cloze-p1", "q": "Select the most appropriate option to fill in blank (1).", "options": ["use", "save", "protect", "value"], "answer": 0, "solution": "The word <i>carelessly</i> and the contrast word <i>yet</i> (after 'precious') require a neutral action done badly: <b>use</b> it carelessly. 'Save/protect/value carelessly' make no sense.", "source": "test-data" },
-    { "id": "e-cloze-002", "rev": 1, "topic": "e-cloze", "type": "cloze-vocab", "level": 1, "passageId": "e-cloze-p1", "q": "Select the most appropriate option to fill in blank (2).", "options": ["save", "waste", "produce", "hold"], "answer": 1, "solution": "A dripping tap loses water, so it can <b>waste</b> thousands of litres.", "source": "test-data" },
-    { "id": "e-cloze-003", "rev": 1, "topic": "e-cloze", "type": "cloze-grammar", "level": 2, "passageId": "e-cloze-p1", "q": "Select the most appropriate option to fill in blank (3).", "options": ["during", "since", "while", "until"], "answer": 2, "solution": "A clause (<i>we brush our teeth</i>) follows, and the actions happen at the same time, so the conjunction <b>while</b> is needed. <i>During</i> is a preposition and needs a noun, not a clause.", "source": "test-data" },
-    { "id": "e-cloze-004", "rev": 1, "topic": "e-cloze", "type": "cloze-grammar", "level": 2, "passageId": "e-cloze-p1", "q": "Select the most appropriate option to fill in blank (4).", "options": ["deliver", "delivering", "delivered", "delivers"], "answer": 3, "solution": "<i>which</i> refers to <i>drip irrigation</i> (singular), and the passage is in the simple present, so <b>delivers</b>.", "source": "test-data" },
-    { "id": "e-cloze-005", "rev": 1, "topic": "e-cloze", "type": "cloze-vocab", "level": 3, "passageId": "e-cloze-p1", "q": "Select the most appropriate option to fill in blank (5).", "options": ["abundance", "surplus", "scarcity", "quality"], "answer": 2, "solution": "The passage is about wasting and saving water, and a 'growing problem' that saving reduces is a shortage: water <b>scarcity</b>. Abundance and surplus are not problems to be reduced.", "source": "test-data" },
-    { "id": "e-cloze-006", "rev": 1, "topic": "e-cloze", "type": "cloze-vocab", "level": 1, "passageId": "e-cloze-p2", "q": "Select the most appropriate option to fill in blank (1).", "options": ["aware", "known", "proud", "afraid"], "answer": 1, "solution": "The fixed phrase is <b>known for</b> a quality. The next clause describes his patience, so he was known for it.", "source": "test-data" },
-    { "id": "e-cloze-007", "rev": 1, "topic": "e-cloze", "type": "cloze-grammar", "level": 2, "passageId": "e-cloze-p2", "q": "Select the most appropriate option to fill in blank (2).", "options": ["opened", "was opened", "opening", "opens"], "answer": 0, "solution": "The story is in the past and <i>the school</i> is the doer, so the active simple past <b>opened</b> is correct. 'was opened a new room' is ungrammatical.", "source": "test-data" },
-    { "id": "e-cloze-008", "rev": 1, "topic": "e-cloze", "type": "cloze-grammar", "level": 1, "passageId": "e-cloze-p2", "q": "Select the most appropriate option to fill in blank (3).", "options": ["using", "used", "use", "uses"], "answer": 2, "solution": "<i>how to</i> is followed by the base form of the verb: <i>how to type and how to <b>use</b> the internet</i>.", "source": "test-data" },
-    { "id": "e-cloze-009", "rev": 1, "topic": "e-cloze", "type": "cloze-vocab", "level": 3, "passageId": "e-cloze-p2", "q": "Select the most appropriate option to fill in blank (4).", "options": ["eager", "proud", "happy", "ashamed"], "answer": 3, "solution": "The point is that admitting ignorance did not embarrass him: he was never <b>ashamed</b> to admit it. 'Never eager/happy/proud to admit' would give the opposite, negative picture, which does not fit the admiring tone.", "source": "test-data" },
-    { "id": "e-cloze-010", "rev": 1, "topic": "e-cloze", "type": "cloze-grammar", "level": 3, "passageId": "e-cloze-p2", "q": "Select the most appropriate option to fill in blank (5).", "options": ["and", "but", "or", "so"], "answer": 1, "solution": "The pattern <i>not X but Y</i> sets up a correction: learning is <i>not a race <b>but</b> a journey</i>.", "source": "test-data" }
+    {"id":"e-cloze-001","rev":1,"topic":"e-cloze","type":"cloze-meaning","level":1,"passageId":"e-cloze-p1","q":"Select the most appropriate option to fill in blank (1).","options":["use","save","protect","value"],"answer":0,"solution":"The word <i>carelessly</i> and the contrast word <i>yet</i> (after 'precious') require a neutral action done badly: <b>use</b> it carelessly. 'Save/protect/value carelessly' make no sense.","source":"test-data"},
+    {"id":"e-cloze-002","rev":1,"topic":"e-cloze","type":"cloze-meaning","level":1,"passageId":"e-cloze-p1","q":"Select the most appropriate option to fill in blank (2).","options":["save","waste","produce","hold"],"answer":1,"solution":"A dripping tap loses water, so it can <b>waste</b> thousands of litres.","source":"test-data"},
+    {"id":"e-cloze-003","rev":1,"topic":"e-cloze","type":"cloze-connector","level":2,"passageId":"e-cloze-p1","q":"Select the most appropriate option to fill in blank (3).","options":["during","since","while","until"],"answer":2,"solution":"A clause (<i>we brush our teeth</i>) follows, and the actions happen at the same time, so the conjunction <b>while</b> is needed. <i>During</i> is a preposition and needs a noun, not a clause.","source":"test-data"},
+    {"id":"e-cloze-004","rev":1,"topic":"e-cloze","type":"cloze-verb-form","level":2,"passageId":"e-cloze-p1","q":"Select the most appropriate option to fill in blank (4).","options":["deliver","delivering","delivered","delivers"],"answer":3,"solution":"<i>which</i> refers to <i>drip irrigation</i> (singular), and the passage is in the simple present, so <b>delivers</b>.","source":"test-data"},
+    {"id":"e-cloze-005","rev":1,"topic":"e-cloze","type":"cloze-meaning","level":3,"passageId":"e-cloze-p1","q":"Select the most appropriate option to fill in blank (5).","options":["abundance","surplus","scarcity","quality"],"answer":2,"solution":"The passage is about wasting and saving water, and a 'growing problem' that saving reduces is a shortage: water <b>scarcity</b>. Abundance and surplus are not problems to be reduced.","source":"test-data"},
+    {"id":"e-cloze-006","rev":1,"topic":"e-cloze","type":"cloze-collocation","level":1,"passageId":"e-cloze-p2","q":"Select the most appropriate option to fill in blank (1).","options":["aware","known","proud","afraid"],"answer":1,"solution":"The fixed phrase is <b>known for</b> a quality. The next clause describes his patience, so he was known for it.","source":"test-data"},
+    {"id":"e-cloze-007","rev":1,"topic":"e-cloze","type":"cloze-verb-form","level":2,"passageId":"e-cloze-p2","q":"Select the most appropriate option to fill in blank (2).","options":["opened","was opened","opening","opens"],"answer":0,"solution":"The story is in the past and <i>the school</i> is the doer, so the active simple past <b>opened</b> is correct. 'was opened a new room' is ungrammatical.","source":"test-data"},
+    {"id":"e-cloze-008","rev":1,"topic":"e-cloze","type":"cloze-verb-form","level":1,"passageId":"e-cloze-p2","q":"Select the most appropriate option to fill in blank (3).","options":["using","used","use","uses"],"answer":2,"solution":"<i>how to</i> is followed by the base form of the verb: <i>how to type and how to <b>use</b> the internet</i>.","source":"test-data"},
+    {"id":"e-cloze-009","rev":1,"topic":"e-cloze","type":"cloze-meaning","level":3,"passageId":"e-cloze-p2","q":"Select the most appropriate option to fill in blank (4).","options":["eager","proud","happy","ashamed"],"answer":3,"solution":"The point is that admitting ignorance did not embarrass him: he was never <b>ashamed</b> to admit it. 'Never eager/happy/proud to admit' would give the opposite, negative picture, which does not fit the admiring tone.","source":"test-data"},
+    {"id":"e-cloze-010","rev":1,"topic":"e-cloze","type":"cloze-connector","level":3,"passageId":"e-cloze-p2","q":"Select the most appropriate option to fill in blank (5).","options":["and","but","or","so"],"answer":1,"solution":"The pattern <i>not X but Y</i> sets up a correction: learning is <i>not a race <b>but</b> a journey</i>.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-cloze-1", "front": "Cloze: first step", "back": "Read the whole passage once before filling any blank.", "deck": "grammar" },
-    { "id": "fc-e-cloze-2", "front": "while vs during", "back": "<b>while</b> + clause (while we eat); <b>during</b> + noun (during lunch)", "deck": "grammar" },
-    { "id": "fc-e-cloze-3", "front": "not X ___ Y", "back": "not X <b>but</b> Y", "deck": "grammar" }
+    {"id":"fc-e-cloze-1","front":"Cloze: first step","back":"Read the whole passage once before filling any blank.","deck":"grammar"},
+    {"id":"fc-e-cloze-2","front":"while vs during","back":"<b>while</b> + clause (while we eat); <b>during</b> + noun (during lunch)","deck":"grammar"},
+    {"id":"fc-e-cloze-3","front":"not X ___ Y","back":"not X <b>but</b> Y","deck":"grammar"}
   ]
 }

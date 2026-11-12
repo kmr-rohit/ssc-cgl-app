@@ -1,37 +1,201 @@
 {
   "topic": "e-narration",
   "notes": {
-    "summary": "<b>Direct speech</b> gives the speaker's exact words in quotation marks. <b>Indirect (reported) speech</b> reports them without quotes, usually with changes in tense, pronouns and time words. SSC asks you to pick the correct conversion.",
+    "summary": "<p><b>Direct speech</b> gives the exact words inside quotation marks: <i>Rohan said, “I am tired.”</i> <b>Indirect (reported) speech</b> reports the meaning without quotation marks: <i>Rohan said that he was tired.</i></p><p>SSC gives one sentence and asks for its indirect form (sometimes the direct form). You usually get 1 question in Tier 1 and 1 to 3 in Tier 2. Every conversion makes up to five changes: the <b>reporting verb</b>, the <b>connector</b>, the <b>pronouns</b>, the <b>tense</b> and the <b>time and place words</b>. Wrong options get exactly one of these wrong, so check them in that order.</p>",
     "concepts": [
-      { "title": "Tense back-shift", "body": "If the reporting verb is in the past (<i>said, told, asked</i>), shift the reported verb one step back:<table><thead><tr><th>Direct</th><th>Indirect</th></tr></thead><tbody><tr><td>is / am / are</td><td>was / were</td></tr><tr><td>do / does</td><td>did</td></tr><tr><td>did / has / have</td><td>had (+ V3)</td></tr><tr><td>will / can / may</td><td>would / could / might</td></tr></tbody></table>If the reporting verb is in the present (<i>says</i>), or the words state a universal truth, the tense does not change." },
-      { "title": "Pronouns and time words", "body": "Change pronouns to match the reporter's point of view. Change nearness words:<ul><li>now → then; today → that day; tomorrow → the next day; yesterday → the previous day</li><li>this → that; here → there; ago → before</li></ul>" },
-      { "title": "Questions, orders and exclamations", "body": "<ul><li><b>Yes/no question</b>: <i>asked + if/whether</i> + statement order.</li><li><b>Wh-question</b>: <i>asked + wh-word</i> + statement order (no question mark).</li><li><b>Order/request</b>: <i>told/ordered/requested + object + to + verb</i>; negative → <i>not to</i>.</li><li><b>Exclamation</b>: <i>exclaimed with joy/sorrow that…</i></li></ul>" }
+      {
+        "title": "The five changes",
+        "body": "<ol><li><b>Reporting verb</b>: <i>said</i> stays <i>said</i> if there is no listener; <i>said to + person</i> becomes <i>told + person</i>. Questions take <i>asked / enquired</i>; commands take <i>ordered / requested / advised</i>.</li><li><b>Connector</b>: statements take <i>that</i>; yes/no questions take <i>if / whether</i>; wh-questions keep their question word; commands take <i>to + V1</i>.</li><li><b>Pronouns</b>: change them to fit the reporter (see the SON rule).</li><li><b>Tense</b>: if the reporting verb is past, move the reported verb one step back.</li><li><b>Time and place words</b>: <i>now → then, today → that day, here → there</i>.</li></ol><p>Example: <i>She said to me, “I will meet you here tomorrow.”</i> → <i>She <b>told</b> me <b>that she would</b> meet <b>me there the next day</b>.</i></p>"
+      },
+      {
+        "title": "Tense back-shift",
+        "body": "<p>Apply this only when the reporting verb is in the past (<i>said, told, asked</i>).</p><table><thead><tr><th>Direct</th><th>Indirect</th><th>Example</th></tr></thead><tbody><tr><td>Simple present (write/writes)</td><td>Simple past (wrote)</td><td>“I <b>like</b> tea.” → he <b>liked</b> tea</td></tr><tr><td>Present continuous (is writing)</td><td>Past continuous (was writing)</td><td>“I <b>am reading</b>.” → he <b>was reading</b></td></tr><tr><td>Present perfect (has written)</td><td>Past perfect (had written)</td><td>“I <b>have finished</b>.” → he <b>had finished</b></td></tr><tr><td>Present perfect continuous</td><td>Past perfect continuous</td><td>“I <b>have been waiting</b>.” → he <b>had been waiting</b></td></tr><tr><td>Simple past (wrote)</td><td>Past perfect (had written)</td><td>“I <b>saw</b> him.” → she <b>had seen</b> him</td></tr><tr><td>Past continuous (was writing)</td><td>Past perfect continuous (had been writing)</td><td>“I <b>was sleeping</b>.” → he <b>had been sleeping</b></td></tr><tr><td>Past perfect</td><td>No change</td><td>“I <b>had left</b>.” → he <b>had left</b></td></tr><tr><td>will / shall</td><td>would (shall → should when it means duty)</td><td>“I <b>will</b> come.” → he <b>would</b> come</td></tr><tr><td>can</td><td>could</td><td>“I <b>can</b> swim.” → he <b>could</b> swim</td></tr><tr><td>may</td><td>might</td><td>“It <b>may</b> rain.” → it <b>might</b> rain</td></tr><tr><td>must</td><td>had to (obligation) or must (rule, certainty)</td><td>“I <b>must</b> go.” → he <b>had to</b> go</td></tr><tr><td>could, would, should, might, ought to</td><td>No change</td><td>“You <b>should</b> rest.” → I <b>should</b> rest</td></tr></tbody></table><p>Correct: <i>She said that she <b>had not seen</b> him at the station.</i> Incorrect: <i>She said that she <b>hasn't seen</b> him at the station.</i></p>"
+      },
+      {
+        "title": "When the tense does not change",
+        "body": "<ul><li><b>Reporting verb in the present or future</b>: <i>He says, “I am busy.”</i> → <i>He says that he <b>is</b> busy.</i> <i>She will say, “I am ready.”</i> → <i>She will say that she <b>is</b> ready.</i></li><li><b>Universal truths and scientific facts</b>: <i>The teacher said, “The sun rises in the east.”</i> → <i>The teacher said that the sun <b>rises</b> in the east.</i> <i>He said, “Two and two make four.”</i> → <i>He said that two and two <b>make</b> four.</i></li><li><b>Proverbs and habitual facts</b>: <i>Father said, “Honesty is the best policy.”</i> → <i>Father said that honesty <b>is</b> the best policy.</i></li><li><b>Historical facts</b> (simple past stays): <i>He said, “Gandhiji was born in 1869.”</i> → <i>He said that Gandhiji <b>was</b> born in 1869.</i></li><li><b>Past perfect and the modals could, would, should, might, ought to</b> stay as they are.</li></ul><p>Trap: <i>He says that two and two made four</i> and <i>He said that two and two made four</i> are both wrong.</p>"
+      },
+      {
+        "title": "Pronoun changes: the SON rule",
+        "body": "<table><thead><tr><th>Person in the quote</th><th>Changes to match</th><th>Example</th></tr></thead><tbody><tr><td><b>First</b> person (I, me, my, we, us, our)</td><td>the <b>S</b>ubject of the reporting verb</td><td><i>Ravi said, “<b>I</b> lost <b>my</b> pen.”</i> → Ravi said that <b>he</b> had lost <b>his</b> pen.</td></tr><tr><td><b>Second</b> person (you, your)</td><td>the <b>O</b>bject of the reporting verb (the listener)</td><td><i>He said to me, “<b>You</b> are late.”</i> → He told me that <b>I</b> was late.</td></tr><tr><td><b>Third</b> person (he, she, it, they)</td><td><b>N</b>o change</td><td><i>She said, “<b>He</b> is honest.”</i> → She said that <b>he</b> was honest.</td></tr></tbody></table><p>Check gender and number carefully: <i>Raghav said to Meera, “Are you upset with me?”</i> → <i>Raghav asked Meera if she was upset with <b>him</b></i> (not <i>her</i>). <i>The French scientist said, “I want ...”</i> → <i>he/she wanted</i>, never <i>I wanted</i>.</p>"
+      },
+      {
+        "title": "Time and place words",
+        "body": "<table><thead><tr><th>Direct</th><th>Indirect</th></tr></thead><tbody><tr><td>now</td><td>then</td></tr><tr><td>today, tonight</td><td>that day, that night</td></tr><tr><td>tomorrow</td><td>the next day / the following day</td></tr><tr><td>yesterday</td><td>the previous day / the day before</td></tr><tr><td>last night, last week</td><td>the previous night, the previous week</td></tr><tr><td>next week, next year</td><td>the following week, the following year</td></tr><tr><td>ago</td><td>before</td></tr><tr><td>this, these</td><td>that, those</td></tr><tr><td>here</td><td>there</td></tr><tr><td>thus</td><td>so / in that way</td></tr><tr><td>come</td><td>go (when the place changes)</td></tr></tbody></table><p>These changes apply when the reported time or place is no longer the same. <i>this</i> used as a time word (this week) becomes <i>that</i> (that week).</p>"
+      },
+      {
+        "title": "Questions",
+        "body": "<p>Reporting verb: <i>asked, enquired of, wanted to know, wondered</i>. The question becomes a <b>statement</b>: subject before verb, no <i>do/does/did</i>, no question mark.</p><p><b>Yes/no questions</b> (start with a helping verb): use <b>if</b> or <b>whether</b>.</p><ul><li><i>Meera said to her brother, “Have you finished your homework?”</i> → <i>Meera asked her brother <b>if he had finished</b> his homework.</i></li><li><i>He said to me, “Do you like music?”</i> → <i>He asked me <b>if I liked</b> music.</i> (<i>do</i> disappears, <i>like</i> back-shifts)</li><li><i>He said, “Would you help me with this work?”</i> → <i>He asked if I <b>would</b> help him with that work.</i></li></ul><p><b>Wh-questions</b>: keep the question word, no <i>if</i>.</p><ul><li><i>He said to me, “What time do the banks open and close?”</i> → <i>He asked me what time <b>the banks opened</b> and closed.</i></li><li><i>The stranger said to me, “Why did you leave so early?”</i> → <i>The stranger asked me why <b>I had left</b> so early.</i></li></ul><table><thead><tr><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>She asked me where I lived.</td><td>She asked me where did I live.</td></tr><tr><td>He asked if I was ready.</td><td>He asked that was I ready.</td></tr><tr><td>He asked me what I wanted.</td><td>He said me what I wanted.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Commands, requests and advice",
+        "body": "<p>Pattern: <b>reporting verb + listener + (not) to + V1</b>. Choose the reporting verb by tone.</p><table><thead><tr><th>Tone in the quote</th><th>Reporting verb</th><th>Example</th></tr></thead><tbody><tr><td>Order</td><td>ordered, commanded, told</td><td><i>The officer said to the guard, “Open the gate.”</i> → The officer ordered the guard to open the gate.</td></tr><tr><td>Request (please, kindly)</td><td>requested, asked</td><td><i>She said to him, “Please wait here.”</i> → She requested him to wait there.</td></tr><tr><td>Advice</td><td>advised</td><td><i>The doctor said, “Don't eat oily food.”</i> → The doctor advised the patient not to eat oily food.</td></tr><tr><td>Warning</td><td>warned</td><td><i>He said, “Don't touch the wire.”</i> → He warned me not to touch the wire.</td></tr><tr><td>Prohibition</td><td>forbade (no <i>not</i>)</td><td><i>Father said, “Don't go out.”</i> → Father forbade me to go out.</td></tr></tbody></table><p><i>please</i> disappears because <i>requested</i> already carries it. Negative commands use <b>not to</b>, never <i>to not</i> or <i>don't</i>. <i>told to her to read</i> and <i>said me to open</i> are wrong; write <i>told her to read</i>, <i>told me to open</i>.</p>"
+      },
+      {
+        "title": "Let's, let and suggestions",
+        "body": "<ul><li><b>Let's / Let us</b> as a proposal → <i>suggested / proposed that + they/we + should + V1</i>, or <i>suggested + V-ing</i>.<br><i>He said, “Let's go for a walk.”</i> → <i>He suggested that they should go for a walk.</i> / <i>He proposed going for a walk.</i></li><li><b>Let</b> asking permission → <i>requested / asked to let / allow</i>.<br><i>He said to me, “Let me go home.”</i> → <i>He requested me to let him go home.</i></li><li><b>Let</b> as a wish about someone else → <i>wished / said that he might / should</i>.<br><i>The coach said, “Let the best team win.”</i> → <i>The coach wished that the best team might win.</i></li><li>Negative proposal: <i>“Let's not waste time.”</i> → <i>He suggested that they should not waste time.</i></li></ul><p>Incorrect: <i>He suggested them to go for a walk.</i> (<i>suggest</i> is never followed by object + to-infinitive.)</p>"
+      },
+      {
+        "title": "Exclamations, wishes and greetings",
+        "body": "<p>Exclamations become statements with <i>exclaimed with joy / sorrow / surprise / wonder</i>, or <i>cried out</i>. Remove <i>What a, How, Alas, Hurrah, Oh</i> and use <i>very</i> or <i>a very</i>.</p><ul><li><i>She said, “What a beautiful garden!”</i> → <i>She exclaimed with joy that it was a very beautiful garden.</i></li><li><i>He said, “Alas! I have lost my purse.”</i> → <i>He exclaimed with sorrow that he had lost his purse.</i></li><li><i>They said, “Hurrah! We have won the match.”</i> → <i>They exclaimed with joy that they had won the match.</i></li><li><i>“How clever you are!” he said to her.</i> → <i>He exclaimed that she was very clever.</i></li></ul><p>Wishes, prayers, greetings and thanks:</p><ul><li><i>Mother said, “May God bless you!”</i> → <i>Mother prayed that God might bless me.</i></li><li><i>He said, “Good morning, sir.”</i> → <i>He wished his teacher good morning.</i> or <i>He respectfully greeted the teacher.</i></li><li><i>She said to me, “Thank you.”</i> → <i>She thanked me.</i></li><li><i>He said, “Good night, friends.”</i> → <i>He bade his friends good night.</i></li></ul>"
+      },
+      {
+        "title": "Indirect to direct",
+        "body": "<ol><li>Turn the reporting verb back: <i>told me</i> → <i>said to me,</i>; <i>asked</i> → <i>said to ...,</i> with a question mark; <i>ordered / requested</i> → <i>said to ...,</i> with an imperative (add <i>please</i> for a request).</li><li>Remove <i>that / if / whether / to</i> and put the exact words inside quotation marks.</li><li>Move the tense one step forward (<i>was</i> → <i>is</i>, <i>had seen</i> → <i>saw</i> or <i>have seen</i>, <i>would</i> → <i>will</i>).</li><li>Restore pronouns and time words from the speaker's point of view (<i>the next day</i> → <i>tomorrow</i>, <i>there</i> → <i>here</i>).</li></ol><ul><li><i>I asked Mary if she would lend me a pencil.</i> → <i>I said to Mary, “Will you lend me a pencil?”</i></li><li><i>The old man asked the boy where the postman was.</i> → <i>The old man said to the boy, “Where is the postman?”</i></li><li><i>She exclaimed with sorrow that life had become miserable.</i> → <i>She said, “Alas! Life has become miserable.”</i></li></ul>"
+      },
+      {
+        "title": "Mixed and multiple sentences",
+        "body": "<p>When the quote has two kinds of sentence, report each with its own verb and join them with <i>and</i>, <i>and added that</i>, or <i>and asked</i>.</p><ul><li><i>He said to me, “I am going to the market. Will you come with me?”</i> → <i>He told me that he was going to the market and asked if I would come with him.</i></li><li><i>She said, “Alas! I am ruined. Please help me.”</i> → <i>She exclaimed with sorrow that she was ruined and requested me to help her.</i></li></ul><p>Address words (sir, friends, my son) and <i>yes / no</i> answers are reported with verbs: <i>He said, “Yes, sir, I will do it.”</i> → <i>He respectfully replied in the affirmative and said that he would do it.</i></p>"
+      }
     ],
     "varieties": [
-      { "type": "statement", "name": "Statements", "how": "Use <i>said that / told + person + that</i>, back-shift tense, change pronouns and time words.", "example": { "q": "He said, “I am busy today.”", "steps": ["<i>said</i> is past → <i>am</i> becomes <i>was</i>.", "<i>I</i> → <i>he</i>; <i>today</i> → <i>that day</i>."], "answer": "He said that he was busy that day." } },
-      { "type": "question", "name": "Questions", "how": "Use <i>asked</i>. Yes/no → <i>if/whether</i>. Wh-word stays. Put the subject before the verb and drop the question mark.", "example": { "q": "She said to me, “Where do you live?”", "steps": ["<i>said to</i> → <i>asked</i>.", "<i>do you live</i> → <i>I lived</i> (statement order, past)."], "answer": "She asked me where I lived." } },
-      { "type": "imperative", "name": "Orders and requests", "how": "Use <i>ordered / told / requested / advised</i> + object + <i>to</i>-infinitive. For <i>Don't</i> use <i>not to</i>.", "example": { "q": "The teacher said to the students, “Don't make a noise.”", "steps": ["Command → <i>ordered/told</i>.", "<i>Don't make</i> → <i>not to make</i>."], "answer": "The teacher told the students not to make a noise." } }
+      {
+        "type": "statement",
+        "name": "Statements",
+        "how": "<i>said to</i> → <i>told</i>, add <i>that</i>, change pronouns (SON), back-shift the tense, change time words.",
+        "example": {
+          "q": "Select the indirect form: She said to me, “I will visit my grandmother tomorrow.”",
+          "steps": [
+            "<i>said to me</i> → <i>told me that</i>.",
+            "<i>I</i> → <i>she</i>, <i>my</i> → <i>her</i> (first person follows the subject).",
+            "<i>will</i> → <i>would</i>; <i>tomorrow</i> → <i>the next day</i>."
+          ],
+          "answer": "She told me that she would visit her grandmother the next day."
+        }
+      },
+      {
+        "type": "unchanged-tense",
+        "name": "When the tense does not change",
+        "how": "Keep the tense if the reporting verb is present or future, or if the quote is a universal truth, proverb or habitual fact. Pronouns still change.",
+        "example": {
+          "q": "Select the indirect form: He said, “Two and two make four.”",
+          "steps": [
+            "Reporting verb <i>said</i> is past, so normally the tense moves back.",
+            "But <i>two and two make four</i> is a universal truth.",
+            "So <i>make</i> stays as it is."
+          ],
+          "answer": "He said that two and two make four."
+        }
+      },
+      {
+        "type": "yes-no-question",
+        "name": "Yes or no questions",
+        "how": "<i>asked + if/whether + subject + verb</i>. Drop <i>do/does/did</i> and the question mark; back-shift the tense.",
+        "example": {
+          "q": "Select the indirect form: Raghav said to Meera, “Are you upset with me?”",
+          "steps": [
+            "Starts with <i>Are</i>, so it is a yes/no question: <i>asked Meera if</i>.",
+            "<i>you</i> → <i>she</i> (listener), <i>me</i> → <i>him</i> (speaker Raghav).",
+            "<i>are</i> → <i>was</i>, statement order <i>she was</i>."
+          ],
+          "answer": "Raghav asked Meera if she was upset with him."
+        }
+      },
+      {
+        "type": "wh-question",
+        "name": "Wh-questions",
+        "how": "<i>asked + question word + subject + verb</i>. No <i>if</i>, no <i>did</i>, statement order.",
+        "example": {
+          "q": "Select the indirect form: The stranger said to me, “Why did you leave the room so early yesterday?”",
+          "steps": [
+            "<i>asked me why</i>.",
+            "<i>did you leave</i> (simple past) → <i>I had left</i> (past perfect).",
+            "<i>yesterday</i> → <i>the previous day</i>."
+          ],
+          "answer": "The stranger asked me why I had left the room so early the previous day."
+        }
+      },
+      {
+        "type": "imperative",
+        "name": "Commands, requests and advice",
+        "how": "<i>ordered / requested / advised + listener + (not) to + V1</i>. Remove <i>please</i>; use <i>not to</i> for negatives.",
+        "example": {
+          "q": "Select the indirect form: The doctor said to the patient, “Please don't eat oily food.”",
+          "steps": [
+            "Polite advice from a doctor: <i>advised</i> (or <i>requested</i>).",
+            "Negative command: <i>not to + V1</i>.",
+            "<i>please</i> is dropped."
+          ],
+          "answer": "The doctor advised the patient not to eat oily food."
+        }
+      },
+      {
+        "type": "lets-suggestion",
+        "name": "Let's and suggestions",
+        "how": "<i>Let's</i> → <i>suggested/proposed that they should + V1</i>. <i>Let me</i> → <i>requested ... to let/allow</i>.",
+        "example": {
+          "q": "Select the indirect form: He said to his friends, “Let's go to the cinema tonight.”",
+          "steps": [
+            "<i>Let's</i> is a proposal: <i>suggested to his friends that</i>.",
+            "<i>us</i> → <i>they</i>, add <i>should</i>.",
+            "<i>tonight</i> → <i>that night</i>."
+          ],
+          "answer": "He suggested to his friends that they should go to the cinema that night."
+        }
+      },
+      {
+        "type": "exclamation-wish",
+        "name": "Exclamations, wishes and greetings",
+        "how": "<i>exclaimed with joy/sorrow/surprise that</i> + statement with <i>very</i>; <i>prayed that ... might</i>; <i>wished, greeted, thanked</i>.",
+        "example": {
+          "q": "Select the indirect form: He said, “Alas! I have lost my purse.”",
+          "steps": [
+            "<i>Alas</i> shows sorrow: <i>exclaimed with sorrow that</i>; remove <i>Alas</i> and the exclamation mark.",
+            "<i>I</i> → <i>he</i>, <i>my</i> → <i>his</i>.",
+            "<i>have lost</i> (present perfect) → <i>had lost</i>."
+          ],
+          "answer": "He exclaimed with sorrow that he had lost his purse."
+        }
+      },
+      {
+        "type": "indirect-to-direct",
+        "name": "Indirect to direct",
+        "how": "Reverse each change: <i>told</i> → <i>said to</i>, remove <i>that/if/to</i>, move the tense forward, restore pronouns and time words, add quotation marks.",
+        "example": {
+          "q": "Select the direct form: I asked Mary if she would lend me a pencil.",
+          "steps": [
+            "<i>asked Mary if</i> → a yes/no question: <i>I said to Mary, “...?”</i>",
+            "<i>she</i> (Mary, the listener) → <i>you</i>; <i>would</i> → <i>will</i>.",
+            "Question order: <i>Will you lend me a pencil?</i>"
+          ],
+          "answer": "I said to Mary, “Will you lend me a pencil?”"
+        }
+      }
     ],
     "tips": [
-      "First check the tense in each option; most distractors fail there.",
-      "In reported questions there is never a question mark and never 'do/does/did' in question order."
+      "Decide the kind of sentence inside the quotes first: statement, yes/no question, wh-question, command, Let's, or exclamation. That fixes the reporting verb and connector.",
+      "Check pronouns before tenses. A wrong him/her or he/I removes options fastest.",
+      "In reported questions the subject comes before the verb: 'where she lived', not 'where did she live'.",
+      "Told always needs a listener (told me, told her); said never takes a direct object (said to me, not said me).",
+      "For commands, look for 'to + V1' and 'not to + V1'. Options with 'that he should' are rarely the answer for a plain command.",
+      "If the reporting verb is says or will say, do not change the tense at all.",
+      "Time words give quick eliminations: an option that keeps 'tomorrow', 'yesterday' or 'last night' after a past reporting verb is usually wrong."
     ],
     "traps": [
-      "Universal truths do not back-shift: <i>The teacher said that the earth <b>revolves</b> round the sun.</i>",
-      "<i>said to me</i> becomes <i>told me</i>, never <i>said me</i>."
+      "Universal truths and proverbs keep their present tense even after said: 'He said that the earth moves round the sun.'",
+      "Simple past and present perfect both become past perfect: 'I saw him' becomes 'she had seen him', not 'she saw him'.",
+      "Asked 'that' is wrong. Yes/no questions take if or whether; wh-questions take the question word itself.",
+      "Forbade already means 'told not to': 'He forbade me to go', not 'He forbade me not to go'.",
+      "With suggest, use 'suggested that they should go' or 'suggested going', never 'suggested them to go'.",
+      "After 'exclaimed', remove What/How and the exclamation mark; keep the statement order."
     ]
   },
   "questions": [
-    { "id": "e-narration-001", "rev": 1, "topic": "e-narration", "type": "statement", "level": 1, "q": "Select the option that expresses the given sentence in indirect speech.<br>Rohan said, “I am tired.”", "options": ["Rohan said that he is tired.", "Rohan said that he was tired.", "Rohan said that I was tired.", "Rohan told that he had been tired."], "answer": 1, "solution": "Past reporting verb → <i>am</i> becomes <b>was</b>; <i>I</i> becomes <b>he</b>. <i>Rohan said that he was tired.</i>", "source": "test-data" },
-    { "id": "e-narration-002", "rev": 1, "topic": "e-narration", "type": "imperative", "level": 1, "q": "Select the option that expresses the given sentence in indirect speech.<br>The officer said to the guard, “Open the gate.”", "options": ["The officer ordered the guard to open the gate.", "The officer said the guard open the gate.", "The officer ordered the guard that he opens the gate.", "The officer asked the guard if he opened the gate."], "answer": 0, "solution": "A command becomes <b>ordered + object + to + verb</b>: <i>The officer ordered the guard to open the gate.</i>", "source": "test-data" },
-    { "id": "e-narration-003", "rev": 1, "topic": "e-narration", "type": "question", "level": 2, "q": "Select the option that expresses the given sentence in indirect speech.<br>Meera said to her brother, “Have you finished your homework?”", "options": ["Meera asked her brother that had he finished his homework.", "Meera asked her brother if he had finished his homework.", "Meera asked her brother if he has finished his homework.", "Meera told her brother whether had he finished his homework."], "answer": 1, "solution": "Yes/no question → <b>asked … if</b>. Statement order (<i>he had</i>), and present perfect <i>have finished</i> → past perfect <b>had finished</b>; <i>your</i> → <i>his</i>.", "source": "test-data" },
-    { "id": "e-narration-004", "rev": 1, "topic": "e-narration", "type": "statement", "level": 2, "q": "Select the option that expresses the given sentence in indirect speech.<br>She said, “I will visit my grandmother tomorrow.”", "options": ["She said that she will visit her grandmother tomorrow.", "She said that she would visit her grandmother the next day.", "She said that she would visit my grandmother the next day.", "She said that she would have visited her grandmother the next day."], "answer": 1, "solution": "<i>will</i> → <b>would</b>; <i>I/my</i> → <b>she/her</b>; <i>tomorrow</i> → <b>the next day</b>.", "source": "test-data" },
-    { "id": "e-narration-005", "rev": 1, "topic": "e-narration", "type": "question", "level": 3, "q": "Select the option that expresses the given sentence in indirect speech.<br>The stranger said to me, “Why did you leave the room so early yesterday?”", "options": ["The stranger asked me why I had left the room so early the previous day.", "The stranger asked me why did I leave the room so early the previous day.", "The stranger asked me why I left the room so early yesterday.", "The stranger told me why had I left the room so early the day before."], "answer": 0, "solution": "Wh-question → <b>asked me why</b> + statement order. <i>did leave</i> (past) → <b>had left</b>; <i>yesterday</i> → <b>the previous day</b>.", "source": "test-data" },
-    { "id": "e-narration-006", "rev": 1, "topic": "e-narration", "type": "imperative", "level": 3, "q": "Select the option that expresses the given sentence in indirect speech.<br>The doctor said to the patient, “Please don't eat oily food.”", "options": ["The doctor requested the patient please not to eat oily food.", "The doctor advised the patient not to eat oily food.", "The doctor said to the patient that don't eat oily food.", "The doctor advised the patient to not eating oily food."], "answer": 1, "solution": "Advice/request with <i>don't</i> → <b>advised/requested + object + not to + verb</b>. <i>Please</i> is dropped because the reporting verb carries the politeness.", "source": "test-data" }
+    {"id":"e-narration-001","rev":1,"topic":"e-narration","type":"statement","level":1,"q":"Select the option that expresses the given sentence in indirect speech.<br>Rohan said, “I am tired.”","options":["Rohan said that he is tired.","Rohan said that he was tired.","Rohan said that I was tired.","Rohan told that he had been tired."],"answer":1,"solution":"Past reporting verb → <i>am</i> becomes <b>was</b>; <i>I</i> becomes <b>he</b>. <i>Rohan said that he was tired.</i>","source":"test-data"},
+    {"id":"e-narration-002","rev":1,"topic":"e-narration","type":"imperative","level":1,"q":"Select the option that expresses the given sentence in indirect speech.<br>The officer said to the guard, “Open the gate.”","options":["The officer ordered the guard to open the gate.","The officer said the guard open the gate.","The officer ordered the guard that he opens the gate.","The officer asked the guard if he opened the gate."],"answer":0,"solution":"A command becomes <b>ordered + object + to + verb</b>: <i>The officer ordered the guard to open the gate.</i>","source":"test-data"},
+    {"id":"e-narration-003","rev":1,"topic":"e-narration","type":"yes-no-question","level":2,"q":"Select the option that expresses the given sentence in indirect speech.<br>Meera said to her brother, “Have you finished your homework?”","options":["Meera asked her brother that had he finished his homework.","Meera asked her brother if he had finished his homework.","Meera asked her brother if he has finished his homework.","Meera told her brother whether had he finished his homework."],"answer":1,"solution":"Yes/no question → <b>asked … if</b>. Statement order (<i>he had</i>), and present perfect <i>have finished</i> → past perfect <b>had finished</b>; <i>your</i> → <i>his</i>.","source":"test-data"},
+    {"id":"e-narration-004","rev":1,"topic":"e-narration","type":"statement","level":2,"q":"Select the option that expresses the given sentence in indirect speech.<br>She said, “I will visit my grandmother tomorrow.”","options":["She said that she will visit her grandmother tomorrow.","She said that she would visit her grandmother the next day.","She said that she would visit my grandmother the next day.","She said that she would have visited her grandmother the next day."],"answer":1,"solution":"<i>will</i> → <b>would</b>; <i>I/my</i> → <b>she/her</b>; <i>tomorrow</i> → <b>the next day</b>.","source":"test-data"},
+    {"id":"e-narration-005","rev":1,"topic":"e-narration","type":"wh-question","level":3,"q":"Select the option that expresses the given sentence in indirect speech.<br>The stranger said to me, “Why did you leave the room so early yesterday?”","options":["The stranger asked me why I had left the room so early the previous day.","The stranger asked me why did I leave the room so early the previous day.","The stranger asked me why I left the room so early yesterday.","The stranger told me why had I left the room so early the day before."],"answer":0,"solution":"Wh-question → <b>asked me why</b> + statement order. <i>did leave</i> (past) → <b>had left</b>; <i>yesterday</i> → <b>the previous day</b>.","source":"test-data"},
+    {"id":"e-narration-006","rev":1,"topic":"e-narration","type":"imperative","level":3,"q":"Select the option that expresses the given sentence in indirect speech.<br>The doctor said to the patient, “Please don't eat oily food.”","options":["The doctor requested the patient please not to eat oily food.","The doctor advised the patient not to eat oily food.","The doctor said to the patient that don't eat oily food.","The doctor advised the patient to not eating oily food."],"answer":1,"solution":"Advice/request with <i>don't</i> → <b>advised/requested + object + not to + verb</b>. <i>Please</i> is dropped because the reporting verb carries the politeness.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-narr-1", "front": "Indirect: tomorrow / yesterday / now", "back": "the next day / the previous day / then", "deck": "grammar" },
-    { "id": "fc-e-narr-2", "front": "Indirect yes/no question connector", "back": "asked + <b>if / whether</b> + statement order", "deck": "grammar" },
-    { "id": "fc-e-narr-3", "front": "When does the tense NOT change?", "back": "Reporting verb in present tense, or a universal truth / habitual fact.", "deck": "grammar" }
+    {"id":"fc-e-narr-1","front":"Indirect: tomorrow / yesterday / now","back":"the next day / the previous day / then","deck":"grammar"},
+    {"id":"fc-e-narr-2","front":"Indirect yes/no question connector","back":"asked + <b>if / whether</b> + statement order","deck":"grammar"},
+    {"id":"fc-e-narr-3","front":"When does the tense NOT change?","back":"Reporting verb in present tense, or a universal truth / habitual fact.","deck":"grammar"},
+    {"id":"fc-e-narr-4","front":"Indirect: will / can / may / shall","back":"would / could / might / should (or would)","deck":"grammar"},
+    {"id":"fc-e-narr-5","front":"Indirect: this / these / here / ago","back":"that / those / there / before","deck":"grammar"},
+    {"id":"fc-e-narr-6","front":"Indirect: “Let's go,” he said.","back":"He <b>suggested that they should go</b>. (or: He proposed going.)","deck":"grammar"},
+    {"id":"fc-e-narr-7","front":"Indirect: past simple and present perfect","back":"Both become <b>past perfect</b> (had + V3).","deck":"grammar"},
+    {"id":"fc-e-narr-8","front":"Indirect: negative command “Don't shout.”","back":"told/asked + object + <b>not to</b> + V1: <i>He told me not to shout.</i>","deck":"grammar"}
   ]
 }

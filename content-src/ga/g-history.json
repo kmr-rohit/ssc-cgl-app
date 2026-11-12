@@ -1,76 +1,439 @@
 {
   "topic": "g-history",
   "notes": {
-    "summary": "History gives about <b>3–4 questions</b> in SSC CGL. Most come from the Indus Valley, Buddhism and Jainism, the Mauryas and Guptas, the Delhi Sultanate and Mughals, and the freedom struggle (1857–1947). Learn <b>who, where and when</b> for each big event.",
+    "summary": "History gives about <b>3 to 4 questions</b> in Tier 1 and more in Tier 2. In past papers the modern period (British rule, Congress, Gandhi, revolutionaries) gives the most questions, then the Mughals and Delhi Sultanate, then the Guptas and Mauryas. Learn each fact as a pair: <b>person and work</b>, <b>place and event</b>, <b>year and event</b>. For order questions, write the year next to each event first.",
     "concepts": [
       {
-        "title": "Ancient India: Indus Valley to the Guptas",
-        "body": "<ul><li><b>Indus Valley (Harappan) Civilisation</b>: Bronze Age, town planning with grid streets and covered drains. Harappa was excavated first by <b>Daya Ram Sahni (1921)</b>; Mohenjo-daro by <b>R.D. Banerji (1922)</b>. The Great Bath is at Mohenjo-daro; a dockyard at Lothal (Gujarat).</li><li><b>Buddha</b>: born at Lumbini, enlightenment at Bodh Gaya, first sermon at Sarnath, death (mahaparinirvana) at Kushinagar.</li><li><b>Mahavira</b> was the 24th Jain tirthankara; Rishabhanatha was the first.</li><li><b>Maurya Empire</b>: founded by Chandragupta Maurya with the help of Chanakya (Kautilya, author of the <i>Arthashastra</i>). Megasthenes wrote <i>Indica</i>. Ashoka turned to Buddhism after the <b>Kalinga war</b>.</li><li><b>Gupta Empire</b>: called the 'Golden Age'. Aryabhata (astronomer) and Kalidasa (poet) belong to this period.</li></ul>"
+        "title": "Stone Age, Indus Valley and Vedic age",
+        "body": "<p><b>Stone Age sites</b>: Bhimbetka rock shelters (Madhya Pradesh, Palaeolithic paintings, UNESCO site); Mehrgarh (Pakistan, early farming); Burzahom (Kashmir, pit houses). A <b>celt</b> is a polished stone axe of the Neolithic period.</p><table><thead><tr><th>Indus site</th><th>Where</th><th>Remember for</th></tr></thead><tbody><tr><td>Harappa</td><td>Ravi river, Punjab (Pakistan)</td><td>First excavated, Daya Ram Sahni, 1921; granaries</td></tr><tr><td>Mohenjo-daro</td><td>Indus river, Sindh (Pakistan)</td><td>R.D. Banerji, 1922; Great Bath, bronze dancing girl, 'priest-king'</td></tr><tr><td>Lothal</td><td>Gujarat</td><td>Dockyard, port city; excavated by S.R. Rao</td></tr><tr><td>Kalibangan</td><td>Ghaggar river, Rajasthan</td><td>Ploughed field, fire altars</td></tr><tr><td>Dholavira</td><td>Kutch, Gujarat</td><td>Water reservoirs, large signboard; UNESCO site (2021)</td></tr><tr><td>Rakhigarhi</td><td>Haryana</td><td>Largest Harappan site in India</td></tr><tr><td>Chanhudaro</td><td>Sindh (Pakistan)</td><td>Bead-making; city without a citadel</td></tr></tbody></table><p><b>Vedic age</b> (about 1500 to 600 BC): the early Vedic people lived in the land of seven rivers (Sapta Sindhu). The <b>Rigveda</b> is the oldest Veda: 10 mandalas, 1028 hymns; it has the Gayatri Mantra and the first mention of the <b>Bharata</b> tribe and the Battle of Ten Kings. Sama Veda: hymns set to music. Yajur Veda: sacrificial formulas. Atharva Veda: charms, spells and medicine. 'Satyameva Jayate' comes from the <b>Mundaka Upanishad</b>.</p><p><b>Six Vedangas</b>: Shiksha (phonetics), Kalpa (ritual), Vyakarana (grammar), Nirukta (word origins), Chhanda (metre), Jyotisha (astronomy).</p>"
       },
       {
-        "title": "Medieval India: Sultanate and Mughals",
-        "body": "<table><thead><tr><th>Ruler</th><th>Remember for</th></tr></thead><tbody><tr><td>Qutb-ud-din Aibak</td><td>Founder of Slave (Mamluk) dynasty; began the Qutub Minar</td></tr><tr><td>Iltutmish</td><td>Completed Qutub Minar; introduced silver <i>tanka</i> and copper <i>jital</i></td></tr><tr><td>Alauddin Khilji</td><td>Market control reforms</td></tr><tr><td>Muhammad bin Tughlaq</td><td>Token currency; shifted capital from Delhi to Daulatabad</td></tr><tr><td>Babur</td><td>Founded Mughal Empire after First Battle of Panipat (1526)</td></tr><tr><td>Akbar</td><td>Din-i-Ilahi, Mansabdari system, Second Battle of Panipat (1556)</td></tr><tr><td>Shah Jahan</td><td>Taj Mahal, Red Fort (Delhi)</td></tr></tbody></table>"
+        "title": "Mahajanapadas, Buddhism and Jainism",
+        "body": "<p>In the 6th century BC there were <b>16 Mahajanapadas</b> (listed in the Buddhist text Anguttara Nikaya). Assaka was the only one in the south (on the Godavari).</p><table><thead><tr><th>Mahajanapada</th><th>Capital</th></tr></thead><tbody><tr><td>Magadha</td><td>Rajagriha (Girivraja), later Pataliputra</td></tr><tr><td>Kosala</td><td>Shravasti</td></tr><tr><td>Vatsa</td><td>Kaushambi</td></tr><tr><td>Avanti</td><td>Ujjayini (Ujjain)</td></tr><tr><td>Anga</td><td>Champa</td></tr><tr><td>Kashi</td><td>Varanasi</td></tr><tr><td>Vajji</td><td>Vaishali</td></tr><tr><td>Gandhara</td><td>Taxila</td></tr><tr><td>Surasena</td><td>Mathura</td></tr></tbody></table><p><b>Magadha's dynasties</b>: Haryanka (Bimbisara, Ajatashatru; Udayin founded Pataliputra), Shishunaga, then Nanda (Mahapadma Nanda, Dhana Nanda). Alexander invaded in 326 BC and fought Porus at the Hydaspes (Jhelum).</p><p><b>Buddha</b>: born at Lumbini (Nepal) in the Shakya clan; enlightenment at Bodh Gaya; first sermon at Sarnath (Dharmachakra Pravartana); death (mahaparinirvana) at Kushinagar. Texts: Tripitaka (Vinaya, Sutta, Abhidhamma), in Pali.</p><table><thead><tr><th>Buddhist council</th><th>Place</th><th>King</th></tr></thead><tbody><tr><td>First</td><td>Rajagriha</td><td>Ajatashatru</td></tr><tr><td>Second</td><td>Vaishali</td><td>Kalashoka</td></tr><tr><td>Third</td><td>Pataliputra</td><td>Ashoka</td></tr><tr><td>Fourth</td><td>Kashmir</td><td>Kanishka (split into Hinayana and Mahayana)</td></tr></tbody></table><p><b>Jainism</b>: Rishabhanatha was the 1st tirthankara, Parshvanatha the 23rd, <b>Mahavira the 24th</b> (born at Kundagrama near Vaishali, died at Pawapuri). 'Jina' means the conqueror (of the senses). Three jewels (triratna): right faith, right knowledge, right conduct. Two sects: Svetambara (white-clad) and Digambara (sky-clad).</p>"
       },
       {
-        "title": "Modern India: the freedom struggle",
-        "body": "<ul><li><b>1857</b>: Revolt began at Meerut.</li><li><b>1885</b>: Indian National Congress founded by A.O. Hume; first session at Bombay, president <b>W.C. Bonnerjee</b>.</li><li><b>1905</b>: Partition of Bengal by Lord Curzon; Swadeshi movement.</li><li><b>1919</b>: Rowlatt Act; Jallianwala Bagh massacre at Amritsar (13 April).</li><li><b>1920</b>: Non-Cooperation Movement (withdrawn after Chauri Chaura, 1922).</li><li><b>1930</b>: Dandi (Salt) March, start of Civil Disobedience.</li><li><b>1942</b>: Quit India Movement ('Do or Die').</li><li><b>1947</b>: Independence on 15 August.</li></ul>",
+        "title": "Mauryas and after",
+        "body": "<ul><li><b>Chandragupta Maurya</b> founded the empire (about 321 BC) with Chanakya (Kautilya), author of the <i>Arthashastra</i>. <b>Megasthenes</b>, envoy of Seleucus, wrote <i>Indica</i>. Chandragupta became a Jain and died at Shravanabelagola (Karnataka).</li><li><b>Bindusara</b> was called Amitraghata (slayer of foes).</li><li><b>Ashoka</b> fought the <b>Kalinga war</b> (about 261 BC) and then followed Dhamma. Most edicts are in Prakrit in the Brahmi script; the north-west ones are in Kharosthi. James Prinsep read the Brahmi script in 1837. The Lion Capital at Sarnath is India's national emblem. Ashoka built the original Great Stupa at Sanchi (Madhya Pradesh) and stupas at Sarnath.</li><li>The last Mauryan king <b>Brihadratha</b> was killed by his general <b>Pushyamitra Shunga</b>, who founded the Shunga dynasty.</li></ul><table><thead><tr><th>Post-Mauryan power</th><th>Remember for</th></tr></thead><tbody><tr><td>Satavahanas</td><td>Deccan; founder Simuka; Gautamiputra Satakarni</td></tr><tr><td>Indo-Greeks</td><td>Menander (Milinda), who questioned Nagasena in <i>Milindapanho</i>; first gold coins in India</td></tr><tr><td>Shakas</td><td>Rudradaman's Junagadh inscription, the first long inscription in Sanskrit</td></tr><tr><td>Kushanas</td><td>Kanishka; Shaka era starts 78 AD; capitals Purushapura (Peshawar) and Mathura; Gandhara and Mathura schools of art</td></tr><tr><td>Kharavela (Kalinga)</td><td>Hathigumpha inscription, Udayagiri (Odisha)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Guptas and Harsha",
+        "body": "<table><thead><tr><th>Ruler</th><th>Remember for</th></tr></thead><tbody><tr><td>Sri Gupta</td><td>Founder</td></tr><tr><td>Chandragupta I</td><td>Began the Gupta era (320 AD); married the Licchavi princess Kumaradevi</td></tr><tr><td>Samudragupta</td><td>Allahabad Pillar inscription (Prayag Prashasti) by his poet Harishena; called the 'Napoleon of India' by V.A. Smith; coins show him playing the veena</td></tr><tr><td>Chandragupta II (Vikramaditya)</td><td>Defeated the Shakas; Chinese pilgrim <b>Fa-Hien</b> visited; Kalidasa was in his court (navaratnas)</td></tr><tr><td>Kumaragupta I</td><td>Founded Nalanda university</td></tr><tr><td>Skandagupta</td><td>Pushed back the Huns</td></tr></tbody></table><p>The Gupta period is called the 'Golden Age'. <b>Aryabhata</b> wrote <i>Aryabhatiya</i>; <b>Varahamihira</b> wrote <i>Brihat Samhita</i>; <b>Kalidasa</b> wrote <i>Abhijnanashakuntalam</i>, <i>Meghaduta</i> and <i>Raghuvamsha</i>.</p><p><b>Harshavardhana</b> (606 to 647 AD) ruled from Thanesar and then Kannauj. The Chinese pilgrim <b>Hiuen Tsang</b> (Xuanzang) described his assemblies at Kannauj and Prayag. <b>Banabhatta</b> wrote <i>Harshacharita</i>; Harsha himself wrote the plays <i>Ratnavali</i>, <i>Nagananda</i> and <i>Priyadarshika</i>. He was defeated on the Narmada by the Chalukya king <b>Pulakeshin II</b>.</p><p><b>Foreign writers</b>: Megasthenes (<i>Indica</i>, Maurya), Pliny the Elder (<i>Natural History</i>, Roman), Ptolemy (<i>Geography</i>), Fa-Hien (Chandragupta II), Hiuen Tsang (Harsha), Al-Biruni (<i>Kitab-ul-Hind</i>, came with Mahmud of Ghazni).</p>"
+      },
+      {
+        "title": "South India and the Deccan",
+        "body": "<table><thead><tr><th>Kingdom</th><th>Capital</th><th>Remember for</th></tr></thead><tbody><tr><td>Sangam Cheras, Cholas, Pandyas</td><td>Vanji, Uraiyur (Puhar port), Madurai</td><td>Sangam literature in Tamil; Pandyas held the Sangam assemblies at Madurai</td></tr><tr><td>Pallavas</td><td>Kanchipuram</td><td>Rathas at Mahabalipuram (Narasimhavarman I 'Mamalla'); Shore Temple</td></tr><tr><td>Chalukyas of Badami</td><td>Vatapi (Badami)</td><td>Pulakeshin II; Aihole inscription by Ravikirti</td></tr><tr><td>Rashtrakutas</td><td>Manyakheta</td><td>Founder Dantidurga; Krishna I built the Kailasa temple, Ellora; Amoghavarsha wrote <i>Kavirajamarga</i> (Kannada)</td></tr><tr><td>Cholas (imperial)</td><td>Thanjavur, later Gangaikondacholapuram</td><td>Vijayalaya founder; Rajaraja I built the Brihadeeswara temple; <b>Rajendra I</b> took the title 'Gangaikondachola' and sent a navy to South-East Asia; Uttaramerur inscriptions on village assemblies</td></tr></tbody></table><p><b>Tripartite struggle</b> for Kannauj (8th to 10th century): Palas (Bengal), Gurjara-Pratiharas (western India) and Rashtrakutas (Deccan). Pala founder Gopala; Dharmapala founded <b>Vikramashila</b> university.</p><p><b>Vijayanagara</b>: founded in 1336 by <b>Harihara and Bukka</b> (Sangama dynasty); capital Hampi on the Tungabhadra (Karnataka). Four dynasties: Sangama, Saluva, Tuluva, Aravidu. <b>Krishnadevaraya</b> (Tuluva) wrote <i>Amuktamalyada</i> (Telugu, also on statecraft); his court poets were the Ashtadiggajas. The empire was crushed at the <b>Battle of Talikota (1565)</b>.</p><p><b>Bahmani kingdom</b>: founded in 1347 by Alauddin Hasan Bahman Shah; capitals Gulbarga, then Bidar. Minister Mahmud Gawan built a madrasa at Bidar. It later split into five Deccan sultanates (Bijapur, Golconda, Ahmadnagar, Berar, Bidar).</p>"
+      },
+      {
+        "title": "Delhi Sultanate (1206 to 1526)",
+        "body": "<p>Order of dynasties: <b>Slave (Mamluk), Khilji, Tughlaq, Sayyid, Lodi</b>. Before them, Muhammad Ghori beat Prithviraj Chauhan in the Second Battle of Tarain (1192), after losing the first (1191).</p><table><thead><tr><th>Ruler</th><th>Remember for</th></tr></thead><tbody><tr><td>Qutb-ud-din Aibak</td><td>Founder (1206); 'Lakh Baksh'; began the Qutub Minar and Quwwat-ul-Islam mosque</td></tr><tr><td>Iltutmish</td><td>Completed Qutub Minar; silver <i>tanka</i> and copper <i>jital</i>; iqta system; group of forty nobles (Chahalgani)</td></tr><tr><td>Razia Sultan</td><td>First and only woman ruler of Delhi</td></tr><tr><td>Balban</td><td>Theory of kingship; sijda and paibos; 'blood and iron' policy</td></tr><tr><td>Alauddin Khilji</td><td>Market control, branding of horses (dagh) and descriptive rolls (chehra); Alai Darwaza; Siri fort; general Malik Kafur raided the south</td></tr><tr><td>Ghiyasuddin Tughlaq</td><td>Founder of Tughlaq dynasty; built Tughlaqabad</td></tr><tr><td>Muhammad bin Tughlaq</td><td>Moved capital to Daulatabad (Devagiri); token copper currency; Moroccan traveller <b>Ibn Battuta</b> served him</td></tr><tr><td>Firoz Shah Tughlaq</td><td>Canals; founded towns like Firozabad, Hisar, Jaunpur; brought two Ashokan pillars to Delhi</td></tr><tr><td>Khizr Khan</td><td>Founder of Sayyid dynasty</td></tr><tr><td>Bahlul Lodi</td><td>Founder of Lodi dynasty (first Afghan dynasty)</td></tr><tr><td>Sikandar Lodi</td><td>Founded Agra (1504) and made it the capital</td></tr><tr><td>Ibrahim Lodi</td><td>Last Sultan; killed by Babur at Panipat (1526)</td></tr></tbody></table><p><b>Writers</b>: Minhaj-us-Siraj wrote <i>Tabaqat-i-Nasiri</i>; Ziauddin Barani wrote <i>Tarikh-i-Firoz Shahi</i>; Amir Khusrau ('Tuti-e-Hind', the parrot of India) served several sultans including Alauddin. The Sharqi dynasty ruled the Jaunpur Sultanate.</p>"
+      },
+      {
+        "title": "Mughals, Marathas and regional powers",
+        "body": "<table><thead><tr><th>Ruler</th><th>Remember for</th></tr></thead><tbody><tr><td>Babur (1526 to 1530)</td><td>First Battle of Panipat 1526 (beat Ibrahim Lodi); Khanwa 1527 (Rana Sanga); memoir <i>Baburnama</i> in Turki</td></tr><tr><td>Humayun</td><td>Lost to Sher Shah at Chausa (1539) and Kannauj (1540); <i>Humayun-nama</i> by his sister Gulbadan Begum</td></tr><tr><td>Sher Shah Suri</td><td>Silver <i>rupiya</i>; rebuilt the Grand Trunk Road; tomb at Sasaram (Bihar)</td></tr><tr><td>Akbar (1556 to 1605)</td><td>Second Battle of Panipat 1556 (Hemu); Haldighati 1576 (Maharana Pratap); mansabdari; abolished jizya; Ibadat Khana at Fatehpur Sikri; Din-i-Ilahi (1582); Buland Darwaza</td></tr><tr><td>Jahangir</td><td>Chain of justice; <i>Tuzuk-i-Jahangiri</i>; Sir Thomas Roe came to his court (1615)</td></tr><tr><td>Shah Jahan</td><td>The great builder: Taj Mahal, Red Fort and Jama Masjid in Delhi, Peacock Throne</td></tr><tr><td>Aurangzeb</td><td>Empire reached its largest size; reimposed jizya (1679); died 1707</td></tr><tr><td>Bahadur Shah Zafar</td><td>Last Mughal; exiled to Rangoon after 1857</td></tr></tbody></table><p><b>Akbar's court</b>: Abul Fazl (<i>Akbarnama</i>, <i>Ain-i-Akbari</i>), Faizi, Birbal, Tansen (music), <b>Raja Todar Mal</b> (finance minister, land revenue system), Abdul Rahim Khan-i-Khanan, Raja Man Singh.</p><p><b>Marathas</b>: Shivaji was born at Shivneri (1630) and crowned at Raigad (1674); council of eight ministers (Ashtapradhan); taxes chauth and sardeshmukhi; Treaty of Purandar (1665). Peshwas: Balaji Vishwanath, Baji Rao I, Balaji Baji Rao (Third Battle of Panipat, 1761, lost to Ahmad Shah Abdali).</p><p><b>Regional powers</b>: Mysore (Hyder Ali, Tipu Sultan), Punjab (Maharaja Ranjit Singh, capital Lahore), Ahoms of Assam (Lachit Borphukan won the Battle of Saraighat, 1671), Nepal (Prithvi Narayan Shah unified it).</p>"
+      },
+      {
+        "title": "Bhakti, Sufi and Sikh gurus",
+        "body": "<table><thead><tr><th>Saint</th><th>Remember for</th></tr></thead><tbody><tr><td>Adi Shankaracharya</td><td>Advaita; four mathas</td></tr><tr><td>Ramanuja</td><td>Vishishtadvaita</td></tr><tr><td>Madhvacharya</td><td>Dvaita</td></tr><tr><td>Ramananda</td><td>Devotion to Rama; disciples included Kabir and Ravidas</td></tr><tr><td>Kabir</td><td>Dohas; <i>Bijak</i></td></tr><tr><td>Tulsidas</td><td><i>Ramcharitmanas</i> (Awadhi)</td></tr><tr><td>Surdas</td><td><i>Sursagar</i>; devotion to Krishna</td></tr><tr><td>Chaitanya Mahaprabhu</td><td>Bengal; Krishna kirtan</td></tr><tr><td>Jnaneshwar, Namdev, Tukaram</td><td>Maharashtra (Warkari tradition)</td></tr><tr><td>Srimanta Sankardev</td><td>Assam; Ekasarana dharma; satras</td></tr></tbody></table><p>Early Tamil bhakti: <b>Alvars</b> (devotees of Vishnu) and <b>Nayanars</b> (devotees of Shiva).</p><p><b>Sufi</b>: the Chishti order was the most popular. Moinuddin Chishti (Ajmer), Nizamuddin Auliya (Delhi), Salim Chishti (Fatehpur Sikri). Other orders: Suhrawardi, Naqshbandi, Qadiri.</p><table><thead><tr><th>Sikh guru</th><th>Remember for</th></tr></thead><tbody><tr><td>1. Guru Nanak</td><td>Founder; born at Talwandi (Nankana Sahib)</td></tr><tr><td>2. Guru Angad</td><td>Gurmukhi script</td></tr><tr><td>3. Guru Amar Das</td><td>Manji system; langar</td></tr><tr><td>4. Guru Ram Das</td><td>Founded Amritsar</td></tr><tr><td>5. Guru Arjan Dev</td><td>Compiled the Adi Granth (1604); built Harmandir Sahib; executed by Jahangir (1606)</td></tr><tr><td>6. Guru Hargobind</td><td>Akal Takht</td></tr><tr><td>9. Guru Tegh Bahadur</td><td>Executed by Aurangzeb (1675)</td></tr><tr><td>10. Guru Gobind Singh</td><td>Founded the Khalsa (1699)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Europeans and British expansion",
+        "body": "<p><b>Arrival</b>: Vasco da Gama reached Calicut in 1498. Portuguese (Albuquerque took Goa, 1510), English East India Company (1600), Dutch (1602), Danes (1616), French (1664).</p><table><thead><tr><th>Battle or war</th><th>Year</th><th>Result</th></tr></thead><tbody><tr><td>Plassey</td><td>1757</td><td>Clive beat Siraj-ud-Daulah of Bengal</td></tr><tr><td>Wandiwash (3rd Carnatic war)</td><td>1760</td><td>English beat the French</td></tr><tr><td>Buxar</td><td>1764</td><td>Beat Mir Qasim, Shuja-ud-Daula and Shah Alam II; Treaty of Allahabad (1765) gave the Diwani of Bengal</td></tr><tr><td>Fourth Anglo-Mysore war</td><td>1799</td><td>Tipu Sultan killed at Srirangapatna</td></tr><tr><td>Anglo-Sikh wars</td><td>1845 to 1849</td><td>Punjab annexed (1849)</td></tr></tbody></table><table><thead><tr><th>Governor-General or Viceroy</th><th>Linked with</th></tr></thead><tbody><tr><td>Warren Hastings</td><td>First Governor-General of Bengal (Regulating Act 1773); Asiatic Society (1784, by William Jones)</td></tr><tr><td>Cornwallis</td><td>Permanent Settlement (1793); civil services</td></tr><tr><td>Wellesley</td><td>Subsidiary Alliance (1798); Hyderabad accepted it first</td></tr><tr><td>William Bentinck</td><td>Abolished sati (1829); first Governor-General of India (1833); English education (1835)</td></tr><tr><td>Auckland</td><td>First Afghan War</td></tr><tr><td>Dalhousie</td><td>Doctrine of Lapse (Satara first, 1848); first train Bombay to Thane (1853); telegraph; Wood's Despatch (1854)</td></tr><tr><td>Canning</td><td>Revolt of 1857; first Viceroy (1858)</td></tr><tr><td>Lytton</td><td>Vernacular Press Act (1878); Delhi Durbar (1877)</td></tr><tr><td>Ripon</td><td>Local self-government (1882); Ilbert Bill; first regular census (1881)</td></tr><tr><td>Dufferin</td><td>Congress founded (1885)</td></tr><tr><td>Curzon</td><td>Partition of Bengal (1905)</td></tr><tr><td>Minto II</td><td>Morley-Minto reforms (1909)</td></tr><tr><td>Hardinge II</td><td>Capital shifted from Calcutta to Delhi (announced 1911)</td></tr><tr><td>Chelmsford</td><td>Jallianwala Bagh (1919); 1919 reforms</td></tr><tr><td>Irwin</td><td>Simon Commission; Gandhi-Irwin Pact (1931)</td></tr><tr><td>Linlithgow</td><td>Quit India (1942)</td></tr><tr><td>Mountbatten</td><td>Last Viceroy; first Governor-General of free India</td></tr></tbody></table>"
+      },
+      {
+        "title": "Colonial economy, 1857 and other revolts",
+        "body": "<table><thead><tr><th>Land revenue system</th><th>Where</th><th>Who</th></tr></thead><tbody><tr><td>Permanent Settlement (zamindari)</td><td>Bengal, Bihar, Odisha</td><td>Cornwallis, 1793</td></tr><tr><td>Ryotwari (tax direct from the peasant)</td><td>Madras and Bombay</td><td>Thomas Munro, Alexander Read</td></tr><tr><td>Mahalwari (village as a unit)</td><td>North-West Provinces, Punjab</td><td>Holt Mackenzie</td></tr></tbody></table><p>Dadabhai Naoroji explained the <b>drain of wealth</b> in <i>Poverty and Un-British Rule in India</i>.</p><p><b>Revolt of 1857</b>: Mangal Pandey at Barrackpore (29 March); the revolt began at <b>Meerut on 10 May 1857</b>.</p><table><thead><tr><th>Centre</th><th>Indian leader</th></tr></thead><tbody><tr><td>Delhi</td><td>Bahadur Shah Zafar, Bakht Khan</td></tr><tr><td>Kanpur</td><td>Nana Saheb, Tantia Tope</td></tr><tr><td>Lucknow</td><td>Begum Hazrat Mahal</td></tr><tr><td>Jhansi</td><td>Rani Lakshmibai</td></tr><tr><td>Jagdishpur (Bihar)</td><td>Kunwar Singh</td></tr><tr><td>Bareilly</td><td>Khan Bahadur Khan</td></tr></tbody></table><p>After it, the Government of India Act 1858 ended Company rule; Queen Victoria's Proclamation was read at Allahabad (1858).</p><p><b>Other revolts</b>: Santhal (1855 to 1856, Sidhu and Kanhu); Indigo revolt (Bengal, 1859 to 1860, play <i>Nil Darpan</i> by Dinabandhu Mitra); Pabna (1873); Deccan riots (1875); Munda Ulgulan (Birsa Munda, 1899 to 1900); Moplah (Malabar, 1921); Rampa (Alluri Sitarama Raju, 1922 to 1924).</p>"
+      },
+      {
+        "title": "Social and religious reform",
+        "body": "<table><thead><tr><th>Organisation</th><th>Founder</th><th>Year, place</th></tr></thead><tbody><tr><td>Brahmo Samaj</td><td>Raja Ram Mohan Roy</td><td>1828, Calcutta</td></tr><tr><td>Prarthana Samaj</td><td>Atmaram Pandurang</td><td>1867, Bombay</td></tr><tr><td>Satyashodhak Samaj</td><td>Jyotiba Phule (wrote <i>Gulamgiri</i>)</td><td>1873, Pune</td></tr><tr><td>Arya Samaj</td><td>Dayananda Saraswati (wrote <i>Satyarth Prakash</i>)</td><td>1875, Bombay</td></tr><tr><td>Theosophical Society</td><td>Madame Blavatsky and Col. Olcott</td><td>1875, New York; HQ Adyar (Madras) from 1886</td></tr><tr><td>Aligarh Movement (MAO College 1875)</td><td>Sir Syed Ahmad Khan</td><td>Aligarh</td></tr><tr><td>Ramakrishna Mission</td><td>Swami Vivekananda</td><td>1897, Belur</td></tr><tr><td>SNDP Yogam</td><td>Sree Narayana Guru</td><td>1903, Kerala</td></tr><tr><td>Servants of India Society</td><td>G.K. Gokhale</td><td>1905, Pune</td></tr><tr><td>Self-Respect Movement</td><td>E.V. Ramasamy (Periyar)</td><td>1925, Tamil Nadu</td></tr></tbody></table><ul><li>Ishwar Chandra Vidyasagar pushed for the <b>Widow Remarriage Act, 1856</b>.</li><li>Henry Vivian Derozio led the Young Bengal movement.</li><li>Savitribai Phule opened a girls' school in Pune (1848) with Jyotiba Phule.</li></ul>"
+      },
+      {
+        "title": "Colonial acts, commissions and missions",
+        "body": "<table><thead><tr><th>Act or plan</th><th>Main point</th></tr></thead><tbody><tr><td>Regulating Act 1773</td><td>Governor of Bengal became Governor-General of Bengal; Supreme Court at Calcutta (1774)</td></tr><tr><td>Pitt's India Act 1784</td><td>Board of Control</td></tr><tr><td>Charter Act 1813</td><td>Company's trade monopoly ended (except tea and trade with China); Rs 1 lakh for education</td></tr><tr><td>Charter Act 1833</td><td>Governor-General of India; Company became only an administrative body</td></tr><tr><td>Charter Act 1853</td><td>Open competition for civil services</td></tr><tr><td>Government of India Act 1858</td><td>Crown rule; Secretary of State for India</td></tr><tr><td>Indian Councils Act 1909 (Morley-Minto)</td><td>Separate electorates for Muslims</td></tr><tr><td>Government of India Act 1919 (Montagu-Chelmsford)</td><td>Dyarchy in provinces; two-house central legislature</td></tr><tr><td>Government of India Act 1935</td><td>Provincial autonomy; federal court; dyarchy at the centre (never started)</td></tr><tr><td>Indian Independence Act 1947</td><td>Two dominions, India and Pakistan</td></tr></tbody></table><ul><li><b>Simon Commission</b> (1927, reached India 1928): seven British MPs, no Indian member, so 'Simon go back'.</li><li><b>Cripps Mission</b> 1942; <b>Wavell Plan</b> and Shimla Conference 1945; <b>Cabinet Mission</b> 1946 (Pethick-Lawrence, Cripps, A.V. Alexander); <b>Mountbatten Plan</b> 3 June 1947.</li><li>Rowlatt Act 1919 allowed arrest without trial.</li></ul>"
+      },
+      {
+        "title": "Congress, early nationalism and revolutionaries",
+        "body": "<p><b>Before Congress</b>: East India Association (Dadabhai Naoroji, London, 1866); <b>Indian Association</b> (Surendranath Banerjee and Ananda Mohan Bose, 1876).</p><p><b>Indian National Congress</b>: founded in 1885 by A.O. Hume; first session at Bombay, president <b>W.C. Bonnerjee</b>, 72 delegates.</p><table><thead><tr><th>Session</th><th>President</th><th>Remember for</th></tr></thead><tbody><tr><td>1886 Calcutta</td><td>Dadabhai Naoroji</td><td></td></tr><tr><td>1887 Madras</td><td>Badruddin Tyabji</td><td>First Muslim president</td></tr><tr><td>1888 Allahabad</td><td>George Yule</td><td>First English president</td></tr><tr><td>1906 Calcutta</td><td>Dadabhai Naoroji</td><td>Swaraj as the goal</td></tr><tr><td>1907 Surat</td><td>Rash Behari Ghosh</td><td>Split: moderates and extremists</td></tr><tr><td>1911 Calcutta</td><td>B.N. Dhar</td><td>Jana Gana Mana first sung</td></tr><tr><td>1915 Bombay</td><td>S.P. Sinha</td><td></td></tr><tr><td>1916 Lucknow</td><td>A.C. Mazumdar</td><td>Lucknow Pact; the two groups reunited</td></tr><tr><td>1917 Calcutta</td><td>Annie Besant</td><td>First woman president</td></tr><tr><td>1924 Belgaum</td><td>Mahatma Gandhi</td><td>Only session Gandhi presided</td></tr><tr><td>1925 Kanpur</td><td>Sarojini Naidu</td><td>First Indian woman president</td></tr><tr><td>1929 Lahore</td><td>Jawaharlal Nehru</td><td>Purna Swaraj resolution</td></tr><tr><td>1931 Karachi</td><td>Vallabhbhai Patel</td><td>Resolution on Fundamental Rights and economic policy</td></tr><tr><td>1938 Haripura, 1939 Tripuri</td><td>Subhas Chandra Bose</td><td>Bose resigned in 1939</td></tr></tbody></table><ul><li>Muslim League: 1906, Dhaka. Jinnah was called 'Quaid-i-Azam'.</li><li>Partition of Bengal took effect on 16 October 1905 and was annulled in 1911.</li><li>Home Rule Leagues (1916): Tilak and Annie Besant. Ghadar Party (1913, San Francisco): Lala Har Dayal.</li></ul><p><b>Revolutionaries</b>: Khudiram Bose (Muzaffarpur, 1908); Alipore bomb case (Aurobindo Ghosh); Madan Lal Dhingra (London, 1909); Kakori train action (9 August 1925, Ram Prasad Bismil, Ashfaqulla Khan); Hindustan Republican Association (1924, Sachindranath Sanyal, who wrote <i>Bandi Jiwan</i>); <b>HSRA</b> (1928, Delhi; Bhagat Singh, Chandrashekhar Azad); bombs in the Central Legislative Assembly (8 April 1929, Bhagat Singh and B.K. Dutt); Bhagat Singh, Rajguru and Sukhdev hanged on 23 March 1931; Chittagong armoury raid (1930, Surya Sen). <i>The Philosophy of the Bomb</i> was written by Bhagwati Charan Vohra.</p>"
+      },
+      {
+        "title": "Gandhian era (1915 to 1947)",
+        "body": "<p>In South Africa Gandhi formed the <b>Natal Indian Congress (1894)</b>. He returned to India on 9 January 1915 (now Pravasi Bharatiya Divas).</p><table><thead><tr><th>Year</th><th>Event</th></tr></thead><tbody><tr><td>1917</td><td>Champaran Satyagraha (indigo farmers, Bihar), first satyagraha in India</td></tr><tr><td>1918</td><td>Ahmedabad mill strike (first hunger strike) and Kheda Satyagraha</td></tr><tr><td>1919</td><td>Rowlatt Satyagraha; Jallianwala Bagh massacre, Amritsar, 13 April (General Dyer); Tagore gave up his knighthood</td></tr><tr><td>1920</td><td>Khilafat and Non-Cooperation Movement (Khilafat protested the treatment of the Ottoman Caliph of Turkey)</td></tr><tr><td>1922</td><td>Chauri Chaura (Gorakhpur, 5 February); Non-Cooperation called off</td></tr><tr><td>1923</td><td>Swaraj Party (C.R. Das, Motilal Nehru)</td></tr><tr><td>1928</td><td>Simon Commission protests; Lala Lajpat Rai died after a lathi charge; Bardoli Satyagraha made Vallabhbhai 'Sardar'</td></tr><tr><td>1930</td><td>Dandi March (12 March to 6 April) from Sabarmati Ashram; Civil Disobedience; First Round Table Conference</td></tr><tr><td>1931</td><td>Gandhi-Irwin Pact; Gandhi attended the Second Round Table Conference</td></tr><tr><td>1932</td><td>Communal Award; Poona Pact (Gandhi and Ambedkar)</td></tr><tr><td>1940</td><td>Individual Satyagraha (Vinoba Bhave first)</td></tr><tr><td>1942</td><td>Quit India, 8 August, Gowalia Tank, Bombay: 'Do or Die'</td></tr><tr><td>1943</td><td>Subhas Bose leads the INA; Azad Hind government at Singapore (21 October)</td></tr><tr><td>1944</td><td>Battles of Kohima and Imphal</td></tr><tr><td>1946</td><td>Royal Indian Navy mutiny (Bombay); Direct Action Day (16 August); interim government (2 September)</td></tr></tbody></table>",
         "img": "ga/history-freedom-timeline.svg"
       },
       {
-        "title": "Governors-General and Viceroys (selected)",
-        "body": "<table><thead><tr><th>Name</th><th>Linked event</th></tr></thead><tbody><tr><td>Warren Hastings</td><td>First Governor-General of Bengal</td></tr><tr><td>Lord William Bentinck</td><td>Abolition of Sati (1829)</td></tr><tr><td>Lord Dalhousie</td><td>Doctrine of Lapse; first railway (1853)</td></tr><tr><td>Lord Canning</td><td>Governor-General during 1857; first Viceroy</td></tr><tr><td>Lord Curzon</td><td>Partition of Bengal (1905)</td></tr><tr><td>Lord Mountbatten</td><td>Last Viceroy; first Governor-General of free India</td></tr></tbody></table>"
+        "title": "India after 1947",
+        "body": "<ul><li>First Prime Minister: Jawaharlal Nehru. First Deputy PM and Home Minister: Sardar Patel. Last Governor-General: C. Rajagopalachari (the only Indian one).</li><li>Constitution in force 26 January 1950; first general elections 1951 to 1952.</li><li>Andhra State formed in 1953 after Potti Sriramulu's fast; States Reorganisation Act 1956 (Fazl Ali Commission).</li><li>Panchsheel agreement with China: 1954. Goa freed: 1961. War with China: 1962.</li><li>War with Pakistan 1965, then the Tashkent Agreement (1966). War of 1971 created Bangladesh; Simla Agreement 1972.</li><li><b>Pokhran I</b> (18 May 1974, 'Smiling Buddha'): PM Indira Gandhi, President V.V. Giri.</li><li>Emergency: 25 June 1975 to March 1977. Sikkim became a state in 1975.</li><li><b>Pokhran II</b> (May 1998): PM Atal Bihari Vajpayee, President K.R. Narayanan.</li><li>Lahore bus journey (Vajpayee): February 1999. Kargil war: 1999.</li></ul>"
       }
     ],
     "varieties": [
       {
-        "type": "ancient",
-        "name": "Ancient India facts",
-        "how": "Link each site or person to one key fact (place, discoverer, book).",
-        "example": { "q": "Where did Gautama Buddha deliver his first sermon?", "steps": ["Birth: Lumbini; enlightenment: Bodh Gaya", "First sermon: Sarnath (near Varanasi)"], "answer": "Sarnath" }
+        "type": "prehistoric-indus-vedic",
+        "name": "Stone Age, Indus and Vedic",
+        "how": "Learn the Indus sites as site, state or river, and one find. For Vedic questions, link each Veda and Vedanga to one word (Rig: oldest hymns, Sama: music, Kalpa: ritual).",
+        "example": {
+          "q": "Which Harappan site had a dockyard?",
+          "steps": [
+            "Dockyard means a port city.",
+            "The Harappan port with a dockyard is Lothal in Gujarat."
+          ],
+          "answer": "Lothal"
+        }
       },
       {
-        "type": "medieval",
-        "name": "Medieval rulers and their works",
-        "how": "Use the ruler table: one famous reform or building per ruler.",
-        "example": { "q": "Which Sultan introduced token currency?", "steps": ["Token currency of copper/bronze is linked with the Tughlaq experiments", "Muhammad bin Tughlaq also moved the capital to Daulatabad"], "answer": "Muhammad bin Tughlaq" }
+        "type": "buddhism-jainism-mahajanapadas",
+        "name": "Buddhism, Jainism and Mahajanapadas",
+        "how": "Use the four places of Buddha's life in order and the council table (place, king). For Mahajanapadas, learn the capital pairs.",
+        "example": {
+          "q": "The Fourth Buddhist Council was held under which king?",
+          "steps": [
+            "Councils: Rajagriha (Ajatashatru), Vaishali (Kalashoka), Pataliputra (Ashoka), Kashmir (Kanishka).",
+            "Fourth is Kashmir, under Kanishka."
+          ],
+          "answer": "Kanishka"
+        }
       },
       {
-        "type": "modern",
-        "name": "Freedom struggle and chronology",
-        "how": "Memorise the timeline of years; for order questions write the year next to each event first.",
-        "example": { "q": "Arrange: Quit India, Dandi March, Partition of Bengal.", "steps": ["Partition of Bengal = 1905", "Dandi March = 1930", "Quit India = 1942"], "answer": "Partition of Bengal, Dandi March, Quit India" }
+        "type": "mauryas-to-guptas",
+        "name": "Mauryas to Guptas and Harsha",
+        "how": "Match each king to one book, traveller or inscription. Travellers come in fixed pairs: Megasthenes with Chandragupta Maurya, Fa-Hien with Chandragupta II, Hiuen Tsang with Harsha.",
+        "example": {
+          "q": "Which Chinese pilgrim visited India during the reign of Chandragupta II?",
+          "steps": [
+            "Fa-Hien came in the time of Chandragupta II (Vikramaditya).",
+            "Hiuen Tsang came later, under Harsha."
+          ],
+          "answer": "Fa-Hien"
+        }
+      },
+      {
+        "type": "south-indian-kingdoms",
+        "name": "South Indian and Deccan kingdoms",
+        "how": "Link each dynasty to its capital and one temple or king. Kailasa (Ellora) is Rashtrakuta; Brihadeeswara is Chola; Mahabalipuram is Pallava.",
+        "example": {
+          "q": "Who took the title 'Gangaikondachola'?",
+          "steps": [
+            "The title means 'the Chola who conquered the Ganga'.",
+            "Rajendra I led the northern campaign to the Ganga."
+          ],
+          "answer": "Rajendra I"
+        }
+      },
+      {
+        "type": "delhi-sultanate",
+        "name": "Delhi Sultanate",
+        "how": "First fix the dynasty order (Slave, Khilji, Tughlaq, Sayyid, Lodi), then one reform or building per ruler.",
+        "example": {
+          "q": "Who introduced the silver tanka and copper jital?",
+          "steps": [
+            "Coins are linked to the early Slave dynasty.",
+            "Iltutmish issued the silver tanka and copper jital."
+          ],
+          "answer": "Iltutmish"
+        }
+      },
+      {
+        "type": "mughals-and-marathas",
+        "name": "Mughals, Marathas and regional powers",
+        "how": "Learn emperors in order (Babur, Humayun, Akbar, Jahangir, Shah Jahan, Aurangzeb) with one battle, book or building each. For Marathas remember Shivaji's forts and the Peshwas.",
+        "example": {
+          "q": "Under which emperor did the Mughal Empire reach its largest size?",
+          "steps": [
+            "Akbar expanded it greatly, but Aurangzeb added the Deccan sultanates of Bijapur and Golconda.",
+            "So the peak in area was under Aurangzeb."
+          ],
+          "answer": "Aurangzeb"
+        }
+      },
+      {
+        "type": "bhakti-sufi-sikh",
+        "name": "Bhakti, Sufi and Sikh gurus",
+        "how": "Pair each saint with region, deity and book. Number the Sikh gurus and attach one act to each.",
+        "example": {
+          "q": "Who was the fifth Sikh guru?",
+          "steps": [
+            "Order: Nanak, Angad, Amar Das, Ram Das, Arjan Dev.",
+            "The fifth is Guru Arjan Dev, who compiled the Adi Granth."
+          ],
+          "answer": "Guru Arjan Dev"
+        }
+      },
+      {
+        "type": "british-rule-and-1857",
+        "name": "British rule, 1857 and revolts",
+        "how": "Learn governors-general as name and one event. For 1857, learn centre and leader pairs. For land systems, link each to the region and the officer.",
+        "example": {
+          "q": "The Subsidiary Alliance was introduced by:",
+          "steps": [
+            "Subsidiary Alliance started in 1798.",
+            "The Governor-General then was Lord Wellesley."
+          ],
+          "answer": "Lord Wellesley"
+        }
+      },
+      {
+        "type": "reform-movements",
+        "name": "Social and religious reform",
+        "how": "Keep a table of organisation, founder, year. Many questions only change one column, so learn them as triples.",
+        "example": {
+          "q": "Who founded the Arya Samaj?",
+          "steps": [
+            "Arya Samaj: 1875, Bombay.",
+            "Founder: Swami Dayananda Saraswati, who wrote Satyarth Prakash."
+          ],
+          "answer": "Dayananda Saraswati"
+        }
+      },
+      {
+        "type": "colonial-acts",
+        "name": "Colonial acts and commissions",
+        "how": "Learn each act by its year and one change. Nicknames help: Morley-Minto is 1909, Montagu-Chelmsford is 1919.",
+        "example": {
+          "q": "Which Act is known as the Morley-Minto Reforms?",
+          "steps": [
+            "Morley was Secretary of State and Minto was Viceroy around 1909.",
+            "The Act is the Indian Councils Act, 1909, which gave separate electorates to Muslims."
+          ],
+          "answer": "Indian Councils Act, 1909"
+        }
+      },
+      {
+        "type": "national-movement",
+        "name": "National movement",
+        "how": "Write the year beside each event before ordering. For sessions, learn place, year, president and why it matters.",
+        "example": {
+          "q": "Arrange in order: Quit India, Dandi March, Partition of Bengal, Jallianwala Bagh.",
+          "steps": [
+            "Partition of Bengal 1905, Jallianwala Bagh 1919.",
+            "Dandi March 1930, Quit India 1942."
+          ],
+          "answer": "Partition of Bengal, Jallianwala Bagh, Dandi March, Quit India"
+        }
+      },
+      {
+        "type": "post-independence",
+        "name": "India after 1947",
+        "how": "Learn the year of each landmark and who was PM and President then. Check terms carefully: an office holder changes mid-year.",
+        "example": {
+          "q": "Who was the President of India at the time of the first nuclear test at Pokhran (1974)?",
+          "steps": [
+            "The test was on 18 May 1974.",
+            "V.V. Giri was President until August 1974; Fakhruddin Ali Ahmed took over after that."
+          ],
+          "answer": "V.V. Giri"
+        }
       }
     ],
     "tips": [
-      "For chronology questions, write the year beside each option event before comparing.",
-      "Buddha's four places in order of life: Lumbini, Bodh Gaya, Sarnath, Kushinagar (L-B-S-K).",
-      "Viceroy questions usually ask the event linked to the name; learn them in pairs."
+      "Buddha's four places in order of life: Lumbini, Bodh Gaya, Sarnath, Kushinagar (L, B, S, K).",
+      "Delhi Sultanate order: 'Some Kings Take Steps Lightly' gives Slave, Khilji, Tughlaq, Sayyid, Lodi.",
+      "Mughal order: 'Black Horse Always Jumps Silly Animals' gives Babur, Humayun, Akbar, Jahangir, Shah Jahan, Aurangzeb.",
+      "Three Panipat battles: 1526 (Babur), 1556 (Akbar), 1761 (Abdali). Each gap is about 30, then about 200 years.",
+      "Travellers come in pairs with kings: Megasthenes and Chandragupta Maurya, Fa-Hien and Chandragupta II, Hiuen Tsang and Harsha, Ibn Battuta and Muhammad bin Tughlaq, Thomas Roe and Jahangir.",
+      "Act nicknames follow the Viceroy: Morley-Minto 1909, Montagu-Chelmsford 1919.",
+      "For chronology questions, write the year beside each option before comparing."
     ],
     "traps": [
-      "Harappa (Daya Ram Sahni, 1921) and Mohenjo-daro (R.D. Banerji, 1922) are often swapped in options.",
+      "Harappa (Daya Ram Sahni, 1921) and Mohenjo-daro (R.D. Banerji, 1922) are often swapped.",
       "Qutub Minar was begun by Aibak but completed by Iltutmish.",
-      "The first session of INC was presided by W.C. Bonnerjee, not by A.O. Hume, who founded it."
+      "A.O. Hume founded the Congress, but W.C. Bonnerjee presided over its first session.",
+      "Annie Besant was the first woman Congress president (1917); Sarojini Naidu was the first Indian woman president (1925).",
+      "Warren Hastings was the first Governor-General of Bengal; William Bentinck was the first Governor-General of India; Canning was the first Viceroy.",
+      "Pokhran I (1974) was under President V.V. Giri, not Fakhruddin Ali Ahmed, who took office in August 1974."
     ]
   },
   "questions": [
-    { "id": "g-history-001", "rev": 1, "topic": "g-history", "type": "ancient", "level": 1, "q": "Who led the first excavation at Harappa in 1921?", "options": ["Daya Ram Sahni", "R.D. Banerji", "Mortimer Wheeler", "John Marshall"], "answer": 0, "solution": "Harappa was first excavated by Daya Ram Sahni in 1921 (under John Marshall as ASI Director-General). R.D. Banerji excavated Mohenjo-daro in 1922.<br><b>Memory hook:</b> <i>H</i>arappa came first, so the first name, Sahni, goes with 1921.", "source": "test-data" },
-    { "id": "g-history-002", "rev": 1, "topic": "g-history", "type": "medieval", "level": 1, "q": "The Mughal Empire in India was founded after which battle?", "options": ["Battle of Plassey", "Battle of Talikota", "First Battle of Panipat", "Battle of Haldighati"], "answer": 2, "solution": "Babur defeated Ibrahim Lodi in the First Battle of Panipat (1526) and founded the Mughal Empire.<br><b>Memory hook:</b> 1526: Babur's 'first' Panipat = first Mughal.", "source": "test-data" },
-    { "id": "g-history-003", "rev": 1, "topic": "g-history", "type": "modern", "level": 1, "q": "Who presided over the first session of the Indian National Congress (1885)?", "options": ["A.O. Hume", "W.C. Bonnerjee", "Dadabhai Naoroji", "Surendranath Banerjee"], "answer": 1, "solution": "The first INC session was held at Bombay in 1885 and was presided over by W.C. Bonnerjee. A.O. Hume was the founder.<br><b>Memory hook:</b> Hume <i>founded</i>, Bonnerjee <i>presided</i>.", "source": "test-data" },
-    { "id": "g-history-004", "rev": 1, "topic": "g-history", "type": "ancient", "level": 2, "q": "Which ruler adopted Buddhism after the Kalinga war?", "options": ["Chandragupta Maurya", "Bindusara", "Samudragupta", "Ashoka"], "answer": 3, "solution": "The bloodshed of the Kalinga war (c. 261 BCE) moved Ashoka to adopt Buddhism and follow Dhamma.<br><b>Memory hook:</b> Kalinga changed Ashoka from 'Chandashoka' (fierce) to 'Dharmashoka'.", "source": "test-data" },
-    { "id": "g-history-005", "rev": 1, "topic": "g-history", "type": "medieval", "level": 2, "q": "Which Delhi Sultan shifted his capital from Delhi to Daulatabad?", "options": ["Alauddin Khilji", "Muhammad bin Tughlaq", "Firoz Shah Tughlaq", "Iltutmish"], "answer": 1, "solution": "Muhammad bin Tughlaq moved the capital to Daulatabad (Devagiri) and also issued token currency. Both experiments failed.<br><b>Memory hook:</b> Muhammad bin Tughlaq = 'ideas ahead of time': token money and a new capital.", "source": "test-data" },
-    { "id": "g-history-006", "rev": 1, "topic": "g-history", "type": "modern", "level": 2, "q": "In which year did the Jallianwala Bagh massacre take place?", "options": ["1917", "1922", "1919", "1920"], "answer": 2, "solution": "The massacre took place at Amritsar on 13 April 1919 (Baisakhi day) under General Dyer, after protests against the Rowlatt Act.<br><b>Memory hook:</b> Rowlatt Act and Jallianwala are both 1919.", "source": "test-data" },
-    { "id": "g-history-007", "rev": 1, "topic": "g-history", "type": "modern", "level": 3, "q": "Arrange in chronological order:<br>1. Quit India Movement<br>2. Partition of Bengal<br>3. Dandi March<br>4. Jallianwala Bagh massacre", "img": "ga/history-freedom-timeline.svg", "options": ["2, 4, 3, 1", "4, 2, 3, 1", "2, 3, 4, 1", "2, 4, 1, 3"], "answer": 0, "solution": "Partition of Bengal 1905 → Jallianwala Bagh 1919 → Dandi March 1930 → Quit India 1942. So 2, 4, 3, 1.<br><b>Memory hook:</b> 05 – 19 – 30 – 42: each gap grows by about a decade.", "source": "test-data" },
-    { "id": "g-history-008", "rev": 1, "topic": "g-history", "type": "ancient", "level": 3, "q": "Which pair is <b>incorrectly</b> matched (place — event in Buddha's life)?", "options": ["Lumbini — Birth", "Bodh Gaya — Enlightenment", "Sarnath — First sermon", "Kushinagar — Enlightenment"], "answer": 3, "solution": "Kushinagar is where Buddha attained mahaparinirvana (death). Enlightenment was at Bodh Gaya.<br><b>Memory hook:</b> L-B-S-K follows his life: born, enlightened, taught, passed away.", "source": "test-data" }
+    {
+      "id": "g-history-001",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "prehistoric-indus-vedic",
+      "level": 1,
+      "q": "Who led the first excavation at Harappa in 1921?",
+      "options": [
+        "Daya Ram Sahni",
+        "R.D. Banerji",
+        "Mortimer Wheeler",
+        "John Marshall"
+      ],
+      "answer": 0,
+      "solution": "Harappa was first excavated by Daya Ram Sahni in 1921 (under John Marshall as ASI Director-General). R.D. Banerji excavated Mohenjo-daro in 1922.<br><b>Memory hook:</b> <i>H</i>arappa came first, so the first name, Sahni, goes with 1921.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-history-002",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "mughals-and-marathas",
+      "level": 1,
+      "q": "The Mughal Empire in India was founded after which battle?",
+      "options": [
+        "Battle of Plassey",
+        "Battle of Talikota",
+        "First Battle of Panipat",
+        "Battle of Haldighati"
+      ],
+      "answer": 2,
+      "solution": "Babur defeated Ibrahim Lodi in the First Battle of Panipat (1526) and founded the Mughal Empire.<br><b>Memory hook:</b> 1526: Babur's 'first' Panipat = first Mughal.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-history-003",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "national-movement",
+      "level": 1,
+      "q": "Who presided over the first session of the Indian National Congress (1885)?",
+      "options": [
+        "A.O. Hume",
+        "W.C. Bonnerjee",
+        "Dadabhai Naoroji",
+        "Surendranath Banerjee"
+      ],
+      "answer": 1,
+      "solution": "The first INC session was held at Bombay in 1885 and was presided over by W.C. Bonnerjee. A.O. Hume was the founder.<br><b>Memory hook:</b> Hume <i>founded</i>, Bonnerjee <i>presided</i>.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-history-004",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "mauryas-to-guptas",
+      "level": 2,
+      "q": "Which ruler adopted Buddhism after the Kalinga war?",
+      "options": [
+        "Chandragupta Maurya",
+        "Bindusara",
+        "Samudragupta",
+        "Ashoka"
+      ],
+      "answer": 3,
+      "solution": "The bloodshed of the Kalinga war (c. 261 BCE) moved Ashoka to adopt Buddhism and follow Dhamma.<br><b>Memory hook:</b> Kalinga changed Ashoka from 'Chandashoka' (fierce) to 'Dharmashoka'.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-history-005",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "delhi-sultanate",
+      "level": 2,
+      "q": "Which Delhi Sultan shifted his capital from Delhi to Daulatabad?",
+      "options": [
+        "Alauddin Khilji",
+        "Muhammad bin Tughlaq",
+        "Firoz Shah Tughlaq",
+        "Iltutmish"
+      ],
+      "answer": 1,
+      "solution": "Muhammad bin Tughlaq moved the capital to Daulatabad (Devagiri) and also issued token currency. Both experiments failed.<br><b>Memory hook:</b> Muhammad bin Tughlaq = 'ideas ahead of time': token money and a new capital.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-history-006",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "national-movement",
+      "level": 2,
+      "q": "In which year did the Jallianwala Bagh massacre take place?",
+      "options": [
+        "1917",
+        "1922",
+        "1919",
+        "1920"
+      ],
+      "answer": 2,
+      "solution": "The massacre took place at Amritsar on 13 April 1919 (Baisakhi day) under General Dyer, after protests against the Rowlatt Act.<br><b>Memory hook:</b> Rowlatt Act and Jallianwala are both 1919.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-history-007",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "national-movement",
+      "level": 3,
+      "q": "Arrange in chronological order:<br>1. Quit India Movement<br>2. Partition of Bengal<br>3. Dandi March<br>4. Jallianwala Bagh massacre",
+      "img": "ga/history-freedom-timeline.svg",
+      "options": [
+        "2, 4, 3, 1",
+        "4, 2, 3, 1",
+        "2, 3, 4, 1",
+        "2, 4, 1, 3"
+      ],
+      "answer": 0,
+      "solution": "Partition of Bengal 1905 → Jallianwala Bagh 1919 → Dandi March 1930 → Quit India 1942. So 2, 4, 3, 1.<br><b>Memory hook:</b> 05 – 19 – 30 – 42: each gap grows by about a decade.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-history-008",
+      "rev": 1,
+      "topic": "g-history",
+      "type": "buddhism-jainism-mahajanapadas",
+      "level": 3,
+      "q": "Which pair is <b>incorrectly</b> matched (place — event in Buddha's life)?",
+      "options": [
+        "Lumbini — Birth",
+        "Bodh Gaya — Enlightenment",
+        "Sarnath — First sermon",
+        "Kushinagar — Enlightenment"
+      ],
+      "answer": 3,
+      "solution": "Kushinagar is where Buddha attained mahaparinirvana (death). Enlightenment was at Bodh Gaya.<br><b>Memory hook:</b> L-B-S-K follows his life: born, enlightened, taught, passed away.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-history-1", "front": "Who excavated Mohenjo-daro (1922)?", "back": "R.D. Banerji", "deck": "ga-facts" },
-    { "id": "fc-g-history-2", "front": "Where is the Harappan dockyard?", "back": "Lothal (Gujarat)", "deck": "ga-facts" },
-    { "id": "fc-g-history-3", "front": "Author of Arthashastra", "back": "Kautilya (Chanakya)", "deck": "ga-facts" },
-    { "id": "fc-g-history-4", "front": "Greek ambassador who wrote Indica", "back": "Megasthenes", "deck": "ga-facts" },
-    { "id": "fc-g-history-5", "front": "Who completed the Qutub Minar?", "back": "Iltutmish (begun by Qutb-ud-din Aibak)", "deck": "ga-facts" },
-    { "id": "fc-g-history-6", "front": "Second Battle of Panipat year", "back": "1556 (Akbar's side defeated Hemu)", "deck": "ga-facts" },
-    { "id": "fc-g-history-7", "front": "Governor-General who abolished Sati (1829)", "back": "Lord William Bentinck", "deck": "ga-facts" },
-    { "id": "fc-g-history-8", "front": "Viceroy who partitioned Bengal (1905)", "back": "Lord Curzon", "deck": "ga-facts" },
-    { "id": "fc-g-history-9", "front": "Event that led to withdrawal of Non-Cooperation Movement", "back": "Chauri Chaura incident (1922)", "deck": "ga-facts" }
+    {
+      "id": "fc-g-history-1",
+      "front": "Who excavated Mohenjo-daro (1922)?",
+      "back": "R.D. Banerji",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-2",
+      "front": "Where is the Harappan dockyard?",
+      "back": "Lothal (Gujarat)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-3",
+      "front": "Author of Arthashastra",
+      "back": "Kautilya (Chanakya)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-4",
+      "front": "Greek ambassador who wrote Indica",
+      "back": "Megasthenes",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-5",
+      "front": "Who completed the Qutub Minar?",
+      "back": "Iltutmish (begun by Qutb-ud-din Aibak)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-6",
+      "front": "Second Battle of Panipat year",
+      "back": "1556 (Akbar's side defeated Hemu)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-7",
+      "front": "Governor-General who abolished Sati (1829)",
+      "back": "Lord William Bentinck",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-8",
+      "front": "Viceroy who partitioned Bengal (1905)",
+      "back": "Lord Curzon",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-history-9",
+      "front": "Event that led to withdrawal of Non-Cooperation Movement",
+      "back": "Chauri Chaura incident (1922)",
+      "deck": "ga-facts"
+    }
   ]
 }

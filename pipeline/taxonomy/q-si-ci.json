@@ -1,0 +1,102 @@
+{
+  "topic": "q-si-ci",
+  "types": [
+    {
+      "type": "si-basics",
+      "name": "Simple interest basics",
+      "description": "Uses SI = PRT/100 or amount = P + SI to find interest, principal, rate or time at simple interest, including ratios of interests and present worth of a sum due later.",
+      "concepts": [
+        "basic-si-amount-formula",
+        "simple-interest-rate-calculations",
+        "late-payment-fine-true-discount-in-si"
+      ]
+    },
+    {
+      "type": "si-n-times",
+      "name": "Sum becomes n times at simple interest",
+      "description": "A sum doubles, triples or becomes n times (or a fraction more) of itself in some years at simple interest, and the rate or the time to become another multiple is asked.",
+      "concepts": [
+        "sum-becomes-n-times-in-t-years",
+        "simple-interest-multiplier-periods"
+      ]
+    },
+    {
+      "type": "si-variable-rates",
+      "name": "Changing rate or time in simple interest",
+      "description": "The simple interest rate changes over different periods, or the same sum is kept at two rates or two times and the interests are compared.",
+      "concepts": [
+        "rate-or-time-change-shift-variable-rates"
+      ]
+    },
+    {
+      "type": "split-sum",
+      "name": "Sum split into parts",
+      "description": "A total sum is divided into parts lent at different rates or for different times (simple or compound), with total interest given or parts giving equal amounts, and a part is asked.",
+      "concepts": [
+        "average-rate-of-interest-alligation-in-si",
+        "dividing-sum-into-parts-with-equal-si-or-equal-amount",
+        "ci-alligation-split-sum-investment"
+      ]
+    },
+    {
+      "type": "installments",
+      "name": "Instalments",
+      "description": "A loan is repaid in equal or given yearly instalments at simple or compound interest and the instalment, the loan or the last payment is asked.",
+      "concepts": [
+        "installments-in-simple-interest",
+        "equal-annual-installments-in-ci",
+        "compound-interest-installments"
+      ]
+    },
+    {
+      "type": "ci-basics",
+      "name": "Compound interest basics",
+      "description": "Asks for compound interest, amount, principal or rate compounded yearly with whole years, including growth of production or population at compound rate.",
+      "concepts": [
+        "basic-ci-amount-effective-rate",
+        "compound-population-growth"
+      ]
+    },
+    {
+      "type": "ci-non-annual",
+      "name": "Half-yearly and quarterly compounding",
+      "description": "Interest is compounded half-yearly, quarterly or every few months and the interest or amount is asked.",
+      "concepts": [
+        "non-annual-compounding-half-yearly-quarterly-8-monthly-10-mo"
+      ]
+    },
+    {
+      "type": "ci-fractional-time",
+      "name": "Compound interest for a fractional time",
+      "description": "Compound interest compounded yearly for a time that is not a whole number of years, like 2 1/2 years.",
+      "concepts": [
+        "fractional-time-period-compounding"
+      ]
+    },
+    {
+      "type": "ci-two-amounts",
+      "name": "Amounts after two different times",
+      "description": "A sum amounts to A₁ in t₁ years and A₂ in t₂ years at compound interest, or the interest of consecutive years is compared, and the rate or principal is asked.",
+      "concepts": [
+        "sum-becomes-a1-in-t1-years-and-a2-in-t2-years",
+        "ratio-of-ci-in-consecutive-years"
+      ]
+    },
+    {
+      "type": "ci-n-times",
+      "name": "Sum becomes n times at compound interest",
+      "description": "A sum becomes n times itself in some years at compound interest and the time to become another power of n is asked.",
+      "concepts": [
+        "sum-becomes-n-times-in-t-years-in-ci"
+      ]
+    },
+    {
+      "type": "ci-si-difference",
+      "name": "Difference of CI and SI",
+      "description": "Gives or asks the difference between compound and simple interest on the same sum at the same rate for 2 or 3 years.",
+      "concepts": [
+        "ci-si-difference-for-2-years-and-3-years"
+      ]
+    }
+  ]
+}

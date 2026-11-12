@@ -1,0 +1,41 @@
+{
+ "topic": "c-security",
+ "types": [
+  {
+   "type": "malware",
+   "name": "Malware and virus types",
+   "description": "Describes a harmful program (spreads by itself, hides as a useful app, locks files for money, records keys) and asks which malware or virus type it is.",
+   "concepts": []
+  },
+  {
+   "type": "social-attacks",
+   "name": "Phishing and social engineering",
+   "description": "Describes tricking a person by email, phone, SMS or a fake website into giving away passwords or money, and asks for the name of the trick.",
+   "concepts": []
+  },
+  {
+   "type": "network-attacks",
+   "name": "Hacking and network attacks",
+   "description": "Describes a technical attack such as flooding a server, listening in between two parties, guessing passwords or injecting code, and asks for its name.",
+   "concepts": []
+  },
+  {
+   "type": "protection-tools",
+   "name": "Firewalls, antivirus and safe practices",
+   "description": "Asks what a firewall, antivirus, VPN, two-factor login, CAPTCHA, patch or backup does, or which practice keeps a system safe.",
+   "concepts": []
+  },
+  {
+   "type": "cryptography",
+   "name": "Encryption, keys and digital signatures",
+   "description": "Asks about plaintext and ciphertext, symmetric and public-key encryption, which key signs or encrypts, hashing, certificates or HTTPS.",
+   "concepts": []
+  },
+  {
+   "type": "cyber-law",
+   "name": "Cyber law, agencies and hacker types",
+   "description": "Asks about the IT Act 2000 and its sections, CERT-In, the cybercrime helpline, or white, black and grey hat hackers.",
+   "concepts": []
+  }
+ ]
+}

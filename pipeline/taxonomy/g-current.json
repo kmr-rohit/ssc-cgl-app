@@ -1,0 +1,67 @@
+{
+  "topic": "g-current",
+  "types": [
+    {
+      "type": "national-affairs",
+      "name": "National news",
+      "description": "Recent events in India: government decisions, new laws, schemes and portals, state firsts and national programmes.",
+      "concepts": [
+        "national-current-affairs"
+      ]
+    },
+    {
+      "type": "appointments",
+      "name": "Appointments and office holders",
+      "description": "Who was appointed, elected or named to a post in India or abroad, and who appoints whom.",
+      "concepts": [
+        "recent-appointments-and-designations"
+      ]
+    },
+    {
+      "type": "reports-indices",
+      "name": "Reports, indices and rankings",
+      "description": "Global and Indian indices and reports: who publishes them and India's rank in a given year.",
+      "concepts": [
+        "recent-reports-and-indices"
+      ]
+    },
+    {
+      "type": "awards-events",
+      "name": "Awards, summits and events",
+      "description": "Recent awards and prizes, expos, conferences and their themes or venues.",
+      "concepts": [
+        "current-awards-and-events"
+      ]
+    },
+    {
+      "type": "international-affairs",
+      "name": "International news",
+      "description": "Events abroad: elections, renamed places, treaties, UN bodies and India's foreign relations.",
+      "concepts": [
+        "international-current-affairs"
+      ]
+    },
+    {
+      "type": "defence-space-news",
+      "name": "Defence and space news",
+      "description": "Recent missile tests, exercises, inductions, space missions and people in the news for them.",
+      "concepts": [
+        "defence-space-current-affairs"
+      ]
+    },
+    {
+      "type": "sports-news",
+      "name": "Sports news",
+      "description": "Recent tournaments, winners, records and sports personalities in the news.",
+      "concepts": [
+        "sports-current-affairs"
+      ]
+    },
+    {
+      "type": "organisations-summits",
+      "name": "Organisations and groupings",
+      "description": "International organisations and groupings: headquarters, members, founding years and the summits they hold.",
+      "concepts": []
+    }
+  ]
+}

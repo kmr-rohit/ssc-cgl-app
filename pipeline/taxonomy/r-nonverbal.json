@@ -1,0 +1,48 @@
+{
+ "topic": "r-nonverbal",
+ "types": [
+  {
+   "type": "mirror-image",
+   "name": "Mirror image",
+   "description": "You select the mirror image of a figure, word or number combination when a mirror is placed beside it (at MN, PQ or AB, or \"to the right\").",
+   "concepts": [
+    "mirror-image"
+   ]
+  },
+  {
+   "type": "water-image",
+   "name": "Water image",
+   "description": "You select the water image (reflection in water below the object) of a figure, word or number combination.",
+   "concepts": [
+    "water-image",
+    "water-image-reflections"
+   ]
+  },
+  {
+   "type": "paper-folding",
+   "name": "Paper folding, punching and cutting",
+   "description": "A sheet is folded one or more times and then punched or cut, and you choose how it looks when unfolded.",
+   "concepts": []
+  },
+  {
+   "type": "transparent-folding",
+   "name": "Folding a transparent sheet",
+   "description": "A transparent sheet with a pattern is folded along a dotted line, and you choose how the folded sheet looks.",
+   "concepts": []
+  },
+  {
+   "type": "triangle-counting",
+   "name": "Counting triangles",
+   "description": "You count the number of triangles in a figure made of crossing lines.",
+   "concepts": []
+  },
+  {
+   "type": "square-counting",
+   "name": "Counting squares, rectangles and other shapes",
+   "description": "You count squares, rectangles, lines or other shapes (anything except triangles) in a figure.",
+   "concepts": [
+    "geometric-figure-counting"
+   ]
+  }
+ ]
+}

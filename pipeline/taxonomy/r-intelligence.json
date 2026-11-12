@@ -1,0 +1,45 @@
+{
+ "topic": "r-intelligence",
+ "types": [
+  {
+   "type": "situation-reaction",
+   "name": "Situation reaction (on duty)",
+   "description": "You are placed in a work or public role (\"You are an administrative officer…\", \"You see an accident…\") and choose the most responsible, ethical or lawful action.",
+   "concepts": [
+    "situation-reaction-test-administrative-ethics"
+   ]
+  },
+  {
+   "type": "emotional-intelligence",
+   "name": "Emotional intelligence",
+   "description": "A personal situation (failure, criticism, anger, stress, pressure) asks for the most mature way to handle your own feelings.",
+   "concepts": []
+  },
+  {
+   "type": "social-intelligence",
+   "name": "Social intelligence",
+   "description": "A situation with classmates, colleagues, neighbours or a team asks how best to get along, include others, resolve a conflict or lead.",
+   "concepts": []
+  },
+  {
+   "type": "critical-thinking",
+   "name": "Critical thinking and logic",
+   "description": "A short claim, rule or argument asks what is definitely true, what weakens or strengthens it, or which argument is strong.",
+   "concepts": []
+  },
+  {
+   "type": "rule-based-decision",
+   "name": "Eligibility and rule-based decisions",
+   "description": "A list of conditions (eligibility criteria, rules) is followed by a case, and you decide whether the person qualifies or what action the rules require.",
+   "concepts": []
+  },
+  {
+   "type": "numerical-reasoning",
+   "name": "Quick arithmetic puzzles",
+   "description": "A short arithmetic word problem (percentage, ratio, speed, work, profit, interest) appears in the reasoning section.",
+   "concepts": [
+    "unclassified-miscellaneous-experimental"
+   ]
+  }
+ ]
+}

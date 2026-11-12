@@ -1,37 +1,215 @@
 {
   "topic": "e-improvement",
   "notes": {
-    "summary": "In <b>Sentence Improvement</b> a part of the sentence is underlined or bold. You choose the option that corrects it, or 'No improvement' if it is already correct. The tested rules are the same as error spotting, but here you must also pick the right fix.",
+    "summary": "<p>A sentence is given with one part underlined (or in bold). You choose the option that makes it correct, or <i>No improvement / No substitution required</i> if it is already correct. SSC asks 1 to 2 in Tier 1 and more in Tier 2.</p><p>Method: first decide whether the underlined part is wrong at all. Read the whole sentence, find the rule being tested (tense, conditional, agreement, verb pattern, preposition, comparison, determiner, connector or word choice), then pick the option that fixes that rule <b>and adds no new error</b>. Expect <i>No improvement</i> to be the answer in roughly one question out of five.</p>",
     "concepts": [
-      { "title": "Check the underlined part only", "body": "The rest of the sentence is correct and gives you clues (tense, number, subject). Your answer must fit smoothly into it. Read the full sentence with each option in place." },
-      { "title": "Common areas", "body": "<ul><li><b>Conditionals</b>: <i>If I were you, I would…</i>; <i>If he had studied, he would have passed.</i></li><li><b>Tense sequence</b>: a past main verb usually takes a past verb in the reported clause.</li><li><b>Redundancy</b>: <i>return back, repeat again, cousin brother</i> are wrong.</li><li><b>Idiomatic forms</b>: <i>look forward to <u>meeting</u></i>, <i>used to <u>living</u></i> (when 'used to' means accustomed).</li></ul>" },
-      { "title": "'No improvement' is a real option", "body": "If the underlined part is grammatically correct and natural, choose 'No improvement'. Do not change a correct sentence just because another option also sounds fine." }
+      {
+        "title": "How to work through an improvement question",
+        "body": "<ol><li><b>Read the full sentence</b>, not just the underlined part. The error is often a clash with a word outside it (<i>since</i>, <i>if</i>, <i>Hardly</i>).</li><li><b>Name the rule</b> using the list below. Ask: what does this sentence need here?</li><li><b>Predict</b> the correct form before looking at the options.</li><li><b>Eliminate</b> options that add a new error, change the meaning, or are only partly fixed (<i>studying since two o'clock</i> fixes the preposition; <i>study since two o'clock</i> does not fit <i>has been</i>).</li><li><b>Choose <i>No improvement</i></b> only when the original passes every check, including idiom and style.</li></ol>"
+      },
+      {
+        "title": "Tense and time",
+        "body": "<table><thead><tr><th>Rule</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>Action from the past continuing now: present perfect (continuous) + since/for</td><td>My friend <b>has been living</b> in a village since 2015.</td><td>My friend lives in a village since 2015.</td></tr><tr><td><i>since</i> + point of time; <i>for</i> + period</td><td>She has been studying <b>since</b> two o'clock.</td><td>She has been studying for two o'clock.</td></tr><tr><td>Right now: present continuous</td><td><b>I'm not wearing</b> sunglasses at the moment.</td><td>I don't wear sunglasses at the moment.</td></tr><tr><td>Opinion, knowledge, liking: simple present (state verbs)</td><td><b>I think</b> that tomorrow I will take leave.</td><td>I am think that tomorrow I will take leave.</td></tr><tr><td>Future result of a present condition: will</td><td>If you join now, <b>it will prove</b> to be good in the long run.</td><td>If you join now, it proves to be good in the long run.</td></tr><tr><td>Prediction from present evidence: going to</td><td>The bus is full; it <b>is going to leave</b> soon.</td><td>(will leave is acceptable but SSC prefers going to with visible evidence)</td></tr><tr><td>Finished past time: simple past</td><td>He <b>left</b> yesterday.</td><td>He has left yesterday.</td></tr><tr><td>Earlier of two past actions: past perfect</td><td>The film <b>had started</b> before we arrived.</td><td>The film started before we had arrived.</td></tr><tr><td>Time clause (when, after, before, as soon as) uses present for future</td><td>I will call you when I <b>reach</b>.</td><td>I will call you when I will reach.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Conditionals and wishes",
+        "body": "<table><thead><tr><th>Type</th><th>If clause</th><th>Main clause</th><th>Example</th></tr></thead><tbody><tr><td>Zero (facts)</td><td>simple present</td><td>simple present</td><td>If you heat ice, it <b>melts</b>.</td></tr><tr><td>First (likely future)</td><td>simple present</td><td>will + V1</td><td>If it <b>rains</b>, we <b>will stay</b> in.</td></tr><tr><td>Second (unreal present)</td><td>simple past / <b>were</b></td><td>would + V1</td><td>If I <b>were</b> the Prime Minister, I <b>would build</b> more schools.</td></tr><tr><td>Third (unreal past)</td><td>had + V3</td><td>would have + V3</td><td>If he <b>had listened</b>, he <b>would not have fallen</b> ill.</td></tr></tbody></table><ul><li><b>Inversion</b> drops <i>if</i>: <i>Had he listened to his doctor, he would not have fallen ill.</i> <i>Were I rich, I would travel.</i> <i>Should you need help, call me.</i></li><li><b>were</b> for all subjects in unreal conditions: <i>If I were you</i>, <i>If she were here</i>.</li><li><b>wish</b> about the present takes past; about the past takes past perfect: <i>I wish I <b>knew</b> the answer. I wish I <b>had studied</b> harder.</i></li><li><b>as if / as though</b> for something unreal: <i>He talks as if he <b>were</b> the boss.</i></li><li>No <i>would</i> in the if clause: <i>If I <b>had</b> known</i>, not <i>If I would have known</i>.</li><li><b>Unless</b> = if not, so no extra <i>not</i>: <i>Unless you hurry, you will miss the bus.</i></li></ul>"
+      },
+      {
+        "title": "Subject-verb agreement",
+        "body": "<ul><li><i>No one, nobody, everyone, each, every, either, neither</i> are singular: <i><b>No one is</b> supposed to react.</i> Incorrect: <i>No one are supposed to react.</i></li><li><i>there is / there are</i> follow the noun after them: <i>there <b>are</b> so many misconceptions</i>; <i>there <b>is</b> so much confusion</i>.</li><li><i>One of the</i> + plural noun + singular verb: <i>One of my friends <b>lives</b> in Pune.</i></li><li><i>The number of</i> + singular verb; <i>a number of</i> + plural verb.</li><li>Uncountable nouns take a singular verb: <i>The information <b>was</b> useful.</i></li><li>Subjects joined by <i>as well as / with / along with</i> follow the first subject; <i>either ... or / neither ... nor</i> follow the nearer subject.</li><li>Collective nouns as one unit are singular: <i>The committee <b>has</b> decided.</i></li></ul>"
+      },
+      {
+        "title": "Infinitive, gerund and verb form",
+        "body": "<table><thead><tr><th>Pattern</th><th>Words</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>to + V1</td><td>plan, want, decide, hope, agree, refuse, promise, afford, try</td><td>I plan <b>to pursue</b> law.</td><td>I plan to pursuing law.</td></tr><tr><td>-ing</td><td>avoid, enjoy, finish, mind, practise, suggest, give up, can't help, keep</td><td>She avoided <b>meeting</b> him.</td><td>She avoided to meet him.</td></tr><tr><td><i>to</i> as a preposition + -ing</td><td>look forward to, object to, be used to, be accustomed to, with a view to, devoted to</td><td>We look forward to <b>meeting</b> you.</td><td>We look forward to meet you.</td></tr><tr><td>adjective + of + -ing</td><td>capable of, confident of, fond of, proud of, afraid of, sure of</td><td>He is capable <b>of doing</b> this work. She is confident <b>of winning</b>.</td><td>He is capable to do this work.</td></tr><tr><td>insist, prevent, succeed + preposition + -ing</td><td>insist on, prevent from, succeed in</td><td>She insisted <b>on my taking</b> the medicine / insisted <b>that I take</b> the medicine.</td><td>She insisted me to take the medicine.</td></tr><tr><td>verb + object + to + V1</td><td>ask, tell, advise, allow, want, expect, order</td><td>He advised me <b>to rest</b>.</td><td>He advised me resting.</td></tr><tr><td>verb + object + V1 (no to)</td><td>let, make, help, see, hear, watch</td><td>Let me <b>go</b>.</td><td>Let me to go.</td></tr><tr><td>Purpose: to + V1</td><td>after a verb showing purpose</td><td>What examples did the writer give <b>to prove</b> his point?</td><td>gave to proved his point</td></tr><tr><td>Past participle opening (passive meaning)</td><td>when the subject receives the action</td><td><b>Blinded</b> by a dust storm, they fell into disorder.</td><td>Blind by a dust storm ...</td></tr><tr><td>Main verb needed</td><td>a sentence needs a finite verb</td><td>The old lady nearly <b>died of</b> fright. You can always <b>depend on</b> me.</td><td>The old lady nearly dead from fright. You can always dependent on me.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Prepositions and collocations",
+        "body": "<table><thead><tr><th>Incorrect</th><th>Correct</th></tr></thead><tbody><tr><td>apologised the teacher</td><td>apologised <b>to</b> the teacher</td></tr><tr><td>depend over / at me</td><td>depend <b>on</b> me</td></tr><tr><td>different than / then the one</td><td>different <b>from</b> the one</td></tr><tr><td>careless from my card</td><td>careless <b>with</b> my card</td></tr><tr><td>tattooed in their skin</td><td>tattooed <b>on</b> their skin</td></tr><tr><td>partake this refreshment</td><td>partake <b>of</b> this refreshment</td></tr><tr><td>conversed the matter with me</td><td>discussed the matter with me</td></tr><tr><td>misconception on dyslexia</td><td>misconception <b>about</b> dyslexia</td></tr><tr><td>died from fright</td><td>died <b>of</b> fright</td></tr><tr><td>listen the news</td><td>listen <b>to</b> the news</td></tr><tr><td>reached to Delhi</td><td>reached Delhi</td></tr><tr><td>enter into the room</td><td>entered the room (<i>enter into</i> an agreement)</td></tr><tr><td>superior than</td><td>superior <b>to</b></td></tr><tr><td>made fuss</td><td>made a fuss <b>about</b></td></tr><tr><td>by walk</td><td><b>on</b> foot</td></tr></tbody></table><p><b>Common collocations</b>: <i>make</i> a decision, a mistake, progress, a fuss, an effort; <i>do</i> homework, a favour, business, your best; <i>take</i> a break, a decision (also correct), an exam; <i>pay</i> attention, a visit, a compliment; <i>keep</i> a promise, in touch; <i>heavy</i> rain, traffic; <i>strong</i> tea; <i>fast</i> colours; <i>hard-earned</i> money.</p>"
+      },
+      {
+        "title": "Adjectives, adverbs and comparison",
+        "body": "<ul><li>Comparatives need the comparative form + <i>than</i>: <i>Hritik is <b>slower</b> than Heer.</i> Incorrect: <i>slow than</i>.</li><li>Long adjectives use <i>more / less</i>: <i>Edward II is <b>less tragic than</b> some other plays.</i> Incorrect: <i>tragic than</i>, <i>as least tragic as</i>.</li><li>Equality: <i>as ... as</i>; negative equality: <i>not so / not as ... as</i>.</li><li>No double forms: <i>better</i>, not <i>more better</i>; <i>most beautiful</i>, not <i>most beautifullest</i>.</li><li><i>the</i> + superlative + <i>of / in</i>: <i>the tallest boy in the class</i>.</li><li><i>the + comparative ..., the + comparative</i>: <i>The harder you work, the better you score.</i></li><li>Adverb for a verb: <i>She spoke <b>softly</b></i>; adjective after linking verbs: <i>The soup tastes <b>good</b></i>.</li><li><i>very</i> with positive degree, <i>much / far</i> with comparatives: <i>much taller</i>, not <i>very taller</i>.</li><li><b>Order of adjectives</b>: opinion, size, age, shape, colour, origin, material, purpose: <i>a beautiful small old round red Indian wooden dining table</i>.</li></ul>"
+      },
+      {
+        "title": "Nouns, pronouns and determiners",
+        "body": "<table><thead><tr><th>Word</th><th>Use with</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>many / few / a few / fewer</td><td>countable plurals</td><td>so <b>many</b> misconceptions</td><td>so much misconception</td></tr><tr><td>much / little / a little / less</td><td>uncountable nouns</td><td><b>much</b> water, <b>less</b> noise</td><td>many water</td></tr><tr><td>some</td><td>positive sentences and offers</td><td>Can you give me <b>some more</b> examples?</td><td>so many examples / some many examples</td></tr><tr><td>any</td><td>negatives and questions</td><td>I don't have <b>any</b> money.</td><td>I don't have some money.</td></tr><tr><td>between / among</td><td>two / more than two</td><td>The players distributed the reward <b>among themselves</b>.</td><td>between themselves (for many players)</td></tr><tr><td>each other / one another</td><td>two / more than two</td><td>The two sisters helped <b>each other</b>.</td><td>The two sisters helped one another.</td></tr><tr><td>themselves</td><td>reflexive plural</td><td>They hurt <b>themselves</b>.</td><td>their selves, theirselves</td></tr><tr><td>either / neither</td><td>two</td><td><b>Either</b> of the two roads.</td><td>Either of the three roads (use <i>any</i>).</td></tr><tr><td>whose / who's</td><td>possession / who is</td><td>The girl <b>whose</b> bag was lost.</td><td>The girl who's bag was lost.</td></tr></tbody></table><p>Uncountable nouns (<i>advice, information, furniture, luggage, equipment</i>) take no <i>a</i> and no plural: <i>a piece of advice</i>, <i>some information</i>.</p>"
+      },
+      {
+        "title": "Connectors, inversion and word order",
+        "body": "<ul><li><b>Hardly / Scarcely / Barely + had + subject + V3 ... when</b>: <i>Hardly had he <b>sat on the chair when</b> it broke.</i> <i>Hardly had we got in <b>when</b> the train started.</i></li><li><b>No sooner + had + subject + V3 ... than</b>: <i>No sooner had I reached than it began to rain.</i></li><li><b>Negative opening words invert</b>: <i>Never <b>have I</b> seen such a sight. Seldom <b>does he</b> smile. Not only <b>did she</b> sing, but she also danced.</i></li><li><b>Indirect question order</b>: inside a statement or another question, use subject + verb: <i>Do you know <b>where she resides</b>?</i> Incorrect: <i>where does she reside</i>, <i>where she reside</i>.</li><li><b>while + -ing</b> for two actions at the same time: <i>Let us not neglect important aspects of life <b>while pursuing</b> momentary pleasures.</i></li><li><b>although / though</b> show contrast; do not add <i>but</i>. <b>because / since / as</b> give a reason; <b>so</b> gives a result; <b>unless</b> means <i>if not</i>.</li><li><b>Position of only, even, just, often</b>: put it next to the word it limits. <i>He <b>only</b> lent me ten rupees</i> (did nothing else) vs <i>He lent me <b>only</b> ten rupees</i> (no more than ten).</li><li><b>Adverbs of frequency</b> go before the main verb and after <i>be</i>: <i>She <b>always</b> arrives early. She is <b>always</b> early.</i></li></ul>"
+      },
+      {
+        "title": "Word choice and redundancy",
+        "body": "<table><thead><tr><th>Confusing pair</th><th>Meaning</th><th>Example</th></tr></thead><tbody><tr><td>populous / populated</td><td>with many people / lived in</td><td>a <b>populous</b> country of 120 million</td></tr><tr><td>economic / economical</td><td>about the economy / not wasteful</td><td><b>economic</b> policy; an <b>economical</b> car</td></tr><tr><td>historic / historical</td><td>famous, important / about history</td><td>a <b>historic</b> win; <b>historical</b> records</td></tr><tr><td>childish / childlike</td><td>silly / innocent</td><td><b>childlike</b> wonder</td></tr><tr><td>alternate / alternative</td><td>every second / another option</td><td>on <b>alternate</b> days; an <b>alternative</b> plan</td></tr><tr><td>continual / continuous</td><td>repeated often / without a break</td><td><b>continual</b> interruptions; <b>continuous</b> rain</td></tr><tr><td>sensible / sensitive</td><td>wise / easily affected</td><td>a <b>sensible</b> decision; <b>sensitive</b> skin</td></tr><tr><td>beside / besides</td><td>next to / in addition to</td><td>sit <b>beside</b> me; <b>besides</b> English, he knows French</td></tr><tr><td>lie / lay</td><td>rest / put down (needs object)</td><td><b>lie</b> down; <b>lay</b> the book on the table</td></tr><tr><td>rise / raise</td><td>go up / lift (needs object)</td><td>prices <b>rise</b>; <b>raise</b> your hand</td></tr></tbody></table><p><b>Redundant words</b> to remove: <i>repeat again, return back, revert back, the reason is because, each and every, cousin brother, past history, free gift, end result, final outcome, still continues to, ascend up</i>.<br>Correct: <i>The teacher asked the boy to <b>repeat</b> his answer.</i> Incorrect: <i>repeat again</i>.</p><p><b>Fixed expressions</b>: <i>in his own image</i>, <i>on foot</i>, <i>carry out assigned duties</i>, <i>pay heed to</i>, <i>take into account</i>, <i>in spite of</i> (not <i>in spite</i> alone).</p>"
+      },
+      {
+        "title": "When to choose No improvement",
+        "body": "<p>Choose it when the underlined part already follows every rule and reads naturally. Typical correct originals that tempt people to change them:</p><ul><li><i>She <b>has been living</b> in Pune for ten years.</i> (present perfect continuous + for: correct)</li><li><i>Hardly <b>had we reached</b> the station when the train left.</i> (correct inversion and pair)</li><li><i>If I <b>were</b> you, I would apologise.</i> (subjunctive: correct)</li><li><i>Neither of the answers <b>is</b> correct.</i> (singular: correct)</li></ul><p>Do not pick an option just because it sounds more formal or longer. If the meaning or tense changes, it is not an improvement.</p>"
+      }
     ],
     "varieties": [
-      { "type": "conditional", "name": "Conditionals and tense", "how": "Match the <i>if</i>-clause with the main clause: present–will, past–would, past perfect–would have.", "example": { "q": "If she <b>would have left</b> early, she would have caught the train.", "steps": ["Main clause is <i>would have caught</i> (type 3, unreal past).", "The if-clause needs past perfect: <i>had left</i>."], "answer": "had left" } },
-      { "type": "redundancy", "name": "Redundancy and idiom", "how": "Remove words that repeat a meaning already present, and use the fixed English form.", "example": { "q": "Please <b>return back</b> the book by Monday.", "steps": ["<i>Return</i> already means 'give back'.", "Drop <i>back</i>."], "answer": "return" } },
-      { "type": "no-improvement", "name": "Spotting a correct sentence", "how": "Check subject, verb, tense, preposition. If all are right, choose 'No improvement'.", "example": { "q": "He has been working here <b>since 2019</b>.", "steps": ["<i>since</i> + a point in time with present perfect continuous is correct."], "answer": "No improvement" } }
+      {
+        "type": "tense",
+        "name": "Tense and time",
+        "how": "Check time markers (since, for, at the moment, yesterday, if/when) and match the tense; for continuing actions use the present perfect (continuous).",
+        "example": {
+          "q": "Improve the underlined part: My friend <u>lives in a village since</u> 2015.",
+          "steps": [
+            "<i>since 2015</i> shows an action that started in the past and continues.",
+            "Simple present <i>lives</i> cannot go with <i>since</i>.",
+            "Use present perfect continuous: <i>has been living in a village since</i>."
+          ],
+          "answer": "has been living in a village since"
+        }
+      },
+      {
+        "type": "conditionals",
+        "name": "Conditionals and wishes",
+        "how": "Identify the conditional type from the unchanged clause, then use the matching pair: present/will, past/would, had + V3/would have + V3. Use <i>were</i> in unreal conditions.",
+        "example": {
+          "q": "Improve the bold part: Had he listened to his doctor, he <b>will not fall</b> ill.",
+          "steps": [
+            "<i>Had he listened</i> = <i>If he had listened</i>: third conditional (unreal past).",
+            "The main clause needs <i>would have + V3</i>.",
+            "So <i>would not have fallen</i>."
+          ],
+          "answer": "would not have fallen"
+        }
+      },
+      {
+        "type": "subject-verb",
+        "name": "Subject-verb agreement",
+        "how": "Find the subject and check the verb's number. <i>No one, each, every, either, neither</i> are singular; <i>there is/are</i> follows the next noun.",
+        "example": {
+          "q": "Improve the underlined part: <u>No one are supposed to react</u> to her prejudiced comments.",
+          "steps": [
+            "<i>No one</i> is singular.",
+            "<i>are</i> must become <i>is</i>.",
+            "Tense and meaning stay the same."
+          ],
+          "answer": "No one is supposed to react"
+        }
+      },
+      {
+        "type": "verb-patterns",
+        "name": "Infinitive, gerund and verb form",
+        "how": "Check what the previous word demands: <i>to</i> + V1 after plan/want; -ing after a preposition (look forward to, capable of); V1 after modals and did.",
+        "example": {
+          "q": "Improve the bold part: We are looking forward to <b>meet</b> you at the conference.",
+          "steps": [
+            "In <i>look forward to</i>, <i>to</i> is a preposition.",
+            "A preposition is followed by a noun or -ing form.",
+            "So <i>meeting</i>."
+          ],
+          "answer": "meeting"
+        }
+      },
+      {
+        "type": "prepositions",
+        "name": "Prepositions and collocations",
+        "how": "Recall the fixed preposition for the verb, noun or adjective (apologise to, depend on, different from). Remove prepositions after verbs like discuss and reach.",
+        "example": {
+          "q": "Improve the underlined part: The student <u>apologised the teacher</u> for the delay in submitting the assignment.",
+          "steps": [
+            "<i>apologise</i> takes <i>to</i> before the person and <i>for</i> before the fault.",
+            "<i>for the delay</i> is already there; <i>to</i> is missing.",
+            "Tense (simple past) stays."
+          ],
+          "answer": "apologised to the teacher"
+        }
+      },
+      {
+        "type": "comparison",
+        "name": "Adjectives, adverbs and comparison",
+        "how": "If <i>than</i> follows, the adjective must be comparative (<i>-er</i> or <i>more/less</i>). With <i>as ... as</i>, use the plain form.",
+        "example": {
+          "q": "Improve the underlined part: Hritik is <u>slow</u> than Heer.",
+          "steps": [
+            "<i>than</i> shows a comparison of two people.",
+            "<i>slow</i> is a short adjective, so add <i>-er</i>.",
+            "<i>slower than Heer</i>."
+          ],
+          "answer": "slower"
+        }
+      },
+      {
+        "type": "determiners-pronouns",
+        "name": "Nouns, pronouns and determiners",
+        "how": "Check countable vs uncountable (many/much, few/little), some vs any, between (two) vs among (many), each other vs one another, and correct pronoun forms.",
+        "example": {
+          "q": "Improve the underlined part: The players distributed the reward <u>between themselves</u>.",
+          "steps": [
+            "<i>The players</i> means more than two people.",
+            "<i>among</i> is used for more than two.",
+            "<i>themselves</i> is the correct reflexive."
+          ],
+          "answer": "among themselves"
+        }
+      },
+      {
+        "type": "connectors-word-order",
+        "name": "Connectors, inversion and word order",
+        "how": "Check the pair (Hardly ... when, No sooner ... than), inversion after negative openers, and statement order inside an indirect question.",
+        "example": {
+          "q": "Improve the underlined part: Do you know <u>where does she reside</u>?",
+          "steps": [
+            "<i>where ...</i> is an indirect question inside <i>Do you know</i>.",
+            "Indirect questions use statement order with no <i>does</i>.",
+            "Third person singular takes <i>resides</i>."
+          ],
+          "answer": "where she resides"
+        }
+      },
+      {
+        "type": "word-choice",
+        "name": "Word choice and redundancy",
+        "how": "Remove words that repeat the meaning; pick the word whose exact meaning fits (populous vs populated, on foot vs by walk).",
+        "example": {
+          "q": "Improve the bold part: The teacher asked the boy to <b>repeat again</b> his answer.",
+          "steps": [
+            "<i>repeat</i> already means to say again.",
+            "<i>again</i> is redundant.",
+            "Keep only <i>repeat</i>."
+          ],
+          "answer": "repeat"
+        }
+      }
     ],
     "tips": [
-      "Eliminate options that introduce a new error; usually two options can be dropped quickly.",
-      "After <i>look forward to, object to, be used to, with a view to</i>, the verb takes <b>-ing</b>."
+      "Read the whole sentence before the options; the clue is often outside the underlined part (since, if, Hardly, than).",
+      "Predict the correction first, then look for it. This stops tempting but wrong options from steering you.",
+      "Reject any option that fixes the error but adds another one, or changes the meaning or tense of the sentence.",
+      "If the original passes every check, choose No improvement confidently; SSC uses it as the answer fairly often.",
+      "When two options are both grammatical, choose the more natural and concise one; SSC rewards standard idiom.",
+      "Learn the gerund-after-to list (look forward to, object to, be used to, with a view to); it appears every year.",
+      "Third conditional is the most tested pattern: had + V3 in one clause, would have + V3 in the other."
     ],
     "traps": [
-      "<i>Would</i> never goes in the <i>if</i>-clause of a conditional.",
-      "<i>Used to + verb</i> (past habit) and <i>be used to + -ing</i> (accustomed) mean different things."
+      "'If I was' in an unreal condition is wrong in SSC; use 'If I were'.",
+      "Never use would in the if clause: 'If I had known', not 'If I would have known'.",
+      "In 'look forward to', 'object to' and 'used to' (meaning accustomed), to is a preposition, so the next verb takes -ing.",
+      "Indirect questions do not take do/does/did or question order: 'I wonder where he lives', not 'where does he live'.",
+      "Hardly and Scarcely pair with when; only No sooner pairs with than.",
+      "A longer or more formal option is not automatically better. Check grammar, not length."
     ]
   },
   "questions": [
-    { "id": "e-improvement-001", "rev": 1, "topic": "e-improvement", "type": "redundancy", "level": 1, "q": "Select the most appropriate option to improve the bold part.<br>The teacher asked the boy to <b>repeat again</b> his answer.", "options": ["repeat once again", "repeat", "again repeat", "No improvement"], "answer": 1, "solution": "<i>Repeat</i> already means 'say again', so <i>again</i> is redundant. Correct: <b>repeat</b> his answer.", "source": "test-data" },
-    { "id": "e-improvement-002", "rev": 1, "topic": "e-improvement", "type": "no-improvement", "level": 1, "q": "Select the most appropriate option to improve the bold part.<br>She <b>has been living</b> in Pune for ten years.", "options": ["is living", "lives", "was living", "No improvement"], "answer": 3, "solution": "<i>for ten years</i> describes an action that started in the past and continues now, so the present perfect continuous <b>has been living</b> is correct. No improvement.", "source": "test-data" },
-    { "id": "e-improvement-003", "rev": 1, "topic": "e-improvement", "type": "conditional", "level": 2, "q": "Select the most appropriate option to improve the bold part.<br>If I <b>was</b> the Prime Minister, I would build more schools.", "options": ["am", "were", "had been", "No improvement"], "answer": 1, "solution": "For an imaginary present situation, English uses the subjunctive <b>were</b> for all persons: <i>If I were…, I would…</i>", "source": "test-data" },
-    { "id": "e-improvement-004", "rev": 1, "topic": "e-improvement", "type": "redundancy", "level": 2, "q": "Select the most appropriate option to improve the bold part.<br>We are looking forward to <b>meet</b> you at the conference.", "options": ["meeting", "have met", "be meeting", "No improvement"], "answer": 0, "solution": "In <i>look forward to</i>, <b>to</b> is a preposition, so it takes a gerund: <b>looking forward to meeting</b>.", "source": "test-data" },
-    { "id": "e-improvement-005", "rev": 1, "topic": "e-improvement", "type": "conditional", "level": 3, "q": "Select the most appropriate option to improve the bold part.<br>Had he <b>listened to</b> his doctor, he <b>will not fall</b> ill.", "options": ["would not fall", "would not have fallen", "will not have fallen", "No improvement"], "answer": 1, "solution": "<i>Had he listened</i> = <i>If he had listened</i> (type 3, unreal past). The main clause must be <b>would not have fallen</b>.", "source": "test-data" },
-    { "id": "e-improvement-006", "rev": 1, "topic": "e-improvement", "type": "no-improvement", "level": 3, "q": "Select the most appropriate option to improve the bold part.<br>Hardly <b>had we reached</b> the station when the train left.", "options": ["we had reached", "did we reach", "we reached", "No improvement"], "answer": 3, "solution": "With a negative adverb like <i>Hardly</i> at the start, the auxiliary comes before the subject: <b>Hardly had we reached … when</b>. The sentence is already correct.", "source": "test-data" }
+    {"id":"e-improvement-001","rev":1,"topic":"e-improvement","type":"word-choice","level":1,"q":"Select the most appropriate option to improve the bold part.<br>The teacher asked the boy to <b>repeat again</b> his answer.","options":["repeat once again","repeat","again repeat","No improvement"],"answer":1,"solution":"<i>Repeat</i> already means 'say again', so <i>again</i> is redundant. Correct: <b>repeat</b> his answer.","source":"test-data"},
+    {"id":"e-improvement-002","rev":1,"topic":"e-improvement","type":"tense","level":1,"q":"Select the most appropriate option to improve the bold part.<br>She <b>has been living</b> in Pune for ten years.","options":["is living","lives","was living","No improvement"],"answer":3,"solution":"<i>for ten years</i> describes an action that started in the past and continues now, so the present perfect continuous <b>has been living</b> is correct. No improvement.","source":"test-data"},
+    {"id":"e-improvement-003","rev":1,"topic":"e-improvement","type":"conditionals","level":2,"q":"Select the most appropriate option to improve the bold part.<br>If I <b>was</b> the Prime Minister, I would build more schools.","options":["am","were","had been","No improvement"],"answer":1,"solution":"For an imaginary present situation, English uses the subjunctive <b>were</b> for all persons: <i>If I were…, I would…</i>","source":"test-data"},
+    {"id":"e-improvement-004","rev":1,"topic":"e-improvement","type":"verb-patterns","level":2,"q":"Select the most appropriate option to improve the bold part.<br>We are looking forward to <b>meet</b> you at the conference.","options":["meeting","have met","be meeting","No improvement"],"answer":0,"solution":"In <i>look forward to</i>, <b>to</b> is a preposition, so it takes a gerund: <b>looking forward to meeting</b>.","source":"test-data"},
+    {"id":"e-improvement-005","rev":1,"topic":"e-improvement","type":"conditionals","level":3,"q":"Select the most appropriate option to improve the bold part.<br>Had he <b>listened to</b> his doctor, he <b>will not fall</b> ill.","options":["would not fall","would not have fallen","will not have fallen","No improvement"],"answer":1,"solution":"<i>Had he listened</i> = <i>If he had listened</i> (type 3, unreal past). The main clause must be <b>would not have fallen</b>.","source":"test-data"},
+    {"id":"e-improvement-006","rev":1,"topic":"e-improvement","type":"connectors-word-order","level":3,"q":"Select the most appropriate option to improve the bold part.<br>Hardly <b>had we reached</b> the station when the train left.","options":["we had reached","did we reach","we reached","No improvement"],"answer":3,"solution":"With a negative adverb like <i>Hardly</i> at the start, the auxiliary comes before the subject: <b>Hardly had we reached … when</b>. The sentence is already correct.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-impr-1", "front": "If I ___ you, I would…", "back": "If I <b>were</b> you (subjunctive)", "deck": "grammar" },
-    { "id": "fc-e-impr-2", "front": "Type 3 conditional pattern", "back": "If + had + V3, … would have + V3", "deck": "grammar" },
-    { "id": "fc-e-impr-3", "front": "look forward to ___ (meet)", "back": "look forward to <b>meeting</b> — 'to' is a preposition here", "deck": "grammar" }
+    {"id":"fc-e-impr-1","front":"If I ___ you, I would…","back":"If I <b>were</b> you (subjunctive)","deck":"grammar"},
+    {"id":"fc-e-impr-2","front":"Type 3 conditional pattern","back":"If + had + V3, … would have + V3","deck":"grammar"},
+    {"id":"fc-e-impr-3","front":"look forward to ___ (meet)","back":"look forward to <b>meeting</b> — 'to' is a preposition here","deck":"grammar"},
+    {"id":"fc-e-impr-4","front":"Type 1 conditional pattern","back":"If + simple present, ... <b>will</b> + V1: <i>If it rains, we will stay in.</i>","deck":"grammar"},
+    {"id":"fc-e-impr-5","front":"Type 2 conditional pattern","back":"If + simple past (were), ... <b>would</b> + V1: <i>If I had money, I would buy it.</i>","deck":"grammar"},
+    {"id":"fc-e-impr-6","front":"capable / confident / fond / proud + ?","back":"<b>of + -ing</b>: capable of doing, confident of winning","deck":"grammar"},
+    {"id":"fc-e-impr-7","front":"Do you know where ___ (she reside)?","back":"where <b>she resides</b>: statement order inside a question","deck":"grammar"},
+    {"id":"fc-e-impr-8","front":"insist + ?","back":"insist <b>on</b> + -ing, or insist <b>that</b> + subject + V1: <i>She insisted that I take the medicine.</i>","deck":"grammar"}
   ]
 }

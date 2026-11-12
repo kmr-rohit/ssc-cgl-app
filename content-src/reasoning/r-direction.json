@@ -1,71 +1,114 @@
 {
  "topic": "r-direction",
  "notes": {
-  "summary": "Direction questions trace a person's walk and ask for the final <b>direction</b> or the <b>shortest distance</b> from the start. Draw the path as you read. Usually 1 question in Tier 1 and Tier 2.",
+  "summary": "Direction questions trace a walk or a set of turns and ask for the final <b>direction</b> or the <b>shortest distance</b> from the start. Some use the sun's <b>shadow</b>, and some place several points relative to each other. SSC asks about 1 question in Tier 1 and Tier 2. Draw the path as you read; it takes seconds and prevents almost every error.",
   "concepts": [
    {
     "title": "The compass",
-    "body": "North is up, South down, East right, West left. NE, NW, SE, SW lie between them. A right turn = 90° clockwise; a left turn = 90° anticlockwise.",
-    "img": "reasoning/compass.svg"
+    "img": "reasoning/compass.svg",
+    "body": "On paper, <b>North is up</b>, South is down, East is right and West is left. Between them are North-East (NE), South-East (SE), South-West (SW) and North-West (NW).<br><b>Opposites:</b> N–S, E–W, NE–SW, NW–SE.<br>Each step around the compass from N to NE to E is 45°. A full turn is 360°."
    },
    {
-    "title": "Shortest distance",
-    "body": "Add all East–West moves and all North–South moves separately. The shortest distance is √(x² + y²) (Pythagoras). Learn the triples 3-4-5, 5-12-13, 8-15-17, 6-8-10."
+    "title": "Left and right turns",
+    "body": "A right turn is 90° clockwise; a left turn is 90° anticlockwise. What is \"right\" depends on which way the person is facing:<table><thead><tr><th>Facing</th><th>Right turn</th><th>Left turn</th><th>About turn</th></tr></thead><tbody><tr><td>North</td><td>East</td><td>West</td><td>South</td></tr><tr><td>East</td><td>South</td><td>North</td><td>West</td></tr><tr><td>South</td><td>West</td><td>East</td><td>North</td></tr><tr><td>West</td><td>North</td><td>South</td><td>East</td></tr></tbody></table>Easy check: when facing South, your right hand points West, the opposite of when facing North."
    },
    {
-    "title": "Shadows",
-    "body": "The sun rises in the East. In the <b>morning</b> shadows fall to the <b>West</b>; in the <b>evening</b> they fall to the <b>East</b>. At noon there is almost no shadow."
+    "title": "Turning by angles: add up the turns",
+    "body": "For many turns, do not track each one. Count clockwise turns as <b>+</b> and anticlockwise turns as <b>−</b>, add them, and turn once by the total.<br>Example: facing SE, turns of 135° clockwise, 90° anticlockwise, 45° clockwise and 135° anticlockwise.<br>Total = +135 − 90 + 45 − 135 = −45, so a single 45° anticlockwise turn. From SE, 45° anticlockwise is East.<br>If the total is more than 360°, subtract 360°. If you are asked for the <b>starting</b> direction, reverse the total and apply it to the final direction."
+   },
+   {
+    "title": "Shortest distance: net movement and Pythagoras",
+    "body": "<ol><li>Add all North moves and subtract all South moves: the net North-South distance.</li><li>Add all East moves and subtract all West moves: the net East-West distance.</li><li>If one of them is zero, the other is the answer.</li><li>Otherwise, shortest distance = √(NS² + EW²).</li></ol><b>Triples worth knowing</b> (a, b, hypotenuse): 3-4-5, 6-8-10, 5-12-13, 8-15-17, 7-24-25, 9-12-15, 20-21-29, and their multiples (30-40-50, 200-210-290)."
+   },
+   {
+    "title": "Which direction is the end point?",
+    "body": "Combine the two net moves: net North and net East means the end point is North-East of the start; net South and net West means South-West, and so on. \"Exactly NE\" needs equal moves; SSC options still say NE whenever both are North and East.<br><b>Watch the wording.</b> \"Direction of the house from me\" and \"direction of me from the house\" are opposites. If the bank is South-East of the office, the office is North-West of the bank."
+   },
+   {
+    "title": "Shadows and the sun",
+    "body": "The sun rises in the <b>East</b> and sets in the <b>West</b>. A shadow always falls on the side away from the sun.<table><thead><tr><th>Time</th><th>Sun</th><th>Shadow falls towards</th></tr></thead><tbody><tr><td>Morning (after sunrise)</td><td>East</td><td>West</td></tr><tr><td>Evening (before sunset)</td><td>West</td><td>East</td></tr><tr><td>Noon</td><td>Overhead</td><td>Almost no shadow</td></tr></tbody></table><b>Morning:</b> shadow to your left means you face North; to your right means South; in front means West; behind means East.<br><b>Evening:</b> shadow to your left means you face South; to your right means North; in front means East; behind means West."
+   },
+   {
+    "title": "Placing points on a grid",
+    "body": "For questions with many points (houses, trees, people), put the first point at the centre (0, 0). North adds to the up value, East adds to the right value. Example: A is 30 m north of E, so A = (0, 30) when E = (0, 0). F is 50 m east of A, so F = (50, 30).<br>When symbols are used (\"P $ Q means P is north of Q\"), write the meaning of each symbol first, then place the points the same way."
+   },
+   {
+    "title": "Tricky starting points",
+    "body": "<ul><li>\"Exits from the <b>back door</b> of a north-facing house\" means the person walks <b>South</b> at first.</li><li>\"Walks towards the sun in the morning\" means walking East.</li><li>\"Turns back\" or \"about turn\" is 180°.</li><li>If the first direction is not given (\"walks X m\"), describe the walk with letters, then use the final direction given in the question to fix the start.</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "final-direction",
-    "name": "Final facing direction",
-    "how": "Track only the turns: right = +90° clockwise, left = −90°.",
+    "name": "Facing direction after turns",
+    "how": "Count clockwise turns as + and anticlockwise as −. Add them and make one turn by the total from the starting direction.",
     "example": {
-     "q": "Facing North, a man turns right, then right again. Where does he face?",
+     "q": "Reeta faces South-East. She turns 135° clockwise, then 90° anticlockwise, then 45° clockwise, then 135° anticlockwise. Which way does she face now?",
      "steps": [
-      "North → right → East",
-      "East → right → South"
+      "Total turn = +135 − 90 + 45 − 135 = −45.",
+      "So she turns 45° anticlockwise in all.",
+      "45° anticlockwise from South-East is East."
      ],
-     "answer": "South"
+     "answer": "East"
     }
    },
    {
     "type": "shortest-distance",
     "name": "Distance and direction from start",
-    "how": "Draw the path, find net x and net y, then use Pythagoras.",
+    "how": "Draw the walk. Find the net North-South and East-West distances, then use Pythagoras. Combine the two net directions for the final direction.",
     "example": {
-     "q": "Walk 3 km North, then 4 km East. Distance from start?",
+     "q": "Shweta walks 150 m South, turns right and walks 80 m, turns left and walks 60 m, then turns left and walks 280 m to reach a bank. How far and in which direction is the bank from her office?",
      "steps": [
-      "Net: 4 East, 3 North",
-      "√(16 + 9) = 5"
+      "Facing South, a right turn is West: 80 m West. Then left (South): 60 m South. Then left (East): 280 m East.",
+      "Net South = 150 + 60 = 210 m. Net East = 280 − 80 = 200 m.",
+      "Distance = √(210² + 200²) = √(44100 + 40000) = √84100 = 290 m."
      ],
-     "answer": "5 km, North-East"
+     "answer": "290 m, South-East"
     }
    },
    {
     "type": "shadow",
-    "name": "Shadow based",
-    "how": "Morning sun in the East → shadow to the West. Evening → shadow to the East.",
+    "name": "Shadow questions",
+    "how": "Fix where the sun is (East in the morning, West in the evening). The shadow points the other way. Then find which way the person faces so that the shadow is on the stated side.",
     "example": {
-     "q": "In the morning, Ravi's shadow falls to his left. Which way is he facing?",
+     "q": "One evening, Lopa and Kritika sit facing each other. Lopa's shadow falls to Kritika's right. Which direction is Kritika facing?",
      "steps": [
-      "Shadow points West.",
-      "If West is on his left, he faces North."
+      "In the evening, the sun is in the West, so shadows fall towards the East.",
+      "Kritika's right side is East.",
+      "If your right is East, you face North."
      ],
      "answer": "North"
+    }
+   },
+   {
+    "type": "relative-position",
+    "name": "Relative position of points",
+    "how": "Put one point at (0, 0). Place every other point using the given distances (North up, East right). Read the asked position from the coordinates.",
+    "example": {
+     "q": "D is 60 m south of E. F is 40 m south of B. A is 30 m north of E. F is 50 m east of A. C is 50 m west of B. Where is C with respect to A?",
+     "steps": [
+      "Take E = (0, 0). Then A = (0, 30).",
+      "F is 50 m east of A: F = (50, 30). B is 40 m north of F: B = (50, 70).",
+      "C is 50 m west of B: C = (0, 70).",
+      "C is straight above A by 70 − 30 = 40 m."
+     ],
+     "answer": "40 m North of A"
     }
    }
   ],
   "tips": [
-   "Always draw a rough sketch, even for easy questions.",
-   "Turning \"left\" depends on the way the person is facing, not on your page.",
-   "For direction of B from A, place yourself at A and look at B."
+   "Draw the path with North up as you read the question.",
+   "For many turns, add clockwise turns and subtract anticlockwise turns, then turn once.",
+   "Learn the triples 3-4-5, 5-12-13, 8-15-17 and 20-21-29; most distance answers use them.",
+   "Facing South, right is West and left is East; do not use your own left and right on the page.",
+   "In the morning, shadows fall West; in the evening, they fall East.",
+   "Read the last line twice: \"direction of A from B\" is the opposite of \"B from A\"."
   ],
   "traps": [
-   "Direction of A from B is the opposite of the direction of B from A.",
-   "Do not add all distances; find the straight-line distance."
+   "Taking left and right as fixed on the page instead of relative to where the person faces.",
+   "Adding distances along the path instead of using net movement and Pythagoras.",
+   "Giving the reverse direction (the start from the end point instead of the end point from the start).",
+   "The back door of a north-facing house opens to the South."
   ]
  },
  "questions": [
@@ -159,7 +202,7 @@
    "id": "r-direction-006",
    "rev": 1,
    "topic": "r-direction",
-   "type": "shortest-distance",
+   "type": "relative-position",
    "level": 3,
    "q": "Point A is 8 m West of point B. Point C is 12 m North of B. Point D is 8 m East of C. What is the distance between A and D, and in which direction is D from A?",
    "options": [

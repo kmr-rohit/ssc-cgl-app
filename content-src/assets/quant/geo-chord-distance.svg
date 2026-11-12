@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" width="300" height="220" font-family="sans-serif" font-size="13">
+  <circle cx="150" cy="105" r="85" fill="none" stroke="#000" stroke-width="1.5"/>
+  <line x1="77.9" y1="150" x2="222.1" y2="150" stroke="#000" stroke-width="1.5"/>
+  <line x1="150" y1="105" x2="150" y2="150" stroke="#000" stroke-dasharray="5 3"/>
+  <line x1="150" y1="105" x2="77.9" y2="150" stroke="#000" stroke-width="1"/>
+  <circle cx="150" cy="105" r="2.5" fill="#000"/>
+  <path d="M 150 142 h 8 v 8" fill="none" stroke="#000"/>
+  <text x="146" y="97">O</text>
+  <text x="61.9" y="156">A</text>
+  <text x="228.1" y="156">B</text>
+  <text x="146" y="166">M</text>
+  <text x="155" y="131.5">d</text>
+  <text x="103.9" y="123.5">r</text>
+  <text x="176.1" y="164">L/2</text>
+</svg>

@@ -1,78 +1,179 @@
 {
  "topic": "q-statistics",
  "notes": {
-  "summary": "Statistics in Quant covers mean, median, mode and range for small data sets. 0–1 questions in Tier 1, 1–2 in Tier 2.",
+  "summary": "Statistics in Tier 2 asks you to summarise data with one number: an average (mean, median, mode) or a measure of spread (range, mean deviation, standard deviation). It gives 1 to 2 questions. Most are direct formula questions on a list or a frequency table, so learn the grouped formulas and work neatly in a table.",
   "concepts": [
    {
-    "title": "Mean",
-    "body": "Mean = sum of observations / number of observations. For a frequency table, mean = Σfx / Σf."
+    "title": "Mean of raw and frequency data",
+    "body": "<p>The <b>mean</b> (arithmetic mean, average) is the total divided by the count.</p><ul><li>Raw data: mean = Σx ÷ n. Example: 23, 17, 20, 19, 21 add to 100, so the mean is 100 ÷ 5 = 20.</li><li>Frequency data (value x appears f times): mean = Σfx ÷ Σf.</li></ul><table><thead><tr><th>x</th><th>f</th><th>fx</th></tr></thead><tbody><tr><td>10</td><td>3</td><td>30</td></tr><tr><td>20</td><td>5</td><td>100</td></tr><tr><td>30</td><td>8</td><td>240</td></tr><tr><td>40</td><td>4</td><td>160</td></tr><tr><td>Total</td><td>20</td><td>530</td></tr></tbody></table><p>Mean = 530 ÷ 20 = 26.5.</p><p><b>Useful facts</b></p><ul><li>The deviations from the mean always add to zero: Σ(x − mean) = 0.</li><li>Add k to every value and the mean goes up by k. Multiply every value by k and the mean is multiplied by k.</li><li>Mean of the first n natural numbers = (n + 1)/2. Mean of an evenly spaced list = (first + last)/2.</li></ul>"
    },
    {
-    "title": "Median and mode",
-    "body": "<b>Median</b>: arrange in order; middle value (odd n) or average of the two middle values (even n). <b>Mode</b>: the value that occurs most often."
+    "title": "Mean of grouped data",
+    "body": "<p>For a table of classes, use the <b>class mark</b> (mid-point) of each class as x. Three methods give the same answer:</p><ul><li>Direct: mean = Σfx ÷ Σf.</li><li>Assumed mean: pick A in the middle, d = x − A, mean = A + Σfd ÷ Σf.</li><li>Step deviation: u = (x − A)/h where h is the class width, mean = A + (Σfu ÷ Σf) × h.</li></ul><table><thead><tr><th>Class</th><th>f</th><th>x</th><th>fx</th><th>u</th><th>fu</th><th>cf</th></tr></thead><tbody><tr><td>0 to 10</td><td>5</td><td>5</td><td>25</td><td>−2</td><td>−10</td><td>5</td></tr><tr><td>10 to 20</td><td>8</td><td>15</td><td>120</td><td>−1</td><td>−8</td><td>13</td></tr><tr><td>20 to 30</td><td>15</td><td>25</td><td>375</td><td>0</td><td>0</td><td>28</td></tr><tr><td>30 to 40</td><td>7</td><td>35</td><td>245</td><td>1</td><td>7</td><td>35</td></tr><tr><td>40 to 50</td><td>5</td><td>45</td><td>225</td><td>2</td><td>10</td><td>40</td></tr><tr><td>Total</td><td>40</td><td></td><td>990</td><td></td><td>−1</td><td></td></tr></tbody></table><p>Direct: 990 ÷ 40 = 24.75. Step deviation with A = 25, h = 10: 25 + (−1/40) × 10 = 24.75. The same table is used for the median below.</p>"
    },
    {
-    "title": "Empirical relation",
-    "body": "For a moderately skewed distribution: <b>Mode = 3 Median − 2 Mean</b>."
+    "title": "Corrected, combined and missing values",
+    "body": "<ul><li><b>Wrong entry</b>: correct total = n × wrong mean − wrong value + right value. Then divide by n again.</li><li><b>Combined mean</b> of two groups = (n<sub>1</sub>x̄<sub>1</sub> + n<sub>2</sub>x̄<sub>2</sub>) ÷ (n<sub>1</sub> + n<sub>2</sub>). Example: 30 students averaging 60 and 20 averaging 70 give (1800 + 1400) ÷ 50 = 64.</li><li><b>Overlapping groups</b>: if the first 13 and the last 13 of 25 numbers are given, the 13th number is counted twice. 13th = (sum of first 13) + (sum of last 13) − (sum of all 25).</li><li><b>Missing value or frequency</b>: write total = mean × count as an equation and solve.</li><li>A number added or removed: it equals new total − old total.</li></ul><p>Example: the mean of 10 numbers is 20, but 25 was copied as 52. Correct total = 200 − 52 + 25 = 173, so the correct mean is 17.3.</p>"
+   },
+   {
+    "title": "Median",
+    "body": "<p>The <b>median</b> is the middle value after sorting.</p><ul><li>n odd: median = the ((n + 1)/2)th value.</li><li>n even: median = average of the (n/2)th and (n/2 + 1)th values.</li></ul><p>Example: 15, 6, 23, 18, 11, 9, 30, 14 sorted is 6, 9, 11, 14, 15, 18, 23, 30. The middle two are 14 and 15, so the median is 14.5.</p><p><b>Grouped data</b>: find N/2, then the first class whose cumulative frequency (cf) reaches N/2. That is the median class.</p><p>Median = l + ((N/2 − cf) ÷ f) × h, where l is the lower limit of the median class, cf is the cumulative frequency before it, f is its frequency and h is the class width.</p><p>For the table above, N/2 = 20 and the cf column reaches 20 in the class 20 to 30. Median = 20 + ((20 − 13) ÷ 15) × 10 = 24.67.</p>"
+   },
+   {
+    "title": "Mode",
+    "img": "quant/stat-modal-class.svg",
+    "body": "<p>The <b>mode</b> is the value that appears most often. A list can have one mode, two (bimodal) or none.</p><p>Example: in a, a + 2, a + 4, a + 6, a + 6, a + 6, a + 8 the mode is a + 6. If the mode is 26, then a = 20.</p><p><b>Grouped data</b>: the modal class has the highest frequency f<sub>1</sub>. Let f<sub>0</sub> be the frequency of the class before it and f<sub>2</sub> the class after it.</p><p>Mode = l + ((f<sub>1</sub> − f<sub>0</sub>) ÷ (2f<sub>1</sub> − f<sub>0</sub> − f<sub>2</sub>)) × h.</p><p>In the figure the modal class is 25 to 30 with f<sub>1</sub> = 11, f<sub>0</sub> = 9, f<sub>2</sub> = 10, h = 5. Mode = 25 + (2 ÷ 3) × 5 = 28.33.</p>"
+   },
+   {
+    "title": "Relation between mean, median and mode",
+    "body": "<p>For a moderately skewed distribution: <b>mode = 3 median − 2 mean</b>.</p><ul><li>Rearranged: median = (mode + 2 mean)/3, and mean = (3 median − mode)/2.</li><li>Symmetric data (like a bell curve): mean = median = mode.</li><li>Positively skewed (long tail to the right): mean > median > mode.</li><li>Negatively skewed (long tail to the left): mean < median < mode.</li></ul><p>Example: mean 30 and median 28 give mode = 84 − 60 = 24.</p>"
+   },
+   {
+    "title": "Range, mean deviation, variance and standard deviation",
+    "body": "<p>These measure how spread out the data is.</p><table><thead><tr><th>Measure</th><th>Formula</th></tr></thead><tbody><tr><td>Range</td><td>largest value − smallest value</td></tr><tr><td>Mean deviation</td><td>Σ|x − mean| ÷ n</td></tr><tr><td>Variance σ<sup>2</sup></td><td>Σ(x − mean)<sup>2</sup> ÷ n = (Σx<sup>2</sup> ÷ n) − mean<sup>2</sup></td></tr><tr><td>Standard deviation σ</td><td>√variance</td></tr><tr><td>Coefficient of variation</td><td>(σ ÷ mean) × 100</td></tr></tbody></table><p>Example: 23, 17, 20, 19, 21 has mean 20. Deviations 3, −3, 0, −1, 1. Mean deviation = 8 ÷ 5 = 1.6. Variance = (9 + 9 + 0 + 1 + 1) ÷ 5 = 4, so SD = 2. Range = 23 − 17 = 6.</p><p><b>Effect of changing every value</b></p><table><thead><tr><th>Change</th><th>Mean, median, mode</th><th>Range, SD</th><th>Variance</th></tr></thead><tbody><tr><td>Add or subtract k</td><td>changes by k</td><td>no change</td><td>no change</td></tr><tr><td>Multiply by k</td><td>multiplied by k</td><td>multiplied by |k|</td><td>multiplied by k<sup>2</sup></td></tr></tbody></table><p>The SD of the first n natural numbers is √((n<sup>2</sup> − 1)/12). SD is never negative, and it is zero only when all values are equal.</p><p>SSC usually divides by n. If the answer does not match, check whether the options used n − 1 (sample SD).</p>"
    }
   ],
   "varieties": [
    {
     "type": "mean",
-    "name": "Mean and corrected mean",
-    "how": "Work with the total; fix wrong entries by subtracting the wrong value and adding the right one.",
+    "name": "Mean",
+    "how": "Turn every mean into a total (mean × count), do the adding or correcting with totals, then divide once at the end.",
     "example": {
-     "q": "Mean of 2, 4, 6, 8?",
+     "q": "The mean of 25 numbers is 36. The mean of the first 13 is 32 and the mean of the last 13 is 40. Find the 13th number.",
      "steps": [
-      "Sum = 20",
-      "20/4 = 5"
+      "Sum of all 25 = 25 × 36 = 900",
+      "Sum of first 13 = 416, sum of last 13 = 520",
+      "The 13th number is counted in both groups",
+      "13th = 416 + 520 − 900 = 36"
      ],
-     "answer": "5"
+     "answer": "36"
     }
    },
    {
-    "type": "median-mode",
-    "name": "Median and mode",
-    "how": "Sort the data first; count frequencies for mode.",
+    "type": "median",
+    "name": "Median",
+    "how": "Sort raw data and take the middle. For a table, build the cumulative frequency column, find the class that reaches N/2, and use l + ((N/2 − cf)/f) × h.",
     "example": {
-     "q": "Median of 9, 2, 7, 4, 5?",
+     "q": "Find the median: classes 0 to 10, 10 to 20, 20 to 30, 30 to 40, 40 to 50 with frequencies 5, 8, 15, 7, 5.",
      "steps": [
-      "Sorted: 2, 4, 5, 7, 9",
-      "Middle value"
+      "N = 40, so N/2 = 20",
+      "Cumulative frequencies: 5, 13, 28, 35, 40, so the median class is 20 to 30",
+      "l = 20, cf = 13, f = 15, h = 10",
+      "Median = 20 + (7/15) × 10 = 24.67"
      ],
-     "answer": "5"
+     "answer": "24.67 (24⅔)"
     }
    },
    {
-    "type": "empirical",
-    "name": "Mean–median–mode relation",
-    "how": "Use Mode = 3 Median − 2 Mean.",
+    "type": "mode",
+    "name": "Mode",
+    "how": "For a list, count repeats. For a table, take the class with the highest frequency and use l + ((f<sub>1</sub> − f<sub>0</sub>)/(2f<sub>1</sub> − f<sub>0</sub> − f<sub>2</sub>)) × h.",
     "example": {
-     "q": "Mean 20, median 22. Mode?",
+     "q": "Find the mode: classes 5 to 10, 10 to 15, 15 to 20, 20 to 25, 25 to 30, 30 to 35 with frequencies 8, 7, 6, 9, 11, 10.",
+     "img": "quant/stat-modal-class.svg",
      "steps": [
-      "3 × 22 − 2 × 20 = 66 − 40"
+      "Highest frequency 11, so the modal class is 25 to 30",
+      "f<sub>1</sub> = 11, f<sub>0</sub> = 9, f<sub>2</sub> = 10, h = 5",
+      "Mode = 25 + (11 − 9)/(22 − 9 − 10) × 5",
+      "= 25 + (2/3) × 5 = 28.33"
      ],
-     "answer": "26"
+     "answer": "28.33"
+    }
+   },
+   {
+    "type": "empirical-relation",
+    "name": "Mean, median and mode relation",
+    "how": "Write mode = 3 median − 2 mean and put in the two values you know.",
+    "example": {
+     "q": "In a moderately skewed distribution the mean is 45 and the mode is 39. Find the median.",
+     "steps": [
+      "39 = 3 × median − 2 × 45",
+      "3 × median = 39 + 90 = 129",
+      "Median = 43"
+     ],
+     "answer": "43"
+    }
+   },
+   {
+    "type": "dispersion",
+    "name": "Range, deviation and SD",
+    "how": "Find the mean, then the squared deviations, average them for the variance and take the square root. Or use Σx<sup>2</sup>/n − mean<sup>2</sup>.",
+    "example": {
+     "q": "Find the standard deviation of 5, 3, 4, 7 (to two decimal places).",
+     "steps": [
+      "Mean = 19/4 = 4.75",
+      "Σx<sup>2</sup> = 25 + 9 + 16 + 49 = 99, so Σx<sup>2</sup>/n = 24.75",
+      "Variance = 24.75 − 4.75<sup>2</sup> = 24.75 − 22.5625 = 2.1875",
+      "SD = √2.1875 = 1.48"
+     ],
+     "answer": "1.48"
     }
    }
   ],
   "tips": [
-   "Always sort before finding the median.",
-   "For a frequency table, multiply each value by its frequency before adding."
+   "Convert means into totals before adding, removing or correcting values.",
+   "For grouped tables, always write the class mark and cumulative frequency columns first; median and mode both need them.",
+   "Use the step-deviation method when class marks are large; the numbers stay small.",
+   "If two of mean, median and mode are given, the third comes from mode = 3 median − 2 mean.",
+   "Adding a constant to every value does not change the SD or range; multiplying does.",
+   "For variance, Σx<sup>2</sup>/n − mean<sup>2</sup> is faster than squaring every deviation."
   ],
   "traps": [
-   "For an even count, the median is the average of the two middle values.",
-   "Mode = 3 Median − 2 Mean, not 3 Mean − 2 Median."
+   "Sort the data before taking the median.",
+   "For an even count, the median is the average of the two middle values, not one of them.",
+   "In the grouped mode formula, f<sub>0</sub> and f<sub>2</sub> are the classes just before and after the modal class, not the smallest frequencies.",
+   "In the grouped median formula, cf is the cumulative frequency of the class before the median class.",
+   "Variance is in squared units; take the square root for the SD."
   ]
  },
  "formulas": [
+  {
+   "name": "Mean (raw)",
+   "expr": "Σx / n"
+  },
   {
    "name": "Mean (frequency)",
    "expr": "Σfx / Σf"
   },
   {
+   "name": "Mean (step deviation)",
+   "expr": "A + (Σfu / Σf) × h, u = (x − A)/h"
+  },
+  {
+   "name": "Combined mean",
+   "expr": "(n₁x̄₁ + n₂x̄₂) / (n₁ + n₂)"
+  },
+  {
+   "name": "Median (grouped)",
+   "expr": "l + ((N/2 − cf) / f) × h"
+  },
+  {
+   "name": "Mode (grouped)",
+   "expr": "l + ((f₁ − f₀) / (2f₁ − f₀ − f₂)) × h"
+  },
+  {
    "name": "Empirical relation",
    "expr": "Mode = 3 Median − 2 Mean"
+  },
+  {
+   "name": "Mean deviation",
+   "expr": "Σ|x − x̄| / n"
+  },
+  {
+   "name": "Variance",
+   "expr": "Σ(x − x̄)² / n = Σx²/n − x̄²"
+  },
+  {
+   "name": "Standard deviation",
+   "expr": "√variance"
+  },
+  {
+   "name": "Coefficient of variation",
+   "expr": "(σ / x̄) × 100"
+  },
+  {
+   "name": "SD of first n natural numbers",
+   "expr": "√((n² − 1)/12)"
   }
  ],
  "questions": [
@@ -97,7 +198,7 @@
    "id": "q-statistics-002",
    "rev": 1,
    "topic": "q-statistics",
-   "type": "median-mode",
+   "type": "median",
    "level": 1,
    "q": "What is the median of 7, 3, 9, 5, 11, 2?",
    "options": [
@@ -114,7 +215,7 @@
    "id": "q-statistics-003",
    "rev": 1,
    "topic": "q-statistics",
-   "type": "median-mode",
+   "type": "mode",
    "level": 2,
    "q": "Find the mode of the data: 2, 3, 3, 5, 7, 7, 7, 8, 9.",
    "options": [
@@ -148,7 +249,7 @@
    "id": "q-statistics-005",
    "rev": 1,
    "topic": "q-statistics",
-   "type": "empirical",
+   "type": "empirical-relation",
    "level": 3,
    "q": "For a moderately skewed distribution, the mean is 30 and the median is 28. What is the mode (approximately)?",
    "options": [

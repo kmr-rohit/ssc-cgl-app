@@ -5,6 +5,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, wri
 import { join, relative } from 'node:path';
 import { TOPIC_MAP } from '../src/core/syllabus';
 import type { Manifest, TopicContent } from '../src/core/types';
+import { renderMathDeep } from './math';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const SRC = join(ROOT, 'content-src');
@@ -122,7 +123,7 @@ function main() {
   const manifest: Manifest = { version: '', builtAt: new Date().toISOString(), topics: {} };
   const all = createHash('sha256');
   for (const { c } of topics.sort((a, b) => a.c.topic.localeCompare(b.c.topic))) {
-    const body = JSON.stringify(c);
+    const body = JSON.stringify(renderMathDeep(c));
     const hash = createHash('sha256').update(body).digest('hex').slice(0, 10);
     all.update(hash);
     const file = `topics/${c.topic}.${hash}.json`;

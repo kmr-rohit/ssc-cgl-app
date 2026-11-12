@@ -1,52 +1,140 @@
 {
  "topic": "r-matching",
  "notes": {
-  "summary": "These questions test speed and accuracy: spotting <b>identical</b> names, addresses, numbers or dates, and reading letters from a <b>number matrix</b>. Usually 0–1 question.",
+  "summary": "These are clerical-speed questions: checking whether names, numbers, addresses and dates are <b>exactly</b> the same, reading letters from a <b>number matrix</b>, checking codes against rules, and putting names in <b>index order</b>. SSC asks 0 to 1 question. They need no formula, only a careful, chunk-by-chunk method.",
   "concepts": [
    {
-    "title": "Identical pairs",
-    "body": "Compare in small chunks (3–4 characters at a time). Watch for swapped digits (4471 / 4417), changed vowels (Kumar / Kumer) and changed punctuation."
+    "title": "What these questions test",
+    "body": "Government offices handle forms, registers and records all day. These questions check that you can spot a single wrong letter or digit quickly. The four common shapes:<ul><li>Count how many pairs are exactly the same.</li><li>Pick the address or record identical to the one given.</li><li>Match a date or city written in a different format.</li><li>Decode letters from a matrix of row and column numbers.</li></ul>"
+   },
+   {
+    "title": "Compare in small chunks",
+    "body": "Read 3 or 4 characters at a time from both items, using a pen as a pointer. Long numbers: split them the same way in both (457-3821 and 457-3281).<table><thead><tr><th>Common change</th><th>Example</th></tr></thead><tbody><tr><td>Two digits swapped</td><td>302015 / 302051</td></tr><tr><td>One vowel changed or added</td><td>Kumar / Kumer, Kamla / Kamala</td></tr><tr><td>Letters that look alike</td><td>O / 0, I / 1 / l, rn / m, S / 5</td></tr><tr><td>Singular and plural</td><td>Silver Oaks / Silver Oak</td></tr><tr><td>Number order in an address</td><td>24/B / 42/B, Sector 12 / Sector 21</td></tr><tr><td>Punctuation and spacing</td><td>A-101 / A101, St. / St</td></tr><tr><td>Short forms</td><td>Arjun Mehta / Arjun M.</td></tr></tbody></table>\"Exactly the same\" means every character, including dots, hyphens and spaces."
+   },
+   {
+    "title": "Matching addresses field by field",
+    "body": "Break the address into fields and compare one field across all options before moving on:<ol><li>Name</li><li>House or flat number</li><li>Building, street or sector</li><li>Area and city</li><li>PIN code (6 digits)</li></ol>After each field, cross out options that differ. Usually one option survives within three fields. If the question asks \"which entries are identical to each other\", compare each entry with the first one, then group the ones that match."
+   },
+   {
+    "title": "Date formats",
+    "body": "<table><thead><tr><th>Format</th><th>5 November 1998</th></tr></thead><tbody><tr><td>DD-MM-YYYY (India)</td><td>05-11-1998</td></tr><tr><td>MM/DD/YYYY (USA)</td><td>11/05/1998</td></tr><tr><td>YYYY-MM-DD (computers)</td><td>1998-11-05</td></tr><tr><td>In words</td><td>5 Nov 1998</td></tr></tbody></table><b>Month numbers:</b> 01 Jan, 02 Feb, 03 Mar, 04 Apr, 05 May, 06 Jun, 07 Jul, 08 Aug, 09 Sep, 10 Oct, 11 Nov, 12 Dec.<br><b>Days in a month:</b> 31 in Jan, Mar, May, Jul, Aug, Oct, Dec; 30 in Apr, Jun, Sep, Nov; 28 in Feb (29 in a leap year). So 31-04-2023 is not a real date.<br>First find which part is the day and which is the month, then compare."
+   },
+   {
+    "title": "Cities, states and PIN codes",
+    "body": "The <b>first digit</b> of an Indian PIN code shows the region:<table><thead><tr><th>First digit</th><th>Region</th></tr></thead><tbody><tr><td>1</td><td>Delhi, Haryana, Punjab, Himachal Pradesh, Jammu and Kashmir, Chandigarh</td></tr><tr><td>2</td><td>Uttar Pradesh, Uttarakhand</td></tr><tr><td>3</td><td>Rajasthan, Gujarat</td></tr><tr><td>4</td><td>Maharashtra, Goa, Madhya Pradesh, Chhattisgarh</td></tr><tr><td>5</td><td>Andhra Pradesh, Telangana, Karnataka</td></tr><tr><td>6</td><td>Tamil Nadu, Kerala, Puducherry</td></tr><tr><td>7</td><td>West Bengal, Odisha, the North-East</td></tr><tr><td>8</td><td>Bihar, Jharkhand</td></tr><tr><td>9</td><td>Army Postal Service</td></tr></tbody></table>So \"Jaipur – 302015\" is consistent, but \"Jaipur – 502015\" is not."
    },
    {
     "title": "Matrix indexing",
-    "body": "Each letter is given by <b>row number first, then column number</b>. For \"27\", go to row 2, column 7. A letter that appears twice in a matrix can have more than one code."
+    "body": "Letters are placed in a grid. Each letter is coded by its <b>row number first, then its column number</b>. If row 2, column 7 holds T, then T = 27.<ul><li>Often two matrices are given: Matrix I uses rows and columns 0 to 4, Matrix II uses 5 to 9. The digits tell you which matrix to look in.</li><li>A letter can appear more than once, so it can have several codes. That is why options may look different but all be correct.</li><li>To find the right option, check one code per option until one fails. To find the wrong option (\"which does NOT represent\"), find the code that points to a different letter.</li></ul>"
+   },
+   {
+    "title": "Code rules and roll numbers",
+    "body": "Some questions describe how a valid code is built, for example: \"2 capital letters for the state, then 4 digits for the year, a hyphen, then 5 digits\". Check each option against <b>every</b> rule in order: length, capitals or small letters, digits in the right places, separators. One broken rule makes the code invalid. Count characters carefully; a missing digit is the most common difference."
+   },
+   {
+    "title": "Name indexing",
+    "body": "In an index or directory, names are listed by <b>surname first</b>, then the first name.<ul><li>Rakesh Sharma is filed as \"Sharma, Rakesh\".</li><li>Same surname: sort by first name (Sharma, Anita before Sharma, Rakesh).</li><li>Titles such as Dr., Mr. and Smt. are ignored when sorting.</li><li>Initials come before full names that start with the same letter (Gupta, R. before Gupta, Rahul).</li></ul>After you rewrite the names surname first, use normal dictionary order."
    }
   ],
   "varieties": [
    {
     "type": "identical-pairs",
-    "name": "Identical pairs / address match",
-    "how": "Compare each pair chunk by chunk; count only exact matches.",
+    "name": "Identical pairs",
+    "how": "Compare each pair in chunks of 3 or 4 characters, including punctuation. Mark each pair same or different, then count.",
     "example": {
-     "q": "Are 4573821 and 4573281 the same?",
+     "q": "How many pairs are exactly the same?<br>(1) 7804219 – 7804291<br>(2) Suresh Chand – Suresh Chand<br>(3) AB-2207-K – AB-2207-K<br>(4) 14/03/2021 – 14/08/2021",
      "steps": [
-      "457-3821 vs 457-3281",
-      "\"82\" vs \"28\" differ"
+      "(1) 780-4219 and 780-4291: the last two digits are swapped. Different.",
+      "(2) Same. (3) Same.",
+      "(4) Month 03 and 08 differ. Different."
      ],
-     "answer": "Not the same"
+     "answer": "2"
+    }
+   },
+   {
+    "type": "address-matching",
+    "name": "Address matching",
+    "how": "Split the address into fields (name, house number, street, city, PIN). Compare one field across all options and cross out any that differ.",
+    "example": {
+     "q": "Which entries are identical to \"Meenal Gupta, 102, Silver Oaks, Sector 12, Noida, 201301\"?<br>1. Meenal Gupta, 102, Silver Oaks, Sector 12, Noida, 201301<br>2. Meenal Gupta, 102, Silver Oak, Sector 12, Noida, 201301<br>3. Meenal Gupta, 120, Silver Oaks, Sector 12, Noida, 201301<br>4. Meenal Gupta, 102, Silver Oaks, Sector 12, Noida, 201301",
+     "steps": [
+      "House number: entry 3 has 120, not 102. Cross it out.",
+      "Building: entry 2 has \"Silver Oak\", not \"Silver Oaks\". Cross it out.",
+      "Entries 1 and 4 match in every field."
+     ],
+     "answer": "1 and 4"
+    }
+   },
+   {
+    "type": "date-city-matching",
+    "name": "Date and city matching",
+    "how": "Work out which part is the day, the month and the year in each format. Convert the given date into the asked format and compare.",
+    "example": {
+     "q": "A ticket shows 09/07/2024 in the Indian DD/MM/YYYY format. What will the same date look like in the US format MM/DD/YYYY?",
+     "steps": [
+      "DD = 09, MM = 07, so the date is 9 July 2024.",
+      "In MM/DD/YYYY, the month comes first: 07/09/2024."
+     ],
+     "answer": "07/09/2024"
     }
    },
    {
     "type": "matrix-indexing",
     "name": "Matrix indexing",
-    "how": "For each number, read row then column; check every letter of the word.",
+    "how": "List every code of each letter (row first, then column). Check one code per option; reject an option as soon as one code points to a wrong letter.",
     "example": {
-     "q": "In a matrix, row 2 column 7 is T. What does 27 represent?",
+     "q": "Each letter is coded as row number then column number. Which set gives RATE?<table><thead><tr><th></th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><th>0</th><td>S</td><td>T</td><td>A</td><td>R</td><td>E</td></tr><tr><th>1</th><td>M</td><td>O</td><td>N</td><td>E</td><td>T</td></tr><tr><th>2</th><td>R</td><td>A</td><td>T</td><td>I</td><td>O</td></tr></tbody></table>(a) 08, 26, 19, 18 (b) 25, 07, 27, 17 (c) 08, 26, 28, 09 (d) 25, 16, 06, 09",
      "steps": [
-      "First digit = row 2",
-      "Second digit = column 7"
+      "R = 08 or 25; A = 07 or 26; T = 06, 19 or 27; E = 09 or 18.",
+      "(b) 17 = N. (c) 28 = I. (d) 16 = O. All wrong.",
+      "(a) 08 = R, 26 = A, 19 = T, 18 = E."
      ],
-     "answer": "T"
+     "answer": "(a) 08, 26, 19, 18"
+    }
+   },
+   {
+    "type": "code-rules",
+    "name": "Centre code and roll number rules",
+    "how": "Turn the rules into a checklist (length, letters, digits, separators, capitals). Test each option against every rule; one failure makes it invalid.",
+    "example": {
+     "q": "A valid roll number has 2 capital letters, then 4 digits for the year, then a hyphen, then 5 digits. Which is valid? (a) UP2024-12345 (b) Up2024-12345 (c) UP224-12345 (d) UP2024-1234",
+     "steps": [
+      "(b) has a small \"p\". Invalid.",
+      "(c) has only 3 digits for the year. Invalid.",
+      "(d) has only 4 digits after the hyphen. Invalid.",
+      "(a) follows every rule."
+     ],
+     "answer": "(a) UP2024-12345"
+    }
+   },
+   {
+    "type": "name-indexing",
+    "name": "Name indexing",
+    "how": "Rewrite each name surname first. Sort by surname, then by first name, using dictionary order. Ignore titles.",
+    "example": {
+     "q": "Arrange as in a directory: 1. Rakesh Sharma 2. Anita Sharma 3. Vikas Gupta 4. Rahul Sinha",
+     "steps": [
+      "Surname first: Sharma Rakesh, Sharma Anita, Gupta Vikas, Sinha Rahul.",
+      "Gupta comes first, then the two Sharmas, then Sinha.",
+      "Within Sharma: Anita before Rakesh."
+     ],
+     "answer": "3, 2, 1, 4"
     }
    }
   ],
   "tips": [
-   "Use your finger or pen to move across both items together.",
-   "In matrix questions, check the odd-looking option first; usually one number points to a wrong letter."
+   "Read 3 or 4 characters at a time and move a pen along both items together.",
+   "Compare one field at a time across all options instead of reading each option fully.",
+   "Check numbers first; swapped digits are the most common difference.",
+   "In matrix questions, the row number always comes first.",
+   "For dates, first label day, month and year; 31 days never come in April, June, September or November.",
+   "In directory order, write the surname first before sorting."
   ],
   "traps": [
-   "Swapped digits and similar spellings (Kamla / Kamala) are the most common traps.",
-   "Do not read column first: the row number always comes first."
+   "Similar spellings (Kamla and Kamala, Oak and Oaks) look the same at a glance.",
+   "Reading the column first in matrix codes.",
+   "Mixing up DD/MM and MM/DD: 05/11 is 5 November in India but May 11 in the US format.",
+   "Ignoring a missing hyphen, dot or space when the question asks for an exact match."
   ]
  },
  "questions": [
@@ -71,7 +159,7 @@
    "id": "r-matching-002",
    "rev": 1,
    "topic": "r-matching",
-   "type": "identical-pairs",
+   "type": "address-matching",
    "level": 1,
    "q": "Which option is exactly the same as the given address?<br><b>Anil Sharma, 24/B, Gandhi Nagar, Jaipur – 302015</b>",
    "options": [
@@ -105,7 +193,7 @@
    "id": "r-matching-004",
    "rev": 1,
    "topic": "r-matching",
-   "type": "identical-pairs",
+   "type": "date-city-matching",
    "level": 2,
    "q": "A form shows a date of birth as 05-11-1998 (DD-MM-YYYY). Which of the following is the same date?",
    "options": [

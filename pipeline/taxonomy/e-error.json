@@ -1,0 +1,71 @@
+{
+  "topic": "e-error",
+  "types": [
+    {
+      "type": "subject-verb",
+      "name": "Subject-verb agreement",
+      "description": "The error is a verb that does not agree with its subject in number or person: 'One of these boxes have', 'My brother were attending', 'It rain a lot', 'The list of candidates have', 'X as well as Y were', 'Neither ... nor ... were', 'Each of the boys have'.",
+      "concepts": []
+    },
+    {
+      "type": "tense",
+      "name": "Tense and time markers",
+      "description": "The error is a wrong tense for the time shown: present perfect with a past time (has visited last month), since/for misuse (since ten years), will after when/if/unless/after/before, or a sequence clash between two clauses (After I retire, I started; how the thieves enter after 'reported').",
+      "concepts": []
+    },
+    {
+      "type": "verb-forms",
+      "name": "Verb forms and modals",
+      "description": "The error is the wrong form of a verb rather than its tense: did/does/to + past form (did knew), modal + wrong form (must be hurry, can went), wrong participle (has went, was been operated), gerund vs infinitive (avoid to go, gave up to smoke), or wrong verb after inversion (Little did he knew).",
+      "concepts": []
+    },
+    {
+      "type": "nouns",
+      "name": "Nouns and number",
+      "description": "The error is in a noun: uncountable nouns made plural (informations, furnitures, evidences, advices, sceneries), plural-looking nouns (news is), collective nouns, 'one of the + singular noun', 'a ten-rupees note', or a wrong possessive (who's for whose).",
+      "concepts": []
+    },
+    {
+      "type": "pronouns",
+      "name": "Pronouns",
+      "description": "The error is a pronoun: wrong case (between you and I, him and me went), a pronoun repeating the subject (Those who are late they), who/whom/which/that, reflexive misuse (enjoy, avail of), one/one's/his, each/either + their, or her/his not matching its noun.",
+      "concepts": []
+    },
+    {
+      "type": "articles",
+      "name": "Articles",
+      "description": "The error is a, an or the: a/an by sound (an university, a hour, a apple), missing or extra the (the honesty, in absence of, the both), the with superlatives, unique nouns, rivers, instruments and only one.",
+      "concepts": []
+    },
+    {
+      "type": "adjectives-adverbs",
+      "name": "Adjectives, adverbs and comparison",
+      "description": "The error is in an adjective or adverb, often a comparison: double comparatives (more better), superior/senior/prefer + than, than any other + singular, comparing unlike things (population of Mumbai than any other city), few/little, much/very, adjective used for adverb (run quick), or hardly/scarcely with not.",
+      "concepts": []
+    },
+    {
+      "type": "prepositions",
+      "name": "Prepositions",
+      "description": "The error is a preposition: wrong fixed preposition after a verb, noun or adjective (discuss about, married with, angry on, comprises of, on behalf of awareness), time and place (in/on/at, since/for), or a preposition used as a conjunction (during he was).",
+      "concepts": []
+    },
+    {
+      "type": "conjunctions",
+      "name": "Conjunctions and connectors",
+      "description": "The error is a joining word or pair: no sooner ... when, hardly ... than, although ... but, not only ... but also placement, both ... as well as, unless ... not, lest ... not, so ... but, as/because misuse, or a wrong correlative pair.",
+      "concepts": []
+    },
+    {
+      "type": "parallelism",
+      "name": "Parallel structure",
+      "description": "The error is in items joined by and, or, but or than that do not share the same grammatical form: 'swept away roads and knocking down lines', 'to read, to write and singing', 'not only to the staff but also stakeholders'.",
+      "concepts": []
+    },
+    {
+      "type": "redundancy",
+      "name": "Redundancy and usage",
+      "description": "The error is an extra or misused word rather than a broken rule: repeated meaning (return back, revert back, the reason is because, cousin brother, each and every one of them), double negatives, wrong word for the meaning (lose/loose), or a confused idiom.",
+      "concepts": []
+    }
+  ]
+}

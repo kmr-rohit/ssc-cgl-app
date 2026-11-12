@@ -1,0 +1,53 @@
+{
+ "topic": "c-fundamentals",
+ "types": [
+  {
+   "type": "generations-types",
+   "name": "Generations, history and types of computers",
+   "description": "Asks which generation used a technology (vacuum tube, transistor, IC, microprocessor), who invented a machine, or names a class of computer (super, mainframe, mini, micro, laptop).",
+   "concepts": [
+    "computer-generations"
+   ]
+  },
+  {
+   "type": "cpu-registers",
+   "name": "CPU, registers and booting",
+   "description": "Names a CPU part (ALU, CU), a register (PC, IR, MAR, MDR, accumulator) or a step of starting the computer (POST, BIOS, cold or warm boot).",
+   "concepts": [
+    "central-processing-unit"
+   ]
+  },
+  {
+   "type": "memory",
+   "name": "Primary memory and the memory hierarchy",
+   "description": "Asks about RAM, ROM, cache or registers: volatile or not, SRAM vs DRAM, PROM/EPROM/EEPROM, or which memory is fastest.",
+   "concepts": [
+    "primary-memory-ram-rom"
+   ]
+  },
+  {
+   "type": "storage",
+   "name": "Secondary storage devices",
+   "description": "Asks about hard disks, SSDs, CDs, DVDs, Blu-ray, pen drives or magnetic tape: their type (magnetic, optical, flash), capacity or access method.",
+   "concepts": []
+  },
+  {
+   "type": "units-addressing",
+   "name": "Data units, bit rate and address lines",
+   "description": "Converts between bits, bytes, KB, MB, GB and TB, or asks how many address lines a memory of a given size needs.",
+   "concepts": []
+  },
+  {
+   "type": "io-devices",
+   "name": "Input and output devices, ports and printers",
+   "description": "Asks whether a device is input or output, what MICR/OCR/OMR do, which printer is impact or non-impact, or what a port (serial, parallel, USB, VGA, HDMI) does.",
+   "concepts": []
+  },
+  {
+   "type": "number-systems",
+   "name": "Number system conversions",
+   "description": "Gives a number in binary, octal, decimal or hexadecimal and asks for it in another base.",
+   "concepts": []
+  }
+ ]
+}

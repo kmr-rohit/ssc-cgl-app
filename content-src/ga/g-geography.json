@@ -1,272 +1,414 @@
 {
- "topic": "g-geography",
- "notes": {
-  "summary": "Geography gives about <b>2–3 questions</b>: India's location and latitudes, rivers and dams, soils, the atmosphere, and a few 'largest / longest / highest' world facts.",
-  "concepts": [
-   {
-    "title": "India's location and latitude lines",
-    "body": "<ul><li>India lies entirely in the <b>Northern and Eastern hemispheres</b>.</li><li>The <b>Tropic of Cancer (23½°N)</b> passes through <b>8 states</b>: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram.</li><li>Indian Standard Time is based on <b>82°30′E</b>, which passes near Mirzapur (Uttar Pradesh). IST is <b>5 h 30 min ahead of GMT</b>.</li><li>Largest state by area: <b>Rajasthan</b>. Longest coastline: <b>Gujarat</b>.</li></ul>",
-    "img": "ga/geo-latitudes.svg"
-   },
-   {
-    "title": "Rivers of India",
-    "body": "<ul><li><b>Himalayan rivers</b> (Indus, Ganga, Brahmaputra) are perennial — fed by snow and rain.</li><li>The Ganga is formed at <b>Devprayag</b> where the Bhagirathi and Alaknanda meet. It is India's longest river.</li><li>The Brahmaputra is called <b>Tsangpo</b> in Tibet.</li><li><b>Peninsular rivers</b>: Mahanadi, Godavari, Krishna and Kaveri flow <b>east</b> to the Bay of Bengal and form deltas. <b>Narmada and Tapi</b> flow <b>west</b> through rift valleys into the Arabian Sea and form estuaries.</li><li>Godavari is the longest peninsular river ('Dakshin Ganga'). Narmada rises at <b>Amarkantak</b>.</li></ul><table><thead><tr><th>Dam</th><th>River</th></tr></thead><tbody><tr><td>Bhakra Nangal</td><td>Sutlej</td></tr><tr><td>Hirakud</td><td>Mahanadi</td></tr><tr><td>Tehri</td><td>Bhagirathi</td></tr><tr><td>Sardar Sarovar</td><td>Narmada</td></tr><tr><td>Nagarjuna Sagar</td><td>Krishna</td></tr></tbody></table>",
-    "img": "ga/geo-peninsular-rivers.svg"
-   },
-   {
-    "title": "Soils and the atmosphere",
-    "body": "<table><thead><tr><th>Soil</th><th>Key fact</th></tr></thead><tbody><tr><td>Alluvial</td><td>Most widespread soil in India; very fertile (northern plains)</td></tr><tr><td>Black (regur)</td><td>Holds moisture; best for <b>cotton</b> (Deccan plateau)</td></tr><tr><td>Red</td><td>Red colour from iron oxide</td></tr><tr><td>Laterite</td><td>Formed by heavy leaching in high-rainfall areas</td></tr></tbody></table>Layers of the atmosphere from the ground up: <b>Troposphere → Stratosphere → Mesosphere → Thermosphere → Exosphere</b>. Weather happens in the troposphere; the <b>ozone layer</b> is in the stratosphere."
-   },
-   {
-    "title": "World 'superlatives'",
-    "body": "<table><thead><tr><th>Feature</th><th>Answer</th></tr></thead><tbody><tr><td>Largest ocean</td><td>Pacific</td></tr><tr><td>Longest river</td><td>Nile</td></tr><tr><td>Largest hot desert</td><td>Sahara</td></tr><tr><td>Highest peak</td><td>Mount Everest</td></tr><tr><td>Deepest point</td><td>Challenger Deep, Mariana Trench (Pacific)</td></tr><tr><td>Largest continent</td><td>Asia</td></tr></tbody></table>"
-   }
-  ],
-  "varieties": [
-   {
-    "type": "india-physical",
-    "name": "India: location, soils, atmosphere",
-    "how": "Recall the fixed facts: Tropic of Cancer states, IST meridian, soil types, atmosphere layers.",
-    "example": {
-     "q": "Which soil is best suited for growing cotton?",
-     "steps": [
-      "Cotton needs soil that holds moisture",
-      "Black (regur) soil of the Deccan holds moisture"
-     ],
-     "answer": "Black soil"
+  "topic": "g-geography",
+  "notes": {
+    "summary": "Geography gives about <b>2 to 4 questions</b> per paper. Indian geography is asked far more than world geography. The top areas in past papers are <b>rivers and dams</b>, <b>Census 2011 figures</b>, passes and peaks, the monsoon and local winds, soils and crops, and mineral states. Learn rivers with their source and the dams on them, and the Census toppers and bottom states.",
+    "concepts": [
+      {
+        "title": "Solar system",
+        "body": "<table><thead><tr><th>Planet</th><th>Remember for</th></tr></thead><tbody><tr><td>Mercury</td><td>Nearest to the Sun, smallest planet, no moon</td></tr><tr><td>Venus</td><td>Hottest and brightest planet; spins east to west; called Earth's twin; morning and evening star</td></tr><tr><td>Earth</td><td>Only known planet with life; 'blue planet'</td></tr><tr><td>Mars</td><td>Red planet (iron oxide); moons Phobos and Deimos; Olympus Mons</td></tr><tr><td>Jupiter</td><td>Largest planet; Great Red Spot; Ganymede is the largest moon in the solar system</td></tr><tr><td>Saturn</td><td>Bright rings; least dense; largest moon Titan</td></tr><tr><td>Uranus</td><td>Rolls on its side (large tilt); spins east to west</td></tr><tr><td>Neptune</td><td>Farthest planet</td></tr></tbody></table><ul><li>Pluto was made a dwarf planet in 2006.</li><li>The Sun is mostly hydrogen (about three-quarters) and helium. Sunlight takes about 8 minutes 20 seconds to reach the Earth.</li><li>Brightest star in the night sky: Sirius (Dog Star). Nearest star after the Sun: Proxima Centauri. Pole Star: Polaris.</li><li>The Earth is about 4.5 billion years old.</li></ul>"
+      },
+      {
+        "title": "Earth's motions, latitudes and time",
+        "body": "<ul><li><b>Rotation</b> (west to east, about 24 hours) gives day and night. <b>Revolution</b> (about 365¼ days) with the tilted axis (23½°) gives seasons.</li><li>Summer solstice: <b>21 June</b> (longest day in the northern hemisphere). Winter solstice: <b>22 December</b>. Equinoxes (equal day and night): <b>21 March</b> and <b>23 September</b>.</li><li>Perihelion (nearest the Sun): about 3 January. Aphelion (farthest): about 4 July.</li><li>Key latitudes: Equator 0°, Tropic of Cancer 23½°N, Tropic of Capricorn 23½°S, Arctic Circle 66½°N, Antarctic Circle 66½°S.</li><li>Longitude: 360° = 24 hours, so <b>15° = 1 hour</b> and 1° = 4 minutes. Prime Meridian: 0° (Greenwich). International Date Line: about 180°.</li><li><b>Indian Standard Time</b> uses 82°30′E (passing near Mirzapur, UP). IST = GMT + 5 hours 30 minutes.</li></ul>",
+        "img": "ga/geo-latitudes.svg"
+      },
+      {
+        "title": "Earth's interior, rocks and landforms",
+        "body": "<ul><li><b>Layers</b>: crust (silica and alumina, 'sial'), mantle, core (nickel and iron, 'nife'). Mohorovičić (Moho) discontinuity separates crust and mantle; Gutenberg discontinuity separates mantle and core.</li><li><b>Earthquakes</b>: the point inside is the focus (hypocentre); the point above it on the surface is the epicentre. Measured on the Richter scale with a seismograph. P waves are fastest; S waves cannot pass through liquid; surface (L) waves do the most damage.</li><li><b>Continental drift</b>: Alfred Wegener (1912), one supercontinent Pangaea surrounded by Panthalassa. <b>Sea-floor spreading</b>: Harry Hess, 'History of Ocean Basins' (1962). Both led to plate tectonics.</li><li><b>Volcanoes</b>: most lie on the Pacific 'Ring of Fire'. India's only active volcano is <b>Barren Island</b> (Andaman Sea).</li></ul><table><thead><tr><th>Rock type</th><th>How it forms</th><th>Examples</th></tr></thead><tbody><tr><td>Igneous (primary)</td><td>Cooling of magma or lava</td><td>Granite, basalt</td></tr><tr><td>Sedimentary</td><td>Layers of deposits; may hold fossils</td><td>Sandstone, limestone, shale, coal</td></tr><tr><td>Metamorphic</td><td>Changed by heat and pressure</td><td>Marble (from limestone), slate (from shale), quartzite (from sandstone), gneiss (from granite)</td></tr></tbody></table><p>Petrology is the study of rocks. <b>Landforms</b>: fold mountains (Himalayas, Alps, Andes, Rockies); block mountains and rift valleys (Narmada valley); river features (V-shaped valley, gorge, meander, ox-bow lake, delta); glacial (U-shaped valley, cirque, moraine); wind (sand dunes, barchans, mushroom rocks); limestone caves (stalactites hang down, stalagmites rise up).</p>"
+      },
+      {
+        "title": "Atmosphere and winds",
+        "body": "<p><b>Air</b>: nitrogen 78%, oxygen 21%, argon about 0.93%, carbon dioxide about 0.04%.</p><table><thead><tr><th>Layer</th><th>Feature</th></tr></thead><tbody><tr><td>Troposphere</td><td>Lowest; all weather; temperature falls with height</td></tr><tr><td>Stratosphere</td><td>Ozone layer; good for jet planes</td></tr><tr><td>Mesosphere</td><td>Coldest layer; meteors burn up</td></tr><tr><td>Thermosphere (ionosphere)</td><td>Reflects radio waves; auroras</td></tr><tr><td>Exosphere</td><td>Outermost</td></tr></tbody></table><ul><li><b>Planetary winds</b>: trade winds (towards the equator), westerlies (mid-latitudes), polar easterlies. The Coriolis force turns winds to the right in the northern hemisphere and to the left in the southern.</li><li><b>Cyclone names</b>: hurricanes (Atlantic), typhoons (western Pacific and China Sea), willy-willies (Australia), tropical cyclones (Indian Ocean). A <b>waterspout</b> is a rotating column of air over water, usually weaker than a land tornado.</li><li><b>Clouds</b>: cirrus (high, feathery), cumulus (cotton heaps), stratus (flat layers), nimbus (dark rain clouds).</li><li>Dew point: the temperature at which air becomes saturated and dew forms.</li></ul><table><thead><tr><th>Local wind</th><th>Where</th></tr></thead><tbody><tr><td>Loo</td><td>Hot, dry summer wind of north India (Punjab to Bihar)</td></tr><tr><td>Mango showers</td><td>Pre-monsoon showers in Kerala and Karnataka, help mangoes ripen</td></tr><tr><td>Cherry blossom (coffee) showers</td><td>Karnataka</td></tr><tr><td>Kalbaisakhi (Nor'westers)</td><td>Evening storms in West Bengal and Assam; 'Bardoli Chheerha' in Assam</td></tr><tr><td>Chinook ('snow eater')</td><td>Rockies, North America</td></tr><tr><td>Foehn</td><td>Alps, Europe</td></tr><tr><td>Sirocco</td><td>Sahara to Italy</td></tr><tr><td>Harmattan ('the doctor')</td><td>West Africa</td></tr><tr><td>Mistral</td><td>France (Rhone valley)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Oceans, straits and canals",
+        "body": "<ul><li><b>Pacific</b> is the largest and deepest ocean; Mariana Trench (Challenger Deep, about 11 km) is the deepest point. The Indian Ocean is the only ocean named after a country.</li><li>Warm currents: Gulf Stream, Kuroshio. Cold currents: Labrador, Humboldt (Peru), Benguela, Canaries, California, Oyashio.</li><li>Spring tides (high) come at new and full moon; neap tides at the quarter moons.</li><li>1 nautical mile = 1.852 km.</li></ul><table><thead><tr><th>Strait</th><th>Joins or separates</th></tr></thead><tbody><tr><td>Palk Strait</td><td>India and Sri Lanka</td></tr><tr><td>Malacca</td><td>Malay Peninsula and Sumatra</td></tr><tr><td>Sunda</td><td>Java and Sumatra</td></tr><tr><td>Hormuz</td><td>Iran and Oman (Persian Gulf to Gulf of Oman)</td></tr><tr><td>Bab-el-Mandeb</td><td>Yemen and Djibouti (Red Sea to Gulf of Aden)</td></tr><tr><td>Gibraltar</td><td>Spain and Morocco</td></tr><tr><td>Bosphorus</td><td>Black Sea to Sea of Marmara (Istanbul)</td></tr><tr><td>Dover</td><td>England and France</td></tr><tr><td>Bering</td><td>Russia and Alaska</td></tr><tr><td>Bass</td><td>Australia and Tasmania</td></tr><tr><td>Cook</td><td>North and South Islands of New Zealand</td></tr><tr><td>Ten Degree Channel</td><td>Andaman and Nicobar</td></tr><tr><td>Nine Degree Channel</td><td>Lakshadweep islands and Minicoy</td></tr><tr><td>Eight Degree Channel</td><td>Minicoy and Maldives</td></tr></tbody></table><p><b>Canals</b>: Suez (Mediterranean to Red Sea, Egypt, 1869); Panama (Atlantic to Pacific, 1914); Kiel (North Sea to Baltic, Germany).</p>"
+      },
+      {
+        "title": "World geography: records, rivers and regions",
+        "body": "<table><thead><tr><th>Record</th><th>Answer</th></tr></thead><tbody><tr><td>Longest river</td><td>Nile (Amazon carries the most water)</td></tr><tr><td>Largest continent, smallest</td><td>Asia, Australia</td></tr><tr><td>Largest country, smallest</td><td>Russia, Vatican City</td></tr><tr><td>Highest peak</td><td>Mount Everest (8,849 m, 2020 measurement)</td></tr><tr><td>Highest waterfall</td><td>Angel Falls, Venezuela</td></tr><tr><td>Largest hot desert</td><td>Sahara</td></tr><tr><td>Largest lake</td><td>Caspian Sea (salt water)</td></tr><tr><td>Largest freshwater lake by area</td><td>Lake Superior</td></tr><tr><td>Deepest lake</td><td>Lake Baikal, Russia</td></tr><tr><td>Largest island</td><td>Greenland</td></tr></tbody></table><table><thead><tr><th>City</th><th>River</th></tr></thead><tbody><tr><td>London</td><td>Thames</td></tr><tr><td>Paris</td><td>Seine</td></tr><tr><td>Cairo</td><td>Nile</td></tr><tr><td>Baghdad</td><td>Tigris</td></tr><tr><td>Rome</td><td>Tiber</td></tr><tr><td>Vienna, Budapest, Belgrade</td><td>Danube</td></tr><tr><td>New York</td><td>Hudson</td></tr><tr><td>Lahore</td><td>Ravi</td></tr><tr><td>Dhaka</td><td>Buriganga</td></tr></tbody></table><p><b>Grasslands</b>: Prairies (North America), Pampas (Argentina), Steppes (Eurasia), Veld (South Africa), Downs (Australia), Llanos (Venezuela and Colombia), Savanna (Africa).</p><p><b>Köppen climate letters</b>: A tropical, B dry, C warm temperate, D cold, E polar. In B climates, 'h' means hot and 'k' means cold, so a mid-latitude (cold) desert is <b>BWk</b>. Citrus fruits grow best in Mediterranean climates (dry summers, rainy winters).</p><p>The Indus is Pakistan's longest river; it rises in Tibet near Lake Manasarovar. Karachi is Pakistan's busiest seaport. Colombo is Sri Lanka's largest city.</p>"
+      },
+      {
+        "title": "Capitals and currencies",
+        "body": "<table><thead><tr><th>Country</th><th>Capital</th><th>Currency</th></tr></thead><tbody><tr><td>Nepal</td><td>Kathmandu</td><td>Nepalese rupee</td></tr><tr><td>Bhutan</td><td>Thimphu</td><td>Ngultrum</td></tr><tr><td>Bangladesh</td><td>Dhaka</td><td>Taka</td></tr><tr><td>Myanmar</td><td>Naypyidaw</td><td>Kyat</td></tr><tr><td>Sri Lanka</td><td>Sri Jayawardenepura Kotte (Colombo is the commercial capital)</td><td>Sri Lankan rupee</td></tr><tr><td>Maldives</td><td>Male</td><td>Rufiyaa</td></tr><tr><td>Afghanistan</td><td>Kabul</td><td>Afghani</td></tr><tr><td>China</td><td>Beijing</td><td>Renminbi (yuan)</td></tr><tr><td>Japan</td><td>Tokyo</td><td>Yen</td></tr><tr><td>South Korea</td><td>Seoul</td><td>Won</td></tr><tr><td>Thailand</td><td>Bangkok</td><td>Baht</td></tr><tr><td>Malaysia</td><td>Kuala Lumpur</td><td>Ringgit</td></tr><tr><td>Indonesia</td><td>Jakarta</td><td>Rupiah</td></tr><tr><td>Kazakhstan</td><td>Astana (called Nur-Sultan 2019 to 2022)</td><td>Tenge</td></tr><tr><td>Russia</td><td>Moscow</td><td>Rouble</td></tr><tr><td>South Africa</td><td>Pretoria (executive)</td><td>Rand</td></tr><tr><td>Brazil</td><td>Brasília</td><td>Real</td></tr></tbody></table>"
+      },
+      {
+        "title": "India: location, extent and borders",
+        "body": "<ul><li>Latitude about 8°4′N to 37°6′N; longitude about 68°7′E to 97°25′E. Area 3.287 million sq km: the <b>7th largest</b> country, about 2.4% of world land.</li><li>The <b>Tropic of Cancer</b> passes through 8 states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram.</li><li>Southernmost point: Indira Point (Great Nicobar). Mainland tip: Kanyakumari.</li><li>Largest state by area: Rajasthan; smallest: Goa. Most populous: Uttar Pradesh. Gujarat has the longest coastline among states.</li><li>Delhi borders only Haryana and Uttar Pradesh.</li></ul><table><thead><tr><th>Neighbour</th><th>Indian states and UTs on the border</th></tr></thead><tbody><tr><td>Bangladesh (longest border)</td><td>West Bengal, Assam, Meghalaya, Tripura, Mizoram</td></tr><tr><td>China</td><td>Ladakh, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh</td></tr><tr><td>Nepal</td><td>Uttarakhand, Uttar Pradesh, Bihar, West Bengal, Sikkim</td></tr><tr><td>Bhutan</td><td>Sikkim, West Bengal, Assam, Arunachal Pradesh</td></tr><tr><td>Myanmar</td><td>Arunachal Pradesh, Nagaland, Manipur, Mizoram</td></tr><tr><td>Pakistan</td><td>Gujarat, Rajasthan, Punjab, Jammu and Kashmir, Ladakh</td></tr></tbody></table><p><b>Border lines</b>: Radcliffe Line (India with Pakistan and Bangladesh), McMahon Line (India and China in the east), Durand Line (Pakistan and Afghanistan).</p>"
+      },
+      {
+        "title": "Relief: Himalayas, peaks, passes, plateaus, islands",
+        "body": "<ul><li><b>Three Himalayan ranges</b>: Himadri (Greater, highest peaks), Himachal (Lesser, hill stations), Shiwalik (outer, with flat valleys called duns such as Dehradun).</li><li><b>Peaks</b>: K2 (Godwin Austen, 8,611 m) is in the Karakoram; Kanchenjunga (8,586 m, Sikkim) is the highest peak on India's border; Nanda Devi is the highest wholly inside India; Anamudi (Kerala) is the highest in south India; Guru Shikhar (Mount Abu) is the highest in the Aravallis; Dhupgarh (Pachmarhi) in the Satpuras; Kalsubai is the highest in Maharashtra; Doddabetta is in the Nilgiris.</li><li><b>Plateaus</b>: Deccan (lava, black soil), Chota Nagpur (minerals), Malwa, Meghalaya (Garo, Khasi, Jaintia hills).</li><li><b>Coasts</b>: west coast (Konkan, Kanara, Malabar) is narrow; east coast (Northern Circars, Coromandel) is wide with deltas.</li><li><b>Islands</b>: Andaman and Nicobar (Bay of Bengal, volcanic and hilly); Lakshadweep (coral, Arabian Sea, capital Kavaratti). Majuli on the Brahmaputra (Assam) is a large river island.</li><li><b>Gandikota</b> gorge on the Pennar (Andhra Pradesh) is called the 'Grand Canyon of India'.</li></ul><table><thead><tr><th>Pass</th><th>Location and link</th></tr></thead><tbody><tr><td>Zoji La</td><td>Kashmir valley to Ladakh (Srinagar to Leh road)</td></tr><tr><td>Banihal</td><td>Jammu to Srinagar (Jawahar tunnel)</td></tr><tr><td>Khardung La</td><td>Ladakh, Leh to Nubra valley</td></tr><tr><td>Rohtang</td><td>Kullu to Lahaul-Spiti (Atal tunnel below it)</td></tr><tr><td>Shipki La</td><td>Himachal Pradesh to Tibet; Sutlej enters India here</td></tr><tr><td>Lipulekh</td><td>Uttarakhand to Tibet (Kailash Mansarovar route)</td></tr><tr><td>Nathu La</td><td>Sikkim to Tibet; border trade reopened in 2006</td></tr><tr><td>Jelep La</td><td>Sikkim to Tibet (Chumbi valley)</td></tr><tr><td>Bom Di La</td><td>Arunachal Pradesh</td></tr><tr><td>Palakkad gap</td><td>Kerala to Tamil Nadu through the Western Ghats</td></tr><tr><td>Thal Ghat, Bhor Ghat</td><td>Western Ghats in Maharashtra (Mumbai to Nashik, Mumbai to Pune)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Rivers of India",
+        "body": "<table><thead><tr><th>River</th><th>Source</th><th>Key facts</th></tr></thead><tbody><tr><td>Indus</td><td>Tibet, near Manasarovar</td><td>Tributaries Jhelum, Chenab, Ravi, Beas, Sutlej. An antecedent river (older than the Himalayas)</td></tr><tr><td>Jhelum</td><td>Verinag spring</td><td>Flows through Wular lake</td></tr><tr><td>Sutlej</td><td>Rakshastal, Tibet</td><td>Enters at Shipki La; Bhakra Nangal dam; meets Beas at Harike</td></tr><tr><td>Ganga</td><td>Bhagirathi from Gangotri (Gaumukh)</td><td>Bhagirathi and Alaknanda meet at <b>Devprayag</b>; Yamuna joins at Prayagraj</td></tr><tr><td>Yamuna</td><td>Yamunotri</td><td>Longest tributary of the Ganga; Chambal, Betwa, Ken join it</td></tr><tr><td>Kosi</td><td>Nepal Himalaya</td><td>'Sorrow of Bihar'</td></tr><tr><td>Damodar</td><td>Chota Nagpur</td><td>'Sorrow of Bengal'; Damodar Valley Corporation (1948)</td></tr><tr><td>Chambal</td><td>Vindhyas (Mhow)</td><td>Ravines and badland topography</td></tr><tr><td>Brahmaputra</td><td>Chemayungdung glacier, Tibet</td><td>Called Tsangpo in Tibet, Siang or Dihang in Arunachal, Jamuna in Bangladesh</td></tr><tr><td>Mahanadi</td><td>Sihawa, Chhattisgarh</td><td>Hirakud dam</td></tr><tr><td>Godavari</td><td>Trimbakeshwar, Nashik</td><td>Longest peninsular river; 'Dakshin Ganga' or 'Vriddha Ganga'</td></tr><tr><td>Krishna</td><td>Mahabaleshwar</td><td>Tributaries Tungabhadra, Bhima, Koyna</td></tr><tr><td>Kaveri</td><td>Talakaveri, Kodagu (Karnataka)</td><td>Disputed by Karnataka and Tamil Nadu</td></tr><tr><td>Narmada</td><td>Amarkantak</td><td>West-flowing through a rift valley between the Vindhyas and Satpuras; Dhuandhar falls at Bhedaghat (Jabalpur)</td></tr><tr><td>Tapi</td><td>Multai, Betul (MP)</td><td>West-flowing</td></tr><tr><td>Luni</td><td>Aravallis near Ajmer</td><td>Ends in the Rann of Kutch</td></tr></tbody></table><p><b>Five prayags</b> on the Alaknanda (upstream to downstream): Vishnuprayag (Dhauliganga), Nandprayag (Nandakini), Karnaprayag (Pindar), Rudraprayag (Mandakini), Devprayag (Bhagirathi). <b>West-flowing</b> rivers into the Arabian Sea: Narmada, Tapi, Sabarmati, Mahi, Periyar. Most other peninsular rivers flow east into the Bay of Bengal and form deltas.</p>",
+        "img": "ga/geo-peninsular-rivers.svg"
+      },
+      {
+        "title": "Dams, lakes, waterfalls and water treaties",
+        "body": "<table><thead><tr><th>Dam or project</th><th>River</th><th>State</th></tr></thead><tbody><tr><td>Bhakra Nangal</td><td>Sutlej</td><td>Himachal Pradesh, Punjab</td></tr><tr><td>Pong</td><td>Beas</td><td>Himachal Pradesh</td></tr><tr><td>Tehri (tallest in India)</td><td>Bhagirathi</td><td>Uttarakhand</td></tr><tr><td>Salal, Baglihar</td><td>Chenab</td><td>Jammu and Kashmir</td></tr><tr><td>Rihand (Govind Ballabh Pant Sagar)</td><td>Rihand</td><td>Uttar Pradesh</td></tr><tr><td>Gandhi Sagar</td><td>Chambal</td><td>Madhya Pradesh</td></tr><tr><td>Hirakud</td><td>Mahanadi</td><td>Odisha</td></tr><tr><td>Sardar Sarovar</td><td>Narmada</td><td>Gujarat</td></tr><tr><td>Indira Sagar</td><td>Narmada</td><td>Madhya Pradesh</td></tr><tr><td>Ukai</td><td>Tapi</td><td>Gujarat</td></tr><tr><td>Koyna</td><td>Koyna</td><td>Maharashtra</td></tr><tr><td>Nagarjuna Sagar, Srisailam</td><td>Krishna</td><td>Telangana, Andhra Pradesh</td></tr><tr><td>Almatti</td><td>Krishna</td><td>Karnataka</td></tr><tr><td>Krishna Raja Sagar</td><td>Kaveri</td><td>Karnataka</td></tr><tr><td>Mettur</td><td>Kaveri</td><td>Tamil Nadu</td></tr><tr><td>Idukki, Mullaperiyar</td><td>Periyar</td><td>Kerala</td></tr><tr><td>Farakka Barrage</td><td>Ganga</td><td>West Bengal</td></tr></tbody></table><table><thead><tr><th>Lake</th><th>Fact</th></tr></thead><tbody><tr><td>Wular (J&amp;K)</td><td>Largest freshwater lake; on the Jhelum</td></tr><tr><td>Chilika (Odisha)</td><td>Largest brackish-water lagoon</td></tr><tr><td>Sambhar (Rajasthan)</td><td>Largest inland salt lake</td></tr><tr><td>Vembanad (Kerala)</td><td>Longest lake in India</td></tr><tr><td>Loktak (Manipur)</td><td>Floating islands (phumdis); Keibul Lamjao National Park</td></tr><tr><td>Pulicat (Andhra Pradesh, Tamil Nadu)</td><td>Lagoon; Sriharikota island lies between it and the sea</td></tr><tr><td>Lonar (Maharashtra)</td><td>Crater lake made by a meteorite</td></tr><tr><td>Kolleru (Andhra Pradesh)</td><td>Freshwater lake between the Godavari and Krishna deltas</td></tr></tbody></table><p><b>Waterfalls</b>: Jog (Sharavathi, Karnataka); Dudhsagar (Mandovi, Goa); Shivanasamudra and Hogenakkal (Kaveri); Athirappilly (Chalakudy, Kerala); Chitrakote (Indravati, Chhattisgarh, 'Niagara of India'); Dhuandhar (Narmada, MP); Hundru (Subarnarekha, Jharkhand); Nohkalikai (Meghalaya).</p><p><b>Treaties</b>: Indus Waters Treaty with Pakistan, <b>19 September 1960</b> (World Bank brokered; eastern rivers Ravi, Beas, Sutlej to India; western rivers Indus, Jhelum, Chenab mostly to Pakistan). Ganga Water Treaty with Bangladesh, 1996. Mahakali Treaty with Nepal, 1996.</p>"
+      },
+      {
+        "title": "Climate and monsoon",
+        "body": "<ul><li>India has a <b>tropical monsoon</b> climate. IMD seasons: winter (January to February), summer (March to May), south-west monsoon (June to September), post-monsoon or retreating monsoon (October to December).</li><li>The south-west monsoon reaches <b>Kerala around 1 June</b> and splits into an Arabian Sea branch and a Bay of Bengal branch.</li><li>Wettest places: <b>Mawsynram</b> and Cherrapunji (Meghalaya). Driest areas: western Rajasthan (Jaisalmer) and Leh.</li><li><b>Western disturbances</b> from the Mediterranean bring winter rain to Punjab and Haryana, which helps wheat (rabi).</li><li>Tamil Nadu gets most of its rain from the <b>north-east (retreating) monsoon</b> in October to December.</li><li>Rain-shadow: the leeward (east) side of the Western Ghats gets little rain.</li><li><b>El Niño</b> (warm Pacific waters) usually weakens the Indian monsoon; La Niña usually strengthens it.</li><li><b>ITCZ</b>: Inter-Tropical Convergence Zone, a low-pressure belt near the equator that shifts north in summer and pulls in the monsoon.</li><li>Coastal places have the least difference between summer and winter temperatures (maritime climate); inland places like Delhi have extreme (continental) climate.</li></ul>"
+      },
+      {
+        "title": "Soils, crops and irrigation",
+        "body": "<table><thead><tr><th>Soil</th><th>Where and why</th><th>Good for</th></tr></thead><tbody><tr><td>Alluvial (most widespread)</td><td>Northern plains and deltas; khadar is new, bhangar is old alluvium; rich in potash</td><td>Rice, wheat, sugarcane</td></tr><tr><td>Black (regur)</td><td>Deccan lava plateau; holds moisture; rich in lime, iron, magnesium</td><td>Cotton</td></tr><tr><td>Red</td><td>Old crystalline rocks; red from iron oxide; Tamil Nadu, Karnataka, Odisha</td><td>Millets, pulses</td></tr><tr><td>Laterite</td><td>Heavy rain washes out nutrients (leaching); Kerala, Karnataka, hills</td><td>Tea, coffee, cashew</td></tr><tr><td>Arid (desert)</td><td>Rajasthan; sandy and saline</td><td>Bajra after irrigation</td></tr><tr><td>Peaty, marshy</td><td>Kerala, Sundarbans; rich in organic matter</td><td>Rice</td></tr></tbody></table><table><thead><tr><th>Season</th><th>Sown and harvested</th><th>Crops</th></tr></thead><tbody><tr><td>Kharif</td><td>June to July, harvested September to October</td><td>Rice, maize, jowar, bajra, cotton, jute, groundnut, soybean, arhar</td></tr><tr><td>Rabi</td><td>October to December, harvested March to April</td><td>Wheat, barley, gram, mustard, peas</td></tr><tr><td>Zaid</td><td>March to June (summer)</td><td>Watermelon, muskmelon, cucumber, fodder</td></tr></tbody></table><ul><li><b>Shifting (slash and burn) cultivation</b>: Jhum in the north-east; Podu in Andhra Pradesh and Odisha; Bewar in Madhya Pradesh.</li><li>Leading states (they can change by year): wheat and sugarcane, Uttar Pradesh; tea, Assam; coffee, Karnataka; rubber, Kerala; jute, West Bengal.</li><li>India is the largest producer of milk and pulses. China is the largest producer of rice and wheat; India is second.</li><li><b>Canals</b> carry water by gravity. The Indira Gandhi Canal (Rajasthan) starts at Harike barrage. Tanks are common in south India; tube wells in the northern plains.</li></ul>"
+      },
+      {
+        "title": "Minerals, industry and transport",
+        "body": "<table><thead><tr><th>Mineral</th><th>Main areas</th></tr></thead><tbody><tr><td>Coal</td><td>Jharkhand (Jharia, largest coking coal), Odisha, Chhattisgarh, West Bengal (Raniganj, oldest coalfield)</td></tr><tr><td>Iron ore</td><td>Odisha, Chhattisgarh (Bailadila), Karnataka (Kudremukh), Jharkhand (Noamundi)</td></tr><tr><td>Manganese</td><td>Odisha, Madhya Pradesh, Maharashtra</td></tr><tr><td>Bauxite</td><td>Odisha (Panchpatmali), Gujarat, Jharkhand</td></tr><tr><td>Mica</td><td>Jharkhand (Koderma), Andhra Pradesh, Rajasthan</td></tr><tr><td>Copper</td><td>Rajasthan (Khetri), Madhya Pradesh (Malanjkhand), Jharkhand (Singhbhum)</td></tr><tr><td>Zinc and lead</td><td>Rajasthan (Zawar)</td></tr><tr><td>Gold</td><td>Karnataka (Hutti; Kolar mines now closed)</td></tr><tr><td>Petroleum</td><td>Assam (Digboi, oldest refinery), Mumbai High (offshore), Gujarat (Ankleshwar)</td></tr><tr><td>Uranium</td><td>Jaduguda (Jharkhand)</td></tr><tr><td>Thorium (monazite sands)</td><td>Kerala coast</td></tr><tr><td>Diamond</td><td>Panna (Madhya Pradesh)</td></tr></tbody></table><p><b>Steel plants</b>: TISCO Jamshedpur (1907, private); Bhilai (Chhattisgarh, Soviet help); Rourkela (Odisha, German help); Durgapur (West Bengal, British help); Bokaro (Jharkhand, Soviet help); Visakhapatnam (shore-based).</p><p><b>Railways</b>: first passenger train on <b>16 April 1853</b>, Bori Bunder (Mumbai) to Thane, about 34 km. Zone headquarters: Northern (New Delhi), Western (Mumbai Churchgate), Central (Mumbai CSMT), Southern (Chennai), Eastern (Kolkata), South Central (Secunderabad), Northeast Frontier (Maligaon, Guwahati), North Eastern (Gorakhpur), East Central (Hajipur), North Western (Jaipur), West Central (Jabalpur), North Central (Prayagraj), East Coast (Bhubaneswar), South Western (Hubballi), South East Central (Bilaspur).</p><p><b>Ports</b>: Deendayal (Kandla, Gujarat, tidal port); Mumbai (natural harbour); Jawaharlal Nehru Port (Nhava Sheva, biggest container port); Mormugao (Goa, iron ore); Kochi; V.O. Chidambaranar (Tuticorin); Chennai; Kamarajar (Ennore); Visakhapatnam (deepest landlocked harbour); Paradip (Odisha); Syama Prasad Mookerjee Port (Kolkata, a river port). <b>Roads</b>: NH 44 (Srinagar to Kanyakumari) is the longest national highway; the Golden Quadrilateral links Delhi, Mumbai, Chennai and Kolkata.</p>"
+      },
+      {
+        "title": "Population: Census 2011",
+        "body": "<p>Census 2011 was the 15th census (7th after independence). The first synchronous census was in 1881; 1921 is the 'year of great divide' (the only decade when population fell). The next census, the first since 2011, uses 1 March 2027 as its reference date.</p><table><thead><tr><th>Measure (2011)</th><th>India</th><th>Highest</th><th>Lowest</th></tr></thead><tbody><tr><td>Population</td><td>121.09 crore</td><td>Uttar Pradesh</td><td>Sikkim</td></tr><tr><td>Sex ratio (females per 1000 males)</td><td>943</td><td>Kerala 1084 (UT: Puducherry 1037)</td><td>Haryana 879 (UT: Daman and Diu 618)</td></tr><tr><td>Child sex ratio (0 to 6)</td><td>919</td><td>Mizoram, Meghalaya</td><td>Haryana</td></tr><tr><td>Literacy</td><td>74.04% (men 82.14%, women 65.46%)</td><td>Kerala (about 94%)</td><td>Bihar (about 61.8%)</td></tr><tr><td>Density (per sq km)</td><td>382</td><td>Bihar 1106</td><td>Arunachal Pradesh 17</td></tr><tr><td>Decadal growth 2001 to 2011</td><td>17.7%</td><td>Meghalaya (about 27.9%)</td><td>Kerala (about 4.9%); Nagaland fell</td></tr></tbody></table><p>The gap between male and female literacy was the highest in Rajasthan.</p>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "universe-earth",
+        "name": "Solar system and the Earth",
+        "how": "Learn one tag per planet (smallest, hottest, largest, rings) and the four key dates. For time, use 15° = 1 hour.",
+        "example": {
+          "q": "Two places are 45° of longitude apart. What is the time difference?",
+          "steps": [
+            "15° of longitude = 1 hour.",
+            "45 ÷ 15 = 3."
+          ],
+          "answer": "3 hours"
+        }
+      },
+      {
+        "type": "rocks-landforms",
+        "name": "Earth's interior, rocks and landforms",
+        "how": "Sort rocks by origin (magma, layers, heat and pressure) and remember the 'from' pairs (marble from limestone). Link theories to scientists.",
+        "example": {
+          "q": "Marble is formed from which rock?",
+          "steps": [
+            "Marble is a metamorphic rock.",
+            "It forms when limestone is changed by heat and pressure."
+          ],
+          "answer": "Limestone"
+        }
+      },
+      {
+        "type": "atmosphere-oceans",
+        "name": "Atmosphere, winds and oceans",
+        "how": "Learn layer order from the ground up (T, S, M, T, E) with one feature each. Learn local winds with the region.",
+        "example": {
+          "q": "In which layer of the atmosphere is the ozone layer found?",
+          "steps": [
+            "The troposphere has weather.",
+            "The ozone layer is in the stratosphere, above it."
+          ],
+          "answer": "Stratosphere"
+        }
+      },
+      {
+        "type": "world-geography",
+        "name": "World geography",
+        "how": "Learn record holders, city and river pairs, and straits with the two lands they separate.",
+        "example": {
+          "q": "Which strait separates Java and Sumatra?",
+          "steps": [
+            "Malacca is between Malaysia and Sumatra.",
+            "Sunda Strait lies between Java (east) and Sumatra (west)."
+          ],
+          "answer": "Sunda Strait"
+        }
+      },
+      {
+        "type": "india-location-physiography",
+        "name": "India: location and relief",
+        "how": "Learn the 8 Tropic of Cancer states, the neighbours' border states, and passes by state from west (Zoji La) to east (Bom Di La).",
+        "example": {
+          "q": "The Tropic of Cancer does NOT pass through which state: Rajasthan, Odisha, Tripura, Jharkhand?",
+          "steps": [
+            "Tropic of Cancer states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram.",
+            "Odisha is not in the list."
+          ],
+          "answer": "Odisha"
+        }
+      },
+      {
+        "type": "india-rivers-lakes",
+        "name": "Rivers, dams, lakes and waterfalls",
+        "how": "For each river know source, direction, main tributaries and the dam on it. Ask 'east or west flowing?' for peninsular rivers.",
+        "example": {
+          "q": "The Bhakra Nangal dam is on which river?",
+          "steps": [
+            "Bhakra Nangal is in Himachal Pradesh and Punjab.",
+            "It is built on the Sutlej; its reservoir is Gobind Sagar."
+          ],
+          "answer": "Sutlej"
+        }
+      },
+      {
+        "type": "india-climate",
+        "name": "Indian climate and monsoon",
+        "how": "Learn the season months, which wind gives rain where, and the names of local winds and showers.",
+        "example": {
+          "q": "What are the hot, dry winds that blow over north India in May and June called?",
+          "steps": [
+            "Pre-monsoon winds in north India are hot and dry.",
+            "They are called the Loo."
+          ],
+          "answer": "Loo"
+        }
+      },
+      {
+        "type": "soils-agriculture",
+        "name": "Soils, crops and irrigation",
+        "how": "Pair soil with its crop and region; pair crops with season (kharif monsoon, rabi winter, zaid summer).",
+        "example": {
+          "q": "Black soil is also known as:",
+          "steps": [
+            "Black soil forms from Deccan lava and suits cotton.",
+            "Its local name is regur."
+          ],
+          "answer": "Regur"
+        }
+      },
+      {
+        "type": "minerals-industry-transport",
+        "name": "Minerals, industry and transport",
+        "how": "Learn mineral, state and the famous mine name together. For steel plants, remember the foreign partner.",
+        "example": {
+          "q": "Khetri is famous for which mineral?",
+          "steps": [
+            "Khetri is in Rajasthan.",
+            "It is a major copper mining belt."
+          ],
+          "answer": "Copper"
+        }
+      },
+      {
+        "type": "population-census",
+        "name": "Population and census",
+        "how": "Learn India's 2011 figures and the top and bottom state for each measure. Kerala tops sex ratio and literacy; Bihar tops density but is last in literacy.",
+        "example": {
+          "q": "According to Census 2011, which state had the lowest sex ratio?",
+          "steps": [
+            "India's sex ratio was 943.",
+            "Kerala was highest (1084); Haryana was lowest (879)."
+          ],
+          "answer": "Haryana"
+        }
+      }
+    ],
+    "tips": [
+      "Planet order: 'My Very Educated Mother Just Served Us Noodles' (Mercury to Neptune).",
+      "Tropic of Cancer states west to east: 'Gu-Ra-M-Ch-J-W-T-M' (Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram).",
+      "Five prayags downstream: 'Vishnu Nand Karna Rudra Dev' (Vishnu, Nand, Karna, Rudra, Devprayag).",
+      "Atmosphere layers upward: 'The Smart Mice Talk Eagerly' (troposphere, stratosphere, mesosphere, thermosphere, exosphere).",
+      "Indus Treaty split: India gets the eastern three (Ravi, Beas, Sutlej), Pakistan the western three (Indus, Jhelum, Chenab).",
+      "Census 2011 anchors: 943 sex ratio, 74% literacy, 382 density, 17.7% growth.",
+      "Sorrows: Kosi of Bihar, Damodar of Bengal, Brahmaputra of Assam, Hwang Ho of China."
+    ],
+    "traps": [
+      "Narmada and Tapi flow west into the Arabian Sea; Mahanadi, Godavari, Krishna and Kaveri flow east.",
+      "Bhagirathi and Alaknanda meet at Devprayag, not Rudraprayag (Alaknanda and Mandakini).",
+      "Chilika is a brackish lagoon; Wular is the largest freshwater lake; Sambhar is a salt lake.",
+      "Venus, not Mercury, is the hottest planet, even though Mercury is nearer the Sun.",
+      "Kanchenjunga is the highest peak on India's border, but Nanda Devi is the highest wholly within India; K2 lies in the Karakoram."
+    ]
+  },
+  "questions": [
+    {
+      "id": "g-geography-001",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "india-rivers-lakes",
+      "level": 1,
+      "q": "The Bhakra Nangal Dam is built on which river?",
+      "options": [
+        "Beas",
+        "Sutlej",
+        "Ravi",
+        "Chenab"
+      ],
+      "answer": 1,
+      "solution": "Bhakra Nangal Dam is on the Sutlej river (Himachal Pradesh–Punjab).<br><b>Memory hook:</b> Two Punjab dams, two rivers: Bhakra on Sutlej, Pong on Beas.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-geography-002",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "world-geography",
+      "level": 1,
+      "q": "Which is the longest river in the world?",
+      "options": [
+        "Amazon",
+        "Yangtze",
+        "Nile",
+        "Mississippi"
+      ],
+      "answer": 2,
+      "solution": "The Nile (Africa) is generally taken as the longest river in the world; the Amazon carries the most water.<br><b>Memory hook:</b> Nile = Length, Amazon = Amount of water.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-geography-003",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "atmosphere-oceans",
+      "level": 1,
+      "q": "In which layer of the atmosphere is the ozone layer found?",
+      "options": [
+        "Troposphere",
+        "Stratosphere",
+        "Mesosphere",
+        "Exosphere"
+      ],
+      "answer": 1,
+      "solution": "The ozone layer lies in the stratosphere and absorbs harmful ultraviolet rays.<br><b>Memory hook:</b> <b>S</b>tratosphere <b>S</b>hields us from UV.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-geography-004",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "india-rivers-lakes",
+      "level": 2,
+      "q": "Which of these rivers flows <b>westward</b> into the Arabian Sea?",
+      "img": "ga/geo-peninsular-rivers.svg",
+      "options": [
+        "Godavari",
+        "Krishna",
+        "Mahanadi",
+        "Tapi"
+      ],
+      "answer": 3,
+      "solution": "Tapi and Narmada flow west through rift valleys into the Arabian Sea. Godavari, Krishna and Mahanadi flow east into the Bay of Bengal.<br><b>Memory hook:</b> N–T go West (Narmada, Tapi).",
+      "source": "test-data"
+    },
+    {
+      "id": "g-geography-005",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "india-location-physiography",
+      "level": 2,
+      "q": "The Tropic of Cancer does <b>NOT</b> pass through which state?",
+      "img": "ga/geo-latitudes.svg",
+      "options": [
+        "Odisha",
+        "Jharkhand",
+        "Tripura",
+        "Chhattisgarh"
+      ],
+      "answer": 0,
+      "solution": "The Tropic of Cancer passes through Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram. Odisha lies south of it.<br><b>Memory hook:</b> The line jumps from Jharkhand to West Bengal — Odisha is left below.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-geography-006",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "soils-agriculture",
+      "level": 2,
+      "q": "Black soil is also known as:",
+      "options": [
+        "Bhangar",
+        "Khadar",
+        "Regur",
+        "Laterite"
+      ],
+      "answer": 2,
+      "solution": "Black soil is called regur (or black cotton soil). It holds moisture and suits cotton. Bhangar and Khadar are old and new alluvium.<br><b>Memory hook:</b> Regur — 'Real cotton grower'.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-geography-007",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "india-rivers-lakes",
+      "level": 3,
+      "q": "At which place do the Bhagirathi and Alaknanda meet to form the Ganga?",
+      "options": [
+        "Rudraprayag",
+        "Devprayag",
+        "Karnaprayag",
+        "Haridwar"
+      ],
+      "answer": 1,
+      "solution": "The Bhagirathi and Alaknanda meet at Devprayag (Uttarakhand); from here the river is called the Ganga.<br><b>Memory hook:</b> The holy river is born at the 'Dev' (god) prayag.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-geography-008",
+      "rev": 1,
+      "topic": "g-geography",
+      "type": "india-location-physiography",
+      "level": 3,
+      "q": "The Indian Standard Time meridian (82°30′E) is ahead of Greenwich Mean Time by:",
+      "options": [
+        "5 h 00 min",
+        "4 h 30 min",
+        "6 h 00 min",
+        "5 h 30 min"
+      ],
+      "answer": 3,
+      "solution": "Earth turns 1° in 4 minutes. 82.5° × 4 min = 330 min = 5 h 30 min.<br><b>Memory hook:</b> 82.5 × 4 = 330 minutes.",
+      "source": "test-data"
     }
-   },
-   {
-    "type": "rivers",
-    "name": "Rivers and dams",
-    "how": "Classify the river (Himalayan / east-flowing / west-flowing), then recall its dam or source.",
-    "example": {
-     "q": "Which river flows westward into the Arabian Sea?",
-     "steps": [
-      "East-flowing: Mahanadi, Godavari, Krishna, Kaveri",
-      "West-flowing: Narmada, Tapi"
-     ],
-     "answer": "Narmada"
-    }
-   },
-   {
-    "type": "world",
-    "name": "World geography",
-    "how": "Learn the superlatives table; read the question carefully for 'hot' desert or 'deepest' vs 'highest'.",
-    "example": {
-     "q": "Which is the largest ocean?",
-     "steps": [
-      "Pacific covers about a third of Earth's surface"
-     ],
-     "answer": "Pacific Ocean"
-    }
-   }
   ],
-  "tips": [
-   "Tropic of Cancer states, west to east: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram.",
-   "West-flowing peninsular rivers = Narmada and Tapi (N–T); all big ones else flow east.",
-   "Ozone is in the stratosphere; weather is in the troposphere."
-  ],
-  "traps": [
-   "Odisha and Bihar are NOT crossed by the Tropic of Cancer.",
-   "Godavari, not Krishna, is the longest peninsular river.",
-   "West-flowing Narmada and Tapi form estuaries, not deltas."
+  "flashcards": [
+    {
+      "id": "fc-g-geography-1",
+      "front": "Number of states crossed by the Tropic of Cancer",
+      "back": "8",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-2",
+      "front": "Longest peninsular river of India",
+      "back": "Godavari ('Dakshin Ganga')",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-3",
+      "front": "Source of the Narmada",
+      "back": "Amarkantak",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-4",
+      "front": "Hirakud Dam is on",
+      "back": "Mahanadi",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-5",
+      "front": "Brahmaputra is called ___ in Tibet",
+      "back": "Tsangpo",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-6",
+      "front": "Most widespread soil in India",
+      "back": "Alluvial soil",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-7",
+      "front": "Indian state with the longest coastline",
+      "back": "Gujarat",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-8",
+      "front": "Deepest point on Earth",
+      "back": "Challenger Deep, Mariana Trench (Pacific)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-geography-9",
+      "front": "Largest hot desert",
+      "back": "Sahara",
+      "deck": "ga-facts"
+    }
   ]
- },
- "questions": [
-  {
-   "id": "g-geography-001",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "rivers",
-   "level": 1,
-   "q": "The Bhakra Nangal Dam is built on which river?",
-   "options": [
-    "Beas",
-    "Sutlej",
-    "Ravi",
-    "Chenab"
-   ],
-   "answer": 1,
-   "solution": "Bhakra Nangal Dam is on the Sutlej river (Himachal Pradesh–Punjab).<br><b>Memory hook:</b> Two Punjab dams, two rivers: Bhakra on Sutlej, Pong on Beas.",
-   "source": "test-data"
-  },
-  {
-   "id": "g-geography-002",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "world",
-   "level": 1,
-   "q": "Which is the longest river in the world?",
-   "options": [
-    "Amazon",
-    "Yangtze",
-    "Nile",
-    "Mississippi"
-   ],
-   "answer": 2,
-   "solution": "The Nile (Africa) is generally taken as the longest river in the world; the Amazon carries the most water.<br><b>Memory hook:</b> Nile = Length, Amazon = Amount of water.",
-   "source": "test-data"
-  },
-  {
-   "id": "g-geography-003",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "india-physical",
-   "level": 1,
-   "q": "In which layer of the atmosphere is the ozone layer found?",
-   "options": [
-    "Troposphere",
-    "Stratosphere",
-    "Mesosphere",
-    "Exosphere"
-   ],
-   "answer": 1,
-   "solution": "The ozone layer lies in the stratosphere and absorbs harmful ultraviolet rays.<br><b>Memory hook:</b> <b>S</b>tratosphere <b>S</b>hields us from UV.",
-   "source": "test-data"
-  },
-  {
-   "id": "g-geography-004",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "rivers",
-   "level": 2,
-   "q": "Which of these rivers flows <b>westward</b> into the Arabian Sea?",
-   "img": "ga/geo-peninsular-rivers.svg",
-   "options": [
-    "Godavari",
-    "Krishna",
-    "Mahanadi",
-    "Tapi"
-   ],
-   "answer": 3,
-   "solution": "Tapi and Narmada flow west through rift valleys into the Arabian Sea. Godavari, Krishna and Mahanadi flow east into the Bay of Bengal.<br><b>Memory hook:</b> N–T go West (Narmada, Tapi).",
-   "source": "test-data"
-  },
-  {
-   "id": "g-geography-005",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "india-physical",
-   "level": 2,
-   "q": "The Tropic of Cancer does <b>NOT</b> pass through which state?",
-   "img": "ga/geo-latitudes.svg",
-   "options": [
-    "Odisha",
-    "Jharkhand",
-    "Tripura",
-    "Chhattisgarh"
-   ],
-   "answer": 0,
-   "solution": "The Tropic of Cancer passes through Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram. Odisha lies south of it.<br><b>Memory hook:</b> The line jumps from Jharkhand to West Bengal — Odisha is left below.",
-   "source": "test-data"
-  },
-  {
-   "id": "g-geography-006",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "india-physical",
-   "level": 2,
-   "q": "Black soil is also known as:",
-   "options": [
-    "Bhangar",
-    "Khadar",
-    "Regur",
-    "Laterite"
-   ],
-   "answer": 2,
-   "solution": "Black soil is called regur (or black cotton soil). It holds moisture and suits cotton. Bhangar and Khadar are old and new alluvium.<br><b>Memory hook:</b> Regur — 'Real cotton grower'.",
-   "source": "test-data"
-  },
-  {
-   "id": "g-geography-007",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "rivers",
-   "level": 3,
-   "q": "At which place do the Bhagirathi and Alaknanda meet to form the Ganga?",
-   "options": [
-    "Rudraprayag",
-    "Devprayag",
-    "Karnaprayag",
-    "Haridwar"
-   ],
-   "answer": 1,
-   "solution": "The Bhagirathi and Alaknanda meet at Devprayag (Uttarakhand); from here the river is called the Ganga.<br><b>Memory hook:</b> The holy river is born at the 'Dev' (god) prayag.",
-   "source": "test-data"
-  },
-  {
-   "id": "g-geography-008",
-   "rev": 1,
-   "topic": "g-geography",
-   "type": "india-physical",
-   "level": 3,
-   "q": "The Indian Standard Time meridian (82°30′E) is ahead of Greenwich Mean Time by:",
-   "options": [
-    "5 h 00 min",
-    "4 h 30 min",
-    "6 h 00 min",
-    "5 h 30 min"
-   ],
-   "answer": 3,
-   "solution": "Earth turns 1° in 4 minutes. 82.5° × 4 min = 330 min = 5 h 30 min.<br><b>Memory hook:</b> 82.5 × 4 = 330 minutes.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-g-geography-1",
-   "front": "Number of states crossed by the Tropic of Cancer",
-   "back": "8",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-2",
-   "front": "Longest peninsular river of India",
-   "back": "Godavari ('Dakshin Ganga')",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-3",
-   "front": "Source of the Narmada",
-   "back": "Amarkantak",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-4",
-   "front": "Hirakud Dam is on",
-   "back": "Mahanadi",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-5",
-   "front": "Brahmaputra is called ___ in Tibet",
-   "back": "Tsangpo",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-6",
-   "front": "Most widespread soil in India",
-   "back": "Alluvial soil",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-7",
-   "front": "Indian state with the longest coastline",
-   "back": "Gujarat",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-8",
-   "front": "Deepest point on Earth",
-   "back": "Challenger Deep, Mariana Trench (Pacific)",
-   "deck": "ga-facts"
-  },
-  {
-   "id": "fc-g-geography-9",
-   "front": "Largest hot desert",
-   "back": "Sahara",
-   "deck": "ga-facts"
-  }
- ]
 }

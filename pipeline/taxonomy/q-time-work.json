@@ -1,0 +1,71 @@
+{
+  "topic": "q-time-work",
+  "types": [
+    {
+      "type": "combined-work",
+      "name": "Working together",
+      "description": "Each person’s time to finish the work alone is given (or the time together), and you must find the time together or one person’s time alone.",
+      "concepts": [
+        "individual-efficiency-days-lcm-method"
+      ]
+    },
+    {
+      "type": "efficiency-ratio",
+      "name": "Efficiency comparison",
+      "description": "The question says one worker is k times (or x% more) efficient than another, or gives the ratio of efficiencies, and asks for a time.",
+      "concepts": [
+        "efficiency-comparison-ratios"
+      ]
+    },
+    {
+      "type": "pairs-and-groups",
+      "name": "Pairs and groups (men, women, boys)",
+      "description": "Times are given for pairs such as A + B, B + C and C + A, or for groups of men, women and children whose work rates are compared.",
+      "concepts": [
+        "group-work-men-women-children-efficiency-equating"
+      ]
+    },
+    {
+      "type": "mdh-chain-rule",
+      "name": "Men, days and hours (chain rule)",
+      "description": "The number of men, days, hours per day or amount of work changes, and you find the missing quantity using M × D × H ÷ W.",
+      "concepts": [
+        "men-days-and-work",
+        "mdh-chain-rule-formula"
+      ]
+    },
+    {
+      "type": "leave-or-join",
+      "name": "Someone leaves or joins midway",
+      "description": "Workers start together and one leaves, joins or is replaced after some days (or a few days before the end), and the rest finish the work.",
+      "concepts": [
+        "leaving-or-joining-work-mid-way",
+        "leaves-before-completion"
+      ]
+    },
+    {
+      "type": "alternate-days",
+      "name": "Working on alternate days",
+      "description": "Workers or pipes work in turns, on alternate days or hours, in a repeating cycle.",
+      "concepts": [
+        "alternate-day-work"
+      ]
+    },
+    {
+      "type": "pipes-cisterns",
+      "name": "Pipes, cisterns and leaks",
+      "description": "Inlet pipes fill and outlet pipes or leaks empty a tank, so some rates are negative.",
+      "concepts": [
+        "work-with-destruction-negative-efficiency"
+      ]
+    },
+    {
+      "type": "wages",
+      "name": "Wages shared by work done",
+      "description": "A payment for the whole job is split among workers in the ratio of the work each one did, or daily wages are compared.",
+      "concepts": [
+        "wages-distribution-proportional-to-work-done"
+      ]
+    }
+  ]
+}

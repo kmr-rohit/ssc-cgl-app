@@ -1,215 +1,396 @@
 {
- "topic": "q-tsd",
- "notes": {
-  "summary": "Distance = Speed × Time. Trains, boats and average speed are all built on this one idea. 1–2 questions per tier.",
-  "concepts": [
-   {
-    "title": "Units",
-    "body": "km/h to m/s: multiply by <b>5/18</b>. m/s to km/h: multiply by <b>18/5</b>."
-   },
-   {
-    "title": "Trains",
-    "body": "Crossing a pole or man: distance = train length. Crossing a platform or another train: distance = sum of lengths. Relative speed: <b>add</b> for opposite directions, <b>subtract</b> for the same direction."
-   },
-   {
-    "title": "Boats and streams",
-    "body": "Downstream = u + v, Upstream = u − v. So boat speed u = (D + U)/2, stream speed v = (D − U)/2."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "speed-basic",
-    "name": "Speed, unit change and average speed",
-    "how": "Average speed = total distance / total time. Equal distances: 2xy/(x + y).",
-    "example": {
-     "q": "Convert 36 km/h to m/s.",
-     "steps": [
-      "36 × 5/18 = 10"
-     ],
-     "answer": "10 m/s"
+  "topic": "q-tsd",
+  "notes": {
+    "summary": "Time, speed and distance is built on one rule: distance = speed × time. Trains, boats, races and circular tracks are all this rule with relative speed added. SSC asks 1–2 questions in Tier 1 and 1–2 in Tier 2, often on average speed, trains and boats.",
+    "concepts": [
+      {
+        "title": "The one formula",
+        "body": "<p><b>Distance = Speed × Time</b>. So Speed = Distance ÷ Time and Time = Distance ÷ Speed.</p><p>Keep the units matching: km with hours, metres with seconds.</p><ul><li>km/h to m/s: multiply by <b>5/18</b>. 72 km/h = 72 × 5/18 = 20 m/s.</li><li>m/s to km/h: multiply by <b>18/5</b>. 15 m/s = 54 km/h.</li><li>Minutes to hours: divide by 60. 45 minutes = 3/4 hour.</li></ul><table><thead><tr><th>km/h</th><th>18</th><th>36</th><th>54</th><th>72</th><th>90</th><th>108</th></tr></thead><tbody><tr><td>m/s</td><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td></tr></tbody></table>"
+      },
+      {
+        "title": "Proportion rules (the fastest tool)",
+        "body": "<ul><li><b>Same distance:</b> speed and time are inversely proportional. Speed ratio 3 : 4 means time ratio 4 : 3.</li><li><b>Same time:</b> distance is proportional to speed.</li><li><b>Same speed:</b> distance is proportional to time.</li></ul><p><b>Example:</b> a car at 60 km/h takes 5 hours. At 75 km/h the same trip takes 5 × 60/75 = <b>4 hours</b>.</p>"
+      },
+      {
+        "title": "Speed change and time change",
+        "body": "<p>When the speed changes by a fixed amount and the time changes by a fixed amount, write:</p><p><b>D/(s − x) − D/s = extra time</b> (or D/s − D/(s + x) = time saved).</p><p>Then test the options; it is usually faster than solving the quadratic.</p><p><b>Example:</b> 384 km. If speed falls by 16 km/h, the trip takes 2 hours more. Try s = 64: 384/48 − 384/64 = 8 − 6 = 2. So the speed is <b>64 km/h</b>.</p>"
+      },
+      {
+        "title": "Late and early arrival",
+        "body": "<p>If a person walks at <b>a/b</b> of his usual speed, he takes <b>b/a</b> of his usual time. The extra time = (b/a − 1) × usual time.</p><p><b>Example:</b> at 3/4 of usual speed he is 18 minutes late. Extra = 1/3 of usual time = 18, so usual time = <b>54 minutes</b>.</p><p>With two speeds S<sub>1</sub> and S<sub>2</sub> (late at one, early at the other):</p><p><b>Distance = S<sub>1</sub>S<sub>2</sub>/(S<sub>2</sub> − S<sub>1</sub>) × (total time difference)</b></p><p><b>Example:</b> at 40 km/h he is 10 minutes late, at 50 km/h 5 minutes early. Difference = 15 min = 1/4 h. D = 40 × 50/10 × 1/4 = <b>50 km</b>.</p>"
+      },
+      {
+        "title": "Average speed",
+        "body": "<p><b>Average speed = total distance ÷ total time</b>. It is not the simple average of the speeds unless the times are equal.</p><table><thead><tr><th>Case</th><th>Average speed</th></tr></thead><tbody><tr><td>Equal distances at x and y</td><td>2xy/(x + y)</td></tr><tr><td>Equal distances at x, y and z</td><td>3xyz/(xy + yz + zx)</td></tr><tr><td>Equal times at x and y</td><td>(x + y)/2</td></tr></tbody></table><p><b>Example:</b> 40 km/h going and 60 km/h returning: 2 × 40 × 60/100 = <b>48 km/h</b>.</p><p><b>Example:</b> three equal parts at 20, 30 and 60 km/h: 3 × 20 × 30 × 60/(600 + 1800 + 1200) = <b>30 km/h</b>.</p>"
+      },
+      {
+        "title": "Relative speed",
+        "body": "<ul><li>Moving in <b>opposite</b> directions: relative speed = a + b.</li><li>Moving in the <b>same</b> direction: relative speed = a − b.</li></ul><p>Time to meet (towards each other) = gap ÷ (a + b). Time to catch up (same direction) = gap ÷ (a − b).</p><p><b>Example:</b> A walks at 4 km/h. 4 hours later B cycles after him at 10 km/h. Gap = 16 km, relative speed = 6 km/h, so B catches A after 16/6 = 8/3 hours, at 10 × 8/3 ≈ <b>26.67 km</b> from the start.</p>"
+      },
+      {
+        "title": "After crossing each other",
+        "body": "<p>Two people start at the same time from P and Q towards each other. After meeting, they take t<sub>1</sub> and t<sub>2</sub> hours to reach the other end. Then:</p><p><b>S<sub>1</sub> : S<sub>2</sub> = √t<sub>2</sub> : √t<sub>1</sub></b></p><p><b>Example:</b> after meeting, A takes 9 hours and B 4 hours. Speed ratio A : B = √4 : √9 = <b>2 : 3</b>.</p><p>Also, time to meet = √(t<sub>1</sub> × t<sub>2</sub>) = 6 hours here.</p>"
+      },
+      {
+        "title": "Trains",
+        "body": "<p>The distance a train covers while crossing something = <b>its own length + the length of the other object</b>.</p><table><thead><tr><th>Crossing</th><th>Distance</th><th>Speed used</th></tr></thead><tbody><tr><td>Pole, man, tree</td><td>train length</td><td>train speed</td></tr><tr><td>Platform, bridge, tunnel</td><td>train + platform</td><td>train speed</td></tr><tr><td>Man walking</td><td>train length</td><td>relative speed</td></tr><tr><td>Another train</td><td>sum of both lengths</td><td>relative speed</td></tr></tbody></table><p><b>Example:</b> trains of 120 m and 180 m run in opposite directions at 40 and 50 km/h. Relative speed = 90 km/h = 25 m/s. Time = 300/25 = <b>12 s</b>.</p>"
+      },
+      {
+        "title": "Boats and streams",
+        "body": "<p>Let u = speed of the boat in still water and v = speed of the stream.</p><ul><li>Downstream (with the river): <b>D = u + v</b>.</li><li>Upstream (against the river): <b>U = u − v</b>.</li><li>u = (D + U)/2 and v = (D − U)/2.</li></ul><p><b>Example:</b> downstream 18 km/h and upstream 12 km/h. Boat = 15 km/h, stream = 3 km/h.</p><p>Round trip of distance d: total time = d/(u + v) + d/(u − v). If a man takes twice as long upstream as downstream, then u + v = 2(u − v), so u = 3v.</p>"
+      },
+      {
+        "title": "Races",
+        "body": "<ul><li><b>A beats B by x metres</b>: when A finishes, B is x metres behind.</li><li><b>A beats B by t seconds</b>: B finishes t seconds after A.</li><li><b>A gives B a start of x metres</b>: B runs x metres less.</li><li><b>Dead heat</b>: both finish together.</li></ul><p>If A beats B by x metres or t seconds, then B covers x metres in t seconds, so B’s speed = x/t.</p><p><b>Chain example:</b> in a 100 m race A beats B by 20 m and B beats C by 25 m. When A runs 100, B runs 80 and C runs 80 × 75/100 = 60. A beats C by <b>40 m</b>.</p>"
+      },
+      {
+        "title": "Circular tracks",
+        "body": "<p>Let the track length be L.</p><ul><li><b>First meeting anywhere</b> = L ÷ relative speed (add speeds for opposite directions, subtract for the same direction).</li><li><b>First meeting at the starting point</b> = LCM of the times each takes for one lap.</li></ul><p><b>Example:</b> 200 m track, speeds 18 km/h (5 m/s) and 24 km/h (20/3 m/s). Lap times: 40 s and 30 s. They meet at the start after LCM(40, 30) = <b>120 s</b>.</p>"
+      },
+      {
+        "title": "Stoppage time",
+        "body": "<p>If the average speed is S<sub>1</sub> without stoppages and S<sub>2</sub> with stoppages, the train stops for</p><p><b>(S<sub>1</sub> − S<sub>2</sub>)/S<sub>1</sub> × 60 minutes per hour</b>.</p><p><b>Example:</b> 50 km/h without and 40 km/h with stoppages. Stop time = 10/50 × 60 = <b>12 minutes per hour</b>.</p>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "basic-sdt",
+        "name": "Speed, time and distance basics",
+        "how": "Write time for each part as distance ÷ speed. Add the times and set the total equal to the given time. Convert units first.",
+        "example": {
+          "q": "Vipin travels one-third of a journey at 30 km/h and the rest at 40 km/h. The whole journey takes 12 hours. What is the total distance?",
+          "steps": [
+            "Let the distance be D.",
+            "Time = (D/3)/30 + (2D/3)/40 = D/90 + D/60.",
+            "D/90 + D/60 = 5D/180 = D/36.",
+            "D/36 = 12, so D = 432 km."
+          ],
+          "answer": "432 km"
+        }
+      },
+      {
+        "type": "average-speed",
+        "name": "Average speed",
+        "how": "Total distance ÷ total time. For two equal distances use 2xy/(x + y); for equal times use (x + y)/2.",
+        "example": {
+          "q": "Reshma covers 45 km at 15 km/h, 80 km at 40 km/h and 6 km at 2 km/h. What is her average speed, correct to 2 decimal places?",
+          "steps": [
+            "Times: 45/15 = 3 h, 80/40 = 2 h, 6/2 = 3 h. Total = 8 h.",
+            "Total distance = 45 + 80 + 6 = 131 km.",
+            "Average speed = 131/8 = 16.375 km/h."
+          ],
+          "answer": "16.38 km/h"
+        }
+      },
+      {
+        "type": "speed-time-change",
+        "name": "Change in speed changes time",
+        "how": "Write the time difference as D/(slow speed) − D/(fast speed) = difference. Try the options instead of solving the quadratic.",
+        "example": {
+          "q": "A truck covers 384 km at a certain speed. If the speed is reduced by 16 km/h, it takes 2 hours more. What is 75% of its original speed?",
+          "steps": [
+            "384/(s − 16) − 384/s = 2.",
+            "Try s = 64: 384/48 − 384/64 = 8 − 6 = 2. It works.",
+            "75% of 64 = 48."
+          ],
+          "answer": "48 km/h"
+        }
+      },
+      {
+        "type": "late-early",
+        "name": "Late and early arrival",
+        "how": "At a/b of usual speed, time becomes b/a of usual. The extra (b/a − 1) of usual time equals the minutes late. For two speeds use D = S<sub>1</sub>S<sub>2</sub>/(S<sub>2</sub> − S<sub>1</sub>) × time difference.",
+        "example": {
+          "q": "Walking at 3/4 of his usual speed, a man reaches office 18 minutes late. What is his usual time?",
+          "steps": [
+            "Speed is 3/4, so time is 4/3 of usual.",
+            "Extra time = 1/3 of usual time = 18 minutes.",
+            "Usual time = 18 × 3 = 54 minutes."
+          ],
+          "answer": "54 minutes"
+        }
+      },
+      {
+        "type": "meeting-chasing",
+        "name": "Meeting and chasing",
+        "how": "Find the gap between them when both are moving. Divide by the sum of speeds (towards each other) or the difference (chasing).",
+        "example": {
+          "q": "A starts walking at 4 km/h. After 4 hours, B starts cycling from the same point in the same direction at 10 km/h. How far from the start will B catch A?",
+          "steps": [
+            "Head start = 4 × 4 = 16 km.",
+            "Relative speed = 10 − 4 = 6 km/h.",
+            "Time to catch = 16/6 = 8/3 h.",
+            "Distance = 10 × 8/3 = 26.67 km."
+          ],
+          "answer": "26.67 km"
+        }
+      },
+      {
+        "type": "trains",
+        "name": "Trains crossing",
+        "how": "Distance = sum of the lengths involved. Use the train’s own speed for still objects and relative speed for moving ones. Convert km/h to m/s with 5/18.",
+        "example": {
+          "q": "A train crosses a pole in 15 seconds and a platform 100 m long in 25 seconds. Find the length and speed of the train.",
+          "steps": [
+            "The extra 10 seconds are spent covering the 100 m platform.",
+            "Speed = 100/10 = 10 m/s = 36 km/h.",
+            "Length = 10 × 15 = 150 m."
+          ],
+          "answer": "150 m, 36 km/h"
+        }
+      },
+      {
+        "type": "boats-streams",
+        "name": "Boats and streams",
+        "how": "Find downstream speed D and upstream speed U from distance ÷ time. Boat speed = (D + U)/2, stream speed = (D − U)/2.",
+        "example": {
+          "q": "A boat covers 35 km downstream in 2 hours and the same distance upstream in 7 hours. Find the speed of the boat in still water.",
+          "steps": [
+            "Downstream speed = 35/2 = 17.5 km/h.",
+            "Upstream speed = 35/7 = 5 km/h.",
+            "Boat speed = (17.5 + 5)/2 = 11.25 km/h (stream = 6.25 km/h)."
+          ],
+          "answer": "11.25 km/h"
+        }
+      },
+      {
+        "type": "circular-track",
+        "name": "Circular track",
+        "how": "First meeting = track length ÷ relative speed. Meeting at the starting point = LCM of the lap times.",
+        "example": {
+          "q": "On a 2200 m circular track, two cyclists start from the same point in opposite directions at 20 km/h and 16 km/h. When will they first meet?",
+          "steps": [
+            "Opposite directions: relative speed = 36 km/h = 10 m/s.",
+            "Time = 2200/10 = 220 s.",
+            "220 s = 3 minutes 40 seconds."
+          ],
+          "answer": "3 min 40 s"
+        }
+      },
+      {
+        "type": "races",
+        "name": "Races",
+        "how": "If A beats B by x metres or t seconds, B runs x metres in t seconds. For chains, scale the distances: when A runs 100, B runs (100 − x) and so on.",
+        "example": {
+          "q": "In a 1 km race, A beats B by 50 m or 10 seconds. How long does A take to finish?",
+          "steps": [
+            "B covers 50 m in 10 s, so B’s speed = 5 m/s.",
+            "B takes 1000/5 = 200 s for the race.",
+            "A finishes 10 s earlier: 200 − 10 = 190 s."
+          ],
+          "answer": "190 seconds"
+        }
+      },
+      {
+        "type": "stoppage",
+        "name": "Stoppage time",
+        "how": "Stop time per hour = (speed without stops − speed with stops) ÷ speed without stops × 60 minutes.",
+        "example": {
+          "q": "A train averages 50 km/h without stoppages and 40 km/h with stoppages. How many minutes does it stop per hour?",
+          "steps": [
+            "Distance lost per hour = 50 − 40 = 10 km.",
+            "Time to cover 10 km at 50 km/h = 10/50 h.",
+            "10/50 × 60 = 12 minutes."
+          ],
+          "answer": "12 minutes"
+        }
+      }
+    ],
+    "tips": [
+      "Convert units before anything else: km/h × 5/18 gives m/s.",
+      "For the same distance, speed ratio a : b means time ratio b : a.",
+      "For equal distances, average speed is 2xy/(x + y), always a little less than the simple average.",
+      "In speed-change questions, plug the options in instead of solving a quadratic.",
+      "Boat speed = (down + up)/2, stream speed = (down − up)/2.",
+      "Meeting at the starting point on a circular track: take the LCM of lap times.",
+      "For stoppage time per hour: (difference of speeds ÷ faster speed) × 60."
+    ],
+    "traps": [
+      "Average speed is not (x + y)/2 when distances are equal.",
+      "When a train crosses a platform, add the platform length to the train length.",
+      "Use relative speed when the other object also moves (a man walking, another train).",
+      "“Beats by 10 seconds” is about the loser’s time, not the winner’s.",
+      "Check whether the answer is wanted in km/h or m/s, and minutes or hours."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Distance",
+      "expr": "Speed × Time"
+    },
+    {
+      "name": "km/h to m/s",
+      "expr": "× 5/18 (m/s to km/h: × 18/5)"
+    },
+    {
+      "name": "Average speed (equal distances)",
+      "expr": "2xy/(x + y)"
+    },
+    {
+      "name": "Average speed (three equal distances)",
+      "expr": "3xyz/(xy + yz + zx)"
+    },
+    {
+      "name": "Average speed (equal times)",
+      "expr": "(x + y)/2"
+    },
+    {
+      "name": "Relative speed",
+      "expr": "a + b (opposite), a − b (same direction)"
+    },
+    {
+      "name": "Two speeds, late and early",
+      "expr": "D = S1 × S2/(S2 − S1) × time difference"
+    },
+    {
+      "name": "After meeting",
+      "expr": "S1 : S2 = √t2 : √t1"
+    },
+    {
+      "name": "Train crossing",
+      "expr": "time = (L1 + L2)/relative speed"
+    },
+    {
+      "name": "Boat and stream",
+      "expr": "u = (D + U)/2, v = (D − U)/2"
+    },
+    {
+      "name": "Stoppage per hour",
+      "expr": "(S1 − S2)/S1 × 60 min"
+    },
+    {
+      "name": "Circular track, first meeting",
+      "expr": "L/relative speed"
     }
-   },
-   {
-    "type": "trains",
-    "name": "Trains",
-    "how": "Time = (sum of lengths) / relative speed, in m and m/s.",
-    "example": {
-     "q": "A 200 m train at 72 km/h crosses a pole in?",
-     "steps": [
-      "72 km/h = 20 m/s",
-      "200/20 = 10"
-     ],
-     "answer": "10 s"
-    }
-   },
-   {
-    "type": "boats",
-    "name": "Boats and streams",
-    "how": "Boat = (D + U)/2, stream = (D − U)/2.",
-    "example": {
-     "q": "Downstream 10 km/h, upstream 6 km/h. Boat speed in still water?",
-     "steps": [
-      "(10 + 6)/2 = 8"
-     ],
-     "answer": "8 km/h"
-    }
-   }
   ],
-  "tips": [
-   "Always convert to the same units before dividing.",
-   "For equal distances at speeds x and y, average speed = 2xy/(x + y)."
+  "questions": [
+    {
+      "id": "q-tsd-001",
+      "rev": 1,
+      "topic": "q-tsd",
+      "type": "basic-sdt",
+      "level": 1,
+      "q": "A speed of 72 km/h is equal to:",
+      "options": [
+        "18 m/s",
+        "20 m/s",
+        "25 m/s",
+        "24 m/s"
+      ],
+      "answer": 1,
+      "solution": "72 × 5/18 = 4 × 5 = 20 m/s.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-tsd-002",
+      "rev": 1,
+      "topic": "q-tsd",
+      "type": "basic-sdt",
+      "level": 1,
+      "q": "A car covers 360 km in 4 hours 30 minutes. What is its speed?",
+      "options": [
+        "80 km/h",
+        "90 km/h",
+        "75 km/h",
+        "72 km/h"
+      ],
+      "answer": 0,
+      "solution": "Time = 4.5 h.<br>Speed = 360/4.5 = 80 km/h.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-tsd-003",
+      "rev": 1,
+      "topic": "q-tsd",
+      "type": "trains",
+      "level": 2,
+      "q": "A train 150 m long is running at 54 km/h. How long will it take to cross a platform 300 m long?",
+      "options": [
+        "20 s",
+        "25 s",
+        "30 s",
+        "36 s"
+      ],
+      "answer": 2,
+      "solution": "Speed = 54 × 5/18 = 15 m/s.<br>Distance = 150 + 300 = 450 m.<br>Time = 450/15 = 30 s.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-tsd-004",
+      "rev": 1,
+      "topic": "q-tsd",
+      "type": "boats-streams",
+      "level": 2,
+      "q": "A boat goes downstream at 18 km/h and upstream at 12 km/h. What is the speed of the stream?",
+      "options": [
+        "6 km/h",
+        "15 km/h",
+        "2 km/h",
+        "3 km/h"
+      ],
+      "answer": 3,
+      "solution": "Stream speed = (Downstream − Upstream)/2.<br>= (18 − 12)/2 = 3 km/h.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-tsd-005",
+      "rev": 1,
+      "topic": "q-tsd",
+      "type": "trains",
+      "level": 3,
+      "q": "Two trains 120 m and 180 m long are running in opposite directions at 40 km/h and 50 km/h. In how many seconds will they cross each other?",
+      "options": [
+        "10 s",
+        "12 s",
+        "15 s",
+        "18 s"
+      ],
+      "answer": 1,
+      "solution": "Relative speed = 40 + 50 = 90 km/h = 90 × 5/18 = 25 m/s.<br>Distance = 120 + 180 = 300 m.<br>Time = 300/25 = 12 s.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-tsd-006",
+      "rev": 1,
+      "topic": "q-tsd",
+      "type": "average-speed",
+      "level": 3,
+      "q": "A man goes from A to B at 40 km/h and returns from B to A at 60 km/h. What is his average speed for the whole journey?",
+      "options": [
+        "50 km/h",
+        "48 km/h",
+        "45 km/h",
+        "52 km/h"
+      ],
+      "answer": 1,
+      "solution": "Equal distances, so average speed = 2xy/(x + y).<br>= 2 × 40 × 60 / 100 = 48 km/h.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "Average speed is NOT (x + y)/2 when the distances are equal.",
-   "For a platform, add the platform length to the train length."
+  "flashcards": [
+    {
+      "id": "fc-tsd-1",
+      "front": "km/h to m/s",
+      "back": "Multiply by 5/18",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-tsd-2",
+      "front": "Average speed for equal distances",
+      "back": "2xy/(x + y)",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-tsd-3",
+      "front": "Speed of stream",
+      "back": "(Downstream − Upstream)/2",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-tsd-4",
+      "front": "Trains in opposite directions",
+      "back": "Add speeds",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Distance",
-   "expr": "Speed × Time"
-  },
-  {
-   "name": "km/h to m/s",
-   "expr": "× 5/18"
-  },
-  {
-   "name": "Average speed (equal distances)",
-   "expr": "2xy/(x + y)"
-  },
-  {
-   "name": "Boat and stream",
-   "expr": "u = (D + U)/2, v = (D − U)/2"
-  }
- ],
- "questions": [
-  {
-   "id": "q-tsd-001",
-   "rev": 1,
-   "topic": "q-tsd",
-   "type": "speed-basic",
-   "level": 1,
-   "q": "A speed of 72 km/h is equal to:",
-   "options": [
-    "18 m/s",
-    "20 m/s",
-    "25 m/s",
-    "24 m/s"
-   ],
-   "answer": 1,
-   "solution": "72 × 5/18 = 4 × 5 = 20 m/s.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-tsd-002",
-   "rev": 1,
-   "topic": "q-tsd",
-   "type": "speed-basic",
-   "level": 1,
-   "q": "A car covers 360 km in 4 hours 30 minutes. What is its speed?",
-   "options": [
-    "80 km/h",
-    "90 km/h",
-    "75 km/h",
-    "72 km/h"
-   ],
-   "answer": 0,
-   "solution": "Time = 4.5 h.<br>Speed = 360/4.5 = 80 km/h.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-tsd-003",
-   "rev": 1,
-   "topic": "q-tsd",
-   "type": "trains",
-   "level": 2,
-   "q": "A train 150 m long is running at 54 km/h. How long will it take to cross a platform 300 m long?",
-   "options": [
-    "20 s",
-    "25 s",
-    "30 s",
-    "36 s"
-   ],
-   "answer": 2,
-   "solution": "Speed = 54 × 5/18 = 15 m/s.<br>Distance = 150 + 300 = 450 m.<br>Time = 450/15 = 30 s.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-tsd-004",
-   "rev": 1,
-   "topic": "q-tsd",
-   "type": "boats",
-   "level": 2,
-   "q": "A boat goes downstream at 18 km/h and upstream at 12 km/h. What is the speed of the stream?",
-   "options": [
-    "6 km/h",
-    "15 km/h",
-    "2 km/h",
-    "3 km/h"
-   ],
-   "answer": 3,
-   "solution": "Stream speed = (Downstream − Upstream)/2.<br>= (18 − 12)/2 = 3 km/h.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-tsd-005",
-   "rev": 1,
-   "topic": "q-tsd",
-   "type": "trains",
-   "level": 3,
-   "q": "Two trains 120 m and 180 m long are running in opposite directions at 40 km/h and 50 km/h. In how many seconds will they cross each other?",
-   "options": [
-    "10 s",
-    "12 s",
-    "15 s",
-    "18 s"
-   ],
-   "answer": 1,
-   "solution": "Relative speed = 40 + 50 = 90 km/h = 90 × 5/18 = 25 m/s.<br>Distance = 120 + 180 = 300 m.<br>Time = 300/25 = 12 s.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-tsd-006",
-   "rev": 1,
-   "topic": "q-tsd",
-   "type": "speed-basic",
-   "level": 3,
-   "q": "A man goes from A to B at 40 km/h and returns from B to A at 60 km/h. What is his average speed for the whole journey?",
-   "options": [
-    "50 km/h",
-    "48 km/h",
-    "45 km/h",
-    "52 km/h"
-   ],
-   "answer": 1,
-   "solution": "Equal distances, so average speed = 2xy/(x + y).<br>= 2 × 40 × 60 / 100 = 48 km/h.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-tsd-1",
-   "front": "km/h to m/s",
-   "back": "Multiply by 5/18",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-tsd-2",
-   "front": "Average speed for equal distances",
-   "back": "2xy/(x + y)",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-tsd-3",
-   "front": "Speed of stream",
-   "back": "(Downstream − Upstream)/2",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-tsd-4",
-   "front": "Trains in opposite directions",
-   "back": "Add speeds",
-   "deck": "formulas"
-  }
- ]
 }

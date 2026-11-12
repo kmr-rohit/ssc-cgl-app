@@ -1,76 +1,167 @@
 {
  "topic": "c-office",
  "notes": {
-  "summary": "MS Office (Word, Excel, PowerPoint) gives 4–6 questions in Tier 2. Most are keyboard shortcuts (standard Windows ones), Excel functions and cell references, file extensions, and PowerPoint slide-show keys.",
+  "summary": "<p>MS Office gives 4 to 6 questions in the Tier 2 computer section. In past papers most questions are about Word features and shortcuts, then Excel functions, cell references and sheet limits, then PowerPoint views and slide-show keys.</p><p>All shortcuts here are the standard Windows ones for Microsoft 365 and Office 2016 to 2021. Learn them in small families rather than one by one.</p>",
   "concepts": [
    {
-    "title": "Common shortcuts (Windows)",
-    "body": "<table><tr><th>Keys</th><th>Action</th></tr><tr><td>Ctrl+C / Ctrl+X / Ctrl+V</td><td>Copy / Cut / Paste</td></tr><tr><td>Ctrl+Z / Ctrl+Y</td><td>Undo / Redo</td></tr><tr><td>Ctrl+B / Ctrl+I / Ctrl+U</td><td>Bold / Italic / Underline</td></tr><tr><td>Ctrl+S / Ctrl+O / Ctrl+N / Ctrl+P</td><td>Save / Open / New / Print</td></tr><tr><td>Ctrl+F / Ctrl+H</td><td>Find / Replace</td></tr><tr><td>Ctrl+A</td><td>Select all</td></tr><tr><td>Ctrl+K</td><td>Insert hyperlink</td></tr><tr><td>F12</td><td>Save As</td></tr></table>"
+    "title": "Shortcuts that work in all Office programs",
+    "body": "<p>These standard Windows keys work the same way in Word, Excel and PowerPoint. Learn them first; they are asked most often.</p><table><thead><tr><th>Keys</th><th>What it does</th></tr></thead><tbody><tr><td>Ctrl+C, Ctrl+X, Ctrl+V</td><td>Copy, cut, paste</td></tr><tr><td>Ctrl+Z, Ctrl+Y</td><td>Undo, redo (or repeat the last action)</td></tr><tr><td>Ctrl+A</td><td>Select all</td></tr><tr><td>Ctrl+B, Ctrl+I, Ctrl+U</td><td>Bold, italic, underline</td></tr><tr><td>Ctrl+N, Ctrl+O, Ctrl+S, Ctrl+P</td><td>New file, open, save, print</td></tr><tr><td>F12</td><td>Save As</td></tr><tr><td>Ctrl+W or Ctrl+F4</td><td>Close the current document (the program stays open)</td></tr><tr><td>Alt+F4</td><td>Close the program window</td></tr><tr><td>Ctrl+F, Ctrl+H</td><td>Find, replace</td></tr><tr><td>Ctrl+K</td><td>Insert a hyperlink for the selected text</td></tr><tr><td>F1</td><td>Help</td></tr><tr><td>F7</td><td>Spelling and grammar check</td></tr><tr><td>Ctrl+F1</td><td>Show or hide the ribbon</td></tr><tr><td>Ctrl+Shift+C, Ctrl+Shift+V</td><td>Copy formatting, paste formatting (Word and PowerPoint)</td></tr></tbody></table>"
    },
    {
-    "title": "MS Word",
-    "body": "<ul><li>Alignment: <b>Ctrl+L</b> left, <b>Ctrl+E</b> centre, <b>Ctrl+R</b> right, <b>Ctrl+J</b> justify.</li><li><b>Ctrl+Enter</b> page break; <b>F7</b> spelling and grammar; <b>Shift+F3</b> change case; <b>Ctrl+]</b> / <b>Ctrl+[</b> increase / decrease font size by 1 point.</li><li>Default extension: <b>.docx</b> (older .doc); templates <b>.dotx</b>.</li></ul>"
+    "title": "Word shortcuts",
+    "body": "<table><thead><tr><th>Keys</th><th>What it does in Word</th></tr></thead><tbody><tr><td>Ctrl+L, Ctrl+E, Ctrl+R, Ctrl+J</td><td>Align left, centre, right, justify</td></tr><tr><td>Ctrl+1, Ctrl+2, Ctrl+5</td><td>Line spacing single, double, 1.5</td></tr><tr><td>Ctrl+M, Ctrl+Shift+M</td><td>Increase indent, decrease indent</td></tr><tr><td>Ctrl+T</td><td>Hanging indent</td></tr><tr><td>Ctrl+D</td><td>Open the Font dialog box</td></tr><tr><td>Ctrl+] and Ctrl+[</td><td>Font size up or down by 1 point</td></tr><tr><td>Ctrl+Shift+&gt; and Ctrl+Shift+&lt;</td><td>Font size up or down to the next size in the list</td></tr><tr><td>Shift+F3</td><td>Change case (lower, UPPER, Capitalize Each Word)</td></tr><tr><td>Ctrl+Shift+A</td><td>All capitals</td></tr><tr><td>Ctrl+Shift+D</td><td>Double underline</td></tr><tr><td>Ctrl+= and Ctrl+Shift+=</td><td>Subscript (H<sub>2</sub>O) and superscript (x<sup>2</sup>)</td></tr><tr><td>Ctrl+Space, Ctrl+Q</td><td>Remove character formatting, remove paragraph formatting</td></tr><tr><td>Ctrl+Enter</td><td>Page break</td></tr><tr><td>Shift+Enter</td><td>Line break inside the same paragraph</td></tr><tr><td>Ctrl+Shift+Enter</td><td>Column break</td></tr><tr><td>Ctrl+G or F5</td><td>Go To a page</td></tr><tr><td>Ctrl+Home, Ctrl+End</td><td>Start, end of the document</td></tr><tr><td>Shift+F7</td><td>Thesaurus</td></tr><tr><td>Ctrl+Shift+E</td><td>Turn Track Changes on or off</td></tr><tr><td>Ctrl+Shift+G</td><td>Word Count</td></tr><tr><td>Ctrl+Alt+F, Ctrl+Alt+D</td><td>Insert footnote, insert endnote</td></tr><tr><td>Ctrl+F2</td><td>Print preview</td></tr></tbody></table><p>Mini example: to put a heading in the middle of the line, select it and press Ctrl+E.</p>"
    },
    {
-    "title": "MS Excel",
-    "body": "<ul><li>A cell address is column letter + row number (e.g. B3). A range is written A1:A10.</li><li>References: <b>A1</b> relative, <b>$A$1</b> absolute, <b>$A1</b> / <b>A$1</b> mixed. <b>F4</b> cycles through them.</li><li><b>F2</b> edit cell; <b>Ctrl+;</b> current date; <b>Ctrl+Shift+;</b> current time; <b>Alt+=</b> AutoSum; <b>Shift+F11</b> new worksheet.</li><li>COUNT counts numbers only; COUNTA counts all non-empty cells; COUNTBLANK counts empty cells.</li><li>Every formula starts with <b>=</b>. Extension <b>.xlsx</b>.</li></ul>"
+    "title": "Word features and where they live",
+    "body": "<p>The ribbon tabs in Word are File, Home, Insert, Draw, Design, Layout, References, Mailings, Review, View and Help.</p><table><thead><tr><th>Tab</th><th>Main features</th></tr></thead><tbody><tr><td>Home</td><td>Font, paragraph alignment, bullets and numbering, styles, Format Painter, shading, borders, Find and Replace</td></tr><tr><td>Insert</td><td>Cover page, blank page, page break, table, pictures, shapes, SmartArt, chart, hyperlink, header, footer, page number, text box, WordArt, drop cap, symbol, equation</td></tr><tr><td>Design</td><td>Themes, watermark, page colour, page borders</td></tr><tr><td>Layout</td><td>Margins, orientation (portrait or landscape), size, columns, breaks, line numbers, hyphenation, indent and spacing</td></tr><tr><td>References</td><td>Table of contents, footnote, endnote, citations, bibliography, captions, index</td></tr><tr><td>Mailings</td><td>Envelopes, labels, mail merge</td></tr><tr><td>Review</td><td>Spelling and grammar, thesaurus, word count, comments, Track Changes, compare, protect</td></tr><tr><td>View</td><td>Read Mode, Print Layout, Web Layout, Outline, Draft, ruler, gridlines, zoom, split</td></tr></tbody></table><ul><li><b>Print settings</b> (File, Print): Print All Pages, Print Selection, Print Current Page, and <b>Custom Print</b>, where you type only specific pages such as 1,3,5-7. You can also choose one-sided or both sides, collated, orientation, paper size, margins and pages per sheet.</li><li><b>Shading</b> puts a background colour behind selected text, a paragraph or table cells. <b>Borders</b> draw lines around them. <b>Text highlight colour</b> marks text like a highlighter pen.</li><li><b>Mail merge</b> joins one main document (a letter) with a data source (an Excel list or Outlook contacts) to make many personalised letters, envelopes, labels or emails.</li><li><b>Track Changes</b> records every edit so another person can accept or reject it. <b>Comments</b> are notes in the margin.</li><li><b>Format Painter</b> (the brush icon) copies formatting from one place to another. Double-click it to use it many times.</li><li><b>Header and footer</b> repeat at the top and bottom of every page. A <b>section break</b> lets one part of the document have different margins, orientation or headers.</li><li><b>Drop cap</b> makes the first letter of a paragraph large. <b>Watermark</b> is faint text such as CONFIDENTIAL behind the page.</li><li><b>AutoCorrect</b> fixes common typing mistakes as you type. <b>AutoText</b> and Quick Parts store reusable text.</li><li><b>Macros</b> record a series of steps to replay them; a Word file with macros is saved as .docm.</li></ul>"
    },
    {
-    "title": "MS PowerPoint",
-    "body": "<ul><li><b>F5</b> starts the slide show from the first slide; <b>Shift+F5</b> from the current slide; <b>Esc</b> ends it.</li><li><b>Ctrl+M</b> inserts a new slide.</li><li>Views: Normal, Slide Sorter, Reading, Slide Show, Outline.</li><li>Extension <b>.pptx</b>; show file <b>.ppsx</b>.</li></ul>"
+    "title": "Excel basics: cells, ranges and references",
+    "body": "<ul><li>A workbook holds worksheets. A worksheet is a grid of <b>rows</b> (numbers 1, 2, 3) and <b>columns</b> (letters A, B, ... Z, AA, AB ...).</li><li>A <b>cell address</b> (cell reference) is column letter plus row number. The value in column A, row 10 is referred to as <b>A10</b>. The selected cell is the <b>active cell</b>; its address shows in the <b>Name Box</b>.</li><li>A <b>range</b> is written with a colon: A1:A10 is ten cells. A comma joins separate ranges: SUM(A1:A3, C1) adds four cells.</li><li>A reference to another sheet: Sheet2!B4.</li></ul><table><thead><tr><th>Written as</th><th>Type</th><th>When copied</th></tr></thead><tbody><tr><td>A1</td><td>Relative</td><td>Both column and row change when the formula is copied</td></tr><tr><td>$A$1</td><td>Absolute</td><td>Nothing changes; the cell is locked</td></tr><tr><td>$A1</td><td>Mixed</td><td>Column A stays fixed; the row changes</td></tr><tr><td>A$1</td><td>Mixed</td><td>Row 1 stays fixed; the column changes</td></tr></tbody></table><p>Press <b>F4</b> while editing a reference to cycle A1, $A$1, A$1, $A1.</p><p>Mini example: =A1*$B$1 in C1 copied down to C2 becomes =A2*$B$1. The A1 part moves one row; the $B$1 part stays.</p><p>A <b>circular reference</b> is a formula that refers to its own cell, for example =A1+1 typed in A1.</p>"
+   },
+   {
+    "title": "Excel formulas and functions",
+    "body": "<p>Every formula starts with <b>=</b>. Operators are worked out in this order: negation (−), percent (%), power (^), multiply and divide (* /), add and subtract (+ −), join text (&amp;), then comparisons (= &lt; &gt;). So =2+3*4^2 gives 2 + 3 × 16 = 50.</p><table><thead><tr><th>Category</th><th>Functions</th></tr></thead><tbody><tr><td>Math and trig</td><td>SUM, SUMIF, SUMIFS, PRODUCT, ROUND, ROUNDUP, ROUNDDOWN, INT, TRUNC, MOD, ABS, SQRT, POWER, PI, SIN, COS, TAN, RAND, RANDBETWEEN, CEILING, FLOOR</td></tr><tr><td>Statistical</td><td>AVERAGE, AVERAGEIF, COUNT, COUNTA, COUNTBLANK, COUNTIF, MAX, MIN, MEDIAN, MODE, STDEV, LARGE, SMALL, RANK</td></tr><tr><td>Logical</td><td>IF, AND, OR, NOT, IFERROR</td></tr><tr><td>Text</td><td>LEN, LEFT, RIGHT, MID, UPPER, LOWER, PROPER, TRIM, CONCAT (CONCATENATE), TEXT</td></tr><tr><td>Date and time</td><td>TODAY, NOW, DATE, DAY, MONTH, YEAR</td></tr><tr><td>Lookup and reference</td><td>VLOOKUP, HLOOKUP, XLOOKUP, MATCH, INDEX</td></tr></tbody></table><p>Note: SUM is listed under Math and trig, but AVERAGE, COUNT, MAX and MIN are Statistical functions.</p><table><thead><tr><th>Formula</th><th>Result or use</th></tr></thead><tbody><tr><td>=COUNT(A1:A5)</td><td>Counts cells that hold numbers only</td></tr><tr><td>=COUNTA(A1:A5)</td><td>Counts all non-empty cells (numbers and text)</td></tr><tr><td>=COUNTBLANK(A1:A5)</td><td>Counts empty cells</td></tr><tr><td>=COUNTIF(A1:A9,\"&gt;50\")</td><td>Counts cells that meet one condition</td></tr><tr><td>=SUMIF(A1:A9,\"&gt;50\")</td><td>Adds only the cells that meet the condition</td></tr><tr><td>=IF(B2&gt;=33,\"Pass\",\"Fail\")</td><td>Returns one value if the test is true, another if false</td></tr><tr><td>=ROUND(15.678,1)</td><td>15.7 (rounds to 1 decimal place)</td></tr><tr><td>=INT(7.9) and =INT(−3.7)</td><td>7 and −4 (INT always rounds down)</td></tr><tr><td>=MOD(17,5)</td><td>2 (the remainder)</td></tr><tr><td>=VLOOKUP(value, table, col_no, FALSE)</td><td>Looks for the value in the first column of the table and returns the item from column col_no of that row. FALSE means exact match.</td></tr><tr><td>=HLOOKUP(...)</td><td>Same as VLOOKUP but searches the first row</td></tr><tr><td>=MATCH(value, range, 0)</td><td>Returns the relative position of the value in the range, not the value itself. 0 = exact match; 1 (the default) = largest value less than or equal, for ascending data; −1 = smallest value greater than or equal, for descending data.</td></tr><tr><td>=INDEX(range, row, col)</td><td>Returns the value at that position. INDEX with MATCH is a flexible lookup.</td></tr><tr><td>=LEN(\"India\")</td><td>5 (number of characters)</td></tr><tr><td>=TODAY(), =NOW()</td><td>Current date; current date and time</td></tr></tbody></table><p>Mini example: if A1:A4 hold 10, 20, 30, 40, then =MATCH(30,A1:A4,0) returns 3 because 30 is the third item.</p><table><thead><tr><th>Error</th><th>Meaning</th></tr></thead><tbody><tr><td>#####</td><td>Column too narrow to show the number or date</td></tr><tr><td>#DIV/0!</td><td>Division by zero</td></tr><tr><td>#N/A</td><td>Value not available (a lookup found nothing)</td></tr><tr><td>#NAME?</td><td>Excel does not recognise a function or name (often a spelling error)</td></tr><tr><td>#REF!</td><td>The formula refers to a cell that no longer exists</td></tr><tr><td>#VALUE!</td><td>Wrong type of value, such as text in a sum like =\"abc\"+1</td></tr><tr><td>#NUM!</td><td>Invalid number, such as =SQRT(−4)</td></tr><tr><td>#NULL!</td><td>Two ranges that do not intersect</td></tr></tbody></table>"
+   },
+   {
+    "title": "Excel data, charts and sheet limits",
+    "body": "<table><thead><tr><th>Limit</th><th>Excel 2007 and later (incl. 365)</th><th>Excel 2003</th></tr></thead><tbody><tr><td>Rows per sheet</td><td>1,048,576</td><td>65,536</td></tr><tr><td>Columns per sheet</td><td>16,384 (last column XFD)</td><td>256 (last column IV)</td></tr><tr><td>Characters in one cell</td><td>32,767</td><td>32,767</td></tr><tr><td>Column width</td><td>255 characters</td><td>255 characters</td></tr><tr><td>Characters in a formula</td><td>8,192</td><td>1,024</td></tr><tr><td>Nested function levels</td><td>64</td><td>7</td></tr><tr><td>Sheet name length</td><td>31 characters</td><td>31 characters</td></tr></tbody></table><ul><li>A new workbook in Excel 2013 and later has <b>1</b> sheet; Excel 2007 and 2010 had 3. The default column width is 8.43 characters.</li><li><b>Inserting a row</b> pushes the rows below it down; <b>inserting a column</b> pushes columns to the right. Formulas adjust their references automatically.</li><li><b>Sort</b> arranges rows in order (A to Z, smallest to largest). <b>Filter</b> (Ctrl+Shift+L) hides rows that do not match. <b>Freeze Panes</b> (View tab) keeps headings visible while scrolling.</li><li><b>Conditional Formatting</b> (Home tab) colours cells by rule. <b>Data Validation</b> (Data tab) limits what can be typed. <b>Remove Duplicates</b> and <b>Text to Columns</b> are on the Data tab.</li><li><b>PivotTable</b> (Insert tab) summarises a large table. <b>Goal Seek</b> (Data, What-If Analysis) finds the input that gives a wanted result.</li><li><b>AutoFill</b>: drag the fill handle (small square at the cell corner) to continue a series such as Jan, Feb, Mar or 2, 4, 6.</li></ul><table><thead><tr><th>Chart</th><th>Best for</th></tr></thead><tbody><tr><td>Column or bar</td><td>Comparing amounts across categories</td></tr><tr><td>Line</td><td>Trend over time</td></tr><tr><td>Pie</td><td>Parts of a whole; only one data series</td></tr><tr><td>Doughnut</td><td>Parts of a whole; can show more than one series</td></tr><tr><td>Scatter (XY)</td><td>Relation between two sets of numbers</td></tr><tr><td>Area</td><td>Size of change over time</td></tr><tr><td>Histogram</td><td>Frequency of values in ranges (bins)</td></tr><tr><td>Sparkline</td><td>Tiny chart inside one cell</td></tr></tbody></table><p>Press <b>F11</b> to make a chart on a new chart sheet, or <b>Alt+F1</b> to put it on the same sheet.</p>"
+   },
+   {
+    "title": "Excel shortcuts",
+    "body": "<table><thead><tr><th>Keys</th><th>What it does in Excel</th></tr></thead><tbody><tr><td>F2</td><td>Edit the active cell</td></tr><tr><td>F4</td><td>Toggle $ in a reference while editing; otherwise repeat the last action</td></tr><tr><td>F9</td><td>Recalculate all formulas</td></tr><tr><td>F11, Alt+F1</td><td>Chart on a new sheet, chart on the same sheet</td></tr><tr><td>Shift+F11</td><td>Insert a new worksheet</td></tr><tr><td>Shift+F3</td><td>Insert Function dialog</td></tr><tr><td>Ctrl+;</td><td>Enter today's date</td></tr><tr><td>Ctrl+Shift+;</td><td>Enter the current time</td></tr><tr><td>Alt+=</td><td>AutoSum</td></tr><tr><td>Ctrl+D, Ctrl+R</td><td>Fill down, fill right</td></tr><tr><td>Ctrl+E</td><td>Flash Fill</td></tr><tr><td>Ctrl+1</td><td>Format Cells dialog</td></tr><tr><td>Ctrl+`</td><td>Show formulas instead of results</td></tr><tr><td>Alt+Enter</td><td>New line inside the same cell</td></tr><tr><td>Ctrl+Enter</td><td>Fill every selected cell with the same entry</td></tr><tr><td>Ctrl+Space, Shift+Space</td><td>Select the whole column, select the whole row</td></tr><tr><td>Ctrl+Home, Ctrl+End</td><td>Go to A1, go to the last used cell</td></tr><tr><td>Ctrl+Page Down, Ctrl+Page Up</td><td>Next sheet, previous sheet</td></tr><tr><td>Ctrl+T (or Ctrl+L)</td><td>Create a table</td></tr><tr><td>Ctrl+Shift+L</td><td>Turn filter on or off</td></tr><tr><td>Ctrl+9, Ctrl+0</td><td>Hide rows, hide columns</td></tr><tr><td>Ctrl+Shift+$ , Ctrl+Shift+%</td><td>Currency format, percentage format</td></tr><tr><td>Ctrl+− and Ctrl+Shift++</td><td>Delete cells, insert cells</td></tr></tbody></table>"
+   },
+   {
+    "title": "PowerPoint",
+    "body": "<table><thead><tr><th>Keys</th><th>What it does in PowerPoint</th></tr></thead><tbody><tr><td>F5</td><td>Start the slide show from the first slide</td></tr><tr><td>Shift+F5</td><td>Start from the current slide</td></tr><tr><td>Esc</td><td>End the slide show</td></tr><tr><td>Ctrl+M</td><td>Insert a new slide</td></tr><tr><td>Ctrl+D</td><td>Duplicate the selected slide or object</td></tr><tr><td>N, Enter, Space, Right arrow</td><td>Next slide or animation (during a show)</td></tr><tr><td>P, Backspace, Left arrow</td><td>Previous slide (during a show)</td></tr><tr><td>Number then Enter</td><td>Jump to that slide (during a show)</td></tr><tr><td>B or full stop</td><td>Black screen (during a show)</td></tr><tr><td>W or comma</td><td>White screen (during a show)</td></tr><tr><td>Ctrl+P</td><td>Pen pointer (during a show); print (while editing)</td></tr></tbody></table><ul><li><b>Views</b>: Normal (the default editing view), Outline View, Slide Sorter (thumbnails to reorder slides), Notes Page, Reading View and Slide Show. Master views: <b>Slide Master</b>, Handout Master and Notes Master.</li><li>The <b>Slide Master</b> controls the fonts, colours, background and placeholder positions of every slide. Change it once and all slides follow.</li><li>A <b>template</b> (.potx) is a ready-made file with a design, layouts and sometimes sample content, so a presentation looks consistent and is quick to build. A <b>theme</b> is a set of colours, fonts and effects.</li><li><b>Placeholders</b> are the dotted boxes in a layout. Text typed into a loose text box instead of a placeholder does not follow the layout and can move out of place when content changes.</li><li><b>Transitions</b> are effects between slides (Transitions tab). <b>Animations</b> move objects on one slide (Animations tab). The Animation Painter copies an animation.</li><li>Slides can be inserted, duplicated, hidden, reordered or deleted (select the slide and press Delete), so a talk can be changed without rebuilding it.</li><li>To make a blank presentation: File, New, Blank Presentation (or Ctrl+N).</li><li><b>Rehearse Timings</b> records how long each slide stays up. <b>Custom Slide Show</b> plays only chosen slides. <b>Speaker notes</b> are visible to the presenter, not the audience.</li><li>PowerPoint tabs: File, Home, Insert, Draw, Design, Transitions, Animations, Slide Show, Record, Review, View.</li></ul>"
+   },
+   {
+    "title": "The Office window and file types",
+    "body": "<table><thead><tr><th>Part</th><th>What it is</th></tr></thead><tbody><tr><td>Title bar</td><td>Top strip showing the file name and program name</td></tr><tr><td>Quick Access Toolbar</td><td>Small toolbar (Save, Undo, Redo) at the top left; you can add buttons to it</td></tr><tr><td>Ribbon</td><td>Band below the title bar with tabs (Home, Insert ...). Each tab has groups of commands. Ctrl+F1 hides or shows it.</td></tr><tr><td>File tab (Backstage view)</td><td>New, Open, Save, Save As, Print, Share, Export, Options</td></tr><tr><td>Dialog box launcher</td><td>Small arrow at the corner of a ribbon group that opens the full dialog</td></tr><tr><td>Status bar</td><td>Bottom strip: page and word count in Word, Sum and Average of selected cells in Excel, zoom slider</td></tr><tr><td>Name Box and formula bar</td><td>Excel only: the Name Box shows the active cell address; the formula bar shows its contents or formula</td></tr><tr><td>Mini toolbar</td><td>Small formatting toolbar that appears when you select text</td></tr></tbody></table><table><thead><tr><th>Program</th><th>Default (2007 and later)</th><th>Old (2003)</th><th>Others</th></tr></thead><tbody><tr><td>Word</td><td>.docx</td><td>.doc</td><td>.dotx (template), .docm (with macros)</td></tr><tr><td>Excel</td><td>.xlsx</td><td>.xls</td><td>.xltx (template), .xlsm (with macros), .csv</td></tr><tr><td>PowerPoint</td><td>.pptx</td><td>.ppt</td><td>.potx (template), .ppsx (opens straight as a show)</td></tr><tr><td>Access</td><td>.accdb</td><td>.mdb</td><td></td></tr><tr><td>Publisher, OneNote, Outlook</td><td>.pub, .one, .pst (mail store)</td><td></td><td></td></tr></tbody></table><p>Other suites: Google Docs, Sheets and Slides (online); LibreOffice Writer, Calc and Impress (free, open source); Apple Pages, Numbers and Keynote.</p>"
    }
   ],
   "varieties": [
    {
-    "type": "word",
-    "name": "MS Word shortcuts and features",
-    "how": "Learn the alignment set (L, E, R, J) and the formatting set (B, I, U) as groups.",
+    "type": "office-shortcuts",
+    "name": "Word and common Office shortcuts",
+    "how": "Learn shortcuts in families: B, I, U for style; L, E, R, J for alignment; C, X, V, Z, Y for editing; N, O, S, P, W for files. Ctrl+K is hyperlink and F12 is Save As.",
     "example": {
-     "q": "Which shortcut right-aligns a paragraph in MS Word?",
+     "q": "Which keyboard shortcut closes the current document in MS Word but keeps Word open?",
      "steps": [
-      "Alignment keys: L = left, E = centre, R = right, J = justify.",
-      "Right → Ctrl+R."
+      "Alt+F4 closes the whole program window.",
+      "Ctrl+W (or Ctrl+F4) closes only the active document."
      ],
-     "answer": "Ctrl+R"
+     "answer": "Ctrl+W"
     }
    },
    {
-    "type": "excel",
-    "name": "Excel functions, references and keys",
-    "how": "Read the function name carefully (COUNT vs COUNTA) and check which cells are numbers, text or blank.",
+    "type": "word-features",
+    "name": "Word features and menus",
+    "how": "Ask what the feature produces, then match it to its tab: layout things on Layout, footnotes and contents on References, mail merge on Mailings, Track Changes on Review.",
     "example": {
-     "q": "Cells A1:A4 contain 5, 10, 15 and 20. What does =AVERAGE(A1:A4) return?",
+     "q": "In MS Word, which print setting lets you print only pages 2, 5 and 7?",
      "steps": [
-      "Sum = 5 + 10 + 15 + 20 = 50",
-      "Count = 4",
-      "50 ÷ 4 = 12.5"
+      "Print All Pages prints everything; Print Current Page prints one page.",
+      "Custom Print lets you type a page list such as 2,5,7."
      ],
-     "answer": "12.5"
+     "answer": "Custom Print"
+    }
+   },
+   {
+    "type": "excel-functions",
+    "name": "Excel formulas and functions",
+    "how": "Work out each function on its own, then combine. Remember the order: power before multiply before add, and INT always rounds down.",
+    "example": {
+     "q": "What value does =MOD(17,5)+INT(7.9) return?",
+     "steps": [
+      "MOD(17,5) is the remainder of 17 ÷ 5, which is 2.",
+      "INT(7.9) rounds down to 7.",
+      "2 + 7 = 9."
+     ],
+     "answer": "9"
+    }
+   },
+   {
+    "type": "excel-references",
+    "name": "Excel cells and references",
+    "how": "Count how many columns and rows the formula moves. Shift every part without a $ by that amount; leave every part with a $ in front unchanged.",
+    "example": {
+     "q": "Cell C1 contains =A1+$B$1. It is copied to D3. What formula does D3 show?",
+     "steps": [
+      "C1 to D3 is 1 column right and 2 rows down.",
+      "A1 is relative, so it becomes B3.",
+      "$B$1 is absolute, so it stays $B$1."
+     ],
+     "answer": "=B3+$B$1"
+    }
+   },
+   {
+    "type": "excel-data-charts",
+    "name": "Excel data, charts and sheet limits",
+    "how": "Match the chart to the job (pie for parts of a whole, line for trends over time). For limits, remember 1,048,576 rows and 16,384 columns (XFD) from Excel 2007 onwards.",
+    "example": {
+     "q": "What is the last column in a worksheet of MS Excel 365?",
+     "steps": [
+      "Excel 2007 and later have 16,384 columns.",
+      "The letters run A to Z, AA to ZZ, then AAA onwards, ending at XFD."
+     ],
+     "answer": "XFD"
+    }
+   },
+   {
+    "type": "excel-shortcuts",
+    "name": "Excel keyboard shortcuts",
+    "how": "Excel keys differ from Word: F2 edits a cell, F4 locks references, Ctrl+; gives the date and Ctrl+Shift+; gives the time, Shift+F11 adds a sheet.",
+    "example": {
+     "q": "Which shortcut enters the current time in an Excel cell?",
+     "steps": [
+      "Ctrl+; (semicolon) enters the date.",
+      "Adding Shift, Ctrl+Shift+; enters the time."
+     ],
+     "answer": "Ctrl+Shift+;"
     }
    },
    {
     "type": "powerpoint",
-    "name": "PowerPoint keys and views",
-    "how": "F5 = from beginning, Shift+F5 = from current slide, Ctrl+M = new slide.",
+    "name": "PowerPoint slides, views and keys",
+    "how": "F5 starts from the beginning, Shift+F5 from the current slide, Esc ends. Slide Master changes all slides at once; Slide Sorter is for reordering.",
     "example": {
-     "q": "Which key ends a running slide show?",
+     "q": "Which PowerPoint view shows all slides as small thumbnails so they can be rearranged easily?",
      "steps": [
-      "Esc leaves the slide show and returns to the previous view."
+      "Normal view shows one slide for editing.",
+      "Slide Sorter view shows thumbnails of every slide for reordering."
      ],
-     "answer": "Esc"
+     "answer": "Slide Sorter view"
+    }
+   },
+   {
+    "type": "office-interface",
+    "name": "Office screen and file types",
+    "how": "Picture the window from top to bottom: title bar and Quick Access Toolbar, then the ribbon, then (in Excel) the Name Box and formula bar, then the work area, then the status bar.",
+    "example": {
+     "q": "In MS Excel, which part of the window shows the address of the active cell?",
+     "steps": [
+      "The formula bar shows what is inside the cell.",
+      "The Name Box, just left of the formula bar, shows its address such as B4."
+     ],
+     "answer": "Name Box"
     }
    }
   ],
   "tips": [
-   "Ctrl+E is centre in Word; in Excel 2013+ it is Flash Fill.",
-   "Ctrl+H opens Replace in Word and Excel.",
-   "In Excel, ##### in a cell means the column is too narrow for the number."
+   "Many past questions name \"MS-Word 365\" or \"MS-Excel 365\". The answers are the same as for Office 2016 to 2021.",
+   "Ctrl+E is centre in Word and PowerPoint but Flash Fill in Excel. Ctrl+D is the Font dialog in Word, Fill Down in Excel and Duplicate in PowerPoint.",
+   "F5 is Go To in Word but starts the slide show in PowerPoint. F7 is spelling in every Office program.",
+   "In Excel, ##### in a cell just means the column is too narrow.",
+   "Remember the two grid sizes as pairs: 1,048,576 by 16,384 (XFD) now, and 65,536 by 256 (IV) in Excel 2003.",
+   "MATCH returns a position, VLOOKUP returns a value. INDEX turns a position back into a value."
   ],
   "traps": [
-   "Ctrl+Y is Redo, not Undo.",
-   "Ctrl+; inserts the date; Ctrl+Shift+; inserts the time.",
-   "F5 in Word opens Go To, but F5 in PowerPoint starts the slide show.",
-   "COUNT ignores text; COUNTA counts text too."
+   "Ctrl+Y is redo; Ctrl+Z is undo.",
+   "Ctrl+; is the date and Ctrl+Shift+; is the time, not the other way round.",
+   "COUNT counts numbers only. COUNTA also counts text. Neither counts blank cells.",
+   "Alt+F4 closes the whole program; Ctrl+W or Ctrl+F4 closes only the document.",
+   "In $A1 the column is locked; in A$1 the row is locked. The $ locks whatever comes right after it."
   ]
  },
  "questions": [
@@ -78,7 +169,7 @@
    "id": "c-office-001",
    "rev": 1,
    "topic": "c-office",
-   "type": "word",
+   "type": "office-shortcuts",
    "level": 1,
    "q": "Which keyboard shortcut makes selected text bold in MS Word?",
    "options": [
@@ -95,7 +186,7 @@
    "id": "c-office-002",
    "rev": 1,
    "topic": "c-office",
-   "type": "word",
+   "type": "office-shortcuts",
    "level": 1,
    "q": "The shortcut Ctrl+Z is used to:",
    "options": [
@@ -129,7 +220,7 @@
    "id": "c-office-004",
    "rev": 1,
    "topic": "c-office",
-   "type": "excel",
+   "type": "excel-references",
    "level": 2,
    "q": "In MS Excel, the reference $A$1 is a(n):",
    "options": [
@@ -146,7 +237,7 @@
    "id": "c-office-005",
    "rev": 1,
    "topic": "c-office",
-   "type": "word",
+   "type": "office-shortcuts",
    "level": 2,
    "q": "In MS Word, Ctrl+J is used to:",
    "options": [
@@ -163,7 +254,7 @@
    "id": "c-office-006",
    "rev": 1,
    "topic": "c-office",
-   "type": "excel",
+   "type": "excel-shortcuts",
    "level": 2,
    "q": "Which shortcut inserts the current date in an Excel cell?",
    "options": [
@@ -180,7 +271,7 @@
    "id": "c-office-007",
    "rev": 1,
    "topic": "c-office",
-   "type": "excel",
+   "type": "excel-functions",
    "level": 3,
    "q": "In Excel, A1 = 10, A2 = 20, A3 = \"abc\", A4 is blank and A5 = 30. What does =COUNTA(A1:A5) return?",
    "options": [

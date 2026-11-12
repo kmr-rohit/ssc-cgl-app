@@ -1,86 +1,188 @@
 {
  "topic": "q-coordinate",
  "notes": {
-  "summary": "Coordinate geometry questions are few (0–1) but quick: distance, section formula, slope and area of a triangle.",
+  "summary": "Coordinate geometry is a small topic in SSC CGL, usually 0 or 1 question per paper. Most questions are about straight lines: slope, intercepts, where a line cuts the axes and the triangle it makes with them. The rest use the distance, section and area formulas, so every question is quick once the formulas are learnt.",
   "concepts": [
    {
-    "title": "Distance and section",
-    "body": "Distance between (x<sub>1</sub>, y<sub>1</sub>) and (x<sub>2</sub>, y<sub>2</sub>) = √((x<sub>2</sub> − x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> − y<sub>1</sub>)<sup>2</sup>). Point dividing in m : n internally = ((mx<sub>2</sub> + nx<sub>1</sub>)/(m + n), (my<sub>2</sub> + ny<sub>1</sub>)/(m + n)). Midpoint uses m = n."
+    "title": "Points, quadrants and reflections",
+    "img": "quant/coord-quadrants.svg",
+    "body": "<p>A point (x, y) is x units across and y units up from the origin O(0, 0). The axes split the plane into four quadrants:</p>\n<table><thead><tr><th>Quadrant</th><th>Signs</th><th>Example</th></tr></thead><tbody>\n<tr><td>I</td><td>(+, +)</td><td>(3, 2)</td></tr><tr><td>II</td><td>(−, +)</td><td>(−3, 2)</td></tr>\n<tr><td>III</td><td>(−, −)</td><td>(−3, −2)</td></tr><tr><td>IV</td><td>(+, −)</td><td>(3, −2)</td></tr></tbody></table>\n<ul><li>A point on the x-axis has y = 0; a point on the y-axis has x = 0.</li>\n<li>Distance of (x, y) from the x-axis is |y|; from the y-axis it is |x|.</li></ul>\n<p><b>Mirror images</b> of the point (x, y):</p>\n<table><thead><tr><th>Mirror</th><th>Image</th></tr></thead><tbody>\n<tr><td>x-axis</td><td>(x, −y)</td></tr><tr><td>y-axis</td><td>(−x, y)</td></tr><tr><td>Origin</td><td>(−x, −y)</td></tr>\n<tr><td>Line y = x</td><td>(y, x)</td></tr><tr><td>Line y = −x</td><td>(−y, −x)</td></tr>\n<tr><td>Line x = a</td><td>(2a − x, y)</td></tr><tr><td>Line y = b</td><td>(x, 2b − y)</td></tr></tbody></table>\n<p>Example: the image of (3, −5) in the line y = x is (−5, 3), which lies in quadrant II.</p>"
    },
    {
-    "title": "Lines",
-    "body": "Slope of ax + by + c = 0 is <b>−a/b</b>. Intercepts: x-intercept = −c/a, y-intercept = −c/b. Parallel lines have equal slopes; perpendicular lines have slopes multiplying to −1.",
-    "img": "quant/coord-line.svg"
+    "title": "Distance formula",
+    "body": "<p>Distance between A(x<sub>1</sub>, y<sub>1</sub>) and B(x<sub>2</sub>, y<sub>2</sub>):</p>\n<p><b>AB = √((x<sub>2</sub> − x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> − y<sub>1</sub>)<sup>2</sup>)</b></p>\n<ul><li>From the origin: √(x<sup>2</sup> + y<sup>2</sup>).</li>\n<li>Use it to test a shape: three equal sides make an equilateral triangle; if the squares of two sides add to the square of the third, it is right-angled.</li>\n<li>A point equally far from A, B and C is the circumcentre. For a right triangle it is the midpoint of the hypotenuse.</li></ul>\n<p>Example: (1, 1) and (4, 5) are √(3<sup>2</sup> + 4<sup>2</sup>) = 5 apart.</p>\n<p>Example: the point equally far from A(0, 0), B(4, 0) and C(0, 3). The triangle has a right angle at A, so the point is the midpoint of BC: (2, 1.5).</p>"
    },
    {
-    "title": "Area of a triangle",
-    "body": "Area = ½ |x<sub>1</sub>(y<sub>2</sub> − y<sub>3</sub>) + x<sub>2</sub>(y<sub>3</sub> − y<sub>1</sub>) + x<sub>3</sub>(y<sub>1</sub> − y<sub>2</sub>)|. If the area is 0, the points are collinear."
+    "title": "Section formula, midpoint and centroid",
+    "body": "<p>The point P dividing AB <b>internally</b> in the ratio m : n (AP : PB = m : n):</p>\n<p><b>P = ((mx<sub>2</sub> + nx<sub>1</sub>)/(m + n), (my<sub>2</sub> + ny<sub>1</sub>)/(m + n))</b></p>\n<p>m goes with the second point B, n with the first point A. For <b>external</b> division replace + with −: ((mx<sub>2</sub> − nx<sub>1</sub>)/(m − n), (my<sub>2</sub> − ny<sub>1</sub>)/(m − n)).</p>\n<ul><li><b>Midpoint</b> (m = n): ((x<sub>1</sub> + x<sub>2</sub>)/2, (y<sub>1</sub> + y<sub>2</sub>)/2).</li>\n<li><b>Centroid</b> of a triangle: ((x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub>)/3, (y<sub>1</sub> + y<sub>2</sub> + y<sub>3</sub>)/3).</li>\n<li>The x-axis divides AB in the ratio −y<sub>1</sub> : y<sub>2</sub>; the y-axis divides it in the ratio −x<sub>1</sub> : x<sub>2</sub>.</li>\n<li>Parallelogram ABCD: the diagonals share a midpoint, so D = A + C − B (coordinate by coordinate).</li></ul>\n<p>Example: the centroid of (1, 2), (4, 6), (7, 1) is (12/3, 9/3) = (4, 3).</p>\n<p>Example: the x-axis divides the join of (2, −3) and (5, 6) in the ratio 3 : 6 = 1 : 2, at the point ((5 + 4)/3, (6 − 6)/3) = (3, 0).</p>\n<p>Example: A(1, 2), B(3, 5), C(6, 6) are three corners of parallelogram ABCD. D = (1 + 6 − 3, 2 + 6 − 5) = (4, 3).</p>"
+   },
+   {
+    "title": "Slope of a line",
+    "body": "<p>Slope (gradient) m tells how steep a line is: rise over run.</p>\n<ul><li>Through two points: <b>m = (y<sub>2</sub> − y<sub>1</sub>)/(x<sub>2</sub> − x<sub>1</sub>)</b>.</li>\n<li>From the angle θ with the positive x-axis: m = tan θ. A 45° line has slope 1; a 135° line has slope −1.</li>\n<li>From ax + by + c = 0: <b>m = −a/b</b>. Example: 7x + 4y = 8 has slope −7/4.</li>\n<li>A horizontal line (y = k) has slope 0. A vertical line (x = k) has no defined slope.</li>\n<li><b>Parallel</b> lines have equal slopes. <b>Perpendicular</b> lines have slopes that multiply to −1 (m<sub>1</sub> × m<sub>2</sub> = −1).</li>\n<li>Three points are on one line if the slope of AB equals the slope of BC.</li></ul>"
+   },
+   {
+    "title": "Equation of a line",
+    "body": "<table><thead><tr><th>You know</th><th>Equation</th></tr></thead><tbody>\n<tr><td>Slope m and y-intercept c</td><td>y = mx + c</td></tr>\n<tr><td>Slope m and a point (x<sub>1</sub>, y<sub>1</sub>)</td><td>y − y<sub>1</sub> = m(x − x<sub>1</sub>)</td></tr>\n<tr><td>Two points</td><td>y − y<sub>1</sub> = ((y<sub>2</sub> − y<sub>1</sub>)/(x<sub>2</sub> − x<sub>1</sub>))(x − x<sub>1</sub>)</td></tr>\n<tr><td>Intercepts a and b</td><td>x/a + y/b = 1</td></tr>\n<tr><td>General form</td><td>ax + by + c = 0</td></tr></tbody></table>\n<ul><li>A line parallel to ax + by + c = 0 is ax + by + k = 0. A line perpendicular to it is bx − ay + k = 0. Find k by putting in the given point.</li>\n<li>Where two lines meet: solve them together. x + y = 5 and x − y = 1 meet at (3, 2).</li>\n<li>Distance of the point (x<sub>1</sub>, y<sub>1</sub>) from ax + by + c = 0 is |ax<sub>1</sub> + by<sub>1</sub> + c|/√(a<sup>2</sup> + b<sup>2</sup>). Example: (3, 4) from 3x + 4y − 5 = 0 is |9 + 16 − 5|/5 = 4.</li>\n<li>Distance between parallel lines ax + by + c<sub>1</sub> = 0 and ax + by + c<sub>2</sub> = 0 is |c<sub>1</sub> − c<sub>2</sub>|/√(a<sup>2</sup> + b<sup>2</sup>). Example: 3x + 4y + 5 = 0 and 3x + 4y − 10 = 0 are 15/5 = 3 apart.</li></ul>\n<p>Example: the line with slope −1 through (2, 3) is y − 3 = −(x − 2), that is x + y = 5.</p>"
+   },
+   {
+    "title": "Intercepts and the triangle with the axes",
+    "body": "<p>For ax + by + c = 0:</p>\n<ul><li>It cuts the <b>x-axis</b> where y = 0: at (−c/a, 0). The x-intercept is −c/a.</li>\n<li>It cuts the <b>y-axis</b> where x = 0: at (0, −c/b). The y-intercept is −c/b.</li>\n<li>Written as x/p + y/q = 1, the intercepts are simply p and q.</li>\n<li>The line and the two axes make a right triangle with legs |p| and |q|. Its area is ½|pq| = c<sup>2</sup>/(2|ab|), and its hypotenuse is √(p<sup>2</sup> + q<sup>2</sup>).</li></ul>\n<p>Example: 57x − 19y = 399. Put y = 0: x = 399/57 = 7. Put x = 0: y = 399/(−19) = −21. It cuts the axes at (7, 0) and (0, −21).</p>\n<p>Example: 3x + 4y = 24 has intercepts 8 and 6, so the triangle with the axes has area ½ × 8 × 6 = 24 square units and hypotenuse √(64 + 36) = 10.</p>"
+   },
+   {
+    "title": "Area of a triangle and collinearity",
+    "body": "<p>For corners (x<sub>1</sub>, y<sub>1</sub>), (x<sub>2</sub>, y<sub>2</sub>), (x<sub>3</sub>, y<sub>3</sub>):</p>\n<p><b>Area = ½ |x<sub>1</sub>(y<sub>2</sub> − y<sub>3</sub>) + x<sub>2</sub>(y<sub>3</sub> − y<sub>1</sub>) + x<sub>3</sub>(y<sub>1</sub> − y<sub>2</sub>)|</b></p>\n<ul><li>If the area is 0, the three points are <b>collinear</b> (on one straight line).</li>\n<li>With one corner at the origin and others (x<sub>1</sub>, y<sub>1</sub>), (x<sub>2</sub>, y<sub>2</sub>): area = ½|x<sub>1</sub>y<sub>2</sub> − x<sub>2</sub>y<sub>1</sub>|.</li>\n<li>For a quadrilateral, split it along a diagonal into two triangles and add the areas.</li>\n<li>The triangle formed by joining the midpoints of the sides has ¼ of the area.</li></ul>\n<p>Example: A(2, 1), B(5, 4), C(1, 6). Area = ½|2(4 − 6) + 5(6 − 1) + 1(1 − 4)| = ½|−4 + 25 − 3| = 9 square units.</p>"
    }
   ],
   "varieties": [
    {
     "type": "distance-section",
-    "name": "Distance, midpoint, section",
-    "how": "Plug into the formula; for m : n, multiply m with the second point.",
+    "name": "Distance, midpoint and section",
+    "how": "Use the distance formula for lengths. For a ratio, call it k : 1, write the section formula for one coordinate, solve for k, and check with the other coordinate.",
     "example": {
-     "q": "Distance between (1, 1) and (4, 5)?",
+     "q": "In what ratio does the point (−1, 6) divide the line segment joining (−3, 10) and (6, −8)?",
      "steps": [
-      "√(3<sup>2</sup> + 4<sup>2</sup>) = √25"
+      "Let the ratio be k : 1. x-coordinate: (6k − 3)/(k + 1) = −1.",
+      "6k − 3 = −k − 1 gives 7k = 2, so k = 2/7.",
+      "Check y: (−8 × 2/7 + 10)/(9/7) = (54/7)/(9/7) = 6. Correct."
      ],
-     "answer": "5"
+     "answer": "2 : 7"
     }
    },
    {
     "type": "slope-line",
-    "name": "Slope and lines",
-    "how": "Rewrite as y = mx + c, or use −a/b.",
+    "name": "Slope and equation of a line",
+    "how": "Get the slope (−a/b, rise over run, or tan θ). A parallel line keeps the slope; a perpendicular line takes −1/m. Then use y − y<sub>1</sub> = m(x − x<sub>1</sub>).",
     "example": {
-     "q": "Slope of 2x + y − 5 = 0?",
+     "q": "Find the equation of the line through (2, 3) that is perpendicular to 2x − y + 5 = 0.",
      "steps": [
-      "−a/b = −2/1"
+      "Slope of 2x − y + 5 = 0 is −2/(−1) = 2.",
+      "Perpendicular slope = −1/2.",
+      "y − 3 = −½(x − 2) gives 2y − 6 = −x + 2."
      ],
-     "answer": "−2"
+     "answer": "x + 2y − 8 = 0"
+    }
+   },
+   {
+    "type": "intercepts-axes",
+    "name": "Intercepts and axes",
+    "how": "Put y = 0 to find where the line cuts the x-axis and x = 0 for the y-axis. The triangle with the axes has area ½ × |x-intercept| × |y-intercept|.",
+    "example": {
+     "q": "Find the points where the graph of 57x − 19y = 399 cuts the coordinate axes.",
+     "steps": [
+      "y = 0: 57x = 399, so x = 7.",
+      "x = 0: −19y = 399, so y = −21."
+     ],
+     "answer": "(7, 0) and (0, −21)"
     }
    },
    {
     "type": "area",
-    "name": "Area of a triangle",
-    "how": "Use the determinant formula, or ½ × base × height for intercept triangles.",
+    "name": "Area and collinearity",
+    "how": "Use ½|x<sub>1</sub>(y<sub>2</sub> − y<sub>3</sub>) + x<sub>2</sub>(y<sub>3</sub> − y<sub>1</sub>) + x<sub>3</sub>(y<sub>1</sub> − y<sub>2</sub>)|. For collinear points set the bracket to 0 and solve for the unknown.",
     "example": {
-     "q": "Area of the triangle formed by x + y = 4 and the axes?",
+     "q": "For what value of k are the points (1, 5), (k, 1) and (4, 11) collinear?",
      "steps": [
-      "Intercepts 4 and 4",
-      "½ × 4 × 4"
+      "Set 1(1 − 11) + k(11 − 5) + 4(5 − 1) = 0.",
+      "−10 + 6k + 16 = 0 gives 6k = −6.",
+      "Check: slope from (1, 5) to (4, 11) is 2, and from (−1, 1) to (1, 5) is 4/2 = 2."
      ],
-     "answer": "8 sq units"
+     "answer": "k = −1"
+    }
+   },
+   {
+    "type": "reflections",
+    "name": "Quadrants and reflections",
+    "how": "Use the sign table for quadrants. For a mirror image, keep the coordinate along the mirror and flip the other; in y = x swap the coordinates.",
+    "example": {
+     "q": "The point P(−4, 7) is reflected in the x-axis to give Q. In which quadrant is Q, and what is the length PQ?",
+     "steps": [
+      "Reflection in the x-axis keeps x and flips y: Q = (−4, −7).",
+      "Both signs negative, so Q is in quadrant III.",
+      "PQ = |7 − (−7)| = 14."
+     ],
+     "answer": "Quadrant III, PQ = 14"
     }
    }
   ],
   "tips": [
-   "A line x/a + y/b = 1 makes a triangle of area ½|ab| with the axes.",
-   "Sketch the points quickly to avoid sign errors."
+   "Sketch the points on rough axes first; it catches sign mistakes and often rules out two options.",
+   "For where a line cuts the axes, put y = 0 and then x = 0. Nothing more is needed.",
+   "Line x/a + y/b = 1 makes a triangle of area ½|ab| with the axes.",
+   "Parallel line: keep ax + by and change only the constant. Perpendicular line: swap a and b and change one sign.",
+   "To find a ratio, call it k : 1 and use only one coordinate; use the other to check.",
+   "Check options by substitution: put the given point into each equation and see which one gives 0."
   ],
   "traps": [
-   "Slope of ax + by + c = 0 is −a/b, not a/b.",
-   "In the section formula, m goes with the SECOND point."
+   "Slope of ax + by + c = 0 is −a/b, not a/b or −b/a.",
+   "In the section formula, m multiplies the second point, not the first.",
+   "Intercepts can be negative; use the absolute values when you find an area or a length.",
+   "A vertical line x = k has no defined slope, so the product rule m<sub>1</sub>m<sub>2</sub> = −1 does not apply to it."
   ]
  },
  "formulas": [
   {
    "name": "Distance",
-   "expr": "√((x2 − x1)² + (y2 − y1)²)"
+   "expr": "√((x₂ − x₁)² + (y₂ − y₁)²)"
   },
   {
-   "name": "Section (m : n)",
-   "expr": "((m·x2 + n·x1)/(m + n), (m·y2 + n·y1)/(m + n))"
+   "name": "Section, internal (m : n)",
+   "expr": "((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n))"
+  },
+  {
+   "name": "Section, external (m : n)",
+   "expr": "((mx₂ − nx₁)/(m − n), (my₂ − ny₁)/(m − n))"
+  },
+  {
+   "name": "Midpoint",
+   "expr": "((x₁ + x₂)/2, (y₁ + y₂)/2)"
+  },
+  {
+   "name": "Centroid",
+   "expr": "((x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3)"
+  },
+  {
+   "name": "Slope through two points",
+   "expr": "(y₂ − y₁)/(x₂ − x₁)"
   },
   {
    "name": "Slope of ax + by + c = 0",
    "expr": "−a/b"
   },
   {
+   "name": "Parallel and perpendicular",
+   "expr": "m₁ = m₂; m₁ × m₂ = −1"
+  },
+  {
+   "name": "Point-slope form",
+   "expr": "y − y₁ = m(x − x₁)"
+  },
+  {
+   "name": "Intercept form",
+   "expr": "x/a + y/b = 1"
+  },
+  {
+   "name": "Intercepts of ax + by + c = 0",
+   "expr": "x: −c/a, y: −c/b"
+  },
+  {
+   "name": "Triangle with the axes",
+   "expr": "Area = c²/(2|ab|)"
+  },
+  {
+   "name": "Point to line distance",
+   "expr": "|ax₁ + by₁ + c|/√(a² + b²)"
+  },
+  {
+   "name": "Distance between parallel lines",
+   "expr": "|c₁ − c₂|/√(a² + b²)"
+  },
+  {
    "name": "Area of triangle",
-   "expr": "½|x1(y2 − y3) + x2(y3 − y1) + x3(y1 − y2)|"
+   "expr": "½|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|"
+  },
+  {
+   "name": "Reflection in y = x",
+   "expr": "(x, y) becomes (y, x)"
   }
  ],
  "questions": [
@@ -174,7 +276,7 @@
    "id": "q-coordinate-006",
    "rev": 1,
    "topic": "q-coordinate",
-   "type": "area",
+   "type": "intercepts-axes",
    "level": 3,
    "q": "What is the area of the triangle formed by the line 2x + 3y = 12 and the coordinate axes?",
    "img": "quant/coord-line.svg",

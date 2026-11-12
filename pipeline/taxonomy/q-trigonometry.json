@@ -1,0 +1,75 @@
+{
+  "topic": "q-trigonometry",
+  "types": [
+    {
+      "type": "right-triangle-ratios",
+      "name": "Ratios from one given ratio",
+      "description": "One ratio (such as tan θ = 2/3) or two sides of a right triangle are given and the question asks for another ratio, a side, or an expression built from sin, cos and tan of that angle.",
+      "concepts": [
+        "basic-ratios-triplets",
+        "trigonometric-values-and-ratios",
+        "value-putting-method"
+      ]
+    },
+    {
+      "type": "standard-values",
+      "name": "Standard angle values",
+      "description": "The expression uses only fixed angles like 0°, 30°, 45°, 60° or 90° and asks for its value, or asks for angles A and B from equations such as tan(A + B) = √3.",
+      "concepts": [
+        "standard-angle-values"
+      ]
+    },
+    {
+      "type": "identity-simplify",
+      "name": "Simplifying identities",
+      "description": "An expression in θ with no extra condition must be simplified, proved, or matched to an option, often written as \"is equal to\" or \"find k\" where k is another trig ratio.",
+      "concepts": [
+        "trigonometric-identities"
+      ]
+    },
+    {
+      "type": "given-condition",
+      "name": "Given a condition, find a value",
+      "description": "A relation between ratios of θ is given (such as sec θ + tan θ = p, sin θ + cos θ = p, or an equation in θ) and the question asks for the value of another expression.",
+      "concepts": []
+    },
+    {
+      "type": "complementary-angles",
+      "name": "Complementary angles",
+      "description": "Angles that add up to 90° appear (such as 25° and 65°, or sin A = cos B), including long sums or products like sin²1° + … + sin²89° or tan 1° tan 2° … tan 89°.",
+      "concepts": [
+        "complementary-angles"
+      ]
+    },
+    {
+      "type": "compound-angles",
+      "name": "Compound and double angles",
+      "description": "The question uses sin, cos or tan of a sum, difference, double or triple angle, or values like sin 15°, tan 75° or sin 18°.",
+      "concepts": []
+    },
+    {
+      "type": "any-angle",
+      "name": "Angles beyond 90° and radians",
+      "description": "The angle is negative, greater than 90°, or given in radians (such as cos 120°, tan(−1125°) or cos(17π/3)), so it must be reduced using signs in the four quadrants.",
+      "concepts": [
+        "radian-degree-conversions"
+      ]
+    },
+    {
+      "type": "max-min",
+      "name": "Maximum and minimum values",
+      "description": "The question asks for the greatest or least value of a trigonometric expression, such as a sin θ + b cos θ or 25 cos²x + 9 sec²x.",
+      "concepts": [
+        "max-min-trig"
+      ]
+    },
+    {
+      "type": "heights-distances",
+      "name": "Heights and distances",
+      "description": "A word problem about towers, buildings, poles, ships, kites or shadows with angles of elevation or depression.",
+      "concepts": [
+        "elevation-depression-heights"
+      ]
+    }
+  ]
+}

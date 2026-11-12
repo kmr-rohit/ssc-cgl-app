@@ -1,0 +1,43 @@
+{
+  "topic": "g-scitech",
+  "types": [
+    {
+      "type": "space-isro",
+      "name": "Space and ISRO",
+      "description": "ISRO's history, centres, launch vehicles, satellites and missions, orbits, and world space firsts.",
+      "concepts": []
+    },
+    {
+      "type": "defence-missiles",
+      "name": "Defence technology",
+      "description": "Indian missiles, aircraft, warships and submarines, defence bodies and military exercises with other countries.",
+      "concepts": []
+    },
+    {
+      "type": "nuclear-energy",
+      "name": "Nuclear programme and energy",
+      "description": "India's atomic energy bodies, reactors and power plants, the three-stage programme and nuclear tests.",
+      "concepts": []
+    },
+    {
+      "type": "inventions-discoveries",
+      "name": "Inventions and full forms",
+      "description": "Who invented or discovered what, and full forms of common technology terms.",
+      "concepts": []
+    },
+    {
+      "type": "digital-it",
+      "name": "Digital India and IT",
+      "description": "Internet history, IT laws and rules, digital public platforms, computing milestones and new technologies like AI and blockchain.",
+      "concepts": []
+    },
+    {
+      "type": "everyday-technology",
+      "name": "Everyday technology and biotechnology",
+      "description": "How household devices and sanitation systems work, renewable energy devices, GM crops, cloning and other biotechnology.",
+      "concepts": [
+        "household-science-applications"
+      ]
+    }
+  ]
+}

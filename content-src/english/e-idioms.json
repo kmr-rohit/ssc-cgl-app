@@ -1,51 +1,186 @@
 {
   "topic": "e-idioms",
   "notes": {
-    "summary": "An <b>idiom</b> is a group of words whose meaning is different from the meanings of the individual words. <i>Break the ice</i> has nothing to do with ice; it means to start a conversation. SSC asks for the meaning of an idiom, often inside a sentence.",
+    "summary": "An <b>idiom</b> is a fixed group of words whose meaning is different from the meaning of its words (<i>a piece of cake</i> = something very easy). SSC asks 1 to 2 idiom questions in Tier 1 and more in Tier 2. Most ask for the meaning of a given idiom; some put it in a sentence, some give a plain phrase and ask for the idiom, and a few test the exact wording. The literal meaning is almost always a wrong option.",
     "concepts": [
-      { "title": "Do not read literally", "body": "The literal meaning is almost always a trap option. Ask: what does this phrase <b>suggest</b> about a person or situation?" },
-      { "title": "Use the sentence", "body": "If the idiom is in a sentence, the situation tells you whether the meaning is positive or negative. <i>After the failure, he was <u>down in the dumps</u></i> → negative feeling → sad." },
-      { "title": "Learn in groups", "body": "Group idioms by theme to remember them:<ul><li><b>Difficulty</b>: <i>in hot water, in a fix, between the devil and the deep sea</i></li><li><b>Ease</b>: <i>a piece of cake, plain sailing</i></li><li><b>Secrecy</b>: <i>let the cat out of the bag, spill the beans</i></li></ul>" }
+      {
+        "title": "How SSC asks idiom questions",
+        "body": "<ul><li><b>Meaning of a given idiom</b>: <i>To take the bull by the horns</i>. About 3 in 5 questions.</li><li><b>Idiom in a sentence</b>: <i>The boss will <u>blow his top</u> when he sees the mistake.</i> The sentence helps you guess.</li><li><b>Plain words to idiom</b>: <i>Vennela <u>made a big fuss about a small problem</u>.</i> Answer: <i>a storm in a teacup</i>.</li><li><b>Fill the blank</b> or <b>complete a dialogue</b> with an idiom.</li><li><b>Correct wording</b>: <i>hit me below the <u>hand</u></i> → <i>hit me below the belt</i>.</li></ul>"
+      },
+      {
+        "title": "A method that works",
+        "body": "<ol><li><b>Reject the literal option.</b> <i>Lie low</i> is not about lying on a low bed; it means to try not to be noticed.</li><li><b>Picture the image</b> behind the idiom: <i>sit on the fence</i>, a person who will not get down on either side, so <i>avoid taking sides</i>.</li><li><b>Use the sentence tone.</b> If the sentence is about anger, the idiom means anger.</li><li><b>Check the strength.</b> <i>Walk on air</i> is very happy, not just content.</li><li><b>Learn idioms in themes</b> (anger, effort, secrets, money). Themed lists are easier to recall in the exam.</li></ol>"
+      },
+      {
+        "title": "Effort, work and time",
+        "body": "<table><thead><tr><th>Idiom</th><th>Meaning</th></tr></thead><tbody><tr><td>Burn the midnight oil</td><td>work or study late into the night</td></tr><tr><td>Burn the candle at both ends</td><td>exhaust oneself by doing too much</td></tr><tr><td>Leave no stone unturned</td><td>try every possible way</td></tr><tr><td>Put one's shoulder to the wheel</td><td>work hard at a task</td></tr><tr><td>Pull one's socks up</td><td>make an effort to improve</td></tr><tr><td>Call it a day</td><td>stop working for now</td></tr><tr><td>At the eleventh hour</td><td>at the last possible moment</td></tr><tr><td>In the nick of time</td><td>just in time</td></tr><tr><td>Once in a blue moon</td><td>very rarely</td></tr><tr><td>Round the clock</td><td>all day and all night</td></tr><tr><td>By leaps and bounds</td><td>very quickly</td></tr><tr><td>Few and far between</td><td>rare, not frequent</td></tr><tr><td>A stone's throw</td><td>a very short distance</td></tr><tr><td>Easy does it</td><td>do it slowly and carefully</td></tr><tr><td>Hold one's horses</td><td>wait, be patient</td></tr><tr><td>On the horizon</td><td>likely to happen soon</td></tr></tbody></table>"
+      },
+      {
+        "title": "Feelings: anger, joy, fear, sorrow",
+        "body": "<table><thead><tr><th>Idiom</th><th>Meaning</th></tr></thead><tbody><tr><td>Blow one's top / Fly off the handle</td><td>suddenly become very angry</td></tr><tr><td>See red</td><td>become very angry</td></tr><tr><td>Make one's blood boil</td><td>make someone very angry</td></tr><tr><td>Get on one's nerves</td><td>irritate someone</td></tr><tr><td>Walk on air / On cloud nine</td><td>be extremely happy</td></tr><tr><td>Down in the dumps</td><td>sad, depressed</td></tr><tr><td>On tenterhooks</td><td>in a state of anxious suspense</td></tr><tr><td>Have one's heart in one's mouth</td><td>be very frightened</td></tr><tr><td>Get cold feet</td><td>lose courage before doing something</td></tr><tr><td>Keep one's chin up</td><td>stay cheerful in difficulty</td></tr><tr><td>Pull oneself together</td><td>calm down and regain control</td></tr><tr><td>Crocodile tears</td><td>false show of sorrow</td></tr><tr><td>Cry over spilt milk</td><td>regret what cannot be undone</td></tr></tbody></table>"
+      },
+      {
+        "title": "Secrets, honesty and deceit",
+        "body": "<table><thead><tr><th>Idiom</th><th>Meaning</th></tr></thead><tbody><tr><td>Let the cat out of the bag / Spill the beans</td><td>reveal a secret</td></tr><tr><td>A red herring</td><td>something that misleads or distracts</td></tr><tr><td>Take with a pinch of salt</td><td>not believe fully</td></tr><tr><td>Pull someone's leg</td><td>tease or joke with someone</td></tr><tr><td>Cry wolf</td><td>raise a false alarm</td></tr><tr><td>Throw dust in someone's eyes</td><td>deceive or mislead</td></tr><tr><td>A wolf in sheep's clothing</td><td>an enemy who pretends to be a friend</td></tr><tr><td>Hit below the belt</td><td>act unfairly</td></tr><tr><td>Above board</td><td>honest and open</td></tr><tr><td>Beat about the bush</td><td>avoid coming to the point</td></tr><tr><td>Hit the nail on the head</td><td>say exactly the right thing</td></tr><tr><td>A cock and bull story</td><td>an absurd, unbelievable story</td></tr><tr><td>Smell a rat</td><td>suspect that something is wrong</td></tr></tbody></table>"
+      },
+      {
+        "title": "Success, failure and difficulty",
+        "body": "<table><thead><tr><th>Idiom</th><th>Meaning</th></tr></thead><tbody><tr><td>A feather in one's cap</td><td>an achievement to be proud of</td></tr><tr><td>Steal the show</td><td>get the most attention and praise</td></tr><tr><td>A flash in the pan</td><td>a sudden success that does not last</td></tr><tr><td>By the skin of one's teeth</td><td>only just, narrowly</td></tr><tr><td>In hot water / In a soup / In a fix</td><td>in trouble or difficulty</td></tr><tr><td>Take the bull by the horns</td><td>face a difficulty directly and boldly</td></tr><tr><td>Bite the bullet</td><td>face something unpleasant bravely</td></tr><tr><td>Face the music</td><td>accept the consequences of one's actions</td></tr><tr><td>Bite the dust</td><td>fail, be defeated (or die)</td></tr><tr><td>Bear the brunt</td><td>suffer the main force of something</td></tr><tr><td>Turn the corner</td><td>pass the worst stage and start improving</td></tr><tr><td>Back to square one</td><td>back to the starting point</td></tr><tr><td>A Herculean task</td><td>a very difficult task</td></tr><tr><td>A pipe dream</td><td>an unrealistic hope</td></tr><tr><td>A storm in a teacup</td><td>a great fuss over a small matter</td></tr><tr><td>Add insult to injury</td><td>make a bad situation worse</td></tr><tr><td>Turn over a new leaf</td><td>change one's behaviour for the better</td></tr></tbody></table>"
+      },
+      {
+        "title": "Money, people and relations",
+        "body": "<table><thead><tr><th>Idiom</th><th>Meaning</th></tr></thead><tbody><tr><td>Make both ends meet</td><td>manage to live on a small income</td></tr><tr><td>Live from hand to mouth</td><td>have just enough to survive</td></tr><tr><td>Cost an arm and a leg</td><td>be very expensive</td></tr><tr><td>A white elephant</td><td>a costly possession that is of little use</td></tr><tr><td>Born with a silver spoon in one's mouth</td><td>born into a rich family</td></tr><tr><td>Five-finger discount</td><td>stealing from a shop (informal)</td></tr><tr><td>The black sheep</td><td>a member who brings shame to a family or group</td></tr><tr><td>The apple of one's eye</td><td>a person who is very dear</td></tr><tr><td>A bone of contention</td><td>the cause of a quarrel</td></tr><tr><td>See eye to eye</td><td>agree fully</td></tr><tr><td>Bury the hatchet</td><td>end a quarrel, make peace</td></tr><tr><td>Break the ice</td><td>start a conversation and ease tension</td></tr><tr><td>Give the cold shoulder</td><td>deliberately ignore someone</td></tr><tr><td>Turn up one's nose at</td><td>treat with contempt</td></tr><tr><td>Sit on the fence</td><td>avoid taking sides</td></tr><tr><td>Put one's foot down</td><td>firmly refuse or insist</td></tr><tr><td>Not fit to hold a candle to</td><td>greatly inferior to</td></tr><tr><td>Lie low</td><td>keep out of sight, avoid notice</td></tr><tr><td>Have a green thumb</td><td>be good at growing plants</td></tr></tbody></table>"
+      },
+      {
+        "title": "Animal and body-part idioms",
+        "body": "<table><thead><tr><th>Idiom</th><th>Meaning</th></tr></thead><tbody><tr><td>The lion's share</td><td>the largest part</td></tr><tr><td>A dark horse</td><td>a little-known person who wins unexpectedly</td></tr><tr><td>Bell the cat</td><td>take on a dangerous task for others</td></tr><tr><td>Lead a cat and dog life</td><td>quarrel all the time</td></tr><tr><td>Kill two birds with one stone</td><td>achieve two aims with one action</td></tr><tr><td>Let sleeping dogs lie</td><td>do not stir up an old problem</td></tr><tr><td>A bull in a china shop</td><td>a clumsy, careless person</td></tr><tr><td>Turn a blind eye</td><td>deliberately ignore something wrong</td></tr><tr><td>Keep at arm's length</td><td>avoid becoming close to</td></tr><tr><td>Pay lip service</td><td>support in words but not in action</td></tr><tr><td>A rule of thumb</td><td>a rough practical method</td></tr><tr><td>Under someone's thumb</td><td>completely controlled by someone</td></tr><tr><td>Have a finger in every pie</td><td>be involved in many things</td></tr><tr><td>Head over heels</td><td>completely (usually in love)</td></tr><tr><td>Learn by heart</td><td>memorise</td></tr></tbody></table>"
+      },
+      {
+        "title": "Exact wording matters",
+        "body": "Some questions change one word of a well-known idiom. Learn the fixed form.<table><thead><tr><th>Correct</th><th>Common wrong forms</th></tr></thead><tbody><tr><td>hit below the <b>belt</b></td><td>below the hand, below the waist</td></tr><tr><td>a storm in a <b>teacup</b></td><td>storm in a bottle, storm in a cup of tea</td></tr><tr><td>carry coals to <b>Newcastle</b></td><td>carry coal to new castle (do something unnecessary)</td></tr><tr><td>beat about the <b>bush</b></td><td>beat around the tree</td></tr><tr><td>the last <b>straw</b></td><td>the last stick</td></tr><tr><td>burn the candle at <b>both ends</b></td><td>burn the candle at one end</td></tr><tr><td>a bird in the hand is worth two in the <b>bush</b></td><td>two in the tree</td></tr><tr><td>once in a <b>blue</b> moon</td><td>once in a full moon</td></tr></tbody></table>"
+      }
     ],
     "varieties": [
-      { "type": "meaning", "name": "Meaning of the idiom", "how": "Recall the figurative meaning; eliminate the literal option.", "example": { "q": "<b>To burn the midnight oil</b>", "steps": ["Not about oil or lamps.", "It means working or studying late into the night."], "answer": "To work late into the night" } },
-      { "type": "in-sentence", "name": "Idiom in a sentence", "how": "Read the context for tone, then pick the matching figurative meaning.", "example": { "q": "The new manager <b>turned over a new leaf</b> after the warning.", "steps": ["A warning suggests he changed his behaviour.", "Turn over a new leaf = start behaving better."], "answer": "Reformed himself" } }
+      {
+        "type": "meaning",
+        "name": "Meaning of a given idiom",
+        "how": "Recall the figurative meaning. Strike out the option that takes the words literally, then the one that is too weak or too strong.",
+        "example": {
+          "q": "Select the most appropriate meaning of the given idiom.<br><b>To sit on the fence</b>",
+          "steps": [
+            "Picture someone sitting on a fence between two fields, not getting down on either side.",
+            "Options: take a high seat, avoid taking sides, place something on a barrier, occupy a bench next to a boundary.",
+            "Three options are literal; only one is figurative."
+          ],
+          "answer": "Avoid taking sides"
+        }
+      },
+      {
+        "type": "in-sentence",
+        "name": "Meaning of an idiom in a sentence",
+        "how": "Read the whole sentence; it usually tells you the mood (anger, relief, trouble). Pick the meaning that fits that mood.",
+        "example": {
+          "q": "Select the most appropriate meaning of the underlined idiom.<br>The boss is going to <u>blow his top</u> when he discovers the blatant mistake in the balance sheet.",
+          "steps": [
+            "A boss finding a blatant mistake: the mood is anger.",
+            "Options: attack fiercely, be very angry, dismiss from job, be very embarrassed.",
+            "<i>Blow one's top</i> = suddenly become very angry."
+          ],
+          "answer": "be very angry"
+        }
+      },
+      {
+        "type": "replace-phrase",
+        "name": "Idiom to replace plain words",
+        "how": "Say the underlined words in one short idea (fuss, trouble, rarely), then pick the idiom with that meaning.",
+        "example": {
+          "q": "Select the most appropriate idiom that can substitute the underlined segment.<br>Vennela <u>made a big fuss about a small problem</u>.",
+          "steps": [
+            "Idea: too much fuss over something small.",
+            "Options: get a taste of your own medicine, barking up the wrong tree, add insult to injury, a storm in a teacup.",
+            "<i>A storm in a teacup</i> = great fuss over a small matter."
+          ],
+          "answer": "A storm in a teacup"
+        }
+      },
+      {
+        "type": "fill-blank",
+        "name": "Idiom to fill a blank",
+        "how": "Read the sentence around the blank for the clue word, then choose the idiom whose meaning and grammar fit.",
+        "example": {
+          "q": "Select the most appropriate option to fill in the blank.<br>Kalam's house was within reach of the famous temple. It was just ______ from it.",
+          "steps": [
+            "Clue: <i>within reach</i>, so a short distance.",
+            "Options: a stone's throw away, at one's fingertip, at arm's length, from pillar to post.",
+            "<i>At arm's length</i> means keeping someone distant, a different idea."
+          ],
+          "answer": "a stone's throw away"
+        }
+      },
+      {
+        "type": "correct-form",
+        "name": "Correct wording of an idiom",
+        "how": "Recognise the idiom and recall its fixed wording. Only one option matches it word for word.",
+        "example": {
+          "q": "Select the idiom that can correctly replace the underlined part.<br>She really <u>hit me below the hand</u> by telling the boss about my mistake.",
+          "steps": [
+            "The fixed idiom is <i>hit below the belt</i> (act unfairly).",
+            "Options: hit me the bricks, hit me below the books, hit me below the bottle, hit me below the belt."
+          ],
+          "answer": "hit me below the belt"
+        }
+      },
+      {
+        "type": "correct-usage",
+        "name": "Sentence using the idiom correctly",
+        "how": "Fix the meaning of the idiom first, then test each sentence: does the idiom's meaning make sense there?",
+        "example": {
+          "q": "Select the sentence that uses the idiom <b>a white elephant</b> correctly.",
+          "steps": [
+            "<i>A white elephant</i> = a costly possession that is of little use.",
+            "Option A: The new stadium, rarely used and costly to maintain, has become a white elephant. Fits.",
+            "Other options use it for a rare animal, a pale person or a lucky charm, which are literal or wrong senses."
+          ],
+          "answer": "The new stadium, rarely used and costly to maintain, has become a white elephant."
+        }
+      }
     ],
     "tips": [
-      "Revise 10 idioms a day with flashcards; meanings rarely change.",
-      "If unsure, decide the tone (positive/negative) and remove options with the wrong tone."
+      "The literal option is almost always wrong; cross it out first.",
+      "Picture the image behind the idiom to guess its meaning.",
+      "In a sentence, the mood (anger, trouble, joy) points to the answer.",
+      "Learn idioms in themes: anger, effort, secrets, money, animals, body parts.",
+      "Revise the idiom flashcards daily; about 200 idioms cover most SSC questions.",
+      "For wording questions, trust the fixed form you have heard most often."
     ],
     "traps": [
-      "The literal option (e.g. 'to actually spill beans') is placed to catch guessers.",
-      "Similar idioms with different meanings: <i>at sea</i> (confused) vs <i>all at sea</i> (completely confused) vs <i>a drop in the ocean</i> (tiny amount)."
+      "Near meanings: <i>at arm's length</i> (keep distant) vs <i>a stone's throw</i> (very near).",
+      "Strength: <i>walk on air</i> means very happy, not just satisfied.",
+      "<i>Bite the bullet</i> (face something bravely) and <i>bite the dust</i> (fail) are different.",
+      "A slightly changed word (<i>below the hand</i>) makes the idiom wrong.",
+      "<i>Not fit to hold a candle to</i> means far inferior, not equal or superior."
     ]
   },
   "questions": [
-    { "id": "e-idioms-001", "rev": 1, "topic": "e-idioms", "type": "meaning", "level": 1, "q": "Select the most appropriate meaning of the given idiom.<br><b>A piece of cake</b>", "options": ["Something very easy", "A small reward", "A sweet dish", "A tiny share"], "answer": 0, "solution": "<b>A piece of cake</b> means a task that is very easy to do.", "source": "test-data" },
-    { "id": "e-idioms-002", "rev": 1, "topic": "e-idioms", "type": "in-sentence", "level": 1, "q": "Select the most appropriate meaning of the bold idiom.<br>Nobody knew about the surprise party until Rahul <b>let the cat out of the bag</b>.", "options": ["Released a pet", "Revealed a secret", "Created confusion", "Cancelled the plan"], "answer": 1, "solution": "<b>Let the cat out of the bag</b> = reveal a secret by mistake. The context (surprise party) confirms it.", "source": "test-data" },
-    { "id": "e-idioms-003", "rev": 1, "topic": "e-idioms", "type": "meaning", "level": 2, "q": "Select the most appropriate meaning of the given idiom.<br><b>To hit the nail on the head</b>", "options": ["To hurt oneself", "To work very hard", "To say exactly the right thing", "To lose one's temper"], "answer": 2, "solution": "<b>Hit the nail on the head</b> = describe exactly what is causing a situation; to be precisely correct.", "source": "test-data" },
-    { "id": "e-idioms-004", "rev": 1, "topic": "e-idioms", "type": "in-sentence", "level": 2, "q": "Select the most appropriate meaning of the bold idiom.<br>With exams next week, Priya is <b>burning the candle at both ends</b>.", "options": ["Wasting money", "Exhausting herself by working too much", "Studying by candlelight", "Avoiding her work"], "answer": 1, "solution": "<b>Burn the candle at both ends</b> = overwork by staying up late and getting up early, wearing oneself out.", "source": "test-data" },
-    { "id": "e-idioms-005", "rev": 1, "topic": "e-idioms", "type": "meaning", "level": 3, "q": "Select the most appropriate meaning of the given idiom.<br><b>A red herring</b>", "options": ["A rare opportunity", "Something that misleads or distracts", "A dangerous enemy", "An embarrassing mistake"], "answer": 1, "solution": "<b>A red herring</b> is a clue or issue that draws attention away from the real question.", "source": "test-data" },
-    { "id": "e-idioms-006", "rev": 1, "topic": "e-idioms", "type": "in-sentence", "level": 3, "q": "Select the most appropriate meaning of the bold idiom.<br>The opposition's promises turned out to be <b>a flash in the pan</b>; nothing came of them.", "options": ["A sudden success that does not last", "A dangerous plan", "A well-kept secret", "A long-term achievement"], "answer": 0, "solution": "<b>A flash in the pan</b> = something that looks impressive at first but quickly fails or fades. <i>nothing came of them</i> confirms it.", "source": "test-data" }
+    {"id":"e-idioms-001","rev":1,"topic":"e-idioms","type":"meaning","level":1,"q":"Select the most appropriate meaning of the given idiom.<br><b>A piece of cake</b>","options":["Something very easy","A small reward","A sweet dish","A tiny share"],"answer":0,"solution":"<b>A piece of cake</b> means a task that is very easy to do.","source":"test-data"},
+    {"id":"e-idioms-002","rev":1,"topic":"e-idioms","type":"in-sentence","level":1,"q":"Select the most appropriate meaning of the bold idiom.<br>Nobody knew about the surprise party until Rahul <b>let the cat out of the bag</b>.","options":["Released a pet","Revealed a secret","Created confusion","Cancelled the plan"],"answer":1,"solution":"<b>Let the cat out of the bag</b> = reveal a secret by mistake. The context (surprise party) confirms it.","source":"test-data"},
+    {"id":"e-idioms-003","rev":1,"topic":"e-idioms","type":"meaning","level":2,"q":"Select the most appropriate meaning of the given idiom.<br><b>To hit the nail on the head</b>","options":["To hurt oneself","To work very hard","To say exactly the right thing","To lose one's temper"],"answer":2,"solution":"<b>Hit the nail on the head</b> = describe exactly what is causing a situation; to be precisely correct.","source":"test-data"},
+    {"id":"e-idioms-004","rev":1,"topic":"e-idioms","type":"in-sentence","level":2,"q":"Select the most appropriate meaning of the bold idiom.<br>With exams next week, Priya is <b>burning the candle at both ends</b>.","options":["Wasting money","Exhausting herself by working too much","Studying by candlelight","Avoiding her work"],"answer":1,"solution":"<b>Burn the candle at both ends</b> = overwork by staying up late and getting up early, wearing oneself out.","source":"test-data"},
+    {"id":"e-idioms-005","rev":1,"topic":"e-idioms","type":"meaning","level":3,"q":"Select the most appropriate meaning of the given idiom.<br><b>A red herring</b>","options":["A rare opportunity","Something that misleads or distracts","A dangerous enemy","An embarrassing mistake"],"answer":1,"solution":"<b>A red herring</b> is a clue or issue that draws attention away from the real question.","source":"test-data"},
+    {"id":"e-idioms-006","rev":1,"topic":"e-idioms","type":"in-sentence","level":3,"q":"Select the most appropriate meaning of the bold idiom.<br>The opposition's promises turned out to be <b>a flash in the pan</b>; nothing came of them.","options":["A sudden success that does not last","A dangerous plan","A well-kept secret","A long-term achievement"],"answer":0,"solution":"<b>A flash in the pan</b> = something that looks impressive at first but quickly fails or fades. <i>nothing came of them</i> confirms it.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-idm-01", "front": "A piece of cake", "back": "Something very easy", "deck": "idioms" },
-    { "id": "fc-e-idm-02", "front": "Let the cat out of the bag", "back": "Reveal a secret by mistake", "deck": "idioms" },
-    { "id": "fc-e-idm-03", "front": "Hit the nail on the head", "back": "Say or do exactly the right thing", "deck": "idioms" },
-    { "id": "fc-e-idm-04", "front": "Burn the candle at both ends", "back": "Overwork oneself; exhaust one's energy", "deck": "idioms" },
-    { "id": "fc-e-idm-05", "front": "A red herring", "back": "Something that misleads or distracts", "deck": "idioms" },
-    { "id": "fc-e-idm-06", "front": "A flash in the pan", "back": "A short-lived success", "deck": "idioms" },
-    { "id": "fc-e-idm-07", "front": "Break the ice", "back": "Start a conversation in an awkward situation", "deck": "idioms" },
-    { "id": "fc-e-idm-08", "front": "Burn the midnight oil", "back": "Work or study late into the night", "deck": "idioms" },
-    { "id": "fc-e-idm-09", "front": "Turn over a new leaf", "back": "Change one's behaviour for the better", "deck": "idioms" },
-    { "id": "fc-e-idm-10", "front": "In hot water", "back": "In trouble", "deck": "idioms" },
-    { "id": "fc-e-idm-11", "front": "Once in a blue moon", "back": "Very rarely", "deck": "idioms" },
-    { "id": "fc-e-idm-12", "front": "Bite the bullet", "back": "Face a painful situation bravely", "deck": "idioms" },
-    { "id": "fc-e-idm-13", "front": "Cry over spilt milk", "back": "Regret something that cannot be changed", "deck": "idioms" },
-    { "id": "fc-e-idm-14", "front": "At the eleventh hour", "back": "At the last possible moment", "deck": "idioms" },
-    { "id": "fc-e-idm-15", "front": "Spill the beans", "back": "Reveal secret information", "deck": "idioms" },
-    { "id": "fc-e-idm-16", "front": "A blessing in disguise", "back": "Something that seems bad but turns out good", "deck": "idioms" },
-    { "id": "fc-e-idm-17", "front": "Beat about the bush", "back": "Avoid coming to the main point", "deck": "idioms" },
-    { "id": "fc-e-idm-18", "front": "Hold one's horses", "back": "Wait; be patient", "deck": "idioms" }
+    {"id":"fc-e-idm-01","front":"A piece of cake","back":"Something very easy","deck":"idioms"},
+    {"id":"fc-e-idm-02","front":"Let the cat out of the bag","back":"Reveal a secret by mistake","deck":"idioms"},
+    {"id":"fc-e-idm-03","front":"Hit the nail on the head","back":"Say or do exactly the right thing","deck":"idioms"},
+    {"id":"fc-e-idm-04","front":"Burn the candle at both ends","back":"Overwork oneself; exhaust one's energy","deck":"idioms"},
+    {"id":"fc-e-idm-05","front":"A red herring","back":"Something that misleads or distracts","deck":"idioms"},
+    {"id":"fc-e-idm-06","front":"A flash in the pan","back":"A short-lived success","deck":"idioms"},
+    {"id":"fc-e-idm-07","front":"Break the ice","back":"Start a conversation in an awkward situation","deck":"idioms"},
+    {"id":"fc-e-idm-08","front":"Burn the midnight oil","back":"Work or study late into the night","deck":"idioms"},
+    {"id":"fc-e-idm-09","front":"Turn over a new leaf","back":"Change one's behaviour for the better","deck":"idioms"},
+    {"id":"fc-e-idm-10","front":"In hot water","back":"In trouble","deck":"idioms"},
+    {"id":"fc-e-idm-11","front":"Once in a blue moon","back":"Very rarely","deck":"idioms"},
+    {"id":"fc-e-idm-12","front":"Bite the bullet","back":"Face a painful situation bravely","deck":"idioms"},
+    {"id":"fc-e-idm-13","front":"Cry over spilt milk","back":"Regret something that cannot be changed","deck":"idioms"},
+    {"id":"fc-e-idm-14","front":"At the eleventh hour","back":"At the last possible moment","deck":"idioms"},
+    {"id":"fc-e-idm-15","front":"Spill the beans","back":"Reveal secret information","deck":"idioms"},
+    {"id":"fc-e-idm-16","front":"A blessing in disguise","back":"Something that seems bad but turns out good","deck":"idioms"},
+    {"id":"fc-e-idm-17","front":"Beat about the bush","back":"Avoid coming to the main point","deck":"idioms"},
+    {"id":"fc-e-idm-18","front":"Hold one's horses","back":"Wait; be patient","deck":"idioms"},
+    {"id":"fc-e-idm-19","front":"Sit on the fence","back":"Avoid taking sides","deck":"idioms"},
+    {"id":"fc-e-idm-20","front":"Blow one's top","back":"Suddenly become very angry","deck":"idioms"},
+    {"id":"fc-e-idm-21","front":"A storm in a teacup","back":"A great fuss over a small matter","deck":"idioms"},
+    {"id":"fc-e-idm-22","front":"By the skin of one's teeth","back":"Only just, narrowly","deck":"idioms"},
+    {"id":"fc-e-idm-23","front":"Take the bull by the horns","back":"Face a difficulty directly","deck":"idioms"},
+    {"id":"fc-e-idm-24","front":"Face the music","back":"Accept the consequences of one's actions","deck":"idioms"},
+    {"id":"fc-e-idm-25","front":"On tenterhooks","back":"In anxious suspense","deck":"idioms"},
+    {"id":"fc-e-idm-26","front":"A white elephant","back":"A costly possession of little use","deck":"idioms"},
+    {"id":"fc-e-idm-27","front":"Hit below the belt","back":"Act unfairly","deck":"idioms"},
+    {"id":"fc-e-idm-28","front":"Lie low","back":"Keep out of sight, avoid notice","deck":"idioms"},
+    {"id":"fc-e-idm-29","front":"Put one's foot down","back":"Firmly refuse or insist","deck":"idioms"},
+    {"id":"fc-e-idm-30","front":"A pipe dream","back":"An unrealistic hope","deck":"idioms"},
+    {"id":"fc-e-idm-31","front":"Not fit to hold a candle to","back":"Greatly inferior to","deck":"idioms"},
+    {"id":"fc-e-idm-32","front":"The lion's share","back":"The largest part","deck":"idioms"}
   ]
 }

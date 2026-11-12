@@ -1,0 +1,41 @@
+{
+ "topic": "c-software",
+ "types": [
+  {
+   "type": "software-types",
+   "name": "Types of software and licences",
+   "description": "Asks whether a program is system or application software, open source, freeware, shareware or proprietary, or which program belongs to a suite such as LibreOffice or MS Office.",
+   "concepts": [
+    "application-software"
+   ]
+  },
+  {
+   "type": "os-functions",
+   "name": "Operating systems: types, functions and terms",
+   "description": "Asks what an operating system does, names an OS type (batch, time-sharing, real-time), or defines a term like kernel, spooling, virtual memory, deadlock or BIOS.",
+   "concepts": [
+    "operating-system-functions"
+   ]
+  },
+  {
+   "type": "windows-shortcuts",
+   "name": "Windows shortcuts and file management",
+   "description": "Asks which Windows key combination opens File Explorer, Task Manager, Properties and so on, or about files, folders, paths and the Recycle Bin.",
+   "concepts": [
+    "file-and-directory-management"
+   ]
+  },
+  {
+   "type": "utilities",
+   "name": "Utility programs and system tools",
+   "description": "Names a maintenance tool (antivirus, disk cleanup, defragmenter, backup, compression, Control Panel, Task Manager) and asks what it does.",
+   "concepts": []
+  },
+  {
+   "type": "languages-translators",
+   "name": "Programming languages and translators",
+   "description": "Asks about machine, assembly or high-level languages, or what a compiler, interpreter, assembler, linker or loader does.",
+   "concepts": []
+  }
+ ]
+}

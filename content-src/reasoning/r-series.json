@@ -1,72 +1,217 @@
 {
  "topic": "r-series",
  "notes": {
-  "summary": "A series question gives terms that follow a pattern and asks for the <b>next</b> or <b>missing</b> term. SSC asks 2–4 questions: number, letter and mixed (alphanumeric) series.",
+  "summary": "A series is a list of numbers, letters or figures that follows one hidden rule. You find the rule and use it to get the <b>next</b>, <b>missing</b> or <b>wrong</b> term. SSC asks 2 to 4 series questions in Tier 1 and a few more in Tier 2. Most can be solved in under 40 seconds once you check the patterns in a fixed order.",
   "concepts": [
    {
-    "title": "Differences first",
-    "body": "Write the difference between terms. If the differences form a pattern (same, +2 each time, squares 1, 4, 9 …), you have the rule."
+    "title": "What SSC asks",
+    "body": "Series questions come in a few fixed shapes:<ul><li><b>Number series:</b> 2, 6, 12, 20, ? (find next or missing number).</li><li><b>Wrong term:</b> one number in the list breaks the rule.</li><li><b>Letter series:</b> single letters (B, E, H, ?) or clusters (ACE, BDF, ?).</li><li><b>Fill the blanks:</b> a row like a _ c a b _ where a block of letters repeats.</li><li><b>Alphanumeric:</b> letters and numbers together (A1Z, C3X).</li><li><b>Missing number in a grid</b> and <b>figure series</b>.</li></ul>The rule is almost always simple: a fixed gap, a gap that grows, multiply then add, squares or cubes, or two series mixed together."
    },
    {
-    "title": "Multiply-add patterns",
-    "body": "If terms grow fast, try ×2, ×3, or ×2 + 1. Example: 3, 7, 15, 31 → each term ×2 + 1."
+    "title": "The order of checks for number series",
+    "body": "Do not guess. Check in this order and stop as soon as a rule fits <b>every</b> term:<ol><li><b>Look at the size.</b> Slow growth (48, 75, 108) means addition. Fast growth (3, 7, 15, 31, 63) means multiplication. Up and down (10, 14, 31, 35) means two series mixed.</li><li><b>Write the differences</b> under the terms.</li><li>If the differences are not equal, write the <b>differences of the differences</b>.</li><li>If differences look random, try <b>ratios</b> (÷ the previous term) or <b>× then ±</b>.</li><li>Check if terms are near <b>squares or cubes</b> (35, 63, 99 are 6²−1, 8²−1, 10²−1).</li><li>Still stuck? Split into <b>odd and even positions</b>.</li></ol>"
    },
    {
-    "title": "Letter and mixed series",
-    "body": "Change letters to positions (A=1 … Z=26) and treat each part (letter, number, letter) as its <b>own</b> series."
+    "title": "Difference patterns",
+    "body": "Write each gap. Common gap patterns:<table><thead><tr><th>Series</th><th>Gaps</th><th>Rule</th></tr></thead><tbody><tr><td>7, 11, 15, 19</td><td>4, 4, 4</td><td>same gap</td></tr><tr><td>2, 4, 7, 11, 16</td><td>2, 3, 4, 5</td><td>gap grows by 1</td></tr><tr><td>48, 75, 108, 147, 192</td><td>27, 33, 39, 45</td><td>gap grows by 6 (second gap same)</td></tr><tr><td>1, 2, 6, 15, 31</td><td>1, 4, 9, 16</td><td>gaps are squares</td></tr><tr><td>3, 4, 12, 39</td><td>1, 8, 27</td><td>gaps are cubes</td></tr><tr><td>2, 3, 5, 9, 17</td><td>1, 2, 4, 8</td><td>gaps double</td></tr><tr><td>15, 4, −8, −21, −35</td><td>−11, −12, −13, −14</td><td>falling gap grows by 1</td></tr></tbody></table>If the second-level gaps are still not equal, take a third level; SSC rarely goes beyond that."
+   },
+   {
+    "title": "Multiply-and-add patterns",
+    "body": "When terms grow very fast, divide each term by the one before it. If the result is close to 2, 3 or 4, the rule is <b>× n then ± k</b>.<table><thead><tr><th>Series</th><th>Rule</th></tr></thead><tbody><tr><td>3, 7, 15, 31, 63</td><td>×2 + 1</td></tr><tr><td>2, 5, 14, 41</td><td>×3 − 1</td></tr><tr><td>18, 74, 298, 1194</td><td>×4 + 2</td></tr><tr><td>3, 7, 16, 35, 74</td><td>×2 + 1, ×2 + 2, ×2 + 3, ×2 + 4</td></tr><tr><td>7, 14, 28, 35, 70</td><td>×2, +7, ×2, +7 (two operations take turns)</td></tr><tr><td>1, 2, 6, 24, 120</td><td>×2, ×3, ×4, ×5</td></tr><tr><td>9, 5, 6, 10.5, 23</td><td>×0.5 + 0.5, ×1 + 1, ×1.5 + 1.5, ×2 + 2</td></tr><tr><td>1, 1, 2, 3, 5, 8</td><td>add the two terms before (Fibonacci)</td></tr><tr><td>3, 6, 18, 108</td><td>multiply the two terms before</td></tr></tbody></table>Quick test: for ×n + k, check the second term: 3 × 2 + 1 = 7. Then confirm on two more terms before you pick an option."
+   },
+   {
+    "title": "Squares, cubes and primes to know by heart",
+    "body": "<b>Squares</b><table><tbody><tr><td>1²=1</td><td>2²=4</td><td>3²=9</td><td>4²=16</td><td>5²=25</td><td>6²=36</td></tr><tr><td>7²=49</td><td>8²=64</td><td>9²=81</td><td>10²=100</td><td>11²=121</td><td>12²=144</td></tr><tr><td>13²=169</td><td>14²=196</td><td>15²=225</td><td>16²=256</td><td>17²=289</td><td>18²=324</td></tr><tr><td>19²=361</td><td>20²=400</td><td>21²=441</td><td>22²=484</td><td>23²=529</td><td>25²=625</td></tr></tbody></table><b>Cubes</b><table><tbody><tr><td>1³=1</td><td>2³=8</td><td>3³=27</td><td>4³=64</td><td>5³=125</td></tr><tr><td>6³=216</td><td>7³=343</td><td>8³=512</td><td>9³=729</td><td>10³=1000</td></tr><tr><td>11³=1331</td><td>12³=1728</td><td>13³=2197</td><td>14³=2744</td><td>15³=3375</td></tr></tbody></table><b>Primes below 100:</b> 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 (25 primes).<br><br><b>Forms that hide squares and cubes:</b> n² + 1 (2, 5, 10, 17, 26), n² − 1 (3, 8, 15, 24, 35), n² + n = n(n + 1) (2, 6, 12, 20, 30), n³ + 1 (2, 9, 28, 65), n³ − n (0, 6, 24, 60), 2 × n² (2, 8, 18, 32, 50)."
+   },
+   {
+    "title": "Alternate (two-in-one) series",
+    "body": "If the terms go up and down, or the gaps repeat in a cycle, split the series.<ul><li><b>Odd and even places:</b> 3, 20, 5, 17, 7, 14, ? → odd places 3, 5, 7 (+2) and even places 20, 17, 14 (−3). The next term is in an odd place, so it is 9.</li><li><b>Repeating gaps:</b> 82, 79, 71, 68, 60, 57, 49 → gaps −3, −8, −3, −8, −3, −8.</li><li><b>Repeating operations:</b> 10, 14, 31, 35, 73, 77, ? → +4, ×2 + 3, +4, ×2 + 3, +4 → next 77 × 2 + 3 = 157.</li></ul>Count which place the missing term is in before you apply a rule."
+   },
+   {
+    "title": "Alphabet positions and opposite letters",
+    "body": "Letter series and coding both need fast letter positions. Learn this table:<table><tbody><tr><th>Letter</th><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td></tr><tr><th>From A</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><th>From Z</th><td>26</td><td>25</td><td>24</td><td>23</td><td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td><td>15</td><td>14</td></tr></tbody></table><table><tbody><tr><th>Letter</th><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr><tr><th>From A</th><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><th>From Z</th><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td></tr></tbody></table><b>Memory hooks:</b> <b>EJOTY</b> gives 5, 10, 15, 20, 25 (E=5, J=10, O=15, T=20, Y=25). Then count from the nearest one: R = T − 2 = 18.<br><b>Position from Z</b> = 27 − position from A.<br><b>Opposite pairs</b> (they add up to 27): A–Z, B–Y, C–X, D–W, E–V, F–U, G–T, H–S, I–R, J–Q, K–P, L–O, M–N.<br><b>Going past Z:</b> start again at A. So Y + 3 = B (25 + 3 = 28, and 28 − 26 = 2 = B). Going before A: B − 4 = X (2 − 4 = −2, and −2 + 26 = 24 = X)."
+   },
+   {
+    "title": "Letter and letter-cluster series",
+    "body": "Change letters to numbers and treat each <b>position</b> of the cluster as its own series.<table><thead><tr><th>Term</th><th>1st</th><th>2nd</th><th>3rd</th></tr></thead><tbody><tr><td>ACE</td><td>A=1</td><td>C=3</td><td>E=5</td></tr><tr><td>BDF</td><td>B=2</td><td>D=4</td><td>F=6</td></tr><tr><td>CEG</td><td>C=3</td><td>E=5</td><td>G=7</td></tr><tr><td><b>?</b></td><td>+1 → D</td><td>+1 → F</td><td>+1 → H</td></tr></tbody></table>Common moves: the same step (+1, +2, +3), a growing step (+1, +2, +3, +4), one position moving backward (Z, X, V), and a step that repeats across the whole series. Check the first letters first: often only one option has the right first letter, and you are done."
+   },
+   {
+    "title": "Fill the blanks: repeating letters",
+    "body": "Rows like <code>a _ c a b _ a _ c _ b c</code> hide a short <b>block</b> that repeats.<ol><li>Count all places (letters plus blanks). Here: 12.</li><li>Try block lengths that divide the total: 2, 3, 4, 6.</li><li>Write the row in groups of that length and see if the letters line up: <code>a _ c | a b _ | a _ c | _ b c</code> fits the block <b>abc</b>.</li><li>Fill blanks in order: b, c, b, a.</li></ol>Some rows grow instead of repeat (a ab abc abcd, or aab aabb). If a fixed block does not fit, look for a growing pattern. A smart shortcut: put each option into the row and see which one gives a clean repeat."
+   },
+   {
+    "title": "Alphanumeric and mixed-case series",
+    "body": "Break every term into its parts and solve each part on its own.<ul><li>A1Z, C3X, E5V, G7T, ? → letters A, C, E, G (+2) give I; numbers 1, 3, 5, 7 give 9; last letters Z, X, V, T (−2) give R. Answer I9R.</li><li>XF 11, YI 15, ZL 19, AO 23, ? → X, Y, Z, A (+1, wrap) gives B; F, I, L, O (+3) gives R; 11, 15, 19, 23 (+4) gives 27. Answer BR 27.</li><li>Small and capital letters: qDx, nHs, kLn, hPi, ? → q, n, k, h (−3) gives e; D, H, L, P (+4) gives T; x, s, n, i (−5) gives d. Answer eTd.</li></ul>Sometimes the number is linked to the letter (B2, D4, F6: number = letter position). Check that too."
+   },
+   {
+    "title": "Missing number in a grid or table",
+    "body": "The same rule works on every row (or every column). Use the complete rows to find it, then apply it to the incomplete one.<table><tbody><tr><td>5</td><td>4</td><td>41</td></tr><tr><td>15</td><td>6</td><td><b>?</b></td></tr><tr><td>9</td><td>11</td><td>202</td></tr></tbody></table>Row 1: 5² + 4² = 25 + 16 = 41. Row 3: 9² + 11² = 81 + 121 = 202. So row 2: 15² + 6² = 225 + 36 = 261.<br><br>Common grid rules: a × b + c, (a + b) × c, a² + b², (a − b)², sum of row equal across rows, column 3 = column 1 × column 2 − something. Try the row first; if no rule fits, try columns."
+   },
+   {
+    "title": "Figure series",
+    "body": "Pictures change one small step at a time. Watch one element at a time:<ul><li><b>Rotation:</b> an arrow or line turns 45° or 90° clockwise or anticlockwise each step.</li><li><b>Position:</b> a dot or symbol moves one corner (or two) around the square.</li><li><b>Count:</b> lines, dots or sides increase or decrease by 1.</li><li><b>Shading:</b> black, white and striped parts take turns.</li><li><b>Add and remove:</b> one element is added each step and another removed.</li></ul>Follow each element separately across all figures, then build the answer. Remove options that break any one rule."
    }
   ],
   "varieties": [
    {
-    "type": "number-series",
-    "name": "Number series",
-    "how": "Check differences, then ratios, then ×a + b.",
+    "type": "difference-series",
+    "name": "Difference series",
+    "how": "Write the gaps between neighbouring terms. If the gaps are not equal, write the gaps of the gaps. Use the pattern to fill the missing place, then check the term after it.",
     "example": {
-     "q": "2, 6, 12, 20, 30, ?",
+     "q": "48, 75, 108, ?, 192",
      "steps": [
-      "Differences: 4, 6, 8, 10",
-      "Next difference 12",
-      "30 + 12 = 42"
+      "Gaps before the blank: 75 − 48 = 27, 108 − 75 = 33. The gap grows by 6.",
+      "Next gap = 33 + 6 = 39, so ? = 108 + 39 = 147.",
+      "Check: the gap after it should be 45, and 147 + 45 = 192. Correct."
      ],
-     "answer": "42"
+     "answer": "147"
+    }
+   },
+   {
+    "type": "multiply-add-series",
+    "name": "Multiply-and-add series",
+    "how": "Divide a term by the one before it to guess the multiplier. Then find what is added or subtracted. Confirm on at least two pairs.",
+    "example": {
+     "q": "18, 74, 298, 1194, 4778, ?",
+     "steps": [
+      "74 ÷ 18 is a bit more than 4, so try × 4.",
+      "18 × 4 = 72, and 74 − 72 = 2. Rule: × 4 + 2.",
+      "Check: 74 × 4 + 2 = 298 and 298 × 4 + 2 = 1194. Correct.",
+      "Next: 4778 × 4 + 2 = 19112 + 2 = 19114."
+     ],
+     "answer": "19114"
+    }
+   },
+   {
+    "type": "special-number-series",
+    "name": "Squares, cubes and primes",
+    "how": "Compare each term with the nearest square or cube. If each term is 1 more or 1 less than a square, look at which numbers were squared: they may be primes or odd numbers.",
+    "example": {
+     "q": "5, 10, 26, ?, 122, 170",
+     "steps": [
+      "5 = 4 + 1 = 2² + 1, 10 = 3² + 1, 26 = 5² + 1.",
+      "2, 3, 5 are primes. So the terms are (prime)² + 1.",
+      "Next prime is 7: 7² + 1 = 50.",
+      "Check: 11² + 1 = 122 and 13² + 1 = 170. Correct."
+     ],
+     "answer": "50"
+    }
+   },
+   {
+    "type": "alternate-series",
+    "name": "Alternate (two-in-one) series",
+    "how": "If terms rise and fall or the gaps look random, write the gaps and look for a repeating cycle, or split the terms into odd and even places.",
+    "example": {
+     "q": "82, 79, 71, ?, 60, 57, 49",
+     "steps": [
+      "Gaps we know: 82 → 79 is −3, 79 → 71 is −8.",
+      "At the end: 60 → 57 is −3 and 57 → 49 is −8. The gaps repeat −3, −8.",
+      "So ? = 71 − 3 = 68, and 68 − 8 = 60 confirms it."
+     ],
+     "answer": "68"
+    }
+   },
+   {
+    "type": "wrong-term",
+    "name": "Wrong term",
+    "how": "Find the rule using the first three or four terms, then build the series yourself. The first term that does not match is the wrong one. Do not let the wrong term spoil your rule.",
+    "example": {
+     "q": "Find the wrong number: 2, 6, 14, 30, 62, 126, 250",
+     "steps": [
+      "2 × 2 + 2 = 6, 6 × 2 + 2 = 14, 14 × 2 + 2 = 30. Rule: × 2 + 2.",
+      "30 × 2 + 2 = 62 and 62 × 2 + 2 = 126. Both match.",
+      "126 × 2 + 2 = 254, but the series shows 250."
+     ],
+     "answer": "250 (it should be 254)"
     }
    },
    {
     "type": "letter-series",
-    "name": "Letter series",
-    "how": "Convert to positions and find the step.",
+    "name": "Letter and letter-cluster series",
+    "how": "Change letters to positions (A = 1, Z = 26). Treat the first letters of all clusters as one series, the second letters as another, and so on. Wrap around after Z.",
     "example": {
-     "q": "B, E, H, K, ?",
+     "q": "DJQC, ELTG, FNWK, GPZO, ?",
      "steps": [
-      "Positions 2, 5, 8, 11: +3 each",
-      "11 + 3 = 14 = N"
+      "1st letters D, E, F, G: +1, so H.",
+      "2nd letters J, L, N, P: +2, so R.",
+      "3rd letters Q, T, W, Z: +3, so Z + 3 = C (wrap after Z).",
+      "4th letters C, G, K, O: +4, so S."
      ],
-     "answer": "N"
+     "answer": "HRCS"
     }
    },
    {
-    "type": "mixed-series",
-    "name": "Alphanumeric series",
-    "how": "Split each term into parts and solve each part separately.",
+    "type": "repeat-pattern-series",
+    "name": "Fill the blanks (repeating letters)",
+    "how": "Count the total places. Try a block length that divides it (3, 4, 5, 6). Split the row into blocks and fill each blank so all blocks match. Or place each option into the row and test.",
     "example": {
-     "q": "A1Z, C3X, E5V, ?",
+     "q": "a _ c a b _ a _ c _ b c",
      "steps": [
-      "First letters A, C, E: +2 → G",
-      "Numbers 1, 3, 5 → 7",
-      "Last letters Z, X, V: −2 → T"
+      "There are 12 places. Try blocks of 3.",
+      "a _ c | a b _ | a _ c | _ b c: every full block reads abc.",
+      "Fill the blanks in order: b, c, b, a."
      ],
-     "answer": "G7T"
+     "answer": "bcba"
+    }
+   },
+   {
+    "type": "alphanumeric-series",
+    "name": "Alphanumeric series",
+    "how": "Split each term into its letter parts and number parts. Solve each part as its own small series, then join the answers in the same order.",
+    "example": {
+     "q": "XF 11, YI 15, ZL 19, AO 23, ?",
+     "steps": [
+      "First letters X, Y, Z, A: +1 with wrap, so B.",
+      "Second letters F, I, L, O: +3, so R.",
+      "Numbers 11, 15, 19, 23: +4, so 27."
+     ],
+     "answer": "BR 27"
+    }
+   },
+   {
+    "type": "missing-number-grid",
+    "name": "Missing number in a grid",
+    "how": "Use a complete row to guess the rule (sum, product, squares, a × b + c). Confirm it on the second complete row. Apply it to the row with the question mark. If rows fail, try columns.",
+    "example": {
+     "q": "Rows: (5, 4, 41), (15, 6, ?), (9, 11, 202)",
+     "steps": [
+      "Row 1: 5² + 4² = 25 + 16 = 41.",
+      "Row 3: 9² + 11² = 81 + 121 = 202. Rule confirmed.",
+      "Row 2: 15² + 6² = 225 + 36 = 261."
+     ],
+     "answer": "261"
+    }
+   },
+   {
+    "type": "figure-series",
+    "name": "Figure series",
+    "how": "Track one element at a time: its rotation, position, count and shading. Write the step (for example 45° clockwise) and apply it once more.",
+    "example": {
+     "q": "An arrow points up, then up-right, then right, then down-right. Which way does it point next?",
+     "img": "reasoning/series-arrow.svg",
+     "steps": [
+      "Each step turns the arrow 45° clockwise.",
+      "Down-right turned 45° clockwise is straight down."
+     ],
+     "answer": "The arrow points straight down."
     }
    }
   ],
   "tips": [
-   "If differences are not equal, take differences of differences.",
-   "Squares (1, 4, 9, 16, 25) and cubes appear often in differences.",
-   "For letter series, remember EJOTY: E=5, J=10, O=15, T=20, Y=25."
+   "Check in a fixed order: gaps, gaps of gaps, ratio, × then ±, squares and cubes, then odd and even places.",
+   "Use the options. If only one option fits the first letter or the last digit, you need not finish the full working.",
+   "Learn EJOTY (E=5, J=10, O=15, T=20, Y=25) and the opposite-letter pairs; they save seconds in every letter question.",
+   "For fast-growing terms, divide a term by the one before it. A result near 2, 3 or 4 points to × n ± k.",
+   "If a term is missing in the middle, find the rule from the terms on both sides and check that the missing term fits both its neighbours.",
+   "In blank-filling letter rows, count the places first. The block length almost always divides the total.",
+   "Know squares up to 25 and cubes up to 15. Many \"random\" series are n² ± 1 or n³ ± n."
   ],
   "traps": [
-   "Do not stop at the first rule that fits two terms; check it on every term.",
-   "In mixed series, letters and numbers usually follow different rules."
+   "A rule that fits only two terms is not a rule. Always check it on every term you have.",
+   "When the missing term is in the middle, the gap after it also has to fit. People often stop after finding the gap before it.",
+   "In wrong-term questions, do not build your rule from the wrong term. Use the first few terms, then check each term in turn.",
+   "In alternate series, the next term may belong to the other half. Count the place before applying a rule.",
+   "Wrap-around: after Z comes A again. Y + 3 is B, not a blank."
   ]
  },
  "questions": [
@@ -74,7 +219,7 @@
    "id": "r-series-001",
    "rev": 1,
    "topic": "r-series",
-   "type": "number-series",
+   "type": "difference-series",
    "level": 1,
    "q": "Select the number that will come next in the following series.<br>2, 6, 12, 20, 30, ?",
    "options": [
@@ -108,7 +253,7 @@
    "id": "r-series-003",
    "rev": 1,
    "topic": "r-series",
-   "type": "number-series",
+   "type": "multiply-add-series",
    "level": 2,
    "q": "Select the number that will come next.<br>3, 7, 15, 31, 63, ?",
    "options": [
@@ -142,7 +287,7 @@
    "id": "r-series-005",
    "rev": 1,
    "topic": "r-series",
-   "type": "number-series",
+   "type": "special-number-series",
    "level": 3,
    "q": "Select the number that will come next.<br>1, 2, 6, 15, 31, ?",
    "options": [
@@ -159,7 +304,7 @@
    "id": "r-series-006",
    "rev": 1,
    "topic": "r-series",
-   "type": "mixed-series",
+   "type": "alphanumeric-series",
    "level": 3,
    "q": "Select the term that will come next.<br>A1Z, C3X, E5V, G7T, ?",
    "options": [

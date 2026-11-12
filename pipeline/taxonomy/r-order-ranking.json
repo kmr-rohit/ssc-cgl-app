@@ -1,0 +1,35 @@
+{
+ "topic": "r-order-ranking",
+ "types": [
+  {
+   "type": "position-in-row",
+   "name": "Position from either end",
+   "description": "One person's position from the left or top and from the right or bottom (or the total) is given; asks the total number of people or the position from the other end.",
+   "concepts": []
+  },
+  {
+   "type": "persons-between",
+   "name": "People between two persons",
+   "description": "Positions of two people in a row are given from the same or opposite ends; asks how many people stand between them, or the total when someone stands exactly in the middle.",
+   "concepts": []
+  },
+  {
+   "type": "interchange-positions",
+   "name": "Interchanged positions",
+   "description": "Two people swap places and one new position is given; asks the total number of people or a new position.",
+   "concepts": []
+  },
+  {
+   "type": "comparison-ranking",
+   "name": "Comparison (taller, heavier)",
+   "description": "People or objects are compared by height, weight, marks or age (A is taller than B but shorter than C); asks who is tallest, heaviest, or in the middle.",
+   "concepts": []
+  },
+  {
+   "type": "rank-arrangement",
+   "name": "Rank and position puzzles",
+   "description": "People are placed in ranks or in a line using conditions like \"just above\", \"just below\", \"between\", \"not at the lowest\"; asks who is at a given rank or position.",
+   "concepts": []
+  }
+ ]
+}

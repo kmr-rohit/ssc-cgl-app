@@ -1,69 +1,142 @@
 {
  "topic": "r-coding",
  "notes": {
-  "summary": "In coding-decoding, a word or number is written in a secret code. Find the rule from the given example and apply it. SSC asks 2–3 questions every shift.",
+  "summary": "In coding-decoding, a word, number or sentence is written in a secret code. You find the rule from the example and use it on a new word. SSC asks 2 to 3 coding questions in almost every Tier 1 shift. Nearly every code is one of six kinds: letter shift, opposite letters, rearranged letters, letters to numbers, sentence codes or substitution.",
   "concepts": [
    {
-    "title": "Letter shift",
-    "body": "Each letter moves forward or backward by a fixed number (CAT → DBU is +1). Write positions A=1 … Z=26 to see the shift. After Z, go back to A."
+    "title": "The method for every coding question",
+    "body": "<ol><li>Write the word and its code one above the other, letter under letter.</li><li>Write the alphabet position above each letter.</li><li>Compare place by place. Is each letter moved by a number? Is it the opposite letter? Are the same letters just in a new order?</li><li>Check the rule on <b>every</b> letter, and on the second example if one is given.</li><li>Apply the rule to the new word. Then look at the options: often only one has the right first and last letters.</li></ol>"
    },
    {
-    "title": "Pattern coding",
-    "body": "The word may be <b>reversed</b> (GARDEN → NEDRAG), letters may be replaced by their <b>opposite</b> letter (A↔Z, B↔Y; positions add to 27), or by their position numbers."
+    "title": "Alphabet positions",
+    "body": "<table><tbody><tr><th>Letter</th><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td></tr><tr><th>From A</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><th>From Z</th><td>26</td><td>25</td><td>24</td><td>23</td><td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td><td>15</td><td>14</td></tr></tbody></table><table><tbody><tr><th>Letter</th><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr><tr><th>From A</th><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><th>From Z</th><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td></tr></tbody></table><b>EJOTY:</b> E = 5, J = 10, O = 15, T = 20, Y = 25. Count from the nearest one (P = O + 1 = 16).<br><b>Reverse position</b> (from Z) = 27 − position. <b>Opposite pairs:</b> A–Z, B–Y, C–X, D–W, E–V, F–U, G–T, H–S, I–R, J–Q, K–P, L–O, M–N.<br><b>Wrap-around:</b> after Z comes A. Y + 3 = B; B − 3 = Y."
+   },
+   {
+    "title": "Letter shift patterns",
+    "body": "<table><thead><tr><th>Pattern</th><th>Word → code</th></tr></thead><tbody><tr><td>Same shift</td><td>CAT → DBU (+1 each)</td></tr><tr><td>Same shift backward</td><td>DOG → BME (−2 each)</td></tr><tr><td>Growing shift</td><td>PENCIL → QGQGNR (+1, +2, +3, +4, +5, +6)</td></tr><tr><td>Alternate shift</td><td>FACED → GZDDE (+1, −1, +1, −1, +1)</td></tr><tr><td>Shift equal to word length</td><td>PAPER → UFUJW (+5, five letters)</td></tr></tbody></table>Do the work letter by letter. Writing positions takes ten seconds and avoids most errors."
+   },
+   {
+    "title": "Opposite-letter codes",
+    "body": "Each letter is swapped with its opposite (the two add up to 27).<br>GOLD → TLOW because G (7) ↔ T (20), O (15) ↔ L (12), L ↔ O, D (4) ↔ W (23).<br>Spot it fast: if A becomes Z, or M becomes N, think \"opposite\" first. Sometimes the opposite letters are also written in reverse order, so check the order too."
+   },
+   {
+    "title": "Rearranged letters",
+    "body": "If the code has the same letters as the word, only the order has changed.<table><thead><tr><th>Pattern</th><th>Word → code</th></tr></thead><tbody><tr><td>Whole word reversed</td><td>GARDEN → NEDRAG</td></tr><tr><td>Pairs swapped</td><td>CREATION → RC AE IT NO</td></tr><tr><td>Each half reversed</td><td>MOTHER → TOM REH</td></tr><tr><td>First and last swapped</td><td>STAMP → PTAMS</td></tr></tbody></table>Some codes do two things: rearrange and then shift each letter by 1. Write the positions to see both steps."
+   },
+   {
+    "title": "Letters to numbers",
+    "body": "<table><thead><tr><th>Method</th><th>Example</th></tr></thead><tbody><tr><td>Positions side by side</td><td>BAD → 2 1 4 → 214; LAMINATE → 12 1 13 9 14 1 20 5</td></tr><tr><td>Sum of positions</td><td>CAT = 3 + 1 + 20 = 24</td></tr><tr><td>Sum × a number</td><td>TOP = (20 + 15 + 16) × 2 = 102; BAD = 7 × 2 = 14</td></tr><tr><td>Sum of reverse positions</td><td>SET = 8 + 22 + 7 = 37; MIX = 14 + 18 + 3 = 35</td></tr><tr><td>Reverse sum + number of letters</td><td>PAINT = 75 + 5 = 80; DROP = 55 + 4 = 59</td></tr><tr><td>Product of positions</td><td>CAB = 3 × 1 × 2 = 6</td></tr></tbody></table>Start with the plain sum. If the code is bigger, try sum × number of letters or a product. If the numbers look odd, try reverse positions."
+   },
+   {
+    "title": "Sentence codes",
+    "body": "Each word in a sentence gets a code word, but the codes may be in a different order.<ol><li>Take two sentences that share one word.</li><li>The code they share is that word's code.</li><li>Repeat until you reach the asked word.</li></ol>Example: 'tea is hot' = 'ka la ma', 'hot and cold' = 'ra ma sa', 'cold tea please' = 'ka sa pi'. Tea is in sentences 1 and 3; the shared code is ka, so tea = ka. Hot = ma (1 and 2). Cold = sa (2 and 3).<br><br><b>Number of letters:</b> sometimes the code is just the letter count of each word. 'complete the drawing' = 837 (8, 3, 7 letters). So 'kindly stand straight' = 658."
    },
    {
     "title": "Substitution",
-    "body": "Real words stand for other words: \"sky is called sea\". Answer with the <b>code name</b> of the real answer, not the real word."
+    "body": "Here a word is \"called\" another word. Read the real-world answer first, then replace it with its code name.<br>If water is called pot, then fish live in \"pot\". The trap is to answer with the word that pot is called, or with the real word. Answer with the <b>name</b> the real thing has in that language."
+   },
+   {
+    "title": "Decoding and codes of codes",
+    "body": "<ul><li><b>Decoding:</b> if the code of a word is given and you must find the word, apply the rule backwards (+2 becomes −2).</li><li><b>\"How is the code coded?\"</b> If BRAVE is CSBWF (+1), then CSBWF itself is coded by applying +1 again: DTCXG.</li><li><b>Option check:</b> for long words, code only the first two and last two letters and match them with the options.</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "letter-shift",
     "name": "Letter shift",
-    "how": "Find the shift for each letter from the example; apply the same shift.",
+    "how": "Write the positions of the word and the code. Find the shift for each letter: it can be the same, growing (+1, +2, +3) or alternating (+1, −1). Apply the same shifts to the new word.",
     "example": {
-     "q": "If CAT is DBU, code DOG.",
+     "q": "FACED is written as GZDDE. How is LABOR written?",
      "steps": [
-      "C→D, A→B, T→U: +1",
-      "D→E, O→P, G→H"
+      "F → G is +1, A → Z is −1, C → D is +1, E → D is −1, D → E is +1. The shift alternates +1, −1.",
+      "L + 1 = M, A − 1 = Z, B + 1 = C, O − 1 = N, R + 1 = S."
      ],
-     "answer": "EPH"
+     "answer": "MZCNS"
     }
    },
    {
-    "type": "pattern-coding",
-    "name": "Reverse / opposite / number",
-    "how": "Check reversal, opposite letters (sum 27) and positions.",
+    "type": "opposite-letter",
+    "name": "Opposite letters",
+    "how": "Check whether each pair of letters adds up to 27 (A–Z, M–N). If yes, replace each letter of the new word with its opposite.",
     "example": {
-     "q": "If LAMP is OZNK, code DESK.",
+     "q": "GOLD is written as TLOW. How is SILVER written?",
      "steps": [
-      "L(12)→O(15): 12+15 = 27, opposite letters",
-      "D→W, E→V, S→H, K→P"
+      "G (7) + T (20) = 27, O (15) + L (12) = 27: opposite letters.",
+      "S → H, I → R, L → O, V → E, E → V, R → I."
      ],
-     "answer": "WVHP"
+     "answer": "HROEVI"
+    }
+   },
+   {
+    "type": "letter-rearrangement",
+    "name": "Rearranged letters",
+    "how": "If the code has the same letters, number the letter places (1, 2, 3 …) and write which place moved where. Apply the same moves to the new word.",
+    "example": {
+     "q": "CREATION is written as RCAEITNO. How is SEQUENCE written?",
+     "steps": [
+      "Split into pairs: CR EA TI ON. Each pair is swapped: RC AE IT NO.",
+      "SEQUENCE in pairs: SE QU EN CE.",
+      "Swap each pair: ES UQ NE EC."
+     ],
+     "answer": "ESUQNEEC"
+    }
+   },
+   {
+    "type": "letter-to-number",
+    "name": "Letters to numbers",
+    "how": "Try the sum of positions, then sum × a number, reverse positions, positions written side by side, or product. Confirm with both examples.",
+    "example": {
+     "q": "TOP is coded as 102 and BAD as 14. How is DOG coded?",
+     "steps": [
+      "TOP: 20 + 15 + 16 = 51, and 51 × 2 = 102.",
+      "BAD: 2 + 1 + 4 = 7, and 7 × 2 = 14. Rule: sum × 2.",
+      "DOG: 4 + 15 + 7 = 26, and 26 × 2 = 52."
+     ],
+     "answer": "52"
+    }
+   },
+   {
+    "type": "sentence-coding",
+    "name": "Sentence codes",
+    "how": "Compare two sentences that share exactly one word; their shared code belongs to that word. If codes are numbers, check whether each digit is the letter count of a word.",
+    "example": {
+     "q": "'tea is hot' = 'ka la ma', 'hot and cold' = 'ra ma sa', 'cold tea please' = 'ka sa pi'. What is the code for 'tea'?",
+     "steps": [
+      "Tea appears in sentence 1 and sentence 3.",
+      "The only code in both is 'ka'."
+     ],
+     "answer": "ka"
     }
    },
    {
     "type": "substitution",
     "name": "Substitution",
-    "how": "Find the real answer, then give its code name.",
+    "how": "Answer the real question first (fish live in water). Then find what that real word is called in the code language.",
     "example": {
-     "q": "If water is called air, what do fish live in?",
+     "q": "Sky is called cloud, cloud is called thunder, thunder is called water, water is called pot, pot is called desert, desert is called sky. Where do fish live?",
      "steps": [
       "Fish live in water.",
-      "Water is called air."
+      "Water is called pot."
      ],
-     "answer": "Air"
+     "answer": "Pot"
     }
    }
   ],
   "tips": [
-   "Check the rule on every letter of the example, not just the first one.",
-   "Opposite pairs: A–Z, B–Y, C–X, D–W, E–V, F–U, G–T, H–S, I–R, J–Q, K–P, L–O, M–N."
+   "Always write letter positions above both the word and the code; most errors come from counting in your head.",
+   "Check the first and last letters of the options first. Often only one option survives.",
+   "If A becomes Z or M becomes N, think opposite letters.",
+   "If the code has the same letters as the word, it is a rearrangement; number the places.",
+   "For number codes, try the plain sum first, then reverse positions, then products.",
+   "In sentence codes, start with the word that appears in exactly two sentences.",
+   "In substitution, answer the real question first, then translate."
   ],
   "traps": [
-   "In substitution, the answer is the code word, not the real word.",
-   "When shifting past Z, wrap around to A (Y + 3 = B)."
+   "Forgetting wrap-around: after Z comes A (X + 4 = B).",
+   "Using a rule that fits the first letters only. Check every letter.",
+   "In substitution, giving the real word (\"water\") instead of its code name (\"pot\").",
+   "In decoding, applying the rule forwards instead of backwards.",
+   "In sentence codes, the order of code words is not the order of the words."
   ]
  },
  "questions": [
@@ -88,7 +161,7 @@
    "id": "r-coding-002",
    "rev": 1,
    "topic": "r-coding",
-   "type": "pattern-coding",
+   "type": "letter-to-number",
    "level": 1,
    "q": "In a certain code, BAD is written as 214. How will FED be written in that code?",
    "options": [
@@ -122,7 +195,7 @@
    "id": "r-coding-004",
    "rev": 1,
    "topic": "r-coding",
-   "type": "pattern-coding",
+   "type": "letter-rearrangement",
    "level": 2,
    "q": "In a certain code language, GARDEN is written as NEDRAG. How will FLOWER be written in that language?",
    "options": [
@@ -156,7 +229,7 @@
    "id": "r-coding-006",
    "rev": 1,
    "topic": "r-coding",
-   "type": "pattern-coding",
+   "type": "opposite-letter",
    "level": 3,
    "q": "In a certain code language, LAMP is written as OZNK. How will DESK be written in that language?",
    "options": [

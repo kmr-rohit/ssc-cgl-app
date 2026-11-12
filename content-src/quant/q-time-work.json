@@ -1,213 +1,365 @@
 {
- "topic": "q-time-work",
- "notes": {
-  "summary": "Time & Work questions are fastest with the <b>LCM (total work) method</b>. Pipes & cisterns use the same idea with emptying pipes as negative work. 1–2 questions per tier.",
-  "concepts": [
-   {
-    "title": "LCM method",
-    "body": "Take total work = LCM of the days. Each person’s efficiency = total ÷ their days. Time together = total ÷ sum of efficiencies."
-   },
-   {
-    "title": "Man-days",
-    "body": "Work = Men × Days × Hours. For the same work: M<sub>1</sub>D<sub>1</sub>H<sub>1</sub> = M<sub>2</sub>D<sub>2</sub>H<sub>2</sub>."
-   },
-   {
-    "title": "Pipes & cisterns",
-    "body": "Filling pipes do positive work; emptying pipes (leaks) do negative work. Net rate = sum of filling rates − sum of emptying rates."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "work-together",
-    "name": "Working together",
-    "how": "Add efficiencies (or 1/days) and invert.",
-    "example": {
-     "q": "A can do a job in 12 days and B in 24 days. Together?",
-     "steps": [
-      "Total = 24",
-      "A = 2/day, B = 1/day",
-      "24/3 = 8"
-     ],
-     "answer": "8 days"
+  "topic": "q-time-work",
+  "notes": {
+    "summary": "Time and work is about how fast people (or pipes) finish a job: rate × time = work. Pipes and cisterns use the same idea, with emptying pipes counted as negative work. SSC asks 1–2 questions in Tier 1 and 1–2 in Tier 2, and nearly all fall quickly to the LCM method.",
+    "concepts": [
+      {
+        "title": "The basic idea: work rate",
+        "body": "<p>If a person finishes a job in <b>n days</b>, he does <b>1/n of the job each day</b>. This is his work rate.</p><p>Rates add when people work together. Time and rate are opposites: <b>time = work ÷ rate</b>.</p><p>Part of the work also works this way: if A does 2/5 of a job in 8 days, the whole job takes 8 × 5/2 = <b>20 days</b>.</p>"
+      },
+      {
+        "title": "The LCM (total work) method",
+        "body": "<p>Fractions are slow. Instead, take the <b>total work = LCM of the days</b> given. Then each person’s daily work (efficiency) is a whole number.</p><p><b>Example:</b> A takes 12 days, B takes 18 days.</p><ul><li>Total work = LCM(12, 18) = 36 units.</li><li>A does 36/12 = 3 units a day, B does 36/18 = 2 units a day.</li><li>Together: 36 ÷ (3 + 2) = 36/5 = <b>7.2 days</b>.</li></ul><p>Use this method for almost every question in this topic.</p>"
+      },
+      {
+        "title": "Ready formulas for working together",
+        "body": "<table><thead><tr><th>Situation</th><th>Time taken</th></tr></thead><tbody><tr><td>A (a days) and B (b days) together</td><td>ab/(a + b)</td></tr><tr><td>A, B and C together</td><td>abc/(ab + bc + ca)</td></tr><tr><td>A and B together take T days, A alone takes a days; B alone</td><td>aT/(a − T)</td></tr><tr><td>A takes x days more than A + B together, B takes y days more</td><td>together = √(xy)</td></tr></tbody></table><p><b>Example:</b> A 10 days, B 12 days, C 15 days. Together = 1800/(120 + 180 + 150) = 1800/450 = <b>4 days</b>.</p><p><b>Example:</b> A takes 8 days more and B takes 18 days more than both together. Together = √(8 × 18) = <b>12 days</b> (so A = 20, B = 30).</p>"
+      },
+      {
+        "title": "Efficiency and time are inversely proportional",
+        "body": "<p>If A is <b>k times</b> as efficient as B, A takes <b>1/k</b> of B’s time. Efficiency ratio a : b means time ratio b : a.</p><ul><li>A is twice as good as B: if B takes 30 days, A takes 15 days.</li><li>A is 50% more efficient than B: efficiencies 3 : 2, so times 2 : 3.</li><li>A is 25% less efficient than B: efficiencies 3 : 4, so times 4 : 3.</li></ul><p>When efficiencies are in a ratio, take the ratio numbers as daily work. Total work = (sum of efficiencies) × (days together).</p>"
+      },
+      {
+        "title": "Pairs: A + B, B + C, C + A",
+        "body": "<p>When times for three pairs are given, add the three daily rates. You get <b>2 × (A + B + C)</b>, because each person appears twice.</p><p><b>Example:</b> A + B take 12 days, B + C 15 days, C + A 20 days. Total work = 60.</p><ul><li>Daily work: A + B = 5, B + C = 4, C + A = 3. Sum = 12 = 2(A + B + C).</li><li>A + B + C = 6 a day, so all three take 60/6 = <b>10 days</b>.</li><li>A alone = 6 − 4 = 2 a day, so 30 days. B = 6 − 3 = 3 a day (20 days). C = 6 − 5 = 1 a day (60 days).</li></ul>"
+      },
+      {
+        "title": "Men, women and children",
+        "body": "<p>Turn everyone into one unit. If 1 man = 2 women in work, replace each man by 2 women.</p><p><b>Example:</b> 1 man does the work of 2 women. 6 men finish a job in 10 days. How long will 2 men and 4 women take?</p><ul><li>6 men = 12 women, so the job = 12 × 10 = 120 woman-days.</li><li>2 men + 4 women = 4 + 4 = 8 women.</li><li>Time = 120/8 = <b>15 days</b>.</li></ul><p>If you are told “3 men or 5 women can do it in 12 days”, then 3 men = 5 women in work.</p>"
+      },
+      {
+        "title": "Chain rule: men, days, hours and work",
+        "body": "<p>Total effort = men × days × hours per day. The same work needs the same effort:</p><p><b>M<sub>1</sub> × D<sub>1</sub> × H<sub>1</sub> / W<sub>1</sub> = M<sub>2</sub> × D<sub>2</sub> × H<sub>2</sub> / W<sub>2</sub></b></p><p>Add efficiency E on both sides if workers differ in skill.</p><p><b>Example:</b> 12 men working 8 hours a day build a wall in 15 days. 18 men working 10 hours a day will take 12 × 8 × 15 ÷ (18 × 10) = <b>8 days</b>.</p><p>For simple “more men, fewer days”: 18 men in 35 days means 21 men take 18 × 35/21 = 30 days.</p>"
+      },
+      {
+        "title": "Leaving, joining and replacing",
+        "body": "<p>Break the time into stages. In each stage, work done = (sum of daily work of those present) × days. The stages must add up to the total work.</p><ul><li><b>Leaves after some days:</b> work done together, then the rest by the others.</li><li><b>Leaves k days before the end:</b> the one who stays works all T days. Write: (A’s daily work) × T + (B’s daily work) × (T − k) = total work.</li><li><b>Replaced:</b> the new worker’s rate = (remaining work − others’ share) ÷ days.</li></ul><p><b>Example:</b> A 20 days, B 16 days, C 30 days. A and B work 4 days and leave. Total = 240; A = 12, B = 15, C = 8 a day. Done = 4 × 27 = 108. C finishes 132 units in 132/8 = <b>16.5 days</b>.</p>"
+      },
+      {
+        "title": "Alternate days",
+        "body": "<p>Treat one full cycle (say 2 days) as a block.</p><ol><li>Find the work done in one cycle.</li><li>Fit as many full cycles as possible without crossing the total.</li><li>Finish the remainder day by day, in the same order. The last part may be a fraction of a day.</li></ol><p><b>Example:</b> Rekha 16 days, Bina 12 days, alternate days starting with Rekha. Total 48; Rekha 3, Bina 4 a day; one 2-day cycle = 7. After 6 cycles (12 days): 42 done. Day 13: Rekha does 3 (45). Bina needs 3 of her 4 units: 3/4 day. Total = <b>13¾ days</b>.</p><p>Be careful: who starts can change the answer.</p>"
+      },
+      {
+        "title": "Pipes and cisterns",
+        "body": "<p>This is time and work with tanks. Filling pipes have <b>positive</b> work; emptying pipes and leaks have <b>negative</b> work.</p><p>Net rate = (sum of inlets) − (sum of outlets).</p><ul><li>Pipe fills in a hours, another empties in b hours (b &gt; a): together the tank fills in <b>ab/(b − a)</b> hours.</li><li>A pipe normally fills in a hours, but with a leak takes b hours: the leak alone empties the full tank in <b>ab/(b − a)</b> hours.</li></ul><p><b>Example:</b> a tap fills a tank in 6 hours; because of a leak it takes 8 hours. Leak alone empties it in 6 × 8/(8 − 6) = <b>24 hours</b>.</p><p>For pipes of different sizes, flow is proportional to the square of the diameter.</p>"
+      },
+      {
+        "title": "Wages and sharing pay",
+        "body": "<p>Pay is shared in the ratio of <b>work done</b>, not time spent. If all work for the same number of days, work done is in the ratio of efficiencies.</p><p><b>Example:</b> A takes 10 days and B 15 days. Together they get ₹1500. Efficiency ratio = 1/10 : 1/15 = 3 : 2. A gets ₹900 and B gets ₹600.</p><p>If daily wages and days worked are given, each share = daily wage × days.</p>"
+      },
+      {
+        "title": "Tanks filled and emptied in stages",
+        "body": "<p>Some questions ask when a tank is full if a pipe empties it after some time, or ask for the time when an emptying pipe is closed. Write the work stage by stage, adding positive and negative parts, just like the leaving-midway method.</p><p>Always check whether the tank starts <b>empty</b> or <b>full</b>; the answer changes.</p>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "combined-work",
+        "name": "Working together",
+        "how": "<ol><li>Take total work = LCM of the given days.</li><li>Find each person’s daily work.</li><li>Add (or subtract) daily work and divide total work by it.</li></ol>",
+        "example": {
+          "q": "A can do a piece of work in 6 days and B in 9 days. With the help of C they finish it in 3 days. In how many days can C alone do it?",
+          "steps": [
+            "Total work = LCM(6, 9, 3) = 18 units.",
+            "A = 3, B = 2 and all three = 18/3 = 6 units a day.",
+            "C = 6 − 3 − 2 = 1 unit a day.",
+            "C alone = 18/1 = 18 days."
+          ],
+          "answer": "18 days"
+        }
+      },
+      {
+        "type": "efficiency-ratio",
+        "name": "Efficiency comparison",
+        "how": "Write the efficiency ratio as daily work (for example 3 : 1). Total work = sum of efficiencies × days together. Divide by one person’s efficiency.",
+        "example": {
+          "q": "A is 3 times as efficient as B. Together they finish a work in 15 days. In how many days can B alone finish it?",
+          "steps": [
+            "Efficiency A : B = 3 : 1, so together 4 units a day.",
+            "Total work = 4 × 15 = 60 units.",
+            "B alone = 60/1 = 60 days (A alone = 60/3 = 20 days)."
+          ],
+          "answer": "60 days"
+        }
+      },
+      {
+        "type": "pairs-and-groups",
+        "name": "Pairs and groups (men, women, boys)",
+        "how": "For pairs, add the three pair rates and halve to get A + B + C. For men, women and boys, convert everyone into one unit (say women) using the given relation, then use total work = units × days.",
+        "example": {
+          "q": "A and B can do a work in 12 days, B and C in 15 days, and C and A in 20 days. In how many days can A alone do it?",
+          "steps": [
+            "Total work = LCM(12, 15, 20) = 60.",
+            "A + B = 5, B + C = 4, C + A = 3 a day.",
+            "2(A + B + C) = 12, so A + B + C = 6.",
+            "A = 6 − (B + C) = 6 − 4 = 2 a day.",
+            "A alone = 60/2 = 30 days."
+          ],
+          "answer": "30 days"
+        }
+      },
+      {
+        "type": "mdh-chain-rule",
+        "name": "Men, days and hours (chain rule)",
+        "how": "Use M<sub>1</sub>D<sub>1</sub>H<sub>1</sub>/W<sub>1</sub> = M<sub>2</sub>D<sub>2</sub>H<sub>2</sub>/W<sub>2</sub>. Put the known values in and solve for the one unknown.",
+        "example": {
+          "q": "12 men working 8 hours a day can build a wall in 15 days. In how many days can 18 men working 10 hours a day build the same wall?",
+          "steps": [
+            "12 × 8 × 15 = 18 × 10 × D.",
+            "1440 = 180 × D.",
+            "D = 8."
+          ],
+          "answer": "8 days"
+        }
+      },
+      {
+        "type": "leave-or-join",
+        "name": "Someone leaves or joins midway",
+        "how": "Split the job into stages. Work done in each stage = daily work of those present × days. Remaining work ÷ daily work of the new team gives the time left.",
+        "example": {
+          "q": "P and Q can do a work in 20 and 30 days. They work together for 6 days, then Q is replaced by R. P and R finish the rest in 8 more days. In how many days can R alone do the work?",
+          "steps": [
+            "Total = LCM(20, 30) = 60. P = 3, Q = 2 a day.",
+            "In 6 days P and Q do 6 × 5 = 30 units. 30 units remain.",
+            "In 8 days P does 8 × 3 = 24, so R does 6 units in 8 days.",
+            "R = 6/8 = 0.75 unit a day. R alone = 60/0.75 = 80 days."
+          ],
+          "answer": "80 days"
+        }
+      },
+      {
+        "type": "alternate-days",
+        "name": "Working on alternate days",
+        "how": "Find work done in one full cycle. Fit full cycles below the total, then finish the remainder in the given order, using a fraction of a day at the end if needed.",
+        "example": {
+          "q": "Rekha can finish a work in 16 days and Bina in 12 days. They work on alternate days, starting with Rekha. In how many days is the work finished?",
+          "steps": [
+            "Total = LCM(16, 12) = 48. Rekha = 3, Bina = 4 a day.",
+            "One 2-day cycle = 7 units. 6 cycles = 12 days, 42 units.",
+            "Day 13: Rekha does 3, total 45. 3 units remain.",
+            "Bina needs 3/4 of day 14.",
+            "Total = 12 + 1 + 3/4 = 13¾ days."
+          ],
+          "answer": "13¾ days"
+        }
+      },
+      {
+        "type": "pipes-cisterns",
+        "name": "Pipes, cisterns and leaks",
+        "how": "Take tank capacity = LCM of the times. Inlets get positive rates, outlets and leaks negative. Capacity ÷ net rate = time.",
+        "example": {
+          "q": "Two taps can fill a tank in 12 hours and 18 hours. A leak can empty the full tank in 36 hours. If all are open, in how many hours will the empty tank fill?",
+          "steps": [
+            "Capacity = LCM(12, 18, 36) = 36 units.",
+            "Rates: +3, +2 and −1 units an hour.",
+            "Net = 4 units an hour.",
+            "Time = 36/4 = 9 hours."
+          ],
+          "answer": "9 hours"
+        }
+      },
+      {
+        "type": "wages",
+        "name": "Wages shared by work done",
+        "how": "Find how many units of work each person did. Split the total pay in that ratio.",
+        "example": {
+          "q": "A can do a work in 12 days and B in 16 days. With the help of C they finish it in 4 days and get ₹3600. What is C’s share?",
+          "steps": [
+            "Total = 48 units. A = 4, B = 3 a day; all three = 48/4 = 12 a day, so C = 5.",
+            "In 4 days: A did 16, B did 12, C did 20 units.",
+            "C’s share = 20/48 × 3600 = ₹1500."
+          ],
+          "answer": "₹1500"
+        }
+      }
+    ],
+    "tips": [
+      "Take total work as the LCM of the given days; it removes fractions from nearly every question.",
+      "Efficiency ratio a : b means time ratio b : a.",
+      "For pairs A + B, B + C, C + A, add the three rates and halve the sum.",
+      "In leave-midway questions, write work done stage by stage and check it adds up to the total.",
+      "In chain-rule questions, more men or more hours means fewer days; more work means more days.",
+      "If A takes x days more and B takes y days more than both together, together time = √(xy).",
+      "Wages follow work done, not days present."
+    ],
+    "traps": [
+      "Do not add days. If A takes 10 days and B 15 days, together is 6 days, not 25 or 12.5.",
+      "In alternate-day work, the last day may be partial and the starting person matters.",
+      "Leaks and outlet pipes are negative work; forgetting the sign gives a much smaller time.",
+      "Read whether the tank starts empty or full.",
+      "“A is 50% more efficient” means 3 : 2 in efficiency, so 2 : 3 in time, not 1.5 times the time."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Daily work",
+      "expr": "1/n of the job if it takes n days"
+    },
+    {
+      "name": "Together time (two)",
+      "expr": "ab/(a + b)"
+    },
+    {
+      "name": "Together time (three)",
+      "expr": "abc/(ab + bc + ca)"
+    },
+    {
+      "name": "B alone, given A and A + B",
+      "expr": "aT/(a − T)"
+    },
+    {
+      "name": "Together time from extra days",
+      "expr": "√(xy)"
+    },
+    {
+      "name": "Pairs",
+      "expr": "A + B + C = [(A + B) + (B + C) + (C + A)]/2"
+    },
+    {
+      "name": "Chain rule",
+      "expr": "M1 × D1 × H1 / W1 = M2 × D2 × H2 / W2"
+    },
+    {
+      "name": "Fill and empty together",
+      "expr": "ab/(b − a) hours"
+    },
+    {
+      "name": "Leak alone empties in",
+      "expr": "ab/(b − a) hours (a = normal time, b = time with leak)"
+    },
+    {
+      "name": "Efficiency and time",
+      "expr": "efficiency ∝ 1/time"
     }
-   },
-   {
-    "type": "efficiency",
-    "name": "Efficiency and man-days",
-    "how": "Use M<sub>1</sub>D<sub>1</sub> = M<sub>2</sub>D<sub>2</sub>, or efficiency ratios.",
-    "example": {
-     "q": "10 men finish a job in 6 days. How many days for 15 men?",
-     "steps": [
-      "10 × 6 = 15 × D",
-      "D = 4"
-     ],
-     "answer": "4 days"
-    }
-   },
-   {
-    "type": "pipes",
-    "name": "Pipes and cisterns",
-    "how": "Net rate = fill rates − empty rates; time = 1 / net rate.",
-    "example": {
-     "q": "Pipe A fills a tank in 4 h, pipe B empties it in 6 h. Both open?",
-     "steps": [
-      "1/4 − 1/6 = 1/12"
-     ],
-     "answer": "12 hours"
-    }
-   }
   ],
-  "tips": [
-   "A is twice as efficient as B means A takes half the time.",
-   "Use the LCM of the days as total work to avoid fractions."
+  "questions": [
+    {
+      "id": "q-time-work-001",
+      "rev": 1,
+      "topic": "q-time-work",
+      "type": "combined-work",
+      "level": 1,
+      "q": "A can complete a work in 10 days and B can complete it in 15 days. In how many days can they complete it together?",
+      "options": [
+        "5 days",
+        "6 days",
+        "8 days",
+        "12.5 days"
+      ],
+      "answer": 1,
+      "solution": "Total work = LCM(10, 15) = 30 units.<br>A = 3 units/day, B = 2 units/day.<br>Together = 30/5 = 6 days.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-time-work-002",
+      "rev": 1,
+      "topic": "q-time-work",
+      "type": "pipes-cisterns",
+      "level": 1,
+      "q": "A pipe can fill a tank in 20 hours and another pipe can empty it in 30 hours. If both are opened together, in how many hours will the empty tank be filled?",
+      "options": [
+        "50 hours",
+        "12 hours",
+        "60 hours",
+        "40 hours"
+      ],
+      "answer": 2,
+      "solution": "Net rate = 1/20 − 1/30 = (3 − 2)/60 = 1/60.<br>Time = 60 hours.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-time-work-003",
+      "rev": 1,
+      "topic": "q-time-work",
+      "type": "mdh-chain-rule",
+      "level": 2,
+      "q": "12 men can complete a work in 18 days. In how many days can 8 men complete the same work?",
+      "options": [
+        "24",
+        "27",
+        "12",
+        "30"
+      ],
+      "answer": 1,
+      "solution": "M<sub>1</sub>D<sub>1</sub> = M<sub>2</sub>D<sub>2</sub>.<br>12 × 18 = 8 × D → D = 216/8 = 27 days.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-time-work-004",
+      "rev": 1,
+      "topic": "q-time-work",
+      "type": "combined-work",
+      "level": 2,
+      "q": "A and B together can do a piece of work in 12 days. A alone can do it in 20 days. In how many days can B alone do it?",
+      "options": [
+        "25",
+        "32",
+        "30",
+        "28"
+      ],
+      "answer": 2,
+      "solution": "B’s one-day work = 1/12 − 1/20 = (5 − 3)/60 = 1/30.<br>B alone takes 30 days.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-time-work-005",
+      "rev": 1,
+      "topic": "q-time-work",
+      "type": "efficiency-ratio",
+      "level": 3,
+      "q": "A is twice as efficient as B. Together they finish a work in 14 days. In how many days can A alone finish the work?",
+      "options": [
+        "21",
+        "28",
+        "42",
+        "18"
+      ],
+      "answer": 0,
+      "solution": "Efficiency A : B = 2 : 1.<br>Total work = (2 + 1) × 14 = 42 units.<br>A alone = 42/2 = 21 days.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-time-work-006",
+      "rev": 1,
+      "topic": "q-time-work",
+      "type": "pipes-cisterns",
+      "level": 3,
+      "q": "Pipes A and B can fill a tank in 12 hours and 15 hours respectively, while pipe C can empty it in 20 hours. If all three are opened together, in how many hours will the empty tank be full?",
+      "options": [
+        "8 hours",
+        "12 hours",
+        "10 hours",
+        "15 hours"
+      ],
+      "answer": 2,
+      "solution": "Total = LCM(12, 15, 20) = 60 units.<br>A = 5, B = 4, C = −3 units/hour → net 6 units/hour.<br>Time = 60/6 = 10 hours.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "If an emptying pipe is faster than the filling pipe, the tank never fills.",
-   "More men means fewer days: it is inverse proportion."
+  "flashcards": [
+    {
+      "id": "fc-tw-1",
+      "front": "A in a days, B in b days: together",
+      "back": "ab/(a + b) days",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-tw-2",
+      "front": "Man-days rule",
+      "back": "M1·D1·H1 = M2·D2·H2",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-tw-3",
+      "front": "Fill in a hours, leak empties in b hours",
+      "back": "ab/(b − a) hours",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-tw-4",
+      "front": "A twice as efficient as B",
+      "back": "A takes half of B’s time",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Together time (two)",
-   "expr": "ab/(a + b)"
-  },
-  {
-   "name": "Man-days",
-   "expr": "M1·D1·H1 = M2·D2·H2"
-  },
-  {
-   "name": "Fill and empty",
-   "expr": "1/(1/a − 1/b)"
-  }
- ],
- "questions": [
-  {
-   "id": "q-time-work-001",
-   "rev": 1,
-   "topic": "q-time-work",
-   "type": "work-together",
-   "level": 1,
-   "q": "A can complete a work in 10 days and B can complete it in 15 days. In how many days can they complete it together?",
-   "options": [
-    "5 days",
-    "6 days",
-    "8 days",
-    "12.5 days"
-   ],
-   "answer": 1,
-   "solution": "Total work = LCM(10, 15) = 30 units.<br>A = 3 units/day, B = 2 units/day.<br>Together = 30/5 = 6 days.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-time-work-002",
-   "rev": 1,
-   "topic": "q-time-work",
-   "type": "pipes",
-   "level": 1,
-   "q": "A pipe can fill a tank in 20 hours and another pipe can empty it in 30 hours. If both are opened together, in how many hours will the empty tank be filled?",
-   "options": [
-    "50 hours",
-    "12 hours",
-    "60 hours",
-    "40 hours"
-   ],
-   "answer": 2,
-   "solution": "Net rate = 1/20 − 1/30 = (3 − 2)/60 = 1/60.<br>Time = 60 hours.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-time-work-003",
-   "rev": 1,
-   "topic": "q-time-work",
-   "type": "efficiency",
-   "level": 2,
-   "q": "12 men can complete a work in 18 days. In how many days can 8 men complete the same work?",
-   "options": [
-    "24",
-    "27",
-    "12",
-    "30"
-   ],
-   "answer": 1,
-   "solution": "M<sub>1</sub>D<sub>1</sub> = M<sub>2</sub>D<sub>2</sub>.<br>12 × 18 = 8 × D → D = 216/8 = 27 days.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-time-work-004",
-   "rev": 1,
-   "topic": "q-time-work",
-   "type": "work-together",
-   "level": 2,
-   "q": "A and B together can do a piece of work in 12 days. A alone can do it in 20 days. In how many days can B alone do it?",
-   "options": [
-    "25",
-    "32",
-    "30",
-    "28"
-   ],
-   "answer": 2,
-   "solution": "B’s one-day work = 1/12 − 1/20 = (5 − 3)/60 = 1/30.<br>B alone takes 30 days.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-time-work-005",
-   "rev": 1,
-   "topic": "q-time-work",
-   "type": "efficiency",
-   "level": 3,
-   "q": "A is twice as efficient as B. Together they finish a work in 14 days. In how many days can A alone finish the work?",
-   "options": [
-    "21",
-    "28",
-    "42",
-    "18"
-   ],
-   "answer": 0,
-   "solution": "Efficiency A : B = 2 : 1.<br>Total work = (2 + 1) × 14 = 42 units.<br>A alone = 42/2 = 21 days.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-time-work-006",
-   "rev": 1,
-   "topic": "q-time-work",
-   "type": "pipes",
-   "level": 3,
-   "q": "Pipes A and B can fill a tank in 12 hours and 15 hours respectively, while pipe C can empty it in 20 hours. If all three are opened together, in how many hours will the empty tank be full?",
-   "options": [
-    "8 hours",
-    "12 hours",
-    "10 hours",
-    "15 hours"
-   ],
-   "answer": 2,
-   "solution": "Total = LCM(12, 15, 20) = 60 units.<br>A = 5, B = 4, C = −3 units/hour → net 6 units/hour.<br>Time = 60/6 = 10 hours.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-tw-1",
-   "front": "A in a days, B in b days: together",
-   "back": "ab/(a + b) days",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-tw-2",
-   "front": "Man-days rule",
-   "back": "M1·D1·H1 = M2·D2·H2",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-tw-3",
-   "front": "Fill in a hours, leak empties in b hours",
-   "back": "ab/(b − a) hours",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-tw-4",
-   "front": "A twice as efficient as B",
-   "back": "A takes half of B’s time",
-   "deck": "formulas"
-  }
- ]
 }

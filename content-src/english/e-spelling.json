@@ -1,48 +1,196 @@
 {
   "topic": "e-spelling",
   "notes": {
-    "summary": "In <b>Spelling</b> questions SSC gives four words and asks you to pick the <b>correctly spelt</b> one (or sometimes the misspelt one). The words tested are commonly confused ones with double letters, silent letters or <i>-ance/-ence</i> endings.",
+    "summary": "Spelling questions test whether you know the exact letters of common and tricky English words. SSC asks 1 to 2 in Tier 1 and more in Tier 2: find the misspelt word among four, pick the right spelling of one word, or spot and correct a misspelt word in a sentence. A few rules (ie/ei, doubling, silent e, -able/-ible, -ance/-ence) and a list of about 150 trouble words cover most questions. SSC follows <b>British spelling</b> (colour, travelled, programme).",
     "concepts": [
-      { "title": "Double letters", "body": "Most errors are about how many letters repeat. Learn the tricky ones: <i>accommodate</i> (cc, mm), <i>committee</i> (mm, tt, ee), <i>embarrass</i> (rr, ss), <i>occurrence</i> (cc, rr), <i>necessary</i> (one c, ss)." },
-      { "title": "Common patterns", "body": "<ul><li><b>i before e except after c</b>: <i>believe, receive</i> (exceptions: <i>seize, weird</i>).</li><li><b>Drop the silent e</b> before <i>-ing</i>: <i>write → writing</i>; but keep it in <i>noticeable, manageable</i>.</li><li><b>-ance / -ence</b>: <i>maintenance, guidance</i> vs <i>existence, independence</i>.</li></ul>" }
+      {
+        "title": "How SSC asks spelling questions",
+        "body": "<ul><li><b>Find the misspelt word</b>: four different words, one is wrong (<i>Edible / Delegait / Rebel / Monarch</i>). The most common form.</li><li><b>Choose the correct spelling</b>: four versions of one word (<i>propotion / proportion / preportion / proporsion</i>).</li><li><b>In a sentence</b>: find the misspelt word, or choose the correct form of the underlined word (<i>accomodate</i> → <i>accommodate</i>). Sometimes <i>No error</i> is an option.</li><li><b>Fill the blank</b> with the correctly spelt word, or pick the spelling of a word with a given meaning.</li><li><b>Error-free sentence</b>: four sentences, choose the one with no spelling mistake.</li></ul>"
+      },
+      {
+        "title": "A quick checking method",
+        "body": "<ol><li>Say the word slowly in syllables: <i>ac-com-mo-date</i>, <i>en-vi-ron-ment</i>.</li><li>Check the usual danger spots: <b>double letters</b>, <b>ie / ei</b>, <b>vowel in the ending</b> (-ance/-ence, -able/-ible), <b>silent letters</b>.</li><li>In <i>find the misspelt word</i> questions, the wrong word often has a letter swapped (<i>Evolutoin</i>), dropped (<i>Overide</i>), doubled (<i>Dillemma</i>) or replaced by its sound (<i>Visious</i>, <i>Gingar</i>).</li><li>Trust a spelling only when you are sure; otherwise eliminate the ones you know are right.</li></ol>"
+      },
+      {
+        "title": "ie or ei",
+        "body": "<b>i before e, except after c</b>, when the sound is <i>ee</i>.<table><thead><tr><th>Pattern</th><th>Examples</th></tr></thead><tbody><tr><td>ie (sound ee)</td><td>believe, achieve, field, piece, siege, relieve, grief</td></tr><tr><td>ei after c</td><td>receive, deceive, ceiling, conceive, receipt</td></tr><tr><td>ei with sound ay</td><td>neighbour, weigh, eight, vein, reign</td></tr><tr><td>Exceptions to learn</td><td>weird, seize, either, neither, leisure, protein, foreign, height, their, forfeit</td></tr><tr><td>ie after c (c sounds sh)</td><td>ancient, efficient, sufficient, conscience, species, science</td></tr></tbody></table>"
+      },
+      {
+        "title": "Doubling the final consonant",
+        "body": "<ul><li>One-syllable word, one vowel + one consonant: double before a vowel suffix. <i>stop → stopped</i>, <i>run → running</i>, <i>big → bigger</i>.</li><li>Longer word stressed on the <b>last</b> syllable: double. <i>begin → beginning</i>, <i>occur → occurred, occurrence</i>, <i>refer → referred</i>, <i>admit → admitted</i>, <i>commit → committed</i>.</li><li>Stress on an <b>earlier</b> syllable: do not double. <i>visit → visited</i>, <i>offer → offered</i>, <i>benefit → benefited</i>, <i>develop → developed</i>, <i>refer → reference</i> (stress moves).</li><li>British English doubles a final <b>l</b> after one vowel: <i>travel → travelled</i>, <i>cancel → cancelled</i>, <i>label → labelled</i>, <i>counsel → counsellor</i>.</li><li>Never double w, x or y: <i>fixed</i>, <i>showing</i>, <i>played</i>.</li></ul>"
+      },
+      {
+        "title": "Silent e and final y",
+        "body": "<ul><li>Drop the silent <b>e</b> before a vowel suffix: <i>hope → hoping</i>, <i>write → writing</i>, <i>desire → desirable</i>, <i>argue → arguing</i>.</li><li>Keep the <b>e</b> before a consonant suffix: <i>hopeful</i>, <i>movement</i>, <i>careful</i>, <i>excitement</i>. Exceptions: <i>argument</i>, <i>truly</i>, <i>ninth</i>, <i>wholly</i>, <i>awful</i>.</li><li>Keep the <b>e</b> after soft c or g before -able / -ous: <i>noticeable</i>, <i>manageable</i>, <i>courageous</i>, <i>outrageous</i>.</li><li>Consonant + <b>y</b> changes to <b>i</b>: <i>happy → happiness</i>, <i>carry → carried</i>, <i>beauty → beautiful</i>, but keep y before -ing: <i>carrying</i>, <i>studying</i>.</li><li>Vowel + <b>y</b> keeps the y: <i>play → played</i>, <i>enjoy → enjoyment</i>. Exceptions: <i>paid</i>, <i>said</i>, <i>laid</i>.</li></ul>"
+      },
+      {
+        "title": "Endings that sound alike",
+        "body": "<table><thead><tr><th>Ending</th><th>Words to learn</th></tr></thead><tbody><tr><td>-ance / -ant</td><td>appearance, maintenance, guidance, assistance, attendance, perseverance, relevant, tolerance</td></tr><tr><td>-ence / -ent</td><td>existence, independence, occurrence, conscience, interference, reference, presence, permanent</td></tr><tr><td>-able</td><td>acceptable, dependable, noticeable, indispensable, available, inevitable</td></tr><tr><td>-ible</td><td>visible, possible, terrible, edible, eligible, responsible, flexible, irresistible</td></tr><tr><td>-cede / -ceed / -sede</td><td>only <b>supersede</b> ends in -sede; only <b>exceed, proceed, succeed</b> end in -ceed; the rest end in -cede: precede, concede, recede, intercede</td></tr><tr><td>-ise / -ize</td><td>both accepted for most words (organise, organize); always -ise: advertise, supervise, compromise, exercise, surprise</td></tr><tr><td>-ary / -ery</td><td>dictionary, necessary, secretary, library; cemetery, stationery (paper), monastery</td></tr></tbody></table><small>Rough guide: -able usually follows a complete word (<i>accept</i>-able); -ible usually follows a part that is not a word on its own (<i>vis</i>-ible).</small>"
+      },
+      {
+        "title": "Double-letter words",
+        "body": "<table><thead><tr><th>Correct</th><th>Usual mistake</th><th>Remember</th></tr></thead><tbody><tr><td>Accommodate</td><td>accomodate</td><td>double c, double m</td></tr><tr><td>Embarrass</td><td>embarass</td><td>double r, double s</td></tr><tr><td>Committee</td><td>comittee</td><td>double m, double t, double e</td></tr><tr><td>Occurrence</td><td>occurence</td><td>double c, double r, -ence</td></tr><tr><td>Millennium</td><td>millenium</td><td>double l, double n</td></tr><tr><td>Questionnaire</td><td>questionaire</td><td>double n</td></tr><tr><td>Necessary</td><td>neccessary</td><td>one c, double s</td></tr><tr><td>Possession</td><td>posession</td><td>two pairs of s</td></tr><tr><td>Address</td><td>adress</td><td>double d, double s</td></tr><tr><td>Aggressive</td><td>agressive</td><td>double g, double s</td></tr><tr><td>Recommend</td><td>reccommend</td><td>one c, double m</td></tr><tr><td>Harass</td><td>harrass</td><td>one r, double s</td></tr><tr><td>Dilemma</td><td>dillemma, dilemna</td><td>one l, double m</td></tr><tr><td>Omission</td><td>ommission</td><td>one m, double s</td></tr><tr><td>Parallel</td><td>paralell</td><td>double l in the middle, single l at the end</td></tr><tr><td>Tomorrow</td><td>tommorow</td><td>one m, double r</td></tr><tr><td>Vacuum</td><td>vaccum</td><td>one c, double u</td></tr><tr><td>Override</td><td>overide</td><td>over + ride</td></tr><tr><td>Unnecessary</td><td>unecessary</td><td>un + necessary</td></tr></tbody></table>"
+      },
+      {
+        "title": "Commonly misspelt words",
+        "body": "<table><thead><tr><th>Correct</th><th>Wrong</th><th>Correct</th><th>Wrong</th></tr></thead><tbody><tr><td>Achieve</td><td>acheive</td><td>Liaison</td><td>liaision, liason</td></tr><tr><td>Acquaintance</td><td>aquaintance</td><td>Lieutenant</td><td>leutenant</td></tr><tr><td>Argument</td><td>arguement</td><td>Maintenance</td><td>maintainance</td></tr><tr><td>Beginning</td><td>begining</td><td>Mischievous</td><td>mischievious</td></tr><tr><td>Bureaucracy</td><td>beaurocracy</td><td>Negotiation</td><td>negociation</td></tr><tr><td>Calendar</td><td>calender</td><td>Noticeable</td><td>noticable</td></tr><tr><td>Cemetery</td><td>cemetary</td><td>Occasion</td><td>occassion</td></tr><tr><td>Colleague</td><td>collegue</td><td>Perseverance</td><td>perseverence</td></tr><tr><td>Conscientious</td><td>consciencious</td><td>Privilege</td><td>priviledge</td></tr><tr><td>Definitely</td><td>definately</td><td>Pronunciation</td><td>pronounciation</td></tr><tr><td>Disappoint</td><td>dissapoint</td><td>Receive</td><td>recieve</td></tr><tr><td>Discipline</td><td>disipline</td><td>Rhythm</td><td>rythm</td></tr><tr><td>Ecstasy</td><td>ecstacy</td><td>Separate</td><td>seperate</td></tr><tr><td>Environment</td><td>enviroment</td><td>Siege</td><td>seige</td></tr><tr><td>Exaggerate</td><td>exagerate</td><td>Successful</td><td>sucessful</td></tr><tr><td>Existence</td><td>existance</td><td>Supersede</td><td>supercede</td></tr><tr><td>Foreign</td><td>foriegn</td><td>Surprise</td><td>suprise</td></tr><tr><td>Government</td><td>goverment</td><td>Systematic</td><td>systemetic</td></tr><tr><td>Grammar</td><td>grammer</td><td>Threshold</td><td>threshhold</td></tr><tr><td>Guarantee</td><td>garantee</td><td>Twelfth</td><td>twelth</td></tr><tr><td>Hierarchy</td><td>heirarchy</td><td>Vacillate</td><td>vaccillate</td></tr><tr><td>Immediately</td><td>immediatly</td><td>Vicious</td><td>visious</td></tr><tr><td>Independence</td><td>independance</td><td>Weird</td><td>wierd</td></tr><tr><td>Indispensable</td><td>indispensible</td><td>Enmity</td><td>enemity</td></tr></tbody></table>"
+      },
+      {
+        "title": "Words that sound alike",
+        "body": "Fill-in-the-blank and sentence questions often test the right word of a sound-alike pair.<table><thead><tr><th>Pair</th><th>Meanings</th></tr></thead><tbody><tr><td>principal / principle</td><td>head, main / rule, belief</td></tr><tr><td>stationary / stationery</td><td>not moving / writing materials</td></tr><tr><td>complement / compliment</td><td>completes / praise</td></tr><tr><td>affect / effect</td><td>to influence (verb) / result (noun)</td></tr><tr><td>advice / advise</td><td>noun / verb (British also: practice noun, practise verb; licence noun, license verb)</td></tr><tr><td>desert / dessert</td><td>dry land, abandon / sweet dish</td></tr><tr><td>council / counsel</td><td>a body of people / advice, a lawyer</td></tr><tr><td>lose / loose</td><td>fail to keep / not tight</td></tr><tr><td>breath / breathe</td><td>noun / verb</td></tr><tr><td>heal / heel</td><td>to cure / back of the foot</td></tr><tr><td>dew / due</td><td>water drops / owed, expected</td></tr><tr><td>cite / site / sight</td><td>quote / place / vision</td></tr></tbody></table>"
+      },
+      {
+        "title": "British spelling, which SSC follows",
+        "body": "<table><thead><tr><th>British (use this)</th><th>American</th></tr></thead><tbody><tr><td>colour, honour, behaviour, neighbour</td><td>color, honor, behavior, neighbor</td></tr><tr><td>centre, theatre, metre</td><td>center, theater, meter</td></tr><tr><td>travelled, cancelled, counsellor, jewellery</td><td>traveled, canceled, counselor, jewelry</td></tr><tr><td>programme (TV, plan), cheque (bank), catalogue</td><td>program, check, catalog</td></tr><tr><td>defence, offence, licence (noun)</td><td>defense, offense, license</td></tr><tr><td>judgement, ageing</td><td>judgment, aging</td></tr><tr><td>manoeuvre, paediatric, anaemia</td><td>maneuver, pediatric, anemia</td></tr></tbody></table><small>American spellings are not usually given as the wrong option, because both are real spellings. If both appear, prefer the British one.</small>"
+      }
     ],
     "varieties": [
-      { "type": "correct", "name": "Choose the correct spelling", "how": "Check double letters and vowel endings one word at a time; trust only the version you are sure of.", "example": { "q": "Accomodate / Accommodate / Acommodate / Accommadate", "steps": ["Rule: double c and double m.", "Ending is <i>-date</i> with <i>o</i> before it."], "answer": "Accommodate" } },
-      { "type": "incorrect", "name": "Choose the misspelt word", "how": "Three words are correct; find the odd one with a wrong letter.", "example": { "q": "Receive / Believe / Achieve / Recieve", "steps": ["After c → <i>ei</i>: <i>receive</i>.", "<i>Recieve</i> breaks the rule."], "answer": "Recieve" } }
+      {
+        "type": "find-misspelt",
+        "name": "Find the misspelt word",
+        "how": "Check each word for the usual danger spots: double letters, ie/ei, endings and silent letters. Mark the ones you are sure are correct; the one left is the answer.",
+        "example": {
+          "q": "Select the incorrectly spelt word.<br>Professional / Dillemma / Perpetuate / Electronics",
+          "steps": [
+            "Professional: one f, double s. Correct.",
+            "Perpetuate and Electronics: correct.",
+            "<i>Dilemma</i> has one l and double m; <i>Dillemma</i> is wrong."
+          ],
+          "answer": "Dillemma"
+        }
+      },
+      {
+        "type": "find-correct",
+        "name": "Choose the correct spelling",
+        "how": "All four are versions of one word. Say it in syllables and compare the options letter by letter at the danger spot.",
+        "example": {
+          "q": "Select the correctly spelt word.<br>Embarassment / Embarrasment / Embarrassment / Embaressment",
+          "steps": [
+            "Rule: <i>embarrass</i> has double r and double s.",
+            "Only one option has both doubles and -ment."
+          ],
+          "answer": "Embarrassment"
+        }
+      },
+      {
+        "type": "misspelt-in-sentence",
+        "name": "Misspelt word in a sentence",
+        "how": "Read the sentence slowly and check the long or unusual words first; short common words are rarely the error.",
+        "example": {
+          "q": "Identify the incorrectly spelt word in the given sentence.<br>One part of the philosophy of life's meaning consists of the systemetic attempt to identify what people have in mind.",
+          "steps": [
+            "Long words: philosophy, meaning, systemetic, attempt, identify.",
+            "<i>System</i> + <i>-atic</i> = <i>systematic</i>; <i>systemetic</i> is wrong."
+          ],
+          "answer": "systemetic (correct: systematic)"
+        }
+      },
+      {
+        "type": "correct-the-word",
+        "name": "Correct the misspelt word",
+        "how": "Recall the correct form of the marked word and choose it. If the word is already right and <i>No error</i> is offered, choose that.",
+        "example": {
+          "q": "Select the option that can rectify the incorrectly spelt word.<br>I doubt that these lifts can accomodate 100 people.",
+          "steps": [
+            "The misspelt word is <i>accomodate</i>.",
+            "Rule: double c and double m.",
+            "Options: acomodate, accommodatte, accomondate, accommodate."
+          ],
+          "answer": "accommodate"
+        }
+      },
+      {
+        "type": "fill-blank",
+        "name": "Correctly spelt word for a blank",
+        "how": "First decide which word the blank needs (watch sound-alikes like dew/due), then pick its correct spelling.",
+        "example": {
+          "q": "Select the most appropriate option to fill in the blank.<br>_____ droplets settled on top of the leaves.",
+          "steps": [
+            "Water drops on leaves in the morning = <i>dew</i>.",
+            "Options: Due, Doe, Do, Dew. The others sound alike but mean owed, a female deer and to perform."
+          ],
+          "answer": "Dew"
+        }
+      },
+      {
+        "type": "correct-by-meaning",
+        "name": "Correct spelling of a word with a given meaning",
+        "how": "Name the word from the meaning, then check the options for the right letters.",
+        "example": {
+          "q": "Select the correct spelling of a word meaning 'to make less severe or intense'.",
+          "steps": [
+            "The word is <i>mitigate</i>: mi-ti-gate.",
+            "Options: Mitigate, Mittigate, Mitagagate, Mittagete. One t in the middle, -gate at the end."
+          ],
+          "answer": "Mitigate"
+        }
+      },
+      {
+        "type": "error-free-sentence",
+        "name": "Sentence with no spelling error",
+        "how": "Scan each sentence for one doubtful word. Three sentences will each have one mistake; the fourth has none.",
+        "example": {
+          "q": "Select the sentence that contains no spelling errors.",
+          "steps": [
+            "(a) The committee will recieve the report tomorrow. <i>recieve</i> → receive.",
+            "(b) Their behaviour was definately rude. <i>definately</i> → definitely.",
+            "(c) We need a seperate room. <i>seperate</i> → separate.",
+            "(d) The government will guarantee the loan. All correct."
+          ],
+          "answer": "The government will guarantee the loan."
+        }
+      }
     ],
     "tips": [
-      "Keep a personal list of words you get wrong and revise it weekly.",
-      "Say the word slowly in syllables: <i>ac-com-mo-date</i>."
+      "Say the word in syllables before you judge it: <i>en-vi-ron-ment</i>, <i>gov-ern-ment</i>.",
+      "Check double letters first; they cause most SSC spelling errors.",
+      "Use the rules: i before e except after c; double the last consonant when the stress is on the last syllable.",
+      "Mark the words you are sure of; the odd one out is often the answer.",
+      "SSC follows British spelling: colour, centre, travelled, programme.",
+      "Revise 10 trouble words a day with the spelling flashcards and write them once by hand."
     ],
     "traps": [
-      "SSC often asks for the <b>incorrect</b> spelling; read the question instruction carefully.",
-      "Close variants differ by one letter only; compare letter by letter, not by overall look."
+      "A word can look right but be the wrong sound-alike (<i>stationary</i> for <i>stationery</i>).",
+      "<i>Supersede</i> is the only -sede word; <i>exceed, proceed, succeed</i> are the only -ceed words.",
+      "<i>Weird</i>, <i>seize</i>, <i>foreign</i> and <i>leisure</i> break the ie rule.",
+      "<i>Maintain</i> but <i>maintenance</i>; <i>pronounce</i> but <i>pronunciation</i>.",
+      "When <i>No error</i> is an option, check carefully before assuming a mistake."
     ]
   },
   "questions": [
-    { "id": "e-spelling-001", "rev": 1, "topic": "e-spelling", "type": "correct", "level": 1, "q": "Select the correctly spelt word.", "options": ["Neccessary", "Necessary", "Necesary", "Neccesary"], "answer": 1, "solution": "<b>Necessary</b>: one <i>c</i>, double <i>s</i>.", "source": "test-data" },
-    { "id": "e-spelling-002", "rev": 1, "topic": "e-spelling", "type": "incorrect", "level": 1, "q": "Select the incorrectly spelt word.", "options": ["Believe", "Receive", "Acheive", "Deceive"], "answer": 2, "solution": "The correct spelling is <b>Achieve</b> (i before e, no c before it). <i>Receive</i> and <i>Deceive</i> follow 'ei after c'.", "source": "test-data" },
-    { "id": "e-spelling-003", "rev": 1, "topic": "e-spelling", "type": "correct", "level": 2, "q": "Select the correctly spelt word.", "options": ["Embarassment", "Embarrasment", "Embarrassment", "Embaressment"], "answer": 2, "solution": "<b>Embarrassment</b>: double <i>r</i> and double <i>s</i>.", "source": "test-data" },
-    { "id": "e-spelling-004", "rev": 1, "topic": "e-spelling", "type": "incorrect", "level": 2, "q": "Select the incorrectly spelt word.", "options": ["Maintenance", "Existence", "Guidance", "Independance"], "answer": 3, "solution": "The correct spelling is <b>Independence</b> (ends in <i>-ence</i>).", "source": "test-data" },
-    { "id": "e-spelling-005", "rev": 1, "topic": "e-spelling", "type": "correct", "level": 3, "q": "Select the correctly spelt word.", "options": ["Occurence", "Occurrence", "Ocurrence", "Occurrance"], "answer": 1, "solution": "<b>Occurrence</b>: double <i>c</i>, double <i>r</i>, ending <i>-ence</i>.", "source": "test-data" },
-    { "id": "e-spelling-006", "rev": 1, "topic": "e-spelling", "type": "incorrect", "level": 3, "q": "Select the incorrectly spelt word.", "options": ["Conscientious", "Millennium", "Questionnaire", "Liaision"], "answer": 3, "solution": "The correct spelling is <b>Liaison</b> (l-i-a-i-s-o-n). The other three are correct.", "source": "test-data" }
+    {"id":"e-spelling-001","rev":1,"topic":"e-spelling","type":"find-correct","level":1,"q":"Select the correctly spelt word.","options":["Neccessary","Necessary","Necesary","Neccesary"],"answer":1,"solution":"<b>Necessary</b>: one <i>c</i>, double <i>s</i>.","source":"test-data"},
+    {"id":"e-spelling-002","rev":1,"topic":"e-spelling","type":"find-misspelt","level":1,"q":"Select the incorrectly spelt word.","options":["Believe","Receive","Acheive","Deceive"],"answer":2,"solution":"The correct spelling is <b>Achieve</b> (i before e, no c before it). <i>Receive</i> and <i>Deceive</i> follow 'ei after c'.","source":"test-data"},
+    {"id":"e-spelling-003","rev":1,"topic":"e-spelling","type":"find-correct","level":2,"q":"Select the correctly spelt word.","options":["Embarassment","Embarrasment","Embarrassment","Embaressment"],"answer":2,"solution":"<b>Embarrassment</b>: double <i>r</i> and double <i>s</i>.","source":"test-data"},
+    {"id":"e-spelling-004","rev":1,"topic":"e-spelling","type":"find-misspelt","level":2,"q":"Select the incorrectly spelt word.","options":["Maintenance","Existence","Guidance","Independance"],"answer":3,"solution":"The correct spelling is <b>Independence</b> (ends in <i>-ence</i>).","source":"test-data"},
+    {"id":"e-spelling-005","rev":1,"topic":"e-spelling","type":"find-correct","level":3,"q":"Select the correctly spelt word.","options":["Occurence","Occurrence","Ocurrence","Occurrance"],"answer":1,"solution":"<b>Occurrence</b>: double <i>c</i>, double <i>r</i>, ending <i>-ence</i>.","source":"test-data"},
+    {"id":"e-spelling-006","rev":1,"topic":"e-spelling","type":"find-misspelt","level":3,"q":"Select the incorrectly spelt word.","options":["Conscientious","Millennium","Questionnaire","Liaision"],"answer":3,"solution":"The correct spelling is <b>Liaison</b> (l-i-a-i-s-o-n). The other three are correct.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-sp-01", "front": "Necessary — tricky letters?", "back": "One c, double s: ne-c-e-ss-ary", "deck": "spelling" },
-    { "id": "fc-e-sp-02", "front": "Accommodate", "back": "Double c, double m", "deck": "spelling" },
-    { "id": "fc-e-sp-03", "front": "Embarrassment", "back": "Double r, double s", "deck": "spelling" },
-    { "id": "fc-e-sp-04", "front": "Occurrence", "back": "Double c, double r, -ence", "deck": "spelling" },
-    { "id": "fc-e-sp-05", "front": "Committee", "back": "Double m, double t, double e", "deck": "spelling" },
-    { "id": "fc-e-sp-06", "front": "Achieve / Receive", "back": "i before e, except after c", "deck": "spelling" },
-    { "id": "fc-e-sp-07", "front": "Independence", "back": "Ends in -ence", "deck": "spelling" },
-    { "id": "fc-e-sp-08", "front": "Maintenance", "back": "main-ten-ance (not maintainance)", "deck": "spelling" },
-    { "id": "fc-e-sp-09", "front": "Millennium", "back": "Double l, double n", "deck": "spelling" },
-    { "id": "fc-e-sp-10", "front": "Liaison", "back": "l-i-a-i-s-o-n", "deck": "spelling" },
-    { "id": "fc-e-sp-11", "front": "Questionnaire", "back": "Double n", "deck": "spelling" },
-    { "id": "fc-e-sp-12", "front": "Conscientious", "back": "con-sci-en-tious", "deck": "spelling" },
-    { "id": "fc-e-sp-13", "front": "Separate", "back": "sep-A-rate (not seperate)", "deck": "spelling" },
-    { "id": "fc-e-sp-14", "front": "Definitely", "back": "defin-ITE-ly (not definately)", "deck": "spelling" },
-    { "id": "fc-e-sp-15", "front": "Privilege", "back": "privi-LEGE (no d)", "deck": "spelling" },
-    { "id": "fc-e-sp-16", "front": "Noticeable", "back": "Keep the e: notice + able", "deck": "spelling" }
+    {"id":"fc-e-sp-01","front":"Necessary — tricky letters?","back":"One c, double s: ne-c-e-ss-ary","deck":"spelling"},
+    {"id":"fc-e-sp-02","front":"Accommodate","back":"Double c, double m","deck":"spelling"},
+    {"id":"fc-e-sp-03","front":"Embarrassment","back":"Double r, double s","deck":"spelling"},
+    {"id":"fc-e-sp-04","front":"Occurrence","back":"Double c, double r, -ence","deck":"spelling"},
+    {"id":"fc-e-sp-05","front":"Committee","back":"Double m, double t, double e","deck":"spelling"},
+    {"id":"fc-e-sp-06","front":"Achieve / Receive","back":"i before e, except after c","deck":"spelling"},
+    {"id":"fc-e-sp-07","front":"Independence","back":"Ends in -ence","deck":"spelling"},
+    {"id":"fc-e-sp-08","front":"Maintenance","back":"main-ten-ance (not maintainance)","deck":"spelling"},
+    {"id":"fc-e-sp-09","front":"Millennium","back":"Double l, double n","deck":"spelling"},
+    {"id":"fc-e-sp-10","front":"Liaison","back":"l-i-a-i-s-o-n","deck":"spelling"},
+    {"id":"fc-e-sp-11","front":"Questionnaire","back":"Double n","deck":"spelling"},
+    {"id":"fc-e-sp-12","front":"Conscientious","back":"con-sci-en-tious","deck":"spelling"},
+    {"id":"fc-e-sp-13","front":"Separate","back":"sep-A-rate (not seperate)","deck":"spelling"},
+    {"id":"fc-e-sp-14","front":"Definitely","back":"defin-ITE-ly (not definately)","deck":"spelling"},
+    {"id":"fc-e-sp-15","front":"Privilege","back":"privi-LEGE (no d)","deck":"spelling"},
+    {"id":"fc-e-sp-16","front":"Noticeable","back":"Keep the e: notice + able","deck":"spelling"},
+    {"id":"fc-e-sp-17","front":"Dilemma","back":"One l, double m: di-lem-ma","deck":"spelling"},
+    {"id":"fc-e-sp-18","front":"Supersede","back":"The only word ending in -sede","deck":"spelling"},
+    {"id":"fc-e-sp-19","front":"Pronunciation","back":"No o after the n: pro-nun-ci-a-tion","deck":"spelling"},
+    {"id":"fc-e-sp-20","front":"Harass","back":"One r, double s","deck":"spelling"},
+    {"id":"fc-e-sp-21","front":"Weird","back":"ei, an exception to i before e","deck":"spelling"},
+    {"id":"fc-e-sp-22","front":"Perseverance","back":"per-se-ver-ance: -ance, not -ence","deck":"spelling"},
+    {"id":"fc-e-sp-23","front":"Hierarchy","back":"hi-er-ar-chy: ie after h","deck":"spelling"},
+    {"id":"fc-e-sp-24","front":"Indispensable","back":"Ends in -able","deck":"spelling"},
+    {"id":"fc-e-sp-25","front":"Rhythm","back":"No vowels except y: r-h-y-t-h-m","deck":"spelling"},
+    {"id":"fc-e-sp-26","front":"Systematic","back":"System + -atic","deck":"spelling"}
   ]
 }

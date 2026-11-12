@@ -1,73 +1,149 @@
 {
  "topic": "st-timeseries",
  "notes": {
-  "summary": "A time series is data recorded over time (years, quarters, months). We split it into trend, seasonal, cyclical and irregular parts. JSO asks on identifying components, moving averages, least-squares trend and seasonal indices.",
+  "summary": "A time series is a set of values recorded at successive points of time, such as yearly sales or monthly prices. Paper 2 asks you to name the four components (trend, seasonal, cyclical, irregular), choose between the additive and multiplicative models, measure trend by the graphic, semi-average, moving-average and least-squares methods, and work with seasonal indices.",
   "concepts": [
    {
-    "title": "Components",
-    "body": "<ul><li><b>Secular trend (T)</b>: long-term upward or downward movement (population growth).</li><li><b>Seasonal (S)</b>: regular pattern within a year (more umbrellas sold in monsoon).</li><li><b>Cyclical (C)</b>: business-cycle waves lasting more than a year (boom, recession, depression, recovery).</li><li><b>Irregular (I)</b>: random, unpredictable (floods, strikes, pandemics).</li><li>Models: multiplicative Y = T × S × C × I; additive Y = T + S + C + I.</li></ul>"
+    "title": "What a time series is",
+    "body": "<ul><li>Data arranged in order of time: Y<sub>1</sub>, Y<sub>2</sub>, … at times t<sub>1</sub>, t<sub>2</sub>, …</li><li>Uses: understanding past behaviour, forecasting, comparing series, and planning (production, stock, budgets).</li><li>Analysis means separating the series into its components so each can be studied on its own.</li></ul>"
    },
    {
-    "title": "Measuring trend",
-    "body": "<ul><li><b>Moving averages</b>: average of consecutive k values, placed at the middle. Even k needs centring.</li><li><b>Least squares</b>: fit y = a + bx. With x coded so Σx = 0: a = Σy/n, b = Σxy/Σx².</li><li>Semi-averages and freehand methods are simpler but less exact.</li></ul>"
+    "title": "The four components",
+    "body": "<table><tr><th>Component</th><th>What it is</th><th>Example</th></tr><tr><td><b>Secular trend</b> (T)</td><td>Long-term smooth rise or fall over many years</td><td>Growth of population, steady rise in prices</td></tr><tr><td><b>Seasonal variation</b> (S)</td><td>Regular pattern that repeats within a year (period up to one year)</td><td>More woollens sold in winter, more ice-cream in summer, bank rush at month end</td></tr><tr><td><b>Cyclical variation</b> (C)</td><td>Up-and-down waves lasting more than a year, not of fixed length</td><td>Business cycle: prosperity, recession, depression, recovery</td></tr><tr><td><b>Irregular variation</b> (I)</td><td>Random, unpredictable, short-lived changes</td><td>Floods, earthquakes, wars, strikes, pandemics</td></tr></table><p>Seasonal and cyclical variations are both periodic (they repeat); irregular variations are not.</p>"
+   },
+   {
+    "title": "Additive and multiplicative models",
+    "body": "<table><tr><th></th><th>Additive</th><th>Multiplicative</th></tr><tr><td>Model</td><td>Y = T + S + C + I</td><td>Y = T × S × C × I</td></tr><tr><td>Assumes</td><td>Components are independent of each other</td><td>Components affect each other (seasonal swing grows with the trend)</td></tr><tr><td>S, C, I measured as</td><td>Absolute amounts in the same units as Y</td><td>Ratios or percentages (indices) around 1 or 100</td></tr><tr><td>Seasonal effects add to</td><td>0 over a year</td><td>400% for quarters, 1200% for months</td></tr></table><p>The multiplicative model is used more often in practice. Taking logarithms turns it into an additive model: log Y = log T + log S + log C + log I.</p><p>Example: T = 200, S = 110%, C = 95%, I = 100%. Multiplicative Y = 200 × 1.10 × 0.95 × 1 = 209.</p>"
+   },
+   {
+    "title": "Methods of measuring trend",
+    "body": "<table><tr><th>Method</th><th>How</th><th>Strength</th><th>Weakness</th></tr><tr><td>Free-hand (graphic)</td><td>Plot the data and draw a smooth line by eye</td><td>Simplest, quick</td><td>Subjective: different people draw different lines</td></tr><tr><td>Semi-averages</td><td>Average each half and join the two points</td><td>Objective, easy</td><td>Assumes a straight line; affected by extreme values</td></tr><tr><td>Moving averages</td><td>Average successive groups of k values</td><td>Smooths out regular cycles of length k; flexible</td><td>Loses values at both ends; no equation for forecasting</td></tr><tr><td>Least squares</td><td>Fit y = a + bx by minimising Σ(y − ŷ)²</td><td>Objective, gives an equation for forecasting</td><td>More calculation; the curve type must be chosen in advance</td></tr></table>"
+   },
+   {
+    "title": "Method of semi-averages",
+    "body": "<ul><li>Split the data into two equal halves. If the number of years is odd, leave out the middle year.</li><li>Find the average of each half and place it at the middle of that half.</li><li>Join the two points. Slope per year = (difference of the averages) ÷ (gap in years between the two centres).</li></ul><p>Example: 2017–2022: 20, 24, 22, 28, 30, 32. First half average = 22 (at 2018); second half average = 30 (at 2021). Slope = 8/3 ≈ 2.67 per year.</p>"
+   },
+   {
+    "title": "Method of moving averages",
+    "body": "<ul><li><b>Odd period</b> (3, 5, …): average each group of k values and place it against the middle year.</li><li><b>Even period</b> (4, 6, …): the averages fall between two years, so take a 2-item moving average of them to <b>centre</b> them.</li><li>The period should equal the length of the cycle in the data; then the cycle is removed completely.</li><li>A k-period moving average loses (k − 1)/2 values at each end for odd k.</li></ul><table><tr><th>Year</th><th>Value</th><th>4-year total</th><th>4-year average</th><th>Centred average</th></tr><tr><td>1</td><td>10</td><td></td><td></td><td></td></tr><tr><td>2</td><td>12</td><td>54 (between 2 and 3)</td><td>13.5</td><td></td></tr><tr><td>3</td><td>14</td><td>64 (between 3 and 4)</td><td>16</td><td>14.75</td></tr><tr><td>4</td><td>18</td><td>74 (between 4 and 5)</td><td>18.5</td><td>17.25</td></tr><tr><td>5</td><td>20</td><td></td><td></td><td></td></tr><tr><td>6</td><td>22</td><td></td><td></td><td></td></tr></table>"
+   },
+   {
+    "title": "Method of least squares",
+    "body": "<ul><li>Straight-line trend <b>y = a + bx</b>. Normal equations: Σy = na + bΣx and Σxy = aΣx + bΣx².</li><li>Choose the origin at the middle so that <b>Σx = 0</b>. Then <b>a = Σy/n</b> and <b>b = Σxy/Σx²</b>.</li><li>Odd n: x = year − middle year (…, −2, −1, 0, 1, 2, …).</li><li>Even n: origin between the two middle years and x = 2 × (year − origin), giving …, −3, −1, 1, 3, …; then b is the change per half-year.</li><li>a is the trend value at the origin; b is the change per unit of x.</li><li>The sum of deviations Σ(y − ŷ) = 0 and Σ(y − ŷ)² is the least possible.</li><li>Other curves: parabola y = a + bx + cx², exponential y = ab<sup>x</sup> (fit log y = log a + x log b).</li><li>Annual trend y = a + bx (x in years, y annual totals) becomes a monthly trend y = a/12 + (b/144)x with x in months.</li></ul><p>Example: 2018–2022 values 12, 15, 14, 18, 21, origin 2020. Σy = 80, a = 16. Σxy = −24 − 15 + 0 + 18 + 42 = 21, Σx² = 10, b = 2.1. Trend: y = 16 + 2.1x. For 2024 (x = 4): 24.4.</p>"
    },
    {
     "title": "Seasonal indices",
-    "body": "Methods: simple averages, ratio-to-trend, ratio-to-moving-average, link relatives. Quarterly indices add up to <b>400</b>; monthly indices add up to <b>1200</b> (average 100)."
+    "body": "<ul><li>A seasonal index shows each season's typical level as a percentage of the average season. Average index = 100.</li><li>Quarterly indices add to <b>400</b>; monthly indices add to <b>1200</b>. If they do not, multiply each by 400/sum (or 1200/sum).</li><li><b>Method of simple averages</b>: average each quarter over the years, then index = quarter average ÷ grand average × 100.</li><li><b>Ratio to trend</b>: divide each value by its trend value (from least squares), then average the ratios for each season.</li><li><b>Ratio to moving average</b>: divide each value by the centred 4-quarter (or 12-month) moving average; the most widely used method.</li><li><b>Link relatives</b>: each season as a percentage of the previous season, chained together.</li><li><b>Deseasonalised value</b> = actual value ÷ seasonal index × 100.</li></ul><p>Example: quarter averages 30, 40, 50, 40; grand average 40. Indices: 75, 100, 125, 100 (sum 400). Actual Q3 sales of 150 deseasonalise to 150 ÷ 1.25 = 120.</p>"
    }
   ],
   "varieties": [
    {
     "type": "components",
-    "name": "Identify the component",
-    "how": "Within a year and repeating → seasonal; multi-year waves → cyclical; long-term → trend; sudden → irregular.",
+    "name": "Components of a time series",
+    "how": "Within a year and regular is seasonal; waves of more than a year are cyclical; long-term direction is trend; sudden, one-off events are irregular.",
     "example": {
-     "q": "Sales fall sharply after an earthquake. Which component?",
+     "q": "Sales of a company fall sharply for one month because of a flood. This is an example of:",
      "steps": [
-      "Earthquakes are sudden and unpredictable."
+      "A flood is sudden, unpredictable and does not repeat on a schedule.",
+      "Such changes are irregular (random) variations."
      ],
      "answer": "Irregular variation"
     }
    },
    {
-    "type": "moving-average",
-    "name": "Moving averages and seasonal indices",
-    "how": "Average each consecutive block; seasonal indices must total 400 (quarters) or 1200 (months).",
+    "type": "models",
+    "name": "Additive and multiplicative models",
+    "how": "Additive: Y = T + S + C + I with components in units. Multiplicative: Y = T × S × C × I with S, C, I as ratios (divide indices by 100).",
     "example": {
-     "q": "Find the 3-year moving averages of 4, 6, 8, 10.",
+     "q": "Under the multiplicative model, the trend value is 200, the seasonal index is 110, the cyclical index is 95 and the irregular index is 100. Find the expected value.",
      "steps": [
-      "(4 + 6 + 8)/3 = 6",
-      "(6 + 8 + 10)/3 = 8"
+      "Convert indices to ratios: 1.10, 0.95, 1.00.",
+      "Y = 200 × 1.10 × 0.95 × 1.00.",
+      "= 209."
      ],
-     "answer": "6, 8"
+     "answer": "209"
     }
    },
    {
-    "type": "trend",
-    "name": "Least-squares trend",
-    "how": "Code years so Σx = 0, compute a and b, then substitute x for the target year.",
+    "type": "semi-averages",
+    "name": "Method of semi-averages",
+    "how": "Average each half (drop the middle year if the count is odd), place each average at its half's middle year, and join them.",
     "example": {
-     "q": "Trend y = 120 + 5x, origin 2022, x in years. Estimate for 2026.",
+     "q": "Values for 2017–2022 are 20, 24, 22, 28, 30, 32. Using semi-averages, find the trend value for 2023.",
      "steps": [
-      "x = 2026 − 2022 = 4",
-      "y = 120 + 5 × 4 = 140"
+      "First half average = 66/3 = 22, at 2018.",
+      "Second half average = 90/3 = 30, at 2021.",
+      "Slope = (30 − 22)/3 = 8/3 per year.",
+      "Trend for 2023 = 30 + 2 × 8/3 = 30 + 5.33 = 35.33."
      ],
-     "answer": "140"
+     "answer": "≈ 35.33"
+    }
+   },
+   {
+    "type": "moving-average",
+    "name": "Moving averages",
+    "how": "Odd period: average the group and place it at the middle. Even period: average consecutive moving averages in pairs to centre them.",
+    "example": {
+     "q": "Values for 6 years are 10, 12, 14, 18, 20, 22. Find the 4-year centred moving average for year 3.",
+     "steps": [
+      "4-year totals: 54 (years 1–4), 64 (years 2–5).",
+      "4-year averages: 13.5 and 16, which sit between years 2–3 and 3–4.",
+      "Centred value for year 3 = (13.5 + 16)/2 = 14.75."
+     ],
+     "answer": "14.75"
+    }
+   },
+   {
+    "type": "least-squares",
+    "name": "Least-squares trend line",
+    "how": "Put the origin at the middle so Σx = 0. Then a = Σy/n, b = Σxy/Σx², and trend = a + bx.",
+    "example": {
+     "q": "Values for 2018–2022 are 12, 15, 14, 18, 21. Fit a straight-line trend (origin 2020) and estimate 2024.",
+     "steps": [
+      "x = −2, −1, 0, 1, 2. Σy = 80, so a = 80/5 = 16.",
+      "Σxy = −24 − 15 + 0 + 18 + 42 = 21; Σx² = 10; b = 2.1.",
+      "Trend: y = 16 + 2.1x.",
+      "2024: x = 4, y = 16 + 8.4 = 24.4."
+     ],
+     "answer": "24.4"
+    }
+   },
+   {
+    "type": "seasonal-indices",
+    "name": "Seasonal indices",
+    "how": "Index = season average ÷ grand average × 100. Quarterly indices total 400 (monthly 1200). Deseasonalised value = actual ÷ index × 100.",
+    "example": {
+     "q": "Quarterly averages over several years are 30, 40, 50 and 40. Find the seasonal index for Q3, and the deseasonalised value of Q3 sales of 150.",
+     "steps": [
+      "Grand average = 160/4 = 40.",
+      "Q3 index = 50/40 × 100 = 125.",
+      "Deseasonalised = 150 ÷ 125 × 100 = 120."
+     ],
+     "answer": "Index 125; deseasonalised value 120"
     }
    }
   ],
   "tips": [
-   "For an odd number of years, take the middle year as origin (x = 0).",
-   "Moving averages smooth out cycles whose length equals the period of the average.",
-   "A trend line cannot predict irregular events."
+   "\"Every year\", \"every winter\", \"festival season\" point to seasonal variation.",
+   "\"Boom\", \"depression\", \"business cycle\" point to cyclical variation.",
+   "For least squares, always shift the origin to the middle so Σx = 0; it makes a and b one-line divisions.",
+   "With an even number of years, use x = −5, −3, −1, 1, 3, 5 (half-year units) and remember b is per half-year.",
+   "If seasonal indices do not total 400 (or 1200), scale each by 400/total.",
+   "The period of a moving average should match the length of the cycle in the data."
   ],
   "traps": [
-   "Seasonal means within one year, not \"every few years\" (that is cyclical).",
-   "A 4-year moving average needs centring to line up with actual years.",
-   "Check the unit of x (half-years, years) before substituting."
+   "Seasonal variation is within a year; cyclical variation lasts more than a year.",
+   "Even-period moving averages must be centred before placing them against a year.",
+   "In the multiplicative model, convert indices to ratios (110 → 1.10) before multiplying.",
+   "Moving averages give no trend values for the first and last few years.",
+   "In the semi-average method with an odd number of years, the middle year is left out."
   ]
  },
  "formulas": [
+  {
+   "name": "Additive model",
+   "expr": "Y = T + S + C + I"
+  },
   {
    "name": "Multiplicative model",
    "expr": "Y = T × S × C × I"
@@ -77,8 +153,28 @@
    "expr": "a = Σy/n,  b = Σxy/Σx²"
   },
   {
+   "name": "Normal equations",
+   "expr": "Σy = na + bΣx;  Σxy = aΣx + bΣx²"
+  },
+  {
+   "name": "Semi-average slope",
+   "expr": "b = (second average − first average) ÷ years between centres"
+  },
+  {
+   "name": "Seasonal index (simple averages)",
+   "expr": "season average ÷ grand average × 100"
+  },
+  {
    "name": "Seasonal index totals",
    "expr": "Quarterly 400, monthly 1200"
+  },
+  {
+   "name": "Deseasonalised value",
+   "expr": "actual ÷ seasonal index × 100"
+  },
+  {
+   "name": "Annual to monthly trend",
+   "expr": "y = a/12 + (b/144) x"
   }
  ],
  "questions": [
@@ -137,7 +233,7 @@
    "id": "st-timeseries-004",
    "rev": 1,
    "topic": "st-timeseries",
-   "type": "trend",
+   "type": "least-squares",
    "level": 2,
    "q": "A trend equation is y = 50 + 4x with origin 2020 and x in years. The trend value for 2025 is:",
    "options": [
@@ -154,7 +250,7 @@
    "id": "st-timeseries-005",
    "rev": 1,
    "topic": "st-timeseries",
-   "type": "trend",
+   "type": "least-squares",
    "level": 3,
    "q": "Values for 2019–2023 are 10, 12, 15, 17, 21. Fitting a straight-line trend by least squares (origin 2021), the estimate for 2025 is:",
    "options": [
@@ -171,7 +267,7 @@
    "id": "st-timeseries-006",
    "rev": 1,
    "topic": "st-timeseries",
-   "type": "moving-average",
+   "type": "seasonal-indices",
    "level": 3,
    "q": "Seasonal indices for Q1, Q2 and Q3 are 90, 110 and 120. The index for Q4 is:",
    "options": [

@@ -1,0 +1,41 @@
+{
+ "topic": "st-anova",
+ "types": [
+  {
+   "type": "basics",
+   "name": "Ideas and assumptions",
+   "description": "Asks what ANOVA tests, who developed it, which statistic it uses, or its assumptions.",
+   "concepts": []
+  },
+  {
+   "type": "degrees-of-freedom",
+   "name": "Degrees of freedom",
+   "description": "Gives the number of groups and observations in a one-way layout and asks for between, within or total degrees of freedom.",
+   "concepts": []
+  },
+  {
+   "type": "sums-of-squares",
+   "name": "Sums of squares",
+   "description": "Gives some sums of squares (or totals) and asks for the missing one.",
+   "concepts": []
+  },
+  {
+   "type": "f-ratio",
+   "name": "Mean squares and the F-ratio",
+   "description": "Gives sums of squares with the number of groups and observations and asks for mean squares or the F-ratio.",
+   "concepts": []
+  },
+  {
+   "type": "one-way-raw",
+   "name": "One-way ANOVA from raw data",
+   "description": "Lists the observations in each group and asks for SSB, SSW or the F-ratio.",
+   "concepts": []
+  },
+  {
+   "type": "two-way",
+   "name": "Two-way ANOVA",
+   "description": "Mentions rows and columns (blocks and treatments) and asks for degrees of freedom, mean squares or F in a two-way table.",
+   "concepts": []
+  }
+ ]
+}

@@ -1,90 +1,160 @@
 {
  "topic": "st-data",
  "notes": {
-  "summary": "The first step of statistics: how data is collected (primary/secondary, census/sample), arranged into classes (frequency distributions), and shown in tables, diagrams and graphs. Questions are direct and scoring: class marks, boundaries, Sturges' rule, pie angles and histograms.",
+  "summary": "<p>This topic is about how data is collected, sorted into classes and shown in tables, diagrams and graphs. Paper 2 asks 6 to 10 questions here. Most are direct definitions (primary or secondary data, questionnaire or schedule, kinds of classification) and short calculations: class mark, class boundaries, class width, pie-chart angles, histogram heights for unequal classes and ogives.</p><p>Learn the vocabulary first, then practise the four small calculations: class mark, boundaries, pie angle and adjusted frequency.</p>",
   "concepts": [
    {
+    "title": "What statistics and data mean",
+    "body": "<p><b>Statistics</b> (plural sense) means numerical facts collected for a purpose, such as the population of each state. Statistics (singular sense) means the methods of collecting, organising, presenting, analysing and interpreting such facts.</p><ul><li>A single value (one student's marks) is not \"statistics\". Statistics are aggregates of facts.</li><li><b>Population</b> (universe): every unit we want to study. <b>Sample</b>: the part we actually study.</li><li><b>Variable</b>: a measurable characteristic (height, income). <b>Attribute</b>: a quality that cannot be measured, only counted (gender, literacy, colour).</li><li><b>Discrete variable</b> takes separate values, usually counts (number of children: 0, 1, 2). <b>Continuous variable</b> can take any value in a range (height 160.4 cm).</li></ul>"
+   },
+   {
+    "title": "Scales of measurement",
+    "body": "<table><tr><th>Scale</th><th>What it allows</th><th>Example</th></tr><tr><td>Nominal</td><td>Names or labels only; no order</td><td>Blood group, religion, jersey number</td></tr><tr><td>Ordinal</td><td>Order, but gaps are not equal</td><td>Ranks in a race, grades A, B, C</td></tr><tr><td>Interval</td><td>Equal gaps, but no true zero</td><td>Temperature in °C, calendar years</td></tr><tr><td>Ratio</td><td>Equal gaps and a true zero, so ratios make sense</td><td>Height, weight, income, age</td></tr></table><p>Mode suits nominal data, median suits ordinal data, and the mean needs interval or ratio data.</p>"
+   },
+   {
     "title": "Primary and secondary data",
-    "body": "<ul><li><b>Primary data</b>: collected for the first time by the investigator. Original but costly.</li><li><b>Secondary data</b>: already collected by someone else (census reports, RBI bulletins). Cheap, but check suitability, adequacy and reliability.</li><li>A <b>questionnaire</b> is filled by the informant; a <b>schedule</b> is filled by the enumerator.</li><li><b>Census</b> = every unit studied; <b>sample survey</b> = only a part.</li></ul>"
+    "body": "<ul><li><b>Primary data</b> are collected for the first time by the investigator for the purpose in hand. They are original, more reliable for that purpose, but cost more time and money.</li><li><b>Secondary data</b> were already collected by someone else and are reused, for example Census reports, RBI bulletins, NSO reports, journals.</li><li>Data are primary for the agency that collects them and secondary for everyone who later uses them.</li><li>Before using secondary data, check that they are <b>reliable</b>, <b>suitable</b> for your purpose and <b>adequate</b>.</li></ul><p><b>Published sources</b>: government publications, reports of committees, international bodies (UN, IMF), journals. <b>Unpublished sources</b>: records kept by offices, research workers and firms.</p>"
    },
    {
-    "title": "Classification and frequency distribution",
-    "body": "<ul><li><b>Exclusive</b> classes: 10–20, 20–30 (upper limit not included). <b>Inclusive</b>: 10–19, 20–29.</li><li>For inclusive classes, find <b>class boundaries</b> by subtracting/adding half the gap: 10–19 becomes 9.5–19.5.</li><li><b>Class mark</b> (mid-value) = (lower + upper)/2. <b>Width</b> = upper boundary − lower boundary.</li><li>Number of classes by <b>Sturges' rule</b>: k = 1 + 3.322 log<sub>10</sub>N.</li></ul>"
+    "title": "Methods of collecting primary data",
+    "body": "<table><tr><th>Method</th><th>How it works</th><th>Good for</th></tr><tr><td>Direct personal investigation</td><td>The investigator meets every informant himself</td><td>Small, local, confidential enquiries</td></tr><tr><td>Indirect oral investigation</td><td>Information is taken from third persons (witnesses) who know the facts</td><td>Enquiry committees, when informants will not talk</td></tr><tr><td>Information through local agents or correspondents</td><td>Local agents send information regularly</td><td>Newspapers, crop estimates; quick but less accurate</td></tr><tr><td>Mailed questionnaire</td><td>A list of questions is posted; the informant fills it in</td><td>Wide area, educated informants; cheap but low response</td></tr><tr><td>Schedules through enumerators</td><td>Trained enumerators ask the questions and fill in the form themselves</td><td>Large enquiries like the Census; works with illiterate informants</td></tr></table><p><b>Questionnaire</b> = filled in by the informant. <b>Schedule</b> = filled in by the enumerator after asking the informant. A good questionnaire is short, uses simple questions, avoids personal or leading questions, and asks questions in a logical order.</p><p><b>Census</b> (complete enumeration) studies every unit. <b>Sample survey</b> studies only some units. A pilot survey is a small trial run to test the questionnaire.</p>"
    },
    {
-    "title": "Diagrams and graphs",
-    "body": "<ul><li><b>Pie chart</b>: angle = (value/total) × 360°.</li><li><b>Histogram</b>: bars with no gaps on class boundaries. With <b>unequal widths</b>, plot frequency density (or adjusted frequency), not raw frequency.</li><li><b>Frequency polygon</b>: joins the mid-points of histogram tops.</li><li><b>Ogive</b>: cumulative frequency curve. Less-than and more-than ogives cross at the <b>median</b>.</li></ul>",
-    "img": "statistics/histogram-ogive.svg"
+    "title": "Classification of data",
+    "body": "<p>Classification is arranging data into groups by common features. It is the first step after collection.</p><table><tr><th>Basis</th><th>Name</th><th>Example</th></tr><tr><td>Place</td><td>Geographical (spatial)</td><td>Wheat output by state</td></tr><tr><td>Time</td><td>Chronological (temporal)</td><td>India's population 1951 to 2011</td></tr><tr><td>Quality / attribute</td><td>Qualitative</td><td>People by literacy or gender</td></tr><tr><td>Size / measurement</td><td>Quantitative</td><td>Students by marks or height</td></tr></table><ul><li><b>Simple (dichotomous) classification</b>: one attribute, two classes (literate or illiterate).</li><li><b>Manifold classification</b>: several attributes at once (gender, then literacy within each gender).</li><li>Data arranged by time form a <b>time series</b>.</li></ul>"
+   },
+   {
+    "title": "Tabulation",
+    "body": "<p>A table arranges classified data in rows and columns. Parts of a table, from top to bottom:</p><ol><li><b>Table number</b> and <b>title</b> (what, where, when).</li><li><b>Head note</b> (units, such as \"in ₹ crore\").</li><li><b>Captions</b>: column headings. <b>Stubs</b>: row headings.</li><li><b>Body</b>: the figures.</li><li><b>Foot note</b> (explains a figure) and <b>source note</b> (where the data came from).</li></ol><p>A <b>simple (one-way) table</b> shows one characteristic; a <b>two-way table</b> shows two; a <b>manifold table</b> shows more. A <b>general purpose (reference) table</b> keeps all data for reference; a <b>special purpose (summary) table</b> is made for one analysis.</p>"
+   },
+   {
+    "title": "Frequency distribution words",
+    "body": "<p>Take the classes 10–20, 20–30, 30–40 with frequencies 4, 9, 7.</p><table><tr><th>Term</th><th>Meaning</th><th>For 20–30</th></tr><tr><td>Class limits</td><td>The two end values written</td><td>Lower 20, upper 30</td></tr><tr><td>Class width (size, interval)</td><td>Upper boundary − lower boundary</td><td>10</td></tr><tr><td>Class mark (mid-value)</td><td>(Lower limit + upper limit) ÷ 2</td><td>25</td></tr><tr><td>Frequency</td><td>Number of values in the class</td><td>9</td></tr><tr><td>Relative frequency</td><td>Frequency ÷ total frequency</td><td>9/20 = 0.45</td></tr><tr><td>Less-than cumulative frequency</td><td>Frequencies added from the top</td><td>4 + 9 = 13</td></tr><tr><td>Frequency density</td><td>Frequency ÷ class width</td><td>0.9</td></tr></table><ul><li><b>Exclusive method</b> (10–20, 20–30): the upper limit is not included in the class, so 20 goes into 20–30. Limits and boundaries are the same.</li><li><b>Inclusive method</b> (10–19, 20–29): both limits are included. To get <b>class boundaries</b>, find the gap (20 − 19 = 1), take half (0.5), subtract it from lower limits and add it to upper limits: 9.5–19.5, 19.5–29.5.</li><li><b>Open-end class</b>: \"below 10\" or \"60 and above\".</li><li><b>Sturges' rule</b> for number of classes: k = 1 + 3.322 log<sub>10</sub> N. For N = 100, k = 1 + 6.644 ≈ 8. Class width ≈ range ÷ k.</li></ul>"
+   },
+   {
+    "title": "Diagrams",
+    "body": "<p>Diagrams give a quick visual comparison; they are not exact.</p><ul><li><b>Simple bar diagram</b>: one bar per item; only the length matters, widths are equal.</li><li><b>Multiple (grouped) bar diagram</b>: bars side by side to compare two or more series (exports and imports each year).</li><li><b>Subdivided (component) bar diagram</b>: one bar split into parts. <b>Percentage bar diagram</b>: every bar is 100 and parts are percentages.</li><li><b>Deviation bar</b>: shows positive and negative values (profit and loss).</li><li><b>Pie chart</b>: a circle cut into sectors. Angle of a part = (value of part ÷ total) × 360°. A part that is 25% gets 90°.</li><li><b>Pictograms</b> use pictures; <b>cartograms</b> use maps.</li><li>Bar diagrams are one-dimensional; rectangles, squares and circles drawn by area are two-dimensional; cubes and cylinders are three-dimensional.</li></ul><p>Mini example: monthly expense ₹2,400, rent ₹600. Rent's angle = 600/2400 × 360° = 90°.</p>"
+   },
+   {
+    "title": "Graphs of a frequency distribution",
+    "body": "<ul><li><b>Histogram</b>: touching rectangles over class boundaries. The <b>area</b> of each bar shows the frequency. When classes have unequal widths, use height = frequency × (standard width ÷ actual width). Mode can be found from a histogram.</li><li><b>Frequency polygon</b>: join the mid-points of the tops of histogram bars (or plot class marks against frequencies) and close it at both ends on the x-axis. Its area equals the histogram's area.</li><li><b>Frequency curve</b>: a smooth freehand curve through the polygon's points.</li><li><b>Ogive</b> (cumulative frequency curve): the less-than ogive plots less-than cf against <b>upper</b> boundaries and rises; the more-than ogive plots more-than cf against <b>lower</b> boundaries and falls. The two ogives cross at the <b>median</b>. Quartiles, deciles and percentiles are read from an ogive.</li><li><b>Lorenz curve</b>: shows inequality of income or wealth; the further it bends from the line of equal distribution, the greater the inequality.</li><li>A <b>histogram</b> cannot be drawn for open-end classes without closing them; a <b>line graph</b> or <b>historigram</b> is used for time series.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "collection",
-    "name": "Collection of data",
-    "how": "Decide who collected it (primary/secondary), who fills the form (questionnaire/schedule), and whether all units are covered (census/sample).",
+    "type": "data-collection",
+    "name": "Data sources and collection methods",
+    "how": "Ask two things: who collected the data first (you or someone else), and who fills in the form (informant = questionnaire, enumerator = schedule).",
     "example": {
-     "q": "An investigator uses figures published by the RBI for his study. This data is:",
+     "q": "Data taken from the Census report by a researcher for his study are:",
      "steps": [
-      "The RBI collected it first, not the investigator.",
-      "Data used by a later user is secondary."
+      "The Census office collected these data first, for its own purpose.",
+      "The researcher is reusing data collected by someone else.",
+      "Reused data are secondary data for the user."
      ],
      "answer": "Secondary data"
     }
    },
    {
-    "type": "classification",
-    "name": "Classes, marks and boundaries",
-    "how": "Convert inclusive classes to boundaries, then use mid-value and width formulas.",
+    "type": "classification-tabulation",
+    "name": "Classification, tabulation and scales",
+    "how": "Match the basis of grouping: place = geographical, time = chronological, quality = qualitative, measured size = quantitative. For tables, captions are column heads and stubs are row heads.",
     "example": {
-     "q": "Find the class mark and width of the class 25–35.",
+     "q": "Students of a college are grouped as \"boys\" and \"girls\". This is:",
      "steps": [
-      "Class mark = (25 + 35)/2 = 30",
-      "Width = 35 − 25 = 10"
+      "Gender is a quality, not a measurement, so the classification is qualitative.",
+      "Only one attribute with two classes is used, so it is a simple (dichotomous) classification."
      ],
-     "answer": "Mark 30, width 10"
+     "answer": "Qualitative, simple (dichotomous) classification"
     }
    },
    {
-    "type": "presentation",
-    "name": "Pie charts and histograms",
-    "how": "Pie angle = share × 360°. For unequal widths, adjusted frequency = f × (standard width / actual width).",
+    "type": "frequency-distribution",
+    "name": "Class limits, boundaries, marks and widths",
+    "how": "Class mark = (lower + upper) ÷ 2. For inclusive classes, half the gap between one upper limit and the next lower limit is taken off the lower limit and added to the upper limit.",
     "example": {
-     "q": "Out of a budget of ₹60,000, rent is ₹15,000. Find the pie-chart angle for rent.",
+     "q": "For the inclusive classes 10–19, 20–29, 30–39, find the class boundaries, class width and class mark of 20–29.",
      "steps": [
-      "Share = 15000/60000 = 1/4",
-      "Angle = 1/4 × 360° = 90°"
+      "Gap between classes = 20 − 19 = 1, half of it = 0.5.",
+      "Boundaries of 20–29: 20 − 0.5 = 19.5 and 29 + 0.5 = 29.5.",
+      "Width = 29.5 − 19.5 = 10.",
+      "Class mark = (20 + 29) ÷ 2 = 24.5 (the same as (19.5 + 29.5) ÷ 2)."
      ],
-     "answer": "90°"
+     "answer": "Boundaries 19.5–29.5, width 10, class mark 24.5"
+    }
+   },
+   {
+    "type": "diagrams-charts",
+    "name": "Bar diagrams and pie charts",
+    "how": "Pie angle = (part ÷ total) × 360°. Each 1% of the total is 3.6°.",
+    "example": {
+     "q": "A family spends ₹2,400 a month, of which ₹360 goes on education. What is the angle for education in a pie chart?",
+     "steps": [
+      "Share of education = 360 ÷ 2,400 = 0.15 (15%).",
+      "Angle = 0.15 × 360° = 54°."
+     ],
+     "answer": "54°"
+    }
+   },
+   {
+    "type": "frequency-graphs",
+    "name": "Histogram, polygon and ogive",
+    "how": "In a histogram the area shows the frequency, so for a wider class divide the frequency by (its width ÷ standard width). Ogives meet at the median.",
+    "example": {
+     "q": "Classes 0–10, 10–30 and 30–35 have frequencies 5, 16 and 6. Taking 10 as the standard width, find the heights of the histogram bars.",
+     "steps": [
+      "0–10: width 10 = standard, height 5.",
+      "10–30: width 20, twice the standard, height = 16 ÷ 2 = 8.",
+      "30–35: width 5, half the standard, height = 6 ÷ 0.5 = 12."
+     ],
+     "answer": "Heights 5, 8 and 12"
     }
    }
   ],
   "tips": [
-   "Class mark is the same for inclusive and boundary forms: (10 + 19)/2 = (9.5 + 19.5)/2 = 14.5.",
-   "Median can be read from the x-coordinate where the two ogives meet.",
-   "Histogram = continuous data; bar diagram = discrete or categorical data (gaps allowed)."
+   "Questionnaire is filled by the informant; schedule is filled by the enumerator. This pair is asked almost every year.",
+   "Class mark = average of the two limits. If the class marks are given, width = difference between two consecutive marks.",
+   "The less-than and more-than ogives cross at the median, so the x-value of the meeting point is the median.",
+   "For a pie chart, convert percentages with 1% = 3.6°: 20% = 72°, 25% = 90°, 50% = 180°.",
+   "For unequal classes in a histogram, adjust the frequency to the standard width before drawing; the area must match the frequency.",
+   "Sturges' rule: k = 1 + 3.322 log<sub>10</sub> N. Useful values: N = 100 gives about 8 classes, N = 1000 about 11."
   ],
   "traps": [
-   "Do not use raw frequencies for a histogram with unequal class widths.",
-   "A schedule is filled by the enumerator, not the respondent.",
-   "Sturges' rule uses log base 10, not natural log."
+   "Inclusive classes (10–19) have different limits and boundaries; exclusive classes (10–20) do not.",
+   "A histogram uses class boundaries and touching bars; a bar diagram uses gaps between bars.",
+   "The less-than ogive uses upper boundaries; the more-than ogive uses lower boundaries.",
+   "Census data are primary for the Census office but secondary for anyone who later uses them.",
+   "Temperature in °C is an interval scale, not a ratio scale: 20 °C is not \"twice as hot\" as 10 °C."
   ]
  },
  "formulas": [
   {
    "name": "Class mark",
-   "expr": "(lower limit + upper limit) / 2"
+   "expr": "(lower limit + upper limit) ÷ 2"
   },
   {
-   "name": "Pie-chart angle",
-   "expr": "(component value / total) × 360°"
+   "name": "Class width",
+   "expr": "upper boundary − lower boundary"
+  },
+  {
+   "name": "Inclusive to exclusive",
+   "expr": "subtract (gap ÷ 2) from lower limits and add it to upper limits"
   },
   {
    "name": "Sturges' rule",
    "expr": "k = 1 + 3.322 log₁₀ N"
   },
   {
-   "name": "Adjusted frequency",
-   "expr": "f × (standard width / actual width)"
+   "name": "Pie-chart angle",
+   "expr": "(value of part ÷ total) × 360°"
+  },
+  {
+   "name": "Adjusted frequency (histogram)",
+   "expr": "f × (standard width ÷ class width)"
+  },
+  {
+   "name": "Relative frequency",
+   "expr": "f ÷ N"
   }
  ],
  "questions": [
@@ -92,7 +162,7 @@
    "id": "st-data-001",
    "rev": 1,
    "topic": "st-data",
-   "type": "classification",
+   "type": "frequency-distribution",
    "level": 1,
    "q": "The class mark of the class 20–30 is:",
    "options": [
@@ -109,7 +179,7 @@
    "id": "st-data-002",
    "rev": 1,
    "topic": "st-data",
-   "type": "collection",
+   "type": "data-collection",
    "level": 1,
    "q": "A list of questions that is filled in by the <b>enumerator</b> after asking the informant is called a:",
    "options": [
@@ -126,7 +196,7 @@
    "id": "st-data-003",
    "rev": 1,
    "topic": "st-data",
-   "type": "presentation",
+   "type": "diagrams-charts",
    "level": 2,
    "q": "A family spends ₹450 on food out of a total monthly expense of ₹1,800. In a pie chart, the angle for food is:",
    "options": [
@@ -143,7 +213,7 @@
    "id": "st-data-004",
    "rev": 1,
    "topic": "st-data",
-   "type": "classification",
+   "type": "frequency-distribution",
    "level": 2,
    "q": "Using Sturges' rule, the number of classes for N = 1000 observations is about:",
    "options": [
@@ -160,7 +230,7 @@
    "id": "st-data-005",
    "rev": 1,
    "topic": "st-data",
-   "type": "presentation",
+   "type": "frequency-graphs",
    "level": 3,
    "q": "A frequency table has class 10–20 with f = 12 and class 20–40 with f = 30. Taking 10 as the standard width, the height of the histogram bar for 20–40 should be:",
    "options": [
@@ -177,7 +247,7 @@
    "id": "st-data-006",
    "rev": 1,
    "topic": "st-data",
-   "type": "classification",
+   "type": "frequency-distribution",
    "level": 3,
    "q": "For the inclusive classes 10–19, 20–29, 30–39, the upper class boundary of 20–29 is:",
    "options": [

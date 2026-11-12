@@ -1,215 +1,430 @@
 {
- "topic": "q-si-ci",
- "notes": {
-  "summary": "Simple Interest grows by the same amount every year; Compound Interest earns interest on interest. 1–2 questions are common in both tiers.",
-  "concepts": [
-   {
-    "title": "Simple Interest",
-    "body": "SI = P × R × T / 100. Amount = P + SI. A sum becomes n times in T years when R × T = (n − 1) × 100."
-   },
-   {
-    "title": "Compound Interest",
-    "body": "A = P(1 + R/100)<sup>T</sup>; CI = A − P. For 10% over 2 years, CI is 21% of P; over 3 years, 33.1%."
-   },
-   {
-    "title": "CI − SI difference",
-    "body": "2 years: D = P(R/100)<sup>2</sup>. 3 years: D = P(R/100)<sup>2</sup>(3 + R/100)."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "si",
-    "name": "Simple Interest",
-    "how": "Use SI = PRT/100 and solve for the unknown.",
-    "example": {
-     "q": "SI on ₹ 2000 at 5% for 4 years?",
-     "steps": [
-      "2000 × 5 × 4 / 100 = 400"
-     ],
-     "answer": "₹ 400"
+  "topic": "q-si-ci",
+  "notes": {
+    "summary": "Simple interest is charged only on the original sum, while compound interest also charges interest on past interest. SSC asks 1 to 2 questions in Tier 1 and 1 to 2 in Tier 2, often on the CI and SI difference, sums that double or triple, and amounts after two different times. Learn the effective rate table and the fraction method and most CI sums need no long multiplication.",
+    "concepts": [
+      {
+        "title": "The basic words",
+        "body": "<ul><li><b>Principal (P)</b>: the money lent or borrowed.</li><li><b>Rate (R)</b>: interest percent per year (per annum, p.a.) unless told otherwise.</li><li><b>Time (T)</b>: in years. Change months to years: 9 months = 3/4 year.</li><li><b>Amount (A)</b> = Principal + Interest.</li></ul><p>In <b>simple interest (SI)</b>, interest is always on the original principal. In <b>compound interest (CI)</b>, each year’s interest is added to the principal and earns interest too.</p>"
+      },
+      {
+        "title": "Simple interest formula",
+        "body": "<p><b>SI = P × R × T/100</b> and A = P + SI = P(1 + RT/100).</p><ul><li>P = 100 × SI/(R × T)</li><li>R = 100 × SI/(P × T)</li><li>T = 100 × SI/(P × R)</li></ul><p>Example: SI on ₹5,000 at 8% for 3 years = 5,000 × 8 × 3/100 = ₹1,200.</p><p>Example: ₹6,000 amounts to ₹7,800 in 5 years. SI = 1,800, R = 100 × 1,800/(6,000 × 5) = 6%.</p><p>SI is the same every year, so total SI grows in a straight line with time. For the same sum, SI is in the ratio of R × T.</p>"
+      },
+      {
+        "title": "Sum becomes n times at simple interest",
+        "body": "<p>If a sum becomes n times itself, the interest is (n − 1) times the sum. So <b>R × T = (n − 1) × 100</b>.</p><ul><li>Doubles in 8 years: R × 8 = 100, R = 12.5%.</li><li>Doubles in 7 years, time to become 5 times: interest of 1 sum takes 7 years, so 4 sums take 28 years.</li></ul><p>Short cut: time is proportional to (n − 1). If it triples in 9 years (n − 1 = 2), it becomes 7 times (n − 1 = 6) in 27 years.</p>"
+      },
+      {
+        "title": "Changing rates and times in SI",
+        "body": "<p>When the rate changes over periods, add the rate × time of each period: <b>SI = P × (R₁T₁ + R₂T₂ + …)/100</b>.</p><p>Example: 6% for 2 years and then 8% for 3 more years on ₹10,000. SI = 10,000 × (12 + 24)/100 = ₹3,600.</p><p>If the same sum is kept for 5 years at 7% and for 3 years at 9%, the difference of SI = P × (35 − 27)/100 = 8% of P.</p>"
+      },
+      {
+        "title": "Splitting a sum and the average rate",
+        "body": "<p>When a sum is lent in two parts at R₁% and R₂%, the overall rate is a weighted average. Use alligation:</p><p>Part at R₁ : Part at R₂ = (R₂ − average rate) : (average rate − R₁).</p><p>Example: ₹5,000 split at 4% and 5% gives ₹223 a year. Average rate = 223/5,000 × 100 = 4.46%. Ratio = (5 − 4.46) : (4.46 − 4) = 0.54 : 0.46 = 27 : 23. Part at 4% = 5,000 × 27/50 = ₹2,700.</p><p>Parts that give equal amounts: set P₁(1 + R₁T₁/100) = P₂(1 + R₂T₂/100) for SI, or P₁(1 + R/100)<sup>t₁</sup> = P₂(1 + R/100)<sup>t₂</sup> for CI. The parts are in the inverse ratio of these multipliers.</p>"
+      },
+      {
+        "title": "Instalments and present worth in SI",
+        "body": "<p>A debt A due after n years at R% SI, paid in n equal yearly instalments of x:</p><p><b>x = 100A / (100n + n(n − 1)R/2)</b></p><p>Reason: the first instalment earns interest for n − 1 years, the next for n − 2, and so on, and the last for 0 years.</p><p><b>Present worth</b> of ₹A due after T years: PW = 100A/(100 + RT). Example: ₹1,100 due in 2 years at 5% has PW = 110,000/110 = ₹1,000.</p>"
+      },
+      {
+        "title": "Compound interest formula",
+        "body": "<p><b>A = P(1 + R/100)<sup>n</sup></b> and CI = A − P.</p><p>Example: ₹10,000 at 10% for 2 years. A = 10,000 × 1.1 × 1.1 = ₹12,100, CI = ₹2,100.</p><p>Different rates in different years: A = P(1 + R₁/100)(1 + R₂/100)(1 + R₃/100).</p><p>The same formula gives growth (population, production) and, with a minus sign, depreciation.</p><p>In the first year CI and SI are equal. From the second year CI is more, because interest earns interest.</p>"
+      },
+      {
+        "title": "Effective rate table for 2 and 3 years",
+        "body": "<p>Total CI as a percent of the principal. For 2 years it is 2R + R²/100. For 3 years it is 3R + 3R²/100 + R³/10,000.</p><table><thead><tr><th>Rate</th><th>2 years</th><th>3 years</th></tr></thead><tbody><tr><td>4%</td><td>8.16%</td><td>12.4864%</td></tr><tr><td>5%</td><td>10.25%</td><td>15.7625%</td></tr><tr><td>8%</td><td>16.64%</td><td>25.9712%</td></tr><tr><td>10%</td><td>21%</td><td>33.1%</td></tr><tr><td>12%</td><td>25.44%</td><td>40.4928%</td></tr><tr><td>15%</td><td>32.25%</td><td>52.0875%</td></tr><tr><td>20%</td><td>44%</td><td>72.8%</td></tr></tbody></table><p>Example: CI on ₹25,000 at 12% for 3 years = 40.4928% of 25,000 = ₹10,123.20.</p>"
+      },
+      {
+        "title": "The fraction method for CI",
+        "body": "<p>Write the rate as a fraction. Each year the principal : amount ratio is the same.</p><ul><li>10% = 1/10, so P : A = 10 : 11 each year. For 2 years, 100 : 121. For 3 years, 1,000 : 1,331.</li><li>20% = 1/5, so P : A = 5 : 6. For 2 years, 25 : 36.</li><li>12.5% = 1/8, so P : A = 8 : 9. For 2 years, 64 : 81.</li></ul><p>Example: at 20% for 2 years the amount is ₹7,200. P : A = 25 : 36, so P = 7,200 × 25/36 = ₹5,000.</p>"
+      },
+      {
+        "title": "Half-yearly and quarterly compounding",
+        "body": "<p>If interest is added k times a year, divide the rate by k and multiply the number of periods by k.</p><ul><li>Half-yearly: A = P(1 + R/200)<sup>2n</sup>.</li><li>Quarterly: A = P(1 + R/400)<sup>4n</sup>.</li><li>Every 8 months: rate per period = R × 8/12, periods = months/8.</li></ul><p>Example: ₹8,000 at 20% p.a. for 1 year, half-yearly. Rate 10% for 2 periods. A = 8,000 × 1.21 = ₹9,680, CI = ₹1,680.</p>"
+      },
+      {
+        "title": "Fractional time with yearly compounding",
+        "body": "<p>For n whole years and a fraction f of a year, the fraction earns simple interest on the amount so far:</p><p><b>A = P(1 + R/100)<sup>n</sup> × (1 + fR/100)</b></p><p>Example: ₹10,000 at 10% for 1 1/2 years. A = 10,000 × 1.1 × 1.05 = ₹11,550.</p>"
+      },
+      {
+        "title": "Difference between CI and SI",
+        "body": "<ul><li>For 2 years: <b>CI − SI = P(R/100)²</b>.</li><li>For 3 years: <b>CI − SI = P(R/100)²(3 + R/100)</b>, which is PR²(300 + R)/100³.</li><li>If the 2-year SI and CI are known: R = 2(CI − SI)/SI × 100.</li></ul><p>Example: ₹8,000 at 10% for 3 years. Difference = 8,000 × 0.01 × 3.1 = ₹248.</p><p>Example: 2-year difference at 5% is ₹15. P = 15/0.0025 = ₹6,000.</p>"
+      },
+      {
+        "title": "Amounts after two different times",
+        "body": "<p>If a sum becomes A₁ after t₁ years and A₂ after t₂ years at CI, then <b>A₂/A₁ = (1 + R/100)<sup>t₂ − t₁</sup></b>.</p><ul><li>Consecutive years: R = (A₂ − A₁)/A₁ × 100. Example: ₹6,050 then ₹6,655. R = 605/6,050 = 10%, P = 6,050/1.21 = ₹5,000.</li><li>When t₂ = 2t₁: P = A₁²/A₂.</li><li>Interest of each year is (1 + R/100) times the interest of the year before. At 16%, year-3 CI − year-2 CI = 16% of the year-2 CI.</li></ul>"
+      },
+      {
+        "title": "Sum becomes n times at compound interest",
+        "body": "<p>If a sum becomes n times in t years, it becomes n² times in 2t years, n³ times in 3t years, and so on.</p><p>Example: doubles in 5 years, so 8 times (2³) in 15 years. Triples in 4 years, so 27 times in 12 years.</p><p>Rule of 72 (rough check): money doubles in about 72/R years at R% CI.</p>"
+      },
+      {
+        "title": "Instalments in compound interest",
+        "body": "<p>The loan equals the sum of the present values of the instalments. For equal yearly instalments x at R%:</p><p><b>P = x/(1 + R/100) + x/(1 + R/100)² + … + x/(1 + R/100)<sup>n</sup></b></p><p>Example: two equal yearly instalments of ₹35,280 at 5%. P = 35,280/1.05 + 35,280/1.05² = 33,600 + 32,000 = ₹65,600.</p><p>Fraction method for 2 instalments at 10% (P : A = 10 : 11): make the instalment 121 units. Principal parts are 110 and 100, so P = 210 units.</p>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "si-basics",
+        "name": "Simple interest basics",
+        "how": "Use SI = PRT/100 and solve for the missing value. For ratios on the same sum, compare R × T.",
+        "example": {
+          "q": "The SI on ₹2,800 at 10% p.a. for 3 years is ₹x, and ₹1,736 is the SI on ₹6,200 at 14% p.a. for y years. Find x/y.",
+          "steps": [
+            "x = 2,800 × 10 × 3/100 = 840",
+            "y = 1,736 × 100/(6,200 × 14) = 1,736/868 = 2",
+            "x/y = 840/2 = 420"
+          ],
+          "answer": "420"
+        }
+      },
+      {
+        "type": "si-n-times",
+        "name": "Sum becomes n times at simple interest",
+        "how": "R × T = (n − 1) × 100. At a fixed rate, time is proportional to n − 1.",
+        "example": {
+          "q": "A sum becomes three times itself in 26 years at simple interest. In how many years will it become five times itself?",
+          "steps": [
+            "Three times: interest = 2 sums in 26 years",
+            "Five times: interest = 4 sums",
+            "Time = 26 × 4/2 = 52 years"
+          ],
+          "answer": "52 years"
+        }
+      },
+      {
+        "type": "si-variable-rates",
+        "name": "Changing rate or time in simple interest",
+        "how": "Add rate × time for each period to get the total interest percent, then use SI = P × total%/100.",
+        "example": {
+          "q": "The SI rate is 5% p.a. for the first 4 years, 8% p.a. for the next 3 years and 10% p.a. after 7 years. If the SI for 11 years is ₹2,520, find the sum.",
+          "steps": [
+            "Total % = 5 × 4 + 8 × 3 + 10 × 4 = 20 + 24 + 40 = 84%",
+            "P = 2,520 × 100/84 = ₹3,000"
+          ],
+          "answer": "₹3,000"
+        }
+      },
+      {
+        "type": "split-sum",
+        "name": "Sum split into parts",
+        "how": "Find the average rate from the total interest, then use alligation to split the sum.",
+        "example": {
+          "q": "₹25,600 is lent at SI, partly at 7% and the rest at 9% p.a. The total interest after 3 years is ₹5,832. How much was lent at 7%?",
+          "steps": [
+            "Yearly interest = 5,832/3 = ₹1,944",
+            "Average rate = 1,944/25,600 × 100 = 7.59375%",
+            "Ratio (7% part : 9% part) = (9 − 7.59375) : (7.59375 − 7) = 1.40625 : 0.59375 = 45 : 19",
+            "Part at 7% = 25,600 × 45/64 = ₹18,000"
+          ],
+          "answer": "₹18,000"
+        }
+      },
+      {
+        "type": "installments",
+        "name": "Instalments",
+        "how": "SI: x = 100A/(100n + n(n − 1)R/2). CI: loan = sum of each instalment divided by (1 + R/100) raised to its year.",
+        "example": {
+          "q": "What equal annual instalment will discharge a debt of ₹5,664 due in 4 years at 12% simple interest?",
+          "steps": [
+            "x = 100 × 5,664/(100 × 4 + 4 × 3 × 12/2)",
+            "= 5,66,400/(400 + 72) = 5,66,400/472",
+            "= ₹1,200"
+          ],
+          "answer": "₹1,200"
+        }
+      },
+      {
+        "type": "ci-basics",
+        "name": "Compound interest basics",
+        "how": "A = P(1 + R/100)<sup>n</sup>. Use the effective rate table or the fraction method for speed.",
+        "example": {
+          "q": "The SI on a sum for 3 years at 5% p.a. is ₹1,200. What is the CI on the same sum for the same time and rate, compounded yearly?",
+          "steps": [
+            "P = 1,200 × 100/(5 × 3) = ₹8,000",
+            "3-year CI at 5% = 15.7625% of P",
+            "CI = 8,000 × 0.157625 = ₹1,261"
+          ],
+          "answer": "₹1,261"
+        }
+      },
+      {
+        "type": "ci-non-annual",
+        "name": "Half-yearly and quarterly compounding",
+        "how": "Half-yearly: rate R/2, periods 2n. Quarterly: rate R/4, periods 4n.",
+        "example": {
+          "q": "Find the CI on ₹8,000 at 20% p.a. for 1 year if interest is compounded half-yearly.",
+          "steps": [
+            "Rate per half-year = 10%, periods = 2",
+            "A = 8,000 × 1.1 × 1.1 = ₹9,680",
+            "CI = 9,680 − 8,000 = ₹1,680"
+          ],
+          "answer": "₹1,680"
+        }
+      },
+      {
+        "type": "ci-fractional-time",
+        "name": "Compound interest for a fractional time",
+        "how": "Whole years compound normally. The extra fraction f of a year multiplies by (1 + fR/100).",
+        "example": {
+          "q": "The CI on a sum for 2 1/2 years at 10% p.a., compounded yearly, is ₹1,623. Find the sum.",
+          "steps": [
+            "Multiplier = 1.1 × 1.1 × 1.05 = 1.2705",
+            "CI = 0.2705 × P = 1,623",
+            "P = 1,623/0.2705 = ₹6,000"
+          ],
+          "answer": "₹6,000"
+        }
+      },
+      {
+        "type": "ci-two-amounts",
+        "name": "Amounts after two different times",
+        "how": "Divide the later amount by the earlier one to get (1 + R/100) raised to the gap in years. Then work back to P.",
+        "example": {
+          "q": "A sum amounts to ₹8,028 in 3 years and to ₹12,042 in 6 years at CI compounded yearly. Find the sum.",
+          "steps": [
+            "12,042/8,028 = 1.5 = growth in 3 years",
+            "So the sum grows 1.5 times every 3 years",
+            "P = 8,028/1.5 = ₹5,352"
+          ],
+          "answer": "₹5,352"
+        }
+      },
+      {
+        "type": "ci-n-times",
+        "name": "Sum becomes n times at compound interest",
+        "how": "n times in t years means n<sup>k</sup> times in kt years.",
+        "example": {
+          "q": "A sum becomes three times itself in 4 years at compound interest. In how many years will it become 27 times?",
+          "steps": [
+            "27 = 3³",
+            "Time = 3 × 4 = 12 years"
+          ],
+          "answer": "12 years"
+        }
+      },
+      {
+        "type": "ci-si-difference",
+        "name": "Difference of CI and SI",
+        "how": "2 years: D = P(R/100)². 3 years: D = P(R/100)²(3 + R/100).",
+        "example": {
+          "q": "The difference between CI and SI on ₹x at 8% p.a. for 2 years is ₹19.20. Find x.",
+          "steps": [
+            "D = x × (8/100)² = 0.0064x",
+            "0.0064x = 19.20",
+            "x = ₹3,000"
+          ],
+          "answer": "₹3,000"
+        }
+      }
+    ],
+    "tips": [
+      "Learn the 2-year and 3-year effective rates for 5%, 10%, 20%: 10.25% and 15.7625%, 21% and 33.1%, 44% and 72.8%.",
+      "Use the fraction method: at 10%, P : A is 10 : 11 every year, so 100 : 121 for 2 years.",
+      "In SI, interest is the same every year. In CI, each year’s interest is (1 + R/100) times the previous year’s.",
+      "CI and SI are equal for the first year. The 2-year difference is just the interest on the first year’s interest.",
+      "For \"doubles in t years\", SI uses R × T = 100, while CI uses powers: 4 times in 2t, 8 times in 3t.",
+      "Always change months to years, and for half-yearly compounding halve the rate and double the periods."
+    ],
+    "traps": [
+      "Amount is not interest. Check whether the question asks for A or for CI.",
+      "At SI, a sum that doubles in 8 years becomes 4 times in 24 years, not 16 years.",
+      "At CI, a sum that doubles in 5 years becomes 4 times in 10 years, not 15 years.",
+      "For half-yearly compounding, the rate per period is R/2 and the number of periods is 2n. Do not change only one of them.",
+      "For fractional time with yearly compounding, the part year gets simple interest on the amount so far, not compound interest on a fractional power."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Simple interest",
+      "expr": "SI = PRT/100"
+    },
+    {
+      "name": "Amount at SI",
+      "expr": "A = P(1 + RT/100)"
+    },
+    {
+      "name": "Sum becomes n times at SI",
+      "expr": "R × T = (n − 1) × 100"
+    },
+    {
+      "name": "Equal SI instalment for debt A in n years",
+      "expr": "x = 100A/(100n + n(n − 1)R/2)"
+    },
+    {
+      "name": "Present worth of A due in T years",
+      "expr": "100A/(100 + RT)"
+    },
+    {
+      "name": "Amount at CI",
+      "expr": "A = P(1 + R/100)<sup>n</sup>"
+    },
+    {
+      "name": "CI for 2 years as % of P",
+      "expr": "2R + R²/100"
+    },
+    {
+      "name": "CI for 3 years as % of P",
+      "expr": "3R + 3R²/100 + R³/10000"
+    },
+    {
+      "name": "Half-yearly compounding",
+      "expr": "A = P(1 + R/200)<sup>2n</sup>"
+    },
+    {
+      "name": "Quarterly compounding",
+      "expr": "A = P(1 + R/400)<sup>4n</sup>"
+    },
+    {
+      "name": "Fractional time f after n years",
+      "expr": "A = P(1 + R/100)<sup>n</sup>(1 + fR/100)"
+    },
+    {
+      "name": "CI − SI for 2 years",
+      "expr": "P(R/100)²"
+    },
+    {
+      "name": "CI − SI for 3 years",
+      "expr": "P(R/100)²(3 + R/100)"
+    },
+    {
+      "name": "Two amounts at CI",
+      "expr": "A₂/A₁ = (1 + R/100)<sup>t₂ − t₁</sup>"
+    },
+    {
+      "name": "Equal CI instalments x for n years",
+      "expr": "P = Σ x/(1 + R/100)<sup>k</sup>, k = 1 to n"
     }
-   },
-   {
-    "type": "ci",
-    "name": "Compound Interest",
-    "how": "Multiply by (1 + R/100) each year, or use the effective % (21% for 10% over 2 years).",
-    "example": {
-     "q": "CI on ₹ 8000 at 5% for 2 years?",
-     "steps": [
-      "A = 8000 × 1.05 × 1.05 = 8820",
-      "CI = 820"
-     ],
-     "answer": "₹ 820"
-    }
-   },
-   {
-    "type": "ci-si-difference",
-    "name": "Difference between CI and SI",
-    "how": "Use D = P(R/100)<sup>2</sup> for 2 years and D = P(R/100)<sup>2</sup>(3 + R/100) for 3 years.",
-    "example": {
-     "q": "CI − SI on ₹ 10000 at 10% for 2 years?",
-     "steps": [
-      "10000 × (1/10)<sup>2</sup> = 100"
-     ],
-     "answer": "₹ 100"
-    }
-   }
   ],
-  "tips": [
-   "Amounts after consecutive years in CI form a GP: rate = (A<sub>2</sub> − A<sub>1</sub>)/A<sub>1</sub> × 100.",
-   "Effective rate for 2 years: 2R + R<sup>2</sup>/100."
+  "questions": [
+    {
+      "id": "q-si-ci-001",
+      "rev": 1,
+      "topic": "q-si-ci",
+      "type": "si-basics",
+      "level": 1,
+      "q": "Find the simple interest on ₹ 5,000 at 8% per annum for 3 years.",
+      "options": [
+        "₹ 1,000",
+        "₹ 1,500",
+        "₹ 1,200",
+        "₹ 1,240"
+      ],
+      "answer": 2,
+      "solution": "SI = P × R × T / 100.<br>= 5000 × 8 × 3 / 100 = ₹ 1,200.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-si-ci-002",
+      "rev": 1,
+      "topic": "q-si-ci",
+      "type": "ci-basics",
+      "level": 1,
+      "q": "What is the compound interest on ₹ 10,000 at 10% per annum for 2 years, compounded annually?",
+      "options": [
+        "₹ 2,000",
+        "₹ 2,100",
+        "₹ 2,200",
+        "₹ 2,310"
+      ],
+      "answer": 1,
+      "solution": "A = 10000 × 1.1 × 1.1 = ₹ 12,100.<br>CI = 12100 − 10000 = ₹ 2,100.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-si-ci-003",
+      "rev": 1,
+      "topic": "q-si-ci",
+      "type": "si-n-times",
+      "level": 2,
+      "q": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest per annum?",
+      "options": [
+        "10%",
+        "12%",
+        "12.5%",
+        "8%"
+      ],
+      "answer": 2,
+      "solution": "Doubles → SI = P in 8 years.<br>P = P × R × 8/100 → R = 100/8 = 12.5%.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-si-ci-004",
+      "rev": 1,
+      "topic": "q-si-ci",
+      "type": "ci-si-difference",
+      "level": 2,
+      "q": "The difference between compound interest and simple interest on a sum for 2 years at 5% per annum is ₹ 15. Find the sum.",
+      "options": [
+        "₹ 5,000",
+        "₹ 6,000",
+        "₹ 7,500",
+        "₹ 3,000"
+      ],
+      "answer": 1,
+      "solution": "D = P(R/100)<sup>2</sup>.<br>15 = P × (5/100)<sup>2</sup> = P/400.<br>P = 15 × 400 = ₹ 6,000.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-si-ci-005",
+      "rev": 1,
+      "topic": "q-si-ci",
+      "type": "ci-two-amounts",
+      "level": 3,
+      "q": "A sum of money amounts to ₹ 6,050 in 2 years and to ₹ 6,655 in 3 years at compound interest. Find the sum.",
+      "options": [
+        "₹ 5,000",
+        "₹ 5,500",
+        "₹ 4,500",
+        "₹ 4,800"
+      ],
+      "answer": 0,
+      "solution": "Interest in 3rd year = 6655 − 6050 = 605.<br>Rate = 605/6050 × 100 = 10%.<br>P = 6050 / (1.1)<sup>2</sup> = 6050/1.21 = ₹ 5,000.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-si-ci-006",
+      "rev": 1,
+      "topic": "q-si-ci",
+      "type": "ci-si-difference",
+      "level": 3,
+      "q": "What is the difference between compound interest and simple interest on ₹ 8,000 for 3 years at 10% per annum?",
+      "options": [
+        "₹ 240",
+        "₹ 248",
+        "₹ 260",
+        "₹ 232"
+      ],
+      "answer": 1,
+      "solution": "D = P(R/100)<sup>2</sup>(3 + R/100) = 8000 × 0.01 × 3.1 = ₹ 248.<br>Check: CI = 8000 × (1.331 − 1) = 2648; SI = 2400; difference = 248.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "Half-yearly compounding: halve the rate and double the time.",
-   "Questions may ask for amount, not interest; read carefully."
+  "flashcards": [
+    {
+      "id": "fc-sici-1",
+      "front": "CI − SI for 2 years",
+      "back": "P(R/100)²",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-sici-2",
+      "front": "CI − SI for 3 years",
+      "back": "P(R/100)²(3 + R/100)",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-sici-3",
+      "front": "Effective rate for 10% CI over 2 years",
+      "back": "21%",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-sici-4",
+      "front": "Sum becomes n times at SI",
+      "back": "R × T = (n − 1) × 100",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Simple interest",
-   "expr": "SI = PRT/100"
-  },
-  {
-   "name": "Compound amount",
-   "expr": "A = P(1 + R/100)^T"
-  },
-  {
-   "name": "CI − SI (2 years)",
-   "expr": "P(R/100)²"
-  },
-  {
-   "name": "CI − SI (3 years)",
-   "expr": "P(R/100)²(3 + R/100)"
-  }
- ],
- "questions": [
-  {
-   "id": "q-si-ci-001",
-   "rev": 1,
-   "topic": "q-si-ci",
-   "type": "si",
-   "level": 1,
-   "q": "Find the simple interest on ₹ 5,000 at 8% per annum for 3 years.",
-   "options": [
-    "₹ 1,000",
-    "₹ 1,500",
-    "₹ 1,200",
-    "₹ 1,240"
-   ],
-   "answer": 2,
-   "solution": "SI = P × R × T / 100.<br>= 5000 × 8 × 3 / 100 = ₹ 1,200.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-si-ci-002",
-   "rev": 1,
-   "topic": "q-si-ci",
-   "type": "ci",
-   "level": 1,
-   "q": "What is the compound interest on ₹ 10,000 at 10% per annum for 2 years, compounded annually?",
-   "options": [
-    "₹ 2,000",
-    "₹ 2,100",
-    "₹ 2,200",
-    "₹ 2,310"
-   ],
-   "answer": 1,
-   "solution": "A = 10000 × 1.1 × 1.1 = ₹ 12,100.<br>CI = 12100 − 10000 = ₹ 2,100.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-si-ci-003",
-   "rev": 1,
-   "topic": "q-si-ci",
-   "type": "si",
-   "level": 2,
-   "q": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest per annum?",
-   "options": [
-    "10%",
-    "12%",
-    "12.5%",
-    "8%"
-   ],
-   "answer": 2,
-   "solution": "Doubles → SI = P in 8 years.<br>P = P × R × 8/100 → R = 100/8 = 12.5%.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-si-ci-004",
-   "rev": 1,
-   "topic": "q-si-ci",
-   "type": "ci-si-difference",
-   "level": 2,
-   "q": "The difference between compound interest and simple interest on a sum for 2 years at 5% per annum is ₹ 15. Find the sum.",
-   "options": [
-    "₹ 5,000",
-    "₹ 6,000",
-    "₹ 7,500",
-    "₹ 3,000"
-   ],
-   "answer": 1,
-   "solution": "D = P(R/100)<sup>2</sup>.<br>15 = P × (5/100)<sup>2</sup> = P/400.<br>P = 15 × 400 = ₹ 6,000.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-si-ci-005",
-   "rev": 1,
-   "topic": "q-si-ci",
-   "type": "ci",
-   "level": 3,
-   "q": "A sum of money amounts to ₹ 6,050 in 2 years and to ₹ 6,655 in 3 years at compound interest. Find the sum.",
-   "options": [
-    "₹ 5,000",
-    "₹ 5,500",
-    "₹ 4,500",
-    "₹ 4,800"
-   ],
-   "answer": 0,
-   "solution": "Interest in 3rd year = 6655 − 6050 = 605.<br>Rate = 605/6050 × 100 = 10%.<br>P = 6050 / (1.1)<sup>2</sup> = 6050/1.21 = ₹ 5,000.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-si-ci-006",
-   "rev": 1,
-   "topic": "q-si-ci",
-   "type": "ci-si-difference",
-   "level": 3,
-   "q": "What is the difference between compound interest and simple interest on ₹ 8,000 for 3 years at 10% per annum?",
-   "options": [
-    "₹ 240",
-    "₹ 248",
-    "₹ 260",
-    "₹ 232"
-   ],
-   "answer": 1,
-   "solution": "D = P(R/100)<sup>2</sup>(3 + R/100) = 8000 × 0.01 × 3.1 = ₹ 248.<br>Check: CI = 8000 × (1.331 − 1) = 2648; SI = 2400; difference = 248.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-sici-1",
-   "front": "CI − SI for 2 years",
-   "back": "P(R/100)²",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-sici-2",
-   "front": "CI − SI for 3 years",
-   "back": "P(R/100)²(3 + R/100)",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-sici-3",
-   "front": "Effective rate for 10% CI over 2 years",
-   "back": "21%",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-sici-4",
-   "front": "Sum becomes n times at SI",
-   "back": "R × T = (n − 1) × 100",
-   "deck": "formulas"
-  }
- ]
 }

@@ -1,0 +1,59 @@
+{
+  "topic": "q-geometry",
+  "types": [
+    {
+      "type": "triangle-angles",
+      "name": "Angles in triangles and lines",
+      "description": "Finds an angle using the triangle angle sum, an exterior angle, parallel lines with a transversal, or where angle bisectors, altitudes or extended sides meet inside or outside a triangle.",
+      "concepts": [
+        "angle-properties-and-theorems"
+      ]
+    },
+    {
+      "type": "congruence-similarity",
+      "name": "Congruence, similarity and proportion",
+      "description": "Uses congruence rules (SSS, SAS, ASA, RHS), similar triangles, the basic proportionality theorem, the midpoint theorem, the angle bisector theorem, or ratios of sides, perimeters and areas of triangles.",
+      "concepts": [
+        "similar-triangles"
+      ]
+    },
+    {
+      "type": "triangle-centres",
+      "name": "Triangle centres and medians",
+      "description": "Involves the centroid, incentre, circumcentre or orthocentre of a triangle, medians and their 2 : 1 split, inradius or circumradius, tangent lengths of an incircle, or angles like ∠BIC and ∠BOC.",
+      "concepts": [
+        "centroid-orthocentre-median"
+      ]
+    },
+    {
+      "type": "right-triangles",
+      "name": "Pythagoras and special triangles",
+      "description": "Uses Pythagoras, Pythagorean triplets, the altitude on the hypotenuse, testing whether a triangle is acute, right or obtuse, or the side ratios of 30-60-90, 45-45-90 and equilateral triangles.",
+      "concepts": []
+    },
+    {
+      "type": "circle-chords-angles",
+      "name": "Chords and angles in circles",
+      "description": "Asks about a chord and its distance from the centre, equal or common chords, angles at the centre or on the circle, the angle in a semicircle, or angles of a cyclic quadrilateral.",
+      "concepts": []
+    },
+    {
+      "type": "tangents",
+      "name": "Tangents and secants",
+      "description": "Involves a tangent to a circle: tangent length from an external point, two tangents from a point, the alternate segment theorem, tangent–secant or intersecting chord products, or direct and transverse common tangents of two circles.",
+      "concepts": []
+    },
+    {
+      "type": "quadrilaterals",
+      "name": "Quadrilaterals",
+      "description": "Asks about angles, sides or diagonals of a parallelogram, rectangle, rhombus, square, trapezium or kite, or a general quadrilateral whose angle bisectors meet.",
+      "concepts": []
+    },
+    {
+      "type": "polygons",
+      "name": "Regular polygons",
+      "description": "Asks about the interior or exterior angle, number of sides, sum of angles, or number of diagonals of a polygon, usually a regular one.",
+      "concepts": []
+    }
+  ]
+}

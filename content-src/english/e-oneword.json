@@ -1,51 +1,230 @@
 {
   "topic": "e-oneword",
   "notes": {
-    "summary": "In <b>One Word Substitution</b> a phrase or definition is given and you choose the single word that means the same. Words come in families (people, fear/phobias, killing, government, study of), so learning them by group is fastest.",
+    "summary": "<b>One-word substitution</b> asks for the single word that means the same as a group of words (<i>one who collects stamps</i> = <i>philatelist</i>). SSC asks 1 to 2 such questions in Tier 1 and more in Tier 2. The words fall into a few families: people, sciences, governments and beliefs, killings and fears, places, qualities, actions, and things. Knowing a handful of roots (<i>-cide</i>, <i>-phobia</i>, <i>-cracy</i>, <i>-logy</i>, <i>-vore</i>) lets you work out many answers.",
     "concepts": [
-      { "title": "Learn by families", "body": "<ul><li><b>-cide</b> (killing): <i>homicide, regicide, fratricide, infanticide</i></li><li><b>-logy</b> (study of): <i>ornithology</i> (birds), <i>entomology</i> (insects), <i>seismology</i> (earthquakes)</li><li><b>-cracy</b> (rule by): <i>autocracy, democracy, plutocracy</i> (rule by the rich)</li><li><b>-phobia</b> (fear): <i>acrophobia</i> (heights), <i>claustrophobia</i> (closed spaces)</li></ul>" },
-      { "title": "Break the definition", "body": "Find the key idea in the definition (who? what? which action?) and match it with the root. <i>One who cannot be corrected</i> → key idea 'cannot be corrected' → <i>incorrigible</i>." }
+      {
+        "title": "How SSC asks and how to solve",
+        "body": "<ul><li><b>Usual form</b>: <i>Select the option that can be used as a one-word substitute for the given group of words. Willful destruction</i>. Answer: <i>sabotage</i>.</li><li><b>In a sentence</b>: <i>Rohan is <u>the one who opposes others</u>.</i> Answer: <i>antagonist</i>.</li></ul><ol><li>Find the <b>key idea</b> (stamps, heights, king, cannot be read).</li><li>Find the <b>family</b>: person (-ist, -er), study (-logy), killing (-cide), fear (-phobia), rule (-cracy), quality (in-...-ible).</li><li>Check the <b>part of speech</b>. <i>That which cannot be read</i> needs an adjective (<i>illegible</i>); <i>to increase speed</i> needs a verb (<i>accelerate</i>).</li><li>Eliminate <b>look-alikes</b>: <i>illegible</i> (cannot be read) vs <i>ineligible</i> (not qualified).</li></ol>"
+      },
+      {
+        "title": "Roots that build these words",
+        "body": "<table><thead><tr><th>Root</th><th>Meaning</th><th>Examples</th></tr></thead><tbody><tr><td>-cide</td><td>killing</td><td>regicide, genocide, pesticide</td></tr><tr><td>-phobia</td><td>fear</td><td>acrophobia, claustrophobia</td></tr><tr><td>-mania</td><td>uncontrollable urge</td><td>kleptomania, pyromania</td></tr><tr><td>-cracy / -archy</td><td>rule, government</td><td>democracy, monarchy, oligarchy</td></tr><tr><td>-logy</td><td>study of</td><td>ornithology, seismology</td></tr><tr><td>-graphy</td><td>writing, drawing</td><td>calligraphy, cartography</td></tr><tr><td>-vore / -vorous</td><td>eating</td><td>herbivore, carnivorous</td></tr><tr><td>omni-</td><td>all</td><td>omniscient, omnipotent, omnipresent</td></tr><tr><td>phil- / -phile</td><td>love</td><td>philanthropist, bibliophile</td></tr><tr><td>mis- / miso-</td><td>hate</td><td>misanthrope, misogynist</td></tr><tr><td>poly-</td><td>many</td><td>polyglot, polygamy</td></tr><tr><td>in-...-ible / -able</td><td>cannot be</td><td>illegible, invincible, irreparable</td></tr><tr><td>-arian / -genarian</td><td>of an age</td><td>septuagenarian, octogenarian</td></tr></tbody></table>"
+      },
+      {
+        "title": "People by habit, job and age",
+        "body": "<table><thead><tr><th>Description</th><th>Word</th></tr></thead><tbody><tr><td>One who collects stamps</td><td>Philatelist</td></tr><tr><td>One who collects coins</td><td>Numismatist</td></tr><tr><td>One who makes maps</td><td>Cartographer</td></tr><tr><td>One who compiles a dictionary</td><td>Lexicographer</td></tr><tr><td>One who travels on foot</td><td>Pedestrian</td></tr><tr><td>One who walks in sleep</td><td>Somnambulist</td></tr><tr><td>One who speaks many languages</td><td>Polyglot</td></tr><tr><td>A lover of books</td><td>Bibliophile</td></tr><tr><td>An expert judge of art or taste</td><td>Connoisseur</td></tr><tr><td>A lover of good food</td><td>Gourmet</td></tr><tr><td>One who eats too much</td><td>Glutton</td></tr><tr><td>One who never drinks alcohol</td><td>Teetotaller</td></tr><tr><td>One who eats only plants</td><td>Herbivore</td></tr><tr><td>One who eats human flesh</td><td>Cannibal</td></tr><tr><td>One who lives alone, away from society</td><td>Recluse, hermit</td></tr><tr><td>One who spends money wastefully</td><td>Spendthrift</td></tr><tr><td>One who hoards money and spends little</td><td>Miser</td></tr><tr><td>One who is unable to pay debts</td><td>Insolvent, bankrupt</td></tr><tr><td>One who is new to a job or activity</td><td>Novice, neophyte</td></tr><tr><td>One with long experience</td><td>Veteran</td></tr><tr><td>A soldier who fights for money</td><td>Mercenary</td></tr><tr><td>One who leaves his country to settle in another</td><td>Emigrant</td></tr><tr><td>One who comes into a country to settle</td><td>Immigrant</td></tr><tr><td>One who runs away from justice</td><td>Fugitive</td></tr><tr><td>A person aged 70 to 79</td><td>Septuagenarian</td></tr><tr><td>A person aged 80 to 89</td><td>Octogenarian</td></tr><tr><td>A person aged 90 to 99</td><td>Nonagenarian</td></tr><tr><td>A person aged 100 or more</td><td>Centenarian</td></tr></tbody></table>"
+      },
+      {
+        "title": "People by belief and character",
+        "body": "<table><thead><tr><th>Description</th><th>Word</th></tr></thead><tbody><tr><td>One who loves mankind and works for its welfare</td><td>Philanthropist</td></tr><tr><td>One who hates mankind</td><td>Misanthrope</td></tr><tr><td>One who hates women</td><td>Misogynist</td></tr><tr><td>One who does not believe in God</td><td>Atheist</td></tr><tr><td>One who believes nothing can be known about God</td><td>Agnostic</td></tr><tr><td>One who always looks at the bright side</td><td>Optimist</td></tr><tr><td>One who expects the worst</td><td>Pessimist</td></tr><tr><td>One who admires himself or herself too much</td><td>Narcissist</td></tr><tr><td>One who thinks only of himself</td><td>Egoist</td></tr><tr><td>One who cares selflessly for others</td><td>Altruist</td></tr><tr><td>One who pretends to be what he is not</td><td>Hypocrite</td></tr><tr><td>One who flatters to win favour</td><td>Sycophant</td></tr><tr><td>One who opposes war and violence</td><td>Pacifist</td></tr><tr><td>One who attacks cherished beliefs</td><td>Iconoclast</td></tr><tr><td>One who deserts his party or cause</td><td>Renegade, turncoat</td></tr><tr><td>One who opposes or competes with another</td><td>Antagonist</td></tr><tr><td>The main character of a story; a leading supporter</td><td>Protagonist</td></tr><tr><td>One who cannot be corrected or reformed</td><td>Incorrigible</td></tr><tr><td>One who has many skills</td><td>Versatile (adjective)</td></tr><tr><td>One who copies another's writing as his own</td><td>Plagiarist</td></tr></tbody></table>"
+      },
+      {
+        "title": "Studies and sciences",
+        "body": "<table><thead><tr><th>Study of</th><th>Word</th><th>Study of</th><th>Word</th></tr></thead><tbody><tr><td>birds</td><td>Ornithology</td><td>insects</td><td>Entomology</td></tr><tr><td>origin of words</td><td>Etymology</td><td>mankind</td><td>Anthropology</td></tr><tr><td>ancient remains</td><td>Archaeology</td><td>fossils</td><td>Palaeontology</td></tr><tr><td>earthquakes</td><td>Seismology</td><td>diseases</td><td>Pathology</td></tr><tr><td>heart</td><td>Cardiology</td><td>skin</td><td>Dermatology</td></tr><tr><td>eyes</td><td>Ophthalmology</td><td>tumours and cancer</td><td>Oncology</td></tr><tr><td>kidneys</td><td>Nephrology</td><td>nerves</td><td>Neurology</td></tr><tr><td>mind and behaviour</td><td>Psychology</td><td>old age and its care</td><td>Geriatrics</td></tr><tr><td>children's diseases</td><td>Paediatrics</td><td>poisons</td><td>Toxicology</td></tr><tr><td>stars and planets</td><td>Astronomy</td><td>influence of stars on human affairs</td><td>Astrology</td></tr><tr><td>coins</td><td>Numismatics</td><td>stamps</td><td>Philately</td></tr><tr><td>family descent</td><td>Genealogy</td><td>handwriting (to judge character)</td><td>Graphology</td></tr><tr><td>caves</td><td>Speleology</td><td>soil</td><td>Pedology</td></tr><tr><td>Art of beautiful handwriting</td><td>Calligraphy</td><td>Art of map-making</td><td>Cartography</td></tr><tr><td>Rearing of bees</td><td>Apiculture</td><td>Rearing of silkworms</td><td>Sericulture</td></tr><tr><td>Rearing of fish</td><td>Pisciculture</td><td>Growing of fruits and flowers</td><td>Horticulture</td></tr></tbody></table>"
+      },
+      {
+        "title": "Government and beliefs",
+        "body": "<table><thead><tr><th>Description</th><th>Word</th></tr></thead><tbody><tr><td>Government by the people</td><td>Democracy</td></tr><tr><td>Rule by one person with absolute power</td><td>Autocracy</td></tr><tr><td>Rule by a king or queen</td><td>Monarchy</td></tr><tr><td>Government by the wealthy</td><td>Plutocracy</td></tr><tr><td>Government by nobles</td><td>Aristocracy</td></tr><tr><td>Government by a few</td><td>Oligarchy</td></tr><tr><td>Government by officials</td><td>Bureaucracy</td></tr><tr><td>Government by priests or religious law</td><td>Theocracy</td></tr><tr><td>Government by old people</td><td>Gerontocracy</td></tr><tr><td>Rule by the corrupt who steal from the state</td><td>Kleptocracy</td></tr><tr><td>Absence of government; disorder</td><td>Anarchy</td></tr><tr><td>Favouritism shown to relatives in jobs</td><td>Nepotism</td></tr><tr><td>The belief that pleasure is the highest good</td><td>Hedonism</td></tr><tr><td>Selfless concern for others</td><td>Altruism</td></tr><tr><td>The belief that all events are decided by fate</td><td>Fatalism</td></tr><tr><td>Rejection of all moral principles</td><td>Nihilism</td></tr><tr><td>Excessive or prejudiced loyalty to one's own group</td><td>Chauvinism</td></tr><tr><td>Keeping religion apart from the state</td><td>Secularism</td></tr></tbody></table>"
+      },
+      {
+        "title": "Killings, fears and manias",
+        "body": "<table><thead><tr><th>Killing of</th><th>Word</th><th>Fear of</th><th>Word</th></tr></thead><tbody><tr><td>a human being</td><td>Homicide</td><td>heights</td><td>Acrophobia</td></tr><tr><td>oneself</td><td>Suicide</td><td>closed spaces</td><td>Claustrophobia</td></tr><tr><td>a king</td><td>Regicide</td><td>water</td><td>Hydrophobia</td></tr><tr><td>one's father</td><td>Patricide</td><td>open or crowded places</td><td>Agoraphobia</td></tr><tr><td>one's mother</td><td>Matricide</td><td>foreigners</td><td>Xenophobia</td></tr><tr><td>one's brother</td><td>Fratricide</td><td>darkness</td><td>Nyctophobia</td></tr><tr><td>one's sister</td><td>Sororicide</td><td>spiders</td><td>Arachnophobia</td></tr><tr><td>one's wife</td><td>Uxoricide</td><td>fire</td><td>Pyrophobia</td></tr><tr><td>an infant</td><td>Infanticide</td><td>death</td><td>Thanatophobia</td></tr><tr><td>a race or community</td><td>Genocide</td><td>public speaking</td><td>Glossophobia</td></tr><tr><td>pests</td><td>Pesticide</td><td>snakes</td><td>Ophidiophobia</td></tr><tr><td>weeds and plants</td><td>Herbicide</td><td>being alone</td><td>Monophobia</td></tr></tbody></table><table><thead><tr><th>Uncontrollable urge</th><th>Word</th></tr></thead><tbody><tr><td>to steal</td><td>Kleptomania</td></tr><tr><td>to set things on fire</td><td>Pyromania</td></tr><tr><td>for power, or belief in one's own greatness</td><td>Megalomania</td></tr><tr><td>to drink alcohol</td><td>Dipsomania</td></tr></tbody></table>"
+      },
+      {
+        "title": "Places and collections",
+        "body": "<table><thead><tr><th>Place for</th><th>Word</th><th>Place for</th><th>Word</th></tr></thead><tbody><tr><td>birds</td><td>Aviary</td><td>bees</td><td>Apiary</td></tr><tr><td>fish</td><td>Aquarium</td><td>weapons</td><td>Arsenal</td></tr><tr><td>historical records</td><td>Archives</td><td>grain</td><td>Granary</td></tr><tr><td>making coins</td><td>Mint</td><td>fruit trees</td><td>Orchard</td></tr><tr><td>aircraft</td><td>Hangar</td><td>dead bodies (before burial)</td><td>Mortuary</td></tr><tr><td>monks</td><td>Monastery</td><td>nuns</td><td>Convent</td></tr><tr><td>slaughtering animals</td><td>Abattoir</td><td>orphans</td><td>Orphanage</td></tr><tr><td>watching stars</td><td>Observatory</td><td>wild animals kept for show</td><td>Menagerie</td></tr><tr><td>dogs</td><td>Kennel</td><td>horses</td><td>Stable</td></tr></tbody></table><table><thead><tr><th>Collection of</th><th>Word</th></tr></thead><tbody><tr><td>flowers (given as a present)</td><td>Bouquet</td></tr><tr><td>poems or stories by different writers</td><td>Anthology</td></tr><tr><td>stars</td><td>Galaxy, constellation</td></tr><tr><td>ships</td><td>Fleet</td></tr><tr><td>actors or dancers</td><td>Troupe</td></tr><tr><td>cattle</td><td>Herd</td></tr><tr><td>bees</td><td>Swarm</td></tr></tbody></table>"
+      },
+      {
+        "title": "Qualities: that which cannot be…",
+        "body": "<table><thead><tr><th>Description</th><th>Word</th></tr></thead><tbody><tr><td>That which cannot be read</td><td>Illegible</td></tr><tr><td>That which cannot be heard</td><td>Inaudible</td></tr><tr><td>That which cannot be defeated</td><td>Invincible</td></tr><tr><td>That which cannot be avoided</td><td>Inevitable</td></tr><tr><td>That which cannot be satisfied</td><td>Insatiable</td></tr><tr><td>That which cannot be cured</td><td>Incurable</td></tr><tr><td>That which cannot be repaired</td><td>Irreparable</td></tr><tr><td>That which cannot be taken back or changed</td><td>Irrevocable</td></tr><tr><td>That which cannot be erased</td><td>Indelible</td></tr><tr><td>That which cannot be imitated</td><td>Inimitable</td></tr><tr><td>That which cannot be captured by force</td><td>Impregnable</td></tr><tr><td>That which cannot be touched</td><td>Intangible</td></tr><tr><td>That which cannot be done without</td><td>Indispensable</td></tr><tr><td>Never making a mistake</td><td>Infallible</td></tr><tr><td>Never tired</td><td>Indefatigable</td></tr><tr><td>Not qualified to be chosen</td><td>Ineligible</td></tr><tr><td>Easily set on fire</td><td>Inflammable</td></tr><tr><td>Never done or known before</td><td>Unprecedented</td></tr><tr><td>Of unknown name or authorship</td><td>Anonymous</td></tr><tr><td>Belonging to the same period</td><td>Contemporary</td></tr><tr><td>Happening after a person's death</td><td>Posthumous</td></tr><tr><td>No longer in use</td><td>Obsolete</td></tr><tr><td>All-knowing / all-powerful / present everywhere</td><td>Omniscient / Omnipotent / Omnipresent</td></tr><tr><td>Able to use both hands equally well</td><td>Ambidextrous</td></tr><tr><td>Pertaining to cats / dogs / cattle / horses</td><td>Feline / Canine / Bovine / Equine</td></tr></tbody></table>"
+      },
+      {
+        "title": "Actions, things and events",
+        "body": "<table><thead><tr><th>Action</th><th>Verb</th></tr></thead><tbody><tr><td>To increase the speed</td><td>Accelerate</td></tr><tr><td>To give up the throne</td><td>Abdicate</td></tr><tr><td>To cut off a limb by surgery</td><td>Amputate</td></tr><tr><td>To add territory to one's own</td><td>Annex</td></tr><tr><td>To leave one's country to live in another</td><td>Emigrate</td></tr><tr><td>To hand over a criminal to another country</td><td>Extradite</td></tr><tr><td>To keep putting off work</td><td>Procrastinate</td></tr><tr><td>To shut someone out of society</td><td>Ostracise</td></tr><tr><td>To use entrusted money dishonestly</td><td>Embezzle</td></tr><tr><td>To fail to notice; to ignore an offence</td><td>Overlook</td></tr></tbody></table><table><thead><tr><th>Thing or event</th><th>Word</th></tr></thead><tbody><tr><td>A list of items to be discussed at a meeting</td><td>Agenda</td></tr><tr><td>A public declaration of a party's aims</td><td>Manifesto</td></tr><tr><td>Words written on a tomb</td><td>Epitaph</td></tr><tr><td>A notice of someone's death in a newspaper</td><td>Obituary</td></tr><tr><td>Life story written by oneself</td><td>Autobiography</td></tr><tr><td>An examination of a dead body to find the cause of death</td><td>Post-mortem, autopsy</td></tr><tr><td>A speech made without preparation</td><td>Extempore</td></tr><tr><td>Speaking one's thoughts aloud when alone on stage</td><td>Soliloquy</td></tr><tr><td>A remedy for all diseases or problems</td><td>Panacea</td></tr><tr><td>Painless killing of a patient with an incurable disease</td><td>Euthanasia</td></tr><tr><td>Wilful destruction of property or plans</td><td>Sabotage</td></tr><tr><td>A direct vote of all the people on one question</td><td>Referendum, plebiscite</td></tr><tr><td>An official ban on trade</td><td>Embargo</td></tr><tr><td>A planned route of a journey</td><td>Itinerary</td></tr><tr><td>A poem of mourning for the dead</td><td>Elegy</td></tr><tr><td>The art of persuasive speaking or writing</td><td>Rhetoric</td></tr><tr><td>A secret way of writing</td><td>Cipher, code</td></tr><tr><td>An imagined perfect place</td><td>Utopia</td></tr></tbody></table>"
+      }
     ],
     "varieties": [
-      { "type": "person", "name": "Words for people", "how": "Identify the role or habit described, then recall the word.", "example": { "q": "One who walks in sleep", "steps": ["<i>somnus</i> = sleep, <i>ambulare</i> = walk."], "answer": "Somnambulist" } },
-      { "type": "root-family", "name": "Root families (-cide, -logy, -cracy, -phobia)", "how": "Match the subject (bird, king, fear) with the right root.", "example": { "q": "Killing of one's own brother", "steps": ["Killing → <i>-cide</i>.", "Brother → <i>frater</i>."], "answer": "Fratricide" } },
-      { "type": "general", "name": "General definitions", "how": "Focus on the key idea; eliminate words from a different family.", "example": { "q": "A speech made without preparation", "steps": ["No preparation → off-hand."], "answer": "Extempore" } }
+      {
+        "type": "person",
+        "name": "Words for people",
+        "how": "Find the habit, belief, job or age being described, then recall the matching -ist, -er or -arian word.",
+        "example": {
+          "q": "Select the option that can be used as a one-word substitute.<br>A person whose age is between 70 and 79 years",
+          "steps": [
+            "Age words: sexa- (60s), septua- (70s), octo- (80s), nona- (90s).",
+            "Options: Septuagenarian, Aged, Pensioner, Oldie.",
+            "Only one names the exact decade."
+          ],
+          "answer": "Septuagenarian"
+        }
+      },
+      {
+        "type": "study-science",
+        "name": "Study of something (-logy and sciences)",
+        "how": "Spot the subject of study and add the Greek or Latin root: ornitho (bird), entomo (insect), seismo (earthquake), derma (skin).",
+        "example": {
+          "q": "Select the word that can substitute the given group of words.<br>The study of insects",
+          "steps": [
+            "Greek <i>entomon</i> = insect.",
+            "Options: Etymology (word origins), Entomology, Ornithology (birds), Zoology (animals)."
+          ],
+          "answer": "Entomology"
+        }
+      },
+      {
+        "type": "government-belief",
+        "name": "Government and beliefs (-cracy, -archy, -ism)",
+        "how": "For rule, find who holds power (wealthy, few, priests, officials) and match the -cracy or -archy word. For beliefs, match the -ism.",
+        "example": {
+          "q": "Select the word that can substitute the given group of words.<br>Government by the wealthy",
+          "steps": [
+            "Greek <i>ploutos</i> = wealth.",
+            "Options: Autocracy (one ruler), Bureaucracy (officials), Plutocracy, Aristocracy (nobles)."
+          ],
+          "answer": "Plutocracy"
+        }
+      },
+      {
+        "type": "killing-fear",
+        "name": "Killing, fears and manias",
+        "how": "Killing → -cide, fear → -phobia, urge → -mania. Then match the victim or object: regi (king), fratri (brother), acro (height), claustro (closed space).",
+        "example": {
+          "q": "Select the one-word substitute.<br>Killing of one's brother",
+          "steps": [
+            "Killing → -cide.",
+            "Latin <i>frater</i> = brother.",
+            "Options: Patricide (father), Fratricide, Regicide (king), Genocide (race)."
+          ],
+          "answer": "Fratricide"
+        }
+      },
+      {
+        "type": "place-group",
+        "name": "Places and collections",
+        "how": "Identify what is kept or gathered (bees, birds, weapons, poems), then recall the place or collection word.",
+        "example": {
+          "q": "Select the word which means the same as the group of words given.<br>An arrangement of flowers that is usually given as a present",
+          "steps": [
+            "Options: bouquet, garland, wreath, bundle.",
+            "A garland is worn; a wreath is a ring of flowers, often for funerals; a bundle is not specific to flowers.",
+            "A bouquet is a bunch of flowers given as a present."
+          ],
+          "answer": "Bouquet"
+        }
+      },
+      {
+        "type": "quality-adjective",
+        "name": "Qualities (that which cannot be…)",
+        "how": "The answer is an adjective, usually in-/im-/il-/ir- + root + -ible/-able. Match the root to the verb: legere (read), audire (hear), vincere (conquer).",
+        "example": {
+          "q": "Select the word which means the same as the group of words given.<br>That which cannot be satisfied",
+          "steps": [
+            "Latin <i>satiare</i> = to satisfy.",
+            "in- (not) + sati + -able = <i>insatiable</i>.",
+            "Options: impossible, incredible, insatiable, improbable."
+          ],
+          "answer": "Insatiable"
+        }
+      },
+      {
+        "type": "action-verb",
+        "name": "Actions (verbs)",
+        "how": "A description starting with <i>To…</i> needs a verb. Pick the verb whose meaning matches exactly, not a related noun or adjective.",
+        "example": {
+          "q": "Select the word which means the same as the group of words given.<br>To increase the speed",
+          "steps": [
+            "Options: Accelerate, Assimilate (absorb), Activate (start), Exhilarate (make very happy).",
+            "Only <i>accelerate</i> means to go faster."
+          ],
+          "answer": "Accelerate"
+        }
+      },
+      {
+        "type": "thing-event",
+        "name": "Things, writings and events",
+        "how": "Decide what kind of thing it is (list, speech, writing, act, remedy) and recall the exact noun. Eliminate near meanings.",
+        "example": {
+          "q": "Select the option that can be used as a one-word substitute.<br>Wilful destruction",
+          "steps": [
+            "<i>Wilful</i> = done on purpose.",
+            "Options: Disaster, Combustion, Calamity, Sabotage.",
+            "A disaster or calamity is not deliberate; combustion is burning."
+          ],
+          "answer": "Sabotage"
+        }
+      },
+      {
+        "type": "in-sentence",
+        "name": "One word for a phrase in a sentence",
+        "how": "Turn the underlined phrase into a stand-alone description, find the word, then check it fits the sentence grammatically.",
+        "example": {
+          "q": "Select the one-word substitute for the underlined group of words.<br>Out of those group members, Rohan is <u>the one who opposes others</u>, no matter what they tell him.",
+          "steps": [
+            "Description: one who opposes others.",
+            "Options: antagonist, agonist, anatomist, protagonist.",
+            "A protagonist is the main character or a supporter; an antagonist opposes."
+          ],
+          "answer": "antagonist"
+        }
+      }
     ],
     "tips": [
-      "Revise one family (e.g. all -cide words) at a time.",
-      "Options often come from the same family; know the exact root to choose correctly."
+      "Find the family first: person, study, rule, killing, fear, place, quality, action or thing.",
+      "Check the part of speech the description needs: <i>That which cannot be…</i> gives an adjective, <i>To…</i> gives a verb.",
+      "Learn the roots: -cide (killing), -phobia (fear), -cracy (rule), -logy (study), -vore (eating).",
+      "Age words go by decade: septuagenarian (70s), octogenarian (80s), nonagenarian (90s).",
+      "Revise the one-word flashcards in themes; SSC repeats many words year after year.",
+      "Use elimination: the wrong options are usually words from the same family."
     ],
     "traps": [
-      "<i>Philanthropist</i> (loves mankind, helps others) vs <i>misanthrope</i> (hates mankind).",
-      "<i>Amateur</i> (does it for pleasure) vs <i>novice</i> (a beginner)."
+      "<i>Illegible</i> (cannot be read) vs <i>ineligible</i> (not qualified).",
+      "<i>Emigrant</i> leaves a country; <i>immigrant</i> comes into one.",
+      "<i>Astronomy</i> is the science of stars; <i>astrology</i> claims they shape human lives.",
+      "<i>Antagonist</i> opposes; <i>protagonist</i> is the main character or a supporter.",
+      "<i>Bouquet</i> is given as a present; <i>wreath</i> is a ring of flowers, often for funerals; <i>garland</i> is worn."
     ]
   },
   "questions": [
-    { "id": "e-oneword-001", "rev": 1, "topic": "e-oneword", "type": "root-family", "level": 1, "q": "Select the word that can substitute the given group of words.<br>The study of birds", "options": ["Entomology", "Ornithology", "Zoology", "Anthropology"], "answer": 1, "solution": "<i>ornith</i> = bird, <i>-logy</i> = study. <b>Ornithology</b>. Entomology = insects; Anthropology = humans.", "source": "test-data" },
-    { "id": "e-oneword-002", "rev": 1, "topic": "e-oneword", "type": "person", "level": 1, "q": "Select the word that can substitute the given group of words.<br>A person who loves mankind and works for its welfare", "options": ["Misanthrope", "Philatelist", "Philanthropist", "Atheist"], "answer": 2, "solution": "<i>phil</i> = love, <i>anthropos</i> = man. <b>Philanthropist</b>. A misanthrope hates mankind; a philatelist collects stamps.", "source": "test-data" },
-    { "id": "e-oneword-003", "rev": 1, "topic": "e-oneword", "type": "general", "level": 2, "q": "Select the word that can substitute the given group of words.<br>That which cannot be read", "options": ["Illegible", "Ineligible", "Inaudible", "Invisible"], "answer": 0, "solution": "<b>Illegible</b> = cannot be read (of handwriting). <i>Ineligible</i> = not qualified; <i>inaudible</i> = cannot be heard.", "source": "test-data" },
-    { "id": "e-oneword-004", "rev": 1, "topic": "e-oneword", "type": "root-family", "level": 2, "q": "Select the word that can substitute the given group of words.<br>Government by the wealthy", "options": ["Autocracy", "Bureaucracy", "Plutocracy", "Aristocracy"], "answer": 2, "solution": "<i>plutos</i> = wealth, <i>-cracy</i> = rule. <b>Plutocracy</b>. Aristocracy = rule by nobles; autocracy = rule by one person.", "source": "test-data" },
-    { "id": "e-oneword-005", "rev": 1, "topic": "e-oneword", "type": "person", "level": 3, "q": "Select the word that can substitute the given group of words.<br>A person who is unable to be corrected or reformed", "options": ["Incorrigible", "Invincible", "Indefatigable", "Inexorable"], "answer": 0, "solution": "<b>Incorrigible</b> = cannot be corrected. <i>Invincible</i> = cannot be defeated; <i>indefatigable</i> = never tired; <i>inexorable</i> = cannot be stopped or persuaded.", "source": "test-data" },
-    { "id": "e-oneword-006", "rev": 1, "topic": "e-oneword", "type": "general", "level": 3, "q": "Select the word that can substitute the given group of words.<br>A list of items to be discussed at a meeting", "options": ["Manifesto", "Agenda", "Inventory", "Catalogue"], "answer": 1, "solution": "<b>Agenda</b> = list of items to be discussed at a meeting. <i>Inventory</i> = list of goods in stock; <i>manifesto</i> = public declaration of policy.", "source": "test-data" }
+    {"id":"e-oneword-001","rev":1,"topic":"e-oneword","type":"study-science","level":1,"q":"Select the word that can substitute the given group of words.<br>The study of birds","options":["Entomology","Ornithology","Zoology","Anthropology"],"answer":1,"solution":"<i>ornith</i> = bird, <i>-logy</i> = study. <b>Ornithology</b>. Entomology = insects; Anthropology = humans.","source":"test-data"},
+    {"id":"e-oneword-002","rev":1,"topic":"e-oneword","type":"person","level":1,"q":"Select the word that can substitute the given group of words.<br>A person who loves mankind and works for its welfare","options":["Misanthrope","Philatelist","Philanthropist","Atheist"],"answer":2,"solution":"<i>phil</i> = love, <i>anthropos</i> = man. <b>Philanthropist</b>. A misanthrope hates mankind; a philatelist collects stamps.","source":"test-data"},
+    {"id":"e-oneword-003","rev":1,"topic":"e-oneword","type":"quality-adjective","level":2,"q":"Select the word that can substitute the given group of words.<br>That which cannot be read","options":["Illegible","Ineligible","Inaudible","Invisible"],"answer":0,"solution":"<b>Illegible</b> = cannot be read (of handwriting). <i>Ineligible</i> = not qualified; <i>inaudible</i> = cannot be heard.","source":"test-data"},
+    {"id":"e-oneword-004","rev":1,"topic":"e-oneword","type":"government-belief","level":2,"q":"Select the word that can substitute the given group of words.<br>Government by the wealthy","options":["Autocracy","Bureaucracy","Plutocracy","Aristocracy"],"answer":2,"solution":"<i>plutos</i> = wealth, <i>-cracy</i> = rule. <b>Plutocracy</b>. Aristocracy = rule by nobles; autocracy = rule by one person.","source":"test-data"},
+    {"id":"e-oneword-005","rev":1,"topic":"e-oneword","type":"person","level":3,"q":"Select the word that can substitute the given group of words.<br>A person who is unable to be corrected or reformed","options":["Incorrigible","Invincible","Indefatigable","Inexorable"],"answer":0,"solution":"<b>Incorrigible</b> = cannot be corrected. <i>Invincible</i> = cannot be defeated; <i>indefatigable</i> = never tired; <i>inexorable</i> = cannot be stopped or persuaded.","source":"test-data"},
+    {"id":"e-oneword-006","rev":1,"topic":"e-oneword","type":"thing-event","level":3,"q":"Select the word that can substitute the given group of words.<br>A list of items to be discussed at a meeting","options":["Manifesto","Agenda","Inventory","Catalogue"],"answer":1,"solution":"<b>Agenda</b> = list of items to be discussed at a meeting. <i>Inventory</i> = list of goods in stock; <i>manifesto</i> = public declaration of policy.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-ow-01", "front": "Study of birds", "back": "Ornithology", "deck": "oneword" },
-    { "id": "fc-e-ow-02", "front": "Study of insects", "back": "Entomology", "deck": "oneword" },
-    { "id": "fc-e-ow-03", "front": "One who loves mankind", "back": "Philanthropist", "deck": "oneword" },
-    { "id": "fc-e-ow-04", "front": "One who hates mankind", "back": "Misanthrope", "deck": "oneword" },
-    { "id": "fc-e-ow-05", "front": "Cannot be read", "back": "Illegible", "deck": "oneword" },
-    { "id": "fc-e-ow-06", "front": "Government by the wealthy", "back": "Plutocracy", "deck": "oneword" },
-    { "id": "fc-e-ow-07", "front": "Cannot be corrected", "back": "Incorrigible", "deck": "oneword" },
-    { "id": "fc-e-ow-08", "front": "Killing of a king", "back": "Regicide", "deck": "oneword" },
-    { "id": "fc-e-ow-09", "front": "Killing of one's brother", "back": "Fratricide", "deck": "oneword" },
-    { "id": "fc-e-ow-10", "front": "Fear of heights", "back": "Acrophobia", "deck": "oneword" },
-    { "id": "fc-e-ow-11", "front": "Fear of closed spaces", "back": "Claustrophobia", "deck": "oneword" },
-    { "id": "fc-e-ow-12", "front": "One who walks in sleep", "back": "Somnambulist", "deck": "oneword" },
-    { "id": "fc-e-ow-13", "front": "Speech made without preparation", "back": "Extempore", "deck": "oneword" },
-    { "id": "fc-e-ow-14", "front": "One who collects stamps", "back": "Philatelist", "deck": "oneword" },
-    { "id": "fc-e-ow-15", "front": "Never tired", "back": "Indefatigable", "deck": "oneword" },
-    { "id": "fc-e-ow-16", "front": "Cannot be defeated", "back": "Invincible", "deck": "oneword" },
-    { "id": "fc-e-ow-17", "front": "Life history written by oneself", "back": "Autobiography", "deck": "oneword" },
-    { "id": "fc-e-ow-18", "front": "One who eats only plants", "back": "Herbivore (animal) / Vegetarian (person)", "deck": "oneword" }
+    {"id":"fc-e-ow-01","front":"Study of birds","back":"Ornithology","deck":"oneword"},
+    {"id":"fc-e-ow-02","front":"Study of insects","back":"Entomology","deck":"oneword"},
+    {"id":"fc-e-ow-03","front":"One who loves mankind","back":"Philanthropist","deck":"oneword"},
+    {"id":"fc-e-ow-04","front":"One who hates mankind","back":"Misanthrope","deck":"oneword"},
+    {"id":"fc-e-ow-05","front":"Cannot be read","back":"Illegible","deck":"oneword"},
+    {"id":"fc-e-ow-06","front":"Government by the wealthy","back":"Plutocracy","deck":"oneword"},
+    {"id":"fc-e-ow-07","front":"Cannot be corrected","back":"Incorrigible","deck":"oneword"},
+    {"id":"fc-e-ow-08","front":"Killing of a king","back":"Regicide","deck":"oneword"},
+    {"id":"fc-e-ow-09","front":"Killing of one's brother","back":"Fratricide","deck":"oneword"},
+    {"id":"fc-e-ow-10","front":"Fear of heights","back":"Acrophobia","deck":"oneword"},
+    {"id":"fc-e-ow-11","front":"Fear of closed spaces","back":"Claustrophobia","deck":"oneword"},
+    {"id":"fc-e-ow-12","front":"One who walks in sleep","back":"Somnambulist","deck":"oneword"},
+    {"id":"fc-e-ow-13","front":"Speech made without preparation","back":"Extempore","deck":"oneword"},
+    {"id":"fc-e-ow-14","front":"One who collects stamps","back":"Philatelist","deck":"oneword"},
+    {"id":"fc-e-ow-15","front":"Never tired","back":"Indefatigable","deck":"oneword"},
+    {"id":"fc-e-ow-16","front":"Cannot be defeated","back":"Invincible","deck":"oneword"},
+    {"id":"fc-e-ow-17","front":"Life history written by oneself","back":"Autobiography","deck":"oneword"},
+    {"id":"fc-e-ow-18","front":"One who eats only plants","back":"Herbivore (animal) / Vegetarian (person)","deck":"oneword"},
+    {"id":"fc-e-ow-19","front":"Government by a few","back":"Oligarchy","deck":"oneword"},
+    {"id":"fc-e-ow-20","front":"Killing of a race or community","back":"Genocide","deck":"oneword"},
+    {"id":"fc-e-ow-21","front":"Fear of foreigners","back":"Xenophobia","deck":"oneword"},
+    {"id":"fc-e-ow-22","front":"Uncontrollable urge to steal","back":"Kleptomania","deck":"oneword"},
+    {"id":"fc-e-ow-23","front":"Place where bees are kept","back":"Apiary","deck":"oneword"},
+    {"id":"fc-e-ow-24","front":"That which cannot be avoided","back":"Inevitable","deck":"oneword"},
+    {"id":"fc-e-ow-25","front":"A person aged 80 to 89","back":"Octogenarian","deck":"oneword"},
+    {"id":"fc-e-ow-26","front":"Wilful destruction","back":"Sabotage","deck":"oneword"},
+    {"id":"fc-e-ow-27","front":"A remedy for all diseases","back":"Panacea","deck":"oneword"},
+    {"id":"fc-e-ow-28","front":"Words written on a tomb","back":"Epitaph","deck":"oneword"},
+    {"id":"fc-e-ow-29","front":"Favouritism shown to relatives","back":"Nepotism","deck":"oneword"},
+    {"id":"fc-e-ow-30","front":"One who speaks many languages","back":"Polyglot","deck":"oneword"},
+    {"id":"fc-e-ow-31","front":"To give up the throne","back":"Abdicate","deck":"oneword"},
+    {"id":"fc-e-ow-32","front":"One who admires oneself too much","back":"Narcissist","deck":"oneword"}
   ]
 }

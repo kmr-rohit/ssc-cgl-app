@@ -1,93 +1,198 @@
 {
  "topic": "st-index",
  "notes": {
-  "summary": "Index numbers show the relative change in prices, quantities or values compared to a base period (index = 100). JSO asks on simple and weighted indices (Laspeyres, Paasche, Fisher), the tests an index should pass, and uses such as deflating and base shifting.",
+  "summary": "<p>An index number measures the relative change in a group of related items (prices, quantities, wages) over time or between places, with the base period set at 100. Paper 2 asks 6 to 10 questions: simple and weighted indices, the Laspeyres, Paasche, Fisher and other formulas, tests of adequacy, chain-base indices, base shifting and splicing, and cost of living indices with real wages.</p><p>Index numbers are often called \"economic barometers\".</p>",
   "concepts": [
    {
-    "title": "Simple indices",
-    "body": "<ul><li>Price relative = (p<sub>1</sub>/p<sub>0</sub>) × 100.</li><li>Simple aggregative = (Σp<sub>1</sub>/Σp<sub>0</sub>) × 100.</li><li>Simple average of relatives = Σ(p<sub>1</sub>/p<sub>0</sub> × 100)/n.</li><li>The base year index is always <b>100</b>.</li></ul>"
+    "title": "Meaning and notation",
+    "body": "<ul><li>Base period: the reference period, index = 100. Current period: the period being compared.</li><li>p<sub>0</sub>, q<sub>0</sub> = base-year price and quantity; p<sub>1</sub>, q<sub>1</sub> = current-year price and quantity.</li><li>P<sub>01</sub> = price index of year 1 with base year 0. Q<sub>01</sub> = quantity index.</li><li>An index of 125 means a 25% rise over the base; 90 means a 10% fall.</li><li>Index numbers are specialised averages; they are expressed as percentages but written without the % sign.</li></ul>"
    },
    {
-    "title": "Weighted indices",
-    "body": "<ul><li><b>Laspeyres</b> (base-year quantities): Σp<sub>1</sub>q<sub>0</sub>/Σp<sub>0</sub>q<sub>0</sub> × 100. Tends to overstate change (upward bias).</li><li><b>Paasche</b> (current-year quantities): Σp<sub>1</sub>q<sub>1</sub>/Σp<sub>0</sub>q<sub>1</sub> × 100. Tends to understate.</li><li><b>Fisher</b> = √(Laspeyres × Paasche). Called the <b>ideal</b> index: it satisfies both the <b>time reversal</b> and <b>factor reversal</b> tests.</li><li>Marshall–Edgeworth uses (q<sub>0</sub> + q<sub>1</sub>) as weights.</li></ul>"
+    "title": "Problems in constructing an index",
+    "body": "<ol><li><b>Purpose</b>: decide exactly what the index will measure.</li><li><b>Base year</b>: a normal year, not too far back, free from wars, floods or booms.</li><li><b>Choice of items</b>: representative items, in standard qualities.</li><li><b>Prices</b>: wholesale or retail, from representative markets.</li><li><b>Weights</b>: show the relative importance of items (by quantity or by value).</li><li><b>Average</b>: the GM is theoretically best for relatives; the AM is used most often for ease.</li><li><b>Formula</b>: Laspeyres, Paasche, Fisher and so on.</li></ol>"
    },
    {
-    "title": "Tests and uses",
-    "body": "<ul><li><b>Time reversal</b>: P<sub>01</sub> × P<sub>10</sub> = 1. <b>Factor reversal</b>: P<sub>01</sub> × Q<sub>01</sub> = V<sub>01</sub> (value ratio). <b>Circular test</b>: met by simple aggregative and fixed-weight indices, not by Fisher.</li><li><b>Real wage</b> = (money wage / CPI) × 100 (deflating).</li><li><b>Base shifting</b>: new index = (old index / old index of new base year) × 100.</li><li>Chain index uses link relatives and is good for long periods.</li></ul>"
+    "title": "Simple (unweighted) indices",
+    "body": "<ul><li><b>Price relative</b> = (p<sub>1</sub> ÷ p<sub>0</sub>) × 100. Price ₹40 rises to ₹50: relative = 125.</li><li><b>Simple aggregative</b>: P<sub>01</sub> = (Σp<sub>1</sub> ÷ Σp<sub>0</sub>) × 100. Easy, but items priced in bigger units dominate.</li><li><b>Simple average of relatives</b>: P<sub>01</sub> = Σ(p<sub>1</sub>/p<sub>0</sub> × 100) ÷ n (AM), or the GM of the relatives.</li></ul><p>Mini example: relatives 120, 150 and 90. Simple AM of relatives = 360 ÷ 3 = 120.</p>"
+   },
+   {
+    "title": "Weighted aggregative formulas",
+    "body": "<table><tr><th>Name</th><th>Weights</th><th>Price index P<sub>01</sub> (× 100)</th></tr><tr><td>Laspeyres</td><td>Base quantities q<sub>0</sub></td><td>Σp<sub>1</sub>q<sub>0</sub> ÷ Σp<sub>0</sub>q<sub>0</sub></td></tr><tr><td>Paasche</td><td>Current quantities q<sub>1</sub></td><td>Σp<sub>1</sub>q<sub>1</sub> ÷ Σp<sub>0</sub>q<sub>1</sub></td></tr><tr><td>Fisher (ideal)</td><td>Both</td><td>√(Laspeyres × Paasche)</td></tr><tr><td>Marshall-Edgeworth</td><td>q<sub>0</sub> + q<sub>1</sub></td><td>Σp<sub>1</sub>(q<sub>0</sub> + q<sub>1</sub>) ÷ Σp<sub>0</sub>(q<sub>0</sub> + q<sub>1</sub>)</td></tr><tr><td>Dorbish-Bowley</td><td>Both</td><td>(Laspeyres + Paasche) ÷ 2</td></tr><tr><td>Kelly (fixed weight)</td><td>Fixed q</td><td>Σp<sub>1</sub>q ÷ Σp<sub>0</sub>q</td></tr></table><ul><li>Laspeyres usually <b>overstates</b> price rise (upward bias); Paasche usually <b>understates</b> it (downward bias).</li><li>Fisher's index lies between them and is called \"ideal\".</li><li>Quantity indices swap p and q: Laspeyres Q<sub>01</sub> = Σq<sub>1</sub>p<sub>0</sub> ÷ Σq<sub>0</sub>p<sub>0</sub> × 100.</li><li><b>Value index</b> V<sub>01</sub> = Σp<sub>1</sub>q<sub>1</sub> ÷ Σp<sub>0</sub>q<sub>0</sub> × 100.</li><li><b>Weighted average of relatives</b>: Σ(PW) ÷ ΣW, where P = price relative and W = base value p<sub>0</sub>q<sub>0</sub>. With base values as weights it equals Laspeyres.</li></ul>"
+   },
+   {
+    "title": "Worked example: Laspeyres, Paasche and Fisher",
+    "body": "<table><tr><th>Item</th><th>p<sub>0</sub></th><th>q<sub>0</sub></th><th>p<sub>1</sub></th><th>q<sub>1</sub></th></tr><tr><td>A</td><td>2</td><td>10</td><td>3</td><td>12</td></tr><tr><td>B</td><td>5</td><td>4</td><td>6</td><td>5</td></tr></table><ul><li>Σp<sub>0</sub>q<sub>0</sub> = 20 + 20 = 40; Σp<sub>1</sub>q<sub>0</sub> = 30 + 24 = 54.</li><li>Σp<sub>0</sub>q<sub>1</sub> = 24 + 25 = 49; Σp<sub>1</sub>q<sub>1</sub> = 36 + 30 = 66.</li><li>Laspeyres = 54/40 × 100 = 135. Paasche = 66/49 × 100 = 134.69.</li><li>Fisher = √(135 × 134.69) ≈ 134.85. Dorbish-Bowley = (135 + 134.69) ÷ 2 ≈ 134.85.</li><li>Marshall-Edgeworth = (54 + 66) ÷ (40 + 49) × 100 = 120/89 × 100 ≈ 134.83.</li></ul>"
+   },
+   {
+    "title": "Tests of adequacy",
+    "body": "<table><tr><th>Test</th><th>Condition</th><th>Satisfied by</th></tr><tr><td>Unit test</td><td>Index does not depend on the units of prices or quantities</td><td>All except the simple aggregative index</td></tr><tr><td>Time reversal test</td><td>P<sub>01</sub> × P<sub>10</sub> = 1 (without the 100s)</td><td>Fisher, Marshall-Edgeworth, Kelly, simple aggregative, simple GM of relatives</td></tr><tr><td>Factor reversal test</td><td>P<sub>01</sub> × Q<sub>01</sub> = Σp<sub>1</sub>q<sub>1</sub> ÷ Σp<sub>0</sub>q<sub>0</sub> (the value ratio)</td><td>Fisher only (of the common formulas)</td></tr><tr><td>Circular test</td><td>P<sub>01</sub> × P<sub>12</sub> × P<sub>20</sub> = 1</td><td>Simple GM of relatives, simple aggregative, Kelly (fixed weights); not Fisher</td></tr></table><p>Fisher's index satisfies both the time reversal and factor reversal tests, so it is called the <b>ideal index</b>. Laspeyres and Paasche fail both.</p>"
+   },
+   {
+    "title": "Fixed base and chain base",
+    "body": "<ul><li><b>Fixed base</b>: every year is compared with one base year.</li><li><b>Link relative</b> = (this year's price ÷ last year's price) × 100.</li><li><b>Chain index</b> for a year = (link relative of the year × chain index of the previous year) ÷ 100. The first year's chain index is 100.</li><li>Chain base allows adding or dropping items easily and suits long periods, but an error in one link is carried forward.</li><li>For a single item, the chain index equals the fixed-base index.</li></ul><p>Mini example: link relatives 110, 120, 90 for years 2, 3, 4. Chain indices: 110, 110 × 1.2 = 132, 132 × 0.9 = 118.8.</p>"
+   },
+   {
+    "title": "Base shifting, splicing and deflating",
+    "body": "<ul><li><b>Base shifting</b>: new index = (old index of the year ÷ old index of the new base year) × 100. If 2020 = 125 and 2023 = 150 on the old base, then on base 2020 the 2023 index is 150/125 × 100 = 120.</li><li><b>Splicing</b>: joining an old series that ends at year k with a new series that starts at year k = 100. Forward splicing: multiply each new index by (old index of year k ÷ 100). Backward splicing: multiply each old index by (100 ÷ old index of year k).</li><li><b>Deflating</b>: real value = (money value ÷ price index) × 100. Real wage of ₹30,000 at CPI 150 = ₹20,000.</li><li><b>Purchasing power of money</b> = 100 ÷ price index (in base-year rupees). At CPI 125, ₹1 buys what ₹0.80 bought in the base year.</li></ul>"
+   },
+   {
+    "title": "Cost of living (consumer price) index",
+    "body": "<ul><li>Measures the change in the cost of a fixed basket of goods and services bought by a given class of people (industrial workers, agricultural labourers, urban employees).</li><li>Main groups: food, clothing, fuel and light, house rent, miscellaneous.</li><li><b>Aggregate expenditure method</b>: Σp<sub>1</sub>q<sub>0</sub> ÷ Σp<sub>0</sub>q<sub>0</sub> × 100 (Laspeyres).</li><li><b>Family budget method</b>: ΣIW ÷ ΣW, where I = group index (or price relative) and W = weight (share of expenditure p<sub>0</sub>q<sub>0</sub>). Both methods give the same answer.</li><li>Uses: fixing dearness allowance, wage negotiation, deflating incomes, measuring purchasing power and inflation.</li><li>In India, CPI (Combined) by NSO is the headline inflation measure used by the RBI; WPI is compiled by the Office of the Economic Adviser (DPIIT).</li></ul><p>Mini example: Food weight 50, index 120; Rent weight 20, index 150; Others weight 30, index 110. CLI = (6,000 + 3,000 + 3,300) ÷ 100 = 123.</p>"
+   },
+   {
+    "title": "Uses and limits",
+    "body": "<ul><li>Uses: measure inflation, frame economic policy, adjust wages and DA, deflate national income, compare trends and places.</li><li>Limits: based on samples of items, quality changes are hard to capture, an index made for one purpose may mislead for another, and no single formula is perfect.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "simple",
-    "name": "Simple indices",
-    "how": "Divide current by base and multiply by 100.",
+    "type": "simple-index",
+    "name": "Simple price relatives and aggregative index",
+    "how": "Price relative = p₁/p₀ × 100. Simple aggregative = Σp₁/Σp₀ × 100.",
     "example": {
-     "q": "Price of rice was ₹40 in 2015 and ₹52 in 2024. Find the price relative (2015 = 100).",
+     "q": "The price of a kilogram of rice was ₹40 in 2020 and ₹50 in 2025. Find the price index for 2025 with 2020 as base.",
      "steps": [
-      "52/40 × 100",
-      "= 130"
+      "Price relative = 50 ÷ 40 × 100.",
+      "= 1.25 × 100 = 125.",
+      "Prices rose by 25%."
      ],
-     "answer": "130"
+     "answer": "125"
     }
    },
    {
-    "type": "weighted",
-    "name": "Laspeyres, Paasche and Fisher",
-    "how": "Make columns p0q0, p1q0, p0q1, p1q1, add them, then apply the formulas.",
+    "type": "weighted-aggregative",
+    "name": "Laspeyres, Paasche, Fisher and others",
+    "how": "Build four sums: Σp₀q₀, Σp₁q₀, Σp₀q₁, Σp₁q₁. Laspeyres uses q₀, Paasche uses q₁, Fisher is their GM.",
     "example": {
-     "q": "Laspeyres = 125 and Paasche = 121. Find Fisher's index.",
+     "q": "A: p₀ = 2, q₀ = 10, p₁ = 3, q₁ = 12. B: p₀ = 5, q₀ = 4, p₁ = 6, q₁ = 5. Find Laspeyres' and Paasche's price indices.",
      "steps": [
-      "Fisher = √(125 × 121)",
-      "= √15125 ≈ 122.98"
+      "Σp₁q₀ = 30 + 24 = 54; Σp₀q₀ = 20 + 20 = 40.",
+      "Laspeyres = 54/40 × 100 = 135.",
+      "Σp₁q₁ = 36 + 30 = 66; Σp₀q₁ = 24 + 25 = 49.",
+      "Paasche = 66/49 × 100 = 134.69."
      ],
-     "answer": "≈ 122.98"
+     "answer": "Laspeyres 135, Paasche 134.69"
     }
    },
    {
-    "type": "tests-uses",
-    "name": "Tests, deflating and base shifting",
-    "how": "Remember which index passes which test; for real wage divide by CPI/100.",
+    "type": "index-tests",
+    "name": "Tests of adequacy",
+    "how": "Time reversal: P₀₁ × P₁₀ = 1. Factor reversal: P₀₁ × Q₀₁ = value ratio. Fisher passes both; only fixed-weight and GM indices pass the circular test.",
     "example": {
-     "q": "A worker earns ₹24,000; CPI is 120. Find the real wage.",
+     "q": "An index satisfies P₀₁ × P₁₀ = 1. Which test is this?",
      "steps": [
-      "Real wage = 24000/120 × 100",
-      "= 20,000"
+      "P₁₀ is the index computed backwards, from year 1 to year 0.",
+      "An index that gives consistent results forwards and backwards passes the time reversal test."
      ],
-     "answer": "₹20,000"
+     "answer": "Time reversal test"
+    }
+   },
+   {
+    "type": "chain-base",
+    "name": "Link relatives and chain index",
+    "how": "Link relative = this year ÷ last year × 100. Chain index = link relative × previous chain index ÷ 100.",
+    "example": {
+     "q": "Link relatives for years 2, 3 and 4 are 110, 120 and 90 (year 1 = 100). Find the chain-base indices.",
+     "steps": [
+      "Year 2: 110 × 100 ÷ 100 = 110.",
+      "Year 3: 120 × 110 ÷ 100 = 132.",
+      "Year 4: 90 × 132 ÷ 100 = 118.8."
+     ],
+     "answer": "110, 132, 118.8"
+    }
+   },
+   {
+    "type": "base-shifting",
+    "name": "Base shifting and splicing",
+    "how": "Divide every index by the index of the new base year and multiply by 100.",
+    "example": {
+     "q": "On base 2018 = 100, the index is 125 in 2020 and 150 in 2023. Find the 2023 index on base 2020 = 100.",
+     "steps": [
+      "New index = old index ÷ old index of the new base × 100.",
+      "= 150 ÷ 125 × 100 = 120."
+     ],
+     "answer": "120"
+    }
+   },
+   {
+    "type": "cost-of-living",
+    "name": "Cost of living index and real wages",
+    "how": "Family budget method: CLI = ΣIW ÷ ΣW. Real wage = money wage ÷ CLI × 100.",
+    "example": {
+     "q": "Group weights and indices: food 50 and 120, rent 20 and 150, others 30 and 110. Find the cost of living index.",
+     "steps": [
+      "ΣIW = 50 × 120 + 20 × 150 + 30 × 110 = 6,000 + 3,000 + 3,300 = 12,300.",
+      "ΣW = 100.",
+      "CLI = 12,300 ÷ 100 = 123."
+     ],
+     "answer": "123"
     }
    }
   ],
   "tips": [
-   "Laspeyres → base quantities (q₀); Paasche → current quantities (q₁). \"L\" comes before \"P\", base comes before current.",
-   "Fisher lies between Laspeyres and Paasche.",
-   "CPI is used to find real wages and dearness allowance."
+   "Laspeyres = base quantities (L for \"last\", the old year). Paasche = present quantities.",
+   "Fisher = √(L × P). It is the only common formula passing both time reversal and factor reversal, hence \"ideal\".",
+   "Base shifting is a single division: new = old ÷ old value of new base × 100.",
+   "Real wage = money wage × 100 ÷ CPI. To keep the real wage the same, the money wage must rise by the same percentage as the CPI.",
+   "The family budget method and the aggregate expenditure method give the same cost of living index.",
+   "Chain index for one item equals the fixed-base index; for many items they can differ."
   ],
   "traps": [
-   "Fisher's index does NOT satisfy the circular test.",
-   "Real wage divides by the index, then multiplies by 100.",
-   "Laspeyres uses base-year weights even for the current-year prices."
+   "In Laspeyres both numerator and denominator use q₀; in Paasche both use q₁. Do not mix them.",
+   "Time reversal is checked without the factor 100: P₀₁ × P₁₀ = 1, not 100.",
+   "Fisher does not satisfy the circular test.",
+   "A fall in the index (say 125 to 100) is a 20% fall, not 25%; percentage change uses the earlier index as base.",
+   "The simple aggregative index fails the unit test: changing kg to quintal changes the answer."
   ]
  },
  "formulas": [
   {
+   "name": "Price relative",
+   "expr": "(p₁/p₀) × 100"
+  },
+  {
+   "name": "Simple aggregative",
+   "expr": "(Σp₁/Σp₀) × 100"
+  },
+  {
    "name": "Laspeyres",
-   "expr": "Σp₁q₀ / Σp₀q₀ × 100"
+   "expr": "(Σp₁q₀/Σp₀q₀) × 100"
   },
   {
    "name": "Paasche",
-   "expr": "Σp₁q₁ / Σp₀q₁ × 100"
+   "expr": "(Σp₁q₁/Σp₀q₁) × 100"
   },
   {
    "name": "Fisher",
-   "expr": "√(L × P)"
+   "expr": "√(Laspeyres × Paasche)"
+  },
+  {
+   "name": "Marshall-Edgeworth",
+   "expr": "Σp₁(q₀ + q₁)/Σp₀(q₀ + q₁) × 100"
+  },
+  {
+   "name": "Dorbish-Bowley",
+   "expr": "(Laspeyres + Paasche)/2"
+  },
+  {
+   "name": "Time reversal test",
+   "expr": "P₀₁ × P₁₀ = 1"
+  },
+  {
+   "name": "Factor reversal test",
+   "expr": "P₀₁ × Q₀₁ = Σp₁q₁/Σp₀q₀"
+  },
+  {
+   "name": "Chain index",
+   "expr": "link relative × previous chain index / 100"
+  },
+  {
+   "name": "Cost of living (family budget)",
+   "expr": "ΣIW/ΣW"
   },
   {
    "name": "Real wage",
-   "expr": "(Money wage / CPI) × 100"
-  },
-  {
-   "name": "Base shifting",
-   "expr": "(Old index / old index of new base) × 100"
+   "expr": "money wage × 100 / price index"
   }
  ],
  "questions": [
@@ -95,7 +200,7 @@
    "id": "st-index-001",
    "rev": 1,
    "topic": "st-index",
-   "type": "simple",
+   "type": "simple-index",
    "level": 1,
    "q": "The index number for the base year is always:",
    "options": [
@@ -112,7 +217,7 @@
    "id": "st-index-002",
    "rev": 1,
    "topic": "st-index",
-   "type": "simple",
+   "type": "simple-index",
    "level": 1,
    "q": "The sum of prices of a group of goods is ₹120 in the base year and ₹150 in the current year. The simple aggregative price index is:",
    "options": [
@@ -129,7 +234,7 @@
    "id": "st-index-003",
    "rev": 1,
    "topic": "st-index",
-   "type": "weighted",
+   "type": "weighted-aggregative",
    "level": 2,
    "q": "Find Laspeyres' price index:<table><tr><th>Item</th><th>p<sub>0</sub></th><th>q<sub>0</sub></th><th>p<sub>1</sub></th><th>q<sub>1</sub></th></tr><tr><td>A</td><td>10</td><td>5</td><td>12</td><td>6</td></tr><tr><td>B</td><td>8</td><td>10</td><td>10</td><td>8</td></tr></table>",
    "options": [
@@ -146,7 +251,7 @@
    "id": "st-index-004",
    "rev": 1,
    "topic": "st-index",
-   "type": "tests-uses",
+   "type": "index-tests",
    "level": 2,
    "q": "Which index number satisfies both the time reversal test and the factor reversal test?",
    "options": [
@@ -163,7 +268,7 @@
    "id": "st-index-005",
    "rev": 1,
    "topic": "st-index",
-   "type": "weighted",
+   "type": "weighted-aggregative",
    "level": 3,
    "q": "For the same data (A: p<sub>0</sub> = 10, q<sub>0</sub> = 5, p<sub>1</sub> = 12, q<sub>1</sub> = 6; B: p<sub>0</sub> = 8, q<sub>0</sub> = 10, p<sub>1</sub> = 10, q<sub>1</sub> = 8), Fisher's ideal price index is approximately:",
    "options": [
@@ -180,7 +285,7 @@
    "id": "st-index-006",
    "rev": 1,
    "topic": "st-index",
-   "type": "tests-uses",
+   "type": "cost-of-living",
    "level": 3,
    "q": "A worker's monthly wage is ₹30,000 and the consumer price index (base = 100) is 150. His real wage is:",
    "options": [

@@ -1,0 +1,41 @@
+{
+ "topic": "st-dispersion",
+ "types": [
+  {
+   "type": "range-qd",
+   "name": "Range and quartile deviation",
+   "description": "Asks for the range, interquartile range, quartile deviation or their coefficients.",
+   "concepts": []
+  },
+  {
+   "type": "mean-deviation",
+   "name": "Mean deviation",
+   "description": "Asks for the mean deviation about the mean or median, its coefficient, or about which value it is least.",
+   "concepts": []
+  },
+  {
+   "type": "sd-variance",
+   "name": "Standard deviation and variance",
+   "description": "Gives a list or table and asks for the standard deviation, variance or root mean square deviation.",
+   "concepts": []
+  },
+  {
+   "type": "coefficient-variation",
+   "name": "Coefficient of variation",
+   "description": "Asks for the CV, or which of two series, players or factories is more consistent or more variable.",
+   "concepts": []
+  },
+  {
+   "type": "combined-sd",
+   "name": "Combined mean and SD",
+   "description": "Gives sizes, means and SDs of two groups and asks for the SD or variance of both together.",
+   "concepts": []
+  },
+  {
+   "type": "origin-scale",
+   "name": "Change of origin and scale",
+   "description": "Says every value is increased, decreased, multiplied or transformed as y = a + bx and asks the new SD, variance or other measure.",
+   "concepts": []
+  }
+ ]
+}

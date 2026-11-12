@@ -1,0 +1,75 @@
+{
+ "topic": "r-series",
+ "types": [
+  {
+   "type": "difference-series",
+   "name": "Difference series",
+   "description": "A list of numbers where the gaps between neighbouring terms follow a pattern (same gap, gaps growing by a fixed amount, or gaps of gaps); asks for the next or missing number.",
+   "concepts": [
+    "single-double-difference-series"
+   ]
+  },
+  {
+   "type": "multiply-add-series",
+   "name": "Multiply-and-add series",
+   "description": "Numbers that grow or shrink fast because each term is the previous one multiplied or divided and then a number added or subtracted (×2 + 1, ×3 − 2, alternate ×2 and +7, or built from the previous two terms).",
+   "concepts": [
+    "alternating-multiplication-addition",
+    "fibonacci-sum-previous-terms"
+   ]
+  },
+  {
+   "type": "special-number-series",
+   "name": "Squares, cubes and primes",
+   "description": "A number series whose terms or gaps are perfect squares, cubes or prime numbers, or forms like n² + 1, n³ − n, p² with primes p.",
+   "concepts": [
+    "square-cube-difference-series",
+    "prime-number-progression"
+   ]
+  },
+  {
+   "type": "alternate-series",
+   "name": "Alternate (two-in-one) series",
+   "description": "A number or letter series where odd-position and even-position terms form two separate series, or the operations repeat in a cycle of two or three (−3, −8, −3, −8).",
+   "concepts": []
+  },
+  {
+   "type": "wrong-term",
+   "name": "Wrong term",
+   "description": "A complete series is given and the question asks which term is wrong, incorrect or does not belong to the series.",
+   "concepts": [
+    "wrong-term-identification"
+   ]
+  },
+  {
+   "type": "letter-series",
+   "name": "Letter and letter-cluster series",
+   "description": "A series of single capital letters or letter-clusters such as ACE, BDF, CEG, ? where the letters move forward or backward in the alphabet; no blanks and no numbers.",
+   "concepts": []
+  },
+  {
+   "type": "repeat-pattern-series",
+   "name": "Fill the blanks (repeating letters)",
+   "description": "A long row of letters with underscores (blanks) such as \"a _ c a b _ a _ c\"; asks which letters fill the blanks so a block repeats.",
+   "concepts": []
+  },
+  {
+   "type": "alphanumeric-series",
+   "name": "Alphanumeric series",
+   "description": "Each term mixes letters with numbers, or capital with small letters (A1Z, C3X, XF 11, qDx); each part follows its own rule.",
+   "concepts": []
+  },
+  {
+   "type": "missing-number-grid",
+   "name": "Missing number in a grid",
+   "description": "Numbers arranged in rows, columns or a table (often 3 × 3) with one cell missing; asks for the number that completes the pattern.",
+   "concepts": []
+  },
+  {
+   "type": "figure-series",
+   "name": "Figure series",
+   "description": "A row of pictures (figures) that change step by step; asks which figure comes next or replaces the question mark.",
+   "concepts": []
+  }
+ ]
+}

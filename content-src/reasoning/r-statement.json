@@ -1,51 +1,168 @@
 {
  "topic": "r-statement",
  "notes": {
-  "summary": "A statement is followed by conclusions or assumptions. Treat the statement as <b>true</b> and decide what definitely follows from it (conclusion) or what the speaker takes for granted (assumption). 0–2 questions.",
+  "summary": "Statement questions test clear thinking about everyday situations. You read a short statement, assume it is true, and judge conclusions, assumptions, actions, arguments, causes or inferences. Stick to what the statement says plus plain common sense. Reject anything extreme (\"only\", \"always\", \"all\", \"never\"), anything that adds new facts, and anything that is merely an opinion.",
   "concepts": [
    {
-    "title": "Conclusion",
-    "body": "A conclusion follows only if it can be <b>directly drawn</b> from the statement. Words like \"only\", \"all\", \"always\", \"never\" usually make a conclusion too strong."
+    "title": "Ground rules",
+    "body": "<ul><li>Treat the statement as true even if it sounds odd.</li><li>Use only the statement and simple common sense, not your own outside knowledge or opinions.</li><li>Words like only, always, all, never, best, must and definitely usually make an option wrong unless the statement uses them too.</li><li>Standard answers: only I, only II, either I or II, neither, both. \"Either\" is right only when I and II cannot both be true but one of them must be.</li></ul>"
    },
    {
-    "title": "Assumption",
-    "body": "An assumption is something the speaker <b>believes before</b> making the statement; without it the statement would not make sense. An advertisement assumes people will read it and want the product."
+    "title": "Conclusions",
+    "body": "A conclusion is something that must be true if the statement is true.<ul><li>Follows: a direct result, a restated fact, simple arithmetic from the numbers given.</li><li>Does not follow: a reason that is not given, a prediction, a judgement (\"the test was too difficult\"), or an extreme claim.</li></ul><p>Mini example: \"Of 1,200 students, only 300 passed.\" \"25% passed\" follows (simple arithmetic). \"The test was too hard\" does not; many other reasons are possible.</p>"
+   },
+   {
+    "title": "Assumptions",
+    "body": "An assumption is an unstated belief the speaker takes for granted while making the statement.<ul><li><b>Negation test</b>: reverse the assumption. If the statement then makes no sense, the assumption is implicit.</li><li>Advice, ads and notices assume the advice will work and that people will respond.</li><li>A decision assumes it is possible and will help.</li><li>An assumption is never a new fact or a result; it sits behind the statement.</li></ul><p>Mini example: \"Use XYZ toothpaste for whiter teeth.\" Negate \"people want whiter teeth\": the ad becomes pointless, so it is implicit.</p>"
+   },
+   {
+    "title": "Courses of action",
+    "body": "A good course of action is practical, reduces or solves the problem, and is within the power of the person or body acting.<ul><li>Accept: inquiries, repairs, relief, awareness drives, stricter checks, punishing the guilty.</li><li>Reject: bans on everything, punishing everyone, closing whole systems, ideas that create bigger problems, actions not linked to the problem.</li><li>Short-term relief and long-term fixes can both follow.</li></ul>"
+   },
+   {
+    "title": "Strong and weak arguments",
+    "body": "A strong argument is important, directly about the question and based on a fact or a clear result. A weak argument is about something minor, only an opinion, an example of another country, emotional, or does not answer the question.<ul><li>\"Yes, it will save lives\" style arguments are usually strong.</li><li>\"No, other countries do not do it\" or \"Yes, everyone wants it\" are weak.</li><li>An argument that just repeats the question is weak.</li></ul>"
+   },
+   {
+    "title": "Cause and effect",
+    "body": "Two events are given. Decide which of these fits:<ol><li>I is the cause and II is its effect.</li><li>II is the cause and I is its effect.</li><li>Both are independent causes.</li><li>Both are effects of independent causes.</li><li>Both are effects of some common cause.</li></ol><p>The cause happens first and leads directly to the effect. Example: \"There has been a surge in cyber attacks\" (cause) and \"Banks have increased staff training on cyber security\" (effect).</p>"
+   },
+   {
+    "title": "Inferences",
+    "body": "An inference is a reasonable step from the statement. Choose what is definitely or very probably true, and reject what contradicts the statement or needs facts that are not there. For short passages (\"Like seasoned gardeners, G practices crop rotation…\"), the right inference simply restates the main point in other words."
+   },
+   {
+    "title": "Data sufficiency",
+    "body": "You do not need the final answer, only whether the data is enough.<ol><li>Check statement I alone.</li><li>Check statement II alone.</li><li>If neither alone works, check both together.</li></ol><p>Usual options: I alone is enough; II alone is enough; either alone is enough; both together are needed; even both together are not enough. Be careful: \"either\" means each one alone works.</p>"
+   },
+   {
+    "title": "Inequality statements",
+    "body": "Join the letters into one chain. A conclusion between two letters is definite only if every sign between them points the same way; the result is strict (>) if any sign on the way is strict. Opposite signs on the way (A > B < C) mean no relation. If A > C and A = C both fail alone but the chain gives A ≥ C, the answer is \"either\". In coded versions, first replace each symbol with its real sign."
    }
   ],
   "varieties": [
    {
     "type": "statement-conclusion",
-    "name": "Statement and conclusion",
-    "how": "Ask: is this definitely true from the given facts alone?",
+    "name": "Statement and conclusions",
+    "how": "Accept only what must be true from the statement. Reject reasons, predictions, judgements and extreme words.",
     "example": {
-     "q": "Statement: 25% of students failed. Conclusion: 75% passed.",
+     "q": "Statement: The government has increased import duty on luxury cars.<br>Conclusions: I. Imported luxury cars will become costlier. II. The government wants to stop people from buying cars.",
      "steps": [
-      "If 25% failed, the rest passed."
+      "Higher duty raises the cost of imported luxury cars, so I follows.",
+      "II is extreme: the duty is on luxury imports, not on all cars. II does not follow."
      ],
-     "answer": "Follows"
+     "answer": "Only conclusion I follows"
     }
    },
    {
     "type": "statement-assumption",
-    "name": "Statement and assumption",
-    "how": "Ask: why would anyone say this? What must they believe?",
+    "name": "Statement and assumptions",
+    "how": "Use the negation test: if reversing the assumption makes the statement pointless, the assumption is implicit.",
     "example": {
-     "q": "Notice: \"Keep the lights off when not needed.\"",
+     "q": "Statement: \"Book your tickets online to avoid long queues.\" (a railway notice)<br>Assumptions: I. Many passengers can book tickets online. II. Long queues at counters are a problem for passengers.",
      "steps": [
-      "The writer assumes people will read and follow it.",
-      "The writer assumes saving power is useful."
+      "Negate I: if nobody can book online, the notice is useless. I is implicit.",
+      "Negate II: if queues are no trouble, there is no reason for the notice. II is implicit."
      ],
-     "answer": "Both are implicit"
+     "answer": "Both I and II are implicit"
+    }
+   },
+   {
+    "type": "course-of-action",
+    "name": "Courses of action",
+    "how": "Accept practical steps that tackle the problem directly; reject extreme bans and steps that create bigger problems.",
+    "example": {
+     "q": "Statement: Road accidents in the city have increased in the last six months.<br>Courses of action: I. Traffic police should strictly enforce driving rules. II. All private vehicles should be banned in the city.",
+     "steps": [
+      "I is practical and directly reduces accidents, so it follows.",
+      "II is extreme and would stop normal life in the city, so it does not follow."
+     ],
+     "answer": "Only I follows"
+    }
+   },
+   {
+    "type": "cause-effect",
+    "name": "Cause and effect",
+    "how": "Find which event happens first and leads to the other. If neither leads to the other, look for a common cause.",
+    "example": {
+     "q": "I. Banks have increased staff training on cyber security.<br>II. There has been a surge in cyber attacks.",
+     "steps": [
+      "A rise in attacks pushes banks to train staff; training does not cause attacks.",
+      "So II happens first and leads to I."
+     ],
+     "answer": "Statement II is the cause and statement I is its effect"
+    }
+   },
+   {
+    "type": "statement-argument",
+    "name": "Statement and arguments",
+    "how": "A strong argument is important, directly about the question and based on a clear result. Opinions, comparisons with other places and minor points are weak.",
+    "example": {
+     "q": "Should voting be made compulsory in India?<br>I. Yes, higher turnout makes results represent the people better.<br>II. No, many other countries do not have compulsory voting.",
+     "steps": [
+      "I gives a direct and important result of the policy, so it is strong.",
+      "II only points to other countries and gives no reason, so it is weak."
+     ],
+     "answer": "Only argument I is strong"
+    }
+   },
+   {
+    "type": "statement-inference",
+    "name": "Statement and inferences",
+    "how": "Pick what is definitely or very probably true from the statement; reject claims that go beyond it or contradict it.",
+    "example": {
+     "q": "Statement: The interest rates on fixed deposits have been lowered.<br>Inferences: I. Some investors may move to other investment options. II. Fixed deposits are no longer safe.",
+     "steps": [
+      "Lower returns make other options look better for some investors, so I is a fair inference.",
+      "Lower interest says nothing about safety, so II does not follow."
+     ],
+     "answer": "Only inference I follows"
+    }
+   },
+   {
+    "type": "data-sufficiency",
+    "name": "Data sufficiency",
+    "how": "Test I alone, then II alone, then both together. Stop as soon as you know whether a single answer is fixed.",
+    "example": {
+     "q": "Question: What is the value of x?<br>I. x is a prime number between 10 and 15.<br>II. x leaves remainder 1 when divided by 4.",
+     "steps": [
+      "I alone: x could be 11 or 13. Not enough.",
+      "II alone: x could be 1, 5, 9, 13, … Not enough.",
+      "Together: 11 leaves remainder 3, 13 leaves remainder 1. Only x = 13 fits."
+     ],
+     "answer": "Both statements together are needed"
+    }
+   },
+   {
+    "type": "inequality",
+    "name": "Inequality statements",
+    "how": "Join the signs into one chain and follow it from one letter to the other. Same direction gives a conclusion; any opposite sign gives none.",
+    "example": {
+     "q": "Statement: A > B ≥ C, D ≤ C.<br>Conclusions: I. A > D. II. B ≥ D.",
+     "steps": [
+      "Rewrite D ≤ C as C ≥ D. Chain: A > B ≥ C ≥ D.",
+      "A to D: all signs point the same way and one is strict, so A > D. I follows.",
+      "B to D: B ≥ C ≥ D, so B ≥ D. II follows."
+     ],
+     "answer": "Both conclusions follow"
     }
    }
   ],
   "tips": [
-   "Do not add outside facts; stay inside the statement.",
-   "Extreme words (only, all, never, definitely) usually make a conclusion or assumption fail."
+   "Read the conclusions or options before the long statement so you know what to look for.",
+   "Extreme words (only, all, always, never, must) are the most common reason an option is wrong.",
+   "For assumptions, use the negation test; for actions, ask \"is it practical and does it help?\"",
+   "Strong arguments give an important, direct reason; \"other countries do it\" is weak.",
+   "In data sufficiency, never solve fully; just check whether one answer is fixed.",
+   "In cause and effect, the cause comes first in time.",
+   "In inequalities, one opposite sign on the path means no conclusion."
   ],
   "traps": [
-   "A conclusion can be reasonable in real life but still not follow from the statement.",
-   "A repeated fact from the statement does follow as a conclusion."
+   "Do not bring in your own opinion or outside facts; judge only from the statement.",
+   "A conclusion can be true in real life and still not follow from the statement.",
+   "\"Either I or II\" needs the two to be a complementary pair; \"neither\" is more common.",
+   "In data sufficiency, \"either statement alone\" means each one alone is enough, not \"one of them\".",
+   "In coded inequalities, decode every symbol before you draw the chain."
   ]
  },
  "questions": [

@@ -1,71 +1,132 @@
 {
  "topic": "c-software",
  "notes": {
-  "summary": "Software is the set of programs that tell the hardware what to do. Tier 2 asks 2–4 questions on types of software, operating system functions and terms, and language translators.",
+  "summary": "<p>Software and operating systems gives 2 to 4 questions in Tier 2. Expect questions on system vs application software, open-source and free software, what an operating system does and its types, OS terms like spooling and virtual memory, Windows keyboard shortcuts, utility programs, and compilers, interpreters and assemblers.</p><p>Almost all are fact questions. The tables below cover what has been asked.</p>",
   "concepts": [
    {
-    "title": "Types of software",
-    "body": "<ul><li><b>System software</b>: runs the computer itself. Examples: operating system, device drivers, BIOS/firmware, utilities (antivirus, disk defragmenter), language translators.</li><li><b>Application software</b>: does a user task. Examples: MS Word, Excel, Tally, Photoshop, web browsers.</li><li><b>Open source</b>: source code is free to see and change (Linux, LibreOffice, Firefox). <b>Proprietary</b>: owned by a company (Windows, MS Office). <b>Freeware</b> is free to use; <b>shareware</b> is free for a trial period.</li></ul>"
+    "title": "What software is",
+    "body": "<p><b>Software</b> is a set of programs (instructions) that tells the hardware what to do. There are two big groups:</p><table><thead><tr><th>System software</th><th>Application software</th></tr></thead><tbody><tr><td>Runs and manages the computer itself</td><td>Does a job for the user</td></tr><tr><td>Operating system, device drivers, utility programs, language translators, firmware (BIOS)</td><td>MS Word, Excel, web browsers, Tally, games, media players</td></tr><tr><td>Starts when the computer starts; works in the background</td><td>Runs only when the user opens it</td></tr></tbody></table><ul><li><b>General-purpose</b> application software does common jobs (word processor, spreadsheet). <b>Specific-purpose</b> or tailor-made software is built for one task (railway reservation, payroll).</li><li>A <b>device driver</b> lets the operating system talk to one piece of hardware, such as a printer.</li><li><b>Middleware</b> connects applications to each other or to the OS. An <b>application server</b> gives developers a set of components through an API defined by the platform.</li></ul>"
    },
    {
-    "title": "Operating system",
-    "body": "The OS manages memory, processes, files and devices, and gives the user an interface (CLI like MS-DOS, or GUI like Windows).<ul><li><b>Booting</b>: loading the OS from disk into RAM. Cold boot = from power off; warm boot = restart.</li><li><b>Multitasking</b>: many tasks at once for one user. <b>Multiprogramming</b>: many programs kept in memory. <b>Time-sharing</b>: CPU time split among users.</li><li><b>Virtual memory</b>: uses part of the hard disk as if it were RAM.</li><li><b>Spooling</b> (Simultaneous Peripheral Operations On-Line): jobs (e.g. printing) are queued on disk.</li></ul>"
+    "title": "Software by licence",
+    "body": "<table><thead><tr><th>Type</th><th>Meaning</th><th>Examples</th></tr></thead><tbody><tr><td>Proprietary (closed source)</td><td>Owned by a company; code is secret; usually paid</td><td>MS Windows, MS Office, Adobe Photoshop</td></tr><tr><td>Open source</td><td>Source code is free to see, change and share</td><td>Linux, LibreOffice, Firefox, VLC, Android</td></tr><tr><td>Freeware</td><td>Free to use, but the code is not open</td><td>Google Chrome, Skype, Adobe Reader</td></tr><tr><td>Shareware</td><td>Free to try for a time, then pay</td><td>WinRAR, trial versions</td></tr></tbody></table><p><b>Office suites</b>:</p><table><thead><tr><th>Job</th><th>MS Office</th><th>LibreOffice</th><th>Google</th></tr></thead><tbody><tr><td>Word processor</td><td>Word</td><td>Writer</td><td>Docs</td></tr><tr><td>Spreadsheet</td><td>Excel</td><td>Calc</td><td>Sheets</td></tr><tr><td>Presentation</td><td>PowerPoint</td><td>Impress</td><td>Slides</td></tr><tr><td>Database</td><td>Access</td><td>Base</td><td>none</td></tr><tr><td>Drawing</td><td>Visio (separate)</td><td>Draw</td><td>Drawings</td></tr><tr><td>Formula editor</td><td>Equation tool</td><td>Math</td><td>none</td></tr></tbody></table>"
+   },
+   {
+    "title": "Operating system: jobs and parts",
+    "body": "<p>The <b>operating system</b> (OS) is the main system software. It sits between the user and the hardware and manages all resources.</p><ul><li><b>Process management</b>: starts, stops and schedules programs on the CPU.</li><li><b>Memory management</b>: gives RAM to programs and takes it back.</li><li><b>File management</b>: creates, names, stores and protects files and folders.</li><li><b>Device management</b>: controls hardware through drivers.</li><li><b>Security</b>: passwords, user accounts, permissions.</li><li><b>User interface</b>: <b>CLI</b> (command line, typed commands, like MS-DOS) or <b>GUI</b> (graphical, with icons and windows, like Windows).</li></ul><ul><li>The <b>kernel</b> is the core of the OS; it stays in memory and talks directly to the hardware.</li><li>The <b>shell</b> is the layer that takes the user's commands and passes them to the kernel.</li><li>Desktop and laptop operating systems need more advanced memory management than embedded systems because they run many different programs at the same time; an embedded system runs one fixed job.</li></ul>"
+   },
+   {
+    "title": "Types of operating systems",
+    "body": "<table><thead><tr><th>Type</th><th>Idea</th></tr></thead><tbody><tr><td>Batch</td><td>Similar jobs are grouped and run one after another with no user interaction</td></tr><tr><td>Multiprogramming</td><td>Several programs kept in memory so the CPU is never idle</td></tr><tr><td>Time-sharing (multitasking)</td><td>CPU time is split into small slices so many users or tasks seem to run together</td></tr><tr><td>Multiprocessing</td><td>Two or more CPUs work together</td></tr><tr><td>Real-time (RTOS)</td><td>Must respond within a fixed time: missiles, air-traffic control, medical machines</td></tr><tr><td>Distributed</td><td>Many connected computers act as one system</td></tr><tr><td>Network</td><td>Runs on a server and manages shared resources over a network</td></tr><tr><td>Embedded and mobile</td><td>Built into devices (washing machines) or phones (Android, iOS)</td></tr></tbody></table><table><thead><tr><th>OS</th><th>Made by / note</th></tr></thead><tbody><tr><td>MS-DOS</td><td>Microsoft; single-user, command line</td></tr><tr><td>Windows</td><td>Microsoft; GUI</td></tr><tr><td>Unix</td><td>Bell Labs (1969), Ken Thompson and Dennis Ritchie; multi-user</td></tr><tr><td>Linux</td><td>Linus Torvalds (1991); open source. Distributions: Ubuntu, Fedora, Debian</td></tr><tr><td>macOS and iOS</td><td>Apple</td></tr><tr><td>Android</td><td>Google; built on the Linux kernel</td></tr><tr><td>Chrome OS</td><td>Google</td></tr></tbody></table>"
+   },
+   {
+    "title": "Operating system terms",
+    "body": "<ul><li><b>Booting</b>: loading the OS into RAM when the computer starts. The <b>BIOS</b> in ROM checks the hardware (POST) and then starts the bootstrap loader.</li><li><b>Spooling</b> (Simultaneous Peripheral Operations On-Line): jobs for a slow device such as a printer are put in a queue on disk, so the CPU can go on with other work.</li><li><b>Buffering</b>: holding data in a temporary memory area while it moves between devices.</li><li><b>Virtual memory</b>: part of the hard disk used as an extension of RAM. Data moves in fixed blocks called <b>pages</b> (paging).</li><li><b>Thrashing</b>: the system spends more time swapping pages than doing real work.</li><li><b>Deadlock</b>: two or more processes wait for each other forever, so none can go on.</li><li><b>Process</b>: a program while it is running. A <b>thread</b> is a smaller unit of a process.</li><li><b>Plug and play</b>: the OS detects a new device and sets it up by itself.</li><li><b>Automatic updates</b>: the OS downloads and installs security patches without the user doing anything.</li></ul>"
+   },
+   {
+    "title": "Windows keyboard shortcuts",
+    "body": "<table><thead><tr><th>Keys</th><th>Action</th></tr></thead><tbody><tr><td>Windows key + E</td><td>Open File Explorer (Windows Explorer)</td></tr><tr><td>Windows key + D</td><td>Show or hide the desktop</td></tr><tr><td>Windows key + L</td><td>Lock the computer</td></tr><tr><td>Windows key + R</td><td>Open the Run box</td></tr><tr><td>Windows key + I</td><td>Open Settings</td></tr><tr><td>Windows key + X</td><td>Open the Quick Link (power user) menu</td></tr><tr><td>Windows key + Tab</td><td>Task View</td></tr><tr><td>Windows key + Shift + S</td><td>Take a screen snip</td></tr><tr><td>Windows key + V</td><td>Clipboard history</td></tr><tr><td>Alt + Tab</td><td>Switch between open windows</td></tr><tr><td>Alt + F4</td><td>Close the active window (or shut down from the desktop)</td></tr><tr><td>Alt + Enter</td><td>Open Properties of the selected item</td></tr><tr><td>Ctrl + Shift + Esc</td><td>Open Task Manager directly</td></tr><tr><td>Ctrl + Alt + Delete</td><td>Security screen (lock, sign out, Task Manager)</td></tr><tr><td>F2</td><td>Rename the selected file or folder</td></tr><tr><td>F5</td><td>Refresh the window</td></tr><tr><td>Delete / Shift + Delete</td><td>Send to Recycle Bin / delete permanently</td></tr><tr><td>Ctrl + Shift + N</td><td>New folder in File Explorer</td></tr><tr><td>Print Screen</td><td>Copy the whole screen to the clipboard</td></tr></tbody></table>"
+   },
+   {
+    "title": "Files and folders",
+    "body": "<ul><li>A <b>file</b> is a named collection of data. A <b>folder</b> (directory) holds files and other folders (subfolders).</li><li>Folders form a tree. The top folder of a drive is the <b>root directory</b>, for example C:\\.</li><li>A <b>path</b> gives the location: C:\\Users\\Ravi\\notes.txt.</li><li>The <b>extension</b> after the dot tells the file type.</li><li>Deleted files go to the <b>Recycle Bin</b> and can be restored. Shift + Delete skips the Recycle Bin.</li></ul><table><thead><tr><th>Extension</th><th>File type</th></tr></thead><tbody><tr><td>.exe</td><td>Program (executable)</td></tr><tr><td>.txt</td><td>Plain text (Notepad)</td></tr><tr><td>.docx / .xlsx / .pptx</td><td>Word / Excel / PowerPoint</td></tr><tr><td>.pdf</td><td>Portable Document Format</td></tr><tr><td>.jpg, .png, .gif, .bmp</td><td>Images</td></tr><tr><td>.mp3 / .mp4</td><td>Audio / video</td></tr><tr><td>.zip, .rar</td><td>Compressed archive</td></tr><tr><td>.html</td><td>Web page</td></tr></tbody></table>"
+   },
+   {
+    "title": "Utility programs",
+    "body": "<p>Utilities are small system programs that keep the computer healthy.</p><table><thead><tr><th>Utility</th><th>What it does</th></tr></thead><tbody><tr><td>Antivirus</td><td>Finds and removes malware (Quick Heal, Norton, McAfee, Windows Defender)</td></tr><tr><td>Disk Cleanup</td><td>Deletes temporary and unneeded files to free space</td></tr><tr><td>Disk Defragmenter</td><td>Puts the scattered pieces of files back together so the disk reads faster</td></tr><tr><td>Backup</td><td>Copies data so it can be restored after loss</td></tr><tr><td>File compression</td><td>Makes files smaller (WinZip, WinRAR, 7-Zip)</td></tr><tr><td>Control Panel</td><td>Shows a list of tools to configure the system and to add or remove hardware and software</td></tr><tr><td>Task Manager</td><td>Shows running programs, CPU and memory use; can end a program that is not responding</td></tr><tr><td>Device Manager</td><td>Lists hardware and their drivers</td></tr><tr><td>System Restore</td><td>Takes the system settings back to an earlier point</td></tr></tbody></table>"
+   },
+   {
+    "title": "Programming languages",
+    "body": "<table><thead><tr><th>Level</th><th>What it is</th><th>Example</th></tr></thead><tbody><tr><td>Machine language (1st generation)</td><td>Only 0s and 1s; the CPU understands it directly; fastest; machine dependent</td><td>10110000 01100001</td></tr><tr><td>Assembly language (2nd)</td><td>Short words called mnemonics</td><td>ADD, MOV, SUB</td></tr><tr><td>High-level language (3rd)</td><td>English-like, machine independent; needs a compiler or interpreter</td><td>C, C++, Java, Python, FORTRAN, COBOL</td></tr><tr><td>4th generation</td><td>Says what to do, not how; close to English</td><td>SQL</td></tr><tr><td>5th generation</td><td>Used for AI and logic</td><td>Prolog</td></tr></tbody></table><ul><li><b>FORTRAN</b> (formula translation): science and maths. <b>COBOL</b>: business. <b>BASIC</b>: beginners.</li><li><b>C</b>: Dennis Ritchie (1972). <b>C++</b>: Bjarne Stroustrup. <b>Java</b>: James Gosling at Sun Microsystems (1995). <b>Python</b>: Guido van Rossum (1991).</li><li><b>HTML</b> is a markup language, not a programming language.</li><li><b>Source code</b> is what the programmer writes; <b>object code</b> is the translated machine code. An error in a program is a <b>bug</b>; removing it is <b>debugging</b>.</li></ul>"
    },
    {
     "title": "Language translators",
-    "body": "<table><tr><th>Translator</th><th>Converts</th><th>How</th></tr><tr><td>Compiler</td><td>High-level → machine code</td><td>Whole program at once</td></tr><tr><td>Interpreter</td><td>High-level → machine code</td><td>Line by line</td></tr><tr><td>Assembler</td><td>Assembly → machine code</td><td>Mnemonics to binary</td></tr></table>Machine language (0s and 1s) is the 1st generation; assembly is the 2nd; high-level languages (C, Java, Python) are the 3rd."
+    "body": "<table><thead><tr><th>Translator</th><th>Converts</th><th>How</th></tr></thead><tbody><tr><td>Assembler</td><td>Assembly language to machine code</td><td>Instruction by instruction</td></tr><tr><td>Compiler</td><td>High-level language to machine code</td><td>Whole program in one go; lists all errors at the end; the program then runs fast (C, C++)</td></tr><tr><td>Interpreter</td><td>High-level language to machine code</td><td>One line at a time; stops at the first error; slower to run (Python, BASIC)</td></tr></tbody></table><ul><li>A <b>linker</b> joins object files and library code into one executable program.</li><li>A <b>loader</b> puts the executable program into memory so it can run.</li><li>Java is first compiled to <b>bytecode</b>, which the Java Virtual Machine then runs.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "types",
-    "name": "Types of software",
-    "how": "Ask: does it run the computer (system) or do a user job (application)? Then check the licence type.",
+    "type": "software-types",
+    "name": "Types of software and licences",
+    "how": "Ask: does it run the computer (system) or do a job for the user (application)? For licences ask: is the code open, free, or free only for a trial?",
     "example": {
-     "q": "Is a device driver system software or application software?",
+     "q": "Which of the following is not a LibreOffice program: Writer, Calc, Impress, Excel?",
      "steps": [
-      "A driver lets the OS talk to hardware.",
-      "It runs the computer, not a user task."
+      "LibreOffice has Writer, Calc, Impress, Draw, Base and Math.",
+      "Excel is part of Microsoft Office."
      ],
-     "answer": "System software"
+     "answer": "Excel"
     }
    },
    {
-    "type": "os",
-    "name": "Operating system terms",
-    "how": "Match the term to its one-line meaning: booting, multitasking, virtual memory, spooling, GUI.",
+    "type": "os-functions",
+    "name": "Operating systems: types, functions and terms",
+    "how": "Link each term to its one-line meaning: spooling is a print queue, virtual memory is disk used as RAM, real-time means a fixed response time.",
     "example": {
-     "q": "What is warm booting?",
+     "q": "Which type of operating system is used in air-traffic control, where every response must come within a fixed time?",
      "steps": [
-      "Cold boot starts the computer from power off.",
-      "Warm boot restarts a computer that is already on (e.g. Ctrl+Alt+Del / Restart)."
+      "Batch systems run jobs with no time promise.",
+      "Time-sharing systems share the CPU but do not guarantee a deadline.",
+      "A real-time OS guarantees a response within a fixed time."
      ],
-     "answer": "Restarting a running computer"
+     "answer": "Real-time operating system"
     }
    },
    {
-    "type": "languages",
-    "name": "Languages and translators",
-    "how": "Compiler = whole program, interpreter = line by line, assembler = assembly language.",
+    "type": "windows-shortcuts",
+    "name": "Windows shortcuts and file management",
+    "how": "Windows key combos open system tools (E Explorer, D desktop, L lock, R Run, I Settings). Alt + Enter is Properties; F2 is rename.",
     "example": {
-     "q": "Which translator shows errors one line at a time and stops at the first error?",
+     "q": "Which keyboard shortcut opens File Explorer in Windows?",
      "steps": [
-      "An interpreter executes one line at a time.",
-      "So it stops as soon as a line has an error."
+      "Windows key + D shows the desktop.",
+      "Windows key + E opens File Explorer (E for Explorer)."
+     ],
+     "answer": "Windows key + E"
+    }
+   },
+   {
+    "type": "utilities",
+    "name": "Utility programs and system tools",
+    "how": "Match the tool to its job: defragmenter joins file pieces, cleanup frees space, compression shrinks files, Control Panel changes settings.",
+    "example": {
+     "q": "Which utility rearranges the scattered parts of files on a hard disk so it can read them faster?",
+     "steps": [
+      "Disk Cleanup deletes files; it does not rearrange them.",
+      "Disk Defragmenter puts the pieces of each file next to each other."
+     ],
+     "answer": "Disk Defragmenter"
+    }
+   },
+   {
+    "type": "languages-translators",
+    "name": "Programming languages and translators",
+    "how": "Compiler = whole program at once; interpreter = line by line; assembler = assembly to machine code. Linker joins, loader loads.",
+    "example": {
+     "q": "Which program translates and runs a high-level program one line at a time?",
+     "steps": [
+      "A compiler translates the whole program in one go.",
+      "An assembler works on assembly language, not high-level code.",
+      "An interpreter works line by line."
      ],
      "answer": "Interpreter"
     }
    }
   ],
   "tips": [
-   "Linux, Android, Windows, macOS, iOS, Unix and MS-DOS are operating systems; MS Excel and Oracle Database are not.",
-   "Android is based on the Linux kernel.",
-   "Files deleted in Windows go to the Recycle Bin; Shift+Delete removes them permanently."
+   "The operating system is system software; MS Word, Excel and browsers are application software.",
+   "Windows key + E opens File Explorer; Alt + Enter opens Properties; Ctrl + Shift + Esc opens Task Manager.",
+   "Spooling = Simultaneous Peripheral Operations On-Line; think of a print queue.",
+   "Linux, LibreOffice, Firefox, VLC and Android are open source; Windows and MS Office are proprietary.",
+   "Compiler: whole program at once, fast to run. Interpreter: line by line, stops at the first error.",
+   "Android is built on the Linux kernel; Unix came from Bell Labs."
   ],
   "traps": [
-   "A compiler is not faster to translate, but the compiled program runs faster than interpreted code.",
-   "Antivirus is utility (system) software, not application software, in most SSC keys.",
-   "Freeware is not the same as open source: freeware may hide its source code."
+   "Freeware is free to use but not open source; do not mix them up.",
+   "An assembler translates assembly language, not a high-level language.",
+   "Shift + Delete deletes permanently; plain Delete sends the file to the Recycle Bin.",
+   "Virtual memory uses the hard disk, not the cache or ROM.",
+   "HTML is a markup language, not a programming language."
   ]
  },
  "questions": [
@@ -73,7 +134,7 @@
    "id": "c-software-001",
    "rev": 1,
    "topic": "c-software",
-   "type": "types",
+   "type": "software-types",
    "level": 1,
    "q": "Which of the following is system software?",
    "options": [
@@ -90,7 +151,7 @@
    "id": "c-software-002",
    "rev": 1,
    "topic": "c-software",
-   "type": "os",
+   "type": "os-functions",
    "level": 1,
    "q": "Which of the following is NOT an operating system?",
    "options": [
@@ -107,7 +168,7 @@
    "id": "c-software-003",
    "rev": 1,
    "topic": "c-software",
-   "type": "languages",
+   "type": "languages-translators",
    "level": 1,
    "q": "A translator that converts the whole high-level program into machine code in one go is called a(n):",
    "options": [
@@ -124,7 +185,7 @@
    "id": "c-software-004",
    "rev": 1,
    "topic": "c-software",
-   "type": "os",
+   "type": "os-functions",
    "level": 2,
    "q": "The small program that starts the computer and checks the hardware, stored in ROM, is the:",
    "options": [
@@ -141,7 +202,7 @@
    "id": "c-software-005",
    "rev": 1,
    "topic": "c-software",
-   "type": "languages",
+   "type": "languages-translators",
    "level": 2,
    "q": "An assembler converts:",
    "options": [
@@ -158,7 +219,7 @@
    "id": "c-software-006",
    "rev": 1,
    "topic": "c-software",
-   "type": "os",
+   "type": "os-functions",
    "level": 2,
    "q": "In operating systems, SPOOL stands for:",
    "options": [
@@ -175,7 +236,7 @@
    "id": "c-software-007",
    "rev": 1,
    "topic": "c-software",
-   "type": "types",
+   "type": "software-types",
    "level": 3,
    "q": "Which of the following is open-source software?",
    "options": [
@@ -192,7 +253,7 @@
    "id": "c-software-008",
    "rev": 1,
    "topic": "c-software",
-   "type": "os",
+   "type": "os-functions",
    "level": 3,
    "q": "Virtual memory lets a computer use part of the ___ as an extension of RAM.",
    "options": [

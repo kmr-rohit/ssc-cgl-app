@@ -1,0 +1,46 @@
+{
+  "topic": "g-environment",
+  "types": [
+    {
+      "type": "ecology-ecosystems",
+      "name": "Ecology and ecosystems",
+      "description": "Ecosystem parts, food chains and pyramids, the 10% law, succession, biomes, hotspots and ecology terms.",
+      "concepts": [
+        "ecosystem-dynamics-biodiversity",
+        "ecological-succession-and-ecosystems"
+      ]
+    },
+    {
+      "type": "biodiversity-wildlife",
+      "name": "Biodiversity and wildlife",
+      "description": "IUCN Red List categories, threatened and endemic species of India, and wildlife conservation projects.",
+      "concepts": []
+    },
+    {
+      "type": "protected-areas",
+      "name": "National parks and protected areas",
+      "description": "National parks, sanctuaries, tiger and biosphere reserves, Ramsar wetlands and the animals they are known for.",
+      "concepts": []
+    },
+    {
+      "type": "pollution-climate",
+      "name": "Pollution and climate change",
+      "description": "Air, water, soil and noise pollution, pollution diseases, greenhouse gases, global warming and ozone depletion.",
+      "concepts": [
+        "environmental-pollution-types"
+      ]
+    },
+    {
+      "type": "conventions-bodies",
+      "name": "Environmental conventions and bodies",
+      "description": "International treaties and summits on environment and climate, COP meetings, and environmental organisations.",
+      "concepts": []
+    },
+    {
+      "type": "laws-movements",
+      "name": "Environmental laws and movements",
+      "description": "Indian environmental Acts and institutions, constitutional provisions, environmental movements and important days.",
+      "concepts": []
+    }
+  ]
+}

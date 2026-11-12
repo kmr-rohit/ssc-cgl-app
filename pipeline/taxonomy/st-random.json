@@ -1,0 +1,47 @@
+{
+ "topic": "st-random",
+ "types": [
+  {
+   "type": "discrete-rv",
+   "name": "Probability tables, expectation and variance",
+   "description": "Gives a table of values and probabilities (or a pmf with an unknown k) and asks for k, E(X), E(X²) or Var(X).",
+   "concepts": []
+  },
+  {
+   "type": "continuous-rv",
+   "name": "Density and distribution functions",
+   "description": "Gives a density f(x) or a cdf F(x) and asks for the constant, a probability over an interval, or the mean.",
+   "concepts": []
+  },
+  {
+   "type": "binomial",
+   "name": "Binomial distribution",
+   "description": "Fixed number of independent trials with constant success chance, or gives n, p, mean or variance of a binomial.",
+   "concepts": []
+  },
+  {
+   "type": "poisson",
+   "name": "Poisson distribution",
+   "description": "Mentions a Poisson variable or rare events at an average rate and asks for P(X = r), mean or variance.",
+   "concepts": []
+  },
+  {
+   "type": "other-discrete",
+   "name": "Geometric, negative binomial and hypergeometric",
+   "description": "Asks about the first or r-th success, or drawing without replacement from a lot (geometric, negative binomial, hypergeometric).",
+   "concepts": []
+  },
+  {
+   "type": "uniform-exponential",
+   "name": "Uniform and exponential distributions",
+   "description": "Mentions a uniform interval or an exponential waiting time or life and asks for a mean, variance or probability.",
+   "concepts": []
+  },
+  {
+   "type": "normal",
+   "name": "Normal distribution",
+   "description": "Mentions a normal distribution, z-scores or areas under the bell curve.",
+   "concepts": []
+  }
+ ]
+}

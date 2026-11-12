@@ -16,6 +16,8 @@ function pwaPrecache(): Plugin {
       const urls = files.map((f) => '/' + relative(dist, f).split('\\').join('/'))
         // the previous-year bank (/pyq) is large: fetched and cached on demand, never precached
         .filter((u) => u !== '/sw.js' && !u.endsWith('.map') && !u.endsWith('.DS_Store') && !u.startsWith('/pyq/'))
+        // KaTeX ships woff2 + woff + ttf of each font; every browser we support takes woff2
+        .filter((u) => !/KaTeX_[^/]*\.(woff|ttf)$/.test(u))
         .map((u) => (u === '/index.html' ? '/' : u)).sort();
       const hash = createHash('sha256');
       files.filter((f) => !f.endsWith('sw.js') && !f.includes('/pyq/img/')).sort().forEach((f) => hash.update(readFileSync(f)));

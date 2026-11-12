@@ -1,0 +1,96 @@
+{
+  "topic": "g-geography",
+  "types": [
+    {
+      "type": "universe-earth",
+      "name": "Solar system and the Earth",
+      "description": "Sun, planets, stars, Earth's motions, seasons, latitudes, longitudes and time.",
+      "concepts": [
+        "universe-solar-system"
+      ]
+    },
+    {
+      "type": "rocks-landforms",
+      "name": "Earth's interior, rocks and landforms",
+      "description": "Earth's layers, rock types, plate tectonics, earthquakes, volcanoes and landforms made by rivers, wind, ice and the sea.",
+      "concepts": [
+        "earth-movements-tectonics-rocks"
+      ]
+    },
+    {
+      "type": "atmosphere-oceans",
+      "name": "Atmosphere, winds and oceans",
+      "description": "Layers of the atmosphere, pressure belts, planetary and local winds, cyclones, clouds, ocean currents and tides.",
+      "concepts": [
+        "atmosphere-winds-oceanography",
+        "ocean-relief-and-marine-life"
+      ]
+    },
+    {
+      "type": "world-geography",
+      "name": "World geography",
+      "description": "Continents, world rivers and lakes, straits and canals, grasslands, climate types and capitals and currencies.",
+      "concepts": [
+        "world-climates-and-crops",
+        "oceans-straits-and-canals",
+        "world-rivers-and-lakes",
+        "world-capitals-and-currencies"
+      ]
+    },
+    {
+      "type": "india-location-physiography",
+      "name": "India: location and relief",
+      "description": "India's extent, neighbours and borders, Himalayan ranges, peaks and passes, plateaus, coasts and islands.",
+      "concepts": [
+        "physical-divisions-of-india",
+        "mountain-peaks-and-passes",
+        "state-boundaries-and-frontiers"
+      ]
+    },
+    {
+      "type": "india-rivers-lakes",
+      "name": "Rivers, dams, lakes and waterfalls",
+      "description": "Himalayan and peninsular rivers, their sources and tributaries, dams and projects, lakes, waterfalls and water treaties.",
+      "concepts": [
+        "drainage-systems-rivers",
+        "lakes-and-waterfalls",
+        "river-valley-projects-dams"
+      ]
+    },
+    {
+      "type": "india-climate",
+      "name": "Indian climate and monsoon",
+      "description": "Seasons of India, the monsoon, local winds, rainfall pattern and weather terms.",
+      "concepts": [
+        "monsoon-and-climate-mechanisms",
+        "indian-climate-concepts"
+      ]
+    },
+    {
+      "type": "soils-agriculture",
+      "name": "Soils, crops and irrigation",
+      "description": "Soil types, cropping seasons, crops and their conditions, leading states, shifting cultivation and irrigation.",
+      "concepts": [
+        "agriculture-soils-natural-resources",
+        "crops-and-agricultural-seasons",
+        "crop-production-and-distribution"
+      ]
+    },
+    {
+      "type": "minerals-industry-transport",
+      "name": "Minerals, industry and transport",
+      "description": "Mineral and energy resources and where they are found, steel plants and industries, railways, roads and ports.",
+      "concepts": [
+        "minerals-and-mining-belts"
+      ]
+    },
+    {
+      "type": "population-census",
+      "name": "Population and census",
+      "description": "Census of India figures: population, sex ratio, literacy, density and growth by state.",
+      "concepts": [
+        "census-demographics-and-data"
+      ]
+    }
+  ]
+}

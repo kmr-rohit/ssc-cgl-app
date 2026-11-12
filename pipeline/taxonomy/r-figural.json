@@ -1,0 +1,41 @@
+{
+ "topic": "r-figural",
+ "types": [
+  {
+   "type": "embedded-figure",
+   "name": "Embedded figure",
+   "description": "You select the option figure in which a given figure (X) is hidden as a part, or the option hidden in a given complex figure, usually with rotation not allowed.",
+   "concepts": []
+  },
+  {
+   "type": "pattern-completion",
+   "name": "Completing a pattern",
+   "description": "A figure has a missing part marked with a question mark, and you choose the piece that completes the pattern.",
+   "concepts": []
+  },
+  {
+   "type": "figure-series",
+   "name": "Figure series",
+   "description": "A row of figures changes step by step and you choose the figure that comes next or fills the question mark in the series.",
+   "concepts": []
+  },
+  {
+   "type": "figure-analogy",
+   "name": "Figure analogy",
+   "description": "Figure A is related to figure B, and you apply the same change to figure C to find D (\"A : B :: C : ?\").",
+   "concepts": []
+  },
+  {
+   "type": "figure-odd-one-out",
+   "name": "Odd figure out",
+   "description": "Four or five figures are given, and you pick the one that does not follow the rule shared by the others.",
+   "concepts": []
+  },
+  {
+   "type": "figure-rotation",
+   "name": "Rotating a figure",
+   "description": "You choose how a figure looks after being rotated by a stated angle (for example 90° clockwise, or 135° clockwise then 45° anticlockwise).",
+   "concepts": []
+  }
+ ]
+}

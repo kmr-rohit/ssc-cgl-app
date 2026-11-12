@@ -1,0 +1,58 @@
+{
+  "topic": "g-physics",
+  "types": [
+    {
+      "type": "units-instruments",
+      "name": "Units and instruments",
+      "description": "SI and other units, unit conversions, and instruments and what they measure.",
+      "concepts": [
+        "measuring-instruments-and-units"
+      ]
+    },
+    {
+      "type": "motion-force-energy",
+      "name": "Motion, force, gravity and energy",
+      "description": "Speed and acceleration, Newton's laws, momentum, gravitation, work, energy, power and simple machines.",
+      "concepts": [
+        "laws-of-motion-work-energy-gravitation",
+        "laws-of-motion-force"
+      ]
+    },
+    {
+      "type": "matter-fluids",
+      "name": "Pressure and properties of matter",
+      "description": "Pressure, Pascal's and Archimedes' principles, floating, Bernoulli, surface tension, capillarity, viscosity and states of matter.",
+      "concepts": []
+    },
+    {
+      "type": "heat-sound-waves",
+      "name": "Heat, sound and waves",
+      "description": "Heat transfer, temperature scales, gas laws, sound and its properties, and the electromagnetic spectrum.",
+      "concepts": [
+        "sound-heat-waves"
+      ]
+    },
+    {
+      "type": "light-optics",
+      "name": "Light and optics",
+      "description": "Reflection, refraction, mirrors, lenses, eye defects, dispersion, scattering and natural light effects.",
+      "concepts": [
+        "light-and-optical-phenomena"
+      ]
+    },
+    {
+      "type": "electricity-magnetism",
+      "name": "Electricity and magnetism",
+      "description": "Current, Ohm's law, circuits, household electricity, cells, magnetic effects of current, motors, generators and transformers.",
+      "concepts": []
+    },
+    {
+      "type": "modern-physics",
+      "name": "Atoms, nuclear physics and scientists",
+      "description": "Atomic structure and discoveries, radioactivity, fission and fusion, and physicists with their laws and inventions.",
+      "concepts": [
+        "subatomic-discoveries-and-physicists"
+      ]
+    }
+  ]
+}

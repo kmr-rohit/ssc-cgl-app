@@ -1,69 +1,108 @@
 {
  "topic": "r-blood-relations",
  "notes": {
-  "summary": "Blood relation questions describe family links in words, codes or by \"pointing to a person\". Draw a small <b>family tree</b> and you will rarely go wrong. About 1 question in Tier 1.",
+  "summary": "Blood relation questions describe family links in words, in symbols or by a person \"pointing\" to someone. The answer is always clear if you draw a small <b>family tree</b>. SSC asks about 1 question in Tier 1 and 1 to 2 in Tier 2. Coded (symbol) questions are the most common in recent papers.",
   "concepts": [
    {
-    "title": "Draw a family tree",
-    "body": "Use <b>+</b> for male and <b>−</b> for female, a horizontal line for married couples, a vertical line for parent–child, and a dashed line for siblings. Fill in one statement at a time."
+    "title": "Relation words you must know",
+    "body": "<table><thead><tr><th>Relation</th><th>Means</th></tr></thead><tbody><tr><td>Grandfather, grandmother</td><td>Father or mother of a parent</td></tr><tr><td>Paternal uncle (chacha, tau)</td><td>Father's brother</td></tr><tr><td>Paternal aunt (bua)</td><td>Father's sister</td></tr><tr><td>Maternal uncle (mama)</td><td>Mother's brother</td></tr><tr><td>Maternal aunt (mausi)</td><td>Mother's sister</td></tr><tr><td>Cousin</td><td>Child of an uncle or aunt</td></tr><tr><td>Nephew, niece</td><td>Son, daughter of a brother or sister</td></tr><tr><td>Grandson, granddaughter</td><td>Son, daughter of your child</td></tr><tr><td>Father-in-law, mother-in-law</td><td>Father, mother of your husband or wife</td></tr><tr><td>Brother-in-law</td><td>Husband's or wife's brother, or a sister's husband</td></tr><tr><td>Sister-in-law</td><td>Husband's or wife's sister, or a brother's wife</td></tr><tr><td>Son-in-law, daughter-in-law</td><td>Daughter's husband, son's wife</td></tr></tbody></table>"
    },
    {
-    "title": "Key terms",
-    "body": "Father's or mother's brother = uncle. Mother's brother = <b>maternal</b> uncle. Son's wife = daughter-in-law. Daughter's husband = son-in-law. Wife's brother = brother-in-law."
+    "title": "Drawing a family tree",
+    "img": "reasoning/family-tree-notation.svg",
+    "body": "Use one simple notation every time:<ul><li>A <b>square</b> (or +) for a male, a <b>circle</b> (or −) for a female. Use a plain letter if the gender is not known yet.</li><li>A <b>double line</b> (=) joins a married couple.</li><li>A <b>single horizontal line</b> joins brothers and sisters.</li><li>A <b>vertical line</b> goes from parents down to children.</li><li>Keep each <b>generation on one row</b>: grandparents on top, then parents, then children.</li></ul>Counting rows tells you the generation gap: one row down is a child, two rows down is a grandchild."
    },
    {
-    "title": "Pointing questions",
-    "body": "Start from the <b>end</b> of the sentence (\"my father's only son\" = me, if I am male) and work back to the person pointed at."
+    "title": "Gender: never assume",
+    "body": "\"A is the brother of B\" tells you A is male, but says <b>nothing</b> about B. \"B is the daughter of C\" tells you B is female, but C could be the father or the mother.<br>So if A is the brother of B, and B is the daughter of C, then C is A's \"father or mother\". If an option says \"cannot be determined\" or \"father or mother\", check carefully whether the gender is really given.<br>Names in Indian questions usually show gender (Rita, Raj), but do not rely on names when the question uses letters."
+   },
+   {
+    "title": "Pointing questions: work from \"my\"",
+    "body": "Break the sentence into small steps, starting from the speaker (\"my\").<br>\"Pointing to a man, Rita said, 'He is the son of my grandfather's only son.'\"<ol><li>My grandfather's only son = my father.</li><li>The son of my father = my brother (or me, but Rita is female).</li></ol>So the man is Rita's brother.<table><thead><tr><th>Phrase</th><th>Usually means</th></tr></thead><tbody><tr><td>My father's only son (male speaker)</td><td>Me</td></tr><tr><td>My mother's husband</td><td>My father</td></tr><tr><td>My father's wife</td><td>My mother</td></tr><tr><td>My grandfather's only son</td><td>My father</td></tr><tr><td>My grandmother's only child</td><td>My father or my mother</td></tr><tr><td>My father's brother's son</td><td>My cousin</td></tr><tr><td>My wife's father's only daughter</td><td>My wife</td></tr></tbody></table>"
+   },
+   {
+    "title": "Coded relations",
+    "body": "Symbols stand for relations, for example: A + B means A is the father of B; A − B means A is the wife of B; A × B means A is the brother of B; A ÷ B means A is the daughter of B.<ol><li>Write each symbol's meaning in a small table first.</li><li>Read the expression <b>two letters at a time</b> from left to right: in P + Q × R, first \"P is the father of Q\", then \"Q is the brother of R\".</li><li>Draw each link on the tree as you read it, marking genders.</li><li>Read off the asked relation.</li></ol>For \"which expression shows that Q is the son of P\", test each option the same way and stop when one gives the exact relation (including gender)."
+   },
+   {
+    "title": "Generations and family puzzles",
+    "body": "In larger puzzles (six or eight members, \"two married couples\"), list every fact, then:<ol><li>Place couples first; they share a row.</li><li>Place parents above children.</li><li>Fill genders from words like husband, wife, son, daughter, brother, sister.</li><li>Answer counting questions (how many males, how many couples) only after every person is on the tree.</li></ol>Generation check: \"grand-\" words are two rows apart; parent and child, uncle and nephew are one row apart; brothers, sisters, cousins and couples are on the same row."
+   },
+   {
+    "title": "Common mistakes and quick checks",
+    "body": "<ul><li><b>Direction of the relation:</b> \"A is the father of B\" is not \"B is the father of A\". Always read who is related to whom in the question (\"How is A related to B?\" means describe A).</li><li><b>In-laws:</b> a brother's wife is a sister-in-law; a sister's husband is a brother-in-law.</li><li><b>Mother's side or father's side:</b> maternal means mother's side; paternal means father's side.</li><li>When two answers seem possible, check the gender of the person asked about.</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "pointing",
-    "name": "Pointing / introducing",
-    "how": "Break the sentence from \"my …\" and simplify step by step.",
+    "name": "Pointing and introducing",
+    "how": "Start from \"my\" and simplify the phrase one step at a time, replacing each part with a single relation. Then relate the result to the speaker.",
     "example": {
-     "q": "Pointing to a boy, Meena says, \"He is the son of my mother's only son.\" Who is the boy?",
+     "q": "Pointing to a girl, Aryan said, \"She is the daughter of the only child of my grandmother.\" How is the girl related to Aryan?",
      "steps": [
-      "Mother's only son = Meena's brother.",
-      "His son = Meena's nephew."
+      "The only child of my grandmother is my father or my mother: Aryan's parent.",
+      "The daughter of Aryan's parent is Aryan's sister."
      ],
-     "answer": "Nephew"
+     "answer": "Sister"
     }
    },
    {
     "type": "direct-relation",
     "name": "Direct statements",
-    "how": "Put each statement into the family tree; note genders.",
+    "how": "Draw each statement on the tree as you read it, with genders. Then read the relation between the two asked people.",
     "example": {
-     "q": "A is the son of B. B is the sister of C. How is C related to A?",
+     "q": "Vinita and Amita are the sisters of Gaurav. Ashish is the father of Vinita. Ansh is the son of Amita. How is Ashish related to Ansh?",
      "steps": [
-      "B is A's mother.",
-      "C is a sibling of B, gender not given."
+      "Vinita, Amita and Gaurav are siblings, so Ashish is the father of all three, including Amita.",
+      "Ansh is Amita's son.",
+      "Ashish is the father of Ansh's mother."
      ],
-     "answer": "Maternal uncle or aunt"
+     "answer": "Maternal grandfather"
     }
    },
    {
     "type": "coded-relation",
     "name": "Coded relations",
-    "how": "Decode each symbol into a sentence, then draw the tree.",
+    "how": "Write the meaning of each symbol. Read the expression two letters at a time, draw each link with gender, then read off the asked relation.",
     "example": {
-     "q": "P + Q means P is the father of Q; P − Q means P is the wife of Q. What is A − B + C?",
+     "q": "A @ B means A is the daughter of B; A & B means A is the husband of B; A % B means A is the wife of B. If D @ N @ H & Y @ F % V, how is N related to F?",
      "steps": [
-      "A is the wife of B; B is the father of C.",
-      "So A is C's mother."
+      "N @ H: N is the daughter of H.",
+      "H & Y: H is the husband of Y, so Y is N's mother.",
+      "Y @ F: Y is the daughter of F.",
+      "So N is the daughter of F's daughter."
      ],
-     "answer": "A is C's mother"
+     "answer": "Granddaughter"
+    }
+   },
+   {
+    "type": "family-puzzle",
+    "name": "Family puzzle",
+    "how": "Place couples on the same row and children below them. Mark every gender you can. Answer only after all members are placed.",
+    "example": {
+     "q": "P is the husband of Q. R and S are the children of Q. T is the wife of R. U is the son of T. S is an unmarried girl. How many female members are there?",
+     "steps": [
+      "Q is a wife, so female. T is a wife, so female. S is a girl.",
+      "P is a husband, R is T's husband (male), U is a son (male)."
+     ],
+     "answer": "3 (Q, S and T)"
     }
    }
   ],
   "tips": [
-   "Mark gender only when it is clearly given; otherwise the answer may be \"parent\" or \"cannot be determined\".",
-   "In coded questions, write the decoded sentence under each symbol before drawing."
+   "Always draw the tree; even a 10-second sketch avoids most mistakes.",
+   "Mark gender only when the question tells you. \"Brother of B\" says nothing about B.",
+   "In pointing questions, start from \"my\" and simplify step by step.",
+   "In coded questions, write the symbol table first and read two letters at a time.",
+   "Keep generations on separate rows; \"grand\" relations are two rows apart.",
+   "Check the direction asked: \"How is A related to B\" means describe A from B's side."
   ],
   "traps": [
-   "\"Only son of my father\" can be the speaker himself.",
-   "Being someone's sibling does not tell you your gender."
+   "Assuming the gender of a person from a relation that only describes someone else.",
+   "Reversing the relation (answering \"son\" when the question asks how the father is related).",
+   "Mixing maternal and paternal: a mother's brother is a maternal uncle.",
+   "In coded questions, forgetting that \"A − B: A is the wife of B\" also tells you B is male."
   ]
  },
  "questions": [
@@ -139,7 +178,7 @@
    "id": "r-blood-relations-005",
    "rev": 1,
    "topic": "r-blood-relations",
-   "type": "direct-relation",
+   "type": "family-puzzle",
    "level": 3,
    "q": "In a family, P is the father of Q. Q is the mother of R and S. R is a boy and S is a girl. T is the brother of P. U is the wife of P. How is S related to U?",
    "options": [

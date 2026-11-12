@@ -1,75 +1,384 @@
 {
   "topic": "g-economy",
   "notes": {
-    "summary": "Economy gives <b>1–2 questions</b>. Expect basic terms (GDP, inflation, deficits), RBI and its tools, banking milestones, Five-Year Plans and NITI Aayog, and GST. Questions test definitions and 'who publishes / when founded'.",
+    "summary": "Economy gives about <b>2 to 3 questions</b> per paper. Past papers ask most about <b>government schemes</b> (name, year, aim), <b>Five-Year Plans</b>, budget and tax terms, RBI tools, national income terms and basic micro concepts. Learn definitions word for word: options often differ by one word, such as 'excluding borrowings'.",
     "concepts": [
       {
         "title": "Basic concepts",
-        "body": "<ul><li><b>GDP</b>: value of final goods and services produced <i>within</i> a country in a year. <b>GNP</b> = GDP + net income from abroad.</li><li>Sectors: <b>primary</b> (agriculture, mining), <b>secondary</b> (manufacturing, construction), <b>tertiary</b> (services). Services have the largest share of India's GDP.</li><li><b>Inflation</b>: general rise in prices. <b>CPI</b> is compiled by the <b>National Statistics Office (NSO)</b>, MoSPI. <b>WPI</b> is compiled by the <b>Office of the Economic Adviser, DPIIT</b> (Ministry of Commerce &amp; Industry). RBI uses CPI inflation for its target.</li><li><b>Fiscal deficit</b> = Total expenditure − Total receipts (excluding borrowings).</li></ul>"
+        "body": "<ul><li>Adam Smith is the father of economics (<i>The Wealth of Nations</i>, 1776). J.M. Keynes is the father of macroeconomics (<i>General Theory</i>, 1936).</li><li><b>Microeconomics</b> studies one consumer, firm or market; <b>macroeconomics</b> studies the whole economy (national income, inflation, employment).</li><li><b>Law of demand</b>: price up, demand down (other things equal). Exceptions: Giffen goods, Veblen (status) goods.</li><li>Goods: normal (demand rises with income), inferior (demand falls with income), substitutes (tea and coffee), complements (car and petrol).</li><li><b>Budget line</b>: all combinations of two goods a consumer can buy with a given income and prices. <b>Indifference curve</b>: combinations giving equal satisfaction. <b>Isoquant</b>: input combinations giving the same output.</li><li><b>Production possibility curve</b>: maximum combinations of two goods an economy can produce with given resources. <b>Opportunity cost</b>: value of the next best option given up.</li><li>Costs: fixed (rent), variable (raw material), marginal (cost of one more unit).</li></ul><table><thead><tr><th>Market form</th><th>Meaning</th></tr></thead><tbody><tr><td>Perfect competition</td><td>Many sellers, identical product, price taker</td></tr><tr><td>Monopoly</td><td>One seller, no close substitute</td></tr><tr><td>Duopoly</td><td>Two sellers</td></tr><tr><td>Oligopoly</td><td>Few big sellers</td></tr><tr><td>Monopolistic competition</td><td>Many sellers, differentiated products (brands)</td></tr><tr><td>Monopsony</td><td>One buyer</td></tr></tbody></table><p><b>Sectors</b>: primary (agriculture, mining, fishing, forestry), secondary (manufacturing, construction, electricity), tertiary (services: trade, transport, banking). India is a <b>mixed economy</b>.</p><p><b>Laws</b>: Gresham's law (bad money drives out good money); Say's law (supply creates its own demand); Engel's law (as income rises, the share spent on food falls).</p>"
       },
       {
-        "title": "RBI and monetary tools",
-        "body": "<ul><li>RBI was set up on <b>1 April 1935</b> (RBI Act 1934, on the Hilton Young Commission's advice) and nationalised in <b>1949</b>. HQ: <b>Mumbai</b>.</li><li>First Indian Governor: <b>C.D. Deshmukh</b>.</li><li>The <b>Monetary Policy Committee</b> has <b>6 members</b> and is chaired by the RBI Governor.</li></ul><table><thead><tr><th>Tool</th><th>Meaning</th></tr></thead><tbody><tr><td>Repo rate</td><td>Rate at which RBI lends short-term to banks</td></tr><tr><td>Reverse repo</td><td>Rate at which RBI borrows from banks</td></tr><tr><td>CRR</td><td>Share of deposits banks must keep with RBI as cash</td></tr><tr><td>SLR</td><td>Share of deposits banks keep themselves in liquid assets (cash, gold, government securities)</td></tr></tbody></table>To control inflation RBI <b>raises</b> these rates; to boost growth it <b>lowers</b> them."
+        "title": "National income",
+        "body": "<table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody><tr><td>GDP</td><td>Value of all final goods and services produced inside the country in a year</td></tr><tr><td>GNP</td><td>GDP + net factor income from abroad</td></tr><tr><td>NNP</td><td>GNP − depreciation</td></tr><tr><td>National income</td><td>NNP at factor cost</td></tr><tr><td>Factor cost</td><td>Market price − indirect taxes + subsidies</td></tr><tr><td>Personal income</td><td>Income received by people from all sources before personal income tax</td></tr><tr><td>Disposable income</td><td>Personal income − direct taxes</td></tr><tr><td>Per capita income</td><td>National income ÷ population</td></tr></tbody></table><ul><li>Three methods: product (value added), income, and expenditure.</li><li>The <b>National Statistics Office (NSO)</b>, under MoSPI, estimates national income. CSO (1951) and NSSO (1950) were merged into NSO in 2019.</li><li>Dadabhai Naoroji made the first estimate of India's national income (1867 to 1868). The National Income Committee (1949) was chaired by P.C. Mahalanobis.</li><li>The International Comparison Programme compares price levels and computes <b>purchasing power parities (PPP)</b> so GDP can be compared across countries.</li></ul>"
       },
       {
-        "title": "Planning and institutions",
-        "body": "<table><thead><tr><th>Item</th><th>Fact</th></tr></thead><tbody><tr><td>Planning Commission</td><td>1950; replaced by <b>NITI Aayog</b> on 1 January 2015 (chaired by PM)</td></tr><tr><td>First Plan (1951–56)</td><td>Agriculture; Harrod–Domar model</td></tr><tr><td>Second Plan (1956–61)</td><td>Heavy industry; <b>Mahalanobis</b> model</td></tr><tr><td>Bank nationalisation</td><td>14 banks in 1969; 6 more in 1980</td></tr><tr><td>NABARD</td><td>1982 — rural and agricultural credit</td></tr><tr><td>SEBI</td><td>1988; statutory powers in 1992 — capital market regulator</td></tr><tr><td>SIDBI</td><td>1990 — small industries</td></tr></tbody></table>"
+        "title": "Inflation and price indices",
+        "body": "<ul><li><b>Inflation</b>: a sustained rise in the general price level. Demand-pull (too much demand) and cost-push (costlier inputs).</li><li><b>Deflation</b>: falling prices. <b>Disinflation</b>: inflation slowing down. <b>Stagflation</b>: high inflation with low growth and high unemployment. <b>Hyperinflation</b>: very fast price rise.</li><li><b>Headline</b> inflation counts all items; <b>core</b> inflation leaves out food and fuel.</li></ul><table><thead><tr><th>Index</th><th>Released by</th></tr></thead><tbody><tr><td>Wholesale Price Index (WPI)</td><td>Office of the Economic Adviser, DPIIT (Ministry of Commerce)</td></tr><tr><td>Consumer Price Index (CPI) rural, urban, combined</td><td>NSO, MoSPI</td></tr><tr><td>CPI for Industrial Workers (CPI-IW)</td><td>Labour Bureau</td></tr><tr><td>Index of Industrial Production (IIP)</td><td>NSO, MoSPI</td></tr></tbody></table><p>Since 2016, the RBI follows <b>flexible inflation targeting</b>: CPI inflation of <b>4%, with a band of 2% to 6%</b>.</p>"
       },
       {
-        "title": "Budget and GST",
-        "body": "<ul><li>The Union Budget is the <b>Annual Financial Statement</b> under <b>Article 112</b>.</li><li>The <b>Economic Survey</b> is prepared by the Ministry of Finance and presented before the Budget.</li><li><b>GST</b> came into force on <b>1 July 2017</b> through the <b>101st Amendment</b>. The <b>GST Council</b> (Article 279A) is chaired by the Union Finance Minister.</li><li>Revolutions: Green — food grains (M.S. Swaminathan in India); White — milk (Verghese Kurien, Operation Flood).</li></ul>"
+        "title": "RBI and monetary policy",
+        "body": "<ul><li>RBI was set up on <b>1 April 1935</b> under the RBI Act 1934 (Hilton Young Commission). Nationalised on 1 January 1949. Headquarters: <b>Mumbai</b> (first in Kolkata). First Governor: Osborne Smith; first Indian Governor: C.D. Deshmukh.</li><li>Functions: issues currency (the Re 1 note and coins are issued by the Ministry of Finance), banker to the government, banker's bank, lender of last resort, keeper of foreign exchange reserves.</li><li><b>Monetary Policy Committee</b> (2016): 6 members, chaired by the RBI Governor, who has a casting vote. It sets the repo rate.</li></ul><table><thead><tr><th>Tool</th><th>Meaning</th></tr></thead><tbody><tr><td>Repo rate</td><td>Rate at which RBI lends short-term to banks against securities</td></tr><tr><td>Reverse repo / Standing Deposit Facility</td><td>Rate RBI pays banks for parking money with it</td></tr><tr><td>Marginal Standing Facility (MSF)</td><td>Emergency overnight borrowing by banks, above repo</td></tr><tr><td>Bank rate</td><td>Long-term lending rate of RBI, without securities</td></tr><tr><td>CRR</td><td>Share of deposits banks must keep with RBI as cash</td></tr><tr><td>SLR</td><td>Share of deposits banks must keep themselves in cash, gold or government securities</td></tr><tr><td>Open Market Operations</td><td>RBI buying or selling government securities</td></tr></tbody></table><p>To fight inflation, the RBI raises repo, CRR or SLR (less money in the system). Qualitative tools: margin requirements, credit rationing, moral suasion.</p>"
+      },
+      {
+        "title": "Banks and banking laws",
+        "body": "<ul><li><b>Nationalisation</b>: 14 banks on <b>19 July 1969</b> (deposits over Rs 50 crore); 6 more in 1980.</li><li>State Bank of India: formed in 1955 from the Imperial Bank of India (1921).</li><li>Punjab National Bank (1894) is often called the first bank fully run by Indians.</li><li>Regional Rural Banks: 1975. Lead Bank Scheme: 1969.</li><li>Payments banks (Nachiket Mor committee) accept deposits but cannot lend. Small finance banks lend to small units.</li><li>Development banks: NABARD (1982, agriculture, Mumbai), EXIM Bank (1982), NHB (1988, housing), SIDBI (1990, small industry, Lucknow).</li><li><b>DICGC</b> insures each depositor up to <b>Rs 5 lakh</b> per bank (since 2020).</li><li><b>Insolvency and Bankruptcy Code 2016</b>: resolution within 180 days, extendable by 90 days.</li><li><b>UPI</b> was launched in 2016 by NPCI. M1 is narrow money; M3 is broad money.</li><li>Narasimham Committee (1991) suggested banking reforms.</li></ul>"
+      },
+      {
+        "title": "Budget, deficits and taxes",
+        "body": "<ul><li>The budget is the <b>Annual Financial Statement (Article 112)</b>. First budget of independent India: R.K. Shanmukham Chetty, 26 November 1947. Since 2017 it is presented on 1 February and the railway budget is merged into it.</li><li><b>Revenue receipts</b>: taxes and non-tax income (dividends, fees). <b>Capital receipts</b>: borrowings, disinvestment, loan recoveries.</li><li><b>Revenue expenditure</b> creates no asset (salaries, interest, subsidies, pensions). <b>Capital expenditure</b> creates assets or reduces liabilities (roads, buildings, machinery, loans given).</li></ul><table><thead><tr><th>Deficit</th><th>Formula</th></tr></thead><tbody><tr><td>Fiscal deficit</td><td>Total expenditure − total receipts excluding borrowings</td></tr><tr><td>Revenue deficit</td><td>Revenue expenditure − revenue receipts</td></tr><tr><td>Primary deficit</td><td>Fiscal deficit − interest payments</td></tr></tbody></table><ul><li>FRBM Act: 2003. Finance Commission (Article 280) shares taxes with states.</li><li><b>Direct taxes</b> (paid by the person taxed): income tax, corporation tax. <b>Indirect taxes</b> (passed on to the buyer): GST, customs duty, excise on petroleum and liquor.</li><li><b>GST</b> started on <b>1 July 2017</b> (101st Amendment). The GST Council (Article 279A) is chaired by the Union Finance Minister. CGST and SGST on sales within a state; IGST on sales between states. From 22 September 2025 most goods moved to two main rates, 5% and 18%.</li><li><b>Progressive tax</b>: rate rises with income. Regressive: falls as income rises. Proportional: same rate.</li></ul>"
+      },
+      {
+        "title": "External sector and trade",
+        "body": "<ul><li><b>Balance of Payments</b>: current account (goods trade, services, remittances, income) plus capital account (FDI, portfolio investment, loans).</li><li>Rupee devalued in 1966 and 1991. The rupee became fully convertible on the current account in 1994.</li><li>FEMA (1999) replaced FERA (1973).</li><li><b>Devaluation</b> (by government) vs <b>depreciation</b> (by market) of a currency.</li><li>During colonial rule India exported raw materials and imported finished British goods, with a large export surplus used to pay for the drain.</li><li>GATT (1947) became the <b>WTO</b> on 1 January 1995 (Geneva). IMF and World Bank came out of Bretton Woods (1944).</li></ul>"
+      },
+      {
+        "title": "Planning and Five-Year Plans",
+        "body": "<p>Planning Commission: <b>15 March 1950</b>, chaired by the PM. National Development Council: 1952. Replaced by <b>NITI Aayog on 1 January 2015</b> (first Vice-Chairman Arvind Panagariya).</p><table><thead><tr><th>Plan</th><th>Years</th><th>Focus or model</th></tr></thead><tbody><tr><td>1st</td><td>1951 to 1956</td><td>Agriculture; Harrod-Domar model</td></tr><tr><td>2nd</td><td>1956 to 1961</td><td>Heavy industry; <b>P.C. Mahalanobis</b> model</td></tr><tr><td>3rd</td><td>1961 to 1966</td><td>Self-reliance; failed due to wars and drought; then plan holiday (1966 to 1969)</td></tr><tr><td>4th</td><td>1969 to 1974</td><td>Growth with stability</td></tr><tr><td>5th</td><td>1974 to 1979</td><td>Removal of poverty (Garibi Hatao); ended a year early; rolling plans followed</td></tr><tr><td>6th</td><td>1980 to 1985</td><td>Poverty removal, employment</td></tr><tr><td>7th</td><td>1985 to 1990</td><td>Food, work and productivity</td></tr><tr><td>8th</td><td>1992 to 1997</td><td>Human resource development; after the 1991 reforms</td></tr><tr><td>9th</td><td>1997 to 2002</td><td>Growth with social justice and equality</td></tr><tr><td>10th</td><td>2002 to 2007</td><td>8% growth target</td></tr><tr><td>11th</td><td>2007 to 2012</td><td>Faster and more inclusive growth</td></tr><tr><td>12th (last)</td><td>2012 to 2017</td><td>Faster, more inclusive and sustainable growth</td></tr></tbody></table><ul><li>Pre-independence plans: Bombay Plan (1944, industrialists), Gandhian Plan (1944, S.N. Agarwal), People's Plan (1945, M.N. Roy), Sarvodaya Plan (1950, J.P. Narayan).</li><li>Industrial Policy Resolutions: 1948 and 1956 (mixed economy). MRTP Act 1969 was replaced by the Competition Act 2002 (CCI).</li><li><b>1991 reforms</b>: Liberalisation, Privatisation, Globalisation (LPG); PM P.V. Narasimha Rao and FM Manmohan Singh; New Industrial Policy, 24 July 1991.</li><li>National Investment Fund (2005) holds disinvestment money.</li></ul>"
+      },
+      {
+        "title": "Agriculture",
+        "body": "<ul><li><b>Green Revolution</b> (late 1960s): high-yielding seeds, fertilisers and irrigation. Norman Borlaug is its world father; <b>M.S. Swaminathan</b> led it in India. Wheat gained the most, then rice; Punjab, Haryana and western UP benefited most. Before it, India had low yields and relied on food imports.</li><li><b>White Revolution</b>: milk; Operation Flood (1970); Verghese Kurien (Amul, Anand). India is the largest milk producer.</li><li>Other revolutions: Blue (fish), Yellow (oilseeds), Silver (eggs), Golden (horticulture and honey).</li><li><b>MSP</b> is announced by the government on the advice of the Commission for Agricultural Costs and Prices (CACP, 1965). Food Corporation of India: 1965.</li><li>Farm schemes: Kisan Credit Card (1998), Soil Health Card (2015), PM Fasal Bima Yojana (2016), e-NAM (2016), <b>PM-KISAN</b> (2019, Rs 6,000 a year in three instalments).</li></ul>"
+      },
+      {
+        "title": "Poverty, employment and indices",
+        "body": "<ul><li>Poverty line committees: Lakdawala, <b>Tendulkar (2009)</b>, Rangarajan (2014). NITI Aayog publishes a Multidimensional Poverty Index.</li><li>Unemployment types: disguised (more people than needed, common in farming), seasonal, structural, frictional, cyclical. NSO's Periodic Labour Force Survey (PLFS) measures it. Agriculture still employs the largest share of India's workers.</li><li><b>HDI</b> (UNDP, since 1990; Mahbub ul Haq, with Amartya Sen): health (life expectancy at birth), knowledge (mean years and expected years of schooling), standard of living (GNI per capita, PPP).</li><li>Gini coefficient and Lorenz curve measure inequality.</li><li><b>Neonatal mortality rate</b>: deaths in the first 28 days per 1,000 live births. <b>Infant mortality rate</b>: deaths under 1 year per 1,000 live births. <b>Maternal mortality ratio</b>: per 1,00,000 live births.</li><li>Programmes: Food for Work (1977), IRDP (1978), TRYSEM (1979), Jawahar Rozgar Yojana (1989), SGSY (1999), Antyodaya Anna Yojana (2000), <b>MGNREGA</b> (Act 2005, started 2 February 2006, 100 days of work), National Rural Livelihood Mission 'Aajeevika' (2011), National Food Security Act (2013).</li><li>UN <b>Sustainable Development Goals</b>: 17 goals adopted in 2015 for 2030 (for example Zero Hunger, Quality Education, Climate Action, Life Below Water).</li></ul>"
+      },
+      {
+        "title": "Government schemes",
+        "body": "<table><thead><tr><th>Scheme</th><th>Launched</th><th>Aim</th></tr></thead><tbody><tr><td>PM Jan Dhan Yojana</td><td>28 August 2014</td><td>Bank account for every household</td></tr><tr><td>Swachh Bharat Mission</td><td>2 October 2014</td><td>Cleanliness, toilets</td></tr><tr><td>Make in India</td><td>25 September 2014</td><td>Manufacturing</td></tr><tr><td>Beti Bachao Beti Padhao</td><td>22 January 2015, Panipat</td><td>Girl child</td></tr><tr><td>PM MUDRA Yojana</td><td>8 April 2015</td><td>Loans up to Rs 10 lakh for small businesses (raised to Rs 20 lakh in 2024)</td></tr><tr><td>Atal Pension Yojana</td><td>2015</td><td>Pension for unorganised workers aged 18 to 40; income-tax payers barred from October 2022</td></tr><tr><td>PM Jeevan Jyoti Bima, PM Suraksha Bima</td><td>2015</td><td>Life cover and accident cover of Rs 2 lakh</td></tr><tr><td>Digital India, Skill India, Smart Cities, AMRUT</td><td>2015</td><td>Digital services, skills, urban development</td></tr><tr><td>Startup India, Stand-Up India</td><td>2016</td><td>Start-ups; loans for SC, ST and women entrepreneurs</td></tr><tr><td>PM Ujjwala Yojana</td><td>1 May 2016</td><td>LPG connections for poor women</td></tr><tr><td>Ayushman Bharat PM-JAY</td><td>23 September 2018</td><td>Health cover of Rs 5 lakh per family a year</td></tr><tr><td>Jal Jeevan Mission</td><td>2019</td><td>Tap water to every rural home</td></tr><tr><td>PM SVANidhi</td><td>June 2020</td><td>Small loans to street vendors</td></tr><tr><td>PM Garib Kalyan Anna Yojana</td><td>2020</td><td>Free food grains</td></tr><tr><td>e-Shram portal</td><td>August 2021</td><td>National database of unorganised workers (Ministry of Labour)</td></tr><tr><td>PM Gati Shakti</td><td>October 2021</td><td>Infrastructure master plan</td></tr><tr><td>PM Vishwakarma</td><td>17 September 2023</td><td>Support for traditional artisans</td></tr></tbody></table><p><b>Bharatmala</b> (highways) is under the Ministry of Road Transport and Highways; <b>Sagarmala</b> (ports) under the Ministry of Ports, Shipping and Waterways; <b>UDAN</b> (regional flights) under Civil Aviation.</p>"
+      },
+      {
+        "title": "Markets and financial institutions",
+        "body": "<table><thead><tr><th>Body</th><th>Fact</th></tr></thead><tbody><tr><td>SEBI</td><td>Securities market regulator; set up 1988, statutory 1992; Mumbai</td></tr><tr><td>BSE</td><td>1875, oldest stock exchange in Asia; index Sensex (30 shares)</td></tr><tr><td>NSE</td><td>1992; index Nifty 50</td></tr><tr><td>IRDAI</td><td>Insurance regulator (1999), Hyderabad</td></tr><tr><td>PFRDA</td><td>Pension regulator (2003); runs NPS</td></tr><tr><td>LIC</td><td>1956</td></tr><tr><td>IMF, World Bank</td><td>Washington DC</td></tr><tr><td>WTO</td><td>Geneva</td></tr><tr><td>Asian Development Bank</td><td>Manila</td></tr><tr><td>AIIB</td><td>Beijing</td></tr><tr><td>New Development Bank (BRICS)</td><td>Shanghai</td></tr></tbody></table><p>A <b>bull</b> market expects prices to rise; a <b>bear</b> market expects them to fall. An IPO is a company's first sale of shares to the public.</p>"
       }
     ],
     "varieties": [
       {
-        "type": "concepts",
-        "name": "Definitions and indices",
-        "how": "Know the exact definitions and which body compiles each index.",
-        "example": { "q": "Who compiles the Wholesale Price Index in India?", "steps": ["CPI → NSO (MoSPI)", "WPI → Office of the Economic Adviser, DPIIT"], "answer": "Office of the Economic Adviser, DPIIT" }
+        "type": "basic-concepts",
+        "name": "Basic economic concepts",
+        "how": "Learn definitions in one line each and the sector of each activity. For market forms, count sellers and buyers.",
+        "example": {
+          "q": "A market with only one buyer is called:",
+          "steps": [
+            "One seller is monopoly.",
+            "One buyer is monopsony."
+          ],
+          "answer": "Monopsony"
+        }
       },
       {
-        "type": "banking",
-        "name": "RBI and banking",
-        "how": "Learn RBI's dates and what each policy tool means; rising rates = tighter money.",
-        "example": { "q": "The rate at which RBI lends short-term funds to commercial banks is:", "steps": ["RBI lends → repo", "RBI borrows → reverse repo"], "answer": "Repo rate" }
+        "type": "national-income-inflation",
+        "name": "National income and inflation",
+        "how": "Build national income terms step by step: GDP, add net factor income (GNP), subtract depreciation (NNP), convert to factor cost (national income).",
+        "example": {
+          "q": "GNP minus depreciation equals:",
+          "steps": [
+            "GNP includes the wear and tear of capital.",
+            "Removing depreciation gives the net figure, NNP."
+          ],
+          "answer": "Net National Product (NNP)"
+        }
       },
       {
-        "type": "planning-budget",
-        "name": "Plans, budget and GST",
-        "how": "Pair each plan or reform with its year and key feature.",
-        "example": { "q": "NITI Aayog replaced which body?", "steps": ["Planning Commission (1950) was replaced on 1 January 2015"], "answer": "Planning Commission" }
+        "type": "banking-rbi",
+        "name": "Banking, RBI and money",
+        "how": "Learn each RBI tool by who holds the money and who pays the rate. Learn nationalisation years and development bank HQs.",
+        "example": {
+          "q": "The share of deposits banks must keep with the RBI as cash is called:",
+          "steps": [
+            "SLR is kept by banks themselves in liquid assets.",
+            "Cash kept with the RBI is the Cash Reserve Ratio."
+          ],
+          "answer": "CRR"
+        }
+      },
+      {
+        "type": "budget-tax-trade",
+        "name": "Budget, taxes and external sector",
+        "how": "Ask: does it create an asset (capital) or not (revenue)? Is the tax burden passed on (indirect) or not (direct)? Learn the three deficit formulas exactly.",
+        "example": {
+          "q": "Which of these is an indirect tax: income tax, corporation tax, GST, wealth tax?",
+          "steps": [
+            "Income, corporation and wealth taxes are paid by the person taxed.",
+            "GST is collected from the buyer through the seller."
+          ],
+          "answer": "GST"
+        }
+      },
+      {
+        "type": "planning-reforms",
+        "name": "Five-Year Plans and reforms",
+        "how": "Learn each plan by number, years and one focus word. The 2nd plan is the Mahalanobis plan; the 12th is the last.",
+        "example": {
+          "q": "The Second Five-Year Plan was based on the model of:",
+          "steps": [
+            "The Second Plan (1956 to 1961) stressed heavy industry.",
+            "Its model was drawn up by P.C. Mahalanobis."
+          ],
+          "answer": "P.C. Mahalanobis"
+        }
+      },
+      {
+        "type": "agriculture",
+        "name": "Agriculture and revolutions",
+        "how": "Pair each revolution with its product and leader. Remember the Green Revolution helped wheat most.",
+        "example": {
+          "q": "Operation Flood is linked with:",
+          "steps": [
+            "Operation Flood (1970) built dairy co-operatives.",
+            "It is the White Revolution, led by Verghese Kurien."
+          ],
+          "answer": "Milk production (White Revolution)"
+        }
+      },
+      {
+        "type": "poverty-employment-hdi",
+        "name": "Poverty, jobs and development indices",
+        "how": "Learn HDI's three dimensions and their indicators, the definitions of IMR and neonatal mortality, and the employment schemes in time order.",
+        "example": {
+          "q": "Which indicator measures the 'knowledge' dimension of HDI?",
+          "steps": [
+            "Health uses life expectancy; living standard uses GNI per capita.",
+            "Knowledge uses mean and expected years of schooling."
+          ],
+          "answer": "Mean and expected years of schooling"
+        }
+      },
+      {
+        "type": "government-schemes",
+        "name": "Government schemes",
+        "how": "Learn scheme, launch year, ministry and target group together. Look for the target group in the scheme name (SVANidhi: street vendors; Ujjwala: LPG).",
+        "example": {
+          "q": "PM SVANidhi gives small loans to:",
+          "steps": [
+            "SVANidhi stands for Street Vendor's AtmaNirbhar Nidhi.",
+            "It was launched in June 2020 for street vendors."
+          ],
+          "answer": "Street vendors"
+        }
+      },
+      {
+        "type": "markets-institutions",
+        "name": "Markets and financial institutions",
+        "how": "Learn regulator and sector pairs (SEBI shares, IRDAI insurance, PFRDA pension) and headquarters of world financial bodies.",
+        "example": {
+          "q": "Where is the headquarters of the Asian Development Bank?",
+          "steps": [
+            "AIIB is in Beijing and NDB in Shanghai.",
+            "ADB is in Manila, Philippines."
+          ],
+          "answer": "Manila"
+        }
       }
     ],
     "tips": [
-      "CPI = consumers = NSO; WPI = wholesale = Commerce Ministry (DPIIT).",
-      "Second Five-Year Plan = Mahalanobis = industry.",
-      "GST: 101st Amendment, 1 July 2017, Article 279A for the Council."
+      "GDP to national income: G, N, N (GDP, GNP, NNP) then 'at factor cost'.",
+      "Repo: RBI lends; reverse repo: RBI borrows. Higher repo means costlier loans and lower inflation.",
+      "CRR is Cash with the RBI; SLR is kept by the bank itself (Statutory Liquidity).",
+      "Plan focus hook: 1 farms, 2 factories (Mahalanobis), 5 Garibi Hatao, 8 after 1991, 12 last.",
+      "Fiscal deficit = borrowing need. Primary deficit = fiscal deficit minus interest.",
+      "HDI's three: long life, knowledge, decent living."
     ],
     "traps": [
-      "CRR is kept with RBI; SLR is kept by the bank itself.",
-      "RBI was founded in 1935 but nationalised only in 1949.",
-      "Fiscal deficit excludes borrowings from receipts — borrowings are what fill the gap."
+      "WPI is released by the Office of the Economic Adviser (DPIIT), but CPI and IIP are released by NSO (MoSPI).",
+      "14 banks were nationalised in 1969 and 6 in 1980; not 20 at once.",
+      "The Re 1 note and coins are issued by the Ministry of Finance, not the RBI.",
+      "Capital expenditure includes loans given by the government, even though no building is made.",
+      "The Planning Commission (1950) was replaced by NITI Aayog in 2015, not 2014."
     ]
   },
   "questions": [
-    { "id": "g-economy-001", "rev": 1, "topic": "g-economy", "type": "banking", "level": 1, "q": "Where is the headquarters of the Reserve Bank of India?", "options": ["New Delhi", "Kolkata", "Mumbai", "Chennai"], "answer": 2, "solution": "RBI's central office is in Mumbai. It was first in Kolkata (Calcutta) and moved to Mumbai in 1937.<br><b>Memory hook:</b> Mumbai = India's money capital = RBI home.", "source": "test-data" },
-    { "id": "g-economy-002", "rev": 1, "topic": "g-economy", "type": "planning-budget", "level": 1, "q": "GST was introduced in India on:", "options": ["1 April 2017", "1 July 2017", "1 January 2018", "1 July 2016"], "answer": 1, "solution": "GST came into force on 1 July 2017 after the 101st Constitutional Amendment (2016).<br><b>Memory hook:</b> 'One nation, one tax' started mid-year: 1-7-17.", "source": "test-data" },
-    { "id": "g-economy-003", "rev": 1, "topic": "g-economy", "type": "concepts", "level": 1, "q": "Which sector includes agriculture and mining?", "options": ["Primary", "Secondary", "Tertiary", "Quaternary"], "answer": 0, "solution": "The primary sector uses natural resources directly: agriculture, fishing, forestry and mining.<br><b>Memory hook:</b> Primary = straight from nature.", "source": "test-data" },
-    { "id": "g-economy-004", "rev": 1, "topic": "g-economy", "type": "banking", "level": 2, "q": "The portion of deposits that banks must keep with the RBI in the form of cash is called:", "options": ["SLR", "Repo rate", "Bank rate", "CRR"], "answer": 3, "solution": "Cash Reserve Ratio (CRR) is kept as cash with RBI. SLR is held by the bank itself in liquid assets such as gold and government securities.<br><b>Memory hook:</b> <b>C</b>RR = <b>C</b>ash with the <b>C</b>entral bank.", "source": "test-data" },
-    { "id": "g-economy-005", "rev": 1, "topic": "g-economy", "type": "concepts", "level": 2, "q": "The Wholesale Price Index (WPI) in India is released by:", "options": ["National Statistics Office", "Reserve Bank of India", "Office of the Economic Adviser, DPIIT", "NITI Aayog"], "answer": 2, "solution": "WPI is released by the Office of the Economic Adviser, Department for Promotion of Industry and Internal Trade (Ministry of Commerce &amp; Industry). CPI is released by NSO.<br><b>Memory hook:</b> Wholesale = trade = Commerce Ministry.", "source": "test-data" },
-    { "id": "g-economy-006", "rev": 1, "topic": "g-economy", "type": "planning-budget", "level": 2, "q": "The Second Five-Year Plan (1956–61) was based on the model of:", "options": ["P.C. Mahalanobis", "Harrod–Domar", "M. Visvesvaraya", "Gadgil"], "answer": 0, "solution": "The Second Plan stressed heavy industry and was based on the P.C. Mahalanobis model. The First Plan used the Harrod–Domar model.<br><b>Memory hook:</b> Second plan = 'Steel' = Mahalanobis.", "source": "test-data" },
-    { "id": "g-economy-007", "rev": 1, "topic": "g-economy", "type": "banking", "level": 3, "q": "How many commercial banks were nationalised in India in July 1969?", "options": ["6", "10", "20", "14"], "answer": 3, "solution": "In July 1969, 14 major commercial banks were nationalised. Six more were nationalised in 1980, making 20.<br><b>Memory hook:</b> 1969 → 14; 1980 → 6; total 20.", "source": "test-data" },
-    { "id": "g-economy-008", "rev": 1, "topic": "g-economy", "type": "concepts", "level": 3, "q": "Fiscal deficit is best defined as:", "options": ["Total expenditure − Revenue receipts", "Total expenditure − Total receipts excluding borrowings", "Revenue expenditure − Revenue receipts", "Fiscal deficit − Interest payments"], "answer": 1, "solution": "Fiscal deficit = Total expenditure − Total receipts excluding borrowings. It shows how much the government must borrow. Option 3 is revenue deficit; option 4 is primary deficit.<br><b>Memory hook:</b> Fiscal deficit = the borrowing need.", "source": "test-data" }
+    {
+      "id": "g-economy-001",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "banking-rbi",
+      "level": 1,
+      "q": "Where is the headquarters of the Reserve Bank of India?",
+      "options": [
+        "New Delhi",
+        "Kolkata",
+        "Mumbai",
+        "Chennai"
+      ],
+      "answer": 2,
+      "solution": "RBI's central office is in Mumbai. It was first in Kolkata (Calcutta) and moved to Mumbai in 1937.<br><b>Memory hook:</b> Mumbai = India's money capital = RBI home.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-economy-002",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "budget-tax-trade",
+      "level": 1,
+      "q": "GST was introduced in India on:",
+      "options": [
+        "1 April 2017",
+        "1 July 2017",
+        "1 January 2018",
+        "1 July 2016"
+      ],
+      "answer": 1,
+      "solution": "GST came into force on 1 July 2017 after the 101st Constitutional Amendment (2016).<br><b>Memory hook:</b> 'One nation, one tax' started mid-year: 1-7-17.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-economy-003",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "basic-concepts",
+      "level": 1,
+      "q": "Which sector includes agriculture and mining?",
+      "options": [
+        "Primary",
+        "Secondary",
+        "Tertiary",
+        "Quaternary"
+      ],
+      "answer": 0,
+      "solution": "The primary sector uses natural resources directly: agriculture, fishing, forestry and mining.<br><b>Memory hook:</b> Primary = straight from nature.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-economy-004",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "banking-rbi",
+      "level": 2,
+      "q": "The portion of deposits that banks must keep with the RBI in the form of cash is called:",
+      "options": [
+        "SLR",
+        "Repo rate",
+        "Bank rate",
+        "CRR"
+      ],
+      "answer": 3,
+      "solution": "Cash Reserve Ratio (CRR) is kept as cash with RBI. SLR is held by the bank itself in liquid assets such as gold and government securities.<br><b>Memory hook:</b> <b>C</b>RR = <b>C</b>ash with the <b>C</b>entral bank.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-economy-005",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "national-income-inflation",
+      "level": 2,
+      "q": "The Wholesale Price Index (WPI) in India is released by:",
+      "options": [
+        "National Statistics Office",
+        "Reserve Bank of India",
+        "Office of the Economic Adviser, DPIIT",
+        "NITI Aayog"
+      ],
+      "answer": 2,
+      "solution": "WPI is released by the Office of the Economic Adviser, Department for Promotion of Industry and Internal Trade (Ministry of Commerce &amp; Industry). CPI is released by NSO.<br><b>Memory hook:</b> Wholesale = trade = Commerce Ministry.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-economy-006",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "planning-reforms",
+      "level": 2,
+      "q": "The Second Five-Year Plan (1956–61) was based on the model of:",
+      "options": [
+        "P.C. Mahalanobis",
+        "Harrod–Domar",
+        "M. Visvesvaraya",
+        "Gadgil"
+      ],
+      "answer": 0,
+      "solution": "The Second Plan stressed heavy industry and was based on the P.C. Mahalanobis model. The First Plan used the Harrod–Domar model.<br><b>Memory hook:</b> Second plan = 'Steel' = Mahalanobis.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-economy-007",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "banking-rbi",
+      "level": 3,
+      "q": "How many commercial banks were nationalised in India in July 1969?",
+      "options": [
+        "6",
+        "10",
+        "20",
+        "14"
+      ],
+      "answer": 3,
+      "solution": "In July 1969, 14 major commercial banks were nationalised. Six more were nationalised in 1980, making 20.<br><b>Memory hook:</b> 1969 → 14; 1980 → 6; total 20.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-economy-008",
+      "rev": 1,
+      "topic": "g-economy",
+      "type": "budget-tax-trade",
+      "level": 3,
+      "q": "Fiscal deficit is best defined as:",
+      "options": [
+        "Total expenditure − Revenue receipts",
+        "Total expenditure − Total receipts excluding borrowings",
+        "Revenue expenditure − Revenue receipts",
+        "Fiscal deficit − Interest payments"
+      ],
+      "answer": 1,
+      "solution": "Fiscal deficit = Total expenditure − Total receipts excluding borrowings. It shows how much the government must borrow. Option 3 is revenue deficit; option 4 is primary deficit.<br><b>Memory hook:</b> Fiscal deficit = the borrowing need.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-economy-1", "front": "RBI established on", "back": "1 April 1935 (nationalised 1949)", "deck": "ga-facts" },
-    { "id": "fc-g-economy-2", "front": "First Indian Governor of RBI", "back": "C.D. Deshmukh", "deck": "ga-facts" },
-    { "id": "fc-g-economy-3", "front": "Members in RBI's Monetary Policy Committee", "back": "6 (chaired by the RBI Governor)", "deck": "ga-facts" },
-    { "id": "fc-g-economy-4", "front": "NITI Aayog formed on", "back": "1 January 2015", "deck": "ga-facts" },
-    { "id": "fc-g-economy-5", "front": "Who compiles CPI in India?", "back": "National Statistics Office (NSO), MoSPI", "deck": "ga-facts" },
-    { "id": "fc-g-economy-6", "front": "GST Council — Article and chair", "back": "Article 279A; Union Finance Minister", "deck": "ga-facts" },
-    { "id": "fc-g-economy-7", "front": "Primary deficit", "back": "Fiscal deficit − Interest payments", "deck": "ga-facts" },
-    { "id": "fc-g-economy-8", "front": "NABARD set up in", "back": "1982", "deck": "ga-facts" },
-    { "id": "fc-g-economy-9", "front": "Father of the White Revolution in India", "back": "Verghese Kurien (Operation Flood)", "deck": "ga-facts" }
+    {
+      "id": "fc-g-economy-1",
+      "front": "RBI established on",
+      "back": "1 April 1935 (nationalised 1949)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-2",
+      "front": "First Indian Governor of RBI",
+      "back": "C.D. Deshmukh",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-3",
+      "front": "Members in RBI's Monetary Policy Committee",
+      "back": "6 (chaired by the RBI Governor)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-4",
+      "front": "NITI Aayog formed on",
+      "back": "1 January 2015",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-5",
+      "front": "Who compiles CPI in India?",
+      "back": "National Statistics Office (NSO), MoSPI",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-6",
+      "front": "GST Council — Article and chair",
+      "back": "Article 279A; Union Finance Minister",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-7",
+      "front": "Primary deficit",
+      "back": "Fiscal deficit − Interest payments",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-8",
+      "front": "NABARD set up in",
+      "back": "1982",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-economy-9",
+      "front": "Father of the White Revolution in India",
+      "back": "Verghese Kurien (Operation Flood)",
+      "deck": "ga-facts"
+    }
   ]
 }

@@ -1,39 +1,249 @@
 {
   "topic": "e-error",
   "notes": {
-    "summary": "In <b>Error Spotting</b> a sentence is split into three parts and a fourth option says <b>No error</b>. Find the part with the grammar mistake. SSC asks 2–3 such questions in Tier 1 and 3–4 in Tier 2, and nearly all of them test a small set of fixed rules.",
+    "summary": "<p>The sentence is split into 3 or 4 parts (sometimes with a <i>No error</i> option). Exactly one part breaks a rule; you pick it. SSC asks 1 to 2 of these in Tier 1 and several in Tier 2, and they come from a small set of rules that repeat every year.</p><p>Method: read the whole sentence once for meaning. Then check, in this order: <b>subject-verb agreement</b>, <b>tense and time words</b>, <b>verb form</b>, <b>pronoun</b>, <b>article</b>, <b>adjective or comparison</b>, <b>preposition</b>, <b>conjunction pair</b>, <b>parallel form</b>, and finally <b>extra words</b>. Most errors are in the verb, so start there. Choose <i>No error</i> only after every part passes.</p>",
     "concepts": [
-      { "title": "Read the whole sentence first", "body": "Do not judge each part alone. Read the full sentence, find the <b>real subject</b> and its <b>main verb</b>, then check the small words.<ol><li>Subject and verb: singular or plural?</li><li>Tense: does it match the time words (<i>yesterday, since, by next year</i>)?</li><li>Articles, prepositions and pronouns.</li><li>Fixed pairs: <i>no sooner…than, hardly…when, not only…but also</i>.</li></ol>" },
-      { "title": "Subject–verb agreement", "body": "The verb agrees with the real subject, not with the nearest noun.<ul><li><i>The quality of the mangoes <b>is</b> good.</i> (subject = quality)</li><li>Words joined by <i>as well as, along with, together with</i> do not change the subject: <i>The teacher, along with his students, <b>was</b> present.</i></li><li><i>Each, every, either, neither, everyone</i> take a singular verb.</li></ul>" },
-      { "title": "Tense and time words", "body": "<ul><li><i>Since / for</i> with a period up to now → present perfect: <i>I <b>have lived</b> here since 2015.</i></li><li>A past time word (<i>yesterday, last year, in 2010</i>) → simple past, never present perfect.</li><li>After <i>if</i> in a future condition, use simple present: <i>If it <b>rains</b>, we will stay in.</i></li></ul>" },
-      { "title": "Pronouns and comparison", "body": "After <i>than / as</i>, the pronoun case follows the hidden verb: <i>He is taller than <b>I</b> (am).</i> After prepositions use the object form: <i>between you and <b>me</b></i>. In comparisons compare like with like: <i>The climate of Shimla is better than <b>that of</b> Delhi.</i>" }
+      {
+        "title": "Subject-verb agreement",
+        "body": "<p>Find the real subject (ignore phrases in between) and match the verb to it.</p><table><thead><tr><th>Rule</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>Phrase between subject and verb is ignored</td><td>The list of selected candidates <b>has</b> been put up.</td><td>The list of selected candidates have been put up.</td></tr><tr><td><i>One of the</i> + plural noun takes a singular verb</td><td>One of these boxes <b>has</b> the portrait.</td><td>One of these boxes have the portrait.</td></tr><tr><td><i>as well as, along with, together with, with, besides, in addition to</i>: verb follows the first subject</td><td>The manager, as well as his assistants, <b>was</b> present.</td><td>The manager, as well as his assistants, were present.</td></tr><tr><td><i>either ... or, neither ... nor, not only ... but also, or, nor</i>: verb follows the nearer subject</td><td>Neither the chairperson nor the counsel <b>was</b> briefed.</td><td>Neither the chairperson nor the counsel were briefed.</td></tr><tr><td><i>each, every, either, neither, everyone, nobody, someone</i> are singular</td><td>Each of the boys <b>has</b> a bag.</td><td>Each of the boys have a bag.</td></tr><tr><td>Two subjects joined by <i>and</i> are plural, unless they name one person or idea</td><td>Bread and butter <b>is</b> my breakfast. The secretary and treasurer <b>has</b> arrived (one person).</td><td>Bread and butter are my breakfast.</td></tr><tr><td><i>The number of</i> is singular; <i>a number of</i> is plural</td><td>The number of cars <b>is</b> rising. A number of cars <b>are</b> parked.</td><td>The number of cars are rising.</td></tr><tr><td>Amounts of time, money and distance are singular</td><td>Ten kilometres <b>is</b> a long walk.</td><td>Ten kilometres are a long walk.</td></tr><tr><td>Third person singular in simple present takes -s</td><td>It <b>rains</b> a lot here. My father <b>gave</b> up smoking (past).</td><td>It rain a lot here. My father give up smoking when I was twelve.</td></tr><tr><td>Relative clause verb agrees with the noun before <i>who/which/that</i></td><td>He is one of those who <b>have</b> succeeded.</td><td>He is one of those who has succeeded.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Tense and time markers",
+        "body": "<ul><li><b>Present perfect never takes a finished past time</b> (yesterday, last month, in 2019, ago).<br>Correct: <i>My uncle <b>visited</b> us last month.</i> Incorrect: <i>My uncle has visited us last month.</i></li><li><b>since / for</b> with perfect tenses: <i>since</i> + a point of time, <i>for</i> + a length of time.<br>Correct: <i>They have lived here <b>for</b> ten years.</i> <i>It has been raining <b>since</b> morning.</i> Incorrect: <i>since ten years, since two hours</i>.</li><li><b>Action that started in the past and continues</b> takes present perfect (continuous), not simple present.<br>Correct: <i>I <b>have known</b> him for years.</i> Incorrect: <i>I know him for years.</i></li><li><b>No will/shall in time and condition clauses</b> (when, if, unless, after, before, as soon as, till).<br>Correct: <i>I will call you when he <b>comes</b>.</i> Incorrect: <i>when he will come</i>.</li><li><b>Sequence of tenses</b>: a past main verb is followed by a past verb in the reported clause.<br>Correct: <i>The newspaper reported how the thieves <b>had entered</b> the house.</i> Incorrect: <i>how the thieves enter the house</i>.<br>Correct: <i>After I <b>retired</b>, I started a second career.</i> Incorrect: <i>After I retire, I started ...</i></li><li><b>Earlier of two past actions</b> takes past perfect: <i>The train <b>had left</b> before we reached.</i></li><li><b>State verbs</b> (know, believe, understand, love, own, belong, seem) are not used in continuous tenses.<br>Correct: <i>I <b>understand</b> your point.</i> Incorrect: <i>I am understanding your point.</i></li><li><b>It is time / It is high time</b> + simple past: <i>It is high time we <b>left</b>.</i></li></ul>"
+      },
+      {
+        "title": "Verb forms and modals",
+        "body": "<table><thead><tr><th>Rule</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td><i>do / does / did</i> + V1</td><td>Little did the committee <b>know</b>.</td><td>Little did the committee knew.</td></tr><tr><td>Modal (can, must, should, may, will) + V1</td><td>You must <b>hurry</b>.</td><td>You must be hurry.</td></tr><tr><td><i>to</i> + V1 (infinitive)</td><td>He wants to <b>go</b>.</td><td>He wants to went.</td></tr><tr><td><i>has / have / had</i> + V3</td><td>She has <b>gone</b>.</td><td>She has went.</td></tr><tr><td>Passive: <i>be</i> form + V3; no <i>was been</i></td><td>A market <b>was being operated</b> / <b>had been operated</b>.</td><td>A market was been operated.</td></tr><tr><td>Verbs followed by -ing: avoid, enjoy, finish, mind, practise, give up, look forward to, object to, be used to, can't help</td><td>He gave up <b>smoking</b>. I look forward to <b>meeting</b> you.</td><td>He gave up to smoke. I look forward to meet you.</td></tr><tr><td>Verbs followed by to + V1: want, decide, hope, refuse, agree, plan, afford, promise</td><td>She decided <b>to leave</b>.</td><td>She decided leaving.</td></tr><tr><td>let, make, help, see, hear + object + V1 (no to)</td><td>Let him <b>go</b>. He made me <b>laugh</b>.</td><td>Let him to go. He made me to laugh.</td></tr><tr><td>Irregular verbs: lie (rest) lay lain; lay (put) laid laid; hang (person) hanged; hang (thing) hung</td><td>He <b>lay</b> on the bed. The murderer was <b>hanged</b>.</td><td>He laid on the bed (no object). The murderer was hung.</td></tr><tr><td><i>had better, would rather</i> + V1</td><td>You had better <b>leave</b>.</td><td>You had better to leave.</td></tr><tr><td><i>used to</i> + V1 (habit); <i>be used to</i> + -ing (accustomed)</td><td>I used to <b>walk</b>. I am used to <b>walking</b>.</td><td>I am used to walk.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Nouns and number",
+        "body": "<ul><li><b>Uncountable nouns</b> have no plural and take a singular verb: <i>information, advice, furniture, luggage, baggage, equipment, machinery, scenery, poetry, evidence, mischief, knowledge, bread, traffic</i>.<br>Correct: <i>Several <b>pieces of evidence</b> were presented.</i> Incorrect: <i>Several of the evidences were presented.</i> Correct: <i>He gave me <b>some advice</b>.</i> Incorrect: <i>He gave me an advice / advices.</i></li><li><b>Plural-looking but singular</b>: <i>news, mathematics, physics, economics, politics</i> (as subjects), <i>innings</i>. <i>The news <b>is</b> true.</i></li><li><b>Always plural</b>: <i>scissors, trousers, spectacles, cattle, police, people, poultry, alms</i>. <i>The cattle <b>are</b> grazing.</i> <i>The police <b>have</b> arrived.</i></li><li><b>Same form in singular and plural</b>: <i>sheep, deer, aircraft, species, series</i>.</li><li><b>Number + noun used as an adjective stays singular</b>: <i>a ten-rupee note, a five-year plan, a two-day trip</i> (not <i>ten-rupees note</i>).</li><li><b>Hundred, thousand, dozen, million after a number</b> take no -s: <i>six hundred crore, two dozen eggs</i>.</li><li><b>Collective nouns</b> (team, jury, committee, family) take a singular verb as one unit and a plural verb when members act separately: <i>The jury <b>has</b> given its verdict.</i> <i>The jury <b>were</b> divided in their opinions.</i></li><li><b>Possessives</b>: <i>whose</i> (belonging), <i>who's</i> (who is). Correct: <i>My friend, <b>whose</b> leg was fractured, has recovered.</i></li></ul>"
+      },
+      {
+        "title": "Pronouns",
+        "body": "<table><thead><tr><th>Rule</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>Object case after prepositions and verbs</td><td>between you and <b>me</b>; Let <b>him and me</b> go.</td><td>between you and I; Let he and I go.</td></tr><tr><td>Subject case before a verb, and after <i>than / as</i> when a verb is understood</td><td>She is taller than <b>I</b> (am).</td><td>She is taller than me (in formal SSC English).</td></tr><tr><td>Do not repeat the subject with a pronoun</td><td>Those who are late <b>will not</b> be allowed.</td><td>Those who are late they will not be allowed.</td></tr><tr><td><i>who</i> for subject, <i>whom</i> for object</td><td>The man <b>whom</b> I met was kind.</td><td>The man who I met was kind (avoid in SSC).</td></tr><tr><td><i>which</i> for things, <i>who</i> for people; <i>that</i> after superlatives, <i>all, only, none</i></td><td>This is the best film <b>that</b> I have seen.</td><td>This is the best film which I have seen.</td></tr><tr><td>Reflexive needed after <i>enjoy, avail, absent, pride, acquit</i></td><td>We enjoyed <b>ourselves</b>. Avail <b>yourself</b> of this chance.</td><td>We enjoyed. Avail of this chance.</td></tr><tr><td>No reflexive after <i>qualify, rest, hide, bathe</i> used without an object</td><td>He qualified for the final.</td><td>He qualified himself for the final.</td></tr><tr><td><i>one</i> takes <i>one's</i></td><td>One must do <b>one's</b> duty.</td><td>One must do his duty.</td></tr><tr><td><i>each, every, either, neither, everyone</i> take a singular pronoun</td><td>Every student must bring <b>his or her</b> book.</td><td>Every student must bring their book (SSC prefers singular).</td></tr><tr><td>Order of personal pronouns: second, third, first (231) for good things; first first for blame</td><td><b>You, he and I</b> will go. <b>I, you and he</b> are to blame.</td><td>I, you and he will go.</td></tr><tr><td><i>each other</i> for two, <i>one another</i> for more than two</td><td>The two brothers love <b>each other</b>.</td><td>The two brothers love one another.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Articles",
+        "body": "<ul><li><b>a / an by sound, not spelling</b>: <i>an hour, an honest man, an MLA, an FIR, an apple</i> but <i>a university, a European, a one-day match, a uniform, a useful book</i>.</li><li><b>No article</b> before uncountable or abstract nouns used in general: <i><b>Honesty</b> is the best policy</i> (not <i>The honesty</i>), before languages, games, meals and most diseases: <i>He plays cricket. We had lunch.</i></li><li><b>the</b> is needed with: superlatives (<i>the best</i>), unique things (<i>the sun, the earth</i>), rivers, seas, oceans, mountain ranges, deserts (<i>the Ganga, the Himalayas, the Thar</i>), musical instruments (<i>plays the flute</i>), ordinals (<i>the first</i>), <i>the only</i>, newspapers and holy books (<i>the Hindu, the Gita</i>), and a noun already mentioned or made definite (<i>the book on the table</i>).</li><li><b>Fixed phrases</b> with <i>the</i>: <i>in the absence of, in the presence of, on the whole, in the end, the rich, the poor</i>.</li><li><b>Fixed phrases without an article</b>: <i>go to school/church/bed/hospital</i> (for its purpose), <i>by bus, at night, in time, on foot</i>.</li><li><b>Wrong extra article</b>: <i>the both</i> (write <i>both the</i>), <i>a few</i> vs <i>few</i> (see the comparison section), <i>such a</i> (not <i>a such</i>).</li></ul><table><thead><tr><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>She bought <b>an</b> apple.</td><td>She bought a apple.</td></tr><tr><td>He is <b>a</b> university professor.</td><td>He is an university professor.</td></tr><tr><td><b>The</b> Ganga is a holy river.</td><td>Ganga is a holy river.</td></tr><tr><td>This is <b>the</b> tallest tower in the city.</td><td>This is tallest tower in the city.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Adjectives, adverbs and comparison",
+        "body": "<table><thead><tr><th>Rule</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>No double comparatives or superlatives</td><td>This is <b>better</b>. She is the <b>cleverest</b>.</td><td>more better; most cleverest</td></tr><tr><td><i>superior, inferior, senior, junior, prior, prefer, preferable</i> take <b>to</b></td><td>Village life is superior <b>to</b> city life.</td><td>superior than city life</td></tr><tr><td><i>than any other</i> + singular noun; compare like with like</td><td>The population of Mumbai is larger than <b>that of</b> any other <b>city</b> in India.</td><td>larger than any other city (compares population with a city)</td></tr><tr><td>Comparative needs <i>than</i>; <i>as ... as</i> for equality</td><td>She is <b>as tall as</b> her brother.</td><td>She is as tall than her brother.</td></tr><tr><td><i>few, a few, the few</i> for countable; <i>little, a little, the little</i> for uncountable</td><td><b>A few</b> students came. I have <b>a little</b> money.</td><td>A little students came.</td></tr><tr><td><i>fewer</i> (countable) vs <i>less</i> (uncountable)</td><td><b>fewer</b> mistakes, <b>less</b> sugar</td><td>less mistakes</td></tr><tr><td><i>much</i> with comparatives and past participles; <i>very</i> with positives and present participles</td><td><b>much</b> better, <b>much</b> surprised, <b>very</b> good, <b>very</b> interesting</td><td>very better, much good</td></tr><tr><td>Adverb (not adjective) modifies a verb</td><td>He runs <b>quickly</b>. She sings <b>well</b>.</td><td>He runs quick. She sings good.</td></tr><tr><td>Linking verbs (look, feel, seem, taste, smell, sound) take adjectives</td><td>The rose smells <b>sweet</b>. I feel <b>bad</b>.</td><td>The rose smells sweetly.</td></tr><tr><td><i>hardly, scarcely, seldom, barely</i> are already negative</td><td>I can <b>hardly</b> see.</td><td>I can't hardly see.</td></tr><tr><td><i>elder / eldest</i> for family; <i>older / oldest</i> for age in general, with <i>than</i></td><td>my <b>elder</b> brother; He is <b>older</b> than me.</td><td>He is elder than me.</td></tr><tr><td><i>later / latter, farther / further</i></td><td><b>later</b> (time), <b>latter</b> (second of two)</td><td>the later of the two</td></tr><tr><td>Absolute adjectives have no comparison: unique, perfect, ideal, complete, round, square</td><td>a <b>unique</b> idea</td><td>a most unique idea</td></tr></tbody></table>"
+      },
+      {
+        "title": "Prepositions",
+        "body": "<p><b>Verbs that take no preposition</b>: <i>discuss, describe, reach, attack, resemble, marry, enter, accompany, order, request, comprise, emphasise, investigate, ask</i>.<br>Correct: <i>We discussed the plan.</i> Incorrect: <i>We discussed about the plan.</i> Correct: <i>The book comprises ten chapters.</i> Incorrect: <i>comprises of</i> (but <i>consists of</i> is right).</p><table><thead><tr><th>Fixed preposition</th><th>Example</th></tr></thead><tbody><tr><td>married <b>to</b>, divorced <b>from</b></td><td>She is married to a doctor.</td></tr><tr><td>angry <b>with</b> a person, <b>at</b> a thing</td><td>He was angry with me at my delay.</td></tr><tr><td>accused <b>of</b>, charged <b>with</b></td><td>He was accused of theft.</td></tr><tr><td>afraid <b>of</b>, aware <b>of</b>, capable <b>of</b>, fond <b>of</b>, proud <b>of</b></td><td>She is capable of doing it.</td></tr><tr><td>different <b>from</b>, free <b>from</b>, prevent <b>from</b>, refrain <b>from</b></td><td>This dress is different from that one.</td></tr><tr><td>good <b>at</b>, surprised <b>at</b>, arrive <b>at</b> (place) / <b>in</b> (city, country)</td><td>He arrived in Delhi.</td></tr><tr><td>interested <b>in</b>, confidence <b>in</b>, believe <b>in</b>, succeed <b>in</b></td><td>I believe in hard work.</td></tr><tr><td>depend <b>on</b>, insist <b>on</b>, congratulate <b>on</b>, comment <b>on</b></td><td>I congratulate you on your success.</td></tr><tr><td>agree <b>with</b> a person, <b>to</b> a proposal</td><td>I agree with you; he agreed to the plan.</td></tr><tr><td>apologise <b>to</b> a person <b>for</b> a fault</td><td>He apologised to the teacher for the delay.</td></tr><tr><td>abstain <b>from</b>, deprive <b>of</b>, die <b>of</b> (disease) / <b>from</b> (wound)</td><td>He died of malaria.</td></tr><tr><td>on behalf <b>of</b> a person; to spread awareness <b>about</b> a matter</td><td>Film stars appeared on TV to spread awareness about hand hygiene.</td></tr></tbody></table><p><b>Time</b>: <i>at</i> + clock time, <i>on</i> + day or date, <i>in</i> + month, year, season. <i>by</i> = not later than; <i>till/until</i> = up to.<br><b>Between / among</b>: <i>between</i> two, <i>among</i> more than two.<br><b>Preposition vs conjunction</b>: <i>during, despite, because of</i> take a noun, not a clause. Correct: <i>We stayed in Jim's flat <b>while</b> he was on holiday.</i> Incorrect: <i>during he was on holiday</i>.</p>"
+      },
+      {
+        "title": "Conjunctions and connectors",
+        "body": "<table><thead><tr><th>Pair</th><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td><i>No sooner ... than</i></td><td>No sooner had the bell rung <b>than</b> the children rushed out.</td><td>No sooner ... when</td></tr><tr><td><i>Hardly / Scarcely / Barely ... when</i></td><td>Hardly had we reached <b>when</b> the train left.</td><td>Hardly ... than</td></tr><tr><td><i>Although / Though ... (yet or a comma)</i></td><td>Although he was poor, he was honest.</td><td>Although he was poor, but he was honest.</td></tr><tr><td><i>Not only ... but also</i> (same position before each part)</td><td>She is not only <b>clever but also</b> hard-working.</td><td>Not only she is clever but also hard-working.</td></tr><tr><td><i>Both ... and</i></td><td>Both Ram <b>and</b> Shyam came.</td><td>Both Ram as well as Shyam came.</td></tr><tr><td><i>Either ... or, neither ... nor</i></td><td>Neither he <b>nor</b> his friend came.</td><td>Neither he or his friend came.</td></tr><tr><td><i>Unless</i> is already negative (= if not)</td><td>Unless you <b>do</b> your homework, you will be punished.</td><td>Unless you did not do your homework ...</td></tr><tr><td><i>Lest ... should</i></td><td>Walk carefully lest you <b>should</b> fall.</td><td>lest you should not fall; lest you will fall</td></tr><tr><td><i>Such ... that / so ... that</i>; <i>such ... as</i></td><td>He is <b>so</b> weak <b>that</b> he cannot walk.</td><td>He is so weak but he cannot walk.</td></tr><tr><td><i>Whether ... or not</i> (never <i>or no</i>)</td><td>I don't know <b>whether</b> he will come <b>or</b> not.</td><td>I don't know whether he will come or no.</td></tr><tr><td><i>Rather / other ... than</i></td><td>I would rather walk <b>than</b> wait.</td><td>I would rather walk instead of wait.</td></tr><tr><td><i>The reason is that</i></td><td>The reason is <b>that</b> he was ill.</td><td>The reason is because he was ill.</td></tr><tr><td>Logical link: <i>so</i> (result), <i>but</i> (contrast), <i>or else / otherwise</i> (warning)</td><td>Take an umbrella, <b>or</b> you will get wet.</td><td>Take an umbrella, but you will get wet.</td></tr><tr><td><i>as</i> + clause needs a subject and verb</td><td>She got married <b>when she</b> was 23.</td><td>She got married as her was 23.</td></tr></tbody></table>"
+      },
+      {
+        "title": "Parallel structure",
+        "body": "<p>Items joined by <i>and, or, but, than, not only ... but also, either ... or</i> must have the same grammatical form.</p><table><thead><tr><th>Correct</th><th>Incorrect</th></tr></thead><tbody><tr><td>The winds swept away roads and <b>knocked</b> down power lines.</td><td>The winds swept away roads and knocking down power lines.</td></tr><tr><td>She likes reading, writing and <b>singing</b>.</td><td>She likes reading, writing and to sing.</td></tr><tr><td>It surprised not only the staff but also <b>the stakeholders</b>.</td><td>It surprised not only the staff but also to the stakeholders.</td></tr><tr><td>He is busy acquiring wealth and <b>designing</b> ways to invest it.</td><td>(already parallel: acquiring ... and designing)</td></tr><tr><td>The climate of Delhi is hotter than <b>that of</b> Shimla.</td><td>The climate of Delhi is hotter than Shimla.</td></tr><tr><td>I would rather die than <b>beg</b>.</td><td>I would rather die than begging.</td></tr></tbody></table><p>A parallel error often hides in the last part of a sentence. Compare it with the first item in the list.</p>"
+      },
+      {
+        "title": "Redundancy and usage",
+        "body": "<p>Words that repeat a meaning already present are errors in SSC.</p><table><thead><tr><th>Incorrect</th><th>Correct</th></tr></thead><tbody><tr><td>return back, revert back, reply back</td><td>return, revert, reply</td></tr><tr><td>repeat again</td><td>repeat</td></tr><tr><td>cousin brother / cousin sister</td><td>cousin</td></tr><tr><td>The reason is because</td><td>The reason is that</td></tr><tr><td>Each and every one of them</td><td>Each of them / Every one of them</td></tr><tr><td>more superior, most perfect</td><td>superior, perfect</td></tr><tr><td>He is also coming too.</td><td>He is also coming. / He is coming too.</td></tr><tr><td>Discuss about, mention about</td><td>discuss, mention</td></tr><tr><td>Since 2015 onwards</td><td>Since 2015 / From 2015 onwards</td></tr><tr><td>Unless you do not work</td><td>Unless you work</td></tr><tr><td>Though ... but</td><td>Though ... yet / Though ..., ...</td></tr><tr><td>I don't know nothing</td><td>I don't know anything</td></tr></tbody></table><p><b>Confused words</b>: <i>lose</i> (verb) / <i>loose</i> (adjective); <i>beside</i> (next to) / <i>besides</i> (in addition); <i>affect</i> (verb) / <i>effect</i> (noun); <i>principal</i> (head, main) / <i>principle</i> (rule); <i>its</i> (possessive) / <i>it's</i> (it is); <i>quiet</i> / <i>quite</i>; <i>stationary</i> (not moving) / <i>stationery</i> (paper goods).</p>"
+      },
+      {
+        "title": "Sentence-choice questions",
+        "body": "<p>Some papers instead ask: <i>Select the sentence with the appropriate use of preposition / article / adverb</i>. Treat each option as a separate error-spotting question on that one area.</p><ul><li><b>Article</b>: <i>She purchased <b>an</b> apple</i> (not <i>a apple</i>).</li><li><b>Preposition</b>: <i>The lion and the unicorn fought <b>for</b> the crown</i> (fight for a prize).</li><li><b>Adverb of manner</b> describes how: <i>He does his work <b>carefully</b></i>.</li><li><b>Adverb of frequency</b> sits before the main verb and after <i>be</i>: <i>Radha <b>often</b> goes to Nagpur. She is <b>always</b> late.</i></li></ul><p>Rule out options with a second, unrelated error first; the answer must be fully correct.</p>"
+      }
     ],
     "varieties": [
-      { "type": "subject-verb", "name": "Subject–verb agreement", "how": "Find the true subject (skip phrases with <i>of, along with, as well as</i>) and match the verb to it.", "example": { "q": "(A) One of my friends / (B) have gone / (C) to Canada for studies. / (D) No error", "steps": ["Real subject is <i>One</i>, which is singular.", "<i>have gone</i> must be <i>has gone</i>."], "answer": "(B)" } },
-      { "type": "tense", "name": "Tense errors", "how": "Look for time words. <i>Since/for</i> → perfect tense; a fixed past time → simple past; <i>if</i>-clause about future → simple present.", "example": { "q": "(A) I have seen / (B) that film / (C) last Sunday. / (D) No error", "steps": ["<i>last Sunday</i> is a fixed past time.", "Use simple past: <i>I saw</i>."], "answer": "(A)" } },
-      { "type": "pronoun-preposition", "name": "Pronouns, prepositions and comparison", "how": "Check pronoun case after prepositions and <i>than</i>; check fixed prepositions (<i>superior to, prefer to, married to</i>); compare like with like.", "example": { "q": "(A) This matter is / (B) strictly between / (C) you and I. / (D) No error", "steps": ["<i>between</i> is a preposition, so it needs the object form.", "<i>you and I</i> → <i>you and me</i>."], "answer": "(C)" } }
+      {
+        "type": "subject-verb",
+        "name": "Subject-verb agreement",
+        "how": "Find the true subject (skip the <i>of ...</i> phrase and <i>as well as ...</i> part), then check that the verb matches its number.",
+        "example": {
+          "q": "One of these / boxes have / the portrait / of the heiress.",
+          "steps": [
+            "Subject is <i>One</i> (of these boxes), which is singular.",
+            "<i>have</i> is plural, so it is wrong.",
+            "Correct: <i>One of these boxes has the portrait</i>."
+          ],
+          "answer": "boxes have"
+        }
+      },
+      {
+        "type": "tense",
+        "name": "Tense and time markers",
+        "how": "Look for time words (yesterday, last, ago, since, for, when, if) and check that the tense fits them and the other clause.",
+        "example": {
+          "q": "They have lived / in this apartment / since ten years. / No error",
+          "steps": [
+            "<i>ten years</i> is a length of time.",
+            "Length of time takes <i>for</i>; <i>since</i> needs a starting point.",
+            "Correct: <i>for ten years</i>."
+          ],
+          "answer": "since ten years"
+        }
+      },
+      {
+        "type": "verb-forms",
+        "name": "Verb forms and modals",
+        "how": "After do/did, a modal or to, the verb must be V1; after has/have/had, it must be V3. Check gerund vs infinitive after verbs like avoid, give up, want.",
+        "example": {
+          "q": "Little did the committee knew / about the hidden liabilities / when it approved the merger / late last quarter.",
+          "steps": [
+            "<i>did</i> is followed by V1.",
+            "<i>knew</i> is V2, so it is wrong.",
+            "Correct: <i>Little did the committee know</i>."
+          ],
+          "answer": "Little did the committee knew"
+        }
+      },
+      {
+        "type": "nouns",
+        "name": "Nouns and number",
+        "how": "Check uncountable nouns (information, advice, evidence, furniture) for a wrong plural, and number + noun adjectives (a ten-rupee note) for a wrong -s.",
+        "example": {
+          "q": "Several of the evidences / presented during the hearing / were considered circumstantial at best / and irrelevant at worst.",
+          "steps": [
+            "<i>evidence</i> is uncountable and has no plural.",
+            "<i>evidences</i> is wrong.",
+            "Correct: <i>Several pieces of the evidence</i> or <i>Much of the evidence</i>."
+          ],
+          "answer": "Several of the evidences"
+        }
+      },
+      {
+        "type": "pronouns",
+        "name": "Pronouns",
+        "how": "Check case (I/me), a pronoun that repeats the subject, who/whom, reflexives, and that the pronoun matches its noun.",
+        "example": {
+          "q": "Those who are late / they will not be allowed / in the classroom. / No error",
+          "steps": [
+            "Subject is <i>Those who are late</i>.",
+            "<i>they</i> repeats the same subject.",
+            "Correct: <i>Those who are late will not be allowed in the classroom</i>."
+          ],
+          "answer": "they will not be allowed"
+        }
+      },
+      {
+        "type": "articles",
+        "name": "Articles",
+        "how": "Use a/an by sound; add <i>the</i> for superlatives, unique things, rivers, instruments and fixed phrases; drop it before general abstract nouns.",
+        "example": {
+          "q": "He was appointed / as an university lecturer / after he completed / his doctorate.",
+          "steps": [
+            "<i>university</i> starts with a <i>yoo</i> sound (a consonant sound).",
+            "So it takes <i>a</i>, not <i>an</i>.",
+            "Correct: <i>a university lecturer</i>."
+          ],
+          "answer": "as an university lecturer"
+        }
+      },
+      {
+        "type": "adjectives-adverbs",
+        "name": "Adjectives, adverbs and comparison",
+        "how": "Check comparisons (than, to, as ... as, than that of), double comparatives, few/little, much/very, and adjective vs adverb.",
+        "example": {
+          "q": "Many people believe that / village life is superior / than city life.",
+          "steps": [
+            "<i>superior</i> is a Latin comparative.",
+            "It takes <i>to</i>, not <i>than</i>.",
+            "Correct: <i>superior to city life</i>."
+          ],
+          "answer": "than city life"
+        }
+      },
+      {
+        "type": "prepositions",
+        "name": "Prepositions",
+        "how": "Check fixed prepositions after verbs, nouns and adjectives, verbs that take none (discuss, reach), and words like during/despite used before a clause.",
+        "example": {
+          "q": "We stayed / in Jim's flat / during he was / on holiday.",
+          "steps": [
+            "<i>during</i> is a preposition and must be followed by a noun.",
+            "<i>he was on holiday</i> is a clause, which needs a conjunction.",
+            "Correct: <i>while he was on holiday</i>."
+          ],
+          "answer": "during he was"
+        }
+      },
+      {
+        "type": "conjunctions",
+        "name": "Conjunctions and connectors",
+        "how": "Check the pair (no sooner ... than, hardly ... when, although without but, unless without not, lest ... should) and whether the link fits the logic.",
+        "example": {
+          "q": "No sooner had the bell rung / when the children rushed / out of their classrooms.",
+          "steps": [
+            "<i>No sooner</i> is always paired with <i>than</i>.",
+            "<i>when</i> is wrong here.",
+            "Correct: <i>than the children rushed</i>."
+          ],
+          "answer": "when the children rushed"
+        }
+      },
+      {
+        "type": "parallelism",
+        "name": "Parallel structure",
+        "how": "Find the joining word, list the items it joins, and check that they all have the same form (all -ed, all -ing, all noun phrases).",
+        "example": {
+          "q": "Torrential rains and winds / swept away roads, homes and bridges / and knocking down / power and communication lines.",
+          "steps": [
+            "<i>swept away ... and knocking down</i> are joined by <i>and</i>.",
+            "<i>swept</i> is past tense; <i>knocking</i> is not parallel.",
+            "Correct: <i>and knocked down</i>."
+          ],
+          "answer": "and knocking down"
+        }
+      },
+      {
+        "type": "redundancy",
+        "name": "Redundancy and usage",
+        "how": "Look for words that repeat a meaning (return back, repeat again, reason ... because) or a confused word (lose/loose).",
+        "example": {
+          "q": "The reason he failed / is because / he did not / prepare well.",
+          "steps": [
+            "<i>reason</i> already means <i>because</i>.",
+            "<i>The reason is because</i> repeats the idea.",
+            "Correct: <i>The reason he failed is that ...</i>"
+          ],
+          "answer": "is because"
+        }
+      }
     ],
     "tips": [
-      "Always locate the subject–verb pair first; it is the most tested rule.",
-      "Mark 'No error' only after you have checked articles, prepositions and tense; SSC does use it as the correct answer sometimes.",
-      "Words like <i>superior, inferior, senior, junior, prefer</i> take <b>to</b>, not <b>than</b>."
+      "Start with the verb of every part. More than half of SSC error questions are agreement, tense or verb form.",
+      "Cross out phrases between the subject and the verb (of the candidates, as well as his assistants) before checking agreement.",
+      "Time words are clues: yesterday or ago rules out the present perfect; since needs a point of time.",
+      "When a sentence starts with a negative word (No sooner, Hardly, Never, Little, Seldom), expect inversion: 'Never have I seen', 'Little did he know'.",
+      "Learn the fixed prepositions list; one-word preposition errors are the easiest marks once memorised.",
+      "If the sentence reads naturally after two passes and every rule checks out, choose No error. It is the answer in a fair number of questions.",
+      "In comparisons, check that like is compared with like: 'than that of', 'than those of'."
     ],
     "traps": [
-      "The noun closest to the verb is often a decoy: in <i>The box of pencils is…</i> the verb follows <i>box</i>, not <i>pencils</i>.",
-      "<i>Hardly</i> and <i>scarcely</i> pair with <b>when</b>, but <i>no sooner</i> pairs with <b>than</b>."
+      "The error part may look fine on its own; it is wrong only with another part (since + ten years, No sooner + when). Read across the slash.",
+      "As well as, along with and together with do not make the subject plural.",
+      "Neither ... nor and either ... or take the verb of the nearer subject, not always singular.",
+      "Uncountable nouns (information, advice, furniture, evidence) never take -s, even when the sentence clearly means many.",
+      "Than any other city is not enough when comparing a feature; you need 'than that of any other city'.",
+      "Unless and lest are already negative; an extra not after them is the error."
     ]
   },
   "questions": [
-    { "id": "e-error-001", "rev": 1, "topic": "e-error", "type": "subject-verb", "level": 1, "q": "Identify the part of the sentence that contains an error.<br>The list of selected candidates / have been put up / on the notice board.", "options": ["The list of selected candidates", "have been put up", "on the notice board", "No error"], "answer": 1, "solution": "The subject is <b>list</b> (singular); <i>of selected candidates</i> only describes it. So the verb should be <b>has been put up</b>.", "source": "test-data" },
-    { "id": "e-error-002", "rev": 1, "topic": "e-error", "type": "tense", "level": 1, "q": "Identify the part of the sentence that contains an error.<br>My uncle has visited us / last month and stayed / for a week.", "options": ["My uncle has visited us", "last month and stayed", "for a week", "No error"], "answer": 0, "solution": "<i>last month</i> is a fixed point in the past, so the simple past is needed: <b>My uncle visited us</b>. Present perfect cannot be used with a definite past time.", "source": "test-data" },
-    { "id": "e-error-003", "rev": 1, "topic": "e-error", "type": "subject-verb", "level": 2, "q": "Identify the part of the sentence that contains an error.<br>The manager, as well as his assistants, / were present / at the annual meeting.", "options": ["The manager, as well as his assistants,", "were present", "at the annual meeting", "No error"], "answer": 1, "solution": "When two nouns are joined by <i>as well as</i>, the verb agrees with the first noun. <b>The manager</b> is singular, so use <b>was present</b>.", "source": "test-data" },
-    { "id": "e-error-004", "rev": 1, "topic": "e-error", "type": "pronoun-preposition", "level": 2, "q": "Identify the part of the sentence that contains an error.<br>Many people believe that / village life is superior / than city life.", "options": ["Many people believe that", "village life is superior", "than city life", "No error"], "answer": 2, "solution": "<i>Superior</i> is a Latin comparative and takes <b>to</b>, not <i>than</i>: <b>superior to city life</b>.", "source": "test-data" },
-    { "id": "e-error-005", "rev": 1, "topic": "e-error", "type": "tense", "level": 3, "q": "Identify the part of the sentence that contains an error.<br>No sooner had the bell rung / when the children rushed / out of their classrooms.", "options": ["No sooner had the bell rung", "when the children rushed", "out of their classrooms", "No error"], "answer": 1, "solution": "<i>No sooner</i> is always followed by <b>than</b>, not <i>when</i>: <b>than the children rushed</b>. (<i>Hardly/Scarcely</i> take <i>when</i>.)", "source": "test-data" },
-    { "id": "e-error-006", "rev": 1, "topic": "e-error", "type": "pronoun-preposition", "level": 3, "q": "Identify the part of the sentence that contains an error.<br>The population of Mumbai / is larger than / any other city in India.", "options": ["The population of Mumbai", "is larger than", "any other city in India", "No error"], "answer": 2, "solution": "We must compare population with population, not population with a city. Correct: <b>that of any other city in India</b>.", "source": "test-data" }
+    {"id":"e-error-001","rev":1,"topic":"e-error","type":"subject-verb","level":1,"q":"Identify the part of the sentence that contains an error.<br>The list of selected candidates / have been put up / on the notice board.","options":["The list of selected candidates","have been put up","on the notice board","No error"],"answer":1,"solution":"The subject is <b>list</b> (singular); <i>of selected candidates</i> only describes it. So the verb should be <b>has been put up</b>.","source":"test-data"},
+    {"id":"e-error-002","rev":1,"topic":"e-error","type":"tense","level":1,"q":"Identify the part of the sentence that contains an error.<br>My uncle has visited us / last month and stayed / for a week.","options":["My uncle has visited us","last month and stayed","for a week","No error"],"answer":0,"solution":"<i>last month</i> is a fixed point in the past, so the simple past is needed: <b>My uncle visited us</b>. Present perfect cannot be used with a definite past time.","source":"test-data"},
+    {"id":"e-error-003","rev":1,"topic":"e-error","type":"subject-verb","level":2,"q":"Identify the part of the sentence that contains an error.<br>The manager, as well as his assistants, / were present / at the annual meeting.","options":["The manager, as well as his assistants,","were present","at the annual meeting","No error"],"answer":1,"solution":"When two nouns are joined by <i>as well as</i>, the verb agrees with the first noun. <b>The manager</b> is singular, so use <b>was present</b>.","source":"test-data"},
+    {"id":"e-error-004","rev":1,"topic":"e-error","type":"adjectives-adverbs","level":2,"q":"Identify the part of the sentence that contains an error.<br>Many people believe that / village life is superior / than city life.","options":["Many people believe that","village life is superior","than city life","No error"],"answer":2,"solution":"<i>Superior</i> is a Latin comparative and takes <b>to</b>, not <i>than</i>: <b>superior to city life</b>.","source":"test-data"},
+    {"id":"e-error-005","rev":1,"topic":"e-error","type":"conjunctions","level":3,"q":"Identify the part of the sentence that contains an error.<br>No sooner had the bell rung / when the children rushed / out of their classrooms.","options":["No sooner had the bell rung","when the children rushed","out of their classrooms","No error"],"answer":1,"solution":"<i>No sooner</i> is always followed by <b>than</b>, not <i>when</i>: <b>than the children rushed</b>. (<i>Hardly/Scarcely</i> take <i>when</i>.)","source":"test-data"},
+    {"id":"e-error-006","rev":1,"topic":"e-error","type":"adjectives-adverbs","level":3,"q":"Identify the part of the sentence that contains an error.<br>The population of Mumbai / is larger than / any other city in India.","options":["The population of Mumbai","is larger than","any other city in India","No error"],"answer":2,"solution":"We must compare population with population, not population with a city. Correct: <b>that of any other city in India</b>.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-error-1", "front": "No sooner … ?", "back": "No sooner … <b>than</b> (Hardly / Scarcely … <b>when</b>)", "deck": "grammar" },
-    { "id": "fc-e-error-2", "front": "Verb after 'A, as well as B'", "back": "Agrees with <b>A</b> (the first subject).", "deck": "grammar" },
-    { "id": "fc-e-error-3", "front": "superior / inferior / prefer — which preposition?", "back": "<b>to</b> (never 'than')", "deck": "grammar" }
+    {"id":"fc-e-error-1","front":"No sooner … ?","back":"No sooner … <b>than</b> (Hardly / Scarcely … <b>when</b>)","deck":"grammar"},
+    {"id":"fc-e-error-2","front":"Verb after 'A, as well as B'","back":"Agrees with <b>A</b> (the first subject).","deck":"grammar"},
+    {"id":"fc-e-error-3","front":"superior / inferior / prefer — which preposition?","back":"<b>to</b> (never 'than')","deck":"grammar"},
+    {"id":"fc-e-error-4","front":"One of the + ___ + verb","back":"One of the + <b>plural noun</b> + <b>singular verb</b>: <i>One of these boxes has ...</i>","deck":"grammar"},
+    {"id":"fc-e-error-5","front":"Neither A nor B + verb","back":"Verb agrees with the <b>nearer</b> subject (B).","deck":"grammar"},
+    {"id":"fc-e-error-6","front":"since or for?","back":"<b>since</b> + point of time (since 2015), <b>for</b> + length of time (for ten years)","deck":"grammar"},
+    {"id":"fc-e-error-7","front":"Uncountable nouns SSC makes plural","back":"information, advice, furniture, luggage, baggage, equipment, evidence, scenery, machinery, poetry, mischief, news — never add -s","deck":"grammar"},
+    {"id":"fc-e-error-8","front":"Lest ... ?","back":"lest + <b>should</b> + V1 (never <i>not</i>): <i>Work hard lest you should fail.</i>","deck":"grammar"},
+    {"id":"fc-e-error-9","front":"Verbs that take no preposition","back":"discuss, describe, reach, attack, resemble, marry, enter, accompany, order, request, comprise","deck":"grammar"},
+    {"id":"fc-e-error-10","front":"Though / although pair","back":"Although ... <b>yet</b> or just a comma — never <i>although ... but</i>","deck":"grammar"}
   ]
 }

@@ -1,79 +1,176 @@
 {
  "topic": "st-random",
  "notes": {
-  "summary": "A random variable assigns a number to each outcome. JSO asks on expectation and variance, and on the three standard distributions: binomial, Poisson and normal (mean, variance, probabilities and properties).",
+  "summary": "A random variable gives a number to each outcome of an experiment. Paper 2 asks you to work with probability mass and density functions, find expectation and variance, and use the standard distributions: binomial, Poisson, geometric, negative binomial and hypergeometric (discrete) and uniform, exponential and normal (continuous). Know each distribution's formula, mean, variance and special properties.",
   "concepts": [
    {
-    "title": "Expectation and variance",
-    "body": "<ul><li>E(X) = Σx p(x); E(X²) = Σx² p(x).</li><li>Var(X) = E(X²) − [E(X)]².</li><li>E(aX + b) = aE(X) + b; Var(aX + b) = a² Var(X).</li></ul>"
+    "title": "Random variables",
+    "body": "<ul><li>A <b>random variable</b> X is a rule that gives a real number to each outcome. Toss 2 coins and let X = number of heads: X takes 0, 1 or 2.</li><li><b>Discrete</b>: takes countable values (0, 1, 2, …). Described by a <b>probability mass function</b> (pmf) p(x) = P(X = x), with p(x) ≥ 0 and Σp(x) = 1.</li><li><b>Continuous</b>: takes any value in an interval. Described by a <b>probability density function</b> (pdf) f(x) ≥ 0 with ∫f(x)dx = 1 over the whole range. P(a &lt; X &lt; b) = ∫<sub>a</sub><sup>b</sup> f(x)dx, and P(X = a) = 0 for any single point.</li><li><b>Cumulative distribution function</b> (cdf) F(x) = P(X ≤ x). It never decreases, F(−∞) = 0, F(+∞) = 1, and P(a &lt; X ≤ b) = F(b) − F(a). For continuous X, f(x) = F′(x).</li></ul>"
    },
    {
-    "title": "Binomial and Poisson",
-    "body": "<ul><li><b>Binomial</b> B(n, p): P(X = r) = <sup>n</sup>C<sub>r</sub> p<sup>r</sup> q<sup>n−r</sup>, q = 1 − p. Mean = np, variance = npq. Mean &gt; variance.</li><li><b>Poisson</b> (λ): P(X = r) = e<sup>−λ</sup>λ<sup>r</sup>/r!. Mean = variance = λ. Limit of binomial when n is large and p small (λ = np).</li></ul>"
+    "title": "Expectation and variance",
+    "body": "<ul><li>Discrete: <b>E(X) = Σ x p(x)</b>. Continuous: E(X) = ∫ x f(x)dx.</li><li><b>Var(X) = E(X²) − [E(X)]²</b>; SD = √Var(X).</li><li>E(aX + b) = aE(X) + b; Var(aX + b) = a² Var(X). Adding a constant does not change the variance.</li><li>E(X + Y) = E(X) + E(Y) always.</li><li>If X and Y are independent: E(XY) = E(X)E(Y) and Var(X ± Y) = Var(X) + Var(Y) (plus in both cases).</li></ul><p>Example: X = 0, 1, 2 with probabilities k, 2k, 3k. Then 6k = 1, k = 1/6. E(X) = (0 + 2 + 6)/6 = 4/3. E(X²) = (0 + 2 + 12)/6 = 7/3. Var(X) = 7/3 − 16/9 = 5/9.</p>"
+   },
+   {
+    "title": "Moment generating function",
+    "body": "<ul><li>M<sub>X</sub>(t) = E(e<sup>tX</sup>). The r-th raw moment is the r-th derivative of M at t = 0, so M′(0) = E(X).</li><li>M<sub>aX+b</sub>(t) = e<sup>bt</sup> M<sub>X</sub>(at). For independent X, Y: M<sub>X+Y</sub>(t) = M<sub>X</sub>(t) M<sub>Y</sub>(t).</li></ul><table><tr><th>Distribution</th><th>MGF</th></tr><tr><td>Binomial (n, p)</td><td>(q + pe<sup>t</sup>)<sup>n</sup></td></tr><tr><td>Poisson (λ)</td><td>e<sup>λ(e<sup>t</sup> − 1)</sup></td></tr><tr><td>Normal (μ, σ²)</td><td>e<sup>μt + σ²t²/2</sup></td></tr><tr><td>Exponential (λ)</td><td>λ/(λ − t), t &lt; λ</td></tr></table>"
+   },
+   {
+    "title": "Binomial distribution",
+    "body": "<p>Use when there are n independent trials, each a success (probability p) or failure (q = 1 − p).</p><ul><li><b>P(X = r) = <sup>n</sup>C<sub>r</sub> p<sup>r</sup> q<sup>n−r</sup></b>, r = 0, 1, …, n.</li><li>Mean = np, variance = npq, SD = √(npq). Since q &lt; 1, <b>variance &lt; mean</b>.</li><li>Symmetric when p = ½; positively skewed when p &lt; ½; negatively skewed when p &gt; ½.</li><li>From mean and variance: q = variance ÷ mean, p = 1 − q, n = mean ÷ p.</li></ul><p>Example: n = 10, p = 0.4. Mean = 4, variance = 10 × 0.4 × 0.6 = 2.4.</p>"
+   },
+   {
+    "title": "Poisson distribution",
+    "body": "<p>Counts of rare events in a fixed interval (misprints per page, accidents per day).</p><ul><li><b>P(X = r) = e<sup>−λ</sup> λ<sup>r</sup> / r!</b>, r = 0, 1, 2, …</li><li><b>Mean = variance = λ</b>.</li><li>Limit of binomial when n is large, p is small and np = λ stays fixed.</li><li>Sum of independent Poisson variables is Poisson with λ = λ<sub>1</sub> + λ<sub>2</sub>.</li><li>Recurrence: P(r + 1) = P(r) × λ/(r + 1).</li><li>Always positively skewed.</li></ul><p>Example: λ = 2. P(0) = e<sup>−2</sup> ≈ 0.1353, P(1) = 2e<sup>−2</sup> ≈ 0.2707, P(2) = 2e<sup>−2</sup> ≈ 0.2707.</p>"
+   },
+   {
+    "title": "Geometric, negative binomial and hypergeometric",
+    "body": "<table><tr><th>Distribution</th><th>Counts</th><th>P(X = x)</th><th>Mean</th><th>Variance</th></tr><tr><td>Geometric</td><td>Trial on which the first success comes (x = 1, 2, …)</td><td>q<sup>x−1</sup>p</td><td>1/p</td><td>q/p²</td></tr><tr><td>Geometric (other form)</td><td>Failures before the first success (x = 0, 1, …)</td><td>q<sup>x</sup>p</td><td>q/p</td><td>q/p²</td></tr><tr><td>Negative binomial</td><td>Failures before the r-th success</td><td><sup>x+r−1</sup>C<sub>x</sub> p<sup>r</sup>q<sup>x</sup></td><td>rq/p</td><td>rq/p²</td></tr><tr><td>Hypergeometric</td><td>Successes in n draws <b>without replacement</b> from N items with M successes</td><td><sup>M</sup>C<sub>x</sub> <sup>N−M</sup>C<sub>n−x</sub> / <sup>N</sup>C<sub>n</sub></td><td>nM/N</td><td>n(M/N)(1 − M/N)(N − n)/(N − 1)</td></tr></table><p>The geometric distribution is <b>memoryless</b>: past failures do not change the chance of future success.</p>"
+   },
+   {
+    "title": "Uniform and exponential distributions",
+    "body": "<table><tr><th></th><th>Uniform on (a, b)</th><th>Exponential (rate λ)</th></tr><tr><td>pdf</td><td>1/(b − a) for a &lt; x &lt; b</td><td>λe<sup>−λx</sup> for x ≥ 0</td></tr><tr><td>Mean</td><td>(a + b)/2</td><td>1/λ</td></tr><tr><td>Variance</td><td>(b − a)²/12</td><td>1/λ²</td></tr><tr><td>Useful</td><td>P(c &lt; X &lt; d) = (d − c)/(b − a)</td><td>P(X &gt; x) = e<sup>−λx</sup>; memoryless</td></tr></table><p>Example: X uniform on (2, 8): mean 5, variance 36/12 = 3, P(3 &lt; X &lt; 5) = 2/6 = 1/3.</p>"
    },
    {
     "title": "Normal distribution",
-    "body": "<ul><li>Bell-shaped and symmetric; mean = median = mode; β<sub>2</sub> = 3.</li><li>Standardise: Z = (X − μ)/σ, Z ~ N(0, 1).</li><li>μ ± σ covers 68.27%, μ ± 2σ covers 95.45%, μ ± 3σ covers 99.73%.</li><li>Useful areas: P(0 &lt; Z &lt; 1) = 0.3413, P(0 &lt; Z &lt; 1.96) = 0.475, P(0 &lt; Z &lt; 2) = 0.4772.</li></ul>",
-    "img": "statistics/normal-curve.svg"
+    "body": "<ul><li>Bell-shaped, symmetric about μ. <b>Mean = median = mode = μ</b>.</li><li>Standardise with <b>Z = (X − μ)/σ</b>; Z has mean 0 and SD 1.</li><li>Skewness 0; β<sub>2</sub> = 3 (mesokurtic). Points of inflexion at μ ± σ. Total area = 1, half on each side of μ.</li><li>QD ≈ (2/3)σ (more exactly 0.6745σ); MD ≈ (4/5)σ (0.7979σ).</li><li>Sum of independent normals is normal.</li></ul><table><tr><th>Range</th><th>Area</th></tr><tr><td>μ ± 1σ</td><td>68.27%</td></tr><tr><td>μ ± 1.96σ</td><td>95%</td></tr><tr><td>μ ± 2σ</td><td>95.45%</td></tr><tr><td>μ ± 2.58σ</td><td>99%</td></tr><tr><td>μ ± 3σ</td><td>99.73%</td></tr></table><p>Table values to remember: P(0 &lt; Z &lt; 1) = 0.3413, P(0 &lt; Z &lt; 2) = 0.4772, P(0 &lt; Z &lt; 3) = 0.4987.</p>"
+   },
+   {
+    "title": "Which distribution to use",
+    "body": "<table><tr><th>Clue in the question</th><th>Use</th></tr><tr><td>Fixed n trials, success or failure, constant p</td><td>Binomial</td></tr><tr><td>Rare events, \"on average λ per page/hour\"</td><td>Poisson</td></tr><tr><td>\"First success on the k-th trial\"</td><td>Geometric</td></tr><tr><td>\"r-th success\"</td><td>Negative binomial</td></tr><tr><td>Draws without replacement from a small lot</td><td>Hypergeometric</td></tr><tr><td>\"Equally likely anywhere between a and b\"</td><td>Uniform</td></tr><tr><td>Waiting time, life of a bulb, constant failure rate</td><td>Exponential</td></tr><tr><td>Heights, marks, measurement errors</td><td>Normal</td></tr></table>"
    }
   ],
   "varieties": [
    {
-    "type": "expectation",
-    "name": "Expectation and variance",
-    "how": "Multiply each value by its probability and add; for variance use E(X²) − [E(X)]².",
+    "type": "discrete-rv",
+    "name": "Probability tables, expectation and variance",
+    "how": "First use Σp = 1 to find any unknown k. Then E(X) = Σxp, E(X²) = Σx²p and Var = E(X²) − [E(X)]².",
     "example": {
-     "q": "X takes 0 and 1 with probabilities 0.3 and 0.7. Find Var(X).",
+     "q": "X takes the values 0, 1, 2 with probabilities k, 2k, 3k. Find Var(X).",
      "steps": [
-      "E(X) = 0.7",
-      "E(X²) = 0.7",
-      "Var = 0.7 − 0.49 = 0.21"
+      "k + 2k + 3k = 1, so k = 1/6.",
+      "E(X) = 0(1/6) + 1(2/6) + 2(3/6) = 8/6 = 4/3.",
+      "E(X²) = 0 + 1(2/6) + 4(3/6) = 14/6 = 7/3.",
+      "Var(X) = 7/3 − 16/9 = 21/9 − 16/9 = 5/9."
      ],
-     "answer": "0.21"
+     "answer": "5/9"
     }
    },
    {
-    "type": "binomial-poisson",
-    "name": "Binomial and Poisson",
-    "how": "Use mean = np, var = npq (binomial) or mean = var = λ (Poisson); plug into the PMF for exact probabilities.",
+    "type": "continuous-rv",
+    "name": "Density and distribution functions",
+    "how": "Set the total area ∫f(x)dx = 1 to find k; integrate f over the interval for a probability; use ∫x f(x)dx for the mean.",
     "example": {
-     "q": "X ~ Poisson with P(X = 1) = P(X = 2). Find the mean.",
+     "q": "f(x) = kx for 0 ≤ x ≤ 2 (and 0 elsewhere) is a pdf. Find k and P(X ≤ 1).",
      "steps": [
-      "e<sup>−λ</sup>λ = e<sup>−λ</sup>λ²/2",
-      "λ = 2"
+      "∫<sub>0</sub><sup>2</sup> kx dx = k × 4/2 = 2k = 1, so k = 1/2.",
+      "P(X ≤ 1) = ∫<sub>0</sub><sup>1</sup> x/2 dx = 1/4."
      ],
-     "answer": "2"
+     "answer": "k = 1/2, P(X ≤ 1) = 1/4"
+    }
+   },
+   {
+    "type": "binomial",
+    "name": "Binomial distribution",
+    "how": "Use <sup>n</sup>C<sub>r</sub>p<sup>r</sup>q<sup>n−r</sup>. If mean and variance are given, q = variance/mean, then p and n.",
+    "example": {
+     "q": "A binomial distribution has mean 4 and variance 3. Find n and p.",
+     "steps": [
+      "q = variance ÷ mean = 3/4.",
+      "p = 1 − 3/4 = 1/4.",
+      "n = mean ÷ p = 4 ÷ (1/4) = 16."
+     ],
+     "answer": "n = 16, p = 1/4"
+    }
+   },
+   {
+    "type": "poisson",
+    "name": "Poisson distribution",
+    "how": "Use P(r) = e<sup>−λ</sup>λ<sup>r</sup>/r!. Mean and variance are both λ. For \"at most\" add the terms.",
+    "example": {
+     "q": "Accidents at a crossing follow a Poisson distribution with mean 3 per week. Find P(at most 1 accident in a week). (e<sup>−3</sup> ≈ 0.0498)",
+     "steps": [
+      "P(0) = e<sup>−3</sup>.",
+      "P(1) = 3e<sup>−3</sup>.",
+      "P(X ≤ 1) = 4e<sup>−3</sup> ≈ 4 × 0.0498 ≈ 0.199."
+     ],
+     "answer": "≈ 0.199"
+    }
+   },
+   {
+    "type": "other-discrete",
+    "name": "Geometric, negative binomial and hypergeometric",
+    "how": "Spot the wording: \"first success on the k-th try\" is geometric, \"r-th success\" is negative binomial, \"without replacement from a lot\" is hypergeometric.",
+    "example": {
+     "q": "A fair die is thrown until a six appears. Find the probability that the first six comes on the third throw.",
+     "steps": [
+      "Two failures then one success: q<sup>2</sup>p.",
+      "= (5/6)² × (1/6) = 25/216."
+     ],
+     "answer": "25/216"
+    }
+   },
+   {
+    "type": "uniform-exponential",
+    "name": "Uniform and exponential distributions",
+    "how": "Uniform: mean (a + b)/2, variance (b − a)²/12, probability = length ÷ (b − a). Exponential: mean 1/λ, P(X &gt; x) = e<sup>−λx</sup>.",
+    "example": {
+     "q": "The life of a bulb is exponential with mean 2 years. Find the probability it lasts more than 4 years.",
+     "steps": [
+      "Mean 1/λ = 2, so λ = 0.5.",
+      "P(X &gt; 4) = e<sup>−0.5 × 4</sup> = e<sup>−2</sup>.",
+      "≈ 0.1353."
+     ],
+     "answer": "e<sup>−2</sup> ≈ 0.1353"
     }
    },
    {
     "type": "normal",
     "name": "Normal distribution",
-    "how": "Convert X to Z, then use the standard area table and symmetry.",
+    "how": "Convert to Z = (X − μ)/σ, sketch the curve, and add or subtract the table areas from 0 to z.",
     "example": {
-     "q": "X ~ N(100, 15²). Find P(X &lt; 100).",
+     "q": "X ~ N(60, 5²). Given P(0 &lt; Z &lt; 1) = 0.3413 and P(0 &lt; Z &lt; 2) = 0.4772, find P(55 &lt; X &lt; 70).",
      "steps": [
-      "Z = (100 − 100)/15 = 0",
-      "Half the area lies below the mean."
+      "z for 55 = (55 − 60)/5 = −1; z for 70 = (70 − 60)/5 = 2.",
+      "P(−1 &lt; Z &lt; 2) = P(0 &lt; Z &lt; 1) + P(0 &lt; Z &lt; 2).",
+      "= 0.3413 + 0.4772 = 0.8185."
      ],
-     "answer": "0.5"
+     "answer": "0.8185"
     }
    }
   ],
   "tips": [
-   "If mean = variance, think Poisson.",
-   "In a binomial, variance/mean = q gives p quickly.",
-   "The normal curve is symmetric, so P(Z &gt; a) = P(Z &lt; −a)."
+   "Binomial: variance is less than mean; Poisson: variance equals mean. Use this to identify the distribution from given values.",
+   "If a binomial question gives variance greater than mean, it is impossible (q would exceed 1).",
+   "For the normal curve, draw a quick sketch and shade the area before adding or subtracting table values.",
+   "Var(aX + b) = a²Var(X): the constant b disappears and the sign of a does not matter.",
+   "For a continuous variable, P(X &lt; a) and P(X ≤ a) are the same.",
+   "Exponential and geometric are the two memoryless distributions."
   ],
   "traps": [
-   "For a binomial, variance can never exceed the mean.",
-   "Var(aX + b) uses a², and the constant b vanishes.",
-   "Z uses σ (SD), not σ² (variance), in the denominator."
+   "Var(X − Y) = Var(X) + Var(Y) for independent X, Y, not the difference.",
+   "Mean of the exponential is 1/λ, not λ.",
+   "The uniform variance divides by 12, not by 2 or 4.",
+   "Check which geometric form is meant: trials until success (mean 1/p) or failures before success (mean q/p).",
+   "A pdf value f(x) can be greater than 1; only the total area must equal 1."
   ]
  },
  "formulas": [
   {
+   "name": "Expectation",
+   "expr": "E(X) = Σ x p(x)   or   ∫ x f(x) dx"
+  },
+  {
    "name": "Variance",
    "expr": "Var(X) = E(X²) − [E(X)]²"
+  },
+  {
+   "name": "Linear change",
+   "expr": "E(aX + b) = aE(X) + b;  Var(aX + b) = a² Var(X)"
+  },
+  {
+   "name": "MGF",
+   "expr": "M(t) = E(e^(tX));  M′(0) = E(X)"
   },
   {
    "name": "Binomial",
@@ -82,6 +179,26 @@
   {
    "name": "Poisson",
    "expr": "P(X=r) = e^(−λ) λʳ / r!;  mean = variance = λ"
+  },
+  {
+   "name": "Geometric",
+   "expr": "P(X=x) = qˣ⁻¹p;  mean 1/p, variance q/p²"
+  },
+  {
+   "name": "Negative binomial",
+   "expr": "failures before r-th success: mean rq/p, variance rq/p²"
+  },
+  {
+   "name": "Hypergeometric",
+   "expr": "P(X=x) = ᴹCₓ × ᴺ⁻ᴹCₙ₋ₓ ÷ ᴺCₙ;  mean nM/N"
+  },
+  {
+   "name": "Uniform (a, b)",
+   "expr": "mean (a + b)/2, variance (b − a)²/12"
+  },
+  {
+   "name": "Exponential",
+   "expr": "f(x) = λe^(−λx);  mean 1/λ, variance 1/λ², P(X > x) = e^(−λx)"
   },
   {
    "name": "Standard normal",
@@ -93,7 +210,7 @@
    "id": "st-random-001",
    "rev": 1,
    "topic": "st-random",
-   "type": "expectation",
+   "type": "discrete-rv",
    "level": 1,
    "q": "X takes the values 1, 2, 3 with probabilities 0.2, 0.5, 0.3. E(X) is:",
    "options": [
@@ -110,7 +227,7 @@
    "id": "st-random-002",
    "rev": 1,
    "topic": "st-random",
-   "type": "binomial-poisson",
+   "type": "binomial",
    "level": 1,
    "q": "For a binomial distribution with n = 10 and p = 0.4, the variance is:",
    "options": [
@@ -127,7 +244,7 @@
    "id": "st-random-003",
    "rev": 1,
    "topic": "st-random",
-   "type": "binomial-poisson",
+   "type": "poisson",
    "level": 2,
    "q": "A Poisson variable has mean 2. P(X = 0) is approximately:",
    "options": [
@@ -144,7 +261,7 @@
    "id": "st-random-004",
    "rev": 1,
    "topic": "st-random",
-   "type": "binomial-poisson",
+   "type": "binomial",
    "level": 2,
    "q": "A binomial distribution has mean 6 and variance 4.2. The value of n is:",
    "options": [
@@ -178,7 +295,7 @@
    "id": "st-random-006",
    "rev": 1,
    "topic": "st-random",
-   "type": "binomial-poisson",
+   "type": "binomial",
    "level": 3,
    "q": "A fair coin is tossed 4 times. The probability of exactly 2 heads is:",
    "options": [

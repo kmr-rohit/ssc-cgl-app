@@ -1,0 +1,35 @@
+{
+  "topic": "q-coordinate",
+  "types": [
+    {
+      "type": "distance-section",
+      "name": "Distance, midpoint and section",
+      "description": "Asks for the distance between two points, a midpoint, the point dividing a segment in a ratio (or the ratio itself), a centroid, or a missing vertex of a parallelogram.",
+      "concepts": []
+    },
+    {
+      "type": "slope-line",
+      "name": "Slope and equation of a line",
+      "description": "Asks for the slope of a line, the equation of a line through given points or with a given slope, a line parallel or perpendicular to another, where two lines meet, or the distance of a point from a line.",
+      "concepts": []
+    },
+    {
+      "type": "intercepts-axes",
+      "name": "Intercepts and axes",
+      "description": "Asks where a line cuts the x-axis or y-axis, its intercepts, or the area or perimeter of the triangle a line makes with the two axes.",
+      "concepts": []
+    },
+    {
+      "type": "area",
+      "name": "Area and collinearity",
+      "description": "Asks for the area of a triangle or quadrilateral from the coordinates of its corners, or whether three points lie on one line (collinear), often with an unknown k.",
+      "concepts": []
+    },
+    {
+      "type": "reflections",
+      "name": "Quadrants and reflections",
+      "description": "Asks which quadrant a point lies in, its distance from an axis, or its mirror image in an axis, the origin, or a line such as y = x.",
+      "concepts": []
+    }
+  ]
+}

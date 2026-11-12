@@ -6,7 +6,7 @@ test('syllabus → topic notes → learn-mode practice records an attempt', asyn
   await page.goto('/#/syllabus/quant');
   await expect(page.getByRole('heading', { name: 'Study', exact: true })).toBeVisible();
   await page.getByRole('link', { name: /Percentage/ }).first().click();
-  await expect(page.getByRole('heading', { name: 'Percentage' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Percentage', exact: true, level: 1 })).toBeVisible();
   await page.getByRole('link', { name: 'Practice', exact: true }).click();
   await page.getByRole('button', { name: 'Start practice' }).click();
   await page.locator('.opt').first().click();

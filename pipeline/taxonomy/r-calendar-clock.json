@@ -1,0 +1,62 @@
+{
+ "topic": "r-calendar-clock",
+ "types": [
+  {
+   "type": "day-of-week",
+   "name": "Day of the week for a date",
+   "description": "A full date is given with no reference day (for example \"What day of the week was 26 November 1994?\") and you find the day using odd days.",
+   "concepts": []
+  },
+  {
+   "type": "day-from-reference",
+   "name": "Day from a known date",
+   "description": "The day of the week for one date is given and you find the day for another date in a different month or year.",
+   "concepts": []
+  },
+  {
+   "type": "days-after",
+   "name": "Counting days forward or back",
+   "description": "\"Today is Friday\", or one day of a month is linked to a weekday, and you find the day after or before some number of days, or later in the same month.",
+   "concepts": []
+  },
+  {
+   "type": "date-counting",
+   "name": "Dates of events",
+   "description": "Events, seminars or meetings happen a few days before or after each other, and you find a date (not a weekday) or match events to dates.",
+   "concepts": [
+    "date-to-date-day-jump",
+    "calendar-day-calculations"
+   ]
+  },
+  {
+   "type": "leap-year-repeat",
+   "name": "Leap years and repeating calendars",
+   "description": "You pick which year is a leap year, or which year will have the same calendar as a given year.",
+   "concepts": []
+  },
+  {
+   "type": "clock-angle",
+   "name": "Angle between the hands",
+   "description": "You find the angle between the hour hand and the minute hand at a given time.",
+   "concepts": []
+  },
+  {
+   "type": "hands-position",
+   "name": "When the hands meet, oppose or make a right angle",
+   "description": "You find the time between two given hours when the hands coincide, point in opposite directions or are at a right angle, or how many times this happens in a day.",
+   "concepts": []
+  },
+  {
+   "type": "clock-mirror",
+   "name": "Mirror image of a clock",
+   "description": "You find the time shown by the mirror image (or the real time from the mirror image) of a clock.",
+   "concepts": []
+  },
+  {
+   "type": "clock-gain-loss",
+   "name": "Fast and slow clocks",
+   "description": "A clock gains or loses minutes, and you find the correct time, the time shown, or how much it gains in a day.",
+   "concepts": []
+  }
+ ]
+}

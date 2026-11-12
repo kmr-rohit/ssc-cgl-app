@@ -1,0 +1,53 @@
+{
+  "topic": "e-narration",
+  "types": [
+    {
+      "type": "statement",
+      "name": "Statements",
+      "description": "The quoted words are an ordinary statement or negative statement (He said, “I am tired.”) with a past reporting verb, so the answer uses said/told + that, pronoun changes, tense back-shift and time-word changes (tomorrow → the next day).",
+      "concepts": []
+    },
+    {
+      "type": "unchanged-tense",
+      "name": "When the tense does not change",
+      "description": "The reporting verb is in the present or future (says, will say), or the quoted words are a universal truth, scientific fact, proverb, habitual fact or historical fact, e.g. He said, “Two and two make four.”, so the reported tense stays as it is.",
+      "concepts": []
+    },
+    {
+      "type": "yes-no-question",
+      "name": "Yes or no questions",
+      "description": "The quoted words are a question beginning with a helping verb (is, are, do, does, did, have, has, can, will, would, may), e.g. She said, “Are you upset with me?”, so the answer uses asked/enquired + if/whether + statement order.",
+      "concepts": []
+    },
+    {
+      "type": "wh-question",
+      "name": "Wh-questions",
+      "description": "The quoted words are a question beginning with who, what, where, when, why, which, whose or how, e.g. He said to me, “What time do the banks open?”, so the answer uses asked + the question word + statement order without do/did.",
+      "concepts": []
+    },
+    {
+      "type": "imperative",
+      "name": "Commands, requests and advice",
+      "description": "The quoted words are an order, request, advice, warning or prohibition beginning with a verb, please, kindly or do not (She said to me, “Open the window.”), so the answer uses told/ordered/requested/advised/forbade + object + (not) to + V1.",
+      "concepts": []
+    },
+    {
+      "type": "lets-suggestion",
+      "name": "Let's and suggestions",
+      "description": "The quoted words begin with Let us / Let's (a proposal) or Let + someone (permission), e.g. He said, “Let's go for a walk.”, so the answer uses suggested/proposed that they should, or let/allow.",
+      "concepts": []
+    },
+    {
+      "type": "exclamation-wish",
+      "name": "Exclamations, wishes and greetings",
+      "description": "The quoted words are an exclamation (What a ...! How ...! Alas! Hurrah! Oh!), a wish or prayer (May God bless you!), or a greeting/thanks (Good morning, Thank you), so the answer uses exclaimed with joy/sorrow, wished, prayed, greeted or thanked.",
+      "concepts": []
+    },
+    {
+      "type": "indirect-to-direct",
+      "name": "Indirect to direct",
+      "description": "The question gives a sentence already in reported speech (asked if, told him to, exclaimed that) and asks for its direct form, e.g. 'Select the correct direct form of the given sentence. I asked Mary if she would lend me a pencil.'",
+      "concepts": []
+    }
+  ]
+}

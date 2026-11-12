@@ -1,0 +1,103 @@
+{
+  "topic": "q-ratio",
+  "types": [
+    {
+      "type": "ratio-basics",
+      "name": "Ratio basics and combining ratios",
+      "description": "Simplify or compare ratios, join A:B and B:C into A:B:C, or find a new ratio after each term changes by a percent.",
+      "concepts": [
+        "basic-ratio-simplification-combining-ratios",
+        "proportional-relationships"
+      ]
+    },
+    {
+      "type": "share-division",
+      "name": "Dividing an amount in a ratio",
+      "description": "A total, a difference or one share is given and the shares of people or items in a given (often fractional) ratio must be found.",
+      "concepts": [
+        "proportional-share-division"
+      ]
+    },
+    {
+      "type": "coins",
+      "name": "Coins and notes",
+      "description": "Coins or notes of different values are in a number ratio and the total money or total count is given; find the count or value of one kind.",
+      "concepts": [
+        "coin-currency-ratio"
+      ]
+    },
+    {
+      "type": "proportions",
+      "name": "Mean, third and fourth proportional",
+      "description": "Asks for the mean proportional, third proportional or fourth proportional, or for a missing term in a : b :: c : d.",
+      "concepts": [
+        "mean-third-fourth-proportional"
+      ]
+    },
+    {
+      "type": "add-subtract-same",
+      "name": "Adding or subtracting the same number",
+      "description": "The same number is added to or subtracted from terms so that they come into a given ratio or into proportion; find that number or the original terms.",
+      "concepts": [
+        "adding-subtracting-same-number-to-terms"
+      ]
+    },
+    {
+      "type": "income-expenditure",
+      "name": "Income, expenditure and savings",
+      "description": "Ratios of incomes and of expenditures (or savings) of two people are given; find an income, expenditure or saving.",
+      "concepts": [
+        "income-expenditure-savings-ratio"
+      ]
+    },
+    {
+      "type": "componendo-dividendo",
+      "name": "Componendo-dividendo and ratio expressions",
+      "description": "Given a/b or (a+b)/(a−b) as a ratio, find the value of an expression in a and b, usually using componendo and dividendo.",
+      "concepts": [
+        "componendo-dividendo-applications"
+      ]
+    },
+    {
+      "type": "squared-ratios",
+      "name": "Squares, cubes and variation",
+      "description": "Uses duplicate, triplicate or square-root ratios, or a quantity that varies directly or inversely with another (for example price varies as the square of weight).",
+      "concepts": [
+        "duplicate-sub-duplicate-triplicate-sub-triplicate-ratios"
+      ]
+    },
+    {
+      "type": "partnership",
+      "name": "Partnership",
+      "description": "Partners invest fixed capitals for the same or different periods (someone joins late or leaves early); split profit in the ratio of capital × time.",
+      "concepts": []
+    },
+    {
+      "type": "partnership-capital-change",
+      "name": "Partnership with changing capital",
+      "description": "A partner adds to or withdraws part of the capital midway, or a working partner gets a salary or commission before the profit is shared.",
+      "concepts": [
+        "variable-capital-investment-midway-additions-withdrawals"
+      ]
+    },
+    {
+      "type": "ages-ratio",
+      "name": "Ages in ratio now and later",
+      "description": "The ratio of ages now, some years ago or some years later is given; find a present age, a sum or a difference of ages.",
+      "concepts": [
+        "ratio-shifts-cross-multiplication-method",
+        "present-age-ratio-ratio-after-before-n-years",
+        "age-difference-property-constant-difference-principle"
+      ]
+    },
+    {
+      "type": "ages-equations",
+      "name": "Age puzzles with sums, multiples and averages",
+      "description": "Ages are linked by sums, differences, “n times as old”, or averages of family members rather than a simple ratio; form equations.",
+      "concepts": [
+        "complex-equation-based-age-problems",
+        "average-age-of-family-group-entry-exit"
+      ]
+    }
+  ]
+}

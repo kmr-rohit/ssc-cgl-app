@@ -1,0 +1,79 @@
+{
+  "topic": "g-economy",
+  "types": [
+    {
+      "type": "basic-concepts",
+      "name": "Basic economic concepts",
+      "description": "Demand, supply, utility, costs, market forms, sectors of the economy and economic laws.",
+      "concepts": [
+        "basic-concepts-microeconomics"
+      ]
+    },
+    {
+      "type": "national-income-inflation",
+      "name": "National income and inflation",
+      "description": "GDP, GNP, NNP and other national income terms, price indices and types of inflation.",
+      "concepts": [
+        "national-income-inflation-banking"
+      ]
+    },
+    {
+      "type": "banking-rbi",
+      "name": "Banking, RBI and money",
+      "description": "RBI and its tools, bank nationalisation, types of banks, development finance bodies and banking laws.",
+      "concepts": [
+        "banking-system-and-rbi"
+      ]
+    },
+    {
+      "type": "budget-tax-trade",
+      "name": "Budget, taxes and external sector",
+      "description": "Budget receipts and spending, deficits, direct and indirect taxes, GST, balance of payments and foreign trade.",
+      "concepts": [
+        "budget-taxation-external-sector",
+        "foreign-trade-and-balance"
+      ]
+    },
+    {
+      "type": "planning-reforms",
+      "name": "Five-Year Plans and reforms",
+      "description": "Planning Commission, NITI Aayog, each Five-Year Plan's model and aim, industrial policies and the 1991 reforms.",
+      "concepts": [
+        "five-year-plans-economic-reforms"
+      ]
+    },
+    {
+      "type": "agriculture",
+      "name": "Agriculture and revolutions",
+      "description": "Green Revolution and other farm 'revolutions', MSP, farm bodies and farm schemes.",
+      "concepts": [
+        "green-revolution-and-agriculture"
+      ]
+    },
+    {
+      "type": "poverty-employment-hdi",
+      "name": "Poverty, jobs and development indices",
+      "description": "Poverty lines, types of unemployment, employment programmes, HDI and vital rates like IMR.",
+      "concepts": [
+        "poverty-and-employment-programmes",
+        "demographic-health-and-vital-indicators"
+      ]
+    },
+    {
+      "type": "government-schemes",
+      "name": "Government schemes",
+      "description": "Central government schemes, missions and portals, with their launch year and aim.",
+      "concepts": [
+        "flagship-welfare-schemes",
+        "ministry-initiatives-and-programmes",
+        "economic-schemes-and-missions"
+      ]
+    },
+    {
+      "type": "markets-institutions",
+      "name": "Markets and financial institutions",
+      "description": "SEBI, stock exchanges, insurance and pension regulators, and international financial bodies.",
+      "concepts": []
+    }
+  ]
+}

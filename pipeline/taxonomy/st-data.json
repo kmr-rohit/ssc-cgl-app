@@ -1,0 +1,35 @@
+{
+ "topic": "st-data",
+ "types": [
+  {
+   "type": "data-collection",
+   "name": "Data sources and collection methods",
+   "description": "Asks about primary versus secondary data, questionnaire versus schedule, census versus sample, or a named method of collecting data.",
+   "concepts": []
+  },
+  {
+   "type": "classification-tabulation",
+   "name": "Classification, tabulation and scales",
+   "description": "Asks which kind of classification is used (geographical, chronological, qualitative, quantitative), the parts of a table, types of variable, or the scale of measurement.",
+   "concepts": []
+  },
+  {
+   "type": "frequency-distribution",
+   "name": "Class limits, boundaries, marks and widths",
+   "description": "Gives class intervals and asks for a class mark, class boundary, class width, cumulative or relative frequency, or the number of classes by Sturges' rule.",
+   "concepts": []
+  },
+  {
+   "type": "diagrams-charts",
+   "name": "Bar diagrams and pie charts",
+   "description": "Asks about a type of bar diagram or pictorial chart, or asks for the angle of a sector in a pie chart.",
+   "concepts": []
+  },
+  {
+   "type": "frequency-graphs",
+   "name": "Histogram, polygon and ogive",
+   "description": "Asks about drawing or reading a histogram, frequency polygon, ogive or Lorenz curve, including bar heights for unequal class widths.",
+   "concepts": []
+  }
+ ]
+}

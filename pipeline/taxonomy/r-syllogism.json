@@ -1,0 +1,29 @@
+{
+ "topic": "r-syllogism",
+ "types": [
+  {
+   "type": "two-statement",
+   "name": "Two statements, definite conclusions",
+   "description": "Two statements (for example \"All A are B. Some B are C.\") are followed by conclusions that state a definite fact, with no word \"possibility\" or \"can be\" in any conclusion.",
+   "concepts": []
+  },
+  {
+   "type": "three-statement",
+   "name": "Three or more statements",
+   "description": "Three or more statements linking four or five groups are followed by two to four definite conclusions, often with options such as \"Only I and III follow\"; no conclusion uses \"possibility\".",
+   "concepts": []
+  },
+  {
+   "type": "possibility",
+   "name": "Possibility conclusions",
+   "description": "At least one conclusion says something \"is a possibility\", \"can be\" or \"may be\" true, whatever the number of statements.",
+   "concepts": []
+  },
+  {
+   "type": "single-statement",
+   "name": "One statement, inferences",
+   "description": "Only one statement (or one sentence with two groups) is given and the conclusions or inferences restate it, for example \"All A are B\" leading to \"Some B are A\".",
+   "concepts": []
+  }
+ ]
+}

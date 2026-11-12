@@ -1,73 +1,151 @@
 {
  "topic": "st-anova",
  "notes": {
-  "summary": "Analysis of Variance (ANOVA, by R.A. Fisher) tests whether three or more group means are equal by splitting total variation into \"between groups\" and \"within groups\" parts and comparing them with an F-ratio.",
+  "summary": "Analysis of variance (ANOVA), developed by R. A. Fisher, tests whether three or more population means are equal by splitting the total variation in the data into parts. Paper 2 asks about its assumptions, degrees of freedom, sums of squares, mean squares and the F-ratio, for one-way and two-way classification.",
   "concepts": [
    {
-    "title": "One-way ANOVA",
-    "body": "<ul><li>TSS = SSB (between / treatments) + SSW (within / error).</li><li>With k groups and N total observations: df between = k − 1, df within = N − k, df total = N − 1.</li><li>MSB = SSB/(k − 1), MSW = SSW/(N − k), F = MSB/MSW.</li><li>If F &gt; table F, reject H<sub>0</sub> that all means are equal.</li></ul><table><tr><th>Source</th><th>SS</th><th>df</th><th>MS</th><th>F</th></tr><tr><td>Between</td><td>SSB</td><td>k − 1</td><td>MSB</td><td>MSB/MSW</td></tr><tr><td>Within</td><td>SSW</td><td>N − k</td><td>MSW</td><td></td></tr><tr><td>Total</td><td>TSS</td><td>N − 1</td><td></td><td></td></tr></table>"
+    "title": "What ANOVA does",
+    "body": "<ul><li>Total variation in the data is split into variation <b>between groups</b> (due to the treatments, an assignable cause) and variation <b>within groups</b> (due to chance, called error).</li><li>If the group means are really equal, both parts estimate the same error variance, so their ratio F should be near 1. A large F suggests the means differ.</li><li>H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = … = μ<sub>k</sub>. H<sub>1</sub>: at least one mean differs.</li><li>The test statistic follows the <b>F distribution</b>. With only two groups, one-way ANOVA gives the same result as the two-sample t test (F = t²).</li></ul>"
    },
    {
-    "title": "Two-way ANOVA (one observation per cell)",
-    "body": "With r rows and c columns: df rows = r − 1, df columns = c − 1, df error = (r − 1)(c − 1), df total = rc − 1. TSS = SSR + SSC + SSE.<br><b>Assumptions</b> of ANOVA: normal populations, equal variances (homoscedasticity), independent observations."
+    "title": "Assumptions",
+    "body": "<ol><li>Observations are <b>independent</b>.</li><li>Each group comes from a <b>normal</b> population.</li><li>All populations have the <b>same variance</b> (homogeneity of variance, homoscedasticity).</li><li>The effects are <b>additive</b>: observation = overall mean + treatment effect (+ block effect) + error.</li></ol><p>One-way classification goes with the completely randomised design (CRD); two-way classification with the randomised block design (RBD).</p>"
+   },
+   {
+    "title": "One-way classification: sums of squares",
+    "body": "<p>k groups, n<sub>i</sub> observations in group i, N = Σn<sub>i</sub> in all. T<sub>i</sub> = total of group i; G = grand total.</p><ul><li>Correction factor <b>CF = G²/N</b>.</li><li>Total SS: <b>SST = Σy² − CF</b>.</li><li>Between groups: <b>SSB = Σ(T<sub>i</sub>²/n<sub>i</sub>) − CF</b> = Σn<sub>i</sub>(x̄<sub>i</sub> − x̄)².</li><li>Within groups (error): <b>SSW = SST − SSB</b> = sum of squared deviations of each value from its own group mean.</li></ul><p>Example: A = {1, 2, 3}, B = {3, 4, 5}, C = {5, 6, 7}. G = 36, N = 9, CF = 144. Σy² = 174, so SST = 30. Totals 6, 12, 18 give Σ(T²/n) = 504/3 = 168, so SSB = 24 and SSW = 6.</p>"
+   },
+   {
+    "title": "One-way ANOVA table",
+    "body": "<table><tr><th>Source</th><th>df</th><th>SS</th><th>Mean square</th><th>F</th></tr><tr><td>Between groups</td><td>k − 1</td><td>SSB</td><td>MSB = SSB/(k − 1)</td><td>MSB/MSW</td></tr><tr><td>Within groups (error)</td><td>N − k</td><td>SSW</td><td>MSW = SSW/(N − k)</td><td></td></tr><tr><td>Total</td><td>N − 1</td><td>SST</td><td></td><td></td></tr></table><p>Sums of squares add up and so do degrees of freedom; mean squares do <b>not</b> add up. Compare F with the table value F<sub>α</sub>(k − 1, N − k): if larger, reject H<sub>0</sub>.</p><p>For the example above: MSB = 24/2 = 12, MSW = 6/6 = 1, F = 12 with (2, 6) df.</p>"
+   },
+   {
+    "title": "Two-way classification (one observation per cell)",
+    "body": "<p>r rows (blocks) and c columns (treatments), N = rc observations. R<sub>i</sub> = row totals, C<sub>j</sub> = column totals.</p><ul><li>SST = Σy² − CF.</li><li>SS rows = ΣR<sub>i</sub>²/c − CF. SS columns = ΣC<sub>j</sub>²/r − CF.</li><li>SSE = SST − SS rows − SS columns.</li></ul><table><tr><th>Source</th><th>df</th><th>Mean square</th><th>F</th></tr><tr><td>Rows</td><td>r − 1</td><td>MSR = SSR/(r − 1)</td><td>MSR/MSE</td></tr><tr><td>Columns</td><td>c − 1</td><td>MSC = SSC/(c − 1)</td><td>MSC/MSE</td></tr><tr><td>Error</td><td>(r − 1)(c − 1)</td><td>MSE = SSE/((r − 1)(c − 1))</td><td></td></tr><tr><td>Total</td><td>rc − 1</td><td></td><td></td></tr></table><p>Example: 5 rows and 4 columns give df 4, 3, 12 and 19.</p>"
+   },
+   {
+    "title": "Reading the result",
+    "body": "<ul><li>F is never negative. F close to 1 means the group differences are no bigger than chance.</li><li>In ANOVA, F is always MSB/MSW. If F is less than 1, the result cannot be significant and H<sub>0</sub> is accepted.</li><li>Adding the same constant to every observation changes no sum of squares, so F does not change. Multiplying all values by a constant also leaves F unchanged.</li><li>A significant F only says that some means differ, not which ones.</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "basics",
-    "name": "Basics and assumptions",
-    "how": "Remember ANOVA uses the F-distribution and the three assumptions.",
+    "name": "Ideas and assumptions",
+    "how": "ANOVA compares several means using an F-ratio of between-group to within-group variance. Assumptions: independence, normality, equal variances, additivity.",
     "example": {
-     "q": "Who developed ANOVA?",
+     "q": "Which of these is NOT an assumption of analysis of variance: (a) normal populations, (b) equal population variances, (c) independent observations, (d) equal population means?",
      "steps": [
-      "Analysis of variance and the F-test are named after R. A. Fisher."
+      "Normality, equal variances and independence are the assumptions.",
+      "Equal means is the null hypothesis being tested, not an assumption."
      ],
-     "answer": "R. A. Fisher"
+     "answer": "(d) equal population means"
     }
    },
    {
-    "type": "one-way",
-    "name": "One-way ANOVA table",
-    "how": "Fill df first, then MS = SS/df, then F = MSB/MSW.",
+    "type": "degrees-of-freedom",
+    "name": "Degrees of freedom",
+    "how": "One-way: between k − 1, within N − k, total N − 1. Check that the first two add to the third.",
     "example": {
-     "q": "k = 3, N = 15, SSB = 40, SSW = 60. Find F.",
+     "q": "Five fertilisers are each tried on 6 plots. Find the degrees of freedom between treatments, within treatments and in total.",
      "steps": [
-      "MSB = 40/2 = 20",
-      "MSW = 60/12 = 5",
-      "F = 20/5 = 4"
+      "k = 5, N = 5 × 6 = 30.",
+      "Between = k − 1 = 4.",
+      "Within = N − k = 25.",
+      "Total = N − 1 = 29 = 4 + 25."
+     ],
+     "answer": "4, 25 and 29"
+    }
+   },
+   {
+    "type": "sums-of-squares",
+    "name": "Sums of squares",
+    "how": "Use TSS = SSB + SSW; with raw data use CF = G²/N, SST = Σy² − CF, SSB = ΣT²/n − CF.",
+    "example": {
+     "q": "In a one-way ANOVA, the total sum of squares is 150 and the within-group sum of squares is 90. Find the between-group sum of squares.",
+     "steps": [
+      "TSS = SSB + SSW.",
+      "SSB = 150 − 90 = 60."
+     ],
+     "answer": "60"
+    }
+   },
+   {
+    "type": "f-ratio",
+    "name": "Mean squares and the F-ratio",
+    "how": "Divide each SS by its own df to get mean squares, then F = MSB/MSW.",
+    "example": {
+     "q": "One-way ANOVA: k = 3 groups, N = 15, SSB = 40, SSW = 60. Find F.",
+     "steps": [
+      "MSB = 40/(3 − 1) = 20.",
+      "MSW = 60/(15 − 3) = 5.",
+      "F = 20/5 = 4."
      ],
      "answer": "4"
     }
    },
    {
-    "type": "two-way",
-    "name": "Two-way ANOVA df",
-    "how": "Rows r − 1, columns c − 1, error (r − 1)(c − 1).",
+    "type": "one-way-raw",
+    "name": "One-way ANOVA from raw data",
+    "how": "Find the group means and the grand mean. SSB = Σn(group mean − grand mean)², SSW = squared deviations within groups. Then mean squares and F.",
     "example": {
-     "q": "4 fertilisers tried on 3 plots each (one observation per cell). Total df?",
+     "q": "Three groups: A = {1, 2, 3}, B = {3, 4, 5}, C = {5, 6, 7}. Find the F-ratio.",
      "steps": [
-      "rc − 1 = 12 − 1",
-      "= 11"
+      "Group means 2, 4, 6; grand mean 4.",
+      "SSB = 3(2 − 4)² + 3(4 − 4)² + 3(6 − 4)² = 24.",
+      "SSW = 2 + 2 + 2 = 6.",
+      "MSB = 24/2 = 12, MSW = 6/(9 − 3) = 1.",
+      "F = 12/1 = 12."
      ],
-     "answer": "11"
+     "answer": "12"
+    }
+   },
+   {
+    "type": "two-way",
+    "name": "Two-way ANOVA",
+    "how": "Rows df r − 1, columns df c − 1, error df (r − 1)(c − 1). Each F = its mean square ÷ MSE.",
+    "example": {
+     "q": "A two-way ANOVA has 4 rows and 3 columns (one observation per cell). SS rows = 24, SS columns = 30, SS error = 18. Find the F-ratios for rows and columns.",
+     "steps": [
+      "df: rows 3, columns 2, error 3 × 2 = 6.",
+      "MSR = 24/3 = 8, MSC = 30/2 = 15, MSE = 18/6 = 3.",
+      "F rows = 8/3 ≈ 2.67.",
+      "F columns = 15/3 = 5."
+     ],
+     "answer": "F rows ≈ 2.67, F columns = 5"
     }
    }
   ],
   "tips": [
-   "Degrees of freedom add up just like sums of squares.",
-   "F is always non-negative; F close to 1 suggests no difference among means.",
-   "For two groups, one-way ANOVA F equals t²."
+   "Sums of squares and degrees of freedom both add up to the total; mean squares do not.",
+   "Using CF = G²/N saves time with whole-number data.",
+   "Subtracting a constant from every value first makes the arithmetic smaller without changing F.",
+   "Two-way error df is (r − 1)(c − 1), the same as for a contingency table.",
+   "With two groups, ANOVA F equals the square of the two-sample t."
   ],
   "traps": [
-   "MSW uses N − k, not N − 1.",
-   "Total SS is not the sum of mean squares.",
-   "ANOVA tests equality of MEANS, though it does so by comparing variances."
+   "Within-group df is N − k, not N − 1.",
+   "F = MSB/MSW uses mean squares, not the raw sums of squares.",
+   "Equal means is the hypothesis being tested, not an assumption.",
+   "A significant F does not tell you which pair of means differs."
   ]
  },
  "formulas": [
   {
+   "name": "Correction factor",
+   "expr": "CF = G² / N"
+  },
+  {
+   "name": "Total SS",
+   "expr": "SST = Σy² − CF"
+  },
+  {
+   "name": "Between-group SS",
+   "expr": "SSB = Σ(Tᵢ²/nᵢ) − CF"
+  },
+  {
    "name": "Total variation",
-   "expr": "TSS = SSB + SSW"
+   "expr": "SST = SSB + SSW"
   },
   {
    "name": "Mean squares",
@@ -78,8 +156,8 @@
    "expr": "F = MSB / MSW"
   },
   {
-   "name": "Two-way error df",
-   "expr": "(r − 1)(c − 1)"
+   "name": "Two-way df",
+   "expr": "rows r − 1, columns c − 1, error (r − 1)(c − 1), total rc − 1"
   }
  ],
  "questions": [
@@ -104,7 +182,7 @@
    "id": "st-anova-002",
    "rev": 1,
    "topic": "st-anova",
-   "type": "one-way",
+   "type": "degrees-of-freedom",
    "level": 1,
    "q": "In a one-way ANOVA with 4 treatments and 20 observations in all, the degrees of freedom for error (within) are:",
    "options": [
@@ -121,7 +199,7 @@
    "id": "st-anova-003",
    "rev": 1,
    "topic": "st-anova",
-   "type": "one-way",
+   "type": "f-ratio",
    "level": 2,
    "q": "One-way ANOVA: k = 4 groups, N = 24, SSB = 60, SSW = 120. The F-ratio is:",
    "options": [
@@ -138,7 +216,7 @@
    "id": "st-anova-004",
    "rev": 1,
    "topic": "st-anova",
-   "type": "one-way",
+   "type": "sums-of-squares",
    "level": 2,
    "q": "In a one-way ANOVA, total sum of squares = 200 and between-group sum of squares = 80. The within-group sum of squares is:",
    "options": [
@@ -172,7 +250,7 @@
    "id": "st-anova-006",
    "rev": 1,
    "topic": "st-anova",
-   "type": "one-way",
+   "type": "one-way-raw",
    "level": 3,
    "q": "Three groups: A = {2, 4, 6}, B = {5, 7, 9}, C = {8, 10, 12}. The F-ratio for one-way ANOVA is:",
    "options": [

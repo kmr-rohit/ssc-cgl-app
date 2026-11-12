@@ -1,91 +1,366 @@
 {
  "topic": "q-mensuration",
  "notes": {
-  "summary": "Mensuration covers areas of 2D shapes and volumes / surface areas of 3D solids. 2–3 questions in Tier 1, 2–4 in Tier 2. Use π = 22/7 unless told otherwise.",
+  "summary": "Mensuration is about measuring flat shapes (perimeter and area) and solids (volume and surface area). It gives 2 to 4 questions in Tier 1 and 4 to 6 in Tier 2. Almost every question is one formula plus careful arithmetic, so learn the formula tables below and practise with π = 22/7.",
   "concepts": [
    {
-    "title": "2D shapes",
-    "body": "<ul><li>Circle: area πr<sup>2</sup>, circumference 2πr.</li><li>Triangle with sides a, b, c: area = √(s(s − a)(s − b)(s − c)), s = (a + b + c)/2 (Heron).</li><li>Rectangle: area lb, diagonal √(l<sup>2</sup> + b<sup>2</sup>).</li></ul>",
-    "img": "quant/mens-triangle-131415.svg"
+    "title": "Units and conversions",
+    "body": "<p>Most mistakes in mensuration are unit mistakes. Change every length to one unit before you start.</p><table><thead><tr><th>Length</th><th>Area</th><th>Volume</th></tr></thead><tbody><tr><td>1 m = 100 cm</td><td>1 m<sup>2</sup> = 10,000 cm<sup>2</sup></td><td>1 m<sup>3</sup> = 10,00,000 cm<sup>3</sup></td></tr><tr><td>1 km = 1000 m</td><td>1 hectare = 10,000 m<sup>2</sup></td><td>1 km<sup>2</sup> = 100 hectares</td></tr><tr><td>1 litre = 1000 cm<sup>3</sup></td><td>1 m<sup>3</sup> = 1000 litres</td><td>1 kilolitre = 1 m<sup>3</sup></td></tr></tbody></table><p>Areas convert with the square of the length factor, volumes with the cube. For example, 2.5 m<sup>3</sup> of water is 2500 litres.</p>"
    },
    {
-    "title": "3D solids",
-    "body": "<ul><li>Cube: volume a<sup>3</sup>, TSA 6a<sup>2</sup>.</li><li>Cylinder: volume πr<sup>2</sup>h, CSA 2πrh.</li><li>Cone: volume ⅓πr<sup>2</sup>h, CSA πrl.</li><li>Sphere: volume (4/3)πr<sup>3</sup>, surface 4πr<sup>2</sup>.</li></ul>",
-    "img": "quant/mens-cylinder.svg"
+    "title": "Triangles: area and radii",
+    "img": "quant/mens-equilateral-radii.svg",
+    "body": "<table><thead><tr><th>What you know</th><th>Formula</th></tr></thead><tbody><tr><td>Base and height known</td><td>½ × base × height</td></tr><tr><td>Three sides a, b, c (Heron)</td><td>s = (a + b + c)/2, area = √(s(s − a)(s − b)(s − c))</td></tr><tr><td>Two sides and the angle between them</td><td>½ ab sin C</td></tr><tr><td>Right triangle with legs a, b</td><td>½ ab, and hypotenuse<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup></td></tr><tr><td>Equilateral, side a</td><td>area (√3/4)a<sup>2</sup>, height (√3/2)a, perimeter 3a</td></tr><tr><td>Isosceles, equal sides a, base b</td><td>area (b/4)√(4a<sup>2</sup> − b<sup>2</sup>)</td></tr></tbody></table><p>Example: sides 13, 14, 15 give s = 21 and area = √(21 × 8 × 7 × 6) = √7056 = 84. An isosceles triangle with sides 5, 5, 6 has height 4 and area 12.</p><p>Learn these right-triangle triplets: 3-4-5, 5-12-13, 7-24-25, 8-15-17, 9-40-41, 20-21-29 and their multiples.</p><p><b>Inradius and circumradius</b></p><ul><li>Inradius r = area ÷ s (s is the semi-perimeter). So area = r × s.</li><li>Circumradius R = abc ÷ (4 × area).</li><li>Right triangle: R = hypotenuse ÷ 2, and r = (a + b − c)/2 where c is the hypotenuse. For 3-4-5, R = 2.5 and r = 1.</li><li>Equilateral triangle of side a: R = a/√3, r = a/(2√3), so R = 2r. Height = 3r = (3/2)R. The centroid, incentre, circumcentre and orthocentre are the same point.</li></ul><p>Example: for sides 13, 14, 15 (area 84, s = 21), r = 84/21 = 4 and R = (13 × 14 × 15)/(4 × 84) = 8.125.</p><p>Example: the circumcentre of an equilateral triangle is 3.2 cm from the base. That distance is r, and the height is 3r = 9.6 cm.</p>"
    },
    {
-    "title": "Melting and recasting",
-    "body": "When a solid is melted and recast, the <b>volume stays the same</b>. Number of new pieces = big volume ÷ small volume."
+    "title": "Quadrilaterals",
+    "body": "<table><thead><tr><th>Shape</th><th>Area</th><th>Perimeter</th><th>Useful fact</th></tr></thead><tbody><tr><td>Rectangle l × b</td><td>lb</td><td>2(l + b)</td><td>diagonal √(l<sup>2</sup> + b<sup>2</sup>)</td></tr><tr><td>Square, side a</td><td>a<sup>2</sup> = d<sup>2</sup>/2</td><td>4a</td><td>diagonal a√2</td></tr><tr><td>Parallelogram, sides a, b</td><td>base × height = ab sin θ</td><td>2(a + b)</td><td>diagonals bisect each other</td></tr><tr><td>Rhombus, diagonals d<sub>1</sub>, d<sub>2</sub></td><td>½ d<sub>1</sub>d<sub>2</sub></td><td>4a</td><td>side a = ½√(d<sub>1</sub><sup>2</sup> + d<sub>2</sub><sup>2</sup>)</td></tr><tr><td>Trapezium, parallel sides a, b</td><td>½ (a + b) × height</td><td>sum of sides</td><td>height is the gap between parallel sides</td></tr><tr><td>Kite, diagonals d<sub>1</sub>, d<sub>2</sub></td><td>½ d<sub>1</sub>d<sub>2</sub></td><td>sum of sides</td><td>diagonals are perpendicular</td></tr></tbody></table><ul><li>Any quadrilateral: area = ½ × one diagonal × (sum of the perpendiculars on it from the other two corners).</li><li>Joining the midpoints of any quadrilateral gives a parallelogram with half the area. For a rectangle it is a rhombus: a 48 cm<sup>2</sup> rectangle gives a 24 cm<sup>2</sup> rhombus.</li><li>If a circle touches all four sides of ABCD, then AB + CD = BC + AD.</li></ul><p>Example: a rhombus with diagonals 16 cm and 12 cm has area 96 cm<sup>2</sup> and side √(8<sup>2</sup> + 6<sup>2</sup>) = 10 cm.</p>"
+   },
+   {
+    "title": "Regular polygons and the hexagon",
+    "img": "quant/mens-hexagon.svg",
+    "body": "<p>A regular polygon has all sides and all angles equal. For n sides of length a:</p><ul><li>Each exterior angle = 360°/n, each interior angle = (n − 2) × 180°/n.</li><li>Number of diagonals = n(n − 3)/2.</li><li>Area = (n a<sup>2</sup>/4) × cot(180°/n).</li></ul><p><b>Regular hexagon</b>: it splits into 6 equilateral triangles of side a. Area = 6 × (√3/4)a<sup>2</sup> = (3√3/2)a<sup>2</sup>. Perimeter 6a. Longest diagonal 2a. Its circumradius equals its side.</p><p><b>Regular octagon</b>: area = 2(1 + √2)a<sup>2</sup>.</p><p>Example: a hexagonal field has area 2400√3 m<sup>2</sup>. Then (3√3/2)a<sup>2</sup> = 2400√3, so a<sup>2</sup> = 1600, a = 40 m and the perimeter is 240 m.</p>"
+   },
+   {
+    "title": "Circles, rings and wheels",
+    "body": "<table><thead><tr><th>Shape</th><th>Perimeter</th><th>Area</th></tr></thead><tbody><tr><td>Circle, radius r</td><td>2πr = πd</td><td>πr<sup>2</sup> = πd<sup>2</sup>/4</td></tr><tr><td>Semicircle</td><td>πr + 2r</td><td>πr<sup>2</sup>/2</td></tr><tr><td>Quadrant</td><td>πr/2 + 2r</td><td>πr<sup>2</sup>/4</td></tr><tr><td>Ring, radii R and r</td><td>2π(R + r) for both edges</td><td>π(R<sup>2</sup> − r<sup>2</sup>) = π(R + r)(R − r)</td></tr></tbody></table><ul><li>A wheel covers one circumference in one turn. Number of turns = distance ÷ (2πr).</li><li>With π = 22/7, a semicircle's perimeter is (36/7)r.</li><li>Square inside a circle of radius r: its diagonal is 2r, so side r√2 and area 2r<sup>2</sup>. Circle inside a square of side a: radius a/2.</li><li>Three equal circles of radius r touching each other enclose an area of (√3 − π/2)r<sup>2</sup>: the equilateral triangle joining the centres minus three 60° sectors.</li><li>Three points on one straight line have no circle through them; three points not on a line have exactly one.</li></ul><p>Example: a wheel of diameter 70 cm has circumference 22/7 × 70 = 220 cm. To cover 1.1 km = 1,10,000 cm it turns 1,10,000 ÷ 220 = 500 times.</p>"
+   },
+   {
+    "title": "Sectors, arcs and segments",
+    "img": "quant/mens-sector-segment.svg",
+    "body": "<p>A sector is a slice of a circle cut by two radii with angle θ at the centre. It is θ/360 of the full circle.</p><ul><li>Arc length l = (θ/360) × 2πr.</li><li>Sector area = (θ/360) × πr<sup>2</sup> = ½ × l × r.</li><li>Perimeter of a sector = l + 2r.</li><li>Minor segment area = sector area − area of the triangle = (θ/360)πr<sup>2</sup> − ½r<sup>2</sup> sin θ.</li><li>For θ = 90°: segment = r<sup>2</sup>(π/4 − ½). For θ = 60°: segment = r<sup>2</sup>(π/6 − √3/4).</li><li>Major segment = circle area − minor segment.</li></ul><p>A clock's minute hand turns 6° every minute; the hour hand turns 0.5° every minute.</p><p>Example: a sector of angle 150° from a circle of diameter 42 cm (r = 21) has area 150/360 × 22/7 × 441 = 577.5 cm<sup>2</sup>.</p>"
+   },
+   {
+    "title": "Paths and borders",
+    "img": "quant/mens-path.svg",
+    "body": "<p>Path area = bigger shape − smaller shape. For a rectangle l × b and path width w:</p><table><thead><tr><th>Situation</th><th>Area</th></tr></thead><tbody><tr><td>Path outside, all round</td><td>(l + 2w)(b + 2w) − lb = 2w(l + b) + 4w<sup>2</sup></td></tr><tr><td>Path inside, all round</td><td>lb − (l − 2w)(b − 2w) = 2w(l + b) − 4w<sup>2</sup></td></tr><tr><td>Two cross paths through the middle</td><td>w(l + b) − w<sup>2</sup> (the centre square is counted once)</td></tr><tr><td>Circular path outside a circle of radius r</td><td>π[(r + w)<sup>2</sup> − r<sup>2</sup>]</td></tr></tbody></table><p>Example: a park 120 m × 104 m has a 1 m path inside along the boundary. Path area = 2 × 1 × 224 − 4 = 444 m<sup>2</sup>. Check: 120 × 104 − 118 × 102 = 12480 − 12036 = 444.</p><p>Example: a circular garden of radius 14 m with a 7 m wide path outside: 22/7 × (21<sup>2</sup> − 14<sup>2</sup>) = 22/7 × 245 = 770 m<sup>2</sup>.</p>"
+   },
+   {
+    "title": "Cube and cuboid",
+    "img": "quant/mens-cuboid-diagonal.svg",
+    "body": "<table><thead><tr><th>Solid</th><th>Volume</th><th>Total surface area</th><th>Four walls (lateral)</th><th>Longest diagonal</th></tr></thead><tbody><tr><td>Cuboid l × b × h</td><td>lbh</td><td>2(lb + bh + hl)</td><td>2h(l + b)</td><td>√(l<sup>2</sup> + b<sup>2</sup> + h<sup>2</sup>)</td></tr><tr><td>Cube, edge a</td><td>a<sup>3</sup></td><td>6a<sup>2</sup></td><td>4a<sup>2</sup></td><td>a√3 (face diagonal a√2)</td></tr></tbody></table><ul><li>(l + b + h)<sup>2</sup> = diagonal<sup>2</sup> + total surface area. Use it when the sum of edges and one of the others is given. A cuboid has 12 edges, so the sum of edges is 4(l + b + h).</li><li>If the three face diagonals at one corner are given, add their squares and halve: that gives l<sup>2</sup> + b<sup>2</sup> + h<sup>2</sup>. Subtract each face to find each edge.</li><li>Number of bricks or small boxes = volume of the big box ÷ volume of one.</li></ul><p>Example: a 12 × 4 × 3 cm cuboid has volume 144 cm<sup>3</sup>, total surface area 2(48 + 12 + 36) = 192 cm<sup>2</sup> and diagonal √(144 + 16 + 9) = 13 cm.</p>"
+   },
+   {
+    "title": "Cylinders, solid and hollow",
+    "img": "quant/mens-hollow-cylinder.svg",
+    "body": "<table><thead><tr><th>Solid</th><th>Volume</th><th>Curved surface</th><th>Total surface</th></tr></thead><tbody><tr><td>Solid cylinder, radius r, height h</td><td>πr<sup>2</sup>h</td><td>2πrh</td><td>2πr(r + h)</td></tr><tr><td>Hollow cylinder (pipe), radii R and r</td><td>πh(R<sup>2</sup> − r<sup>2</sup>)</td><td>2πh(R + r), outer plus inner</td><td>2πh(R + r) + 2π(R<sup>2</sup> − r<sup>2</sup>)</td></tr></tbody></table><ul><li>A rectangular sheet rolled along its length l makes a cylinder whose base circumference is l.</li><li>A roller covers its curved surface area of ground in one turn.</li><li>An open tank or well has no top: count one base only, or none for a well's walls.</li></ul><p>Example: r = 7 cm, h = 10 cm gives volume 22/7 × 49 × 10 = 1540 cm<sup>3</sup>, curved surface 440 cm<sup>2</sup> and total surface 2 × 22/7 × 7 × 17 = 748 cm<sup>2</sup>.</p>"
+   },
+   {
+    "title": "Cones",
+    "img": "quant/mens-cone.svg",
+    "body": "<p><b>Cone</b> with base radius r, height h and slant height l, where l<sup>2</sup> = r<sup>2</sup> + h<sup>2</sup>:</p><ul><li>Volume = ⅓πr<sup>2</sup>h (one third of the cylinder with the same base and height).</li><li>Curved surface = πrl. Total surface = πr(l + r).</li></ul><p>Example: r = 7, h = 24 gives l = 25, curved surface 22/7 × 7 × 25 = 550 and volume ⅓ × 22/7 × 49 × 24 = 1232.</p><p><b>Cone from a sector</b>: when a sector of radius L and angle θ is folded, L becomes the slant height and the arc becomes the base circumference, so r = L × θ/360.</p>"
+   },
+   {
+    "title": "Frustums",
+    "img": "quant/mens-frustum.svg",
+    "body": "<p>A frustum is a cone with its top cut off parallel to the base, like a bucket. Its radii are R and r and its height is h.</p><ul><li>Slant height l = √(h<sup>2</sup> + (R − r)<sup>2</sup>).</li><li>Volume = (πh/3)(R<sup>2</sup> + r<sup>2</sup> + Rr).</li><li>Curved surface = π(R + r)l. Total surface = π(R + r)l + πR<sup>2</sup> + πr<sup>2</sup>.</li></ul><p>Example: a bucket with R = 14, r = 7, h = 6 holds 22/7 × 6/3 × (196 + 49 + 98) = 2156 cm<sup>3</sup>.</p>"
+   },
+   {
+    "title": "Spheres and hemispheres",
+    "body": "<table><thead><tr><th>Solid</th><th>Volume</th><th>Curved surface</th><th>Total surface</th></tr></thead><tbody><tr><td>Sphere, radius r</td><td>(4/3)πr<sup>3</sup></td><td>4πr<sup>2</sup></td><td>4πr<sup>2</sup></td></tr><tr><td>Hemisphere (solid)</td><td>(2/3)πr<sup>3</sup></td><td>2πr<sup>2</sup></td><td>3πr<sup>2</sup></td></tr><tr><td>Hemispherical bowl (open)</td><td>(2/3)πr<sup>3</sup></td><td>2πr<sup>2</sup></td><td>2πr<sup>2</sup> inside</td></tr><tr><td>Spherical shell, radii R and r</td><td>(4/3)π(R<sup>3</sup> − r<sup>3</sup>)</td><td>4πR<sup>2</sup> outside</td><td>-</td></tr></tbody></table><p>Example: r = 21 cm gives surface area 4 × 22/7 × 441 = 5544 cm<sup>2</sup> and volume 4/3 × 22/7 × 9261 = 38,808 cm<sup>3</sup>. A solid hemisphere of the same radius has total surface 3 × 22/7 × 441 = 4158 cm<sup>2</sup>.</p><p>When a solid is cut, new flat faces appear. Cutting a sphere into 8 equal pieces gives each piece one eighth of the curved surface plus three quarter-circles.</p>"
+   },
+   {
+    "title": "Prisms, pyramids and the tetrahedron",
+    "img": "quant/mens-pyramid.svg",
+    "body": "<table><thead><tr><th>Solid</th><th>Volume</th><th>Lateral surface</th><th>Total surface</th></tr></thead><tbody><tr><td>Right prism</td><td>base area × height</td><td>base perimeter × height</td><td>lateral + 2 × base area</td></tr><tr><td>Right pyramid</td><td>⅓ × base area × height</td><td>½ × base perimeter × slant height</td><td>lateral + base area</td></tr><tr><td>Regular tetrahedron, edge a</td><td>a<sup>3</sup>/(6√2) = √2a<sup>3</sup>/12</td><td>(3√3/4)a<sup>2</sup></td><td>√3a<sup>2</sup></td></tr></tbody></table><ul><li>Square pyramid with base side a and height h: slant height of a face = √(h<sup>2</sup> + (a/2)<sup>2</sup>).</li><li>A cylinder is a prism with a circular base; a cone is a pyramid with a circular base. The same two rules work.</li></ul><p>Example: a hexagonal prism of side 6 cm and height 10 cm has base (3√3/2) × 36 = 54√3 and volume 540√3 cm<sup>3</sup>. A pyramid on an equilateral base of side 10 cm with height 24 cm has volume ⅓ × 25√3 × 24 = 200√3 cm<sup>3</sup>.</p>"
+   },
+   {
+    "title": "Melting, recasting and flowing water",
+    "body": "<p>When a solid is melted and made into new solids, the <b>volume stays the same</b> (unless wastage is given). Surface area usually changes.</p><ul><li>Number of small solids = volume of big solid ÷ volume of one small solid. Cancel π and fractions before multiplying.</li><li>Water flowing through a pipe: volume per second = area of the pipe's cross-section × speed of water. Keep units equal (cm and cm/s, or m and m/s).</li><li>A solid dropped into water raises the level by (volume of solid) ÷ (base area of the container).</li><li>Earth dug from a well and spread around it: volume dug = area of the ring × height of the platform.</li></ul><p>Example: a hemispherical bowl of radius 18 cm is emptied into cylindrical bottles of radius 3 cm and height 6 cm. Bottles = (2/3 × 18<sup>3</sup>) ÷ (3<sup>2</sup> × 6) = 3888 ÷ 54 = 72.</p><p>Example: water flows at 2 m/s through a pipe of radius 7 cm. Each second 22/7 × 0.07<sup>2</sup> × 2 = 0.0308 m<sup>3</sup> = 30.8 litres flow out.</p><p><b>Largest solid inside another</b>:</p><table><thead><tr><th>Situation</th><th>Size of the inner solid</th></tr></thead><tbody><tr><td>Sphere inside a cube of edge a</td><td>radius a/2</td></tr><tr><td>Cube inside a sphere of radius R</td><td>cube diagonal = 2R, so edge 2R/√3</td></tr><tr><td>Cylinder or cone inside a cube of edge a</td><td>radius a/2, height a</td></tr><tr><td>Cone cut from a cylinder</td><td>same r and h, volume one third of the cylinder</td></tr><tr><td>Sphere inside a cylinder</td><td>radius = smaller of r and h/2</td></tr></tbody></table><p>Cone, hemisphere and cylinder with the same radius r and height r have volumes in the ratio 1 : 2 : 3.</p>"
+   },
+   {
+    "title": "Percent change in dimensions",
+    "body": "<p>Area grows with the square of length; volume grows with the cube.</p><ul><li>Every length changes by x%: area (or surface area) changes by 2x + x<sup>2</sup>/100 percent. Use −x for a decrease.</li><li>Every length changes by x%: volume changes by [(1 + x/100)<sup>3</sup> − 1] × 100 percent.</li><li>Only one dimension changes: the result changes in the same proportion as that dimension's power in the formula. For a cylinder, doubling r and halving h makes the volume 2<sup>2</sup> × ½ = 2 times.</li><li>Two similar solids: ratio of surface areas = (ratio of lengths)<sup>2</sup>, ratio of volumes = (ratio of lengths)<sup>3</sup>.</li></ul><table><thead><tr><th>Every length</th><th>Area changes by</th><th>Volume changes by</th></tr></thead><tbody><tr><td>+10%</td><td>+21%</td><td>+33.1%</td></tr><tr><td>+20%</td><td>+44%</td><td>+72.8%</td></tr><tr><td>+50%</td><td>+125%</td><td>+237.5%</td></tr><tr><td>+100% (doubled)</td><td>+300% (4 times)</td><td>+700% (8 times)</td></tr><tr><td>−10%</td><td>−19%</td><td>−27.1%</td></tr><tr><td>−20%</td><td>−36%</td><td>−48.8%</td></tr><tr><td>−50% (halved)</td><td>−75%</td><td>−87.5%</td></tr></tbody></table>"
    }
   ],
   "varieties": [
    {
-    "type": "area-2d",
-    "name": "Areas of plane figures",
-    "how": "Pick the right formula; for paths, subtract inner area from outer area.",
+    "type": "triangles",
+    "name": "Triangles",
+    "how": "Choose the formula from what is given: base and height, all three sides (Heron), two sides with the angle, or a special triangle. For radii use r = area/s and R = abc/(4 × area).",
     "example": {
-     "q": "Area of a triangle with sides 5, 12, 13?",
+     "q": "The sides of a triangle are 9 cm, 10 cm and 17 cm. Find its area and its inradius.",
      "steps": [
-      "5<sup>2</sup> + 12<sup>2</sup> = 13<sup>2</sup>, so right-angled",
-      "Area = ½ × 5 × 12"
+      "s = (9 + 10 + 17)/2 = 18",
+      "Area = √(18 × 9 × 8 × 1) = √1296 = 36 cm<sup>2</sup>",
+      "Inradius r = area ÷ s = 36 ÷ 18 = 2 cm"
      ],
-     "answer": "30 sq units"
+     "answer": "Area 36 cm<sup>2</sup>, inradius 2 cm"
     }
    },
    {
-    "type": "volume-3d",
-    "name": "Volumes and recasting",
-    "how": "Equate volumes before and after melting.",
+    "type": "quadrilaterals-polygons",
+    "name": "Quadrilaterals and polygons",
+    "how": "Name the shape, write its area formula, then find the missing side or diagonal. A regular hexagon is six equilateral triangles.",
     "example": {
-     "q": "Volume of a cylinder with r = 7 cm, h = 4 cm?",
+     "q": "The area of a field shaped like a regular hexagon is 2400√3 m<sup>2</sup>. What does it cost to fence it at ₹16.80 per metre?",
      "steps": [
-      "22/7 × 49 × 4"
+      "Area = (3√3/2)a<sup>2</sup> = 2400√3",
+      "a<sup>2</sup> = 2400 × 2/3 = 1600, so a = 40 m",
+      "Perimeter = 6 × 40 = 240 m",
+      "Cost = 240 × 16.80 = ₹4032"
      ],
-     "answer": "616 cm³"
+     "answer": "₹4032"
     }
    },
    {
-    "type": "surface-area",
-    "name": "Surface areas",
-    "how": "CSA is the side only; TSA adds the top/bottom faces.",
+    "type": "circles",
+    "name": "Circles, rings and wheels",
+    "how": "Check whether the radius or the diameter is given. For wheels, one turn covers one circumference; divide the distance by the circumference after changing to the same unit.",
     "example": {
-     "q": "TSA of a cube of edge 5 cm?",
+     "q": "A wheel has a diameter of 70 cm. How many turns does it make to cover 1.1 km? (Take π = 22/7)",
      "steps": [
-      "6 × 25"
+      "Circumference = πd = 22/7 × 70 = 220 cm",
+      "1.1 km = 1,10,000 cm",
+      "Turns = 1,10,000 ÷ 220 = 500"
      ],
-     "answer": "150 cm²"
+     "answer": "500"
+    }
+   },
+   {
+    "type": "sectors-segments",
+    "name": "Sectors and segments",
+    "how": "A sector is θ/360 of the circle. For a segment, subtract the triangle formed by the two radii and the chord from the sector.",
+    "example": {
+     "q": "A chord of a circle of radius 14 cm makes a right angle at the centre. Find the area of the minor segment. (Take π = 22/7)",
+     "steps": [
+      "Sector area = 90/360 × 22/7 × 14<sup>2</sup> = 154 cm<sup>2</sup>",
+      "Triangle area = ½ × 14 × 14 = 98 cm<sup>2</sup>",
+      "Segment = 154 − 98 = 56 cm<sup>2</sup>"
+     ],
+     "answer": "56 cm<sup>2</sup>"
+    }
+   },
+   {
+    "type": "paths-borders",
+    "name": "Paths and borders",
+    "how": "Draw the outer and inner shapes. Path area = outer area − inner area. Note whether the path is inside (subtract 2w from each side) or outside (add 2w).",
+    "example": {
+     "q": "A park is 120 m long and 104 m wide. A 1 m wide path runs all round it, inside the park. Find the area of the path.",
+     "steps": [
+      "Inner rectangle = (120 − 2) × (104 − 2) = 118 × 102 = 12036 m<sup>2</sup>",
+      "Park = 120 × 104 = 12480 m<sup>2</sup>",
+      "Path = 12480 − 12036 = 444 m<sup>2</sup> (or 2 × 1 × 224 − 4)"
+     ],
+     "answer": "444 m<sup>2</sup>"
+    }
+   },
+   {
+    "type": "cube-cuboid",
+    "name": "Cubes and cuboids",
+    "how": "Write volume lbh, surface 2(lb + bh + hl) and diagonal √(l<sup>2</sup> + b<sup>2</sup> + h<sup>2</sup>). If face diagonals are given, set up three equations and add them.",
+    "example": {
+     "q": "The diagonals of the three faces meeting at one corner of a cuboid are √5 cm, √10 cm and √13 cm. Find its volume.",
+     "steps": [
+      "l<sup>2</sup> + b<sup>2</sup> = 5, b<sup>2</sup> + h<sup>2</sup> = 10, h<sup>2</sup> + l<sup>2</sup> = 13",
+      "Adding: 2(l<sup>2</sup> + b<sup>2</sup> + h<sup>2</sup>) = 28, so the sum is 14",
+      "h<sup>2</sup> = 14 − 5 = 9, l<sup>2</sup> = 14 − 10 = 4, b<sup>2</sup> = 14 − 13 = 1",
+      "l = 2, b = 1, h = 3, so volume = 6 cm<sup>3</sup>"
+     ],
+     "answer": "6 cm<sup>3</sup>"
+    }
+   },
+   {
+    "type": "cylinders",
+    "name": "Cylinders",
+    "how": "Volume πr<sup>2</sup>h, curved surface 2πrh. For a pipe or hollow cylinder use the difference of the outer and inner circles: πh(R<sup>2</sup> − r<sup>2</sup>).",
+    "example": {
+     "q": "A metal pipe is 21 cm long. Its outer radius is 5 cm and inner radius is 2 cm. Find the volume of metal. (Take π = 22/7)",
+     "steps": [
+      "Volume = πh(R<sup>2</sup> − r<sup>2</sup>)",
+      "= 22/7 × 21 × (25 − 4)",
+      "= 66 × 21 = 1386 cm<sup>3</sup>"
+     ],
+     "answer": "1386 cm<sup>3</sup>"
+    }
+   },
+   {
+    "type": "cones-frustums",
+    "name": "Cones and frustums",
+    "how": "Find the missing one of r, h, l with l<sup>2</sup> = r<sup>2</sup> + h<sup>2</sup>. When a sector is folded into a cone, its radius becomes the slant height and its arc becomes the base circumference.",
+    "example": {
+     "q": "A sector of angle 216° is cut from a circle of radius 25 cm and folded into a cone. Find the volume of the cone.",
+     "steps": [
+      "Slant height l = 25 cm",
+      "Arc = base circumference, so r = 25 × 216/360 = 15 cm",
+      "h = √(25<sup>2</sup> − 15<sup>2</sup>) = 20 cm",
+      "Volume = ⅓ × π × 15<sup>2</sup> × 20 = 1500π cm<sup>3</sup>"
+     ],
+     "answer": "1500π cm<sup>3</sup>"
+    }
+   },
+   {
+    "type": "spheres-hemispheres",
+    "name": "Spheres and hemispheres",
+    "how": "Sphere: 4πr<sup>2</sup> and (4/3)πr<sup>3</sup>. Solid hemisphere: 3πr<sup>2</sup> and (2/3)πr<sup>3</sup>. When a sphere is cut, add the new flat faces.",
+    "example": {
+     "q": "A sphere of radius 21 cm is cut into 8 equal pieces by three cuts through its centre at right angles to each other. Find the total surface area of one piece. (Take π = 22/7)",
+     "steps": [
+      "πr<sup>2</sup> = 22/7 × 441 = 1386",
+      "Curved part = 4πr<sup>2</sup> ÷ 8 = πr<sup>2</sup>/2 = 693 cm<sup>2</sup>",
+      "Each piece has 3 flat quarter-circles = 3 × 1386/4 = 1039.5 cm<sup>2</sup>",
+      "Total = 693 + 1039.5 = 1732.5 cm<sup>2</sup>"
+     ],
+     "answer": "1732.5 cm<sup>2</sup>"
+    }
+   },
+   {
+    "type": "prisms-pyramids",
+    "name": "Prisms and pyramids",
+    "how": "Prism: volume = base area × height. Pyramid: volume = ⅓ × base area × height; lateral surface = ½ × base perimeter × slant height. Find the slant height with Pythagoras.",
+    "example": {
+     "q": "A pyramid has a square base of side 8 cm and a height of 3 cm. Find its total surface area.",
+     "steps": [
+      "Slant height = √(3<sup>2</sup> + 4<sup>2</sup>) = 5 cm",
+      "Lateral surface = ½ × (4 × 8) × 5 = 80 cm<sup>2</sup>",
+      "Total = 80 + 8<sup>2</sup> = 144 cm<sup>2</sup>"
+     ],
+     "answer": "144 cm<sup>2</sup>"
+    }
+   },
+   {
+    "type": "recasting-combined",
+    "name": "Recasting and combined solids",
+    "how": "Volume is unchanged when melting or pouring. Set big volume = number × small volume, cancel π and common factors first, then divide.",
+    "example": {
+     "q": "A hemispherical bowl of internal radius 18 cm is full of liquid. It is poured into cylindrical bottles of radius 3 cm and height 6 cm. How many bottles are needed?",
+     "steps": [
+      "Bowl = (2/3)π × 18<sup>3</sup> = 3888π",
+      "One bottle = π × 3<sup>2</sup> × 6 = 54π",
+      "Bottles = 3888π ÷ 54π = 72"
+     ],
+     "answer": "72"
+    }
+   },
+   {
+    "type": "percent-change",
+    "name": "Percent change in dimensions",
+    "how": "Area depends on length squared and volume on length cubed. Multiply the factors: a 48% decrease means a factor of 0.52.",
+    "example": {
+     "q": "The radius of a sphere is decreased by 48%. By what percent does its surface area decrease?",
+     "steps": [
+      "New radius = 0.52r",
+      "New surface area = 0.52<sup>2</sup> = 0.2704 of the old",
+      "Decrease = 1 − 0.2704 = 0.7296, that is 72.96%",
+      "Shortcut: 2(−48) + 48<sup>2</sup>/100 = −96 + 23.04 = −72.96"
+     ],
+     "answer": "72.96%"
     }
    }
   ],
   "tips": [
-   "With π = 22/7, choose r as a multiple of 7 to cancel quickly.",
-   "A path of width w outside an l × b rectangle has area (l + 2w)(b + 2w) − lb."
+   "Take π = 22/7 when the radius is a multiple of 7, and cancel the 7 before multiplying.",
+   "Convert all lengths to one unit first. Remember 1 m<sup>3</sup> = 1000 litres and 1 hectare = 10,000 m<sup>2</sup>.",
+   "In recasting questions, write volume ÷ volume as one fraction; π, ⅓ and 4/3 usually cancel.",
+   "For percent changes, use 2x + x<sup>2</sup>/100 for area and (1 + x/100)<sup>3</sup> − 1 for volume instead of computing both shapes.",
+   "Spot triplets (3-4-5, 5-12-13, 7-24-25, 8-15-17, 20-21-29) for slant heights and diagonals.",
+   "A regular hexagon is six equilateral triangles; an equilateral triangle's centre is one third of the height above the base."
   ],
   "traps": [
-   "Do not confuse diameter with radius.",
-   "CSA of a cylinder does not include the two circular ends."
+   "Diameter is given but the formula needs the radius. Halve it first.",
+   "Curved and total surface area are different. Open objects (bowl, tank without a lid, pipe, well) do not have all faces.",
+   "A solid hemisphere has total surface 3πr<sup>2</sup>, but an open bowl has only 2πr<sup>2</sup>.",
+   "Do not mix the vertical height and the slant height of cones and pyramids.",
+   "A path inside a rectangle subtracts 4w<sup>2</sup>; a path outside adds 4w<sup>2</sup>. Two cross paths overlap in a square of w<sup>2</sup>, counted once.",
+   "Area units square and volume units cube: 1 m<sup>2</sup> is 10,000 cm<sup>2</sup>, not 100."
   ]
  },
  "formulas": [
   {
-   "name": "Heron",
-   "expr": "√(s(s − a)(s − b)(s − c))"
+   "name": "Heron's formula",
+   "expr": "√(s(s − a)(s − b)(s − c)), s = (a + b + c)/2"
   },
   {
-   "name": "Cylinder volume",
-   "expr": "πr²h"
+   "name": "Equilateral triangle area",
+   "expr": "(√3/4)a²"
   },
   {
-   "name": "Cylinder CSA",
-   "expr": "2πrh"
+   "name": "Inradius and circumradius",
+   "expr": "r = area/s, R = abc/(4 × area)"
   },
   {
-   "name": "Cone volume",
-   "expr": "⅓πr²h"
+   "name": "Equilateral radii",
+   "expr": "R = a/√3, r = a/(2√3)"
   },
   {
-   "name": "Sphere volume",
-   "expr": "(4/3)πr³"
+   "name": "Rhombus area",
+   "expr": "½ d₁d₂"
+  },
+  {
+   "name": "Trapezium area",
+   "expr": "½ (a + b) × h"
+  },
+  {
+   "name": "Regular hexagon area",
+   "expr": "(3√3/2)a²"
+  },
+  {
+   "name": "Circle",
+   "expr": "C = 2πr, A = πr²"
+  },
+  {
+   "name": "Ring area",
+   "expr": "π(R² − r²)"
+  },
+  {
+   "name": "Arc length and sector area",
+   "expr": "(θ/360) × 2πr, (θ/360) × πr²"
+  },
+  {
+   "name": "Path outside (width w)",
+   "expr": "2w(l + b) + 4w²"
+  },
+  {
+   "name": "Path inside (width w)",
+   "expr": "2w(l + b) − 4w²"
+  },
+  {
+   "name": "Cuboid",
+   "expr": "V = lbh, TSA = 2(lb + bh + hl), d = √(l² + b² + h²)"
+  },
+  {
+   "name": "Cube",
+   "expr": "V = a³, TSA = 6a², d = a√3"
+  },
+  {
+   "name": "Cylinder",
+   "expr": "V = πr²h, CSA = 2πrh, TSA = 2πr(r + h)"
+  },
+  {
+   "name": "Hollow cylinder volume",
+   "expr": "πh(R² − r²)"
+  },
+  {
+   "name": "Cone",
+   "expr": "V = ⅓πr²h, CSA = πrl, l = √(r² + h²)"
+  },
+  {
+   "name": "Frustum",
+   "expr": "V = (πh/3)(R² + r² + Rr), CSA = π(R + r)l"
+  },
+  {
+   "name": "Sphere",
+   "expr": "V = (4/3)πr³, SA = 4πr²"
+  },
+  {
+   "name": "Hemisphere",
+   "expr": "V = (2/3)πr³, CSA = 2πr², TSA = 3πr²"
+  },
+  {
+   "name": "Prism",
+   "expr": "V = base area × h, LSA = base perimeter × h"
+  },
+  {
+   "name": "Pyramid",
+   "expr": "V = ⅓ × base area × h, LSA = ½ × base perimeter × slant height"
+  },
+  {
+   "name": "Regular tetrahedron",
+   "expr": "V = √2a³/12, TSA = √3a²"
+  },
+  {
+   "name": "Percent change in area",
+   "expr": "2x + x²/100"
   }
  ],
  "questions": [
@@ -93,7 +368,7 @@
    "id": "q-mensuration-001",
    "rev": 1,
    "topic": "q-mensuration",
-   "type": "area-2d",
+   "type": "circles",
    "level": 1,
    "q": "What is the area of a circle of radius 7 cm? (Take π = 22/7)",
    "options": [
@@ -110,7 +385,7 @@
    "id": "q-mensuration-002",
    "rev": 1,
    "topic": "q-mensuration",
-   "type": "volume-3d",
+   "type": "cube-cuboid",
    "level": 1,
    "q": "What is the volume of a cube whose edge is 6 cm?",
    "options": [
@@ -127,7 +402,7 @@
    "id": "q-mensuration-003",
    "rev": 1,
    "topic": "q-mensuration",
-   "type": "area-2d",
+   "type": "triangles",
    "level": 2,
    "q": "Find the area of a triangle whose sides are 13 cm, 14 cm and 15 cm.",
    "img": "quant/mens-triangle-131415.svg",
@@ -145,7 +420,7 @@
    "id": "q-mensuration-004",
    "rev": 1,
    "topic": "q-mensuration",
-   "type": "surface-area",
+   "type": "cylinders",
    "level": 2,
    "q": "Find the curved surface area of a cylinder with radius 7 cm and height 10 cm. (Take π = 22/7)",
    "img": "quant/mens-cylinder.svg",
@@ -163,7 +438,7 @@
    "id": "q-mensuration-005",
    "rev": 1,
    "topic": "q-mensuration",
-   "type": "volume-3d",
+   "type": "recasting-combined",
    "level": 3,
    "q": "A solid metal sphere of radius 6 cm is melted and recast into small cones, each of radius 3 cm and height 4 cm. How many cones are made?",
    "options": [
@@ -180,7 +455,7 @@
    "id": "q-mensuration-006",
    "rev": 1,
    "topic": "q-mensuration",
-   "type": "area-2d",
+   "type": "paths-borders",
    "level": 3,
    "q": "A rectangular garden 40 m × 30 m has a path 2 m wide running all around it on the outside. What is the area of the path?",
    "img": "quant/mens-path.svg",

@@ -1,76 +1,394 @@
 {
   "topic": "g-static",
   "notes": {
-    "summary": "Static GK gives <b>2–3 questions</b>: sports (players per team, trophies, terms), national awards, books and authors, and important days. These are pure memory facts — revise them with flashcards.",
+    "summary": "Static GK gives <b>3 to 5 questions</b> per paper: <b>sports</b> (terms, trophies, venues, winners), <b>awards</b>, <b>books and authors</b>, <b>important days</b>, and organisations with their headquarters. These are pure memory facts, so revise them as short lists every week. Results of recent events (who won in a given year) change, so pair this page with a monthly current affairs source.",
     "concepts": [
       {
-        "title": "Sports: team size, trophies, terms",
-        "body": "<table><thead><tr><th>Game</th><th>Players per side</th></tr></thead><tbody><tr><td>Cricket, Football, Hockey</td><td>11</td></tr><tr><td>Kabaddi, Netball, Water polo</td><td>7</td></tr><tr><td>Volleyball</td><td>6</td></tr><tr><td>Basketball</td><td>5</td></tr><tr><td>Polo</td><td>4</td></tr></tbody></table><table><thead><tr><th>Trophy</th><th>Sport</th></tr></thead><tbody><tr><td>Durand Cup, Santosh Trophy</td><td>Football</td></tr><tr><td>Ranji Trophy, Duleep Trophy</td><td>Cricket</td></tr><tr><td>Thomas Cup (men), Uber Cup (women)</td><td>Badminton</td></tr><tr><td>Davis Cup</td><td>Tennis (men's team)</td></tr><tr><td>Ryder Cup</td><td>Golf</td></tr><tr><td>Beighton Cup</td><td>Hockey</td></tr></tbody></table>Terms: <i>checkmate</i> (chess), <i>deuce, love</i> (tennis), <i>googly, LBW</i> (cricket), <i>penalty corner</i> (hockey)."
+        "title": "Sports: players and match rules",
+        "body": "<table><thead><tr><th>Sport</th><th>Players per side (on field)</th><th>Rule to remember</th></tr></thead><tbody><tr><td>Cricket</td><td>11</td><td>Pitch is 22 yards long</td></tr><tr><td>Football</td><td>11</td><td>Two halves of 45 minutes</td></tr><tr><td>Hockey</td><td>11</td><td>Four quarters of 15 minutes</td></tr><tr><td>Basketball</td><td>5</td><td>FIBA: four quarters of 10 minutes (NBA: 12 minutes)</td></tr><tr><td>Volleyball</td><td>6</td><td>Sets to 25 points</td></tr><tr><td>Kabaddi</td><td>7</td><td>Raider chants 'kabaddi'</td></tr><tr><td>Kho-kho</td><td>9 (squad of 12)</td><td>Chasers sit in a line</td></tr><tr><td>Handball, netball, water polo</td><td>7</td><td></td></tr><tr><td>Baseball</td><td>9</td><td></td></tr><tr><td>Polo</td><td>4</td><td>Periods are called chukkers</td></tr><tr><td>Rugby union</td><td>15</td><td></td></tr></tbody></table><p><b>National sports</b>: India has not officially declared one (hockey is popularly called so). Sri Lanka: volleyball. Bangladesh: kabaddi. Pakistan: field hockey. China: table tennis. Japan: sumo wrestling. USA: baseball. Bhutan: archery. Canada: lacrosse and ice hockey.</p>"
+      },
+      {
+        "title": "Sports terms",
+        "body": "<table><thead><tr><th>Sport</th><th>Terms</th></tr></thead><tbody><tr><td>Cricket</td><td>LBW, googly, doosra, yorker, bouncer, maiden over, hat-trick, duck, follow-on, silly point, 'bend your back' (bowl with full effort)</td></tr><tr><td>Football</td><td>Offside, penalty kick, corner kick, header, dribble, free kick</td></tr><tr><td>Hockey</td><td>Penalty corner (short corner), bully, push, flick, scoop</td></tr><tr><td>Tennis</td><td>Love (zero), deuce, advantage, ace, volley, smash, let</td></tr><tr><td>Badminton</td><td>Shuttlecock, smash, let, drop shot</td></tr><tr><td>Golf</td><td>Par, birdie (one under), eagle (two under), bogey (one over), tee, caddie, hole-in-one</td></tr><tr><td>Chess</td><td>Checkmate, stalemate, castling, gambit, en passant</td></tr><tr><td>Boxing</td><td>Jab, hook, uppercut, knockout</td></tr><tr><td>Billiards and snooker</td><td>Cue, cannon, pot, break, in-off</td></tr><tr><td>Volleyball</td><td>Spike, block, libero</td></tr><tr><td>Kabaddi</td><td>Raid, cant, bonus line, lobby</td></tr><tr><td>Wrestling</td><td>Half nelson, suplex</td></tr><tr><td>Baseball</td><td>Home run, pitcher, strike</td></tr></tbody></table>"
+      },
+      {
+        "title": "Trophies and cups",
+        "body": "<table><thead><tr><th>Sport</th><th>Trophies</th></tr></thead><tbody><tr><td>Football</td><td><b>Durand Cup</b> (1888, oldest in Asia), Santosh Trophy (national championship), Subroto Cup (schools), Federation Cup; Indian Super League (started 2014); FIFA World Cup, Copa America, UEFA Euro</td></tr><tr><td>Cricket (domestic)</td><td>Ranji Trophy (first-class), Duleep Trophy, Irani Cup, Vijay Hazare Trophy (one-day), Syed Mushtaq Ali Trophy (T20), Cooch Behar Trophy (under-19)</td></tr><tr><td>Cricket (series)</td><td>The Ashes (England and Australia), Border-Gavaskar Trophy (India and Australia), Anderson-Tendulkar Trophy (India and England Tests, from 2025)</td></tr><tr><td>Hockey</td><td>Beighton Cup (1895, oldest hockey event), Aga Khan Cup, Rangaswamy Cup (national), Sultan Azlan Shah Cup (Malaysia)</td></tr><tr><td>Tennis</td><td>Davis Cup (men's teams), Billie Jean King Cup (women's teams); four Grand Slams</td></tr><tr><td>Badminton</td><td>Thomas Cup (men), Uber Cup (women), Sudirman Cup (mixed teams)</td></tr><tr><td>Table tennis</td><td>Swaythling Cup (men), Corbillon Cup (women)</td></tr><tr><td>Golf</td><td>Ryder Cup, Walker Cup</td></tr><tr><td>Yachting</td><td>America's Cup</td></tr></tbody></table><p><b>Grand Slams</b>: Australian Open (hard court, January), French Open (clay, Roland Garros, Paris), Wimbledon (grass, London), US Open (hard court, Flushing Meadows, New York).</p>"
+      },
+      {
+        "title": "Stadiums and venues",
+        "body": "<table><thead><tr><th>Stadium</th><th>City</th><th>Known for</th></tr></thead><tbody><tr><td>Narendra Modi Stadium (Motera)</td><td>Ahmedabad</td><td>Largest cricket stadium in the world</td></tr><tr><td>Eden Gardens</td><td>Kolkata</td><td>Cricket</td></tr><tr><td>Wankhede, Brabourne</td><td>Mumbai</td><td>Cricket</td></tr><tr><td>M.A. Chidambaram (Chepauk)</td><td>Chennai</td><td>Cricket</td></tr><tr><td>Arun Jaitley (formerly Feroz Shah Kotla)</td><td>Delhi</td><td>Cricket</td></tr><tr><td>M. Chinnaswamy</td><td>Bengaluru</td><td>Cricket</td></tr><tr><td>Green Park</td><td>Kanpur</td><td>Cricket</td></tr><tr><td>Salt Lake (Yuva Bharati Krirangan)</td><td>Kolkata</td><td>Football</td></tr><tr><td>Major Dhyan Chand National Stadium</td><td>New Delhi</td><td>Hockey</td></tr><tr><td>Kalinga Stadium</td><td>Bhubaneswar</td><td>Hockey (Men's World Cups 2018 and 2023)</td></tr><tr><td>Birsa Munda Hockey Stadium</td><td>Rourkela</td><td>Hockey (2023 World Cup)</td></tr><tr><td>Lord's</td><td>London</td><td>'Home of cricket'</td></tr><tr><td>Melbourne Cricket Ground</td><td>Melbourne</td><td>Cricket</td></tr><tr><td>Maracanã</td><td>Rio de Janeiro</td><td>Football</td></tr></tbody></table>"
+      },
+      {
+        "title": "Major events and India's champions",
+        "body": "<ul><li><b>Olympics</b>: modern Games began in Athens, 1896 (Pierre de Coubertin). IOC HQ: Lausanne. Recent and next: Tokyo 2020 (held 2021), Paris 2024, Los Angeles 2028, Brisbane 2032.</li><li><b>Asian Games</b>: first in New Delhi, 1951. 2022 Games held at Hangzhou in 2023; 2026 at Aichi-Nagoya (Japan).</li><li><b>Commonwealth Games</b>: first at Hamilton, Canada, 1930. 2022 Birmingham; 2026 Glasgow.</li><li><b>National Games</b>: 36th Gujarat (2022), 37th Goa (2023), 38th Uttarakhand (2025).</li></ul><table><thead><tr><th>India's Olympic landmarks</th><th>Fact</th></tr></thead><tbody><tr><td>Hockey</td><td>8 gold medals (1928 to 1980)</td></tr><tr><td>K.D. Jadhav</td><td>First individual medal, wrestling bronze, Helsinki 1952</td></tr><tr><td>Karnam Malleswari</td><td>First Indian woman to win an Olympic medal, weightlifting bronze, Sydney 2000</td></tr><tr><td>Abhinav Bindra</td><td>First individual gold, shooting, Beijing 2008</td></tr><tr><td>Neeraj Chopra</td><td>Javelin gold, Tokyo 2020; silver, Paris 2024</td></tr><tr><td>Manu Bhaker</td><td>Two bronze medals at Paris 2024 (shooting)</td></tr></tbody></table><p><b>Cricket</b>: India won the ODI World Cup in 1983 (Kapil Dev) and 2011 (M.S. Dhoni); the T20 World Cup in 2007 and 2024; the Champions Trophy in 2002 (shared), 2013 and 2025. India's women won the ODI World Cup in 2025. <b>Chess</b>: D. Gukesh became the youngest world champion in December 2024.</p>"
+      },
+      {
+        "title": "Sports awards",
+        "body": "<table><thead><tr><th>Award</th><th>Given for</th></tr></thead><tbody><tr><td>Major Dhyan Chand Khel Ratna</td><td>Highest sports honour (started 1991 to 1992; renamed from Rajiv Gandhi Khel Ratna in 2021). First winner: Viswanathan Anand</td></tr><tr><td>Arjuna Award</td><td>Outstanding performance (since 1961)</td></tr><tr><td>Dronacharya Award</td><td>Coaches (since 1985)</td></tr><tr><td>Maulana Abul Kalam Azad (MAKA) Trophy</td><td>Best university in sports</td></tr><tr><td>Rashtriya Khel Protsahan Puraskar</td><td>Organisations that promote sport</td></tr></tbody></table><p>National Sports Awards are usually given around <b>29 August</b>, National Sports Day, Major Dhyan Chand's birthday.</p>"
       },
       {
         "title": "National awards",
-        "body": "<ul><li><b>Bharat Ratna</b>: highest civilian award, instituted in <b>1954</b>. First recipients: C. Rajagopalachari, Dr. S. Radhakrishnan and Dr. C.V. Raman.</li><li><b>Dadasaheb Phalke Award</b>: cinema; first given in 1969 to <b>Devika Rani</b>.</li><li><b>Jnanpith Award</b>: literature; first given in 1965 to <b>G. Sankara Kurup</b> (Malayalam).</li><li>Sports: <b>Major Dhyan Chand Khel Ratna</b> (highest sports honour; renamed in 2021), <b>Arjuna Award</b> (sportspersons), <b>Dronacharya Award</b> (coaches).</li></ul>"
+        "body": "<ul><li><b>Bharat Ratna</b> (1954): highest civilian award. First (1954): C. Rajagopalachari, S. Radhakrishnan, C.V. Raman. First posthumous: Lal Bahadur Shastri (1966). First woman: Indira Gandhi (1971). Non-Indians: Khan Abdul Ghaffar Khan (1987), Nelson Mandela (1990). Youngest: Sachin Tendulkar (2014). Usually at most 3 a year; 5 were named in 2024.</li><li><b>Padma awards</b> (1954): Padma Vibhushan, Padma Bhushan, Padma Shri; announced on Republic Day eve.</li><li><b>Gallantry</b>: wartime Param Vir Chakra (first: Major Somnath Sharma, 1947), Maha Vir Chakra, Vir Chakra. Peacetime Ashoka Chakra, Kirti Chakra, Shaurya Chakra.</li></ul><table><thead><tr><th>Award</th><th>Field and fact</th></tr></thead><tbody><tr><td>Jnanpith</td><td>Literature (1961); first winner G. Sankara Kurup (Malayalam), 1965</td></tr><tr><td>Sahitya Akademi Award</td><td>Literature in 24 languages (1954)</td></tr><tr><td>Saraswati Samman</td><td>Literature (K.K. Birla Foundation)</td></tr><tr><td>Dadasaheb Phalke Award</td><td>Cinema (1969); first winner Devika Rani</td></tr><tr><td>Shanti Swarup Bhatnagar Prize</td><td>Science (1958)</td></tr><tr><td>Gandhi Peace Prize</td><td>1995; first winner Julius Nyerere</td></tr></tbody></table>"
+      },
+      {
+        "title": "International awards",
+        "body": "<ul><li><b>Nobel Prize</b> (from 1901; Alfred Nobel). Peace prize given in Oslo, others in Stockholm. Economics added in 1969.</li><li><b>Ramon Magsaysay Award</b> ('Asia's Nobel', Philippines, 1957); first Indian winner Vinoba Bhave (1958).</li><li><b>Pulitzer Prize</b>: journalism, books, music (USA, Columbia University).</li><li><b>Booker Prize</b>: English fiction. Indian-origin winners: Salman Rushdie (<i>Midnight's Children</i>, 1981), Arundhati Roy (<i>The God of Small Things</i>, 1997), Kiran Desai (<i>The Inheritance of Loss</i>, 2006), Aravind Adiga (<i>The White Tiger</i>, 2008).</li><li><b>International Booker</b> (translated fiction): Geetanjali Shree, <i>Tomb of Sand</i> (2022, Hindi); Banu Mushtaq, <i>Heart Lamp</i> (2025, Kannada).</li><li><b>Abel Prize</b> and <b>Fields Medal</b>: mathematics (Fields for those under 40). Karen Uhlenbeck was the first woman to win the Abel Prize (2019). <b>Turing Award</b>: computing.</li><li><b>Oscars</b>: Bhanu Athaiya was the first Indian winner (costume design, <i>Gandhi</i>, 1983 ceremony); Satyajit Ray got an honorary Oscar (1992); A.R. Rahman won two for <i>Slumdog Millionaire</i> (2009); <i>Period. End of Sentence.</i> won best documentary short (2019); 'Naatu Naatu' (<i>RRR</i>) won best original song and <i>The Elephant Whisperers</i> won best documentary short (2023).</li></ul><table><thead><tr><th>Indian Nobel laureate</th><th>Field, year</th></tr></thead><tbody><tr><td>Rabindranath Tagore</td><td>Literature, 1913</td></tr><tr><td>C.V. Raman</td><td>Physics, 1930</td></tr><tr><td>Har Gobind Khorana</td><td>Medicine, 1968</td></tr><tr><td>Mother Teresa</td><td>Peace, 1979</td></tr><tr><td>S. Chandrasekhar</td><td>Physics, 1983</td></tr><tr><td>Amartya Sen</td><td>Economics, 1998</td></tr><tr><td>Venkatraman Ramakrishnan</td><td>Chemistry, 2009</td></tr><tr><td>Kailash Satyarthi</td><td>Peace, 2014 (with Malala Yousafzai)</td></tr><tr><td>Abhijit Banerjee</td><td>Economics, 2019</td></tr></tbody></table>"
       },
       {
         "title": "Books and authors",
-        "body": "<table><thead><tr><th>Book</th><th>Author</th></tr></thead><tbody><tr><td>Gitanjali</td><td>Rabindranath Tagore</td></tr><tr><td>The Discovery of India</td><td>Jawaharlal Nehru</td></tr><tr><td>The Story of My Experiments with Truth</td><td>M.K. Gandhi</td></tr><tr><td>Wings of Fire</td><td>A.P.J. Abdul Kalam (with Arun Tiwari)</td></tr><tr><td>India Wins Freedom</td><td>Maulana Abul Kalam Azad</td></tr><tr><td>Anandamath</td><td>Bankim Chandra Chattopadhyay</td></tr><tr><td>Godaan</td><td>Munshi Premchand</td></tr><tr><td>Akbarnama</td><td>Abul Fazl</td></tr></tbody></table>"
+        "body": "<table><thead><tr><th>Book</th><th>Author</th></tr></thead><tbody><tr><td>Arthashastra</td><td>Kautilya (Chanakya)</td></tr><tr><td>Indica</td><td>Megasthenes</td></tr><tr><td>Abhijnanashakuntalam, Meghaduta</td><td>Kalidasa</td></tr><tr><td>Mudrarakshasa</td><td>Vishakhadatta</td></tr><tr><td>Mrichchhakatika</td><td>Shudraka</td></tr><tr><td>Panchatantra</td><td>Vishnu Sharma</td></tr><tr><td>Natya Shastra</td><td>Bharata Muni</td></tr><tr><td>Buddhacharita</td><td>Ashvaghosha</td></tr><tr><td>Rajatarangini</td><td>Kalhana</td></tr><tr><td>Gita Govinda</td><td>Jayadeva</td></tr><tr><td>Prithviraj Raso</td><td>Chand Bardai</td></tr><tr><td>Baburnama</td><td>Babur</td></tr><tr><td>Humayun-nama</td><td>Gulbadan Begum</td></tr><tr><td>Akbarnama, Ain-i-Akbari</td><td>Abul Fazl</td></tr><tr><td>Padshahnama (Badshah Nama)</td><td>Abdul Hamid Lahori</td></tr><tr><td>Padmavat</td><td>Malik Muhammad Jayasi</td></tr><tr><td>Ramcharitmanas</td><td>Tulsidas</td></tr><tr><td>Gitanjali</td><td>Rabindranath Tagore</td></tr><tr><td>Anandamath</td><td>Bankim Chandra Chattopadhyay</td></tr><tr><td>Discovery of India, Glimpses of World History</td><td>Jawaharlal Nehru</td></tr><tr><td>My Experiments with Truth, Hind Swaraj</td><td>Mahatma Gandhi</td></tr><tr><td>India Wins Freedom</td><td>Maulana Abul Kalam Azad</td></tr><tr><td>Annihilation of Caste</td><td>B.R. Ambedkar</td></tr><tr><td>Gita Rahasya</td><td>Bal Gangadhar Tilak</td></tr><tr><td>Poverty and Un-British Rule in India</td><td>Dadabhai Naoroji</td></tr><tr><td>Why I Am an Atheist</td><td>Bhagat Singh</td></tr><tr><td>Godaan, Gaban, Nirmala</td><td>Munshi Premchand</td></tr><tr><td>Devdas, Pather Dabi</td><td>Sarat Chandra Chattopadhyay</td></tr><tr><td>Kamayani</td><td>Jaishankar Prasad</td></tr><tr><td>Madhushala</td><td>Harivansh Rai Bachchan</td></tr><tr><td>Rashmirathi</td><td>Ramdhari Singh Dinkar</td></tr><tr><td>Malgudi Days, The Guide</td><td>R.K. Narayan</td></tr><tr><td>Untouchable</td><td>Mulk Raj Anand</td></tr><tr><td>Train to Pakistan</td><td>Khushwant Singh</td></tr><tr><td>A Suitable Boy</td><td>Vikram Seth</td></tr><tr><td>The Autobiography of an Unknown Indian, A Passage to England</td><td>Nirad C. Chaudhuri</td></tr><tr><td>A Passage to India</td><td>E.M. Forster</td></tr><tr><td>Wings of Fire, Ignited Minds</td><td>A.P.J. Abdul Kalam</td></tr><tr><td>The Insider</td><td>P.V. Narasimha Rao</td></tr><tr><td>Playing It My Way</td><td>Sachin Tendulkar</td></tr><tr><td>Unbreakable</td><td>Mary Kom</td></tr><tr><td>The Race of My Life</td><td>Milkha Singh</td></tr><tr><td>Long Walk to Freedom</td><td>Nelson Mandela</td></tr><tr><td>Animal Farm, Nineteen Eighty-Four</td><td>George Orwell (born in Motihari, Bihar)</td></tr><tr><td>The Jungle Book, Kim</td><td>Rudyard Kipling</td></tr><tr><td>War and Peace</td><td>Leo Tolstoy</td></tr><tr><td>Das Kapital</td><td>Karl Marx</td></tr><tr><td>The Republic</td><td>Plato</td></tr><tr><td>The Prince</td><td>Niccolò Machiavelli</td></tr></tbody></table>"
       },
       {
         "title": "Important days",
-        "body": "<table><thead><tr><th>Date</th><th>Day</th></tr></thead><tbody><tr><td>12 January</td><td>National Youth Day (Swami Vivekananda's birthday)</td></tr><tr><td>15 January</td><td>Army Day</td></tr><tr><td>28 February</td><td>National Science Day (Raman Effect, 1928)</td></tr><tr><td>8 March</td><td>International Women's Day</td></tr><tr><td>22 April</td><td>Earth Day</td></tr><tr><td>5 June</td><td>World Environment Day</td></tr><tr><td>21 June</td><td>International Yoga Day</td></tr><tr><td>29 August</td><td>National Sports Day (Major Dhyan Chand's birthday)</td></tr><tr><td>5 September</td><td>Teachers' Day (Dr. S. Radhakrishnan's birthday)</td></tr><tr><td>14 September</td><td>Hindi Diwas</td></tr><tr><td>14 November</td><td>Children's Day (Nehru's birthday)</td></tr><tr><td>26 November</td><td>Constitution Day</td></tr><tr><td>10 December</td><td>Human Rights Day</td></tr></tbody></table>"
+        "body": "<table><thead><tr><th>Date</th><th>Day</th></tr></thead><tbody><tr><td>9 January</td><td>Pravasi Bharatiya Divas (Gandhi's return, 1915)</td></tr><tr><td>12 January</td><td>National Youth Day (Swami Vivekananda)</td></tr><tr><td>15 January</td><td>Army Day</td></tr><tr><td>23 January</td><td>Parakram Diwas (Subhas Chandra Bose)</td></tr><tr><td>24 January</td><td>National Girl Child Day</td></tr><tr><td>25 January</td><td>National Voters' Day (Election Commission founded, 1950)</td></tr><tr><td>30 January</td><td>Martyrs' Day</td></tr><tr><td>28 February</td><td>National Science Day (Raman effect, 1928)</td></tr><tr><td>8 March</td><td>International Women's Day</td></tr><tr><td>22 March</td><td>World Water Day</td></tr><tr><td>7 April</td><td>World Health Day (WHO founded, 1948)</td></tr><tr><td>22 April</td><td>Earth Day</td></tr><tr><td>24 April</td><td>National Panchayati Raj Day</td></tr><tr><td>11 May</td><td>National Technology Day (Pokhran II, 1998)</td></tr><tr><td>31 May</td><td>World No Tobacco Day</td></tr><tr><td>5 June</td><td>World Environment Day</td></tr><tr><td>21 June</td><td>International Day of Yoga (since 2015)</td></tr><tr><td>1 July</td><td>National Doctors' Day (Dr B.C. Roy)</td></tr><tr><td>11 July</td><td>World Population Day</td></tr><tr><td>26 July</td><td>Kargil Vijay Diwas</td></tr><tr><td>7 August</td><td>National Handloom Day</td></tr><tr><td>29 August</td><td>National Sports Day (Major Dhyan Chand)</td></tr><tr><td>5 September</td><td>Teachers' Day (Dr S. Radhakrishnan)</td></tr><tr><td>8 September</td><td>International Literacy Day</td></tr><tr><td>14 September</td><td>Hindi Diwas</td></tr><tr><td>15 September</td><td>Engineers' Day (M. Visvesvaraya)</td></tr><tr><td>16 September</td><td>World Ozone Day</td></tr><tr><td>2 October</td><td>Gandhi Jayanti; International Day of Non-Violence</td></tr><tr><td>8 October</td><td>Air Force Day</td></tr><tr><td>16 October</td><td>World Food Day (FAO)</td></tr><tr><td>24 October</td><td>United Nations Day</td></tr><tr><td>31 October</td><td>Rashtriya Ekta Diwas (Sardar Patel)</td></tr><tr><td>11 November</td><td>National Education Day (Maulana Azad)</td></tr><tr><td>14 November</td><td>Children's Day (Nehru)</td></tr><tr><td>26 November</td><td>Constitution Day</td></tr><tr><td>1 December</td><td>World AIDS Day</td></tr><tr><td>4 December</td><td>Navy Day</td></tr><tr><td>7 December</td><td>Armed Forces Flag Day</td></tr><tr><td>10 December</td><td>Human Rights Day</td></tr><tr><td>16 December</td><td>Vijay Diwas (1971 war)</td></tr><tr><td>22 December</td><td>National Mathematics Day (Srinivasa Ramanujan)</td></tr><tr><td>23 December</td><td>Kisan Diwas (Chaudhary Charan Singh)</td></tr><tr><td>25 December</td><td>Good Governance Day (Atal Bihari Vajpayee)</td></tr></tbody></table>"
+      },
+      {
+        "title": "International organisations",
+        "body": "<p><b>United Nations</b>: founded 24 October 1945; HQ New York; six main organs (General Assembly, Security Council, ECOSOC, Trusteeship Council, International Court of Justice at The Hague, Secretariat). The Security Council has 15 members, 5 permanent (USA, UK, France, Russia, China) with veto power.</p><table><thead><tr><th>Organisation</th><th>Headquarters</th></tr></thead><tbody><tr><td>WHO, ILO, WTO, WIPO, ITU, WMO, UNHCR, Red Cross (ICRC)</td><td>Geneva</td></tr><tr><td>UNESCO</td><td>Paris</td></tr><tr><td>FAO, IFAD, World Food Programme</td><td>Rome</td></tr><tr><td>UNICEF, UNDP</td><td>New York</td></tr><tr><td>UNEP, UN-Habitat</td><td>Nairobi</td></tr><tr><td>IAEA, UNIDO, OPEC</td><td>Vienna</td></tr><tr><td>IMO, Amnesty International, Commonwealth Secretariat</td><td>London</td></tr><tr><td>ICAO</td><td>Montreal</td></tr><tr><td>Universal Postal Union</td><td>Bern</td></tr><tr><td>IMF, World Bank</td><td>Washington DC</td></tr><tr><td>Interpol</td><td>Lyon</td></tr><tr><td>IUCN, WWF</td><td>Gland, Switzerland</td></tr><tr><td>SAARC (1985)</td><td>Kathmandu</td></tr><tr><td>ASEAN (1967)</td><td>Jakarta</td></tr><tr><td>BIMSTEC (1997)</td><td>Dhaka</td></tr><tr><td>EU, NATO</td><td>Brussels</td></tr><tr><td>African Union</td><td>Addis Ababa</td></tr><tr><td>Shanghai Cooperation Organisation</td><td>Beijing</td></tr><tr><td>FIFA</td><td>Zurich</td></tr><tr><td>IOC</td><td>Lausanne</td></tr><tr><td>International Cricket Council</td><td>Dubai</td></tr></tbody></table>"
+      },
+      {
+        "title": "Indian institutions",
+        "body": "<table><thead><tr><th>Institution</th><th>Fact</th></tr></thead><tbody><tr><td>Indian Statistical Institute</td><td>P.C. Mahalanobis, 17 December 1931, Kolkata</td></tr><tr><td>University Grants Commission</td><td>Set up 1953; statutory body under the UGC Act, 1956</td></tr><tr><td>Geological Survey of India</td><td>1851, Kolkata</td></tr><tr><td>Archaeological Survey of India</td><td>1861, Alexander Cunningham</td></tr><tr><td>India Meteorological Department</td><td>1875; HQ New Delhi</td></tr><tr><td>Survey of India</td><td>1767; HQ Dehradun</td></tr><tr><td>Zoological Survey of India</td><td>1916, Kolkata</td></tr><tr><td>ICAR</td><td>1929, New Delhi</td></tr><tr><td>CSIR</td><td>1942, New Delhi</td></tr><tr><td>DRDO</td><td>1958, New Delhi</td></tr><tr><td>ISRO</td><td>1969, Bengaluru</td></tr><tr><td>BARC</td><td>Trombay, Mumbai</td></tr><tr><td>First IIT</td><td>Kharagpur, 1951</td></tr><tr><td>AIIMS</td><td>New Delhi, 1956</td></tr></tbody></table><p><b>Memorials</b>: National War Memorial (New Delhi, near India Gate); Vivekananda Rock Memorial (Kanyakumari); Statue of Unity (Kevadia, Gujarat, Sardar Patel, tallest statue in the world).</p>"
+      },
+      {
+        "title": "National symbols and Indian firsts",
+        "body": "<table><thead><tr><th>Symbol</th><th>Fact</th></tr></thead><tbody><tr><td>National emblem</td><td>Lion Capital of Sarnath; adopted 26 January 1950; motto 'Satyameva Jayate'</td></tr><tr><td>National flag</td><td>Designed from Pingali Venkayya's flag; adopted 22 July 1947; ratio 3:2; navy blue Ashoka Chakra with 24 spokes</td></tr><tr><td>National anthem</td><td>Jana Gana Mana by Tagore; adopted 24 January 1950; about 52 seconds; first sung at the 1911 Calcutta Congress session</td></tr><tr><td>National song</td><td>Vande Mataram by Bankim Chandra, from <i>Anandamath</i></td></tr><tr><td>National calendar</td><td>Saka calendar, adopted 22 March 1957</td></tr><tr><td>Animal, bird, flower, tree, fruit</td><td>Tiger, peacock, lotus, banyan, mango</td></tr><tr><td>River, aquatic animal, heritage animal</td><td>Ganga, Ganges river dolphin, elephant</td></tr><tr><td>Rupee symbol ₹</td><td>Designed by D. Udaya Kumar (2010)</td></tr></tbody></table><table><thead><tr><th>First</th><th>Person</th></tr></thead><tbody><tr><td>President; Prime Minister</td><td>Rajendra Prasad; Jawaharlal Nehru</td></tr><tr><td>Home Minister; Education Minister; Law Minister</td><td>Sardar Patel; Maulana Azad; B.R. Ambedkar</td></tr><tr><td>Finance Minister</td><td>R.K. Shanmukham Chetty</td></tr><tr><td>Woman Prime Minister; woman President</td><td>Indira Gandhi; Pratibha Patil</td></tr><tr><td>Woman Chief Minister; woman Governor</td><td>Sucheta Kriplani (UP); Sarojini Naidu (UP)</td></tr><tr><td>Woman IPS officer</td><td>Kiran Bedi</td></tr><tr><td>Indian in space</td><td>Rakesh Sharma (1984)</td></tr><tr><td>Indian woman to climb Everest</td><td>Bachendri Pal (1984)</td></tr><tr><td>Field Marshal</td><td>Sam Manekshaw (Army chief in the 1971 war)</td></tr><tr><td>Indian in the ICS</td><td>Satyendranath Tagore</td></tr><tr><td>Indian Miss World</td><td>Reita Faria (1966)</td></tr></tbody></table>"
       }
     ],
     "varieties": [
       {
-        "type": "sports",
-        "name": "Sports facts",
-        "how": "Recall team size, the sport for each trophy, and sport-specific terms.",
-        "example": { "q": "The Thomas Cup is associated with which sport?", "steps": ["Thomas Cup = men's badminton team championship", "Uber Cup = women's version"], "answer": "Badminton" }
+        "type": "sports-rules-terms",
+        "name": "Sports rules and terms",
+        "how": "Learn players per side and a few terms for each sport. If a term fits two sports, look for the one only one sport uses (bully: hockey; chukker: polo; birdie: golf and badminton).",
+        "example": {
+          "q": "How many players does each volleyball team have on court?",
+          "steps": [
+            "Basketball has 5; kabaddi has 7.",
+            "Volleyball has 6 on court."
+          ],
+          "answer": "6"
+        }
       },
       {
-        "type": "awards-books",
-        "name": "Awards and books",
-        "how": "Pair each award with its field and first winner; pair each book with its author.",
-        "example": { "q": "Who wrote 'The Discovery of India'?", "steps": ["Written by Jawaharlal Nehru in Ahmednagar Fort jail (1944)"], "answer": "Jawaharlal Nehru" }
+        "type": "sports-trophies-venues",
+        "name": "Trophies, tournaments and stadiums",
+        "how": "Learn trophies by sport, and men's versus women's pairs (Thomas and Uber, Swaythling and Corbillon). Learn stadiums with their city.",
+        "example": {
+          "q": "The Durand Cup is associated with which sport?",
+          "steps": [
+            "Durand Cup started in 1888 at Shimla.",
+            "It is the oldest football tournament in Asia."
+          ],
+          "answer": "Football"
+        }
       },
       {
-        "type": "days",
-        "name": "Important days",
-        "how": "Link the day to the person or event behind it — that makes the date easy to recall.",
-        "example": { "q": "National Science Day is celebrated on:", "steps": ["It marks C.V. Raman's discovery of the Raman Effect", "Announced on 28 February 1928"], "answer": "28 February" }
+        "type": "sports-events-winners",
+        "name": "Sports events and champions",
+        "how": "Learn host cities for the last and next Games and India's landmark medals. For yearly winners, use a current affairs source.",
+        "example": {
+          "q": "Who won India's first individual Olympic gold medal?",
+          "steps": [
+            "K.D. Jadhav won bronze in 1952, not gold.",
+            "Abhinav Bindra won gold in 10 m air rifle at Beijing 2008."
+          ],
+          "answer": "Abhinav Bindra"
+        }
+      },
+      {
+        "type": "sports-awards",
+        "name": "Sports awards",
+        "how": "Learn what each award is for (athlete, coach, university, organisation) and the rename of Khel Ratna in 2021.",
+        "example": {
+          "q": "The Dronacharya Award is given to:",
+          "steps": [
+            "Dronacharya was the teacher of the Pandavas.",
+            "So the award honours sports coaches."
+          ],
+          "answer": "Sports coaches"
+        }
+      },
+      {
+        "type": "awards-honours",
+        "name": "Awards and honours",
+        "how": "Link each award to its field and its first winner. For the Nobel and Booker, learn the Indian winners with years.",
+        "example": {
+          "q": "Who was the first recipient of the Dadasaheb Phalke Award?",
+          "steps": [
+            "The award began in 1969 for lifetime work in cinema.",
+            "Its first winner was actress Devika Rani."
+          ],
+          "answer": "Devika Rani"
+        }
+      },
+      {
+        "type": "books-authors",
+        "name": "Books and authors",
+        "how": "Group books by era and by author. Watch for authors with many books (Nehru, Gandhi, Premchand, Kalam) and similar titles (A Passage to India vs A Passage to England).",
+        "example": {
+          "q": "Who wrote 'India Wins Freedom'?",
+          "steps": [
+            "It is a memoir of the freedom struggle and partition talks.",
+            "The author is Maulana Abul Kalam Azad, not Nehru."
+          ],
+          "answer": "Maulana Abul Kalam Azad"
+        }
+      },
+      {
+        "type": "important-days",
+        "name": "Important days and dates",
+        "how": "Learn days month by month with the reason or person behind each. Birthdays give many Indian days.",
+        "example": {
+          "q": "National Science Day on 28 February marks:",
+          "steps": [
+            "C.V. Raman announced his discovery on 28 February 1928.",
+            "So the day marks the discovery of the Raman effect."
+          ],
+          "answer": "The discovery of the Raman effect"
+        }
+      },
+      {
+        "type": "organisations-hq",
+        "name": "Organisations and headquarters",
+        "how": "Group headquarters by city (Geneva, Vienna, Rome, Paris, New York). For Indian bodies, learn founder and year.",
+        "example": {
+          "q": "Which pair of bodies both have headquarters in Vienna?",
+          "steps": [
+            "Vienna hosts IAEA, UNIDO and OPEC.",
+            "So IAEA and OPEC are the pair."
+          ],
+          "answer": "IAEA and OPEC"
+        }
+      },
+      {
+        "type": "symbols-firsts",
+        "name": "National symbols and Indian firsts",
+        "how": "Learn each symbol with its adoption date, and each 'first' with the office or feat.",
+        "example": {
+          "q": "Who was the first woman Chief Minister in India?",
+          "steps": [
+            "She became Chief Minister of Uttar Pradesh in 1963.",
+            "Her name is Sucheta Kriplani."
+          ],
+          "answer": "Sucheta Kriplani"
+        }
       }
     ],
     "tips": [
-      "Birthday days: 12 Jan Vivekananda, 29 Aug Dhyan Chand, 5 Sep Radhakrishnan, 14 Nov Nehru.",
-      "Badminton trophies: Thomas = men, Uber = women.",
-      "Durand Cup is the oldest football tournament in Asia."
+      "Geneva is for health, work and trade (WHO, ILO, WTO); Rome is for food (FAO, IFAD, WFP); Paris for culture (UNESCO); Nairobi for environment (UNEP).",
+      "Badminton and table tennis cups come in men-women pairs: Thomas-Uber, Swaythling-Corbillon.",
+      "Grand Slam surfaces in calendar order: hard (Australia), clay (France), grass (Wimbledon), hard (US).",
+      "Birthday days: Youth Day (Vivekananda), Teachers' Day (Radhakrishnan), Engineers' Day (Visvesvaraya), Sports Day (Dhyan Chand), Maths Day (Ramanujan).",
+      "First Bharat Ratnas (1954): 'RRR' gives Rajagopalachari, Radhakrishnan, Raman.",
+      "Golf scores: birdie 1 under, eagle 2 under, bogey 1 over."
     ],
     "traps": [
-      "National Science Day (28 Feb) is not C.V. Raman's birthday; it marks his discovery.",
-      "Ranji Trophy is cricket, Santosh Trophy is football — both are domestic Indian tournaments.",
-      "Dronacharya Award is for coaches, Arjuna Award for players."
+      "India Wins Freedom is by Maulana Azad, not Nehru (Nehru wrote Discovery of India).",
+      "A Passage to India is by E.M. Forster; A Passage to England is by Nirad C. Chaudhuri.",
+      "Davis Cup is tennis (men's teams); Thomas Cup is badminton.",
+      "Bharat Ratna 1954 did not go to Nehru; he received it in 1955.",
+      "The UN HQ is New York, but the International Court of Justice sits in The Hague."
     ]
   },
   "questions": [
-    { "id": "g-static-001", "rev": 1, "topic": "g-static", "type": "sports", "level": 1, "q": "How many players are there on each side in a volleyball match?", "options": ["5", "6", "7", "9"], "answer": 1, "solution": "Volleyball has 6 players per side on court. Basketball has 5 and kabaddi has 7.<br><b>Memory hook:</b> Volleyball court has 2 rows of 3 = 6.", "source": "test-data" },
-    { "id": "g-static-002", "rev": 1, "topic": "g-static", "type": "days", "level": 1, "q": "National Sports Day in India is celebrated on the birthday of:", "options": ["Milkha Singh", "Sachin Tendulkar", "Major Dhyan Chand", "P.T. Usha"], "answer": 2, "solution": "National Sports Day is on 29 August, the birthday of hockey wizard Major Dhyan Chand.<br><b>Memory hook:</b> The Khel Ratna also carries his name — Dhyan Chand owns Indian sports honours.", "source": "test-data" },
-    { "id": "g-static-003", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 1, "q": "Who wrote 'Gitanjali'?", "options": ["Bankim Chandra Chattopadhyay", "Sarojini Naidu", "Rabindranath Tagore", "Munshi Premchand"], "answer": 2, "solution": "Rabindranath Tagore wrote Gitanjali; its English version won him the Nobel Prize in Literature in 1913.<br><b>Memory hook:</b> Gitanjali = 'song offerings' by Gurudev Tagore.", "source": "test-data" },
-    { "id": "g-static-004", "rev": 1, "topic": "g-static", "type": "sports", "level": 2, "q": "The Durand Cup is associated with which sport?", "options": ["Hockey", "Football", "Cricket", "Golf"], "answer": 1, "solution": "The Durand Cup is a football tournament, one of the oldest in the world and the oldest in Asia (first held in 1888).<br><b>Memory hook:</b> Durand and Santosh — India's two classic football cups.", "source": "test-data" },
-    { "id": "g-static-005", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 2, "q": "Who was the first recipient of the Dadasaheb Phalke Award?", "options": ["Prithviraj Kapoor", "Devika Rani", "Satyajit Ray", "Raj Kapoor"], "answer": 1, "solution": "Devika Rani received the first Dadasaheb Phalke Award in 1969. She is called the 'First Lady of Indian Cinema'.<br><b>Memory hook:</b> First award, First Lady of Indian Cinema.", "source": "test-data" },
-    { "id": "g-static-006", "rev": 1, "topic": "g-static", "type": "days", "level": 2, "q": "National Science Day is celebrated on 28 February to mark:", "options": ["Birthday of C.V. Raman", "Launch of Aryabhata", "Discovery of the Raman Effect", "Founding of ISRO"], "answer": 2, "solution": "C.V. Raman announced the Raman Effect on 28 February 1928. His birthday is 7 November.<br><b>Memory hook:</b> Science Day celebrates the discovery, not the man's birthday.", "source": "test-data" },
-    { "id": "g-static-007", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 3, "q": "Which of the following was <b>NOT</b> among the first recipients of the Bharat Ratna in 1954?", "options": ["C. Rajagopalachari", "Dr. S. Radhakrishnan", "Dr. C.V. Raman", "Jawaharlal Nehru"], "answer": 3, "solution": "The first Bharat Ratna awards (1954) went to C. Rajagopalachari, Dr. S. Radhakrishnan and Dr. C.V. Raman. Nehru received it in 1955.<br><b>Memory hook:</b> 'R-R-R': Rajagopalachari, Radhakrishnan, Raman.", "source": "test-data" },
-    { "id": "g-static-008", "rev": 1, "topic": "g-static", "type": "awards-books", "level": 3, "q": "Which pair (book — author) is <b>incorrectly</b> matched?", "options": ["Anandamath — Bankim Chandra Chattopadhyay", "India Wins Freedom — Jawaharlal Nehru", "Godaan — Munshi Premchand", "Wings of Fire — A.P.J. Abdul Kalam"], "answer": 1, "solution": "'India Wins Freedom' is the autobiography of Maulana Abul Kalam Azad. Nehru wrote 'The Discovery of India'.<br><b>Memory hook:</b> Azad = freedom; 'India Wins Freedom' belongs to Azad.", "source": "test-data" }
+    {
+      "id": "g-static-001",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "sports-rules-terms",
+      "level": 1,
+      "q": "How many players are there on each side in a volleyball match?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "answer": 1,
+      "solution": "Volleyball has 6 players per side on court. Basketball has 5 and kabaddi has 7.<br><b>Memory hook:</b> Volleyball court has 2 rows of 3 = 6.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-static-002",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "important-days",
+      "level": 1,
+      "q": "National Sports Day in India is celebrated on the birthday of:",
+      "options": [
+        "Milkha Singh",
+        "Sachin Tendulkar",
+        "Major Dhyan Chand",
+        "P.T. Usha"
+      ],
+      "answer": 2,
+      "solution": "National Sports Day is on 29 August, the birthday of hockey wizard Major Dhyan Chand.<br><b>Memory hook:</b> The Khel Ratna also carries his name — Dhyan Chand owns Indian sports honours.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-static-003",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "books-authors",
+      "level": 1,
+      "q": "Who wrote 'Gitanjali'?",
+      "options": [
+        "Bankim Chandra Chattopadhyay",
+        "Sarojini Naidu",
+        "Rabindranath Tagore",
+        "Munshi Premchand"
+      ],
+      "answer": 2,
+      "solution": "Rabindranath Tagore wrote Gitanjali; its English version won him the Nobel Prize in Literature in 1913.<br><b>Memory hook:</b> Gitanjali = 'song offerings' by Gurudev Tagore.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-static-004",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "sports-trophies-venues",
+      "level": 2,
+      "q": "The Durand Cup is associated with which sport?",
+      "options": [
+        "Hockey",
+        "Football",
+        "Cricket",
+        "Golf"
+      ],
+      "answer": 1,
+      "solution": "The Durand Cup is a football tournament, one of the oldest in the world and the oldest in Asia (first held in 1888).<br><b>Memory hook:</b> Durand and Santosh — India's two classic football cups.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-static-005",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "awards-honours",
+      "level": 2,
+      "q": "Who was the first recipient of the Dadasaheb Phalke Award?",
+      "options": [
+        "Prithviraj Kapoor",
+        "Devika Rani",
+        "Satyajit Ray",
+        "Raj Kapoor"
+      ],
+      "answer": 1,
+      "solution": "Devika Rani received the first Dadasaheb Phalke Award in 1969. She is called the 'First Lady of Indian Cinema'.<br><b>Memory hook:</b> First award, First Lady of Indian Cinema.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-static-006",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "important-days",
+      "level": 2,
+      "q": "National Science Day is celebrated on 28 February to mark:",
+      "options": [
+        "Birthday of C.V. Raman",
+        "Launch of Aryabhata",
+        "Discovery of the Raman Effect",
+        "Founding of ISRO"
+      ],
+      "answer": 2,
+      "solution": "C.V. Raman announced the Raman Effect on 28 February 1928. His birthday is 7 November.<br><b>Memory hook:</b> Science Day celebrates the discovery, not the man's birthday.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-static-007",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "awards-honours",
+      "level": 3,
+      "q": "Which of the following was <b>NOT</b> among the first recipients of the Bharat Ratna in 1954?",
+      "options": [
+        "C. Rajagopalachari",
+        "Dr. S. Radhakrishnan",
+        "Dr. C.V. Raman",
+        "Jawaharlal Nehru"
+      ],
+      "answer": 3,
+      "solution": "The first Bharat Ratna awards (1954) went to C. Rajagopalachari, Dr. S. Radhakrishnan and Dr. C.V. Raman. Nehru received it in 1955.<br><b>Memory hook:</b> 'R-R-R': Rajagopalachari, Radhakrishnan, Raman.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-static-008",
+      "rev": 1,
+      "topic": "g-static",
+      "type": "books-authors",
+      "level": 3,
+      "q": "Which pair (book — author) is <b>incorrectly</b> matched?",
+      "options": [
+        "Anandamath — Bankim Chandra Chattopadhyay",
+        "India Wins Freedom — Jawaharlal Nehru",
+        "Godaan — Munshi Premchand",
+        "Wings of Fire — A.P.J. Abdul Kalam"
+      ],
+      "answer": 1,
+      "solution": "'India Wins Freedom' is the autobiography of Maulana Abul Kalam Azad. Nehru wrote 'The Discovery of India'.<br><b>Memory hook:</b> Azad = freedom; 'India Wins Freedom' belongs to Azad.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-static-1", "front": "Players per side in kabaddi", "back": "7", "deck": "ga-facts" },
-    { "id": "fc-g-static-2", "front": "Uber Cup — sport", "back": "Badminton (women's team)", "deck": "ga-facts" },
-    { "id": "fc-g-static-3", "front": "Ryder Cup — sport", "back": "Golf", "deck": "ga-facts" },
-    { "id": "fc-g-static-4", "front": "First Jnanpith Award winner (1965)", "back": "G. Sankara Kurup (Malayalam)", "deck": "ga-facts" },
-    { "id": "fc-g-static-5", "front": "Bharat Ratna instituted in", "back": "1954", "deck": "ga-facts" },
-    { "id": "fc-g-static-6", "front": "Dronacharya Award is given to", "back": "Sports coaches", "deck": "ga-facts" },
-    { "id": "fc-g-static-7", "front": "Author of Akbarnama", "back": "Abul Fazl", "deck": "ga-facts" },
-    { "id": "fc-g-static-8", "front": "National Youth Day", "back": "12 January (Swami Vivekananda's birthday)", "deck": "ga-facts" },
-    { "id": "fc-g-static-9", "front": "World Environment Day", "back": "5 June", "deck": "ga-facts" },
-    { "id": "fc-g-static-10", "front": "Constitution Day (Samvidhan Divas)", "back": "26 November", "deck": "ga-facts" }
+    {
+      "id": "fc-g-static-1",
+      "front": "Players per side in kabaddi",
+      "back": "7",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-2",
+      "front": "Uber Cup — sport",
+      "back": "Badminton (women's team)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-3",
+      "front": "Ryder Cup — sport",
+      "back": "Golf",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-4",
+      "front": "First Jnanpith Award winner (1965)",
+      "back": "G. Sankara Kurup (Malayalam)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-5",
+      "front": "Bharat Ratna instituted in",
+      "back": "1954",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-6",
+      "front": "Dronacharya Award is given to",
+      "back": "Sports coaches",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-7",
+      "front": "Author of Akbarnama",
+      "back": "Abul Fazl",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-8",
+      "front": "National Youth Day",
+      "back": "12 January (Swami Vivekananda's birthday)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-9",
+      "front": "World Environment Day",
+      "back": "5 June",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-static-10",
+      "front": "Constitution Day (Samvidhan Divas)",
+      "back": "26 November",
+      "deck": "ga-facts"
+    }
   ]
 }

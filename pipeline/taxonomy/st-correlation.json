@@ -1,0 +1,47 @@
+{
+ "topic": "st-correlation",
+ "types": [
+  {
+   "type": "correlation-basics",
+   "name": "Scatter diagram and properties of r",
+   "description": "Asks about the range or meaning of r, types of correlation, scatter diagrams, r², probable error, or how r changes when the variables are shifted or rescaled.",
+   "concepts": []
+  },
+  {
+   "type": "karl-pearson",
+   "name": "Computing Karl Pearson's r",
+   "description": "Gives paired data, or covariance and SDs, or sums like Σxy and Σx², and asks for the correlation coefficient.",
+   "concepts": []
+  },
+  {
+   "type": "rank-correlation",
+   "name": "Spearman's rank correlation",
+   "description": "Gives ranks given by two judges, or Σd² and n, and asks for the rank correlation coefficient, sometimes with tied ranks.",
+   "concepts": []
+  },
+  {
+   "type": "regression-coefficients",
+   "name": "Regression coefficients",
+   "description": "Gives r with SDs, or the two regression coefficients, and asks for byx, bxy or r.",
+   "concepts": []
+  },
+  {
+   "type": "regression-lines",
+   "name": "Regression lines, means and estimates",
+   "description": "Gives two regression equations (or one equation and a value) and asks for the means, r, which line is which, or an estimate of y from x.",
+   "concepts": []
+  },
+  {
+   "type": "association-attributes",
+   "name": "Association of attributes",
+   "description": "Gives a 2 × 2 table of attribute frequencies and asks whether they are independent or associated, or for Yule's Q or the coefficient of colligation.",
+   "concepts": []
+  },
+  {
+   "type": "partial-multiple",
+   "name": "Partial and multiple correlation",
+   "description": "Gives r₁₂, r₁₃ and r₂₃ and asks for a partial correlation such as r₁₂.₃ or a multiple correlation such as R₁.₂₃, or their properties.",
+   "concepts": []
+  }
+ ]
+}

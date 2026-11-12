@@ -1,0 +1,55 @@
+{
+  "topic": "q-di",
+  "types": [
+    {
+      "type": "totals-differences",
+      "name": "Totals and differences",
+      "description": "Asks for a total, a sum over some years or items, or the difference (how much more or less) between values read from the data, with no percentage, ratio or average in the answer.",
+      "concepts": []
+    },
+    {
+      "type": "average",
+      "name": "Average from data",
+      "description": "Asks for the average (mean) of several values from the data, or for a value per year, per item or per person.",
+      "concepts": []
+    },
+    {
+      "type": "percentage-comparison",
+      "name": "What percent of, more or less than",
+      "description": "Asks what percent one value or total is of another, or by what percent one is more or less than another, when comparing different items rather than the same item over time.",
+      "concepts": []
+    },
+    {
+      "type": "percent-change",
+      "name": "Percentage change over time",
+      "description": "Asks for the percentage increase or decrease of the same item from one year or period to another, or which year had the highest or lowest growth.",
+      "concepts": []
+    },
+    {
+      "type": "ratio",
+      "name": "Ratio from data",
+      "description": "Asks for the ratio of two values or totals from the data, or uses a given ratio to find a value.",
+      "concepts": []
+    },
+    {
+      "type": "pie-chart",
+      "name": "Pie charts and central angles",
+      "description": "Mentions a pie chart, a sector or a central angle: converting degrees or percentages of the whole into values, or finding the angle a value would get.",
+      "concepts": [
+        "di-pie-chart-read"
+      ]
+    },
+    {
+      "type": "compare-rank",
+      "name": "Highest, lowest and how many",
+      "description": "Asks which year or item is the highest or lowest on some measure, or how many years or items meet a condition such as being above the average.",
+      "concepts": []
+    },
+    {
+      "type": "derived-values",
+      "name": "Derived values",
+      "description": "Needs a quantity that is not shown directly and is worked out with a formula from the data, such as profit or profit percent from income and expenditure, marks from percentages, or the number who failed from a pass percentage.",
+      "concepts": []
+    }
+  ]
+}

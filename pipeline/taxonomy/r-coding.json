@@ -1,0 +1,41 @@
+{
+ "topic": "r-coding",
+ "types": [
+  {
+   "type": "letter-shift",
+   "name": "Letter shift",
+   "description": "A word is coded as another letter group of the same length where each letter moves forward or backward in the alphabet (CAT → DBU, FACED → GZDDE), including \"how is the code itself coded\" or decoding a code back to the word.",
+   "concepts": []
+  },
+  {
+   "type": "opposite-letter",
+   "name": "Opposite letters",
+   "description": "Each letter is replaced by its opposite letter from the other end of the alphabet (A ↔ Z, B ↔ Y, GOLD → TLOW), sometimes with the order also reversed.",
+   "concepts": []
+  },
+  {
+   "type": "letter-rearrangement",
+   "name": "Rearranged letters",
+   "description": "The code uses the same letters (or the same letters shifted) in a new order: reversed, pairs swapped, halves reversed (GARDEN → NEDRAG, CREATION → RCAEITNO).",
+   "concepts": []
+  },
+  {
+   "type": "letter-to-number",
+   "name": "Letters to numbers",
+   "description": "A word is coded as a number or a string of numbers (PAINT = 80, BAD = 214, LAMINATE = 121139141205) using letter positions, their sum, product or reverse positions.",
+   "concepts": []
+  },
+  {
+   "type": "sentence-coding",
+   "name": "Sentence codes",
+   "description": "Several sentences or phrases are given with codes ('tea is hot' = 'ka la ma', or 'come home soon' = '444'); find the code of a word or a new phrase by comparing common words or counting letters.",
+   "concepts": []
+  },
+  {
+   "type": "substitution",
+   "name": "Substitution",
+   "description": "One word is \"called\" another word ('sky' is called 'cloud', 'cloud' is called 'water' …); asks what something is called in that language.",
+   "concepts": []
+  }
+ ]
+}

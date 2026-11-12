@@ -1,78 +1,215 @@
 {
  "topic": "q-di",
  "notes": {
-  "summary": "Data Interpretation gives a table or chart and 3–5 questions on it. 2–4 questions in Tier 1 and 3–5 in Tier 2. Read the units and the title before calculating.",
+  "summary": "Data Interpretation gives a table or chart followed by questions on totals, averages, percentages, ratios and central angles. Expect 2 to 4 questions in Tier 1 and 3 to 5 in Tier 2. The maths is easy; the marks are lost by misreading units or rows and by slow division, so these notes focus on reading carefully and calculating with fractions.",
   "concepts": [
    {
-    "title": "Reading the data",
-    "body": "Check the <b>units</b> (thousands, lakhs, %), the years and the labels. Write the needed values down before calculating."
+    "title": "What a DI set looks like",
+    "body": "<p>Data Interpretation (DI) gives you some data, usually a table, a bar graph, a line graph or a pie chart, followed by a few questions on it. The maths is simple: totals, averages, percentages and ratios. What makes DI hard is reading the data correctly and calculating fast.</p>\n<p>A good routine for every set:</p>\n<ol><li>Read the title and the units first (thousands, lakhs, crores, percent, degrees).</li>\n<li>Check what each row, column, bar or line stands for. Read the legend.</li>\n<li>Read the question and write down only the numbers it needs.</li>\n<li>Glance at the options. If they are far apart, round the numbers and estimate.</li></ol>"
    },
    {
-    "title": "Percentage change",
-    "body": "% change = (New − Old)/Old × 100. The base is always the <b>earlier</b> (or “compared to”) value."
+    "title": "Tables",
+    "body": "<p>A table gives exact numbers, so most table questions need exact answers. Tips:</p>\n<ul><li>If several questions use row or column totals, find them once and write them beside the table.</li>\n<li>Read the header carefully. \"Marks obtained (in %)\" with maximum marks in brackets means you must convert: 72% of a 150-mark paper is 108 marks.</li>\n<li>When a question names two years, put your finger on both cells before calculating. Mixing up rows is the most common DI mistake.</li></ul>\n<p>Mini example: if a table shows sales of 120, 80, 150 and 100 for four shops, the total is 450 and the average is 112.5.</p>"
    },
    {
-    "title": "Ratio and average",
-    "body": "Ratio: write both values and cancel common factors. Average: total ÷ number of items."
+    "title": "Bar graphs",
+    "body": "<p>Bar graphs come in three common forms.</p>\n<table><thead><tr><th>Form</th><th>How to read it</th></tr></thead><tbody>\n<tr><td>Simple bar</td><td>One bar per year or item. Read the height against the axis.</td></tr>\n<tr><td>Grouped (multiple) bars</td><td>Two or more bars side by side for each year, one per company or product. Use the legend to tell them apart.</td></tr>\n<tr><td>Stacked bar</td><td>Parts sit on top of each other. The height of a part is its top value minus its bottom value; the full bar is the total.</td></tr>\n</tbody></table>\n<p>Check the scale: if the axis goes up in steps of 20 and a bar ends halfway between 60 and 80, its value is 70. When the value is printed on top of the bar, use that number rather than reading the axis.</p>",
+    "img": "quant/di-production-bar.svg"
+   },
+   {
+    "title": "Line graphs",
+    "body": "<p>A line graph shows how a value changes over time. Each point is one reading; the line joining them only shows the trend.</p>\n<ul><li>The steeper the line between two years, the bigger the <b>absolute</b> change.</li>\n<li>The biggest absolute rise is not always the biggest <b>percentage</b> rise. A rise from 20 to 30 is 50%, while a rise from 80 to 100 is only 25%.</li>\n<li>Where two lines cross, the two values are equal. The gap between lines is the difference.</li></ul>"
+   },
+   {
+    "title": "Pie charts",
+    "body": "<p>A pie chart shows how a whole splits into parts. The full circle is 360° and stands for 100% of the total.</p>\n<ul><li>1% of the total = 3.6°, so degrees = percent × 3.6.</li>\n<li>Value of a sector = total × (angle ÷ 360) = total × (percent ÷ 100).</li>\n<li>Comparing two sectors of the same pie needs no total: the ratio of values equals the ratio of angles or percents.</li></ul>\n<table><thead><tr><th>Percent</th><th>5%</th><th>10%</th><th>12.5%</th><th>15%</th><th>20%</th><th>25%</th><th>30%</th><th>33⅓%</th><th>40%</th><th>50%</th></tr></thead><tbody>\n<tr><td>Degrees</td><td>18°</td><td>36°</td><td>45°</td><td>54°</td><td>72°</td><td>90°</td><td>108°</td><td>120°</td><td>144°</td><td>180°</td></tr>\n</tbody></table>\n<p>Mini example: in a pie of a ₹50 lakh budget, a 72° sector is 72 ÷ 360 = 1/5 of it, which is ₹10 lakh.</p>\n<p>SSC often asks a pie question on a table: \"If the data were shown as a pie chart, what is the central angle for X?\" Then angle = (X ÷ total) × 360°.</p>",
+    "img": "quant/di-pie-angles.svg"
+   },
+   {
+    "title": "The percentage toolkit",
+    "body": "<table><thead><tr><th>Question wording</th><th>Formula</th></tr></thead><tbody>\n<tr><td>A is what percent of B?</td><td>A ÷ B × 100</td></tr>\n<tr><td>A is what percent more than B?</td><td>(A − B) ÷ B × 100</td></tr>\n<tr><td>A is what percent less than B?</td><td>(B − A) ÷ B × 100</td></tr>\n<tr><td>Percent increase from old to new</td><td>(new − old) ÷ old × 100</td></tr>\n<tr><td>Percent decrease from old to new</td><td>(old − new) ÷ old × 100</td></tr>\n</tbody></table>\n<p>The base (what you divide by) is always the value after \"than\", \"of\" or \"from\".</p>\n<p><b>Percent versus percentage points.</b> If a pass rate goes from 40% to 50%, it rose by 10 percentage points, but by 25% (10 ÷ 40 × 100).</p>\n<p><b>Fractions to know by heart</b> (they turn divisions into quick percentages):</p>\n<table><thead><tr><th>Fraction</th><th>1/3</th><th>1/6</th><th>1/7</th><th>1/8</th><th>1/9</th><th>1/11</th><th>1/12</th><th>1/15</th><th>1/16</th></tr></thead><tbody>\n<tr><td>Percent</td><td>33.33</td><td>16.67</td><td>14.29</td><td>12.5</td><td>11.11</td><td>9.09</td><td>8.33</td><td>6.67</td><td>6.25</td></tr>\n</tbody></table>\n<p>Mini example: 18 ÷ 54 = 1/3, so a rise from 54 to 72 is 33⅓%.</p>"
+   },
+   {
+    "title": "Ratios and averages",
+    "body": "<p><b>Ratio.</b> Write the two numbers as a fraction and cancel common factors: 105 : 130, divide both by 5, gives 21 : 26. When both values are in the same unit you can ignore the unit.</p>\n<p><b>Average.</b> Average = total ÷ number of values. Count carefully: from 2019 to 2023 is 5 years, not 4.</p>\n<p><b>Quick average by deviations.</b> Pick a round value near the middle and average the differences. For 48, 52, 55 and 61, take 50: the differences are −2, +2, +5, +11, which add to 16. The average is 50 + 16 ÷ 4 = 54.</p>\n<p><b>Average of averages.</b> Only add averages directly when each group has the same size. Otherwise use totals.</p>"
+   },
+   {
+    "title": "Estimating and comparing fractions",
+    "body": "<p>SSC options are often far apart, so you rarely need full division.</p>\n<ul><li>Round to friendly numbers: 49.8 ÷ 251 is about 50 ÷ 250 = 20%.</li>\n<li>To find the larger of two fractions, cross-multiply: 13/17 versus 19/25 compares 13 × 25 = 325 with 19 × 17 = 323, so 13/17 is slightly larger.</li>\n<li>To find the year with the highest percent growth, compare the ratios new ÷ old, not the raw differences.</li>\n<li>When a question says \"approximately\", pick the nearest option after a rough calculation.</li></ul>"
+   },
+   {
+    "title": "Derived values: profit, marks and more",
+    "body": "<p>Some questions need a quantity that is not in the chart. Learn the common formulas:</p>\n<table><thead><tr><th>Data given</th><th>Quantity asked</th><th>Formula</th></tr></thead><tbody>\n<tr><td>Income I and expenditure E</td><td>Profit</td><td>I − E</td></tr>\n<tr><td>Income I and expenditure E</td><td>Profit percent</td><td>(I − E) ÷ E × 100</td></tr>\n<tr><td>Expenditure E and profit percent p</td><td>Income</td><td>E × (100 + p) ÷ 100</td></tr>\n<tr><td>Students appeared and pass percent</td><td>Number passed</td><td>appeared × pass% ÷ 100</td></tr>\n<tr><td>Marks in percent and maximum marks</td><td>Marks obtained</td><td>percent × maximum ÷ 100</td></tr>\n<tr><td>Exports and imports</td><td>Trade surplus or deficit</td><td>exports − imports</td></tr>\n</tbody></table>\n<p>Mini example: income ₹84 lakh, expenditure ₹60 lakh. Profit = ₹24 lakh, profit percent = 24 ÷ 60 × 100 = 40%.</p>\n<p>If a chart gives \"percent profit\" for two companies with equal expenditure, the one with the larger percent has the larger income. Without equal expenditure, you cannot compare incomes from percents alone.</p>"
    }
   ],
   "varieties": [
    {
-    "type": "average",
-    "name": "Average from data",
-    "how": "Add the required values and divide by their count.",
+    "type": "totals-differences",
+    "name": "Totals and differences",
+    "how": "Write the needed values in a line, add them, and subtract only at the end. Keep the unit from the title.",
     "example": {
-     "q": "Values 20, 30, 40. Average?",
+     "q": "Production (in thousand units) of two companies. P: 2020 = 45, 2021 = 60, 2022 = 54, 2023 = 72. Q: 2020 = 50, 2021 = 48, 2022 = 66, 2023 = 80. By how much did the total production of Q over the four years exceed that of P?",
      "steps": [
-      "Sum = 90",
-      "90/3 = 30"
+      "Total of P = 45 + 60 + 54 + 72 = 231",
+      "Total of Q = 50 + 48 + 66 + 80 = 244",
+      "Difference = 244 − 231 = 13 thousand units"
      ],
-     "answer": "30"
+     "answer": "13 thousand units"
     }
    },
    {
-    "type": "percent-change",
-    "name": "Percentage change",
-    "how": "(New − Old)/Old × 100.",
+    "type": "average",
+    "name": "Average from data",
+    "how": "Add the values and divide by how many there are. Count the years carefully.",
     "example": {
-     "q": "Sales rose from 80 to 100. % increase?",
+     "q": "Production (in thousand units) of two companies. P: 2020 = 45, 2021 = 60, 2022 = 54, 2023 = 72. Q: 2020 = 50, 2021 = 48, 2022 = 66, 2023 = 80. What is the average yearly production of Q?",
      "steps": [
-      "20/80 × 100"
+      "Total of Q = 244",
+      "Number of years = 4",
+      "Average = 244 ÷ 4"
+     ],
+     "answer": "61 thousand units"
+    }
+   },
+   {
+    "type": "percentage-comparison",
+    "name": "What percent of, more or less than",
+    "how": "The value after \"than\" or \"of\" is the base. Percent more = difference ÷ base × 100.",
+    "example": {
+     "q": "Production (in thousand units) of two companies. P: 2020 = 45, 2021 = 60, 2022 = 54, 2023 = 72. Q: 2020 = 50, 2021 = 48, 2022 = 66, 2023 = 80. In 2021, P's production was what percent more than Q's?",
+     "steps": [
+      "Base = Q in 2021 = 48",
+      "Difference = 60 − 48 = 12",
+      "12 ÷ 48 × 100 = 25%"
      ],
      "answer": "25%"
     }
    },
    {
-    "type": "ratio",
-    "name": "Ratio",
-    "how": "Write the two quantities and reduce by their HCF.",
+    "type": "percent-change",
+    "name": "Percentage change over time",
+    "how": "Percent change = (new − old) ÷ old × 100, where old is the earlier year. Use fraction values like 1/3 = 33⅓%.",
     "example": {
-     "q": "Ratio of 45 to 75?",
+     "q": "Production (in thousand units) of two companies. P: 2020 = 45, 2021 = 60, 2022 = 54, 2023 = 72. Q: 2020 = 50, 2021 = 48, 2022 = 66, 2023 = 80. What is the percentage increase in P's production from 2022 to 2023?",
      "steps": [
-      "HCF = 15",
-      "3 : 5"
+      "Old = 54, new = 72, change = 18",
+      "18 ÷ 54 = 1/3",
+      "1/3 = 33⅓%"
      ],
-     "answer": "3 : 5"
+     "answer": "33⅓%"
+    }
+   },
+   {
+    "type": "ratio",
+    "name": "Ratio from data",
+    "how": "Find each side of the ratio (often a total), then divide both by their HCF.",
+    "example": {
+     "q": "Production (in thousand units) of two companies. P: 2020 = 45, 2021 = 60, 2022 = 54, 2023 = 72. Q: 2020 = 50, 2021 = 48, 2022 = 66, 2023 = 80. What is the ratio of P's total production in 2020 and 2021 to Q's production in 2020 and 2023 together?",
+     "steps": [
+      "P: 45 + 60 = 105",
+      "Q: 50 + 80 = 130",
+      "105 : 130, divide both by 5"
+     ],
+     "answer": "21 : 26"
+    }
+   },
+   {
+    "type": "pie-chart",
+    "name": "Pie charts and central angles",
+    "how": "The whole is 360° or 100%. Degrees = percent × 3.6, and a sector's value = total × angle ÷ 360.",
+    "example": {
+     "q": "A company spends ₹50 lakh. Salary takes 30% and transport takes a 72° sector of the pie chart. Find the central angle for salary and the amount spent on transport.",
+     "img": "quant/di-pie-angles.svg",
+     "steps": [
+      "Salary angle = 30 × 3.6 = 108°",
+      "Transport = 72 ÷ 360 = 1/5 of the total",
+      "1/5 × ₹50 lakh = ₹10 lakh"
+     ],
+     "answer": "108° and ₹10 lakh"
+    }
+   },
+   {
+    "type": "compare-rank",
+    "name": "Highest, lowest and how many",
+    "how": "Work out the measure asked for each year or item (often roughly), then pick or count. Do not compute exact values you do not need.",
+    "example": {
+     "q": "Production (in thousand units) of two companies. P: 2020 = 45, 2021 = 60, 2022 = 54, 2023 = 72. Q: 2020 = 50, 2021 = 48, 2022 = 66, 2023 = 80. In how many years was Q's production more than its own four-year average?",
+     "steps": [
+      "Average of Q = 244 ÷ 4 = 61",
+      "Years above 61: 2022 (66) and 2023 (80)",
+      "2020 (50) and 2021 (48) are below"
+     ],
+     "answer": "2 years"
+    }
+   },
+   {
+    "type": "derived-values",
+    "name": "Derived values",
+    "how": "Write the formula that links the shown data to the asked quantity (profit = income − expenditure, profit percent on expenditure), then substitute.",
+    "example": {
+     "q": "A company's income in 2023 was ₹84 lakh and its expenditure was ₹60 lakh. What was its profit percent?",
+     "steps": [
+      "Profit = 84 − 60 = ₹24 lakh",
+      "Profit percent = profit ÷ expenditure × 100",
+      "24 ÷ 60 × 100 = 40%"
+     ],
+     "answer": "40%"
     }
    }
   ],
   "tips": [
-   "Approximate when options are far apart.",
-   "Use fraction equivalents (1/8 = 12.5%, 1/6 = 16.67%) for % change."
+   "Read the title, units and legend before the first question. Write the unit beside your answer.",
+   "If two or more questions use the same totals, compute them once and note them beside the data.",
+   "Look at the options before calculating. When they are far apart, round and estimate.",
+   "Learn fraction-to-percent values (1/6 = 16.67%, 1/7 = 14.29%, 1/8 = 12.5%). They turn division into recall.",
+   "For pie charts, 1% = 3.6°. Comparing two sectors of one pie needs no total at all.",
+   "To find the highest percent growth, compare new ÷ old for each year, not the raw differences.",
+   "Count years inclusively: 2019 to 2023 is five years."
   ],
   "traps": [
-   "% increase from A to B uses A as the base; % decrease from B to A uses B.",
-   "Do not mix totals of different years or units."
+   "\"A is what percent less than B\" divides by B, while \"B is what percent more than A\" divides by A. The two answers differ.",
+   "A rise of 10 percentage points is not a 10% rise. From 40% to 50% is a 25% rise.",
+   "The biggest jump on a line graph is the biggest absolute change, not always the biggest percent change.",
+   "In stacked bars, read a part as top minus bottom, not as the top value.",
+   "Check that both values are in the same unit (thousands versus lakhs, or percent versus actual numbers) before dividing."
   ]
  },
  "formulas": [
   {
+   "name": "Percent of",
+   "expr": "A is (A ÷ B × 100)% of B"
+  },
+  {
+   "name": "Percent more than",
+   "expr": "(A − B) ÷ B × 100"
+  },
+  {
+   "name": "Percent less than",
+   "expr": "(B − A) ÷ B × 100"
+  },
+  {
    "name": "Percentage change",
-   "expr": "(New − Old)/Old × 100"
+   "expr": "(New − Old) ÷ Old × 100"
   },
   {
    "name": "Average",
-   "expr": "Sum / Count"
+   "expr": "Sum ÷ Count"
+  },
+  {
+   "name": "Central angle",
+   "expr": "(Value ÷ Total) × 360° = percent × 3.6°"
+  },
+  {
+   "name": "Sector value",
+   "expr": "Total × angle ÷ 360°"
+  },
+  {
+   "name": "Profit percent",
+   "expr": "(Income − Expenditure) ÷ Expenditure × 100"
+  },
+  {
+   "name": "Income from profit percent",
+   "expr": "Expenditure × (100 + p) ÷ 100"
   }
  ],
  "passages": [

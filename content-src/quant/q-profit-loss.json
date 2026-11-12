@@ -1,216 +1,417 @@
 {
- "topic": "q-profit-loss",
- "notes": {
-  "summary": "Profit & Loss with discount is one of the most asked arithmetic topics (1–3 questions). Always work with CP as the base for profit and MP as the base for discount.",
-  "concepts": [
-   {
-    "title": "Profit and loss",
-    "body": "Profit = SP − CP; Loss = CP − SP. <b>Profit% and Loss% are always on CP</b>. SP = CP × (100 + P%)/100."
-   },
-   {
-    "title": "Discount",
-    "body": "Discount is always on the <b>Marked Price (MP)</b>. SP = MP × (100 − D%)/100. Two successive discounts a% and b% equal a single discount of <b>a + b − ab/100</b>%."
-   },
-   {
-    "title": "Dishonest dealer",
-    "body": "If a dealer gives less weight, Gain% = (Error / True value given) × 100 = error/(true − error) × 100."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "profit-loss",
-    "name": "Profit / loss percent",
-    "how": "Use CP as base. Find CP from SP using the ratio (100 ± P%).",
-    "example": {
-     "q": "An item bought for ₹ 250 is sold for ₹ 300. Profit %?",
-     "steps": [
-      "Profit = 50",
-      "50/250 × 100 = 20%"
-     ],
-     "answer": "20%"
+  "topic": "q-profit-loss",
+  "notes": {
+    "summary": "Profit, loss and discount is about cost price, selling price and marked price, and it is one of the most asked arithmetic topics. SSC asks 1 to 3 questions in Tier 1 and 2 to 3 in Tier 2, mostly on marked price and discount, successive discounts and dishonest dealers. Nearly every question is solved by writing each step as a multiplier.",
+    "concepts": [
+      {
+        "title": "The basic words",
+        "body": "<ul><li><b>Cost price (CP)</b>: what the seller paid. Any extra spend on repairs, transport or tax that the seller pays is added to the CP.</li><li><b>Selling price (SP)</b>: what the buyer pays.</li><li><b>Profit</b> = SP − CP when SP is more. <b>Loss</b> = CP − SP when SP is less.</li><li>Profit% and loss% are always on the <b>CP</b> unless the question says otherwise: Profit% = Profit/CP × 100.</li></ul><p>Example: bought for ₹400, sold for ₹460. Profit = 60, profit% = 60/400 × 100 = 15%.</p><p>Example: a scooter is bought for ₹4,700 and ₹800 is spent on repairs. It is sold for ₹5,800. CP = 5,500, profit = 300, profit% = 300/5,500 × 100 = 5 5/11%.</p>"
+      },
+      {
+        "title": "Finding SP or CP with multipliers",
+        "body": "<ul><li>SP = CP × (100 + profit%)/100, or CP × (100 − loss%)/100.</li><li>CP = SP × 100/(100 + profit%), or SP × 100/(100 − loss%).</li></ul><p>Example: sold for ₹720 at a 10% loss. CP = 720 × 100/90 = ₹800. To gain 15%, SP = 800 × 1.15 = ₹920.</p><p>Short cut: you can go straight from one SP to another. New SP = old SP × (100 + new profit%)/(100 + old profit%). Here 720 × 115/90 = 920.</p>"
+      },
+      {
+        "title": "The ratio method for CP and SP",
+        "body": "<p>Turn the percent into a fraction and read CP : SP directly.</p><table><thead><tr><th>Profit or loss</th><th>Fraction</th><th>CP : SP</th></tr></thead><tbody><tr><td>10% profit</td><td>1/10</td><td>10 : 11</td></tr><tr><td>12.5% profit</td><td>1/8</td><td>8 : 9</td></tr><tr><td>20% profit</td><td>1/5</td><td>5 : 6</td></tr><tr><td>25% profit</td><td>1/4</td><td>4 : 5</td></tr><tr><td>33 1/3% profit</td><td>1/3</td><td>3 : 4</td></tr><tr><td>16 2/3% loss</td><td>1/6</td><td>6 : 5</td></tr><tr><td>20% loss</td><td>1/5</td><td>5 : 4</td></tr><tr><td>25% loss</td><td>1/4</td><td>4 : 3</td></tr></tbody></table><p>Example: 25% profit and SP = ₹500. CP : SP = 4 : 5, so 5 parts = 500, one part = 100, CP = ₹400.</p>"
+      },
+      {
+        "title": "Marked price and discount",
+        "body": "<ul><li><b>Marked price (MP)</b> or list price is the price printed on the item.</li><li>Discount is always on the MP: SP = MP × (100 − discount%)/100.</li><li>Markup% = (MP − CP)/CP × 100.</li></ul><p>Example: MP ₹800 with 15% discount. SP = 800 × 0.85 = ₹680.</p><p>Example: a customer paid ₹330 after a 45% discount. MP = 330 × 100/55 = ₹600.</p>"
+      },
+      {
+        "title": "The MP to CP ratio (fastest method)",
+        "body": "<p>Because CP × (100 + profit%) = MP × (100 − discount%), we get</p><p><b>MP/CP = (100 + profit%)/(100 − discount%)</b></p><p>Example: discount 10% and profit 26%. MP/CP = 126/90 = 1.4, so MP is 40% above CP.</p><p>Example: goods marked 42% above CP and sold at 15% discount. SP/CP = 1.42 × 0.85 = 1.207, so profit is 20.7%.</p><p>Useful pair: marking up by x% and then giving x% discount always gives a loss of x²/100%.</p>"
+      },
+      {
+        "title": "Successive discounts",
+        "body": "<p>Discounts of a% and b% one after another equal a single discount of <b>a + b − ab/100</b>%.</p><ul><li>20% and 10%: 20 + 10 − 2 = 28%.</li><li>Three discounts: multiply the multipliers. 10%, 20%, 25% gives 0.9 × 0.8 × 0.75 = 0.54, a single discount of 46%.</li><li>Order does not matter.</li></ul><p>Two successive discounts always give less than their simple sum. Discounts of 20% and 10% give 28%, so a single 30% discount is better for the buyer.</p>"
+      },
+      {
+        "title": "Overall profit percent on combined deals",
+        "body": "<p>When there are several deals, add all the CPs and all the SPs, then find the profit% on the total CP. Do not add or average the percents unless the CPs are equal.</p><p>Example: a machine bought for ₹5,000 and sold for ₹6,000; another bought for ₹8,000 and sold for ₹10,000. Total CP 13,000, total SP 16,000, profit 3,000, profit% = 3,000/13,000 × 100 = 23 1/13%.</p><p>If the CPs are equal, the overall profit% is the simple average of the two percents.</p>"
+      },
+      {
+        "title": "Two articles at the same selling price",
+        "body": "<ul><li>Same SP, gain x% on one and loss x% on the other: there is always a <b>loss of x²/100%</b>.</li><li>Different percents: find each CP from the SP, add, then compare with total SP.</li></ul><p>Example: two items sold at ₹990 each, one at 10% gain, one at 10% loss. Loss = 10²/100 = 1%.</p><p>Same CP for both: the overall percent is the simple average. With different CPs, it is a weighted average (use alligation).</p>"
+      },
+      {
+        "title": "Dishonest dealer and false weights",
+        "body": "<p>If a seller sells at cost price but gives a smaller weight, he gains on the missing part.</p><p><b>Gain% = (true weight − false weight)/false weight × 100</b>.</p><ul><li>900 g for 1 kg: gain = 100/900 × 100 = 11 1/9%.</li><li>With a markup or discount too: SP/CP multiplier = (price multiplier) × (true weight/false weight). Example: sells at 10% above CP and uses 800 g for 1 kg. Multiplier = 1.1 × 1000/800 = 1.375, gain 37.5%.</li><li>Cheating while buying too (takes 1,100 g as 1 kg): multiply by 1,100/1,000 as well.</li></ul>"
+      },
+      {
+        "title": "Articles and rates",
+        "body": "<ul><li>If the SP of x articles = the CP of y articles, then profit% = (y − x)/x × 100. A negative answer means loss.</li><li>Rates like \"a for ₹b\": make the number of articles equal by taking the LCM, then compare money.</li></ul><p>Example: SP of 40 = CP of 50. Profit% = 10/40 × 100 = 25%.</p><p>Example: bought at 10 for ₹15 and sold at 16 for ₹40. CP of one = 1.5, SP of one = 2.5. Profit% = 1/1.5 × 100 = 66 2/3%.</p>"
+      },
+      {
+        "title": "Buy some, get some free",
+        "body": "<p>\"Buy x, get y free\" means the customer pays for x but gets x + y. Effective discount% = <b>y/(x + y) × 100</b>.</p><p>Example: buy 3 get 1 free. Discount = 1/4 × 100 = 25%.</p><p>When this is combined with another discount, treat it as one more successive discount.</p>"
+      },
+      {
+        "title": "Chain of sale",
+        "body": "<p>When an item passes through several hands, multiply all the multipliers.</p><p>Final price = first CP × (1 + p₁/100)(1 + p₂/100)… Use (1 − l/100) for a loss.</p><p>Example: A sells to B at 20% profit and B sells to C at 25% profit. C pays ₹600. A’s CP = 600 ÷ (1.2 × 1.25) = 600/1.5 = ₹400.</p>"
+      },
+      {
+        "title": "Part sold at profit, rest at loss",
+        "body": "<p>Find the overall profit as a weighted average of the parts. Take the total CP as 100.</p><p>Example: half the goods sold at 20% profit and half at 10% loss. Overall = (20 − 10)/2 = 5% profit.</p><p>Example: 1/3 at 15% profit, 1/4 at 20% profit and the rest at 20% loss. Overall = 15/3 + 20/4 − 20 × 5/12 = 5 + 5 − 8 1/3 = 1 2/3% profit.</p>"
+      },
+      {
+        "title": "Profit on selling price",
+        "body": "<p>Some questions give the profit or loss as a percent of SP. Convert it:</p><ul><li>Profit p% on SP = p/(100 − p) × 100% on CP.</li><li>Profit P% on CP = P/(100 + P) × 100% on SP.</li><li>Loss l% on SP = l/(100 + l) × 100% on CP.</li></ul><p>Example: 20% profit on SP. Take SP = 100, profit = 20, CP = 80. Profit on CP = 20/80 = 25%.</p>"
+      },
+      {
+        "title": "When CP or SP changes",
+        "body": "<p>A change in rupees matches a change in percent of the CP.</p><ul><li>Sold at 10% loss; had it been sold for ₹60 more, gain would be 5%. The extra ₹60 = 15% of CP, so CP = ₹400.</li><li>If both CP and SP change, write the new CP and new SP in terms of the old CP and form one equation.</li><li>Profit at SP₁ equals loss at SP₂: CP = (SP₁ + SP₂)/2.</li></ul>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "cp-sp-basics",
+        "name": "Cost price, selling price and profit percent",
+        "how": "Find CP and SP for the same quantity, then profit% = (SP − CP)/CP × 100. Use multipliers to go between CP and SP.",
+        "example": {
+          "q": "A man buys 10 identical articles for ₹15 and sells each for ₹1.70. What is his profit percentage?",
+          "steps": [
+            "CP of one = 15/10 = ₹1.50",
+            "Profit on one = 1.70 − 1.50 = ₹0.20",
+            "Profit% = 0.20/1.50 × 100 = 13 1/3"
+          ],
+          "answer": "13 1/3%"
+        }
+      },
+      {
+        "type": "cp-sp-change",
+        "name": "Change in selling or cost price",
+        "how": "The extra rupees equal the gap between the two percents, taken on CP. Find CP, then the asked price.",
+        "example": {
+          "q": "A person sold an article at a loss of 15%. Had he sold it for ₹30.60 more, he would have gained 9%. At what price should he sell it to gain 10%?",
+          "steps": [
+            "Gap = 15% + 9% = 24% of CP = ₹30.60",
+            "CP = 30.60 × 100/24 = ₹127.50",
+            "SP for 10% gain = 127.50 × 1.1 = ₹140.25"
+          ],
+          "answer": "₹140.25"
+        }
+      },
+      {
+        "type": "markup-discount",
+        "name": "Marked price and discount",
+        "how": "Use SP = MP × (100 − d)/100 and MP/CP = (100 + profit%)/(100 − discount%).",
+        "example": {
+          "q": "A merchant marks his goods 42% above cost price and sells them at a 15% discount. What is his profit percent, to the nearest integer?",
+          "steps": [
+            "SP/CP = 1.42 × 0.85 = 1.207",
+            "Profit = 20.7%"
+          ],
+          "answer": "21%"
+        }
+      },
+      {
+        "type": "successive-discount",
+        "name": "Successive discounts",
+        "how": "Multiply the multipliers: MP × (1 − a/100)(1 − b/100) = SP. Or use a + b − ab/100 for the single discount.",
+        "example": {
+          "q": "An article with marked price ₹480 is sold for ₹288 after successive discounts of 25% and x%. Find x.",
+          "steps": [
+            "After 25%: 480 × 0.75 = ₹360",
+            "288/360 = 0.8",
+            "So the second discount is 20%"
+          ],
+          "answer": "x = 20"
+        }
+      },
+      {
+        "type": "false-weights",
+        "name": "Dishonest dealer and false weights",
+        "how": "Gain% = (true − false)/false × 100. To find the false weight, false = true × 100/(100 + gain%).",
+        "example": {
+          "q": "A dishonest trader says he sells at cost price but uses a false weight and gains 12.5%. What weight does he use for 1 kg?",
+          "steps": [
+            "False weight = 1000 × 100/112.5",
+            "= 1000 × 8/9 = 888.9 g"
+          ],
+          "answer": "888 8/9 g"
+        }
+      },
+      {
+        "type": "articles-count",
+        "name": "Cost of x articles equals price of y articles",
+        "how": "SP of x = CP of y gives profit% = (y − x)/x × 100. For rates, find the price of one article each way.",
+        "example": {
+          "q": "If the selling price of 40 articles is equal to the cost price of 50 articles, what is the profit or loss percent?",
+          "steps": [
+            "x = 40, y = 50",
+            "(50 − 40)/40 × 100 = 25",
+            "Positive, so it is a profit"
+          ],
+          "answer": "25% profit"
+        }
+      },
+      {
+        "type": "partial-sale",
+        "name": "Part sold at profit, rest at loss",
+        "how": "Take total CP as 100 (or one unit), find the money from each part, add, and compare with the total CP.",
+        "example": {
+          "q": "A trader marks his goods 40% above cost. He sells 70% of the goods at the marked price and the rest at a 40% discount on the marked price. Find his profit percent.",
+          "steps": [
+            "CP = 100, MP = 140",
+            "70% at 140 gives 0.7 × 140 = 98",
+            "30% at 140 × 0.6 = 84 gives 0.3 × 84 = 25.2",
+            "Total SP = 123.2, profit = 23.2%"
+          ],
+          "answer": "23.2%"
+        }
+      },
+      {
+        "type": "two-articles",
+        "name": "Two articles at the same price",
+        "how": "Same SP with x% gain and x% loss: loss of x²/100%. Otherwise find each CP from the SP and compare totals.",
+        "example": {
+          "q": "Two articles are sold for ₹9,720 each. On one the seller gains 8% and on the other he loses 10%. What is his overall gain or loss?",
+          "steps": [
+            "CP₁ = 9,720/1.08 = ₹9,000",
+            "CP₂ = 9,720/0.90 = ₹10,800",
+            "Total CP = 19,800, total SP = 19,440",
+            "Loss = ₹360, loss% = 360/19,800 × 100 = 1 9/11"
+          ],
+          "answer": "Loss of ₹360 (1 9/11%)"
+        }
+      },
+      {
+        "type": "chain-of-sale",
+        "name": "Chain of sale",
+        "how": "Multiply the multipliers of every step. Divide the final price by this product to get the first cost.",
+        "example": {
+          "q": "A manufacturer sells a gas stove to a shopkeeper at 10% profit, and the shopkeeper sells it to a customer at 15% profit. The customer pays ₹2,530. What did it cost the manufacturer?",
+          "steps": [
+            "Total multiplier = 1.10 × 1.15 = 1.265",
+            "Cost = 2,530 ÷ 1.265 = ₹2,000"
+          ],
+          "answer": "₹2,000"
+        }
+      },
+      {
+        "type": "free-articles",
+        "name": "Buy some, get some free",
+        "how": "Buy x, get y free: discount% = y/(x + y) × 100.",
+        "example": {
+          "q": "A shop offers \"buy 5 water bottles, get 1 free\". What is the effective discount percent?",
+          "steps": [
+            "Customer pays for 5 and gets 6",
+            "Discount = 1/6 × 100 = 16.67"
+          ],
+          "answer": "16 2/3%"
+        }
+      },
+      {
+        "type": "profit-on-sp",
+        "name": "Profit or loss on selling price",
+        "how": "Take SP = 100. Find profit or loss in rupees from SP, get CP, then work on CP as usual.",
+        "example": {
+          "q": "On selling an article for ₹800, a person loses 20% of the selling price. At what price should he sell it to gain 25% on the cost price?",
+          "steps": [
+            "Loss = 20% of 800 = ₹160",
+            "CP = 800 + 160 = ₹960",
+            "SP for 25% gain = 960 × 1.25 = ₹1,200"
+          ],
+          "answer": "₹1,200"
+        }
+      }
+    ],
+    "tips": [
+      "Profit and loss percents are on CP. Discount is on MP. Keep the base straight.",
+      "Use MP/CP = (100 + profit%)/(100 − discount%) for any question with both a discount and a profit.",
+      "Write every change as a multiplier (× 1.2, × 0.85) and multiply. Chains, successive discounts and false weights all become one line.",
+      "Learn CP : SP pairs: 20% profit is 5 : 6, 25% profit is 4 : 5, 12.5% profit is 8 : 9.",
+      "For the same SP with x% gain and x% loss, the answer is always a loss of x²/100%, so you do not need the SP.",
+      "Take CP = 100 when no amount is given."
+    ],
+    "traps": [
+      "Two discounts of 20% and 10% are not 30%. The single discount is 28%.",
+      "Repair and transport costs paid by the seller are part of the CP.",
+      "Overall profit% on two deals is not the average of the two percents unless the CPs are equal.",
+      "A loss given \"on the selling price\" must be converted to CP before using normal formulas.",
+      "In false-weight questions, divide by the false weight, not by 1,000 g."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Profit percent",
+      "expr": "(SP − CP)/CP × 100"
+    },
+    {
+      "name": "SP from CP",
+      "expr": "CP × (100 + profit%)/100 or CP × (100 − loss%)/100"
+    },
+    {
+      "name": "CP from SP",
+      "expr": "SP × 100/(100 + profit%) or SP × 100/(100 − loss%)"
+    },
+    {
+      "name": "SP after discount",
+      "expr": "MP × (100 − discount%)/100"
+    },
+    {
+      "name": "MP to CP ratio",
+      "expr": "MP/CP = (100 + profit%)/(100 − discount%)"
+    },
+    {
+      "name": "Single discount for a% and b%",
+      "expr": "a + b − ab/100"
+    },
+    {
+      "name": "Same SP, x% gain and x% loss",
+      "expr": "loss of x²/100 %"
+    },
+    {
+      "name": "False weight gain",
+      "expr": "(true − false)/false × 100"
+    },
+    {
+      "name": "SP of x articles = CP of y articles",
+      "expr": "profit% = (y − x)/x × 100"
+    },
+    {
+      "name": "Buy x get y free",
+      "expr": "discount% = y/(x + y) × 100"
+    },
+    {
+      "name": "Profit p% on SP as a percent on CP",
+      "expr": "p/(100 − p) × 100"
+    },
+    {
+      "name": "Profit at SP₁ equals loss at SP₂",
+      "expr": "CP = (SP₁ + SP₂)/2"
     }
-   },
-   {
-    "type": "discount",
-    "name": "Discount and marked price",
-    "how": "MP/CP = (100 + P%)/(100 − D%).",
-    "example": {
-     "q": "MP is 50% above CP and a 20% discount is given. Profit %?",
-     "steps": [
-      "SP = 1.5 × 0.8 = 1.2 × CP"
-     ],
-     "answer": "20%"
-    }
-   },
-   {
-    "type": "dishonest-dealer",
-    "name": "Dishonest dealer",
-    "how": "Gain% = error/(value actually given) × 100.",
-    "example": {
-     "q": "A shopkeeper uses a 950 g weight for 1 kg and sells at CP. Gain %?",
-     "steps": [
-      "Error = 50 g",
-      "50/950 × 100 = 5 5/19 %"
-     ],
-     "answer": "5 5/19 %"
-    }
-   }
   ],
-  "tips": [
-   "Equivalent of 10% and 20% successive discounts: 28%.",
-   "Profit% on CP; discount% on MP: never mix bases."
+  "questions": [
+    {
+      "id": "q-profit-loss-001",
+      "rev": 1,
+      "topic": "q-profit-loss",
+      "type": "cp-sp-basics",
+      "level": 1,
+      "q": "A man buys an article for ₹ 400 and sells it for ₹ 460. What is his profit percentage?",
+      "options": [
+        "12%",
+        "15%",
+        "18%",
+        "60%"
+      ],
+      "answer": 1,
+      "solution": "Profit = 460 − 400 = ₹ 60.<br>Profit % = 60/400 × 100 = 15%.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-profit-loss-002",
+      "rev": 1,
+      "topic": "q-profit-loss",
+      "type": "markup-discount",
+      "level": 1,
+      "q": "The marked price of a watch is ₹ 800. A discount of 15% is given. What is the selling price?",
+      "options": [
+        "₹ 680",
+        "₹ 720",
+        "₹ 650",
+        "₹ 785"
+      ],
+      "answer": 0,
+      "solution": "Discount = 15% of 800 = ₹ 120.<br>SP = 800 − 120 = ₹ 680.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-profit-loss-003",
+      "rev": 1,
+      "topic": "q-profit-loss",
+      "type": "successive-discount",
+      "level": 2,
+      "q": "Two successive discounts of 20% and 10% are equivalent to a single discount of:",
+      "options": [
+        "30%",
+        "28%",
+        "27%",
+        "32%"
+      ],
+      "answer": 1,
+      "solution": "Single discount = a + b − ab/100.<br>= 20 + 10 − 200/100 = 28%.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-profit-loss-004",
+      "rev": 1,
+      "topic": "q-profit-loss",
+      "type": "cp-sp-basics",
+      "level": 2,
+      "q": "A shopkeeper sells an article for ₹ 720 at a loss of 10%. At what price should he sell it to gain 15%?",
+      "options": [
+        "₹ 828",
+        "₹ 900",
+        "₹ 920",
+        "₹ 880"
+      ],
+      "answer": 2,
+      "solution": "CP = 720 × 100/90 = ₹ 800.<br>SP for 15% gain = 800 × 115/100 = ₹ 920.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-profit-loss-005",
+      "rev": 1,
+      "topic": "q-profit-loss",
+      "type": "false-weights",
+      "level": 3,
+      "q": "A dishonest shopkeeper claims to sell goods at cost price but uses a weight of 900 g instead of 1 kg. What is his gain percentage?",
+      "options": [
+        "10%",
+        "11 1/9 %",
+        "9 1/11 %",
+        "12.5%"
+      ],
+      "answer": 1,
+      "solution": "He gives 900 g but charges for 1000 g.<br>Error = 100 g.<br>Gain% = 100/900 × 100 = 11 1/9 %.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-profit-loss-006",
+      "rev": 1,
+      "topic": "q-profit-loss",
+      "type": "markup-discount",
+      "level": 3,
+      "q": "A trader allows a discount of 10% on the marked price and still gains 26%. By what percent is the marked price above the cost price?",
+      "options": [
+        "36%",
+        "35%",
+        "40%",
+        "45%"
+      ],
+      "answer": 2,
+      "solution": "MP/CP = (100 + 26)/(100 − 10) = 126/90 = 1.4.<br>So MP is 40% above CP.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "Equal profit and loss % on two items sold at the same SP always gives a net LOSS of (x/10)<sup>2</sup>%.",
-   "Gain% in a false-weight question is error/950, not error/1000."
+  "flashcards": [
+    {
+      "id": "fc-pl-1",
+      "front": "Two successive discounts a%, b%",
+      "back": "a + b − ab/100",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-pl-2",
+      "front": "MP/CP with gain P% after discount D%",
+      "back": "(100 + P)/(100 − D)",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-pl-3",
+      "front": "Same SP, x% profit on one and x% loss on other",
+      "back": "Net loss of x²/100 %",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-pl-4",
+      "front": "False weight gain %",
+      "back": "error/(true − error) × 100",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Selling price",
-   "expr": "SP = CP × (100 + P%)/100"
-  },
-  {
-   "name": "Successive discount",
-   "expr": "a + b − ab/100"
-  },
-  {
-   "name": "MP to CP ratio",
-   "expr": "MP/CP = (100 + P%)/(100 − D%)"
-  },
-  {
-   "name": "False weight gain",
-   "expr": "error/(true − error) × 100"
-  }
- ],
- "questions": [
-  {
-   "id": "q-profit-loss-001",
-   "rev": 1,
-   "topic": "q-profit-loss",
-   "type": "profit-loss",
-   "level": 1,
-   "q": "A man buys an article for ₹ 400 and sells it for ₹ 460. What is his profit percentage?",
-   "options": [
-    "12%",
-    "15%",
-    "18%",
-    "60%"
-   ],
-   "answer": 1,
-   "solution": "Profit = 460 − 400 = ₹ 60.<br>Profit % = 60/400 × 100 = 15%.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-profit-loss-002",
-   "rev": 1,
-   "topic": "q-profit-loss",
-   "type": "discount",
-   "level": 1,
-   "q": "The marked price of a watch is ₹ 800. A discount of 15% is given. What is the selling price?",
-   "options": [
-    "₹ 680",
-    "₹ 720",
-    "₹ 650",
-    "₹ 785"
-   ],
-   "answer": 0,
-   "solution": "Discount = 15% of 800 = ₹ 120.<br>SP = 800 − 120 = ₹ 680.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-profit-loss-003",
-   "rev": 1,
-   "topic": "q-profit-loss",
-   "type": "discount",
-   "level": 2,
-   "q": "Two successive discounts of 20% and 10% are equivalent to a single discount of:",
-   "options": [
-    "30%",
-    "28%",
-    "27%",
-    "32%"
-   ],
-   "answer": 1,
-   "solution": "Single discount = a + b − ab/100.<br>= 20 + 10 − 200/100 = 28%.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-profit-loss-004",
-   "rev": 1,
-   "topic": "q-profit-loss",
-   "type": "profit-loss",
-   "level": 2,
-   "q": "A shopkeeper sells an article for ₹ 720 at a loss of 10%. At what price should he sell it to gain 15%?",
-   "options": [
-    "₹ 828",
-    "₹ 900",
-    "₹ 920",
-    "₹ 880"
-   ],
-   "answer": 2,
-   "solution": "CP = 720 × 100/90 = ₹ 800.<br>SP for 15% gain = 800 × 115/100 = ₹ 920.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-profit-loss-005",
-   "rev": 1,
-   "topic": "q-profit-loss",
-   "type": "dishonest-dealer",
-   "level": 3,
-   "q": "A dishonest shopkeeper claims to sell goods at cost price but uses a weight of 900 g instead of 1 kg. What is his gain percentage?",
-   "options": [
-    "10%",
-    "11 1/9 %",
-    "9 1/11 %",
-    "12.5%"
-   ],
-   "answer": 1,
-   "solution": "He gives 900 g but charges for 1000 g.<br>Error = 100 g.<br>Gain% = 100/900 × 100 = 11 1/9 %.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-profit-loss-006",
-   "rev": 1,
-   "topic": "q-profit-loss",
-   "type": "discount",
-   "level": 3,
-   "q": "A trader allows a discount of 10% on the marked price and still gains 26%. By what percent is the marked price above the cost price?",
-   "options": [
-    "36%",
-    "35%",
-    "40%",
-    "45%"
-   ],
-   "answer": 2,
-   "solution": "MP/CP = (100 + 26)/(100 − 10) = 126/90 = 1.4.<br>So MP is 40% above CP.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-pl-1",
-   "front": "Two successive discounts a%, b%",
-   "back": "a + b − ab/100",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-pl-2",
-   "front": "MP/CP with gain P% after discount D%",
-   "back": "(100 + P)/(100 − D)",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-pl-3",
-   "front": "Same SP, x% profit on one and x% loss on other",
-   "back": "Net loss of x²/100 %",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-pl-4",
-   "front": "False weight gain %",
-   "back": "error/(true − error) × 100",
-   "deck": "formulas"
-  }
- ]
 }

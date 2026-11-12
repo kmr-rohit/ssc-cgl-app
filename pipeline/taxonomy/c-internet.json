@@ -1,0 +1,72 @@
+{
+ "topic": "c-internet",
+ "types": [
+  {
+   "type": "web-basics",
+   "name": "The web, websites and URLs",
+   "description": "Asks about Internet and WWW history, web terms (web page, home page, hyperlink, HTML), parts of a URL or domain extensions.",
+   "concepts": []
+  },
+  {
+   "type": "web-browsers",
+   "name": "Browsers, cookies and browser shortcuts",
+   "description": "Names a browser or browser feature (tabs, bookmarks, cache, cookies, incognito, rendering engine) or asks for a browser keyboard shortcut.",
+   "concepts": []
+  },
+  {
+   "type": "ip-dns",
+   "name": "IP addresses, MAC and DNS",
+   "description": "Asks about IPv4 or IPv6 size and format, IP classes, MAC addresses, DNS, DHCP or how a name becomes an address.",
+   "concepts": []
+  },
+  {
+   "type": "protocols-ports",
+   "name": "Protocols and port numbers",
+   "description": "Names a protocol (HTTP, FTP, TCP, UDP, SSH, Telnet) and asks its full form, its job or its port, or asks about upload and download.",
+   "concepts": [
+    "network-protocols"
+   ]
+  },
+  {
+   "type": "email",
+   "name": "Email fields, protocols and services",
+   "description": "Asks about email fields (CC, BCC), folders, SMTP, POP3, IMAP, email service providers or email shortcuts such as Gmail keys.",
+   "concepts": [
+    "e-mail-protocols"
+   ]
+  },
+  {
+   "type": "network-types",
+   "name": "Network types, topologies and media",
+   "description": "Asks about PAN, LAN, MAN, WAN, topologies (star, bus, ring, mesh), transmission media or transmission modes.",
+   "concepts": [
+    "network-types-by-scale"
+   ]
+  },
+  {
+   "type": "network-devices",
+   "name": "Network devices and connectors",
+   "description": "Names a device (hub, switch, bridge, router, gateway, repeater, modem, NIC) or a connector (VGA, HDMI, RJ-45) and asks what it does.",
+   "concepts": [
+    "networking-hardware-devices"
+   ]
+  },
+  {
+   "type": "osi-model",
+   "name": "OSI and TCP/IP layers",
+   "description": "Asks which OSI or TCP/IP layer does a job, the order of the layers, or the layer a device or protocol works at.",
+   "concepts": [
+    "osi-seven-layer-model"
+   ]
+  },
+  {
+   "type": "online-safety",
+   "name": "Online threats and protection",
+   "description": "Asks about online threats (phishing, malware, tracking cookies, DoS) or protections (firewall, encryption, VPN, HTTPS) while using the Internet.",
+   "concepts": [
+    "cybersecurity-threats-and-malware",
+    "cyber-attacks-and-defense"
+   ]
+  }
+ ]
+}

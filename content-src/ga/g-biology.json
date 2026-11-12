@@ -1,77 +1,362 @@
 {
   "topic": "g-biology",
   "notes": {
-    "summary": "Biology is the biggest science area in GA, with <b>2–3 questions</b>. Expect cell organelles, human body facts, vitamins and deficiency diseases, diseases and their causes, and basic classification.",
+    "summary": "Biology gives about <b>2 questions</b> per paper. Past papers ask most about <b>plant and animal kingdoms</b>, the <b>human body</b>, <b>cells</b>, diseases with their causes, vitamins and plant processes. Many questions are 'odd one out' or 'which pair is wrong', so learn each fact with its group: bacterial or viral disease, fat- or water-soluble vitamin, which phylum.",
     "concepts": [
       {
         "title": "The cell",
-        "body": "<ul><li>Cell discovered by <b>Robert Hooke</b> (1665); nucleus by <b>Robert Brown</b>. Cell theory: <b>Schleiden and Schwann</b>.</li></ul><table><thead><tr><th>Organelle</th><th>Job</th></tr></thead><tbody><tr><td>Mitochondria</td><td>'Powerhouse of the cell' — makes ATP</td></tr><tr><td>Ribosome</td><td>Protein synthesis</td></tr><tr><td>Lysosome</td><td>'Suicide bag' — digestive enzymes</td></tr><tr><td>Chloroplast</td><td>Photosynthesis (plants only)</td></tr><tr><td>Nucleus</td><td>Contains DNA; controls the cell</td></tr></tbody></table>Plant cells have a <b>cell wall</b> (cellulose), <b>chloroplasts</b> and a large <b>vacuole</b>; animal cells have centrioles."
+        "body": "<ul><li><b>Robert Hooke</b> (1665) saw cells in cork (dead cells). <b>Leeuwenhoek</b> first saw living cells such as bacteria. <b>Robert Brown</b> found the nucleus (1831).</li><li><b>Cell theory</b>: Schleiden (plants) and Schwann (animals), 1838 to 1839; Rudolf Virchow added that new cells come from existing cells (1855).</li><li><b>Prokaryotes</b> (bacteria, blue-green algae) have no nuclear membrane. <b>Eukaryotes</b> have a true nucleus.</li><li>The cell membrane follows the <b>fluid mosaic model</b> (Singer and Nicolson, 1972).</li><li>Largest cell: ostrich egg. Longest cell: nerve cell. Smallest cell: mycoplasma (PPLO). Mammalian red blood cells have no nucleus.</li></ul><table><thead><tr><th>Organelle</th><th>Job</th></tr></thead><tbody><tr><td>Nucleus</td><td>Control centre; holds DNA</td></tr><tr><td>Mitochondria</td><td>'Powerhouse': cellular respiration, makes ATP; has its own DNA</td></tr><tr><td>Chloroplast</td><td>Photosynthesis (plants only)</td></tr><tr><td>Ribosome</td><td>Protein synthesis (no membrane)</td></tr><tr><td>Endoplasmic reticulum</td><td>Rough ER makes proteins; smooth ER makes lipids</td></tr><tr><td>Golgi apparatus</td><td>Packs and sends materials (Camillo Golgi)</td></tr><tr><td>Lysosome</td><td>'Suicide bags': digest waste and worn-out parts</td></tr><tr><td>Vacuole</td><td>Storage; large in plant cells</td></tr><tr><td>Cell wall</td><td>Plants (cellulose), fungi (chitin); absent in animal cells</td></tr><tr><td>Centrosome</td><td>Cell division in animal cells</td></tr></tbody></table>"
+      },
+      {
+        "title": "Cell division and tissues",
+        "body": "<ul><li><b>Mitosis</b>: one cell gives two identical cells (growth, repair). Walther Flemming stained and described chromosomes in mitosis (1882).</li><li><b>Meiosis</b>: makes gametes; halves the chromosome number; four cells.</li><li><b>Plant tissues</b>: meristematic (dividing; at tips: apical, sides: lateral, nodes: intercalary) and permanent (parenchyma, collenchyma, sclerenchyma). <b>Xylem</b> carries water up; <b>phloem</b> carries food.</li><li><b>Animal tissues</b>: epithelial (covering), connective (blood, bone, cartilage; <b>ligament</b> joins bone to bone, <b>tendon</b> joins muscle to bone), muscular (striated voluntary, smooth involuntary, cardiac), nervous (neurons).</li></ul>"
+      },
+      {
+        "title": "Genetics",
+        "body": "<ul><li><b>Gregor Mendel</b>, the father of genetics, worked with pea plants (laws of dominance, segregation and independent assortment).</li><li><b>DNA</b> double helix: Watson and Crick (1953), helped by Rosalind Franklin's X-ray images. DNA bases: adenine, thymine, guanine, cytosine; RNA has uracil instead of thymine.</li><li>Humans have <b>46 chromosomes</b> (23 pairs: 22 pairs of autosomes and 1 pair of sex chromosomes). Women XX, men XY, so the father's sperm decides the sex of the child.</li><li>Disorders: Down syndrome (an extra chromosome 21), Turner syndrome (XO), Klinefelter syndrome (XXY), haemophilia and colour blindness (X-linked, more common in men), sickle-cell anaemia, thalassaemia. Charcot-Marie-Tooth disease type 1A comes from a duplication of the PMP22 gene on chromosome 17.</li><li>Dolly the sheep (1996) was the first mammal cloned from an adult cell. The Human Genome Project was completed in 2003.</li><li>Hugo de Vries proposed the mutation theory; Darwin proposed natural selection (<i>On the Origin of Species</i>, 1859); Lamarck proposed use and disuse.</li></ul>"
+      },
+      {
+        "title": "Classification and scientific names",
+        "body": "<ul><li><b>Carl Linnaeus</b>: father of taxonomy; binomial nomenclature (genus + species).</li><li><b>Whittaker's five kingdoms</b> (1969): Monera, Protista, Fungi, Plantae, Animalia. Viruses are not placed in any kingdom.</li><li>Decomposers (bacteria and fungi) break down dead matter (detritus) into simple inorganic substances.</li><li><b>Plant groups</b>: algae (thallophyta); bryophytes like mosses ('amphibians of the plant kingdom'); pteridophytes like ferns (first with vascular tissue); gymnosperms with naked seeds (pine, cycas); angiosperms with flowers and fruit (monocots and dicots).</li></ul><table><thead><tr><th>Organism</th><th>Scientific name</th></tr></thead><tbody><tr><td>Human</td><td>Homo sapiens</td></tr><tr><td>Tiger; lion</td><td>Panthera tigris; Panthera leo</td></tr><tr><td>Peacock</td><td>Pavo cristatus</td></tr><tr><td>Mango</td><td>Mangifera indica</td></tr><tr><td>Neem</td><td>Azadirachta indica</td></tr><tr><td>Rice; wheat</td><td>Oryza sativa; Triticum aestivum</td></tr><tr><td>Potato</td><td>Solanum tuberosum</td></tr><tr><td>Onion</td><td>Allium cepa</td></tr><tr><td>Banyan</td><td>Ficus benghalensis</td></tr><tr><td>Lotus</td><td>Nelumbo nucifera</td></tr><tr><td>Housefly</td><td>Musca domestica</td></tr><tr><td>Dog</td><td>Canis familiaris</td></tr></tbody></table>"
+      },
+      {
+        "title": "Animal kingdom",
+        "body": "<table><thead><tr><th>Phylum</th><th>Feature</th><th>Examples</th></tr></thead><tbody><tr><td>Porifera</td><td>Body with pores; sponges</td><td>Sycon, Spongilla</td></tr><tr><td>Cnidaria (Coelenterata)</td><td>Stinging cells; body cavity</td><td>Hydra, jellyfish, corals, sea anemone</td></tr><tr><td>Platyhelminthes</td><td>Flatworms; mostly parasites</td><td>Tapeworm, liver fluke</td></tr><tr><td>Nematoda</td><td>Roundworms</td><td>Ascaris, hookworm, filarial worm</td></tr><tr><td>Annelida</td><td>Segmented body</td><td>Earthworm, leech</td></tr><tr><td>Arthropoda</td><td>Jointed legs, hard outer skeleton; the largest phylum</td><td>Insects, spiders, crabs, prawns, centipedes</td></tr><tr><td>Mollusca</td><td>Soft body, often a shell; second largest</td><td>Snail, octopus, squid, oyster</td></tr><tr><td>Echinodermata</td><td>Spiny skin; water vascular system with tube feet; all marine</td><td>Starfish, sea urchin, sea cucumber</td></tr><tr><td>Chordata</td><td>Notochord</td><td>Fish, amphibians, reptiles, birds, mammals</td></tr></tbody></table><table><thead><tr><th>Vertebrate class</th><th>Heart chambers and features</th></tr></thead><tbody><tr><td>Fish (Pisces)</td><td>2 chambers; gills; cold-blooded</td></tr><tr><td>Amphibians</td><td>3 chambers; live on land and in water (frog, toad, salamander)</td></tr><tr><td>Reptiles</td><td>3 chambers (crocodile has 4); scaly skin</td></tr><tr><td>Birds (Aves)</td><td>4 chambers; warm-blooded; feathers, hollow bones</td></tr><tr><td>Mammals</td><td>4 chambers; warm-blooded; hair, milk glands</td></tr></tbody></table><ul><li>Whale, dolphin and bat are mammals. Platypus and echidna are mammals that lay eggs. Seahorse is a fish; starfish, jellyfish and silverfish are not fish.</li><li>A butterfly goes through complete metamorphosis: egg, larva (caterpillar), pupa (chrysalis), adult. So the third stage is the pupa.</li></ul>"
+      },
+      {
+        "title": "Plant life processes",
+        "body": "<ul><li><b>Photosynthesis</b>: 6CO<sub>2</sub> + 6H<sub>2</sub>O → C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> (glucose) + 6O<sub>2</sub>, using sunlight and chlorophyll. The oxygen released comes from water. Light reactions occur in the grana, dark reactions (Calvin cycle) in the stroma. Glucose is stored as starch.</li><li><b>Transpiration</b>: water loss through stomata; it pulls water up the xylem.</li><li><b>Nitrogen fixation</b>: Rhizobium in root nodules of legumes (pea, gram); Azotobacter free in soil; blue-green algae (Anabaena) in rice fields.</li><li><b>Tropisms</b>: phototropism (to light), geotropism (to gravity), hydrotropism (to water), thigmotropism (to touch, tendrils). The touch-me-not plant (Mimosa) folds its leaves on touch.</li><li><b>Parthenocarpy</b>: fruit develops without fertilisation (seedless fruits).</li><li><b>Vegetative propagation</b>: potato (stem tuber), ginger (rhizome), onion (bulb), Bryophyllum (leaf buds).</li><li>Insect-eating plants (pitcher plant, Venus flytrap, sundew) grow in nitrogen-poor soil. Cuscuta (amarbel) is a parasite.</li><li>Largest flower: Rafflesia. Smallest flowering plant: Wolffia. J.C. Bose invented the crescograph to measure plant growth.</li></ul><table><thead><tr><th>Plant hormone</th><th>Main role</th></tr></thead><tbody><tr><td>Auxin</td><td>Growth at shoot tips; bending towards light</td></tr><tr><td>Gibberellin</td><td>Stem lengthening, seed germination</td></tr><tr><td>Cytokinin</td><td>Cell division; delays ageing</td></tr><tr><td>Abscisic acid</td><td>Stress hormone; closes stomata, causes dormancy</td></tr><tr><td>Ethylene</td><td>Gas that ripens fruit</td></tr></tbody></table>"
       },
       {
         "title": "Human body: key numbers",
-        "body": "<table><thead><tr><th>Fact</th><th>Answer</th></tr></thead><tbody><tr><td>Bones in an adult</td><td>206</td></tr><tr><td>Longest bone</td><td>Femur (thigh)</td></tr><tr><td>Smallest bone</td><td>Stapes (middle ear)</td></tr><tr><td>Largest organ</td><td>Skin</td></tr><tr><td>Largest gland</td><td>Liver</td></tr><tr><td>'Master gland'</td><td>Pituitary</td></tr><tr><td>Insulin made by</td><td>Pancreas (beta cells of islets of Langerhans)</td></tr><tr><td>Life of a red blood cell</td><td>About 120 days</td></tr><tr><td>Normal body temperature</td><td>37 °C (98.6 °F)</td></tr></tbody></table>The heart has <b>4 chambers</b>: two atria above, two ventricles below. Blood groups were discovered by <b>Karl Landsteiner</b>; <b>O−</b> is the universal donor and <b>AB+</b> the universal recipient.",
+        "body": "<table><thead><tr><th>Fact</th><th>Answer</th></tr></thead><tbody><tr><td>Bones in an adult</td><td>206 (about 300 at birth)</td></tr><tr><td>Longest bone; smallest bone</td><td>Femur (thigh); stapes (middle ear)</td></tr><tr><td>Largest organ</td><td>Skin</td></tr><tr><td>Largest gland; largest internal organ</td><td>Liver</td></tr><tr><td>Largest muscle; smallest muscle</td><td>Gluteus maximus; stapedius</td></tr><tr><td>Teeth</td><td>32 in adults (8 incisors, 4 canines, 8 premolars, 12 molars); 20 milk teeth</td></tr><tr><td>Normal body temperature</td><td>37 °C (98.6 °F)</td></tr><tr><td>Normal blood pressure</td><td>About 120/80 mm Hg</td></tr><tr><td>Heart rate</td><td>About 72 beats per minute</td></tr><tr><td>Blood volume</td><td>About 5 to 6 litres</td></tr><tr><td>Blood pH</td><td>About 7.4</td></tr><tr><td>Life of a red blood cell</td><td>About 120 days (made in bone marrow; old ones destroyed in the spleen)</td></tr><tr><td>Chromosomes</td><td>46 (23 pairs)</td></tr></tbody></table>",
         "img": "ga/bio-heart.svg"
       },
       {
-        "title": "Vitamins and deficiency diseases",
-        "body": "<table><thead><tr><th>Vitamin</th><th>Deficiency disease</th></tr></thead><tbody><tr><td>A</td><td>Night blindness</td></tr><tr><td>B1 (thiamine)</td><td>Beriberi</td></tr><tr><td>B3 (niacin)</td><td>Pellagra</td></tr><tr><td>B12</td><td>Pernicious anaemia</td></tr><tr><td>C</td><td>Scurvy (bleeding gums)</td></tr><tr><td>D</td><td>Rickets (children)</td></tr><tr><td>K</td><td>Blood does not clot properly</td></tr></tbody></table>Fat-soluble vitamins: <b>A, D, E, K</b>. Water-soluble: <b>B and C</b>. Iodine deficiency causes goitre; iron deficiency causes anaemia."
+        "title": "Human organ systems",
+        "body": "<ul><li><b>Digestion</b>: saliva (amylase digests starch); stomach (hydrochloric acid and pepsin for proteins); liver makes <b>bile</b> (emulsifies fat; stored in the gall bladder); pancreas gives trypsin, lipase and amylase; most digestion and absorption happen in the small intestine (villi); the large intestine absorbs water.</li><li><b>Respiration</b>: gas exchange in the alveoli of the lungs. Muscles under heavy exercise respire without enough oxygen and make <b>lactic acid</b>, which causes cramps and soreness.</li><li><b>Circulation</b> (William Harvey, 1628): the heart has 4 chambers. The <b>left ventricle</b> has the thickest wall and pumps oxygenated blood to the body through the aorta. The pulmonary artery carries deoxygenated blood to the lungs; the pulmonary vein brings oxygenated blood back. The SA node is the natural pacemaker.</li><li><b>Blood</b>: RBCs carry oxygen (haemoglobin, which needs iron; myoglobin in muscle also needs iron); WBCs fight infection; platelets help clotting. Blood groups were found by Karl Landsteiner (1900). O negative is the universal donor; AB positive the universal recipient.</li><li><b>Excretion</b>: kidneys filter blood; the nephron is the unit. Urea is made in the liver.</li><li><b>Nervous system</b>: cerebrum (thinking, memory; largest part), cerebellum (balance and posture), medulla oblongata (heartbeat, breathing, involuntary acts). Reflex actions are controlled by the spinal cord. Serotonin, a neurotransmitter for mood and sleep, is made from the amino acid tryptophan.</li></ul><table><thead><tr><th>Gland</th><th>Hormone and role</th></tr></thead><tbody><tr><td>Pituitary ('master gland')</td><td>Growth hormone and hormones that control other glands</td></tr><tr><td>Thyroid</td><td>Thyroxine (needs iodine; lack causes goitre)</td></tr><tr><td>Parathyroid</td><td>Controls blood calcium</td></tr><tr><td>Adrenal</td><td>Adrenaline ('fight or flight')</td></tr><tr><td>Pancreas (islets of Langerhans)</td><td>Insulin lowers blood sugar; glucagon raises it</td></tr><tr><td>Pineal</td><td>Melatonin (sleep cycle)</td></tr><tr><td>Thymus</td><td>Immunity (T cells)</td></tr><tr><td>Testes; ovaries</td><td>Testosterone; oestrogen and progesterone</td></tr></tbody></table>"
+      },
+      {
+        "title": "Nutrition and vitamins",
+        "body": "<p>Nutrients: carbohydrates and proteins give about 4 kcal per gram, fats about 9 kcal per gram. Proteins build the body. Casimir Funk coined the word 'vitamine' (1912).</p><table><thead><tr><th>Vitamin</th><th>Chemical name</th><th>Deficiency disease</th><th>Sources</th></tr></thead><tbody><tr><td>A</td><td>Retinol</td><td>Night blindness, xerophthalmia</td><td>Carrot, milk, fish-liver oil</td></tr><tr><td>B1</td><td>Thiamine</td><td>Beriberi (the first B vitamin found, from Eijkman's work in 1897)</td><td>Whole grains</td></tr><tr><td>B2</td><td>Riboflavin</td><td>Cracked lips and mouth corners</td><td>Milk, eggs</td></tr><tr><td>B3</td><td>Niacin</td><td>Pellagra</td><td>Groundnut, meat</td></tr><tr><td>B9</td><td>Folic acid</td><td>Anaemia; birth defects</td><td>Green leafy vegetables</td></tr><tr><td>B12</td><td>Cobalamin (has cobalt)</td><td>Pernicious anaemia</td><td>Meat, milk</td></tr><tr><td>C</td><td>Ascorbic acid</td><td>Scurvy (bleeding gums)</td><td>Amla, citrus fruits</td></tr><tr><td>D</td><td>Calciferol</td><td>Rickets (children), osteomalacia (adults)</td><td>Sunlight, fish oil</td></tr><tr><td>E</td><td>Tocopherol</td><td>Reproductive problems</td><td>Vegetable oils, nuts</td></tr><tr><td>K</td><td>Phylloquinone</td><td>Blood does not clot; excessive bleeding</td><td>Green leafy vegetables</td></tr></tbody></table><ul><li>Fat-soluble: <b>A, D, E, K</b>. Water-soluble: <b>B and C</b>. Vitamin C is destroyed by heat.</li><li>Minerals: iron (anaemia), iodine (goitre), calcium (bones and teeth), fluorine (teeth; too much causes fluorosis).</li><li><b>Kwashiorkor</b>: protein deficiency. <b>Marasmus</b>: deficiency of both protein and calories.</li></ul>"
       },
       {
         "title": "Diseases and their causes",
-        "body": "<table><thead><tr><th>Cause</th><th>Diseases</th></tr></thead><tbody><tr><td>Bacteria</td><td>Tuberculosis, cholera, typhoid, tetanus, diphtheria</td></tr><tr><td>Virus</td><td>Polio, measles, rabies, chickenpox, dengue, AIDS</td></tr><tr><td>Protozoa</td><td>Malaria (<i>Plasmodium</i>, spread by female <i>Anopheles</i> mosquito)</td></tr><tr><td>Fungi</td><td>Ringworm, athlete's foot</td></tr></tbody></table>Dengue is spread by the <i>Aedes</i> mosquito. Classification: <b>Five-kingdom</b> system by R.H. Whittaker; binomial naming by Carolus <b>Linnaeus</b>."
+        "body": "<table><thead><tr><th>Cause</th><th>Diseases</th></tr></thead><tbody><tr><td>Bacteria</td><td>Tuberculosis, cholera, typhoid, tetanus, diphtheria, whooping cough, plague, leprosy, pneumonia, anthrax, botulism, syphilis, gonorrhoea</td></tr><tr><td>Viruses</td><td>Common cold, influenza, measles, mumps, chickenpox, smallpox, polio, rabies, hepatitis B, dengue, chikungunya, yellow fever, AIDS, COVID-19</td></tr><tr><td>Protozoa</td><td>Malaria (Plasmodium), amoebic dysentery (Entamoeba), kala-azar (Leishmania), sleeping sickness (Trypanosoma)</td></tr><tr><td>Fungi</td><td>Ringworm, athlete's foot, candidiasis</td></tr><tr><td>Worms</td><td>Filariasis (elephantiasis), ascariasis, tapeworm infection</td></tr></tbody></table><table><thead><tr><th>Vector</th><th>Disease</th></tr></thead><tbody><tr><td>Female Anopheles mosquito</td><td>Malaria</td></tr><tr><td>Aedes aegypti mosquito</td><td>Dengue, chikungunya, Zika, yellow fever</td></tr><tr><td>Culex mosquito</td><td>Filariasis, Japanese encephalitis</td></tr><tr><td>Sandfly</td><td>Kala-azar</td></tr><tr><td>Tsetse fly</td><td>Sleeping sickness</td></tr><tr><td>Rat flea</td><td>Plague</td></tr><tr><td>Housefly</td><td>Carries typhoid, cholera germs on its body</td></tr></tbody></table><ul><li><b>Tests</b>: Widal (typhoid), ELISA (HIV), Mantoux (tuberculosis).</li><li><b>Vaccines</b>: Edward Jenner made the smallpox vaccine (1796); Louis Pasteur the rabies vaccine (1885); BCG protects against tuberculosis; Jonas Salk made the injected polio vaccine and Albert Sabin the oral one. Smallpox was declared eradicated in 1980; India was declared polio-free in 2014.</li><li>Robert Koch found the tuberculosis germ (1882) and the cholera germ. Ronald Ross showed mosquitoes spread malaria (1897). Quinine (from cinchona bark) treats malaria.</li><li>Organs: hepatitis and jaundice affect the liver; tuberculosis and pneumonia mainly the lungs; meningitis the coverings of the brain; goitre the thyroid; diabetes mellitus is linked to insulin from the pancreas.</li><li>Sexually transmitted diseases can be bacterial (syphilis, gonorrhoea) or viral (HIV/AIDS, genital herpes, hepatitis B).</li></ul>"
+      },
+      {
+        "title": "Biologists and branches",
+        "body": "<table><thead><tr><th>Scientist</th><th>Known for</th></tr></thead><tbody><tr><td>Aristotle</td><td>Father of biology (zoology)</td></tr><tr><td>Theophrastus</td><td>Father of botany</td></tr><tr><td>Hippocrates</td><td>Father of medicine</td></tr><tr><td>Charles Darwin</td><td>Natural selection</td></tr><tr><td>Edward Jenner</td><td>Smallpox vaccine; father of immunology</td></tr><tr><td>Louis Pasteur</td><td>Germ theory, pasteurisation, rabies vaccine</td></tr><tr><td>Alexander Fleming</td><td>Penicillin (1928)</td></tr><tr><td>Banting and Best</td><td>Insulin (1921)</td></tr><tr><td>Karl Landsteiner</td><td>Blood groups</td></tr><tr><td>Christiaan Barnard</td><td>First human heart transplant (1967)</td></tr><tr><td>Ernst Haeckel</td><td>Coined the word 'ecology'</td></tr><tr><td>Har Gobind Khorana</td><td>Genetic code; Nobel 1968</td></tr></tbody></table><table><thead><tr><th>Branch</th><th>Study of</th></tr></thead><tbody><tr><td>Ornithology</td><td>Birds</td></tr><tr><td>Entomology</td><td>Insects</td></tr><tr><td>Ichthyology</td><td>Fish</td></tr><tr><td>Herpetology</td><td>Reptiles and amphibians</td></tr><tr><td>Mycology; phycology</td><td>Fungi; algae</td></tr><tr><td>Haematology</td><td>Blood</td></tr><tr><td>Nephrology</td><td>Kidneys</td></tr><tr><td>Oncology</td><td>Cancer</td></tr><tr><td>Osteology</td><td>Bones</td></tr><tr><td>Pomology</td><td>Fruits</td></tr><tr><td>Apiculture; sericulture; pisciculture</td><td>Bee keeping; silk worms; fish farming</td></tr></tbody></table>"
       }
     ],
     "varieties": [
       {
-        "type": "cell-classification",
-        "name": "Cell and classification",
-        "how": "Match each organelle to its job; remember who discovered what.",
-        "example": { "q": "Which organelle is called the 'powerhouse of the cell'?", "steps": ["Energy (ATP) is made by cellular respiration", "This happens in the mitochondria"], "answer": "Mitochondria" }
+        "type": "cell-genetics",
+        "name": "Cell, tissues and genetics",
+        "how": "Learn one job per organelle and which ones only plants have (cell wall, chloroplast, large vacuole). For genetics, learn chromosome numbers and the disorder table.",
+        "example": {
+          "q": "Which organelle is called the 'powerhouse of the cell'?",
+          "steps": [
+            "Energy (ATP) is made during cellular respiration.",
+            "This happens in the mitochondria."
+          ],
+          "answer": "Mitochondria"
+        }
+      },
+      {
+        "type": "classification",
+        "name": "Classification of living things",
+        "how": "Place the organism in its phylum or class by its key feature: spiny skin and tube feet (echinoderm), jointed legs (arthropod), milk glands (mammal).",
+        "example": {
+          "q": "Which group of animals has spiny skin and a water-driven tube system for moving?",
+          "steps": [
+            "Spiny skin is 'echino-derm'.",
+            "Their water vascular system works the tube feet (starfish, sea urchin)."
+          ],
+          "answer": "Echinodermata"
+        }
+      },
+      {
+        "type": "plant-physiology",
+        "name": "Plant life processes",
+        "how": "Know the photosynthesis equation and where each step happens, the five hormones with one role each, and the special terms (parthenocarpy, tropisms).",
+        "example": {
+          "q": "The development of fruit without fertilisation is called:",
+          "steps": [
+            "'Partheno' means virgin and 'carpy' means fruit.",
+            "Such fruits are usually seedless."
+          ],
+          "answer": "Parthenocarpy"
+        }
       },
       {
         "type": "human-body",
         "name": "Human body",
-        "how": "Recall the key-number table and the path of blood through the heart.",
-        "example": { "q": "Which is the largest gland in the human body?", "steps": ["Largest organ = skin", "Largest gland = liver"], "answer": "Liver" }
+        "how": "Learn the key numbers table, then each organ system's main parts. For glands, link gland, hormone and disorder.",
+        "example": {
+          "q": "Insulin is produced by which organ?",
+          "steps": [
+            "Insulin lowers blood sugar.",
+            "It is made by the islets of Langerhans in the pancreas."
+          ],
+          "answer": "Pancreas"
+        }
       },
       {
-        "type": "nutrition-disease",
-        "name": "Vitamins and diseases",
-        "how": "Use the vitamin table and classify each disease by its cause (bacteria / virus / protozoa / fungi).",
-        "example": { "q": "Scurvy is caused by deficiency of which vitamin?", "steps": ["Scurvy: bleeding gums, found in sailors without fresh fruit", "Citrus fruits supply vitamin C"], "answer": "Vitamin C" }
+        "type": "nutrition-vitamins",
+        "name": "Nutrition and vitamins",
+        "how": "Learn vitamin, chemical name and disease in one line. Split them into fat-soluble (A, D, E, K) and water-soluble (B, C).",
+        "example": {
+          "q": "Deficiency of which vitamin causes excessive bleeding from wounds?",
+          "steps": [
+            "Blood clotting needs vitamin K.",
+            "Its lack means wounds keep bleeding."
+          ],
+          "answer": "Vitamin K"
+        }
+      },
+      {
+        "type": "diseases-pathogens",
+        "name": "Diseases and pathogens",
+        "how": "First decide the type of germ (bacterium, virus, protozoan, fungus, worm). Then recall the vector and the test or vaccine.",
+        "example": {
+          "q": "Malaria is caused by:",
+          "steps": [
+            "Malaria is spread by the female Anopheles mosquito.",
+            "The germ is Plasmodium, a protozoan."
+          ],
+          "answer": "A protozoan (Plasmodium)"
+        }
+      },
+      {
+        "type": "biologists-branches",
+        "name": "Biologists, discoveries and branches",
+        "how": "Pair each scientist with one discovery, and each '-logy' with its subject.",
+        "example": {
+          "q": "Who discovered the first vaccine, against smallpox?",
+          "steps": [
+            "Pasteur made rabies and anthrax vaccines later.",
+            "Edward Jenner made the smallpox vaccine in 1796."
+          ],
+          "answer": "Edward Jenner"
+        }
       }
     ],
     "tips": [
-      "Vitamin chain: A-night blindness, B1-beriberi, C-scurvy, D-rickets, K-clotting.",
-      "Bacterial diseases often asked: TB, cholera, typhoid, tetanus, diphtheria ('TCT-TD').",
-      "Malaria is caused by a protozoan, not a virus or bacterium; the mosquito only carries it."
+      "Fat-soluble vitamins: 'ADEK'. All others (B, C) dissolve in water.",
+      "Heart chambers climb with class: fish 2, amphibians 3, most reptiles 3, birds and mammals 4.",
+      "Mosquito hook: Anopheles for malaria, Aedes for dengue (A-D), Culex for filariasis.",
+      "Ligament links bone to bone; tendon ties muscle to bone.",
+      "Five kingdoms in order of complexity: 'My Pet Frog Plays Ants' (Monera, Protista, Fungi, Plantae, Animalia).",
+      "Bones: 206 in adults, femur longest, stapes smallest."
     ],
     "traps": [
-      "Largest organ is skin, but largest gland is liver — options mix them.",
-      "Male Anopheles mosquitoes do not spread malaria; only females bite for blood.",
-      "Vitamin K helps blood clot; it is not linked to vision (that is vitamin A)."
+      "Malaria is caused by a protozoan, not a virus or bacterium; dengue is viral.",
+      "The pulmonary artery carries deoxygenated blood, unlike other arteries.",
+      "Whale and bat are mammals; seahorse is a fish; starfish is not a fish.",
+      "Night blindness is vitamin A, but scurvy is vitamin C and rickets is vitamin D.",
+      "Robert Hooke saw dead cork cells; Leeuwenhoek first saw living cells."
     ]
   },
   "questions": [
-    { "id": "g-biology-001", "rev": 1, "topic": "g-biology", "type": "cell-classification", "level": 1, "q": "Which organelle is known as the 'powerhouse of the cell'?", "options": ["Ribosome", "Mitochondria", "Golgi body", "Lysosome"], "answer": 1, "solution": "Mitochondria carry out cellular respiration and produce energy as ATP.<br><b>Memory hook:</b> Mighty-chondria = the mighty power plant.", "source": "test-data" },
-    { "id": "g-biology-002", "rev": 1, "topic": "g-biology", "type": "nutrition-disease", "level": 1, "q": "Night blindness is caused by deficiency of:", "options": ["Vitamin A", "Vitamin B1", "Vitamin C", "Vitamin D"], "answer": 0, "solution": "Vitamin A is needed for the light-sensitive pigment in the retina; its lack causes night blindness. Carrots are a good source.<br><b>Memory hook:</b> A for 'Aankh' (eye).", "source": "test-data" },
-    { "id": "g-biology-003", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 1, "q": "How many bones are there in the body of an adult human?", "options": ["212", "300", "206", "186"], "answer": 2, "solution": "An adult has 206 bones. A newborn has about 300; many fuse as the child grows.<br><b>Memory hook:</b> babies start with about 300 bones; fusing brings it down to 206.", "source": "test-data" },
-    { "id": "g-biology-004", "rev": 1, "topic": "g-biology", "type": "nutrition-disease", "level": 2, "q": "Malaria is caused by:", "options": ["A virus", "A bacterium", "A fungus", "A protozoan"], "answer": 3, "solution": "Malaria is caused by the protozoan <i>Plasmodium</i> and spread by the bite of the female <i>Anopheles</i> mosquito.<br><b>Memory hook:</b> P for Plasmodium, P for Protozoan.", "source": "test-data" },
-    { "id": "g-biology-005", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 2, "q": "The smallest bone in the human body is the:", "options": ["Stapes", "Femur", "Incus", "Patella"], "answer": 0, "solution": "The stapes (stirrup) in the middle ear is the smallest bone. The femur (thigh) is the longest.<br><b>Memory hook:</b> Stapes is shaped like a tiny stirrup in your ear.", "source": "test-data" },
-    { "id": "g-biology-006", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 2, "q": "Insulin is produced by which organ?", "options": ["Liver", "Pancreas", "Kidney", "Thyroid"], "answer": 1, "solution": "Insulin is made by the beta cells of the islets of Langerhans in the pancreas. Its lack causes diabetes.<br><b>Memory hook:</b> 'Islets in the Pancreas sea' produce insulin.", "source": "test-data" },
-    { "id": "g-biology-007", "rev": 1, "topic": "g-biology", "type": "human-body", "level": 3, "q": "Which chamber of the human heart pumps oxygenated blood to the whole body through the aorta?", "img": "ga/bio-heart.svg", "options": ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"], "answer": 3, "solution": "The left ventricle pumps oxygen-rich blood into the aorta. It has the thickest muscular wall because it pushes blood to the whole body.<br><b>Memory hook:</b> the Left ventricle is the Largest pump — thickest wall, sends blood to the whole body.", "source": "test-data" },
-    { "id": "g-biology-008", "rev": 1, "topic": "g-biology", "type": "nutrition-disease", "level": 3, "q": "Which of the following diseases is caused by a <b>bacterium</b>?", "options": ["Measles", "Polio", "Typhoid", "Chickenpox"], "answer": 2, "solution": "Typhoid is caused by the bacterium <i>Salmonella typhi</i>. Measles, polio and chickenpox are viral diseases.<br><b>Memory hook:</b> Bacterial set 'TCT-TD': TB, Cholera, Typhoid, Tetanus, Diphtheria.", "source": "test-data" }
+    {
+      "id": "g-biology-001",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "cell-genetics",
+      "level": 1,
+      "q": "Which organelle is known as the 'powerhouse of the cell'?",
+      "options": [
+        "Ribosome",
+        "Mitochondria",
+        "Golgi body",
+        "Lysosome"
+      ],
+      "answer": 1,
+      "solution": "Mitochondria carry out cellular respiration and produce energy as ATP.<br><b>Memory hook:</b> Mighty-chondria = the mighty power plant.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-biology-002",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "nutrition-vitamins",
+      "level": 1,
+      "q": "Night blindness is caused by deficiency of:",
+      "options": [
+        "Vitamin A",
+        "Vitamin B1",
+        "Vitamin C",
+        "Vitamin D"
+      ],
+      "answer": 0,
+      "solution": "Vitamin A is needed for the light-sensitive pigment in the retina; its lack causes night blindness. Carrots are a good source.<br><b>Memory hook:</b> A for 'Aankh' (eye).",
+      "source": "test-data"
+    },
+    {
+      "id": "g-biology-003",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "human-body",
+      "level": 1,
+      "q": "How many bones are there in the body of an adult human?",
+      "options": [
+        "212",
+        "300",
+        "206",
+        "186"
+      ],
+      "answer": 2,
+      "solution": "An adult has 206 bones. A newborn has about 300; many fuse as the child grows.<br><b>Memory hook:</b> babies start with about 300 bones; fusing brings it down to 206.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-biology-004",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "diseases-pathogens",
+      "level": 2,
+      "q": "Malaria is caused by:",
+      "options": [
+        "A virus",
+        "A bacterium",
+        "A fungus",
+        "A protozoan"
+      ],
+      "answer": 3,
+      "solution": "Malaria is caused by the protozoan <i>Plasmodium</i> and spread by the bite of the female <i>Anopheles</i> mosquito.<br><b>Memory hook:</b> P for Plasmodium, P for Protozoan.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-biology-005",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "human-body",
+      "level": 2,
+      "q": "The smallest bone in the human body is the:",
+      "options": [
+        "Stapes",
+        "Femur",
+        "Incus",
+        "Patella"
+      ],
+      "answer": 0,
+      "solution": "The stapes (stirrup) in the middle ear is the smallest bone. The femur (thigh) is the longest.<br><b>Memory hook:</b> Stapes is shaped like a tiny stirrup in your ear.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-biology-006",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "human-body",
+      "level": 2,
+      "q": "Insulin is produced by which organ?",
+      "options": [
+        "Liver",
+        "Pancreas",
+        "Kidney",
+        "Thyroid"
+      ],
+      "answer": 1,
+      "solution": "Insulin is made by the beta cells of the islets of Langerhans in the pancreas. Its lack causes diabetes.<br><b>Memory hook:</b> 'Islets in the Pancreas sea' produce insulin.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-biology-007",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "human-body",
+      "level": 3,
+      "q": "Which chamber of the human heart pumps oxygenated blood to the whole body through the aorta?",
+      "img": "ga/bio-heart.svg",
+      "options": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "answer": 3,
+      "solution": "The left ventricle pumps oxygen-rich blood into the aorta. It has the thickest muscular wall because it pushes blood to the whole body.<br><b>Memory hook:</b> the Left ventricle is the Largest pump — thickest wall, sends blood to the whole body.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-biology-008",
+      "rev": 1,
+      "topic": "g-biology",
+      "type": "diseases-pathogens",
+      "level": 3,
+      "q": "Which of the following diseases is caused by a <b>bacterium</b>?",
+      "options": [
+        "Measles",
+        "Polio",
+        "Typhoid",
+        "Chickenpox"
+      ],
+      "answer": 2,
+      "solution": "Typhoid is caused by the bacterium <i>Salmonella typhi</i>. Measles, polio and chickenpox are viral diseases.<br><b>Memory hook:</b> Bacterial set 'TCT-TD': TB, Cholera, Typhoid, Tetanus, Diphtheria.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-biology-1", "front": "Longest bone in the human body", "back": "Femur (thigh bone)", "deck": "ga-facts" },
-    { "id": "fc-g-biology-2", "front": "Largest organ of the human body", "back": "Skin", "deck": "ga-facts" },
-    { "id": "fc-g-biology-3", "front": "'Master gland' of the body", "back": "Pituitary gland", "deck": "ga-facts" },
-    { "id": "fc-g-biology-4", "front": "Deficiency of vitamin D causes", "back": "Rickets", "deck": "ga-facts" },
-    { "id": "fc-g-biology-5", "front": "Beriberi is due to lack of", "back": "Vitamin B1 (thiamine)", "deck": "ga-facts" },
-    { "id": "fc-g-biology-6", "front": "Universal blood donor group", "back": "O negative", "deck": "ga-facts" },
-    { "id": "fc-g-biology-7", "front": "Who discovered blood groups?", "back": "Karl Landsteiner", "deck": "ga-facts" },
-    { "id": "fc-g-biology-8", "front": "Vector of dengue", "back": "Aedes mosquito", "deck": "ga-facts" },
-    { "id": "fc-g-biology-9", "front": "Five-kingdom classification proposed by", "back": "R.H. Whittaker (1969)", "deck": "ga-facts" },
-    { "id": "fc-g-biology-10", "front": "Lifespan of a red blood cell", "back": "About 120 days", "deck": "ga-facts" }
+    {
+      "id": "fc-g-biology-1",
+      "front": "Longest bone in the human body",
+      "back": "Femur (thigh bone)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-2",
+      "front": "Largest organ of the human body",
+      "back": "Skin",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-3",
+      "front": "'Master gland' of the body",
+      "back": "Pituitary gland",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-4",
+      "front": "Deficiency of vitamin D causes",
+      "back": "Rickets",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-5",
+      "front": "Beriberi is due to lack of",
+      "back": "Vitamin B1 (thiamine)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-6",
+      "front": "Universal blood donor group",
+      "back": "O negative",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-7",
+      "front": "Who discovered blood groups?",
+      "back": "Karl Landsteiner",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-8",
+      "front": "Vector of dengue",
+      "back": "Aedes mosquito",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-9",
+      "front": "Five-kingdom classification proposed by",
+      "back": "R.H. Whittaker (1969)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-biology-10",
+      "front": "Lifespan of a red blood cell",
+      "back": "About 120 days",
+      "deck": "ga-facts"
+    }
   ]
 }

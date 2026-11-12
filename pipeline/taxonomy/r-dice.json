@@ -1,0 +1,29 @@
+{
+ "topic": "r-dice",
+ "types": [
+  {
+   "type": "opposite-faces",
+   "name": "Opposite face from positions",
+   "description": "Two, three or four positions (views) of the same die are shown, and you find the face opposite a given face, or the face on top when a given face is at the bottom.",
+   "concepts": []
+  },
+  {
+   "type": "net-opposite",
+   "name": "Opposite face in an open net",
+   "description": "An unfolded sheet (net) of a cube is shown, and you find which face will be opposite a given face after folding.",
+   "concepts": []
+  },
+  {
+   "type": "net-to-cube",
+   "name": "Matching a net with a cube",
+   "description": "You choose which cube can (or cannot) be formed by folding a given net, or which net gives a shown cube or box.",
+   "concepts": []
+  },
+  {
+   "type": "painted-cube",
+   "name": "Painted and cut cubes",
+   "description": "A cube (or cuboid) is painted and cut into small cubes, and you count pieces with 0, 1, 2 or 3 painted faces, or find the colours needed to paint a cube.",
+   "concepts": []
+  }
+ ]
+}

@@ -1,56 +1,115 @@
 {
  "topic": "r-syllogism",
  "notes": {
-  "summary": "Syllogism gives two or three statements (assume them true, even if they sound odd) and asks which conclusions <b>definitely</b> follow. Draw quick Venn circles. 1–2 questions per paper.",
+  "summary": "A syllogism gives two or three statements about groups (cats, dogs, pens) and asks which conclusions <b>must</b> follow. Treat every statement as true even if it sounds silly. Draw the smallest Venn diagram the statements allow, then test each conclusion. A definite conclusion must hold in every possible diagram; a possibility conclusion needs only one diagram where it can happen.",
   "concepts": [
    {
-    "title": "Four statement types",
-    "body": "<b>All A are B</b>: circle A inside B.<br><b>No A is B</b>: A and B separate.<br><b>Some A are B</b>: A and B overlap.<br><b>Some A are not B</b>: part of A lies outside B."
+    "title": "The four statement types",
+    "body": "Every statement is one of four kinds. Learn the picture for each:<table><thead><tr><th>Statement</th><th>Picture</th><th>What it really says</th></tr></thead><tbody><tr><td>All A are B</td><td>A circle fully inside B</td><td>Every A is a B. B may have more members.</td></tr><tr><td>Some A are B</td><td>A and B overlap</td><td>At least one A is a B. It may even be all of them.</td></tr><tr><td>No A is B</td><td>A and B apart</td><td>Not even one A is a B.</td></tr><tr><td>Some A are not B</td><td>Part of A (marked ×) outside B</td><td>At least one A is outside B.</td></tr></tbody></table><p>\"Some\" means \"at least one\". It never means \"only some\", so \"Some A are B\" does not tell you that some A are not B.</p>",
+    "img": "reasoning/syl-basic.svg"
    },
    {
-    "title": "Definite vs possible",
-    "body": "A conclusion \"follows\" only if it is true in <b>every</b> possible diagram. A \"possibility\" conclusion follows if it is true in <b>at least one</b> diagram that fits the statements."
+    "title": "Words that mean the same thing",
+    "body": "<ul><li><b>All</b>: every, each, any, all of them.</li><li><b>Some</b>: a few, many, most, several, at least one, a lot of.</li><li><b>No</b>: none, not a single, not any, never. In SSC papers \"All A are not B\" is read as \"No A is B\".</li><li><b>Only A are B</b> means \"All B are A\". Example: \"Only doctors are surgeons\" means every surgeon is a doctor.</li><li><b>Only a few A are B</b> means two things together: some A are B, and some A are not B.</li></ul>Rewrite every statement in one of the four standard forms before you draw anything."
    },
    {
-    "title": "Either–or pair",
-    "body": "If two conclusions are about the same two groups, neither follows alone, and one is \"Some\" while the other is \"No\" (or \"All\" and \"Some not\"), then the answer is <b>either I or II</b>."
+    "title": "The Venn diagram method",
+    "body": "<ol><li>Draw the first statement as its basic picture.</li><li>Add the second statement using the group the two statements share (the middle term).</li><li>Draw only what is stated. If nothing links two groups, keep them unlinked in your mind: they may or may not meet.</li><li>Test each conclusion. If you can draw any valid diagram where it is false, it does not follow.</li></ol><p>Mini example: All cats are dogs. Some dogs are pets. The figure shows the smallest diagram. \"Some cats are pets\" does not follow, because pets can touch the dogs circle without touching cats. \"Some dogs are cats\" does follow, because the cats circle sits inside dogs.</p>",
+    "img": "reasoning/syl-example.svg"
+   },
+   {
+    "title": "What one statement gives you",
+    "body": "From a single statement you can turn it around (convert it) only in these ways:<table><thead><tr><th>Statement</th><th>Follows</th><th>Does not follow</th></tr></thead><tbody><tr><td>All A are B</td><td>Some A are B, Some B are A</td><td>All B are A</td></tr><tr><td>Some A are B</td><td>Some B are A</td><td>All A are B, Some A are not B</td></tr><tr><td>No A is B</td><td>No B is A, Some A are not B, Some B are not A</td><td>Anything with \"Some A are B\"</td></tr><tr><td>Some A are not B</td><td>Nothing new</td><td>Some B are not A, Some A are B</td></tr></tbody></table>"
+   },
+   {
+    "title": "Joining two statements: the quick table",
+    "body": "Line the statements up so the shared group is in the middle: \"A–B\" then \"B–C\". Then read the A–C result:<table><thead><tr><th>First (A–B)</th><th>Second (B–C)</th><th>Conclusion</th></tr></thead><tbody><tr><td>All</td><td>All</td><td>All A are C</td></tr><tr><td>All</td><td>No</td><td>No A is C</td></tr><tr><td>Some</td><td>All</td><td>Some A are C</td></tr><tr><td>Some</td><td>No</td><td>Some A are not C</td></tr><tr><td>No</td><td>All</td><td>Some C are not A (read it backwards)</td></tr><tr><td>No</td><td>Some</td><td>Some C are not A</td></tr><tr><td>All</td><td>Some</td><td>No definite A–C link</td></tr><tr><td>Some</td><td>Some</td><td>No definite A–C link</td></tr><tr><td>No</td><td>No</td><td>No definite A–C link</td></tr></tbody></table><p>If the shared group is not in the middle, first convert a statement (for example \"Some B are A\" becomes \"Some A are B\"). \"All\" cannot be turned around fully, so only use this when the table still fits.</p>"
+   },
+   {
+    "title": "Possibility conclusions",
+    "body": "A conclusion like \"Some A being C is a possibility\" asks: can I draw <b>at least one</b> valid diagram where it is true?<ul><li>It follows if no statement forbids it. Unlinked groups can always possibly meet, and one group can possibly be fully inside another.</li><li>It fails if a statement blocks it. \"No A is B\" makes \"Some A being B\" impossible. \"All A are B\" makes \"Some A being not B\" impossible.</li><li>Anything that is definitely true is also possible.</li></ul><p>Mini example: All roses are flowers. Some flowers are red. \"All red things being roses is a possibility\" follows: the red circle can sit inside roses and the statements still hold.</p>"
+   },
+   {
+    "title": "Either–or conclusions",
+    "body": "Sometimes neither conclusion follows alone, but one of the two must be true. Mark \"Either I or II follows\" only when all three checks pass:<ol><li>Both conclusions talk about the same two groups.</li><li>Neither follows by itself.</li><li>They form a pair that covers every case: \"Some A are B\" with \"No A is B\", or \"All A are B\" with \"Some A are not B\".</li></ol><p>Example: Some flowers are red. Some red things are roses. I: Some flowers are roses. II: No rose is a flower. Neither is certain, but one of them has to be true, so either I or II follows.</p>"
+   },
+   {
+    "title": "Three statements",
+    "body": "Work in a chain. Join statements 1 and 2, then 2 and 3, and draw all the groups in one diagram. For a conclusion that skips a group (A–D, say), check whether the links between them are all definite. One broken link (an All–Some or Some–Some join) means no definite conclusion, though a possibility conclusion may still follow."
    }
   ],
   "varieties": [
    {
     "type": "two-statement",
-    "name": "Definite conclusions",
-    "how": "Draw the minimum diagram, then try to break each conclusion with another diagram.",
+    "name": "Two statements, definite conclusions",
+    "how": "Draw both statements in one diagram. A conclusion follows only if it is true in every diagram you can draw.",
     "example": {
-     "q": "All cats are dogs. All dogs are animals. Does \"All cats are animals\" follow?",
+     "q": "Statements: All pens are books. Some books are bags.<br>Conclusions: I. Some pens are bags. II. Some bags are books.",
      "steps": [
-      "Cats ⊂ Dogs ⊂ Animals",
-      "Every cat is inside Animals."
+      "Draw pens inside books. Draw bags overlapping books.",
+      "Bags need not touch the pens part, so I does not follow (All + Some gives no definite link).",
+      "\"Some books are bags\" turned around is \"Some bags are books\", so II follows."
      ],
-     "answer": "Yes, it follows"
+     "answer": "Only conclusion II follows"
+    }
+   },
+   {
+    "type": "three-statement",
+    "name": "Three or more statements",
+    "how": "Join the statements in pairs with the quick table, then test each conclusion in a single diagram.",
+    "example": {
+     "q": "Statements: Some cups are plates. All plates are bowls. No bowl is a spoon.<br>Conclusions: I. Some cups are bowls. II. No plate is a spoon. III. Some cups are spoons.",
+     "steps": [
+      "Some cups are plates + All plates are bowls: Some + All gives \"Some cups are bowls\". I follows.",
+      "All plates are bowls + No bowl is a spoon: All + No gives \"No plate is a spoon\". II follows.",
+      "Some cups are bowls + No bowl is a spoon gives only \"Some cups are not spoons\". III is not certain."
+     ],
+     "answer": "Only conclusions I and II follow"
     }
    },
    {
     "type": "possibility",
     "name": "Possibility conclusions",
-    "how": "A possibility follows if you can draw one valid diagram where it is true and no statement forbids it.",
+    "how": "Ask \"can I draw it?\" A possibility follows unless a No or All statement blocks it.",
     "example": {
-     "q": "No apple is a mango. Is \"Some mangoes are apples\" a possibility?",
+     "q": "Statements: All roses are flowers. Some flowers are red.<br>Conclusions: I. All red things being roses is a possibility. II. Some roses being not flowers is a possibility.",
      "steps": [
-      "\"No apple is a mango\" forbids any overlap."
+      "Red only has to overlap flowers. Nothing stops the whole red circle from sitting inside roses, so I is possible.",
+      "\"All roses are flowers\" puts every rose inside flowers, so a rose outside flowers is impossible. II fails."
      ],
-     "answer": "Not possible"
+     "answer": "Only conclusion I follows"
+    }
+   },
+   {
+    "type": "single-statement",
+    "name": "One statement, inferences",
+    "how": "Use the one-statement table: All gives Some both ways, Some turns around, No turns around, Some-not gives nothing new.",
+    "example": {
+     "q": "Statement: All painters are artists.<br>Conclusions: I. Some artists are painters. II. All artists are painters.",
+     "steps": [
+      "All painters are artists, so the painters circle sits inside artists.",
+      "The painters part of artists exists, so \"Some artists are painters\" follows.",
+      "Artists may include people who are not painters, so II does not follow."
+     ],
+     "answer": "Only conclusion I follows"
     }
    }
   ],
   "tips": [
-   "Never use real-world knowledge; use only the statements.",
-   "\"Some\" means \"at least one, possibly all\".",
-   "\"All A are B\" gives \"Some B are A\" as a definite conclusion."
+   "Rewrite each statement in a standard form (All, Some, No, Some not) before drawing.",
+   "Draw the smallest diagram first, then try to break each conclusion with another valid diagram.",
+   "Learn the quick table: All + All = All, All + No = No, Some + All = Some, Some + No = Some not.",
+   "All + Some, Some + Some and No + No never give a definite link between the end groups.",
+   "Whatever is definitely true is also a possibility.",
+   "For either–or, check the same two groups, neither follows alone, and a Some/No or All/Some-not pair.",
+   "With three statements, check each conclusion against the chain of links; one weak link breaks a definite conclusion."
   ],
   "traps": [
-   "\"All A are B\" does NOT mean \"All B are A\".",
-   "Two \"Some\" statements give no definite link between the end groups."
+   "\"All A are B\" does not give \"All B are A\"; it gives only \"Some B are A\".",
+   "\"Some A are not B\" cannot be turned around into \"Some B are not A\".",
+   "Real-world knowledge does not count. If the statements say all fish can fly, they can.",
+   "A conclusion that is only possible must not be marked as definite, and the other way round.",
+   "Do not mark either–or when one of the two conclusions already follows by itself."
   ]
  },
  "questions": [

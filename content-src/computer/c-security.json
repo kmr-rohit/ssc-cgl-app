@@ -1,71 +1,140 @@
 {
  "topic": "c-security",
  "notes": {
-  "summary": "Computer security covers harmful software (malware), common attacks, and the tools that protect us. Tier 2 asks 2–3 direct questions, mostly \"which malware/attack is this?\" and \"what does a firewall/encryption do?\".",
+  "summary": "<p>Computer security gives 2 to 3 questions in Tier 2. Most of them describe a threat and ask for its name (virus, worm, trojan, ransomware, phishing, DoS), or ask what a protection tool does (firewall, antivirus, encryption, digital signature).</p><p>Learn the one clue that tells each threat apart, which key is used for what, and the basics of the IT Act, 2000.</p>",
   "concepts": [
    {
+    "title": "Security goals",
+    "body": "<p>Computer security protects data and systems from harm and misuse. Its three goals are called the <b>CIA triad</b>:</p><table><thead><tr><th>Goal</th><th>Meaning</th><th>Protected by</th></tr></thead><tbody><tr><td>Confidentiality</td><td>Only the right people can read the data</td><td>Encryption, passwords</td></tr><tr><td>Integrity</td><td>Data is not changed without permission</td><td>Hashing, digital signatures</td></tr><tr><td>Availability</td><td>The system works when users need it</td><td>Backups, protection from DoS attacks</td></tr></tbody></table><ul><li><b>Authentication</b> checks who you are (password, OTP, fingerprint). <b>Authorisation</b> decides what you are allowed to do.</li><li><b>Non-repudiation</b>: the sender cannot later deny sending a message (given by a digital signature).</li></ul>"
+   },
+   {
     "title": "Malware",
-    "body": "<ul><li><b>Virus</b>: attaches to a host file and spreads when that file runs.</li><li><b>Worm</b>: copies itself across networks on its own, without a host file.</li><li><b>Trojan horse</b>: looks like useful software but does harm in the background.</li><li><b>Ransomware</b>: encrypts your files and demands payment (e.g. WannaCry, 2017).</li><li><b>Spyware / Keylogger</b>: secretly records activity or keystrokes. <b>Adware</b>: shows unwanted ads.</li><li>The first PC virus is usually cited as <b>Brain</b> (1986, from Pakistan); <b>Creeper</b> was the first self-replicating program.</li></ul>"
+    "body": "<p><b>Malware</b> (malicious software) is any program written to harm a computer or steal from its user.</p><table><thead><tr><th>Type</th><th>How to recognise it</th></tr></thead><tbody><tr><td>Virus</td><td>Attaches itself to a host file or program and spreads when that file is run or shared</td></tr><tr><td>Worm</td><td>Copies itself and spreads across a network on its own, with no host file and no user action</td></tr><tr><td>Trojan horse</td><td>Looks like a useful or legitimate program but secretly does harm; does not copy itself</td></tr><tr><td>Ransomware</td><td>Locks or encrypts your files and demands payment (ransom), often in Bitcoin. Example: WannaCry (2017)</td></tr><tr><td>Spyware</td><td>Secretly watches what you do and sends your data to someone else</td></tr><tr><td>Keylogger</td><td>Records every key you press to steal passwords. It can be software or a small hardware device</td></tr><tr><td>Adware</td><td>Shows unwanted advertisements</td></tr><tr><td>Rootkit</td><td>Hides deep in the system and gives an attacker administrator (root) control</td></tr><tr><td>Botnet</td><td>A network of infected computers (bots or zombies) controlled by one attacker</td></tr><tr><td>Logic bomb / time bomb</td><td>Stays quiet until a condition or a date is reached, then acts</td></tr><tr><td>Backdoor</td><td>A hidden way into a system that skips the normal login</td></tr><tr><td>Scareware</td><td>Shows fake alarms (\"your PC is infected\") to make you buy useless software</td></tr></tbody></table>"
    },
    {
-    "title": "Attacks",
-    "body": "<ul><li><b>Phishing</b>: fake email/website to steal passwords or card details. <b>Vishing</b> = by voice call; <b>Smishing</b> = by SMS.</li><li><b>DoS / DDoS</b>: flooding a server so real users cannot use it (DDoS uses many computers, often a botnet).</li><li><b>Spoofing</b>: faking an identity (email, IP). <b>Man-in-the-middle</b>: secretly intercepting communication.</li><li><b>Hacking</b>: unauthorised access. Ethical (white-hat) hackers test systems with permission.</li></ul>"
+    "title": "Types of viruses",
+    "body": "<table><thead><tr><th>Virus type</th><th>What it does</th></tr></thead><tbody><tr><td>Boot sector virus</td><td>Infects the boot sector of a disk and runs when the computer starts</td></tr><tr><td>Macro virus</td><td>Written as a macro inside Word or Excel files</td></tr><tr><td>File infector</td><td>Attaches to program files such as .exe</td></tr><tr><td>Resident virus</td><td>Hides in the computer's memory (RAM), so it can act again even if the original file is deleted</td></tr><tr><td>Polymorphic virus</td><td>Changes its code each time it spreads to avoid antivirus detection</td></tr><tr><td>Multipartite virus</td><td>Spreads in more than one way (boot sector and files)</td></tr><tr><td>Stealth virus</td><td>Hides the changes it makes so antivirus cannot see it</td></tr></tbody></table><ul><li><b>Brain</b> (1986, from Pakistan) is known as the first virus for IBM PCs.</li><li><b>Creeper</b> (1971) is often called the first self-copying program.</li><li>Common signs of infection: the computer slows down, files go missing, strange pop-ups appear.</li></ul>"
    },
    {
-    "title": "Protection",
-    "body": "<ul><li><b>Firewall</b>: hardware or software that filters network traffic by rules.</li><li><b>Antivirus</b>: detects and removes malware.</li><li><b>Encryption</b>: turns plaintext into unreadable ciphertext; decryption reverses it. Symmetric = one shared key; asymmetric = public key + private key.</li><li><b>Digital signature</b>: made with the sender's <b>private key</b>, checked with the sender's public key.</li><li><b>Two-factor authentication</b> (2FA): password + OTP / fingerprint. <b>CAPTCHA</b> tells humans from bots.</li></ul>"
+    "title": "Phishing and social engineering",
+    "body": "<p><b>Social engineering</b> tricks people, not machines, into giving away secrets.</p><table><thead><tr><th>Attack</th><th>Channel or trick</th></tr></thead><tbody><tr><td>Phishing</td><td>Fake emails or websites that look like a bank or company, to steal passwords or card details</td></tr><tr><td>Spear phishing</td><td>Phishing aimed at one particular person or group</td></tr><tr><td>Whaling</td><td>Phishing aimed at top officials (\"big fish\")</td></tr><tr><td>Vishing</td><td>Voice phishing over phone calls</td></tr><tr><td>Smishing</td><td>Phishing by SMS text message</td></tr><tr><td>Pharming</td><td>Redirects you to a fake website even when you type the correct address (by changing DNS)</td></tr><tr><td>Spoofing</td><td>Faking an email address, caller ID, IP address or website to look trusted</td></tr><tr><td>Baiting</td><td>Leaving an infected pen drive or free offer for someone to pick up</td></tr><tr><td>Shoulder surfing</td><td>Watching over someone's shoulder as they type a PIN</td></tr><tr><td>Identity theft</td><td>Using someone else's personal details to commit fraud</td></tr></tbody></table><p><b>Spam</b> is unwanted bulk email. It is not always an attack, but phishing often comes as spam.</p>"
+   },
+   {
+    "title": "Hacking and network attacks",
+    "body": "<table><thead><tr><th>Attack</th><th>What happens</th></tr></thead><tbody><tr><td>DoS (denial of service)</td><td>Floods a server with traffic so real users cannot reach it</td></tr><tr><td>DDoS (distributed DoS)</td><td>The same, but from many computers at once, usually a botnet</td></tr><tr><td>Man-in-the-middle</td><td>The attacker secretly sits between two parties and reads or changes their messages</td></tr><tr><td>Sniffing / eavesdropping</td><td>Capturing data as it moves on a network</td></tr><tr><td>Brute-force attack</td><td>Trying every possible password until one works</td></tr><tr><td>Dictionary attack</td><td>Trying common words as passwords</td></tr><tr><td>SQL injection</td><td>Typing database commands into a website form to read or change its database</td></tr><tr><td>Cross-site scripting (XSS)</td><td>Putting harmful script into a web page that other users then run</td></tr><tr><td>Zero-day attack</td><td>Uses a flaw the maker does not yet know about, so no fix exists</td></tr><tr><td>Session hijacking</td><td>Stealing a logged-in session (often through its cookie)</td></tr><tr><td>Cryptojacking</td><td>Secretly using your computer to mine cryptocurrency</td></tr></tbody></table><ul><li><b>Cookies</b> are small files a website stores in your browser. <b>Third-party (tracking) cookies</b> follow you across sites and can expose your privacy.</li><li><b>Hacking</b> is getting into a system without permission. <b>Cracking</b> usually means breaking software protection or passwords for harm.</li></ul>"
+   },
+   {
+    "title": "Protection tools",
+    "body": "<table><thead><tr><th>Tool</th><th>What it does</th></tr></thead><tbody><tr><td>Firewall</td><td>Filters incoming and outgoing network traffic using set rules; can be hardware or software. It stands between a trusted network and the internet</td></tr><tr><td>Antivirus</td><td>Scans for, blocks and removes malware (Quick Heal, Norton, McAfee, Kaspersky, Windows Defender)</td></tr><tr><td>VPN (virtual private network)</td><td>Creates an encrypted tunnel over the internet for private browsing</td></tr><tr><td>Two-factor / multi-factor authentication</td><td>Asks for two or more proofs: something you know (password), have (phone OTP) or are (fingerprint)</td></tr><tr><td>CAPTCHA</td><td>Completely Automated Public Turing test to tell Computers and Humans Apart; stops bots</td></tr><tr><td>Biometrics</td><td>Identifies a person by fingerprint, face, iris or voice</td></tr><tr><td>Patches and automatic updates</td><td>Fix security flaws; automatic updates install them without user action</td></tr><tr><td>Backup</td><td>Keeps a copy of data so it can be restored after ransomware or a crash</td></tr><tr><td>IDS / IPS</td><td>Intrusion detection / prevention system: watches traffic for attacks</td></tr><tr><td>Honeypot</td><td>A fake system set up to attract and study attackers</td></tr><tr><td>Sandbox</td><td>A closed space where a doubtful program runs without touching the real system</td></tr></tbody></table><p><b>Strong password</b>: at least 8 to 12 characters, with capital and small letters, numbers and symbols; never your name or birth date; a different one for each site.</p>"
+   },
+   {
+    "title": "Encryption and keys",
+    "body": "<ul><li><b>Plaintext</b>: readable data. <b>Ciphertext</b>: scrambled, unreadable data.</li><li><b>Encryption</b> turns plaintext into ciphertext; <b>decryption</b> turns it back. Both use a <b>key</b>. The study of this is <b>cryptography</b>.</li></ul><table><thead><tr><th></th><th>Symmetric (secret key)</th><th>Asymmetric (public key)</th></tr></thead><tbody><tr><td>Keys</td><td>One shared key for both encrypting and decrypting</td><td>A pair: a public key (shared with all) and a private key (kept secret)</td></tr><tr><td>Speed</td><td>Fast</td><td>Slower</td></tr><tr><td>Examples</td><td>AES, DES</td><td>RSA</td></tr></tbody></table><ul><li>To send a <b>secret</b> message: encrypt with the <b>receiver's public key</b>; only the receiver's private key can open it.</li><li>A <b>hash function</b> (such as SHA-256) turns data into a fixed-length value. It is one-way and is used to check integrity and store passwords.</li></ul>"
+   },
+   {
+    "title": "Digital signatures, certificates and HTTPS",
+    "body": "<ul><li>A <b>digital signature</b> is made with the <b>sender's private key</b> and checked with the <b>sender's public key</b>. It proves who sent the message (authentication), that it was not changed (integrity) and that the sender cannot deny it (non-repudiation).</li><li>A <b>digital certificate</b> links a public key to its owner. It is issued by a <b>Certifying Authority (CA)</b>. In India, CAs are licensed by the Controller of Certifying Authorities (CCA) under the IT Act.</li><li><b>SSL/TLS</b> encrypts data between your browser and a website. <b>HTTPS</b> is HTTP over TLS; it uses port 443 and the browser shows a padlock.</li></ul><table><thead><tr><th>Task</th><th>Key used</th></tr></thead><tbody><tr><td>Encrypt a secret message to B</td><td>B's public key</td></tr><tr><td>Decrypt it</td><td>B's private key</td></tr><tr><td>Sign a message as A</td><td>A's private key</td></tr><tr><td>Verify A's signature</td><td>A's public key</td></tr></tbody></table>"
+   },
+   {
+    "title": "Cyber law and hackers",
+    "body": "<ul><li><b>Information Technology Act, 2000</b> is India's main cyber law. It came into force on 17 October 2000 and was amended in 2008. It gives legal status to electronic records and digital signatures.</li><li>Key sections: <b>43</b> damage to a computer system (compensation), <b>66</b> computer-related offences (hacking), <b>66C</b> identity theft, <b>66D</b> cheating by impersonation using a computer, <b>66E</b> violation of privacy, <b>66F</b> cyber terrorism, <b>67</b> publishing obscene material online.</li><li>Section <b>66A</b> (offensive messages) was struck down by the Supreme Court in 2015 (Shreya Singhal case).</li><li><b>CERT-In</b> (Indian Computer Emergency Response Team), under the Ministry of Electronics and IT, is the national agency for handling cyber security incidents.</li><li>Report cyber fraud on helpline <b>1930</b> or at cybercrime.gov.in.</li><li>The <b>Digital Personal Data Protection Act, 2023</b> governs how personal data is handled.</li></ul><table><thead><tr><th>Hacker type</th><th>Who they are</th></tr></thead><tbody><tr><td>White hat</td><td>Ethical hacker who tests systems with permission</td></tr><tr><td>Black hat</td><td>Criminal hacker who breaks in for gain or harm</td></tr><tr><td>Grey hat</td><td>Breaks in without permission but without bad intent</td></tr><tr><td>Script kiddie</td><td>Unskilled person using ready-made tools</td></tr><tr><td>Hacktivist</td><td>Hacks to push a political or social cause</td></tr></tbody></table>"
    }
   ],
   "varieties": [
    {
     "type": "malware",
-    "name": "Identify the malware",
-    "how": "Look for the key behaviour: needs a host (virus), spreads alone (worm), disguised (trojan), asks for money (ransomware).",
+    "name": "Malware and virus types",
+    "how": "Look for the key clue: needs a host file (virus), spreads alone (worm), pretends to be useful (trojan), asks for money (ransomware), records keys (keylogger).",
     "example": {
-     "q": "A program secretly records every key a user presses. What is it?",
+     "q": "A program spreads from computer to computer over a network by itself, without attaching to any file. It is a:",
      "steps": [
-      "It records keystrokes, so it is spyware.",
-      "The specific name is keylogger."
+      "A virus needs a host file, so it is not a virus.",
+      "A trojan does not copy itself.",
+      "Spreading alone over a network is the mark of a worm."
      ],
-     "answer": "Keylogger"
+     "answer": "Worm"
     }
    },
    {
-    "type": "attacks",
-    "name": "Identify the attack",
-    "how": "Match the method: fake message (phishing), flooding (DoS), fake identity (spoofing).",
+    "type": "social-attacks",
+    "name": "Phishing and social engineering",
+    "how": "Find the channel: email or fake site (phishing), phone call (vishing), SMS (smishing), correct address but fake site (pharming).",
     "example": {
-     "q": "You get an SMS saying \"Your bank KYC expires today, click this link\". What attack is this?",
+     "q": "A caller pretends to be from your bank and asks for your OTP. This is called:",
      "steps": [
-      "It is a phishing attempt.",
-      "Because it comes by SMS, it is called smishing."
+      "Email tricks are phishing; SMS tricks are smishing.",
+      "A voice call trick is voice phishing."
      ],
-     "answer": "Smishing"
+     "answer": "Vishing"
     }
    },
    {
-    "type": "protection",
-    "name": "Security tools",
-    "how": "Know what each tool does and which key is used where in encryption and signatures.",
+    "type": "network-attacks",
+    "name": "Hacking and network attacks",
+    "how": "Match the action: flooding (DoS, DDoS if many machines), sitting between two parties (man-in-the-middle), trying all passwords (brute force), code in a form (SQL injection).",
     "example": {
-     "q": "To send a secret message to Ravi using public-key encryption, which key do you use?",
+     "q": "Thousands of infected computers send requests to a website at the same time so that it crashes. What is this attack?",
      "steps": [
-      "Anyone may encrypt with Ravi's public key.",
-      "Only Ravi's private key can decrypt it."
+      "Flooding a server so real users cannot reach it is denial of service.",
+      "Because many computers (a botnet) do it together, it is distributed."
      ],
-     "answer": "Ravi's public key"
+     "answer": "DDoS (distributed denial of service)"
+    }
+   },
+   {
+    "type": "protection-tools",
+    "name": "Firewalls, antivirus and safe practices",
+    "how": "Firewall filters traffic; antivirus removes malware; VPN hides traffic in an encrypted tunnel; 2FA adds a second proof; CAPTCHA stops bots.",
+    "example": {
+     "q": "Which security tool filters incoming and outgoing network traffic according to set rules?",
+     "steps": [
+      "Antivirus scans files on the computer for malware.",
+      "A firewall checks network traffic against rules and blocks what is not allowed."
+     ],
+     "answer": "Firewall"
+    }
+   },
+   {
+    "type": "cryptography",
+    "name": "Encryption, keys and digital signatures",
+    "how": "Secret message: receiver's public key to lock, receiver's private key to open. Signature: sender's private key to sign, sender's public key to check.",
+    "example": {
+     "q": "A sends a message to B that only B must be able to read. Which key does A use to encrypt it?",
+     "steps": [
+      "Anyone can get B's public key, but only B has B's private key.",
+      "Locking with B's public key means only B's private key can unlock it."
+     ],
+     "answer": "B's public key"
+    }
+   },
+   {
+    "type": "cyber-law",
+    "name": "Cyber law, agencies and hacker types",
+    "how": "Remember IT Act 2000 (amended 2008), 66C identity theft, 66D cheating by impersonation, 66F cyber terrorism, CERT-In for incidents, 1930 helpline.",
+    "example": {
+     "q": "Under which section of the IT Act, 2000 is identity theft (using someone's password or digital signature) punished?",
+     "steps": [
+      "Section 66 covers computer-related offences in general.",
+      "66C is identity theft; 66D is cheating by impersonation."
+     ],
+     "answer": "Section 66C"
     }
    }
   ],
   "tips": [
-   "Worm = \"walks\" on its own; virus needs a host file.",
-   "WannaCry (2017) is the standard ransomware example.",
-   "Encrypt with the receiver's public key; sign with your own private key."
+   "Virus needs a host file; worm spreads by itself; trojan pretends to be useful.",
+   "Ransomware asks for money; spyware steals information; adware shows ads.",
+   "Phishing is by email, vishing by voice call, smishing by SMS.",
+   "A digital signature uses the sender's private key; encryption for secrecy uses the receiver's public key.",
+   "A firewall filters network traffic; it does not remove viruses from files.",
+   "HTTPS uses SSL/TLS and port 443; look for the padlock."
   ],
   "traps": [
-   "A firewall is not an antivirus: it filters traffic, it does not clean infected files.",
-   "A Trojan does not replicate itself, unlike a virus or worm.",
-   "Phishing is an attack (social engineering), not a type of malware."
+   "A trojan does not copy itself; if the question says it spreads on its own, the answer is worm.",
+   "DoS comes from one source; DDoS comes from many (a botnet).",
+   "A keylogger can be hardware as well as software.",
+   "Do not sign with the public key: signing always uses the private key.",
+   "Pharming sends you to a fake site even when you type the right address; phishing needs you to click a fake link."
   ]
  },
  "questions": [
@@ -90,7 +159,7 @@
    "id": "c-security-002",
    "rev": 1,
    "topic": "c-security",
-   "type": "protection",
+   "type": "protection-tools",
    "level": 1,
    "q": "The main job of a firewall is to:",
    "options": [
@@ -107,7 +176,7 @@
    "id": "c-security-003",
    "rev": 1,
    "topic": "c-security",
-   "type": "attacks",
+   "type": "social-attacks",
    "level": 1,
    "q": "Sending fake emails that look like they come from a bank, to steal passwords, is called:",
    "options": [
@@ -141,7 +210,7 @@
    "id": "c-security-005",
    "rev": 1,
    "topic": "c-security",
-   "type": "protection",
+   "type": "cryptography",
    "level": 2,
    "q": "Converting readable data (plaintext) into an unreadable form (ciphertext) is called:",
    "options": [
@@ -158,7 +227,7 @@
    "id": "c-security-006",
    "rev": 1,
    "topic": "c-security",
-   "type": "attacks",
+   "type": "network-attacks",
    "level": 2,
    "q": "An attack that floods a website with so much traffic that real users cannot reach it is a:",
    "options": [
@@ -192,7 +261,7 @@
    "id": "c-security-008",
    "rev": 1,
    "topic": "c-security",
-   "type": "protection",
+   "type": "cryptography",
    "level": 3,
    "q": "A digital signature is created using the:",
    "options": [

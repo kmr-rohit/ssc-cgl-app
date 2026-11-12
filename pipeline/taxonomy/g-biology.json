@@ -1,0 +1,60 @@
+{
+  "topic": "g-biology",
+  "types": [
+    {
+      "type": "cell-genetics",
+      "name": "Cell, tissues and genetics",
+      "description": "Cell organelles, cell theory, cell division, plant and animal tissues, DNA, chromosomes and genetic disorders.",
+      "concepts": [
+        "cell-biology-tissues",
+        "cell-biology-and-genetics"
+      ]
+    },
+    {
+      "type": "classification",
+      "name": "Classification of living things",
+      "description": "Five kingdoms, plant groups, animal phyla and classes, scientific names and animal features.",
+      "concepts": [
+        "plant-animal-kingdoms"
+      ]
+    },
+    {
+      "type": "plant-physiology",
+      "name": "Plant life processes",
+      "description": "Photosynthesis, transport, plant hormones, movements, reproduction, nitrogen fixation and special plants.",
+      "concepts": [
+        "plant-physiology-photosynthesis"
+      ]
+    },
+    {
+      "type": "human-body",
+      "name": "Human body",
+      "description": "Organ systems, blood, heart, brain, glands and hormones, and key numbers about the human body.",
+      "concepts": [
+        "human-physiology-organ-systems"
+      ]
+    },
+    {
+      "type": "nutrition-vitamins",
+      "name": "Nutrition and vitamins",
+      "description": "Nutrients, vitamins and minerals, their sources and deficiency diseases.",
+      "concepts": [
+        "vitamins-and-deficiency-diseases"
+      ]
+    },
+    {
+      "type": "diseases-pathogens",
+      "name": "Diseases and pathogens",
+      "description": "Diseases caused by bacteria, viruses, protozoa, fungi and worms, their vectors, tests and vaccines.",
+      "concepts": [
+        "pathogens-and-infectious-diseases"
+      ]
+    },
+    {
+      "type": "biologists-branches",
+      "name": "Biologists, discoveries and branches",
+      "description": "Scientists and their discoveries in biology and medicine, and names of branches of biology.",
+      "concepts": []
+    }
+  ]
+}

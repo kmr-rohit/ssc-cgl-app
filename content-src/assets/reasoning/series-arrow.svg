@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 80" width="330" height="80" font-family="sans-serif" font-size="28" fill="none" stroke="#111" stroke-width="2">
+<rect x="5" y="10" width="60" height="60"/><rect x="69" y="10" width="60" height="60"/><rect x="133" y="10" width="60" height="60"/><rect x="197" y="10" width="60" height="60"/><rect x="261" y="10" width="60" height="60"/>
+<g transform="rotate(0 35 40)"><line x1="35" y1="60" x2="35" y2="20"/><polyline points="27,29 35,20 43,29"/></g>
+<g transform="rotate(45 99 40)"><line x1="99" y1="60" x2="99" y2="20"/><polyline points="91,29 99,20 107,29"/></g>
+<g transform="rotate(90 163 40)"><line x1="163" y1="60" x2="163" y2="20"/><polyline points="155,29 163,20 171,29"/></g>
+<g transform="rotate(135 227 40)"><line x1="227" y1="60" x2="227" y2="20"/><polyline points="219,29 227,20 235,29"/></g>
+<text x="291" y="50" fill="#111" stroke="none" text-anchor="middle">?</text>
+</svg>

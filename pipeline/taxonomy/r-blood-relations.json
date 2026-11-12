@@ -1,0 +1,29 @@
+{
+ "topic": "r-blood-relations",
+ "types": [
+  {
+   "type": "pointing",
+   "name": "Pointing and introducing",
+   "description": "A person points to someone, introduces someone or looks at a photograph and describes the link in one sentence (\"He is the son of my grandfather's only son\"); asks how the two are related.",
+   "concepts": []
+  },
+  {
+   "type": "direct-relation",
+   "name": "Direct statements",
+   "description": "A few plain sentences give family links (A is the brother of B, B is the daughter of C) and ask how two people are related.",
+   "concepts": []
+  },
+  {
+   "type": "coded-relation",
+   "name": "Coded relations",
+   "description": "Symbols or letters stand for relations (A + B means A is the father of B, A @ B means …); decode an expression such as P + Q × R − S, or pick the expression that shows a given relation.",
+   "concepts": []
+  },
+  {
+   "type": "family-puzzle",
+   "name": "Family puzzle",
+   "description": "A larger family with several members, couples or generations is described; asks to count members (males, couples), find someone's gender, or identify a person from the full family tree.",
+   "concepts": []
+  }
+ ]
+}

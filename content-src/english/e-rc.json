@@ -1,55 +1,181 @@
 {
   "topic": "e-rc",
   "notes": {
-    "summary": "In <b>Reading Comprehension</b> you read a passage of 200–350 words and answer about five questions. Tier 2 has two or more passages. Questions test the main idea, specific details, inference, the author's tone and word meaning in context.",
+    "summary": "In <b>reading comprehension</b> you read a passage of 200 to 400 words and answer four to six questions about it. Tier 1 may have a passage, and Tier 2 Paper 1 has two or more. Every answer must come from the passage itself. The questions check whether you can find the main idea, pick out facts, read between the lines, judge the author's tone and purpose, and work out word meanings from context. Most SSC passages are on everyday topics: environment, health, history, technology, education and social issues.",
     "concepts": [
-      { "title": "How to read the passage", "body": "<ol><li>Skim the questions first (not the options) so you know what to look for.</li><li>Read the passage once at a steady pace. Note the topic of each paragraph in two or three words.</li><li>Go back to the exact lines for detail questions; never answer from memory.</li></ol>" },
-      { "title": "Stay inside the passage", "body": "The answer must be supported by the passage. An option may be true in real life but still wrong if the passage does not say or imply it. Avoid extreme words (<i>always, never, only, all</i>) unless the passage uses them." },
-      { "title": "Main idea vs detail", "body": "A <b>main idea</b> option covers the whole passage, not just one paragraph. A <b>detail</b> option repeats or rephrases one fact. Too narrow or too broad options are the usual traps for main-idea questions." }
+      {
+        "title": "A method that works every time",
+        "body": "<ol><li><b>Glance at the questions first</b> (not the options). Note the key words: a name, a year, a word to define.</li><li><b>Read the passage once, steadily.</b> After each paragraph, tell yourself its point in three or four words, e.g. <i>para 1: problem; para 2: old solution; para 3: revival</i>.</li><li><b>Answer the easy questions first</b>: word meaning and direct fact.</li><li><b>Go back to the lines</b> for every detail question. Never answer from memory.</li><li><b>Leave main idea and title for last</b>. By then you know the whole passage.</li></ol>Time guide: about 6 to 7 minutes for a five-question passage."
+      },
+      {
+        "title": "Stay inside the passage",
+        "body": "The passage is the only source of truth. An option can be true in real life and still be wrong.<table><thead><tr><th>Option is…</th><th>Verdict</th></tr></thead><tbody><tr><td>Stated in the passage (same idea, maybe different words)</td><td>Correct for detail questions</td></tr><tr><td>Not stated, but clearly follows from it</td><td>Correct for inference questions</td></tr><tr><td>True in general knowledge but not in the passage</td><td>Wrong</td></tr><tr><td>Uses the passage's words but twists the meaning</td><td>Wrong</td></tr><tr><td>Uses extreme words (<i>always, never, only, all, completely</i>) the passage does not use</td><td>Almost always wrong</td></tr></tbody></table>"
+      },
+      {
+        "title": "Main idea and title",
+        "body": "The main idea covers <b>the whole passage</b>, not one paragraph. Test each option with two questions:<ul><li><b>Too narrow?</b> It covers only one paragraph or one example.</li><li><b>Too broad?</b> It talks about a much bigger subject than the passage.</li></ul>Look closely at the first and last paragraphs; the central point is usually stated or summed up there.<br><i>Example</i>: a passage on how sleep helps memory and what students should do. <i>Sleep and Memory</i> fits. <i>The Human Brain</i> is too broad. <i>Afternoon Naps</i> is too narrow.<br>A good title is short, specific and neutral. Avoid titles that add an opinion the passage does not hold."
+      },
+      {
+        "title": "Finding facts quickly",
+        "body": "Pick a <b>search word</b> from the question (a name, number, date or unusual noun) and scan for it. Then read the full sentence before and after it.<ul><li>The correct option usually <b>paraphrases</b> the passage: <i>the rain fell for only three or four months</i> → <i>the rainy season was short</i>.</li><li>Be careful with words like <i>some, most, many, a few</i>. If the passage says <i>some cities</i>, the option <i>all cities</i> is wrong.</li><li>Watch cause and effect. If the passage says A caused B, an option saying B caused A is wrong.</li></ul>"
+      },
+      {
+        "title": "NOT true and EXCEPT questions",
+        "body": "Here three options are supported by the passage and one is not. Treat each option as a true/false check:<ol><li>Find the line for each option.</li><li>Tick the ones that are clearly stated.</li><li>The one left is the answer. It may be <b>false</b> or simply <b>not mentioned</b>.</li></ol>Read the question twice. In the hurry of an exam, many people pick a true statement because they missed the word NOT."
+      },
+      {
+        "title": "Inference: reading between the lines",
+        "body": "An inference is not written in the passage but <b>must be true</b> if the passage is true. It is a small, safe step, not a big jump.<table><thead><tr><th>Passage says</th><th>Good inference</th><th>Too far</th></tr></thead><tbody><tr><td>Those who slept remembered more words.</td><td>Sleep helps memory.</td><td>People who sleep more are more intelligent.</td></tr><tr><td>Most stepwells were abandoned after piped water came.</td><td>Piped water reduced the need for stepwells.</td><td>Piped water is harmful.</td></tr></tbody></table>For <i>the author would agree / disagree</i> questions, think of the author's main argument and check which option supports it or goes against it."
+      },
+      {
+        "title": "Tone and attitude",
+        "body": "Tone comes from the author's word choice. Positive words (<i>remarkable, wise, welcome</i>) show approval; negative words (<i>sadly, careless, failure</i>) show criticism.<table><thead><tr><th>Tone word</th><th>Meaning</th></tr></thead><tbody><tr><td>Objective, neutral, factual</td><td>Only reports facts, no feelings</td></tr><tr><td>Optimistic, hopeful</td><td>Expects a good result</td></tr><tr><td>Pessimistic</td><td>Expects a bad result</td></tr><tr><td>Critical</td><td>Points out faults</td></tr><tr><td>Appreciative, approving, laudatory</td><td>Praises</td></tr><tr><td>Sarcastic, ironic</td><td>Says the opposite of what is meant, to mock</td></tr><tr><td>Nostalgic</td><td>Longs for the past</td></tr><tr><td>Didactic</td><td>Teaches a moral or lesson</td></tr><tr><td>Analytical</td><td>Examines causes and effects carefully</td></tr><tr><td>Indifferent, apathetic</td><td>Does not care</td></tr></tbody></table>Most SSC passages are <b>informative</b> or <b>analytical</b>, with mild approval or concern. Strong tones like <i>angry</i> or <i>indifferent</i> are rarely right."
+      },
+      {
+        "title": "Author's purpose",
+        "body": "Ask: <i>why did the author write this, or why is this line here?</i> Common answers:<ul><li><b>To inform or explain</b> (most passages): describes how something works or what happened.</li><li><b>To argue or persuade</b>: takes a side and gives reasons.</li><li><b>To warn</b>: points out a danger.</li><li><b>To give an example</b>: a story or fact that supports the main point.</li><li><b>To contrast</b>: shows the opposite view before answering it.</li></ul>When asked why a fact is mentioned, read the sentence just before it. The fact usually supports that sentence."
+      },
+      {
+        "title": "Word meaning in context",
+        "body": "The question asks what the word means <b>here</b>, not in the dictionary. A common word may be used in an unusual sense.<ol><li>Read the full sentence with the word.</li><li>Put each option in its place.</li><li>Keep the one that keeps the meaning and the grammar.</li></ol><i>Example</i>: <i>The minister will <b>address</b> the problem of unemployment.</i> Here <i>address</i> means <i>deal with</i>, not <i>speak to</i> or <i>a place where someone lives</i>.<br>For antonym questions, first find the meaning in context, then pick its opposite. An option that is a synonym is a deliberate trap."
+      },
+      {
+        "title": "Common SSC question stems",
+        "body": "<table><thead><tr><th>Wording</th><th>Type</th></tr></thead><tbody><tr><td>Which is the most suitable title? / What is the central idea?</td><td>Main idea or title</td></tr><tr><td>According to the passage… / Which is true as per the passage?</td><td>Fact from the passage</td></tr><tr><td>Which is NOT true? / All of the following EXCEPT</td><td>NOT true or EXCEPT</td></tr><tr><td>It can be inferred… / The passage suggests… / The author would agree…</td><td>Inference</td></tr><tr><td>The tone of the passage is… / The author's attitude…</td><td>Tone and attitude</td></tr><tr><td>The author mentions X in order to… / The purpose of the passage…</td><td>Author's purpose</td></tr><tr><td>Select the synonym / antonym / meaning of the word as used in the passage</td><td>Word in context</td></tr></tbody></table>"
+      }
     ],
     "varieties": [
-      { "type": "main-idea", "name": "Main idea / title", "how": "Ask: what is the whole passage about? Reject options that cover only one part or go beyond the passage.", "example": { "q": "A passage describes how bees pollinate crops, why bee numbers are falling, and what farmers can do. Best title?", "steps": ["Covers role, decline and solutions.", "'Bees and Honey' is too narrow; 'Insects of the World' too broad."], "answer": "Saving the Bees That Feed Us" } },
-      { "type": "detail", "name": "Factual detail", "how": "Locate the key word from the question in the passage and read the lines around it.", "example": { "q": "According to the passage, when did the factory close?", "steps": ["Scan for 'close' or 'closed'.", "Line says: 'the factory closed in 1998 after the floods'."], "answer": "In 1998" } },
-      { "type": "inference", "name": "Inference and tone", "how": "Choose what the passage strongly suggests, not what it states word for word. Tone is judged from the author's word choices.", "example": { "q": "The author calls the plan 'bold but long overdue'. The author's attitude is:", "steps": ["'Bold' and 'overdue' both show support."], "answer": "Approving" } },
-      { "type": "vocab", "name": "Word in context", "how": "Replace the word with each option in the sentence and see which keeps the meaning.", "example": { "q": "'The rains were <b>scanty</b> that year, and the wells ran dry.' Scanty means:", "steps": ["Wells ran dry → little rain."], "answer": "Insufficient" } }
+      {
+        "type": "main-idea",
+        "name": "Main idea or title",
+        "how": "Sum up each paragraph in a few words, then choose the option that covers all of them. Reject options that are too narrow (one paragraph) or too broad (a bigger subject).",
+        "example": {
+          "q": "A passage describes how bees pollinate crops, why bee numbers are falling, and what farmers can do to protect them. Which is the most suitable title? (a) Bees and Honey (b) Insects of the World (c) Saving the Bees That Feed Us (d) The Life of a Farmer",
+          "steps": [
+            "The passage covers three things: the role of bees, their decline and the solutions.",
+            "(a) is too narrow and talks about honey, which is not the focus. (b) and (d) are too broad or off topic.",
+            "(c) covers role, decline and protection."
+          ],
+          "answer": "(c) Saving the Bees That Feed Us"
+        }
+      },
+      {
+        "type": "detail",
+        "name": "Fact from the passage",
+        "how": "Pick a search word from the question, find it in the passage and read the full sentence. Choose the option that says the same thing, even if in different words.",
+        "example": {
+          "q": "Passage line: ‘The factory closed in 1998 after floods damaged its machines.’ According to the passage, why did the factory close?",
+          "steps": [
+            "Search word: <i>closed</i>.",
+            "The reason given is <i>after floods damaged its machines</i>.",
+            "Pick the option that paraphrases this, not one that only gives the year."
+          ],
+          "answer": "Floods damaged its machines."
+        }
+      },
+      {
+        "type": "not-stated",
+        "name": "NOT true or EXCEPT",
+        "how": "Check each option against the passage one by one. The option that is false or not mentioned is the answer.",
+        "example": {
+          "q": "Passage: stepwells stored water, were decorated with carvings, and were places to rest. Which of the following is NOT true according to the passage? (a) They stored water. (b) They had carvings. (c) They were used as schools. (d) People rested there.",
+          "steps": [
+            "(a), (b) and (d) are all stated.",
+            "Nothing is said about schools."
+          ],
+          "answer": "(c) They were used as schools."
+        }
+      },
+      {
+        "type": "inference",
+        "name": "Inference",
+        "how": "Choose the option that must be true if the passage is true. Reject options that go further than the passage or bring in outside opinion.",
+        "example": {
+          "q": "Passage: ‘Volunteers who slept after learning a list of words remembered more than those who stayed awake.’ What can be inferred? (a) Sleep helps fix new learning in memory. (b) People who sleep more are cleverer. (c) Staying awake damages the brain. (d) Words are easier to learn at night.",
+          "steps": [
+            "The experiment links sleep with better recall.",
+            "(b), (c) and (d) go far beyond what the passage says."
+          ],
+          "answer": "(a) Sleep helps fix new learning in memory."
+        }
+      },
+      {
+        "type": "tone",
+        "name": "Tone and attitude",
+        "how": "Underline the author's opinion words (adjectives and adverbs). Decide whether they are positive, negative or neutral, then pick the closest tone word.",
+        "example": {
+          "q": "The author calls the plan ‘bold but long overdue’. The author's attitude to the plan is: (a) hostile (b) approving (c) indifferent (d) sarcastic",
+          "steps": [
+            "<i>Bold</i> is praise; <i>long overdue</i> means it should have come earlier, so the author wants it.",
+            "Both point to support."
+          ],
+          "answer": "(b) approving"
+        }
+      },
+      {
+        "type": "purpose",
+        "name": "Author's purpose",
+        "how": "Ask why the passage or the line exists. Read the sentence before the mentioned fact; the fact usually supports or illustrates it.",
+        "example": {
+          "q": "A passage on air pollution says, ‘In Delhi, schools were shut for a week last winter.’ The author mentions this mainly to: (a) criticise schools (b) show how serious the pollution problem is (c) describe Delhi's winters (d) praise the government",
+          "steps": [
+            "The sentence before says pollution is disrupting daily life.",
+            "The school closure is an example of that disruption."
+          ],
+          "answer": "(b) show how serious the pollution problem is"
+        }
+      },
+      {
+        "type": "vocab",
+        "name": "Word in context",
+        "how": "Put each option in place of the word in its sentence. Keep the one that keeps the meaning. For antonyms, find the meaning first, then its opposite.",
+        "example": {
+          "q": "‘The rains were <b>scanty</b> that year, and the wells ran dry.’ Select the word closest in meaning to <i>scanty</i>: (a) heavy (b) insufficient (c) timely (d) cold",
+          "steps": [
+            "The wells ran dry, so there was little rain.",
+            "Little = insufficient."
+          ],
+          "answer": "(b) insufficient"
+        }
+      }
     ],
     "tips": [
-      "Answer vocabulary questions first; they need only one sentence.",
-      "For 'NOT true' questions, check each option against the passage and eliminate.",
-      "Do not spend more than 6–7 minutes on a five-question passage in Tier 1."
+      "Read the questions before the passage so you know what to look for.",
+      "Answer word-meaning and direct-fact questions first; they need only one or two lines.",
+      "For a title, check the first and last paragraphs; the central point is usually stated there.",
+      "Underline opinion words (adjectives and adverbs) to decide the tone.",
+      "In NOT or EXCEPT questions, check all four options against the passage before you choose.",
+      "Spend no more than 6 to 7 minutes on a five-question passage in Tier 1.",
+      "If two options look right, choose the one that is closer to the passage's own words and idea, and less extreme."
     ],
     "traps": [
-      "An option that copies exact words from the passage but changes their meaning slightly.",
-      "Options that are true in the real world but not stated or implied in the passage."
+      "An option that copies exact words from the passage but changes their meaning or reverses cause and effect.",
+      "An option that is true in the real world but is not stated or implied in the passage.",
+      "Extreme words like <i>always, never, only, all</i> when the passage says <i>often, some, many</i>.",
+      "Missing the word NOT or EXCEPT in the question and picking a true statement.",
+      "In word-meaning questions, choosing the common dictionary meaning instead of the meaning in the sentence.",
+      "Main-idea options that fit only one paragraph."
     ]
   },
   "passages": [
-    {
-      "id": "e-rc-p1",
-      "title": "The Stepwell",
-      "text": "<p>Long before taps and pipelines, the people of western India faced a simple but serious problem: rain fell for only three or four months, and the rest of the year was dry. Their answer was the stepwell, a deep, stone-lined well that could be reached by a long flight of steps. As the water level dropped through the dry months, people simply walked further down to reach it.</p><p>Builders soon realised that these structures could be more than water stores. Many stepwells were decorated with carved pillars, shaded galleries and small shrines, and the cool air at the lower levels made them pleasant places to rest during the fierce summer afternoons. Travellers stopped there, neighbours gathered to talk, and festivals were sometimes held on the steps.</p><p>With the arrival of piped water, most stepwells were abandoned. Some were filled with rubbish; others were simply forgotten behind new buildings. In recent years, however, a few cities have begun to clean and restore them, partly as places for visitors and partly because town planners are rethinking how to catch and store rainwater. The stepwell, it seems, may be an old solution to a very modern problem.</p>"
-    },
-    {
-      "id": "e-rc-p2",
-      "title": "Sleep and Memory",
-      "text": "<p>Most of us think of sleep as a time when the brain switches off. Research over the last few decades suggests the opposite. While the body rests, the brain is busy sorting the experiences of the day, deciding what to keep and what to discard.</p><p>In a common kind of experiment, volunteers learn a list of words or a simple skill and are tested later, either after a night's sleep or after an equal period of being awake. Those who sleep usually remember more. Scientists believe that during deep sleep the brain replays new information and moves it into long-term storage.</p><p>This has practical lessons for students. Staying up all night before an examination may feel productive, but it robs the brain of the very process that fixes learning in place. A tired student may also read the same page several times without absorbing it. Short naps can help, although sleeping too long during the day can make it harder to fall asleep at night.</p><p>None of this means that sleep can replace study. Rather, the two work as partners: one gathers the material, and the other files it neatly away.</p>"
-    }
+    {"id":"e-rc-p1","title":"The Stepwell","text":"<p>Long before taps and pipelines, the people of western India faced a simple but serious problem: rain fell for only three or four months, and the rest of the year was dry. Their answer was the stepwell, a deep, stone-lined well that could be reached by a long flight of steps. As the water level dropped through the dry months, people simply walked further down to reach it.</p><p>Builders soon realised that these structures could be more than water stores. Many stepwells were decorated with carved pillars, shaded galleries and small shrines, and the cool air at the lower levels made them pleasant places to rest during the fierce summer afternoons. Travellers stopped there, neighbours gathered to talk, and festivals were sometimes held on the steps.</p><p>With the arrival of piped water, most stepwells were abandoned. Some were filled with rubbish; others were simply forgotten behind new buildings. In recent years, however, a few cities have begun to clean and restore them, partly as places for visitors and partly because town planners are rethinking how to catch and store rainwater. The stepwell, it seems, may be an old solution to a very modern problem.</p>"},
+    {"id":"e-rc-p2","title":"Sleep and Memory","text":"<p>Most of us think of sleep as a time when the brain switches off. Research over the last few decades suggests the opposite. While the body rests, the brain is busy sorting the experiences of the day, deciding what to keep and what to discard.</p><p>In a common kind of experiment, volunteers learn a list of words or a simple skill and are tested later, either after a night's sleep or after an equal period of being awake. Those who sleep usually remember more. Scientists believe that during deep sleep the brain replays new information and moves it into long-term storage.</p><p>This has practical lessons for students. Staying up all night before an examination may feel productive, but it robs the brain of the very process that fixes learning in place. A tired student may also read the same page several times without absorbing it. Short naps can help, although sleeping too long during the day can make it harder to fall asleep at night.</p><p>None of this means that sleep can replace study. Rather, the two work as partners: one gathers the material, and the other files it neatly away.</p>"}
   ],
   "questions": [
-    { "id": "e-rc-001", "rev": 1, "topic": "e-rc", "type": "main-idea", "level": 1, "passageId": "e-rc-p1", "q": "Which of the following best describes what the passage is about?", "options": ["The decline of religious festivals in western India", "The history, uses and possible revival of stepwells", "The engineering of modern water pipelines", "The life of travellers in old India"], "answer": 1, "solution": "The passage covers why stepwells were built (history), how they were used (water, rest, gatherings), and their recent restoration (revival). Only option 2 covers all three parts.", "source": "test-data" },
-    { "id": "e-rc-002", "rev": 1, "topic": "e-rc", "type": "detail", "level": 1, "passageId": "e-rc-p1", "q": "According to the passage, why did people walk further down the steps as the year went on?", "options": ["The upper steps were used for festivals.", "The lower levels were decorated more richly.", "The water level dropped during the dry months.", "The upper steps were too hot to stand on."], "answer": 2, "solution": "Paragraph 1: 'As the water level dropped through the dry months, people simply walked further down to reach it.'", "source": "test-data" },
-    { "id": "e-rc-003", "rev": 1, "topic": "e-rc", "type": "vocab", "level": 2, "passageId": "e-rc-p1", "q": "Which word is closest in meaning to <b>fierce</b> as used in the passage?", "options": ["Cruel", "Intense", "Brief", "Pleasant"], "answer": 1, "solution": "'Fierce summer afternoons' means afternoons of very strong heat, so <b>intense</b>. <i>Cruel</i> is another meaning of fierce but it describes people or animals, not weather here.", "source": "test-data" },
-    { "id": "e-rc-004", "rev": 1, "topic": "e-rc", "type": "inference", "level": 3, "passageId": "e-rc-p1", "q": "What is the author's attitude towards the restoration of stepwells?", "options": ["Indifferent", "Critical", "Hopeful", "Sarcastic"], "answer": 2, "solution": "The author ends by calling the stepwell 'an old solution to a very modern problem', which shows a positive, <b>hopeful</b> view of restoring them.", "source": "test-data" },
-    { "id": "e-rc-005", "rev": 1, "topic": "e-rc", "type": "inference", "level": 3, "passageId": "e-rc-p1", "q": "The phrase 'an old solution to a very modern problem' most likely suggests that:", "options": ["modern cities should stop using piped water completely", "stepwells could help with today's need to collect and store rainwater", "stepwells are now mainly important as tourist attractions", "old buildings are always better designed than new ones"], "answer": 1, "solution": "The previous sentence says planners are 'rethinking how to catch and store rainwater'. The phrase links this present need to the stepwell. Option 1 and 4 are too extreme; option 3 is only part of the reason.", "source": "test-data" },
-    { "id": "e-rc-006", "rev": 1, "topic": "e-rc", "type": "main-idea", "level": 1, "passageId": "e-rc-p2", "q": "Which of the following is the most suitable title for the passage?", "options": ["Why We Dream", "Sleep: The Brain's Quiet Filing Work", "How to Pass Any Examination", "The Dangers of Afternoon Naps"], "answer": 1, "solution": "The passage explains that sleep helps the brain sort and store what we learn. Option 2 captures this. Dreams are not discussed; options 3 and 4 are too narrow or misleading.", "source": "test-data" },
-    { "id": "e-rc-007", "rev": 1, "topic": "e-rc", "type": "vocab", "level": 1, "passageId": "e-rc-p2", "q": "Which word is most nearly OPPOSITE in meaning to <b>discard</b> as used in the passage?", "options": ["Throw away", "Reject", "Retain", "Forget"], "answer": 2, "solution": "<i>Discard</i> means throw away. The passage contrasts it with 'keep', so the opposite is <b>retain</b>.", "source": "test-data" },
-    { "id": "e-rc-008", "rev": 1, "topic": "e-rc", "type": "detail", "level": 2, "passageId": "e-rc-p2", "q": "According to the passage, what do scientists believe happens during deep sleep?", "options": ["The brain stops working to save energy.", "The brain replays new information and moves it into long-term storage.", "The brain creates new skills without any learning.", "The brain erases everything learned that day."], "answer": 1, "solution": "Paragraph 2: 'during deep sleep the brain replays new information and moves it into long-term storage.'", "source": "test-data" },
-    { "id": "e-rc-009", "rev": 1, "topic": "e-rc", "type": "inference", "level": 2, "passageId": "e-rc-p2", "q": "Based on the passage, which advice would the author most likely give a student the night before an exam?", "options": ["Study through the night to cover every topic.", "Take a long nap in the evening and then study all night.", "Revise sensibly and get a proper night's sleep.", "Skip revision entirely and just sleep."], "answer": 2, "solution": "The author warns that staying up all night 'robs the brain' of storing learning, but also says sleep cannot replace study. So the balanced advice is to revise and then sleep properly.", "source": "test-data" },
-    { "id": "e-rc-010", "rev": 1, "topic": "e-rc", "type": "inference", "level": 3, "passageId": "e-rc-p2", "q": "With which of the following statements would the author most likely DISAGREE?", "options": ["Sleep helps us remember what we learned.", "A tired student may not absorb what he reads.", "Enough sleep can make up for not studying at all.", "Long daytime sleep can disturb night-time sleep."], "answer": 2, "solution": "The last paragraph says 'None of this means that sleep can replace study.' So the author would disagree with option 3. The other three are stated in the passage.", "source": "test-data" }
+    {"id":"e-rc-001","rev":1,"topic":"e-rc","type":"main-idea","level":1,"passageId":"e-rc-p1","q":"Which of the following best describes what the passage is about?","options":["The decline of religious festivals in western India","The history, uses and possible revival of stepwells","The engineering of modern water pipelines","The life of travellers in old India"],"answer":1,"solution":"The passage covers why stepwells were built (history), how they were used (water, rest, gatherings), and their recent restoration (revival). Only option 2 covers all three parts.","source":"test-data"},
+    {"id":"e-rc-002","rev":1,"topic":"e-rc","type":"detail","level":1,"passageId":"e-rc-p1","q":"According to the passage, why did people walk further down the steps as the year went on?","options":["The upper steps were used for festivals.","The lower levels were decorated more richly.","The water level dropped during the dry months.","The upper steps were too hot to stand on."],"answer":2,"solution":"Paragraph 1: 'As the water level dropped through the dry months, people simply walked further down to reach it.'","source":"test-data"},
+    {"id":"e-rc-003","rev":1,"topic":"e-rc","type":"vocab","level":2,"passageId":"e-rc-p1","q":"Which word is closest in meaning to <b>fierce</b> as used in the passage?","options":["Cruel","Intense","Brief","Pleasant"],"answer":1,"solution":"'Fierce summer afternoons' means afternoons of very strong heat, so <b>intense</b>. <i>Cruel</i> is another meaning of fierce but it describes people or animals, not weather here.","source":"test-data"},
+    {"id":"e-rc-004","rev":1,"topic":"e-rc","type":"tone","level":3,"passageId":"e-rc-p1","q":"What is the author's attitude towards the restoration of stepwells?","options":["Indifferent","Critical","Hopeful","Sarcastic"],"answer":2,"solution":"The author ends by calling the stepwell 'an old solution to a very modern problem', which shows a positive, <b>hopeful</b> view of restoring them.","source":"test-data"},
+    {"id":"e-rc-005","rev":1,"topic":"e-rc","type":"inference","level":3,"passageId":"e-rc-p1","q":"The phrase 'an old solution to a very modern problem' most likely suggests that:","options":["modern cities should stop using piped water completely","stepwells could help with today's need to collect and store rainwater","stepwells are now mainly important as tourist attractions","old buildings are always better designed than new ones"],"answer":1,"solution":"The previous sentence says planners are 'rethinking how to catch and store rainwater'. The phrase links this present need to the stepwell. Option 1 and 4 are too extreme; option 3 is only part of the reason.","source":"test-data"},
+    {"id":"e-rc-006","rev":1,"topic":"e-rc","type":"main-idea","level":1,"passageId":"e-rc-p2","q":"Which of the following is the most suitable title for the passage?","options":["Why We Dream","Sleep: The Brain's Quiet Filing Work","How to Pass Any Examination","The Dangers of Afternoon Naps"],"answer":1,"solution":"The passage explains that sleep helps the brain sort and store what we learn. Option 2 captures this. Dreams are not discussed; options 3 and 4 are too narrow or misleading.","source":"test-data"},
+    {"id":"e-rc-007","rev":1,"topic":"e-rc","type":"vocab","level":1,"passageId":"e-rc-p2","q":"Which word is most nearly OPPOSITE in meaning to <b>discard</b> as used in the passage?","options":["Throw away","Reject","Retain","Forget"],"answer":2,"solution":"<i>Discard</i> means throw away. The passage contrasts it with 'keep', so the opposite is <b>retain</b>.","source":"test-data"},
+    {"id":"e-rc-008","rev":1,"topic":"e-rc","type":"detail","level":2,"passageId":"e-rc-p2","q":"According to the passage, what do scientists believe happens during deep sleep?","options":["The brain stops working to save energy.","The brain replays new information and moves it into long-term storage.","The brain creates new skills without any learning.","The brain erases everything learned that day."],"answer":1,"solution":"Paragraph 2: 'during deep sleep the brain replays new information and moves it into long-term storage.'","source":"test-data"},
+    {"id":"e-rc-009","rev":1,"topic":"e-rc","type":"inference","level":2,"passageId":"e-rc-p2","q":"Based on the passage, which advice would the author most likely give a student the night before an exam?","options":["Study through the night to cover every topic.","Take a long nap in the evening and then study all night.","Revise sensibly and get a proper night's sleep.","Skip revision entirely and just sleep."],"answer":2,"solution":"The author warns that staying up all night 'robs the brain' of storing learning, but also says sleep cannot replace study. So the balanced advice is to revise and then sleep properly.","source":"test-data"},
+    {"id":"e-rc-010","rev":1,"topic":"e-rc","type":"inference","level":3,"passageId":"e-rc-p2","q":"With which of the following statements would the author most likely DISAGREE?","options":["Sleep helps us remember what we learned.","A tired student may not absorb what he reads.","Enough sleep can make up for not studying at all.","Long daytime sleep can disturb night-time sleep."],"answer":2,"solution":"The last paragraph says 'None of this means that sleep can replace study.' So the author would disagree with option 3. The other three are stated in the passage.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-rc-1", "front": "RC: first step before reading", "back": "Skim the questions (not options) so you know what to look for.", "deck": "grammar" },
-    { "id": "fc-e-rc-2", "front": "RC main-idea traps", "back": "Too narrow (one paragraph) or too broad (beyond the passage).", "deck": "grammar" },
-    { "id": "fc-e-rc-3", "front": "RC: extreme words in options", "back": "always, never, only, all — usually wrong unless the passage uses them.", "deck": "grammar" }
+    {"id":"fc-e-rc-1","front":"RC: first step before reading","back":"Skim the questions (not options) so you know what to look for.","deck":"grammar"},
+    {"id":"fc-e-rc-2","front":"RC main-idea traps","back":"Too narrow (one paragraph) or too broad (beyond the passage).","deck":"grammar"},
+    {"id":"fc-e-rc-3","front":"RC: extreme words in options","back":"always, never, only, all — usually wrong unless the passage uses them.","deck":"grammar"}
   ]
 }

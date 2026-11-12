@@ -1,0 +1,63 @@
+{
+  "topic": "q-simplification",
+  "types": [
+    {
+      "type": "bodmas",
+      "name": "BODMAS and brackets",
+      "description": "A plain arithmetic expression with brackets, \"of\", division, multiplication, addition and subtraction to be evaluated in the right order.",
+      "concepts": [
+        "bodmas-simplification"
+      ]
+    },
+    {
+      "type": "fractions-decimals",
+      "name": "Fractions and decimals",
+      "description": "Simplifying or comparing fractions, mixed numbers, decimals or recurring decimals, or arranging fractions in order.",
+      "concepts": []
+    },
+    {
+      "type": "indices",
+      "name": "Powers and indices",
+      "description": "Uses laws of exponents to simplify powers, negative or fractional powers, or to solve an equation where the unknown is in the power.",
+      "concepts": []
+    },
+    {
+      "type": "surds-roots",
+      "name": "Surds and square roots",
+      "description": "Involves square or cube roots: simplifying, rationalising a denominator, finding √(a + 2√b), or comparing roots of different orders.",
+      "concepts": []
+    },
+    {
+      "type": "nested-continued",
+      "name": "Infinite roots and continued fractions",
+      "description": "An infinite nested root such as √(20 − √(20 − ...)) or a fraction inside a fraction (ladder or continued fraction) to be evaluated or solved.",
+      "concepts": [
+        "continued-fractions-ladder-fractions"
+      ]
+    },
+    {
+      "type": "algebraic-identity",
+      "name": "Using algebraic identities",
+      "description": "A numerical or algebraic expression that becomes easy using identities such as a² − b², (a + b)², a³ + b³ or a³ − b³.",
+      "concepts": [
+        "algebraic-identity-simplification"
+      ]
+    },
+    {
+      "type": "approximation",
+      "name": "Approximation and missing value",
+      "description": "Asks for an approximate value of a messy expression, or for the value of x that makes two sides of a percent or arithmetic equation equal.",
+      "concepts": [
+        "approximation-and-estimation"
+      ]
+    },
+    {
+      "type": "series-telescoping",
+      "name": "Series that cancel and quick sums",
+      "description": "A long sum of terms like 1/(n(n + 1)), 1/(√n + √(n + 1)) or powers of a number that simplifies by cancelling or a sum formula.",
+      "concepts": [
+        "telescoping-series-summation"
+      ]
+    }
+  ]
+}

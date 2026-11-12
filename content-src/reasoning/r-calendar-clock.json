@@ -1,69 +1,186 @@
 {
  "topic": "r-calendar-clock",
  "notes": {
-  "summary": "Calendar questions use <b>odd days</b> (extra days after full weeks) to find a day of the week. Clock questions use the speeds of the hands. Usually 0–1 question.",
+  "summary": "Calendar questions ask for the day of the week of a date, or which year repeats a calendar; they all rest on \"odd days\", the days left over after full weeks. Clock questions ask for the angle between the hands, the times when the hands meet or oppose, mirror times and fast or slow clocks; they rest on two speeds: the minute hand moves 6° a minute and the hour hand 0.5° a minute.",
   "concepts": [
    {
     "title": "Odd days",
-    "body": "Ordinary year = 365 days = 52 weeks + <b>1</b> odd day. Leap year = <b>2</b> odd days. Month odd days: 31 days → 3, 30 days → 2, February → 0 (or 1 in a leap year).<br>Odd days in 100 years = 5, 200 = 3, 300 = 1, 400 = 0."
+    "body": "Odd days are the days left over after taking out complete weeks. Day codes: 0 Sunday, 1 Monday, 2 Tuesday, 3 Wednesday, 4 Thursday, 5 Friday, 6 Saturday.<ul><li>Ordinary year (365 days) = 52 weeks + 1 odd day.</li><li>Leap year (366 days) = 52 weeks + 2 odd days.</li></ul><table><thead><tr><th>Month</th><th>Days</th><th>Odd days</th></tr></thead><tbody><tr><td>Jan, Mar, May, Jul, Aug, Oct, Dec</td><td>31</td><td>3</td></tr><tr><td>Apr, Jun, Sep, Nov</td><td>30</td><td>2</td></tr><tr><td>Feb</td><td>28 or 29</td><td>0 or 1</td></tr></tbody></table><table><thead><tr><th>Years</th><th>100</th><th>200</th><th>300</th><th>400</th></tr></thead><tbody><tr><td>Odd days</td><td>5</td><td>3</td><td>1</td><td>0</td></tr></tbody></table>"
    },
    {
-    "title": "Leap year",
-    "body": "A year divisible by 4 is a leap year; a century year (1900, 2100) must be divisible by <b>400</b> (2000 is a leap year, 1900 is not)."
+    "title": "Leap years",
+    "body": "<ul><li>A normal year is a leap year if it divides by 4: 2024, 2028.</li><li>A century year is a leap year only if it divides by 400: 2000 and 1600 are leap years; 1900 and 2100 are not.</li><li>In 100 years there are 24 leap years (25 if the century year itself divides by 400 and is included).</li></ul>"
    },
    {
-    "title": "Clock hands",
-    "body": "Minute hand moves 6° per minute; hour hand moves 0.5° per minute. Angle at H hours M minutes = |30H − 5.5M|. Hands meet every 65 5/11 minutes."
+    "title": "Day of the week for any date",
+    "body": "Add the odd days of everything before the date, then the date itself, and divide by 7. The remainder is the day code.<ol><li>Complete centuries (use the 400-year table).</li><li>Remaining complete years: number of years + number of leap years among them.</li><li>Complete months of the current year.</li><li>The date itself.</li></ol><p>Mini example, 26 January 1950: 1900 years = 1600 (0) + 300 (1) = 1. Next 49 years have 12 leap years: 49 + 12 = 61, remainder 5. January 26: remainder 5. Total 1 + 5 + 5 = 11, remainder 4: Thursday.</p>"
+   },
+   {
+    "title": "Moving from a known date",
+    "body": "<ul><li>n days later: move forward by the remainder of n ÷ 7. Friday + 72 days: 72 = 70 + 2, so Sunday.</li><li>Same date, next year: +1 day, or +2 days if 29 February falls in between.</li><li>Across months: add the odd days of each month you pass.</li><li>Going back in time, move backwards by the same count.</li></ul><p>Mini example: 1 January 2025 was a Wednesday. Days to 1 March = 31 + 28 = 59, remainder 3, so Saturday.</p>"
+   },
+   {
+    "title": "Repeating calendars",
+    "body": "Two years have the same calendar when they start on the same day and are both leap or both ordinary. Add odd days year by year until the total is a multiple of 7.<table><thead><tr><th>Year type</th><th>Repeats after</th><th>Example</th></tr></thead><tbody><tr><td>Leap year</td><td>28 years</td><td>2012 and 2040</td></tr><tr><td>Year after a leap year</td><td>6 years</td><td>2009 and 2015</td></tr><tr><td>Second or third year after a leap year</td><td>11 years</td><td>2010 and 2021, 2003 and 2014</td></tr></tbody></table><small>These shortcuts work when no non-leap century year (such as 2100) falls in between.</small>"
+   },
+   {
+    "title": "Clock basics",
+    "body": "<ul><li>Minute hand: 360° in 60 minutes = 6° per minute.</li><li>Hour hand: 30° per hour = 0.5° per minute.</li><li>The minute hand gains 5.5° per minute on the hour hand, and gains a full round (360°) every 720/11 = 65 5/11 minutes.</li><li>In 12 hours the hands coincide 11 times and are opposite 11 times; they are at a right angle 22 times. In a day, double these: 22, 22 and 44.</li></ul>"
+   },
+   {
+    "title": "Angle between the hands",
+    "body": "At H hours M minutes: angle = |30H − 5.5M|. If the answer is more than 180°, subtract it from 360°.<p>Mini example, 3:30: |90 − 165| = 75°.</p>",
+    "img": "reasoning/clock-330.svg"
+   },
+   {
+    "title": "Hands together, opposite, at right angles",
+    "body": "Between H and H + 1 o'clock, the minutes past H are:<table><thead><tr><th>Position</th><th>Minutes past H</th></tr></thead><tbody><tr><td>Together</td><td>60H ÷ 11</td></tr><tr><td>Opposite</td><td>(30H ± 180) ÷ 5.5</td></tr><tr><td>Right angle</td><td>(30H ± 90) ÷ 5.5</td></tr></tbody></table>Keep each value that falls from 0 to 60; for a right angle there are usually two. Mini example: together between 4 and 5 = 240 ÷ 11 = 21 9/11 minutes past 4."
+   },
+   {
+    "title": "Mirror time and fast or slow clocks",
+    "body": "<ul><li>Mirror image of a clock: subtract the time from 11:60. 4:25 becomes 7:35. For times from 11:00 to 12:59, subtract from 23:60 instead (12:10 becomes 11:50).</li><li>The rule works both ways: the real time is 11:60 minus the mirror time.</li><li>Fast clock: shows more time than has passed. If it gains g minutes in 24 hours, then real time passed = clock time × 24 h ÷ (24 h + g).</li><li>If the hands of a clock meet every T minutes (real time) instead of 65 5/11, the clock gains when T is less than 65 5/11 and loses when T is more.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "calendar-day",
-    "name": "Day of the week",
-    "how": "Count odd days between the two dates and move forward that many days.",
+    "type": "day-of-week",
+    "name": "Day of the week for a date",
+    "how": "Add odd days for complete centuries, remaining years (+1 for each leap year), complete months and the date; the remainder after dividing by 7 is the day code (0 = Sunday).",
     "example": {
-     "q": "1 Jan 2025 is Wednesday. What day is 1 Feb 2025?",
+     "q": "What day of the week was 15 August 1947?",
      "steps": [
-      "January has 31 days = 3 odd days.",
-      "Wednesday + 3 = Saturday"
+      "1946 complete years: 1600 years give 0 and 300 years give 1.",
+      "The next 46 years have 11 leap years (1904 to 1944): 46 + 11 = 57, remainder 1.",
+      "January to July 1947: 3 + 0 + 3 + 2 + 3 + 2 + 3 = 16, remainder 2.",
+      "15 August: remainder 1. Total 1 + 1 + 2 + 1 = 5, which is Friday."
      ],
-     "answer": "Saturday"
+     "answer": "Friday"
+    }
+   },
+   {
+    "type": "day-from-reference",
+    "name": "Day from a known date",
+    "how": "Count the odd days from the known date to the asked date (+1 for each year, +2 when 29 February is crossed) and move the day by that many.",
+    "example": {
+     "q": "If 19 July 2000 was a Wednesday, what day of the week was 19 July 2005?",
+     "steps": [
+      "Each year adds 1 day, but the year from July 2003 to July 2004 crosses 29 February 2004 and adds 2.",
+      "Total = 1 + 1 + 1 + 2 + 1 = 6.",
+      "Wednesday + 6 days = Tuesday."
+     ],
+     "answer": "Tuesday"
+    }
+   },
+   {
+    "type": "days-after",
+    "name": "Counting days forward or back",
+    "how": "Divide the number of days by 7 and move forward (or back) by the remainder.",
+    "example": {
+     "q": "Today is Friday. What day will it be after 72 days?",
+     "steps": [
+      "72 = 70 + 2, and 70 days are exactly 10 weeks.",
+      "Move 2 days on from Friday."
+     ],
+     "answer": "Sunday"
+    }
+   },
+   {
+    "type": "date-counting",
+    "name": "Dates of events",
+    "how": "Add or subtract the days, and carry over the month end using its exact length (check 28 or 29 days in February).",
+    "example": {
+     "q": "A seminar was held on 27 February 2024. The next seminar was held 5 days later. On what date was it held?",
+     "steps": [
+      "2024 divides by 4, so it is a leap year and February has 29 days.",
+      "Count on 5 days: 28 Feb, 29 Feb, 1 Mar, 2 Mar, 3 Mar."
+     ],
+     "answer": "3 March 2024"
+    }
+   },
+   {
+    "type": "leap-year-repeat",
+    "name": "Leap years and repeating calendars",
+    "how": "Add the odd days year by year until the total is a multiple of 7, and make sure the new year is the same type (leap or ordinary).",
+    "example": {
+     "q": "Which year will have the same calendar as 2009?",
+     "steps": [
+      "Odd days: 2009 (1), 2010 (1), 2011 (1), 2012 (2), 2013 (1), 2014 (1). Total = 7.",
+      "So 2015 starts on the same day as 2009, and 2015, like 2009, is not a leap year."
+     ],
+     "answer": "2015"
     }
    },
    {
     "type": "clock-angle",
-    "name": "Angle between hands",
-    "how": "Use θ = |30H − 5.5M|; if more than 180°, take 360° − θ.",
+    "name": "Angle between the hands",
+    "how": "Use angle = |30H − 5.5M|; if it is above 180°, subtract from 360°.",
     "example": {
-     "q": "Angle at 3:30?",
+     "q": "What is the angle between the hands of a clock at 8:20?",
      "steps": [
-      "|30×3 − 5.5×30| = |90 − 165|",
-      "= 75°"
+      "30 × 8 = 240.",
+      "5.5 × 20 = 110.",
+      "|240 − 110| = 130°, which is less than 180°."
      ],
-     "answer": "75°"
+     "answer": "130°"
     }
    },
    {
-    "type": "clock-time",
-    "name": "Hands together / opposite",
-    "how": "Hands together between H and H+1 at (60H/11) minutes past H.",
+    "type": "hands-position",
+    "name": "When the hands meet, oppose or make a right angle",
+    "how": "Write where each hand is: the minute hand at 6M°, the hour hand at (30H + 0.5M)°. Set the gap to 0°, 180° or 90° and solve for M.",
     "example": {
-     "q": "When are the hands together between 2 and 3?",
+     "q": "At what time between 2 and 3 o'clock will the hands of a clock point in opposite directions?",
      "steps": [
-      "60 × 2 / 11 = 120/11",
-      "= 10 10/11 min"
+      "At 2 o'clock the hour hand is at 60°.",
+      "Opposite: the minute hand must be 180° ahead, so 6M = 60 + 0.5M + 180.",
+      "5.5M = 240, so M = 480/11 = 43 7/11."
      ],
-     "answer": "10 10/11 min past 2"
+     "answer": "43 7/11 minutes past 2"
+    }
+   },
+   {
+    "type": "clock-mirror",
+    "name": "Mirror image of a clock",
+    "how": "Subtract the time from 11:60 (from 23:60 for times between 11:00 and 12:59).",
+    "example": {
+     "q": "A clock shows 4:25. What time does its mirror image show?",
+     "steps": [
+      "11:60 − 4:25: 60 − 25 = 35 minutes, 11 − 4 = 7 hours."
+     ],
+     "answer": "7:35"
+    }
+   },
+   {
+    "type": "clock-gain-loss",
+    "name": "Fast and slow clocks",
+    "how": "Find how fast the clock runs compared with true time, then scale: real time = clock time × true rate ÷ clock rate.",
+    "example": {
+     "q": "A clock is set right at 8 a.m. It gains 10 minutes every 24 hours. What is the correct time when the clock shows 1 p.m. the next day?",
+     "steps": [
+      "The clock shows 29 hours = 1,740 minutes passed.",
+      "It shows 24 h 10 min (1,450 min) for every 24 h (1,440 min) of real time.",
+      "Real time = 1,740 × 1,440 ÷ 1,450 = 1,728 minutes = 28 h 48 min.",
+      "8 a.m. + 28 h 48 min = 12:48 p.m. the next day."
+     ],
+     "answer": "12:48 p.m."
     }
    }
   ],
   "tips": [
-   "Days code: Sunday = 0, Monday = 1 … Saturday = 6.",
-   "Mirror time = 11:60 − given time (for times between 1:00 and 11:00)."
+   "Learn the month odd days as 3, 0, 3, 2, 3, 2, 3, 3, 2, 3, 2, 3 (add 1 to February in a leap year).",
+   "For \"n days later\", only the remainder of n ÷ 7 matters.",
+   "Same date next year: +1 day, or +2 if 29 February falls in between.",
+   "A century year is a leap year only if it divides by 400.",
+   "Clock angle: |30H − 5.5M|, and take 360° minus it if it is above 180°.",
+   "Hands together between H and H + 1: 60H/11 minutes past H.",
+   "Mirror time: 11:60 minus the time."
   ],
   "traps": [
-   "When moving one year forward, the extra day of a leap year counts only if 29 February lies in between.",
-   "1900 was not a leap year."
+   "1900 and 2100 are not leap years even though they divide by 4.",
+   "When counting from a known date, do not count the starting day itself.",
+   "The hour hand moves during the hour; at 3:30 it is halfway between 3 and 4, not on 3.",
+   "Right angles usually happen twice an hour (both + and − in the formula); check which one the question wants.",
+   "A clock that gains is ahead of the real time, so the real time is earlier than what it shows."
   ]
  },
  "questions": [
@@ -71,7 +188,7 @@
    "id": "r-calendar-clock-001",
    "rev": 1,
    "topic": "r-calendar-clock",
-   "type": "calendar-day",
+   "type": "day-from-reference",
    "level": 1,
    "q": "If 1 January 2025 was a Wednesday, what day of the week was 1 March 2025?",
    "options": [
@@ -105,7 +222,7 @@
    "id": "r-calendar-clock-003",
    "rev": 1,
    "topic": "r-calendar-clock",
-   "type": "calendar-day",
+   "type": "day-from-reference",
    "level": 2,
    "q": "If 15 August 2023 was a Tuesday, what day of the week was 15 August 2024?",
    "options": [
@@ -139,7 +256,7 @@
    "id": "r-calendar-clock-005",
    "rev": 1,
    "topic": "r-calendar-clock",
-   "type": "clock-time",
+   "type": "hands-position",
    "level": 3,
    "q": "At what time between 4 o'clock and 5 o'clock will the hands of a clock be together?",
    "options": [
@@ -156,7 +273,7 @@
    "id": "r-calendar-clock-006",
    "rev": 1,
    "topic": "r-calendar-clock",
-   "type": "calendar-day",
+   "type": "day-of-week",
    "level": 3,
    "q": "What day of the week was 26 January 1950?",
    "options": [

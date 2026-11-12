@@ -9,6 +9,12 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync
 import { join } from 'node:path';
 import sharp from 'sharp';
 import { mapTopic } from './mapping';
+import { loadMoves } from './reroute-topics';
+import { cleanSourceText } from './clean';
+import { extractMath, mathStats } from '../tools/math';
+import { loadTaxonomies, loadTypeCache, taxKey } from './classify-types';
+import { loadSolutionCache } from './fix-solutions';
+import { MODEL } from './llm';
 import { TOPIC_MAP } from '../src/core/syllabus';
 import type { Question, SubjectId } from '../src/core/types';
 
@@ -53,7 +59,11 @@ const ICONS = (() => {
 const imgPath = (url: string) => `/pyq/img/${sha(url).slice(0, 16)}.webp`;
 
 function toHtml(src: string | null | undefined): string {
-  let s = String(src ?? '');
+  // maths first: KaTeX renders it, and the escaping/markdown steps below never see it
+  const math = extractMath(String(src ?? ''), { fractions: true });
+  let s = math.text;
+  // escaped percent/dollar signs left outside maths by the source ("5 (1)/(3)\\%")
+  s = s.replace(/\\([%$])/g, '$1');
   // image markers → placeholders (restored after escaping)
   const imgs: string[] = [];
   // the URL may be split across lines in the source: join it back together
@@ -91,7 +101,7 @@ function toHtml(src: string | null | undefined): string {
   s = s.replace(/\*\*([\s\S]+?)\*\*/g, '<b>$1</b>').replace(/__([^_\n]+?)__/g, '<b>$1</b>').replace(/\*\*|__/g, '');
   s = s.replace(/\r/g, '').replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim().replace(/\n/g, '<br>');
   s = s.replace(/\u0000IMG(\d+)\u0000/g, (_, i: string) => `<img src="${imgPath(imgs[Number(i)])}" alt="Figure">`);
-  return s;
+  return math.restore(s);
 }
 const plain = (html: string) => html.replace(/<img[^>]*src="([^"]+)"[^>]*>/g, ' [$1] ').replace(/<[^>]+>/g, ' ').replace(/&lt;/g, '<').replace(/\s+/g, ' ').trim().toLowerCase();
 
@@ -101,6 +111,17 @@ const inc = (o: Record<string, number>, k: string) => { o[k] = (o[k] ?? 0) + 1; 
 
 interface Item { q: Question; raw: Raw; key: string }
 const items: Item[] = [];
+// enrichment caches from the local-model stages (both optional)
+const TAX = loadTaxonomies();
+const TYPES = loadTypeCache();
+const SOLUTIONS = loadSolutionCache();
+const MOVES = loadMoves(); // questions the source filed under the wrong topic (pipeline/reroute-topics.ts)
+const enrich = { typed: 0, solutionsRewritten: 0, moved: 0 };
+function typeFor(topic: string, qid: string, fallback: string): string {
+  const t = TAX.get(topic);
+  if (!t) return fallback;
+  return TYPES.get(`${qid}|${taxKey(t)}|${MODEL}`)?.type ?? fallback;
+}
 report.source = readFileSync(join(RAW, 'SOURCE_SHA'), 'utf8').trim();
 
 for (const f of readdirSync(RAW).filter((x) => x.endsWith('.jsonl')).sort()) {
@@ -117,16 +138,22 @@ for (const f of readdirSync(RAW).filter((x) => x.endsWith('.jsonl')).sort()) {
     if (answer < 0) { inc(report.excluded, 'answer key not among options'); continue; }
     const options = r.options.map((o) => toHtml(o.text));
     if (new Set(options.map(plain)).size !== 4) { inc(report.excluded, 'duplicate options'); continue; }
-    const qHtml = toHtml(r.question);
+    const qHtml = toHtml(cleanSourceText(r.question));
     if (!plain(qHtml)) { inc(report.excluded, 'empty question'); continue; }
-    const solHtml = toHtml(r.solution);
+    const rewritten = SOLUTIONS.get(r.qid);
+    if (rewritten?.status === 'ok') enrich.solutionsRewritten++;
+    const solHtml = toHtml(rewritten?.status === 'ok' ? rewritten.text : cleanSourceText(r.solution));
     const solution = plain(solHtml).length >= 10 ? solHtml : `The correct answer is option ${String.fromCharCode(65 + answer)}.${solHtml ? `<br>${solHtml}` : ''}`;
+    // the id keeps the source topic forever (saved attempts point at it); the question itself lives in its corrected topic
+    const topic = MOVES.get(r.qid) ?? m.topic;
+    if (topic !== m.topic) enrich.moved++;
     const q: Question = {
-      id: `pyq:${m.topic}:${r.qid}`, rev: 1, topic: m.topic, type: slug(r.source_concept || r.chapter), level: 2,
+      id: `pyq:${m.topic}:${r.qid}`, rev: 1, topic, type: typeFor(topic, r.qid, slug(r.source_concept || r.chapter)), level: 2,
       q: qHtml, options, answer, solution, source: 'pyq',
       pyq: { asked: [{ tier: r.tier, year: r.year, date: r.held_on ?? '', shift: r.shift ?? null, paper: r.paper_meta.test_id }] },
     };
-    inc(report.mapped, m.topic);
+    inc(report.mapped, topic);
+    if (TAX.has(topic) && q.type !== slug(r.source_concept || r.chapter)) enrich.typed++;
     items.push({ q, raw: r, key: sha(plain(qHtml) + '|' + options.map(plain).sort().join('|')) });
   }
 }
@@ -225,6 +252,8 @@ async function main() {
     topics: {} as Record<string, { pages: string[]; count: number; types: Record<string, string> }>,
     papers: [] as { id: string; title: string; tier: string; year: number; date: string; shift: string | null; minutes: number; available: number; total: number; file: string }[],
     weightage: {} as Record<string, { pre: number; mains: number }>,
+    /** topic → ids of questions moved there from the topic their id names */
+    moved: {} as Record<string, string[]>,
   };
   const all = createHash('sha256');
   const write = (rel: string, data: unknown) => {
@@ -237,13 +266,15 @@ async function main() {
   };
 
   const byTopic = new Map<string, Question[]>();
+  for (const q of questions) if (q.id.split(':')[1] !== q.topic) (manifest.moved[q.topic] ??= []).push(q.id);
   for (const q of questions) byTopic.set(q.topic, [...(byTopic.get(q.topic) ?? []), q]);
   const typeNames = new Map(items.map((x) => [x.q.type, x.raw.source_concept || x.raw.chapter]));
   for (const [topic, qs] of [...byTopic].sort()) {
     const pages: string[] = [];
     for (let i = 0; i < qs.length; i += PAGE) pages.push(write(`topics/${topic}-${i / PAGE + 1}.json`, qs.slice(i, i + PAGE)));
     const types: Record<string, string> = {};
-    for (const q of qs) types[q.type] = typeNames.get(q.type) ?? q.type;
+    const taxNames = new Map((TAX.get(topic)?.types ?? []).map((x) => [x.type, x.name] as [string, string]));
+    for (const q of qs) types[q.type] = taxNames.get(q.type) ?? (q.type === 'other' ? 'Other' : typeNames.get(q.type) ?? q.type);
     manifest.topics[topic] = { pages, count: qs.length, types };
   }
 
@@ -266,9 +297,11 @@ async function main() {
 
   manifest.version = all.digest('hex').slice(0, 12);
   writeFileSync(join(OUT, 'manifest.json'), JSON.stringify(manifest));
-  writeFileSync(REPORT, JSON.stringify(report, null, 1));
+  writeFileSync(REPORT, JSON.stringify({ ...report, math: mathStats }, null, 1));
   console.log(`published ${questions.length} questions, ${ps.length} papers → public/pyq (version ${manifest.version})`);
   console.log('excluded:', report.excluded);
+  console.log(`maths rendered: ${mathStats.rendered}, plain-text fractions converted: ${mathStats.fractions}, stripped LaTeX repaired: ${mathStats.stripped}, left as text (KaTeX could not parse): ${mathStats.failed}`);
+  console.log(`question types from taxonomy: ${enrich.typed}; solutions rewritten: ${enrich.solutionsRewritten}`);
   console.log(`duplicates merged: ${report.duplicates}; images converted ${report.images.converted}, failed ${report.images.failed.length}`);
 }
 main();

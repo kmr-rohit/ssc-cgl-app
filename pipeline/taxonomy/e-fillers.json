@@ -1,0 +1,79 @@
+{
+  "topic": "e-fillers",
+  "types": [
+    {
+      "type": "vocab-context",
+      "name": "Word that fits the meaning",
+      "description": "A single sentence with one blank where the options are words of the same part of speech (nouns, verbs or adjectives) and the sentence's meaning decides the answer.",
+      "concepts": []
+    },
+    {
+      "type": "collocation",
+      "name": "Collocation",
+      "description": "A blank where the options are near-synonyms and only one naturally goes with the next or previous word (make a decision, pay attention, heavy rain), or the question says 'complete the collocation'.",
+      "concepts": []
+    },
+    {
+      "type": "phrasal-verb",
+      "name": "Phrasal verb",
+      "description": "A blank whose options are verb + particle combinations such as passed away, passed down, put off, look after, give up, or the question asks for the appropriate phrasal verb.",
+      "concepts": []
+    },
+    {
+      "type": "idiom-blank",
+      "name": "Idiom in the blank",
+      "description": "A blank whose options are idioms or fixed phrases (a stone's throw away, from pillar to post) and the sentence's meaning decides which fits.",
+      "concepts": []
+    },
+    {
+      "type": "homonym",
+      "name": "Homonym or homophone",
+      "description": "Options are words that sound alike or are spelt alike (heal / heel, due / dew, blew / blue), or the question asks for the correct homonym/homophone, or for the sentence where a highlighted word is used as a homonym.",
+      "concepts": [
+        "homonym"
+      ]
+    },
+    {
+      "type": "preposition",
+      "name": "Preposition",
+      "description": "A blank whose options are prepositions (of, for, with, on, in, at, against, since) after a verb, adjective or noun.",
+      "concepts": []
+    },
+    {
+      "type": "article-determiner",
+      "name": "Article or determiner",
+      "description": "A blank whose options are articles (a, an, the) or determiners and quantifiers (much, many, few, little, some, any, each, every).",
+      "concepts": []
+    },
+    {
+      "type": "verb-form",
+      "name": "Verb form and tense",
+      "description": "A blank whose options are forms of the same verb or different tenses (is / were / has / had been), including conditionals and subject-verb agreement.",
+      "concepts": []
+    },
+    {
+      "type": "connector",
+      "name": "Conjunction or connector",
+      "description": "A blank whose options are joining words such as than, then, as, but, although, unless, because, so, either, neither.",
+      "concepts": []
+    },
+    {
+      "type": "adjective-adverb",
+      "name": "Adjective, adverb or comparison",
+      "description": "A blank (or a choose-the-correct-sentence question) testing adjective vs adverb forms, adverbs of manner or frequency, or degrees of comparison (more/most, -er than, as … as).",
+      "concepts": []
+    },
+    {
+      "type": "paragraph-completion",
+      "name": "Missing sentences in a paragraph",
+      "description": "A four-sentence paragraph (S1 to S4) with S1 and S4 given; choose the pair of sentences from P, Q, R, S that fit as S2 and S3.",
+      "concepts": []
+    },
+    {
+      "type": "segment-order",
+      "name": "Order of segments for several blanks",
+      "description": "A sentence or paragraph with several blanks and options giving segments in different orders; choose the order that fills the blanks coherently.",
+      "concepts": []
+    }
+  ]
+}

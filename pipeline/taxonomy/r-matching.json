@@ -1,0 +1,43 @@
+{
+ "topic": "r-matching",
+ "types": [
+  {
+   "type": "identical-pairs",
+   "name": "Identical pairs",
+   "description": "A list of pairs of numbers, names or codes (4573821 – 4573821); asks how many pairs are exactly the same or which pair differs.",
+   "concepts": []
+  },
+  {
+   "type": "address-matching",
+   "name": "Address matching",
+   "description": "A full address or record (name, house number, street, city, PIN) is given; asks which option or which listed entries are identical to it or to each other.",
+   "concepts": [
+    "address-matching-record-verification"
+   ]
+  },
+  {
+   "type": "date-city-matching",
+   "name": "Date and city matching",
+   "description": "A date written in one format (DD-MM-YYYY, MM/DD/YYYY, YYYY-MM-DD, or in words) must be matched with the same date in another format, or a city must be matched with its state or PIN code.",
+   "concepts": []
+  },
+  {
+   "type": "matrix-indexing",
+   "name": "Matrix indexing",
+   "description": "Letters placed in one or two matrices with numbered rows and columns; a letter is coded as row number then column number, and the question asks which set of numbers spells a word.",
+   "concepts": []
+  },
+  {
+   "type": "code-rules",
+   "name": "Centre code and roll number rules",
+   "description": "Rules describe how a valid roll number, centre code or ID is built (letters, digits, length, hyphens); asks which code is valid or which rule a code breaks.",
+   "concepts": []
+  },
+  {
+   "type": "name-indexing",
+   "name": "Name indexing",
+   "description": "Names of people to be arranged as in an index or directory (surname first, then first name), or asks which name comes first or last.",
+   "concepts": []
+  }
+ ]
+}

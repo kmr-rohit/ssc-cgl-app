@@ -1,72 +1,184 @@
 {
  "topic": "c-internet",
  "notes": {
-  "summary": "Internet, email and networking give 4–5 Tier 2 questions: full forms, protocols and ports, network types (PAN/LAN/MAN/WAN), topologies, network devices and IP addressing.",
+  "summary": "<p>Internet, email and networking give 4 to 5 questions in the Tier 2 computer section. Past papers ask most about email, network devices and online threats, then protocols, IP addresses, the OSI model and browser shortcuts.</p><p>Most questions test a full form, what a device or protocol does, a port number or a size in bits. Learn the tables below line by line.</p>",
   "concepts": [
    {
-    "title": "Internet basics",
-    "body": "<ul><li><b>WWW</b> was invented by Tim Berners-Lee (1989). ARPANET (1969) was the first network.</li><li><b>URL</b> = Uniform Resource Locator, e.g. https://www.example.com/page.</li><li><b>DNS</b> converts a domain name into an IP address.</li><li><b>HTTP</b> transfers web pages (port 80); <b>HTTPS</b> is the secure version (port 443). <b>FTP</b> transfers files.</li><li><b>HTML</b> is the language for building web pages; a <b>browser</b> (Chrome, Firefox) displays them.</li></ul>"
+    "title": "Internet and the World Wide Web",
+    "body": "<ul><li>The <b>Internet</b> is a worldwide network of networks. It grew from <b>ARPANET</b> (1969), a project of the US Department of Defense.</li><li>The <b>World Wide Web</b> (WWW) is a service that runs on the Internet: linked web pages. It was invented by <b>Tim Berners-Lee</b> at CERN in 1989. He also wrote the first browser, called WorldWideWeb. Mosaic (1993) was the first popular graphical browser.</li><li>Internet and WWW are not the same: email and FTP use the Internet but are not part of the web.</li><li>A <b>web page</b> is one document written in <b>HTML</b> (HyperText Markup Language). A <b>website</b> is a group of related pages. The first page of a site is its <b>home page</b>.</li><li>A <b>hyperlink</b> is clickable text or a picture that opens another page. <b>Hypertext</b> is text with links in it.</li><li>An <b>ISP</b> (Internet Service Provider) such as BSNL, Jio or Airtel connects you to the Internet.</li><li>A <b>search engine</b> (Google, Bing, DuckDuckGo, Yahoo) finds pages. A <b>browser</b> (Chrome, Edge, Firefox, Safari) opens and shows them.</li><li>An <b>intranet</b> is a private network inside one organisation; an <b>extranet</b> lets chosen outsiders such as suppliers into it.</li></ul>"
+   },
+   {
+    "title": "URL and domain names",
+    "body": "<p>A <b>URL</b> (Uniform Resource Locator) is the full address of a resource on the web.</p><table><thead><tr><th>Part of https://www.example.co.in/news/today.html</th><th>Name</th></tr></thead><tbody><tr><td>https</td><td>Protocol (scheme)</td></tr><tr><td>www.example.co.in</td><td>Domain name (host). \"in\" is the top-level domain</td></tr><tr><td>/news/today.html</td><td>Path to the page or file</td></tr></tbody></table><table><thead><tr><th>Top-level domain</th><th>Used by</th></tr></thead><tbody><tr><td>.com</td><td>Commercial</td></tr><tr><td>.org</td><td>Organisation, often non-profit</td></tr><tr><td>.net</td><td>Network providers</td></tr><tr><td>.edu</td><td>Education (US)</td></tr><tr><td>.gov</td><td>Government (US); India uses .gov.in</td></tr><tr><td>.mil</td><td>US military</td></tr><tr><td>.int</td><td>International bodies</td></tr><tr><td>.in, .uk, .jp</td><td>Country codes (India, United Kingdom, Japan)</td></tr></tbody></table><p>A URL cannot contain spaces. The part before :// is the protocol; the part after the first single / is the path.</p>"
+   },
+   {
+    "title": "Web browsers and cookies",
+    "body": "<table><thead><tr><th>Browser</th><th>Made by</th><th>Rendering engine</th></tr></thead><tbody><tr><td>Google Chrome</td><td>Google (2008)</td><td>Blink</td></tr><tr><td>Microsoft Edge</td><td>Microsoft (2015), replaced Internet Explorer</td><td>Blink (since 2020)</td></tr><tr><td>Internet Explorer</td><td>Microsoft (1995), retired in 2022</td><td>Trident</td></tr><tr><td>Mozilla Firefox</td><td>Mozilla (2004)</td><td>Gecko</td></tr><tr><td>Safari</td><td>Apple (2003)</td><td>WebKit</td></tr><tr><td>Opera</td><td>Opera (1995)</td><td>Blink</td></tr></tbody></table><ul><li>The <b>rendering engine</b> (layout engine) is the part of a browser that reads HTML and CSS and displays the web page.</li><li><b>Cache</b> stores copies of pages and images so they load faster next time. <b>History</b> lists pages visited. A <b>bookmark</b> (favourite) saves a page address.</li><li><b>Incognito</b> (private) mode does not save history or cookies after the window is closed. It does not hide you from your ISP or employer.</li><li>A <b>cookie</b> is a small text file a website stores in your browser to remember you (login, cart, settings). <b>Session cookies</b> are deleted when the browser closes; <b>persistent cookies</b> stay until they expire. <b>First-party cookies</b> come from the site you visit; <b>third-party (tracking) cookies</b> come from other sites, such as advertisers, and track you across sites, which exposes your privacy.</li><li>A <b>plug-in</b> or <b>extension</b> adds features to a browser.</li></ul><table><thead><tr><th>Keys (Chrome, Edge, Firefox on Windows)</th><th>What it does</th></tr></thead><tbody><tr><td>Ctrl+T, Ctrl+N</td><td>New tab, new window</td></tr><tr><td>Ctrl+Shift+N</td><td>New incognito (InPrivate) window in Chrome and Edge (Ctrl+Shift+P in Firefox)</td></tr><tr><td>Ctrl+W, Ctrl+Shift+T</td><td>Close tab, reopen the last closed tab</td></tr><tr><td>F5 or Ctrl+R</td><td>Reload the page</td></tr><tr><td>Ctrl+F5 or Ctrl+Shift+R</td><td>Hard reload (ignore the cache)</td></tr><tr><td>Ctrl+L, Alt+D or F6</td><td>Jump to the address bar</td></tr><tr><td>Alt+Left, Alt+Right</td><td>Back, forward</td></tr><tr><td>Ctrl+D</td><td>Bookmark this page</td></tr><tr><td>Ctrl+H, Ctrl+J</td><td>History, downloads</td></tr><tr><td>Ctrl+Tab</td><td>Next tab</td></tr><tr><td>Ctrl++, Ctrl+−, Ctrl+0</td><td>Zoom in, zoom out, reset zoom</td></tr><tr><td>Ctrl+U, F12</td><td>View page source, developer tools</td></tr><tr><td>Ctrl+Shift+Delete</td><td>Clear browsing data</td></tr><tr><td>F11</td><td>Full screen</td></tr></tbody></table>"
+   },
+   {
+    "title": "IP addresses, MAC and DNS",
+    "body": "<table><thead><tr><th>Address</th><th>Size</th><th>Written as</th><th>Count or note</th></tr></thead><tbody><tr><td>IPv4</td><td>32 bits</td><td>4 numbers 0 to 255 joined by dots, e.g. 192.168.1.10</td><td>About 4.3 billion (2<sup>32</sup>)</td></tr><tr><td>IPv6</td><td>128 bits</td><td>8 groups of 4 hex digits joined by colons, e.g. 2001:0db8:0000:0000:0000:0000:0000:0001</td><td>2<sup>128</sup></td></tr><tr><td>MAC</td><td>48 bits</td><td>12 hex digits, e.g. 00-1A-2B-3C-4D-5E</td><td>Burnt into the network card</td></tr></tbody></table><ul><li>An <b>IP address</b> is a <b>logical</b> address given by the network; it can change. A <b>MAC address</b> is the <b>physical</b> address of the network card (NIC) and is fixed by the maker.</li><li>IPv4 classes by first number: A 1 to 126, B 128 to 191, C 192 to 223, D 224 to 239 (multicast), E 240 to 255 (research). 127.0.0.1 is the <b>loopback</b> address (this computer itself).</li><li>Private ranges, used inside home and office networks: 10.x.x.x, 172.16.x.x to 172.31.x.x, 192.168.x.x.</li><li><b>DNS</b> (Domain Name System) turns a domain name such as www.example.com into an IP address, like a phone book.</li><li><b>DHCP</b> (Dynamic Host Configuration Protocol) gives devices an IP address automatically when they join a network.</li><li><b>NAT</b> lets many devices with private addresses share one public IP address.</li></ul><p>Mini example: each part of an IPv4 address is 8 bits (an octet), so it can be 0 to 255. 192.168.1.300 is not valid.</p>"
+   },
+   {
+    "title": "Protocols and port numbers",
+    "body": "<p>A <b>protocol</b> is a set of rules for communication. A <b>port number</b> tells the receiving computer which service the data is for.</p><table><thead><tr><th>Protocol</th><th>Full form</th><th>Job</th><th>Port</th></tr></thead><tbody><tr><td>HTTP</td><td>HyperText Transfer Protocol</td><td>Web pages</td><td>80</td></tr><tr><td>HTTPS</td><td>HTTP Secure (HTTP over SSL/TLS)</td><td>Encrypted web pages</td><td>443</td></tr><tr><td>FTP</td><td>File Transfer Protocol</td><td>Upload and download files</td><td>20 (data), 21 (control)</td></tr><tr><td>SSH</td><td>Secure Shell</td><td>Secure remote login</td><td>22</td></tr><tr><td>Telnet</td><td>Teletype Network</td><td>Remote login, not encrypted</td><td>23</td></tr><tr><td>SMTP</td><td>Simple Mail Transfer Protocol</td><td>Sending email</td><td>25 (587 for clients)</td></tr><tr><td>DNS</td><td>Domain Name System</td><td>Name to IP address</td><td>53</td></tr><tr><td>DHCP</td><td>Dynamic Host Configuration Protocol</td><td>Gives IP addresses</td><td>67, 68</td></tr><tr><td>POP3</td><td>Post Office Protocol version 3</td><td>Download email</td><td>110 (995 secure)</td></tr><tr><td>IMAP</td><td>Internet Message Access Protocol</td><td>Read email kept on the server</td><td>143 (993 secure)</td></tr><tr><td>NTP</td><td>Network Time Protocol</td><td>Sync clocks</td><td>123</td></tr><tr><td>SNMP</td><td>Simple Network Management Protocol</td><td>Manage network devices</td><td>161</td></tr><tr><td>RDP</td><td>Remote Desktop Protocol</td><td>Windows remote desktop</td><td>3389</td></tr></tbody></table><ul><li><b>TCP</b> (Transmission Control Protocol) is connection-oriented and reliable: it checks that every packet arrives in order. Used by web, email and file transfer.</li><li><b>UDP</b> (User Datagram Protocol) is connectionless and faster but does not guarantee delivery. Used by live video, online games, voice calls and DNS lookups.</li><li><b>IP</b> (Internet Protocol) addresses and routes packets. TCP/IP together are the base of the Internet.</li><li><b>Uploading</b> sends data from your computer to a server. <b>Downloading</b> brings data from a server to your computer.</li><li><b>SSL/TLS</b> (Secure Sockets Layer / Transport Layer Security) encrypts data in transit; the padlock in the address bar shows it is in use.</li><li><b>VoIP</b> carries voice calls over the Internet.</li></ul>"
    },
    {
     "title": "Email",
-    "body": "<ul><li><b>SMTP</b> sends email; <b>POP3</b> and <b>IMAP</b> receive email (IMAP keeps mail on the server).</li><li><b>CC</b> = Carbon Copy (everyone sees); <b>BCC</b> = Blind Carbon Copy (hidden from other receivers).</li><li>Email address format: username@domain. Unwanted bulk mail is <b>spam</b>.</li></ul>"
+    "body": "<table><thead><tr><th>Field</th><th>Meaning</th></tr></thead><tbody><tr><td>To</td><td>Main receiver</td></tr><tr><td>CC (Carbon Copy)</td><td>Copy to others; every receiver can see these addresses</td></tr><tr><td>BCC (Blind Carbon Copy)</td><td>Copy to others; these addresses are hidden from all other receivers</td></tr><tr><td>Subject</td><td>One-line topic of the mail</td></tr><tr><td>Attachment</td><td>A file sent with the mail (shown by a paper clip)</td></tr><tr><td>Signature</td><td>Text added automatically at the end, such as name and phone</td></tr></tbody></table><ul><li>An email address is <b>username@domain</b>, for example ravi@example.com. The first networked email was sent by Ray Tomlinson in 1971; he chose the @ sign.</li><li>Folders: <b>Inbox</b> (received), <b>Drafts</b> (unfinished), <b>Sent</b>, <b>Outbox</b> (waiting to be sent), <b>Spam</b> or Junk (unwanted bulk mail), <b>Trash</b> or Bin (deleted), <b>Archive</b> (removed from Inbox but kept).</li><li><b>Reply</b> answers only the sender; <b>Reply All</b> answers the sender and everyone in To and CC; <b>Forward</b> sends the mail on to someone new.</li><li><b>SMTP</b> sends mail. <b>POP3</b> downloads mail to one device and usually removes it from the server. <b>IMAP</b> keeps mail on the server and syncs it across all devices. <b>MIME</b> lets mail carry attachments, pictures and non-English text.</li><li>Email <b>service providers</b> (webmail): Gmail (Google), Outlook.com (Microsoft), Yahoo Mail, Yandex Mail (Russia), Zoho Mail and Rediffmail (India), Proton Mail. <b>Email clients</b> (programs): Microsoft Outlook, Mozilla Thunderbird, Apple Mail.</li></ul><table><thead><tr><th>Gmail key (keyboard shortcuts turned on)</th><th>What it does</th></tr></thead><tbody><tr><td>c</td><td>Compose a new message</td></tr><tr><td>r, a, f</td><td>Reply, reply all, forward</td></tr><tr><td>e</td><td>Archive</td></tr><tr><td>#</td><td>Delete</td></tr><tr><td>/</td><td>Search mail</td></tr><tr><td>j, k</td><td>Older, newer conversation</td></tr><tr><td>Ctrl+Enter</td><td>Send</td></tr></tbody></table><p>In Microsoft Outlook: Ctrl+N new mail, Ctrl+R reply, Ctrl+Shift+R reply all, Ctrl+F forward, Ctrl+Enter or Alt+S send.</p>"
    },
    {
-    "title": "Networks, topologies and devices",
-    "body": "<ul><li>By area: <b>PAN</b> (a person, Bluetooth) &lt; <b>LAN</b> (a building) &lt; <b>MAN</b> (a city) &lt; <b>WAN</b> (country / world; the Internet is the largest WAN).</li><li>Topologies: <b>Star</b> (all to a central hub/switch), <b>Bus</b> (one backbone cable), <b>Ring</b> (closed loop), <b>Mesh</b> (every node to every node), <b>Tree</b> (hierarchy of stars).</li><li>Devices: <b>Hub</b> (broadcasts to all), <b>Switch</b> (sends to the right MAC address), <b>Router</b> (joins different networks using IP), <b>Modem</b> (digital ↔ analog), <b>Gateway</b> (joins networks using different protocols), <b>Repeater</b> (boosts signal).</li><li>IPv4 = 32 bits; IPv6 = 128 bits; MAC address = 48 bits.</li></ul>",
+    "title": "Network types, topologies and media",
+    "body": "<table><thead><tr><th>Type</th><th>Full form</th><th>Area</th></tr></thead><tbody><tr><td>PAN</td><td>Personal Area Network</td><td>Around one person, about 10 m (Bluetooth, phone to earbuds)</td></tr><tr><td>LAN</td><td>Local Area Network</td><td>One room, building or campus (office Wi-Fi, Ethernet)</td></tr><tr><td>CAN</td><td>Campus Area Network</td><td>Several buildings of a university or company</td></tr><tr><td>MAN</td><td>Metropolitan Area Network</td><td>A city (cable TV network)</td></tr><tr><td>WAN</td><td>Wide Area Network</td><td>A country or the world; the Internet is the largest WAN. Uses optical fibre, leased lines and satellite links.</td></tr></tbody></table><table><thead><tr><th>Topology</th><th>Layout</th><th>Key point</th></tr></thead><tbody><tr><td>Bus</td><td>All devices on one backbone cable</td><td>Cheap; one cable break stops everyone</td></tr><tr><td>Star</td><td>All devices to one central hub or switch</td><td>Easy to add devices; if the centre fails, all stop</td></tr><tr><td>Ring</td><td>Each device joined to two neighbours in a loop</td><td>Data goes one way round; one break can stop the ring</td></tr><tr><td>Mesh</td><td>Every device joined to every other</td><td>Most reliable; needs n(n − 1)/2 cables for n devices</td></tr><tr><td>Tree</td><td>Stars joined in a hierarchy</td><td>Easy to expand</td></tr><tr><td>Hybrid</td><td>Mix of two or more</td><td>Flexible</td></tr></tbody></table><p>Mini example: a full mesh of 6 computers needs 6 × 5 ÷ 2 = 15 cables.</p><ul><li><b>Wired media</b>: twisted pair (Ethernet cable with RJ-45 plug), coaxial cable (cable TV), <b>optical fibre</b> (light pulses; fastest, long distance, not affected by electrical noise).</li><li><b>Wireless</b>: Wi-Fi (IEEE 802.11), Bluetooth, infrared, microwave, satellite. Wired Ethernet is IEEE 802.3.</li><li>Transmission modes: <b>simplex</b> one way only (keyboard to computer, TV broadcast); <b>half-duplex</b> both ways but one at a time (walkie-talkie); <b>full-duplex</b> both ways at once (telephone call).</li><li><b>Bandwidth</b> or bit rate is how much data can move per second, measured in bits per second (bps, kbps, Mbps, Gbps).</li><li><b>Client-server</b>: a central server serves many clients. <b>Peer-to-peer</b>: every computer is equal and shares directly.</li></ul>",
     "img": "computer/topologies.svg"
+   },
+   {
+    "title": "Network devices and connectors",
+    "body": "<table><thead><tr><th>Device</th><th>OSI layer</th><th>What it does</th></tr></thead><tbody><tr><td>Repeater</td><td>1 Physical</td><td>Regenerates a weak signal so it can travel further</td></tr><tr><td>Hub</td><td>1 Physical</td><td>Sends incoming data to every port (broadcast); no intelligence</td></tr><tr><td>Bridge</td><td>2 Data link</td><td>Joins two LAN segments and filters traffic using MAC addresses</td></tr><tr><td>Switch</td><td>2 Data link</td><td>Sends data only to the port of the target device, using its MAC address (a multiport bridge)</td></tr><tr><td>Router</td><td>3 Network</td><td>Joins different networks and picks the best path for packets using IP addresses</td></tr><tr><td>Gateway</td><td>All layers</td><td>A passage between two networks that may use different protocols or models; it converts between them</td></tr><tr><td>Modem</td><td>1 Physical</td><td>MOdulator-DEModulator: turns digital signals into analog for phone or cable lines and back</td></tr><tr><td>NIC</td><td>2 Data link</td><td>Network Interface Card; holds the MAC address</td></tr><tr><td>Access point</td><td>2 Data link</td><td>Lets Wi-Fi devices join a wired LAN</td></tr><tr><td>Firewall</td><td>3 and above</td><td>Allows or blocks traffic by rules</td></tr></tbody></table><table><thead><tr><th>Connector</th><th>Key fact</th></tr></thead><tbody><tr><td>VGA</td><td>15 pins (holes) in 3 rows; analog video to a monitor</td></tr><tr><td>HDMI</td><td>Digital video and audio in one cable; 19 pins (standard type A)</td></tr><tr><td>DVI</td><td>Digital (and analog) video to monitors</td></tr><tr><td>RJ-45</td><td>8 pins; Ethernet network cable</td></tr><tr><td>RJ-11</td><td>Telephone line and dial-up modem</td></tr><tr><td>USB</td><td>Universal Serial Bus; data and power for many devices</td></tr></tbody></table>"
+   },
+   {
+    "title": "OSI and TCP/IP models",
+    "body": "<p>The <b>OSI</b> (Open Systems Interconnection) model from ISO splits networking into 7 layers. Bottom to top: Physical, Data link, Network, Transport, Session, Presentation, Application. Memory aid: <b>Please Do Not Throw Sausage Pizza Away</b>.</p><table><thead><tr><th>Layer</th><th>Job</th><th>Examples</th><th>Data unit</th></tr></thead><tbody><tr><td>7 Application</td><td>Services the user sees: web, email, file transfer</td><td>HTTP, FTP, SMTP, DNS</td><td>Data</td></tr><tr><td>6 Presentation</td><td>Translation, encryption, compression of data</td><td>JPEG, MPEG, SSL/TLS</td><td>Data</td></tr><tr><td>5 Session</td><td>Opens, manages and closes sessions (dialog control)</td><td>NetBIOS, RPC</td><td>Data</td></tr><tr><td>4 Transport</td><td>End-to-end delivery, error control, ports</td><td>TCP, UDP</td><td>Segment</td></tr><tr><td>3 Network</td><td>Logical (IP) addressing and routing between networks</td><td>IP, ICMP; router</td><td>Packet</td></tr><tr><td>2 Data link</td><td>Physical (MAC) addressing, framing, error detection on one link</td><td>Ethernet; switch, bridge</td><td>Frame</td></tr><tr><td>1 Physical</td><td>Sends raw bits over cable or air</td><td>Cables, hub, repeater</td><td>Bit</td></tr></tbody></table><p>The <b>TCP/IP model</b> has 4 layers: Network access (link), Internet, Transport, Application. The OSI Application, Presentation and Session layers are merged into its Application layer.</p>"
+   },
+   {
+    "title": "Staying safe online",
+    "body": "<p>Computer security is a separate topic; here are the Internet terms that appear in this section.</p><table><thead><tr><th>Threat</th><th>What it is</th></tr></thead><tbody><tr><td>Phishing</td><td>Fake email or website that pretends to be a bank or company to steal passwords</td></tr><tr><td>Spam</td><td>Unwanted bulk email</td></tr><tr><td>Malware</td><td>Harmful software: virus, worm, trojan, spyware, adware, ransomware, keylogger</td></tr><tr><td>Tracking cookies</td><td>Third-party cookies that follow you across sites</td></tr><tr><td>DoS / DDoS attack</td><td>Flooding a server with traffic so real users cannot reach it</td></tr><tr><td>Man-in-the-middle</td><td>An attacker secretly reads or changes data between two parties</td></tr></tbody></table><table><thead><tr><th>Protection</th><th>What it does</th></tr></thead><tbody><tr><td>Firewall</td><td>Hardware or software that checks incoming and outgoing traffic and blocks what breaks the rules</td></tr><tr><td>Encryption (HTTPS, SSL/TLS)</td><td>Scrambles data during transmission so only the receiver can read it</td></tr><tr><td>VPN</td><td>Virtual Private Network: an encrypted tunnel over the public Internet</td></tr><tr><td>Two-factor authentication</td><td>Password plus a second proof such as an OTP</td></tr><tr><td>Antivirus</td><td>Finds and removes malware</td></tr><tr><td>CAPTCHA</td><td>Test that tells humans from bots</td></tr></tbody></table>"
    }
   ],
   "varieties": [
    {
-    "type": "internet-basics",
-    "name": "Internet terms and protocols",
-    "how": "Learn full forms and what each protocol does, with its common port.",
+    "type": "web-basics",
+    "name": "The web, websites and URLs",
+    "how": "Keep the Internet (the network, from ARPANET 1969) separate from the WWW (linked pages, Tim Berners-Lee 1989). Split a URL into protocol, domain and path.",
     "example": {
-     "q": "Which system translates www.example.com into an IP address?",
+     "q": "In the URL https://www.example.co.in/news/today.html, what is the top-level domain?",
      "steps": [
-      "Names are for people; computers need IP addresses.",
-      "The Domain Name System does this lookup."
+      "The domain is www.example.co.in.",
+      "The top-level domain is the last part of the domain name."
      ],
-     "answer": "DNS"
+     "answer": ".in"
+    }
+   },
+   {
+    "type": "web-browsers",
+    "name": "Browsers, cookies and browser shortcuts",
+    "how": "Know who makes each browser and which engine it uses. Browser keys follow Ctrl plus the first letter (T tab, N window, H history, D bookmark); F5 or Ctrl+R reloads.",
+    "example": {
+     "q": "Which keyboard shortcut reloads the current page in Google Chrome?",
+     "steps": [
+      "Ctrl+T opens a new tab and Ctrl+H opens history.",
+      "F5 or Ctrl+R reloads the page."
+     ],
+     "answer": "Ctrl+R (or F5)"
+    }
+   },
+   {
+    "type": "ip-dns",
+    "name": "IP addresses, MAC and DNS",
+    "how": "Remember the sizes 32, 128, 48 bits (IPv4, IPv6, MAC). IP is logical, MAC is physical. DNS turns names into IP addresses; DHCP hands out IP addresses.",
+    "example": {
+     "q": "How many different IPv4 addresses are possible in theory?",
+     "steps": [
+      "An IPv4 address has 32 bits.",
+      "Each bit has 2 values, so there are 2<sup>32</sup> addresses.",
+      "2<sup>32</sup> = 4,294,967,296, about 4.3 billion."
+     ],
+     "answer": "2<sup>32</sup> (about 4.3 billion)"
+    }
+   },
+   {
+    "type": "protocols-ports",
+    "name": "Protocols and port numbers",
+    "how": "Learn each protocol with its full form, its job and its port as one line: HTTP 80, HTTPS 443, FTP 20/21, SSH 22, Telnet 23, SMTP 25, DNS 53, POP3 110, IMAP 143.",
+    "example": {
+     "q": "Which protocol is connectionless and is preferred for live video streaming?",
+     "steps": [
+      "TCP sets up a connection and resends lost packets, which adds delay.",
+      "UDP sends without a connection and without resending, so it is faster."
+     ],
+     "answer": "UDP"
     }
    },
    {
     "type": "email",
-    "name": "Email protocols and fields",
-    "how": "SMTP sends, POP3/IMAP receive; CC visible, BCC hidden.",
+    "name": "Email fields, protocols and services",
+    "how": "SMTP sends; POP3 and IMAP receive. CC is visible to all; BCC is hidden. Separate providers (Gmail, Yahoo, Yandex) from client programs (Outlook, Thunderbird).",
     "example": {
-     "q": "Which protocol keeps emails on the server and syncs them across devices?",
+     "q": "With keyboard shortcuts turned on, which key opens a new message in Gmail?",
      "steps": [
-      "POP3 usually downloads and removes mail from the server.",
-      "IMAP keeps mail on the server and syncs folders."
+      "r is reply and f is forward.",
+      "c (compose) opens a new message."
      ],
-     "answer": "IMAP"
+     "answer": "c"
     }
    },
    {
-    "type": "networking",
-    "name": "Network types, topologies and devices",
-    "how": "Use the area (PAN/LAN/MAN/WAN), the shape (star/bus/ring/mesh) and the job of the device.",
+    "type": "network-types",
+    "name": "Network types, topologies and media",
+    "how": "Order the types by size: PAN, LAN, CAN, MAN, WAN. For a mesh of n devices use n(n − 1)/2 links.",
     "example": {
-     "q": "How many links are needed for a full mesh of 5 computers?",
+     "q": "How many cables are needed to join 6 computers in a full mesh topology?",
      "steps": [
-      "Each pair needs one link: n(n − 1)/2",
-      "5 × 4 / 2 = 10"
+      "Links = n(n − 1)/2.",
+      "6 × 5 ÷ 2 = 15."
      ],
-     "answer": "10"
+     "answer": "15"
+    }
+   },
+   {
+    "type": "network-devices",
+    "name": "Network devices and connectors",
+    "how": "Place each device on its OSI layer: hub and repeater 1, switch and bridge 2 (MAC), router 3 (IP), gateway converts between different networks.",
+    "example": {
+     "q": "Which device connects two networks that may use different networking models and converts between their protocols?",
+     "steps": [
+      "A router joins networks that use the same protocol (IP).",
+      "A gateway translates between different protocols or models."
+     ],
+     "answer": "Gateway"
+    }
+   },
+   {
+    "type": "osi-model",
+    "name": "OSI and TCP/IP layers",
+    "how": "Use \"Please Do Not Throw Sausage Pizza Away\" for layers 1 to 7. Match key words: bits physical, MAC data link, IP and routing network, TCP and ports transport, encryption presentation.",
+    "example": {
+     "q": "Which OSI layer routes packets across different networks using logical addressing?",
+     "steps": [
+      "Logical address means the IP address.",
+      "IP addressing and routing belong to layer 3."
+     ],
+     "answer": "Network layer"
+    }
+   },
+   {
+    "type": "online-safety",
+    "name": "Online threats and protection",
+    "how": "Decide whether the question names a threat or a protection, then match by what it does: firewall filters traffic, encryption protects data in transit, phishing steals passwords with fake messages.",
+    "example": {
+     "q": "Which method protects sensitive information while it is being sent over a network?",
+     "steps": [
+      "A firewall blocks unwanted traffic but does not hide the data itself.",
+      "Encryption scrambles the data so only the receiver can read it."
+     ],
+     "answer": "Encryption"
     }
    }
   ],
   "tips": [
-   "Port numbers: HTTP 80, HTTPS 443, FTP 21, SMTP 25, POP3 110, IMAP 143, SSH 22, DNS 53.",
-   "In a star topology, if the hub fails the whole network fails; if one cable fails only that node is lost.",
-   "A full mesh of n nodes needs n(n − 1)/2 links."
+   "Learn every protocol as full form, job and port together, e.g. SMTP, Simple Mail Transfer Protocol, sends mail, port 25.",
+   "Sizes to remember: IPv4 32 bits, IPv6 128 bits, MAC 48 bits.",
+   "A device that reads IP addresses is a router (layer 3); one that reads MAC addresses is a switch or bridge (layer 2); a hub reads nothing.",
+   "The Internet is the largest WAN. Bluetooth makes a PAN.",
+   "In browsers, F5 and Ctrl+R both reload; Ctrl+Shift+T brings back a closed tab.",
+   "Gmail and Yahoo Mail are providers; Outlook (the desktop program) and Thunderbird are clients."
   ],
   "traps": [
-   "A modem is not a router: the modem converts signals, the router chooses paths between networks.",
-   "BCC receivers are hidden from others; CC receivers are visible.",
-   "The Internet and the World Wide Web are not the same: WWW is a service that runs on the Internet."
+   "The Internet and the WWW are different: the web is one service on the Internet.",
+   "POP3 and IMAP receive mail; SMTP only sends it.",
+   "BCC addresses are hidden from other receivers; CC addresses are not.",
+   "A modem converts digital to analog and back; it does not route packets.",
+   "Encryption belongs to the presentation layer in the OSI model, not the transport layer."
   ]
  },
  "questions": [
@@ -74,7 +186,7 @@
    "id": "c-internet-001",
    "rev": 1,
    "topic": "c-internet",
-   "type": "internet-basics",
+   "type": "web-basics",
    "level": 1,
    "q": "Who invented the World Wide Web?",
    "options": [
@@ -108,7 +220,7 @@
    "id": "c-internet-003",
    "rev": 1,
    "topic": "c-internet",
-   "type": "networking",
+   "type": "network-types",
    "level": 1,
    "q": "A network that covers an entire city is called a:",
    "options": [
@@ -125,7 +237,7 @@
    "id": "c-internet-004",
    "rev": 1,
    "topic": "c-internet",
-   "type": "networking",
+   "type": "network-types",
    "level": 2,
    "q": "In which topology are all computers connected to a single central hub or switch?",
    "options": [
@@ -142,7 +254,7 @@
    "id": "c-internet-005",
    "rev": 1,
    "topic": "c-internet",
-   "type": "internet-basics",
+   "type": "protocols-ports",
    "level": 2,
    "q": "Which protocol is used to transfer web pages securely, using encryption?",
    "options": [
@@ -159,7 +271,7 @@
    "id": "c-internet-006",
    "rev": 1,
    "topic": "c-internet",
-   "type": "networking",
+   "type": "network-devices",
    "level": 2,
    "q": "Which device connects two different networks and forwards data packets using IP addresses?",
    "options": [
@@ -176,7 +288,7 @@
    "id": "c-internet-007",
    "rev": 1,
    "topic": "c-internet",
-   "type": "networking",
+   "type": "ip-dns",
    "level": 3,
    "q": "How many bits are used in an IPv6 address?",
    "options": [

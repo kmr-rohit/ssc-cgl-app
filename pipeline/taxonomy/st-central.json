@@ -1,0 +1,41 @@
+{
+ "topic": "st-central",
+ "types": [
+  {
+   "type": "arithmetic-mean",
+   "name": "Arithmetic mean, weighted, combined and corrected",
+   "description": "Asks for the mean of a list or table, a weighted or combined mean, a corrected mean after a wrong entry, or a property of the mean.",
+   "concepts": []
+  },
+  {
+   "type": "gm-hm",
+   "name": "Geometric and harmonic means",
+   "description": "Asks for a geometric or harmonic mean, average speed or rate, or uses AM ≥ GM ≥ HM or GM² = AM × HM.",
+   "concepts": []
+  },
+  {
+   "type": "median-mode",
+   "name": "Median and mode of raw data",
+   "description": "Gives a list or a discrete frequency table and asks for the median or the mode.",
+   "concepts": []
+  },
+  {
+   "type": "grouped-data",
+   "name": "Mean, median and mode of grouped data",
+   "description": "Gives a continuous frequency table (classes and frequencies) and asks for the mean, median or mode.",
+   "concepts": []
+  },
+  {
+   "type": "empirical-relation",
+   "name": "Mean, median and mode relation",
+   "description": "Gives two of mean, median and mode for a moderately skewed distribution and asks for the third, or asks their order in a skewed distribution.",
+   "concepts": []
+  },
+  {
+   "type": "partition-values",
+   "name": "Quartiles, deciles and percentiles",
+   "description": "Asks for a quartile, decile or percentile of a list or table, or their relation to the median.",
+   "concepts": []
+  }
+ ]
+}

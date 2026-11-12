@@ -1,0 +1,67 @@
+{
+ "topic": "c-office",
+ "types": [
+  {
+   "type": "office-shortcuts",
+   "name": "Word and common Office shortcuts",
+   "description": "Asks which key combination does a job (or what a combination does) in Word or in all Office programs, such as bold, hyperlink, close, undo or alignment.",
+   "concepts": [
+    "office-keyboard-shortcuts"
+   ]
+  },
+  {
+   "type": "word-features",
+   "name": "Word features and menus",
+   "description": "Asks what a Word feature does or where it is found: print settings, shading, borders, mail merge, track changes, headers, page layout, tables of contents.",
+   "concepts": [
+    "ms-word-document-processing"
+   ]
+  },
+  {
+   "type": "excel-functions",
+   "name": "Excel formulas and functions",
+   "description": "Names an Excel function (SUM, COUNTA, IF, VLOOKUP, MATCH, ROUND) or a formula and asks what it returns, which category it belongs to, or how it works.",
+   "concepts": [
+    "ms-excel-formulas-and-functions"
+   ]
+  },
+  {
+   "type": "excel-references",
+   "name": "Excel cells and references",
+   "description": "Asks about cell addresses, ranges, relative, absolute or mixed references, or what a formula becomes when it is copied.",
+   "concepts": [
+    "ms-excel-spreadsheet-referencing"
+   ]
+  },
+  {
+   "type": "excel-data-charts",
+   "name": "Excel data, charts and sheet limits",
+   "description": "Asks about charts, sorting, filtering, inserting rows or columns, worksheet limits (rows, columns, characters) or data tools.",
+   "concepts": [
+    "ms-excel-charts-and-data"
+   ]
+  },
+  {
+   "type": "excel-shortcuts",
+   "name": "Excel keyboard shortcuts",
+   "description": "Asks which key or combination does a job inside Excel, such as editing a cell, inserting the date, AutoSum or a new sheet.",
+   "concepts": []
+  },
+  {
+   "type": "powerpoint",
+   "name": "PowerPoint slides, views and keys",
+   "description": "Asks about PowerPoint: slide-show keys, views, templates, slide master, transitions, animations or adding and deleting slides.",
+   "concepts": [
+    "ms-powerpoint-slide-master"
+   ]
+  },
+  {
+   "type": "office-interface",
+   "name": "Office screen and file types",
+   "description": "Asks about parts of the Office window (ribbon, tabs, Quick Access Toolbar, status bar, Name Box) or file extensions and default settings.",
+   "concepts": [
+    "office-user-interface-and-ribbon"
+   ]
+  }
+ ]
+}

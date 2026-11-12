@@ -1,58 +1,127 @@
 {
  "topic": "r-venn",
  "notes": {
-  "summary": "Venn diagram questions ask you to pick the diagram that best shows the relation between three groups, or to read numbers from a given diagram. About 1 question per paper.",
+  "summary": "Venn diagram questions use circles (or other shapes) to show how groups are related. Either you pick the diagram that fits three class names or some statements, or you read numbers from a diagram and add the right parts. Check one pair at a time: is one group inside the other, do they overlap, or are they apart?",
   "concepts": [
    {
-    "title": "Three basic relations",
-    "body": "<b>Inside</b>: every A is a B (Dog inside Animal).<br><b>Overlap</b>: some A are B (Women and Doctors).<br><b>Separate</b>: no A is B (Cat and Dog)."
+    "title": "The three relations",
+    "body": "Any two groups are related in exactly one of three ways:<table><thead><tr><th>Relation</th><th>Picture</th><th>Example</th></tr></thead><tbody><tr><td>One inside the other</td><td>Small circle inside a big circle</td><td>Mangoes and Fruits</td></tr><tr><td>Overlap</td><td>Two circles that cross</td><td>Women and Doctors</td></tr><tr><td>Apart</td><td>Two circles that do not touch</td><td>Cats and Dogs</td></tr></tbody></table><p>With three groups there are three pairs (1–2, 2–3, 1–3). Decide each pair, then find the diagram where all three pairs match.</p>"
    },
    {
-    "title": "Check every pair",
-    "body": "With three items, decide the relation for each of the three pairs (A–B, B–C, A–C), then find the diagram that shows all three correctly."
+    "title": "Common three-group patterns",
+    "body": "Most questions use one of these eight pictures. Learn one example for each:<ul><li>One inside another: Kolkata, West Bengal, India.</li><li>Two apart, both inside a third: Cats, Dogs, Animals.</li><li>Two overlapping, both inside a third: Females, Mothers, Sisters.</li><li>One inside another, a third crossing both: Mothers, Women, Doctors.</li><li>All three overlapping: Women, Doctors, Singers.</li><li>Chain, the middle group meets both ends: Indians, Singers, Americans.</li><li>All three apart: Pens, Cows, Rivers.</li><li>One inside another, the third apart: Kittens, Cats, Tables.</li></ul>",
+    "img": "reasoning/venn-relations.svg"
+   },
+   {
+    "title": "Use real-world facts here",
+    "body": "Unlike syllogism, Venn class questions use everyday knowledge. Ask simple questions for each pair: \"Is every X a Y?\" \"Can some X be Y?\" <ul><li>People and their roles overlap: a woman can be a doctor, a singer and a mother.</li><li>Men and Women, Boys and Girls, Fathers and Mothers are apart.</li><li>Things and people are apart: Doctors and Hospitals.</li><li>Places nest: city inside state inside country inside continent. A city cannot be in two countries.</li><li>Relations nest by gender: Fathers inside Men, Mothers inside Women; Fathers and Brothers overlap.</li></ul>"
    },
    {
     "title": "Reading a numbered diagram",
-    "body": "A number inside only one circle belongs to that group only. A number in the overlap of two circles belongs to both. \"Exactly two\" means overlaps of two circles, not the centre.",
+    "body": "Each number belongs to one region. Name the regions carefully:<ul><li><b>Only A</b>: inside A, outside every other shape.</li><li><b>A and B but not C</b>: the A–B overlap outside C.</li><li><b>A and B</b> (no \"only\"): the whole A–B overlap, including the centre.</li><li><b>Exactly two</b>: the three two-way overlaps, not the centre.</li><li><b>At least two</b>: exactly two plus the centre.</li><li><b>A but not B</b>: every part of A outside B.</li></ul><p>Mini example from the figure: singers and actors = 4 + 3 = 7; exactly two groups = 5 + 7 + 4 = 16.</p>",
     "img": "reasoning/venn-numbers.svg"
+   },
+   {
+    "title": "Shapes standing for groups",
+    "body": "Some diagrams use a rectangle, a circle and a triangle instead of three circles. The method is the same. For each number, ask three questions: inside the rectangle? inside the circle? inside the triangle? Then match the description. <p>In the figure (rectangle = graduates, circle = teachers, triangle = women): women teachers who are not graduates = 4; graduates who are neither teachers nor women = 12.</p>",
+    "img": "reasoning/venn-shapes.svg"
+   },
+   {
+    "title": "From statements to a diagram",
+    "body": "Draw each statement as its basic picture: \"All A are B\" puts A inside B, \"Some A are B\" makes them cross, \"No A is B\" keeps them apart. Choose the option that matches every statement and adds nothing that is not stated. Example: All cats are animals. No animal is a plant. Answer: cats inside animals, plants apart from both."
+   },
+   {
+    "title": "Formulas for counting sets",
+    "body": "<ul><li>A or B (at least one) = A + B − both.</li><li>Neither = total − (A or B).</li><li>Only A = A − both.</li><li>Three sets: A or B or C = A + B + C − (AB + BC + CA) + ABC, where AB means \"A and B\" including the centre.</li></ul>Mini example: 40 students, 25 like tea, 20 like coffee, 10 like both. Tea or coffee = 25 + 20 − 10 = 35, so 5 like neither."
    }
   ],
   "varieties": [
    {
     "type": "best-diagram",
-    "name": "Best representing diagram",
-    "how": "Decide inside / overlap / separate for every pair, then match the picture.",
+    "name": "Best diagram for three classes",
+    "how": "Decide inside, overlap or apart for each of the three pairs, then pick the diagram that matches all three.",
     "example": {
-     "q": "Dog, Cat, Animal",
+     "q": "Which diagram best shows Snakes, Reptiles and Poisonous creatures?",
      "steps": [
-      "Dog inside Animal; Cat inside Animal.",
-      "Dog and Cat are separate."
+      "Snakes and Reptiles: every snake is a reptile, so Snakes sits inside Reptiles.",
+      "Snakes and Poisonous: some snakes are poisonous, so they overlap.",
+      "Reptiles and Poisonous: they overlap, and some poisonous creatures (scorpions) are not reptiles, so Poisonous also goes outside Reptiles."
      ],
-     "answer": "One big circle with two separate circles inside",
-     "img": "reasoning/venn-oneTwo.svg"
+     "answer": "A small circle inside a big one, with a third circle crossing both",
+     "img": "reasoning/venn-nestInt.svg"
     }
    },
    {
     "type": "region-counting",
-    "name": "Numbers in a diagram",
-    "how": "Mark the regions asked for and add only those numbers.",
+    "name": "Numbers in a circle diagram",
+    "how": "Shade the regions the question describes, then add only those numbers. Watch for \"only\", \"but not\" and \"exactly\".",
     "example": {
-     "q": "In the figure, how many people are singers and dancers but not actors?",
+     "q": "In the figure, how many people are actors but not singers?",
      "steps": [
-      "Overlap of Singers and Dancers only, outside Actors."
+      "Actors but not singers = the parts of the Actors circle outside Singers.",
+      "Actors only = 15. Actors and dancers, not singers = 7.",
+      "15 + 7 = 22. (4 and 3 are also singers, so leave them out.)"
      ],
-     "answer": "5",
+     "answer": "22",
      "img": "reasoning/venn-numbers.svg"
+    }
+   },
+   {
+    "type": "shape-region",
+    "name": "Shapes standing for groups",
+    "how": "For each number, check inside or outside every shape, then pick the region that fits the description exactly.",
+    "example": {
+     "q": "In the figure, the rectangle stands for graduates, the circle for teachers and the triangle for women. How many women teachers are not graduates?",
+     "steps": [
+      "Women teachers = inside both the triangle and the circle.",
+      "Not graduates = outside the rectangle.",
+      "Only one region is inside the triangle and circle but outside the rectangle: it has 4."
+     ],
+     "answer": "4",
+     "img": "reasoning/venn-shapes.svg"
+    }
+   },
+   {
+    "type": "statements-to-diagram",
+    "name": "Diagram for given statements",
+    "how": "Turn each statement into inside, overlap or apart, draw only that, and match the option.",
+    "example": {
+     "q": "Select the diagram that represents: All pens are tools. Some tools are toys. No toy is a pen.",
+     "steps": [
+      "All pens are tools: Pens inside Tools.",
+      "Some tools are toys: Toys crosses Tools.",
+      "No toy is a pen: Toys must not touch Pens."
+     ],
+     "answer": "Pens inside Tools, with Toys crossing Tools away from Pens"
+    }
+   },
+   {
+    "type": "set-arithmetic",
+    "name": "Counting with two or three sets",
+    "how": "Use A or B = A + B − both, then Neither = total − (A or B).",
+    "example": {
+     "q": "In a class of 60 students, 35 play cricket, 28 play football and 12 play both. How many play neither game?",
+     "steps": [
+      "Cricket or football = 35 + 28 − 12 = 51.",
+      "Neither = 60 − 51 = 9."
+     ],
+     "answer": "9"
     }
    }
   ],
   "tips": [
-   "Write the relation of each pair before looking at the options.",
-   "In counting questions, shade the required region with your finger first."
+   "Check all three pairs, not just two; most wrong options get one pair wrong.",
+   "Use everyday facts in class questions (a mother is always a woman), but not in syllogism.",
+   "\"Only\" means a single region; without \"only\" the overlap includes the centre.",
+   "Exactly two = the three side overlaps; at least two = those plus the centre.",
+   "For shapes, test every number against every shape before choosing.",
+   "For set problems, write A + B − both first; \"neither\" comes last."
   ],
   "traps": [
-   "\"Some\" items overlap; do not draw one inside the other unless \"all\" is true.",
-   "\"Exactly two groups\" excludes the centre region (all three)."
+   "Men and Women (or Boys and Girls) never overlap, so they are never drawn crossing.",
+   "A group that belongs fully to one class can still cross another class: Doctors cross Women and Mothers.",
+   "In \"A but not B\", the A–C overlap outside B also counts.",
+   "Do not add the centre twice when you add the three overlaps for \"A and B\"."
   ]
  },
  "questions": [

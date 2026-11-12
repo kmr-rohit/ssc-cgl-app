@@ -1,69 +1,139 @@
 {
  "topic": "r-math-ops",
  "notes": {
-  "summary": "These questions replace signs with other symbols, ask which two signs to <b>interchange</b>, or hide a number in a pattern. Always apply <b>BODMAS</b> after substituting.",
+  "summary": "Mathematical operations questions test careful arithmetic with a twist: signs are swapped, replaced by symbols, or hidden behind stars. A missing-number question hides a number in a figure or grid. SSC asks 2 to 3 of these in Tier 1. The arithmetic is easy; marks are lost by applying BODMAS wrongly or by changing the signs only halfway.",
   "concepts": [
    {
-    "title": "BODMAS",
-    "body": "Order: Brackets, Of, Division, Multiplication, Addition, Subtraction. Do ÷ and × (left to right) before + and −."
+    "title": "BODMAS, the one rule you must follow",
+    "body": "Work in this order:<ol><li><b>B</b>rackets</li><li><b>O</b>rders (powers, roots) and \"of\"</li><li><b>D</b>ivision and <b>M</b>ultiplication, from <b>left to right</b></li><li><b>A</b>ddition and <b>S</b>ubtraction, from <b>left to right</b></li></ol>Division does not always come before multiplication. They have equal rank, so go left to right:<ul><li>24 ÷ 4 × 2 = 6 × 2 = 12 (not 24 ÷ 8 = 3).</li><li>20 − 5 + 3 = 18 (not 20 − 8 = 12).</li></ul>Example: 8 × 2 + 6 ÷ 3 − 1 = 16 + 2 − 1 = 17."
    },
    {
     "title": "Symbol substitution",
-    "body": "Rewrite the whole expression with the real signs <b>first</b>, then solve with BODMAS."
+    "body": "The question gives new meanings to signs. <b>Rewrite the whole expression first</b>, then calculate.<table><thead><tr><th>Given</th><th>Means</th></tr></thead><tbody><tr><td>+</td><td>−</td></tr><tr><td>−</td><td>×</td></tr><tr><td>×</td><td>÷</td></tr><tr><td>÷</td><td>+</td></tr></tbody></table>45 × 9 ÷ 12 − 5 + 3 becomes 45 ÷ 9 + 12 × 5 − 3 = 5 + 60 − 3 = 62.<br>Make a small table like this on paper. Replacing signs in your head while calculating is the main source of errors. Letters work the same way: \"A denotes addition, B multiplication\" means 7 B 3 A 2 = 7 × 3 + 2 = 23."
    },
    {
-    "title": "Missing number",
-    "body": "Find a rule that works for every complete row or pair (sum of squares, product, a × b + c), then apply it to the incomplete one."
+    "title": "Interchanging two signs",
+    "body": "You are told the equation is wrong and swapping two signs will fix it.<ol><li>Take the first option, swap <b>both</b> signs everywhere they appear (if + becomes ÷, then ÷ becomes +).</li><li>Calculate with BODMAS and compare with the right side.</li><li>Stop at the first option that works.</li></ol>Speed check: if the right side is large (like 419), the swap must create a big product, so options that put × between big numbers are good first tries.<br>Example: 12 ÷ 5 − 8 × 2 + 14 = 70. Swap × and ÷: 12 × 5 − 8 ÷ 2 + 14 = 60 − 4 + 14 = 70. Correct."
+   },
+   {
+    "title": "Interchanging two numbers",
+    "body": "Some questions ask which two <b>numbers</b> (or a pair of signs and a pair of numbers) should be swapped. Keep the signs fixed and swap the two numbers in each option. Swapping numbers next to ÷ usually changes the value the most, so look there first. Check that the division still gives a whole number; SSC answers almost always use whole-number steps."
+   },
+   {
+    "title": "Fill in the signs (balance the equation)",
+    "body": "An equation like 21 * 3 * 36 * 2 * 23 = 68 hides the signs. Put each option's signs in order and calculate.<ul><li>Use size: if the result is small compared with the numbers, the signs must include ÷ or −.</li><li>Use ÷ only where it divides exactly (36 ÷ 2 is fine, 23 ÷ 3 is not).</li><li>Use the last digit to remove options quickly.</li></ul>Sometimes = is one of the signs to place. Then both sides must be worked out separately."
+   },
+   {
+    "title": "Defined operations",
+    "body": "A new symbol is defined through examples: 3 * 4 = 25, 5 * 12 = 169.<br>Test simple rules on the first example and confirm on the second:<table><thead><tr><th>Rule</th><th>Check 3 * 4</th></tr></thead><tbody><tr><td>a² + b²</td><td>9 + 16 = 25 ✓</td></tr><tr><td>(a + b)²</td><td>49 ✗</td></tr><tr><td>a × b + a + b</td><td>19 ✗</td></tr><tr><td>a² − b², a³ + b, (a − b)² …</td><td>try in turn</td></tr></tbody></table>a² + b² also gives 25 + 144 = 169 for 5 * 12, so the rule is confirmed. If the rule is written out (A % B = A × B − 1), just substitute carefully."
+   },
+   {
+    "title": "Missing number in figures and groups",
+    "body": "Numbers sit around a circle, inside triangles, in grids or in bracketed groups. The same rule works in every part of the figure.<table><thead><tr><th>Common rule</th><th>Example</th></tr></thead><tbody><tr><td>Sum of outer numbers = centre</td><td>3, 5, 7 → 15</td></tr><tr><td>Product of outer numbers</td><td>2, 3, 4 → 24</td></tr><tr><td>(a + b) × c</td><td>(4 + 2) × 3 = 18</td></tr><tr><td>a² + b²</td><td>5, 4 → 41</td></tr><tr><td>a × b − c</td><td>6, 7, 2 → 40</td></tr><tr><td>Opposite segments add up to the same total</td><td>9 + 3 = 7 + 5</td></tr></tbody></table>Use one complete part to guess the rule and a second complete part to confirm it. Only then apply it to the missing part."
+   },
+   {
+    "title": "Digit arrangement",
+    "body": "A number such as 7148356 is rewritten with its digits in ascending order: 1345678. Then you compare place by place.<table><thead><tr><th>Place</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr></thead><tbody><tr><td>Original</td><td>7</td><td>1</td><td>4</td><td>8</td><td>3</td><td>5</td><td>6</td></tr><tr><td>Ascending</td><td>1</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr></tbody></table>Only the digit 4 (place 3) stays in place. Other forms: \"add 1 to every odd digit and subtract 1 from every even digit\", or \"which digit is third from the left after arranging in descending order\". Write both rows and compare; do not do it in your head."
    }
   ],
   "varieties": [
    {
     "type": "symbol-substitution",
     "name": "Symbol substitution",
-    "how": "Replace each symbol with its meaning, then use BODMAS.",
+    "how": "Make a small table of the new meanings, rewrite the whole expression with real signs, then apply BODMAS.",
     "example": {
-     "q": "If + means ×, × means +, find 4 + 3 × 2.",
+     "q": "If + means −, − means ×, × means ÷ and ÷ means +, find 45 × 9 ÷ 12 − 5 + 3.",
      "steps": [
-      "Rewrite: 4 × 3 + 2",
-      "12 + 2 = 14"
+      "Rewrite: 45 ÷ 9 + 12 × 5 − 3.",
+      "Division and multiplication first: 5 + 60 − 3.",
+      "5 + 60 − 3 = 62."
      ],
-     "answer": "14"
+     "answer": "62"
     }
    },
    {
     "type": "interchange-signs",
-    "name": "Interchange of signs",
-    "how": "Swap the two signs in the given expression for each option and solve; the correct one equals the right side.",
+    "name": "Interchange signs or numbers",
+    "how": "For each option, swap both signs wherever they appear, calculate with BODMAS, and compare with the right side. Try options that create the needed size first.",
     "example": {
-     "q": "Which swap makes 16 + 4 × 3 − 6 ÷ 2 = 11 true?",
+     "q": "Which two signs should be interchanged? 12 ÷ 5 − 8 × 2 + 14 = 70",
      "steps": [
-      "Swap − and ×: 16 + 4 − 3 × 6 ÷ 2",
-      "= 16 + 4 − 9 = 11 ✓"
+      "The right side is 70; we need a product like 12 × 5. Try swapping × and ÷.",
+      "New equation: 12 × 5 − 8 ÷ 2 + 14.",
+      "60 − 4 + 14 = 70. Correct."
      ],
-     "answer": "− and ×"
+     "answer": "× and ÷"
+    }
+   },
+   {
+    "type": "sign-combination",
+    "name": "Fill in the signs",
+    "how": "Place each option's signs in order and evaluate with BODMAS. Remove options where ÷ does not divide exactly or the size is clearly wrong.",
+    "example": {
+     "q": "21 * 3 * 36 * 2 * 23 = 68. Options: (a) ×, −, ÷, + (b) +, ×, −, ÷ (c) ×, +, ÷, − (d) −, ×, +, ÷",
+     "steps": [
+      "(a) 21 × 3 − 36 ÷ 2 + 23 = 63 − 18 + 23 = 68. Correct.",
+      "(c) gives 63 + 18 − 23 = 58, so it is wrong. (b) and (d) use ÷ 23 and do not give whole numbers."
+     ],
+     "answer": "×, −, ÷, +"
+    }
+   },
+   {
+    "type": "custom-operation",
+    "name": "Defined operations",
+    "how": "Try simple rules (a² ± b², a × b ± a, (a ± b)²) on the first example, confirm on the second, then apply.",
+    "example": {
+     "q": "If 8 @ 3 = 55 and 6 @ 2 = 32, then 9 @ 4 = ?",
+     "steps": [
+      "8² − 3² = 64 − 9 = 55.",
+      "6² − 2² = 36 − 4 = 32. Rule: a² − b².",
+      "9² − 4² = 81 − 16 = 65."
+     ],
+     "answer": "65"
     }
    },
    {
     "type": "missing-number",
-    "name": "Missing number",
-    "how": "Test sum, product, squares on the complete rows.",
+    "name": "Missing number in a figure",
+    "how": "Find the rule in one complete group, confirm it in another, then use it on the group with the question mark. Do not split numbers into digits if the note forbids it.",
     "example": {
-     "q": "3 * 4 = 25, 5 * 12 = 169, 6 * 8 = ?",
+     "q": "(4, 2, 18), (1, 7, 24), (5, 4, ?)",
      "steps": [
-      "3² + 4² = 25; 5² + 12² = 169",
-      "6² + 8² = 36 + 64"
+      "(4 + 2) × 3 = 18.",
+      "(1 + 7) × 3 = 24. Rule: (first + second) × 3.",
+      "(5 + 4) × 3 = 27."
      ],
-     "answer": "100"
+     "answer": "27"
+    }
+   },
+   {
+    "type": "digit-operations",
+    "name": "Digit arrangement",
+    "how": "Write the original number and the new arrangement in two rows, place under place, and compare.",
+    "example": {
+     "q": "The digits of 7148356 are arranged in ascending order. How many digits stay in the same place?",
+     "steps": [
+      "Ascending order: 1345678.",
+      "Compare: 7/1, 1/3, 4/4, 8/5, 3/6, 5/7, 6/8.",
+      "Only 4 (third place) is unchanged."
+     ],
+     "answer": "One"
     }
    }
   ],
   "tips": [
-   "Rewrite the expression on paper before solving; most mistakes come from mixing old and new signs.",
-   "In interchange questions, use the options: only 4 swaps to test."
+   "Rewrite the expression with the real signs before you calculate anything.",
+   "Division and multiplication have equal rank; so do addition and subtraction. Go left to right.",
+   "In interchange questions, swap both signs everywhere they appear, not just once.",
+   "Use the size of the answer to pick which option to test first.",
+   "If ÷ would give a fraction, that option is almost always wrong.",
+   "For missing numbers, confirm the rule on two complete parts before using it."
   ],
   "traps": [
-   "Do not solve left to right ignoring BODMAS.",
-   "A rule must work for every given row, not just one."
+   "Doing 24 ÷ 4 × 2 as 24 ÷ 8. The correct value is 12.",
+   "Changing one sign of a swapped pair but forgetting the other.",
+   "Using the given signs instead of their new meanings halfway through the sum.",
+   "Splitting numbers into digits in grid or group questions when the note says to use whole numbers."
   ]
  },
  "questions": [
@@ -88,7 +158,7 @@
    "id": "r-math-ops-002",
    "rev": 1,
    "topic": "r-math-ops",
-   "type": "missing-number",
+   "type": "custom-operation",
    "level": 1,
    "q": "If 3 * 4 = 25 and 5 * 12 = 169, then 6 * 8 = ?",
    "options": [

@@ -20,7 +20,9 @@ export function rich(s: string | undefined | null): TemplateResult {
     ALLOWED_TAGS: [...CONTENT_TAGS, ...SVG_TAGS, 'img'],
     ALLOWED_ATTR: ['class', 'colspan', 'rowspan', 'viewBox', 'width', 'height', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'r', 'rx', 'ry', 'd', 'points',
       'fill', 'stroke', 'stroke-width', 'stroke-dasharray', 'font-size', 'font-family', 'font-weight', 'text-anchor', 'dominant-baseline', 'transform', 'marker-end', 'id',
-      'refX', 'refY', 'markerWidth', 'markerHeight', 'orient', 'xmlns', 'src', 'alt'],
+      'refX', 'refY', 'markerWidth', 'markerHeight', 'orient', 'xmlns', 'src', 'alt',
+      // KaTeX output (rendered at build time) positions glyphs with inline styles and draws roots with SVG
+      'style', 'aria-hidden', 'preserveAspectRatio'],
   });
   return html`${unsafeHTML(clean)}`;
 }

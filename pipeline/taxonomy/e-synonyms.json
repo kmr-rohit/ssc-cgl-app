@@ -1,0 +1,29 @@
+{
+  "topic": "e-synonyms",
+  "types": [
+    {
+      "type": "given-word",
+      "name": "Synonym of a given word",
+      "description": "A single word stands alone after the instruction (often in capitals or bold), e.g. 'Select the most appropriate synonym of the given word. CANDID', and the four options are single words.",
+      "concepts": []
+    },
+    {
+      "type": "in-sentence",
+      "name": "Synonym of a word in a sentence",
+      "description": "A full sentence is given with one word underlined, bold or italicised, and the question asks for its synonym or for the word that can replace it in that sentence.",
+      "concepts": []
+    },
+    {
+      "type": "bracket-blank",
+      "name": "Fill the blank with a synonym",
+      "description": "A sentence has a blank followed by a word in brackets, e.g. 'The doctor has ______ (advised) medicine', and the question asks for the synonym of the bracketed word that fits the blank.",
+      "concepts": []
+    },
+    {
+      "type": "word-meaning",
+      "name": "Meaning of a word",
+      "description": "The question asks for the meaning of a given or underlined word (not 'synonym'), and the options are short phrases or definitions rather than single words.",
+      "concepts": []
+    }
+  ]
+}

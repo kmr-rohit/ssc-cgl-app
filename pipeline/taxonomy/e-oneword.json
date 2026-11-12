@@ -1,0 +1,59 @@
+{
+  "topic": "e-oneword",
+  "types": [
+    {
+      "type": "person",
+      "name": "Words for people",
+      "description": "The group of words describes a person by habit, belief, job, age or character, usually starting 'A person who…', 'One who…' or 'Someone who…' (e.g. 'One who collects stamps', 'A person whose age is between 70 and 79').",
+      "concepts": []
+    },
+    {
+      "type": "study-science",
+      "name": "Study of something (-logy and sciences)",
+      "description": "The group of words names a field of study, science or art, usually 'The study of…', 'The science of…' or 'The art of…' (e.g. 'The study of birds', 'The art of beautiful handwriting').",
+      "concepts": []
+    },
+    {
+      "type": "government-belief",
+      "name": "Government and beliefs (-cracy, -archy, -ism)",
+      "description": "The group of words describes a form of government or rule ('Government by the wealthy', 'Rule by a few') or a belief, doctrine or attitude ('Belief that…', 'Favouritism shown to relatives').",
+      "concepts": []
+    },
+    {
+      "type": "killing-fear",
+      "name": "Killing, fears and manias",
+      "description": "The group of words describes the killing of someone or something ('Killing of a king', 'Murder of one's brother'), an abnormal fear ('Fear of heights') or an uncontrollable urge ('A compulsion to steal').",
+      "concepts": []
+    },
+    {
+      "type": "place-group",
+      "name": "Places and collections",
+      "description": "The group of words names a place where something is kept or done ('A place where bees are kept', 'A place for aeroplanes') or a collection or group ('A collection of poems', 'An arrangement of flowers').",
+      "concepts": []
+    },
+    {
+      "type": "quality-adjective",
+      "name": "Qualities (that which cannot be…)",
+      "description": "The group of words describes a quality and usually starts 'That which cannot be…', 'Something that is…', 'Incapable of…' or 'Pertaining to…', and the answer is an adjective (e.g. 'That which cannot be read', 'Anything pertaining to cats').",
+      "concepts": []
+    },
+    {
+      "type": "action-verb",
+      "name": "Actions (verbs)",
+      "description": "The group of words describes an action and usually starts with 'To…' (e.g. 'To increase the speed', 'To give up the throne', 'To leave one's country to settle in another'), and the answer is a verb.",
+      "concepts": []
+    },
+    {
+      "type": "thing-event",
+      "name": "Things, writings and events",
+      "description": "The group of words names an object, document, speech, event or act (e.g. 'A list of items to be discussed at a meeting', 'Wilful destruction', 'An examination of a dead body', 'A speech made without preparation').",
+      "concepts": []
+    },
+    {
+      "type": "in-sentence",
+      "name": "One word for a phrase in a sentence",
+      "description": "A full sentence is given with an underlined group of words, and the question asks for the one word (or shorter phrase) that can replace it in that sentence.",
+      "concepts": []
+    }
+  ]
+}

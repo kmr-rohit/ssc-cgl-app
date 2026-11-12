@@ -1,0 +1,47 @@
+{
+ "topic": "r-math-ops",
+ "types": [
+  {
+   "type": "symbol-substitution",
+   "name": "Symbol substitution",
+   "description": "Signs or letters are given new meanings (\"if + means ×, − means ÷ …\" or \"A denotes addition\") and the value of an expression must be found.",
+   "concepts": []
+  },
+  {
+   "type": "interchange-signs",
+   "name": "Interchange signs or numbers",
+   "description": "Asks which two signs (or two numbers) should be interchanged to make a given equation correct.",
+   "concepts": []
+  },
+  {
+   "type": "sign-combination",
+   "name": "Fill in the signs",
+   "description": "An equation with * marks (or shapes) in place of signs; asks for the combination of signs that, put in order, balances the equation.",
+   "concepts": []
+  },
+  {
+   "type": "custom-operation",
+   "name": "Defined operations",
+   "description": "A new operation is defined by examples or a formula (3 * 4 = 25, 5 * 12 = 169, or A % B = A × B − 1) and must be applied to new numbers.",
+   "concepts": [
+    "symbol-character-string-operations"
+   ]
+  },
+  {
+   "type": "missing-number",
+   "name": "Missing number in a figure",
+   "description": "Numbers placed in a figure, triangle, circle, grid or in bracketed groups such as (4, 2, 18) (1, 7, 24) (5, 4, ?); find the missing number.",
+   "concepts": [
+    "missing-number-in-grid-geometric-figures"
+   ]
+  },
+  {
+   "type": "digit-operations",
+   "name": "Digit arrangement",
+   "description": "The digits of a given number are rearranged (ascending or descending) or changed by a rule, and the question asks how many digits keep their place or which digit ends up where.",
+   "concepts": [
+    "number-digit-operations-manipulation"
+   ]
+  }
+ ]
+}

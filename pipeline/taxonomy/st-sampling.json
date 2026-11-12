@@ -1,0 +1,41 @@
+{
+ "topic": "st-sampling",
+ "types": [
+  {
+   "type": "census-errors",
+   "name": "Census, sample survey and errors",
+   "description": "Compares census with sample surveys or asks about sampling, non-sampling, biased or non-response errors.",
+   "concepts": []
+  },
+  {
+   "type": "methods",
+   "name": "Sampling methods",
+   "description": "Describes how units are picked and asks which sampling method it is, or which method is random or non-random.",
+   "concepts": []
+  },
+  {
+   "type": "srs",
+   "name": "Simple random sampling counts",
+   "description": "Asks how many samples are possible or the chance of a unit being picked under simple random sampling with or without replacement.",
+   "concepts": []
+  },
+  {
+   "type": "systematic",
+   "name": "Systematic sampling",
+   "description": "Asks for the sampling interval k or which units are picked from a list with a random start.",
+   "concepts": []
+  },
+  {
+   "type": "allocation",
+   "name": "Allocation in stratified sampling",
+   "description": "Gives stratum sizes (and maybe SDs) and asks how many units to take from each stratum.",
+   "concepts": []
+  },
+  {
+   "type": "standard-error",
+   "name": "Standard error",
+   "description": "Asks for the standard error of a mean or proportion, the effect of changing n, or the finite population correction.",
+   "concepts": []
+  }
+ ]
+}

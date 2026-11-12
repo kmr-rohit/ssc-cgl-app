@@ -1,86 +1,322 @@
 {
  "topic": "q-algebra",
  "notes": {
-  "summary": "Algebra in SSC is about identities: squares, cubes, and the x + 1/x family. 2–3 questions in Tier 1 and 2–4 in Tier 2. Learn the identities and you can solve most in under a minute.",
+  "summary": "Algebra in SSC CGL is mostly about identities: squares, cubes, the x + 1/x family and conditions like a + b + c = 0. Expect 2 to 4 questions in Tier 1 and a few more in Tier 2, with the odd question on linear equations, polynomials, quadratics or the least value of an expression. Learn the identities in these notes and most questions take under a minute.",
   "concepts": [
    {
+    "title": "Start here: what an identity is",
+    "body": "<p>An <b>identity</b> is an equation that is true for every value of the letters, like (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>. SSC algebra questions are mostly about choosing the right identity, so the work is spotting the link between what is given and what is asked.</p>\n<p>Three habits help a beginner:</p>\n<ul><li>Write what is given and what is asked side by side, then look for an identity that contains both.</li>\n<li>Check an identity with small numbers. With a = 2, b = 1: (2 + 1)<sup>2</sup> = 9 and 4 + 4 + 1 = 9, so it works.</li>\n<li>When options are numbers, you can often put easy values (a = 1, b = 0 and so on) that satisfy the condition and test the options.</li></ul>\n<p>Index rules you will need: x<sup>m</sup> × x<sup>n</sup> = x<sup>m+n</sup>, x<sup>m</sup> ÷ x<sup>n</sup> = x<sup>m−n</sup>, (x<sup>m</sup>)<sup>n</sup> = x<sup>mn</sup>, x<sup>0</sup> = 1, x<sup>−n</sup> = 1/x<sup>n</sup>.</p>"
+   },
+   {
     "title": "Square identities",
-    "body": "(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>; (a − b)<sup>2</sup> = a<sup>2</sup> − 2ab + b<sup>2</sup>; a<sup>2</sup> − b<sup>2</sup> = (a + b)(a − b); (a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(ab + bc + ca)."
+    "body": "<table><thead><tr><th>Identity</th><th>Use it when</th></tr></thead><tbody>\n<tr><td>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></td><td>you know a + b and ab</td></tr>\n<tr><td>(a − b)<sup>2</sup> = a<sup>2</sup> − 2ab + b<sup>2</sup></td><td>you know a − b and ab</td></tr>\n<tr><td>a<sup>2</sup> − b<sup>2</sup> = (a + b)(a − b)</td><td>a difference of squares appears</td></tr>\n<tr><td>a<sup>2</sup> + b<sup>2</sup> = (a + b)<sup>2</sup> − 2ab = (a − b)<sup>2</sup> + 2ab</td><td>the sum of squares is asked</td></tr>\n<tr><td>(a + b)<sup>2</sup> − (a − b)<sup>2</sup> = 4ab</td><td>you need ab from a + b and a − b</td></tr>\n<tr><td>(a + b)<sup>2</sup> + (a − b)<sup>2</sup> = 2(a<sup>2</sup> + b<sup>2</sup>)</td><td>both brackets appear together</td></tr>\n<tr><td>a<sup>4</sup> + b<sup>4</sup> = (a<sup>2</sup> + b<sup>2</sup>)<sup>2</sup> − 2a<sup>2</sup>b<sup>2</sup></td><td>fourth powers are asked</td></tr>\n<tr><td>a<sup>4</sup> + a<sup>2</sup>b<sup>2</sup> + b<sup>4</sup> = (a<sup>2</sup> + ab + b<sup>2</sup>)(a<sup>2</sup> − ab + b<sup>2</sup>)</td><td>this three-term form appears</td></tr>\n</tbody></table>\n<p>Mini example: a + b = 5 and ab = 6. Then a<sup>2</sup> + b<sup>2</sup> = 25 − 12 = 13, and a<sup>4</sup> + b<sup>4</sup> = 13<sup>2</sup> − 2 × 36 = 97. (Check: a = 2, b = 3 gives 16 + 81 = 97.)</p>\n<p>Mental arithmetic with the same identities: 103<sup>2</sup> = (100 + 3)<sup>2</sup> = 10609, and 47 × 53 = 50<sup>2</sup> − 3<sup>2</sup> = 2491.</p>"
    },
    {
-    "title": "Cube identities",
-    "body": "a<sup>3</sup> + b<sup>3</sup> = (a + b)<sup>3</sup> − 3ab(a + b). a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − ab − bc − ca). If a + b + c = 0 then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc."
+    "title": "Three-term squares",
+    "body": "<p>(a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(ab + bc + ca).</p>\n<p>So if you know any two of these three quantities, you get the third:</p>\n<ul><li>a + b + c</li><li>ab + bc + ca</li><li>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup></li></ul>\n<p>Mini example: a + b + c = 10 and ab + bc + ca = 31. Then a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 100 − 62 = 38.</p>\n<p>Signs follow the letters: (a − b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − 2ab − 2bc + 2ca.</p>"
    },
    {
-    "title": "x + 1/x family",
-    "body": "If x + 1/x = k: x<sup>2</sup> + 1/x<sup>2</sup> = k<sup>2</sup> − 2 and x<sup>3</sup> + 1/x<sup>3</sup> = k<sup>3</sup> − 3k."
+    "title": "Cube identities for two variables",
+    "body": "<table><thead><tr><th>Identity</th><th>Short form</th></tr></thead><tbody>\n<tr><td>(a + b)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b)</td><td>a<sup>3</sup> + b<sup>3</sup> = (a + b)<sup>3</sup> − 3ab(a + b)</td></tr>\n<tr><td>(a − b)<sup>3</sup> = a<sup>3</sup> − b<sup>3</sup> − 3ab(a − b)</td><td>a<sup>3</sup> − b<sup>3</sup> = (a − b)<sup>3</sup> + 3ab(a − b)</td></tr>\n<tr><td>a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> − ab + b<sup>2</sup>)</td><td>sum of cubes factorised</td></tr>\n<tr><td>a<sup>3</sup> − b<sup>3</sup> = (a − b)(a<sup>2</sup> + ab + b<sup>2</sup>)</td><td>difference of cubes factorised</td></tr>\n</tbody></table>\n<p>Mini example: a + b = 5, ab = 6 gives a<sup>3</sup> + b<sup>3</sup> = 125 − 90 = 35. (Check: 8 + 27 = 35.)</p>\n<p>Division questions use the factorised forms: (8x<sup>3</sup> + 27y<sup>3</sup>) ÷ (2x + 3y). Here a = 2x and b = 3y, so the answer is a<sup>2</sup> − ab + b<sup>2</sup> = 4x<sup>2</sup> − 6xy + 9y<sup>2</sup>.</p>"
+   },
+   {
+    "title": "The three-variable cube identity",
+    "body": "<p>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − ab − bc − ca)</p>\n<p>Another form that is handy when the numbers are close together:</p>\n<p>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc = ½(a + b + c)[(a − b)<sup>2</sup> + (b − c)<sup>2</sup> + (c − a)<sup>2</sup>]</p>\n<p>Method when a + b + c and ab + bc + ca are given:</p>\n<ol><li>Find a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = (a + b + c)<sup>2</sup> − 2(ab + bc + ca).</li>\n<li>Subtract ab + bc + ca.</li>\n<li>Multiply by a + b + c.</li></ol>\n<p>Mini example: a = 101, b = 102, c = 103. The sum is 306 and the squared differences are 1 + 1 + 4 = 6, so a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc = ½ × 306 × 6 = 918.</p>"
+   },
+   {
+    "title": "Conditional identities",
+    "body": "<p>These are facts that hold only when a condition is true. SSC uses them a lot.</p>\n<table><thead><tr><th>If</th><th>Then</th></tr></thead><tbody>\n<tr><td>a + b + c = 0</td><td>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc</td></tr>\n<tr><td>a + b + c = 0</td><td>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = −2(ab + bc + ca)</td></tr>\n<tr><td>a + b + c = 0</td><td>a<sup>2</sup> − bc = b<sup>2</sup> − ca = c<sup>2</sup> − ab (all equal), and (a + b)(b + c)(c + a) = −abc</td></tr>\n<tr><td>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc</td><td>either a + b + c = 0 or a = b = c</td></tr>\n<tr><td>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = ab + bc + ca</td><td>a = b = c</td></tr>\n<tr><td>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 0 (real numbers)</td><td>a = b = c = 0</td></tr>\n</tbody></table>\n<p><b>Sum of squares equal to zero.</b> If x<sup>2</sup> + y<sup>2</sup> − 4x + 6y + 13 = 0, complete the squares: (x − 2)<sup>2</sup> + (y + 3)<sup>2</sup> = 0. Squares are never negative, so x = 2 and y = −3.</p>\n<p><b>Hidden form.</b> (3x − 1)<sup>3</sup> + (4x − 3)<sup>3</sup> + (2x + 1)<sup>3</sup> = 3(3x − 1)(4x − 3)(2x + 1) means the three brackets add to zero (or are equal). Their sum is 9x − 3 = 0, so x = 1/3. If x = 1/3 is ruled out, the brackets must be equal instead.</p>\n<p><b>Quick check.</b> For a + b + c = 0 questions, try a = 1, b = 1, c = −2 and test the options.</p>"
+   },
+   {
+    "title": "The x + 1/x family",
+    "body": "<p>If x + 1/x = k, square and cube both sides:</p>\n<ul><li>x<sup>2</sup> + 1/x<sup>2</sup> = k<sup>2</sup> − 2</li>\n<li>x<sup>3</sup> + 1/x<sup>3</sup> = k<sup>3</sup> − 3k</li>\n<li>x<sup>4</sup> + 1/x<sup>4</sup> = (k<sup>2</sup> − 2)<sup>2</sup> − 2</li>\n<li>x<sup>5</sup> + 1/x<sup>5</sup> = (x<sup>2</sup> + 1/x<sup>2</sup>)(x<sup>3</sup> + 1/x<sup>3</sup>) − (x + 1/x)</li></ul>\n<table><thead><tr><th>x + 1/x</th><th>x<sup>2</sup> + 1/x<sup>2</sup></th><th>x<sup>3</sup> + 1/x<sup>3</sup></th><th>x<sup>4</sup> + 1/x<sup>4</sup></th></tr></thead><tbody>\n<tr><td>3</td><td>7</td><td>18</td><td>47</td></tr>\n<tr><td>4</td><td>14</td><td>52</td><td>194</td></tr>\n<tr><td>5</td><td>23</td><td>110</td><td>527</td></tr>\n<tr><td>6</td><td>34</td><td>198</td><td>1154</td></tr>\n</tbody></table>\n<p>If x − 1/x = k: x<sup>2</sup> + 1/x<sup>2</sup> = k<sup>2</sup> + 2 and x<sup>3</sup> − 1/x<sup>3</sup> = k<sup>3</sup> + 3k. Also (x + 1/x)<sup>2</sup> − (x − 1/x)<sup>2</sup> = 4.</p>\n<p><b>Special values.</b></p>\n<ul><li>x + 1/x = 2 means x = 1, so any power sum x<sup>n</sup> + 1/x<sup>n</sup> = 2.</li>\n<li>x + 1/x = −2 means x = −1.</li>\n<li>x + 1/x = 1 means x<sup>3</sup> = −1, so x<sup>3</sup> + 1/x<sup>3</sup> = −2.</li>\n<li>x + 1/x = √3 means x<sup>3</sup> + 1/x<sup>3</sup> = 3√3 − 3√3 = 0, so x<sup>6</sup> = −1.</li></ul>\n<p><b>Hidden form.</b> x<sup>2</sup> − 5x + 1 = 0: divide by x to get x + 1/x = 5. For 2x + 1/(2x) style terms, put y = 2x first. For x<sup>2</sup> + 1/x<sup>2</sup> = 7, x + 1/x = 3 (when x is positive).</p>"
+   },
+   {
+    "title": "Surds and rationalising",
+    "body": "<p>To remove a root from the bottom, multiply top and bottom by the <b>conjugate</b>: 1/(√5 + √3) = (√5 − √3)/(5 − 3) = (√5 − √3)/2.</p>\n<p><b>Pairs that multiply to 1.</b> If a<sup>2</sup> − b = 1, then (a + √b)(a − √b) = 1, so 1/(a + √b) = a − √b.</p>\n<ul><li>x = 2 + √3 gives 1/x = 2 − √3, so x + 1/x = 4 and x<sup>2</sup> + 1/x<sup>2</sup> = 14.</li>\n<li>x = 3 + 2√2 gives 1/x = 3 − 2√2, so x + 1/x = 6.</li>\n<li>x = √2 + 1 gives 1/x = √2 − 1, so x − 1/x = 2.</li></ul>\n<p><b>Square roots of surds.</b> 3 + 2√2 = (√2 + 1)<sup>2</sup>, so √(3 + 2√2) = √2 + 1. In general a + 2√b = (√m + √n)<sup>2</sup> when m + n = a and mn = b.</p>"
+   },
+   {
+    "title": "Simplifying and factorising",
+    "body": "<p><b>Telescoping products.</b> Multiply by the missing bracket and use a<sup>2</sup> − b<sup>2</sup> again and again:</p>\n<p>(1 − x)(1 + x)(1 + x<sup>2</sup>)(1 + x<sup>4</sup>)(1 + x<sup>8</sup>) = (1 − x<sup>2</sup>)(1 + x<sup>2</sup>)(1 + x<sup>4</sup>)(1 + x<sup>8</sup>) = … = 1 − x<sup>16</sup>.</p>\n<p><b>Difference of squares on long brackets.</b> (a + b − c + d)<sup>2</sup> − (a − b + c − d)<sup>2</sup>: the sum of the brackets is 2a and the difference is 2(b − c + d), so the answer is 4a(b − c + d).</p>\n<p><b>Splitting the middle term.</b> For x<sup>2</sup> + 7x + 12, find two numbers with product 12 and sum 7 (3 and 4), so x<sup>2</sup> + 7x + 12 = (x + 3)(x + 4). For 6x<sup>2</sup> + 13x + 7, product 6 × 7 = 42 and sum 13 gives 6 and 7, so 6x<sup>2</sup> + 6x + 7x + 7 = (6x + 7)(x + 1).</p>\n<p><b>Putting values.</b> To find the value of an expression at given numbers, substitute carefully with brackets, especially for negative numbers: at x = −4, x<sup>3</sup> = −64 and x<sup>2</sup> = 16.</p>"
+   },
+   {
+    "title": "Polynomials: remainder and factor theorems",
+    "body": "<p>A <b>polynomial</b> is a sum of terms like 3x<sup>2</sup> − 5x + 2. Its <b>degree</b> is the highest power. A <b>zero</b> (or root) is a value of x that makes it 0.</p>\n<ul><li><b>Division rule:</b> dividend = divisor × quotient + remainder, and the remainder has a smaller degree than the divisor.</li>\n<li><b>Remainder theorem:</b> when p(x) is divided by (x − a), the remainder is p(a). For (2x + 1), use x = −1/2.</li>\n<li><b>Factor theorem:</b> (x − a) is a factor of p(x) exactly when p(a) = 0.</li></ul>\n<p>Mini example: is (x − 1) a factor of x<sup>3</sup> − 4x<sup>2</sup> + 5x − 2? p(1) = 1 − 4 + 5 − 2 = 0, so yes.</p>\n<p><b>Zeroes of a cubic</b> ax<sup>3</sup> + bx<sup>2</sup> + cx + d with zeroes α, β, γ:</p>\n<ul><li>α + β + γ = −b/a</li><li>αβ + βγ + γα = c/a</li><li>αβγ = −d/a</li></ul>\n<p>So for a<sup>3</sup> − 4a<sup>2</sup> + 5a − 2 = 0 the roots add to 4.</p>"
+   },
+   {
+    "title": "Quadratic equations",
+    "body": "<p>A quadratic is ax<sup>2</sup> + bx + c = 0 with a ≠ 0. Solve it by factorising or by the formula x = [−b ± √(b<sup>2</sup> − 4ac)] / 2a.</p>\n<table><thead><tr><th>Discriminant D = b<sup>2</sup> − 4ac</th><th>Roots</th></tr></thead><tbody>\n<tr><td>D &gt; 0</td><td>two different real roots</td></tr>\n<tr><td>D = 0</td><td>two equal real roots, each −b/2a</td></tr>\n<tr><td>D &lt; 0</td><td>no real roots</td></tr>\n</tbody></table>\n<p>For roots α and β: α + β = −b/a and αβ = c/a. From these:</p>\n<ul><li>α<sup>2</sup> + β<sup>2</sup> = (α + β)<sup>2</sup> − 2αβ</li>\n<li>(α − β)<sup>2</sup> = (α + β)<sup>2</sup> − 4αβ</li>\n<li>1/α + 1/β = (α + β)/αβ</li>\n<li>α<sup>3</sup> + β<sup>3</sup> = (α + β)<sup>3</sup> − 3αβ(α + β)</li></ul>\n<p><b>Forming an equation.</b> If the roots are p and q, the equation is x<sup>2</sup> − (p + q)x + pq = 0. Mini example: roots 2 and 3 give x<sup>2</sup> − 5x + 6 = 0.</p>"
+   },
+   {
+    "title": "Linear equations and word problems",
+    "body": "<p>For two unknowns you need two equations. Solve by <b>elimination</b> (make one coefficient equal, then add or subtract) or by <b>substitution</b>.</p>\n<p>Mini example: 2 pencils + 3 pens = ₹55 and 7 pencils + 2 pens = ₹65. Multiply the first by 2 and the second by 3: 4p + 6q = 110 and 21p + 6q = 195. Subtract: 17p = 85, so a pencil costs ₹5 and a pen costs ₹15.</p>\n<p><b>Look for a shortcut first.</b> If 32 pens and 12 pencils cost ₹790, then 8 pens and 3 pencils (exactly one quarter) cost 790 ÷ 4 = ₹197.50. No need to find each price.</p>\n<p><b>Heads and legs.</b> If all animals had 2 legs there would be 2 × heads legs. Each 4-legged animal adds 2 more. So 4-legged animals = (legs − 2 × heads) ÷ 2.</p>\n<p><b>Symmetric systems.</b> If x + y = 8, y + z = 13 and z + x = 17, add all three: 2(x + y + z) = 38, so x + y + z = 19. Then z = 19 − 8 = 11, x = 6, y = 2.</p>"
+   },
+   {
+    "title": "When does a pair of equations have a solution?",
+    "body": "<p>For a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub> = 0 and a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub> = 0, compare the ratios of the coefficients.</p>\n<table><thead><tr><th>Condition</th><th>Solutions</th><th>Lines</th></tr></thead><tbody>\n<tr><td>a<sub>1</sub>/a<sub>2</sub> ≠ b<sub>1</sub>/b<sub>2</sub></td><td>exactly one</td><td>cross at one point</td></tr>\n<tr><td>a<sub>1</sub>/a<sub>2</sub> = b<sub>1</sub>/b<sub>2</sub> ≠ c<sub>1</sub>/c<sub>2</sub></td><td>none</td><td>parallel</td></tr>\n<tr><td>a<sub>1</sub>/a<sub>2</sub> = b<sub>1</sub>/b<sub>2</sub> = c<sub>1</sub>/c<sub>2</sub></td><td>infinitely many</td><td>the same line</td></tr>\n</tbody></table>\n<p>Mini example: 17x + my + 102 = 0 and 23x + 299y + 138 = 0. For infinitely many solutions, 17/23 = m/299 = 102/138. Since 102/138 = 17/23, m = 299 × 17/23 = 221.</p>"
+   },
+   {
+    "title": "Maximum and minimum values",
+    "body": "<p><b>Complete the square.</b> ax<sup>2</sup> + bx + c with a &gt; 0 has its least value at x = −b/2a, and that value is c − b<sup>2</sup>/4a. Mini example: x<sup>2</sup> − 6x + 14 = (x − 3)<sup>2</sup> + 5, so the least value is 5. If a &lt; 0, the same point gives the greatest value.</p>\n<p><b>AM ≥ GM.</b> For positive numbers, the average is at least the geometric mean, with equality when all are equal.</p>\n<ul><li>x + 1/x ≥ 2 for x &gt; 0 (least value 2 at x = 1).</li>\n<li>ax + b/x ≥ 2√(ab) for x &gt; 0.</li>\n<li>If x + y = constant, xy is greatest when x = y.</li>\n<li>If x + y + z = 1 (all positive), 1/x + 1/y + 1/z is least when x = y = z = 1/3, giving 9.</li></ul>\n<p>A square is never negative, so (anything)<sup>2</sup> + 5 is at least 5.</p>"
    }
   ],
   "varieties": [
    {
-    "type": "identities",
+    "type": "square-identities",
     "name": "Square identities",
-    "how": "Pick the identity that links what is given to what is asked.",
+    "how": "Write what is given (a + b, a − b, ab) and pick the square identity that contains both the given and the asked parts.",
     "example": {
-     "q": "If a − b = 3 and ab = 10, find a<sup>2</sup> + b<sup>2</sup>.",
+     "q": "If a − b = 4 and ab = 21, find a<sup>2</sup> + b<sup>2</sup>.",
      "steps": [
       "a<sup>2</sup> + b<sup>2</sup> = (a − b)<sup>2</sup> + 2ab",
-      "= 9 + 20"
+      "= 4<sup>2</sup> + 2 × 21 = 16 + 42"
      ],
-     "answer": "29"
+     "answer": "58"
     }
    },
    {
-    "type": "reciprocal",
+    "type": "cube-identities",
+    "name": "Cube identities (two variables)",
+    "how": "Use a<sup>3</sup> ± b<sup>3</sup> = (a ± b)<sup>3</sup> ∓ 3ab(a ± b). For division questions, use the factorised forms.",
+    "example": {
+     "q": "If a − b = 3 and ab = 10, find a<sup>3</sup> − b<sup>3</sup>.",
+     "steps": [
+      "a<sup>3</sup> − b<sup>3</sup> = (a − b)<sup>3</sup> + 3ab(a − b)",
+      "= 27 + 3 × 10 × 3 = 27 + 90",
+      "Check with a = 5, b = 2: 125 − 8 = 117"
+     ],
+     "answer": "117"
+    }
+   },
+   {
+    "type": "reciprocal-identities",
     "name": "x + 1/x type",
-    "how": "Square or cube the given expression.",
+    "how": "Turn the given into x + 1/x = k (divide a quadratic by x, or add a surd to its reciprocal), then square or cube.",
     "example": {
-     "q": "If x + 1/x = 4, find x<sup>2</sup> + 1/x<sup>2</sup>.",
+     "q": "If x<sup>2</sup> − 5x + 1 = 0, find x<sup>3</sup> + 1/x<sup>3</sup>.",
      "steps": [
-      "= 4<sup>2</sup> − 2"
+      "Divide by x: x − 5 + 1/x = 0, so x + 1/x = 5",
+      "x<sup>3</sup> + 1/x<sup>3</sup> = k<sup>3</sup> − 3k = 125 − 15"
      ],
-     "answer": "14"
+     "answer": "110"
     }
    },
    {
-    "type": "cubes",
-    "name": "Cubes and three variables",
-    "how": "Use a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − ab − bc − ca).",
+    "type": "three-variable-cubes",
+    "name": "a³ + b³ + c³ − 3abc",
+    "how": "Find a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> from (a + b + c)<sup>2</sup>, subtract ab + bc + ca, then multiply by a + b + c.",
     "example": {
-     "q": "If a + b = 5 and ab = 6, find a<sup>3</sup> + b<sup>3</sup>.",
+     "q": "If a + b + c = 13 and ab + bc + ca = 54, find a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc.",
      "steps": [
-      "(a + b)<sup>3</sup> − 3ab(a + b)",
-      "125 − 90"
+      "a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 169 − 2 × 54 = 61",
+      "a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − (ab + bc + ca) = 61 − 54 = 7",
+      "Answer = 13 × 7"
      ],
-     "answer": "35"
+     "answer": "91"
+    }
+   },
+   {
+    "type": "conditional-identities",
+    "name": "Conditional identities",
+    "how": "Use the condition to replace one variable, or test easy values that satisfy it (for a + b + c = 0, try 1, 1, −2).",
+    "example": {
+     "q": "If x + y + z = 0, find (x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) ÷ (z<sup>2</sup> − xy).",
+     "steps": [
+      "z = −(x + y), so z<sup>2</sup> − xy = x<sup>2</sup> + xy + y<sup>2</sup>",
+      "x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 2x<sup>2</sup> + 2xy + 2y<sup>2</sup> = 2(x<sup>2</sup> + xy + y<sup>2</sup>)",
+      "Ratio = 2 (check: x = 1, y = 2, z = −3 gives 14 ÷ 7)"
+     ],
+     "answer": "2"
+    }
+   },
+   {
+    "type": "simplify-evaluate",
+    "name": "Simplify and evaluate",
+    "how": "Look for a hidden identity (difference of squares, telescoping product) before multiplying out. When values are given, substitute with brackets.",
+    "example": {
+     "q": "Simplify (1 + x)(1 + x<sup>2</sup>)(1 + x<sup>4</sup>)(1 + x<sup>8</sup>)(1 − x).",
+     "steps": [
+      "(1 − x)(1 + x) = 1 − x<sup>2</sup>",
+      "(1 − x<sup>2</sup>)(1 + x<sup>2</sup>) = 1 − x<sup>4</sup>",
+      "(1 − x<sup>4</sup>)(1 + x<sup>4</sup>) = 1 − x<sup>8</sup>",
+      "(1 − x<sup>8</sup>)(1 + x<sup>8</sup>) = 1 − x<sup>16</sup>"
+     ],
+     "answer": "1 − x<sup>16</sup>"
+    }
+   },
+   {
+    "type": "polynomials",
+    "name": "Polynomials and remainders",
+    "how": "For a remainder on division by (x − a), put x = a. For a factor, set that value to 0. For division by a ± b forms, use the sum or difference of cubes.",
+    "example": {
+     "q": "Find the remainder when x<sup>3</sup> − 2x<sup>2</sup> + 4x + 5 is divided by (x − 2).",
+     "steps": [
+      "Remainder theorem: remainder = p(2)",
+      "= 8 − 8 + 8 + 5"
+     ],
+     "answer": "13"
+    }
+   },
+   {
+    "type": "quadratic-equations",
+    "name": "Quadratic equations and roots",
+    "how": "Write α + β = −b/a and αβ = c/a, rewrite what is asked in terms of these two, then form x<sup>2</sup> − (sum)x + product = 0 if a new equation is needed.",
+    "example": {
+     "q": "If α and β are the roots of 6x<sup>2</sup> + 13x + 7 = 0, find the equation whose roots are α<sup>2</sup> and β<sup>2</sup>.",
+     "steps": [
+      "α + β = −13/6 and αβ = 7/6",
+      "α<sup>2</sup> + β<sup>2</sup> = 169/36 − 14/6 = 85/36",
+      "α<sup>2</sup>β<sup>2</sup> = 49/36",
+      "x<sup>2</sup> − (85/36)x + 49/36 = 0, multiply by 36",
+      "Check: the roots are −1 and −7/6, whose squares 1 and 49/36 fit"
+     ],
+     "answer": "36x<sup>2</sup> − 85x + 49 = 0"
+    }
+   },
+   {
+    "type": "linear-equations",
+    "name": "Linear equations and word problems",
+    "how": "Name the unknowns, write one equation per fact, then eliminate. Check whether the asked combination is a simple multiple of a given equation.",
+    "example": {
+     "q": "Rewa has hens and goats. There are 100 heads and 348 feet. How many goats are there?",
+     "steps": [
+      "If all 100 were hens: 200 feet",
+      "Extra feet = 348 − 200 = 148, and each goat adds 2",
+      "Goats = 148 ÷ 2 = 74 (hens = 26; check 52 + 296 = 348)"
+     ],
+     "answer": "74"
+    }
+   },
+   {
+    "type": "system-consistency",
+    "name": "Unique, none or infinite solutions",
+    "how": "Compare a<sub>1</sub>/a<sub>2</sub>, b<sub>1</sub>/b<sub>2</sub> and c<sub>1</sub>/c<sub>2</sub>. No solution: first two equal, third different. Infinite: all three equal.",
+    "example": {
+     "q": "For what value of k do 3x − ky + 8 = 0 and 9x − 18y + 20 = 0 have no solution?",
+     "steps": [
+      "Need 3/9 = (−k)/(−18) ≠ 8/20",
+      "k/18 = 1/3, so k = 6",
+      "Check 1/3 ≠ 2/5, so the lines are parallel"
+     ],
+     "answer": "k = 6"
+    }
+   },
+   {
+    "type": "max-min",
+    "name": "Maximum and minimum values",
+    "how": "Complete the square for a quadratic, or use AM ≥ GM for sums of positive terms. The extreme value comes when the square is 0 or the terms are equal.",
+    "example": {
+     "q": "Find the least value of x<sup>2</sup> − 6x + 14.",
+     "steps": [
+      "x<sup>2</sup> − 6x + 14 = (x − 3)<sup>2</sup> + 5",
+      "The square is at least 0, and equals 0 at x = 3"
+     ],
+     "answer": "5"
     }
    }
   ],
   "tips": [
-   "If x = a + √b with a<sup>2</sup> − b = 1, then 1/x = a − √b.",
-   "Try putting simple values (like a = b = c) to check options quickly."
+   "Before expanding anything, ask which identity links the given to the asked. Expanding is the slow way.",
+   "Put easy values that satisfy the condition (a = 1, b = 1, c = −2 for a + b + c = 0; x = 1 for x + 1/x = 2) and test the options.",
+   "A quadratic like x<sup>2</sup> − kx + 1 = 0 is really x + 1/x = k. Divide by x.",
+   "Learn the x + 1/x table for k = 3, 4, 5, 6. Those values come up again and again.",
+   "If a<sup>2</sup> − b = 1, then a + √b and a − √b are reciprocals of each other.",
+   "In word problems, check whether the asked combination is a simple fraction of a given equation before solving fully.",
+   "For three variables, the trio a + b + c, ab + bc + ca and a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> go together: any two give the third."
   ],
   "traps": [
-   "x<sup>3</sup> + 1/x<sup>3</sup> = k<sup>3</sup> − 3k, not k<sup>3</sup> − 3.",
-   "(a + b)<sup>2</sup> ≠ a<sup>2</sup> + b<sup>2</sup>."
+   "x<sup>3</sup> + 1/x<sup>3</sup> = k<sup>3</sup> − 3k, not k<sup>3</sup> − 3. And x<sup>2</sup> + 1/x<sup>2</sup> from x − 1/x is k<sup>2</sup> + 2, not k<sup>2</sup> − 2.",
+   "(a + b)<sup>2</sup> is not a<sup>2</sup> + b<sup>2</sup>, and (a + b)<sup>3</sup> is not a<sup>3</sup> + b<sup>3</sup>.",
+   "a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc does not always mean a + b + c = 0; it can also mean a = b = c.",
+   "From (a − b)<sup>2</sup> = 1 you get a − b = ±1. Check the sign the question needs.",
+   "For the remainder on dividing by (2x − 1), put x = 1/2, not x = 1 or x = 2.",
+   "Watch the signs when substituting negative values: (−4)<sup>3</sup> = −64 but (−4)<sup>2</sup> = 16."
   ]
  },
  "formulas": [
   {
+   "name": "(a + b)²",
+   "expr": "a² + 2ab + b²"
+  },
+  {
+   "name": "(a − b)²",
+   "expr": "a² − 2ab + b²"
+  },
+  {
+   "name": "a² − b²",
+   "expr": "(a + b)(a − b)"
+  },
+  {
+   "name": "(a + b)² − (a − b)²",
+   "expr": "4ab"
+  },
+  {
+   "name": "(a + b + c)²",
+   "expr": "a² + b² + c² + 2(ab + bc + ca)"
+  },
+  {
+   "name": "(a + b)³",
+   "expr": "a³ + b³ + 3ab(a + b)"
+  },
+  {
+   "name": "(a − b)³",
+   "expr": "a³ − b³ − 3ab(a − b)"
+  },
+  {
+   "name": "a³ + b³",
+   "expr": "(a + b)(a² − ab + b²) = (a + b)³ − 3ab(a + b)"
+  },
+  {
+   "name": "a³ − b³",
+   "expr": "(a − b)(a² + ab + b²) = (a − b)³ + 3ab(a − b)"
+  },
+  {
+   "name": "a³ + b³ + c³ − 3abc",
+   "expr": "(a + b + c)(a² + b² + c² − ab − bc − ca)"
+  },
+  {
+   "name": "If a + b + c = 0",
+   "expr": "a³ + b³ + c³ = 3abc"
+  },
+  {
+   "name": "a⁴ + a²b² + b⁴",
+   "expr": "(a² + ab + b²)(a² − ab + b²)"
+  },
+  {
    "name": "x² + 1/x²",
-   "expr": "(x + 1/x)² − 2"
+   "expr": "(x + 1/x)² − 2 = (x − 1/x)² + 2"
   },
   {
    "name": "x³ + 1/x³",
    "expr": "(x + 1/x)³ − 3(x + 1/x)"
   },
   {
-   "name": "a³ + b³",
-   "expr": "(a + b)³ − 3ab(a + b)"
+   "name": "x³ − 1/x³",
+   "expr": "(x − 1/x)³ + 3(x − 1/x)"
   },
   {
-   "name": "a³ + b³ + c³ − 3abc",
-   "expr": "(a + b + c)(a² + b² + c² − ab − bc − ca)"
+   "name": "Remainder theorem",
+   "expr": "p(x) ÷ (x − a) leaves remainder p(a)"
+  },
+  {
+   "name": "Sum and product of roots",
+   "expr": "α + β = −b/a, αβ = c/a"
+  },
+  {
+   "name": "Quadratic formula",
+   "expr": "x = [−b ± √(b² − 4ac)] / 2a"
+  },
+  {
+   "name": "No solution (two lines)",
+   "expr": "a₁/a₂ = b₁/b₂ ≠ c₁/c₂"
+  },
+  {
+   "name": "Infinitely many solutions",
+   "expr": "a₁/a₂ = b₁/b₂ = c₁/c₂"
+  },
+  {
+   "name": "Least value of ax² + bx + c (a > 0)",
+   "expr": "c − b²/4a, at x = −b/2a"
   }
  ],
  "questions": [
@@ -88,7 +324,7 @@
    "id": "q-algebra-001",
    "rev": 1,
    "topic": "q-algebra",
-   "type": "reciprocal",
+   "type": "reciprocal-identities",
    "level": 1,
    "q": "If x + 1/x = 5, then the value of x<sup>2</sup> + 1/x<sup>2</sup> is:",
    "options": [
@@ -105,7 +341,7 @@
    "id": "q-algebra-002",
    "rev": 1,
    "topic": "q-algebra",
-   "type": "identities",
+   "type": "square-identities",
    "level": 1,
    "q": "If a + b = 10 and ab = 21, then a<sup>2</sup> + b<sup>2</sup> is:",
    "options": [
@@ -122,7 +358,7 @@
    "id": "q-algebra-003",
    "rev": 1,
    "topic": "q-algebra",
-   "type": "reciprocal",
+   "type": "reciprocal-identities",
    "level": 2,
    "q": "If x + 1/x = 3, then x<sup>3</sup> + 1/x<sup>3</sup> is:",
    "options": [
@@ -139,7 +375,7 @@
    "id": "q-algebra-004",
    "rev": 1,
    "topic": "q-algebra",
-   "type": "cubes",
+   "type": "conditional-identities",
    "level": 2,
    "q": "If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> is equal to:",
    "options": [
@@ -156,7 +392,7 @@
    "id": "q-algebra-005",
    "rev": 1,
    "topic": "q-algebra",
-   "type": "reciprocal",
+   "type": "reciprocal-identities",
    "level": 3,
    "q": "If x = 2 + √3, then the value of x<sup>2</sup> + 1/x<sup>2</sup> is:",
    "options": [
@@ -173,7 +409,7 @@
    "id": "q-algebra-006",
    "rev": 1,
    "topic": "q-algebra",
-   "type": "cubes",
+   "type": "three-variable-cubes",
    "level": 3,
    "q": "If a + b + c = 12 and ab + bc + ca = 47, then the value of a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc is:",
    "options": [

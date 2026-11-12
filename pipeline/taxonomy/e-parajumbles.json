@@ -1,0 +1,42 @@
+{
+  "topic": "e-parajumbles",
+  "types": [
+    {
+      "type": "opening-sentence",
+      "name": "Find the opening sentence",
+      "description": "Four or five jumbled sentences of a paragraph where the key is spotting the one sentence that can stand alone and introduce the topic (a general statement or definition with no pronoun or connector at the start).",
+      "concepts": [
+        "opening-independent-sentence"
+      ]
+    },
+    {
+      "type": "reference-link",
+      "name": "Pronoun and reference links",
+      "description": "Jumbled sentences of a paragraph where the order is fixed by references: a noun or full name first, then a pronoun (he, it, they, this, such) or the short form, acronym or 'the X' that refers back to it.",
+      "concepts": [
+        "noun-pronoun-pair",
+        "acronym-expansion"
+      ]
+    },
+    {
+      "type": "connector-sequence",
+      "name": "Connectors and time order",
+      "description": "Jumbled sentences of a paragraph or story where the order is fixed by connectors (but, however, therefore, as a result, moreover) or by time words and sequence (first, then, after a year, finally).",
+      "concepts": [
+        "chronological-logical-connectors"
+      ]
+    },
+    {
+      "type": "fixed-ends",
+      "name": "First and last sentences given",
+      "description": "The first and last sentences (S1 and S6, or 1 and 6) are fixed and only the middle sentences labelled P, Q, R, S are to be arranged.",
+      "concepts": []
+    },
+    {
+      "type": "sentence-parts",
+      "name": "Parts of one sentence",
+      "description": "Phrases or parts of a single sentence (not full sentences) are given in jumbled order, labelled P, Q, R, S or A to E, to be arranged into one meaningful sentence.",
+      "concepts": []
+    }
+  ]
+}

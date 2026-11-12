@@ -1,74 +1,116 @@
 {
  "topic": "r-dice",
  "notes": {
-  "summary": "Dice and cube questions ask which face is <b>opposite</b> another (from views or an open net), or how many small cubes of a painted cube have 0, 1, 2 or 3 faces painted.",
+  "summary": "A cube (die) has 6 faces in 3 opposite pairs; every face touches the other 4. Dice questions ask which face is opposite another, using views of the die or its open net, which cube a net can make, and how many small cubes of a painted cube have paint on 0, 1, 2 or 3 faces.",
   "concepts": [
    {
-    "title": "Opposite faces from views",
-    "body": "Faces seen together in one view are <b>adjacent</b>, never opposite. A face is opposite the one number that never appears with it. If two views share a common face, the faces in the same position are opposite."
+    "title": "Cube facts",
+    "body": "<ul><li>6 faces, 3 pairs of opposite faces. Each face is adjacent to 4 faces and opposite exactly 1.</li><li>One view of a die shows 3 faces that meet at a corner. They are all adjacent, so none of them is opposite another.</li><li>On a standard die, opposite faces add up to 7 (1–6, 2–5, 3–4). Use this only when the question says the die is standard.</li></ul>"
    },
    {
-    "title": "Open net (cube net)",
-    "body": "In a straight row of three squares, the 1st and 3rd are <b>opposite</b>. Two squares touching each other are adjacent.",
-    "img": "reasoning/dice-net-cross.svg"
+    "title": "Opposite face: elimination",
+    "body": "Collect every face seen together with the given face in any view. Those are adjacent. The one face never seen with it is its opposite.<p>Mini example: 1 appears with 2, 3 (view i) and with 4, 5 (view ii). The only face never seen with 1 is 6, so 6 is opposite 1.</p>",
+    "img": "reasoning/dice-two-views.svg"
+   },
+   {
+    "title": "Opposite face: common-face rules",
+    "body": "<ul><li><b>One common face in the same position</b>: the faces in matching positions are opposite.</li><li><b>One common face in different positions</b> (clockwise method): in each view, read the three faces clockwise, starting from the common face. The second faces of the two lists are opposite, and so are the third faces.</li><li><b>Two common faces</b>: the two remaining faces (one from each view) are opposite.</li></ul><p>Reading clockwise in a drawn die: top, then the right-hand face, then the left-hand face. In the figure: view (i) gives 1, 3, 2 and view (ii) gives 1, 6, 5. So 3 is opposite 6 and 2 is opposite 5, which leaves 1 opposite 4.</p>",
+    "img": "reasoning/dice-common-one.svg"
+   },
+   {
+    "title": "Open nets: finding opposite faces",
+    "body": "<ul><li>In a straight line of squares, skip one: the 1st and 3rd are opposite, as are the 2nd and 4th.</li><li>Squares that share an edge are adjacent, never opposite.</li><li>In a Z or staircase shape, the two squares at the ends of the Z are opposite.</li><li>A cube has 11 different nets; every one gives exactly 3 opposite pairs. Check that your three pairs use all six faces once.</li></ul><p>In the figure: staircase net gives 1–4, 2–5, 3–6; the 3 + 3 net gives 1–3, 4–6, 2–5.</p>",
+    "img": "reasoning/dice-net-rules.svg"
+   },
+   {
+    "title": "From a net to a cube",
+    "body": "<ol><li>Find the 3 opposite pairs from the net.</li><li>Reject any cube that shows two opposite faces together.</li><li>For the cubes left, fold mentally: choose one face as the top and fold its neighbours down around it. Their order around the top is fixed.</li><li>A cube with the right faces in the wrong order around a corner (a mirror image) cannot be made.</li></ol>"
    },
    {
     "title": "Painted cube cut into n × n × n",
-    "body": "3 faces painted = 8 (corners). 2 faces = 12(n − 2). 1 face = 6(n − 2)². No face = (n − 2)³.",
+    "body": "A cube painted on all faces is cut into n³ equal small cubes (n cuts along each edge give n pieces per edge).<table><thead><tr><th>Painted faces</th><th>Where</th><th>Count</th><th>n = 3</th><th>n = 4</th><th>n = 5</th></tr></thead><tbody><tr><td>3</td><td>Corners</td><td>8</td><td>8</td><td>8</td><td>8</td></tr><tr><td>2</td><td>Edges, not corners</td><td>12(n − 2)</td><td>12</td><td>24</td><td>36</td></tr><tr><td>1</td><td>Middle of faces</td><td>6(n − 2)²</td><td>6</td><td>24</td><td>54</td></tr><tr><td>0</td><td>Hidden inside</td><td>(n − 2)³</td><td>1</td><td>8</td><td>27</td></tr></tbody></table><p>Check: the four counts add up to n³. Find n as the cube root of the number of pieces, or big side ÷ small side.</p>",
     "img": "reasoning/cube-painted.svg"
+   },
+   {
+    "title": "Painted cuboids and colours",
+    "body": "<ul><li>Cuboid a × b × c cut into unit cubes: 3 faces = 8; 2 faces = 4[(a − 2) + (b − 2) + (c − 2)]; 1 face = 2[(a − 2)(b − 2) + (b − 2)(c − 2) + (c − 2)(a − 2)]; 0 faces = (a − 2)(b − 2)(c − 2).</li><li>The fewest colours needed so that no two adjacent faces share a colour is 3 (paint each opposite pair the same colour).</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "opposite-faces",
     "name": "Opposite face from positions",
-    "how": "List all faces adjacent to the given face; the missing one is opposite.",
+    "how": "Faces seen together are adjacent. With one common face, list each view clockwise from that face; matching positions are opposite.",
     "example": {
-     "q": "Views show 1 with 2, 3, 4 and 5. Which is opposite 1?",
+     "q": "Two positions of the same die are shown. Which number is on the face opposite 2?",
      "steps": [
-      "Adjacent to 1: 2, 3, 4, 5",
-      "Only 6 is left"
+      "The common face is 1. It is on top in (i) and on the left in (ii).",
+      "Clockwise from 1 (top, right, left): view (i) gives 1, 3, 2 and view (ii) gives 1, 6, 5.",
+      "Matching positions are opposite: 3–6 and 2–5. The last pair is 1–4."
      ],
-     "answer": "6",
-     "img": "reasoning/dice-two-views.svg"
+     "answer": "5",
+     "img": "reasoning/dice-common-one.svg"
     }
    },
    {
-    "type": "cube-net",
-    "name": "Open net",
-    "how": "Skip one square in a straight line to find opposite pairs; use them to reject impossible cubes.",
+    "type": "net-opposite",
+    "name": "Opposite face in an open net",
+    "how": "Skip one square along a straight line; in a Z or staircase, the end squares are opposite. Touching squares are never opposite.",
     "example": {
-     "q": "In the net, which number is opposite 3?",
+     "q": "The left-hand net in the figure is folded into a cube. Which number is opposite 2?",
      "steps": [
-      "Column 1, 3, 5, 6: skip one → 3 and 6 opposite",
-      "Also 1–5 and 2–4"
+      "1, 2 and 3, 4 and 5, 6 form a staircase.",
+      "2 touches 1 and 3, so neither is opposite it.",
+      "Folding gives the pairs 1–4, 2–5 and 3–6."
      ],
-     "answer": "6",
-     "img": "reasoning/dice-net-cross.svg"
+     "answer": "5",
+     "img": "reasoning/dice-net-rules.svg"
     }
    },
    {
-    "type": "cube-cutting",
-    "name": "Painted cube",
-    "how": "Find n (cube root of total pieces), then use the formulas.",
+    "type": "net-to-cube",
+    "name": "Matching a net with a cube",
+    "how": "Reject cubes that show an opposite pair. For the rest, fold one face as the top and check the order of its neighbours.",
     "example": {
-     "q": "A painted cube is cut into 27 equal cubes. How many have no face painted?",
+     "q": "Which cube can be formed by folding the net?",
      "steps": [
-      "n = 3",
-      "(3 − 2)³ = 1"
+      "C, D, E lie in a row, so C and E are opposite (skip one). A, B, C, D form a staircase, so its ends A and D are opposite. That leaves B and F.",
+      "(a) shows C and E together, and (b) shows A and D together, so both are wrong.",
+      "Fold with C on top: B goes to the back, D to the right, F to the front, A to the left and E to the bottom.",
+      "Turn this cube half a turn: B comes to the front and A to the right, with C still on top. That is cube (d).",
+      "(c) has A and B swapped, a mirror image, so it cannot be made."
      ],
-     "answer": "1"
+     "answer": "(d)",
+     "img": "reasoning/dice-net-231.svg"
+    }
+   },
+   {
+    "type": "painted-cube",
+    "name": "Painted and cut cubes",
+    "how": "Find n, then use 8, 12(n − 2), 6(n − 2)² and (n − 2)³.",
+    "example": {
+     "q": "A cube painted on all faces is cut into 125 identical small cubes. How many small cubes have exactly two faces painted?",
+     "steps": [
+      "125 = 5³, so n = 5.",
+      "Two faces painted = 12(n − 2) = 12 × 3."
+     ],
+     "answer": "36"
     }
    }
   ],
   "tips": [
-   "Two faces seen together in any view can never be opposite.",
-   "In a net, opposite pairs are found by skipping exactly one square in a straight line.",
-   "Corners (3 faces painted) are always 8, whatever n is."
+   "Faces seen together in any view can never be opposite.",
+   "If one number appears in every view, the number never seen with it is its opposite.",
+   "In a net, skip one square along a line to find an opposite pair.",
+   "Check that your three opposite pairs use all six faces exactly once.",
+   "Corners of a painted cube are always 8, whatever the size.",
+   "The four painted-cube counts must add up to n³."
   ],
   "traps": [
-   "A cube option is wrong if it shows two opposite faces together.",
-   "Even with no opposite faces shown, the order around a corner (clockwise vs anticlockwise) can make a cube impossible."
+   "Do not assume a standard die (opposites add to 7) unless the question says so.",
+   "A cube that shows only adjacent faces can still be impossible if the order around the corner is mirrored.",
+   "For a painted cube of side 6 cm cut into 2 cm cubes, n = 3, not 6.",
+   "Two views that share two faces still need the remaining faces checked one from each view."
   ]
  },
  "questions": [
@@ -94,7 +136,7 @@
    "id": "r-dice-002",
    "rev": 1,
    "topic": "r-dice",
-   "type": "cube-net",
+   "type": "net-opposite",
    "level": 1,
    "q": "The given sheet is folded to form a cube. Which number will be on the face opposite to 2?",
    "options": [
@@ -112,7 +154,7 @@
    "id": "r-dice-003",
    "rev": 1,
    "topic": "r-dice",
-   "type": "cube-cutting",
+   "type": "painted-cube",
    "level": 2,
    "q": "A cube painted on all its faces is cut into 64 identical small cubes. How many small cubes have exactly two faces painted?",
    "options": [
@@ -147,7 +189,7 @@
    "id": "r-dice-005",
    "rev": 1,
    "topic": "r-dice",
-   "type": "cube-net",
+   "type": "net-to-cube",
    "level": 3,
    "q": "The sheet shown in the figure is folded to form a cube. Which of the following cubes can be formed?",
    "options": [
@@ -171,7 +213,7 @@
    "id": "r-dice-006",
    "rev": 1,
    "topic": "r-dice",
-   "type": "cube-cutting",
+   "type": "painted-cube",
    "level": 3,
    "q": "A cube of side 5 cm is painted red on all faces and then cut into small cubes of side 1 cm. How many small cubes have exactly one face painted?",
    "options": [

@@ -1,0 +1,37 @@
+{
+  "topic": "q-probability",
+  "types": [
+    {
+      "type": "coins-dice",
+      "name": "Coins and dice",
+      "description": "One or more coins are tossed or dice are thrown, and the question asks about heads, tails, the number shown, a sum, a product or a doublet.",
+      "concepts": []
+    },
+    {
+      "type": "cards",
+      "name": "Playing cards",
+      "description": "One or more cards are drawn from a pack of 52 cards, and the question asks about suits, colours, kings, queens, face cards or aces.",
+      "concepts": []
+    },
+    {
+      "type": "balls",
+      "name": "Balls and marbles",
+      "description": "Balls, marbles or other items of different colours are taken from a bag, box or jar, one or more at a time.",
+      "concepts": [
+        "ball-selection-probability"
+      ]
+    },
+    {
+      "type": "independent-events",
+      "name": "Independent events and at least one",
+      "description": "Two or more people or events have their own probabilities given (hitting a target, solving a problem, speaking the truth) and the question asks for both, neither, at least one, or a contradiction.",
+      "concepts": []
+    },
+    {
+      "type": "number-selection",
+      "name": "Numbers, letters and calendars",
+      "description": "A number is picked from a range (such as 1 to 50), a letter from a word, or a day from a year, and the question asks about multiples, primes, vowels or 53 Sundays.",
+      "concepts": []
+    }
+  ]
+}

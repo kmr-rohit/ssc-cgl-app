@@ -1,0 +1,50 @@
+{
+  "topic": "g-chemistry",
+  "types": [
+    {
+      "type": "matter-atoms-periodic",
+      "name": "Matter, atoms and the periodic table",
+      "description": "States of matter, separation methods, atomic structure, isotopes, the periodic table and element facts.",
+      "concepts": [
+        "matter-atomic-structure-periodic-table"
+      ]
+    },
+    {
+      "type": "reactions-acids-bases",
+      "name": "Reactions, acids, bases and pH",
+      "description": "Bonding, types of chemical reactions, catalysts, acids and bases, indicators, pH values and natural acids.",
+      "concepts": [
+        "chemical-bonding-reactions-acids-bases-salts",
+        "chemical-reactions-and-precipitates"
+      ]
+    },
+    {
+      "type": "metals-alloys-ores",
+      "name": "Metals, ores and alloys",
+      "description": "Properties of metals and non-metals, reactivity, ores, extraction, corrosion protection and alloys.",
+      "concepts": [
+        "metals-nonmetals-and-alloys"
+      ]
+    },
+    {
+      "type": "common-compounds",
+      "name": "Common names and formulas",
+      "description": "Common or trade names of compounds and their chemical names and formulas.",
+      "concepts": []
+    },
+    {
+      "type": "carbon-fuels-polymers",
+      "name": "Carbon compounds, fuels and polymers",
+      "description": "Allotropes of carbon, hydrocarbons, functional groups, soaps, fuels and coal, and plastics and fibres.",
+      "concepts": [
+        "carbon-compounds-and-fuels"
+      ]
+    },
+    {
+      "type": "everyday-chemistry",
+      "name": "Chemistry in everyday life",
+      "description": "Gases and their uses, fertilisers, glass and cement, food chemicals, medicines, spice compounds and household chemistry.",
+      "concepts": []
+    }
+  ]
+}

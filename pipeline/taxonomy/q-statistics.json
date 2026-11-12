@@ -1,0 +1,37 @@
+{
+  "topic": "q-statistics",
+  "types": [
+    {
+      "type": "mean",
+      "name": "Mean",
+      "description": "Asks for the arithmetic mean or average of raw, frequency or grouped data, a corrected mean after a wrong entry, a combined mean of groups, or a missing value or frequency given the mean.",
+      "concepts": []
+    },
+    {
+      "type": "median",
+      "name": "Median",
+      "description": "Asks for the median (middle value) of a list or of a grouped frequency table, or for a missing value given the median.",
+      "concepts": []
+    },
+    {
+      "type": "mode",
+      "name": "Mode",
+      "description": "Asks for the mode (most frequent value) of a list, or of a grouped table using the modal class formula, or for an unknown given the mode.",
+      "concepts": []
+    },
+    {
+      "type": "empirical-relation",
+      "name": "Mean, median and mode relation",
+      "description": "Gives two of mean, median and mode and asks for the third using mode = 3 median − 2 mean, or asks about symmetric and skewed data.",
+      "concepts": []
+    },
+    {
+      "type": "dispersion",
+      "name": "Range, deviation and SD",
+      "description": "Asks for the range, mean deviation, variance, standard deviation or coefficient of variation, or how they change when every value is shifted or scaled.",
+      "concepts": [
+        "variance-standard-deviation"
+      ]
+    }
+  ]
+}

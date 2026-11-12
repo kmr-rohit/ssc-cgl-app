@@ -1,76 +1,360 @@
 {
   "topic": "g-physics",
   "notes": {
-    "summary": "Physics gives <b>1–2 questions</b>, mostly NCERT class 6–10 level: SI units, Newton's laws, light (lenses, reflection, scattering), sound and electricity. Learn the 'why' behind daily-life examples.",
+    "summary": "Physics gives about <b>1 to 2 questions</b> per paper, mostly at Class 8 to 10 level. Past papers ask most about <b>light and the eye</b>, <b>electricity and magnetism</b>, <b>units</b>, sound and heat, and Newton's laws. Many questions ask 'why' an everyday effect happens (blue sky, sparkling diamond, falling forward in a bus), so learn the reason with each fact.",
     "concepts": [
       {
-        "title": "SI units",
-        "body": "<table><thead><tr><th>Quantity</th><th>SI unit</th></tr></thead><tbody><tr><td>Force</td><td>newton (N)</td></tr><tr><td>Work / energy</td><td>joule (J)</td></tr><tr><td>Power</td><td>watt (W)</td></tr><tr><td>Pressure</td><td>pascal (Pa)</td></tr><tr><td>Frequency</td><td>hertz (Hz)</td></tr><tr><td>Electric current</td><td>ampere (A)</td></tr><tr><td>Charge</td><td>coulomb (C)</td></tr><tr><td>Resistance</td><td>ohm (Ω)</td></tr><tr><td>Temperature</td><td>kelvin (K)</td></tr><tr><td>Luminous intensity</td><td>candela (cd)</td></tr></tbody></table>1 horsepower ≈ 746 W. A <b>light year</b> is a unit of <b>distance</b>, not time."
+        "title": "Units",
+        "body": "<table><thead><tr><th>Quantity</th><th>SI unit</th></tr></thead><tbody><tr><td>Length, mass, time</td><td>metre, kilogram, second</td></tr><tr><td>Electric current</td><td>ampere</td></tr><tr><td>Temperature</td><td>kelvin</td></tr><tr><td>Amount of substance</td><td>mole</td></tr><tr><td>Luminous intensity</td><td>candela</td></tr><tr><td>Force</td><td>newton</td></tr><tr><td>Work, energy, heat</td><td>joule</td></tr><tr><td>Power</td><td>watt</td></tr><tr><td>Pressure</td><td>pascal</td></tr><tr><td>Frequency</td><td>hertz</td></tr><tr><td>Charge</td><td>coulomb</td></tr><tr><td>Potential difference</td><td>volt</td></tr><tr><td>Resistance</td><td>ohm</td></tr><tr><td>Capacitance</td><td>farad</td></tr><tr><td>Inductance</td><td>henry</td></tr><tr><td>Magnetic flux; magnetic field</td><td>weber; tesla</td></tr><tr><td>Radioactivity</td><td>becquerel</td></tr><tr><td>Luminous flux; illuminance</td><td>lumen; lux</td></tr></tbody></table><p>The first seven rows are the <b>seven base units</b>. Other units: <b>light year</b> is a unit of distance (about 9.46 × 10<sup>15</sup> m); parsec (about 3.26 light years); astronomical unit (Earth to Sun, about 1.5 × 10<sup>8</sup> km); angstrom (10<sup>−10</sup> m); fermi (10<sup>−15</sup> m); 1 horsepower ≈ 746 W; 1 kWh (one 'unit' of electricity) = 3.6 × 10<sup>6</sup> J; 1 calorie ≈ 4.18 J; <b>decibel</b> measures sound level; knot (speed at sea); fathom (depth of water); carat (gems, 200 mg).</p><p><b>Temperature</b>: F = (9/5)C + 32 and K = C + 273.15. −40° is the same on Celsius and Fahrenheit. Normal body temperature: 37 °C = 98.6 °F.</p>"
+      },
+      {
+        "title": "Instruments",
+        "body": "<table><thead><tr><th>Instrument</th><th>Measures or does</th></tr></thead><tbody><tr><td>Ammeter</td><td>Electric current</td></tr><tr><td>Voltmeter</td><td>Potential difference</td></tr><tr><td>Galvanometer</td><td>Detects small currents</td></tr><tr><td>Barometer</td><td>Atmospheric pressure</td></tr><tr><td>Manometer</td><td>Pressure of gases</td></tr><tr><td>Hygrometer</td><td>Humidity</td></tr><tr><td>Hydrometer</td><td>Relative density of liquids</td></tr><tr><td>Lactometer</td><td>Purity (density) of milk</td></tr><tr><td>Anemometer</td><td>Wind speed</td></tr><tr><td>Altimeter</td><td>Altitude</td></tr><tr><td>Seismograph</td><td>Earthquake waves</td></tr><tr><td>Pyrometer</td><td>Very high temperatures</td></tr><tr><td>Sphygmomanometer</td><td>Blood pressure</td></tr><tr><td>Audiometer</td><td>Hearing</td></tr><tr><td>Odometer</td><td>Distance travelled by a vehicle</td></tr><tr><td>Tachometer</td><td>Engine speed (rpm)</td></tr><tr><td>Fathometer</td><td>Depth of the sea</td></tr><tr><td>Sextant</td><td>Angle (height) of sun or stars, for navigation</td></tr><tr><td>Screw gauge, vernier callipers</td><td>Small lengths</td></tr><tr><td>Rain gauge</td><td>Rainfall</td></tr><tr><td>Periscope</td><td>Seeing over obstacles (submarines)</td></tr></tbody></table>"
       },
       {
         "title": "Motion and Newton's laws",
-        "body": "<ul><li><b>First law</b> (law of inertia): a body stays at rest or in uniform motion unless a force acts. Example: passengers lurch forward when a bus brakes suddenly.</li><li><b>Second law</b>: F = m × a.</li><li><b>Third law</b>: every action has an equal and opposite reaction. Example: a rocket moves up as gases rush down; recoil of a gun.</li><li>Acceleration due to gravity on Earth, g ≈ 9.8 m/s².</li></ul>"
+        "body": "<ul><li><b>Speed</b> is distance per time (scalar). <b>Velocity</b> is speed in a direction (vector). <b>Acceleration</b> is change in velocity per time (m/s²). Uniform acceleration means equal changes in velocity in equal intervals of time; free fall is an example.</li><li><b>First law (inertia)</b>: a body stays at rest or in uniform motion unless a force acts. Examples: passengers fall forward when a bus stops suddenly; dust leaves a carpet when beaten. Galileo first gave the idea of inertia.</li><li><b>Second law</b>: force = mass × acceleration (F = ma); force equals rate of change of momentum.</li><li><b>Third law</b>: every action has an equal and opposite reaction. Examples: rocket launch, gun recoil, swimming, walking.</li><li><b>Momentum</b> = mass × velocity; total momentum is conserved in a collision.</li><li><b>Friction</b>: static is more than sliding, which is more than rolling. Ball bearings and lubricants reduce it.</li><li><b>Circular motion</b> needs a centripetal force. A centrifuge separates cream from milk.</li></ul>"
       },
       {
-        "title": "Light",
-        "body": "<ul><li><b>Convex lens</b> converges light; corrects <b>hypermetropia</b> (long-sightedness). <b>Concave lens</b> diverges light; corrects <b>myopia</b> (short-sightedness).</li><li><b>Total internal reflection</b>: used in optical fibres; explains the sparkle of diamonds and mirages.</li><li><b>Scattering</b>: the sky looks blue because air scatters blue light more than red. Danger signals are red because red scatters least.</li><li><b>Dispersion</b>: a prism splits white light into seven colours (VIBGYOR); a rainbow forms the same way in raindrops.</li></ul>",
+        "title": "Gravitation, work and energy",
+        "body": "<ul><li>Newton's law of gravitation: F = Gm<sub>1</sub>m<sub>2</sub>/r². G = 6.67 × 10<sup>−11</sup> N m² kg<sup>−2</sup>.</li><li>g ≈ 9.8 m/s² on Earth; it is greatest at the poles, least at the equator and zero at the Earth's centre. The Moon's gravity is about one-sixth of Earth's.</li><li>Mass stays the same everywhere; weight (mg) changes with g.</li><li>Escape velocity from Earth: about 11.2 km/s. Astronauts in orbit feel weightless because they are in free fall.</li><li>Kepler gave three laws of planetary motion.</li><li><b>Work</b> = force × displacement (joule). <b>Kinetic energy</b> = ½mv² (energy of motion: falling coconuts, speeding cars, rolling stones). <b>Potential energy</b> = mgh (energy due to position, such as water in a dam or a stretched bow). <b>Power</b> = work ÷ time (watt).</li><li>Energy is never created or destroyed, only changed in form.</li></ul><table><thead><tr><th>Lever class</th><th>Middle part</th><th>Examples</th></tr></thead><tbody><tr><td>First</td><td>Fulcrum</td><td>See-saw, scissors, pliers, crowbar</td></tr><tr><td>Second</td><td>Load</td><td>Nutcracker, wheelbarrow, bottle opener</td></tr><tr><td>Third</td><td>Effort</td><td>Tongs, tweezers, fishing rod, human forearm</td></tr></tbody></table><p><b>Archimedes</b> explained the laws of levers and pulleys.</p>"
+      },
+      {
+        "title": "Pressure and properties of matter",
+        "body": "<ul><li><b>Pressure</b> = force (thrust) ÷ area. Sharp knives and narrow nails work because a small area gives high pressure; wide straps on bags spread the force.</li><li>Atmospheric pressure at sea level is about 101.3 kPa and falls with height. Water boils at a lower temperature on hills, so cooking is slow; a pressure cooker raises the boiling point.</li><li><b>Pascal's law</b>: pressure on an enclosed fluid is passed equally in all directions. Used in hydraulic lifts, presses and brakes.</li><li><b>Archimedes' principle</b>: a body in a fluid feels an upward force (buoyancy) equal to the weight of fluid it displaces. Ships float because they displace a lot of water. Ice floats because it is less dense than water. Water is densest at 4 °C.</li><li><b>Bernoulli's principle</b>: faster-moving fluid has lower pressure. It explains aeroplane lift and roofs blown off in storms.</li><li><b>Surface tension</b>: why drops are round and insects can walk on water; soap lowers it.</li><li><b>Capillarity</b>: liquid rising in thin tubes, as in lamp wicks, blotting paper and water rising in plants.</li><li><b>Viscosity</b>: a liquid's resistance to flow (honey is very viscous).</li><li><b>Hooke's law</b>: within the elastic limit, stress is proportional to strain.</li><li>States of matter: solid, liquid, gas, plasma (in stars) and <b>Bose-Einstein condensate</b> (predicted by S.N. Bose and Einstein in 1924 to 1925).</li><li>Salt in water raises the boiling point and lowers the freezing point.</li></ul>"
+      },
+      {
+        "title": "Heat and thermodynamics",
+        "body": "<ul><li><b>Conduction</b>: through solids (metal spoon gets hot). <b>Convection</b>: by movement of fluid (sea breeze by day, land breeze by night). <b>Radiation</b>: needs no medium (heat from the Sun). A thermos flask cuts all three.</li><li>Dark, dull surfaces absorb and emit heat best; white, shiny ones reflect it.</li><li>Water has a high <b>specific heat</b>, so it is used in car radiators and keeps coastal climates mild.</li><li><b>Latent heat</b>: heat taken in during a change of state without a change in temperature. Steam at 100 °C burns worse than water at 100 °C because of it.</li><li>Gaps are left in railway tracks to allow for expansion in summer.</li><li>Absolute zero is 0 K (−273.15 °C).</li><li>The average kinetic energy of gas molecules depends only on temperature: ½mv² = (3/2)kT, where k is Boltzmann's constant.</li></ul><table><thead><tr><th>Gas law</th><th>Statement</th></tr></thead><tbody><tr><td>Boyle's law (1662)</td><td>At fixed temperature, pressure × volume is constant</td></tr><tr><td>Charles's law (about 1787)</td><td>At fixed pressure, volume is proportional to absolute temperature</td></tr><tr><td>Gay-Lussac's law</td><td>At fixed volume, pressure is proportional to absolute temperature</td></tr><tr><td>Avogadro's law</td><td>Equal volumes of gases at the same temperature and pressure have equal numbers of molecules</td></tr></tbody></table>"
+      },
+      {
+        "title": "Sound and waves",
+        "body": "<ul><li>Sound needs a medium and cannot travel in a vacuum. In air it is a <b>longitudinal</b> wave. Light and ripples on water are transverse waves.</li><li>Speed of sound: about 332 m/s in air at 0 °C (about 343 m/s at 20 °C); faster in water and fastest in solids like steel. It rises with temperature and humidity.</li><li>Human hearing: <b>20 Hz to 20,000 Hz</b>. Below 20 Hz is infrasound (earthquakes, elephants, whales). Above 20 kHz is ultrasound (bats, dolphins, SONAR, medical scans).</li><li><b>Pitch</b> depends on frequency, <b>loudness</b> on amplitude (measured in decibels), and <b>quality (timbre)</b> on the wave shape.</li><li>An <b>echo</b> needs the reflecting surface at least about 17 m away (sound persists in the ear for 0.1 s).</li><li><b>Doppler effect</b> (Christian Doppler, 1842): the pitch of a source seems higher when it comes closer and lower when it moves away.</li><li>Faster than sound is supersonic; it causes a sonic boom. Mach 1 is the speed of sound.</li><li><b>Resonance</b>: soldiers break step on a bridge so that it does not vibrate dangerously.</li></ul><p><b>Electromagnetic spectrum</b> (rising frequency): radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays. Uses: microwaves for ovens and radar; infrared for TV remotes and night vision; ultraviolet for sterilising (the ozone layer blocks most of it); X-rays for bone images (Röntgen, 1895); gamma rays for cancer treatment. All travel at the speed of light, 3 × 10<sup>8</sup> m/s, in a vacuum.</p>"
+      },
+      {
+        "title": "Light: mirrors, refraction and nature's effects",
+        "body": "<ul><li><b>Plane mirror</b>: image is virtual, upright, same size and laterally inverted.</li><li><b>Concave mirror</b> (converging): shaving and dentist mirrors, torch and headlight reflectors, solar furnaces. <b>Convex mirror</b> (diverging): rear-view mirrors, because it gives a wider view.</li><li><b>Refraction</b>: light bends when it passes between media. A pool looks shallower than it is; a stick in water looks bent; stars twinkle; the Sun is seen about 2 minutes before actual sunrise.</li><li><b>Total internal reflection</b>: light stays inside a denser medium beyond the critical angle. It explains optical fibres, mirages and the sparkle of diamond (refractive index about 2.42).</li><li><b>Dispersion</b>: a prism splits white light into VIBGYOR; violet bends the most, red the least. A <b>rainbow</b> forms by refraction, dispersion and internal reflection in raindrops, opposite the Sun.</li><li><b>Scattering</b>: the sky is blue because air scatters blue light most. The Sun looks red at sunrise and sunset because light travels through more air and blue is scattered away. Clouds are white because large drops scatter all colours. Danger signals are red because red scatters least. The <b>Tyndall effect</b> is scattering by colloid particles. <b>Alpenglow</b> is the rosy glow on mountain tops around sunrise and sunset.</li><li>Persistence of vision (about 1/16 s) makes films look continuous.</li></ul>"
+      },
+      {
+        "title": "Lenses and the eye",
+        "body": "<p><b>Convex lens</b> (converging, thicker in the middle): magnifying glass, camera, correction of long-sightedness. <b>Concave lens</b> (diverging): correction of short-sightedness. Power (dioptre) = 1 ÷ focal length in metres; convex is positive, concave is negative.</p><table><thead><tr><th>Object (convex lens)</th><th>Image</th></tr></thead><tbody><tr><td>At infinity</td><td>At F; real, inverted, point-sized</td></tr><tr><td>Beyond 2F</td><td>Between F and 2F; real, inverted, smaller</td></tr><tr><td>At 2F</td><td>At 2F; real, inverted, same size</td></tr><tr><td>Between F and 2F</td><td>Beyond 2F; real, inverted, larger</td></tr><tr><td>At F</td><td>At infinity</td></tr><tr><td>Between F and the lens</td><td>Same side; virtual, upright, larger (magnifying glass)</td></tr></tbody></table><table><thead><tr><th>Eye defect</th><th>Problem</th><th>Correction</th></tr></thead><tbody><tr><td>Myopia (short sight)</td><td>Cannot see far</td><td>Concave lens</td></tr><tr><td>Hypermetropia (long sight)</td><td>Cannot see near</td><td>Convex lens</td></tr><tr><td>Presbyopia</td><td>Age-related, both near and far</td><td>Bifocal lens</td></tr><tr><td>Astigmatism</td><td>Uneven focus</td><td>Cylindrical lens</td></tr><tr><td>Cataract</td><td>Cloudy eye lens</td><td>Surgery</td></tr></tbody></table><p>The retina has rods (dim light) and cones (colour). The image on the retina is real and inverted.</p>",
         "img": "ga/phy-convex-lens.svg"
       },
       {
-        "title": "Sound and electricity",
-        "body": "<ul><li>Sound needs a medium; it <b>cannot travel in a vacuum</b>. It travels fastest in <b>solids</b>, then liquids, then gases.</li><li>Human hearing: <b>20 Hz to 20,000 Hz</b>. Below 20 Hz = infrasound; above 20 kHz = ultrasound (used by bats, SONAR).</li><li><b>Ohm's law</b>: V = I × R.</li><li>Household appliances are connected in <b>parallel</b> so each gets the full voltage. A fuse works on the heating effect of current.</li></ul>"
+        "title": "Electricity",
+        "body": "<ul><li>Current I = charge ÷ time (ampere). <b>Ohm's law</b>: V = IR.</li><li>Resistance increases with length, decreases with thickness, and depends on the material and temperature.</li><li>Series: R = R<sub>1</sub> + R<sub>2</sub>. Parallel: 1/R = 1/R<sub>1</sub> + 1/R<sub>2</sub>. House wiring is in <b>parallel</b>, so each device gets full voltage and can be switched alone.</li><li>Power P = VI = I²R. One unit of electricity = 1 kWh.</li><li><b>Fuse</b> wire has a low melting point (tin-lead alloy); it melts when current is too high. Earthing protects against shocks.</li><li>Heater coils use <b>nichrome</b> (high resistance); bulb filaments use <b>tungsten</b> (very high melting point).</li><li>Conductors: copper, silver (best), aluminium. Insulators: rubber, glass, plastic. Semiconductors: silicon, germanium.</li><li>Household supply in India: AC at 220 V, 50 Hz. Cells give DC.</li><li><b>Dry cell</b>: zinc case (negative), carbon rod (positive), paste of ammonium chloride with manganese dioxide. Cars use a lead-acid battery; phones use lithium-ion. Alessandro Volta made the first battery.</li></ul>"
+      },
+      {
+        "title": "Magnetism and electromagnetism",
+        "body": "<ul><li><b>Oersted (1820)</b> found that a current produces a magnetic field. <b>Ampère</b> suggested that the magnet in turn exerts an equal and opposite force on the current-carrying conductor.</li><li>Right-hand thumb rule gives the field direction around a wire. <b>Fleming's left-hand rule</b>: force on a conductor (motor). <b>Fleming's right-hand rule</b>: induced current (generator).</li><li><b>Faraday (1831)</b>: electromagnetic induction; changing magnetic field produces current.</li><li><b>Electric motor</b>: electrical to mechanical energy. <b>Generator (dynamo)</b>: mechanical to electrical energy. <b>Transformer</b>: changes AC voltage (step-up or step-down); works only on AC.</li><li>Electromagnets use soft iron because it is magnetised and demagnetised easily.</li><li>A freely hung magnet points north-south. Materials: ferromagnetic (iron, nickel, cobalt), paramagnetic (aluminium), diamagnetic (copper, water, bismuth).</li><li>Benjamin Franklin invented the lightning conductor.</li></ul>"
+      },
+      {
+        "title": "Atoms, nuclear physics and physicists",
+        "body": "<table><thead><tr><th>Discovery</th><th>Scientist</th></tr></thead><tbody><tr><td>Electron (1897)</td><td>J.J. Thomson</td></tr><tr><td>Nucleus (gold foil experiment, 1911)</td><td>Ernest Rutherford</td></tr><tr><td>Proton</td><td>Rutherford (canal rays first seen by Goldstein)</td></tr><tr><td>Neutron (1932)</td><td>James Chadwick</td></tr><tr><td>Antiparticles; theory of the positron (about 1930)</td><td>Paul Dirac (positron found by Carl Anderson, 1932)</td></tr><tr><td>Radioactivity (1896)</td><td>Henri Becquerel; Marie and Pierre Curie found polonium and radium</td></tr><tr><td>X-rays (1895)</td><td>Wilhelm Röntgen</td></tr><tr><td>Atomic model with energy levels</td><td>Niels Bohr</td></tr></tbody></table><ul><li>An electron shell can hold at most 2n² electrons, so the first (K) shell holds at most <b>2</b>.</li><li>Alpha rays are helium nuclei, beta rays are electrons, gamma rays are electromagnetic waves (most penetrating). <b>Half-life</b> is the time for half the nuclei to decay. The Geiger-Nuttall law (1911) links the half-life of alpha decay to the energy of the alpha particles.</li><li><b>Fission</b>: a heavy nucleus (uranium-235) splits; used in reactors and atom bombs. <b>Fusion</b>: light nuclei join; powers the Sun and the hydrogen bomb.</li><li>Einstein: E = mc² and relativity (1905); Nobel Prize (1921) for the photoelectric effect. Max Planck: quantum theory.</li></ul><table><thead><tr><th>Scientist</th><th>Known for</th></tr></thead><tbody><tr><td>Galileo</td><td>Telescope, falling bodies, idea of inertia</td></tr><tr><td>Newton</td><td>Laws of motion, gravitation</td></tr><tr><td>Huygens</td><td>Wave theory of light</td></tr><tr><td>Maxwell</td><td>Electromagnetic theory</td></tr><tr><td>Heinrich Hertz</td><td>Radio waves</td></tr><tr><td>Coulomb</td><td>Force between charges</td></tr><tr><td>Heisenberg</td><td>Uncertainty principle</td></tr><tr><td>C.V. Raman</td><td>Raman effect (1928); Nobel 1930</td></tr><tr><td>S.N. Bose</td><td>Bose-Einstein statistics; 'boson' is named after him</td></tr><tr><td>Meghnad Saha</td><td>Thermal ionisation equation</td></tr><tr><td>Homi J. Bhabha</td><td>Father of India's nuclear programme</td></tr></tbody></table>"
       }
     ],
     "varieties": [
       {
-        "type": "units",
-        "name": "Units and measurement",
-        "how": "Recall the SI unit table and common conversions.",
-        "example": { "q": "The SI unit of power is:", "steps": ["Power = work / time", "joule per second = watt"], "answer": "Watt" }
+        "type": "units-instruments",
+        "name": "Units and instruments",
+        "how": "Learn the seven base units, then derived units named after scientists. For 'which unit is NOT of X', check which quantity each unit belongs to.",
+        "example": {
+          "q": "A light year is a unit of:",
+          "steps": [
+            "It is the distance light travels in one year.",
+            "So, despite the word 'year', it measures distance."
+          ],
+          "answer": "Distance"
+        }
+      },
+      {
+        "type": "motion-force-energy",
+        "name": "Motion, force, gravity and energy",
+        "how": "Match the everyday example to the law: sudden start or stop means inertia (first law), push-back means third law, F = ma for calculations.",
+        "example": {
+          "q": "Passengers lurch forward when a moving bus stops suddenly. Which law explains this?",
+          "steps": [
+            "The body tends to keep moving after the bus stops.",
+            "This tendency is inertia, described by Newton's first law."
+          ],
+          "answer": "Newton's first law (inertia)"
+        }
+      },
+      {
+        "type": "matter-fluids",
+        "name": "Pressure and properties of matter",
+        "how": "Link each effect to its principle: lifts and brakes are Pascal, floating is Archimedes, aeroplane lift is Bernoulli, wicks are capillarity.",
+        "example": {
+          "q": "A hydraulic lift works on which principle?",
+          "steps": [
+            "A small force on a small piston gives a large force on a big piston.",
+            "Pressure is passed equally through the liquid: Pascal's law."
+          ],
+          "answer": "Pascal's law"
+        }
+      },
+      {
+        "type": "heat-sound-waves",
+        "name": "Heat, sound and waves",
+        "how": "For sound, remember the medium order (solid fastest, vacuum none) and the range 20 Hz to 20 kHz. For heat, name the mode: contact, flow or rays.",
+        "example": {
+          "q": "Sound travels fastest in which medium: air, water, vacuum, steel?",
+          "steps": [
+            "Sound cannot travel in a vacuum.",
+            "It is faster in liquids than gases, and fastest in solids."
+          ],
+          "answer": "Steel"
+        }
       },
       {
         "type": "light-optics",
         "name": "Light and optics",
-        "how": "Identify the phenomenon (reflection, refraction, TIR, scattering, dispersion), then the example or lens.",
-        "example": { "q": "Which lens is used to correct myopia?", "steps": ["Myopia: image forms in front of the retina", "A diverging (concave) lens pushes it back onto the retina"], "answer": "Concave lens" }
+        "how": "Name the effect first: reflection, refraction, total internal reflection, dispersion or scattering. Then recall the example list for that effect.",
+        "example": {
+          "q": "Optical fibres work on the principle of:",
+          "steps": [
+            "Light stays inside the fibre by bouncing off its inner walls.",
+            "This happens beyond the critical angle: total internal reflection."
+          ],
+          "answer": "Total internal reflection"
+        }
       },
       {
-        "type": "laws-concepts",
-        "name": "Laws and everyday physics",
-        "how": "Match the daily-life example to the law or property it shows.",
-        "example": { "q": "A rocket works on which law?", "steps": ["Gases pushed down (action)", "Rocket pushed up (reaction)"], "answer": "Newton's third law" }
+        "type": "electricity-magnetism",
+        "name": "Electricity and magnetism",
+        "how": "Know V = IR and P = VI, series versus parallel, and which device turns which energy into which (motor: electric to motion; generator: motion to electric).",
+        "example": {
+          "q": "Why are household appliances connected in parallel?",
+          "steps": [
+            "In parallel, each device gets the full 220 V.",
+            "Each can be switched on or off without affecting the others."
+          ],
+          "answer": "So each gets full voltage and works independently"
+        }
+      },
+      {
+        "type": "modern-physics",
+        "name": "Atoms, nuclear physics and scientists",
+        "how": "Learn discovery, scientist and year as a set. For radiation questions, remember alpha is helium, beta is electron, gamma is a wave.",
+        "example": {
+          "q": "Who discovered the neutron?",
+          "steps": [
+            "Thomson found the electron; Rutherford found the nucleus.",
+            "James Chadwick found the neutron in 1932."
+          ],
+          "answer": "James Chadwick"
+        }
       }
     ],
     "tips": [
-      "Myopia = Minus lens (concave, negative power); Hypermetropia = Plus lens (convex, positive power).",
-      "Blue sky = scattering; rainbow = dispersion + reflection + refraction.",
-      "Sound speed order: solid > liquid > gas > vacuum (zero)."
+      "Base units hook: 'Most Kids Study And Kill Many Cats' gives metre, kilogram, second, ampere, kelvin, mole, candela.",
+      "Myopia is 'my eyes see near', fixed with a concave lens; hyper-metropia sees far, fixed with a convex lens.",
+      "Spectrum order by frequency: 'Raging Martians Invaded Venus Using X-ray Guns' (radio to gamma).",
+      "Sky blue, sunset red, clouds white, danger red: all are scattering.",
+      "Lever classes 1-2-3: Fulcrum, Load, Effort in the middle ('FLE').",
+      "Motor uses the left hand, generator the right (Fleming)."
     ],
     "traps": [
-      "Light year measures distance, not time.",
-      "Sound cannot travel in vacuum, but light can.",
-      "Kilowatt-hour (kWh) is a unit of energy, not power."
+      "A light year measures distance, not time.",
+      "Sound is faster in steel than in water or air, and cannot travel in a vacuum.",
+      "A rear-view mirror is convex, not concave; shaving mirrors are concave.",
+      "Mass stays the same on the Moon; only weight drops to one-sixth.",
+      "Fuse wire must have a low melting point; bulb filaments (tungsten) need a high one."
     ]
   },
   "questions": [
-    { "id": "g-physics-001", "rev": 1, "topic": "g-physics", "type": "units", "level": 1, "q": "What is the SI unit of force?", "options": ["Joule", "Newton", "Watt", "Pascal"], "answer": 1, "solution": "Force is measured in newton (N). 1 N = 1 kg·m/s².<br><b>Memory hook:</b> Newton gave the laws of force, so force carries his name.", "source": "test-data" },
-    { "id": "g-physics-002", "rev": 1, "topic": "g-physics", "type": "light-optics", "level": 1, "q": "The sky appears blue because of:", "options": ["Reflection of light", "Refraction of light", "Scattering of light", "Dispersion of light"], "answer": 2, "solution": "Air molecules scatter shorter wavelengths (blue) much more than longer ones (red), so the sky looks blue.<br><b>Memory hook:</b> 'Blue is scattered all over the sky.'", "source": "test-data" },
-    { "id": "g-physics-003", "rev": 1, "topic": "g-physics", "type": "laws-concepts", "level": 1, "q": "Sound travels fastest in:", "options": ["Vacuum", "Air", "Water", "Steel"], "answer": 3, "solution": "Sound travels fastest in solids like steel, slower in liquids, slower still in gases, and not at all in a vacuum.<br><b>Memory hook:</b> Tightly packed particles pass the sound fastest.", "source": "test-data" },
-    { "id": "g-physics-004", "rev": 1, "topic": "g-physics", "type": "light-optics", "level": 2, "q": "Optical fibres work on the principle of:", "options": ["Total internal reflection", "Dispersion", "Diffraction", "Scattering"], "answer": 0, "solution": "Light inside an optical fibre keeps hitting the walls at angles above the critical angle and is totally internally reflected, so it travels long distances.<br><b>Memory hook:</b> Fibre, diamond, mirage — the TIR trio.", "source": "test-data" },
-    { "id": "g-physics-005", "rev": 1, "topic": "g-physics", "type": "laws-concepts", "level": 2, "q": "Passengers fall forward when a moving bus stops suddenly. This is explained by:", "options": ["Newton's third law", "Law of conservation of energy", "Newton's first law (inertia)", "Ohm's law"], "answer": 2, "solution": "The upper body tends to keep moving (inertia of motion) while the feet stop with the bus — Newton's first law.<br><b>Memory hook:</b> First law = bodies 'want' to keep doing what they were doing.", "source": "test-data" },
-    { "id": "g-physics-006", "rev": 1, "topic": "g-physics", "type": "units", "level": 2, "q": "A light year is a unit of:", "options": ["Time", "Distance", "Speed", "Intensity of light"], "answer": 1, "solution": "A light year is the distance light travels in one year (about 9.46 × 10<sup>12</sup> km).<br><b>Memory hook:</b> 'Year' fools you — it is how far, not how long.", "source": "test-data" },
-    { "id": "g-physics-007", "rev": 1, "topic": "g-physics", "type": "light-optics", "level": 3, "q": "An object is placed beyond 2F of a convex lens. The image formed is:", "img": "ga/phy-convex-lens.svg", "options": ["Between F and 2F, real, inverted, diminished", "Beyond 2F, real, inverted, enlarged", "At 2F, real, inverted, same size", "On the same side, virtual, erect, enlarged"], "answer": 0, "solution": "For an object beyond 2F, the convex lens forms a real, inverted and smaller image between F and 2F on the other side (used in cameras).<br><b>Memory hook:</b> Far object → small image close to F (like a camera).", "source": "test-data" },
-    { "id": "g-physics-008", "rev": 1, "topic": "g-physics", "type": "units", "level": 3, "q": "1 horsepower is approximately equal to:", "options": ["1000 W", "500 W", "746 W", "100 W"], "answer": 2, "solution": "1 horsepower ≈ 746 watts.<br><b>Memory hook:</b> 746 W is about three-quarters of a kilowatt.", "source": "test-data" }
+    {
+      "id": "g-physics-001",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "units-instruments",
+      "level": 1,
+      "q": "What is the SI unit of force?",
+      "options": [
+        "Joule",
+        "Newton",
+        "Watt",
+        "Pascal"
+      ],
+      "answer": 1,
+      "solution": "Force is measured in newton (N). 1 N = 1 kg·m/s².<br><b>Memory hook:</b> Newton gave the laws of force, so force carries his name.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-physics-002",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "light-optics",
+      "level": 1,
+      "q": "The sky appears blue because of:",
+      "options": [
+        "Reflection of light",
+        "Refraction of light",
+        "Scattering of light",
+        "Dispersion of light"
+      ],
+      "answer": 2,
+      "solution": "Air molecules scatter shorter wavelengths (blue) much more than longer ones (red), so the sky looks blue.<br><b>Memory hook:</b> 'Blue is scattered all over the sky.'",
+      "source": "test-data"
+    },
+    {
+      "id": "g-physics-003",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "heat-sound-waves",
+      "level": 1,
+      "q": "Sound travels fastest in:",
+      "options": [
+        "Vacuum",
+        "Air",
+        "Water",
+        "Steel"
+      ],
+      "answer": 3,
+      "solution": "Sound travels fastest in solids like steel, slower in liquids, slower still in gases, and not at all in a vacuum.<br><b>Memory hook:</b> Tightly packed particles pass the sound fastest.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-physics-004",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "light-optics",
+      "level": 2,
+      "q": "Optical fibres work on the principle of:",
+      "options": [
+        "Total internal reflection",
+        "Dispersion",
+        "Diffraction",
+        "Scattering"
+      ],
+      "answer": 0,
+      "solution": "Light inside an optical fibre keeps hitting the walls at angles above the critical angle and is totally internally reflected, so it travels long distances.<br><b>Memory hook:</b> Fibre, diamond, mirage — the TIR trio.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-physics-005",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "motion-force-energy",
+      "level": 2,
+      "q": "Passengers fall forward when a moving bus stops suddenly. This is explained by:",
+      "options": [
+        "Newton's third law",
+        "Law of conservation of energy",
+        "Newton's first law (inertia)",
+        "Ohm's law"
+      ],
+      "answer": 2,
+      "solution": "The upper body tends to keep moving (inertia of motion) while the feet stop with the bus — Newton's first law.<br><b>Memory hook:</b> First law = bodies 'want' to keep doing what they were doing.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-physics-006",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "units-instruments",
+      "level": 2,
+      "q": "A light year is a unit of:",
+      "options": [
+        "Time",
+        "Distance",
+        "Speed",
+        "Intensity of light"
+      ],
+      "answer": 1,
+      "solution": "A light year is the distance light travels in one year (about 9.46 × 10<sup>12</sup> km).<br><b>Memory hook:</b> 'Year' fools you — it is how far, not how long.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-physics-007",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "light-optics",
+      "level": 3,
+      "q": "An object is placed beyond 2F of a convex lens. The image formed is:",
+      "img": "ga/phy-convex-lens.svg",
+      "options": [
+        "Between F and 2F, real, inverted, diminished",
+        "Beyond 2F, real, inverted, enlarged",
+        "At 2F, real, inverted, same size",
+        "On the same side, virtual, erect, enlarged"
+      ],
+      "answer": 0,
+      "solution": "For an object beyond 2F, the convex lens forms a real, inverted and smaller image between F and 2F on the other side (used in cameras).<br><b>Memory hook:</b> Far object → small image close to F (like a camera).",
+      "source": "test-data"
+    },
+    {
+      "id": "g-physics-008",
+      "rev": 1,
+      "topic": "g-physics",
+      "type": "units-instruments",
+      "level": 3,
+      "q": "1 horsepower is approximately equal to:",
+      "options": [
+        "1000 W",
+        "500 W",
+        "746 W",
+        "100 W"
+      ],
+      "answer": 2,
+      "solution": "1 horsepower ≈ 746 watts.<br><b>Memory hook:</b> 746 W is about three-quarters of a kilowatt.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-physics-1", "front": "SI unit of pressure", "back": "Pascal (Pa)", "deck": "ga-facts" },
-    { "id": "fc-g-physics-2", "front": "SI unit of electrical resistance", "back": "Ohm (Ω)", "deck": "ga-facts" },
-    { "id": "fc-g-physics-3", "front": "Lens to correct hypermetropia", "back": "Convex lens", "deck": "ga-facts" },
-    { "id": "fc-g-physics-4", "front": "Range of human hearing", "back": "20 Hz to 20,000 Hz", "deck": "ga-facts" },
-    { "id": "fc-g-physics-5", "front": "Why are danger signals red?", "back": "Red light is scattered least, so it is seen from far away", "deck": "ga-facts" },
-    { "id": "fc-g-physics-6", "front": "Ohm's law", "back": "V = I × R", "deck": "ga-facts" },
-    { "id": "fc-g-physics-7", "front": "Principle of a rocket", "back": "Newton's third law (action–reaction)", "deck": "ga-facts" },
-    { "id": "fc-g-physics-8", "front": "Sound above 20 kHz is called", "back": "Ultrasound", "deck": "ga-facts" },
-    { "id": "fc-g-physics-9", "front": "Kilowatt-hour measures", "back": "Electrical energy (1 kWh = 3.6 × 10⁶ J)", "deck": "ga-facts" }
+    {
+      "id": "fc-g-physics-1",
+      "front": "SI unit of pressure",
+      "back": "Pascal (Pa)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-2",
+      "front": "SI unit of electrical resistance",
+      "back": "Ohm (Ω)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-3",
+      "front": "Lens to correct hypermetropia",
+      "back": "Convex lens",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-4",
+      "front": "Range of human hearing",
+      "back": "20 Hz to 20,000 Hz",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-5",
+      "front": "Why are danger signals red?",
+      "back": "Red light is scattered least, so it is seen from far away",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-6",
+      "front": "Ohm's law",
+      "back": "V = I × R",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-7",
+      "front": "Principle of a rocket",
+      "back": "Newton's third law (action–reaction)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-8",
+      "front": "Sound above 20 kHz is called",
+      "back": "Ultrasound",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-physics-9",
+      "front": "Kilowatt-hour measures",
+      "back": "Electrical energy (1 kWh = 3.6 × 10⁶ J)",
+      "deck": "ga-facts"
+    }
   ]
 }

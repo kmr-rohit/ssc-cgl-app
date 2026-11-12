@@ -1,207 +1,365 @@
 {
- "topic": "q-average",
- "notes": {
-  "summary": "Average = Sum ÷ Count. Almost every average question is solved by thinking in terms of the total. 1–2 questions per tier.",
-  "concepts": [
-   {
-    "title": "Work with totals",
-    "body": "Total = Average × Number. When someone joins, leaves or is replaced, find the change in total."
-   },
-   {
-    "title": "Consecutive numbers",
-    "body": "For numbers in AP (consecutive, consecutive odd/even), the average is the <b>middle term</b> = (first + last)/2. Average of first n natural numbers = (n + 1)/2."
-   },
-   {
-    "title": "Replacement shortcut",
-    "body": "If one person is replaced and the average of n people rises by d, then New − Old = n × d."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "basic",
-    "name": "Sum and average",
-    "how": "Convert averages to totals and subtract.",
-    "example": {
-     "q": "Average of 4 numbers is 20. One more number makes the average 22. Find it.",
-     "steps": [
-      "Old total = 80",
-      "New total = 110",
-      "Number = 30"
-     ],
-     "answer": "30"
+  "topic": "q-average",
+  "notes": {
+    "summary": "An average is the total of the values divided by how many values there are. SSC asks about 1 question in Tier 1 and 1 to 2 in Tier 2, usually on people joining, leaving or being replaced, wrong entries, consecutive numbers and cricket. Nearly all of them reduce to one rule: sum = average × number.",
+    "concepts": [
+      {
+        "title": "What an average is",
+        "body": "<p>Average = Sum of values ÷ Number of values. So <b>Sum = Average × Number</b>. Almost every average question is solved by turning averages into sums.</p><p>Example: the average of 5 numbers is 27, so their sum is 135. If one is removed and the other 4 average 25 (sum 100), the removed number is 35.</p><p>The average always lies between the smallest and the largest value.</p>"
+      },
+      {
+        "title": "Assumed average (deviation method)",
+        "body": "<p>Guess a round value close to the numbers, find how far each number is from it, and correct the guess.</p><p><b>Average = Assumed value + (sum of deviations) ÷ n</b></p><p>Example: 47, 52, 49, 55, 47. Assume 50. Deviations: −3, +2, −1, +5, −3. Sum = 0. Average = 50.</p><p>This also explains every shortcut below: the average moves by (total extra) ÷ (number of values).</p>"
+      },
+      {
+        "title": "Changing every value",
+        "body": "<ul><li>Add k to every value: the average increases by k.</li><li>Subtract k from every value: the average decreases by k.</li><li>Multiply every value by k: the average is multiplied by k.</li><li>Divide every value by k: the average is divided by k.</li></ul><p>Example: the average of 8 numbers is 25. Each is increased by 4 and then doubled. New average = (25 + 4) × 2 = 58.</p>"
+      },
+      {
+        "title": "Averages of number patterns",
+        "body": "<p>For numbers in arithmetic progression (equal gaps), <b>average = (first + last) ÷ 2</b>, which is also the middle term.</p><table><thead><tr><th>Numbers</th><th>Average</th></tr></thead><tbody><tr><td>First n natural numbers</td><td>(n + 1)/2</td></tr><tr><td>First n even numbers</td><td>n + 1</td></tr><tr><td>First n odd numbers</td><td>n</td></tr><tr><td>Squares of first n natural numbers</td><td>(n + 1)(2n + 1)/6</td></tr><tr><td>Cubes of first n natural numbers</td><td>n(n + 1)²/4</td></tr><tr><td>First n multiples of k</td><td>k(n + 1)/2</td></tr></tbody></table><p>Examples: average of the first 91 even numbers = 92. Average of the cubes of 1 to 5 = 5 × 36/4 = 45. Average of the first 20 multiples of 7 = 7 × 21/2 = 73.5.</p>"
+      },
+      {
+        "title": "Consecutive numbers",
+        "body": "<p>For an odd count of consecutive numbers, the average is the <b>middle</b> number. For an even count, it is the mean of the two middle numbers.</p><ul><li>7 consecutive odd numbers with average 33: middle is 33, so the numbers are 27, 29, 31, 33, 35, 37, 39.</li><li>8 consecutive odd numbers with average 28: middle two are 27 and 29, so smallest = 21, largest = 35, and smallest + largest = 56 = 2 × 28.</li><li>Sum of the smallest and largest = 2 × average, always.</li></ul>"
+      },
+      {
+        "title": "Average of combined groups",
+        "body": "<p>Combined average = (n₁a₁ + n₂a₂) ÷ (n₁ + n₂). Do not just average the two averages unless the groups are the same size.</p><p>Example: 60 students, 40% girls. 24 girls average 55 kg and 36 boys average 62 kg. Class average = (1320 + 2232)/60 = 59.2 kg.</p><p>To find the group sizes from the overall average, use alligation: n₁ : n₂ = (a₂ − A) : (A − a₁).</p>"
+      },
+      {
+        "title": "A member joins or leaves",
+        "body": "<p>Group of n with average A.</p><ul><li>One person joins and the average rises by d: <b>new person = A + (n + 1)d</b>. (If it falls, d is negative.)</li><li>One person leaves and the average rises by d: <b>person who left = A − (n − 1)d</b>.</li><li>Think of it as: the newcomer brings the old average for himself, plus d for every member of the new group.</li></ul><p>Example: 30 students average 15 years; with the teacher the average is 16. Teacher = 15 + 31 × 1 = 46 years.</p><p>Example: 120 staff average 62.5 kg; one leaves and the average falls by 0.25 kg. Leaver = 62.5 + 119 × 0.25 = 92.25 kg.</p>"
+      },
+      {
+        "title": "Replacement",
+        "body": "<p>When one member is replaced and the group size stays n:</p><p><b>New member = Old member + n × (change in average)</b></p><p>Example: the average weight of 8 persons rises by 2.5 kg when a 65 kg person is replaced. New person = 65 + 8 × 2.5 = 85 kg.</p><p>If the average falls, the new member is lighter: subtract instead. If two members are replaced, use their total.</p>"
+      },
+      {
+        "title": "Wrong entries",
+        "body": "<p><b>Correct average = Wrong average + (correct values − wrong values) ÷ n</b></p><p>Example: average of 40 students was 68, but 84 and 46 were entered as 48 and 64. Correction = (130 − 112)/40 = 0.45. Correct average = 68.45.</p><p>Digit swaps: if 47 was read as 74, the sum went up by 27 and the average must come down by 27/n.</p>"
+      },
+      {
+        "title": "Overlapping groups",
+        "body": "<p>When the first few and the last few numbers share a number, that common number is counted twice.</p><p><b>Common number = (sum of first group) + (sum of last group) − (total sum)</b></p><p>Example: 11 numbers average 50; the first 6 average 49 and the last 6 average 52. Sixth number = 294 + 312 − 550 = 56.</p><p>When the groups do not overlap, the leftover numbers = total sum − sums of the groups. Then use the extra conditions (for example, the 10th is 3 more than the 9th) to split the leftover.</p>"
+      },
+      {
+        "title": "Cricket: batting average and run rate",
+        "body": "<ul><li>Batting average = total runs ÷ innings (completed innings). Bowling average = runs given ÷ wickets taken.</li><li>A batsman scores S in his nth innings and his average rises by d: <b>new average = S − (n − 1)d</b>. With 90 in the 12th innings and a rise of 5, new average = 90 − 55 = 35.</li><li>Run rate = runs ÷ overs. Required run rate = (target − runs made) ÷ overs left. 72 runs in 10 overs, target 272 in 50 overs: (272 − 72)/40 = 5.</li></ul>"
+      },
+      {
+        "title": "Average age over time",
+        "body": "<ul><li>After t years every person is t years older, so the average age of a fixed group also rises by t.</li><li>t years ago the average was t less.</li><li>When a child is born or someone joins, use totals: total now = average × number of people.</li><li>Example: husband and wife averaged 23 years at marriage. Five years later they have a 1-year-old child. Total = 46 + 10 + 1 = 57, average = 19 years.</li></ul>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "basic-average",
+        "name": "Basic average and sums",
+        "how": "Change every average into a sum (average × count). Add or subtract sums, then divide. If every value is changed the same way, change the average the same way.",
+        "example": {
+          "q": "The average of 8 numbers is 25. Each number is increased by 4 and then multiplied by 2. What is the new average?",
+          "steps": [
+            "Adding 4 to each raises the average to 29.",
+            "Doubling each doubles the average.",
+            "New average = 29 × 2 = 58."
+          ],
+          "answer": "58"
+        }
+      },
+      {
+        "type": "consecutive-numbers",
+        "name": "Consecutive numbers and first n numbers",
+        "how": "For consecutive numbers the average is the middle term. For first n numbers use the table: natural (n + 1)/2, even n + 1, odd n.",
+        "example": {
+          "q": "The average of five consecutive even numbers is 46. What is the product of the smallest and the largest?",
+          "steps": [
+            "The middle number is 46.",
+            "The numbers are 42, 44, 46, 48, 50.",
+            "Product = 42 × 50 = 2100."
+          ],
+          "answer": "2100"
+        }
+      },
+      {
+        "type": "combined-groups",
+        "name": "Average of combined groups",
+        "how": "Combined average = total of all sums ÷ total people. To find group sizes, use alligation: n₁ : n₂ = (a₂ − A) : (A − a₁).",
+        "example": {
+          "q": "The average salary of all workers in a factory is ₹8,000. The 20 officers average ₹15,000 and the other workers average ₹6,000. How many other workers are there?",
+          "steps": [
+            "Officers : others = (8000 − 6000) : (15000 − 8000) = 2 : 7.",
+            "2 parts = 20 officers, so 1 part = 10.",
+            "Others = 7 × 10 = 70."
+          ],
+          "answer": "70"
+        }
+      },
+      {
+        "type": "entry-exit",
+        "name": "A member joins or leaves",
+        "how": "New total minus old total gives the person or group that joined. Shortcut for one joiner: old average + (new count) × rise.",
+        "example": {
+          "q": "The average weight of 24 students is 40 kg. When 6 new students join, the average becomes 41 kg. What is the average weight of the new students?",
+          "steps": [
+            "Old total = 24 × 40 = 960; new total = 30 × 41 = 1230.",
+            "New students together = 1230 − 960 = 270 kg.",
+            "Their average = 270 ÷ 6 = 45 kg."
+          ],
+          "answer": "45 kg"
+        }
+      },
+      {
+        "type": "replacement",
+        "name": "One member replaced by another",
+        "how": "New member = old member + (group size × change in average). Use minus if the average falls.",
+        "example": {
+          "q": "The average weight of 10 persons increases by 1.5 kg when one of them weighing 58 kg is replaced by a new person. Find the new person’s weight.",
+          "steps": [
+            "Total rises by 10 × 1.5 = 15 kg.",
+            "New person = 58 + 15.",
+            "= 73 kg."
+          ],
+          "answer": "73 kg"
+        }
+      },
+      {
+        "type": "wrong-entry",
+        "name": "Wrong entry corrected",
+        "how": "Correct average = wrong average + (correct values − wrong values) ÷ n.",
+        "example": {
+          "q": "The average of 25 numbers is 36. Later it was found that 47 was read as 74. Find the correct average.",
+          "steps": [
+            "The sum was 74 − 47 = 27 too high.",
+            "Correction = 27 ÷ 25 = 1.08.",
+            "Correct average = 36 − 1.08 = 34.92."
+          ],
+          "answer": "34.92"
+        }
+      },
+      {
+        "type": "overlapping",
+        "name": "Overlapping parts of a list",
+        "how": "Common number = sum of first group + sum of last group − total sum.",
+        "example": {
+          "q": "The average of 11 numbers is 50. The average of the first six is 49 and of the last six is 52. Find the sixth number.",
+          "steps": [
+            "Sum of first six = 294, last six = 312, all eleven = 550.",
+            "The sixth number is counted twice.",
+            "Sixth = 294 + 312 − 550 = 56."
+          ],
+          "answer": "56"
+        }
+      },
+      {
+        "type": "cricket",
+        "name": "Batting average and run rate",
+        "how": "New average = score in the latest innings − (earlier innings × rise). Required run rate = runs still needed ÷ overs left.",
+        "example": {
+          "q": "A batsman scores 90 runs in his 12th innings and his average increases by 5. What is his average after the 12th innings?",
+          "steps": [
+            "New average = 90 − 11 × 5.",
+            "= 35.",
+            "Check: old average 30, total 330; (330 + 90)/12 = 35."
+          ],
+          "answer": "35"
+        }
+      },
+      {
+        "type": "ages",
+        "name": "Average age",
+        "how": "Turn average ages into total ages. Add t years for each person for every t years that pass, and add new members’ ages.",
+        "example": {
+          "q": "At the time of marriage, the average age of a husband and wife was 23 years. Five years later they have a 1-year-old child. What is the average age of the family now?",
+          "steps": [
+            "Total at marriage = 46; five years later = 46 + 10 = 56.",
+            "Add the child: 56 + 1 = 57.",
+            "Average = 57 ÷ 3 = 19."
+          ],
+          "answer": "19 years"
+        }
+      }
+    ],
+    "tips": [
+      "Always turn averages into sums first. Sum = average × number.",
+      "Joiner = old average + (new count × rise). Replacement = old member + (count × rise).",
+      "For consecutive numbers, the average is the middle number.",
+      "Use an assumed average to add long lists of close numbers quickly.",
+      "For two groups, alligation gives the ratio of group sizes at once.",
+      "Over t years the average age of the same people rises by exactly t."
+    ],
+    "traps": [
+      "Do not average two averages directly unless both groups are the same size.",
+      "When a teacher is included, the new count is n + 1, not n.",
+      "In replacement, the group size does not change; in joining, it does.",
+      "In cricket questions, the rise in average applies to the earlier innings, so use (n − 1), not n.",
+      "With overlapping groups, the shared number is counted twice; subtract the total once."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Average",
+      "expr": "Sum ÷ Number of values"
+    },
+    {
+      "name": "Average of an arithmetic progression",
+      "expr": "(First + Last)/2"
+    },
+    {
+      "name": "First n natural, even, odd numbers",
+      "expr": "(n + 1)/2, n + 1, n"
+    },
+    {
+      "name": "Squares and cubes of 1 to n (average)",
+      "expr": "(n + 1)(2n + 1)/6 and n(n + 1)²/4"
+    },
+    {
+      "name": "Combined average",
+      "expr": "(n₁a₁ + n₂a₂)/(n₁ + n₂)"
+    },
+    {
+      "name": "One person joins, average rises by d",
+      "expr": "Joiner = A + (n + 1)d"
+    },
+    {
+      "name": "One person leaves, average rises by d",
+      "expr": "Leaver = A − (n − 1)d"
+    },
+    {
+      "name": "Replacement",
+      "expr": "New = Old + n × change"
+    },
+    {
+      "name": "Wrong entry",
+      "expr": "Correct average = Wrong average + (correct − wrong)/n"
+    },
+    {
+      "name": "Score S in nth innings raises average by d",
+      "expr": "New average = S − (n − 1)d"
     }
-   },
-   {
-    "type": "replacement",
-    "name": "Joining, leaving, replacement",
-    "how": "New person = old average + (new count × change) or use New − Old = n × d.",
-    "example": {
-     "q": "Average weight of 10 boys rises by 2 kg when a 50 kg boy is replaced. New boy’s weight?",
-     "steps": [
-      "50 + 10 × 2"
-     ],
-     "answer": "70 kg"
-    }
-   },
-   {
-    "type": "consecutive",
-    "name": "Consecutive numbers and innings",
-    "how": "Use the middle term for AP sets; for cricket, set the old average as x.",
-    "example": {
-     "q": "Average of 5 consecutive even numbers is 16. Largest?",
-     "steps": [
-      "Middle = 16",
-      "Numbers: 12, 14, 16, 18, 20"
-     ],
-     "answer": "20"
-    }
-   }
   ],
-  "tips": [
-   "Always convert average to total first.",
-   "For a new member raising average by d: new member = old average + (new count) × d."
+  "questions": [
+    {
+      "id": "q-average-001",
+      "rev": 1,
+      "topic": "q-average",
+      "type": "consecutive-numbers",
+      "level": 1,
+      "q": "What is the average of the first 10 natural numbers?",
+      "options": [
+        "5",
+        "5.5",
+        "6",
+        "10"
+      ],
+      "answer": 1,
+      "solution": "Sum = 10 × 11 / 2 = 55.<br>Average = 55/10 = 5.5.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-average-002",
+      "rev": 1,
+      "topic": "q-average",
+      "type": "entry-exit",
+      "level": 1,
+      "q": "The average of 5 numbers is 27. If one number is excluded, the average of the remaining numbers becomes 25. What is the excluded number?",
+      "options": [
+        "25",
+        "30",
+        "35",
+        "27"
+      ],
+      "answer": 2,
+      "solution": "Total of 5 numbers = 5 × 27 = 135.<br>Total of 4 numbers = 4 × 25 = 100.<br>Excluded number = 135 − 100 = 35.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-average-003",
+      "rev": 1,
+      "topic": "q-average",
+      "type": "entry-exit",
+      "level": 2,
+      "q": "The average age of 30 students in a class is 15 years. When the teacher’s age is included, the average becomes 16 years. What is the teacher’s age?",
+      "options": [
+        "46 years",
+        "45 years",
+        "31 years",
+        "48 years"
+      ],
+      "answer": 0,
+      "solution": "Total for students = 30 × 15 = 450.<br>Total with teacher = 31 × 16 = 496.<br>Teacher’s age = 496 − 450 = 46 years.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-average-004",
+      "rev": 1,
+      "topic": "q-average",
+      "type": "consecutive-numbers",
+      "level": 2,
+      "q": "The average of 7 consecutive odd numbers is 33. What is the largest of these numbers?",
+      "options": [
+        "37",
+        "41",
+        "39",
+        "35"
+      ],
+      "answer": 2,
+      "solution": "Middle (4th) number = average = 33.<br>Numbers: 27, 29, 31, 33, 35, 37, 39.<br>Largest = 39.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-average-005",
+      "rev": 1,
+      "topic": "q-average",
+      "type": "cricket",
+      "level": 3,
+      "q": "A batsman scores 87 runs in his 17th innings and thereby increases his average by 3. What is his average after the 17th innings?",
+      "options": [
+        "36",
+        "39",
+        "42",
+        "38"
+      ],
+      "answer": 1,
+      "solution": "Let the average after 16 innings be x.<br>16x + 87 = 17(x + 3) → x = 87 − 51 = 36.<br>New average = 36 + 3 = 39.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-average-006",
+      "rev": 1,
+      "topic": "q-average",
+      "type": "replacement",
+      "level": 3,
+      "q": "The average weight of 8 persons increases by 2.5 kg when a new person comes in place of one of them weighing 65 kg. What is the weight of the new person?",
+      "options": [
+        "75 kg",
+        "80 kg",
+        "85 kg",
+        "90 kg"
+      ],
+      "answer": 2,
+      "solution": "Increase in total = 8 × 2.5 = 20 kg.<br>New person = 65 + 20 = 85 kg.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "When the teacher is included, the count becomes n + 1.",
-   "Average speed is not always the simple average of speeds."
+  "flashcards": [
+    {
+      "id": "fc-avg-1",
+      "front": "Average of first n natural numbers",
+      "back": "(n + 1)/2",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-avg-2",
+      "front": "Average of an AP",
+      "back": "(first + last)/2 = middle term",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-avg-3",
+      "front": "Replacement: average of n rises by d",
+      "back": "New − Old = n × d",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Average",
-   "expr": "Sum / Number of items"
-  },
-  {
-   "name": "First n natural numbers",
-   "expr": "(n + 1)/2"
-  },
-  {
-   "name": "Replacement",
-   "expr": "New − Old = n × change in average"
-  }
- ],
- "questions": [
-  {
-   "id": "q-average-001",
-   "rev": 1,
-   "topic": "q-average",
-   "type": "consecutive",
-   "level": 1,
-   "q": "What is the average of the first 10 natural numbers?",
-   "options": [
-    "5",
-    "5.5",
-    "6",
-    "10"
-   ],
-   "answer": 1,
-   "solution": "Sum = 10 × 11 / 2 = 55.<br>Average = 55/10 = 5.5.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-average-002",
-   "rev": 1,
-   "topic": "q-average",
-   "type": "basic",
-   "level": 1,
-   "q": "The average of 5 numbers is 27. If one number is excluded, the average of the remaining numbers becomes 25. What is the excluded number?",
-   "options": [
-    "25",
-    "30",
-    "35",
-    "27"
-   ],
-   "answer": 2,
-   "solution": "Total of 5 numbers = 5 × 27 = 135.<br>Total of 4 numbers = 4 × 25 = 100.<br>Excluded number = 135 − 100 = 35.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-average-003",
-   "rev": 1,
-   "topic": "q-average",
-   "type": "replacement",
-   "level": 2,
-   "q": "The average age of 30 students in a class is 15 years. When the teacher’s age is included, the average becomes 16 years. What is the teacher’s age?",
-   "options": [
-    "46 years",
-    "45 years",
-    "31 years",
-    "48 years"
-   ],
-   "answer": 0,
-   "solution": "Total for students = 30 × 15 = 450.<br>Total with teacher = 31 × 16 = 496.<br>Teacher’s age = 496 − 450 = 46 years.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-average-004",
-   "rev": 1,
-   "topic": "q-average",
-   "type": "consecutive",
-   "level": 2,
-   "q": "The average of 7 consecutive odd numbers is 33. What is the largest of these numbers?",
-   "options": [
-    "37",
-    "41",
-    "39",
-    "35"
-   ],
-   "answer": 2,
-   "solution": "Middle (4th) number = average = 33.<br>Numbers: 27, 29, 31, 33, 35, 37, 39.<br>Largest = 39.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-average-005",
-   "rev": 1,
-   "topic": "q-average",
-   "type": "consecutive",
-   "level": 3,
-   "q": "A batsman scores 87 runs in his 17th innings and thereby increases his average by 3. What is his average after the 17th innings?",
-   "options": [
-    "36",
-    "39",
-    "42",
-    "38"
-   ],
-   "answer": 1,
-   "solution": "Let the average after 16 innings be x.<br>16x + 87 = 17(x + 3) → x = 87 − 51 = 36.<br>New average = 36 + 3 = 39.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-average-006",
-   "rev": 1,
-   "topic": "q-average",
-   "type": "replacement",
-   "level": 3,
-   "q": "The average weight of 8 persons increases by 2.5 kg when a new person comes in place of one of them weighing 65 kg. What is the weight of the new person?",
-   "options": [
-    "75 kg",
-    "80 kg",
-    "85 kg",
-    "90 kg"
-   ],
-   "answer": 2,
-   "solution": "Increase in total = 8 × 2.5 = 20 kg.<br>New person = 65 + 20 = 85 kg.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-avg-1",
-   "front": "Average of first n natural numbers",
-   "back": "(n + 1)/2",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-avg-2",
-   "front": "Average of an AP",
-   "back": "(first + last)/2 = middle term",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-avg-3",
-   "front": "Replacement: average of n rises by d",
-   "back": "New − Old = n × d",
-   "deck": "formulas"
-  }
- ]
 }

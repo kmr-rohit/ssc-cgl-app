@@ -1,0 +1,41 @@
+{
+  "topic": "e-idioms",
+  "types": [
+    {
+      "type": "meaning",
+      "name": "Meaning of a given idiom",
+      "description": "An idiom stands alone after the instruction, e.g. 'Select the most appropriate meaning of the given idiom. To sit on the fence', and the options are plain-English meanings.",
+      "concepts": []
+    },
+    {
+      "type": "in-sentence",
+      "name": "Meaning of an idiom in a sentence",
+      "description": "A full sentence contains an underlined, bold, italic or highlighted idiom, and the question asks for its meaning; the options are plain-English meanings.",
+      "concepts": []
+    },
+    {
+      "type": "replace-phrase",
+      "name": "Idiom to replace plain words",
+      "description": "A sentence has an underlined or italicised plain-English phrase (e.g. 'made a big fuss about a small problem') and the options are idioms; choose the idiom that can replace it.",
+      "concepts": []
+    },
+    {
+      "type": "fill-blank",
+      "name": "Idiom to fill a blank",
+      "description": "A sentence or a short dialogue has a blank, and the options are idioms or phrases; choose the one that completes it (e.g. 'It was just ______ from it', or 'complete the dialogue for Person B').",
+      "concepts": []
+    },
+    {
+      "type": "correct-form",
+      "name": "Correct wording of an idiom",
+      "description": "The sentence uses a wrongly worded idiom (e.g. 'hit me below the hand') or asks which option is the right form, and the options are variants of the same idiom with one word changed.",
+      "concepts": []
+    },
+    {
+      "type": "correct-usage",
+      "name": "Sentence using the idiom correctly",
+      "description": "An idiom is named and the four options are full sentences; choose the sentence that uses the idiom in its correct sense, or name the idiom that matches a given meaning.",
+      "concepts": []
+    }
+  ]
+}

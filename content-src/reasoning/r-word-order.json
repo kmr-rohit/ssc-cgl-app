@@ -1,52 +1,121 @@
 {
  "topic": "r-word-order",
  "notes": {
-  "summary": "Dictionary order asks you to arrange words as they appear in a dictionary. Word formation asks which word can (or cannot) be made from the letters of a given word. About 1 question in Tier 1.",
+  "summary": "This topic covers four small question kinds: putting words in <b>dictionary order</b>, putting words in a <b>logical order</b>, <b>word formation</b> from given letters, and the <b>alphabet test</b> (working with letter positions inside a word). SSC asks about 1 question in Tier 1. Each one is quick if you work letter by letter on paper.",
   "concepts": [
    {
-    "title": "Dictionary order",
-    "body": "Compare the first letter; if same, compare the second; and so on. A shorter word comes first if it is the start of a longer one (<b>Mon</b> before <b>Money</b>)."
+    "title": "Dictionary order: the rules",
+    "body": "<ol><li>Compare the <b>first letters</b>. The word with the earlier letter comes first.</li><li>If the first letters are the same, compare the second letters, then the third, and so on, until the letters differ.</li><li>If one word is the <b>start of the other</b> (Real, Realism), the shorter word comes first.</li><li>Capital letters, spaces and hyphens do not change the order in these questions.</li></ol><table><thead><tr><th>Pair</th><th>First difference</th><th>Comes first</th></tr></thead><tbody><tr><td>Brake / Bread</td><td>a vs e (3rd letter)</td><td>Brake</td></tr><tr><td>Peck / Pebble</td><td>c vs b (3rd letter)</td><td>Pebble</td></tr><tr><td>Realism / Realistic</td><td>m vs t (7th letter)</td><td>Realism</td></tr><tr><td>Hatch / Hatchback</td><td>Hatch is the start of Hatchback</td><td>Hatch</td></tr></tbody></table>"
+   },
+   {
+    "title": "Dictionary order: a worked set",
+    "body": "Arrange: 1. Disaster 2. Disappointment 3. Discharge 4. Disappear 5. Disadvantage 6. Disarticulate<ol><li>All start with \"Dis\". The 4th letters: a, a, c, a, a, a. So Discharge (c) comes last.</li><li>Among the \"Disa…\" words, look at the 5th letter: s (Disaster), p (Disappointment), p (Disappear), d (Disadvantage), r (Disarticulate). Order: d, p, p, r, s.</li><li>Disappear and Disappointment share \"Disapp\"; then e comes before o, so Disappear first.</li></ol>Order: Disadvantage, Disappear, Disappointment, Disarticulate, Disaster, Discharge, which is <b>5, 4, 2, 6, 1, 3</b>.<br>Tip: group words by their first different letter, then sort within each group."
+   },
+   {
+    "title": "Logical order",
+    "body": "Here meaning decides the order, not the alphabet. Look for one of these chains:<table><thead><tr><th>Kind of chain</th><th>Example</th></tr></thead><tbody><tr><td>Life cycle</td><td>Child, Youth, Adult, Old age</td></tr><tr><td>Small to large</td><td>City, State, Country, Continent, World</td></tr><tr><td>Process</td><td>Cotton, Thread, Fabric, Shirt piece, Shirt</td></tr><tr><td>Work steps</td><td>Conceptualize, Design, Develop, Test, Implement</td></tr><tr><td>Career</td><td>Education, Degree, Interview, Job, Retirement</td></tr><tr><td>Growth of a plant</td><td>Seed, Plant, Flower, Fruit</td></tr><tr><td>Day parts</td><td>Dawn, Morning, Noon, Evening, Night</td></tr></tbody></table>Find the clear first and last word, then fill the middle. The options usually differ in one or two places, so check only those."
    },
    {
     "title": "Word formation",
-    "body": "Count each letter in the given word. A new word can use a letter <b>only as many times</b> as it appears in the given word."
+    "body": "Can a word be made from the letters of a given word? Each letter can be used <b>only as many times as it appears</b>.<ol><li>Write the letters of the given word with their counts.</li><li>Cross off the letters of the option word one by one.</li><li>If a letter is missing, or needed more times than available, the word cannot be formed.</li></ol>Example: EXAMINATION has E, X, A×2, M, I×2, N×2, T, O. MOTION needs O twice, but there is only one O. So MOTION cannot be formed. NATION, ANIMATE? ANIMATE needs E, A×2, N, I, M, T: all present, so it can be formed."
+   },
+   {
+    "title": "Counting meaningful words and jumbled letters",
+    "body": "<ul><li><b>\"How many meaningful words can be formed from the 2nd, 4th, 5th and 6th letters of HOCKEY?\"</b> Pick the letters carefully (O, K, E, Y). Then try common words: YOKE. Only one standard English word uses all four, so the answer is one. If no word is possible, the answer is \"none\".</li><li><b>Jumbled letters:</b> AVSEBORINTO rearranges to OBSERVATION. Questions then ask for the position of a letter in that word (R is 5th from the left).</li></ul>Count the letters of your word against the given letters to be sure nothing is left over."
+   },
+   {
+    "title": "Number-coded words",
+    "body": "Each letter gets a number, for example E = 1, N = 2, T = 3, S = 4, T = 5, D = 6, U = 7. The letters together spell a word (here STUDENT). Write the word, then its numbers: S = 4, T = 3 or 5, U = 7, D = 6, E = 1, N = 2, T = 5 or 3. Pick the option that matches, remembering a repeated letter can take either of its numbers.<br>Quick start: find which word the letters make before reading the options."
+   },
+   {
+    "title": "Alphabet test",
+    "body": "These questions arrange the letters of a word in alphabetical order, or count letters in the alphabet.<ul><li><b>Letters that stay in place:</b> JEALOUS in alphabetical order is AEJLOSU. Compare place by place: J/A, E/E, A/J, L/L, O/O, U/S, S/U. E, L and O stay in place, so 3.</li><li><b>Letters between two letters:</b> after arranging KEYBOARD as ABDEKORY, the third from the right is O and the second from the right is R. Between O and R in the alphabet are P and Q, so 2.</li><li><b>Middle letter:</b> the letter midway between H (8) and P (16) is position 12 = L.</li></ul>Always write the new arrangement under the original word; never compare in your head."
    }
   ],
   "varieties": [
    {
     "type": "dictionary-order",
     "name": "Dictionary order",
-    "how": "Compare letter by letter from the left until two words differ.",
+    "how": "Compare words letter by letter until they differ. If one word is the start of another, the shorter one comes first.",
     "example": {
-     "q": "Arrange: Bring, Bread, Brake",
+     "q": "Arrange in dictionary order: 1. Realistic 2. Realism 3. Restore 4. Research 5. Resurge",
      "steps": [
-      "All start with \"Br\".",
-      "Third letters: i, e, a → a < e < i"
+      "\"Real…\" words come before \"Res…\" words because a comes before s.",
+      "Realism before Realistic: m comes before t.",
+      "Research, Restore, Resurge: the 4th letters are e, t, u."
      ],
-     "answer": "Brake, Bread, Bring"
+     "answer": "2, 1, 4, 3, 5"
+    }
+   },
+   {
+    "type": "logical-order",
+    "name": "Logical order",
+    "how": "Find what kind of chain the words form (size, process, life stages). Fix the first and last words, then fill the middle.",
+    "example": {
+     "q": "Arrange in a logical order: 1. Shirt piece 2. Thread 3. Fabric 4. Shirt 5. Cotton",
+     "steps": [
+      "It is a process: raw cotton becomes a finished shirt.",
+      "Cotton → Thread → Fabric → Shirt piece → Shirt."
+     ],
+     "answer": "5, 2, 3, 1, 4"
     }
    },
    {
     "type": "word-formation",
     "name": "Word formation",
-    "how": "Count letters in the given word, then check each option letter by letter.",
+    "how": "List the letters of the given word with their counts. For each option, cross letters off. A word that needs a missing letter, or a letter more times than available, cannot be formed.",
     "example": {
-     "q": "Can MOTION be made from EXAMINATION?",
+     "q": "Which word cannot be formed from EXAMINATION? NATION, ANIMATE, MOTION, TAXI",
      "steps": [
       "EXAMINATION has only one O.",
-      "MOTION needs two Os."
+      "MOTION needs two Os.",
+      "NATION, ANIMATE and TAXI use only available letters."
      ],
-     "answer": "No"
+     "answer": "MOTION"
+    }
+   },
+   {
+    "type": "letter-number-word",
+    "name": "Number-coded word",
+    "how": "Work out the meaningful word from the letters first. Then write each letter's number in that order and match it with the options.",
+    "example": {
+     "q": "E = 1, N = 2, T = 3, S = 4, T = 5, D = 6, U = 7. Which arrangement forms a meaningful word? (a) 4 3 7 6 1 2 5 (b) 4 7 3 6 1 2 5 (c) 6 7 4 3 1 2 5 (d) 4 3 7 1 6 2 5",
+     "steps": [
+      "The letters S, T, U, D, E, N, T make STUDENT.",
+      "S = 4, T = 3, U = 7, D = 6, E = 1, N = 2, T = 5.",
+      "That is 4 3 7 6 1 2 5."
+     ],
+     "answer": "(a) 4 3 7 6 1 2 5"
+    }
+   },
+   {
+    "type": "alphabet-test",
+    "name": "Alphabet test",
+    "how": "Write the letters in alphabetical order under the original word and compare place by place. For \"between\" questions, use letter positions.",
+    "example": {
+     "q": "If the letters of MEADOW are arranged in alphabetical order, how many letters stay in the same place?",
+     "steps": [
+      "Alphabetical order: A D E M O W.",
+      "Compare with M E A D O W: M/A, E/D, A/E, D/M, O/O, W/W.",
+      "O and W stay in place."
+     ],
+     "answer": "Two"
     }
    }
   ],
   "tips": [
-   "Write the common starting letters once and compare only what differs.",
-   "In word formation, first look for a letter that is not in the given word at all."
+   "In dictionary order, group words by their first different letter before sorting.",
+   "A word that is the start of a longer word always comes first (Hatch before Hatchback).",
+   "In word formation, count repeated letters; most wrong options need one extra letter.",
+   "For logical order, fix the first and last items, then check only the places where options differ.",
+   "In alphabet tests, write the sorted letters under the original word.",
+   "EJOTY (E = 5, J = 10, O = 15, T = 20, Y = 25) speeds up midway and counting questions."
   ],
   "traps": [
-   "Monetary comes before Money (t comes before y).",
-   "A letter used twice in the option must appear twice in the given word."
+   "Stopping at the first letter when words share a long prefix (Disappear and Disappointment differ only at the 7th letter).",
+   "Using a letter twice in word formation when it appears only once.",
+   "Counting the end letters themselves in \"how many letters between\" questions. Between O and R are only P and Q.",
+   "Treating logical order like dictionary order."
   ]
  },
  "questions": [

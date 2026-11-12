@@ -1,0 +1,107 @@
+{
+  "topic": "q-percentage",
+  "types": [
+    {
+      "type": "percent-basics",
+      "name": "Percent of a number and basic conversions",
+      "description": "Asks for x% of a number, what percent one number is of another, or links two percentages in an equation (for example 20% of A = 30% of B), with no change over time.",
+      "concepts": [
+        "basic-questions-fraction-conversions",
+        "percentage-of-quantity",
+        "salesman-commission"
+      ]
+    },
+    {
+      "type": "more-less-comparison",
+      "name": "Percent more or less than",
+      "description": "Says one quantity is r% more or less than another and asks how much less or more the second is than the first, or the ratio of quantities given as percentages of a third.",
+      "concepts": [
+        "ratio-method-fractional-multipliers",
+        "percentage-change-calculations"
+      ]
+    },
+    {
+      "type": "successive-change",
+      "name": "Successive percentage change",
+      "description": "A quantity is increased or decreased by two or more percentages one after another (or A is x% more than B which is y% more than C) and the net change or final value is asked.",
+      "concepts": [
+        "successive-percentage-change"
+      ]
+    },
+    {
+      "type": "population-depreciation",
+      "name": "Population growth and depreciation",
+      "description": "Population, production or the value of a machine grows or falls by a percentage every year and the value after or before some years is asked.",
+      "concepts": [
+        "series-concept-population-growth-depreciation",
+        "population-percentage-change"
+      ]
+    },
+    {
+      "type": "price-consumption",
+      "name": "Price, consumption and expenditure",
+      "description": "The price of an item changes and the question asks how consumption or sales must change to keep expenditure or revenue fixed or to change it by a given percent.",
+      "concepts": [
+        "price-consumption-expenditure",
+        "ab-rule-constant-product-pattern"
+      ]
+    },
+    {
+      "type": "price-reduction-quantity",
+      "name": "Price cut lets you buy more",
+      "description": "A fall (or rise) in price lets a person buy some kg or items more (or less) for the same money, and the new or original price per unit is asked.",
+      "concepts": [
+        "price-reduction-extra-quantity-purchase"
+      ]
+    },
+    {
+      "type": "income-expenditure-savings",
+      "name": "Income, expenditure and savings",
+      "description": "A person spends a percent of income and saves the rest; income or expenditure changes and the change in savings, expenditure or income is asked.",
+      "concepts": [
+        "income-expenditure-savings"
+      ]
+    },
+    {
+      "type": "election-votes",
+      "name": "Elections and votes",
+      "description": "Candidates get percentages of votes (sometimes with invalid votes or people who did not vote) and the total votes, the winning margin or one candidate’s votes is asked.",
+      "concepts": [
+        "election-and-voting-problems"
+      ]
+    },
+    {
+      "type": "exam-marks",
+      "name": "Exam marks and pass marks",
+      "description": "Students score a percent of maximum marks and pass or fail by some marks; the maximum marks, pass marks or pass percentage is asked.",
+      "concepts": [
+        "based-on-passing-failure-in-an-exam",
+        "exam-passed-failed"
+      ]
+    },
+    {
+      "type": "stage-wise-split",
+      "name": "Splitting a total in stages",
+      "description": "A total is broken in stages (did not appear, then failed among those who appeared, then distinction among those who passed, and so on) and one group or the total is asked.",
+      "concepts": [
+        "based-on-election-tree-method-series-method"
+      ]
+    },
+    {
+      "type": "weighted-percentage",
+      "name": "Weighted average of percentages",
+      "description": "Two or more groups or containers with different percentages are combined and the overall percentage (or the ratio of the groups) is asked.",
+      "concepts": [
+        "based-on-alligation-in-percentage"
+      ]
+    },
+    {
+      "type": "area-volume-change",
+      "name": "Percentage change in area and volume",
+      "description": "The side, radius or dimensions of a shape change by a percentage and the percentage change in perimeter, area or volume is asked.",
+      "concepts": [
+        "perimeter-area-volume-changes-2d-3d-geometry-net-change"
+      ]
+    }
+  ]
+}

@@ -1,83 +1,305 @@
 {
  "topic": "q-trigonometry",
  "notes": {
-  "summary": "Trigonometry includes standard values, identities and heights & distances. 2–3 questions in Tier 1 and 2–4 in Tier 2. Most identity questions collapse to 1 or 0 with the right identity.",
+  "summary": "Trigonometry is the study of the six ratios of an angle in a right triangle. SSC asks 2 to 3 questions in Tier 1 and 3 to 5 in Tier 2, mostly on standard values, identities, complementary angles and heights and distances. Learn the value table, the three Pythagorean identities and ASTC, and most questions reduce to one or two lines.",
   "concepts": [
    {
+    "title": "The six ratios in a right triangle",
+    "img": "quant/trig-right-triangle.svg",
+    "body": "<p>Trigonometry links the angles of a right triangle to its sides. Pick an acute angle θ. The side facing θ is the <b>opposite</b>, the side next to θ (not the longest) is the <b>adjacent</b>, and the longest side, facing the right angle, is the <b>hypotenuse</b>.</p><table><tr><th>Ratio</th><th>Meaning</th><th>Reciprocal</th></tr><tr><td>sin θ</td><td>opposite / hypotenuse</td><td>cosec θ = hypotenuse / opposite</td></tr><tr><td>cos θ</td><td>adjacent / hypotenuse</td><td>sec θ = hypotenuse / adjacent</td></tr><tr><td>tan θ</td><td>opposite / adjacent</td><td>cot θ = adjacent / opposite</td></tr></table><p>Memory aid: <b>SOH CAH TOA</b> (Sin = Opp/Hyp, Cos = Adj/Hyp, Tan = Opp/Adj). Also tan θ = sin θ / cos θ and cot θ = cos θ / sin θ.</p><p>For an acute angle, sin θ and cos θ lie between 0 and 1, sec θ and cosec θ are 1 or more, and tan θ and cot θ can be any positive number.</p>"
+   },
+   {
+    "title": "Finding every ratio from one ratio",
+    "body": "<p>If one ratio is given, draw a right triangle, put the two given numbers on the right sides, and find the third side by Pythagoras. Then read off any ratio.</p><p>Example: sin θ = 3/5. Opposite = 3, hypotenuse = 5, so adjacent = √(25 − 9) = 4. Now cos θ = 4/5, tan θ = 3/4, sec θ = 5/4.</p><p>Learn these Pythagorean triplets so you rarely need the square root:</p><table><tr><th>Triplet</th><th>Triplet</th><th>Triplet</th></tr><tr><td>3, 4, 5</td><td>5, 12, 13</td><td>8, 15, 17</td></tr><tr><td>7, 24, 25</td><td>20, 21, 29</td><td>9, 40, 41</td></tr><tr><td>12, 35, 37</td><td>11, 60, 61</td><td>28, 45, 53</td></tr></table><p>Multiples also work: 6, 8, 10 and 9, 12, 15. For any odd number m, (m, (m<sup>2</sup> − 1)/2, (m<sup>2</sup> + 1)/2) is a triplet, for example 7, 24, 25.</p><p><b>Sides from a difference.</b> In ΔABC right-angled at B with AB = 7 and AC − BC = 1: AC<sup>2</sup> − BC<sup>2</sup> = 49, so (AC − BC)(AC + BC) = 49 gives AC + BC = 49. So AC = 25, BC = 24.</p><p><b>Homogeneous expressions.</b> If tan θ is given and the expression has the same power of sin and cos in every term, divide top and bottom by cos θ. For tan θ = 2/3: (3 sin θ − 4 cos θ)/(3 sin θ + 4 cos θ) = (3 tan θ − 4)/(3 tan θ + 4) = (2 − 4)/(2 + 4) = −1/3.</p>"
+   },
+   {
     "title": "Standard values",
-    "body": "<table><tr><th>θ</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr><tr><td>sin</td><td>0</td><td>1/2</td><td>1/√2</td><td>√3/2</td><td>1</td></tr><tr><td>cos</td><td>1</td><td>√3/2</td><td>1/√2</td><td>1/2</td><td>0</td></tr><tr><td>tan</td><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>—</td></tr></table>"
+    "body": "<table><tr><th>θ</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr><tr><td>sin θ</td><td>0</td><td>1/2</td><td>1/√2</td><td>√3/2</td><td>1</td></tr><tr><td>cos θ</td><td>1</td><td>√3/2</td><td>1/√2</td><td>1/2</td><td>0</td></tr><tr><td>tan θ</td><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>not defined</td></tr><tr><td>cot θ</td><td>not defined</td><td>√3</td><td>1</td><td>1/√3</td><td>0</td></tr><tr><td>sec θ</td><td>1</td><td>2/√3</td><td>√2</td><td>2</td><td>not defined</td></tr><tr><td>cosec θ</td><td>not defined</td><td>2</td><td>√2</td><td>2/√3</td><td>1</td></tr></table><p>Trick to rebuild the sin row: write √0/2, √1/2, √2/2, √3/2, √4/2. The cos row is the same list backwards. Then tan = sin/cos, and the last three rows are reciprocals.</p><p>Values on the axes:</p><table><tr><th>θ</th><th>0°</th><th>90°</th><th>180°</th><th>270°</th><th>360°</th></tr><tr><td>sin θ</td><td>0</td><td>1</td><td>0</td><td>−1</td><td>0</td></tr><tr><td>cos θ</td><td>1</td><td>0</td><td>−1</td><td>0</td><td>1</td></tr><tr><td>tan θ</td><td>0</td><td>not defined</td><td>0</td><td>not defined</td><td>0</td></tr></table><p>Useful decimals: √2 ≈ 1.414, √3 ≈ 1.732, so sin 60° ≈ 0.866 and 1/√2 ≈ 0.707.</p><p>Example: tan(A + B) = √3 and tan(A − B) = 1/√3 give A + B = 60° and A − B = 30°, so A = 45° and B = 15°.</p>"
    },
    {
-    "title": "Identities",
-    "body": "sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1; sec<sup>2</sup>θ − tan<sup>2</sup>θ = 1; cosec<sup>2</sup>θ − cot<sup>2</sup>θ = 1. Complementary angles: sin(90° − θ) = cos θ, tan(90° − θ) = cot θ."
+    "title": "The three Pythagorean identities",
+    "body": "<p>From opposite<sup>2</sup> + adjacent<sup>2</sup> = hypotenuse<sup>2</sup>, divide by different squares to get:</p><table><tr><th>Identity</th><th>Rearranged</th><th>Factored form</th></tr><tr><td>sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1</td><td>sin<sup>2</sup>θ = 1 − cos<sup>2</sup>θ</td><td>(1 − sin θ)(1 + sin θ) = cos<sup>2</sup>θ</td></tr><tr><td>sec<sup>2</sup>θ − tan<sup>2</sup>θ = 1</td><td>sec<sup>2</sup>θ = 1 + tan<sup>2</sup>θ</td><td>(sec θ − tan θ)(sec θ + tan θ) = 1</td></tr><tr><td>cosec<sup>2</sup>θ − cot<sup>2</sup>θ = 1</td><td>cosec<sup>2</sup>θ = 1 + cot<sup>2</sup>θ</td><td>(cosec θ − cot θ)(cosec θ + cot θ) = 1</td></tr></table><p>Most \"simplify\" questions are just these three, used after writing everything in sin and cos.</p><p>Note: sin<sup>2</sup>θ means (sin θ)<sup>2</sup>. It is not sin(θ<sup>2</sup>).</p>"
    },
    {
-    "title": "Heights and distances",
-    "body": "Angle of elevation is measured up from the horizontal; angle of depression is measured down from the horizontal and equals the elevation from the other point. Use tan θ = height / base.",
-    "img": "quant/trig-tower-60.svg"
+    "title": "Results built from the identities",
+    "body": "<ul><li>If sec θ + tan θ = p, then sec θ − tan θ = 1/p. Adding and subtracting: sec θ = (p + 1/p)/2, tan θ = (p − 1/p)/2, and sin θ = (p<sup>2</sup> − 1)/(p<sup>2</sup> + 1).</li><li>If cosec θ + cot θ = p, then cosec θ − cot θ = 1/p, and cos θ = (p<sup>2</sup> − 1)/(p<sup>2</sup> + 1).</li><li>(sin θ + cos θ)<sup>2</sup> = 1 + 2 sin θ cos θ and (sin θ − cos θ)<sup>2</sup> = 1 − 2 sin θ cos θ. So if sin θ + cos θ = p, then sin θ cos θ = (p<sup>2</sup> − 1)/2.</li><li>sin<sup>4</sup>θ + cos<sup>4</sup>θ = 1 − 2 sin<sup>2</sup>θ cos<sup>2</sup>θ</li><li>sin<sup>6</sup>θ + cos<sup>6</sup>θ = 1 − 3 sin<sup>2</sup>θ cos<sup>2</sup>θ</li><li>sin<sup>4</sup>θ − cos<sup>4</sup>θ = sin<sup>2</sup>θ − cos<sup>2</sup>θ</li><li>tan θ + cot θ = sec θ cosec θ = 1/(sin θ cos θ)</li><li>sec<sup>2</sup>θ + cosec<sup>2</sup>θ = sec<sup>2</sup>θ cosec<sup>2</sup>θ</li><li>√((1 + sin θ)/(1 − sin θ)) = sec θ + tan θ and √((1 − sin θ)/(1 + sin θ)) = sec θ − tan θ (θ acute)</li><li>(tan θ + sec θ − 1)/(tan θ − sec θ + 1) = sec θ + tan θ = (1 + sin θ)/cos θ</li><li>If tan θ + cot θ = 2 (or sin θ + cosec θ = 2), then θ = 45° (or 90°), because x + 1/x = 2 only when x = 1.</li></ul><p>Example: sec θ + tan θ = 2 gives sec θ − tan θ = 1/2, so sec θ = 5/4 and tan θ = 3/4.</p>"
+   },
+   {
+    "title": "Complementary angles",
+    "body": "<p>Two angles are complementary when they add up to 90°. Each ratio of θ equals its \"co\" ratio of (90° − θ):</p><table><tr><th>Ratio</th><th>Equals</th></tr><tr><td>sin(90° − θ)</td><td>cos θ</td></tr><tr><td>cos(90° − θ)</td><td>sin θ</td></tr><tr><td>tan(90° − θ)</td><td>cot θ</td></tr><tr><td>cot(90° − θ)</td><td>tan θ</td></tr><tr><td>sec(90° − θ)</td><td>cosec θ</td></tr><tr><td>cosec(90° − θ)</td><td>sec θ</td></tr></table><p>So when A + B = 90°: sin A = cos B, tan A × tan B = 1, sin A sec B = 1, and sin<sup>2</sup>A + sin<sup>2</sup>B = 1.</p><p>Going the other way: if sin A = cos B with both acute, then A + B = 90°. For example sin(2x + 10°) = cos(3x − 20°) gives 5x − 10° = 90°, so x = 20°. Likewise tan(x + y) tan(x − y) = 1 gives 2x = 90°, so tan x = 1.</p><p><b>Long sums and products.</b></p><ul><li>sin<sup>2</sup>1° + sin<sup>2</sup>2° + … + sin<sup>2</sup>89° = 44.5 (44 pairs that each make 1, plus sin<sup>2</sup>45° = 1/2).</li><li>sin<sup>2</sup>5° + sin<sup>2</sup>10° + … + sin<sup>2</sup>85° = 8.5 (17 terms: 8 pairs plus 1/2).</li><li>tan 1° × tan 2° × … × tan 89° = 1 (each pair tan θ tan(90° − θ) = 1, and tan 45° = 1).</li><li>If a product contains cos 90° (or a sum contains a term that is 0 for another reason), it collapses to 0.</li></ul><p>Example: sin 25° sin 65° − cos 25° cos 65° = sin 25° cos 25° − cos 25° sin 25° = 0.</p>"
+   },
+   {
+    "title": "Signs in the four quadrants and radians",
+    "img": "quant/trig-astc.svg",
+    "body": "<p>For angles beyond 90°, the ratio keeps its size but may change sign. Remember <b>ASTC</b> (\"All Students Take Coffee\"), going anticlockwise from 0°:</p><table><tr><th>Quadrant</th><th>Angles</th><th>Positive ratios</th></tr><tr><td>First</td><td>0° to 90°</td><td>All</td></tr><tr><td>Second</td><td>90° to 180°</td><td>sin and cosec</td></tr><tr><td>Third</td><td>180° to 270°</td><td>tan and cot</td></tr><tr><td>Fourth</td><td>270° to 360°</td><td>cos and sec</td></tr></table><p><b>How to reduce any angle.</b></p><ol><li>Remove full turns: subtract 360° as many times as needed (1125° = 3 × 360° + 45°).</li><li>Negative angles: sin(−θ) = −sin θ, cos(−θ) = cos θ, tan(−θ) = −tan θ.</li><li>Write the angle as 180° ± θ or 360° − θ: the ratio stays the same. Write it as 90° ± θ or 270° ± θ: the ratio changes (sin ↔ cos, tan ↔ cot, sec ↔ cosec).</li><li>Put the sign of the <b>original</b> ratio in the quadrant where the angle lies.</li></ol><p>Examples: cos 120° = cos(180° − 60°) = −cos 60° = −1/2 (second quadrant, cos is negative). sin 150° = sin 30° = 1/2. tan 300° = −tan 60° = −√3. tan(−1125°) = −tan 1125° = −tan 45° = −1.</p><p><b>Degrees and radians.</b></p><p>π radians = 180°. To change degrees to radians multiply by π/180; radians to degrees multiply by 180/π.</p><table><tr><th>Degrees</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th><th>120°</th><th>180°</th><th>270°</th><th>360°</th></tr><tr><td>Radians</td><td>π/6</td><td>π/4</td><td>π/3</td><td>π/2</td><td>2π/3</td><td>π</td><td>3π/2</td><td>2π</td></tr></table><p>1 radian ≈ 57.3°. In a circle, arc length = radius × angle (in radians).</p><p>Example: cos(−17π/3) = cos(17π/3). 17π/3 = 17 × 60° = 1020° = 2 × 360° + 300°, and cos 300° = cos 60° = 1/2.</p>"
+   },
+   {
+    "title": "Compound angle formulas",
+    "body": "<ul><li>sin(A + B) = sin A cos B + cos A sin B</li><li>sin(A − B) = sin A cos B − cos A sin B</li><li>cos(A + B) = cos A cos B − sin A sin B</li><li>cos(A − B) = cos A cos B + sin A sin B</li><li>tan(A + B) = (tan A + tan B)/(1 − tan A tan B)</li><li>tan(A − B) = (tan A − tan B)/(1 + tan A tan B)</li></ul><p>Spot them in reverse: cos 75° cos 15° − sin 75° sin 15° = cos 90° = 0, and sin 50° cos 40° + cos 50° sin 40° = sin 90° = 1.</p><p>Two products asked often: sin A sin(60° − A) sin(60° + A) = (1/4) sin 3A, and tan A tan(60° − A) tan(60° + A) = tan 3A.</p><p>Remember that sin(A + B) is not sin A + sin B. Check with A = B = 45°: sin 90° = 1, but sin 45° + sin 45° = √2.</p>"
+   },
+   {
+    "title": "Double angles and special values",
+    "body": "<ul><li>sin 2A = 2 sin A cos A = 2 tan A/(1 + tan<sup>2</sup>A)</li><li>cos 2A = cos<sup>2</sup>A − sin<sup>2</sup>A = 2cos<sup>2</sup>A − 1 = 1 − 2sin<sup>2</sup>A = (1 − tan<sup>2</sup>A)/(1 + tan<sup>2</sup>A)</li><li>tan 2A = 2 tan A/(1 − tan<sup>2</sup>A)</li><li>sin 3A = 3 sin A − 4 sin<sup>3</sup>A and cos 3A = 4 cos<sup>3</sup>A − 3 cos A</li><li>1 + cos 2A = 2cos<sup>2</sup>A and 1 − cos 2A = 2sin<sup>2</sup>A</li></ul><table><tr><th>Angle</th><th>Value</th></tr><tr><td>sin 15° = cos 75°</td><td>(√3 − 1)/(2√2)</td></tr><tr><td>cos 15° = sin 75°</td><td>(√3 + 1)/(2√2)</td></tr><tr><td>tan 15° = cot 75°</td><td>2 − √3</td></tr><tr><td>tan 75° = cot 15°</td><td>2 + √3</td></tr><tr><td>tan 22.5°</td><td>√2 − 1</td></tr><tr><td>sin 18° = cos 72°</td><td>(√5 − 1)/4</td></tr><tr><td>cos 36° = sin 54°</td><td>(√5 + 1)/4</td></tr></table><p>Example: tan 15° + tan 75° = (2 − √3) + (2 + √3) = 4.</p>"
+   },
+   {
+    "title": "Value-putting method",
+    "body": "<p>When an identity question has options and the answer does not depend on θ, put a simple angle (0°, 30°, 45°, 60° or 90°) into the question and pick the option that matches.</p><ul><li>Choose an angle that keeps every term defined. Avoid 90° if tan or sec appears, and 0° if cot or cosec appears.</li><li>If the condition fixes θ (for example tan θ + cot θ = 2 means θ = 45°), put that angle in.</li><li>If the answer still depends on θ, put the same angle into each option too. If two options tie, try a second angle.</li></ul><p>Example: (sin θ + cos θ)<sup>2</sup> + (sin θ − cos θ)<sup>2</sup>. Put θ = 0°: (0 + 1)<sup>2</sup> + (0 − 1)<sup>2</sup> = 2. The answer is 2 for every θ.</p>"
+   },
+   {
+    "title": "Maximum and minimum values",
+    "body": "<table><tr><th>Expression</th><th>Minimum</th><th>Maximum</th></tr><tr><td>sin θ, cos θ</td><td>−1</td><td>1</td></tr><tr><td>sin<sup>2</sup>θ, cos<sup>2</sup>θ</td><td>0</td><td>1</td></tr><tr><td>a sin θ + b cos θ</td><td>−√(a<sup>2</sup> + b<sup>2</sup>)</td><td>√(a<sup>2</sup> + b<sup>2</sup>)</td></tr><tr><td>a sin<sup>2</sup>θ + b cos<sup>2</sup>θ</td><td>smaller of a and b</td><td>larger of a and b</td></tr><tr><td>sin θ cos θ</td><td>−1/2</td><td>1/2</td></tr><tr><td>a<sup>2</sup>tan<sup>2</sup>θ + b<sup>2</sup>cot<sup>2</sup>θ</td><td>2ab</td><td>no maximum</td></tr><tr><td>sec<sup>2</sup>θ + cosec<sup>2</sup>θ</td><td>4</td><td>no maximum</td></tr><tr><td>sin<sup>m</sup>θ + cos<sup>n</sup>θ (even m, n ≥ 2)</td><td>depends</td><td>1</td></tr></table><p><b>Why 2ab?</b> For two positive terms whose product is fixed, the sum is least when the terms are equal: x + y ≥ 2√(xy). Example: 25 cos<sup>2</sup>x + 9 sec<sup>2</sup>x ≥ 2√(25 × 9) = 30, reached when 25 cos<sup>2</sup>x = 9 sec<sup>2</sup>x, that is cos<sup>2</sup>x = 3/5, which is possible.</p><p>Check that the equal point is possible. For 9 cos<sup>2</sup>x + 25 sec<sup>2</sup>x, equality needs cos<sup>2</sup>x = 5/3, which is impossible, so the least value is at cos<sup>2</sup>x = 1: 9 + 25 = 34.</p><p>Example: the greatest value of 5 sin θ + 12 cos θ is √(25 + 144) = 13.</p>"
+   },
+   {
+    "title": "Heights and distances: the basics",
+    "img": "quant/trig-tower-60.svg",
+    "body": "<ul><li><b>Angle of elevation</b>: you look <b>up</b> at an object; the angle is measured from the horizontal line at your eye.</li><li><b>Angle of depression</b>: you look <b>down</b>; the angle is measured from the horizontal line at your eye, not from the vertical.</li><li>The angle of depression from A to B equals the angle of elevation from B to A (alternate angles).</li><li>Towers, poles and buildings stand vertically, so each picture is a right triangle. Use tan θ = height / base most of the time.</li></ul><table><tr><th>Angle</th><th>Height : base</th><th>Height : slant line</th></tr><tr><td>30°</td><td>1 : √3</td><td>1 : 2</td></tr><tr><td>45°</td><td>1 : 1</td><td>1 : √2</td></tr><tr><td>60°</td><td>√3 : 1</td><td>√3 : 2</td></tr></table><p>Example: a tower is seen at 60° from 30 m away. Height = 30 × tan 60° = 30√3 m ≈ 51.96 m.</p>"
+   },
+   {
+    "title": "Heights and distances: two angles",
+    "img": "quant/trig-two-angles.svg",
+    "body": "<p><b>Same side.</b> From D the top is seen at β, and after walking d towards the tower to C it is seen at α (α > β). Then</p><p>h = d × tan α × tan β / (tan α − tan β)</p><table><tr><th>Angles</th><th>Height h</th></tr><tr><td>30° and 60°</td><td>d × √3/2</td></tr><tr><td>30° and 45°</td><td>d × (√3 + 1)/2</td></tr><tr><td>45° and 60°</td><td>d × (3 + √3)/2</td></tr></table><p>For the same height, the distance at 30° is 3 times the distance at 60°. So with 30° and 60°, the walk d = 2x, where x is the near distance.</p><p><b>Shadow problems</b> work the same way: the sun's altitude is the angle of elevation and the shadow is the base. When the altitude falls from 45° to 30°, the shadow grows by h(√3 − 1).</p><p>Example: d = 20 m, angles 30° and 60°. h = 20 × √3/2 = 10√3 m ≈ 17.32 m.</p>"
+   },
+   {
+    "title": "Heights and distances: opposite sides and depression",
+    "img": "quant/trig-opposite-sides.svg",
+    "body": "<p><b>Objects on opposite sides.</b> From the top of a lighthouse of height h, two ships on opposite sides are seen at depressions α and β. The distance between the ships = h(cot α + cot β).</p><p>Example: h = 100 m, depressions 30° and 45°: distance = 100(√3 + 1) ≈ 273.2 m.</p><p><b>Both on the same side</b> (ship moving towards the lighthouse): distance moved = h(cot β − cot α), where β is the smaller angle.</p><p><b>Building and tower.</b> From the top of a building of height h, the top of a taller tower is seen at elevation α and its foot at depression β. The gap between them is x = h cot β, and the tower height = h + x tan α.</p>"
+   },
+   {
+    "title": "Angles of a triangle in trigonometry",
+    "body": "<p>In any ΔABC, A + B + C = 180°. So:</p><ul><li>sin(A + B) = sin C and cos(A + B) = −cos C, tan(A + B) = −tan C</li><li>sin((A + B)/2) = cos(C/2) and cos((A + B)/2) = sin(C/2)</li><li>In a right triangle with right angle at B: A + C = 90°, so sin A = cos C and tan A tan C = 1.</li></ul><p>Example: ABC right-angled at B with tan A = √3, so A = 60° and C = 30°. Then sin A cos C + cos A sin C = sin(A + C) = sin 90° = 1, and cos A cos C − sin A sin C = cos 90° = 0.</p>"
    }
   ],
   "varieties": [
    {
-    "type": "trig-values",
-    "name": "Standard values and ratios",
-    "how": "Use the table or draw a right triangle from the given ratio.",
+    "type": "right-triangle-ratios",
+    "name": "Ratios from one given ratio",
+    "how": "Draw a right triangle, write the two known sides from the given ratio, find the third by Pythagoras (or a triplet), then read off the ratio you need. If tan θ is given and every term has sin or cos to the same power, divide top and bottom by cos θ.",
     "example": {
-     "q": "If cos θ = 5/13 (θ acute), find tan θ.",
+     "q": "In ΔABC, right-angled at B, AB = 7 cm and AC − BC = 1 cm. Find sec C + cot A.",
      "steps": [
-      "Opposite = √(169 − 25) = 12",
-      "tan θ = 12/5"
+      "AC<sup>2</sup> − BC<sup>2</sup> = AB<sup>2</sup> = 49, so (AC − BC)(AC + BC) = 49",
+      "AC − BC = 1 gives AC + BC = 49, so AC = 25 and BC = 24",
+      "sec C = AC/BC = 25/24 and cot A = AB/BC = 7/24",
+      "Sum = 32/24 = 4/3"
      ],
-     "answer": "12/5"
+     "answer": "4/3"
     }
    },
    {
-    "type": "identities",
-    "name": "Identities",
-    "how": "Use sec θ + tan θ and sec θ − tan θ are reciprocals; pair complementary angles.",
+    "type": "standard-values",
+    "name": "Standard angle values",
+    "how": "Replace each ratio by its table value, then simplify. If an equation gives tan(A + B) or similar as a table value, turn it into an angle equation and solve.",
     "example": {
-     "q": "Find sin<sup>2</sup>30° + cos<sup>2</sup>30°.",
+     "q": "If tan(A + B) = √3 and tan(A − B) = 1/√3, with 0° < A + B ≤ 90° and A > B, find A and B.",
      "steps": [
-      "sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1"
+      "tan 60° = √3, so A + B = 60°",
+      "tan 30° = 1/√3, so A − B = 30°",
+      "Adding: 2A = 90°, so A = 45°; then B = 15°"
      ],
-     "answer": "1"
+     "answer": "A = 45°, B = 15°"
     }
    },
    {
-    "type": "heights",
+    "type": "identity-simplify",
+    "name": "Simplifying identities",
+    "how": "Write everything in sin and cos, take an LCM, and use sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1 (or its sec–tan and cosec–cot forms). With options, the value-putting method (θ = 30°, 45° or 60°) is often fastest.",
+    "example": {
+     "q": "If (tan θ + sin θ)/(tan θ − sin θ) = (k + 1)/(k − 1), find k.",
+     "steps": [
+      "Divide top and bottom by sin θ: (1/cos θ + 1)/(1/cos θ − 1)",
+      "This is (sec θ + 1)/(sec θ − 1)",
+      "Compare with (k + 1)/(k − 1)"
+     ],
+     "answer": "k = sec θ"
+    }
+   },
+   {
+    "type": "given-condition",
+    "name": "Given a condition, find a value",
+    "how": "Use the factored identities: if sec θ + tan θ = p then sec θ − tan θ = 1/p; if sin θ + cos θ = p then sin θ cos θ = (p<sup>2</sup> − 1)/2. Square or subtract the given equations so that a Pythagorean identity appears. If the condition fixes θ, find θ and substitute.",
+    "example": {
+     "q": "If a cot θ + b cosec θ = p and b cot θ + a cosec θ = q, find p<sup>2</sup> − q<sup>2</sup>.",
+     "steps": [
+      "p<sup>2</sup> = a<sup>2</sup>cot<sup>2</sup>θ + 2ab cot θ cosec θ + b<sup>2</sup>cosec<sup>2</sup>θ",
+      "q<sup>2</sup> = b<sup>2</sup>cot<sup>2</sup>θ + 2ab cot θ cosec θ + a<sup>2</sup>cosec<sup>2</sup>θ",
+      "p<sup>2</sup> − q<sup>2</sup> = a<sup>2</sup>(cot<sup>2</sup>θ − cosec<sup>2</sup>θ) + b<sup>2</sup>(cosec<sup>2</sup>θ − cot<sup>2</sup>θ)",
+      "= −a<sup>2</sup> + b<sup>2</sup>"
+     ],
+     "answer": "b<sup>2</sup> − a<sup>2</sup>"
+    }
+   },
+   {
+    "type": "complementary-angles",
+    "name": "Complementary angles",
+    "how": "Pair each angle with the one that makes 90° and swap the ratio for its co-ratio (sin ↔ cos, tan ↔ cot, sec ↔ cosec). If sin A = cos B or tan A tan B = 1 for acute angles, then A + B = 90°.",
+    "example": {
+     "q": "If sin(2x + 10°) = cos(3x − 20°), where both angles are acute, find x.",
+     "steps": [
+      "sin A = cos B with both acute means A + B = 90°",
+      "(2x + 10°) + (3x − 20°) = 90°",
+      "5x = 100°"
+     ],
+     "answer": "x = 20°"
+    }
+   },
+   {
+    "type": "compound-angles",
+    "name": "Compound and double angles",
+    "how": "Recognise the pattern sin A cos B ± cos A sin B or cos A cos B ∓ sin A sin B and fold it into one angle. Break awkward angles into standard ones (75° = 45° + 30°, 15° = 45° − 30°).",
+    "example": {
+     "q": "Find the value of tan 15° + tan 75°.",
+     "steps": [
+      "tan 15° = tan(45° − 30°) = (1 − 1/√3)/(1 + 1/√3) = (√3 − 1)/(√3 + 1) = 2 − √3",
+      "tan 75° = cot 15° = 2 + √3",
+      "Sum = (2 − √3) + (2 + √3)"
+     ],
+     "answer": "4"
+    }
+   },
+   {
+    "type": "any-angle",
+    "name": "Angles beyond 90° and radians",
+    "how": "Convert radians to degrees (π = 180°), remove full turns of 360°, handle the minus sign (only cos and sec ignore it), write the angle as 180° ± θ or 360° − θ (same ratio) or 90° ± θ, 270° ± θ (co-ratio), then fix the sign with ASTC.",
+    "example": {
+     "q": "Find the value of tan(−1125°).",
+     "steps": [
+      "tan(−θ) = −tan θ, so tan(−1125°) = −tan 1125°",
+      "1125° = 3 × 360° + 45°, so tan 1125° = tan 45° = 1"
+     ],
+     "answer": "−1"
+    }
+   },
+   {
+    "type": "max-min",
+    "name": "Maximum and minimum values",
+    "how": "For a sin θ + b cos θ the range is ±√(a<sup>2</sup> + b<sup>2</sup>). For two positive terms whose product is constant (like tan<sup>2</sup> and cot<sup>2</sup>, or cos<sup>2</sup> and sec<sup>2</sup>), the least sum is 2√(product), but only if the equal point is possible. For a sin<sup>2</sup>θ + b cos<sup>2</sup>θ the answer lies between a and b.",
+    "example": {
+     "q": "Find the minimum value of 25 cos<sup>2</sup>x + 9 sec<sup>2</sup>x.",
+     "steps": [
+      "The product 25 cos<sup>2</sup>x × 9 sec<sup>2</sup>x = 225 is constant",
+      "Least sum = 2√225 = 30, when 25 cos<sup>2</sup>x = 9 sec<sup>2</sup>x",
+      "That needs cos<sup>2</sup>x = 3/5, which is possible, so 30 is reached"
+     ],
+     "answer": "30"
+    }
+   },
+   {
+    "type": "heights-distances",
     "name": "Heights and distances",
-    "how": "Draw the figure, then tan θ = height / base for each right triangle.",
+    "how": "Draw the figure: ground horizontal, tower vertical, sight line slanting. Mark the angle at the observer (for depression, at the top, from the horizontal). Write tan θ = height/base for each right triangle and solve. Use the 30°, 45°, 60° ratios 1 : √3, 1 : 1, √3 : 1 directly.",
     "example": {
-     "q": "A 10 m pole casts a shadow of 10√3 m. Sun’s elevation?",
+     "q": "The shadow of a vertical tower on level ground grows by 8.4 m when the sun's altitude changes from 45° to 30°. Find the height of the tower.",
      "steps": [
-      "tan θ = 10/(10√3) = 1/√3"
+      "At 45° the shadow is h; at 30° the shadow is h√3",
+      "Growth: h√3 − h = 8.4, so h(√3 − 1) = 8.4",
+      "h = 8.4/(√3 − 1) = 8.4(√3 + 1)/2 = 4.2(√3 + 1)",
+      "≈ 4.2 × 2.732 = 11.47"
      ],
-     "answer": "30°"
+     "answer": "4.2(√3 + 1) m, about 11.47 m"
     }
    }
   ],
   "tips": [
-   "(sec θ + tan θ)(sec θ − tan θ) = 1.",
-   "sin<sup>2</sup>1° + … + sin<sup>2</sup>89° pairs up into 1s: answer 44.5.",
-   "Remember √3 ≈ 1.732 for numeric options."
+   "Learn the triplets 3-4-5, 5-12-13, 8-15-17, 7-24-25 and 20-21-29. Most \"given one ratio\" questions use them.",
+   "If tan θ is given, divide the expression top and bottom by cos θ instead of finding sin and cos separately.",
+   "In identity questions with options, put θ = 45° (or 30°, 60°) and check the options. It is faster than simplifying.",
+   "See sec θ + tan θ or cosec θ + cot θ? Their partner difference is the reciprocal. That one fact solves many questions.",
+   "Look for angle pairs that add to 90°. A long sum of sin<sup>2</sup> terms is half the number of terms; a long product of tan terms is 1.",
+   "In heights and distances, the same height seen at 30° and 60° gives distances in the ratio 3 : 1.",
+   "tan 15° = 2 − √3 and tan 75° = 2 + √3. Their product is 1 and their sum is 4."
   ],
   "traps": [
-   "Angle of depression is NOT measured from the vertical.",
-   "tan 90° is not defined; do not put it in calculations."
+   "The angle of depression is measured from the horizontal at the observer's eye, not from the tower.",
+   "sin(A + B) is not sin A + sin B, and sin 2θ is not 2 sin θ.",
+   "tan 90° and sec 90° are not defined. Do not put θ = 90° (or 0° for cot and cosec) in the value-putting method.",
+   "After reducing a large or negative angle, take the sign from the quadrant of the original angle, not of the reduced one.",
+   "The \"2√(product)\" minimum works only if the equal point is possible. 9 cos<sup>2</sup>x + 25 sec<sup>2</sup>x has least value 34, not 30."
   ]
  },
  "formulas": [
+  {
+   "name": "Basic ratios",
+   "expr": "sin = opp/hyp, cos = adj/hyp, tan = opp/adj"
+  },
+  {
+   "name": "Reciprocals",
+   "expr": "cosec = 1/sin, sec = 1/cos, cot = 1/tan"
+  },
   {
    "name": "Pythagorean identity",
    "expr": "sin²θ + cos²θ = 1"
   },
   {
    "name": "Secant identity",
-   "expr": "sec²θ − tan²θ = 1"
+   "expr": "sec²θ − tan²θ = 1, so (sec θ + tan θ)(sec θ − tan θ) = 1"
+  },
+  {
+   "name": "Cosecant identity",
+   "expr": "cosec²θ − cot²θ = 1, so (cosec θ + cot θ)(cosec θ − cot θ) = 1"
+  },
+  {
+   "name": "Complementary angles",
+   "expr": "sin(90° − θ) = cos θ, tan(90° − θ) = cot θ, sec(90° − θ) = cosec θ"
+  },
+  {
+   "name": "Negative angles",
+   "expr": "sin(−θ) = −sin θ, cos(−θ) = cos θ, tan(−θ) = −tan θ"
+  },
+  {
+   "name": "Degree and radian",
+   "expr": "π radians = 180°"
+  },
+  {
+   "name": "sin of a sum",
+   "expr": "sin(A ± B) = sin A cos B ± cos A sin B"
+  },
+  {
+   "name": "cos of a sum",
+   "expr": "cos(A ± B) = cos A cos B ∓ sin A sin B"
+  },
+  {
+   "name": "tan of a sum",
+   "expr": "tan(A ± B) = (tan A ± tan B)/(1 ∓ tan A tan B)"
+  },
+  {
+   "name": "Double angle",
+   "expr": "sin 2A = 2 sin A cos A, cos 2A = 1 − 2sin²A = 2cos²A − 1"
+  },
+  {
+   "name": "Triple angle",
+   "expr": "sin 3A = 3 sin A − 4 sin³A, cos 3A = 4 cos³A − 3 cos A"
+  },
+  {
+   "name": "Special values",
+   "expr": "tan 15° = 2 − √3, tan 75° = 2 + √3, sin 18° = (√5 − 1)/4"
+  },
+  {
+   "name": "Fourth powers",
+   "expr": "sin⁴θ + cos⁴θ = 1 − 2 sin²θ cos²θ"
+  },
+  {
+   "name": "Sixth powers",
+   "expr": "sin⁶θ + cos⁶θ = 1 − 3 sin²θ cos²θ"
+  },
+  {
+   "name": "Range of a sin θ + b cos θ",
+   "expr": "−√(a² + b²) to √(a² + b²)"
+  },
+  {
+   "name": "Least value of a² tan²θ + b² cot²θ",
+   "expr": "2ab"
   },
   {
    "name": "Height",
    "expr": "h = base × tan θ"
+  },
+  {
+   "name": "Two angles, same side",
+   "expr": "h = d tan α tan β / (tan α − tan β)"
+  },
+  {
+   "name": "Two objects, opposite sides",
+   "expr": "distance = h(cot α + cot β)"
   }
  ],
  "questions": [
@@ -85,7 +307,7 @@
    "id": "q-trigonometry-001",
    "rev": 1,
    "topic": "q-trigonometry",
-   "type": "trig-values",
+   "type": "standard-values",
    "level": 1,
    "q": "What is the value of sin 30° + cos 60°?",
    "options": [
@@ -102,7 +324,7 @@
    "id": "q-trigonometry-002",
    "rev": 1,
    "topic": "q-trigonometry",
-   "type": "trig-values",
+   "type": "right-triangle-ratios",
    "level": 1,
    "q": "If sin θ = 3/5 and θ is acute, then tan θ is:",
    "options": [
@@ -119,7 +341,7 @@
    "id": "q-trigonometry-003",
    "rev": 1,
    "topic": "q-trigonometry",
-   "type": "identities",
+   "type": "given-condition",
    "level": 2,
    "q": "If sec θ + tan θ = 5, then sec θ is:",
    "options": [
@@ -136,7 +358,7 @@
    "id": "q-trigonometry-004",
    "rev": 1,
    "topic": "q-trigonometry",
-   "type": "heights",
+   "type": "heights-distances",
    "level": 2,
    "q": "The angle of elevation of the top of a tower from a point 30 m away from its foot on level ground is 60°. What is the height of the tower?",
    "img": "quant/trig-tower-60.svg",
@@ -154,7 +376,7 @@
    "id": "q-trigonometry-005",
    "rev": 1,
    "topic": "q-trigonometry",
-   "type": "heights",
+   "type": "heights-distances",
    "level": 3,
    "q": "From the top of a building 60 m high, the angle of depression of a car changes from 30° to 45° as the car moves straight towards the building. How far did the car move?",
    "img": "quant/trig-depression.svg",
@@ -172,7 +394,7 @@
    "id": "q-trigonometry-006",
    "rev": 1,
    "topic": "q-trigonometry",
-   "type": "identities",
+   "type": "complementary-angles",
    "level": 3,
    "q": "What is the value of sin<sup>2</sup>1° + sin<sup>2</sup>2° + sin<sup>2</sup>3° + … + sin<sup>2</sup>89°?",
    "options": [

@@ -1,82 +1,148 @@
 {
  "topic": "st-moments",
  "notes": {
-  "summary": "Moments describe the shape of a distribution. The first central moment is always zero, the second is the variance, the third measures skewness and the fourth measures kurtosis (peakedness). Expect formula-based questions on Karl Pearson, Bowley, β₁ and β₂.",
+  "summary": "<p>Moments describe the shape of a distribution. The first moment gives the centre, the second the spread, the third the lack of symmetry (skewness) and the fourth the peakedness (kurtosis). Paper 2 asks 6 to 10 questions: converting raw moments to central moments, Karl Pearson's and Bowley's coefficients of skewness, β₁, β₂, γ₁, γ₂, and reading the shape from mean, median and mode.</p>",
   "concepts": [
    {
-    "title": "Moments",
-    "body": "<ul><li>Raw moments about origin/A: μ'<sub>r</sub> = Σ(x − A)<sup>r</sup>/n.</li><li>Central moments (about mean): μ<sub>r</sub> = Σ(x − x̄)<sup>r</sup>/n. μ<sub>1</sub> = 0, μ<sub>2</sub> = variance.</li><li>Conversion: μ<sub>2</sub> = μ'<sub>2</sub> − μ'<sub>1</sub>²; μ<sub>3</sub> = μ'<sub>3</sub> − 3μ'<sub>2</sub>μ'<sub>1</sub> + 2μ'<sub>1</sub>³.</li></ul>"
+    "title": "Raw and central moments",
+    "body": "<ul><li><b>Raw moment about a point A</b>: μ′<sub>r</sub> = Σf(x − A)<sup>r</sup> ÷ N. About zero (A = 0) they are called moments about the origin.</li><li><b>Central moment</b> (about the mean): μ<sub>r</sub> = Σf(x − x̄)<sup>r</sup> ÷ N.</li><li>μ<sub>0</sub> = 1, μ<sub>1</sub> = 0 always, μ<sub>2</sub> = variance.</li><li>μ′<sub>1</sub> about A = x̄ − A, so <b>mean = A + μ′<sub>1</sub></b>.</li></ul>"
    },
    {
-    "title": "Skewness",
-    "body": "<ul><li>Positive skew: long right tail, Mean &gt; Median &gt; Mode. Negative skew: long left tail, Mean &lt; Median &lt; Mode.</li><li><b>Karl Pearson</b>: Sk = (Mean − Mode)/σ, or 3(Mean − Median)/σ. Usually lies between −3 and +3.</li><li><b>Bowley</b> (quartile): Sk = (Q<sub>3</sub> + Q<sub>1</sub> − 2Q<sub>2</sub>)/(Q<sub>3</sub> − Q<sub>1</sub>); lies between −1 and +1.</li><li>Moment measure: β<sub>1</sub> = μ<sub>3</sub>²/μ<sub>2</sub>³, γ<sub>1</sub> = μ<sub>3</sub>/σ³ (sign gives direction).</li></ul>"
+    "title": "Converting raw moments to central moments",
+    "body": "<p>Write μ′<sub>1</sub>, μ′<sub>2</sub>, μ′<sub>3</sub>, μ′<sub>4</sub> for the moments about any point A.</p><ul><li>μ<sub>2</sub> = μ′<sub>2</sub> − μ′<sub>1</sub>²</li><li>μ<sub>3</sub> = μ′<sub>3</sub> − 3μ′<sub>2</sub>μ′<sub>1</sub> + 2μ′<sub>1</sub>³</li><li>μ<sub>4</sub> = μ′<sub>4</sub> − 4μ′<sub>3</sub>μ′<sub>1</sub> + 6μ′<sub>2</sub>μ′<sub>1</sub>² − 3μ′<sub>1</sub>⁴</li></ul><p>These come from expanding (x − A − μ′<sub>1</sub>)<sup>r</sup> with binomial coefficients. The last two terms join: in μ<sub>3</sub>, +3 − 1 = +2; in μ<sub>4</sub>, −4 + 1 = −3.</p><p>Mini example: about A = 4, μ′<sub>1</sub> = 1, μ′<sub>2</sub> = 10, μ′<sub>3</sub> = 30, μ′<sub>4</sub> = 100. Mean = 5. μ<sub>2</sub> = 10 − 1 = 9. μ<sub>3</sub> = 30 − 30 + 2 = 2. μ<sub>4</sub> = 100 − 120 + 60 − 3 = 37.</p><p><b>Change of origin and scale</b>: central moments do not change when a constant is added. If u = (x − A) ÷ h, then μ<sub>r</sub>(x) = h<sup>r</sup> μ<sub>r</sub>(u).</p><p><b>Sheppard's correction</b> for grouped data with width h: corrected μ<sub>2</sub> = μ<sub>2</sub> − h²/12; μ<sub>3</sub> needs no correction; corrected μ<sub>4</sub> = μ<sub>4</sub> − (h²/2)μ<sub>2</sub> + (7/240)h⁴.</p>"
+   },
+   {
+    "title": "Skewness: what it means",
+    "body": "<p>Skewness is lack of symmetry. In a symmetric curve the two tails are mirror images.</p><table><tr><th>Shape</th><th>Long tail</th><th>Order of averages</th><th>Sign of μ<sub>3</sub></th></tr><tr><td>Symmetric</td><td>None</td><td>Mean = Median = Mode</td><td>0</td></tr><tr><td>Positively skewed</td><td>Right</td><td>Mean &gt; Median &gt; Mode</td><td>Positive</td></tr><tr><td>Negatively skewed</td><td>Left</td><td>Mean &lt; Median &lt; Mode</td><td>Negative</td></tr></table><ul><li>In positive skewness Q<sub>3</sub> − Median &gt; Median − Q<sub>1</sub>.</li><li>Income distributions are usually positively skewed (a few very high incomes). Age at death in rich countries is negatively skewed.</li><li>Skewness tells the direction of the tail; dispersion tells the amount of spread. They are different ideas.</li></ul>"
+   },
+   {
+    "title": "Measures of skewness",
+    "body": "<table><tr><th>Measure</th><th>Formula</th><th>Usual range</th></tr><tr><td>Karl Pearson (first)</td><td>Sk<sub>p</sub> = (Mean − Mode) ÷ σ</td><td>Usually −1 to +1</td></tr><tr><td>Karl Pearson (second)</td><td>Sk<sub>p</sub> = 3(Mean − Median) ÷ σ</td><td>−3 to +3</td></tr><tr><td>Bowley (quartile)</td><td>Sk<sub>B</sub> = (Q<sub>3</sub> + Q<sub>1</sub> − 2Md) ÷ (Q<sub>3</sub> − Q<sub>1</sub>)</td><td>−1 to +1</td></tr><tr><td>Kelly (percentile)</td><td>(P<sub>90</sub> + P<sub>10</sub> − 2P<sub>50</sub>) ÷ (P<sub>90</sub> − P<sub>10</sub>)</td><td>−1 to +1</td></tr><tr><td>Moment</td><td>β<sub>1</sub> = μ<sub>3</sub>² ÷ μ<sub>2</sub>³, γ<sub>1</sub> = ±√β<sub>1</sub> (sign of μ<sub>3</sub>) = μ<sub>3</sub> ÷ σ³</td><td>β<sub>1</sub> ≥ 0</td></tr></table><p>Bowley's measure uses only the middle 50% of data, so it suits open-end classes. β<sub>1</sub> is always non-negative, so it cannot show direction; γ<sub>1</sub> takes the sign of μ<sub>3</sub>.</p>"
    },
    {
     "title": "Kurtosis",
-    "body": "β<sub>2</sub> = μ<sub>4</sub>/μ<sub>2</sub>², γ<sub>2</sub> = β<sub>2</sub> − 3.<ul><li>β<sub>2</sub> = 3: <b>mesokurtic</b> (normal).</li><li>β<sub>2</sub> &gt; 3: <b>leptokurtic</b> (more peaked).</li><li>β<sub>2</sub> &lt; 3: <b>platykurtic</b> (flatter).</li></ul>"
+    "body": "<p>Kurtosis measures how peaked (or heavy-tailed) a curve is compared with the normal curve.</p><ul><li>β<sub>2</sub> = μ<sub>4</sub> ÷ μ<sub>2</sub>², γ<sub>2</sub> = β<sub>2</sub> − 3 (excess kurtosis).</li></ul><table><tr><th>Type</th><th>β<sub>2</sub></th><th>γ<sub>2</sub></th><th>Shape</th></tr><tr><td>Leptokurtic</td><td>&gt; 3</td><td>&gt; 0</td><td>More peaked, heavier tails</td></tr><tr><td>Mesokurtic</td><td>= 3</td><td>= 0</td><td>Normal curve</td></tr><tr><td>Platykurtic</td><td>&lt; 3</td><td>&lt; 0</td><td>Flatter top</td></tr></table><p>Memory hook: <b>lepto</b> = \"leaps\" up, <b>platy</b> = flat like a plate. Always β<sub>2</sub> ≥ 1 and β<sub>2</sub> ≥ β<sub>1</sub> + 1.</p><p>Mini example: μ<sub>2</sub> = 3, μ<sub>4</sub> = 36. β<sub>2</sub> = 36 ÷ 9 = 4 &gt; 3, so leptokurtic; γ<sub>2</sub> = 1.</p>"
+   },
+   {
+    "title": "Normal curve values to remember",
+    "body": "<ul><li>Normal distribution: μ<sub>3</sub> = 0, β<sub>1</sub> = 0, γ<sub>1</sub> = 0, β<sub>2</sub> = 3, γ<sub>2</sub> = 0.</li><li>All odd central moments of a symmetric distribution are 0.</li><li>For a normal curve, μ<sub>4</sub> = 3σ⁴.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "moments",
+    "type": "raw-central-moments",
     "name": "Raw and central moments",
-    "how": "Convert raw moments to central moments with the standard formulas.",
+    "how": "Mean = A + μ′₁. Then μ₂ = μ′₂ − μ′₁², μ₃ = μ′₃ − 3μ′₂μ′₁ + 2μ′₁³.",
     "example": {
-     "q": "μ'1 = 1, μ'2 = 5, μ'3 = 10 (about A). Find μ3.",
+     "q": "The first three moments about 4 are 1, 10 and 30. Find the mean, the variance and μ₃.",
      "steps": [
-      "μ3 = μ'3 − 3μ'2μ'1 + 2μ'1³",
-      "= 10 − 3 × 5 × 1 + 2 × 1",
-      "= 10 − 15 + 2 = −3"
+      "Mean = 4 + 1 = 5.",
+      "μ₂ = 10 − 1² = 9.",
+      "μ₃ = 30 − 3(10)(1) + 2(1)³ = 30 − 30 + 2 = 2."
      ],
-     "answer": "−3"
+     "answer": "Mean 5, variance 9, μ₃ = 2"
     }
    },
    {
-    "type": "skewness",
-    "name": "Coefficient of skewness",
-    "how": "Use Karl Pearson with mean/mode/SD, Bowley with quartiles, β₁ with moments.",
+    "type": "pearson-skewness",
+    "name": "Karl Pearson's skewness",
+    "how": "Use (Mean − Mode) ÷ σ, or 3(Mean − Median) ÷ σ when the mode is not given.",
     "example": {
-     "q": "Mean = 45, median = 42, SD = 9. Find Karl Pearson's coefficient of skewness.",
+     "q": "Mean = 45, median = 42 and SD = 9. Find Karl Pearson's coefficient of skewness.",
      "steps": [
-      "Sk = 3(Mean − Median)/σ",
-      "= 3(45 − 42)/9 = 9/9 = 1"
+      "Mode is not given, so use the median form.",
+      "Sk = 3(45 − 42) ÷ 9 = 9 ÷ 9 = 1."
      ],
      "answer": "1 (positively skewed)"
     }
    },
    {
-    "type": "kurtosis",
-    "name": "Kurtosis",
-    "how": "Compute β₂ = μ₄/μ₂² and compare with 3.",
+    "type": "bowley-skewness",
+    "name": "Bowley's quartile skewness",
+    "how": "Sk = (Q₃ + Q₁ − 2 Median) ÷ (Q₃ − Q₁). Kelly uses P₉₀, P₅₀, P₁₀ the same way.",
     "example": {
-     "q": "μ2 = 2, μ4 = 18. What is the shape?",
+     "q": "Q₁ = 25, median = 32 and Q₃ = 45. Find Bowley's coefficient of skewness.",
      "steps": [
-      "β2 = 18/2² = 18/4 = 4.5",
-      "4.5 &gt; 3"
+      "Numerator = 45 + 25 − 64 = 6.",
+      "Denominator = 45 − 25 = 20.",
+      "Sk = 6 ÷ 20 = 0.3."
      ],
-     "answer": "Leptokurtic"
+     "answer": "0.3"
+    }
+   },
+   {
+    "type": "beta-gamma",
+    "name": "Moment skewness β₁ and γ₁",
+    "how": "β₁ = μ₃² ÷ μ₂³. γ₁ = μ₃ ÷ σ³; its sign is the sign of μ₃.",
+    "example": {
+     "q": "μ₂ = 4 and μ₃ = 4. Find β₁ and γ₁.",
+     "steps": [
+      "β₁ = 4² ÷ 4³ = 16 ÷ 64 = 0.25.",
+      "σ = 2, so γ₁ = 4 ÷ 2³ = 0.5.",
+      "μ₃ is positive, so the distribution is positively skewed."
+     ],
+     "answer": "β₁ = 0.25, γ₁ = 0.5"
+    }
+   },
+   {
+    "type": "kurtosis",
+    "name": "Kurtosis β₂ and γ₂",
+    "how": "β₂ = μ₄ ÷ μ₂². Compare with 3: above 3 lepto, equal meso, below platy.",
+    "example": {
+     "q": "μ₂ = 3 and μ₄ = 36. Find β₂ and name the curve.",
+     "steps": [
+      "β₂ = 36 ÷ 3² = 36 ÷ 9 = 4.",
+      "γ₂ = 4 − 3 = 1 > 0.",
+      "β₂ > 3 means more peaked than normal."
+     ],
+     "answer": "β₂ = 4, leptokurtic"
+    }
+   },
+   {
+    "type": "skewness-shape",
+    "name": "Shape from mean, median and mode",
+    "how": "Mean is pulled toward the long tail. Mean > Median > Mode is positive skew; the reverse is negative.",
+    "example": {
+     "q": "In a distribution, mean = 50, median = 52 and mode = 55. What kind of skewness is this?",
+     "steps": [
+      "Mean < Median < Mode.",
+      "The mean is pulled to the left, so the long tail is on the left."
+     ],
+     "answer": "Negative skewness"
     }
    }
   ],
   "tips": [
-   "For a symmetric distribution all odd central moments are zero.",
-   "β₁ is always ≥ 0, so use the sign of μ₃ to tell the direction of skewness.",
-   "Mesokurtic = \"middle\", lepto = \"slender/peaked\", platy = \"flat\"."
+   "μ₁ about the mean is always 0 and μ₂ is the variance. Mean = A + μ′₁.",
+   "Write the conversions once from the binomial pattern: μ₃ = μ′₃ − 3μ′₂μ′₁ + 2μ′₁³.",
+   "β₁ is never negative; use γ₁ or the sign of μ₃ for the direction.",
+   "β₂ = 3 is the normal curve. Lepto above 3, platy below 3.",
+   "Bowley's coefficient always lies between −1 and +1; it is zero when the quartiles are equally spaced from the median.",
+   "Positive skew: Mean > Median > Mode and Q₃ − Md > Md − Q₁."
   ],
   "traps": [
-   "β₁ cannot show negative skewness; γ₁ or μ₃ can.",
-   "Bowley's coefficient is bounded by ±1, Karl Pearson's usually by ±3.",
-   "μ₂ is the variance, not the SD."
+   "Central moments do not change with origin, but they change with scale: μᵣ(x) = hʳ μᵣ(u).",
+   "In β₂ the denominator is μ₂ squared, not μ₂; in β₁ it is μ₂ cubed.",
+   "Pearson's median form has a 3 in front: 3(Mean − Median) ÷ σ.",
+   "Skewness is not dispersion: two curves can have the same SD and opposite skewness."
   ]
  },
  "formulas": [
   {
-   "name": "Variance from raw moments",
-   "expr": "μ₂ = μ'₂ − (μ'₁)²"
+   "name": "Mean from raw moments",
+   "expr": "x̄ = A + μ′₁"
+  },
+  {
+   "name": "Second central moment",
+   "expr": "μ₂ = μ′₂ − μ′₁²"
   },
   {
    "name": "Third central moment",
-   "expr": "μ₃ = μ'₃ − 3μ'₂μ'₁ + 2(μ'₁)³"
+   "expr": "μ₃ = μ′₃ − 3μ′₂μ′₁ + 2μ′₁³"
+  },
+  {
+   "name": "Fourth central moment",
+   "expr": "μ₄ = μ′₄ − 4μ′₃μ′₁ + 6μ′₂μ′₁² − 3μ′₁⁴"
   },
   {
    "name": "Karl Pearson skewness",
@@ -84,11 +150,15 @@
   },
   {
    "name": "Bowley skewness",
-   "expr": "(Q₃ + Q₁ − 2Q₂)/(Q₃ − Q₁)"
+   "expr": "(Q₃ + Q₁ − 2Md)/(Q₃ − Q₁)"
   },
   {
-   "name": "Moment coefficients",
-   "expr": "β₁ = μ₃²/μ₂³,  β₂ = μ₄/μ₂²"
+   "name": "Moment skewness",
+   "expr": "β₁ = μ₃²/μ₂³,  γ₁ = μ₃/σ³"
+  },
+  {
+   "name": "Kurtosis",
+   "expr": "β₂ = μ₄/μ₂²,  γ₂ = β₂ − 3"
   }
  ],
  "questions": [
@@ -96,7 +166,7 @@
    "id": "st-moments-001",
    "rev": 1,
    "topic": "st-moments",
-   "type": "moments",
+   "type": "raw-central-moments",
    "level": 1,
    "q": "The first central moment (about the mean) of any distribution is always:",
    "options": [
@@ -113,7 +183,7 @@
    "id": "st-moments-002",
    "rev": 1,
    "topic": "st-moments",
-   "type": "skewness",
+   "type": "pearson-skewness",
    "level": 1,
    "q": "Mean = 60, mode = 55 and SD = 10. Karl Pearson's coefficient of skewness is:",
    "options": [
@@ -130,7 +200,7 @@
    "id": "st-moments-003",
    "rev": 1,
    "topic": "st-moments",
-   "type": "skewness",
+   "type": "bowley-skewness",
    "level": 2,
    "q": "Q<sub>1</sub> = 20, median = 30 and Q<sub>3</sub> = 50. Bowley's coefficient of skewness is:",
    "options": [
@@ -164,7 +234,7 @@
    "id": "st-moments-005",
    "rev": 1,
    "topic": "st-moments",
-   "type": "moments",
+   "type": "raw-central-moments",
    "level": 3,
    "q": "The first two moments about the value 5 are 2 and 20. The standard deviation is:",
    "options": [
@@ -181,7 +251,7 @@
    "id": "st-moments-006",
    "rev": 1,
    "topic": "st-moments",
-   "type": "skewness",
+   "type": "beta-gamma",
    "level": 3,
    "q": "For a distribution μ<sub>2</sub> = 4 and μ<sub>3</sub> = −8. Then β<sub>1</sub> and the direction of skewness are:",
    "options": [

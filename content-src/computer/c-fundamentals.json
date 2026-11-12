@@ -1,76 +1,164 @@
 {
  "topic": "c-fundamentals",
  "notes": {
-  "summary": "This topic covers the basic parts of a computer (input, CPU, memory, output), the types of memory and their units, and number systems. Tier 2 asks 4–6 direct, one-line questions here, so learn the facts and the conversions.",
+  "summary": "<p>Computer fundamentals gives 4 to 6 direct questions in Tier 2. The most asked areas are the generations of computers, the CPU and its registers, RAM, ROM and cache, storage devices, data units and address lines, input and output devices, and number system conversions.</p><p>Most questions are one-line facts, so learn the tables below. The only working questions are unit conversions, address lines and base conversions.</p>",
   "concepts": [
    {
-    "title": "Parts of a computer",
-    "body": "Every computer follows the <b>Input → Process → Output</b> cycle.<ul><li><b>CPU</b> (the \"brain\") has the <b>Control Unit</b> (directs all operations) and the <b>ALU</b> (does arithmetic and logic). <b>Registers</b> are tiny, very fast storage inside the CPU.</li><li><b>Input devices</b>: keyboard, mouse, scanner, light pen, joystick, microphone, OMR, MICR, barcode reader.</li><li><b>Output devices</b>: monitor, printer, plotter, speaker, projector.</li></ul>",
-    "img": "computer/cpu-block.svg"
+    "title": "What a computer is",
+    "img": "computer/cpu-block.svg",
+    "body": "<p>A computer takes <b>input</b>, <b>processes</b> it, <b>stores</b> it and gives <b>output</b>. This is the IPO cycle (input, process, output) with storage added.</p><ul><li><b>Hardware</b>: the parts you can touch (keyboard, CPU, monitor).</li><li><b>Software</b>: the programs that tell hardware what to do.</li><li><b>Firmware</b>: software stored permanently in hardware, like the BIOS in ROM.</li><li><b>Data</b> is raw facts; <b>information</b> is processed, meaningful data.</li></ul><p>The <b>CPU</b> (central processing unit) is called the brain of the computer. The <b>motherboard</b> is the main circuit board that connects everything.</p>"
    },
    {
-    "title": "Types of memory",
-    "body": "<ul><li><b>Primary memory</b>: RAM (volatile, read-write, loses data when power goes) and ROM (non-volatile, holds the BIOS/firmware). Types of ROM: PROM, EPROM (erased by UV light), EEPROM (erased electrically).</li><li><b>Cache</b>: very fast memory between CPU and RAM.</li><li><b>Secondary memory</b>: HDD, SSD, pen drive, CD/DVD; non-volatile and large.</li></ul>Speed order (fastest first): <b>Register &gt; Cache &gt; RAM &gt; SSD &gt; HDD</b>. Cost per byte follows the same order."
+    "title": "History and generations",
+    "body": "<table><thead><tr><th>Generation</th><th>Years (approx.)</th><th>Main technology</th><th>Examples and notes</th></tr></thead><tbody><tr><td>First</td><td>1940–1956</td><td>Vacuum tubes</td><td>ENIAC, UNIVAC; machine language; huge, hot, used punched cards</td></tr><tr><td>Second</td><td>1956–1963</td><td>Transistors</td><td>IBM 1401; assembly language, early high-level languages (FORTRAN, COBOL)</td></tr><tr><td>Third</td><td>1964–1971</td><td>Integrated circuits (IC)</td><td>IBM System/360; keyboards, monitors and operating systems</td></tr><tr><td>Fourth</td><td>1971–present</td><td>Microprocessor (VLSI)</td><td>Intel 4004 (1971), personal computers, GUIs</td></tr><tr><td>Fifth</td><td>Present and future</td><td>Artificial intelligence, ULSI, parallel processing</td><td>Natural language, robotics, expert systems</td></tr></tbody></table><ul><li><b>Charles Babbage</b> is the father of the computer (Difference Engine, Analytical Engine). <b>Ada Lovelace</b> is called the first programmer.</li><li><b>Abacus</b> is the earliest counting tool. <b>Pascaline</b> was Blaise Pascal's adding machine. <b>Herman Hollerith</b> used punched cards for the 1890 US census.</li><li><b>ENIAC</b> (1946) was the first general-purpose electronic computer, built by Eckert and Mauchly. <b>John von Neumann</b> gave the stored-program idea.</li><li><b>PARAM 8000</b> (1991, C-DAC) was India's first supercomputer.</li></ul>"
    },
    {
-    "title": "Memory units",
-    "body": "1 nibble = 4 bits; 1 byte = 8 bits.<br>1 KB = 1024 bytes; 1 MB = 1024 KB; 1 GB = 1024 MB; 1 TB = 1024 GB; 1 PB = 1024 TB.<br>So 1 KB = 2<sup>10</sup> bytes, 1 MB = 2<sup>20</sup>, 1 GB = 2<sup>30</sup>, 1 TB = 2<sup>40</sup> bytes."
+    "title": "Types of computers",
+    "body": "<table><thead><tr><th>By size and power</th><th>What it is</th></tr></thead><tbody><tr><td>Supercomputer</td><td>Fastest; weather forecasting, research. Speed in FLOPS. Examples: PARAM, Frontier.</td></tr><tr><td>Mainframe</td><td>Serves hundreds of users at once; banks, railways.</td></tr><tr><td>Minicomputer</td><td>Mid-sized, for a department or small firm.</td></tr><tr><td>Microcomputer</td><td>Personal computer built around a microprocessor: desktop, laptop, tablet, smartphone.</td></tr></tbody></table><ul><li>A <b>laptop</b> is also called a <b>notebook</b>. A <b>palmtop</b> or PDA fits in the hand.</li><li>By how data is handled: <b>analog</b> (continuous data, like a speedometer), <b>digital</b> (discrete 0 and 1), <b>hybrid</b> (both, like ICU machines).</li><li>A <b>server</b> provides services to other computers (clients); a <b>workstation</b> is a powerful single-user computer.</li></ul>"
+   },
+   {
+    "title": "CPU, registers and the bus",
+    "body": "<p>The CPU has three main parts:</p><ul><li><b>ALU</b> (arithmetic logic unit): does maths (+, −) and logic (AND, OR, comparisons).</li><li><b>CU</b> (control unit): fetches instructions, decodes them and directs the other parts. It does not process data itself.</li><li><b>Registers</b>: tiny, fastest storage inside the CPU.</li></ul><table><thead><tr><th>Register</th><th>What it holds</th></tr></thead><tbody><tr><td>PC (program counter)</td><td>Address of the next instruction</td></tr><tr><td>IR (instruction register)</td><td>The instruction being executed now</td></tr><tr><td>MAR (memory address register)</td><td>Address of the memory location being accessed (the active memory location)</td></tr><tr><td>MDR / MBR (memory data / buffer register)</td><td>Data being read from or written to memory</td></tr><tr><td>Accumulator (AC)</td><td>Intermediate results of the ALU</td></tr></tbody></table><ul><li>The CPU runs the <b>machine cycle</b>: fetch, decode, execute, store.</li><li>Clock speed is measured in <b>hertz</b> (GHz today). A multi-core CPU has several processing cores on one chip.</li><li>A <b>bus</b> is a set of wires: the <b>address bus</b> carries addresses (one-way), the <b>data bus</b> carries data (two-way) and the <b>control bus</b> carries signals.</li></ul>"
+   },
+   {
+    "title": "Booting",
+    "body": "<ul><li><b>Booting</b> is starting the computer and loading the operating system into RAM.</li><li><b>Cold boot</b>: switching on from power off. <b>Warm boot</b>: restarting a running computer (Restart, or Ctrl+Alt+Del in older systems).</li><li>Steps: power on, the <b>BIOS</b> (or UEFI) in ROM runs the <b>POST</b> (power-on self-test) to check the hardware, then the <b>bootstrap loader</b> loads the operating system.</li><li>BIOS = Basic Input/Output System. CMOS is a small battery-backed memory that keeps BIOS settings and the date and time.</li></ul>"
+   },
+   {
+    "title": "Primary memory: RAM, ROM and cache",
+    "body": "<table><thead><tr><th></th><th>RAM</th><th>ROM</th></tr></thead><tbody><tr><td>Full form</td><td>Random Access Memory</td><td>Read Only Memory</td></tr><tr><td>Volatile?</td><td>Yes: loses data when power goes</td><td>No: keeps data</td></tr><tr><td>Use</td><td>Programs and data in use now</td><td>Firmware such as BIOS</td></tr><tr><td>Read/write</td><td>Both</td><td>Mostly read</td></tr></tbody></table><ul><li><b>SRAM</b> (static): made of flip-flops, faster, costlier, no refresh needed; used for <b>cache</b>.</li><li><b>DRAM</b> (dynamic): made of capacitors, must be refreshed again and again; used for main memory.</li><li>ROM types: <b>PROM</b> (written once by the user), <b>EPROM</b> (erased by ultraviolet light), <b>EEPROM</b> (erased electrically; flash memory is a kind of EEPROM).</li><li><b>Cache memory</b> sits between CPU and RAM. It keeps the current programs and data ready so the CPU runs faster.</li><li><b>Virtual memory</b>: part of the hard disk used as if it were RAM.</li></ul><p><b>Memory hierarchy</b>, fastest and costliest first: registers, cache, RAM, SSD, hard disk, optical disc, magnetic tape. Speed and cost per byte fall as you go down; capacity rises.</p>"
+   },
+   {
+    "title": "Secondary storage",
+    "body": "<p>Secondary storage is non-volatile and keeps data for the long term.</p><table><thead><tr><th>Kind</th><th>Devices</th><th>Notes</th></tr></thead><tbody><tr><td>Magnetic</td><td>Hard disk (HDD), floppy disk, magnetic tape</td><td>Tape is <b>sequential access</b>, used for backup. A disk is direct (random) access, split into tracks and sectors.</td></tr><tr><td>Optical</td><td>CD (about 700 MB), DVD (4.7 GB single layer), Blu-ray (25 GB single layer)</td><td>Read by a laser. Blu-ray uses a blue-violet laser.</td></tr><tr><td>Flash (solid state)</td><td>SSD, pen drive, memory card</td><td>No moving parts, faster than HDD</td></tr></tbody></table><ul><li>CD-ROM, DVD and Blu-ray are optical, <b>not</b> magnetic.</li><li>CD-R is write once; CD-RW can be rewritten.</li><li>Hard disk speed is given in RPM (for example 5400 or 7200).</li></ul>"
+   },
+   {
+    "title": "Data units and address lines",
+    "body": "<table><thead><tr><th>Unit</th><th>Equal to</th></tr></thead><tbody><tr><td>1 nibble</td><td>4 bits</td></tr><tr><td>1 byte</td><td>8 bits</td></tr><tr><td>1 KB (kilobyte)</td><td>1024 bytes = 2<sup>10</sup> bytes</td></tr><tr><td>1 MB</td><td>1024 KB = 2<sup>20</sup> bytes</td></tr><tr><td>1 GB</td><td>1024 MB = 2<sup>30</sup> bytes</td></tr><tr><td>1 TB</td><td>1024 GB</td></tr><tr><td>1 PB, EB, ZB, YB</td><td>Each 1024 times the one before</td></tr></tbody></table><ul><li>Order to remember: bit, nibble, byte, KB, MB, GB, TB, PB, EB, ZB, YB.</li><li>A <b>bit</b> (binary digit) is 0 or 1, the smallest unit. A <b>word</b> is the number of bits the CPU handles at once (32-bit, 64-bit).</li><li><b>Bandwidth</b> or bit rate is how much data can move per second, in bits per second (bps, kbps, Mbps, Gbps). Note small b = bits, capital B = bytes.</li><li><b>Address lines</b>: n lines can address 2<sup>n</sup> locations. For a memory of 4K × 8 bits: 4K = 4096 = 2<sup>12</sup> locations, so 12 address lines; the 8 is the word size, so 8 data lines.</li></ul><p>Character codes: <b>ASCII</b> uses 7 bits (128 characters; extended ASCII 8 bits), <b>Unicode</b> covers all languages (UTF-8, UTF-16), <b>EBCDIC</b> is IBM's 8-bit code.</p>"
+   },
+   {
+    "title": "Input and output devices",
+    "body": "<table><thead><tr><th>Input</th><th>Output</th><th>Both</th></tr></thead><tbody><tr><td>Keyboard, mouse, scanner, microphone, webcam, joystick, light pen, barcode reader, MICR, OCR, OMR, biometric sensor</td><td>Monitor, printer, plotter, speaker, headphones, projector</td><td>Touch screen, modem, network card</td></tr></tbody></table><ul><li><b>MICR</b> (magnetic ink character recognition): reads the magnetic ink numbers on bank cheques.</li><li><b>OCR</b> (optical character recognition): turns printed text into editable text.</li><li><b>OMR</b> (optical mark recognition): reads filled bubbles on exam answer sheets.</li><li>A <b>plotter</b> prints large drawings such as maps and building plans. It is an output device.</li><li>Monitor quality: <b>resolution</b> (pixels, for example 1920 × 1080) and refresh rate (Hz). Types: CRT, LCD, LED.</li><li>Standard keyboard layout is <b>QWERTY</b>; a full keyboard has 12 function keys (F1 to F12).</li></ul>"
+   },
+   {
+    "title": "Printers and ports",
+    "body": "<table><thead><tr><th>Impact printers (strike the paper)</th><th>Non-impact printers (no striking)</th></tr></thead><tbody><tr><td>Dot matrix, daisy wheel, line printer. Noisy; can print carbon copies. Speed of dot matrix in cps (characters per second); line printer in lpm (lines per minute).</td><td>Laser, inkjet, thermal. Quiet, better quality. A laser printer uses <b>toner</b> powder and a drum, prints a full page at a time (speed in ppm, pages per minute).</td></tr></tbody></table><table><thead><tr><th>Port</th><th>What it does</th></tr></thead><tbody><tr><td>Serial (COM, RS-232)</td><td>Sends one bit at a time in a single stream; slow, but works over long distances (old modems, mouse)</td></tr><tr><td>Parallel (LPT)</td><td>Sends 8 bits at once over short distances; old printers</td></tr><tr><td>USB</td><td>Universal Serial Bus: plug and play for most devices</td></tr><tr><td>VGA</td><td>Analog video to a monitor; 15-pin connector in three rows</td></tr><tr><td>HDMI</td><td>Digital audio and video in one cable</td></tr><tr><td>PS/2</td><td>Old 6-pin round port for keyboard and mouse</td></tr><tr><td>RJ-45 (Ethernet)</td><td>Wired network cable</td></tr></tbody></table>"
    },
    {
     "title": "Number systems",
-    "body": "<table><tr><th>System</th><th>Base</th><th>Digits</th></tr><tr><td>Binary</td><td>2</td><td>0, 1</td></tr><tr><td>Octal</td><td>8</td><td>0–7</td></tr><tr><td>Decimal</td><td>10</td><td>0–9</td></tr><tr><td>Hexadecimal</td><td>16</td><td>0–9, A–F (A = 10 … F = 15)</td></tr></table>To convert to decimal, multiply each digit by the place value (power of the base) and add."
+    "body": "<table><thead><tr><th>System</th><th>Base</th><th>Digits</th></tr></thead><tbody><tr><td>Binary</td><td>2</td><td>0, 1</td></tr><tr><td>Octal</td><td>8</td><td>0 to 7</td></tr><tr><td>Decimal</td><td>10</td><td>0 to 9</td></tr><tr><td>Hexadecimal</td><td>16</td><td>0 to 9, A (10) to F (15)</td></tr></tbody></table><ul><li><b>Any base to decimal</b>: multiply each digit by base<sup>position</sup> and add. (1011)<sub>2</sub> = 8 + 0 + 2 + 1 = 11. (2F)<sub>16</sub> = 2 × 16 + 15 = 47.</li><li><b>Decimal to any base</b>: divide by the base again and again, then read the remainders from bottom to top. 25 in binary = 11001.</li><li><b>Binary to octal</b>: group 3 bits from the right. 110 101 = (65)<sub>8</sub>.</li><li><b>Binary to hexadecimal</b>: group 4 bits from the right. 0011 0101 = (35)<sub>16</sub>.</li><li>Useful values: 2<sup>8</sup> = 256, 2<sup>10</sup> = 1024, (100)<sub>10</sub> = (1100100)<sub>2</sub> = (144)<sub>8</sub> = (64)<sub>16</sub>.</li><li><b>1's complement</b>: flip every bit. <b>2's complement</b>: 1's complement plus 1 (used to store negative numbers).</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "hardware",
-    "name": "Hardware and devices",
-    "how": "Know the CPU parts and classify each device as input, output or storage.",
+    "type": "generations-types",
+    "name": "Generations, history and types of computers",
+    "how": "Match the technology to the generation: vacuum tube 1st, transistor 2nd, IC 3rd, microprocessor 4th, AI 5th.",
     "example": {
-     "q": "Which unit of the CPU performs addition and comparison?",
+     "q": "Which generation of computers first used transistors?",
      "steps": [
-      "Arithmetic (addition) and logic (comparison) are done by the Arithmetic Logic Unit.",
-      "The Control Unit only directs; it does not calculate."
+      "Vacuum tubes were used in the first generation.",
+      "Transistors replaced them in the second generation (about 1956–1963)."
      ],
-     "answer": "ALU"
+     "answer": "Second generation"
+    }
+   },
+   {
+    "type": "cpu-registers",
+    "name": "CPU, registers and booting",
+    "how": "Learn each register by what it holds: PC next instruction address, IR current instruction, MAR memory address, MDR memory data.",
+    "example": {
+     "q": "Which register holds the address of the memory location being accessed?",
+     "steps": [
+      "MDR holds the data, not the address.",
+      "MAR = memory <b>address</b> register."
+     ],
+     "answer": "MAR (memory address register)"
     }
    },
    {
     "type": "memory",
-    "name": "Memory types and units",
-    "how": "Remember volatile vs non-volatile, the speed order, and that each unit is 1024 times the previous one.",
+    "name": "Primary memory and the memory hierarchy",
+    "how": "RAM is volatile, ROM is not. Cache is SRAM, main memory is DRAM. Order of speed: registers, cache, RAM, secondary storage.",
     "example": {
-     "q": "How many KB are there in 2 MB?",
+     "q": "Which ROM can be erased with ultraviolet light and reprogrammed?",
      "steps": [
-      "1 MB = 1024 KB",
-      "2 MB = 2 × 1024 = 2048 KB"
+      "PROM can be written only once.",
+      "EEPROM is erased electrically.",
+      "EPROM is erased with UV light."
      ],
-     "answer": "2048 KB"
+     "answer": "EPROM"
+    }
+   },
+   {
+    "type": "storage",
+    "name": "Secondary storage devices",
+    "how": "Sort the device into magnetic (HDD, floppy, tape), optical (CD, DVD, Blu-ray) or flash (SSD, pen drive).",
+    "example": {
+     "q": "Which of these is not a magnetic storage device: hard disk, floppy disk, magnetic tape, CD-ROM?",
+     "steps": [
+      "Hard disk, floppy and tape store data magnetically.",
+      "A CD-ROM is read by a laser, so it is optical."
+     ],
+     "answer": "CD-ROM"
+    }
+   },
+   {
+    "type": "units-addressing",
+    "name": "Data units, bit rate and address lines",
+    "how": "Each step from KB up is × 1024. For address lines, write the number of locations as a power of 2; the power is the number of lines.",
+    "example": {
+     "q": "A memory has a capacity of 4K × 8 bits. How many address lines are needed?",
+     "steps": [
+      "Number of locations = 4K = 4 × 1024 = 4096.",
+      "4096 = 2<sup>12</sup>.",
+      "The × 8 is the word size (data lines), not the address."
+     ],
+     "answer": "12"
+    }
+   },
+   {
+    "type": "io-devices",
+    "name": "Input and output devices, ports and printers",
+    "how": "Ask which way the data goes: into the computer (input) or out (output). For printers, ask whether it strikes the paper.",
+    "example": {
+     "q": "Which device is used by banks to read the numbers printed on cheques?",
+     "steps": [
+      "Cheque numbers are printed in magnetic ink.",
+      "Magnetic Ink Character Recognition reads them."
+     ],
+     "answer": "MICR"
     }
    },
    {
     "type": "number-systems",
-    "name": "Number system conversion",
-    "how": "Write place values (powers of the base) from the right, multiply by each digit and add.",
+    "name": "Number system conversions",
+    "how": "Go through decimal if unsure. For binary to octal group 3 bits; for binary to hex group 4 bits.",
     "example": {
-     "q": "Convert (1101)<sub>2</sub> to decimal.",
+     "q": "Convert (110101)<sub>2</sub> to octal and hexadecimal.",
      "steps": [
-      "Place values from right: 1, 2, 4, 8",
-      "1×8 + 1×4 + 0×2 + 1×1 = 13"
+      "Octal: group 3 bits from the right: 110 | 101 = 6 | 5 = (65)<sub>8</sub>.",
+      "Hexadecimal: group 4 bits: 0011 | 0101 = 3 | 5 = (35)<sub>16</sub>.",
+      "Check: 110101 = 32 + 16 + 4 + 1 = 53; 6 × 8 + 5 = 53; 3 × 16 + 5 = 53."
      ],
-     "answer": "13"
+     "answer": "(65)<sub>8</sub> and (35)<sub>16</sub>"
     }
    }
   ],
   "tips": [
-   "For hex, remember A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.",
-   "Group binary digits in 3s for octal and in 4s for hexadecimal conversion.",
-   "BIOS is stored in ROM; the operating system is loaded into RAM during booting."
+   "Generations in order: vacuum tube, transistor, IC, microprocessor, AI.",
+   "Volatile means the data goes when the power goes. Only RAM (and cache, registers) is volatile.",
+   "For address lines, write the number of memory locations as 2 to the power n; n is the answer.",
+   "MICR is for bank cheques, OMR for exam answer sheets, OCR for turning printed text into editable text.",
+   "Binary to octal: groups of 3 bits. Binary to hex: groups of 4 bits. Always group from the right.",
+   "A laptop is also called a notebook; a laser printer is a non-impact page printer that uses toner."
   ],
   "traps": [
-   "1 KB is 1024 bytes in computer memory questions, not 1000.",
-   "Plotter and speaker are output devices; light pen and joystick are input devices.",
-   "Cache is faster than RAM but registers are faster than cache."
+   "1 KB is 1024 bytes, not 1000, in these questions.",
+   "MAR holds an address; MDR holds data. Do not swap them.",
+   "CD-ROM, DVD and Blu-ray are optical, not magnetic.",
+   "Serial ports send one bit at a time; parallel ports send 8 bits at once.",
+   "A plotter is an output device even though it draws."
   ]
  },
  "questions": [
@@ -78,7 +166,7 @@
    "id": "c-fundamentals-001",
    "rev": 1,
    "topic": "c-fundamentals",
-   "type": "hardware",
+   "type": "cpu-registers",
    "level": 1,
    "q": "Which part of a computer is called its \"brain\"?",
    "options": [
@@ -95,7 +183,7 @@
    "id": "c-fundamentals-002",
    "rev": 1,
    "topic": "c-fundamentals",
-   "type": "memory",
+   "type": "units-addressing",
    "level": 1,
    "q": "1 kilobyte (KB) is equal to:",
    "options": [
@@ -129,7 +217,7 @@
    "id": "c-fundamentals-004",
    "rev": 1,
    "topic": "c-fundamentals",
-   "type": "hardware",
+   "type": "io-devices",
    "level": 2,
    "q": "Which of the following is NOT an input device?",
    "options": [
@@ -197,7 +285,7 @@
    "id": "c-fundamentals-008",
    "rev": 1,
    "topic": "c-fundamentals",
-   "type": "memory",
+   "type": "units-addressing",
    "level": 3,
    "q": "A memory of 4 GB is equal to how many MB?",
    "options": [

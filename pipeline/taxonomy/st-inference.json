@@ -1,0 +1,47 @@
+{
+ "topic": "st-inference",
+ "types": [
+  {
+   "type": "estimators",
+   "name": "Properties of estimators",
+   "description": "Asks which estimator is unbiased, consistent, efficient or sufficient, or for an unbiased estimate of a variance.",
+   "concepts": []
+  },
+  {
+   "type": "confidence-interval",
+   "name": "Confidence intervals",
+   "description": "Asks for a confidence interval, its critical value, its width or the margin of error.",
+   "concepts": []
+  },
+  {
+   "type": "hypothesis-concepts",
+   "name": "Hypotheses, errors and power",
+   "description": "Asks about null and alternative hypotheses, Type I or Type II errors, level of significance, p-value or power.",
+   "concepts": []
+  },
+  {
+   "type": "z-test",
+   "name": "Large-sample z tests",
+   "description": "Gives a large sample (or known σ) and asks for the z statistic for a mean or proportion, or the decision.",
+   "concepts": []
+  },
+  {
+   "type": "t-test",
+   "name": "t tests and their degrees of freedom",
+   "description": "Gives a small sample with unknown σ and asks for the t statistic or its degrees of freedom.",
+   "concepts": []
+  },
+  {
+   "type": "chi-square",
+   "name": "Chi-square tests",
+   "description": "Gives observed and expected frequencies or a contingency table and asks for χ² or its degrees of freedom.",
+   "concepts": []
+  },
+  {
+   "type": "f-test",
+   "name": "F test for variances",
+   "description": "Compares two sample variances and asks for the F ratio or its degrees of freedom.",
+   "concepts": []
+  }
+ ]
+}

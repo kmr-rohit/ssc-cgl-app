@@ -1,216 +1,428 @@
 {
- "topic": "q-ratio",
- "notes": {
-  "summary": "Ratio compares two quantities of the same kind; proportion says two ratios are equal. Partnership is ratio applied to investment × time. 1–2 questions per tier.",
-  "concepts": [
-   {
-    "title": "Ratio basics",
-    "body": "a : b = a/b. Multiplying or dividing both terms by the same number does not change the ratio. To divide N in a : b, the parts are <b>N × a/(a + b)</b> and <b>N × b/(a + b)</b>."
-   },
-   {
-    "title": "Proportion",
-    "body": "If a : b = c : d then ad = bc. <b>Fourth proportional</b> of a, b, c = bc/a. <b>Mean proportional</b> of a and b = √(ab). <b>Third proportional</b> of a and b = b²/a."
-   },
-   {
-    "title": "Partnership",
-    "body": "Profit is shared in the ratio of <b>capital × time</b>. A partner who joins later is counted only for the months they invested."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "ratio-basic",
-    "name": "Dividing and changing ratios",
-    "how": "Write the quantities as ax and bx, apply the change, and solve for x.",
-    "example": {
-     "q": "Two numbers are in the ratio 2 : 3. If 5 is added to each, the ratio becomes 3 : 4. Find the numbers.",
-     "steps": [
-      "(2x + 5)/(3x + 5) = 3/4",
-      "8x + 20 = 9x + 15 → x = 5"
-     ],
-     "answer": "10 and 15"
+  "topic": "q-ratio",
+  "notes": {
+    "summary": "A ratio compares two quantities of the same kind; a proportion says two ratios are equal. This topic also covers partnership (sharing profit) and problems on ages. SSC asks 1 to 2 questions in Tier 1 and 1 to 2 in Tier 2, and the same ratio thinking is used in almost every other arithmetic topic.",
+    "concepts": [
+      {
+        "title": "What a ratio is",
+        "body": "<p>A ratio compares two quantities of the <b>same kind</b> by division. a : b means a/b. The first term is the antecedent and the second is the consequent.</p><ul><li>Both quantities must be in the same unit. 50 paise : ₹2 = 50 : 200 = 1 : 4.</li><li>A ratio does not change if both terms are multiplied or divided by the same number. 12 : 18 = 2 : 3.</li><li>If a : b = 2 : 3, write a = 2k and b = 3k. This one step solves most questions.</li><li>To compare two ratios, cross-multiply. Is 3/5 bigger than 4/7? 3 × 7 = 21 and 5 × 4 = 20, so 3/5 is bigger.</li></ul>"
+      },
+      {
+        "title": "Combining ratios",
+        "body": "<p>To join A : B and B : C into A : B : C, make the common term B equal.</p><p>Example: A : B = 3 : 4 and B : C = 6 : 7. LCM of 4 and 6 is 12. A : B = 9 : 12 and B : C = 12 : 14, so A : B : C = <b>9 : 12 : 14</b>.</p><p>Quick method for A : B = a : b and B : C = c : d: A : B : C = <b>ac : bc : bd</b>.</p><ul><li>A : C = (A : B) × (B : C). With the numbers above, A : C = (3 × 6) : (4 × 7) = 18 : 28 = 9 : 14.</li><li>The <b>compound ratio</b> of a : b and c : d is ac : bd.</li><li>If 2A = 3B = 4C, then A : B : C = 1/2 : 1/3 : 1/4 = 6 : 4 : 3 (multiply by the LCM 12).</li></ul>"
+      },
+      {
+        "title": "Dividing a quantity in a ratio",
+        "body": "<p>To divide an amount S in the ratio a : b : c, total parts = a + b + c and one part = S ÷ (a + b + c).</p><p>Share of A = <b>a/(a + b + c) × S</b>.</p><ul><li>Divide ₹1,800 in 2 : 3 : 4. One part = 1800/9 = 200. Shares are ₹400, ₹600, ₹800.</li><li>If a <b>difference</b> is given, divide the difference by the difference in parts. Shares 5 : 3 : 4 and P gets ₹1,500 more than R: 5 − 4 = 1 part = ₹1,500, so Q = 3 × 1500 = ₹4,500.</li><li>For a fractional ratio like 1/2 : 1/3 : 1/4, multiply every term by the LCM of denominators (12) to get 6 : 4 : 3.</li><li>If A gets ₹x more after someone else gives ₹y, write the shares as multiples of k and form one equation.</li></ul>"
+      },
+      {
+        "title": "Ratio after a percent change",
+        "body": "<p>If quantities in the ratio a : b change by p% and q%, the new ratio is <b>a(100 + p) : b(100 + q)</b>.</p><p>Example: salaries are 2 : 3. A gets a 15% rise and B a 10% rise. New ratio = 2 × 115 : 3 × 110 = 230 : 330 = <b>23 : 33</b>.</p><p>Also useful: if A is 20% more than B, A : B = 120 : 100 = 6 : 5. If A is 25% less than B, A : B = 75 : 100 = 3 : 4.</p>"
+      },
+      {
+        "title": "Proportion and the proportionals",
+        "body": "<p>Four numbers a, b, c, d are in proportion (a : b :: c : d) when a/b = c/d, that is <b>a × d = b × c</b> (product of extremes = product of means).</p><table><thead><tr><th>Asked</th><th>Rule</th><th>Example</th></tr></thead><tbody><tr><td>Fourth proportional to a, b, c</td><td>d = bc/a</td><td>4, 9, 12: d = 9 × 12/4 = 27</td></tr><tr><td>Third proportional to a, b</td><td>c = b²/a</td><td>16, 24: c = 576/16 = 36</td></tr><tr><td>Mean proportional between a, b</td><td>√(ab)</td><td>9, 16: √144 = 12</td></tr></tbody></table><ul><li>a, b, c are in <b>continued proportion</b> when a : b = b : c, so b² = ac.</li><li>The third proportional uses the two given numbers in order. The third proportional to 24 and 16 is 16²/24 = 32/3, not 36.</li></ul>"
+      },
+      {
+        "title": "Adding or subtracting the same number",
+        "body": "<p>When the same x is added to (or subtracted from) each term, form the equation and cross-multiply.</p><p>Two numbers are 3 : 5. Subtract 9 from each and they become 12 : 23. Write 3k and 5k: (3k − 9)/(5k − 9) = 12/23, so 69k − 207 = 60k − 108, k = 11, numbers 33 and 55.</p><p><b>Shortcut for four numbers:</b> the number x to be <b>added</b> to a, b, c, d so that they are in proportion is <b>x = (bc − ad)/(a + d − b − c)</b>. For subtraction use x = (ad − bc)/(a + d − b − c).</p><p>Check by putting x back: the new a × d must equal the new b × c.</p>"
+      },
+      {
+        "title": "Componendo, dividendo and other rules",
+        "body": "<p>If a/b = c/d, then:</p><ul><li>Invertendo: b/a = d/c</li><li>Alternendo: a/c = b/d</li><li>Componendo: (a + b)/b = (c + d)/d</li><li>Dividendo: (a − b)/b = (c − d)/d</li><li><b>Componendo and dividendo:</b> (a + b)/(a − b) = (c + d)/(c − d)</li></ul><p>It works both ways. If (a + b)/(a − b) = 7/3, then a/b = (7 + 3)/(7 − 3) = 10/4 = 5/2.</p><p>For an expression like (6a + 13b)/(6a − 13b) with a/b = 7/6, put a = 7, b = 6: (42 + 78)/(42 − 78) = 120/(−36) = −10/3.</p>"
+      },
+      {
+        "title": "Duplicate, triplicate and variation",
+        "body": "<table><thead><tr><th>Name</th><th>Of a : b</th></tr></thead><tbody><tr><td>Duplicate ratio</td><td>a² : b²</td></tr><tr><td>Sub-duplicate ratio</td><td>√a : √b</td></tr><tr><td>Triplicate ratio</td><td>a³ : b³</td></tr><tr><td>Sub-triplicate ratio</td><td>∛a : ∛b</td></tr><tr><td>Inverse (reciprocal) ratio</td><td>b : a</td></tr></tbody></table><p><b>Direct variation:</b> y ∝ x means y = kx, so y₁/y₂ = x₁/x₂. <b>Inverse variation:</b> y ∝ 1/x means x₁y₁ = x₂y₂.</p><p>When the price of a stone varies as the <b>square</b> of its weight, breaking it always causes a loss. A stone worth P broken in the ratio a : b : c is then worth P × (a² + b² + c²)/(a + b + c)².</p>"
+      },
+      {
+        "title": "Coins and notes",
+        "body": "<p>Be careful to separate the <b>number</b> of coins from their <b>value</b>.</p><p>Value ratio = number ratio × face value of each coin.</p><p>Example: ₹1, 50 p and 25 p coins are in number ratio 5 : 6 : 8. Value ratio = 5 × 1 : 6 × 0.5 : 8 × 0.25 = 5 : 3 : 2. If the total is ₹210, one value part = ₹21, so 50 p coins are worth ₹63, which is 126 coins.</p><p>If the total <b>count</b> is given, split the count first, then multiply each count by its value.</p>"
+      },
+      {
+        "title": "Income, expenditure and savings",
+        "body": "<p>Savings = Income − Expenditure.</p><p>Write incomes as 5x, 4x and expenditures as 3y, 2y, then use the savings information to form two equations.</p><p>Example: incomes 5 : 4, expenditures 3 : 2, each saves ₹2,000. 5x − 3y = 2000 and 4x − 2y = 2000. Solving gives x = 1000, y = 1000. A’s income = ₹5,000.</p><p>When both save the same amount, a quick check: income difference equals expenditure difference.</p>"
+      },
+      {
+        "title": "Partnership: capital and time",
+        "body": "<p>Profit is shared in the ratio of <b>capital × time</b> (called the equivalent capital).</p><ul><li>Same time for all: profit ratio = capital ratio.</li><li>Same capital: profit ratio = time ratio.</li><li>Someone who joins after 4 months in a 12-month year invests for 8 months.</li><li>To find a time ratio, divide: time ratio = profit ratio ÷ capital ratio, term by term. Capitals 3 : 4 : 8 and profits 2 : 3 : 5 give times 2/3 : 3/4 : 5/8 = 16 : 18 : 15.</li></ul><p>A <b>sleeping partner</b> only invests money. A <b>working partner</b> may first take a salary or a percent of profit; only the rest is shared by capital × time.</p>"
+      },
+      {
+        "title": "Partnership: capital changes midway",
+        "body": "<p>Split the year into periods. In each period multiply the capital at that time by the months, then add.</p><p>Example: A starts with ₹40,000 and adds ₹10,000 after 3 months. A’s equivalent capital = 40000 × 3 + 50000 × 9 = 5,70,000.</p><p>If capital rises by 50% after 4 months from a ratio 2 : 3 : 5, use A = 2 × 4 + 3 × 8 = 32 directly in ratio units; you do not need real amounts.</p>"
+      },
+      {
+        "title": "Ages: the difference never changes",
+        "body": "<p>The difference between two people’s ages stays the same for life. Use this to solve ratio questions fast.</p><p>A : B = 5 : 7 now and was 2 : 3 six years ago. Now the difference is 2 parts; earlier the ratio 2 : 3 has difference 1 part. Make the differences equal: 2 : 3 becomes 4 : 6. So 5 parts − 4 parts = 1 part = 6 years. A = 30, B = 42.</p><p>Algebra method: (5x − 6)/(7x − 6) = 2/3, so 15x − 18 = 14x − 12, x = 6.</p><p>Each year everyone gets 1 year older, so a group of n people gets n years older in total.</p>"
+      },
+      {
+        "title": "Ages: equations and family averages",
+        "body": "<ul><li>“A is n times as old as B” means A = nB. “n years ago” subtract n from <b>each</b> person; “after n years” add n to each.</li><li>Sum of ages of a group grows by (number of people × years).</li><li>Average-age questions: total age = average × number of people. If father and mother average 40 and the three of them average 30, daughter = 90 − 80 = 10.</li><li>A child born x years ago adds only x years to the total, not the group average times anything.</li><li>Always check the answer: ages must be positive and fit every condition.</li></ul>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "ratio-basics",
+        "name": "Ratio basics and combining ratios",
+        "how": "<ol><li>Make the common term equal using its LCM.</li><li>Write the joined ratio.</li><li>For a percent change, multiply each term by (100 + change).</li></ol>",
+        "example": {
+          "q": "If A : B = 3 : 4 and B : C = 6 : 7, find A : B : C.",
+          "steps": [
+            "LCM of 4 and 6 is 12.",
+            "A : B = 9 : 12 and B : C = 12 : 14.",
+            "So A : B : C = 9 : 12 : 14."
+          ],
+          "answer": "9 : 12 : 14"
+        }
+      },
+      {
+        "type": "share-division",
+        "name": "Dividing an amount in a ratio",
+        "how": "<ol><li>Clear fractions in the ratio using the LCM.</li><li>One part = total ÷ sum of parts (or difference ÷ difference of parts).</li><li>Multiply by the parts asked for.</li></ol>",
+        "example": {
+          "q": "Divide ₹6,500 among P, Q and R in the ratio 1/2 : 1/3 : 1/4. What is Q’s share?",
+          "steps": [
+            "Multiply by LCM 12: 6 : 4 : 3.",
+            "Total parts = 13, one part = 6500 ÷ 13 = 500.",
+            "Q = 4 × 500 = 2000."
+          ],
+          "answer": "₹2,000"
+        }
+      },
+      {
+        "type": "coins",
+        "name": "Coins and notes",
+        "how": "Turn the number ratio into a value ratio by multiplying each term by the coin’s value. Split the total money in the value ratio, then divide by the coin’s value to get the count.",
+        "example": {
+          "q": "A bag has ₹1, 50 paise and 25 paise coins in the ratio 5 : 6 : 8. The total is ₹210. How many 50 paise coins are there?",
+          "steps": [
+            "Value ratio = 5 × 1 : 6 × 0.5 : 8 × 0.25 = 5 : 3 : 2.",
+            "One value part = 210 ÷ 10 = ₹21.",
+            "50 paise coins are worth 3 × 21 = ₹63.",
+            "Number = 63 ÷ 0.5 = 126."
+          ],
+          "answer": "126"
+        }
+      },
+      {
+        "type": "proportions",
+        "name": "Mean, third and fourth proportional",
+        "how": "Fourth proportional to a, b, c = bc/a. Third proportional to a, b = b²/a. Mean proportional between a, b = √(ab).",
+        "example": {
+          "q": "Find the third proportional to 16 and 24.",
+          "steps": [
+            "16 : 24 = 24 : c.",
+            "c = 24² ÷ 16 = 576 ÷ 16.",
+            "c = 36."
+          ],
+          "answer": "36"
+        }
+      },
+      {
+        "type": "add-subtract-same",
+        "name": "Adding or subtracting the same number",
+        "how": "Write the new terms with x, set product of extremes = product of means and solve. Shortcut for adding: x = (bc − ad)/(a + d − b − c).",
+        "example": {
+          "q": "What number must be added to each of 7, 11, 19 and 29 so that they are in proportion?",
+          "steps": [
+            "(7 + x)(29 + x) = (11 + x)(19 + x).",
+            "203 + 36x = 209 + 30x, so 6x = 6.",
+            "x = 1. Check: 8 : 12 = 20 : 30 = 2 : 3."
+          ],
+          "answer": "1"
+        }
+      },
+      {
+        "type": "income-expenditure",
+        "name": "Income, expenditure and savings",
+        "how": "Let incomes be ax and bx and expenditures cy and dy. Savings give two equations; solve for x and y.",
+        "example": {
+          "q": "The incomes of A and B are in the ratio 5 : 4 and their expenditures in the ratio 3 : 2. Each saves ₹2,000. Find A’s income.",
+          "steps": [
+            "5x − 3y = 2000 and 4x − 2y = 2000.",
+            "From the second, y = 2x − 1000.",
+            "5x − 6x + 3000 = 2000, so x = 1000.",
+            "A’s income = 5 × 1000 = 5000."
+          ],
+          "answer": "₹5,000"
+        }
+      },
+      {
+        "type": "componendo-dividendo",
+        "name": "Componendo-dividendo and ratio expressions",
+        "how": "If (a + b)/(a − b) = m/n, then a/b = (m + n)/(m − n). For an expression in a and b, put a and b equal to the ratio values.",
+        "example": {
+          "q": "If (a + b)/(a − b) = 7/3, find a : b.",
+          "steps": [
+            "Apply componendo and dividendo.",
+            "a/b = (7 + 3)/(7 − 3) = 10/4.",
+            "a : b = 5 : 2. Check: 7/3 ✓."
+          ],
+          "answer": "5 : 2"
+        }
+      },
+      {
+        "type": "squared-ratios",
+        "name": "Squares, cubes and variation",
+        "how": "Write the varying quantity as k × (weight)² (or cube, or 1/x). Compare values using squared parts.",
+        "example": {
+          "q": "The price of a diamond varies as the square of its weight. A diamond worth ₹36,000 breaks into three pieces with weights in the ratio 1 : 2 : 3. Find the loss.",
+          "steps": [
+            "Weights are 1/6, 2/6, 3/6 of the whole.",
+            "New value = 36000 × (1 + 4 + 9)/36 = 14,000.",
+            "Loss = 36000 − 14000 = 22,000."
+          ],
+          "answer": "₹22,000"
+        }
+      },
+      {
+        "type": "partnership",
+        "name": "Partnership",
+        "how": "Multiply each capital by its months. Split the profit in that ratio.",
+        "example": {
+          "q": "A starts a business with ₹24,000. B joins after 4 months with ₹36,000 and C after 6 months with ₹30,000. The year’s profit is ₹42,000. Find C’s share.",
+          "steps": [
+            "A = 24000 × 12 = 2,88,000; B = 36000 × 8 = 2,88,000; C = 30000 × 6 = 1,80,000.",
+            "Ratio = 8 : 8 : 5, total 21 parts.",
+            "C = 42000 × 5/21 = 10,000."
+          ],
+          "answer": "₹10,000"
+        }
+      },
+      {
+        "type": "partnership-capital-change",
+        "name": "Partnership with changing capital",
+        "how": "Break each partner’s year into periods with a fixed capital. Add capital × months over the periods, then split the profit.",
+        "example": {
+          "q": "A and B start with ₹40,000 and ₹60,000. After 3 months A adds ₹10,000 and B withdraws ₹15,000. The year’s profit is ₹15,400. Find B’s share.",
+          "steps": [
+            "A = 40000 × 3 + 50000 × 9 = 5,70,000.",
+            "B = 60000 × 3 + 45000 × 9 = 5,85,000.",
+            "Ratio = 38 : 39, total 77 parts.",
+            "B = 15400 × 39/77 = 7,800."
+          ],
+          "answer": "₹7,800"
+        }
+      },
+      {
+        "type": "ages-ratio",
+        "name": "Ages in ratio now and later",
+        "how": "Write ages as multiples of x, shift both by the same years and equate to the new ratio. Or use the fact that the age difference is constant.",
+        "example": {
+          "q": "The ages of A and B are in the ratio 5 : 7. Six years ago the ratio was 2 : 3. What is B’s present age?",
+          "steps": [
+            "(5x − 6)/(7x − 6) = 2/3.",
+            "15x − 18 = 14x − 12, so x = 6.",
+            "B = 7 × 6 = 42. Check: 24 : 36 = 2 : 3."
+          ],
+          "answer": "42 years"
+        }
+      },
+      {
+        "type": "ages-equations",
+        "name": "Age puzzles with sums, multiples and averages",
+        "how": "Use one letter for one person, write every sentence as an equation, and shift every person by the same years.",
+        "example": {
+          "q": "The sum of the ages of a father and his son is 50 years. Five years ago the father was 7 times as old as the son. Find the father’s present age.",
+          "steps": [
+            "F + S = 50 and F − 5 = 7(S − 5).",
+            "F = 7S − 30, so 8S − 30 = 50, S = 10.",
+            "F = 40. Check: 35 = 7 × 5."
+          ],
+          "answer": "40 years"
+        }
+      }
+    ],
+    "tips": [
+      "Turn every ratio into multiples of one letter: a : b = 2 : 3 means a = 2k, b = 3k.",
+      "In options-based questions, the answer must be a multiple of the right part. If shares are 5 : 3 and the total is 64, each share is a multiple of 8.",
+      "Fractional ratios: multiply every term by the LCM of the denominators first.",
+      "In age questions, use the constant difference: make the differences of the two ratios equal and compare parts.",
+      "Partnership is always capital × time. Count months carefully when someone joins late or leaves early.",
+      "For four numbers in proportion, check the options by testing a × d = b × c rather than solving."
+    ],
+    "traps": [
+      "The third proportional to a and b is b²/a, and the order matters.",
+      "Coins: the ratio of numbers is not the ratio of values. Multiply by the face value first.",
+      "If a person joins after 4 months, they invest for 8 months, not 4.",
+      "“n years ago” means subtract n from every person’s age, not just one.",
+      "Mixing units: ₹2 : 50 paise is 200 : 50 = 4 : 1, not 2 : 50."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Share of A in a : b : c",
+      "expr": "a/(a + b + c) × total"
+    },
+    {
+      "name": "Combine A:B = a:b and B:C = c:d",
+      "expr": "A : B : C = ac : bc : bd"
+    },
+    {
+      "name": "Proportion",
+      "expr": "a : b :: c : d ⇔ ad = bc"
+    },
+    {
+      "name": "Fourth proportional to a, b, c",
+      "expr": "bc/a"
+    },
+    {
+      "name": "Third proportional to a, b",
+      "expr": "b²/a"
+    },
+    {
+      "name": "Mean proportional between a, b",
+      "expr": "√(ab)"
+    },
+    {
+      "name": "Number added to a, b, c, d to make a proportion",
+      "expr": "(bc − ad)/(a + d − b − c)"
+    },
+    {
+      "name": "Componendo and dividendo",
+      "expr": "a/b = c/d ⇒ (a + b)/(a − b) = (c + d)/(c − d)"
+    },
+    {
+      "name": "Duplicate and triplicate ratio",
+      "expr": "a² : b² and a³ : b³"
+    },
+    {
+      "name": "Partnership profit ratio",
+      "expr": "C₁T₁ : C₂T₂ : C₃T₃"
+    },
+    {
+      "name": "Savings",
+      "expr": "Income − Expenditure"
     }
-   },
-   {
-    "type": "proportion",
-    "name": "Proportion and compound ratio",
-    "how": "Use cross multiplication; to combine A : B and B : C, make B equal in both.",
-    "example": {
-     "q": "Find the third proportional to 4 and 6.",
-     "steps": [
-      "Third proportional = b²/a",
-      "36/4 = 9"
-     ],
-     "answer": "9"
-    }
-   },
-   {
-    "type": "partnership",
-    "name": "Partnership",
-    "how": "Share = capital × months; divide profit in that ratio.",
-    "example": {
-     "q": "A invests ₹ 5000 for 12 months, B ₹ 6000 for 10 months. Profit ratio?",
-     "steps": [
-      "A: 60000, B: 60000"
-     ],
-     "answer": "1 : 1"
-    }
-   }
   ],
-  "tips": [
-   "To combine A : B = 2 : 3 and B : C = 4 : 5, multiply to make B the same: 8 : 12 : 15.",
-   "Check answers by putting them back into the ratio."
+  "questions": [
+    {
+      "id": "q-ratio-001",
+      "rev": 1,
+      "topic": "q-ratio",
+      "type": "share-division",
+      "level": 1,
+      "q": "Divide ₹ 1,250 between A and B in the ratio 2 : 3. What is B’s share?",
+      "options": [
+        "₹ 500",
+        "₹ 600",
+        "₹ 700",
+        "₹ 750"
+      ],
+      "answer": 3,
+      "solution": "Total parts = 2 + 3 = 5.<br>B’s share = 1250 × 3/5 = ₹ 750.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-ratio-002",
+      "rev": 1,
+      "topic": "q-ratio",
+      "type": "proportions",
+      "level": 1,
+      "q": "What is the mean proportional between 9 and 16?",
+      "options": [
+        "12",
+        "12.5",
+        "25",
+        "144"
+      ],
+      "answer": 0,
+      "solution": "Mean proportional = √(9 × 16) = √144 = 12.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-ratio-003",
+      "rev": 1,
+      "topic": "q-ratio",
+      "type": "ratio-basics",
+      "level": 2,
+      "q": "If A : B = 2 : 3 and B : C = 4 : 5, then A : B : C is:",
+      "options": [
+        "2 : 3 : 5",
+        "8 : 12 : 15",
+        "8 : 12 : 10",
+        "6 : 9 : 15"
+      ],
+      "answer": 1,
+      "solution": "Make B equal: A : B = 8 : 12 (× 4), B : C = 12 : 15 (× 3).<br>A : B : C = 8 : 12 : 15.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-ratio-004",
+      "rev": 1,
+      "topic": "q-ratio",
+      "type": "proportions",
+      "level": 2,
+      "q": "What is the fourth proportional to 4, 9 and 12?",
+      "options": [
+        "24",
+        "18",
+        "27",
+        "36"
+      ],
+      "answer": 2,
+      "solution": "4 : 9 = 12 : x.<br>x = 9 × 12 / 4 = 27.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-ratio-005",
+      "rev": 1,
+      "topic": "q-ratio",
+      "type": "partnership",
+      "level": 3,
+      "q": "A and B start a business with ₹ 30,000 and ₹ 45,000. After 4 months, C joins with ₹ 60,000. Out of a total annual profit of ₹ 23,000, what is C’s share?",
+      "options": [
+        "₹ 9,000",
+        "₹ 8,000",
+        "₹ 6,000",
+        "₹ 10,000"
+      ],
+      "answer": 1,
+      "solution": "A = 30000 × 12 = 360000; B = 45000 × 12 = 540000; C = 60000 × 8 = 480000.<br>Ratio = 36 : 54 : 48 = 6 : 9 : 8 (sum 23).<br>C’s share = 23000 × 8/23 = ₹ 8,000.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-ratio-006",
+      "rev": 1,
+      "topic": "q-ratio",
+      "type": "add-subtract-same",
+      "level": 3,
+      "q": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each, the new numbers are in the ratio 12 : 23. What is the smaller number?",
+      "options": [
+        "27",
+        "33",
+        "36",
+        "30"
+      ],
+      "answer": 1,
+      "solution": "Let the numbers be 3x and 5x.<br>(3x − 9)/(5x − 9) = 12/23 → 69x − 207 = 60x − 108.<br>9x = 99 → x = 11. Smaller number = 33.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "A ratio is not the actual amount; multiply by the common factor x.",
-   "In partnership, count only the months each partner’s money was in the business."
+  "flashcards": [
+    {
+      "id": "fc-ratio-1",
+      "front": "Mean proportional of a and b",
+      "back": "√(ab)",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-ratio-2",
+      "front": "Third proportional of a and b",
+      "back": "b²/a",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-ratio-3",
+      "front": "Fourth proportional of a, b, c",
+      "back": "bc/a",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-ratio-4",
+      "front": "Partnership profit ratio",
+      "back": "Capital × Time",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Divide N in a : b",
-   "expr": "N·a/(a + b), N·b/(a + b)"
-  },
-  {
-   "name": "Fourth proportional of a, b, c",
-   "expr": "bc/a"
-  },
-  {
-   "name": "Mean proportional of a, b",
-   "expr": "√(ab)"
-  },
-  {
-   "name": "Partnership share",
-   "expr": "capital × time"
-  }
- ],
- "questions": [
-  {
-   "id": "q-ratio-001",
-   "rev": 1,
-   "topic": "q-ratio",
-   "type": "ratio-basic",
-   "level": 1,
-   "q": "Divide ₹ 1,250 between A and B in the ratio 2 : 3. What is B’s share?",
-   "options": [
-    "₹ 500",
-    "₹ 600",
-    "₹ 700",
-    "₹ 750"
-   ],
-   "answer": 3,
-   "solution": "Total parts = 2 + 3 = 5.<br>B’s share = 1250 × 3/5 = ₹ 750.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-ratio-002",
-   "rev": 1,
-   "topic": "q-ratio",
-   "type": "proportion",
-   "level": 1,
-   "q": "What is the mean proportional between 9 and 16?",
-   "options": [
-    "12",
-    "12.5",
-    "25",
-    "144"
-   ],
-   "answer": 0,
-   "solution": "Mean proportional = √(9 × 16) = √144 = 12.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-ratio-003",
-   "rev": 1,
-   "topic": "q-ratio",
-   "type": "proportion",
-   "level": 2,
-   "q": "If A : B = 2 : 3 and B : C = 4 : 5, then A : B : C is:",
-   "options": [
-    "2 : 3 : 5",
-    "8 : 12 : 15",
-    "8 : 12 : 10",
-    "6 : 9 : 15"
-   ],
-   "answer": 1,
-   "solution": "Make B equal: A : B = 8 : 12 (× 4), B : C = 12 : 15 (× 3).<br>A : B : C = 8 : 12 : 15.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-ratio-004",
-   "rev": 1,
-   "topic": "q-ratio",
-   "type": "proportion",
-   "level": 2,
-   "q": "What is the fourth proportional to 4, 9 and 12?",
-   "options": [
-    "24",
-    "18",
-    "27",
-    "36"
-   ],
-   "answer": 2,
-   "solution": "4 : 9 = 12 : x.<br>x = 9 × 12 / 4 = 27.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-ratio-005",
-   "rev": 1,
-   "topic": "q-ratio",
-   "type": "partnership",
-   "level": 3,
-   "q": "A and B start a business with ₹ 30,000 and ₹ 45,000. After 4 months, C joins with ₹ 60,000. Out of a total annual profit of ₹ 23,000, what is C’s share?",
-   "options": [
-    "₹ 9,000",
-    "₹ 8,000",
-    "₹ 6,000",
-    "₹ 10,000"
-   ],
-   "answer": 1,
-   "solution": "A = 30000 × 12 = 360000; B = 45000 × 12 = 540000; C = 60000 × 8 = 480000.<br>Ratio = 36 : 54 : 48 = 6 : 9 : 8 (sum 23).<br>C’s share = 23000 × 8/23 = ₹ 8,000.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-ratio-006",
-   "rev": 1,
-   "topic": "q-ratio",
-   "type": "ratio-basic",
-   "level": 3,
-   "q": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each, the new numbers are in the ratio 12 : 23. What is the smaller number?",
-   "options": [
-    "27",
-    "33",
-    "36",
-    "30"
-   ],
-   "answer": 1,
-   "solution": "Let the numbers be 3x and 5x.<br>(3x − 9)/(5x − 9) = 12/23 → 69x − 207 = 60x − 108.<br>9x = 99 → x = 11. Smaller number = 33.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-ratio-1",
-   "front": "Mean proportional of a and b",
-   "back": "√(ab)",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-ratio-2",
-   "front": "Third proportional of a and b",
-   "back": "b²/a",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-ratio-3",
-   "front": "Fourth proportional of a, b, c",
-   "back": "bc/a",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-ratio-4",
-   "front": "Partnership profit ratio",
-   "back": "Capital × Time",
-   "deck": "formulas"
-  }
- ]
 }

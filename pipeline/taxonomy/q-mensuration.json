@@ -1,0 +1,89 @@
+{
+  "topic": "q-mensuration",
+  "types": [
+    {
+      "type": "triangles",
+      "name": "Triangles",
+      "description": "Asks for the area, height, side, perimeter, inradius or circumradius of a triangle (scalene, right, isosceles or equilateral), often from three sides (Heron) or two sides and an angle.",
+      "concepts": [
+        "triangle-area"
+      ]
+    },
+    {
+      "type": "quadrilaterals-polygons",
+      "name": "Quadrilaterals and polygons",
+      "description": "Asks for the area, perimeter, side or diagonal of a rectangle, square, parallelogram, rhombus, trapezium, kite or regular polygon such as a hexagon, including fencing or tiling cost.",
+      "concepts": [
+        "rhombus-parallelogram"
+      ]
+    },
+    {
+      "type": "circles",
+      "name": "Circles, rings and wheels",
+      "description": "Asks for the circumference or area of a circle, semicircle, quadrant or circular ring, revolutions of a wheel, or shapes inscribed in or around a circle.",
+      "concepts": [
+        "circle-area-circumference"
+      ]
+    },
+    {
+      "type": "sectors-segments",
+      "name": "Sectors and segments",
+      "description": "Mentions a sector, arc length, central angle, minor or major segment, or the area swept by a clock hand or a pendulum.",
+      "concepts": [
+        "sector-segment-area"
+      ]
+    },
+    {
+      "type": "paths-borders",
+      "name": "Paths and borders",
+      "description": "Asks for the area or cost of a path, border, verandah, crossroads or frame of given width running inside, outside or across a rectangle, square or circle.",
+      "concepts": []
+    },
+    {
+      "type": "cube-cuboid",
+      "name": "Cubes and cuboids",
+      "description": "Asks for the volume, surface area, area of four walls, diagonal or edge of a cube, cuboid, room, box or brick, or the number of small cubes or bricks that fit.",
+      "concepts": [
+        "cube-cuboid"
+      ]
+    },
+    {
+      "type": "cylinders",
+      "name": "Cylinders",
+      "description": "Asks for the volume, curved or total surface area of a solid or hollow cylinder, pipe, roller, well or tank shaped like a cylinder.",
+      "concepts": []
+    },
+    {
+      "type": "cones-frustums",
+      "name": "Cones and frustums",
+      "description": "Asks for the slant height, volume or surface area of a cone, a tent, a bucket or a frustum, or a cone formed by folding a sector.",
+      "concepts": []
+    },
+    {
+      "type": "spheres-hemispheres",
+      "name": "Spheres and hemispheres",
+      "description": "Asks for the volume or surface area of a sphere, hemisphere, spherical shell or hemispherical bowl, without melting into another solid.",
+      "concepts": []
+    },
+    {
+      "type": "prisms-pyramids",
+      "name": "Prisms and pyramids",
+      "description": "Asks for the volume, lateral or total surface area of a prism, pyramid or tetrahedron with a triangular, square or hexagonal base.",
+      "concepts": [
+        "prism-pyramid"
+      ]
+    },
+    {
+      "type": "recasting-combined",
+      "name": "Recasting and combined solids",
+      "description": "A solid is melted and recast into others, liquid is poured or flows through a pipe, a solid is dropped into water, or the largest solid is cut from another or two solids are joined.",
+      "concepts": []
+    },
+    {
+      "type": "percent-change",
+      "name": "Percent change in dimensions",
+      "description": "A length, radius, side or height is increased or decreased by a percent or ratio and the question asks how the area, surface area or volume changes, or compares two similar solids.",
+      "concepts": []
+    }
+  ]
+}

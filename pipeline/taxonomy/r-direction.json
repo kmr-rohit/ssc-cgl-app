@@ -1,0 +1,29 @@
+{
+ "topic": "r-direction",
+ "types": [
+  {
+   "type": "final-direction",
+   "name": "Facing direction after turns",
+   "description": "A person faces some direction and turns left, right, or by angles (90° clockwise, 135° anticlockwise); asks which way they face at the end (or at the start).",
+   "concepts": []
+  },
+  {
+   "type": "shortest-distance",
+   "name": "Distance and direction from start",
+   "description": "A person walks several distances, turning left or right or towards named directions; asks how far and in which direction they are from the starting point, or the shortest distance.",
+   "concepts": []
+  },
+  {
+   "type": "shadow",
+   "name": "Shadow questions",
+   "description": "Uses the sun at sunrise, morning or evening and the side on which a shadow falls to find which direction a person is facing.",
+   "concepts": []
+  },
+  {
+   "type": "relative-position",
+   "name": "Relative position of points",
+   "description": "Several points, houses or people are placed relative to each other (P is 20 m north of Q), sometimes with symbols for directions; asks the position of one point with respect to another.",
+   "concepts": []
+  }
+ ]
+}

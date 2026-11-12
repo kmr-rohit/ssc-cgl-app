@@ -1,76 +1,343 @@
 {
   "topic": "g-chemistry",
   "notes": {
-    "summary": "Chemistry gives <b>1–2 questions</b> at NCERT class 8–10 level: atoms and the periodic table, acids, bases and pH, common names and formulas of compounds, alloys, ores and everyday gases.",
+    "summary": "Chemistry gives about <b>1 to 2 questions</b> per paper. Past papers ask most about <b>acids, bases and reactions</b>, <b>atoms and the periodic table</b>, metals and everyday chemistry, and carbon compounds. The highest-scoring lists are <b>common names and formulas</b>, <b>natural acids</b>, <b>ores</b> and <b>alloys</b>: learn them as tables.",
     "concepts": [
       {
-        "title": "Atoms and the periodic table",
-        "body": "<ul><li>Electron discovered by <b>J.J. Thomson</b>; proton (nucleus) by <b>Ernest Rutherford</b>; neutron by <b>James Chadwick</b>.</li><li><b>Mendeleev</b> arranged elements by atomic mass; the <b>modern periodic table</b> is based on <b>atomic number</b> (Moseley).</li><li>Group 1 = alkali metals; Group 17 = halogens; Group 18 = noble (inert) gases.</li><li>Lightest element: <b>hydrogen</b>. Liquid metal at room temperature: <b>mercury</b>. Liquid non-metal: <b>bromine</b>. Hardest natural substance: <b>diamond</b> (a form of carbon).</li></ul>"
+        "title": "Matter and separation",
+        "body": "<ul><li>States: solid, liquid, gas, plasma and <b>Bose-Einstein condensate</b> (predicted by S.N. Bose and Albert Einstein, 1924 to 1925).</li><li><b>Sublimation</b> (solid straight to gas): camphor, naphthalene, iodine, ammonium chloride, dry ice.</li><li>Element (one kind of atom), compound (fixed ratio, new properties), mixture (any ratio, can be separated).</li><li>True solution (salt in water), colloid (milk, fog, smoke, butter; shows the Tyndall effect), suspension (muddy water; particles settle).</li></ul><table><thead><tr><th>Separation method</th><th>Used for</th></tr></thead><tbody><tr><td>Distillation</td><td>Pure water from salt water</td></tr><tr><td>Fractional distillation</td><td>Petroleum into fractions; gases from liquid air</td></tr><tr><td>Chromatography</td><td>Colours in ink or dyes</td></tr><tr><td>Centrifugation</td><td>Cream from milk; blood tests</td></tr><tr><td>Crystallisation</td><td>Pure salt or copper sulphate</td></tr><tr><td>Sublimation</td><td>Camphor or ammonium chloride from salt</td></tr><tr><td>Separating funnel</td><td>Oil from water</td></tr></tbody></table>"
+      },
+      {
+        "title": "Atomic structure",
+        "body": "<ul><li>Dalton's atomic theory (1808). Thomson's 'plum pudding' model. Rutherford's nuclear model (1911). Bohr's model with fixed energy shells.</li><li><b>Atomic number</b> (Z) = number of protons (idea of Moseley). <b>Mass number</b> = protons + neutrons.</li><li>Shell capacity is 2n²: K holds 2, L holds 8, M holds 18.</li><li><b>Isotopes</b>: same atomic number, different mass number (protium, deuterium, tritium; carbon-12 and carbon-14). <b>Isobars</b>: same mass number, different atomic number (argon-40 and calcium-40).</li><li>An ion with positive charge is a <b>cation</b>; with negative charge, an <b>anion</b> (for example Cl<sup>−</sup>, with charge −1).</li><li>Avogadro's number: 6.022 × 10<sup>23</sup> particles in one mole.</li><li>Charles's law (about 1787): volume of a gas is proportional to its absolute temperature at fixed pressure. Boyle's law: P × V is constant at fixed temperature.</li></ul>"
+      },
+      {
+        "title": "Periodic table",
+        "body": "<ul><li>Dobereiner's triads, Newlands' law of octaves, then <b>Mendeleev</b> (1869) arranged elements by atomic mass and left gaps for undiscovered elements (eka-aluminium became gallium, eka-silicon became germanium). He could not give hydrogen or isotopes a correct place.</li><li><b>Modern periodic law</b> (Moseley): properties depend on atomic number. 18 groups and 7 periods; 118 elements.</li><li>Group 1: alkali metals. Group 2: alkaline earth metals. Group 17: halogens. Group 18: noble gases. <b>Lanthanides</b> (atomic numbers 57 to 71, for example cerium, neodymium) and <b>actinides</b> (89 to 103, for example thorium, uranium, plutonium) sit below the table.</li><li>Across a period (left to right): atomic size falls, metallic character falls. Down a group: size rises, metallic character rises. Fluorine is the most electronegative element.</li><li>Element 106, <b>seaborgium</b>, is named after Glenn T. Seaborg.</li></ul><table><thead><tr><th>Record</th><th>Element</th></tr></thead><tbody><tr><td>Lightest; most abundant in the universe</td><td>Hydrogen</td></tr><tr><td>Most abundant in Earth's crust</td><td>Oxygen, then silicon, then aluminium (most abundant metal), then iron</td></tr><tr><td>Most abundant in air</td><td>Nitrogen</td></tr><tr><td>Liquid metal; liquid non-metal at room temperature</td><td>Mercury; bromine</td></tr><tr><td>Best conductor of electricity</td><td>Silver</td></tr><tr><td>Lightest metal; densest metal</td><td>Lithium; osmium</td></tr><tr><td>Highest melting point metal</td><td>Tungsten</td></tr><tr><td>Hardest natural substance</td><td>Diamond (carbon)</td></tr><tr><td>Non-metal that conducts electricity</td><td>Graphite (carbon)</td></tr></tbody></table><p><b>Latin symbols</b>: Na natrium (sodium), K kalium (potassium), Fe ferrum (iron), Cu cuprum (copper), Ag argentum (silver), Au aurum (gold), Pb plumbum (lead), Sn stannum (tin), Hg hydrargyrum (mercury), W wolfram (tungsten).</p>"
+      },
+      {
+        "title": "Bonding and chemical reactions",
+        "body": "<ul><li><b>Ionic bond</b>: transfer of electrons (NaCl). <b>Covalent bond</b>: sharing of electrons (H<sub>2</sub>O, CH<sub>4</sub>, Cl<sub>2</sub>).</li></ul><table><thead><tr><th>Reaction type</th><th>Example</th></tr></thead><tbody><tr><td>Combination</td><td>Quicklime + water → slaked lime (also exothermic)</td></tr><tr><td>Decomposition (heat)</td><td>CaCO<sub>3</sub> → CaO + CO<sub>2</sub></td></tr><tr><td>Decomposition (light)</td><td>Silver chloride turns grey in sunlight (used in black-and-white photography)</td></tr><tr><td>Decomposition (electricity)</td><td>Electrolysis of water</td></tr><tr><td>Displacement</td><td>Iron nail in copper sulphate turns brown; solution turns green</td></tr><tr><td>Double displacement (precipitation)</td><td>BaCl<sub>2</sub> + Na<sub>2</sub>SO<sub>4</sub> gives white barium sulphate</td></tr><tr><td>Redox</td><td>Oxidation: gain of oxygen or loss of electrons; reduction: the opposite</td></tr><tr><td>Exothermic / endothermic</td><td>Burning and respiration give out heat; photosynthesis takes it in</td></tr></tbody></table><ul><li><b>Corrosion</b>: rusting of iron needs both air and water; rust is hydrated iron(III) oxide. <b>Rancidity</b>: oxidation of fats; chip packets are filled with nitrogen to prevent it.</li><li><b>Catalysts</b>: nickel in hydrogenation of vegetable oils (vanaspati ghee); iron in the Haber process (ammonia); vanadium pentoxide in the contact process (sulphuric acid). Enzymes are biological catalysts.</li><li><b>Water treatment</b>: alum is added for flocculation (settling of particles); chlorine or bleaching powder kills germs.</li></ul>"
       },
       {
         "title": "Acids, bases and pH",
-        "body": "pH runs from 0 to 14. <b>pH 7 = neutral</b>, below 7 = acidic, above 7 = basic. Human blood is slightly basic (about 7.4).<table><thead><tr><th>Natural source</th><th>Acid</th></tr></thead><tbody><tr><td>Vinegar</td><td>Acetic acid</td></tr><tr><td>Lemon, orange</td><td>Citric acid</td></tr><tr><td>Tamarind</td><td>Tartaric acid</td></tr><tr><td>Sour milk, curd</td><td>Lactic acid</td></tr><tr><td>Tomato</td><td>Oxalic acid</td></tr><tr><td>Ant sting, nettle sting</td><td>Methanoic (formic) acid</td></tr><tr><td>Stomach</td><td>Hydrochloric acid</td></tr></tbody></table>",
+        "body": "<ul><li>Acids taste sour and turn blue litmus red. Bases taste bitter, feel soapy and turn red litmus blue. Water-soluble bases are alkalis.</li><li>Indicators: phenolphthalein is colourless in acid and pink in base; methyl orange is red in acid and yellow in base; turmeric turns reddish-brown in base.</li><li><b>pH scale</b> (S.P.L. Sørensen): 0 to 14. Below 7 acidic, 7 neutral, above 7 basic. Each step is a tenfold change.</li><li>Approximate pH: stomach acid 1 to 2, lemon juice about 2, vinegar about 3, pure water 7, human blood 7.35 to 7.45, sea water about 8, milk of magnesia about 10, sodium hydroxide about 14.</li><li>Tooth enamel starts to decay when mouth pH falls below about 5.5. Antacids (milk of magnesia) neutralise extra stomach acid.</li><li><b>Aqua regia</b> (3 parts HCl : 1 part HNO<sub>3</sub>) dissolves gold and platinum. Sulphuric acid is called the 'king of chemicals'.</li></ul><table><thead><tr><th>Acid</th><th>Natural source</th></tr></thead><tbody><tr><td>Citric</td><td>Lemon, orange</td></tr><tr><td>Lactic</td><td>Curd, sour milk; also builds up in tired muscles</td></tr><tr><td>Acetic (ethanoic)</td><td>Vinegar</td></tr><tr><td>Tartaric</td><td>Tamarind, grapes</td></tr><tr><td>Oxalic</td><td>Tomato, spinach</td></tr><tr><td>Formic (methanoic)</td><td>Ant sting, nettle sting</td></tr><tr><td>Malic</td><td>Apple</td></tr><tr><td>Butyric</td><td>Butter (rancid butter smell)</td></tr><tr><td>Lauric</td><td>Coconut oil</td></tr><tr><td>Erucic</td><td>Mustard oil</td></tr><tr><td>Carbonic</td><td>Soda water, soft drinks</td></tr><tr><td>Ascorbic (vitamin C)</td><td>Amla, citrus fruits</td></tr><tr><td>Hydrochloric</td><td>Stomach (gastric juice)</td></tr><tr><td>Uric</td><td>Urine</td></tr></tbody></table>",
         "img": "ga/chem-ph-scale.svg"
       },
       {
-        "title": "Common names of compounds",
-        "body": "<table><thead><tr><th>Common name</th><th>Chemical name</th><th>Formula</th></tr></thead><tbody><tr><td>Common salt</td><td>Sodium chloride</td><td>NaCl</td></tr><tr><td>Baking soda</td><td>Sodium hydrogen carbonate</td><td>NaHCO<sub>3</sub></td></tr><tr><td>Washing soda</td><td>Sodium carbonate decahydrate</td><td>Na<sub>2</sub>CO<sub>3</sub>·10H<sub>2</sub>O</td></tr><tr><td>Bleaching powder</td><td>Calcium oxychloride</td><td>CaOCl<sub>2</sub></td></tr><tr><td>Plaster of Paris</td><td>Calcium sulphate hemihydrate</td><td>CaSO<sub>4</sub>·½H<sub>2</sub>O</td></tr><tr><td>Gypsum</td><td>Calcium sulphate dihydrate</td><td>CaSO<sub>4</sub>·2H<sub>2</sub>O</td></tr><tr><td>Quicklime</td><td>Calcium oxide</td><td>CaO</td></tr><tr><td>Slaked lime</td><td>Calcium hydroxide</td><td>Ca(OH)<sub>2</sub></td></tr><tr><td>Dry ice</td><td>Solid carbon dioxide</td><td>CO<sub>2</sub></td></tr><tr><td>Laughing gas</td><td>Nitrous oxide</td><td>N<sub>2</sub>O</td></tr></tbody></table>"
+        "title": "Common names and formulas",
+        "body": "<table><thead><tr><th>Common name</th><th>Chemical name</th><th>Formula</th></tr></thead><tbody><tr><td>Common salt</td><td>Sodium chloride</td><td>NaCl</td></tr><tr><td>Baking soda</td><td>Sodium hydrogen carbonate</td><td>NaHCO<sub>3</sub></td></tr><tr><td>Washing soda</td><td>Sodium carbonate decahydrate</td><td>Na<sub>2</sub>CO<sub>3</sub>·10H<sub>2</sub>O</td></tr><tr><td>Caustic soda</td><td>Sodium hydroxide</td><td>NaOH</td></tr><tr><td>Caustic potash</td><td>Potassium hydroxide</td><td>KOH</td></tr><tr><td>Bleaching powder</td><td>Calcium oxychloride</td><td>CaOCl<sub>2</sub></td></tr><tr><td>Plaster of Paris</td><td>Calcium sulphate hemihydrate</td><td>CaSO<sub>4</sub>·½H<sub>2</sub>O</td></tr><tr><td>Gypsum</td><td>Calcium sulphate dihydrate</td><td>CaSO<sub>4</sub>·2H<sub>2</sub>O</td></tr><tr><td>Quicklime</td><td>Calcium oxide</td><td>CaO</td></tr><tr><td>Slaked lime (lime water)</td><td>Calcium hydroxide</td><td>Ca(OH)<sub>2</sub></td></tr><tr><td>Limestone, chalk, marble</td><td>Calcium carbonate</td><td>CaCO<sub>3</sub></td></tr><tr><td>Blue vitriol</td><td>Copper sulphate</td><td>CuSO<sub>4</sub>·5H<sub>2</sub>O</td></tr><tr><td>Green vitriol</td><td>Ferrous sulphate</td><td>FeSO<sub>4</sub>·7H<sub>2</sub>O</td></tr><tr><td>White vitriol</td><td>Zinc sulphate</td><td>ZnSO<sub>4</sub>·7H<sub>2</sub>O</td></tr><tr><td>Epsom salt</td><td>Magnesium sulphate</td><td>MgSO<sub>4</sub>·7H<sub>2</sub>O</td></tr><tr><td>Milk of magnesia</td><td>Magnesium hydroxide</td><td>Mg(OH)<sub>2</sub></td></tr><tr><td>Potash alum (fitkari)</td><td>Potassium aluminium sulphate</td><td>K<sub>2</sub>SO<sub>4</sub>·Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>·24H<sub>2</sub>O</td></tr><tr><td>Laughing gas</td><td>Nitrous oxide</td><td>N<sub>2</sub>O</td></tr><tr><td>Dry ice</td><td>Solid carbon dioxide</td><td>CO<sub>2</sub></td></tr><tr><td>Heavy water</td><td>Deuterium oxide</td><td>D<sub>2</sub>O</td></tr><tr><td>Marsh gas</td><td>Methane</td><td>CH<sub>4</sub></td></tr><tr><td>Muriatic acid</td><td>Hydrochloric acid</td><td>HCl</td></tr><tr><td>Oil of vitriol</td><td>Sulphuric acid</td><td>H<sub>2</sub>SO<sub>4</sub></td></tr><tr><td>Aqua fortis</td><td>Nitric acid</td><td>HNO<sub>3</sub></td></tr><tr><td>Hypo</td><td>Sodium thiosulphate (photography)</td><td>Na<sub>2</sub>S<sub>2</sub>O<sub>3</sub></td></tr><tr><td>Lunar caustic</td><td>Silver nitrate (voting ink)</td><td>AgNO<sub>3</sub></td></tr><tr><td>Sal ammoniac</td><td>Ammonium chloride</td><td>NH<sub>4</sub>Cl</td></tr><tr><td>Saltpetre; Chile saltpetre</td><td>Potassium nitrate; sodium nitrate</td><td>KNO<sub>3</sub>; NaNO<sub>3</sub></td></tr><tr><td>Borax</td><td>Sodium tetraborate</td><td>Na<sub>2</sub>B<sub>4</sub>O<sub>7</sub>·10H<sub>2</sub>O</td></tr><tr><td>Sand, quartz</td><td>Silicon dioxide</td><td>SiO<sub>2</sub></td></tr><tr><td>Philosopher's wool</td><td>Zinc oxide</td><td>ZnO</td></tr></tbody></table>"
       },
       {
-        "title": "Alloys, ores and fuels",
-        "body": "<table><thead><tr><th>Alloy</th><th>Made of</th></tr></thead><tbody><tr><td>Brass</td><td>Copper + Zinc</td></tr><tr><td>Bronze</td><td>Copper + Tin</td></tr><tr><td>Stainless steel</td><td>Iron + Chromium + Nickel (+ a little carbon)</td></tr><tr><td>Solder</td><td>Lead + Tin</td></tr></tbody></table><table><thead><tr><th>Ore</th><th>Metal</th></tr></thead><tbody><tr><td>Bauxite</td><td>Aluminium</td></tr><tr><td>Haematite</td><td>Iron</td></tr><tr><td>Cinnabar</td><td>Mercury</td></tr><tr><td>Galena</td><td>Lead</td></tr></tbody></table>Fuels: <b>CNG</b> and <b>biogas</b> are mainly methane; <b>LPG</b> is mainly butane (with propane). <b>Galvanisation</b> = coating iron with zinc to stop rusting."
+        "title": "Metals and non-metals",
+        "body": "<ul><li>Metals are lustrous, malleable, ductile, sonorous and good conductors. Exceptions: mercury is liquid; sodium and potassium are soft and are stored in kerosene; gold is the most malleable and ductile.</li><li>Non-metals are mostly brittle and poor conductors. Exceptions: graphite conducts; iodine is lustrous; diamond is the hardest. White phosphorus is stored in water.</li><li><b>Reactivity series</b> (most to least): K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Hg, Ag, Au. A metal displaces any metal below it from its salt solution.</li><li><b>Extraction</b>: froth flotation concentrates sulphide ores; roasting (heating sulphide ores in air) and calcination (heating carbonate ores in limited air); reduction by carbon or electrolysis; refining by electrolysis.</li><li><b>Corrosion protection</b>: galvanisation (zinc coat on iron), tinning, painting, oiling, electroplating, anodising (oxide layer on aluminium). Silver tarnishes black (silver sulphide); copper gets a green coat (basic copper carbonate).</li></ul><table><thead><tr><th>Metal</th><th>Ore</th></tr></thead><tbody><tr><td>Iron</td><td>Haematite (Fe<sub>2</sub>O<sub>3</sub>), magnetite (Fe<sub>3</sub>O<sub>4</sub>), siderite</td></tr><tr><td>Aluminium</td><td>Bauxite (cryolite is used in its electrolysis); corundum is natural Al<sub>2</sub>O<sub>3</sub> (ruby, sapphire)</td></tr><tr><td>Copper</td><td>Copper pyrites (chalcopyrite), cuprite, malachite</td></tr><tr><td>Zinc</td><td>Zinc blende, calamine</td></tr><tr><td>Lead</td><td>Galena</td></tr><tr><td>Mercury</td><td>Cinnabar</td></tr><tr><td>Tin</td><td>Cassiterite (tinstone)</td></tr><tr><td>Silver</td><td>Argentite</td></tr><tr><td>Manganese</td><td>Pyrolusite</td></tr><tr><td>Magnesium</td><td>Magnesite, dolomite, carnallite</td></tr><tr><td>Uranium</td><td>Pitchblende</td></tr><tr><td>Thorium</td><td>Monazite</td></tr></tbody></table>"
+      },
+      {
+        "title": "Alloys",
+        "body": "<table><thead><tr><th>Alloy</th><th>Made of</th><th>Use</th></tr></thead><tbody><tr><td>Brass</td><td>Copper + zinc</td><td>Utensils, fittings</td></tr><tr><td>Bronze</td><td>Copper + tin</td><td>Statues, medals</td></tr><tr><td>Bell metal</td><td>Copper + tin (more tin)</td><td>Bells</td></tr><tr><td>Gun metal</td><td>Copper + tin + zinc</td><td>Gears, castings</td></tr><tr><td>German silver</td><td>Copper + zinc + nickel (no silver)</td><td>Utensils, decorative items</td></tr><tr><td>Stainless steel</td><td>Iron + chromium + nickel + carbon</td><td>Utensils, surgical tools</td></tr><tr><td>Steel</td><td>Iron + a little carbon</td><td>Construction</td></tr><tr><td>Solder</td><td>Lead + tin</td><td>Joining wires</td></tr><tr><td>Duralumin</td><td>Aluminium + copper + magnesium + manganese</td><td>Aircraft bodies</td></tr><tr><td>Magnalium</td><td>Aluminium + magnesium</td><td>Light instruments</td></tr><tr><td>Nichrome</td><td>Nickel + chromium</td><td>Heater coils</td></tr><tr><td>Alnico</td><td>Aluminium + nickel + cobalt (with iron)</td><td>Permanent magnets</td></tr><tr><td>Invar</td><td>Iron + nickel</td><td>Clock pendulums, measuring tapes</td></tr><tr><td>Amalgam</td><td>Mercury + another metal</td><td>Dental fillings</td></tr><tr><td>22-carat gold</td><td>22 parts gold + 2 parts copper or silver</td><td>Jewellery (24 carat is pure)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Carbon compounds",
+        "body": "<ul><li><b>Allotropes of carbon</b>: diamond (hardest, does not conduct), graphite (soft, conducts, used as lubricant and pencil 'lead'), fullerene C<sub>60</sub> (buckminsterfullerene), graphene. Carbon forms long chains (catenation).</li><li><b>Hydrocarbons</b>: alkanes have single bonds (methane, ethane, propane, butane); alkenes have a double bond (ethene, used to ripen fruit); alkynes have a triple bond (ethyne or acetylene, used in welding).</li><li><b>Functional groups</b>: −OH alcohol; −CHO aldehyde; C=O ketone; −COOH carboxylic acid; −Cl, −Br halo group.</li><li><b>Ethanol</b> is drinking alcohol; mixing in methanol (which can cause blindness) makes it unfit to drink (denatured spirit). <b>Ethanoic acid</b> (acetic acid) is in vinegar (about 5 to 8%). Acid + alcohol gives sweet-smelling <b>esters</b>.</li><li>Friedrich Wöhler made urea from an inorganic compound (1828), the first organic synthesis. Hermann Kolbe synthesised acetic acid (1845).</li><li><b>Soaps</b> are sodium or potassium salts of fatty acids, made by saponification. They form scum in hard water; detergents work in hard water.</li><li><b>Hard water</b>: temporary hardness (bicarbonates of calcium and magnesium) is removed by boiling; permanent hardness (chlorides and sulphates) by washing soda or ion exchange.</li></ul>"
+      },
+      {
+        "title": "Fuels and polymers",
+        "body": "<ul><li><b>CNG</b> is mainly methane. <b>LPG</b> is mainly butane and propane; ethyl mercaptan is added so leaks can be smelt. <b>Biogas</b> (gobar gas) is mainly methane.</li><li><b>Coal ranks</b> by carbon content: peat, lignite, bituminous, anthracite (best). Coal gives coke, coal tar and coal gas.</li><li><b>Petroleum</b> is refined by fractional distillation into LPG, petrol, kerosene, diesel, lubricating oil, paraffin wax and bitumen.</li><li>Hydrogen has the highest calorific value. <b>Octane number</b> rates petrol (resistance to knocking); <b>cetane number</b> rates diesel.</li><li>Producer gas = CO + N<sub>2</sub>. Water gas = CO + H<sub>2</sub>.</li></ul><table><thead><tr><th>Polymer</th><th>Fact</th></tr></thead><tbody><tr><td>Natural rubber</td><td>Polymer of isoprene; vulcanised with sulphur (Charles Goodyear) to make it hard</td></tr><tr><td>Nylon</td><td>First fully synthetic fibre</td></tr><tr><td>Polyester (terylene)</td><td>Clothes, PET bottles</td></tr><tr><td>Rayon</td><td>Artificial silk made from cellulose (wood pulp)</td></tr><tr><td>Polythene, PVC</td><td>Bags; pipes</td></tr><tr><td>Teflon</td><td>Non-stick coating</td></tr><tr><td>Bakelite, melamine</td><td>Thermosetting plastics: switches, crockery</td></tr></tbody></table><p>Thermoplastics soften on heating (polythene, PVC); thermosetting plastics do not (Bakelite, melamine).</p>"
+      },
+      {
+        "title": "Chemistry in everyday life",
+        "body": "<table><thead><tr><th>Gas</th><th>Fact</th></tr></thead><tbody><tr><td>Carbon monoxide</td><td>Poisonous; binds haemoglobin</td></tr><tr><td>Carbon dioxide</td><td>Fire extinguishers, soft drinks, dry ice</td></tr><tr><td>Hydrogen sulphide</td><td>Rotten egg smell</td></tr><tr><td>Methyl isocyanate</td><td>Bhopal gas tragedy (1984)</td></tr><tr><td>Helium; neon; argon</td><td>Balloons; advertising signs; filled in bulbs</td></tr><tr><td>Ammonia</td><td>Fertilisers (Haber process)</td></tr><tr><td>Chlorine</td><td>Bleaching, disinfecting water</td></tr></tbody></table><ul><li><b>Fertilisers</b>: urea (about 46% nitrogen, the highest), DAP, ammonium sulphate, NPK.</li><li><b>Glass</b>: silica + sodium carbonate + limestone. Colours: cobalt oxide (blue), chromium oxide (green). Borosilicate (Pyrex) resists heat. <b>Cement</b>: Portland cement by Joseph Aspdin; gypsum is added to slow setting.</li><li><b>Food</b>: baking powder = baking soda + tartaric acid; preservatives: salt, sugar, vinegar, sodium benzoate; sweeteners: saccharin, aspartame, sucralose; iodised salt contains potassium iodate.</li><li><b>Medicines</b>: analgesics relieve pain (aspirin, paracetamol); antipyretics lower fever; antibiotics kill bacteria (penicillin, Alexander Fleming, 1928); antacids neutralise acid; antiseptics on skin (Dettol, tincture of iodine, boric acid); disinfectants on objects (phenol). <b>Agonists</b> mimic the body's messenger at a receptor; <b>antagonists</b> block the receptor.</li><li>Silver iodide is used for cloud seeding. Acid rain (from SO<sub>2</sub> and nitrogen oxides) damages marble, as at the Taj Mahal.</li></ul><table><thead><tr><th>Compound</th><th>Spice</th></tr></thead><tbody><tr><td>Curcumin</td><td>Turmeric</td></tr><tr><td>Piperine</td><td>Black pepper</td></tr><tr><td>Eugenol</td><td>Clove</td></tr><tr><td>1,8-cineole</td><td>Cardamom</td></tr><tr><td>Capsaicin</td><td>Chilli</td></tr><tr><td>Allicin</td><td>Garlic</td></tr><tr><td>Gingerol</td><td>Ginger</td></tr><tr><td>Cinnamaldehyde</td><td>Cinnamon</td></tr><tr><td>Vanillin</td><td>Vanilla</td></tr></tbody></table>"
       }
     ],
     "varieties": [
       {
-        "type": "compounds",
+        "type": "matter-atoms-periodic",
+        "name": "Matter, atoms and the periodic table",
+        "how": "Know what changes across a period and down a group, the group names, and the record elements. For atoms, use protons for atomic number and protons plus neutrons for mass number.",
+        "example": {
+          "q": "Atoms with the same atomic number but different mass numbers are called:",
+          "steps": [
+            "Same atomic number means the same element.",
+            "Different mass numbers mean different neutrons: isotopes."
+          ],
+          "answer": "Isotopes"
+        }
+      },
+      {
+        "type": "reactions-acids-bases",
+        "name": "Reactions, acids, bases and pH",
+        "how": "Place the substance on the pH scale (below 7 acid, above 7 base). For natural acids, link the food to the acid. For reactions, name the type from what happens to the reactants.",
+        "example": {
+          "q": "Which acid is present in an ant sting?",
+          "steps": [
+            "Ant and nettle stings inject a simple acid.",
+            "It is formic acid, also called methanoic acid."
+          ],
+          "answer": "Formic (methanoic) acid"
+        }
+      },
+      {
+        "type": "metals-alloys-ores",
+        "name": "Metals, ores and alloys",
+        "how": "Learn alloy and its metals, ore and its metal. Note that German silver has no silver and cinnabar is mercury.",
+        "example": {
+          "q": "Brass is an alloy of:",
+          "steps": [
+            "Bronze is copper and tin.",
+            "Brass is copper and zinc."
+          ],
+          "answer": "Copper and zinc"
+        }
+      },
+      {
+        "type": "common-compounds",
         "name": "Common names and formulas",
-        "how": "Recall the compound table; watch the water molecules in hydrates.",
-        "example": { "q": "What is the chemical formula of baking soda?", "steps": ["Baking soda = sodium hydrogen carbonate", "Formula NaHCO₃"], "answer": "NaHCO₃" }
+        "how": "Learn the common name, chemical name and formula together. Group by metal: sodium (salt, baking soda, washing soda), calcium (lime family, gypsum, POP), sulphates (the vitriols).",
+        "example": {
+          "q": "Plaster of Paris is chemically:",
+          "steps": [
+            "Gypsum is CaSO4·2H2O.",
+            "Heating gypsum to about 100 °C gives the hemihydrate CaSO4·½H2O."
+          ],
+          "answer": "Calcium sulphate hemihydrate (CaSO4·½H2O)"
+        }
       },
       {
-        "type": "acids-ph",
-        "name": "Acids, bases and pH",
-        "how": "Locate the substance on the pH scale; for natural acids use the source table.",
-        "example": { "q": "Which acid is present in tamarind?", "steps": ["Tamarind → tartaric acid (both start with 'ta')"], "answer": "Tartaric acid" }
+        "type": "carbon-fuels-polymers",
+        "name": "Carbon compounds, fuels and polymers",
+        "how": "Know functional groups by their symbols, the main gas in each fuel, and one use of each polymer.",
+        "example": {
+          "q": "Which class of compounds has the functional group −OH?",
+          "steps": [
+            "−COOH is a carboxylic acid; −CHO is an aldehyde.",
+            "−OH is the alcohol group."
+          ],
+          "answer": "Alcohols"
+        }
       },
       {
-        "type": "elements-alloys",
-        "name": "Elements, alloys and ores",
-        "how": "Pair alloys with their metals and ores with the metal extracted.",
-        "example": { "q": "Bronze is an alloy of:", "steps": ["Brass = Cu + Zn", "Bronze = Cu + Sn (tin)"], "answer": "Copper and tin" }
+        "type": "everyday-chemistry",
+        "name": "Chemistry in everyday life",
+        "how": "Link each household use to its chemical (what kills germs, what makes cakes rise, what gives a smell). For spices, learn the active compound list.",
+        "example": {
+          "q": "Eugenol is the main compound in which spice?",
+          "steps": [
+            "Curcumin is turmeric; piperine is black pepper.",
+            "Eugenol gives clove its smell."
+          ],
+          "answer": "Clove"
+        }
       }
     ],
     "tips": [
-      "Tamarind → Tartaric; Lemon → Citric; Lactic → milk (lacto = milk).",
-      "Plaster of Paris has half a water molecule; gypsum has two.",
-      "Discoverers: Thomson–electron, Rutherford–proton/nucleus, Chadwick–neutron."
+      "Reactivity series: 'Please Stop Calling Me A Zebra, I Like Her Calling Me A Smart Goat' (K, Na, Ca, Mg, Al, Zn, Fe, Pb, H, Cu, Hg, Ag, Au).",
+      "Vitriols by colour: blue copper, green iron, white zinc.",
+      "Bronze is the older alloy (Bronze Age) and uses tin; brass uses zinc.",
+      "Crust order: 'O Si Al Fe' (oxygen, silicon, aluminium, iron).",
+      "Indicators: phenolphthalein turns pink in base; methyl orange turns red in acid.",
+      "Isotopes keep the atomic number (same 'P'), isobars keep the mass number (same 'bar' weight)."
     ],
     "traps": [
-      "Brass has zinc, bronze has tin — not the other way round.",
-      "Washing soda (Na₂CO₃·10H₂O) and baking soda (NaHCO₃) are often swapped.",
-      "The modern periodic table uses atomic number, not atomic mass."
+      "Baking soda is NaHCO3; washing soda is Na2CO3·10H2O.",
+      "Cinnabar is the ore of mercury, not copper; galena is lead.",
+      "German silver contains no silver.",
+      "Dry ice is solid carbon dioxide, not frozen water.",
+      "Roasting heats sulphide ores in plenty of air; calcination heats carbonate ores in limited air."
     ]
   },
   "questions": [
-    { "id": "g-chemistry-001", "rev": 1, "topic": "g-chemistry", "type": "compounds", "level": 1, "q": "The chemical name of common salt is:", "options": ["Sodium carbonate", "Sodium chloride", "Potassium chloride", "Calcium chloride"], "answer": 1, "solution": "Common salt is sodium chloride, NaCl.<br><b>Memory hook:</b> Na + Cl = the salt on your table.", "source": "test-data" },
-    { "id": "g-chemistry-002", "rev": 1, "topic": "g-chemistry", "type": "acids-ph", "level": 1, "q": "The pH of pure water at 25 °C is:", "img": "ga/chem-ph-scale.svg", "options": ["0", "14", "7", "1"], "answer": 2, "solution": "Pure water is neutral, pH 7. Below 7 is acidic, above 7 is basic.<br><b>Memory hook:</b> 7 sits in the middle of 0–14.", "source": "test-data" },
-    { "id": "g-chemistry-003", "rev": 1, "topic": "g-chemistry", "type": "elements-alloys", "level": 1, "q": "Which metal is liquid at room temperature?", "options": ["Mercury", "Sodium", "Lead", "Aluminium"], "answer": 0, "solution": "Mercury (Hg) is the only metal liquid at room temperature. Bromine is the liquid non-metal.<br><b>Memory hook:</b> Mercury's old name is 'quicksilver' — silver that flows.", "source": "test-data" },
-    { "id": "g-chemistry-004", "rev": 1, "topic": "g-chemistry", "type": "acids-ph", "level": 2, "q": "Which acid is found in an ant sting?", "options": ["Citric acid", "Lactic acid", "Acetic acid", "Methanoic (formic) acid"], "answer": 3, "solution": "Ant and nettle stings contain methanoic acid (formic acid). A mild base like baking soda gives relief.<br><b>Memory hook:</b> <i>Formica</i> is Latin for ant — formic acid.", "source": "test-data" },
-    { "id": "g-chemistry-005", "rev": 1, "topic": "g-chemistry", "type": "elements-alloys", "level": 2, "q": "Brass is an alloy of:", "options": ["Copper and tin", "Copper and zinc", "Iron and nickel", "Lead and tin"], "answer": 1, "solution": "Brass = copper + zinc. Bronze = copper + tin. Solder = lead + tin.<br><b>Memory hook:</b> Brass taps shine with zinc; the bronze medal is cast with tin.", "source": "test-data" },
-    { "id": "g-chemistry-006", "rev": 1, "topic": "g-chemistry", "type": "compounds", "level": 2, "q": "Which compound is known as 'laughing gas'?", "options": ["Nitrous oxide", "Nitric oxide", "Nitrogen dioxide", "Carbon monoxide"], "answer": 0, "solution": "Nitrous oxide (N<sub>2</sub>O) is laughing gas, used as a mild anaesthetic.<br><b>Memory hook:</b> N<sub>2</sub>O — 'two N's make you grin'.", "source": "test-data" },
-    { "id": "g-chemistry-007", "rev": 1, "topic": "g-chemistry", "type": "compounds", "level": 3, "q": "Plaster of Paris is chemically:", "options": ["CaSO<sub>4</sub>·2H<sub>2</sub>O", "CaCO<sub>3</sub>", "CaSO<sub>4</sub>·½H<sub>2</sub>O", "CaOCl<sub>2</sub>"], "answer": 2, "solution": "Plaster of Paris is calcium sulphate hemihydrate, CaSO<sub>4</sub>·½H<sub>2</sub>O. Heating gypsum (CaSO<sub>4</sub>·2H<sub>2</sub>O) gives it; adding water sets it back into gypsum.<br><b>Memory hook:</b> 'Hemi' = half a water.", "source": "test-data" },
-    { "id": "g-chemistry-008", "rev": 1, "topic": "g-chemistry", "type": "elements-alloys", "level": 3, "q": "Which pair (ore — metal) is <b>incorrectly</b> matched?", "options": ["Bauxite — Aluminium", "Haematite — Iron", "Galena — Lead", "Cinnabar — Copper"], "answer": 3, "solution": "Cinnabar (HgS) is the ore of mercury, not copper.<br><b>Memory hook:</b> Cinnabar is the bright red ore from which quicksilver (mercury) is roasted out.", "source": "test-data" }
+    {
+      "id": "g-chemistry-001",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "common-compounds",
+      "level": 1,
+      "q": "The chemical name of common salt is:",
+      "options": [
+        "Sodium carbonate",
+        "Sodium chloride",
+        "Potassium chloride",
+        "Calcium chloride"
+      ],
+      "answer": 1,
+      "solution": "Common salt is sodium chloride, NaCl.<br><b>Memory hook:</b> Na + Cl = the salt on your table.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-chemistry-002",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "reactions-acids-bases",
+      "level": 1,
+      "q": "The pH of pure water at 25 °C is:",
+      "img": "ga/chem-ph-scale.svg",
+      "options": [
+        "0",
+        "14",
+        "7",
+        "1"
+      ],
+      "answer": 2,
+      "solution": "Pure water is neutral, pH 7. Below 7 is acidic, above 7 is basic.<br><b>Memory hook:</b> 7 sits in the middle of 0–14.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-chemistry-003",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "metals-alloys-ores",
+      "level": 1,
+      "q": "Which metal is liquid at room temperature?",
+      "options": [
+        "Mercury",
+        "Sodium",
+        "Lead",
+        "Aluminium"
+      ],
+      "answer": 0,
+      "solution": "Mercury (Hg) is the only metal liquid at room temperature. Bromine is the liquid non-metal.<br><b>Memory hook:</b> Mercury's old name is 'quicksilver' — silver that flows.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-chemistry-004",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "reactions-acids-bases",
+      "level": 2,
+      "q": "Which acid is found in an ant sting?",
+      "options": [
+        "Citric acid",
+        "Lactic acid",
+        "Acetic acid",
+        "Methanoic (formic) acid"
+      ],
+      "answer": 3,
+      "solution": "Ant and nettle stings contain methanoic acid (formic acid). A mild base like baking soda gives relief.<br><b>Memory hook:</b> <i>Formica</i> is Latin for ant — formic acid.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-chemistry-005",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "metals-alloys-ores",
+      "level": 2,
+      "q": "Brass is an alloy of:",
+      "options": [
+        "Copper and tin",
+        "Copper and zinc",
+        "Iron and nickel",
+        "Lead and tin"
+      ],
+      "answer": 1,
+      "solution": "Brass = copper + zinc. Bronze = copper + tin. Solder = lead + tin.<br><b>Memory hook:</b> Brass taps shine with zinc; the bronze medal is cast with tin.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-chemistry-006",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "common-compounds",
+      "level": 2,
+      "q": "Which compound is known as 'laughing gas'?",
+      "options": [
+        "Nitrous oxide",
+        "Nitric oxide",
+        "Nitrogen dioxide",
+        "Carbon monoxide"
+      ],
+      "answer": 0,
+      "solution": "Nitrous oxide (N<sub>2</sub>O) is laughing gas, used as a mild anaesthetic.<br><b>Memory hook:</b> N<sub>2</sub>O — 'two N's make you grin'.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-chemistry-007",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "common-compounds",
+      "level": 3,
+      "q": "Plaster of Paris is chemically:",
+      "options": [
+        "CaSO<sub>4</sub>·2H<sub>2</sub>O",
+        "CaCO<sub>3</sub>",
+        "CaSO<sub>4</sub>·½H<sub>2</sub>O",
+        "CaOCl<sub>2</sub>"
+      ],
+      "answer": 2,
+      "solution": "Plaster of Paris is calcium sulphate hemihydrate, CaSO<sub>4</sub>·½H<sub>2</sub>O. Heating gypsum (CaSO<sub>4</sub>·2H<sub>2</sub>O) gives it; adding water sets it back into gypsum.<br><b>Memory hook:</b> 'Hemi' = half a water.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-chemistry-008",
+      "rev": 1,
+      "topic": "g-chemistry",
+      "type": "metals-alloys-ores",
+      "level": 3,
+      "q": "Which pair (ore — metal) is <b>incorrectly</b> matched?",
+      "options": [
+        "Bauxite — Aluminium",
+        "Haematite — Iron",
+        "Galena — Lead",
+        "Cinnabar — Copper"
+      ],
+      "answer": 3,
+      "solution": "Cinnabar (HgS) is the ore of mercury, not copper.<br><b>Memory hook:</b> Cinnabar is the bright red ore from which quicksilver (mercury) is roasted out.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-chemistry-1", "front": "Formula of washing soda", "back": "Na₂CO₃·10H₂O", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-2", "front": "Chemical name of bleaching powder", "back": "Calcium oxychloride (CaOCl₂)", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-3", "front": "Quicklime", "back": "Calcium oxide (CaO)", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-4", "front": "Acid in vinegar", "back": "Acetic acid", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-5", "front": "Acid in tomato", "back": "Oxalic acid", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-6", "front": "Who discovered the neutron?", "back": "James Chadwick", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-7", "front": "Main gas in CNG and biogas", "back": "Methane", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-8", "front": "Galvanisation", "back": "Coating iron with zinc to prevent rusting", "deck": "ga-facts" },
-    { "id": "fc-g-chemistry-9", "front": "Ore of aluminium", "back": "Bauxite", "deck": "ga-facts" }
+    {
+      "id": "fc-g-chemistry-1",
+      "front": "Formula of washing soda",
+      "back": "Na₂CO₃·10H₂O",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-2",
+      "front": "Chemical name of bleaching powder",
+      "back": "Calcium oxychloride (CaOCl₂)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-3",
+      "front": "Quicklime",
+      "back": "Calcium oxide (CaO)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-4",
+      "front": "Acid in vinegar",
+      "back": "Acetic acid",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-5",
+      "front": "Acid in tomato",
+      "back": "Oxalic acid",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-6",
+      "front": "Who discovered the neutron?",
+      "back": "James Chadwick",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-7",
+      "front": "Main gas in CNG and biogas",
+      "back": "Methane",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-8",
+      "front": "Galvanisation",
+      "back": "Coating iron with zinc to prevent rusting",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-chemistry-9",
+      "front": "Ore of aluminium",
+      "back": "Bauxite",
+      "deck": "ga-facts"
+    }
   ]
 }

@@ -1,70 +1,142 @@
 {
  "topic": "r-analogy",
  "notes": {
-  "summary": "An analogy question gives a pair with a hidden <b>relationship</b> and asks you to find another pair with the <b>same</b> relationship. SSC asks 2–3 analogy questions in Tier 1 (word, number and letter types).",
+  "summary": "An analogy gives you one pair with a hidden <b>relationship</b> and asks for another pair with the <b>same</b> relationship. The pair can be words (Doctor : Hospital), letters (ACE : BDF), numbers (4 : 16) or figures. SSC asks 2 to 3 analogy questions in Tier 1 and some in Tier 2. Number-based analogies are the most common, then word and letter types.",
   "concepts": [
    {
-    "title": "Find the rule first",
-    "body": "Look at the first pair and say the link in one short sentence: \"A works in B\", \"B is the square of A\", \"each letter moves +1\". Then apply the <b>same</b> sentence to the second pair."
+    "title": "How to read an analogy",
+    "body": "<code>A : B :: C : D</code> is read as \"A is to B as C is to D\". The relation that takes A to B must also take C to D.<ul><li>\"Select the option related to the third word in the same way as the second is related to the first\" means find D.</li><li>\"Select the word-pair with the same relationship\" means pick a whole pair like the given one.</li><li>Some questions give three pairs: <code>A : B :: C : D :: E : ?</code>. Use both complete pairs to confirm the rule.</li><li>Some give the answer side and hide the first term (<code>? : 176 :: 14 : 126</code>). Work the rule backwards.</li></ul>"
    },
    {
-    "title": "Common number rules",
-    "body": "Square (n²), cube (n³), n² ± n, n³ ± 1, ×2 +1, sum of digits. Check the rule on the given pair before using it."
+    "title": "Word relationships you will see",
+    "body": "<table><thead><tr><th>Relationship</th><th>Example</th></tr></thead><tbody><tr><td>Same meaning</td><td>Vacant : Empty</td></tr><tr><td>Opposite meaning</td><td>Ancient : Modern</td></tr><tr><td>Worker : workplace</td><td>Doctor : Hospital, Teacher : School</td></tr><tr><td>Worker : tool</td><td>Carpenter : Saw, Surgeon : Scalpel</td></tr><tr><td>Worker : product</td><td>Author : Book, Poet : Poem</td></tr><tr><td>Tool : use</td><td>Pen : Write, Knife : Cut</td></tr><tr><td>Thing : what it cleans or works on</td><td>Toothpaste : Teeth, Broom : Floor</td></tr><tr><td>Part : whole</td><td>Petal : Flower, Page : Book</td></tr><tr><td>Item : group (category)</td><td>Anger : Emotion, Rose : Flower</td></tr><tr><td>Animal : young one</td><td>Cow : Calf, Dog : Puppy, Frog : Tadpole</td></tr><tr><td>Animal : home</td><td>Bee : Hive, Lion : Den, Horse : Stable</td></tr><tr><td>Animal : sound</td><td>Lion : Roar, Snake : Hiss</td></tr><tr><td>Group name</td><td>Fish : Shoal, Cattle : Herd</td></tr><tr><td>Instrument : what it measures</td><td>Barometer : Pressure, Odometer : Distance</td></tr><tr><td>Quantity : unit</td><td>Force : Newton, Current : Ampere</td></tr><tr><td>Study of</td><td>Ornithology : Birds, Seismology : Earthquakes</td></tr><tr><td>Country : capital or currency</td><td>Japan : Tokyo, Japan : Yen</td></tr><tr><td>Person : memorial</td><td>Mahatma Gandhi : Raj Ghat</td></tr><tr><td>Degree (small to big)</td><td>Drizzle : Downpour, Warm : Hot</td></tr><tr><td>Cause : effect</td><td>Virus : Disease, Fire : Smoke</td></tr><tr><td>Male : female</td><td>Horse : Mare, Nephew : Niece</td></tr><tr><td>Raw material : product</td><td>Cotton : Cloth, Grapes : Wine</td></tr></tbody></table>"
    },
    {
-    "title": "Common letter rules",
-    "body": "Each letter moves forward/backward by a fixed number, or the shift grows (+1, +2, +3). Use the position table: A=1 … Z=26. Opposite letter pairs add to 27 (A–Z, B–Y)."
+    "title": "The sentence test for word analogies",
+    "body": "Make a short, exact sentence for the given pair, then put each option into it.<ul><li>Doctor : Hospital, \"A doctor <b>works in</b> a hospital.\" Teacher : School fits. Teacher : Book does not.</li><li>If two options fit, make the sentence sharper: \"A <b>young</b> cow is called a calf\" is sharper than \"a cow is related to a calf\".</li><li>Keep the <b>order</b> the same. Hospital : Doctor is the reverse of Doctor : Hospital and is wrong.</li></ul>SSC adds a note: \"the words must be considered as meaningful English words and must not be related to each other based on the number of letters, consonants or vowels\". So only meaning counts in these questions."
+   },
+   {
+    "title": "Number-pair rules",
+    "body": "Test these rules in order on the given pair:<table><thead><tr><th>Rule</th><th>Example</th></tr></thead><tbody><tr><td>n²</td><td>7 : 49</td></tr><tr><td>n³</td><td>4 : 64</td></tr><tr><td>n² ± n</td><td>6 : 42 (36 + 6), 6 : 30 (36 − 6)</td></tr><tr><td>n³ ± n</td><td>6 : 222 (216 + 6)</td></tr><tr><td>n² ± k or n³ ± k</td><td>3 : 28 (27 + 1), 17 : 4914 (4913 + 1)</td></tr><tr><td>(n ± k)²</td><td>4 : 49 = (4 + 3)², 6 : 81 = (6 + 3)²</td></tr><tr><td>n × k ± c</td><td>16 : 240 = 16 × 15, 6 : 90 = 6 × 15</td></tr><tr><td>square root ± k</td><td>961 : 992 = 961 + 31 (31² = 961)</td></tr></tbody></table>Look at the size: if B is about n², think squares; if about n³, think cubes; if a fixed multiple, divide B by A."
+   },
+   {
+    "title": "Number sets (triads) and the whole-number rule",
+    "body": "Sets like <code>(24, 15, 120)</code> and <code>(21, 19, 133)</code> link three numbers. Try:<ul><li>third = first × second ÷ k (24 × 15 = 360, 360 ÷ 3 = 120),</li><li>third = (first + second) × k, or first − second = second − third (equal steps, like 66, 57, 48),</li><li>middle = (first + third) ÷ 2, or middle² = first × third.</li></ul>SSC adds: \"operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13: operations on 13 such as adding, subtracting or multiplying 13 can be performed. Breaking 13 into 1 and 3 is not allowed.\" So never use digit sums in these questions.<br><br>Always confirm the rule on <b>both</b> given sets before testing options."
+   },
+   {
+    "title": "Letter-cluster moves",
+    "body": "Write letter positions (A = 1 … Z = 26) above both clusters and compare letter by letter.<table><thead><tr><th>Move</th><th>Example</th></tr></thead><tbody><tr><td>Same shift for every letter</td><td>ACE : BDF (+1 each)</td></tr><tr><td>Growing shift</td><td>PDK : QFN (+1, +2, +3)</td></tr><tr><td>Mixed shift</td><td>CAT : DCW (+1, +2, +3)</td></tr><tr><td>Opposite letters (sum 27)</td><td>ABC : ZYX</td></tr><tr><td>Reverse order</td><td>WOLF : FLOW</td></tr><tr><td>Swap pairs</td><td>JKLM : KJML</td></tr><tr><td>Shift and reverse</td><td>ABC : FED (each +3, then reversed)</td></tr></tbody></table>When the answer has two blanks (<code># : DKR :: PCL : %</code>), the same rule works forwards on one side and backwards on the other. Check each option in both directions."
+   },
+   {
+    "title": "Word-to-number analogies",
+    "body": "A word is turned into a number. Common ways:<ul><li><b>Sum of positions:</b> CAT = 3 + 1 + 20 = 24.</li><li><b>Sum of reverse positions</b> (Z = 1 … A = 26): A = 26, B = 25.</li><li><b>Product</b> of positions, or sum × number of letters.</li><li><b>Positions written side by side:</b> BAD = 2 1 4 = 214.</li><li><b>Number of letters</b> × something.</li></ul>Find which one gives the first number exactly, then apply it to the new word."
+   },
+   {
+    "title": "Figure analogies",
+    "body": "Compare figure A with figure B and name every change: rotation (by 45°, 90° or 180°, clockwise or anticlockwise), mirror flip, inside and outside shapes swapping, shading changing, a part added or removed, number of sides changing. Apply exactly the same changes to figure C. Remove options that break any one change."
+   },
+   {
+    "title": "Using the options smartly",
+    "body": "Analogy options are close to each other. Save time:<ul><li>For number pairs, test only the fastest rule first (square, cube) on the options; one option often fits at once.</li><li>For letter clusters, check only the first letter of each option, then the second.</li><li>For word pairs, cross out options whose relationship is reversed or only loosely related.</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "word-analogy",
     "name": "Word analogy",
-    "how": "State the link (worker–place, tool–use, part–whole, product–raw material) and apply it.",
+    "how": "Make an exact sentence for the given pair (\"A <b>is used to clean</b> B\"), keep the same order, and test each option in that sentence.",
     "example": {
-     "q": "Pen : Write :: Knife : ?",
+     "q": "Toothpaste : Teeth :: Broom : ?",
      "steps": [
-      "A pen is used to write.",
-      "A knife is used to cut."
+      "Sentence: toothpaste is used to clean teeth.",
+      "A broom is used to clean the floor."
      ],
-     "answer": "Cut"
-    }
-   },
-   {
-    "type": "number-analogy",
-    "name": "Number analogy",
-    "how": "Test squares, cubes and n³ ± n on the first pair.",
-    "example": {
-     "q": "5 : 125 :: 7 : ?",
-     "steps": [
-      "125 = 5³",
-      "7³ = 343"
-     ],
-     "answer": "343"
+     "answer": "Floor"
     }
    },
    {
     "type": "letter-analogy",
-    "name": "Letter analogy",
-    "how": "Write letter positions and find the shift for each letter.",
+    "name": "Letter-cluster analogy",
+    "how": "Write the positions of each letter in both clusters and find the shift for each place. Apply the same shifts, place by place, to the new cluster. Also check for reversal or opposite letters.",
     "example": {
-     "q": "CAT : DBU :: PEN : ?",
+     "q": "PDK : QFN :: SJQ : ?",
      "steps": [
-      "C→D, A→B, T→U: each +1",
-      "P→Q, E→F, N→O"
+      "P → Q is +1, D → F is +2, K → N is +3.",
+      "S + 1 = T, J + 2 = L, Q + 3 = T."
      ],
-     "answer": "QFO"
+     "answer": "TLT"
+    }
+   },
+   {
+    "type": "number-pair-analogy",
+    "name": "Number-pair analogy",
+    "how": "Test squares, cubes, n² ± n, n³ ± n and simple multiples on the first pair. Confirm on the second pair, then apply to the question number.",
+    "example": {
+     "q": "4 : 49 :: 6 : 81 :: 8 : ?",
+     "steps": [
+      "49 = 7² and 7 = 4 + 3.",
+      "81 = 9² and 9 = 6 + 3. Rule: (n + 3)².",
+      "(8 + 3)² = 11² = 121."
+     ],
+     "answer": "121"
+    }
+   },
+   {
+    "type": "number-set-analogy",
+    "name": "Number-set (triad) analogy",
+    "how": "Find one rule that links the numbers inside each given set, without splitting numbers into digits. Confirm it on both sets, then test each option set.",
+    "example": {
+     "q": "Given sets: (24, 15, 120) and (21, 19, 133). Which set follows the same rule? (a) (18, 11, 66) (b) (12, 13, 54) (c) (30, 7, 60) (d) (27, 4, 38)",
+     "steps": [
+      "24 × 15 = 360 and 360 ÷ 3 = 120.",
+      "21 × 19 = 399 and 399 ÷ 3 = 133. Rule: third = first × second ÷ 3.",
+      "(a) 18 × 11 = 198, 198 ÷ 3 = 66. Fits.",
+      "(b) gives 52, (c) gives 70, (d) gives 36. None of them fit."
+     ],
+     "answer": "(18, 11, 66)"
+    }
+   },
+   {
+    "type": "letter-number-analogy",
+    "name": "Word-to-number analogy",
+    "how": "Try the sum of letter positions first, then reverse positions, product, or positions written side by side. Use the rule that gives the first number exactly.",
+    "example": {
+     "q": "CAT : 24 :: DOG : ?",
+     "steps": [
+      "C + A + T = 3 + 1 + 20 = 24. Rule: sum of positions.",
+      "D + O + G = 4 + 15 + 7 = 26."
+     ],
+     "answer": "26"
+    }
+   },
+   {
+    "type": "figure-analogy",
+    "name": "Figure analogy",
+    "how": "List every change from figure A to figure B (rotation, flip, inside and outside swap, shading, parts added or removed) and make the same changes to figure C.",
+    "example": {
+     "q": "Figure A is a small circle inside a square. Figure B is a small square inside a circle. Figure C is a small star inside a triangle. What is figure D?",
+     "steps": [
+      "From A to B, the inner and outer shapes swap places.",
+      "Swap the star and the triangle in figure C."
+     ],
+     "answer": "A small triangle inside a star."
     }
    }
   ],
   "tips": [
-   "Check your rule on the first pair before applying it; many wrong options fit a \"nearly right\" rule.",
-   "For letters, write positions (A=1 … Z=26) under each letter: shifts become obvious.",
-   "For number pairs, try n², n³, n² + 1, n³ + n in that order."
+   "For words, make an exact sentence and keep the order of the pair the same.",
+   "For numbers, try n², n³, n² ± n and n³ ± n first. Most SSC number analogies use one of these.",
+   "If three pairs are given, use the two complete pairs to confirm the rule before checking options.",
+   "In number sets, never split a number into digits; SSC says so in the question note.",
+   "For letter clusters, compare place by place and write the shift (+1, +2, +3) above each letter.",
+   "Check the first letter or the last digit of every option first; it often removes three options at once."
   ],
   "traps": [
-   "Do not reverse the order of the pair: Doctor : Hospital is not the same as Hospital : Doctor.",
-   "In letter analogies the shift may be different for each letter (+1, +2, +3)."
+   "Reversed pairs: Hospital : Doctor is not the same as Doctor : Hospital.",
+   "A loose link is not enough. Teacher : Book is related, but Teacher : School matches \"works in\".",
+   "A number rule that fits the first pair may fail the second. Always check both.",
+   "Wrap-around in letter shifts: Y + 3 = B.",
+   "Some letter-analogy words are real words (WOLF : FLOW). Ignore the meaning; only the letter positions matter."
   ]
  },
  "questions": [
@@ -89,7 +161,7 @@
    "id": "r-analogy-002",
    "rev": 1,
    "topic": "r-analogy",
-   "type": "number-analogy",
+   "type": "number-pair-analogy",
    "level": 1,
    "q": "Select the number that can replace the question mark (?).<br>4 : 16 :: 7 : ?",
    "options": [
@@ -123,7 +195,7 @@
    "id": "r-analogy-004",
    "rev": 1,
    "topic": "r-analogy",
-   "type": "number-analogy",
+   "type": "number-pair-analogy",
    "level": 2,
    "q": "Select the number that can replace the question mark (?).<br>3 : 28 :: 5 : ?",
    "options": [
@@ -157,7 +229,7 @@
    "id": "r-analogy-006",
    "rev": 1,
    "topic": "r-analogy",
-   "type": "number-analogy",
+   "type": "number-pair-analogy",
    "level": 3,
    "q": "Select the number that can replace the question mark (?).<br>6 : 222 :: 8 : ?",
    "options": [

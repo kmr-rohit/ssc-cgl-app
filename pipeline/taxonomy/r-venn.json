@@ -1,0 +1,35 @@
+{
+ "topic": "r-venn",
+ "types": [
+  {
+   "type": "best-diagram",
+   "name": "Best diagram for three classes",
+   "description": "Three or four class names are given (for example \"Mothers, Women, Doctors\") and you choose the Venn diagram that best shows how they are related.",
+   "concepts": []
+  },
+  {
+   "type": "region-counting",
+   "name": "Numbers in a circle diagram",
+   "description": "A diagram of labelled circles has numbers in its parts, and you add or compare numbers for a description such as \"singers and dancers but not actors\".",
+   "concepts": []
+  },
+  {
+   "type": "shape-region",
+   "name": "Shapes standing for groups",
+   "description": "Shapes such as a triangle, square, circle or pentagon each \"represent\" or \"stand for\" a group, and you find the number or letter in the region that fits a description.",
+   "concepts": []
+  },
+  {
+   "type": "statements-to-diagram",
+   "name": "Diagram for given statements",
+   "description": "Statements such as \"All A are B, some B are C\" are given and you pick the Venn diagram that represents them.",
+   "concepts": []
+  },
+  {
+   "type": "set-arithmetic",
+   "name": "Counting with two or three sets",
+   "description": "A word problem gives how many people like or do each thing and how many do both, and asks for \"neither\", \"only one\" or the total, with no figure needed.",
+   "concepts": []
+  }
+ ]
+}

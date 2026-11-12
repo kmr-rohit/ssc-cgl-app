@@ -1,55 +1,121 @@
 {
  "topic": "r-order-ranking",
  "notes": {
-  "summary": "Ranking questions give positions from the left/right or top/bottom, or compare people (taller, heavier). Use simple formulas and a quick line diagram.",
+  "summary": "Order and ranking questions give positions in a row or class, or compare people (taller, heavier). Most can be solved with three small formulas and a quick line diagram. SSC asks 0 to 1 question in Tier 1 and Tier 2.",
   "concepts": [
    {
-    "title": "Position formulas",
-    "body": "Total = (position from left) + (position from right) − 1.<br>Position from right = Total − (position from left) + 1."
+    "title": "Total from both ends",
+    "body": "If a person is L-th from the left and R-th from the right, the person is counted twice, so:<br><b>Total = L + R − 1</b><br>Example: Amit is 7th from the top and 26th from the bottom. Total = 7 + 26 − 1 = 32.<br><br>And the other way round:<br><b>Position from the right = Total − (position from left) + 1</b><br>Example: in a row of 40, Ram is 15th from the left. From the right: 40 − 15 + 1 = 26th."
    },
    {
-    "title": "Persons between two people",
-    "body": "If both positions are counted from the same end, persons between = difference − 1."
+    "title": "People between two persons",
+    "body": "<b>Both counted from the same end:</b> people between = difference of positions − 1. (5th and 12th from the left: 12 − 5 − 1 = 6.)<br><br><b>Counted from opposite ends</b> (A is L-th from the left, B is R-th from the right, total T):<table><thead><tr><th>Case</th><th>People between</th></tr></thead><tbody><tr><td>L + R &lt; T (no overlap)</td><td>T − (L + R)</td></tr><tr><td>L + R &gt; T (they cross)</td><td>(L + R) − T − 2</td></tr></tbody></table>Example (no overlap): 32 students; Priya 18th from the left, Akash 12th from the right. 18 + 12 = 30 &lt; 32, so 32 − 30 = 2 people between.<br>Example (overlap): row of 20; A 15th from the left, B 12th from the right. 15 + 12 = 27 &gt; 20, so 27 − 20 − 2 = 5.<br>If unsure, convert both to positions from the left and use difference − 1."
+   },
+   {
+    "title": "When positions are swapped",
+    "body": "If A and B interchange places, A takes B's old place. So <b>A's new position from the left = B's old position from the left</b>.<br>Example: Amit is 12th from the left and Sunil 15th from the right. After swapping, Amit is 17th from the left.<ul><li>So Sunil's old place was 17th from the left, and it was also 15th from the right.</li><li>Total = 17 + 15 − 1 = 31.</li></ul>"
+   },
+   {
+    "title": "Someone exactly in the middle",
+    "body": "If C stands exactly between A and B, the gap from A to C equals the gap from C to B.<br>Example: Prince is 5th from the right, Amit 15th from the right, and Amit is exactly between Prince and Aditya. Aditya is 6th from the left.<ul><li>Gap from Prince to Amit = 15 − 5 = 10 places, so Aditya is 10 places beyond Amit: 25th from the right.</li><li>Total = 25 + 6 − 1 = 30.</li></ul>"
    },
    {
     "title": "Comparison ranking",
-    "body": "Write the names on a line from greatest to smallest as you read each clue: D &gt; A &gt; B &gt; C."
+    "body": "Write each statement as an inequality with the bigger one on the left, then join them into one chain.<ul><li>\"Ramesh is taller than Qadir but shorter than Saurabh\" gives S &gt; R &gt; Q.</li><li>\"Tariq is taller than Saurabh\" gives T &gt; S.</li><li>\"Prakash is the shortest\" puts P at the end.</li></ul>Chain: T &gt; S &gt; R &gt; Q &gt; P. Tallest: Tariq. Middle: Ramesh.<br>Watch for \"<b>only</b>\": \"Q is heavier than only T\" means Q is second lightest. If some places cannot be fixed, answer only what the chain shows for sure."
+   },
+   {
+    "title": "Rank and position puzzles",
+    "body": "Draw numbered slots (1 to 5 or 1 to 6) and place the fixed facts first.<ul><li>\"Just above\", \"just below\", \"immediately after\" create <b>blocks</b> of people who must sit next to each other (L, H, K in order).</li><li>Place fixed ranks (I is first), then fit the blocks into the free slots.</li><li>Use \"not\" conditions (J is not last) to choose between the possible placements.</li></ul>When a puzzle has two possible arrangements, check whether the question's answer is the same in both."
+   },
+   {
+    "title": "Top, bottom and other words",
+    "body": "<ul><li>In the formulas, top, front and first all play the part of \"left\"; bottom, back and last play the part of \"right\".</li><li>\"Ranked 5th from the top in a class\" is the same as \"5th from the left\" in a row.</li><li>\"Ahead of\" in a queue means closer to the front.</li><li>In a row facing North, the person's left is the row's left end; if the row faces South, the person's left is the other end. Read which way the row faces.</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "position-in-row",
-    "name": "Position in a row",
-    "how": "Use Total = L + R − 1, or convert both positions to the same end.",
+    "name": "Position from either end",
+    "how": "Total = L + R − 1. Position from the other end = Total − position + 1.",
     "example": {
-     "q": "Ram is 15th from the left in a row of 40. Position from right?",
+     "q": "Paras ranks 5th from the top and 24th from the bottom in his class. How many students are in the class?",
      "steps": [
-      "Right = 40 − 15 + 1",
-      "= 26"
+      "Paras is counted in both 5 and 24.",
+      "Total = 5 + 24 − 1 = 28."
      ],
-     "answer": "26th"
+     "answer": "28"
+    }
+   },
+   {
+    "type": "persons-between",
+    "name": "People between two persons",
+    "how": "Convert both positions to the same end (from the left), then people between = difference − 1. Or use T − (L + R) when the two positions do not overlap.",
+    "example": {
+     "q": "32 students stand in a row. Akash is 12th from the right and Priya is 18th from the left. How many people stand between them?",
+     "steps": [
+      "Akash from the left = 32 − 12 + 1 = 21st.",
+      "Priya is 18th from the left.",
+      "People between = 21 − 18 − 1 = 2."
+     ],
+     "answer": "2"
+    }
+   },
+   {
+    "type": "interchange-positions",
+    "name": "Interchanged positions",
+    "how": "After a swap, A's new position equals B's old position from the same end. Use that place's two positions (left and right) to get the total.",
+    "example": {
+     "q": "In a row, Amit is 12th from the left and Sunil is 15th from the right. After they swap places, Amit is 17th from the left. How many people are in the row?",
+     "steps": [
+      "Amit is now in Sunil's old place, so that place is 17th from the left.",
+      "The same place was 15th from the right.",
+      "Total = 17 + 15 − 1 = 31."
+     ],
+     "answer": "31"
     }
    },
    {
     "type": "comparison-ranking",
-    "name": "Comparison",
-    "how": "Arrange all persons on one line using every clue.",
+    "name": "Comparison (taller, heavier)",
+    "how": "Turn each sentence into \"bigger > smaller\" and join them into one chain. Read the asked person from the chain.",
     "example": {
-     "q": "A is taller than B; B is taller than C. Who is shortest?",
+     "q": "Ramesh is taller than Qadir but shorter than Saurabh. Prakash is the shortest. Tariq is taller than Saurabh. Who is the tallest?",
      "steps": [
-      "A > B > C"
+      "Saurabh > Ramesh > Qadir.",
+      "Tariq > Saurabh, and Prakash is at the bottom.",
+      "Chain: Tariq > Saurabh > Ramesh > Qadir > Prakash."
      ],
-     "answer": "C"
+     "answer": "Tariq"
+    }
+   },
+   {
+    "type": "rank-arrangement",
+    "name": "Rank and position puzzles",
+    "how": "Draw numbered slots. Place fixed ranks first, then blocks made by \"just above\" or \"just below\", then use the \"not\" conditions.",
+    "example": {
+     "q": "H, I, J, K and L are the top five rank holders. H is just above K and just below L. I is at the top. J is not at the lowest rank. Who is at the lowest rank?",
+     "steps": [
+      "L, H, K form a block in that order (L above H above K).",
+      "I is rank 1, so ranks 2 to 5 hold the block and J.",
+      "If J were rank 5, J would be lowest, which is not allowed. So J is rank 2 and L, H, K are ranks 3, 4, 5."
+     ],
+     "answer": "K"
     }
    }
   ],
   "tips": [
-   "Convert all positions to the same end before comparing.",
-   "For \"interchange\" questions, the new position belongs to the other person's old place."
+   "Total = L + R − 1. Use it for every \"from both ends\" question.",
+   "Convert all positions to the same end before counting people between.",
+   "After a swap, the new position belongs to the other person's old place.",
+   "For comparisons, write a single chain with the biggest on the left.",
+   "In puzzles, place fixed ranks first, then blocks, then \"not\" conditions.",
+   "Draw a quick line of dots for small rows; it takes less time than doubting a formula."
   ],
   "traps": [
-   "Do not forget the −1 (the person is counted from both ends).",
-   "\"Heavier than only T\" means exactly one person (T) is lighter."
+   "Forgetting the − 1 in L + R − 1 (the person is counted twice).",
+   "Using T − (L + R) when the two positions overlap; then the formula is (L + R) − T − 2.",
+   "Reading \"heavier than only T\" as \"heaviest\". It means second from the bottom.",
+   "Mixing up which end a position is counted from after a swap."
   ]
  },
  "questions": [
@@ -108,7 +174,7 @@
    "id": "r-order-ranking-004",
    "rev": 1,
    "topic": "r-order-ranking",
-   "type": "position-in-row",
+   "type": "interchange-positions",
    "level": 2,
    "q": "In a row, A is 10th from the left and B is 15th from the right. When they interchange their positions, A becomes 20th from the left. How many people are in the row?",
    "options": [
@@ -125,7 +191,7 @@
    "id": "r-order-ranking-005",
    "rev": 1,
    "topic": "r-order-ranking",
-   "type": "position-in-row",
+   "type": "persons-between",
    "level": 3,
    "q": "In a row of 50 children, P is 18th from the left end and Q is 20th from the right end. How many children are there between P and Q?",
    "options": [

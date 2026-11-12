@@ -6,6 +6,8 @@ and solutions as-is for now (2026-11-12). The raw download is git-ignored and ne
 
 ## Run it
 ```bash
+# optional local-model stages (Ollama + gemma4:26b-a4b; all cached, rerun only what changed):
+npx tsx pipeline/classify-types.ts && npx tsx pipeline/reroute-topics.ts && npx tsx pipeline/classify-types.ts
 npm run pyq:build          # = tsx pipeline/build-pyq.ts  (add --no-images for a quick text-only run)
 npx vitest run pipeline    # mapping + checks over every published question
 ```
@@ -20,6 +22,10 @@ First run downloads ~70 MB of JSONL and ~13k images into `pipeline/.cache/` (cac
 | Dedupe | Same question across shifts → one question with every `asked` occurrence |
 | Images | Downloaded once, WebP q55 ≤800 px, named by URL hash; decorative icons (reused in 5+ solutions) dropped; truncated/broken image fragments removed; unreferenced files pruned |
 | Papers | Every past shift rebuilt in exam order (used as the question pool for mocks) |
+| Topics | Questions the source misfiled are moved to the right topic (`pipeline/reroute-topics.ts`, cache `topics.jsonl`). The id keeps its first topic; `manifest.moved` maps it to the new one |
+| Types | Each question gets a type from its topic's taxonomy (`pipeline/taxonomy/<topic>.json`): from the source concept when it maps, else the local model (`classify-types.ts`, cache `types.jsonl`) |
+| Maths | KaTeX at build time (`tools/math.ts`): `\( \)`, `$ $`, `\[ \]`, plain-text fractions `(1)/(3)` and mixed numbers, LaTeX that lost its backslashes. Unparseable maths stays as written |
+| Solutions | Cut-off or thin solutions rewritten by the local model and kept only when it reaches the key's answer (`fix-solutions.ts`, partial run) |
 | Publish | `public/pyq/manifest.json` + `topics/<topic>-<page>.<hash>.json` (250/page) + `papers/<id>.<hash>.json` + `img/` |
 
 ## Numbers (pinned commit 157773c)
@@ -33,4 +39,5 @@ First run downloads ~70 MB of JSONL and ~13k images into `pipeline/.cache/` (cac
 ## Known gaps / next
 - Cloze and reading comprehension need their passages: source doesn't have them.
 - No official-key cross-check: SSC publishes final keys with papers but behind time-limited candidate logins (no machine-readable archive). Plan: "Report a mistake" on every question.
+- Questions with a type of "other": 4%. Some types have no bank questions yet (listed by the classifier report).
 - `manifest.weightage` (real average questions per paper by topic) is computed but not yet used for the syllabus weight text or mock allocation.

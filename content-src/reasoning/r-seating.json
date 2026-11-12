@@ -1,72 +1,205 @@
 {
  "topic": "r-seating",
  "notes": {
-  "summary": "Seating arrangement and puzzles place people in a <b>row</b>, around a <b>circle</b> or on <b>floors</b> using clues. Draw the places first, fix the definite clues, then try the rest. 1–3 questions per paper.",
+  "summary": "Seating arrangements and puzzles give a set of clues and ask you to place people in a row, around a table, on floors or against days. The skill is simple: draw a neat diagram, place the fixed clues first, try each case for the open clues, and cross out cases that break any clue. Left and right depend on which way a person faces, so mark the direction before you start.",
   "concepts": [
    {
-    "title": "Linear row",
-    "body": "Facing North: your right is the viewer's right. Facing South: left and right are reversed. \"Immediate right\" means the very next seat."
+    "title": "Left and right in a row",
+    "body": "In a row facing north, a person's left is your left on the page. In a row facing south, it flips: their left is your right.<ul><li>\"A is third to the left of B\": count three seats from B towards B's left. Two people sit between them.</li><li>\"A is to the immediate left of B\": A sits right next to B, on B's left.</li><li>\"Only two people sit between A and B\" does not say who is on which side, so draw both cases.</li><li>Extreme ends are the first and last seats.</li></ul>",
+    "img": "reasoning/seat-row.svg"
    },
    {
-    "title": "Circle facing the centre",
-    "body": "For people facing the centre, <b>left = clockwise</b> and <b>right = anticlockwise</b>. In a circle of n people (n even), the person n/2 places away sits opposite.",
-    "img": "reasoning/seat-circle8.svg"
+    "title": "Left and right in a circle",
+    "body": "For a person facing the centre, left means moving <b>clockwise</b> and right means moving <b>anticlockwise</b>. For a person facing outside, it is the other way round.<ul><li>\"Second to the right of A\" (facing the centre): go two seats anticlockwise from A.</li><li>Opposite seats exist only when the number of seats is even: with n seats, the person opposite is n ÷ 2 places away.</li><li>A circle has no start, so place the first person anywhere. Every later clue is fixed relative to that person.</li></ul><p>Mixed facing: mark each person's direction with an arrow and apply the rule person by person.</p>",
+    "img": "reasoning/seat-facing.svg"
+   },
+   {
+    "title": "Two rows facing each other",
+    "body": "If row 1 faces south and row 2 faces north, every person faces the one directly across. Row 2 (facing north) uses page-left as left. Row 1 (facing south) has left and right flipped. Ends of both rows line up, so \"Q sits at an end and faces C\" fixes two people at once.",
+    "img": "reasoning/seat-parallel.svg"
+   },
+   {
+    "title": "Square and rectangular tables",
+    "body": "Treat the table like a circle with fixed seats. Four people at the corners (or the middle of the sides), all facing the centre, follow the circle rule: left is clockwise. With eight seats (four corners and four sides), the person \"opposite\" sits across the table, four seats away. <p>Mini example: H, I, J, K sit at the corners facing the centre. H and J are diagonally opposite. I is to the immediate left of H. Going clockwise from H gives I, then J, then K. So the person to the immediate left of I is J.</p>",
+    "img": "reasoning/seat-square.svg"
    },
    {
     "title": "Floor puzzles",
-    "body": "Ground floor = 1, top floor = n. Write the floors as a column and fill fixed clues first (\"M is two floors above K\")."
+    "body": "Draw the floors as a vertical list with the ground (or lowest) floor at the bottom and number them 1 upwards, unless the question says the ground floor is 0.<ul><li>\"A lives two floors above B\" means A = B + 2, with one floor between them.</li><li>\"A lives immediately above B\" means A = B + 1.</li><li>\"A lives on an even-numbered floor\" cuts the cases in half.</li><li>Use the clue with the biggest gap first; it has the fewest places to fit.</li></ul>"
+   },
+   {
+    "title": "Days, months and order of events",
+    "body": "Write the days (Monday to Sunday) or months in a column, then place people like a row. \"Only one person has an exam between A and B\" means a gap of two days, either before or after, so draw both cases. Note whether the week starts on Monday or Sunday; the question always says."
+   },
+   {
+    "title": "Matching puzzles (grid method)",
+    "body": "When each person has several details (city, colour, subject) and no seating order, draw a grid: people down the side, details across the top. Put ✓ for a clue that says \"A likes red\" and × for \"B does not like red\". When a row or column has only one empty box left, it must be ✓. Positive clues first, then negative ones."
+   },
+   {
+    "title": "Comparison and inequality chains",
+    "body": "For \"taller than\" or \"more marks than\" clues, build one chain from greatest to least: A > B > C. Join chains through a shared person. If two people are never compared with each other, their order is unknown. <p>For sign questions such as A ≥ B > C, a conclusion between two letters follows only if every sign between them points the same way. If any sign is \">\" or \"<\", the result is strict; if all are \"≥\" or \"=\", the result keeps the \"≥\". Opposite signs (A > B < C) mean no relation between A and C. If \"A > C\" and \"A = C\" both fail but together cover every case (here: A ≥ C), the answer is \"either\".</p>"
+   },
+   {
+    "title": "The case method",
+    "body": "<ol><li>Read all the clues once and pick the fixed one (\"A sits at the left end\", \"F lives on floor 3\").</li><li>Place clues that connect to someone already placed.</li><li>When a clue fits two ways, draw Case 1 and Case 2 side by side.</li><li>Use \"not\" clues last to cross out a case.</li><li>Fill the last seats by elimination, then check every clue once more.</li></ol>"
    }
   ],
   "varieties": [
    {
-    "type": "linear-seating",
-    "name": "Linear arrangement",
-    "how": "Draw blanks left to right; fix extreme-end clues first.",
+    "type": "linear-row",
+    "name": "Single row",
+    "how": "Fix the end or middle clue first, count seats carefully (third to the left = two people between), and draw both cases when the side is not given.",
     "example": {
-     "q": "A, B, C sit in a row facing North. A is at the left end; C is not next to A. Who is in the middle?",
+     "q": "Seven people A to G sit in a row facing north. Only three people sit to the left of D. Only two people sit between D and A. G sits to the immediate right of A. B sits fourth to the right of C. F sits to the immediate right of D. Who sits second to the left of B?",
      "steps": [
-      "Seats: A _ _",
-      "C is not next to A → C at the right end."
+      "Number seats 1 to 7 from the left. Three people are left of D, so D = 4.",
+      "Two people between D and A: A = 1 or 7. G sits to the right of A, so A = 1 and G = 2.",
+      "F is immediately right of D: F = 5.",
+      "B is fourth to the right of C. Free seats are 3, 6, 7, so C = 3 and B = 7. E takes seat 6.",
+      "Row: A G C D F E B. Second to the left of B (seat 7) is seat 5."
      ],
-     "answer": "B"
+     "answer": "F"
     }
    },
    {
-    "type": "circular-seating",
-    "name": "Circular arrangement",
-    "how": "Draw a circle, place one person, then use left = clockwise (facing centre).",
+    "type": "parallel-rows",
+    "name": "Two parallel rows",
+    "how": "Mark which way each row faces. The facing-north row uses page-left as left; the facing-south row is flipped. Pairs who face each other share a column.",
     "example": {
-     "q": "In the figure (facing the centre), who is third to the left of B?",
+     "q": "Eight friends sit in two rows of four. P, Q, R, S sit in row 1 facing south; A, B, C, D sit in row 2 facing north, so each person faces one person in the other row. Q sits at an end and faces C. A sits to the immediate left of C. R sits to the immediate right of Q. B sits at an end. P faces D. Who faces S?",
      "steps": [
-      "Left = clockwise.",
-      "B → C → D → E"
+      "If Q sat at the page-left end, C would face Q there and A (immediately left of C, facing north) would need a seat further left: impossible. So Q and C are at the page-right end, column 4.",
+      "A is immediately left of C (row 2 faces north, so page-left): A is in column 3.",
+      "Q faces south, so Q's right is page-left: R is in column 3.",
+      "B is at an end of row 2: column 1, leaving D in column 2. P faces D: P is in column 2, so S is in column 1.",
+      "S (column 1) faces B."
      ],
-     "answer": "E",
-     "img": "reasoning/seat-circle8.svg"
+     "answer": "B",
+     "img": "reasoning/seat-parallel.svg"
+    }
+   },
+   {
+    "type": "circular-facing-centre",
+    "name": "Circle facing the centre",
+    "how": "Facing the centre, left = clockwise and right = anticlockwise. Fix one person, number seats clockwise and place the others.",
+    "example": {
+     "q": "Six friends A, B, C, D, E and F stand in a circle facing the centre. B is between F and C. A is between E and D. F is to the immediate left of D. Who is between A and F?",
+     "steps": [
+      "Number the places 0 to 5 clockwise and put D at 0.",
+      "F is immediately left of D; left is clockwise, so F = 1.",
+      "B is between F and C. F's other neighbour is place 2, so B = 2 and C = 3.",
+      "A is between E and D. D's other neighbour is place 5, so A = 5 and E = 4.",
+      "A (5) and F (1) both sit next to place 0, which is D."
+     ],
+     "answer": "D"
+    }
+   },
+   {
+    "type": "circular-facing-outside",
+    "name": "Circle facing outside or mixed",
+    "how": "Facing outside, left = anticlockwise and right = clockwise. For mixed facing, mark each person's arrow and apply the rule one person at a time.",
+    "example": {
+     "q": "Six friends P, Q, R, S, T and U sit around a circular table facing outside. Q is to the immediate right of P. R is second to the left of Q. S sits opposite P. T sits next to Q. Who is to the immediate left of U?",
+     "steps": [
+      "Number seats 0 to 5 clockwise. P = 0.",
+      "Facing outside, right is clockwise: Q = 1.",
+      "Left is anticlockwise: second to the left of Q is seat 1 − 2 = seat 5, so R = 5.",
+      "S is opposite P: S = 3. T sits next to Q, so T = 2 and U = 4.",
+      "Immediate left of U is one seat anticlockwise: seat 3."
+     ],
+     "answer": "S"
+    }
+   },
+   {
+    "type": "square-table",
+    "name": "Square or rectangular table",
+    "how": "Number the seats clockwise like a circle (corners and middles of sides). Facing the centre, left is clockwise. Opposite = half the seats away.",
+    "example": {
+     "q": "Eight people A to H sit around a square table, one at each corner and one at the middle of each side, all facing the centre. A sits at a corner. C sits opposite A. B sits to the immediate left of A. D sits second to the right of B. E sits to the immediate right of C. F sits opposite B. G sits to the immediate left of B. Who sits opposite G?",
+     "steps": [
+      "Number seats 0 to 7 clockwise with A = 0 (even numbers are corners). C is opposite A: C = 4.",
+      "B is immediately left of A (left is clockwise): B = 1.",
+      "D is second to the right of B (anticlockwise): 1 − 2 gives seat 7. D = 7.",
+      "E is immediately right of C: E = 3. F is opposite B: F = 5. G is immediately left of B: G = 2. H takes seat 6.",
+      "Opposite of seat 2 is seat 6."
+     ],
+     "answer": "H"
     }
    },
    {
     "type": "floor-puzzle",
-    "name": "Floor puzzle",
-    "how": "Column of floors; place the person with the most fixed clue first.",
+    "name": "Floors of a building",
+    "how": "Draw floors 1 (bottom) to n (top). Place fixed floors first, then \"immediately above/below\" pairs, then the rest.",
     "example": {
-     "q": "X lives just above Y; Y is on floor 1 of 3. Where is X?",
+     "q": "Seven people A to G live on the seven floors of a building, floor 1 at the bottom and floor 7 at the top. D lives on the middle floor. Only one person lives between D and B, and B lives below D. E lives immediately below B. C lives on the top floor. A lives immediately above F. How many people live between C and G?",
      "steps": [
-      "Y = 1",
-      "X = 2"
+      "Middle floor of 7 is floor 4: D = 4.",
+      "One person between D and B, below D: B = 2. E is immediately below B: E = 1. C = 7.",
+      "Free floors: 3, 5, 6. A is immediately above F, so F = 5 and A = 6 (F = 3 would need A = 4, which is taken).",
+      "G takes floor 3. Between C (7) and G (3) are floors 4, 5, 6."
      ],
-     "answer": "Floor 2"
+     "answer": "Three"
+    }
+   },
+   {
+    "type": "scheduling-puzzle",
+    "name": "Days, months or order of events",
+    "how": "Write the days in a column, place the fixed day first, and treat \"only one between\" as a gap of two days in either direction.",
+    "example": {
+     "q": "Each of P, Q, R, S, T, U and V has an exam on a different day from Monday to Sunday of the same week. Q has the exam on Saturday. Only two people have exams between S and Q. R has the exam on the day after S. Only one person has the exam between P and R. U has the exam after Q. V does not have the exam on Monday. Who has the exam on Friday?",
+     "steps": [
+      "Q = Saturday. Two people between S and Q: S = Wednesday (going past Sunday is impossible).",
+      "R is the day after S: R = Thursday.",
+      "One person between P and R: Tuesday or Saturday. Saturday is taken, so P = Tuesday.",
+      "U is after Q: U = Sunday. Monday and Friday are left for T and V; V is not on Monday, so V = Friday."
+     ],
+     "answer": "V"
+    }
+   },
+   {
+    "type": "grouping-puzzle",
+    "name": "Matching people to attributes",
+    "how": "Draw a grid of people against details. Put ✓ and × from each clue; a row or column with one empty box left gets the ✓.",
+    "example": {
+     "q": "Amit, Bina and Chetan each like a different colour (red, blue, green) and come from different cities (Delhi, Pune, Agra). Bina likes green. The person from Pune likes red. Amit is not from Pune and does not like green. Bina is not from Delhi. Who is from Delhi, and which colour does that person like?",
+     "steps": [
+      "Amit does not like green, and he cannot like red (the red-liker is from Pune, and Amit is not). So Amit likes blue.",
+      "Bina likes green, so Chetan likes red and is from Pune.",
+      "Delhi and Agra are left for Amit and Bina. Bina is not from Delhi, so Amit is from Delhi."
+     ],
+     "answer": "Amit, who likes blue"
+    }
+   },
+   {
+    "type": "comparison-puzzle",
+    "name": "Comparisons and inequalities",
+    "how": "Build one chain from biggest to smallest. Between two letters, a conclusion is definite only if every sign on the way points the same direction.",
+    "example": {
+     "q": "Statement: M ≥ N > O = P ≤ Q.<br>Conclusions: I. M > P. II. Q > O.",
+     "steps": [
+      "I: M ≥ N > O = P. All signs point the same way and one is strict, so M > P. I follows.",
+      "II: O = P ≤ Q gives Q ≥ O. Q could equal O, so \"Q > O\" is not certain. II does not follow."
+     ],
+     "answer": "Only conclusion I follows"
     }
    }
   ],
   "tips": [
-   "Start with clues that fix an exact seat (ends, opposite, \"third to the right\").",
-   "If two cases are possible, keep both drawings and let later clues remove one.",
-   "Re-check the final arrangement against every clue."
+   "Draw the diagram before reading the question asked; most sets have three to five questions on the same arrangement.",
+   "Start with the most fixed clue: an end seat, a named floor, a named day.",
+   "Facing the centre: left is clockwise. Facing outside: left is anticlockwise.",
+   "\"Third to the left\" means two people sit in between; \"two people between\" means a gap of three seats.",
+   "When a clue fits two ways, draw both cases side by side and let a later clue remove one.",
+   "Keep \"not\" clues for the end; they are best at deciding between cases.",
+   "In a circle of n seats, the person opposite is n ÷ 2 places away (only when n is even).",
+   "For sign chains, a single opposite sign between two letters means no conclusion."
   ],
   "traps": [
-   "For a circle facing outward, left and right are reversed (left = anticlockwise).",
-   "\"Second to the right\" skips one seat; it is not the next seat."
+   "In a row facing south, left and right on the page are swapped.",
+   "\"A sits between B and C\" means immediately between, unless the question says otherwise.",
+   "In floor puzzles, check whether the bottom floor is numbered 0 or 1.",
+   "\"A > B\" and \"A = B\" can together make an either case only when the chain gives A ≥ B.",
+   "Do not assume a person faces north because the question forgot to say; check every row and person."
   ]
  },
  "questions": [
@@ -74,7 +207,7 @@
    "id": "r-seating-001",
    "rev": 1,
    "topic": "r-seating",
-   "type": "linear-seating",
+   "type": "linear-row",
    "level": 1,
    "q": "Five friends A, B, C, D and E sit in a row facing North. C sits in the middle. A sits at the extreme left end. B sits to the immediate right of A. E does not sit at the extreme right end. Who sits at the extreme right end?",
    "options": [
@@ -91,7 +224,7 @@
    "id": "r-seating-002",
    "rev": 1,
    "topic": "r-seating",
-   "type": "circular-seating",
+   "type": "circular-facing-centre",
    "level": 1,
    "q": "Six persons sit around a circular table facing the centre, as shown in the figure. Who sits opposite to Q?",
    "options": [
@@ -109,7 +242,7 @@
    "id": "r-seating-003",
    "rev": 1,
    "topic": "r-seating",
-   "type": "linear-seating",
+   "type": "linear-row",
    "level": 2,
    "q": "Six persons P, Q, R, S, T and U sit in a row facing North. R sits at one of the extreme ends. P sits third to the right of R. Q sits to the immediate left of S. T is not an immediate neighbour of P. T sits at one of the extreme ends. Who sits between S and U?",
    "options": [
@@ -126,7 +259,7 @@
    "id": "r-seating-004",
    "rev": 1,
    "topic": "r-seating",
-   "type": "circular-seating",
+   "type": "circular-facing-centre",
    "level": 2,
    "q": "Eight persons sit around a circular table facing the centre, as shown in the figure. Who sits third to the right of D?",
    "options": [
@@ -144,7 +277,7 @@
    "id": "r-seating-005",
    "rev": 1,
    "topic": "r-seating",
-   "type": "circular-seating",
+   "type": "circular-facing-centre",
    "level": 3,
    "q": "A, B, C, D, E and F sit around a circular table facing the centre. A sits opposite D. B sits to the immediate left of A. C sits second to the right of B. E does not sit to the immediate right of D. Who sits opposite F?",
    "options": [

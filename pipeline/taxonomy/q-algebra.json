@@ -1,0 +1,92 @@
+{
+  "topic": "q-algebra",
+  "types": [
+    {
+      "type": "square-identities",
+      "name": "Square identities",
+      "description": "Gives values like a + b, a − b or ab (or a sum of squares) and asks for a² + b², (a + b)², a − b, a⁴ + b⁴ or a product like (a + b)(a − b); no cubes and no 1/x terms.",
+      "concepts": []
+    },
+    {
+      "type": "cube-identities",
+      "name": "Cube identities (two variables)",
+      "description": "Gives a + b or a − b with ab (two variables, no 1/x) and asks for a³ + b³, a³ − b³ or (a ± b)³, or factorises a sum or difference of two cubes.",
+      "concepts": []
+    },
+    {
+      "type": "reciprocal-identities",
+      "name": "x + 1/x type",
+      "description": "Involves x + 1/x, x − 1/x, x² + 1/x², x³ + 1/x³ and similar, including x given as a surd like 2 + √3 or an equation like x² − kx + 1 = 0.",
+      "concepts": [
+        "symmetric-identities-x-1-x-k"
+      ]
+    },
+    {
+      "type": "three-variable-cubes",
+      "name": "a³ + b³ + c³ − 3abc",
+      "description": "Gives a + b + c with ab + bc + ca or a² + b² + c² and asks for a³ + b³ + c³ − 3abc or a² + b² + c² for three variables.",
+      "concepts": [
+        "cubic-formula-a-3-b-3-c-3-3abc"
+      ]
+    },
+    {
+      "type": "conditional-identities",
+      "name": "Conditional identities",
+      "description": "States a condition such as a + b + c = 0, a³ + b³ + c³ = 3abc, a² + b² + c² = ab + bc + ca, or a sum of squares equal to zero, and asks for a value that follows.",
+      "concepts": [
+        "conditional-identities-a-b-c-0"
+      ]
+    },
+    {
+      "type": "simplify-evaluate",
+      "name": "Simplify and evaluate",
+      "description": "Asks to simplify or factorise an algebraic expression, or to find its value when the variables are given numbers (including surds).",
+      "concepts": [
+        "value-putting-method-variable-elimination"
+      ]
+    },
+    {
+      "type": "polynomials",
+      "name": "Polynomials and remainders",
+      "description": "Asks for a remainder, a factor, a quotient after dividing polynomials, the value of k that makes something a factor, or the sum or product of zeroes of a cubic.",
+      "concepts": [
+        "polynomial-division-remainder-theorem",
+        "zeroes-of-polynomials"
+      ]
+    },
+    {
+      "type": "quadratic-equations",
+      "name": "Quadratic equations and roots",
+      "description": "Mentions a quadratic equation or its roots α and β: solving it, the nature of roots, sum and product of roots, or forming a new equation from given roots.",
+      "concepts": [
+        "roots-of-quadratic-equations",
+        "quadratic-equations"
+      ]
+    },
+    {
+      "type": "linear-equations",
+      "name": "Linear equations and word problems",
+      "description": "Solves one or two linear equations, often from a story about costs, heads and legs, ages or numbers, and asks for a variable or a combination of them.",
+      "concepts": [
+        "linear-equations-solve",
+        "word-cost-comparison-solve"
+      ]
+    },
+    {
+      "type": "system-consistency",
+      "name": "Unique, none or infinite solutions",
+      "description": "Asks for the value of k or m that gives a pair of linear equations a unique solution, no solution or infinitely many solutions.",
+      "concepts": [
+        "linear-equations-consistency"
+      ]
+    },
+    {
+      "type": "max-min",
+      "name": "Maximum and minimum values",
+      "description": "Asks for the least or greatest value of an algebraic expression, for example a quadratic, x + 1/x, or a sum under a fixed total.",
+      "concepts": [
+        "minima-and-maxima-of-expressions"
+      ]
+    }
+  ]
+}

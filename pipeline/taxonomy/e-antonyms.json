@@ -1,0 +1,29 @@
+{
+  "topic": "e-antonyms",
+  "types": [
+    {
+      "type": "given-word",
+      "name": "Antonym of a given word",
+      "description": "A single word stands alone after the instruction (often in capitals or bold), e.g. 'Select the most appropriate ANTONYM of the given word. LIBERTY', and the four options are single words.",
+      "concepts": []
+    },
+    {
+      "type": "in-sentence",
+      "name": "Antonym of a word in a sentence",
+      "description": "A full sentence is given with one word underlined, bold or italicised, and the question asks for the antonym (opposite) of that word.",
+      "concepts": []
+    },
+    {
+      "type": "bracket-blank",
+      "name": "Fill the blank with an antonym",
+      "description": "A sentence has a blank followed by a word in brackets, e.g. 'Sheila ______ (failed) all her classes', and the question asks for the antonym of the bracketed word that fits the blank.",
+      "concepts": []
+    },
+    {
+      "type": "from-sentence",
+      "name": "Find the antonym inside the sentence",
+      "description": "A word is named in the question (e.g. 'the ANTONYM of the word Unsure from the given sentence') and the four options are words taken from the sentence itself.",
+      "concepts": []
+    }
+  ]
+}

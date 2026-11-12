@@ -1,0 +1,41 @@
+{
+ "topic": "r-word-order",
+ "types": [
+  {
+   "type": "dictionary-order",
+   "name": "Dictionary order",
+   "description": "Words to be arranged as they would appear in an English dictionary, or asks which word comes first, last or at a given place in dictionary order.",
+   "concepts": []
+  },
+  {
+   "type": "logical-order",
+   "name": "Logical order",
+   "description": "Words to be arranged in a logical and meaningful sequence (stages of a process, life cycle, small to large) rather than alphabetically.",
+   "concepts": []
+  },
+  {
+   "type": "word-formation",
+   "name": "Word formation",
+   "description": "Which word can or cannot be made from the letters of a given word, how many meaningful words can be formed from chosen letters, or which word the jumbled letters make.",
+   "concepts": [
+    "word-formation-and-letter-counting"
+   ]
+  },
+  {
+   "type": "letter-number-word",
+   "name": "Number-coded word",
+   "description": "A number is given to each letter (E = 1, N = 2, T = 3 …) and the question asks which arrangement of numbers spells a meaningful word.",
+   "concepts": [
+    "alphabet-test-word-construction"
+   ]
+  },
+  {
+   "type": "alphabet-test",
+   "name": "Alphabet test",
+   "description": "Letters of a word are arranged in alphabetical order, or letters are counted between positions in the English alphabet (how many letters stay in place, which letter lies midway between H and P).",
+   "concepts": [
+    "alphabetical-letter-positions"
+   ]
+  }
+ ]
+}

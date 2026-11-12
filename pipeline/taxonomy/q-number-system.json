@@ -1,0 +1,88 @@
+{
+  "topic": "q-number-system",
+  "types": [
+    {
+      "type": "number-properties",
+      "name": "Types and properties of numbers",
+      "description": "Asks which number is prime, rational, even or odd, or which statement about a kind of number (prime, co-prime, integer, whole) is true.",
+      "concepts": [
+        "classification-of-numbers"
+      ]
+    },
+    {
+      "type": "divisibility-test",
+      "name": "Is it divisible?",
+      "description": "Gives a fully written number and asks which divisor (such as 7, 8, 11, 72, 88 or 99) divides it exactly.",
+      "concepts": [
+        "divisibility-rules-72-88-99"
+      ]
+    },
+    {
+      "type": "missing-digit",
+      "name": "Find the missing digit",
+      "description": "A number has a missing digit shown as x or * and the question asks which digit makes it divisible by a given number.",
+      "concepts": [
+        "digital-sum-digital-root-properties"
+      ]
+    },
+    {
+      "type": "largest-smallest-divisible",
+      "name": "Largest or smallest number divisible by d",
+      "description": "Asks for the largest or smallest n-digit number, or the number nearest to a given value, that is exactly divisible by a given number, or what to add or subtract to make it so.",
+      "concepts": []
+    },
+    {
+      "type": "unit-digit",
+      "name": "Unit digit of a power or product",
+      "description": "Asks for the last (unit) digit of a large power, product or sum of powers.",
+      "concepts": []
+    },
+    {
+      "type": "remainder",
+      "name": "Remainders",
+      "description": "Asks for the remainder when a number, an expression in n, or a large power is divided by some number.",
+      "concepts": [
+        "remainder-theorems"
+      ]
+    },
+    {
+      "type": "factors",
+      "name": "Number, sum and product of factors",
+      "description": "Asks how many factors (divisors) a number has, how many are odd, even or perfect squares, or their sum or product.",
+      "concepts": [
+        "number-of-factors-sum-product-of-factors"
+      ]
+    },
+    {
+      "type": "factorial-zeros",
+      "name": "Trailing zeros and powers in a factorial",
+      "description": "Asks how many zeros are at the end of a factorial or product, or the highest power of a prime that divides a factorial.",
+      "concepts": []
+    },
+    {
+      "type": "count-in-range",
+      "name": "Counting numbers in a range",
+      "description": "Asks how many numbers between two limits are divisible, or not divisible, by one or more given numbers.",
+      "concepts": [
+        "count-numbers-between"
+      ]
+    },
+    {
+      "type": "recurring-decimals",
+      "name": "Recurring decimals as fractions",
+      "description": "Asks to write a recurring (repeating) decimal such as 0.121212... as a fraction, or to add recurring decimals.",
+      "concepts": [
+        "recurring-decimals-to-fractions"
+      ]
+    },
+    {
+      "type": "consecutive-series",
+      "name": "Consecutive numbers and series sums",
+      "description": "Involves consecutive integers, even or odd numbers, or the sum of a series such as 1 + 2 + ... + n or squares and cubes.",
+      "concepts": [
+        "consecutive-numbers",
+        "ap-gp-hp-progressions-series-summation"
+      ]
+    }
+  ]
+}

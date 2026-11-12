@@ -1,0 +1,41 @@
+{
+  "topic": "e-cloze",
+  "types": [
+    {
+      "type": "cloze-meaning",
+      "name": "Word that fits the meaning",
+      "description": "A passage blank where all four options are the same part of speech (nouns, verbs or adjectives) and only one fits the meaning and logic of the passage.",
+      "concepts": []
+    },
+    {
+      "type": "cloze-collocation",
+      "name": "Word that goes with its neighbour",
+      "description": "A passage blank where the options are near-synonyms and the right one is decided by the word next to it (a fixed pair such as make a decision, known for, pay attention).",
+      "concepts": []
+    },
+    {
+      "type": "cloze-verb-form",
+      "name": "Verb form and tense",
+      "description": "A passage blank whose options are different forms of the same verb (opens / opened / opening / was opened) or different tenses.",
+      "concepts": []
+    },
+    {
+      "type": "cloze-connector",
+      "name": "Connector",
+      "description": "A passage blank whose options are joining words such as but, and, so, because, although, while, however, therefore.",
+      "concepts": []
+    },
+    {
+      "type": "cloze-preposition",
+      "name": "Preposition",
+      "description": "A passage blank whose options are prepositions such as in, on, at, of, for, with, by, from.",
+      "concepts": []
+    },
+    {
+      "type": "cloze-determiner",
+      "name": "Article, pronoun or quantifier",
+      "description": "A passage blank whose options are articles (a, an, the), pronouns (it, they, which, who) or quantifiers (much, many, few, little, some, any).",
+      "concepts": []
+    }
+  ]
+}

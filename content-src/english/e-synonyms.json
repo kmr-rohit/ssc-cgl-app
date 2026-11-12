@@ -1,52 +1,158 @@
 {
   "topic": "e-synonyms",
   "notes": {
-    "summary": "A <b>synonym</b> is a word with the same or nearly the same meaning. SSC gives a word (alone or in a sentence) and asks for its synonym. Regular reading plus daily flashcards is the only reliable preparation; roots and elimination help on the day.",
+    "summary": "A <b>synonym</b> is a word with the same or nearly the same meaning (<i>candid</i> = <i>frank</i>). SSC CGL Tier 1 asks 1 to 2 synonym questions and Tier 2 asks more. Most are a single word with four one-word options; the rest put the word in a sentence or ask you to fill a blank with the synonym of a bracketed word. Recall is fastest, but roots, part of speech, tone (good or bad sense) and elimination solve most unfamiliar words.",
     "concepts": [
-      { "title": "Same meaning, same part of speech", "body": "The answer must match the given word's <b>part of speech</b>. If the word is an adjective (<i>candid</i>), the synonym is an adjective (<i>frank</i>), not a noun (<i>frankness</i>)." },
-      { "title": "Use roots and prefixes", "body": "<ul><li><b>bene-</b> = good (<i>benevolent</i> = kind)</li><li><b>mal-</b> = bad (<i>malicious</i> = spiteful)</li><li><b>loqu-</b> = speak (<i>loquacious</i> = talkative)</li><li><b>-cide</b> = kill; <b>omni-</b> = all; <b>chron-</b> = time</li></ul>" },
-      { "title": "Context sentences", "body": "When the word is in a sentence, the meaning in <b>that</b> sentence counts. <i>The <u>novel</u> idea impressed everyone</i> → novel = new, not 'book'." }
+      {
+        "title": "How SSC asks synonym questions",
+        "body": "<ul><li><b>Given word</b>: <i>Select the most appropriate synonym of the given word. LUCID</i>. About 3 in 5 questions look like this.</li><li><b>Word in a sentence</b>: one word is underlined or bold. Read the whole sentence: the word may be used in a less common sense.</li><li><b>Bracket and blank</b>: <i>The doctor ______ (advised) rest.</i> The answer must mean the bracketed word <u>and</u> fit the grammar of the blank (<i>prescribed</i>, not <i>prescription</i>).</li><li><b>Meaning of a word</b>: options are short definitions, e.g. <i>Lacuna</i>: <i>a gap or missing part</i>.</li></ul>"
+      },
+      {
+        "title": "A four-step method",
+        "body": "<ol><li><b>Say the meaning in your own words</b> before reading the options.</li><li><b>Match the part of speech.</b> The synonym of an adjective is an adjective: <i>diligent</i> = <i>industrious</i>, not <i>industry</i>.</li><li><b>Match the tone.</b> Positive words have positive synonyms. <i>Frugal</i> (careful with money, a mild word) is closer to <i>thrifty</i> than to <i>miserly</i> (an insult).</li><li><b>Eliminate</b> the antonym (it is almost always in the options), look-alike words, and words that are only related in topic.</li></ol>"
+      },
+      {
+        "title": "Roots that unlock unfamiliar words",
+        "body": "<table><thead><tr><th>Root</th><th>Meaning</th><th>Examples</th></tr></thead><tbody><tr><td>bene</td><td>good, well</td><td>benevolent (kind), benign (harmless), benefactor</td></tr><tr><td>mal / male</td><td>bad</td><td>malevolent (wishing harm), malice, malign (speak ill of)</td></tr><tr><td>loqu / locu</td><td>speak</td><td>loquacious (talkative), eloquent, soliloquy</td></tr><tr><td>chron</td><td>time</td><td>chronic (long-lasting), chronicle, anachronism</td></tr><tr><td>cred</td><td>believe</td><td>credulous (too ready to believe), credible, incredulous</td></tr><tr><td>voc / vok</td><td>call, voice</td><td>vociferous (loud), revoke, invoke</td></tr><tr><td>spec / spic</td><td>look</td><td>circumspect (cautious), conspicuous, perspicacious (sharp-minded)</td></tr><tr><td>path</td><td>feeling</td><td>apathy (no interest), empathy, pathetic (pitiful)</td></tr><tr><td>phil</td><td>love</td><td>philanthropy, bibliophile</td></tr><tr><td>mis / miso</td><td>hate</td><td>misanthrope, misogyny</td></tr><tr><td>magn</td><td>great</td><td>magnanimous (generous in spirit), magnify, magnate</td></tr><tr><td>anim</td><td>mind, life</td><td>animosity (hatred), unanimous, equanimity (calmness)</td></tr><tr><td>ver</td><td>true</td><td>veracity (truthfulness), verify, verdict</td></tr><tr><td>fid</td><td>faith</td><td>fidelity (loyalty), confide, perfidious (treacherous)</td></tr><tr><td>terr</td><td>earth</td><td>terrestrial, territory, subterranean</td></tr><tr><td>omni</td><td>all</td><td>omnipresent, omniscient, omnivorous</td></tr><tr><td>ambi / amphi</td><td>both</td><td>ambiguous (two meanings), ambivalent, amphibian</td></tr><tr><td>luc / lum</td><td>light</td><td>lucid (clear), luminous, elucidate (explain)</td></tr><tr><td>pac / plac</td><td>peace, please</td><td>placid (calm), pacify, placate (soothe)</td></tr><tr><td>vit / viv</td><td>life</td><td>vivacious (lively), vital, revive</td></tr></tbody></table>"
+      },
+      {
+        "title": "Prefixes and suffixes",
+        "body": "<table><thead><tr><th>Part</th><th>Meaning</th><th>Examples</th></tr></thead><tbody><tr><td>in-, im-, il-, ir-, un-, dis-</td><td>not, opposite</td><td>impeccable (without fault), illegible, irrevocable, dishonest</td></tr><tr><td>ab-</td><td>away from</td><td>abstain, abhor, abdicate</td></tr><tr><td>ante- / pre-</td><td>before</td><td>antecedent, premonition</td></tr><tr><td>circum-</td><td>around</td><td>circumvent (get around), circumspect</td></tr><tr><td>contra- / anti-</td><td>against</td><td>contradict, antidote</td></tr><tr><td>e- / ex-</td><td>out</td><td>eradicate (root out), exonerate (free from blame), exhume</td></tr><tr><td>sub-</td><td>under</td><td>subdue, subservient</td></tr><tr><td>-ous, -ious, -ful</td><td>full of</td><td>tenacious, wrathful (full of anger)</td></tr><tr><td>-less</td><td>without</td><td>heartless, ruthless, fruitless (= futile)</td></tr><tr><td>-ate, -ify, -ize</td><td>make, do (verb)</td><td>alleviate, pacify, scrutinize</td></tr><tr><td>-ity, -ness, -ance</td><td>quality (noun)</td><td>paucity, alacrity, vigilance</td></tr></tbody></table><small>A prefix only gives a hint. <i>Invaluable</i> means <b>very</b> valuable, and <i>inflammable</i> means <b>easily</b> set on fire.</small>"
+      },
+      {
+        "title": "High-frequency words: A to D",
+        "body": "<table><thead><tr><th>Word</th><th>Meaning</th><th>Synonyms</th></tr></thead><tbody><tr><td>Abate</td><td>become less strong</td><td>subside, lessen, diminish</td></tr><tr><td>Abhor</td><td>hate very much</td><td>detest, loathe</td></tr><tr><td>Abort</td><td>stop before completion</td><td>end, terminate, call off</td></tr><tr><td>Abstain</td><td>keep oneself from</td><td>refrain, desist</td></tr><tr><td>Acumen</td><td>sharp judgement</td><td>shrewdness, insight</td></tr><tr><td>Adamant</td><td>refusing to change one's mind</td><td>stubborn, unyielding, inflexible</td></tr><tr><td>Admonish</td><td>warn or scold firmly</td><td>reprimand, rebuke, reprove</td></tr><tr><td>Adversity</td><td>a difficult time</td><td>hardship, misfortune</td></tr><tr><td>Alacrity</td><td>cheerful readiness</td><td>eagerness, promptness</td></tr><tr><td>Alleviate</td><td>make pain or trouble less</td><td>relieve, ease, mitigate</td></tr><tr><td>Ambiguous</td><td>having more than one meaning</td><td>unclear, equivocal, vague</td></tr><tr><td>Amiable</td><td>friendly and pleasant</td><td>affable, genial</td></tr><tr><td>Apathy</td><td>lack of interest or feeling</td><td>indifference</td></tr><tr><td>Arduous</td><td>needing great effort</td><td>laborious, strenuous, difficult</td></tr><tr><td>Audacious</td><td>very bold</td><td>daring, fearless</td></tr><tr><td>Austere</td><td>strict and plain</td><td>severe, stern, simple</td></tr><tr><td>Banal</td><td>dull, without originality</td><td>trite, hackneyed, commonplace</td></tr><tr><td>Benevolent</td><td>kind, wishing good</td><td>charitable, generous</td></tr><tr><td>Brazen</td><td>bold without shame</td><td>shameless, impudent</td></tr><tr><td>Cajole</td><td>persuade by flattery</td><td>coax, wheedle</td></tr><tr><td>Callous</td><td>not caring about others' pain</td><td>heartless, insensitive</td></tr><tr><td>Candid</td><td>honest and direct</td><td>frank, open, outspoken</td></tr><tr><td>Capricious</td><td>changing mood suddenly</td><td>fickle, whimsical</td></tr><tr><td>Cherish</td><td>hold dear, care for</td><td>treasure, nurture, value</td></tr><tr><td>Clandestine</td><td>done secretly</td><td>covert, secret, furtive</td></tr><tr><td>Confiscate</td><td>take away by authority</td><td>seize, impound</td></tr><tr><td>Cordial</td><td>warm and friendly</td><td>amiable, hearty</td></tr><tr><td>Credulous</td><td>too ready to believe</td><td>gullible, naive</td></tr><tr><td>Cryptic</td><td>with a hidden meaning</td><td>mysterious, obscure, enigmatic</td></tr><tr><td>Dearth</td><td>shortage</td><td>scarcity, paucity, lack</td></tr><tr><td>Debacle</td><td>a complete failure</td><td>fiasco, disaster</td></tr><tr><td>Deride</td><td>laugh at with contempt</td><td>mock, ridicule, scoff at</td></tr><tr><td>Diligent</td><td>hard-working and careful</td><td>industrious, assiduous, careful</td></tr><tr><td>Docile</td><td>easily controlled</td><td>obedient, submissive, meek</td></tr></tbody></table>"
+      },
+      {
+        "title": "High-frequency words: E to M",
+        "body": "<table><thead><tr><th>Word</th><th>Meaning</th><th>Synonyms</th></tr></thead><tbody><tr><td>Eccentric</td><td>unusual in behaviour</td><td>odd, peculiar, quirky</td></tr><tr><td>Eloquent</td><td>fluent and persuasive in speech</td><td>articulate, expressive</td></tr><tr><td>Enormous</td><td>very large</td><td>huge, colossal, immense</td></tr><tr><td>Ephemeral</td><td>lasting a very short time</td><td>transient, fleeting, short-lived</td></tr><tr><td>Eradicate</td><td>destroy completely</td><td>root out, eliminate, wipe out</td></tr><tr><td>Exonerate</td><td>declare free from blame</td><td>acquit, absolve, vindicate</td></tr><tr><td>Fallacy</td><td>a mistaken belief</td><td>misconception, error</td></tr><tr><td>Feeble</td><td>weak</td><td>frail, infirm, faint</td></tr><tr><td>Fervent</td><td>showing strong feeling</td><td>ardent, passionate, zealous</td></tr><tr><td>Frugal</td><td>careful with money</td><td>thrifty, economical, sparing</td></tr><tr><td>Futile</td><td>having no result</td><td>useless, vain, fruitless</td></tr><tr><td>Garrulous</td><td>talking too much</td><td>talkative, loquacious, chatty</td></tr><tr><td>Gregarious</td><td>fond of company</td><td>sociable, outgoing</td></tr><tr><td>Hamper</td><td>slow down progress</td><td>hinder, impede, obstruct</td></tr><tr><td>Haughty</td><td>proud and looking down on others</td><td>arrogant, conceited, disdainful</td></tr><tr><td>Impeccable</td><td>without any fault</td><td>flawless, perfect, faultless</td></tr><tr><td>Indolent</td><td>avoiding work</td><td>lazy, idle, slothful</td></tr><tr><td>Insolent</td><td>rude and disrespectful</td><td>impudent, impertinent</td></tr><tr><td>Jovial</td><td>cheerful and friendly</td><td>merry, jolly</td></tr><tr><td>Judicious</td><td>showing good judgement</td><td>sensible, prudent, wise</td></tr><tr><td>Lacuna</td><td>a gap or missing part</td><td>gap, hiatus, void</td></tr><tr><td>Lethargic</td><td>lacking energy</td><td>sluggish, inactive, listless</td></tr><tr><td>Loquacious</td><td>very talkative</td><td>garrulous, chatty, voluble</td></tr><tr><td>Lucid</td><td>easy to understand</td><td>clear, intelligible</td></tr><tr><td>Malevolent</td><td>wishing harm to others</td><td>malicious, spiteful, hostile</td></tr><tr><td>Meticulous</td><td>very careful about details</td><td>painstaking, scrupulous, thorough</td></tr><tr><td>Mitigate</td><td>make less severe</td><td>alleviate, lessen, ease</td></tr><tr><td>Munificent</td><td>very generous</td><td>bountiful, liberal, magnanimous</td></tr></tbody></table>"
+      },
+      {
+        "title": "High-frequency words: N to Z",
+        "body": "<table><thead><tr><th>Word</th><th>Meaning</th><th>Synonyms</th></tr></thead><tbody><tr><td>Nefarious</td><td>wicked, criminal</td><td>villainous, evil</td></tr><tr><td>Obstinate</td><td>refusing to change</td><td>stubborn, obdurate, headstrong</td></tr><tr><td>Opulent</td><td>showing great wealth</td><td>luxurious, lavish, rich</td></tr><tr><td>Ostentatious</td><td>meant to impress others</td><td>showy, pretentious, flamboyant</td></tr><tr><td>Paucity</td><td>a small amount</td><td>scarcity, dearth, shortage</td></tr><tr><td>Pensive</td><td>deep in thought</td><td>thoughtful, reflective</td></tr><tr><td>Placid</td><td>calm, not easily upset</td><td>tranquil, serene</td></tr><tr><td>Pristine</td><td>in original, unspoilt condition</td><td>pure, spotless, untouched</td></tr><tr><td>Prudent</td><td>careful about the future</td><td>wise, sensible, judicious</td></tr><tr><td>Quaint</td><td>attractively old-fashioned</td><td>charming, picturesque</td></tr><tr><td>Rancour</td><td>long-lasting bitterness</td><td>resentment, animosity, malice</td></tr><tr><td>Reticent</td><td>not revealing thoughts easily</td><td>reserved, restrained, taciturn</td></tr><tr><td>Rudimentary</td><td>basic</td><td>elementary, fundamental</td></tr><tr><td>Sagacious</td><td>wise, with good judgement</td><td>shrewd, astute, wise</td></tr><tr><td>Sporadic</td><td>happening now and then</td><td>occasional, irregular, intermittent</td></tr><tr><td>Stringent</td><td>strict</td><td>rigorous, severe, tough</td></tr><tr><td>Succinct</td><td>brief and clear</td><td>concise, terse, pithy</td></tr><tr><td>Taciturn</td><td>saying very little</td><td>reserved, uncommunicative</td></tr><tr><td>Tenacious</td><td>holding firmly, not giving up</td><td>persistent, determined, resolute</td></tr><tr><td>Trepidation</td><td>fear about what may happen</td><td>anxiety, apprehension, dread</td></tr><tr><td>Ubiquitous</td><td>found everywhere</td><td>omnipresent, pervasive</td></tr><tr><td>Vacillate</td><td>keep changing one's mind</td><td>waver, hesitate, dither</td></tr><tr><td>Venerate</td><td>respect deeply</td><td>revere, honour, worship</td></tr><tr><td>Verbose</td><td>using too many words</td><td>wordy, long-winded, prolix</td></tr><tr><td>Vindicate</td><td>prove right or clear of blame</td><td>justify, exonerate</td></tr><tr><td>Vivacious</td><td>lively and attractive</td><td>spirited, sprightly</td></tr><tr><td>Vogue</td><td>what is popular at a time</td><td>fashion, trend, craze</td></tr><tr><td>Wane</td><td>become smaller or weaker</td><td>decline, diminish, ebb</td></tr><tr><td>Wrathful</td><td>very angry</td><td>furious, irate, enraged</td></tr><tr><td>Zeal</td><td>great energy for a cause</td><td>enthusiasm, fervour, passion</td></tr></tbody></table>"
+      },
+      {
+        "title": "Look-alike words that trap you",
+        "body": "Options often include a word that <u>looks</u> like the given word but means something else.<table><thead><tr><th>Word</th><th>Means</th><th>Do not confuse with</th></tr></thead><tbody><tr><td>Ephemeral</td><td>short-lived</td><td>ethereal (delicate, heavenly)</td></tr><tr><td>Eminent</td><td>famous, respected</td><td>imminent (about to happen)</td></tr><tr><td>Principle</td><td>a basic rule, axiom</td><td>principal (head of a school; main)</td></tr><tr><td>Affluent</td><td>rich</td><td>fluent (smooth in speech)</td></tr><tr><td>Credible</td><td>believable</td><td>credulous (too ready to believe)</td></tr><tr><td>Judicious</td><td>wise</td><td>judicial (of courts)</td></tr><tr><td>Continual</td><td>repeated often</td><td>continuous (without a break)</td></tr><tr><td>Industrious</td><td>hard-working</td><td>industrial (of industry)</td></tr><tr><td>Venal</td><td>open to bribery</td><td>venial (easily forgiven)</td></tr><tr><td>Deprecate</td><td>disapprove of</td><td>depreciate (lose value)</td></tr><tr><td>Elicit</td><td>draw out (a reply)</td><td>illicit (illegal)</td></tr><tr><td>Complement</td><td>complete, go well with</td><td>compliment (praise)</td></tr></tbody></table>"
+      },
+      {
+        "title": "One word, several senses",
+        "body": "In sentence questions the meaning depends on the context. Read the sentence before choosing.<ul><li><b>Grave</b>: <i>a grave mistake</i> = serious; <i>dug a grave</i> = tomb.</li><li><b>Fair</b>: <i>a fair decision</i> = just; <i>fair skin</i> = light; <i>a trade fair</i> = exhibition.</li><li><b>Check</b>: <i>check the answers</i> = examine; <i>check the spread of disease</i> = control, curb.</li><li><b>Sound</b>: <i>sound advice</i> = sensible; <i>sound sleep</i> = deep; <i>safe and sound</i> = unharmed.</li><li><b>Hard</b>: <i>hard work</i> = tough; <i>a hard surface</i> = firm; <i>hard-earned</i> money = earned with effort.</li><li><b>Vogue</b>: <i>in vogue</i> = in fashion, popular.</li></ul>"
+      }
     ],
     "varieties": [
-      { "type": "direct", "name": "Direct word", "how": "Recall the meaning; if unsure, use roots and eliminate options with the opposite sense.", "example": { "q": "Synonym of <b>BENEVOLENT</b>", "steps": ["<i>bene</i> = good, <i>vol</i> = wish.", "Wishing good → kind."], "answer": "Kind" } },
-      { "type": "in-sentence", "name": "Word in a sentence", "how": "Read the sentence, decide the meaning used there, then match.", "example": { "q": "The old man's <b>frugal</b> habits helped him save a fortune.", "steps": ["Saving a fortune suggests careful spending.", "Frugal = thrifty."], "answer": "Thrifty" } }
+      {
+        "type": "given-word",
+        "name": "Synonym of a given word",
+        "how": "Say the meaning in your own words, then pick the option with the same meaning, part of speech and tone. Strike out the antonym and look-alikes first.",
+        "example": {
+          "q": "Select the most appropriate synonym of the given word.<br><b>Benevolent</b>",
+          "steps": [
+            "<i>bene</i> = good, <i>vol</i> = wish: wishing good to others.",
+            "Options: Kind, Hostile, Cunning, Timid. <i>Hostile</i> is the opposite sense.",
+            "Only <i>kind</i> means wishing or doing good."
+          ],
+          "answer": "Kind"
+        }
+      },
+      {
+        "type": "in-sentence",
+        "name": "Synonym of a word in a sentence",
+        "how": "Read the full sentence and decide what the word means here. Put each option into the sentence; the right one keeps the same meaning and grammar.",
+        "example": {
+          "q": "Select the most appropriate synonym of the underlined word.<br>Narcotic drug addiction is in <u>vogue</u> these days, as it is the most popular form of substance abuse.",
+          "steps": [
+            "<i>in vogue</i> = in fashion, popular. The sentence itself says <i>most popular</i>.",
+            "Options: demand, obscurity, standard, fashion.",
+            "<i>in fashion</i> keeps the meaning; <i>obscurity</i> is the opposite."
+          ],
+          "answer": "fashion"
+        }
+      },
+      {
+        "type": "bracket-blank",
+        "name": "Fill the blank with a synonym",
+        "how": "Find the synonym of the bracketed word, then check it fits the blank in tense, number and part of speech.",
+        "example": {
+          "q": "Select the most appropriate synonym of the word in brackets to fill in the blank.<br>The doctor has ______ (advised) medicine for the treatment of the disease.",
+          "steps": [
+            "<i>has ______</i> needs a past participle (V3).",
+            "A doctor who advises medicine <i>prescribes</i> it.",
+            "Pick the V3 form: <i>prescribed</i>, not <i>prescription</i> or <i>prescribe</i>."
+          ],
+          "answer": "prescribed"
+        }
+      },
+      {
+        "type": "word-meaning",
+        "name": "Meaning of a word",
+        "how": "The options are short definitions. Match the definition, not a word that only sounds related.",
+        "example": {
+          "q": "Select the most appropriate meaning of the given word.<br><b>Lacuna</b>",
+          "steps": [
+            "<i>Lacuna</i> comes from Latin <i>lacus</i> (pool, hollow): an empty space.",
+            "Options: a gap or missing part; a small lake; a feeling of sadness; a type of tax.",
+            "<i>a small lake</i> is a root trap; the English word means a gap."
+          ],
+          "answer": "A gap or missing part"
+        }
+      }
     ],
     "tips": [
-      "Eliminate any option that is an antonym; SSC often places the antonym as a trap.",
-      "Learn words in pairs (word + synonym) from flashcards daily.",
-      "Check part of speech before choosing."
+      "Think of the meaning before you look at the options, so look-alike words cannot pull you.",
+      "Match part of speech: an adjective needs an adjective, a verb needs a verb.",
+      "Match the tone: a positive word has a positive synonym, a negative word a negative one.",
+      "The antonym is almost always one of the options. Cross it out first.",
+      "For a word in a sentence, plug each option into the sentence and read it again.",
+      "Learn roots (bene, mal, loqu, chron, cred) to guess unfamiliar words.",
+      "Revise 10 to 15 words a day with the flashcards; repetition beats long lists."
     ],
     "traps": [
-      "Words that look or sound similar: <i>eminent</i> (famous) vs <i>imminent</i> (about to happen).",
-      "A word with a related but different meaning: <i>stingy</i> is not a synonym of <i>frugal</i> in a positive context."
+      "Look-alike options: <i>ethereal</i> for <i>ephemeral</i>, <i>fluent</i> for <i>affluent</i>, <i>imminent</i> for <i>eminent</i>.",
+      "Related but not equal: <i>principle</i> is a rule (<i>axiom</i>), not a <i>headmaster</i>.",
+      "Degree matters: <i>frugal</i> is closer to <i>thrifty</i> than to <i>miserly</i>.",
+      "In bracket-blank questions the right word in the wrong form (<i>prescription</i> for a verb blank) is still wrong.",
+      "<i>Invaluable</i> means priceless and <i>inflammable</i> means easily burnt; the prefix does not mean <i>not</i> here."
     ]
   },
   "questions": [
-    { "id": "e-synonyms-001", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 1, "q": "Select the most appropriate synonym of the given word.<br><b>Candid</b>", "options": ["Frank", "Secretive", "Cruel", "Timid"], "answer": 0, "solution": "<b>Candid</b> means honest and straightforward = <b>Frank</b>. <i>Secretive</i> is close to its opposite.", "source": "test-data" },
-    { "id": "e-synonyms-002", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 1, "q": "Select the most appropriate synonym of the given word.<br><b>Abundant</b>", "options": ["Scarce", "Plentiful", "Empty", "Narrow"], "answer": 1, "solution": "<b>Abundant</b> = existing in large quantities = <b>Plentiful</b>. <i>Scarce</i> is the antonym.", "source": "test-data" },
-    { "id": "e-synonyms-003", "rev": 1, "topic": "e-synonyms", "type": "in-sentence", "level": 2, "q": "Select the most appropriate synonym of the bold word.<br>Her <b>meticulous</b> notes made it easy for the team to repeat the experiment.", "options": ["Careless", "Hasty", "Painstaking", "Brief"], "answer": 2, "solution": "Notes that let others repeat an experiment must be very detailed and careful. <b>Meticulous</b> = <b>Painstaking</b>.", "source": "test-data" },
-    { "id": "e-synonyms-004", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 2, "q": "Select the most appropriate synonym of the given word.<br><b>Loquacious</b>", "options": ["Reserved", "Talkative", "Angry", "Clever"], "answer": 1, "solution": "Root <i>loqu</i> = speak. <b>Loquacious</b> = fond of talking = <b>Talkative</b>.", "source": "test-data" },
-    { "id": "e-synonyms-005", "rev": 1, "topic": "e-synonyms", "type": "in-sentence", "level": 3, "q": "Select the most appropriate synonym of the bold word.<br>The committee's decision was <b>arbitrary</b>; no one could explain the reasons behind it.", "options": ["Unanimous", "Capricious", "Judicious", "Lawful"], "answer": 1, "solution": "A decision without explainable reasons is based on whim. <b>Arbitrary</b> = <b>Capricious</b>. <i>Judicious</i> (wise, well judged) is nearly the opposite.", "source": "test-data" },
-    { "id": "e-synonyms-006", "rev": 1, "topic": "e-synonyms", "type": "direct", "level": 3, "q": "Select the most appropriate synonym of the given word.<br><b>Ephemeral</b>", "options": ["Eternal", "Transient", "Ethereal", "Essential"], "answer": 1, "solution": "<b>Ephemeral</b> = lasting a very short time = <b>Transient</b>. <i>Ethereal</i> (delicate, heavenly) is a look-alike trap; <i>Eternal</i> is the antonym.", "source": "test-data" }
+    {"id":"e-synonyms-001","rev":1,"topic":"e-synonyms","type":"given-word","level":1,"q":"Select the most appropriate synonym of the given word.<br><b>Candid</b>","options":["Frank","Secretive","Cruel","Timid"],"answer":0,"solution":"<b>Candid</b> means honest and straightforward = <b>Frank</b>. <i>Secretive</i> is close to its opposite.","source":"test-data"},
+    {"id":"e-synonyms-002","rev":1,"topic":"e-synonyms","type":"given-word","level":1,"q":"Select the most appropriate synonym of the given word.<br><b>Abundant</b>","options":["Scarce","Plentiful","Empty","Narrow"],"answer":1,"solution":"<b>Abundant</b> = existing in large quantities = <b>Plentiful</b>. <i>Scarce</i> is the antonym.","source":"test-data"},
+    {"id":"e-synonyms-003","rev":1,"topic":"e-synonyms","type":"in-sentence","level":2,"q":"Select the most appropriate synonym of the bold word.<br>Her <b>meticulous</b> notes made it easy for the team to repeat the experiment.","options":["Careless","Hasty","Painstaking","Brief"],"answer":2,"solution":"Notes that let others repeat an experiment must be very detailed and careful. <b>Meticulous</b> = <b>Painstaking</b>.","source":"test-data"},
+    {"id":"e-synonyms-004","rev":1,"topic":"e-synonyms","type":"given-word","level":2,"q":"Select the most appropriate synonym of the given word.<br><b>Loquacious</b>","options":["Reserved","Talkative","Angry","Clever"],"answer":1,"solution":"Root <i>loqu</i> = speak. <b>Loquacious</b> = fond of talking = <b>Talkative</b>.","source":"test-data"},
+    {"id":"e-synonyms-005","rev":1,"topic":"e-synonyms","type":"in-sentence","level":3,"q":"Select the most appropriate synonym of the bold word.<br>The committee's decision was <b>arbitrary</b>; no one could explain the reasons behind it.","options":["Unanimous","Capricious","Judicious","Lawful"],"answer":1,"solution":"A decision without explainable reasons is based on whim. <b>Arbitrary</b> = <b>Capricious</b>. <i>Judicious</i> (wise, well judged) is nearly the opposite.","source":"test-data"},
+    {"id":"e-synonyms-006","rev":1,"topic":"e-synonyms","type":"given-word","level":3,"q":"Select the most appropriate synonym of the given word.<br><b>Ephemeral</b>","options":["Eternal","Transient","Ethereal","Essential"],"answer":1,"solution":"<b>Ephemeral</b> = lasting a very short time = <b>Transient</b>. <i>Ethereal</i> (delicate, heavenly) is a look-alike trap; <i>Eternal</i> is the antonym.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-syn-01", "front": "Candid", "back": "Frank, honest", "deck": "vocab" },
-    { "id": "fc-e-syn-02", "front": "Abundant", "back": "Plentiful, ample", "deck": "vocab" },
-    { "id": "fc-e-syn-03", "front": "Meticulous", "back": "Painstaking, very careful", "deck": "vocab" },
-    { "id": "fc-e-syn-04", "front": "Loquacious", "back": "Talkative, garrulous", "deck": "vocab" },
-    { "id": "fc-e-syn-05", "front": "Arbitrary", "back": "Capricious, random, based on whim", "deck": "vocab" },
-    { "id": "fc-e-syn-06", "front": "Ephemeral", "back": "Transient, short-lived", "deck": "vocab" },
-    { "id": "fc-e-syn-07", "front": "Benevolent", "back": "Kind, generous", "deck": "vocab" },
-    { "id": "fc-e-syn-08", "front": "Frugal", "back": "Thrifty, economical", "deck": "vocab" },
-    { "id": "fc-e-syn-09", "front": "Obstinate", "back": "Stubborn, headstrong", "deck": "vocab" },
-    { "id": "fc-e-syn-10", "front": "Diligent", "back": "Hard-working, industrious", "deck": "vocab" },
-    { "id": "fc-e-syn-11", "front": "Lethargic", "back": "Sluggish, lazy, inactive", "deck": "vocab" },
-    { "id": "fc-e-syn-12", "front": "Audacious", "back": "Bold, daring", "deck": "vocab" },
-    { "id": "fc-e-syn-13", "front": "Feeble", "back": "Weak, frail", "deck": "vocab" },
-    { "id": "fc-e-syn-14", "front": "Vindicate", "back": "Clear of blame, justify", "deck": "vocab" },
-    { "id": "fc-e-syn-15", "front": "Pristine", "back": "Spotless, unspoiled, in original condition", "deck": "vocab" },
-    { "id": "fc-e-syn-16", "front": "Lucid", "back": "Clear, easy to understand", "deck": "vocab" },
-    { "id": "fc-e-syn-17", "front": "Placid", "back": "Calm, peaceful", "deck": "vocab" },
-    { "id": "fc-e-syn-18", "front": "Ostentatious", "back": "Showy, pretentious", "deck": "vocab" }
+    {"id":"fc-e-syn-01","front":"Candid","back":"Frank, honest","deck":"vocab"},
+    {"id":"fc-e-syn-02","front":"Abundant","back":"Plentiful, ample","deck":"vocab"},
+    {"id":"fc-e-syn-03","front":"Meticulous","back":"Painstaking, very careful","deck":"vocab"},
+    {"id":"fc-e-syn-04","front":"Loquacious","back":"Talkative, garrulous","deck":"vocab"},
+    {"id":"fc-e-syn-05","front":"Arbitrary","back":"Capricious, random, based on whim","deck":"vocab"},
+    {"id":"fc-e-syn-06","front":"Ephemeral","back":"Transient, short-lived","deck":"vocab"},
+    {"id":"fc-e-syn-07","front":"Benevolent","back":"Kind, generous","deck":"vocab"},
+    {"id":"fc-e-syn-08","front":"Frugal","back":"Thrifty, economical","deck":"vocab"},
+    {"id":"fc-e-syn-09","front":"Obstinate","back":"Stubborn, headstrong","deck":"vocab"},
+    {"id":"fc-e-syn-10","front":"Diligent","back":"Hard-working, industrious","deck":"vocab"},
+    {"id":"fc-e-syn-11","front":"Lethargic","back":"Sluggish, lazy, inactive","deck":"vocab"},
+    {"id":"fc-e-syn-12","front":"Audacious","back":"Bold, daring","deck":"vocab"},
+    {"id":"fc-e-syn-13","front":"Feeble","back":"Weak, frail","deck":"vocab"},
+    {"id":"fc-e-syn-14","front":"Vindicate","back":"Clear of blame, justify","deck":"vocab"},
+    {"id":"fc-e-syn-15","front":"Pristine","back":"Spotless, unspoiled, in original condition","deck":"vocab"},
+    {"id":"fc-e-syn-16","front":"Lucid","back":"Clear, easy to understand","deck":"vocab"},
+    {"id":"fc-e-syn-17","front":"Placid","back":"Calm, peaceful","deck":"vocab"},
+    {"id":"fc-e-syn-18","front":"Ostentatious","back":"Showy, pretentious","deck":"vocab"},
+    {"id":"fc-e-syn-19","front":"Alacrity","back":"Eagerness, cheerful readiness","deck":"vocab"},
+    {"id":"fc-e-syn-20","front":"Paucity","back":"Scarcity, dearth","deck":"vocab"},
+    {"id":"fc-e-syn-21","front":"Garrulous","back":"Talkative, loquacious","deck":"vocab"},
+    {"id":"fc-e-syn-22","front":"Clandestine","back":"Secret, covert","deck":"vocab"},
+    {"id":"fc-e-syn-23","front":"Abhor","back":"Hate, detest, loathe","deck":"vocab"},
+    {"id":"fc-e-syn-24","front":"Sagacious","back":"Wise, shrewd","deck":"vocab"},
+    {"id":"fc-e-syn-25","front":"Ubiquitous","back":"Found everywhere, omnipresent","deck":"vocab"},
+    {"id":"fc-e-syn-26","front":"Vacillate","back":"Waver, hesitate","deck":"vocab"},
+    {"id":"fc-e-syn-27","front":"Rancour","back":"Bitterness, resentment","deck":"vocab"},
+    {"id":"fc-e-syn-28","front":"Succinct","back":"Brief, concise","deck":"vocab"},
+    {"id":"fc-e-syn-29","front":"Lacuna","back":"Gap, hiatus","deck":"vocab"},
+    {"id":"fc-e-syn-30","front":"Munificent","back":"Very generous, bountiful","deck":"vocab"}
   ]
 }

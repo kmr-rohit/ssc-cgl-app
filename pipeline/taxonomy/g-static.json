@@ -1,0 +1,79 @@
+{
+  "topic": "g-static",
+  "types": [
+    {
+      "type": "sports-rules-terms",
+      "name": "Sports rules and terms",
+      "description": "Players per side, match duration, terms used in each sport and national sports of countries.",
+      "concepts": [
+        "sports-terms",
+        "flag-bearers-and-ceremonies"
+      ]
+    },
+    {
+      "type": "sports-trophies-venues",
+      "name": "Trophies, tournaments and stadiums",
+      "description": "Cups and trophies by sport, when tournaments started, host cities and stadiums.",
+      "concepts": [
+        "sports-tournaments-and-cups",
+        "stadiums-and-sports-venues"
+      ]
+    },
+    {
+      "type": "sports-events-winners",
+      "name": "Sports events and champions",
+      "description": "Olympics, Asian Games, World Cups, National Games and India's medal winners and champions.",
+      "concepts": [
+        "sports-champions-and-winners"
+      ]
+    },
+    {
+      "type": "sports-awards",
+      "name": "Sports awards",
+      "description": "Khel Ratna, Arjuna, Dronacharya and other sports honours and their winners.",
+      "concepts": [
+        "sports-honors-and-awards"
+      ]
+    },
+    {
+      "type": "awards-honours",
+      "name": "Awards and honours",
+      "description": "Bharat Ratna, Padma, gallantry, literary, film and science awards, and international prizes like the Nobel, Booker and Oscars.",
+      "concepts": [
+        "civilian-and-national-awards",
+        "academy-and-cultural-awards"
+      ]
+    },
+    {
+      "type": "books-authors",
+      "name": "Books and authors",
+      "description": "Who wrote which book: ancient, medieval, freedom-era, modern Indian and world classics, and sports autobiographies.",
+      "concepts": [
+        "famous-books-and-authors"
+      ]
+    },
+    {
+      "type": "important-days",
+      "name": "Important days and dates",
+      "description": "National and international days, why they are observed, and founding dates they mark.",
+      "concepts": [
+        "historical-years-and-dates"
+      ]
+    },
+    {
+      "type": "organisations-hq",
+      "name": "Organisations and headquarters",
+      "description": "International bodies and their headquarters and founding years, and Indian institutions with founders and locations.",
+      "concepts": [
+        "founding-of-organizations",
+        "institution-headquarters-and-locations"
+      ]
+    },
+    {
+      "type": "symbols-firsts",
+      "name": "National symbols and Indian firsts",
+      "description": "India's national symbols and the first persons to hold offices or achieve feats.",
+      "concepts": []
+    }
+  ]
+}

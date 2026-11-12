@@ -1,0 +1,41 @@
+{
+ "topic": "st-probability",
+ "types": [
+  {
+   "type": "classical",
+   "name": "Coins, dice and cards",
+   "description": "Asks the chance of an outcome when coins are tossed, dice thrown or a single card drawn.",
+   "concepts": []
+  },
+  {
+   "type": "combinations",
+   "name": "Drawing with combinations",
+   "description": "Draws two or more balls, cards or people at once and asks the chance of a particular mix.",
+   "concepts": []
+  },
+  {
+   "type": "addition-rule",
+   "name": "Addition rule and complements",
+   "description": "Gives P(A), P(B) and P(A∩B) or uses \"or\", \"either\", \"neither\" and asks for a union or complement.",
+   "concepts": []
+  },
+  {
+   "type": "multiplication-rule",
+   "name": "Conditional probability and independence",
+   "description": "Uses \"given that\", \"independent\", \"both\" or \"without replacement\" and asks for a joint or conditional probability.",
+   "concepts": []
+  },
+  {
+   "type": "bayes",
+   "name": "Total probability and Bayes' theorem",
+   "description": "Several sources (machines, urns, factories) with shares and rates, and asks which source an observed result came from.",
+   "concepts": []
+  },
+  {
+   "type": "definitions-odds",
+   "name": "Definitions, axioms and odds",
+   "description": "Asks about definitions, axioms, mutually exclusive or exhaustive events, or converts odds to probability.",
+   "concepts": []
+  }
+ ]
+}

@@ -11,6 +11,8 @@ export interface PyqManifest {
   topics: Record<string, { pages: string[]; count: number; types: Record<string, string> }>;
   papers: PyqPaperInfo[];
   weightage: Record<string, { pre: number; mains: number }>;
+  /** topic → ids of questions moved there from the topic their id names (the source misfiled them) */
+  moved?: Record<string, string[]>;
 }
 export interface PyqPaper {
   id: string; title: string; tier: 'pre' | 'mains'; year: number; date: string; shift: string | null; minutes: number;
@@ -34,6 +36,17 @@ export function loadPyqManifest(): Promise<PyqManifest | null> {
     .catch(() => null));
 }
 export const getPyqManifest = () => manifest;
+
+let movedIndex: Map<string, string> | null = null;
+/** Topic whose pages hold a past-paper question. Ids keep the topic they were first filed under, even after a move. */
+export async function pyqTopicOf(id: string): Promise<string> {
+  const m = await loadPyqManifest();
+  if (!movedIndex && m) { // built once the manifest is in; offline, ids fall back to their own topic
+    movedIndex = new Map();
+    for (const [topic, ids] of Object.entries(m.moved ?? {})) for (const x of ids) movedIndex.set(x, topic);
+  }
+  return movedIndex?.get(id) ?? id.split(':')[1];
+}
 export const pyqCount = (topic: string) => manifest?.topics[topic]?.count ?? 0;
 
 export function loadPyqTopic(topic: string): Promise<Question[]> {

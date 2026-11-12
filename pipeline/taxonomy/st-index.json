@@ -1,0 +1,41 @@
+{
+ "topic": "st-index",
+ "types": [
+  {
+   "type": "simple-index",
+   "name": "Simple price relatives and aggregative index",
+   "description": "Asks for a price relative, a simple aggregative index or a simple average of relatives, or a basic fact such as the base-year index being 100.",
+   "concepts": []
+  },
+  {
+   "type": "weighted-aggregative",
+   "name": "Laspeyres, Paasche, Fisher and others",
+   "description": "Gives prices and quantities for two years and asks for a weighted index by a named formula.",
+   "concepts": []
+  },
+  {
+   "type": "index-tests",
+   "name": "Tests of adequacy",
+   "description": "Asks which test a formula satisfies (unit, time reversal, factor reversal, circular) or what a test states.",
+   "concepts": []
+  },
+  {
+   "type": "chain-base",
+   "name": "Link relatives and chain index",
+   "description": "Gives prices over several years or link relatives and asks for link relatives, chain-base indices or conversion to a fixed base.",
+   "concepts": []
+  },
+  {
+   "type": "base-shifting",
+   "name": "Base shifting and splicing",
+   "description": "Gives an index series and asks to recalculate it on a new base year, or to join (splice) an old and a new series.",
+   "concepts": []
+  },
+  {
+   "type": "cost-of-living",
+   "name": "Cost of living index and real wages",
+   "description": "Gives group weights and indices (or expenditures), or a money wage and a price index, and asks for the cost of living index, real wage, purchasing power or required DA.",
+   "concepts": []
+  }
+ ]
+}

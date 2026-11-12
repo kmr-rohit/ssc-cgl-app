@@ -1,75 +1,155 @@
 {
  "topic": "r-nonverbal",
  "notes": {
-  "summary": "Non-verbal questions use pictures: <b>mirror and water images</b>, <b>paper folding and punching</b>, and <b>counting figures</b> (triangles, squares). 1–2 questions per paper; all can be solved with a clear method.",
+  "summary": "Non-verbal questions use pictures instead of words. The common ones are mirror and water images, folding a paper and punching or cutting it, folding a transparent sheet, and counting triangles or squares in a figure. Each has a fixed rule: a mirror swaps left and right, water swaps top and bottom, each fold doubles the holes, and counting is done in a fixed order so nothing is missed.",
   "concepts": [
    {
     "title": "Mirror image",
-    "body": "A mirror placed on the <b>right or left</b> (vertical line) swaps left and right; top and bottom stay the same. Text reads backwards and each letter is flipped."
+    "body": "A mirror placed beside a figure (on its left or right, a vertical line) swaps left and right. Top and bottom stay the same.<ul><li>The order of letters reverses and each letter flips: \"CGL\" reads as a backwards L, G, C.</li><li>Letters that look the same in such a mirror: A, H, I, M, O, T, U, V, W, X, Y. Numbers: 0 and 8.</li><li>A mirror on the left or on the right gives the same image; only the line's direction matters.</li><li>If the mirror line is horizontal (above or below), the image is the same as a water image.</li></ul>",
+    "img": "reasoning/mirror-demo.svg"
    },
    {
     "title": "Water image",
-    "body": "Water (a horizontal line below) swaps top and bottom; left and right stay the same. The figure appears upside down but is <b>not</b> rotated."
+    "body": "Water below an object reflects it upside down: top and bottom swap, left and right stay the same.<ul><li>The order of letters does not change; each letter turns upside down.</li><li>Letters that look the same in water: B, C, D, E, H, I, K, O, X. Numbers: 0, 3 and 8.</li><li>Mirror image followed by water image equals a half-turn (180° rotation).</li></ul>",
+    "img": "reasoning/water-demo.svg"
+   },
+   {
+    "title": "Checking options quickly",
+    "body": "Do not redraw the whole figure. Pick one or two asymmetric details (a small dot, an arrow tip, the letter F or the number 4) and check where they go. Options that rotate the figure, reflect it the wrong way, or only reverse the order without flipping each character are the usual distractors."
    },
    {
     "title": "Paper folding and punching",
-    "body": "Each fold doubles the holes. Unfold one step at a time: every hole gets a partner reflected across the fold line."
+    "body": "Every fold doubles the number of layers, so a hole punched through all layers appears 2, 4 or 8 times when unfolded.<ol><li>Unfold in reverse order: undo the last fold first.</li><li>At each step, reflect every hole across that fold line.</li><li>A hole punched exactly on a fold line is not doubled by that fold.</li></ol><p>In the figure: fold left onto right, then top onto bottom, then punch once. Undoing fold 2 adds a hole reflected across the horizontal line; undoing fold 1 copies both to the left. Result: 4 holes in a symmetric pattern.</p>",
+    "img": "reasoning/fold-demo.svg"
+   },
+   {
+    "title": "Cutting on a fold",
+    "body": "A cut on the folded edge opens out into a shape that is symmetric about the fold line. Half a triangle cut on the fold becomes a full diamond; half a circle becomes a full circle. A cut away from the fold appears twice, mirror-wise. Diagonal folds work the same way: reflect across the diagonal.",
+    "img": "reasoning/fold-cut-demo.svg"
+   },
+   {
+    "title": "Folding a transparent sheet",
+    "body": "On a transparent sheet you can see every mark after folding. The half that does not move keeps its marks as they are; the half that is folded over lands on top, reflected across the fold line. The folded sheet shows both sets together.<p>In the figure: the triangle on the left half pointed right; after folding it lands on the right half pointing left, next to the circle that was already there.</p>",
+    "img": "reasoning/transparent-fold.svg"
    },
    {
     "title": "Counting triangles",
-    "body": "For a triangle with lines from the top corner to the base: triangles = (number of lines from the corner choose 2) × (number of horizontal lines). For a square with both diagonals: 8 triangles."
+    "body": "Count in a fixed order so nothing is missed: single small triangles first, then triangles made of 2 parts, then 3, and so on. Labelling the corners with letters helps.<ul><li>Square with both diagonals: 8 triangles.</li><li>n lines from one corner (the sides included) meeting a single base: n(n − 1)/2 triangles.</li><li>The same fan crossed by k lines parallel to the base: k × n(n − 1)/2.</li></ul><p>In the figure: 4 lines from the top corner and 2 horizontal lines, so 2 × (4 × 3 ÷ 2) = 12 triangles.</p>",
+    "img": "reasoning/count-tri-demo.svg"
+   },
+   {
+    "title": "Counting squares and rectangles",
+    "body": "<ul><li>Squares in an n × n grid: 1² + 2² + … + n² = n(n + 1)(2n + 1)/6. A 3 × 3 grid has 9 + 4 + 1 = 14.</li><li>Rectangles (squares included) in an m × n grid: choose 2 of the m + 1 vertical lines and 2 of the n + 1 horizontal lines: C(m + 1, 2) × C(n + 1, 2). A 3 × 3 grid has 6 × 6 = 36.</li><li>For odd figures, count by size: smallest shapes first, then those made of 2, 3, 4 parts.</li><li>Read the question: \"squares (rectangles not included)\" means only equal-sided shapes.</li></ul>",
+    "img": "reasoning/count-grid.svg"
    }
   ],
   "varieties": [
    {
-    "type": "mirror-water",
-    "name": "Mirror and water image",
-    "how": "Mirror (vertical line): flip left–right only. Water (horizontal line): flip top–bottom only.",
+    "type": "mirror-image",
+    "name": "Mirror image",
+    "how": "A side mirror swaps left and right only: reverse the order and flip each character sideways; top and bottom stay.",
     "example": {
-     "q": "Mirror image of \"AB12\" with the mirror on the right?",
+     "q": "Select the mirror image of \"CGL 2025\" when a mirror is placed on its right.",
      "steps": [
-      "Order reverses: 2, 1, B, A",
-      "Each character is flipped left–right"
+      "Left and right swap, so the order becomes 5, 2, 0, 2, space, L, G, C.",
+      "Each character is also flipped sideways: the 2s and 5 face the other way, and L has its foot pointing left.",
+      "Top and bottom do not change, so nothing is upside down."
      ],
-     "answer": "21BA written with each character flipped"
+     "answer": "The right-hand picture in the figure",
+     "img": "reasoning/mirror-demo.svg"
+    }
+   },
+   {
+    "type": "water-image",
+    "name": "Water image",
+    "how": "Water swaps top and bottom only: keep the order, turn each character upside down.",
+    "example": {
+     "q": "Select the water image of \"CGL 2025\".",
+     "steps": [
+      "The order stays C, G, L, 2, 0, 2, 5 from left to right.",
+      "Each character is turned upside down: L has its foot at the top, C still opens to the right.",
+      "Nothing is reversed left to right."
+     ],
+     "answer": "The lower picture in the figure",
+     "img": "reasoning/water-demo.svg"
     }
    },
    {
     "type": "paper-folding",
-    "name": "Paper folding and punching",
-    "how": "Unfold in reverse order; reflect every hole across each fold line.",
+    "name": "Paper folding, punching and cutting",
+    "how": "Unfold in reverse order, reflecting every hole or cut across each fold line. Holes double with each fold.",
     "example": {
-     "q": "A square sheet is folded once (left onto right) and one hole is punched. How many holes after unfolding?",
+     "q": "A square sheet is folded left onto right, then top onto bottom, and one hole is punched as shown. How will it look when unfolded?",
      "steps": [
-      "One fold → 2 layers",
-      "Each layer gets a hole"
+      "Two folds make 4 layers, so expect 4 holes.",
+      "Undo fold 2 (horizontal): the hole near the middle line gets a partner just above that line.",
+      "Undo fold 1 (vertical): both holes get partners on the left half."
      ],
-     "answer": "2 holes, mirror images across the fold",
-     "img": "reasoning/fold1-q.svg"
+     "answer": "Four holes, two on each side, in a square around the centre",
+     "img": "reasoning/fold-demo.svg"
     }
    },
    {
-    "type": "figure-counting",
-    "name": "Counting figures",
-    "how": "Label the corners and count in a fixed order (single parts, then combinations).",
+    "type": "transparent-folding",
+    "name": "Folding a transparent sheet",
+    "how": "Keep the fixed half as it is; reflect the moving half across the fold line and lay it on top.",
     "example": {
-     "q": "How many triangles are in a square with both diagonals?",
+     "q": "A transparent sheet has a triangle on its left half and a circle on its right half. It is folded left onto right along the dotted line. How does it look?",
      "steps": [
-      "4 small triangles",
-      "4 triangles made of two small ones (each half of the square)"
+      "The right half does not move, so the circle stays at its place.",
+      "The left half flips over the dotted line, so the triangle moves to the right half and now points the other way.",
+      "Both marks show through the transparent sheet."
      ],
-     "answer": "8",
-     "img": "reasoning/count-square.svg"
+     "answer": "A half-width sheet with the circle and the reversed triangle",
+     "img": "reasoning/transparent-fold.svg"
+    }
+   },
+   {
+    "type": "triangle-counting",
+    "name": "Counting triangles",
+    "how": "Count small triangles first, then bigger ones made of 2, 3 or more parts; use the fan formula when lines meet at one corner.",
+    "example": {
+     "q": "How many triangles are there in the figure?",
+     "steps": [
+      "4 lines start at the top corner (2 sides and 2 inside lines).",
+      "Any 2 of them with one horizontal line make a triangle: 4 × 3 ÷ 2 = 6 for each horizontal line.",
+      "There are 2 horizontal lines: 6 × 2."
+     ],
+     "answer": "12",
+     "img": "reasoning/count-tri-demo.svg"
+    }
+   },
+   {
+    "type": "square-counting",
+    "name": "Counting squares, rectangles and other shapes",
+    "how": "Count by size: 1 × 1 squares, then 2 × 2, then 3 × 3. For an n × n grid the total is 1² + 2² + … + n².",
+    "example": {
+     "q": "How many squares are there in the 3 × 3 grid?",
+     "steps": [
+      "1 × 1 squares: 9.",
+      "2 × 2 squares: 4.",
+      "3 × 3 squares: 1.",
+      "9 + 4 + 1 = 14."
+     ],
+     "answer": "14",
+     "img": "reasoning/count-grid.svg"
     }
    }
   ],
   "tips": [
-   "For mirror questions, look at one corner or one unique part (like a dot) and check where it moves.",
-   "For counting, use a formula when lines meet at one corner; otherwise label points and count systematically."
+   "Mirror (side): left and right swap. Water: top and bottom swap.",
+   "Track one odd detail (a dot, an arrow tip, the letter F) instead of the whole figure.",
+   "Each fold doubles the holes; unfold the last fold first.",
+   "A cut on a fold opens into a shape symmetric about the fold line.",
+   "Count shapes by size, smallest first, and write the running total.",
+   "Squares in an n × n grid: n(n + 1)(2n + 1)/6."
   ],
   "traps": [
-   "A mirror image is not a 180° rotation: in a mirror, top stays on top.",
-   "After two folds, the paper has 4 layers, so one punch gives 4 holes."
+   "Reversing only the order of letters without flipping each one is a common wrong option.",
+   "A water image is not the same as a 180° rotation; the left-right order stays the same.",
+   "A hole punched on a fold line is not doubled by that fold.",
+   "In triangle counting, do not miss the big triangles formed by combining several small ones.",
+   "\"Squares\" questions sometimes say rectangles are not included; read the brackets."
   ]
  },
  "questions": [
@@ -77,7 +157,7 @@
    "id": "r-nonverbal-001",
    "rev": 1,
    "topic": "r-nonverbal",
-   "type": "mirror-water",
+   "type": "mirror-image",
    "level": 1,
    "q": "Select the correct mirror image of the given figure when the mirror is placed at MN as shown.",
    "options": [
@@ -101,7 +181,7 @@
    "id": "r-nonverbal-002",
    "rev": 1,
    "topic": "r-nonverbal",
-   "type": "figure-counting",
+   "type": "triangle-counting",
    "level": 1,
    "q": "How many triangles are there in the given figure (a square with both diagonals)?",
    "options": [
@@ -119,7 +199,7 @@
    "id": "r-nonverbal-003",
    "rev": 1,
    "topic": "r-nonverbal",
-   "type": "mirror-water",
+   "type": "water-image",
    "level": 2,
    "q": "Select the correct water image of the given figure (MN is the water surface).",
    "options": [
@@ -191,7 +271,7 @@
    "id": "r-nonverbal-006",
    "rev": 1,
    "topic": "r-nonverbal",
-   "type": "figure-counting",
+   "type": "triangle-counting",
    "level": 3,
    "q": "How many triangles are there in the given figure?",
    "options": [

@@ -1,0 +1,59 @@
+{
+  "topic": "q-hcf-lcm",
+  "types": [
+    {
+      "type": "hcf-lcm-basic",
+      "name": "Find the HCF or LCM",
+      "description": "Gives two or more whole numbers (or their prime factor forms) and asks directly for their HCF or LCM.",
+      "concepts": []
+    },
+    {
+      "type": "product-rule",
+      "name": "HCF × LCM = product",
+      "description": "Uses the fact that HCF × LCM equals the product of two numbers, for example to find the other number when one number, the HCF and the LCM are given.",
+      "concepts": []
+    },
+    {
+      "type": "ratio-sum-pairs",
+      "name": "Numbers from ratio, sum or pairs",
+      "description": "Gives the ratio, sum, difference or product of two numbers together with their HCF or LCM and asks for the numbers or for how many such pairs exist.",
+      "concepts": []
+    },
+    {
+      "type": "fractions-decimals",
+      "name": "HCF and LCM of fractions and decimals",
+      "description": "Asks for the HCF or LCM of fractions or decimal numbers.",
+      "concepts": []
+    },
+    {
+      "type": "greatest-divisor-remainder",
+      "name": "Greatest number that divides with remainders",
+      "description": "Asks for the greatest number that divides several given numbers exactly, or leaves a given remainder, given remainders, or the same remainder in each case.",
+      "concepts": []
+    },
+    {
+      "type": "least-number-remainder",
+      "name": "Least number that leaves remainders",
+      "description": "Asks for the least (or greatest n-digit) number that is divisible by several numbers, or leaves the same remainder or a fixed shortfall when divided by them.",
+      "concepts": []
+    },
+    {
+      "type": "lcm-application",
+      "name": "Bells, lights and runners together",
+      "description": "Events repeat at different intervals (bells, traffic lights, runners on a track) and the question asks when they will next happen together.",
+      "concepts": []
+    },
+    {
+      "type": "hcf-application",
+      "name": "Largest equal pieces and fewest tiles",
+      "description": "Asks for the largest equal size to cut, pack, measure or arrange items into, or the least number of square tiles, rows or pieces needed.",
+      "concepts": []
+    },
+    {
+      "type": "algebraic-hcf-lcm",
+      "name": "HCF and LCM of algebraic expressions",
+      "description": "Asks for the HCF or LCM of polynomials or algebraic expressions such as x² − 5x + 6.",
+      "concepts": []
+    }
+  ]
+}

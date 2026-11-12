@@ -1,0 +1,74 @@
+{
+  "topic": "g-polity",
+  "types": [
+    {
+      "type": "constitution-making",
+      "name": "Making and sources of the Constitution",
+      "description": "Constituent Assembly, Drafting Committee, key dates, and features borrowed from other constitutions.",
+      "concepts": [
+        "constitution-making-sources"
+      ]
+    },
+    {
+      "type": "preamble-parts-schedules",
+      "name": "Preamble, parts, schedules and citizenship",
+      "description": "Preamble words, the parts and schedules of the Constitution, formation of states and union territories, and citizenship.",
+      "concepts": [
+        "preamble-parts-schedules-union-citizenship"
+      ]
+    },
+    {
+      "type": "rights-dpsp-duties",
+      "name": "Fundamental Rights, DPSP and duties",
+      "description": "Articles 12 to 51A: Fundamental Rights, writs, Directive Principles and Fundamental Duties.",
+      "concepts": [
+        "fundamental-rights-dpsp-fundamental-duties",
+        "dpsp-and-gandhian-principles"
+      ]
+    },
+    {
+      "type": "parliament",
+      "name": "Parliament",
+      "description": "Lok Sabha, Rajya Sabha, Speaker, bills, budget articles, sessions and parliamentary committees.",
+      "concepts": []
+    },
+    {
+      "type": "executive",
+      "name": "President, PM and Governor",
+      "description": "President, Vice-President, Prime Minister and council of ministers, Attorney General, Governor and Chief Minister.",
+      "concepts": []
+    },
+    {
+      "type": "judiciary",
+      "name": "Supreme Court and High Courts",
+      "description": "Supreme Court and High Courts: articles, jurisdiction, judges, writs and landmark cases.",
+      "concepts": []
+    },
+    {
+      "type": "federalism-local-government",
+      "name": "Centre-state relations and local government",
+      "description": "Seventh Schedule lists, emergency and President's rule, panchayats and municipalities.",
+      "concepts": []
+    },
+    {
+      "type": "constitutional-bodies",
+      "name": "Constitutional and other bodies",
+      "description": "Election Commission, CAG, UPSC, Finance Commission and other constitutional, statutory and executive bodies.",
+      "concepts": []
+    },
+    {
+      "type": "amendments",
+      "name": "Constitutional amendments",
+      "description": "Amendment procedure and what each important amendment changed.",
+      "concepts": []
+    },
+    {
+      "type": "laws-and-acts",
+      "name": "Laws and Acts",
+      "description": "Important Acts of Parliament, including the 2023 criminal laws that replaced the IPC, CrPC and Evidence Act.",
+      "concepts": [
+        "new-criminal-laws-2023"
+      ]
+    }
+  ]
+}

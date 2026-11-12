@@ -1,0 +1,82 @@
+{
+  "topic": "q-tsd",
+  "types": [
+    {
+      "type": "basic-sdt",
+      "name": "Speed, time and distance basics",
+      "description": "A direct use of distance = speed × time, unit conversion between km/h and m/s, or a journey split into parts at different speeds where distance or time is asked.",
+      "concepts": []
+    },
+    {
+      "type": "average-speed",
+      "name": "Average speed",
+      "description": "The question asks for the average speed of a whole journey made at different speeds, or gives the average speed and asks for one of the speeds.",
+      "concepts": [
+        "average-speed-equal-distance-vs-equal-time"
+      ]
+    },
+    {
+      "type": "speed-time-change",
+      "name": "Change in speed changes time",
+      "description": "The speed is increased or decreased by a fixed amount and the time changes by a given amount, or two vehicles cover distances with related speeds and times; find the speed or distance.",
+      "concepts": [
+        "proportionality-rules-constant-distance-constant-time"
+      ]
+    },
+    {
+      "type": "late-early",
+      "name": "Late and early arrival",
+      "description": "Travelling at a fraction of the usual speed (or at two different speeds) makes the person late or early by some minutes; find the usual time or the distance.",
+      "concepts": [
+        "late-and-early-pattern"
+      ]
+    },
+    {
+      "type": "meeting-chasing",
+      "name": "Meeting and chasing",
+      "description": "Two people or vehicles move towards each other or one chases the other, possibly starting at different times; find when or where they meet.",
+      "concepts": [
+        "meeting-point"
+      ]
+    },
+    {
+      "type": "trains",
+      "name": "Trains crossing",
+      "description": "A train crosses a pole, a man, a platform, a bridge, a tunnel or another train, and its length, speed or time is asked.",
+      "concepts": [
+        "train-crossing",
+        "train-platform"
+      ]
+    },
+    {
+      "type": "boats-streams",
+      "name": "Boats and streams",
+      "description": "A boat or swimmer goes upstream and downstream in a river, and the speed in still water, the stream speed, a distance or a time is asked.",
+      "concepts": []
+    },
+    {
+      "type": "circular-track",
+      "name": "Circular track",
+      "description": "Two or more people run or ride around a circular track, and the time of their first meeting or their meeting at the starting point is asked.",
+      "concepts": [
+        "circular-track-motion"
+      ]
+    },
+    {
+      "type": "races",
+      "name": "Races",
+      "description": "A race in which one runner beats another by some metres or seconds, or gives a head start, and a speed, time or margin is asked.",
+      "concepts": [
+        "race-games"
+      ]
+    },
+    {
+      "type": "stoppage",
+      "name": "Stoppage time",
+      "description": "A train or bus has one average speed without stoppages and a lower one with stoppages; find how many minutes it stops per hour.",
+      "concepts": [
+        "stoppage-time-calculation"
+      ]
+    }
+  ]
+}

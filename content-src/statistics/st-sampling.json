@@ -1,77 +1,162 @@
 {
  "topic": "st-sampling",
  "notes": {
-  "summary": "Sampling theory is about choosing a part of the population and measuring how reliable the sample results are. JSO asks on sampling methods (random and non-random), allocation in stratified sampling, and standard errors.",
+  "summary": "Sampling theory is about studying a part of a population to learn about the whole. Paper 2 asks about census versus sample surveys, sampling and non-sampling errors, the main sampling methods (simple random, stratified, systematic, cluster, and non-random methods), how to allocate a sample to strata, and the standard error of a mean or proportion, with or without the finite population correction.",
   "concepts": [
    {
-    "title": "Sampling methods",
-    "body": "<ul><li><b>Random (probability)</b>: simple random (lottery, random numbers), stratified, systematic, cluster, multistage.</li><li><b>Non-random</b>: judgment (purposive), quota, convenience.</li><li><b>Systematic</b>: pick every k-th unit after a random start, k = N/n.</li><li><b>Stratified</b>: split into homogeneous strata, sample from each. Proportional allocation: n<sub>i</sub> = n × N<sub>i</sub>/N.</li><li><b>Cluster</b>: randomly select whole groups (clusters).</li></ul>"
+    "title": "Basic terms",
+    "body": "<ul><li><b>Population</b> (universe): every unit we want to study. Its size is N.</li><li><b>Sample</b>: the part actually studied. Its size is n. <b>Sampling fraction</b> f = n/N.</li><li><b>Sampling frame</b>: the list (or map) of units from which the sample is drawn, such as a voter list.</li><li><b>Sampling unit</b>: the unit that is selected (a household, a village, a field).</li><li><b>Parameter</b>: a value describing the population (μ, σ, P). <b>Statistic</b>: a value worked out from the sample (x̄, s, p).</li><li><b>Sampling distribution</b>: the distribution of a statistic over all possible samples. Its SD is the <b>standard error</b>.</li></ul>"
    },
    {
-    "title": "Errors and standard error",
-    "body": "<ul><li><b>Sampling error</b>: arises because only a sample is studied; falls as n grows. <b>Non-sampling error</b>: mistakes in measurement, response, processing; present even in a census.</li><li>SE of mean = σ/√n. With finite population (SRSWOR) multiply by √((N − n)/(N − 1)).</li><li>SE of proportion = √(pq/n).</li><li>Number of SRSWOR samples of size n from N = <sup>N</sup>C<sub>n</sub>; with replacement = N<sup>n</sup>.</li></ul>"
+    "title": "Census and sample survey",
+    "body": "<table><tr><th>Census (complete enumeration)</th><th>Sample survey</th></tr><tr><td>Every unit is studied</td><td>Only selected units are studied</td></tr><tr><td>Costly and slow</td><td>Cheaper and faster</td></tr><tr><td>No sampling error</td><td>Has sampling error, which can be measured</td></tr><tr><td>Large non-sampling errors (more staff, less training)</td><td>Fewer non-sampling errors, better-trained staff</td></tr><tr><td>Needed when data on every unit is required, or the population is small</td><td>The only choice when testing destroys the item (life of bulbs, crash tests) or the population is infinite</td></tr></table><p>India's Population Census (every 10 years) is a census; NSS (National Sample Survey) rounds are sample surveys.</p>"
+   },
+   {
+    "title": "Sampling and non-sampling errors",
+    "body": "<ul><li><b>Sampling error</b>: the difference between a statistic and the parameter that arises only because a part is studied. It is <b>zero in a census</b> and falls as n grows (roughly like 1/√n).</li><li><b>Non-sampling error</b>: comes from everything else, and is present in both census and sample surveys. Sources: faulty questionnaire, interviewer bias, wrong answers, <b>non-response</b>, incomplete frame (coverage error), mistakes in coding, tabulation and printing. It tends to grow as the size of the enquiry grows.</li><li><b>Biased errors</b> push results one way and do not cancel out; <b>unbiased (random) errors</b> tend to cancel in large samples.</li></ul>"
+   },
+   {
+    "title": "Sampling methods",
+    "body": "<table><tr><th>Probability (random) methods</th><th>Non-probability methods</th></tr><tr><td>Simple random sampling (lottery, random number table)</td><td>Judgement (purposive) sampling: chosen by the investigator's judgement</td></tr><tr><td>Stratified random sampling</td><td>Quota sampling: interviewers fill fixed quotas for each group</td></tr><tr><td>Systematic sampling</td><td>Convenience sampling: whoever is easy to reach</td></tr><tr><td>Cluster sampling, multistage sampling</td><td>Snowball sampling: each respondent refers others</td></tr></table><p>In a probability method every unit has a known, non-zero chance of selection, so the sampling error can be measured. Non-probability methods do not allow this.</p>"
+   },
+   {
+    "title": "Simple random sampling",
+    "body": "<ul><li>Every unit (and every possible sample of size n) has the same chance of selection.</li><li><b>SRSWR</b> (with replacement): a unit may be picked again. Ordered samples = N<sup>n</sup>.</li><li><b>SRSWOR</b> (without replacement): no repeats. Possible samples = <sup>N</sup>C<sub>n</sub>, each with probability 1/<sup>N</sup>C<sub>n</sub>.</li><li>Chance that a particular unit is in an SRSWOR sample = n/N.</li><li>The sample mean ȳ is an <b>unbiased</b> estimate of the population mean in both cases.</li></ul><table><tr><th></th><th>Var(ȳ)</th></tr><tr><td>SRSWR</td><td>σ²/n</td></tr><tr><td>SRSWOR</td><td>(N − n)/(N − 1) × σ²/n = (1 − f) S²/n, where S² = Nσ²/(N − 1)</td></tr></table><p>So SRSWOR is more precise than SRSWR for the same n. Example: N = 6, n = 2 gives 15 samples without replacement and 36 ordered samples with replacement.</p>"
+   },
+   {
+    "title": "Stratified random sampling",
+    "body": "<ul><li>Divide the population into non-overlapping <b>strata</b> that are <b>homogeneous within</b> and different from each other, then take an SRS from each.</li><li>Gives more precise estimates than SRS when strata differ, and gives results for each stratum.</li></ul><table><tr><th>Allocation</th><th>Rule</th></tr><tr><td>Equal</td><td>n<sub>i</sub> = n/k</td></tr><tr><td>Proportional (Bowley)</td><td>n<sub>i</sub> = n × N<sub>i</sub>/N</td></tr><tr><td>Optimum (Neyman)</td><td>n<sub>i</sub> = n × N<sub>i</sub>S<sub>i</sub> / ΣN<sub>i</sub>S<sub>i</sub></td></tr><tr><td>Optimum with cost</td><td>n<sub>i</sub> ∝ N<sub>i</sub>S<sub>i</sub>/√c<sub>i</sub></td></tr></table><p>Usually Var(Neyman) ≤ Var(proportional) ≤ Var(SRS).</p>"
+   },
+   {
+    "title": "Systematic and cluster sampling",
+    "body": "<ul><li><b>Systematic</b>: interval k = N/n. Pick a random start r between 1 and k, then take r, r + k, r + 2k, … Example: N = 500, n = 25, k = 20; start 7 gives 7, 27, 47, 67, 87, …</li><li>Easy and spreads the sample over the list, but can go badly wrong if the list has a pattern that repeats every k units (periodicity).</li><li>When N is not a multiple of n, <b>circular systematic sampling</b> is used.</li><li><b>Cluster</b>: divide the population into groups (clusters) that are each <b>mixed inside</b> (heterogeneous), pick some clusters at random and study every unit in them. Cheap when units are spread out; no full list of units is needed.</li><li><b>Multistage</b>: sample districts, then villages in them, then households. <b>Area sampling</b> uses map areas as clusters.</li></ul>"
+   },
+   {
+    "title": "Standard error",
+    "body": "<table><tr><th>Statistic</th><th>Standard error</th></tr><tr><td>Mean</td><td>σ/√n</td></tr><tr><td>Mean, finite population without replacement</td><td>σ/√n × √((N − n)/(N − 1))</td></tr><tr><td>Proportion</td><td>√(PQ/n)</td></tr><tr><td>Difference of two means</td><td>√(σ<sub>1</sub>²/n<sub>1</sub> + σ<sub>2</sub>²/n<sub>2</sub>)</td></tr><tr><td>Difference of two proportions</td><td>√(P<sub>1</sub>Q<sub>1</sub>/n<sub>1</sub> + P<sub>2</sub>Q<sub>2</sub>/n<sub>2</sub>)</td></tr><tr><td>SD (large sample)</td><td>σ/√(2n)</td></tr></table><ul><li>SE is proportional to 1/√n: to halve the SE, make n four times as big.</li><li>The correction √((N − n)/(N − 1)) is called the <b>finite population correction</b> (fpc). It is close to 1 and is usually ignored when n/N is below about 5%.</li><li>Sample size for a proportion with margin e: n = z²pq/e². For 95% (z = 1.96), p = 0.5, e = 0.05: n = 384.16, so take 385.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "methods",
-    "name": "Identify the sampling method",
-    "how": "Ask: does every unit have a known chance (random) or is choice by judgment / quota (non-random)?",
+    "type": "census-errors",
+    "name": "Census, sample survey and errors",
+    "how": "Sampling error exists only because a part is studied; non-sampling error (non-response, bias, processing mistakes) can occur in both.",
     "example": {
-     "q": "An interviewer is told to interview 30 men and 20 women, chosen as he likes. Which method?",
+     "q": "Which type of error can occur even in a complete census?",
      "steps": [
-      "Fixed numbers from each group, but free choice inside the group.",
-      "That is quota sampling (non-random)."
+      "A census studies every unit, so there is no sampling error.",
+      "Errors from wrong answers, non-response and tabulation can still occur.",
+      "These are non-sampling errors."
      ],
-     "answer": "Quota sampling"
+     "answer": "Non-sampling error"
+    }
+   },
+   {
+    "type": "methods",
+    "name": "Sampling methods",
+    "how": "Match the description: homogeneous groups and sample from each is stratified; every k-th unit is systematic; whole groups chosen is cluster; quotas or judgement means non-random.",
+    "example": {
+     "q": "A population is divided into groups that are alike within, and a random sample is taken from every group. This is:",
+     "steps": [
+      "Groups alike within (homogeneous) with a sample from each group.",
+      "This is the definition of stratified random sampling.",
+      "In cluster sampling only some groups are picked, and they are mixed inside."
+     ],
+     "answer": "Stratified random sampling"
+    }
+   },
+   {
+    "type": "srs",
+    "name": "Simple random sampling counts",
+    "how": "Without replacement: <sup>N</sup>C<sub>n</sub> samples, inclusion chance n/N. With replacement: N<sup>n</sup> ordered samples.",
+    "example": {
+     "q": "From a population of 6 units, samples of size 2 are drawn by SRSWOR. How many samples are possible, and what is the chance that a given unit is included?",
+     "steps": [
+      "Number of samples = <sup>6</sup>C<sub>2</sub> = 15.",
+      "Samples containing a given unit = <sup>5</sup>C<sub>1</sub> = 5.",
+      "Chance = 5/15 = 1/3, which equals n/N = 2/6."
+     ],
+     "answer": "15 samples; 1/3"
+    }
+   },
+   {
+    "type": "systematic",
+    "name": "Systematic sampling",
+    "how": "k = N/n. With random start r, the selected units are r, r + k, r + 2k, …, so the i-th unit is r + (i − 1)k.",
+    "example": {
+     "q": "A systematic sample of 25 is drawn from 500 units. The random start is 7. What is the 5th unit selected?",
+     "steps": [
+      "k = 500/25 = 20.",
+      "5th unit = 7 + 4 × 20.",
+      "= 87."
+     ],
+     "answer": "87"
     }
    },
    {
     "type": "allocation",
-    "name": "Systematic interval and stratified allocation",
-    "how": "k = N/n; proportional n_i = n × N_i/N.",
+    "name": "Allocation in stratified sampling",
+    "how": "Proportional: n<sub>i</sub> ∝ N<sub>i</sub>. Neyman: n<sub>i</sub> ∝ N<sub>i</sub>S<sub>i</sub>. Check that the parts add to n.",
     "example": {
-     "q": "Strata of size 300 and 700; total sample 40 (proportional). Find each sample size.",
+     "q": "Two strata: N<sub>1</sub> = 400, S<sub>1</sub> = 10; N<sub>2</sub> = 600, S<sub>2</sub> = 5. A sample of 70 is allocated by Neyman allocation. Find n<sub>1</sub> and n<sub>2</sub>.",
      "steps": [
-      "n1 = 40 × 300/1000 = 12",
-      "n2 = 40 × 700/1000 = 28"
+      "N<sub>1</sub>S<sub>1</sub> = 4000, N<sub>2</sub>S<sub>2</sub> = 3000, total 7000.",
+      "n<sub>1</sub> = 70 × 4000/7000 = 40.",
+      "n<sub>2</sub> = 70 × 3000/7000 = 30."
      ],
-     "answer": "12 and 28"
+     "answer": "40 and 30"
     }
    },
    {
     "type": "standard-error",
     "name": "Standard error",
-    "how": "SE(x̄) = σ/√n, SE(p) = √(pq/n); SE varies as 1/√n.",
+    "how": "SE of mean = σ/√n, times √((N − n)/(N − 1)) for a finite population sampled without replacement. SE of proportion = √(pq/n).",
     "example": {
-     "q": "σ = 20, n = 25. Find SE of the mean.",
+     "q": "A population of 500 has SD 20. A sample of 100 is drawn without replacement. Find the standard error of the mean.",
      "steps": [
-      "SE = 20/√25 = 20/5",
-      "= 4"
+      "σ/√n = 20/10 = 2.",
+      "fpc = √((500 − 100)/(500 − 1)) = √(400/499) ≈ 0.895.",
+      "SE ≈ 2 × 0.895 ≈ 1.79."
      ],
-     "answer": "4"
+     "answer": "≈ 1.79"
     }
    }
   ],
   "tips": [
-   "To halve the SE, make the sample 4 times larger.",
-   "Stratified sampling works best when strata are internally similar (homogeneous) but differ from each other.",
-   "Cluster sampling works best when each cluster is internally varied (heterogeneous)."
+   "Stratified: homogeneous within strata. Cluster: heterogeneous within clusters. They are opposites.",
+   "Quota, judgement, convenience and snowball are the non-random methods.",
+   "To cut the standard error by a factor of m, multiply the sample size by m².",
+   "Neyman allocation gives a bigger sample to strata that are larger or more variable.",
+   "If n/N is small (under 5%), ignore the finite population correction.",
+   "Destructive testing (life of bulbs, crackers) can only be done by sampling."
   ],
   "traps": [
-   "Judgment and quota sampling are NOT random sampling methods.",
-   "Non-sampling errors do not go away in a census; they may even increase.",
-   "SE of proportion uses pq/n inside the square root, not p/n."
+   "A census has no sampling error, but it does have non-sampling errors.",
+   "Increasing the sample size reduces sampling error, not non-sampling error.",
+   "Systematic sampling interval is N/n, not n/N.",
+   "SE of proportion uses pq/n under the square root; do not forget the square root."
   ]
  },
  "formulas": [
   {
    "name": "SE of mean",
-   "expr": "σ / √n  (× √((N − n)/(N − 1)) for finite population)"
+   "expr": "σ / √n"
+  },
+  {
+   "name": "Finite population correction",
+   "expr": "SE = (σ/√n) × √((N − n)/(N − 1))"
   },
   {
    "name": "SE of proportion",
    "expr": "√(pq / n)"
+  },
+  {
+   "name": "SE of difference of means",
+   "expr": "√(σ₁²/n₁ + σ₂²/n₂)"
+  },
+  {
+   "name": "Number of samples",
+   "expr": "SRSWOR: ᴺCₙ;  SRSWR (ordered): Nⁿ"
   },
   {
    "name": "Systematic interval",
@@ -80,6 +165,14 @@
   {
    "name": "Proportional allocation",
    "expr": "nᵢ = n × Nᵢ / N"
+  },
+  {
+   "name": "Neyman allocation",
+   "expr": "nᵢ = n × NᵢSᵢ / ΣNᵢSᵢ"
+  },
+  {
+   "name": "Sample size for a proportion",
+   "expr": "n = z² p q / e²"
   }
  ],
  "questions": [
@@ -104,7 +197,7 @@
    "id": "st-sampling-002",
    "rev": 1,
    "topic": "st-sampling",
-   "type": "allocation",
+   "type": "systematic",
    "level": 1,
    "q": "A systematic sample of 60 units is to be drawn from a list of 1,200 units. The sampling interval k is:",
    "options": [

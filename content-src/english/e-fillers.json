@@ -1,38 +1,244 @@
 {
   "topic": "e-fillers",
   "notes": {
-    "summary": "In <b>Fill in the Blanks</b> you choose the word that best completes a sentence. SSC tests three things: <b>meaning</b> (vocabulary in context), <b>grammar</b> (prepositions, tense, articles) and <b>collocation</b> (words that naturally go together).",
+    "summary": "In <b>fill in the blanks</b> you choose the word, phrase or sentence that best completes a sentence. SSC asks 2 to 4 of these in Tier 1 and more in Tier 2. Blanks test vocabulary (meaning, collocations, phrasal verbs, idioms, homophones) and grammar (prepositions, articles, verb forms, connectors, comparison). Newer papers also give short paragraphs where you choose missing sentences or the order of segments. The method is always the same: find the clue in the sentence, decide what kind of word is needed, then check meaning.",
     "concepts": [
-      { "title": "Read for clues", "body": "Every blank has a clue in the sentence. Look for:<ul><li><b>Contrast words</b> — <i>but, although, yet, despite</i>: the blank has the opposite sense.</li><li><b>Support words</b> — <i>and, because, so, also</i>: the blank continues the same sense.</li><li><b>Definitions</b> — a phrase after a comma or dash that explains the blank.</li></ul>" },
-      { "title": "Grammar first, meaning second", "body": "Eliminate options that do not fit grammatically (wrong part of speech, wrong tense, wrong preposition). Then choose between the remaining ones by meaning. This often leaves only one option." },
-      { "title": "Collocations", "body": "Some words simply go together in English: <i>pay attention</i>, <i>make a decision</i>, <i>take a risk</i>, <i>commit a crime</i>, <i>heavy rain</i>, <i>strong tea</i>. A synonym that 'means the same' can still be wrong if it does not collocate (<i>do a decision</i> is wrong)." }
+      {
+        "title": "The three-step method",
+        "body": "<ol><li><b>Find the clue word</b>: a word in the sentence that tells you the meaning of the blank. <i>Far from being ___ by the early failures, he became even more determined.</i> Clue: <i>even more determined</i> → the blank means discouraged → <b>daunted</b>.</li><li><b>Decide the grammar</b>: noun, verb, adjective, adverb, preposition? Cross out options that cannot fit.</li><li><b>Check the fit</b>: put the answer in and read the full sentence. It must sound natural, not just be close in meaning.</li></ol>"
+      },
+      {
+        "title": "Clue words: same direction or opposite",
+        "body": "<table><thead><tr><th>Signal</th><th>Words</th><th>What it tells you</th></tr></thead><tbody><tr><td>Same direction</td><td>and, also, moreover, as well as, i.e., because, so</td><td>The blank agrees with the clue.</td></tr><tr><td>Opposite direction</td><td>but, yet, although, despite, however, far from, instead of, unlike</td><td>The blank is the opposite of the clue.</td></tr><tr><td>Definition</td><td>that is, which means, a colon (:)</td><td>The blank is explained right after it.</td></tr><tr><td>Example</td><td>such as, for example, like</td><td>The examples show the meaning.</td></tr></tbody></table><i>Example</i>: <i>The speech was so ___ that no one understood what he meant.</i> The result (no one understood) points to <b>ambiguous</b>, not <i>lucid</i>."
+      },
+      {
+        "title": "Collocations",
+        "body": "Some words naturally go together; others just sound wrong even if the meaning is close.<table><thead><tr><th>Verb</th><th>Goes with</th></tr></thead><tbody><tr><td>make</td><td>a decision, a mistake, a fuss, an effort, progress, a promise, money, a profit, a suggestion</td></tr><tr><td>do</td><td>homework, your duty, business, harm, good, a favour, justice, the dishes</td></tr><tr><td>take</td><td>a risk, care, part, a break, a decision (also correct), place, action, steps</td></tr><tr><td>pay</td><td>attention, a visit, a compliment, tribute, heed</td></tr><tr><td>give</td><td>advice, a speech, permission, an example, priority</td></tr><tr><td>face / bear</td><td>the consequences, a challenge</td></tr><tr><td>keep / be in</td><td>touch, a promise, a secret</td></tr><tr><td>commit</td><td>a crime, suicide, an error</td></tr></tbody></table>Adjective + noun: <i>heavy rain, heavy traffic, strong tea, strong wind, high fever, deep sleep, hard-earned money, bitter truth, close friend, fast colour</i>."
+      },
+      {
+        "title": "Phrasal verbs",
+        "body": "<table><thead><tr><th>Phrasal verb</th><th>Meaning</th></tr></thead><tbody><tr><td>pass away</td><td>die</td></tr><tr><td>pass out</td><td>faint; also complete a course</td></tr><tr><td>pass on / pass down</td><td>give to the next person or generation</td></tr><tr><td>put off</td><td>postpone</td></tr><tr><td>put up with</td><td>tolerate</td></tr><tr><td>put out</td><td>extinguish (a fire)</td></tr><tr><td>give up</td><td>stop, quit</td></tr><tr><td>give in</td><td>surrender, yield</td></tr><tr><td>look after</td><td>take care of</td></tr><tr><td>look into</td><td>investigate</td></tr><tr><td>look up to</td><td>respect</td></tr><tr><td>look down on</td><td>consider inferior</td></tr><tr><td>call off</td><td>cancel</td></tr><tr><td>carry out</td><td>perform, complete</td></tr><tr><td>break down</td><td>stop working; lose control of feelings</td></tr><tr><td>break out</td><td>start suddenly (war, fire, disease)</td></tr><tr><td>bring up</td><td>raise (a child); mention</td></tr><tr><td>turn down</td><td>reject</td></tr><tr><td>set up</td><td>establish</td></tr><tr><td>run out of</td><td>use up completely</td></tr><tr><td>come across</td><td>find by chance</td></tr><tr><td>get over</td><td>recover from</td></tr></tbody></table>"
+      },
+      {
+        "title": "Idioms in blanks",
+        "body": "When the options are idioms, translate each into plain words and test it in the sentence.<table><thead><tr><th>Idiom</th><th>Meaning</th></tr></thead><tbody><tr><td>a stone's throw away</td><td>very close</td></tr><tr><td>at arm's length</td><td>keeping someone at a distance</td></tr><tr><td>from pillar to post</td><td>from one place to another without success</td></tr><tr><td>at one's fingertips</td><td>easily available, well known</td></tr><tr><td>once in a blue moon</td><td>very rarely</td></tr><tr><td>in hot water</td><td>in trouble</td></tr><tr><td>a bolt from the blue</td><td>a sudden shock</td></tr><tr><td>hit the nail on the head</td><td>say exactly the right thing</td></tr></tbody></table>"
+      },
+      {
+        "title": "Homophones and homonyms",
+        "body": "<b>Homophones</b> sound the same but differ in spelling and meaning. <b>Homonyms</b> are spelt the same but have different meanings (a <i>compact</i> mirror = small; signed a <i>compact</i> = an agreement).<table><thead><tr><th>Pair</th><th>Meanings</th></tr></thead><tbody><tr><td>heal / heel</td><td>cure / back of the foot</td></tr><tr><td>dew / due</td><td>water drops / expected, owed</td></tr><tr><td>blew / blue</td><td>past of blow / a colour</td></tr><tr><td>route / root</td><td>way / part of a plant</td></tr><tr><td>grown / groan</td><td>past participle of grow / a sound of pain</td></tr><tr><td>principal / principle</td><td>head of a school, main / a rule or belief</td></tr><tr><td>stationary / stationery</td><td>not moving / paper and pens</td></tr><tr><td>complement / compliment</td><td>completes / praise</td></tr><tr><td>council / counsel</td><td>a group / advice</td></tr><tr><td>accept / except</td><td>receive / leaving out</td></tr><tr><td>affect / effect</td><td>to influence (verb) / result (noun)</td></tr><tr><td>loose / lose</td><td>not tight / fail to keep</td></tr><tr><td>than / then</td><td>comparison / time</td></tr><tr><td>peace / piece</td><td>calm / a part</td></tr><tr><td>sole / soul</td><td>only, bottom of the foot / spirit</td></tr><tr><td>cite / site / sight</td><td>quote / a place / vision</td></tr></tbody></table>For <i>which sentence uses the homonym</i>: decide what the word means in the given sentence, then pick the option where the same spelling has a <b>different</b> meaning."
+      },
+      {
+        "title": "Prepositions after words",
+        "body": "<table><thead><tr><th>Word + preposition</th><th>Example</th></tr></thead><tbody><tr><td>aware of, afraid of, capable of, fond of, proud of, guilty of, accused of</td><td>He was accused <u>of</u> theft.</td></tr><tr><td>charged with, angry with (a person), satisfied with, familiar with, comply with</td><td>He was charged <u>with</u> theft.</td></tr><tr><td>angry at / about (a thing), good at, surprised at</td><td>She is good <u>at</u> maths.</td></tr><tr><td>interested in, confident in, succeed in, believe in, rich in</td><td>He succeeded <u>in</u> passing.</td></tr><tr><td>depend on, rely on, insist on, congratulate on, comment on</td><td>I insist <u>on</u> paying.</td></tr><tr><td>responsible for, famous for, apologise for, eligible for</td><td>He apologised <u>for</u> the delay.</td></tr><tr><td>different from, prevent from, refrain from, suffer from</td><td>Refrain <u>from</u> smoking.</td></tr><tr><td>similar to, prefer to, superior to, senior to, junior to, addicted to, apologise to (a person)</td><td>She is senior <u>to</u> me.</td></tr><tr><td>opt for (choose), opt against / out of (decide not to)</td><td>He opted <u>against</u> the plan.</td></tr></tbody></table>Time: <i>since</i> + point (since 2015, since Monday); <i>for</i> + period (for two hours). <i>between</i> two, <i>among</i> more than two."
+      },
+      {
+        "title": "Articles and determiners",
+        "body": "<ul><li><b>a</b> before a consonant <i>sound</i>: <i>a university, a European, a one-rupee coin</i>. <b>an</b> before a vowel <i>sound</i>: <i>an hour, an honest man, an MBA, an apple</i>.</li><li><b>the</b> for something specific, already mentioned or unique: <i>the sun, the Himalayas, the Ganga, the best student, the absence of data</i>.</li><li>No article before general plural or uncountable nouns: <i>Water is precious</i>; <i>Books are useful</i>.</li><li><b>much, little</b> + uncountable (<i>much time</i>); <b>many, few</b> + countable plural (<i>many books</i>).</li><li><b>few</b> = hardly any; <b>a few</b> = some; <b>the few</b> = all of the small number. Same pattern for <i>little, a little, the little</i>.</li><li><b>each, every</b> + singular noun and singular verb: <i>Every student <u>has</u> a book.</i></li></ul>"
+      },
+      {
+        "title": "Verb forms, tense and conditionals",
+        "body": "<table><thead><tr><th>Pattern</th><th>Example</th></tr></thead><tbody><tr><td>Zero conditional (always true): If + present, present</td><td>If the protocol <u>is</u> breached, the system alerts the staff.</td></tr><tr><td>First conditional: If + present, will + V1</td><td>If it <u>rains</u>, we will stay in.</td></tr><tr><td>Second conditional: If + past, would + V1</td><td>If I <u>were</u> rich, I would travel.</td></tr><tr><td>Third conditional: If + had + V3, would have + V3</td><td>If he <u>had worked</u> hard, he would have passed.</td></tr><tr><td>since / for → perfect tense</td><td>I <u>have lived</u> here since 2015.</td></tr><tr><td>need not / must / can + V1</td><td>You need not <u>make</u> a fuss.</td></tr><tr><td>look forward to, used to (be accustomed), object to + -ing</td><td>I look forward to <u>meeting</u> you.</td></tr><tr><td>It is time + past</td><td>It is time we <u>left</u>.</td></tr></tbody></table>Subject-verb agreement: <i>One of the boys <u>is</u></i>; <i>Neither the manager nor the clerks <u>were</u></i> (verb follows the nearer subject)."
+      },
+      {
+        "title": "Connectors and comparison",
+        "body": "<ul><li><b>than</b> for comparison (<i>easier than</i>); <b>then</b> for time (<i>and then</i>).</li><li><b>as… as</b> for equality (<i>as tall as</i>); <b>so… that</b> for result (<i>so tired that</i>); <b>such a… that</b> (<i>such a hot day that</i>).</li><li><b>although / though</b> + clause; <b>despite / in spite of</b> + noun. <i>Although</i> is not followed by <i>but</i>.</li><li><b>unless</b> = if not; never <i>unless… not</i>.</li><li><b>either… or</b>, <b>neither… nor</b>, <b>not only… but also</b>, <b>both… and</b>, <b>hardly / scarcely… when</b>, <b>no sooner… than</b>.</li><li>Degrees: <i>more spacious than</i>, <i>the most spacious</i>; never <i>more better</i> or <i>most best</i>. Latin comparatives take <i>to</i>: <i>superior to, senior to, prefer X to Y</i>.</li><li><b>Adjective</b> describes a noun (<i>a careful driver</i>); <b>adverb</b> describes a verb (<i>drives carefully</i>). Adverbs of frequency (<i>often, always, never, usually</i>) come before the main verb but after <i>be</i>: <i>She often goes</i>; <i>She is always late</i>.</li></ul>"
+      },
+      {
+        "title": "Sentence and segment blanks",
+        "body": "<b>Missing sentences (S1 to S4)</b>: S1 and S4 are given, and you pick S2 and S3. S2 must follow on from S1 (often through a pronoun or the same subject) and S3 must lead into S4. Test the options' first sentence against S1, then the second against S4.<br><b>Order of segments</b>: a sentence has several blanks and each option gives the segments in a different order. Fill the first blank (it must continue the words before it) and the last blank (it must lead into the words after it), then eliminate."
+      }
     ],
     "varieties": [
-      { "type": "vocab-context", "name": "Vocabulary in context", "how": "Find the contrast or support clue, predict a word of your own, then match it to the options.", "example": { "q": "Although he was usually talkative, at the meeting he remained ______.", "steps": ["<i>Although</i> signals contrast with <i>talkative</i>.", "We need a word meaning 'quiet'.", "Options: reticent / vocal / cheerful / eloquent → <i>reticent</i>."], "answer": "reticent" } },
-      { "type": "preposition", "name": "Prepositions and grammar", "how": "Many verbs and adjectives take a fixed preposition. Learn the common ones: <i>abide by, comply with, accused of, charged with, insist on, aware of</i>.", "example": { "q": "Every citizen must abide ______ the law.", "steps": ["<i>Abide</i> in the sense of 'obey' takes <b>by</b>."], "answer": "by" } },
-      { "type": "collocation", "name": "Collocations", "how": "Pick the word that native speakers naturally pair with the given noun or verb.", "example": { "q": "The doctor advised him to ______ a break from work.", "steps": ["English says <i>take a break</i>, not <i>do / make / have done</i> a break."], "answer": "take" } }
+      {
+        "type": "vocab-context",
+        "name": "Word that fits the meaning",
+        "how": "Find the clue word in the sentence, decide whether the blank agrees with it or contrasts with it, then pick the option with that meaning.",
+        "example": {
+          "q": "Far from being ______ by the early failures, the young scientist became even more determined. (encouraged / daunted / inspired / elated)",
+          "steps": [
+            "<i>Far from</i> signals the opposite of what follows.",
+            "He became <i>more determined</i>, so the blank must mean discouraged.",
+            "<i>daunted</i> = discouraged."
+          ],
+          "answer": "daunted"
+        }
+      },
+      {
+        "type": "collocation",
+        "name": "Collocation",
+        "how": "Look at the word right next to the blank. Choose the option that naturally pairs with it, even if other options have a similar meaning.",
+        "example": {
+          "q": "Before buying a house, you should ______ a careful decision. (do / make / take out / give)",
+          "steps": [
+            "The noun is <i>decision</i>.",
+            "The natural pairs are <i>make a decision</i> or <i>take a decision</i>; only <i>make</i> is offered."
+          ],
+          "answer": "make"
+        }
+      },
+      {
+        "type": "phrasal-verb",
+        "name": "Phrasal verb",
+        "how": "Turn each phrasal verb into one plain word, then test it in the sentence.",
+        "example": {
+          "q": "The family recipes were ______ from one generation to the next. (passed away / passed in / passed down / passed out)",
+          "steps": [
+            "<i>passed away</i> = died; <i>passed out</i> = fainted; <i>passed in</i> is not a common phrasal verb.",
+            "<i>passed down</i> = handed on to younger people."
+          ],
+          "answer": "passed down"
+        }
+      },
+      {
+        "type": "idiom-blank",
+        "name": "Idiom in the blank",
+        "how": "Translate each idiom into plain words and pick the one that matches the meaning the sentence needs.",
+        "example": {
+          "q": "Kalam's house was within easy reach of the temple. It was just ________ from it. (a stone's throw away / at one's fingertips / at arm's length / from pillar to post)",
+          "steps": [
+            "The sentence says the house was very near.",
+            "<i>a stone's throw away</i> = very close."
+          ],
+          "answer": "a stone's throw away"
+        }
+      },
+      {
+        "type": "homonym",
+        "name": "Homonym or homophone",
+        "how": "Say each option aloud; they sound alike, so decide by meaning and spelling. For <i>which sentence uses the homonym</i>, find the sentence where the same word has a different meaning.",
+        "example": {
+          "q": "The ointment will help to ______ the wound. (he'll / heel / heal / kneel)",
+          "steps": [
+            "The sentence is about curing a wound.",
+            "<i>heal</i> = cure; <i>heel</i> = back of the foot."
+          ],
+          "answer": "heal"
+        }
+      },
+      {
+        "type": "preposition",
+        "name": "Preposition",
+        "how": "Check whether the word before the blank takes a fixed preposition. If not, apply the time or place rule.",
+        "example": {
+          "q": "The shopkeeper was charged ______ selling adulterated food. (of / for / with / on)",
+          "steps": [
+            "<i>charged</i> (with an offence) takes <i>with</i>.",
+            "Compare <i>accused <u>of</u></i>."
+          ],
+          "answer": "with"
+        }
+      },
+      {
+        "type": "article-determiner",
+        "name": "Article or determiner",
+        "how": "Check the sound of the next word (a / an), whether the noun is specific (the), and whether it is countable (many / few) or uncountable (much / little).",
+        "example": {
+          "q": "In ____ absence of reliable data, the decision was postponed. (an / a / the / no article)",
+          "steps": [
+            "<i>absence</i> here is specific: the absence <i>of reliable data</i>.",
+            "A noun followed by an <i>of</i>-phrase that makes it specific takes <i>the</i>."
+          ],
+          "answer": "the"
+        }
+      },
+      {
+        "type": "verb-form",
+        "name": "Verb form and tense",
+        "how": "Find the subject and the time clues (since, if, yesterday, now). Check agreement and the conditional pattern.",
+        "example": {
+          "q": "If the security system ___ breached, it alerts the administrators instantly. (were / is / has / had been)",
+          "steps": [
+            "The main clause <i>alerts</i> is simple present: a general truth.",
+            "Zero conditional: If + present, present.",
+            "Passive simple present: <i>is breached</i>."
+          ],
+          "answer": "is"
+        }
+      },
+      {
+        "type": "connector",
+        "name": "Conjunction or connector",
+        "how": "Decide the relation between the two parts (comparison, contrast, condition, reason, result) and choose the connector that shows it.",
+        "example": {
+          "q": "Nowadays, online shopping is easier ________ shopping in a market. (like / than / then / as)",
+          "steps": [
+            "<i>easier</i> is a comparative.",
+            "A comparative is followed by <i>than</i>; <i>then</i> is about time."
+          ],
+          "answer": "than"
+        }
+      },
+      {
+        "type": "adjective-adverb",
+        "name": "Adjective, adverb or comparison",
+        "how": "Ask what the word describes: a noun needs an adjective, a verb needs an adverb. For comparison, check than (comparative), the (superlative) or as… as (equal).",
+        "example": {
+          "q": "The house they bought was ______ spacious than their previous house. (most / more / much / very)",
+          "steps": [
+            "<i>than</i> needs the comparative degree.",
+            "<i>spacious</i> is a long adjective, so the comparative is <i>more spacious</i>."
+          ],
+          "answer": "more"
+        }
+      },
+      {
+        "type": "paragraph-completion",
+        "name": "Missing sentences in a paragraph",
+        "how": "Pick the sentence that follows naturally from S1 as S2, then check that S3 leads into S4. Eliminate options whose first sentence breaks the link with S1.",
+        "example": {
+          "q": "S1: Ravi missed the last bus home. S4: He reached home after midnight, tired but safe. P: He decided to walk the six kilometres. Q: The bus driver was his uncle. R: On the way, it started to rain heavily. S: He bought a new car. Choose S2 and S3. (P, R / Q, S / R, P / S, Q)",
+          "steps": [
+            "After missing the bus, he needs another way home: P (he decided to walk).",
+            "R (on the way, it rained) continues the walk and leads into reaching home tired.",
+            "Q and S do not fit the story."
+          ],
+          "answer": "P, R"
+        }
+      },
+      {
+        "type": "segment-order",
+        "name": "Order of segments for several blanks",
+        "how": "Fix the first blank by what comes before it and the last blank by what comes after it, then check the middle reads smoothly.",
+        "example": {
+          "q": "Though Sheela loves horror movies, ____ / ____ / ____ she rented another romantic film today. Segments: A. so much so that B. she tried a romantic film yesterday C. and enjoyed it very much. Options: BCA / ABC / CAB / BAC",
+          "steps": [
+            "After <i>Though… horror movies,</i> the contrast comes first: B.",
+            "C continues B: <i>and enjoyed it very much</i>.",
+            "A (<i>so much so that</i>) leads into the result: she rented another romantic film."
+          ],
+          "answer": "BCA"
+        }
+      }
     ],
     "tips": [
-      "Predict the answer before looking at the options; it stops you from being pulled by a tempting wrong word.",
-      "If two options are synonyms of each other, often neither is correct.",
-      "Read the sentence again with your choice filled in; it must sound natural."
+      "Read the full sentence before looking at the options; find the clue word first.",
+      "Contrast words (but, although, far from, despite) mean the blank is the opposite of the clue.",
+      "Cross out options of the wrong part of speech before thinking about meaning.",
+      "For prepositions, learn word + preposition pairs as one unit (<i>accused of, charged with</i>).",
+      "For homophones, say the options aloud and then check the spelling that matches the meaning.",
+      "Read the sentence again with your answer; it should sound natural, not just be close in meaning.",
+      "For S1 to S4 questions, link S2 to S1 first and S3 to S4 second; one link usually leaves one option."
     ],
     "traps": [
-      "Look-alike words: <i>affect/effect, principal/principle, complement/compliment, stationary/stationery</i>.",
-      "A word with the right meaning but wrong collocation (e.g. <i>big rain</i> instead of <i>heavy rain</i>)."
+      "Two options with the same meaning where only one collocates (<i>do a decision</i> is wrong; <i>make a decision</i> is right).",
+      "<i>than</i> and <i>then</i>, <i>principal</i> and <i>principle</i>, <i>stationary</i> and <i>stationery</i>.",
+      "<i>a</i> or <i>an</i> decided by the first letter instead of the first sound (<i>an hour, a university</i>).",
+      "<i>few</i> and <i>a few</i> have opposite feelings: <i>few friends</i> (hardly any) vs <i>a few friends</i> (some).",
+      "A phrasal verb that uses the right verb but the wrong particle (<i>passed away</i> vs <i>passed down</i>).",
+      "<i>since</i> with a period of time: it should be <i>for two hours</i>, not <i>since two hours</i>."
     ]
   },
   "questions": [
-    { "id": "e-fillers-001", "rev": 1, "topic": "e-fillers", "type": "preposition", "level": 1, "q": "Select the most appropriate option to fill in the blank.<br>The new employee was not aware ______ the office rules.", "options": ["of", "about", "with", "for"], "answer": 0, "solution": "The adjective <i>aware</i> takes the preposition <b>of</b>: <i>aware of something</i>.", "source": "test-data" },
-    { "id": "e-fillers-002", "rev": 1, "topic": "e-fillers", "type": "collocation", "level": 1, "q": "Select the most appropriate option to fill in the blank.<br>Before buying a house, you should ______ a careful decision.", "options": ["do", "make", "take out", "give"], "answer": 1, "solution": "The natural collocation is <b>make a decision</b>. <i>Do a decision</i> or <i>give a decision</i> (in this sense) is not standard English.", "source": "test-data" },
-    { "id": "e-fillers-003", "rev": 1, "topic": "e-fillers", "type": "vocab-context", "level": 2, "q": "Select the most appropriate option to fill in the blank.<br>The minister's speech was so ______ that the audience could not understand what he actually meant.", "options": ["lucid", "ambiguous", "concise", "candid"], "answer": 1, "solution": "The audience could not understand the meaning, so the speech was unclear: <b>ambiguous</b> (open to more than one meaning). <i>Lucid</i> and <i>concise</i> suggest clarity; <i>candid</i> means frank.", "source": "test-data" },
-    { "id": "e-fillers-004", "rev": 1, "topic": "e-fillers", "type": "preposition", "level": 2, "q": "Select the most appropriate option to fill in the blank.<br>The shopkeeper was charged ______ selling adulterated food.", "options": ["of", "for", "with", "on"], "answer": 2, "solution": "The fixed phrase is <b>charged with</b> an offence. (Compare: <i>accused of</i> an offence.)", "source": "test-data" },
-    { "id": "e-fillers-005", "rev": 1, "topic": "e-fillers", "type": "vocab-context", "level": 3, "q": "Select the most appropriate option to fill in the blank.<br>Far from being ______ by the early failures, the young scientist became even more determined to succeed.", "options": ["encouraged", "daunted", "inspired", "elated"], "answer": 1, "solution": "<i>Far from being X … became more determined</i> means she was <b>not</b> discouraged. The blank needs a word meaning 'discouraged': <b>daunted</b>. The other three are positive and break the contrast.", "source": "test-data" },
-    { "id": "e-fillers-006", "rev": 1, "topic": "e-fillers", "type": "collocation", "level": 3, "q": "Select the most appropriate option to fill in the blank.<br>The police have launched an inquiry, and anyone found guilty will have to ______ the consequences.", "options": ["face", "meet", "confront with", "suffer from"], "answer": 0, "solution": "The standard collocation is <b>face the consequences</b>. <i>Confront with</i> and <i>suffer from</i> add wrong prepositions; <i>meet the consequences</i> is unidiomatic.", "source": "test-data" }
+    {"id":"e-fillers-001","rev":1,"topic":"e-fillers","type":"preposition","level":1,"q":"Select the most appropriate option to fill in the blank.<br>The new employee was not aware ______ the office rules.","options":["of","about","with","for"],"answer":0,"solution":"The adjective <i>aware</i> takes the preposition <b>of</b>: <i>aware of something</i>.","source":"test-data"},
+    {"id":"e-fillers-002","rev":1,"topic":"e-fillers","type":"collocation","level":1,"q":"Select the most appropriate option to fill in the blank.<br>Before buying a house, you should ______ a careful decision.","options":["do","make","take out","give"],"answer":1,"solution":"The natural collocation is <b>make a decision</b>. <i>Do a decision</i> or <i>give a decision</i> (in this sense) is not standard English.","source":"test-data"},
+    {"id":"e-fillers-003","rev":1,"topic":"e-fillers","type":"vocab-context","level":2,"q":"Select the most appropriate option to fill in the blank.<br>The minister's speech was so ______ that the audience could not understand what he actually meant.","options":["lucid","ambiguous","concise","candid"],"answer":1,"solution":"The audience could not understand the meaning, so the speech was unclear: <b>ambiguous</b> (open to more than one meaning). <i>Lucid</i> and <i>concise</i> suggest clarity; <i>candid</i> means frank.","source":"test-data"},
+    {"id":"e-fillers-004","rev":1,"topic":"e-fillers","type":"preposition","level":2,"q":"Select the most appropriate option to fill in the blank.<br>The shopkeeper was charged ______ selling adulterated food.","options":["of","for","with","on"],"answer":2,"solution":"The fixed phrase is <b>charged with</b> an offence. (Compare: <i>accused of</i> an offence.)","source":"test-data"},
+    {"id":"e-fillers-005","rev":1,"topic":"e-fillers","type":"vocab-context","level":3,"q":"Select the most appropriate option to fill in the blank.<br>Far from being ______ by the early failures, the young scientist became even more determined to succeed.","options":["encouraged","daunted","inspired","elated"],"answer":1,"solution":"<i>Far from being X … became more determined</i> means she was <b>not</b> discouraged. The blank needs a word meaning 'discouraged': <b>daunted</b>. The other three are positive and break the contrast.","source":"test-data"},
+    {"id":"e-fillers-006","rev":1,"topic":"e-fillers","type":"collocation","level":3,"q":"Select the most appropriate option to fill in the blank.<br>The police have launched an inquiry, and anyone found guilty will have to ______ the consequences.","options":["face","meet","confront with","suffer from"],"answer":0,"solution":"The standard collocation is <b>face the consequences</b>. <i>Confront with</i> and <i>suffer from</i> add wrong prepositions; <i>meet the consequences</i> is unidiomatic.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-fillers-1", "front": "accused ___ / charged ___", "back": "accused <b>of</b> / charged <b>with</b>", "deck": "grammar" },
-    { "id": "fc-e-fillers-2", "front": "Contrast signal words", "back": "although, but, yet, despite, however, far from", "deck": "grammar" },
-    { "id": "fc-e-fillers-3", "front": "___ a decision / ___ a risk / ___ attention", "back": "<b>make</b> a decision / <b>take</b> a risk / <b>pay</b> attention", "deck": "grammar" }
+    {"id":"fc-e-fillers-1","front":"accused ___ / charged ___","back":"accused <b>of</b> / charged <b>with</b>","deck":"grammar"},
+    {"id":"fc-e-fillers-2","front":"Contrast signal words","back":"although, but, yet, despite, however, far from","deck":"grammar"},
+    {"id":"fc-e-fillers-3","front":"___ a decision / ___ a risk / ___ attention","back":"<b>make</b> a decision / <b>take</b> a risk / <b>pay</b> attention","deck":"grammar"}
   ]
 }

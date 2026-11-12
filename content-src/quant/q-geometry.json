@@ -1,88 +1,343 @@
 {
  "topic": "q-geometry",
  "notes": {
-  "summary": "Geometry is the biggest Advanced Maths topic: 2–4 questions in Tier 1 and 3–5 in Tier 2. Most questions use a handful of triangle and circle theorems. Figures are not to scale; trust the given values.",
+  "summary": "Geometry is the biggest Advanced Maths topic: about 2 to 4 questions in Tier 1 and 3 to 5 in Tier 2. Almost every question uses a small set of facts about lines, triangles, circles and polygons. Learn the facts below, draw a rough figure for every question, and trust the given values because figures are not to scale.",
   "concepts": [
    {
-    "title": "Triangle angles",
-    "body": "Angles of a triangle add to 180°. An <b>exterior angle</b> equals the sum of the two opposite interior angles.",
-    "img": "quant/geo-triangle-exterior.svg"
+    "title": "Lines and angles",
+    "img": "quant/geo-parallel-lines.svg",
+    "body": "<p>Angles on a straight line add to 180° (a <b>linear pair</b>). Angles around a point add to 360°. When two lines cross, the <b>vertically opposite</b> angles are equal. Two angles adding to 90° are <b>complementary</b>; two adding to 180° are <b>supplementary</b>.</p>\n<p>When a line (the transversal) cuts two <b>parallel</b> lines l and m, the figure gives these rules:</p>\n<table><thead><tr><th>Pair</th><th>In the figure</th><th>Rule</th></tr></thead><tbody>\n<tr><td>Corresponding angles</td><td>1 and 5, 2 and 6, 3 and 7, 4 and 8</td><td>Equal</td></tr>\n<tr><td>Alternate interior angles</td><td>4 and 6, 3 and 5</td><td>Equal</td></tr>\n<tr><td>Alternate exterior angles</td><td>1 and 7, 2 and 8</td><td>Equal</td></tr>\n<tr><td>Co-interior angles (same side, between the lines)</td><td>3 and 6, 4 and 5</td><td>Add to 180°</td></tr>\n<tr><td>Vertically opposite</td><td>1 and 3, 2 and 4</td><td>Equal</td></tr></tbody></table>\n<p>Example: if angle 3 = 70°, then angle 6 = 180° − 70° = 110° (co-interior) and angle 5 = 70° (alternate).</p>\n<p>Trick for a bent \"Z\" shape between two parallel lines: the angle at the bend equals the sum of the two angles it makes with the parallel lines.</p>"
    },
    {
-    "title": "Circle theorems",
-    "body": "<ul><li>Angle at the centre = 2 × angle at the circumference on the same arc.</li><li>Angle in a semicircle = 90°.</li><li>Radius ⟂ tangent at the point of contact; two tangents from an outside point are equal.</li></ul>"
+    "title": "Triangle angle rules",
+    "body": "<ul><li>The three angles of a triangle add to <b>180°</b>.</li>\n<li><b>Exterior angle</b> = sum of the two opposite interior angles. If BC is extended to D, ∠ACD = ∠A + ∠B.</li>\n<li>The larger side faces the larger angle. Equal sides face equal angles (isosceles triangle).</li>\n<li><b>Triangle inequality</b>: each side is less than the sum of the other two and more than their difference. Sides 3, 4 and 8 cannot make a triangle because 3 + 4 &lt; 8.</li>\n<li>Exterior angles of any triangle (one at each corner) add to 360°.</li></ul>\n<p>Angle shortcuts that SSC uses again and again (O is where the two lines meet):</p>\n<table><thead><tr><th>What meets at O</th><th>∠BOC</th></tr></thead><tbody>\n<tr><td>Internal bisectors of ∠B and ∠C (O is the incentre)</td><td>90° + ∠A/2</td></tr>\n<tr><td>External bisectors of ∠B and ∠C</td><td>90° − ∠A/2</td></tr>\n<tr><td>Internal bisector of ∠B and external bisector of ∠C</td><td>∠A/2</td></tr>\n<tr><td>Altitudes from B and C (O is the orthocentre)</td><td>180° − ∠A</td></tr>\n<tr><td>O is the circumcentre (acute triangle)</td><td>2∠A</td></tr></tbody></table>\n<p>Also: the angle between the bisector of ∠A and the altitude from A is |∠B − ∠C|/2.</p>\n<p>Example: internal bisectors of ∠B and ∠C meet at O and ∠BOC = 122°. Then 90° + ∠A/2 = 122°, so ∠A = 64°.</p>"
    },
    {
-    "title": "Similarity and proportional segments",
-    "body": "<b>Basic Proportionality Theorem</b>: if DE ∥ BC in ΔABC, then AD/DB = AE/EC. <b>Angle bisector theorem</b>: if AD bisects ∠A, then BD/DC = AB/AC. In similar triangles, areas are in the ratio of the squares of sides."
+    "title": "Congruence and similarity",
+    "img": "quant/geo-bpt-generic.svg",
+    "body": "<p><b>Congruent</b> triangles have the same shape and size. Tests: <b>SSS</b>, <b>SAS</b> (the angle must be between the two sides), <b>ASA</b>, <b>AAS</b>, and <b>RHS</b> (right angle, hypotenuse, one side). SSA and AAA do not prove congruence. Matching parts of congruent triangles are equal (CPCT).</p>\n<p><b>Similar</b> triangles have the same shape. Tests: <b>AA</b> (two equal angles), SSS (all sides in the same ratio), SAS (two sides in the same ratio and the angle between them equal).</p>\n<p>If two triangles are similar with side ratio k:</p>\n<ul><li>Perimeters, altitudes, medians, angle bisectors and inradii are all in ratio k.</li>\n<li><b>Areas are in ratio k<sup>2</sup></b>. So areas 196 : 625 give sides √196 : √625 = 14 : 25. Altitudes 2 : 5 give areas 4 : 25.</li></ul>\n<p><b>Basic proportionality theorem (BPT)</b>: if DE ∥ BC in ΔABC (D on AB, E on AC), then AD/DB = AE/EC, and ΔADE is similar to ΔABC with ratio AD/AB. The converse is also true: if the sides are cut in the same ratio, DE ∥ BC.</p>\n<p><b>Midpoint theorem</b>: the line joining the midpoints of two sides is parallel to the third side and half of it. Joining all three midpoints makes 4 equal triangles, each 1/4 of the area.</p>\n<p><b>Same height, area in ratio of bases</b>: triangles with the same apex and bases on one line have areas in the ratio of their bases. A median splits a triangle into two equal areas. Example: P on BC with BP : PC = 4 : 11 and Q the midpoint of BP. Then BQ = 2/15 of BC, so ar(ABQ) : ar(ABC) = 2 : 15.</p>"
+   },
+   {
+    "title": "Angle bisector, median and Apollonius",
+    "body": "<p>Use a = BC, b = CA, c = AB.</p>\n<ul><li><b>Angle bisector theorem</b>: if AD bisects ∠A, then BD/DC = AB/AC = c/b. So BD = ac/(b + c) and DC = ab/(b + c).</li>\n<li>The external bisector of ∠A divides BC externally in the same ratio c : b.</li>\n<li><b>Apollonius theorem</b>: if AD is the median to BC, then AB<sup>2</sup> + AC<sup>2</sup> = 2(AD<sup>2</sup> + BD<sup>2</sup>).</li>\n<li>Median length: AD = ½√(2b<sup>2</sup> + 2c<sup>2</sup> − a<sup>2</sup>).</li>\n<li>Sum of the squares of the three medians = ¾ (a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>).</li>\n<li>In a right triangle, the median to the hypotenuse is half the hypotenuse.</li></ul>\n<p>Example 1: sides 6, 7 and 8 cm. The largest angle faces the side 8 cm and sits between 6 and 7. Its bisector cuts the 8 cm side into 8 × 6/13 = 48/13 ≈ 3.69 cm and 8 × 7/13 = 56/13 ≈ 4.31 cm.</p>\n<p>Example 2: AB = 6, AC = 8, BC = 10. Median AD = ½√(72 + 128 − 100) = ½√100 = 5 (the triangle is right-angled, so it is also half of 10).</p>"
+   },
+   {
+    "title": "Triangle centres",
+    "img": "quant/geo-centroid.svg",
+    "body": "<table><thead><tr><th>Centre</th><th>Where the lines meet</th><th>Facts to remember</th></tr></thead><tbody>\n<tr><td>Centroid G</td><td>Medians (vertex to midpoint of opposite side)</td><td>Cuts each median 2 : 1 from the vertex (AG : GD = 2 : 1). The three medians make 6 small triangles of equal area. ar(BGC) = ar(AGB) = ⅓ ar(ABC); ar(BDG) = ⅙ ar(ABC). Always inside.</td></tr>\n<tr><td>Incentre I</td><td>Internal angle bisectors</td><td>Same distance r from all three sides; centre of the incircle. r = Area/s, where s = half the perimeter. ∠BIC = 90° + ∠A/2. Always inside.</td></tr>\n<tr><td>Circumcentre O</td><td>Perpendicular bisectors of the sides</td><td>Same distance R from all three vertices; centre of the circumcircle. R = abc/(4 × Area). ∠BOC = 2∠A for an acute triangle. Inside for acute, at the midpoint of the hypotenuse for right (R = hypotenuse/2), outside for obtuse.</td></tr>\n<tr><td>Orthocentre H</td><td>Altitudes</td><td>∠BHC = 180° − ∠A. Inside for acute, at the right-angle corner for right, outside for obtuse.</td></tr></tbody></table>\n<ul><li>In an <b>equilateral</b> triangle all four centres are the same point.</li>\n<li>In an <b>isosceles</b> triangle all four lie on the axis of symmetry.</li>\n<li><b>Euler line</b>: O, G and H lie on one line, with G between them and HG = 2 GO.</li>\n<li>Three points on one straight line (like 9 cm, 11 cm, 20 cm apart: 9 + 11 = 20) have <b>no</b> circle through them. Any three non-collinear points have exactly one.</li></ul>\n<p>Example: ∠A = 68° and I is the incentre. ∠BIC = 90° + 34° = 124°.</p>"
+   },
+   {
+    "title": "Incircle and tangent lengths",
+    "img": "quant/geo-incircle.svg",
+    "body": "<p>The two tangents from a vertex to the incircle are equal. In the figure AR = AQ = x, BR = BP = y, CP = CQ = z, so the perimeter is 2(x + y + z).</p>\n<ul><li>With s = (a + b + c)/2: tangent length from A = s − a, from B = s − b, from C = s − c.</li>\n<li>Inradius r = Area/s. Area = r × s.</li>\n<li>Right triangle with legs a, b and hypotenuse c: <b>r = (a + b − c)/2</b>, R = c/2.</li>\n<li><b>Excircle</b>: if a circle touches side BC and sides AB and AC extended, the tangent length from A to it equals s, half the perimeter of ΔABC.</li>\n<li>A quadrilateral with a circle touching all four sides: <b>AB + CD = AD + BC</b> (opposite sides add up equally).</li></ul>\n<p>Example 1: AB = 16, BC = 20, AC = 24. s = 30. Tangent from A = 30 − 20 = 10, from B = 30 − 24 = 6, from C = 30 − 16 = 14.</p>\n<p>Example 2: right triangle with legs 5 and 12, hypotenuse 13. r = (5 + 12 − 13)/2 = 2.</p>\n<p>Example 3: AB = 18, BC = 21, AD = 15 and a circle touches all four sides. CD = AD + BC − AB = 15 + 21 − 18 = 18.</p>"
+   },
+   {
+    "title": "Pythagoras and the type of triangle",
+    "body": "<p>In a right triangle, hypotenuse<sup>2</sup> = sum of squares of the other two sides.</p>\n<p>Learn these <b>triplets</b> (and their multiples, like 6-8-10 and 9-12-15):</p>\n<table><thead><tr><th>Triplet</th><th>Triplet</th></tr></thead><tbody>\n<tr><td>3, 4, 5</td><td>20, 21, 29</td></tr>\n<tr><td>5, 12, 13</td><td>9, 40, 41</td></tr>\n<tr><td>8, 15, 17</td><td>12, 35, 37</td></tr>\n<tr><td>7, 24, 25</td><td>11, 60, 61</td></tr></tbody></table>\n<p>Make more with m &gt; n: (m<sup>2</sup> − n<sup>2</sup>, 2mn, m<sup>2</sup> + n<sup>2</sup>).</p>\n<p><b>Acute, right or obtuse?</b> Let c be the longest side. If c<sup>2</sup> &lt; a<sup>2</sup> + b<sup>2</sup> the triangle is acute; if equal, right; if greater, obtuse. Example: 7, 24, 30. 30<sup>2</sup> = 900 and 7<sup>2</sup> + 24<sup>2</sup> = 625, so it is obtuse.</p>\n<p><b>Altitude on the hypotenuse</b>: in ΔABC with ∠A = 90° and AD ⊥ BC:</p>\n<ul><li>AD = AB × AC / BC</li><li>BD = AB<sup>2</sup>/BC and CD = AC<sup>2</sup>/BC</li><li>AD<sup>2</sup> = BD × DC</li></ul>\n<p>Example: AB = 12, AC = 16. BC = 20, AD = 192/20 = 9.6, BD = 144/20 = 7.2, CD = 256/20 = 12.8.</p>\n<p>If a triangle inscribed in a circle has sides 20, 21, 29, it is right-angled (400 + 441 = 841), so the circumradius is 29/2 = 14.5.</p>"
+   },
+   {
+    "title": "Special triangles",
+    "img": "quant/geo-special-triangles.svg",
+    "body": "<table><thead><tr><th>Triangle</th><th>Sides</th></tr></thead><tbody>\n<tr><td>30°-60°-90°</td><td>1 : √3 : 2 (short side faces 30°, hypotenuse is twice it)</td></tr>\n<tr><td>45°-45°-90°</td><td>1 : 1 : √2</td></tr></tbody></table>\n<p><b>Equilateral triangle with side a</b>:</p>\n<table><thead><tr><th>Quantity</th><th>Formula</th></tr></thead><tbody>\n<tr><td>Height (also median, bisector)</td><td>√3a/2</td></tr>\n<tr><td>Area</td><td>√3a<sup>2</sup>/4</td></tr>\n<tr><td>Inradius r</td><td>a/(2√3) = height/3</td></tr>\n<tr><td>Circumradius R</td><td>a/√3 = 2 × height/3</td></tr>\n<tr><td>R : r</td><td>2 : 1</td></tr></tbody></table>\n<p>Examples: side 24 cm gives r = 24/(2√3) = 4√3 ≈ 6.93 cm. Side 36 cm gives R = 36/√3 = 12√3 cm. If the circumcentre is 3.2 cm from the base, that distance is r, so the height is 3 × 3.2 = 9.6 cm.</p>\n<p><b>Isosceles triangle</b>: the altitude to the base bisects the base and the top angle.</p>"
+   },
+   {
+    "title": "Chords of a circle",
+    "img": "quant/geo-chord-distance.svg",
+    "body": "<ul><li>The perpendicular from the centre to a chord <b>bisects</b> the chord. With radius r, distance d and chord length L: r<sup>2</sup> = d<sup>2</sup> + (L/2)<sup>2</sup>.</li>\n<li>Equal chords are equally far from the centre, and the other way round. A chord nearer the centre is longer.</li>\n<li>The diameter is the longest chord. So if a chord is 20.5 cm, the radius is at least 10.25 cm.</li>\n<li>Equal chords make equal angles at the centre.</li>\n<li><b>Concentric circles</b> (radii R &gt; r): a chord of the big circle that touches the small one has length 2√(R<sup>2</sup> − r<sup>2</sup>). Radii 26 and 10 give 2√576 = 48.</li>\n<li><b>Common chord</b> of two intersecting circles is perpendicular to the line joining the centres and is bisected by it.</li></ul>\n<p>Example: chord of 16 cm at 6 cm from the centre. r = √(36 + 64) = 10 cm.</p>\n<p>Example (common chord): radii 15 and 13, centres 14 apart. Let the chord be x from the first centre: 15<sup>2</sup> − x<sup>2</sup> = 13<sup>2</sup> − (14 − x)<sup>2</sup> gives x = 9. Half-chord = √(225 − 81) = 12, so the chord is 24.</p>"
+   },
+   {
+    "title": "Angles in a circle",
+    "img": "quant/geo-angle-centre.svg",
+    "body": "<ul><li>The angle an arc makes at the <b>centre is twice</b> the angle it makes anywhere on the rest of the circle.</li>\n<li>Angles in the same segment (standing on the same arc, same side) are equal.</li>\n<li>The angle in a semicircle is 90°.</li>\n<li>An angle in the major segment is acute; an angle in the minor segment is obtuse. The two add to 180°.</li>\n<li>In ΔAOB with O the centre, OA = OB, so ∠OAB = ∠OBA = (180° − ∠AOB)/2.</li></ul>\n<p>Example: P is on the minor arc and ∠APB = 122°. A point on the major arc sees AB at 180° − 122° = 58°, so ∠AOB = 116° and ∠OAB = (180° − 116°)/2 = 32°.</p>\n<p>Chord and inscribed angle: chord AB = 2R sin C, where C is the angle on the circle. A 10 cm chord seen at 30° from the major arc gives R = 10/(2 × ½) = 10 cm.</p>"
+   },
+   {
+    "title": "Cyclic quadrilaterals",
+    "img": "quant/geo-cyclic-quad.svg",
+    "body": "<p>A quadrilateral with all four corners on a circle is <b>cyclic</b>.</p>\n<ul><li>Opposite angles add to 180°: ∠A + ∠C = ∠B + ∠D = 180°.</li>\n<li>An exterior angle equals the opposite interior angle.</li>\n<li>If one side is a diameter, the angles standing on it are 90°.</li>\n<li>Ptolemy (for advanced questions): AC × BD = AB × CD + AD × BC.</li>\n<li>A parallelogram that is cyclic must be a rectangle. A cyclic trapezium is isosceles.</li></ul>\n<p>Example: ∠A = 67°, ∠B = 92°. ∠C = 113°, ∠D = 88°, so ∠C − ∠D = 25°.</p>\n<p>Example: AB is a diameter and ∠ADC = 145°. ∠ABC = 180° − 145° = 35° and ∠ACB = 90°, so ∠BAC = 55°.</p>"
+   },
+   {
+    "title": "Tangents and common tangents",
+    "img": "quant/geo-common-tangents.svg",
+    "body": "<ul><li>A tangent is <b>perpendicular to the radius</b> at the point of contact. Tangent length from a point at distance d from the centre = √(d<sup>2</sup> − r<sup>2</sup>).</li>\n<li>The two tangents from an outside point P are equal (PA = PB), PO bisects ∠APB, and ∠APB + ∠AOB = 180°.</li>\n<li><b>Alternate segment theorem</b>: the angle between a tangent and a chord equals the angle the chord makes in the other segment.</li>\n<li>If chord AB has length L at distance d from the centre, the tangents at A and B meet at T with TA = r × (L/2)/d. Chord 32, radius 20: d = 12, so TA = 20 × 16/12 ≈ 26.67.</li></ul>\n<p><b>Two circles</b> with radii r<sub>1</sub>, r<sub>2</sub> and centres d apart:</p>\n<ul><li>Direct common tangent = √(d<sup>2</sup> − (r<sub>1</sub> − r<sub>2</sub>)<sup>2</sup>)</li>\n<li>Transverse common tangent = √(d<sup>2</sup> − (r<sub>1</sub> + r<sub>2</sub>)<sup>2</sup>)</li></ul>\n<table><thead><tr><th>Position of the circles</th><th>Common tangents</th></tr></thead><tbody>\n<tr><td>Apart (d &gt; r<sub>1</sub> + r<sub>2</sub>)</td><td>4</td></tr>\n<tr><td>Touching outside (d = r<sub>1</sub> + r<sub>2</sub>)</td><td>3</td></tr>\n<tr><td>Cutting at two points</td><td>2</td></tr>\n<tr><td>Touching inside (d = r<sub>1</sub> − r<sub>2</sub>)</td><td>1</td></tr>\n<tr><td>One inside the other, not touching</td><td>0</td></tr></tbody></table>\n<p>Example: radii 2 and 6, centres 5 apart. Direct tangent = √(25 − 16) = 3. Radii 5 and 10, centres 17 apart. Transverse tangent = √(289 − 225) = 8.</p>"
+   },
+   {
+    "title": "Chord and secant products",
+    "img": "quant/geo-chord-products.svg",
+    "body": "<ul><li><b>Intersecting chords</b>: if chords AB and CD meet at P inside the circle, PA × PB = PC × PD.</li>\n<li><b>Two secants</b> from an outside point P: PA × PB = PC × PD (whole lengths measured from P).</li>\n<li><b>Tangent and secant</b>: if TP is a tangent and TQR a secant, TP<sup>2</sup> = TQ × TR.</li></ul>\n<p>Example: AP = 6, PB = 8, CP = 4. PD = 48/4 = 12.</p>\n<p>Example: tangent TP = 12, TQ = x, TR = x + 7. x(x + 7) = 144 gives x = 9.</p>"
+   },
+   {
+    "title": "Quadrilaterals",
+    "body": "<p>The angles of any quadrilateral add to 360°.</p>\n<table><thead><tr><th>Shape</th><th>Key facts</th></tr></thead><tbody>\n<tr><td>Parallelogram</td><td>Opposite sides equal and parallel; opposite angles equal; neighbouring angles add to 180°; diagonals bisect each other; d<sub>1</sub><sup>2</sup> + d<sub>2</sub><sup>2</sup> = 2(a<sup>2</sup> + b<sup>2</sup>).</td></tr>\n<tr><td>Rectangle</td><td>Parallelogram with 90° angles; diagonals equal.</td></tr>\n<tr><td>Rhombus</td><td>All sides equal; diagonals bisect each other at 90° and bisect the angles; side = ½√(d<sub>1</sub><sup>2</sup> + d<sub>2</sub><sup>2</sup>).</td></tr>\n<tr><td>Square</td><td>Rectangle and rhombus together; diagonal = side × √2.</td></tr>\n<tr><td>Trapezium</td><td>One pair of parallel sides; the line joining midpoints of the other two sides = (sum of parallel sides)/2; diagonals cut each other in the ratio of the parallel sides.</td></tr>\n<tr><td>Kite</td><td>Two pairs of equal neighbouring sides; the main diagonal is an axis of symmetry and cuts the other diagonal at 90°.</td></tr></tbody></table>\n<ul><li>Joining the midpoints of any quadrilateral gives a parallelogram (of a rectangle, a rhombus; of a rhombus, a rectangle).</li>\n<li>If the bisectors of ∠C and ∠D meet at E, then ∠CED = (∠A + ∠B)/2.</li></ul>\n<p>Example: in trapezium ABCD (AB ∥ DC), diagonals meet at P with AP = 3x − 1, PC = 5x − 3, BP = 2x + 1, PD = 6x − 5. AP/PC = BP/PD gives 2x<sup>2</sup> − 5x + 2 = 0, so x = 2 (x = ½ makes PC negative).</p>"
+   },
+   {
+    "title": "Polygons",
+    "body": "<p>For a polygon with n sides:</p>\n<ul><li>Sum of interior angles = (n − 2) × 180°.</li>\n<li>Sum of exterior angles = 360° (any convex polygon).</li>\n<li>Regular polygon: each exterior angle = 360°/n, each interior angle = 180° − 360°/n. So n = 360°/exterior angle.</li>\n<li>Number of diagonals = n(n − 3)/2.</li>\n<li>A regular hexagon is 6 equilateral triangles: area = 3√3a<sup>2</sup>/2.</li></ul>\n<table><thead><tr><th>Sides n</th><th>Interior angle sum</th><th>Each interior angle</th><th>Each exterior angle</th><th>Diagonals</th></tr></thead><tbody>\n<tr><td>5</td><td>540°</td><td>108°</td><td>72°</td><td>5</td></tr>\n<tr><td>6</td><td>720°</td><td>120°</td><td>60°</td><td>9</td></tr>\n<tr><td>8</td><td>1080°</td><td>135°</td><td>45°</td><td>20</td></tr>\n<tr><td>9</td><td>1260°</td><td>140°</td><td>40°</td><td>27</td></tr>\n<tr><td>10</td><td>1440°</td><td>144°</td><td>36°</td><td>35</td></tr>\n<tr><td>12</td><td>1800°</td><td>150°</td><td>30°</td><td>54</td></tr>\n<tr><td>15</td><td>2340°</td><td>156°</td><td>24°</td><td>90</td></tr>\n<tr><td>18</td><td>2880°</td><td>160°</td><td>20°</td><td>135</td></tr>\n<tr><td>20</td><td>3240°</td><td>162°</td><td>18°</td><td>170</td></tr></tbody></table>\n<p>Example: interior angles of a hexagon and a 12-sided polygon are 120° and 150°, a ratio of 4 : 5.</p>"
    }
   ],
   "varieties": [
    {
-    "type": "triangles",
-    "name": "Angles in triangles",
-    "how": "Use angle sum 180° and the exterior angle property.",
+    "type": "triangle-angles",
+    "name": "Angles in triangles and lines",
+    "how": "Write the angle sum (180°) or the exterior angle rule for each triangle in the figure. When bisectors, altitudes or extended sides meet, use the shortcut table: 90° + A/2, 90° − A/2, A/2 or 180° − A.",
     "example": {
-     "q": "In ΔABC, ∠A = 60° and ∠B = 45°. Find the exterior angle at C.",
+     "q": "In ΔABC, ∠B = 72° and ∠C = 44°. BC is extended to D. The bisectors of ∠ABC and ∠ACD meet at E. Find ∠BEC.",
      "steps": [
-      "Exterior angle = ∠A + ∠B",
-      "60° + 45°"
+      "∠A = 180° − 72° − 44° = 64°.",
+      "E is where an internal bisector (of ∠B) meets an external bisector (of ∠C), so ∠BEC = ∠A/2.",
+      "∠BEC = 64°/2 = 32°."
      ],
-     "answer": "105°"
+     "answer": "32°"
     }
    },
    {
-    "type": "circles",
-    "name": "Circle theorems",
-    "how": "Spot the theorem: centre angle, semicircle, or tangent ⟂ radius (then use Pythagoras).",
+    "type": "congruence-similarity",
+    "name": "Congruence, similarity and proportion",
+    "how": "Find the pair of similar triangles (look for parallel lines or two equal angles), write the side ratio k, then use k for lengths and k<sup>2</sup> for areas.",
     "example": {
-     "q": "A tangent from a point 10 cm from the centre of a circle of radius 6 cm. Tangent length?",
+     "q": "In ΔABC, DE ∥ BC with D on AB and E on AC. If AD : DB = 2 : 3, find the ratio of the area of ΔADE to the area of trapezium DBCE.",
      "steps": [
-      "Radius ⟂ tangent",
-      "√(10<sup>2</sup> − 6<sup>2</sup>) = √64"
+      "ΔADE is similar to ΔABC with AD/AB = 2/(2 + 3) = 2/5.",
+      "Area ratio = (2/5)<sup>2</sup> = 4/25. So ΔADE = 4 parts and ΔABC = 25 parts.",
+      "Trapezium = 25 − 4 = 21 parts."
      ],
-     "answer": "8 cm"
+     "answer": "4 : 21"
     }
    },
    {
-    "type": "similarity",
-    "name": "BPT and angle bisector",
-    "how": "Set up the ratio of segments and cross-multiply.",
+    "type": "triangle-centres",
+    "name": "Triangle centres and medians",
+    "how": "Name the centre first: medians give the centroid (2 : 1, equal areas), angle bisectors give the incentre (90° + A/2, r = Area/s), perpendicular bisectors give the circumcentre (2A, R = abc/4Area), altitudes give the orthocentre (180° − A).",
     "example": {
-     "q": "In ΔABC, DE ∥ BC with AD = 2, DB = 3, AE = 4. Find EC.",
+     "q": "In ΔABC, ∠A = 68° and I is the incentre. Find ∠BIC.",
      "steps": [
-      "2/3 = 4/EC",
-      "EC = 6"
+      "The incentre is where the internal angle bisectors meet.",
+      "∠BIC = 90° + ∠A/2 = 90° + 34°."
      ],
-     "answer": "6"
+     "answer": "124°"
+    }
+   },
+   {
+    "type": "right-triangles",
+    "name": "Pythagoras and special triangles",
+    "how": "Look for a triplet first (3-4-5, 5-12-13, 8-15-17, 7-24-25, 20-21-29). With a perpendicular from the right angle to the hypotenuse, use BD = AB<sup>2</sup>/BC and AD = AB × AC/BC. For 30° and 45° angles use 1 : √3 : 2 and 1 : 1 : √2.",
+    "example": {
+     "q": "In ΔABC, ∠A = 90° and AD ⊥ BC. If AB = 12 cm and AC = 16 cm, find BD.",
+     "steps": [
+      "BC = √(144 + 256) = 20 cm (a 3-4-5 triplet times 4).",
+      "BD = AB<sup>2</sup>/BC = 144/20."
+     ],
+     "answer": "7.2 cm"
+    }
+   },
+   {
+    "type": "circle-chords-angles",
+    "name": "Chords and angles in circles",
+    "how": "Mark the centre and every 90° angle (semicircle, perpendicular to a chord). Use centre angle = 2 × angle on the circle, and opposite angles of a cyclic quadrilateral add to 180°. For chord lengths, use r<sup>2</sup> = d<sup>2</sup> + (L/2)<sup>2</sup>.",
+    "example": {
+     "q": "ABCD is a cyclic quadrilateral, AB is a diameter of the circle and ∠ADC = 145°. Find ∠BAC.",
+     "steps": [
+      "Opposite angles of a cyclic quadrilateral: ∠ABC = 180° − 145° = 35°.",
+      "AB is a diameter, so ∠ACB = 90° (angle in a semicircle).",
+      "In ΔABC: ∠BAC = 180° − 90° − 35°."
+     ],
+     "answer": "55°"
+    }
+   },
+   {
+    "type": "tangents",
+    "name": "Tangents and secants",
+    "how": "Join the centre to the point of contact to get a right angle, then use Pythagoras. For two circles use √(d<sup>2</sup> − (r<sub>1</sub> − r<sub>2</sub>)<sup>2</sup>) for the direct tangent and √(d<sup>2</sup> − (r<sub>1</sub> + r<sub>2</sub>)<sup>2</sup>) for the transverse one. For a tangent and a secant, TP<sup>2</sup> = TQ × TR.",
+    "example": {
+     "q": "The radii of two circles are 6 cm and 2 cm and their centres are 10 cm apart. Find the length of a transverse common tangent.",
+     "steps": [
+      "Transverse tangent = √(d<sup>2</sup> − (r<sub>1</sub> + r<sub>2</sub>)<sup>2</sup>).",
+      "= √(100 − 64) = √36."
+     ],
+     "answer": "6 cm"
+    }
+   },
+   {
+    "type": "quadrilaterals",
+    "name": "Quadrilaterals",
+    "how": "Use the angle sum 360° and the property of the named shape (diagonals of a rhombus meet at 90°, diagonals of a trapezium cut in the ratio of the parallel sides, and so on).",
+    "example": {
+     "q": "In quadrilateral ABCD, the bisectors of ∠C and ∠D meet at E. If ∠CED = 57° and ∠A = 47°, find ∠B.",
+     "steps": [
+      "In ΔCED: ∠CED = 180° − (∠C + ∠D)/2.",
+      "∠C + ∠D = 360° − ∠A − ∠B, so ∠CED = (∠A + ∠B)/2.",
+      "57° = (47° + ∠B)/2 gives ∠B = 114° − 47°."
+     ],
+     "answer": "67°"
+    }
+   },
+   {
+    "type": "polygons",
+    "name": "Regular polygons",
+    "how": "Get n from the exterior angle (n = 360°/exterior angle), or from the interior angle via exterior = 180° − interior. Then use (n − 2) × 180° for the angle sum and n(n − 3)/2 for diagonals.",
+    "example": {
+     "q": "The exterior angle of a regular polygon is 18°. How many diagonals does it have?",
+     "steps": [
+      "n = 360°/18° = 20 sides.",
+      "Diagonals = n(n − 3)/2 = 20 × 17/2."
+     ],
+     "answer": "170"
     }
    }
   ],
   "tips": [
-   "Mark the right angles first: semicircle, tangent–radius, altitude.",
-   "Learn the triplets 3-4-5, 5-12-13, 8-15-17, 7-24-25."
+   "Draw a rough figure every time and mark the right angles first: angle in a semicircle, radius to tangent, centre to the midpoint of a chord, altitude.",
+   "Learn the triplets 3-4-5, 5-12-13, 8-15-17, 7-24-25 and 20-21-29 with their multiples; they hide in most length questions.",
+   "For angle questions where bisectors or altitudes meet, use the shortcuts 90° + A/2, 90° − A/2, A/2 and 180° − A instead of chasing every angle.",
+   "Similar triangles: lengths go with k, areas go with k<sup>2</sup>. Write both ratios before you calculate.",
+   "Area ratio questions inside one triangle: triangles with the same height have areas in the ratio of their bases, and a median halves the area.",
+   "In an equilateral triangle, inradius : circumradius : height = 1 : 2 : 3.",
+   "Use common sense to cut options: an obtuse angle cannot be 40°, and no chord is longer than the diameter."
   ],
   "traps": [
-   "The angle at the circumference is half the centre angle only when both stand on the same arc.",
-   "In BPT, compare AD/DB with AE/EC, not AD/AB with AE/EC (both work, but do not mix them)."
+   "The centre angle is twice the angle on the circle only when both stand on the same arc. A point on the minor arc sees the chord at 180° minus the major-arc angle.",
+   "In the bisector shortcuts, check whether the bisectors are internal or external: 90° + A/2 and 90° − A/2 are easy to swap.",
+   "Area ratio of similar triangles is the square of the side ratio, not the side ratio itself.",
+   "SSA and AAA do not prove congruence; AAA only proves similarity.",
+   "Direct common tangent uses r<sub>1</sub> − r<sub>2</sub>; transverse uses r<sub>1</sub> + r<sub>2</sub>.",
+   "Sum of exterior angles is 360° for every polygon; do not use (n − 2) × 180° for exterior angles."
   ]
  },
  "formulas": [
   {
+   "name": "Triangle angle sum",
+   "expr": "∠A + ∠B + ∠C = 180°"
+  },
+  {
    "name": "Exterior angle",
-   "expr": "Sum of opposite interior angles"
+   "expr": "Sum of the two opposite interior angles"
+  },
+  {
+   "name": "Internal bisectors of B and C meet at O",
+   "expr": "∠BOC = 90° + A/2"
+  },
+  {
+   "name": "External bisectors of B and C meet at O",
+   "expr": "∠BOC = 90° − A/2"
+  },
+  {
+   "name": "Internal bisector of B, external of C",
+   "expr": "∠BOC = A/2"
+  },
+  {
+   "name": "Orthocentre H",
+   "expr": "∠BHC = 180° − A"
+  },
+  {
+   "name": "Circumcentre O (acute triangle)",
+   "expr": "∠BOC = 2A"
+  },
+  {
+   "name": "Similar triangles",
+   "expr": "Area ratio = (side ratio)²"
+  },
+  {
+   "name": "Basic proportionality theorem",
+   "expr": "DE ∥ BC gives AD/DB = AE/EC"
+  },
+  {
+   "name": "Angle bisector theorem",
+   "expr": "BD/DC = AB/AC"
+  },
+  {
+   "name": "Apollonius (median AD)",
+   "expr": "AB² + AC² = 2(AD² + BD²)"
+  },
+  {
+   "name": "Centroid",
+   "expr": "AG : GD = 2 : 1; each of 6 small triangles = 1/6 area"
+  },
+  {
+   "name": "Inradius",
+   "expr": "r = Area/s, s = (a + b + c)/2"
+  },
+  {
+   "name": "Circumradius",
+   "expr": "R = abc/(4 × Area)"
+  },
+  {
+   "name": "Inradius of right triangle",
+   "expr": "r = (a + b − c)/2"
+  },
+  {
+   "name": "Tangent length from vertex A to incircle",
+   "expr": "s − a"
+  },
+  {
+   "name": "Altitude on hypotenuse",
+   "expr": "AD = AB × AC/BC; BD = AB²/BC"
+  },
+  {
+   "name": "Equilateral triangle (side a)",
+   "expr": "h = √3a/2, area = √3a²/4, r = a/(2√3), R = a/√3"
+  },
+  {
+   "name": "30-60-90 and 45-45-90 sides",
+   "expr": "1 : √3 : 2 and 1 : 1 : √2"
+  },
+  {
+   "name": "Chord at distance d",
+   "expr": "L = 2√(r² − d²)"
+  },
+  {
+   "name": "Chord and angle on circle",
+   "expr": "L = 2R sin C"
   },
   {
    "name": "Centre angle",
-   "expr": "2 × angle at circumference"
+   "expr": "2 × angle on the circle (same arc)"
+  },
+  {
+   "name": "Cyclic quadrilateral",
+   "expr": "∠A + ∠C = ∠B + ∠D = 180°"
   },
   {
    "name": "Tangent length",
    "expr": "√(d² − r²)"
   },
   {
-   "name": "Angle bisector theorem",
-   "expr": "BD/DC = AB/AC"
+   "name": "Direct common tangent",
+   "expr": "√(d² − (r₁ − r₂)²)"
+  },
+  {
+   "name": "Transverse common tangent",
+   "expr": "√(d² − (r₁ + r₂)²)"
+  },
+  {
+   "name": "Intersecting chords",
+   "expr": "PA × PB = PC × PD"
+  },
+  {
+   "name": "Tangent and secant",
+   "expr": "TP² = TQ × TR"
+  },
+  {
+   "name": "Quadrilateral with incircle",
+   "expr": "AB + CD = AD + BC"
+  },
+  {
+   "name": "Parallelogram diagonals",
+   "expr": "d₁² + d₂² = 2(a² + b²)"
+  },
+  {
+   "name": "Rhombus side",
+   "expr": "½√(d₁² + d₂²)"
+  },
+  {
+   "name": "Polygon interior angle sum",
+   "expr": "(n − 2) × 180°"
+  },
+  {
+   "name": "Regular polygon exterior angle",
+   "expr": "360°/n"
+  },
+  {
+   "name": "Diagonals of a polygon",
+   "expr": "n(n − 3)/2"
   }
  ],
  "questions": [
@@ -90,7 +345,7 @@
    "id": "q-geometry-001",
    "rev": 1,
    "topic": "q-geometry",
-   "type": "triangles",
+   "type": "triangle-angles",
    "level": 1,
    "q": "In the given figure, ∠BAC = 50° and ∠ABC = 70°. Side BC is extended to D. What is ∠ACD?",
    "img": "quant/geo-triangle-exterior.svg",
@@ -108,7 +363,7 @@
    "id": "q-geometry-002",
    "rev": 1,
    "topic": "q-geometry",
-   "type": "circles",
+   "type": "circle-chords-angles",
    "level": 1,
    "q": "In the given figure, AB is a diameter of the circle with centre O and C is a point on the circle. If ∠CAB = 35°, what is ∠CBA?",
    "img": "quant/geo-semicircle.svg",
@@ -126,7 +381,7 @@
    "id": "q-geometry-003",
    "rev": 1,
    "topic": "q-geometry",
-   "type": "similarity",
+   "type": "congruence-similarity",
    "level": 2,
    "q": "In ΔABC, DE ∥ BC with D on AB and E on AC. If AD = 4 cm, DB = 6 cm and AE = 6 cm, find EC.",
    "img": "quant/geo-bpt.svg",
@@ -144,7 +399,7 @@
    "id": "q-geometry-004",
    "rev": 1,
    "topic": "q-geometry",
-   "type": "circles",
+   "type": "tangents",
    "level": 2,
    "q": "A point P is 13 cm from the centre O of a circle of radius 5 cm. What is the length of the tangent PT drawn from P to the circle?",
    "img": "quant/geo-tangents.svg",
@@ -162,7 +417,7 @@
    "id": "q-geometry-005",
    "rev": 1,
    "topic": "q-geometry",
-   "type": "circles",
+   "type": "circle-chords-angles",
    "level": 3,
    "q": "In the given figure, O is the centre of the circle and ∠AOB = 110°. C is a point on the major arc. What is ∠ACB?",
    "img": "quant/geo-central-angle.svg",
@@ -180,7 +435,7 @@
    "id": "q-geometry-006",
    "rev": 1,
    "topic": "q-geometry",
-   "type": "similarity",
+   "type": "congruence-similarity",
    "level": 3,
    "q": "In ΔABC, AD is the bisector of ∠A meeting BC at D. If AB = 6 cm, AC = 9 cm and BC = 10 cm, find BD.",
    "img": "quant/geo-angle-bisector.svg",

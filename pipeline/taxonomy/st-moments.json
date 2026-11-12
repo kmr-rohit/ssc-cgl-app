@@ -1,0 +1,41 @@
+{
+ "topic": "st-moments",
+ "types": [
+  {
+   "type": "raw-central-moments",
+   "name": "Raw and central moments",
+   "description": "Gives moments about some value (or about zero) and asks for the mean, variance or a central moment, or asks a property such as μ₁ = 0.",
+   "concepts": []
+  },
+  {
+   "type": "pearson-skewness",
+   "name": "Karl Pearson's skewness",
+   "description": "Gives mean, mode or median and SD and asks for Karl Pearson's coefficient of skewness, or works backwards from it.",
+   "concepts": []
+  },
+  {
+   "type": "bowley-skewness",
+   "name": "Bowley's quartile skewness",
+   "description": "Gives Q₁, median and Q₃ (or percentiles) and asks for Bowley's or Kelly's coefficient of skewness.",
+   "concepts": []
+  },
+  {
+   "type": "beta-gamma",
+   "name": "Moment skewness β₁ and γ₁",
+   "description": "Gives μ₂ and μ₃ and asks for β₁, γ₁ or the direction of skewness.",
+   "concepts": []
+  },
+  {
+   "type": "kurtosis",
+   "name": "Kurtosis β₂ and γ₂",
+   "description": "Gives μ₂ and μ₄ (or β₂) and asks for β₂, γ₂ or whether the curve is lepto-, meso- or platykurtic.",
+   "concepts": []
+  },
+  {
+   "type": "skewness-shape",
+   "name": "Shape from mean, median and mode",
+   "description": "Asks the direction of skewness from the order of mean, median and mode, from the tail, or from quartile gaps, without a full calculation.",
+   "concepts": []
+  }
+ ]
+}

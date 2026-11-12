@@ -1,37 +1,147 @@
 {
   "topic": "e-parajumbles",
   "notes": {
-    "summary": "In <b>Sentence Rearrangement</b> (para jumbles) four or more sentences P, Q, R, S are given out of order. Choose the sequence that makes a logical paragraph. Options look like <b>QPSR</b>, so you rarely need to solve fully — find one or two fixed links and eliminate.",
+    "summary": "In <b>para jumbles</b> (sentence rearrangement) you get four to six sentences of a paragraph in mixed-up order and choose the option that puts them in a logical order. Sometimes the first and last sentences are fixed, and sometimes the jumbled pieces are parts of a single sentence. Every good paragraph has a clear opening, links between sentences (pronouns, repeated words, connectors, time order) and a natural ending. Find those links and you rarely need to test every option.",
     "concepts": [
-      { "title": "Find the opening sentence", "body": "The first sentence introduces the topic and can stand alone. It usually names a person or thing in full (<i>Mahatma Gandhi</i>, <i>The Himalayas</i>). A sentence starting with <i>He, This, However, Therefore, Such</i> almost never opens the paragraph." },
-      { "title": "Find mandatory pairs", "body": "Look for links that force two sentences together:<ul><li><b>Pronoun → noun</b>: <i>it/he/they</i> needs an earlier noun.</li><li><b>Article</b>: <i>a camera</i> first, <i>the camera</i> later.</li><li><b>Connectors</b>: <i>However, But</i> contrast the previous line; <i>Therefore, As a result</i> follow a cause.</li><li><b>Time order</b>: <i>first, then, finally; in 1990… by 2000</i>.</li></ul>" },
-      { "title": "Use the options", "body": "Once you know the opener or one pair (say R must come right after P), strike out every option without that feature. Often only one survives." }
+      {
+        "title": "The fast method",
+        "body": "<ol><li><b>Find the opener</b>: the sentence that makes sense on its own.</li><li><b>Find one sure pair</b> (two sentences that must sit together, e.g. a noun and the pronoun that refers to it).</li><li><b>Eliminate options</b>: keep only options that start with the opener and contain your pair.</li><li>If two options remain, find the <b>closing</b> sentence or one more pair.</li></ol>You almost never need to build the whole order yourself. Two clues usually leave one option."
+      },
+      {
+        "title": "Spotting the opening sentence",
+        "body": "A good opener introduces the topic and needs nothing before it.<table><thead><tr><th>Likely opener</th><th>Cannot be the opener</th></tr></thead><tbody><tr><td>A general statement or definition: <i>Tigers are the largest members of the cat family.</i></td><td>Starts with a pronoun: <i>They are found in…</i></td></tr><tr><td>Introduces a person or thing with a full name or <i>a / an</i>: <i>A panther broke into a house.</i></td><td>Starts with a connector: <i>However, … / Therefore, … / Moreover, …</i></td></tr><tr><td>Sets time and place for a story: <i>There lived a foolish king in a large kingdom.</i></td><td>Refers back: <i>This method… / Such habits… / The pump…</i></td></tr><tr><td>Gives the full form of a name: <i>The Sustainable Development Goals (SDGs) were adopted in 2015.</i></td><td>Uses only the short form: <i>The SDGs aim to…</i></td></tr></tbody></table>"
+      },
+      {
+        "title": "Reference links: nouns, pronouns and articles",
+        "body": "<ul><li><b>Noun before pronoun</b>: <i>Lata</i> → <i>she</i>; <i>the printing press</i> → <i>it</i>; <i>many people</i> → <i>they</i>.</li><li><b>a before the</b>: <i>a water pump</i> (first mention) → <i>the pump</i> (later).</li><li><b>Full form before short form</b>: <i>Reserve Bank of India (RBI)</i> → <i>the RBI</i>.</li><li><b>Idea before this / that / such</b>: <i>People check their phones dozens of times an hour.</i> → <i><u>Such</u> habits…</i></li><li><b>Repeated key word</b>: a sentence ending with <i>new land</i> may be followed by one starting <i>This land…</i>.</li></ul>Check that the pronoun matches in number and gender: <i>they</i> cannot refer back to <i>the farmer</i>."
+      },
+      {
+        "title": "Connectors and what they need before them",
+        "body": "<table><thead><tr><th>Connector at the start</th><th>The sentence before it must…</th></tr></thead><tbody><tr><td>But, However, Yet, Nevertheless</td><td>say something the new sentence contrasts with</td></tr><tr><td>Therefore, Thus, So, As a result, Hence</td><td>give the cause of the result now stated</td></tr><tr><td>Moreover, Also, Besides, In addition, Furthermore</td><td>make a point of the same kind</td></tr><tr><td>For example, For instance</td><td>make a general claim that this example supports</td></tr><tr><td>In short, In conclusion, Finally</td><td>come near the end; this is often the last sentence</td></tr><tr><td>Despite this, Even so</td><td>state a problem or fact that is being overcome</td></tr></tbody></table>"
+      },
+      {
+        "title": "Time order and process order",
+        "body": "Stories and processes follow time. Look for:<ul><li><b>Sequence words</b>: <i>first, then, next, after that, later, finally, at last</i>.</li><li><b>Time phrases</b>: <i>one day, the next morning, after a year, by noon, within an hour</i>.</li><li><b>Dates</b>: earlier years come first in a history paragraph.</li><li><b>Cause before effect</b>: <i>the machine kept failing</i> → <i>they replaced it</i>.</li><li><b>Steps of a process</b>: <i>data was collected</i> → <i>analysed</i> → <i>conclusions drawn</i>.</li></ul><i>Example</i>: Lata dreamed of a bicycle → she saved money every month → after a year she had enough → she rode it to work the next day."
+      },
+      {
+        "title": "General to specific",
+        "body": "Most essay-type paragraphs move from a general statement to details and examples, and end with a result, solution or opinion.<ol><li>General idea or problem</li><li>Explanation or cause</li><li>Example or details</li><li>Result, solution or conclusion</li></ol><i>Example</i>: Mangroves grow on tropical coasts (general) → their roots break waves (benefit 1) → the roots also trap mud (benefit 2, linked by <i>also</i>) → moreover they shelter fish (benefit 3) → despite this, they are being cleared (problem) → protecting them is urgent (conclusion)."
+      },
+      {
+        "title": "First and last sentences given",
+        "body": "When S1 and S6 are fixed:<ul><li>The sentence right after S1 usually continues S1's subject or picks up its last idea.</li><li>The sentence right before S6 must lead into S6. If S6 starts with a pronoun or connector, its partner is just before it.</li><li>Work from both ends inward; the middle is then easy.</li></ul>"
+      },
+      {
+        "title": "Parts of one sentence",
+        "body": "Here the pieces are phrases, not full sentences. Rebuild the grammar:<ol><li>Find the <b>subject</b> (often the piece with a capital letter or a noun phrase like <i>one must</i>).</li><li>Attach the <b>verb</b> and its <b>object</b>.</li><li>Add phrases of purpose, time or place (<i>for a good body, in the evening</i>).</li><li>Clauses with <i>but, which, because</i> come after the idea they join.</li></ol><i>Example</i>: P: for a / Q: exercise daily / R: one must / S: good body → <b>RQPS</b>: <i>One must exercise daily for a good body.</i>"
+      },
+      {
+        "title": "Mandatory pairs: a checklist",
+        "body": "<ul><li>Noun → pronoun (she, it, they, this)</li><li><i>a</i> + noun → <i>the</i> + same noun</li><li>Full name → short form or acronym</li><li>Question → answer</li><li>Claim → <i>For example</i></li><li>Problem → <i>As a result / Therefore</i></li><li>Statement → <i>However / But</i> (contrast)</li><li>Direct speech → the reply to it (in stories)</li></ul>Finding even one of these pairs usually rules out two options."
+      }
     ],
     "varieties": [
-      { "type": "four-sentence", "name": "Four sentences P, Q, R, S", "how": "Find the opener, then one pronoun or connector link; eliminate options.", "example": { "q": "P: However, it was rejected by the publisher.<br>Q: Ravi wrote his first novel at nineteen.<br>R: He then rewrote it completely.<br>S: The rewritten version became a bestseller.", "steps": ["Q names Ravi in full → opener.", "P (However, it…) contrasts with writing the novel → QP.", "R (then rewrote) follows the rejection, S follows R."], "answer": "QPRS" } },
-      { "type": "fixed-ends", "name": "First and last sentences given", "how": "Sentence 1 and 6 are fixed; arrange P, Q, R, S between them so the chain flows from 1 to 6.", "example": { "q": "1: The kettle began to whistle.<br>P: She poured the water into a cup.<br>Q: Asha turned off the stove.<br>R: Then she added a tea bag.<br>S: Finally she stirred in some honey.<br>6: Her tea was ready.", "steps": ["Whistling → turn off stove (Q).", "Pour (P), then tea bag (R), finally honey (S)."], "answer": "QPRS" } }
+      {
+        "type": "opening-sentence",
+        "name": "Find the opening sentence",
+        "how": "Choose the sentence that introduces the topic and makes sense alone: no starting pronoun, no connector, no <i>this/such/the</i> pointing back. Keep only options that begin with it.",
+        "example": {
+          "q": "A. They are found in forests across Asia. B. Tigers are the largest members of the cat family. C. However, their numbers have fallen sharply. D. Conservation projects have helped some populations recover. Options: ABCD / BACD / BCAD / CBAD",
+          "steps": [
+            "A starts with <i>They</i>, C with <i>However</i>; neither can open.",
+            "B introduces tigers in general, so it opens. Only BACD and BCAD remain.",
+            "<i>They</i> in A refers to tigers, so A follows B. C contrasts with that, and D gives the recovery."
+          ],
+          "answer": "BACD"
+        }
+      },
+      {
+        "type": "reference-link",
+        "name": "Pronoun and reference links",
+        "how": "Match each pronoun, <i>this/such</i>, <i>the X</i> or short form to the sentence that first names it. Those two sentences sit together, noun first.",
+        "example": {
+          "q": "P: This made copying books by hand far less common. Q: The printing press was developed in Europe in the fifteenth century. R: As a result, more people learned to read. S: It allowed books to be produced quickly and cheaply. Options: QPSR / SQPR / QSPR / QSRP",
+          "steps": [
+            "Q names the printing press, so it opens.",
+            "S's <i>It</i> refers to the press, so QS.",
+            "P's <i>This</i> refers to quick, cheap books in S, so QSP.",
+            "R gives the final result."
+          ],
+          "answer": "QSPR"
+        }
+      },
+      {
+        "type": "connector-sequence",
+        "name": "Connectors and time order",
+        "how": "Use time words (<i>then, after a year, finally</i>) and connectors (<i>but, therefore, as a result</i>) to decide what must come before what.",
+        "example": {
+          "q": "P: But the machine kept failing in the rainy season. Q: The village bought a water pump to irrigate its fields. R: The villagers finally replaced it with a solar-powered model. S: For a few months, the pump worked well. Options: QSPR / QPSR / SQPR / QRSP",
+          "steps": [
+            "Q introduces <i>a water pump</i>; it opens.",
+            "S (<i>for a few months… worked well</i>) comes before the contrast in P (<i>But… kept failing</i>).",
+            "R with <i>finally</i> ends the story."
+          ],
+          "answer": "QSPR"
+        }
+      },
+      {
+        "type": "fixed-ends",
+        "name": "First and last sentences given",
+        "how": "Link the first middle sentence to S1 and the last middle sentence to S6, then fill the gap using pronouns and time order.",
+        "example": {
+          "q": "1: The farmer woke up before sunrise. P: Then he led the bullocks to the field. Q: He fed his cattle and drank a glass of milk. R: By noon, half the field had been ploughed. S: There he began ploughing the dry soil. 6: He rested under a neem tree for lunch. Options: QSPR / QPSR / PQSR / QPRS",
+          "steps": [
+            "After waking, he does his morning work at home: Q.",
+            "<i>Then</i> he goes to the field: P.",
+            "<i>There</i> (in the field) he ploughs: S.",
+            "<i>By noon</i> leads into lunch in 6: R."
+          ],
+          "answer": "QPSR"
+        }
+      },
+      {
+        "type": "sentence-parts",
+        "name": "Parts of one sentence",
+        "how": "Find the subject, join the verb and object to it, then add phrases of purpose, time or place at the end.",
+        "example": {
+          "q": "P: for a Q: exercise daily R: one must S: good body. Arrange to form a meaningful sentence. Options: PRQS / PRSQ / RQPS / PQRS",
+          "steps": [
+            "Subject and helping verb: <i>one must</i> (R).",
+            "Main verb: <i>exercise daily</i> (Q).",
+            "Purpose: <i>for a</i> (P) + <i>good body</i> (S)."
+          ],
+          "answer": "RQPS"
+        }
+      }
     ],
     "tips": [
-      "Hunt for the opener first; it alone can eliminate half the options.",
-      "A sentence with 'the' plus a noun mentioned earlier with 'a' must come after that sentence.",
-      "Read your final sequence once quickly to confirm it flows."
+      "Find the opener first; it alone often removes two options.",
+      "A sentence that starts with a pronoun or a connector is almost never the opener.",
+      "Look for one mandatory pair and check which options keep it together.",
+      "Full names and <i>a + noun</i> come before short forms and <i>the + noun</i>.",
+      "Words like <i>finally, in short, thus</i> usually mark the last sentence.",
+      "In stories, follow time: one day → then → later → finally.",
+      "Read your chosen order once from start to end; it should flow without jumps."
     ],
     "traps": [
-      "A sentence with a general statement may look like an opener but can also be a concluding summary — check for words like <i>thus, hence, in short</i>.",
-      "Do not force a time order if the paragraph is an argument; connectors matter more there."
+      "Choosing a sentence with <i>This</i> or <i>It</i> as the opener because it sounds general.",
+      "A pronoun that looks like a link but does not match in number (<i>they</i> after <i>the farmer</i>).",
+      "Two options that differ only in the last two sentences: check the closing sentence carefully.",
+      "Putting an example (<i>For instance…</i>) before the claim it supports.",
+      "In sentence-part questions, joining phrases that sound fine but leave the sentence without a main verb."
     ]
   },
   "questions": [
-    { "id": "e-parajumbles-001", "rev": 1, "topic": "e-parajumbles", "type": "four-sentence", "level": 1, "q": "Rearrange the parts to form a meaningful paragraph.<br>P: She saved a little money from her salary every month.<br>Q: Lata had always dreamed of owning a bicycle.<br>R: After a year, she finally had enough to buy one.<br>S: She rode it proudly to work the very next day.", "options": ["QPRS", "PQRS", "QRPS", "PRQS"], "answer": 0, "solution": "Q introduces Lata and her dream (opener). P tells how she saved; R says after a year she had enough; S describes riding it. <b>QPRS</b>.", "source": "test-data" },
-    { "id": "e-parajumbles-002", "rev": 1, "topic": "e-parajumbles", "type": "fixed-ends", "level": 1, "q": "The first and last sentences are given. Rearrange P, Q, R, S.<br>1: The farmer woke up before sunrise.<br>P: Then he led the bullocks to the field.<br>Q: He fed his cattle and drank a glass of milk.<br>R: By noon, half the field had been ploughed.<br>S: There he began ploughing the dry soil.<br>6: He rested under a neem tree for lunch.", "options": ["QSPR", "QPSR", "PQSR", "QPRS"], "answer": 1, "solution": "After waking, he feeds the cattle (Q), then leads bullocks to the field (P). <i>There</i> in S refers to the field → P before S. R (by noon) leads into lunch. <b>QPSR</b>.", "source": "test-data" },
-    { "id": "e-parajumbles-003", "rev": 1, "topic": "e-parajumbles", "type": "four-sentence", "level": 2, "q": "Rearrange the parts to form a meaningful paragraph.<br>P: This made the old method of copying books by hand far less common.<br>Q: The printing press was developed in Europe in the fifteenth century.<br>R: As a result, more people learned to read.<br>S: It allowed books to be produced quickly and cheaply.", "options": ["QPSR", "SQPR", "QSPR", "QSRP"], "answer": 2, "solution": "Q names the printing press (opener). S's <i>It</i> refers to the press. P's <i>This</i> refers to cheap production. R's <i>As a result</i> gives the final effect. <b>QSPR</b>.", "source": "test-data" },
-    { "id": "e-parajumbles-004", "rev": 1, "topic": "e-parajumbles", "type": "four-sentence", "level": 2, "q": "Rearrange the parts to form a meaningful paragraph.<br>P: But the machine kept failing in the rainy season.<br>Q: The village bought a water pump to irrigate its fields.<br>R: The villagers finally replaced it with a solar-powered model.<br>S: For a few months, the pump worked well.", "options": ["QSPR", "QPSR", "SQPR", "QRSP"], "answer": 0, "solution": "Q introduces the pump. S: it worked well at first. P: <i>But</i> contrasts with that success. R: <i>finally</i> replaced it. <b>QSPR</b>.", "source": "test-data" },
-    { "id": "e-parajumbles-005", "rev": 1, "topic": "e-parajumbles", "type": "four-sentence", "level": 3, "q": "Rearrange the parts to form a meaningful paragraph.<br>P: Such habits, repeated daily, slowly change the brain's reward system.<br>Q: Many people check their phones dozens of times an hour.<br>R: Breaking the cycle therefore needs more than willpower; it needs a change of environment.<br>S: Each notification gives a small burst of pleasure that makes them check again.", "options": ["QPSR", "SQPR", "QSRP", "QSPR"], "answer": 3, "solution": "Q states the general fact (opener). S explains why (<i>them</i> = many people). P's <i>Such habits</i> sums up Q and S. R's <i>therefore</i> draws the conclusion. <b>QSPR</b>.", "source": "test-data" },
-    { "id": "e-parajumbles-006", "rev": 1, "topic": "e-parajumbles", "type": "fixed-ends", "level": 3, "q": "The first and last sentences are given. Rearrange P, Q, R, S.<br>1: Mangroves grow along tropical coastlines where salt water meets land.<br>P: These roots also trap mud, slowly building new land.<br>Q: Their tangled roots break the force of waves during storms.<br>R: Despite these benefits, large areas have been cleared for fish farms.<br>S: Moreover, they shelter young fish and crabs.<br>6: Protecting the remaining forests is now an urgent task.", "options": ["QPSR", "QSPR", "PQSR", "QPRS"], "answer": 0, "solution": "Q mentions <i>tangled roots</i>; P's <i>These roots also</i> continues it → QP. S's <i>Moreover</i> adds another benefit. R's <i>Despite these benefits</i> turns to the problem and leads to sentence 6. <b>QPSR</b>.", "source": "test-data" }
+    {"id":"e-parajumbles-001","rev":1,"topic":"e-parajumbles","type":"connector-sequence","level":1,"q":"Rearrange the parts to form a meaningful paragraph.<br>P: She saved a little money from her salary every month.<br>Q: Lata had always dreamed of owning a bicycle.<br>R: After a year, she finally had enough to buy one.<br>S: She rode it proudly to work the very next day.","options":["QPRS","PQRS","QRPS","PRQS"],"answer":0,"solution":"Q introduces Lata and her dream (opener). P tells how she saved; R says after a year she had enough; S describes riding it. <b>QPRS</b>.","source":"test-data"},
+    {"id":"e-parajumbles-002","rev":1,"topic":"e-parajumbles","type":"fixed-ends","level":1,"q":"The first and last sentences are given. Rearrange P, Q, R, S.<br>1: The farmer woke up before sunrise.<br>P: Then he led the bullocks to the field.<br>Q: He fed his cattle and drank a glass of milk.<br>R: By noon, half the field had been ploughed.<br>S: There he began ploughing the dry soil.<br>6: He rested under a neem tree for lunch.","options":["QSPR","QPSR","PQSR","QPRS"],"answer":1,"solution":"After waking, he feeds the cattle (Q), then leads bullocks to the field (P). <i>There</i> in S refers to the field → P before S. R (by noon) leads into lunch. <b>QPSR</b>.","source":"test-data"},
+    {"id":"e-parajumbles-003","rev":1,"topic":"e-parajumbles","type":"reference-link","level":2,"q":"Rearrange the parts to form a meaningful paragraph.<br>P: This made the old method of copying books by hand far less common.<br>Q: The printing press was developed in Europe in the fifteenth century.<br>R: As a result, more people learned to read.<br>S: It allowed books to be produced quickly and cheaply.","options":["QPSR","SQPR","QSPR","QSRP"],"answer":2,"solution":"Q names the printing press (opener). S's <i>It</i> refers to the press. P's <i>This</i> refers to cheap production. R's <i>As a result</i> gives the final effect. <b>QSPR</b>.","source":"test-data"},
+    {"id":"e-parajumbles-004","rev":1,"topic":"e-parajumbles","type":"connector-sequence","level":2,"q":"Rearrange the parts to form a meaningful paragraph.<br>P: But the machine kept failing in the rainy season.<br>Q: The village bought a water pump to irrigate its fields.<br>R: The villagers finally replaced it with a solar-powered model.<br>S: For a few months, the pump worked well.","options":["QSPR","QPSR","SQPR","QRSP"],"answer":0,"solution":"Q introduces the pump. S: it worked well at first. P: <i>But</i> contrasts with that success. R: <i>finally</i> replaced it. <b>QSPR</b>.","source":"test-data"},
+    {"id":"e-parajumbles-005","rev":1,"topic":"e-parajumbles","type":"reference-link","level":3,"q":"Rearrange the parts to form a meaningful paragraph.<br>P: Such habits, repeated daily, slowly change the brain's reward system.<br>Q: Many people check their phones dozens of times an hour.<br>R: Breaking the cycle therefore needs more than willpower; it needs a change of environment.<br>S: Each notification gives a small burst of pleasure that makes them check again.","options":["QPSR","SQPR","QSRP","QSPR"],"answer":3,"solution":"Q states the general fact (opener). S explains why (<i>them</i> = many people). P's <i>Such habits</i> sums up Q and S. R's <i>therefore</i> draws the conclusion. <b>QSPR</b>.","source":"test-data"},
+    {"id":"e-parajumbles-006","rev":1,"topic":"e-parajumbles","type":"fixed-ends","level":3,"q":"The first and last sentences are given. Rearrange P, Q, R, S.<br>1: Mangroves grow along tropical coastlines where salt water meets land.<br>P: These roots also trap mud, slowly building new land.<br>Q: Their tangled roots break the force of waves during storms.<br>R: Despite these benefits, large areas have been cleared for fish farms.<br>S: Moreover, they shelter young fish and crabs.<br>6: Protecting the remaining forests is now an urgent task.","options":["QPSR","QSPR","PQSR","QPRS"],"answer":0,"solution":"Q mentions <i>tangled roots</i>; P's <i>These roots also</i> continues it → QP. S's <i>Moreover</i> adds another benefit. R's <i>Despite these benefits</i> turns to the problem and leads to sentence 6. <b>QPSR</b>.","source":"test-data"}
   ],
   "flashcards": [
-    { "id": "fc-e-pj-1", "front": "Signs a sentence is NOT the opener", "back": "Starts with a pronoun (he, it, this), or a connector (however, therefore, also, moreover).", "deck": "grammar" },
-    { "id": "fc-e-pj-2", "front": "'a X' vs 'the X' in para jumbles", "back": "The sentence introducing 'a X' comes before the one mentioning 'the X'.", "deck": "grammar" },
-    { "id": "fc-e-pj-3", "front": "Fastest strategy", "back": "Find the opener + one mandatory pair, then eliminate options.", "deck": "grammar" }
+    {"id":"fc-e-pj-1","front":"Signs a sentence is NOT the opener","back":"Starts with a pronoun (he, it, this), or a connector (however, therefore, also, moreover).","deck":"grammar"},
+    {"id":"fc-e-pj-2","front":"'a X' vs 'the X' in para jumbles","back":"The sentence introducing 'a X' comes before the one mentioning 'the X'.","deck":"grammar"},
+    {"id":"fc-e-pj-3","front":"Fastest strategy","back":"Find the opener + one mandatory pair, then eliminate options.","deck":"grammar"}
   ]
 }

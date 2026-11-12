@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" width="300" height="240" font-family="sans-serif" font-size="13">
+  <circle cx="150" cy="130" r="95" fill="none" stroke="#000" stroke-width="1.5"/>
+  <line x1="150" y1="130" x2="150" y2="35" stroke="#000"/>
+  <text x="196.9" y="95.9" text-anchor="middle">A</text>
+  <text x="196.9" y="110.9" text-anchor="middle" font-size="11">30% = 108°</text>
+  <line x1="150" y1="130" x2="240.4" y2="159.4" stroke="#000"/>
+  <text x="176.3" y="181.7" text-anchor="middle">B</text>
+  <text x="176.3" y="196.7" text-anchor="middle" font-size="11">25% = 90°</text>
+  <line x1="150" y1="130" x2="120.6" y2="220.4" stroke="#000"/>
+  <text x="103.1" y="164.1" text-anchor="middle">C</text>
+  <text x="103.1" y="179.1" text-anchor="middle" font-size="11">20% = 72°</text>
+  <line x1="150" y1="130" x2="55" y2="130" stroke="#000"/>
+  <text x="98.3" y="103.7" text-anchor="middle">D</text>
+  <text x="98.3" y="118.7" text-anchor="middle" font-size="11">15% = 54°</text>
+  <line x1="150" y1="130" x2="94.2" y2="53.1" stroke="#000"/>
+  <line x1="126" y1="56" x2="120" y2="36" stroke="#000" stroke-width="0.8"/>
+  <text x="117.9" y="31.1" text-anchor="end">E: 10% = 36°</text>
+  <circle cx="150" cy="130" r="2.5" fill="#000"/>
+</svg>

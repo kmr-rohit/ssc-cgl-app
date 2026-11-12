@@ -1,73 +1,128 @@
 {
  "topic": "q-probability",
  "notes": {
-  "summary": "Probability = favourable outcomes / total outcomes. Rare in Tier 1, about one question in Tier 2. Coins, dice, cards and balls cover almost everything.",
+  "summary": "Probability tells you how likely an event is, as favourable outcomes divided by total outcomes. SSC asks it rarely (about one question in some Tier 2 papers), usually on coins, dice, cards, balls or two people with given chances. Knowing the sample space sizes and the rules for \"or\", \"and\" and \"at least one\" is enough.",
   "concepts": [
    {
-    "title": "Basics",
-    "body": "P(E) = favourable / total, always between 0 and 1. P(not E) = 1 − P(E). P(A or B) = P(A) + P(B) − P(A and B)."
+    "title": "What probability means",
+    "body": "<p>Probability measures how likely an event is, on a scale from 0 (impossible) to 1 (certain). When all outcomes are equally likely:</p><p><b>P(event) = number of favourable outcomes / total number of outcomes</b></p><p>The list of all possible outcomes is the <b>sample space</b>. For one die it is {1, 2, 3, 4, 5, 6}, so P(even) = 3/6 = 1/2.</p><ul><li>0 ≤ P(E) ≤ 1 always. An answer above 1 or below 0 is wrong.</li><li>The probabilities of all outcomes add up to 1.</li><li><b>Odds in favour</b> of an event a : b means P(E) = a/(a + b). Odds against a : b means P(E) = b/(a + b).</li></ul>"
    },
    {
-    "title": "Sample spaces",
-    "body": "One coin: 2; two coins: 4; three coins: 8. One die: 6; two dice: 36. A deck has 52 cards: 4 suits × 13, 4 kings, 12 face cards, 26 red."
+    "title": "Coins and dice",
+    "body": "<p><b>Coins.</b> n coins (or one coin tossed n times) give 2<sup>n</sup> outcomes. P(exactly k heads) = nCk / 2<sup>n</sup>.</p><table><tr><th>Coins</th><th>Outcomes</th><th>List</th></tr><tr><td>1</td><td>2</td><td>H, T</td></tr><tr><td>2</td><td>4</td><td>HH, HT, TH, TT</td></tr><tr><td>3</td><td>8</td><td>HHH, HHT, HTH, THH, HTT, THT, TTH, TTT</td></tr></table><p><b>Dice.</b> One die has 6 outcomes; two dice have 6 × 6 = 36 ordered pairs. There are 6 doublets (1,1) to (6,6). Count of each sum with two dice:</p><table><tr><th>Sum</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr><tr><td>Ways</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td></tr></table><p>The pattern rises to 6 at a sum of 7 and falls back. Quick facts: P(sum 7) = 6/36 = 1/6; P(sum is prime) = 15/36 = 5/12; P(product even) = 27/36 = 3/4; P(at least one six) = 11/36.</p>"
    },
    {
-    "title": "Drawing without replacement",
-    "body": "Use combinations: number of ways to choose r from n = <sup>n</sup>C<sub>r</sub> = n! / (r!(n − r)!)."
+    "title": "A pack of cards",
+    "body": "<p>A pack has 52 cards in 4 suits of 13 cards each: A, 2 to 10, J, Q, K.</p><table><tr><th>Suit</th><th>Colour</th><th>Cards</th></tr><tr><td>Spades ♠</td><td>Black</td><td>13</td></tr><tr><td>Clubs ♣</td><td>Black</td><td>13</td></tr><tr><td>Hearts ♥</td><td>Red</td><td>13</td></tr><tr><td>Diamonds ♦</td><td>Red</td><td>13</td></tr></table><table><tr><th>Group</th><th>Count</th></tr><tr><td>Red cards, black cards</td><td>26 each</td></tr><tr><td>Kings, queens, jacks, aces</td><td>4 each</td></tr><tr><td>Face (court) cards: J, Q, K</td><td>12</td></tr><tr><td>Honour cards: A, K, Q, J</td><td>16</td></tr><tr><td>Number cards 2 to 10</td><td>36</td></tr></table><p>Example: P(a king or a heart) = (4 + 13 − 1)/52 = 16/52 = 4/13. The king of hearts is counted once.</p><p>For two cards drawn together, total ways = 52C2 = 1326.</p>"
+   },
+   {
+    "title": "Choosing items: combinations",
+    "body": "<p>When several items are taken together (balls from a bag, people for a committee), order does not matter, so count with combinations:</p><p>nCr = n! / (r! (n − r)!). Quick ones: nC1 = n, nC2 = n(n − 1)/2, nC3 = n(n − 1)(n − 2)/6.</p><p>Example: a bag has 5 red and 3 blue balls. Two are drawn. Total = 8C2 = 28. Both red = 5C2 = 10, so P = 10/28 = 5/14. One of each = 5 × 3 = 15, so P = 15/28.</p><p>Drawing one by one <b>without replacement</b> gives the same answer: P(both red) = 5/8 × 4/7 = 5/14. <b>With replacement</b> the second draw starts afresh: 5/8 × 5/8 = 25/64.</p>"
+   },
+   {
+    "title": "Rules for or, and, not",
+    "body": "<table><tr><th>Rule</th><th>Formula</th><th>Use when</th></tr><tr><td>Not (complement)</td><td>P(not E) = 1 − P(E)</td><td>counting the opposite is easier</td></tr><tr><td>Or (addition)</td><td>P(A or B) = P(A) + P(B) − P(A and B)</td><td>either event will do</td></tr><tr><td>Or, mutually exclusive</td><td>P(A or B) = P(A) + P(B)</td><td>A and B cannot happen together</td></tr><tr><td>And, independent</td><td>P(A and B) = P(A) × P(B)</td><td>one result does not affect the other</td></tr><tr><td>At least one</td><td>1 − P(none)</td><td>the word \"at least\" appears</td></tr></table><p>Example: three coins, P(at least one head) = 1 − P(TTT) = 1 − 1/8 = 7/8.</p><p>Example: a number from 1 to 50, P(multiple of 3 or 5): 16 multiples of 3, 10 of 5, 3 of 15, so (16 + 10 − 3)/50 = 23/50.</p>"
+   },
+   {
+    "title": "Two or more people: solving, hitting, telling the truth",
+    "body": "<p>Each person acts independently, so multiply. Write q = 1 − p for \"fails\".</p><ul><li><b>Both succeed</b>: p<sub>A</sub> × p<sub>B</sub>. <b>Neither</b>: q<sub>A</sub> × q<sub>B</sub>.</li><li><b>Problem is solved / target is hit</b> (at least one succeeds): 1 − q<sub>A</sub> q<sub>B</sub> q<sub>C</sub>.</li><li><b>Exactly one succeeds</b>: p<sub>A</sub>q<sub>B</sub> + q<sub>A</sub>p<sub>B</sub>.</li><li><b>Two people contradict each other</b>: one tells the truth and the other lies, which is the same as exactly one: p<sub>A</sub>q<sub>B</sub> + q<sub>A</sub>p<sub>B</sub>. They agree: p<sub>A</sub>p<sub>B</sub> + q<sub>A</sub>q<sub>B</sub>.</li></ul><p>Example: A, B and C solve a problem with probabilities 3/7, 5/9 and 1/5. P(none solves) = 4/7 × 4/9 × 4/5 = 64/315, so P(solved) = 251/315.</p>"
+   },
+   {
+    "title": "Numbers, letters and calendars",
+    "body": "<ul><li>Count multiples in 1 to N by dividing and taking the whole part: multiples of 7 up to 100 = 14.</li><li>Primes up to 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 (15 primes). Up to 100 there are 25.</li><li>A letter from a word: count each letter as many times as it appears. In \"PROBABILITY\" (11 letters), P(B) = 2/11 and the vowels O, A, I, I give 4/11.</li><li>A leap year has 366 days = 52 weeks + 2 extra days. The 2 extra days are one of 7 pairs (Sun–Mon, Mon–Tue, …, Sat–Sun), and 2 of them contain Sunday, so P(53 Sundays) = 2/7. For an ordinary year (1 extra day) it is 1/7.</li></ul>"
    }
   ],
   "varieties": [
    {
     "type": "coins-dice",
     "name": "Coins and dice",
-    "how": "List or count outcomes from the sample space (2<sup>n</sup> for coins, 36 for two dice).",
+    "how": "List or count the sample space (2<sup>n</sup> for coins, 36 for two dice). Use the sum table for dice; use 1 − P(none) for \"at least one\".",
     "example": {
-     "q": "Probability of getting a sum of 7 with two dice?",
+     "q": "Two dice are thrown. What is the probability that the sum is a multiple of 4?",
      "steps": [
-      "(1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6",
-      "6/36"
+      "Total outcomes = 36",
+      "Sums 4, 8 and 12 occur in 3, 5 and 1 ways",
+      "Favourable = 9, so P = 9/36"
      ],
-     "answer": "1/6"
+     "answer": "1/4"
     }
    },
    {
     "type": "cards",
-    "name": "Cards",
-    "how": "Count favourable cards; for “or”, subtract the overlap.",
+    "name": "Playing cards",
+    "how": "Use 52 cards: 4 suits of 13, 26 red and 26 black, 12 face cards, 4 of each rank. For \"A or B\" subtract the cards counted twice.",
     "example": {
-     "q": "Probability of drawing a red card?",
+     "q": "One card is drawn from a pack of 52. What is the probability that it is a face card or a red card?",
      "steps": [
-      "26/52"
+      "Face cards = 12, red cards = 26",
+      "Red face cards (counted twice) = 6",
+      "Favourable = 12 + 26 − 6 = 32, so P = 32/52"
      ],
-     "answer": "1/2"
+     "answer": "8/13"
     }
    },
    {
     "type": "balls",
-    "name": "Balls from a bag",
-    "how": "Use combinations for drawing more than one ball.",
+    "name": "Balls and marbles",
+    "how": "Total ways = (total balls) C (number drawn). Favourable ways = product of the combinations for each colour. For one ball, just divide the count by the total.",
     "example": {
-     "q": "Bag: 3 red, 2 green. One ball drawn. P(green)?",
+     "q": "A bag has 5 red and 4 green balls. Two balls are drawn at random. What is the probability that both are of the same colour?",
      "steps": [
-      "2/5"
+      "Total = 9C2 = 36",
+      "Both red = 5C2 = 10; both green = 4C2 = 6",
+      "Favourable = 16, so P = 16/36"
      ],
-     "answer": "2/5"
+     "answer": "4/9"
+    }
+   },
+   {
+    "type": "independent-events",
+    "name": "Independent events and at least one",
+    "how": "Multiply probabilities for \"and\". Write the failure probability q = 1 − p for each person. \"At least one\" = 1 − (product of all q). \"Contradict\" = exactly one tells the truth.",
+    "example": {
+     "q": "A speaks the truth 5 out of 7 times and B 8 out of 9 times. What is the probability that they contradict each other on the same fact?",
+     "steps": [
+      "A true and B false: 5/7 × 1/9 = 5/63",
+      "A false and B true: 2/7 × 8/9 = 16/63",
+      "Total = 21/63"
+     ],
+     "answer": "1/3"
+    }
+   },
+   {
+    "type": "number-selection",
+    "name": "Numbers, letters and calendars",
+    "how": "Count favourable numbers by division (multiples of k up to N = whole part of N/k). For \"or\", add and subtract the overlap (multiples of the LCM).",
+    "example": {
+     "q": "A number is chosen at random from 1 to 50. What is the probability that it is a multiple of 3 or 5?",
+     "steps": [
+      "Multiples of 3: 16; multiples of 5: 10",
+      "Multiples of 15 (counted twice): 3",
+      "Favourable = 16 + 10 − 3 = 23"
+     ],
+     "answer": "23/50"
     }
    }
   ],
   "tips": [
-   "“At least one” = 1 − P(none).",
-   "Doubles in two dice: 6 out of 36."
+   "Know the sample spaces by heart: 2<sup>n</sup> for n coins, 36 for two dice, 52 for cards.",
+   "When you see \"at least one\", work out \"none\" and subtract from 1.",
+   "For balls drawn together, use combinations; nC2 = n(n − 1)/2 covers most questions.",
+   "For \"A or B\", always ask whether some outcomes are counted twice and subtract them once.",
+   "For two people, write each one's failure chance (1 − p) first; every pattern is built from p and 1 − p.",
+   "Check that your answer lies between 0 and 1 and simplify the fraction before matching options."
   ],
   "traps": [
-   "In “king or heart”, the king of hearts is counted twice; subtract it once.",
-   "Two dice give 36 outcomes, not 12."
+   "With two dice, (2, 5) and (5, 2) are different outcomes. Count ordered pairs out of 36.",
+   "In \"a king or a heart\" the king of hearts must not be counted twice.",
+   "Without replacement, the second draw has one fewer ball. With replacement, it does not.",
+   "\"Contradict each other\" means exactly one tells the truth, not that both lie."
   ]
  },
  "formulas": [
   {
    "name": "Probability",
-   "expr": "favourable / total"
+   "expr": "favourable outcomes / total outcomes"
   },
   {
    "name": "Complement",
@@ -78,8 +133,36 @@
    "expr": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)"
   },
   {
+   "name": "Independent events",
+   "expr": "P(A and B) = P(A) × P(B)"
+  },
+  {
+   "name": "At least one",
+   "expr": "1 − P(none)"
+  },
+  {
+   "name": "Exactly one of two",
+   "expr": "p₁(1 − p₂) + (1 − p₁)p₂"
+  },
+  {
+   "name": "Odds in favour a : b",
+   "expr": "P = a/(a + b)"
+  },
+  {
    "name": "Combinations",
    "expr": "nCr = n!/(r!(n − r)!)"
+  },
+  {
+   "name": "Coins",
+   "expr": "n coins give 2ⁿ outcomes; P(k heads) = nCk/2ⁿ"
+  },
+  {
+   "name": "Two dice",
+   "expr": "36 outcomes; sum 7 has 6 ways"
+  },
+  {
+   "name": "Leap year, 53 Sundays",
+   "expr": "2/7 (ordinary year 1/7)"
   }
  ],
  "questions": [

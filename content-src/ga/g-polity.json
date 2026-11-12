@@ -1,75 +1,405 @@
 {
   "topic": "g-polity",
   "notes": {
-    "summary": "Polity gives about <b>2–3 questions</b>. Focus on the making of the Constitution, important Articles, sources of borrowed features, key amendments, and the President, Parliament and constitutional bodies.",
+    "summary": "Polity gives about <b>2 to 4 questions</b> per paper. Most ask an <b>Article number</b> (which Article says what), a <b>source</b> (which country a feature came from), a <b>schedule</b> or <b>amendment</b>, or a fact about Parliament, the President or the courts. Learn the article table well: the same 40 articles cover most questions.",
     "concepts": [
       {
         "title": "Making of the Constitution",
-        "body": "<ul><li>Constituent Assembly first met on <b>9 December 1946</b>; <b>Dr. Rajendra Prasad</b> was its permanent President.</li><li><b>Dr. B.R. Ambedkar</b> chaired the Drafting Committee.</li><li>Constitution adopted on <b>26 November 1949</b> (now Constitution Day) and came into force on <b>26 January 1950</b> (Republic Day).</li><li>The Preamble begins 'We, the people of India'. The words <i>socialist</i>, <i>secular</i> and <i>integrity</i> were added by the <b>42nd Amendment (1976)</b>.</li></ul>"
+        "body": "<ul><li>The Constituent Assembly was set up under the <b>Cabinet Mission Plan (1946)</b>. First meeting: <b>9 December 1946</b> (temporary chairman Sachchidananda Sinha). <b>Dr Rajendra Prasad</b> was elected its permanent president on 11 December 1946.</li><li>Nehru moved the <b>Objectives Resolution</b> on 13 December 1946 (adopted 22 January 1947). It became the Preamble.</li><li><b>Drafting Committee</b> (29 August 1947): chairman <b>Dr B.R. Ambedkar</b>. B.N. Rau was the constitutional adviser.</li><li>Adopted on <b>26 November 1949</b> (now Constitution Day). Came fully into force on <b>26 January 1950</b> (Republic Day). It took about 2 years, 11 months and 18 days.</li><li>National Anthem and National Song adopted on 24 January 1950, the last day of the Assembly.</li><li>The original Constitution had a Preamble, <b>395 Articles, 22 Parts and 8 Schedules</b>. It was handwritten by Prem Behari Narain Raizada.</li></ul>"
       },
       {
-        "title": "Important Articles",
-        "body": "<table><thead><tr><th>Article</th><th>Subject</th></tr></thead><tbody><tr><td>14</td><td>Equality before law</td></tr><tr><td>17</td><td>Abolition of untouchability</td></tr><tr><td>19</td><td>Six freedoms (speech, assembly, etc.)</td></tr><tr><td>21</td><td>Protection of life and personal liberty</td></tr><tr><td>21A</td><td>Free and compulsory education (6–14 years)</td></tr><tr><td>32</td><td>Right to constitutional remedies ('heart and soul' — Ambedkar)</td></tr><tr><td>51A</td><td>Fundamental Duties</td></tr><tr><td>72</td><td>Pardoning power of the President</td></tr><tr><td>112</td><td>Annual Financial Statement (Union Budget)</td></tr><tr><td>280</td><td>Finance Commission</td></tr><tr><td>324</td><td>Election Commission</td></tr><tr><td>352 / 356 / 360</td><td>National / State (President's rule) / Financial emergency</td></tr><tr><td>368</td><td>Amendment of the Constitution</td></tr></tbody></table>"
+        "title": "Sources of the Constitution",
+        "body": "<table><thead><tr><th>Source</th><th>Features borrowed</th></tr></thead><tbody><tr><td>Government of India Act 1935</td><td>Federal scheme, office of Governor, emergency provisions, public service commissions, judiciary set-up (the largest source)</td></tr><tr><td>Britain</td><td>Parliamentary government, rule of law, single citizenship, cabinet system, writs, two houses, law-making procedure</td></tr><tr><td>USA</td><td>Fundamental Rights, judicial review, independent judiciary, impeachment of the President, removal of judges, post of Vice-President</td></tr><tr><td>Ireland</td><td>Directive Principles, nomination to Rajya Sabha, method of electing the President</td></tr><tr><td>Canada</td><td>Federation with a strong centre, residuary powers with the centre, Governors appointed by the centre, advisory role of the Supreme Court</td></tr><tr><td>Australia</td><td>Concurrent List, freedom of trade, joint sitting of Parliament</td></tr><tr><td>Former USSR</td><td>Fundamental Duties; ideals of social, economic and political justice</td></tr><tr><td>France</td><td>Republic; liberty, equality, fraternity</td></tr><tr><td>Germany (Weimar)</td><td>Suspension of Fundamental Rights in an emergency</td></tr><tr><td>South Africa</td><td>Amendment procedure, election of Rajya Sabha members</td></tr><tr><td>Japan</td><td>'Procedure established by law'</td></tr></tbody></table>"
       },
       {
-        "title": "Borrowed features",
-        "body": "<table><thead><tr><th>Source</th><th>Feature</th></tr></thead><tbody><tr><td>Britain</td><td>Parliamentary system, rule of law, single citizenship</td></tr><tr><td>USA</td><td>Fundamental Rights, judicial review, independence of judiciary</td></tr><tr><td>Ireland</td><td>Directive Principles of State Policy</td></tr><tr><td>Canada</td><td>Federation with a strong Centre</td></tr><tr><td>Australia</td><td>Concurrent List</td></tr><tr><td>USSR</td><td>Fundamental Duties</td></tr><tr><td>Weimar Germany</td><td>Suspension of Fundamental Rights during emergency</td></tr><tr><td>South Africa</td><td>Procedure for amendment</td></tr><tr><td>France</td><td>Republic; liberty, equality, fraternity</td></tr></tbody></table>"
+        "title": "Preamble and parts",
+        "body": "<p>The Preamble declares India a <b>sovereign, socialist, secular, democratic republic</b> and promises justice, liberty, equality and fraternity. 'Socialist', 'secular' and 'integrity' were added by the <b>42nd Amendment (1976)</b>, the only change to the Preamble. In the Kesavananda Bharati case (1973) the Supreme Court held the Preamble is a part of the Constitution.</p><table><thead><tr><th>Part</th><th>Subject</th><th>Articles</th></tr></thead><tbody><tr><td>I</td><td>Union and its territory</td><td>1 to 4</td></tr><tr><td>II</td><td>Citizenship</td><td>5 to 11</td></tr><tr><td>III</td><td>Fundamental Rights</td><td>12 to 35</td></tr><tr><td>IV</td><td>Directive Principles</td><td>36 to 51</td></tr><tr><td>IV-A</td><td>Fundamental Duties</td><td>51A</td></tr><tr><td>V</td><td>The Union (President, Parliament, Supreme Court, CAG)</td><td>52 to 151</td></tr><tr><td>VI</td><td>The States</td><td>152 to 237</td></tr><tr><td>VIII</td><td>Union Territories</td><td>239 to 242</td></tr><tr><td>IX</td><td>Panchayats</td><td>243 to 243-O</td></tr><tr><td>IX-A</td><td>Municipalities</td><td>243-P to 243-ZG</td></tr><tr><td>IX-B</td><td>Co-operative societies</td><td>243-ZH to 243-ZT</td></tr><tr><td>XI</td><td>Centre-state relations</td><td>245 to 263</td></tr><tr><td>XII</td><td>Finance, property, contracts</td><td>264 to 300A</td></tr><tr><td>XIV</td><td>Services (UPSC)</td><td>308 to 323</td></tr><tr><td>XV</td><td>Elections</td><td>324 to 329</td></tr><tr><td>XVII</td><td>Official language</td><td>343 to 351</td></tr><tr><td>XVIII</td><td>Emergency</td><td>352 to 360</td></tr><tr><td>XX</td><td>Amendment</td><td>368</td></tr></tbody></table>"
       },
       {
-        "title": "Key amendments and numbers",
-        "body": "<ul><li><b>42nd (1976)</b>: 'mini-constitution'; added Fundamental Duties.</li><li><b>44th (1978)</b>: Right to Property removed from Fundamental Rights.</li><li><b>52nd (1985)</b>: Anti-defection law (Tenth Schedule).</li><li><b>61st (1989)</b>: Voting age lowered from 21 to 18.</li><li><b>73rd / 74th (1992)</b>: Panchayats / Municipalities.</li><li><b>86th (2002)</b>: Article 21A, right to education.</li><li><b>101st (2016)</b>: GST.</li></ul>Numbers: Eighth Schedule lists <b>22</b> languages; minimum age for President is <b>35</b>; Rajya Sabha maximum strength is <b>250</b>."
+        "title": "Schedules, states and citizenship",
+        "body": "<table><thead><tr><th>Schedule</th><th>Content</th></tr></thead><tbody><tr><td>1st</td><td>States and union territories</td></tr><tr><td>2nd</td><td>Salaries of President, Governors, judges, CAG and others</td></tr><tr><td>3rd</td><td>Forms of oaths</td></tr><tr><td>4th</td><td>Rajya Sabha seats for states and UTs</td></tr><tr><td>5th</td><td>Scheduled Areas and tribes</td></tr><tr><td>6th</td><td>Tribal areas of Assam, Meghalaya, Tripura, Mizoram</td></tr><tr><td>7th</td><td>Union, State and Concurrent lists</td></tr><tr><td>8th</td><td>Languages (22 now; 14 at first)</td></tr><tr><td>9th</td><td>Laws protected from court review (added by 1st Amendment, 1951)</td></tr><tr><td>10th</td><td>Anti-defection (52nd Amendment, 1985)</td></tr><tr><td>11th</td><td>Panchayats, 29 subjects (73rd Amendment)</td></tr><tr><td>12th</td><td>Municipalities, 18 subjects (74th Amendment)</td></tr></tbody></table><p><b>Languages added to the 8th Schedule</b>: Sindhi (1967); Konkani, Manipuri, Nepali (1992); Bodo, Dogri, Maithili, Santhali (2003).</p><p><b>New states</b>: Article 3 lets Parliament form new states. Andhra (1953) was the first linguistic state. Manipur, Meghalaya and Tripura became states in 1972 under the North-Eastern Areas (Reorganisation) Act, 1971. Sikkim 1975; Mizoram, Arunachal Pradesh, Goa 1987; Chhattisgarh, Uttarakhand, Jharkhand 2000; Telangana 2014. In 2019, Jammu and Kashmir became two UTs. Today India has <b>28 states and 8 union territories</b>.</p><p><b>Citizenship</b>: Articles 5 to 11; Citizenship Act 1955. Ways to get it: birth, descent, registration, naturalisation, incorporation of territory. India has <b>single citizenship</b>.</p>"
+      },
+      {
+        "title": "Fundamental Rights (Articles 12 to 35)",
+        "body": "<table><thead><tr><th>Article</th><th>Right</th></tr></thead><tbody><tr><td>14</td><td>Equality before law and equal protection of laws</td></tr><tr><td>15</td><td>No discrimination on religion, race, caste, sex or place of birth; 15(2) access to shops, restaurants, wells, roads and public places</td></tr><tr><td>16</td><td>Equal opportunity in public jobs</td></tr><tr><td>17</td><td>Abolition of untouchability</td></tr><tr><td>18</td><td>Abolition of titles</td></tr><tr><td>19</td><td>Six freedoms: speech, assembly, association, movement, residence, profession</td></tr><tr><td>20</td><td>Protection in respect of conviction (no double jeopardy, no self-incrimination)</td></tr><tr><td>21</td><td>Life and personal liberty (includes privacy, from the Puttaswamy case 2017)</td></tr><tr><td>21A</td><td>Free and compulsory education for ages 6 to 14 (86th Amendment, 2002)</td></tr><tr><td>22</td><td>Protection against arbitrary arrest</td></tr><tr><td>23</td><td>Ban on human trafficking and forced labour</td></tr><tr><td>24</td><td>No child below 14 in factories, mines or hazardous work</td></tr><tr><td>25 to 28</td><td>Freedom of religion</td></tr><tr><td>29 to 30</td><td>Cultural and educational rights of minorities</td></tr><tr><td>32</td><td>Right to constitutional remedies: Ambedkar called it the 'heart and soul' of the Constitution</td></tr></tbody></table><p><b>Five writs</b> (Supreme Court under Art 32, High Courts under Art 226): habeas corpus (produce the body), mandamus (we command), prohibition, certiorari, quo warranto (by what authority). The <b>Right to Property</b> was removed from Part III by the 44th Amendment (1978) and is now a legal right under <b>Article 300A</b>. Articles 20 and 21 cannot be suspended even in an emergency.</p>"
+      },
+      {
+        "title": "Directive Principles and Fundamental Duties",
+        "body": "<p><b>Directive Principles</b> (Part IV, Articles 36 to 51) come from Ireland. Courts cannot enforce them (Article 37), but they aim at a <b>welfare state</b>.</p><table><thead><tr><th>Article</th><th>Directive</th></tr></thead><tbody><tr><td>39</td><td>Adequate livelihood; equal pay for equal work; resources for the common good</td></tr><tr><td>39A</td><td>Equal justice and free legal aid (added 1976)</td></tr><tr><td>40</td><td>Organise village panchayats (Gandhian)</td></tr><tr><td>41</td><td>Right to work, education and public help</td></tr><tr><td>42</td><td>Just working conditions and maternity relief</td></tr><tr><td>43</td><td>Living wage; cottage industries (Gandhian)</td></tr><tr><td>43A</td><td>Workers in the management of industries (added 1976)</td></tr><tr><td>44</td><td>Uniform Civil Code</td></tr><tr><td>45</td><td>Early childhood care up to age 6</td></tr><tr><td>46</td><td>Education and economic interests of SCs, STs and weaker sections (Gandhian)</td></tr><tr><td>47</td><td>Nutrition, public health, prohibition of intoxicating drinks (Gandhian)</td></tr><tr><td>48</td><td>Modern agriculture and animal husbandry; ban on cow slaughter (Gandhian)</td></tr><tr><td>48A</td><td>Protect environment, forests and wildlife (added 1976)</td></tr><tr><td>49</td><td>Protect monuments</td></tr><tr><td>50</td><td>Separate the judiciary from the executive</td></tr><tr><td>51</td><td>International peace and security</td></tr></tbody></table><p><b>Fundamental Duties</b> (Part IV-A, Article 51A) came from the former USSR. Added by the <b>42nd Amendment (1976)</b> on the advice of the <b>Swaran Singh Committee</b>; 10 duties at first. The 11th duty (parents to give children aged 6 to 14 a chance of education) came with the <b>86th Amendment (2002)</b>.</p>"
+      },
+      {
+        "title": "Parliament",
+        "body": "<ul><li>Article 79: Parliament = <b>President + Lok Sabha + Rajya Sabha</b>.</li><li><b>Lok Sabha</b>: maximum 550 elected members; 543 at present; term 5 years; minimum age 25. First Speaker: G.V. Mavalankar. First woman Speaker: Meira Kumar.</li><li><b>Rajya Sabha</b>: maximum 250 (238 elected + 12 nominated for literature, science, art and social service under Article 80); a permanent house, one-third retire every 2 years; member term 6 years; minimum age 30. The Vice-President is its chairman.</li><li><b>Joint sitting</b> (Article 108), presided by the Speaker; held three times (Dowry Prohibition 1961, Banking Service Commission Repeal 1978, POTA 2002).</li><li><b>Money Bill</b> (Article 110): only in Lok Sabha; the Speaker decides; Rajya Sabha can hold it for only 14 days.</li><li>Budget is the <b>Annual Financial Statement (Article 112)</b>. Consolidated Fund (266), Contingency Fund (267), Appropriation Bill (114).</li><li>Gap between two sessions must not exceed 6 months (Article 85). Quorum: one-tenth of members.</li><li><b>Question Hour</b> is the first hour; <b>Zero Hour</b> (after it) is an Indian practice.</li></ul><table><thead><tr><th>Financial committee</th><th>Fact</th></tr></thead><tbody><tr><td>Public Accounts Committee</td><td>Started 1921; 22 members (15 Lok Sabha + 7 Rajya Sabha); chairman from the opposition by convention; examines CAG reports</td></tr><tr><td>Estimates Committee</td><td>First set up after independence in 1950; 30 members, all from Lok Sabha</td></tr><tr><td>Committee on Public Undertakings</td><td>1964; 22 members</td></tr></tbody></table>"
+      },
+      {
+        "title": "President, Prime Minister and Governor",
+        "body": "<table><thead><tr><th>Article</th><th>Subject</th></tr></thead><tbody><tr><td>52, 53</td><td>There shall be a President; executive power of the Union</td></tr><tr><td>54, 55</td><td>Election of the President by elected MPs and elected MLAs (including Delhi and Puducherry), by proportional representation with single transferable vote</td></tr><tr><td>61</td><td>Impeachment of the President</td></tr><tr><td>63, 66</td><td>Vice-President, elected by all members of both Houses</td></tr><tr><td>72</td><td>Pardoning power of the President</td></tr><tr><td>74</td><td>Council of Ministers to aid and advise the President</td></tr><tr><td>75</td><td>PM appointed by the President; ministers' size capped at 15% of Lok Sabha (91st Amendment)</td></tr><tr><td>76</td><td>Attorney General of India</td></tr><tr><td>123</td><td>President's ordinances</td></tr><tr><td>153 to 167</td><td>Governor (153), Governor's pardon (161), Chief Minister (164), Advocate General (165)</td></tr><tr><td>213</td><td>Governor's ordinances</td></tr></tbody></table><ul><li>Minimum age for President and Vice-President: 35. The President resigns to the Vice-President; the Vice-President resigns to the President.</li><li>First President: Dr Rajendra Prasad (the only one with two full terms). First Vice-President: Dr S. Radhakrishnan. First woman President: Pratibha Patil. Droupadi Murmu is the first tribal President. N. Sanjiva Reddy was elected unopposed.</li></ul>"
+      },
+      {
+        "title": "Supreme Court and High Courts",
+        "body": "<ul><li><b>Article 124</b>: Supreme Court. Started with a Chief Justice and 7 judges; now a Chief Justice and up to 33 other judges. Judges retire at <b>65</b>; High Court judges at <b>62</b>. Removal by Parliament with a special majority for proved misbehaviour or incapacity.</li><li>Article 129: court of record. Article 131: original jurisdiction (disputes between the centre and states). Article 137: review. Article 141: its law binds all courts. Article 143: advisory opinion to the President.</li><li>High Courts: Article 214; writs under <b>Article 226</b> (wider than Art 32, as it also covers legal rights); Article 231: one High Court for two or more states. The oldest High Courts (1862) are Calcutta, Bombay and Madras.</li><li>First Chief Justice of India: H.J. Kania. First woman Supreme Court judge: M. Fathima Beevi (1989).</li><li>Public Interest Litigation was started by Justices P.N. Bhagwati and V.R. Krishna Iyer. Lok Adalats work under the Legal Services Authorities Act, 1987.</li></ul><table><thead><tr><th>Case</th><th>Held</th></tr></thead><tbody><tr><td>Golaknath (1967)</td><td>Parliament cannot amend Fundamental Rights (later reversed)</td></tr><tr><td>Kesavananda Bharati (1973)</td><td>Basic structure doctrine</td></tr><tr><td>Maneka Gandhi (1978)</td><td>Wide reading of Article 21</td></tr><tr><td>Minerva Mills (1980)</td><td>Balance of Fundamental Rights and DPSP is basic structure</td></tr><tr><td>Indra Sawhney (1992)</td><td>27% OBC quota upheld; 50% ceiling; creamy layer</td></tr><tr><td>S.R. Bommai (1994)</td><td>Limits on President's rule (Article 356)</td></tr><tr><td>Vishaka (1997)</td><td>Guidelines on sexual harassment at work</td></tr><tr><td>K.S. Puttaswamy (2017)</td><td>Privacy is a Fundamental Right</td></tr></tbody></table>"
+      },
+      {
+        "title": "Centre-state relations and emergency",
+        "body": "<ul><li><b>Seventh Schedule</b>: Union List (defence, foreign affairs, railways, banking), State List (police, public order, public health, agriculture), Concurrent List (education, forests, marriage, criminal law). Originally 97, 66 and 47 subjects.</li><li><b>Residuary powers</b> lie with the Union (Article 248), as in Canada.</li><li>Article 249: Rajya Sabha can let Parliament make laws on a State List subject in the national interest.</li><li>Article 263: Inter-State Council. Zonal Councils come from the States Reorganisation Act, 1956 (not the Constitution).</li><li>Article 280: Finance Commission, every five years, shares taxes between centre and states.</li></ul><table><thead><tr><th>Emergency</th><th>Article</th><th>Used</th></tr></thead><tbody><tr><td>National emergency (war, external aggression, armed rebellion)</td><td>352</td><td>1962, 1971, 1975</td></tr><tr><td>President's rule in a state</td><td>356</td><td>Many times; first in Punjab, 1951</td></tr><tr><td>Financial emergency</td><td>360</td><td>Never</td></tr></tbody></table><p>The 44th Amendment (1978) replaced 'internal disturbance' with 'armed rebellion' in Article 352.</p>"
+      },
+      {
+        "title": "Panchayats and municipalities",
+        "body": "<ul><li><b>Balwant Rai Mehta Committee (1957)</b> suggested a three-tier panchayat system: village, block, district. The first panchayati raj was started at <b>Nagaur, Rajasthan, on 2 October 1959</b>.</li><li><b>Ashok Mehta Committee (1977)</b> suggested two tiers.</li><li><b>73rd Amendment (1992)</b>: panchayats, Part IX, 11th Schedule (29 subjects). In force on 24 April 1993, now National Panchayati Raj Day.</li><li><b>74th Amendment (1992)</b>: municipalities, Part IX-A, 12th Schedule (18 subjects).</li><li>One-third of seats reserved for women; term 5 years; minimum age 21; State Election Commission (Article 243K) holds the elections; State Finance Commission every 5 years (243-I).</li><li><b>PESA Act 1996</b> extended panchayats to Fifth Schedule (tribal) areas.</li></ul>"
+      },
+      {
+        "title": "Constitutional and other bodies",
+        "body": "<table><thead><tr><th>Body</th><th>Article or basis</th></tr></thead><tbody><tr><td>Election Commission</td><td>324 (first Chief Election Commissioner: Sukumar Sen)</td></tr><tr><td>Comptroller and Auditor General (CAG)</td><td>148</td></tr><tr><td>Union Public Service Commission</td><td>315</td></tr><tr><td>Finance Commission</td><td>280</td></tr><tr><td>Attorney General</td><td>76</td></tr><tr><td>Advocate General of a state</td><td>165</td></tr><tr><td>National Commission for Scheduled Castes</td><td>338</td></tr><tr><td>National Commission for Scheduled Tribes</td><td>338A (89th Amendment, 2003)</td></tr><tr><td>National Commission for Backward Classes</td><td>338B (102nd Amendment, 2018)</td></tr><tr><td>GST Council</td><td>279A (101st Amendment, 2016)</td></tr><tr><td>Special Officer for Linguistic Minorities</td><td>350B</td></tr></tbody></table><p><b>Not in the Constitution</b>: NITI Aayog (executive order, 1 January 2015; replaced the Planning Commission of 1950); National Human Rights Commission (Protection of Human Rights Act 1993); Central Vigilance Commission; CBI; Lokpal (Lokpal and Lokayuktas Act 2013); National Commission for Women (1992).</p>"
+      },
+      {
+        "title": "Important amendments",
+        "body": "<p>Article 368 gives the procedure. Some changes need a simple majority, most need a special majority of Parliament, and federal changes also need half the state legislatures.</p><table><thead><tr><th>Amendment</th><th>Change</th></tr></thead><tbody><tr><td>1st (1951)</td><td>Ninth Schedule; Article 15(4)</td></tr><tr><td>7th (1956)</td><td>Reorganisation of states on language lines</td></tr><tr><td>36th (1975)</td><td>Sikkim became a state</td></tr><tr><td>42nd (1976)</td><td>'Mini-Constitution': socialist, secular, integrity in Preamble; Fundamental Duties; education and forests to the Concurrent List</td></tr><tr><td>44th (1978)</td><td>Right to Property removed from Fundamental Rights; 'armed rebellion' in Article 352</td></tr><tr><td>52nd (1985)</td><td>Anti-defection law, Tenth Schedule</td></tr><tr><td>61st (1989)</td><td>Voting age lowered from 21 to 18</td></tr><tr><td>69th (1991)</td><td>Delhi became the National Capital Territory</td></tr><tr><td>73rd and 74th (1992)</td><td>Panchayats and municipalities</td></tr><tr><td>86th (2002)</td><td>Article 21A (education) and the 11th Fundamental Duty</td></tr><tr><td>91st (2003)</td><td>Size of ministries capped at 15%</td></tr><tr><td>92nd (2003)</td><td>Bodo, Dogri, Maithili, Santhali added to the 8th Schedule</td></tr><tr><td>97th (2011)</td><td>Co-operative societies (Part IX-B)</td></tr><tr><td>101st (2016)</td><td>Goods and Services Tax</td></tr><tr><td>103rd (2019)</td><td>10% reservation for economically weaker sections</td></tr><tr><td>104th (2020)</td><td>Ended Anglo-Indian nomination to Lok Sabha; extended SC/ST seat reservation</td></tr><tr><td>106th (2023)</td><td>One-third seats for women in Lok Sabha and state assemblies (Nari Shakti Vandan)</td></tr></tbody></table>"
+      },
+      {
+        "title": "Important laws and Acts",
+        "body": "<table><thead><tr><th>New law (2023)</th><th>Replaced</th></tr></thead><tbody><tr><td>Bharatiya Nyaya Sanhita (BNS)</td><td>Indian Penal Code, 1860</td></tr><tr><td>Bharatiya Nagarik Suraksha Sanhita (BNSS)</td><td>Code of Criminal Procedure, 1973</td></tr><tr><td>Bharatiya Sakshya Adhiniyam (BSA)</td><td>Indian Evidence Act, 1872</td></tr></tbody></table><p>All three came into force on <b>1 July 2024</b>.</p><table><thead><tr><th>Act</th><th>Year</th></tr></thead><tbody><tr><td>Dowry Prohibition Act</td><td>1961</td></tr><tr><td>Environment (Protection) Act</td><td>1986</td></tr><tr><td>SC/ST (Prevention of Atrocities) Act</td><td>1989</td></tr><tr><td>Protection of Women from Domestic Violence Act</td><td>2005</td></tr><tr><td>Right to Information Act</td><td>2005</td></tr><tr><td>Right to Education Act</td><td>2009</td></tr><tr><td>POCSO Act</td><td>2012</td></tr><tr><td>Lokpal and Lokayuktas Act</td><td>2013</td></tr><tr><td>Rights of Persons with Disabilities Act</td><td>2016</td></tr><tr><td>Muslim Women (Protection of Rights on Marriage) Act (instant triple talaq made an offence)</td><td>2019</td></tr><tr><td>Consumer Protection Act</td><td>2019</td></tr><tr><td>Citizenship (Amendment) Act</td><td>2019</td></tr></tbody></table>"
       }
     ],
     "varieties": [
       {
-        "type": "articles",
-        "name": "Article ↔ subject",
-        "how": "Recall the Article table; questions name the subject or the number.",
-        "example": { "q": "Which Article abolishes untouchability?", "steps": ["Articles 14–18 = Right to Equality", "Article 17 = abolition of untouchability"], "answer": "Article 17" }
+        "type": "constitution-making",
+        "name": "Making and sources of the Constitution",
+        "how": "Learn the key dates (9 Dec 1946, 26 Nov 1949, 26 Jan 1950) and the source table. Ask: is the feature about rights (USA), directives (Ireland), duties (USSR), lists or trade (Australia) or a strong centre (Canada)?",
+        "example": {
+          "q": "The idea of residuary powers with the centre was taken from the constitution of:",
+          "steps": [
+            "A federation with a strong centre is the Canadian model.",
+            "Canada keeps residuary powers with the centre, and so does India (Article 248)."
+          ],
+          "answer": "Canada"
+        }
       },
       {
-        "type": "sources",
-        "name": "Borrowed features",
-        "how": "Pair each country with its feature; DPSP = Ireland and Fundamental Duties = USSR are the most asked.",
-        "example": { "q": "The idea of Directive Principles was taken from which constitution?", "steps": ["DPSP came from the Irish Constitution"], "answer": "Ireland" }
+        "type": "preamble-parts-schedules",
+        "name": "Preamble, parts, schedules and citizenship",
+        "how": "Learn the parts with their article ranges and the 12 schedules in order. For state formation, learn the year and the Act.",
+        "example": {
+          "q": "Which schedule deals with the anti-defection law?",
+          "steps": [
+            "The 52nd Amendment (1985) added the anti-defection law.",
+            "It was placed in the Tenth Schedule."
+          ],
+          "answer": "Tenth Schedule"
+        }
+      },
+      {
+        "type": "rights-dpsp-duties",
+        "name": "Fundamental Rights, DPSP and duties",
+        "how": "Memorise Articles 14 to 32 one by one. For DPSP, tag the Gandhian ones (40, 43, 46, 47, 48) and the ones added in 1976 (39A, 43A, 48A).",
+        "example": {
+          "q": "Which Article promotes equal justice and free legal aid?",
+          "steps": [
+            "Free legal aid is a Directive Principle added by the 42nd Amendment.",
+            "It is Article 39A."
+          ],
+          "answer": "Article 39A"
+        }
+      },
+      {
+        "type": "parliament",
+        "name": "Parliament",
+        "how": "Learn the numbers (550, 250, 12 nominated, ages 25 and 30) and the money articles (110, 112, 266, 267). For committees, know size, house and year.",
+        "example": {
+          "q": "Who presides over a joint sitting of the two Houses?",
+          "steps": [
+            "Joint sitting is under Article 108.",
+            "It is presided over by the Speaker of the Lok Sabha."
+          ],
+          "answer": "Speaker of the Lok Sabha"
+        }
+      },
+      {
+        "type": "executive",
+        "name": "President, PM and Governor",
+        "how": "Pair each office with its Article and with who elects, appoints or removes it.",
+        "example": {
+          "q": "Who elects the Vice-President of India?",
+          "steps": [
+            "The President's electoral college includes MLAs.",
+            "The Vice-President is elected only by members of both Houses of Parliament (elected and nominated)."
+          ],
+          "answer": "Members of both Houses of Parliament"
+        }
+      },
+      {
+        "type": "judiciary",
+        "name": "Supreme Court and High Courts",
+        "how": "Remember Article 32 for the Supreme Court and 226 for High Courts, the retirement ages, and one line for each landmark case.",
+        "example": {
+          "q": "Which Article lets a High Court issue writs?",
+          "steps": [
+            "The Supreme Court issues writs under Article 32.",
+            "High Courts issue them under Article 226."
+          ],
+          "answer": "Article 226"
+        }
+      },
+      {
+        "type": "federalism-local-government",
+        "name": "Centre-state relations and local government",
+        "how": "Ask which list a subject is in, and which article covers which emergency (352, 356, 360). For local bodies, link 73rd to panchayats and 74th to municipalities.",
+        "example": {
+          "q": "The first panchayati raj system in India was started at:",
+          "steps": [
+            "It followed the Balwant Rai Mehta Committee.",
+            "Nehru inaugurated it at Nagaur, Rajasthan, on 2 October 1959."
+          ],
+          "answer": "Nagaur, Rajasthan"
+        }
+      },
+      {
+        "type": "constitutional-bodies",
+        "name": "Constitutional and other bodies",
+        "how": "Learn body and Article as a pair. First check whether the body is in the Constitution at all (NITI Aayog and NHRC are not).",
+        "example": {
+          "q": "Which body is set up under Article 280?",
+          "steps": [
+            "Article 280 falls in Part XII (Finance).",
+            "It creates the Finance Commission."
+          ],
+          "answer": "Finance Commission"
+        }
       },
       {
         "type": "amendments",
-        "name": "Amendments and institutions",
-        "how": "Link each amendment number to one change; link each body to its Article.",
-        "example": { "q": "Which amendment lowered the voting age from 21 to 18?", "steps": ["Voting age change came in 1989", "1989 = 61st Amendment"], "answer": "61st Amendment" }
+        "name": "Constitutional amendments",
+        "how": "Learn the 15 key amendments by number, year and change. Group them: 42nd and 44th (Emergency era), 73rd and 74th (local bodies), 101st to 106th (recent).",
+        "example": {
+          "q": "Which amendment reduced the voting age from 21 to 18?",
+          "steps": [
+            "This was done in 1989.",
+            "It was the 61st Amendment."
+          ],
+          "answer": "61st Amendment"
+        }
+      },
+      {
+        "type": "laws-and-acts",
+        "name": "Laws and Acts",
+        "how": "Learn the Act and its year, and for new laws, which old law each one replaced.",
+        "example": {
+          "q": "The Bharatiya Sakshya Adhiniyam, 2023 replaced which law?",
+          "steps": [
+            "Sakshya means evidence.",
+            "So it replaced the Indian Evidence Act, 1872."
+          ],
+          "answer": "Indian Evidence Act, 1872"
+        }
       }
     ],
     "tips": [
-      "Article 32 is the 'heart and soul' of the Constitution in Ambedkar's words.",
-      "Emergency Articles go 352 → 356 → 360 (national, state, financial).",
-      "42nd Amendment is the most-asked amendment; learn its three Preamble words."
+      "Articles 14 to 18 are equality, 19 to 22 freedom, 23 to 24 against exploitation, 25 to 28 religion, 29 to 30 culture and education, 32 remedies.",
+      "Emergency trio: 352 national, 356 state, 360 financial (the bigger the number, the rarer: 360 never used).",
+      "Source hook: Rights from the USA, Directives from Ireland, Duties from the USSR, Concurrent List from Australia, strong centre from Canada.",
+      "73 is for villages (panchayats) and 74 for towns (municipalities): 11th Schedule has 29 subjects, 12th has 18.",
+      "Age ladder: 21 panchayat, 25 Lok Sabha and MLA, 30 Rajya Sabha and MLC, 35 President, Vice-President and Governor.",
+      "Retirement: 65 for Supreme Court judges and CAG (or 6 years), 62 for High Court judges."
     ],
     "traps": [
-      "The Constitution was adopted on 26 Nov 1949 but came into force on 26 Jan 1950.",
-      "Fundamental Duties came from the USSR, not the USA.",
-      "Rajendra Prasad was President of the Constituent Assembly; Ambedkar chaired only the Drafting Committee."
+      "Article 360 is financial emergency, not national emergency (352).",
+      "The 42nd Amendment changed the Preamble; the 44th removed the Right to Property.",
+      "The Vice-President is elected by all MPs, including nominated ones, but nominated MPs do not vote for the President.",
+      "Dr Rajendra Prasad was President of the Constituent Assembly; Dr Ambedkar chaired the Drafting Committee.",
+      "NITI Aayog, NHRC and the CBI are not constitutional bodies; the Finance Commission and Election Commission are."
     ]
   },
   "questions": [
-    { "id": "g-polity-001", "rev": 1, "topic": "g-polity", "type": "articles", "level": 1, "q": "Which Article of the Indian Constitution abolishes untouchability?", "options": ["Article 14", "Article 17", "Article 19", "Article 21"], "answer": 1, "solution": "Article 17 abolishes untouchability and forbids its practice in any form.<br><b>Memory hook:</b> 17 = 'end of untouchability' — the middle of the equality block 14–18.", "source": "test-data" },
-    { "id": "g-polity-002", "rev": 1, "topic": "g-polity", "type": "sources", "level": 1, "q": "The Fundamental Duties in the Indian Constitution were inspired by the constitution of:", "options": ["USA", "Ireland", "Former USSR", "Canada"], "answer": 2, "solution": "Fundamental Duties (Article 51A) were added by the 42nd Amendment, inspired by the constitution of the former USSR.<br><b>Memory hook:</b> Soviet = duty to the state.", "source": "test-data" },
-    { "id": "g-polity-003", "rev": 1, "topic": "g-polity", "type": "amendments", "level": 1, "q": "Who was the Chairman of the Drafting Committee of the Constitution?", "options": ["Dr. Rajendra Prasad", "Jawaharlal Nehru", "Sardar Patel", "Dr. B.R. Ambedkar"], "answer": 3, "solution": "Dr. B.R. Ambedkar chaired the Drafting Committee. Dr. Rajendra Prasad was the President of the Constituent Assembly.<br><b>Memory hook:</b> Ambedkar = Architect (both start with A).", "source": "test-data" },
-    { "id": "g-polity-004", "rev": 1, "topic": "g-polity", "type": "articles", "level": 2, "q": "Dr. B.R. Ambedkar called which Article the 'heart and soul' of the Constitution?", "options": ["Article 32", "Article 21", "Article 14", "Article 368"], "answer": 0, "solution": "Article 32 (Right to Constitutional Remedies) lets a person go directly to the Supreme Court to enforce Fundamental Rights.<br><b>Memory hook:</b> 32 teeth protect the mouth; Article 32 protects your rights.", "source": "test-data" },
-    { "id": "g-polity-005", "rev": 1, "topic": "g-polity", "type": "amendments", "level": 2, "q": "Which Constitutional Amendment reduced the voting age from 21 to 18 years?", "options": ["42nd", "44th", "61st", "73rd"], "answer": 2, "solution": "The 61st Amendment Act, 1988 (in force 1989) reduced the voting age to 18.<br><b>Memory hook:</b> say it as one line — 'Sixty-one made eighteen vote'.", "source": "test-data" },
-    { "id": "g-polity-006", "rev": 1, "topic": "g-polity", "type": "sources", "level": 2, "q": "The concept of the Concurrent List in the Indian Constitution was borrowed from:", "options": ["Canada", "Australia", "USA", "Britain"], "answer": 1, "solution": "The Concurrent List (and joint sitting of Parliament) was borrowed from Australia. Canada gave the idea of a federation with a strong Centre.<br><b>Memory hook:</b> <b>A</b>ustralia = <b>A</b>ll share (Concurrent).", "source": "test-data" },
-    { "id": "g-polity-007", "rev": 1, "topic": "g-polity", "type": "amendments", "level": 3, "q": "Which amendment added the words 'socialist', 'secular' and 'integrity' to the Preamble?", "options": ["44th Amendment", "52nd Amendment", "24th Amendment", "42nd Amendment"], "answer": 3, "solution": "The 42nd Amendment (1976) added 'socialist', 'secular' and 'integrity'. It is called the 'mini-constitution'.<br><b>Memory hook:</b> 42 = the 'mini-constitution' that touched even the Preamble.", "source": "test-data" },
-    { "id": "g-polity-008", "rev": 1, "topic": "g-polity", "type": "articles", "level": 3, "q": "Which pair (Article — subject) is <b>incorrectly</b> matched?", "options": ["Article 280 — Finance Commission", "Article 324 — Election Commission", "Article 360 — National Emergency", "Article 112 — Annual Financial Statement"], "answer": 2, "solution": "Article 360 deals with <b>Financial</b> Emergency. National Emergency is Article 352.<br><b>Memory hook:</b> 360° covers all the money — Financial Emergency.", "source": "test-data" }
+    {
+      "id": "g-polity-001",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "rights-dpsp-duties",
+      "level": 1,
+      "q": "Which Article of the Indian Constitution abolishes untouchability?",
+      "options": [
+        "Article 14",
+        "Article 17",
+        "Article 19",
+        "Article 21"
+      ],
+      "answer": 1,
+      "solution": "Article 17 abolishes untouchability and forbids its practice in any form.<br><b>Memory hook:</b> 17 = 'end of untouchability' — the middle of the equality block 14–18.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-polity-002",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "constitution-making",
+      "level": 1,
+      "q": "The Fundamental Duties in the Indian Constitution were inspired by the constitution of:",
+      "options": [
+        "USA",
+        "Ireland",
+        "Former USSR",
+        "Canada"
+      ],
+      "answer": 2,
+      "solution": "Fundamental Duties (Article 51A) were added by the 42nd Amendment, inspired by the constitution of the former USSR.<br><b>Memory hook:</b> Soviet = duty to the state.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-polity-003",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "constitution-making",
+      "level": 1,
+      "q": "Who was the Chairman of the Drafting Committee of the Constitution?",
+      "options": [
+        "Dr. Rajendra Prasad",
+        "Jawaharlal Nehru",
+        "Sardar Patel",
+        "Dr. B.R. Ambedkar"
+      ],
+      "answer": 3,
+      "solution": "Dr. B.R. Ambedkar chaired the Drafting Committee. Dr. Rajendra Prasad was the President of the Constituent Assembly.<br><b>Memory hook:</b> Ambedkar = Architect (both start with A).",
+      "source": "test-data"
+    },
+    {
+      "id": "g-polity-004",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "rights-dpsp-duties",
+      "level": 2,
+      "q": "Dr. B.R. Ambedkar called which Article the 'heart and soul' of the Constitution?",
+      "options": [
+        "Article 32",
+        "Article 21",
+        "Article 14",
+        "Article 368"
+      ],
+      "answer": 0,
+      "solution": "Article 32 (Right to Constitutional Remedies) lets a person go directly to the Supreme Court to enforce Fundamental Rights.<br><b>Memory hook:</b> 32 teeth protect the mouth; Article 32 protects your rights.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-polity-005",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "amendments",
+      "level": 2,
+      "q": "Which Constitutional Amendment reduced the voting age from 21 to 18 years?",
+      "options": [
+        "42nd",
+        "44th",
+        "61st",
+        "73rd"
+      ],
+      "answer": 2,
+      "solution": "The 61st Amendment Act, 1988 (in force 1989) reduced the voting age to 18.<br><b>Memory hook:</b> say it as one line — 'Sixty-one made eighteen vote'.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-polity-006",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "constitution-making",
+      "level": 2,
+      "q": "The concept of the Concurrent List in the Indian Constitution was borrowed from:",
+      "options": [
+        "Canada",
+        "Australia",
+        "USA",
+        "Britain"
+      ],
+      "answer": 1,
+      "solution": "The Concurrent List (and joint sitting of Parliament) was borrowed from Australia. Canada gave the idea of a federation with a strong Centre.<br><b>Memory hook:</b> <b>A</b>ustralia = <b>A</b>ll share (Concurrent).",
+      "source": "test-data"
+    },
+    {
+      "id": "g-polity-007",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "amendments",
+      "level": 3,
+      "q": "Which amendment added the words 'socialist', 'secular' and 'integrity' to the Preamble?",
+      "options": [
+        "44th Amendment",
+        "52nd Amendment",
+        "24th Amendment",
+        "42nd Amendment"
+      ],
+      "answer": 3,
+      "solution": "The 42nd Amendment (1976) added 'socialist', 'secular' and 'integrity'. It is called the 'mini-constitution'.<br><b>Memory hook:</b> 42 = the 'mini-constitution' that touched even the Preamble.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-polity-008",
+      "rev": 1,
+      "topic": "g-polity",
+      "type": "constitutional-bodies",
+      "level": 3,
+      "q": "Which pair (Article — subject) is <b>incorrectly</b> matched?",
+      "options": [
+        "Article 280 — Finance Commission",
+        "Article 324 — Election Commission",
+        "Article 360 — National Emergency",
+        "Article 112 — Annual Financial Statement"
+      ],
+      "answer": 2,
+      "solution": "Article 360 deals with <b>Financial</b> Emergency. National Emergency is Article 352.<br><b>Memory hook:</b> 360° covers all the money — Financial Emergency.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-polity-1", "front": "Constitution came into force on", "back": "26 January 1950", "deck": "ga-facts" },
-    { "id": "fc-g-polity-2", "front": "President of the Constituent Assembly", "back": "Dr. Rajendra Prasad", "deck": "ga-facts" },
-    { "id": "fc-g-polity-3", "front": "Article 21A", "back": "Free and compulsory education for children aged 6–14 (86th Amendment, 2002)", "deck": "ga-facts" },
-    { "id": "fc-g-polity-4", "front": "Directive Principles borrowed from", "back": "Ireland", "deck": "ga-facts" },
-    { "id": "fc-g-polity-5", "front": "Anti-defection law (Tenth Schedule) added by", "back": "52nd Amendment, 1985", "deck": "ga-facts" },
-    { "id": "fc-g-polity-6", "front": "Right to Property removed from Fundamental Rights by", "back": "44th Amendment, 1978", "deck": "ga-facts" },
-    { "id": "fc-g-polity-7", "front": "Number of languages in the Eighth Schedule", "back": "22", "deck": "ga-facts" },
-    { "id": "fc-g-polity-8", "front": "Minimum age to become President of India", "back": "35 years", "deck": "ga-facts" },
-    { "id": "fc-g-polity-9", "front": "Article for the Election Commission", "back": "Article 324", "deck": "ga-facts" }
+    {
+      "id": "fc-g-polity-1",
+      "front": "Constitution came into force on",
+      "back": "26 January 1950",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-2",
+      "front": "President of the Constituent Assembly",
+      "back": "Dr. Rajendra Prasad",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-3",
+      "front": "Article 21A",
+      "back": "Free and compulsory education for children aged 6–14 (86th Amendment, 2002)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-4",
+      "front": "Directive Principles borrowed from",
+      "back": "Ireland",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-5",
+      "front": "Anti-defection law (Tenth Schedule) added by",
+      "back": "52nd Amendment, 1985",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-6",
+      "front": "Right to Property removed from Fundamental Rights by",
+      "back": "44th Amendment, 1978",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-7",
+      "front": "Number of languages in the Eighth Schedule",
+      "back": "22",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-8",
+      "front": "Minimum age to become President of India",
+      "back": "35 years",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-polity-9",
+      "front": "Article for the Election Commission",
+      "back": "Article 324",
+      "deck": "ga-facts"
+    }
   ]
 }

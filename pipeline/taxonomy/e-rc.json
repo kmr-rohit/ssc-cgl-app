@@ -1,0 +1,47 @@
+{
+  "topic": "e-rc",
+  "types": [
+    {
+      "type": "main-idea",
+      "name": "Main idea or title",
+      "description": "Asks what the passage as a whole is mainly about, its central theme, or the most suitable title for it.",
+      "concepts": []
+    },
+    {
+      "type": "detail",
+      "name": "Fact from the passage",
+      "description": "Asks for a fact stated directly in the passage, usually worded 'According to the passage…', 'What/when/why/how…' or 'Which of the following is true as per the passage?'.",
+      "concepts": []
+    },
+    {
+      "type": "not-stated",
+      "name": "NOT true or EXCEPT",
+      "description": "Asks which option is NOT true, NOT mentioned, or is the EXCEPTION among statements about the passage.",
+      "concepts": []
+    },
+    {
+      "type": "inference",
+      "name": "Inference",
+      "description": "Asks what can be inferred, what the passage suggests or implies, what the author would most likely agree or disagree with, or what a phrase most likely suggests.",
+      "concepts": []
+    },
+    {
+      "type": "tone",
+      "name": "Tone and attitude",
+      "description": "Asks for the tone of the passage or the author's attitude, feeling or point of view towards a subject (e.g. critical, optimistic, neutral).",
+      "concepts": []
+    },
+    {
+      "type": "purpose",
+      "name": "Author's purpose",
+      "description": "Asks why the author wrote the passage, why a particular example or fact is mentioned, or what role a sentence or paragraph plays.",
+      "concepts": []
+    },
+    {
+      "type": "vocab",
+      "name": "Word in context",
+      "description": "Asks for the meaning, synonym or antonym of a word or phrase as it is used in the passage.",
+      "concepts": []
+    }
+  ]
+}

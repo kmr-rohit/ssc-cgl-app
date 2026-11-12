@@ -1,0 +1,114 @@
+{
+  "topic": "g-history",
+  "types": [
+    {
+      "type": "prehistoric-indus-vedic",
+      "name": "Stone Age, Indus and Vedic",
+      "description": "Stone Age sites, Harappan cities and their finds, and the Vedas, Vedangas and Vedic society.",
+      "concepts": [
+        "prehistoric-period-stone-age",
+        "indus-valley-civilization",
+        "vedic-period"
+      ]
+    },
+    {
+      "type": "buddhism-jainism-mahajanapadas",
+      "name": "Buddhism, Jainism and Mahajanapadas",
+      "description": "Buddha and Mahavira, councils, sacred texts, the 16 Mahajanapadas and the rise of Magadha.",
+      "concepts": [
+        "jainism-and-buddhism",
+        "mahajanapadas-magadha-empire"
+      ]
+    },
+    {
+      "type": "mauryas-to-guptas",
+      "name": "Mauryas to Guptas and Harsha",
+      "description": "Mauryas, Shungas, Satavahanas, Kushanas, Guptas, Harsha, and the ancient books and foreign travellers of these periods.",
+      "concepts": [
+        "mauryan-empire",
+        "post-mauryan-dynasties",
+        "gupta-dynasty-post-gupta-era",
+        "ancient-literature-and-authors"
+      ]
+    },
+    {
+      "type": "south-indian-kingdoms",
+      "name": "South Indian and Deccan kingdoms",
+      "description": "Sangam kingdoms, Pallavas, Chalukyas, Rashtrakutas, Cholas, Palas and Pratiharas, Vijayanagara and Bahmani.",
+      "concepts": [
+        "southern-kingdoms-tripartite-struggle",
+        "vijayanagara-and-bahmani-kingdoms"
+      ]
+    },
+    {
+      "type": "delhi-sultanate",
+      "name": "Delhi Sultanate",
+      "description": "The five Sultanate dynasties, their rulers, reforms, buildings and officers.",
+      "concepts": [
+        "delhi-sultanate-1206-1526-ad",
+        "delhi-sultanate-dynasties"
+      ]
+    },
+    {
+      "type": "mughals-and-marathas",
+      "name": "Mughals, Marathas and regional powers",
+      "description": "Mughal emperors, Sher Shah, Shivaji and the Peshwas, and other regional states such as Mysore, Punjab and the Ahoms.",
+      "concepts": [
+        "mughal-empire-1526-1857-ad",
+        "maratha-empire-regional-powers"
+      ]
+    },
+    {
+      "type": "bhakti-sufi-sikh",
+      "name": "Bhakti, Sufi and Sikh gurus",
+      "description": "Bhakti saints and their works, Sufi orders and shrines, and the ten Sikh gurus.",
+      "concepts": [
+        "bhakti-sufi-movements"
+      ]
+    },
+    {
+      "type": "british-rule-and-1857",
+      "name": "British rule, 1857 and revolts",
+      "description": "European companies, battles of conquest, governors-general, land revenue systems, the Revolt of 1857 and tribal or peasant uprisings.",
+      "concepts": [
+        "advent-of-europeans-british-expansion",
+        "economic-impact-land-revenue-systems",
+        "tribal-peasant-civil-uprisings"
+      ]
+    },
+    {
+      "type": "reform-movements",
+      "name": "Social and religious reform",
+      "description": "19th and 20th century reformers and the organisations they founded.",
+      "concepts": [
+        "socio-religious-reform-movements"
+      ]
+    },
+    {
+      "type": "colonial-acts",
+      "name": "Colonial acts and commissions",
+      "description": "Regulating Act to Indian Independence Act, and British commissions and missions.",
+      "concepts": [
+        "colonial-acts-and-reforms"
+      ]
+    },
+    {
+      "type": "national-movement",
+      "name": "National movement",
+      "description": "Congress and its sessions, moderates and extremists, Gandhian movements, revolutionaries and the INA.",
+      "concepts": [
+        "indian-national-congress-freedom-struggle",
+        "indian-national-congress-sessions",
+        "gandhian-era-1917-1947",
+        "gandhian-movements-and-satyagraha",
+        "revolutionary-movements-and-leaders"
+      ]
+    },
+    {
+      "type": "post-independence",
+      "name": "India after 1947",
+      "description": "Events after independence: integration of states, wars, nuclear tests, Emergency and other landmark years.",
+      "concepts": []
+    }
+  ]
+}

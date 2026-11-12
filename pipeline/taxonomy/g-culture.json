@@ -1,0 +1,71 @@
+{
+  "topic": "g-culture",
+  "types": [
+    {
+      "type": "classical-dance",
+      "name": "Classical dances",
+      "description": "The eight classical dance forms, their states, origins and famous dancers.",
+      "concepts": [
+        "classical-dance-traditions"
+      ]
+    },
+    {
+      "type": "folk-dances",
+      "name": "Folk dances, theatre and martial arts",
+      "description": "Folk and tribal dances, folk theatre, puppetry and martial arts of each state.",
+      "concepts": [
+        "regional-folk-dances",
+        "indian-performing-arts-dance"
+      ]
+    },
+    {
+      "type": "music",
+      "name": "Music forms and gharanas",
+      "description": "Hindustani and Carnatic music, vocal forms, gharanas and famous singers.",
+      "concepts": [
+        "indian-music-gharanas"
+      ]
+    },
+    {
+      "type": "instruments",
+      "name": "Instruments and players",
+      "description": "Musical instruments, their types, and the artists famous for playing them.",
+      "concepts": [
+        "musical-instruments-and-players"
+      ]
+    },
+    {
+      "type": "festivals-fairs",
+      "name": "Festivals and fairs",
+      "description": "Festivals, harvest celebrations, tribal festivals and fairs, and the state or community they belong to.",
+      "concepts": [
+        "religious-festivals-and-fairs"
+      ]
+    },
+    {
+      "type": "architecture-monuments",
+      "name": "Architecture and heritage sites",
+      "description": "Temple styles, cave sites, forts, tombs and other monuments, and UNESCO World Heritage Sites.",
+      "concepts": [
+        "indian-architecture",
+        "temple-architecture-styles",
+        "unesco-world-heritage-sites"
+      ]
+    },
+    {
+      "type": "painting-crafts",
+      "name": "Paintings, textiles and crafts",
+      "description": "Painting schools, folk art, handloom textiles, embroidery and handicrafts and where they come from.",
+      "concepts": [
+        "painting-schools-and-traditions",
+        "paintings-handicrafts-literature"
+      ]
+    },
+    {
+      "type": "artists-institutions",
+      "name": "Artists, titles and institutions",
+      "description": "Titles and honours of artists, and cultural academies and institutions with their founders.",
+      "concepts": []
+    }
+  ]
+}

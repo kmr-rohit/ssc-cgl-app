@@ -1,0 +1,41 @@
+{
+ "topic": "st-timeseries",
+ "types": [
+  {
+   "type": "components",
+   "name": "Components of a time series",
+   "description": "Describes a pattern or event in data over time and asks which component (trend, seasonal, cyclical, irregular) it is.",
+   "concepts": []
+  },
+  {
+   "type": "models",
+   "name": "Additive and multiplicative models",
+   "description": "Asks about the additive or multiplicative model, or combines trend and indices to get a value.",
+   "concepts": []
+  },
+  {
+   "type": "semi-averages",
+   "name": "Method of semi-averages",
+   "description": "Asks for a trend line or trend value using the averages of the two halves of the data.",
+   "concepts": []
+  },
+  {
+   "type": "moving-average",
+   "name": "Moving averages",
+   "description": "Gives a run of values and asks for a 3-, 4- or 5-period moving average or its centring.",
+   "concepts": []
+  },
+  {
+   "type": "least-squares",
+   "name": "Least-squares trend line",
+   "description": "Gives a trend equation or data to fit y = a + bx by least squares and asks for a, b or a trend value.",
+   "concepts": []
+  },
+  {
+   "type": "seasonal-indices",
+   "name": "Seasonal indices",
+   "description": "Asks for a seasonal index, the missing index, adjustment to 400 or 1200, or a deseasonalised value.",
+   "concepts": []
+  }
+ ]
+}

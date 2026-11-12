@@ -1,219 +1,387 @@
 {
- "topic": "q-simplification",
- "notes": {
-  "summary": "Simplification tests BODMAS, laws of indices and surds. These are speed questions: aim for 30 seconds each.",
-  "concepts": [
-   {
-    "title": "BODMAS",
-    "body": "Order: <b>B</b>rackets → <b>O</b>f → <b>D</b>ivision and <b>M</b>ultiplication (left to right) → <b>A</b>ddition and <b>S</b>ubtraction (left to right)."
-   },
-   {
-    "title": "Laws of indices",
-    "body": "a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup>; a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup>; (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>; a<sup>0</sup> = 1; a<sup>−n</sup> = 1/a<sup>n</sup>."
-   },
-   {
-    "title": "Surds",
-    "body": "To remove a root from the denominator, multiply by the <b>conjugate</b>: 1/(√a + √b) = (√a − √b)/(a − b). To compare roots, raise all to the LCM of the root orders."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "bodmas",
-    "name": "BODMAS",
-    "how": "Solve brackets first, then ÷ and × from left to right, then + and −.",
-    "example": {
-     "q": "Simplify 20 − 12 ÷ 4 × 2.",
-     "steps": [
-      "12 ÷ 4 = 3",
-      "3 × 2 = 6",
-      "20 − 6 = 14"
-     ],
-     "answer": "14"
+  "topic": "q-simplification",
+  "notes": {
+    "summary": "Simplification means working out a long expression in the right order and fast: BODMAS, fractions, powers, roots and identities. SSC asks 1 to 2 questions in each tier, and the same skills save time in every other quant topic. The aim is to cancel and spot patterns, not to calculate everything in full.",
+    "concepts": [
+      {
+        "title": "Order of operations: BODMAS",
+        "body": "<p>Work in this order:</p>\n<ol><li><b>B</b>rackets (innermost first)</li><li><b>O</b>f (means multiply, done before division)</li><li><b>D</b>ivision and <b>M</b>ultiplication, from left to right</li><li><b>A</b>ddition and <b>S</b>ubtraction, from left to right</li></ol>\n<p>Division and multiplication have the same rank, so go left to right: 18 ÷ 3 × 2 = 6 × 2 = 12, not 18 ÷ 6 = 3.</p>\n<p>\"Of\" is stronger than ÷: 48 ÷ 4 of 3 = 48 ÷ 12 = 4. But 48 ÷ 4 × 3 = 12 × 3 = 36.</p>"
+      },
+      {
+        "title": "Brackets and the bar (vinculum)",
+        "body": "<p>Remove brackets in this order: the bar line drawn over numbers first, then ( ), then { }, then [ ].</p>\n<p>Example: 30 − [40 − {56 − (25 − 13 − 12)}]<br>(25 − 13 − 12) = 0<br>{56 − 0} = 56<br>[40 − 56] = −16<br>30 − (−16) = 46</p>\n<p>A minus sign before a bracket changes every sign inside it: 20 − (8 − 3) = 20 − 8 + 3 = 15.</p>"
+      },
+      {
+        "title": "Fractions and mixed numbers",
+        "body": "<p><b>Mixed numbers:</b> add or subtract the whole parts and the fraction parts separately.<br>3¼ + 2⅓ − 1⅚: wholes 3 + 2 − 1 = 4; fractions ¼ + ⅓ − ⅚ = (3 + 4 − 10)/12 = −¼. Answer 4 − ¼ = 3¾.</p>\n<p><b>Dividing by a fraction:</b> multiply by its reciprocal. 5 ÷ (2/3) = 15/2.</p>\n<p><b>Comparing fractions:</b> cross-multiply. For 5/7 and 7/10: 5 × 10 = 50 and 7 × 7 = 49, so 5/7 is bigger. With many fractions, convert to decimals.</p>\n<p>When numerator and denominator differ by the same amount (like 2/3, 3/4, 4/5), the one with bigger numbers is bigger.</p>"
+      },
+      {
+        "title": "Fraction to decimal table",
+        "body": "<table><thead><tr><th>Fraction</th><th>Decimal</th><th>Fraction</th><th>Decimal</th></tr></thead><tbody>\n<tr><td>1/2</td><td>0.5</td><td>1/9</td><td>0.111...</td></tr>\n<tr><td>1/3</td><td>0.333...</td><td>1/11</td><td>0.0909...</td></tr>\n<tr><td>1/4</td><td>0.25</td><td>1/12</td><td>0.0833...</td></tr>\n<tr><td>1/6</td><td>0.1666...</td><td>1/16</td><td>0.0625</td></tr>\n<tr><td>1/7</td><td>0.142857...</td><td>5/6</td><td>0.8333...</td></tr>\n<tr><td>1/8</td><td>0.125</td><td>2/9</td><td>0.222...</td></tr>\n</tbody></table>\n<p>Sevenths repeat the digits 142857 starting at a different place: 2/7 = 0.285714..., 3/7 = 0.428571...</p>\n<p>Recurring decimals: 0.333... = 3/9, 0.1212... = 12/99, 0.1666... = (16 − 1)/90 = 1/6. Turn them into fractions before adding.</p>\n<p>Decimal multiplication: count the total decimal places. 0.3 × 0.02 = 0.006.</p>"
+      },
+      {
+        "title": "Squares, cubes and roots to know",
+        "body": "<p>Learn squares up to 30 and cubes up to 15. Some anchors: 13<sup>2</sup> = 169, 17<sup>2</sup> = 289, 19<sup>2</sup> = 361, 23<sup>2</sup> = 529, 27<sup>2</sup> = 729, 41<sup>2</sup> = 1681; 7<sup>3</sup> = 343, 11<sup>3</sup> = 1331, 12<sup>3</sup> = 1728, 13<sup>3</sup> = 2197.</p>\n<p><b>Square root of a perfect square:</b> the unit digit gives two choices (for example a square ending in 9 has a root ending in 3 or 7), and the leading digits tell you the range.<br>√1681: 40<sup>2</sup> = 1600 and the number ends in 1, so 41.</p>\n<p><b>Decimals:</b> √0.0016 = 0.04 (pairs of decimal places halve). ∛0.008 = 0.2.</p>\n<p>Square of a number ending in 5: n5<sup>2</sup> = n(n + 1) followed by 25. 65<sup>2</sup> = 6 × 7 = 42, then 25, so 4225.</p>"
+      },
+      {
+        "title": "Laws of indices",
+        "body": "<table><thead><tr><th>Rule</th><th>Example</th></tr></thead><tbody>\n<tr><td>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></td><td>2<sup>5</sup> × 2<sup>3</sup> = 2<sup>8</sup></td></tr>\n<tr><td>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup></td><td>2<sup>8</sup> ÷ 2<sup>6</sup> = 4</td></tr>\n<tr><td>(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></td><td>(3<sup>2</sup>)<sup>3</sup> = 3<sup>6</sup></td></tr>\n<tr><td>(ab)<sup>n</sup> = a<sup>n</sup>b<sup>n</sup></td><td>6<sup>2</sup> = 2<sup>2</sup> × 3<sup>2</sup></td></tr>\n<tr><td>a<sup>0</sup> = 1 (a ≠ 0)</td><td>7<sup>0</sup> = 1</td></tr>\n<tr><td>a<sup>−n</sup> = 1/a<sup>n</sup></td><td>2<sup>−3</sup> = 1/8</td></tr>\n<tr><td>a<sup>p/q</sup> = q-th root of a<sup>p</sup></td><td>64<sup>2/3</sup> = (∛64)<sup>2</sup> = 16</td></tr>\n</tbody></table>\n<p><b>Solving for the power:</b> write both sides with the same base, then equate the powers.<br>9<sup>x−1</sup> = 27<sup>x−3</sup>: 3<sup>2x−2</sup> = 3<sup>3x−9</sup>, so 2x − 2 = 3x − 9 and x = 7.</p>\n<p>If a<sup>x</sup> = a<sup>y</sup> then x = y (for a not 0, 1 or −1). If a<sup>x</sup> = b<sup>x</sup> with a ≠ b, then x = 0.</p>"
+      },
+      {
+        "title": "Surds and rationalising",
+        "body": "<p>A surd is a root that is not a whole number, like √2 or ∛5.</p>\n<ul><li>√a × √b = √(ab); √a ÷ √b = √(a/b)</li><li>Like surds add: 3√2 + 5√2 = 8√2. Simplify first: √50 + √18 = 5√2 + 3√2 = 8√2.</li><li>√a + √b is <b>not</b> √(a + b).</li></ul>\n<p><b>Rationalising:</b> multiply top and bottom by the conjugate (change the middle sign).<br>1/(√3 + √2) = (√3 − √2)/(3 − 2) = √3 − √2.<br>(√5 + √3)/(√5 − √3) = (√5 + √3)<sup>2</sup>/(5 − 3) = (8 + 2√15)/2 = 4 + √15.</p>\n<p><b>Square root of a + 2√b:</b> find two numbers x and y with x + y = a and xy = b. Then √(a + 2√b) = √x + √y.<br>√(7 + 2√10): 5 + 2 = 7 and 5 × 2 = 10, so √5 + √2. For a − 2√b the answer is √x − √y (bigger first).</p>"
+      },
+      {
+        "title": "Comparing surds and roots",
+        "body": "<p><b>Different root orders:</b> raise every number to the LCM of the root orders so that all roots vanish, then compare.<br>∛2 and ⁴√3: LCM of 3 and 4 is 12. (∛2)<sup>12</sup> = 2<sup>4</sup> = 16 and (⁴√3)<sup>12</sup> = 3<sup>3</sup> = 27. So ⁴√3 is bigger.</p>\n<p><b>Differences of roots:</b> √a − √b = (a − b)/(√a + √b). With the same gap (a − b), the pair with the <b>bigger</b> numbers gives the <b>smaller</b> difference.<br>So √7 − √5 is less than √5 − √3.</p>\n<p><b>Sums of roots:</b> compare by squaring. (√5 + √6)<sup>2</sup> = 11 + 2√30 and (√3 + √8)<sup>2</sup> = 11 + 2√24, so √5 + √6 is bigger.</p>"
+      },
+      {
+        "title": "Nested roots: finite and infinite",
+        "body": "<p><b>Finite nested roots:</b> start from the innermost root and work outward.<br>√(8 + √1681) = √(8 + 41) = √49 = 7.</p>\n<p><b>Infinite roots:</b> call the whole value y, notice that the same expression appears inside, and solve.</p>\n<table><thead><tr><th>Expression</th><th>Value</th></tr></thead><tbody>\n<tr><td>√(x + √(x + √(x + ...)))</td><td>(1 + √(1 + 4x))/2; if x = n(n + 1), the value is n + 1</td></tr>\n<tr><td>√(x − √(x − √(x − ...)))</td><td>(√(1 + 4x) − 1)/2; if x = n(n + 1), the value is n</td></tr>\n<tr><td>√(x √(x √(x ...))) for ever</td><td>x</td></tr>\n<tr><td>√(x √(x √x)) with n roots</td><td>x<sup>(1 − 1/2<sup>n</sup>)</sup></td></tr>\n</tbody></table>\n<p>Example: √(12 + √(12 + ...)): 12 = 3 × 4, so the value is 4. √(20 − √(20 − ...)): 20 = 4 × 5, so the value is 4.</p>"
+      },
+      {
+        "title": "Continued (ladder) fractions",
+        "body": "<p>Start at the bottom of the ladder and move up one step at a time.</p>\n<p>Example: 1 + 1/(1 + 1/(1 + 1/2))<br>1 + 1/2 = 3/2<br>1 ÷ (3/2) = 2/3, so 1 + 2/3 = 5/3<br>1 ÷ (5/3) = 3/5, so 1 + 3/5 = 8/5</p>\n<p>If an unknown sits inside, simplify the ladder from the bottom in terms of the unknown, then solve the equation. Remember 1/(a/b) = b/a.</p>"
+      },
+      {
+        "title": "Identities that simplify calculations",
+        "body": "<table><thead><tr><th>Identity</th><th>Use</th></tr></thead><tbody>\n<tr><td>a<sup>2</sup> − b<sup>2</sup> = (a + b)(a − b)</td><td>5.6<sup>2</sup> − 4.4<sup>2</sup> = 10 × 1.2 = 12</td></tr>\n<tr><td>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></td><td>Spot a<sup>2</sup> + 2ab + b<sup>2</sup> in a numerator</td></tr>\n<tr><td>(a + b)<sup>2</sup> + (a − b)<sup>2</sup> = 2(a<sup>2</sup> + b<sup>2</sup>)</td><td>Sum of two squares</td></tr>\n<tr><td>(a + b)<sup>2</sup> − (a − b)<sup>2</sup> = 4ab</td><td>Product from sum and difference</td></tr>\n<tr><td>a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> − ab + b<sup>2</sup>)</td><td>(a<sup>3</sup> + b<sup>3</sup>)/(a<sup>2</sup> − ab + b<sup>2</sup>) = a + b</td></tr>\n<tr><td>a<sup>3</sup> − b<sup>3</sup> = (a − b)(a<sup>2</sup> + ab + b<sup>2</sup>)</td><td>(a<sup>3</sup> − b<sup>3</sup>)/(a<sup>2</sup> + ab + b<sup>2</sup>) = a − b</td></tr>\n<tr><td>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> − 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − ab − bc − ca)</td><td>If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc</td></tr>\n</tbody></table>\n<p>Example: (0.7 × 0.7 × 0.7 + 0.3 × 0.3 × 0.3)/(0.7 × 0.7 − 0.7 × 0.3 + 0.3 × 0.3) = 0.7 + 0.3 = 1.</p>"
+      },
+      {
+        "title": "Approximation and finding the missing value",
+        "body": "<p><b>Approximation:</b> round each number to a friendly value, then calculate. Recognise hidden fractions: 0.1667 ≈ 1/6, 0.3333 ≈ 1/3, 0.6667 ≈ 2/3, 0.8333 ≈ 5/6, 0.2222 ≈ 2/9, 0.125 = 1/8, 0.0909 ≈ 1/11. Near squares help: √626 ≈ 25, √99 ≈ 10.</p>\n<p>Round one number up and another down where you can, so errors cancel. Options are usually far apart, so a close estimate is enough.</p>\n<p><b>Missing value:</b> simplify the known side fully, then solve for the unknown.<br>x% of 280 = 15% of 240 + 20% of 310: right side = 36 + 62 = 98, so x = 98 × 100/280 = 35.</p>\n<p>Percent and fraction swap: x% of y = y% of x. So 18% of 50 = 50% of 18 = 9.</p>"
+      },
+      {
+        "title": "Series that cancel and quick sums",
+        "body": "<p><b>Telescoping:</b> split each term so most parts cancel.</p>\n<ul><li>1/(n(n + 1)) = 1/n − 1/(n + 1). So 1/(1×2) + 1/(2×3) + ... + 1/(9×10) = 1 − 1/10 = 9/10.</li>\n<li>1/(n(n + k)) = (1/k)(1/n − 1/(n + k)).</li>\n<li>1/(√n + √(n + 1)) = √(n + 1) − √n. Sum from n = 1 to 99 = √100 − √1 = 9.</li>\n<li>(1 − 1/2)(1 − 1/3)...(1 − 1/n) = 1/n. (1 + 1/2)(1 + 1/3)...(1 + 1/n) = (n + 1)/2.</li></ul>\n<p><b>Powers of one number (GP):</b> a + ar + ar<sup>2</sup> + ... (n terms) = a(r<sup>n</sup> − 1)/(r − 1).<br>3 + 3<sup>2</sup> + ... + 3<sup>8</sup> = 3(3<sup>8</sup> − 1)/2 = 3 × 6560/2 = 9840.</p>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "bodmas",
+        "name": "BODMAS and brackets",
+        "how": "Clear brackets from the inside out (bar, ( ), { }, [ ]). Then do \"of\", then ÷ and × from left to right, then + and − from left to right.",
+        "example": {
+          "q": "Simplify 48 ÷ 4 of 3 + [12 − {6 − (8 − 5)}].",
+          "steps": [
+            "Innermost bracket: 8 − 5 = 3.",
+            "{6 − 3} = 3, then [12 − 3] = 9.",
+            "4 of 3 = 12, so 48 ÷ 12 = 4.",
+            "4 + 9 = 13."
+          ],
+          "answer": "13"
+        }
+      },
+      {
+        "type": "fractions-decimals",
+        "name": "Fractions and decimals",
+        "how": "Handle whole parts and fraction parts separately, use a common denominator, and turn recurring decimals into fractions before adding.",
+        "example": {
+          "q": "Simplify 3¼ + 2⅓ − 1⅚.",
+          "steps": [
+            "Whole parts: 3 + 2 − 1 = 4.",
+            "Fraction parts: ¼ + ⅓ − ⅚ = 3/12 + 4/12 − 10/12 = −3/12 = −¼.",
+            "4 − ¼ = 3¾."
+          ],
+          "answer": "3¾"
+        }
+      },
+      {
+        "type": "indices",
+        "name": "Powers and indices",
+        "how": "Bring every term to the same prime base. Then apply the index laws, or equate the powers if it is an equation.",
+        "example": {
+          "q": "If 9<sup>x − 1</sup> = 27<sup>x − 3</sup>, find x.",
+          "steps": [
+            "9 = 3<sup>2</sup> and 27 = 3<sup>3</sup>.",
+            "3<sup>2x − 2</sup> = 3<sup>3x − 9</sup>.",
+            "2x − 2 = 3x − 9, so x = 7."
+          ],
+          "answer": "7"
+        }
+      },
+      {
+        "type": "surds-roots",
+        "name": "Surds and square roots",
+        "how": "To rationalise, multiply top and bottom by the conjugate. To compare roots of different orders, raise all to the LCM of the orders.",
+        "example": {
+          "q": "Simplify (√5 + √3)/(√5 − √3).",
+          "steps": [
+            "Multiply top and bottom by (√5 + √3).",
+            "Top: (√5 + √3)<sup>2</sup> = 5 + 3 + 2√15 = 8 + 2√15.",
+            "Bottom: 5 − 3 = 2.",
+            "(8 + 2√15)/2 = 4 + √15."
+          ],
+          "answer": "4 + √15"
+        }
+      },
+      {
+        "type": "nested-continued",
+        "name": "Infinite roots and continued fractions",
+        "how": "For an infinite root, set the whole value as y, square, and replace the repeating part by y. Shortcut: if x = n(n + 1), √(x + √(x + ...)) = n + 1 and √(x − √(x − ...)) = n. For ladders, simplify from the bottom up.",
+        "example": {
+          "q": "Find the value of √(20 − √(20 − √(20 − ...))).",
+          "steps": [
+            "Let y = the value. Then y = √(20 − y).",
+            "y<sup>2</sup> = 20 − y, so y<sup>2</sup> + y − 20 = 0, (y + 5)(y − 4) = 0.",
+            "y must be positive, so y = 4. (Shortcut: 20 = 4 × 5, answer 4.)"
+          ],
+          "answer": "4"
+        }
+      },
+      {
+        "type": "algebraic-identity",
+        "name": "Using algebraic identities",
+        "how": "Give the repeated numbers letters a and b, spot the identity, cancel, then put the numbers back.",
+        "example": {
+          "q": "Simplify (7.5 × 7.5 + 2 × 7.5 × 2.5 + 2.5 × 2.5)/(7.5 × 7.5 − 2.5 × 2.5).",
+          "steps": [
+            "Let a = 7.5 and b = 2.5.",
+            "Top = a<sup>2</sup> + 2ab + b<sup>2</sup> = (a + b)<sup>2</sup>. Bottom = a<sup>2</sup> − b<sup>2</sup> = (a + b)(a − b).",
+            "Value = (a + b)/(a − b) = 10/5 = 2."
+          ],
+          "answer": "2"
+        }
+      },
+      {
+        "type": "approximation",
+        "name": "Approximation and missing value",
+        "how": "Replace awkward decimals with nearby fractions or round numbers, cancel, and pick the closest option. For a missing value, simplify the known side and solve.",
+        "example": {
+          "q": "Find the approximate value of (0.1667 × 0.8333 × 0.3333)/(0.2222 × 0.6667 × 0.1250).",
+          "steps": [
+            "0.1667 ≈ 1/6, 0.8333 ≈ 5/6, 0.3333 ≈ 1/3, so the top ≈ 5/108.",
+            "0.2222 ≈ 2/9, 0.6667 ≈ 2/3, 0.125 = 1/8, so the bottom ≈ 4/216 = 1/54.",
+            "(5/108) × 54 = 2.5."
+          ],
+          "answer": "About 2.5"
+        }
+      },
+      {
+        "type": "series-telescoping",
+        "name": "Series that cancel and quick sums",
+        "how": "Rewrite each term as a difference (1/n − 1/(n + 1), or √(n + 1) − √n) so that neighbours cancel. For powers of one number, use the GP sum formula.",
+        "example": {
+          "q": "Find 1/(√1 + √2) + 1/(√2 + √3) + ... + 1/(√99 + √100).",
+          "steps": [
+            "Each term 1/(√n + √(n + 1)) = √(n + 1) − √n after rationalising.",
+            "Sum = (√2 − √1) + (√3 − √2) + ... + (√100 − √99).",
+            "Everything cancels except √100 − √1 = 10 − 1 = 9."
+          ],
+          "answer": "9"
+        }
+      }
+    ],
+    "tips": [
+      "Before calculating, look for an identity (a² − b², a³ + b³) or a common factor to cancel.",
+      "Learn squares to 30, cubes to 15 and the fraction to decimal table; they turn long work into recall.",
+      "For infinite roots, check whether the number is n(n + 1): 2, 6, 12, 20, 30, 42, 56, 72, 90.",
+      "To compare roots of different orders, raise all of them to the LCM of the orders.",
+      "In approximation questions, options are far apart, so round boldly.",
+      "Use the unit digit of the answer to strike out options quickly."
+    ],
+    "traps": [
+      "÷ and × go left to right: 18 ÷ 3 × 2 is 12, not 3.",
+      "\"Of\" is done before ÷: 48 ÷ 4 of 3 = 4.",
+      "A minus sign before a bracket flips every sign inside it.",
+      "√a + √b is not √(a + b), and (a + b)² is not a² + b².",
+      "An infinite root has a positive value; reject the negative root of the quadratic."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Product of powers",
+      "expr": "aᵐ × aⁿ = aᵐ⁺ⁿ"
+    },
+    {
+      "name": "Quotient of powers",
+      "expr": "aᵐ ÷ aⁿ = aᵐ⁻ⁿ"
+    },
+    {
+      "name": "Power of a power",
+      "expr": "(aᵐ)ⁿ = aᵐⁿ"
+    },
+    {
+      "name": "Negative and zero powers",
+      "expr": "a⁻ⁿ = 1/aⁿ, a⁰ = 1"
+    },
+    {
+      "name": "Fractional power",
+      "expr": "a^(p/q) = (q-th root of a)^p"
+    },
+    {
+      "name": "Rationalise",
+      "expr": "1/(√a + √b) = (√a − √b)/(a − b)"
+    },
+    {
+      "name": "Root of a + 2√b",
+      "expr": "√x + √y where x + y = a and xy = b"
+    },
+    {
+      "name": "Infinite root (plus)",
+      "expr": "√(x + √(x + ...)) = (1 + √(1 + 4x))/2"
+    },
+    {
+      "name": "Infinite root (minus)",
+      "expr": "√(x − √(x − ...)) = (√(1 + 4x) − 1)/2"
+    },
+    {
+      "name": "Infinite product root",
+      "expr": "√(x√(x√(x...))) = x"
+    },
+    {
+      "name": "Difference of squares",
+      "expr": "a² − b² = (a + b)(a − b)"
+    },
+    {
+      "name": "Sum of cubes",
+      "expr": "a³ + b³ = (a + b)(a² − ab + b²)"
+    },
+    {
+      "name": "Difference of cubes",
+      "expr": "a³ − b³ = (a − b)(a² + ab + b²)"
+    },
+    {
+      "name": "Three cubes",
+      "expr": "If a + b + c = 0, a³ + b³ + c³ = 3abc"
+    },
+    {
+      "name": "Telescoping term",
+      "expr": "1/(n(n + 1)) = 1/n − 1/(n + 1)"
+    },
+    {
+      "name": "GP sum",
+      "expr": "a(rⁿ − 1)/(r − 1)"
     }
-   },
-   {
-    "type": "indices",
-    "name": "Indices and exponent equations",
-    "how": "Bring both sides to the same base, then equate powers.",
-    "example": {
-     "q": "If 3<sup>x</sup> = 81, find x.",
-     "steps": [
-      "81 = 3<sup>4</sup>",
-      "x = 4"
-     ],
-     "answer": "4"
-    }
-   },
-   {
-    "type": "surds",
-    "name": "Surds and comparison",
-    "how": "Rationalise using the conjugate; for comparison, raise to a common power.",
-    "example": {
-     "q": "Rationalise 1/(√5 − √3).",
-     "steps": [
-      "Multiply by (√5 + √3)/(√5 + √3)",
-      "Denominator = 5 − 3 = 2",
-      "= (√5 + √3)/2"
-     ],
-     "answer": "(√5 + √3)/2"
-    }
-   }
   ],
-  "tips": [
-   "Division and multiplication have equal priority: go left to right.",
-   "For infinite roots √(a + √(a + …)), solve x² = a + x."
+  "questions": [
+    {
+      "id": "q-simplification-001",
+      "rev": 1,
+      "topic": "q-simplification",
+      "type": "bodmas",
+      "level": 1,
+      "q": "Simplify: 18 ÷ 3 × 2 + 4 − 6",
+      "options": [
+        "1",
+        "10",
+        "7",
+        "12"
+      ],
+      "answer": 1,
+      "solution": "18 ÷ 3 = 6 (left to right).<br>6 × 2 = 12.<br>12 + 4 − 6 = 10.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-simplification-002",
+      "rev": 1,
+      "topic": "q-simplification",
+      "type": "indices",
+      "level": 1,
+      "q": "What is the value of (2<sup>5</sup> × 2<sup>3</sup>) ÷ 2<sup>6</sup>?",
+      "options": [
+        "2",
+        "8",
+        "16",
+        "4"
+      ],
+      "answer": 3,
+      "solution": "2<sup>5</sup> × 2<sup>3</sup> = 2<sup>8</sup>.<br>2<sup>8</sup> ÷ 2<sup>6</sup> = 2<sup>2</sup> = 4.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-simplification-003",
+      "rev": 1,
+      "topic": "q-simplification",
+      "type": "surds-roots",
+      "level": 2,
+      "q": "1/(√3 + √2) is equal to:",
+      "options": [
+        "√3 + √2",
+        "√3 − √2",
+        "(√3 − √2)/5",
+        "1/(√3 − √2)"
+      ],
+      "answer": 1,
+      "solution": "Multiply numerator and denominator by (√3 − √2).<br>Denominator = (√3)<sup>2</sup> − (√2)<sup>2</sup> = 3 − 2 = 1.<br>Result = √3 − √2.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-simplification-004",
+      "rev": 1,
+      "topic": "q-simplification",
+      "type": "indices",
+      "level": 2,
+      "q": "If 2<sup>x + 3</sup> = 32<sup>x − 1</sup>, then x is:",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": 2,
+      "solution": "32 = 2<sup>5</sup>, so 32<sup>x − 1</sup> = 2<sup>5x − 5</sup>.<br>Equate powers: x + 3 = 5x − 5.<br>4x = 8 → x = 2.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-simplification-005",
+      "rev": 1,
+      "topic": "q-simplification",
+      "type": "surds-roots",
+      "level": 3,
+      "q": "Which of the following is the largest: √3, ∛4, ⁴√6?",
+      "options": [
+        "√3",
+        "∛4",
+        "⁴√6",
+        "All are equal"
+      ],
+      "answer": 0,
+      "solution": "LCM of 2, 3, 4 = 12. Raise each to the 12th power:<br>(√3)<sup>12</sup> = 3<sup>6</sup> = 729; (∛4)<sup>12</sup> = 4<sup>4</sup> = 256; (⁴√6)<sup>12</sup> = 6<sup>3</sup> = 216.<br>Largest is √3.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-simplification-006",
+      "rev": 1,
+      "topic": "q-simplification",
+      "type": "nested-continued",
+      "level": 3,
+      "q": "Find the value of √(12 + √(12 + √(12 + …∞))).",
+      "options": [
+        "3",
+        "6",
+        "2√3",
+        "4"
+      ],
+      "answer": 3,
+      "solution": "Let x = √(12 + x).<br>x<sup>2</sup> = 12 + x → x<sup>2</sup> − x − 12 = 0 → (x − 4)(x + 3) = 0.<br>x is positive, so x = 4.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "18 ÷ 3 × 2 is 12, not 3.",
-   "(a + b)<sup>2</sup> ≠ a<sup>2</sup> + b<sup>2</sup>, and √(a + b) ≠ √a + √b."
+  "flashcards": [
+    {
+      "id": "fc-simp-1",
+      "front": "a<sup>m</sup> × a<sup>n</sup>",
+      "back": "a<sup>m+n</sup>",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-simp-2",
+      "front": "a<sup>−n</sup>",
+      "back": "1/a<sup>n</sup>",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-simp-3",
+      "front": "1/(√a + √b)",
+      "back": "(√a − √b)/(a − b)",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-simp-4",
+      "front": "√(n(n+1) + √(n(n+1) + …))",
+      "back": "n + 1",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Product of powers",
-   "expr": "a^m × a^n = a^(m+n)"
-  },
-  {
-   "name": "Power of power",
-   "expr": "(a^m)^n = a^(mn)"
-  },
-  {
-   "name": "Rationalise",
-   "expr": "1/(√a + √b) = (√a − √b)/(a − b)"
-  },
-  {
-   "name": "Infinite nested root",
-   "expr": "√(a + √(a + …)) = x where x² − x − a = 0"
-  }
- ],
- "questions": [
-  {
-   "id": "q-simplification-001",
-   "rev": 1,
-   "topic": "q-simplification",
-   "type": "bodmas",
-   "level": 1,
-   "q": "Simplify: 18 ÷ 3 × 2 + 4 − 6",
-   "options": [
-    "1",
-    "10",
-    "7",
-    "12"
-   ],
-   "answer": 1,
-   "solution": "18 ÷ 3 = 6 (left to right).<br>6 × 2 = 12.<br>12 + 4 − 6 = 10.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-simplification-002",
-   "rev": 1,
-   "topic": "q-simplification",
-   "type": "indices",
-   "level": 1,
-   "q": "What is the value of (2<sup>5</sup> × 2<sup>3</sup>) ÷ 2<sup>6</sup>?",
-   "options": [
-    "2",
-    "8",
-    "16",
-    "4"
-   ],
-   "answer": 3,
-   "solution": "2<sup>5</sup> × 2<sup>3</sup> = 2<sup>8</sup>.<br>2<sup>8</sup> ÷ 2<sup>6</sup> = 2<sup>2</sup> = 4.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-simplification-003",
-   "rev": 1,
-   "topic": "q-simplification",
-   "type": "surds",
-   "level": 2,
-   "q": "1/(√3 + √2) is equal to:",
-   "options": [
-    "√3 + √2",
-    "√3 − √2",
-    "(√3 − √2)/5",
-    "1/(√3 − √2)"
-   ],
-   "answer": 1,
-   "solution": "Multiply numerator and denominator by (√3 − √2).<br>Denominator = (√3)<sup>2</sup> − (√2)<sup>2</sup> = 3 − 2 = 1.<br>Result = √3 − √2.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-simplification-004",
-   "rev": 1,
-   "topic": "q-simplification",
-   "type": "indices",
-   "level": 2,
-   "q": "If 2<sup>x + 3</sup> = 32<sup>x − 1</sup>, then x is:",
-   "options": [
-    "1",
-    "3",
-    "2",
-    "4"
-   ],
-   "answer": 2,
-   "solution": "32 = 2<sup>5</sup>, so 32<sup>x − 1</sup> = 2<sup>5x − 5</sup>.<br>Equate powers: x + 3 = 5x − 5.<br>4x = 8 → x = 2.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-simplification-005",
-   "rev": 1,
-   "topic": "q-simplification",
-   "type": "surds",
-   "level": 3,
-   "q": "Which of the following is the largest: √3, ∛4, ⁴√6?",
-   "options": [
-    "√3",
-    "∛4",
-    "⁴√6",
-    "All are equal"
-   ],
-   "answer": 0,
-   "solution": "LCM of 2, 3, 4 = 12. Raise each to the 12th power:<br>(√3)<sup>12</sup> = 3<sup>6</sup> = 729; (∛4)<sup>12</sup> = 4<sup>4</sup> = 256; (⁴√6)<sup>12</sup> = 6<sup>3</sup> = 216.<br>Largest is √3.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-simplification-006",
-   "rev": 1,
-   "topic": "q-simplification",
-   "type": "surds",
-   "level": 3,
-   "q": "Find the value of √(12 + √(12 + √(12 + …∞))).",
-   "options": [
-    "3",
-    "6",
-    "2√3",
-    "4"
-   ],
-   "answer": 3,
-   "solution": "Let x = √(12 + x).<br>x<sup>2</sup> = 12 + x → x<sup>2</sup> − x − 12 = 0 → (x − 4)(x + 3) = 0.<br>x is positive, so x = 4.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-simp-1",
-   "front": "a<sup>m</sup> × a<sup>n</sup>",
-   "back": "a<sup>m+n</sup>",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-simp-2",
-   "front": "a<sup>−n</sup>",
-   "back": "1/a<sup>n</sup>",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-simp-3",
-   "front": "1/(√a + √b)",
-   "back": "(√a − √b)/(a − b)",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-simp-4",
-   "front": "√(n(n+1) + √(n(n+1) + …))",
-   "back": "n + 1",
-   "deck": "formulas"
-  }
- ]
 }

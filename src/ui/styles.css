@@ -395,3 +395,9 @@ dialog::backdrop { background: rgb(13 20 34 / .5); }
   .paper, .card { border: 1px solid #ccc; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* Maths (KaTeX, rendered at build time). Slightly smaller than KaTeX's default so it sits with Mukta body text;
+   long display equations scroll sideways instead of widening the page at 360 px. */
+.katex { font-size: 1.08em; }
+.katex .katex-base { padding: .16em 0; } /* gap between stacked fractions on neighbouring lines (inline-block, so it grows the line box) */
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.15em 0; margin: 0.6em 0; }

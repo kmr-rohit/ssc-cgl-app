@@ -1,70 +1,148 @@
 {
  "topic": "r-figural",
  "notes": {
-  "summary": "Figural reasoning uses pictures in a <b>series</b> (what comes next), an <b>analogy</b> (A : B :: C : ?), or asks which simple figure is <b>embedded</b> (hidden) in a complex figure.",
+  "summary": "Figural questions use shapes instead of words: what comes next in a series, what completes an analogy or a pattern, which figure is the odd one out, how a figure looks after rotating, and which option hides a given figure. The method is always the same: break the figure into parts (shape, number, position, direction, shading) and track how each part changes.",
   "concepts": [
    {
+    "title": "Break the figure into parts",
+    "body": "Most figures change in one or two ways at once. List the parts and watch each one separately:<table><thead><tr><th>Part</th><th>How it usually changes</th></tr></thead><tbody><tr><td>Direction</td><td>Turns 45°, 90° or 180°, clockwise or anticlockwise</td></tr><tr><td>Position</td><td>Moves 1, 2 or 3 corners or sides at a time</td></tr><tr><td>Number</td><td>Lines, dots or sides go up or down by 1 (or 1, 2, 3)</td></tr><tr><td>Shading</td><td>Filled and empty take turns</td></tr><tr><td>Shape</td><td>Inner and outer shapes swap, or sides increase</td></tr></tbody></table>"
+   },
+   {
+    "title": "Rotation basics",
+    "body": "<ul><li>Clockwise is the way clock hands move; anticlockwise is the other way.</li><li>90° clockwise is the same as 270° anticlockwise. 180° is the same both ways.</li><li>Combine turns into one net turn: 135° clockwise then 45° anticlockwise = 90° clockwise.</li><li>A rotated figure never becomes its mirror image. If a shape has flipped, it was reflected, not rotated.</li></ul><p>In the figure: turning the flag 90° clockwise lays the pole flat with the flag at the right end, pointing down.</p>",
+    "img": "reasoning/fig-rotation-demo.svg"
+   },
+   {
     "title": "Figure series",
-    "body": "Track each element separately: rotation (45° or 90° each step, clockwise or anticlockwise), movement around corners, and number of lines or shapes increasing."
+    "body": "Find the change from figure 1 to 2, check it holds from 2 to 3 and 3 to 4, then apply it once more.<ul><li>Steps can grow: a dot may move 1, then 2, then 3 places.</li><li>An element moving around n positions is back at the start after n steps.</li><li>If two parts move, track them one at a time and combine at the end.</li></ul><p>In the figure: the arrow turns 45° anticlockwise each time, so the next one points down to the left.</p>",
+    "img": "reasoning/fig-series-demo.svg"
    },
    {
     "title": "Figure analogy",
-    "body": "Find what changed from the first figure to the second (rotated, flipped, shapes swapped, shaded) and make the <b>same change</b> to the third figure."
+    "body": "Write down every change from A to B (rotation, shading, count, inside or outside), then apply exactly the same changes to C.<p>In the figure: an empty triangle (3 sides) becomes a filled square (4 sides). So the empty pentagon (5 sides) becomes a filled hexagon (6 sides).</p>",
+    "img": "reasoning/fig-analogy-demo.svg"
    },
    {
-    "title": "Embedded figure",
-    "body": "The option must appear in the big figure in the <b>same size and same orientation</b>. Trace every side of the option along lines that really exist in the figure."
+    "title": "Odd figure out",
+    "body": "Three figures share a rule; one breaks it. Common rules: all are rotations of the same shape (the odd one is a mirror image), all have the same number of lines or sides, or all have the same shading pattern.<p>In the figure: (a), (b) and (d) are the same L turned through 0°, 90° and 180°. (c) is flipped, a mirror image, so it is the odd one.</p>",
+    "img": "reasoning/fig-odd-demo.svg"
+   },
+   {
+    "title": "Completing a pattern",
+    "body": "Most such figures are symmetric: left matches right, top matches bottom, or each quarter is a turned copy of the next. Continue every line that reaches the edge of the gap, and check that the piece you choose has the right curves and slants.<p>In the figure: the missing quarter must hold a quarter of the circle and the diagonal from the centre to the bottom-right corner.</p>",
+    "img": "reasoning/fig-pattern-demo.svg"
+   },
+   {
+    "title": "Embedded figures",
+    "body": "The hidden figure must appear with the same size, shape and angle; rotation and flipping are not allowed unless stated.<ol><li>Note one special feature of X: a slanted line, a right angle at one corner, a small loop.</li><li>Look for that feature in each option, at the same angle.</li><li>Trace the rest of X from there. Every line of X must be present.</li></ol><p>In the figure: X is a right triangle with the right angle at the bottom left. Option (a) contains it (below its diagonal). In (b) the diagonal slants the other way, so the triangles there have the right angle at a different corner.</p>",
+    "img": "reasoning/embed-demo.svg"
    }
   ],
   "varieties": [
    {
+    "type": "embedded-figure",
+    "name": "Embedded figure",
+    "how": "Pick one special feature of X, find it at the same angle in an option, then trace every line of X. No rotating or flipping.",
+    "example": {
+     "q": "Which option contains figure X as a part (rotation not allowed)?",
+     "steps": [
+      "X is a right triangle with the right angle at the bottom left and the long side slanting down from top left to bottom right.",
+      "(a) is a square with a diagonal from top left to bottom right; its lower half is exactly X.",
+      "(b) has the other diagonal, so its triangles have the right angle at the top left or bottom right."
+     ],
+     "answer": "(a)",
+     "img": "reasoning/embed-demo.svg"
+    }
+   },
+   {
+    "type": "pattern-completion",
+    "name": "Completing a pattern",
+    "how": "Use the symmetry of the whole figure and continue every line that reaches the gap.",
+    "example": {
+     "q": "Which piece completes the figure?",
+     "steps": [
+      "The figure is a square with both diagonals and a circle centred in it.",
+      "The other three quarters each hold a quarter circle and a half-diagonal.",
+      "So the gap needs a quarter of the circle and the line from the centre to the bottom-right corner."
+     ],
+     "answer": "The quarter with a circle arc and a diagonal from the centre to the corner",
+     "img": "reasoning/fig-pattern-demo.svg"
+    }
+   },
+   {
     "type": "figure-series",
     "name": "Figure series",
-    "how": "Watch one element at a time: its direction, position and count.",
+    "how": "Find the change between neighbours, check it across the row, then apply it once more.",
     "example": {
-     "q": "An arrow points up, then 45° clockwise, then 90°, then 135°. What next?",
+     "q": "Which figure comes next in the series?",
      "steps": [
-      "Each step: +45° clockwise",
-      "135° + 45° = 180°"
+      "Figure 1 points up, figure 2 up-left, figure 3 left.",
+      "Each step is a 45° turn anticlockwise.",
+      "One more 45° anticlockwise turn from left gives down-left."
      ],
-     "answer": "Arrow pointing down",
-     "img": "reasoning/fseries1-q.svg"
+     "answer": "The arrow pointing down to the left",
+     "img": "reasoning/fig-series-demo.svg"
     }
    },
    {
     "type": "figure-analogy",
     "name": "Figure analogy",
-    "how": "Describe the change in words, then apply it.",
+    "how": "List every change from A to B and apply the same changes to C.",
     "example": {
-     "q": "Big circle with small square : big square with small circle :: big triangle with small circle : ?",
+     "q": "Find the figure that completes the analogy.",
      "steps": [
-      "Rule: the inner shape becomes the outer one, and the outer becomes the inner.",
-      "Small circle → big circle; big triangle → small triangle."
+      "A is an empty triangle (3 sides); B is a filled square (4 sides).",
+      "Rule: one more side, and the shape becomes filled.",
+      "C is an empty pentagon (5 sides), so D has 6 sides and is filled."
      ],
-     "answer": "Big circle with small triangle",
-     "img": "reasoning/fanalogy1-q.svg"
+     "answer": "A filled hexagon",
+     "img": "reasoning/fig-analogy-demo.svg"
     }
    },
    {
-    "type": "embedded-figure",
-    "name": "Embedded figure",
-    "how": "Check each side of the option against the lines of the big figure; mirror images do not count.",
+    "type": "figure-odd-one-out",
+    "name": "Odd figure out",
+    "how": "Find the rule three figures share, often \"same shape turned\", and pick the one that breaks it, often a mirror image.",
     "example": {
-     "q": "Is a small square with one diagonal hidden in a figure with no such diagonal?",
+     "q": "Which figure is the odd one out?",
      "steps": [
-      "Every line of the option must exist in the figure."
+      "(a) is an L with its foot to the right.",
+      "(b) and (d) are the same L turned 90° and 180°.",
+      "(c) has its foot to the left with the long arm upright: it is a mirror image, which no rotation can produce."
      ],
-     "answer": "No"
+     "answer": "(c)",
+     "img": "reasoning/fig-odd-demo.svg"
+    }
+   },
+   {
+    "type": "figure-rotation",
+    "name": "Rotating a figure",
+    "how": "Combine all turns into one net turn (clockwise minus anticlockwise), then turn one clear feature of the figure.",
+    "example": {
+     "q": "The flag is rotated 135° clockwise and then 45° anticlockwise. How does it look?",
+     "steps": [
+      "Net turn = 135° − 45° = 90° clockwise.",
+      "The top of the pole moves to the right, so the pole lies flat with the flag at the right end.",
+      "The flag pointed right; after 90° clockwise it points down."
+     ],
+     "answer": "Pole flat, flag at the right end pointing down",
+     "img": "reasoning/fig-rotation-demo.svg"
     }
    }
   ],
   "tips": [
-   "In series, write the change under each frame (e.g. +45°, dot moves one corner clockwise).",
-   "In embedded figures, reject options that need a line the figure does not have."
+   "Track one part at a time: direction, position, number, shading, shape.",
+   "Combine rotations into one net turn before you look at the options.",
+   "A mirror image can never be made by rotating; use this to spot odd ones out.",
+   "In series, check that the change holds for every step, not just the first.",
+   "In embedded figures, start from the most unusual line of X.",
+   "Eliminate options that break even one part of the rule."
   ],
   "traps": [
-   "A mirror image of the hidden figure is not the same figure.",
-   "Clockwise vs anticlockwise: check the direction of the first two steps carefully."
+   "Do not rotate the option figures in embedded questions when rotation is not allowed.",
+   "A 90° clockwise turn and a 90° anticlockwise turn give different figures; check the direction.",
+   "Two changes can happen at once (rotation and shading); an option that gets only one right is a trap.",
+   "Elements moving around a square can move by different steps each time (1, 2, 3)."
   ]
  },
  "questions": [

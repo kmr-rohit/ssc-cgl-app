@@ -1,90 +1,193 @@
 {
  "topic": "st-correlation",
  "notes": {
-  "summary": "Correlation measures how strongly two variables move together; regression gives the line used to predict one from the other. JSO asks on Karl Pearson's r, Spearman's rank correlation, regression coefficients and finding means and r from two regression lines.",
+  "summary": "<p>Correlation measures how strongly two variables move together; regression gives an equation to estimate one from the other. Paper 2 asks 8 to 12 questions: the scatter diagram, properties of r, Karl Pearson's r, Spearman's rank correlation, regression coefficients and lines, association of attributes (Yule's Q), and partial and multiple correlation for three variables.</p><p>Most computations reduce to a few identities: r = Cov(x, y) ÷ (σ<sub>x</sub>σ<sub>y</sub>), r² = b<sub>yx</sub> × b<sub>xy</sub>, and both regression lines pass through (x̄, ȳ).</p>",
   "concepts": [
    {
-    "title": "Karl Pearson's correlation",
-    "body": "<ul><li>r = Cov(x, y)/(σ<sub>x</sub>σ<sub>y</sub>); −1 ≤ r ≤ 1.</li><li>r = +1 perfect positive, −1 perfect negative, 0 no <i>linear</i> relation.</li><li>r is unaffected by change of origin and scale (sign flips if exactly one scale factor is negative).</li><li>A <b>scatter diagram</b> shows the direction and strength visually.</li></ul>",
-    "img": "statistics/scatter.svg"
+    "title": "Kinds of correlation and the scatter diagram",
+    "body": "<ul><li><b>Positive</b>: both rise together (height and weight). <b>Negative</b>: one rises as the other falls (price and demand).</li><li><b>Linear</b>: points lie near a straight line. <b>Non-linear (curvilinear)</b>: they follow a curve.</li><li><b>Simple</b>: two variables. <b>Partial</b>: two variables with the effect of a third held fixed. <b>Multiple</b>: one variable against two or more together.</li><li>A <b>scatter diagram</b> plots each (x, y) pair as a dot. Rising band = positive, falling band = negative, round cloud = no correlation, all on a line = perfect correlation.</li><li>Correlation is not causation. Two variables can move together because of a third factor, or by chance (spurious or nonsense correlation).</li></ul>"
+   },
+   {
+    "title": "Karl Pearson's coefficient r",
+    "body": "<ul><li>Covariance: Cov(x, y) = Σ(x − x̄)(y − ȳ) ÷ n = Σxy ÷ n − x̄ȳ.</li><li>r = Cov(x, y) ÷ (σ<sub>x</sub>σ<sub>y</sub>) = Σdxdy ÷ √(Σdx² × Σdy²), where dx = x − x̄, dy = y − ȳ.</li><li>Raw-sum form: r = [nΣxy − ΣxΣy] ÷ √{[nΣx² − (Σx)²][nΣy² − (Σy)²]}.</li></ul><p>Mini example: x = 1, 2, 3, 4, 5 and y = 2, 4, 5, 4, 5. x̄ = 3, ȳ = 4. dx = −2, −1, 0, 1, 2; dy = −2, 0, 1, 0, 1. Σdxdy = 6, Σdx² = 10, Σdy² = 6. r = 6 ÷ √60 = 0.77.</p>"
+   },
+   {
+    "title": "Properties of r",
+    "body": "<ul><li>−1 ≤ r ≤ +1. r = +1 or −1 means perfect linear relation; r = 0 means no <b>linear</b> relation (a curved relation may still exist).</li><li>r has no units and is symmetric: r<sub>xy</sub> = r<sub>yx</sub>.</li><li>r does not change with change of origin and scale, except for sign: if u = (x − a)/h and v = (y − b)/k, then r<sub>uv</sub> = r<sub>xy</sub> when h and k have the same sign, and −r<sub>xy</sub> when they have opposite signs.</li><li>r is the geometric mean of the two regression coefficients.</li><li>If x and y are independent, r = 0, but r = 0 does not prove independence.</li><li><b>Coefficient of determination</b> = r². r = 0.8 means 64% of the variation in y is explained by x. <b>Coefficient of non-determination</b> = 1 − r².</li><li><b>Probable error</b> PE = 0.6745 × (1 − r²) ÷ √n. If r &gt; 6 PE, r is taken as significant; if r &lt; PE, not significant.</li></ul><table><tr><th>|r|</th><th>Description</th></tr><tr><td>1</td><td>Perfect</td></tr><tr><td>0.75 to 1</td><td>High</td></tr><tr><td>0.5 to 0.75</td><td>Moderate</td></tr><tr><td>below 0.5</td><td>Low</td></tr><tr><td>0</td><td>No linear correlation</td></tr></table>"
    },
    {
     "title": "Spearman's rank correlation",
-    "body": "R = 1 − 6Σd²/(n(n² − 1)), where d = difference in ranks. Used for qualitative data (beauty, honesty) or ranks. For tied ranks, add the correction m(m² − 1)/12 to Σd² for each tie."
+    "body": "<p>Used for ranks or qualitative data (beauty, honesty) that can be ranked but not measured.</p><ul><li>ρ = 1 − 6Σd² ÷ [n(n² − 1)], d = difference between the two ranks of each item.</li><li>Σd = 0 always (a quick check of your ranks).</li><li><b>Tied ranks</b>: give each tied item the average of the ranks they share (two items tied for 3rd and 4th both get 3.5). For each tie group of size m, add m(m² − 1) ÷ 12 to Σd².</li><li>ρ lies between −1 and +1. Ranks in exactly the same order give ρ = 1; in exactly reverse order give ρ = −1.</li></ul><p>Mini example: n = 6, Σd² = 14. ρ = 1 − 84 ÷ 210 = 0.6.</p><p><b>Concurrent deviation method</b>: r<sub>c</sub> = ±√(±(2c − n) ÷ n), where c = number of pairs whose deviations move in the same direction and n = number of pairs of deviations.</p>"
    },
    {
-    "title": "Regression",
-    "body": "<ul><li>Line of y on x: y − ȳ = b<sub>yx</sub>(x − x̄), b<sub>yx</sub> = r σ<sub>y</sub>/σ<sub>x</sub>.</li><li>Line of x on y: x − x̄ = b<sub>xy</sub>(y − ȳ), b<sub>xy</sub> = r σ<sub>x</sub>/σ<sub>y</sub>.</li><li>r = ±√(b<sub>yx</sub> × b<sub>xy</sub>), same sign as the coefficients. Their product cannot exceed 1.</li><li>Both lines pass through (x̄, ȳ), so the means are found by solving them together.</li></ul>"
+    "title": "Regression coefficients",
+    "body": "<ul><li>Regression of y on x: y − ȳ = b<sub>yx</sub>(x − x̄), with b<sub>yx</sub> = r σ<sub>y</sub> ÷ σ<sub>x</sub> = Cov(x, y) ÷ σ<sub>x</sub>². It estimates y for a given x.</li><li>Regression of x on y: x − x̄ = b<sub>xy</sub>(y − ȳ), with b<sub>xy</sub> = r σ<sub>x</sub> ÷ σ<sub>y</sub> = Cov(x, y) ÷ σ<sub>y</sub>².</li><li>r² = b<sub>yx</sub> × b<sub>xy</sub>, so r = ±√(b<sub>yx</sub> × b<sub>xy</sub>), taking the common sign of the coefficients.</li><li>Both coefficients and r have the same sign. Both cannot be greater than 1 in size (their product is at most 1).</li><li>The AM of the two coefficients is at least r: (b<sub>yx</sub> + b<sub>xy</sub>) ÷ 2 ≥ r (for positive r).</li><li>Regression coefficients change with scale but not with origin: if u = (x − a)/h and v = (y − b)/k, then b<sub>vu</sub> = (h/k) b<sub>yx</sub>.</li></ul><p>Mini example: r = 0.5, σ<sub>x</sub> = 3, σ<sub>y</sub> = 6. b<sub>yx</sub> = 0.5 × 6/3 = 1 and b<sub>xy</sub> = 0.5 × 3/6 = 0.25.</p>"
+   },
+   {
+    "title": "Regression lines",
+    "body": "<ul><li>There are two lines, y on x and x on y. Both pass through (x̄, ȳ), so solving the two equations together gives the means.</li><li>If r = ±1 the two lines coincide. If r = 0 they are perpendicular (y = ȳ and x = x̄).</li><li>The closer the lines, the higher the correlation.</li><li>Angle between them: tan θ = [(1 − r²) ÷ |r|] × [σ<sub>x</sub>σ<sub>y</sub> ÷ (σ<sub>x</sub>² + σ<sub>y</sub>²)].</li><li><b>Which line is which</b>: assume one is y on x (write it as y = … to read b<sub>yx</sub>) and the other is x on y (write as x = … to read b<sub>xy</sub>). If the product is at most 1, the guess is right; if it is above 1, swap.</li><li>Standard error of estimate of y: S<sub>y</sub> = σ<sub>y</sub>√(1 − r²).</li></ul><p>Mini example: lines 8x − 10y + 66 = 0 and 40x − 18y = 214. Solving: x̄ = 13, ȳ = 17. From the first, y = 0.8x + 6.6 so b<sub>yx</sub> = 0.8; from the second, x = 0.45y + 5.35 so b<sub>xy</sub> = 0.45. r² = 0.36, r = 0.6.</p>"
+   },
+   {
+    "title": "Association of attributes",
+    "body": "<p>For two attributes A and B (say vaccinated and not attacked), write the class frequencies as (AB), (Ab), (aB), (ab), where small letters mean \"not\".</p><ul><li><b>Independent</b> if (AB) = (A)(B) ÷ N. <b>Positively associated</b> if (AB) is greater than this, <b>negatively</b> if less.</li><li><b>Yule's coefficient of association</b>: Q = [(AB)(ab) − (Ab)(aB)] ÷ [(AB)(ab) + (Ab)(aB)]. It lies from −1 to +1; Q = 0 means independent.</li><li><b>Coefficient of colligation</b>: Y = (1 − √k) ÷ (1 + √k), k = (Ab)(aB) ÷ [(AB)(ab)]. Relation: Q = 2Y ÷ (1 + Y²).</li><li>Order of a class frequency = number of attributes in it: N is order 0, (A) is order 1, (AB) is order 2. With n attributes there are 3<sup>n</sup> class frequencies in all.</li><li>Data are <b>consistent</b> only if no class frequency is negative.</li></ul>"
+   },
+   {
+    "title": "Partial and multiple correlation (three variables)",
+    "body": "<ul><li><b>Partial correlation</b> between 1 and 2 with 3 held fixed: r<sub>12.3</sub> = (r<sub>12</sub> − r<sub>13</sub>r<sub>23</sub>) ÷ √[(1 − r<sub>13</sub>²)(1 − r<sub>23</sub>²)]. It lies from −1 to +1.</li><li><b>Multiple correlation</b> of 1 on 2 and 3: R<sub>1.23</sub>² = (r<sub>12</sub>² + r<sub>13</sub>² − 2r<sub>12</sub>r<sub>13</sub>r<sub>23</sub>) ÷ (1 − r<sub>23</sub>²). It lies from 0 to 1 and is never less than any simple correlation of 1 with 2 or 3: R<sub>1.23</sub> ≥ |r<sub>12</sub>|, |r<sub>13</sub>|.</li><li>If R<sub>1.23</sub> = 0, then r<sub>12</sub> = r<sub>13</sub> = 0. If R<sub>1.23</sub> = 1, x<sub>1</sub> is an exact linear function of x<sub>2</sub> and x<sub>3</sub>.</li><li>Multiple regression plane of x<sub>1</sub> on x<sub>2</sub>, x<sub>3</sub>: x<sub>1</sub> = a + b<sub>12.3</sub>x<sub>2</sub> + b<sub>13.2</sub>x<sub>3</sub>; b<sub>12.3</sub> is a partial regression coefficient.</li></ul><p>Mini example: r<sub>12</sub> = 0.7, r<sub>13</sub> = 0.5, r<sub>23</sub> = 0.5. r<sub>12.3</sub> = (0.7 − 0.25) ÷ 0.75 = 0.6. R<sub>1.23</sub>² = (0.49 + 0.25 − 0.35) ÷ 0.75 = 0.52, R<sub>1.23</sub> ≈ 0.72.</p>"
    }
   ],
   "varieties": [
    {
-    "type": "karl-pearson",
-    "name": "Karl Pearson's r",
-    "how": "Use r = Cov/(σxσy) and remember the range and properties.",
+    "type": "correlation-basics",
+    "name": "Scatter diagram and properties of r",
+    "how": "r ignores origin and scale; only the signs of the multipliers matter. Opposite signs flip the sign of r.",
     "example": {
-     "q": "Cov(x, y) = 12, σx = 3, σy = 5. Find r.",
+     "q": "r between x and y is 0.6. Find r between u = 2 − 3x and v = 5y + 1.",
      "steps": [
-      "r = 12/(3 × 5) = 12/15",
-      "= 0.8"
+      "The added constants 2 and 1 do not affect r.",
+      "The multipliers are −3 and 5, which have opposite signs.",
+      "So r(u, v) = −0.6."
      ],
-     "answer": "0.8"
+     "answer": "−0.6"
     }
    },
    {
-    "type": "rank",
-    "name": "Spearman's rank correlation",
-    "how": "Find d for each pair, square and add, then use 1 − 6Σd²/(n(n² − 1)).",
+    "type": "karl-pearson",
+    "name": "Computing Karl Pearson's r",
+    "how": "r = Cov(x, y) ÷ (σₓσᵧ). From data, take deviations from the means and use Σdxdy ÷ √(Σdx² Σdy²).",
     "example": {
-     "q": "n = 6, Σd² = 14. Find R.",
+     "q": "Cov(x, y) = 12, σₓ = 4 and σᵧ = 5. Find r and the coefficient of determination.",
      "steps": [
-      "R = 1 − 6 × 14/(6 × 35)",
-      "= 1 − 84/210 = 1 − 0.4 = 0.6"
+      "r = 12 ÷ (4 × 5) = 12 ÷ 20 = 0.6.",
+      "Coefficient of determination = r² = 0.36, so 36% of the variation in y is explained by x."
+     ],
+     "answer": "r = 0.6, r² = 0.36"
+    }
+   },
+   {
+    "type": "rank-correlation",
+    "name": "Spearman's rank correlation",
+    "how": "ρ = 1 − 6Σd² ÷ [n(n² − 1)]. With ties, add m(m² − 1)/12 to Σd² for each group of m equal ranks.",
+    "example": {
+     "q": "Two judges rank 6 contestants. The sum of squared rank differences is 14. Find the rank correlation coefficient.",
+     "steps": [
+      "n(n² − 1) = 6 × 35 = 210.",
+      "6Σd² = 6 × 14 = 84.",
+      "ρ = 1 − 84 ÷ 210 = 1 − 0.4 = 0.6."
      ],
      "answer": "0.6"
     }
    },
    {
-    "type": "regression",
-    "name": "Regression coefficients and lines",
-    "how": "Solve the two lines for the means; to find r, decide which line is y on x so that b_yx × b_xy ≤ 1.",
+    "type": "regression-coefficients",
+    "name": "Regression coefficients",
+    "how": "byx = r σᵧ/σₓ, bxy = r σₓ/σᵧ, r = ±√(byx × bxy) with the common sign.",
     "example": {
-     "q": "byx = 0.9 and bxy = 0.4. Find r.",
+     "q": "The regression coefficients are byx = 0.9 and bxy = 0.4. Find r.",
      "steps": [
-      "r² = 0.9 × 0.4 = 0.36",
-      "Both positive, so r = +0.6"
+      "r² = 0.9 × 0.4 = 0.36.",
+      "Both coefficients are positive, so r is positive.",
+      "r = 0.6."
+     ],
+     "answer": "0.6"
+    }
+   },
+   {
+    "type": "regression-lines",
+    "name": "Regression lines, means and estimates",
+    "how": "Solve both equations for x̄ and ȳ. Read byx and bxy by rewriting each line; if their product exceeds 1, swap the roles.",
+    "example": {
+     "q": "The regression lines are 8x − 10y + 66 = 0 and 40x − 18y = 214. Find x̄, ȳ and r.",
+     "steps": [
+      "Solving together: x̄ = 13, ȳ = 17 (check: 104 − 170 + 66 = 0 and 520 − 306 = 214).",
+      "Take the first as y on x: y = 0.8x + 6.6, so byx = 0.8.",
+      "Take the second as x on y: x = 0.45y + 5.35, so bxy = 0.45.",
+      "r² = 0.8 × 0.45 = 0.36 ≤ 1, so the guess is right and r = +0.6."
+     ],
+     "answer": "x̄ = 13, ȳ = 17, r = 0.6"
+    }
+   },
+   {
+    "type": "association-attributes",
+    "name": "Association of attributes",
+    "how": "Q = [(AB)(ab) − (Ab)(aB)] ÷ [(AB)(ab) + (Ab)(aB)]. Positive Q means positive association.",
+    "example": {
+     "q": "(AB) = 40, (Ab) = 10, (aB) = 20, (ab) = 30. Find Yule's coefficient of association.",
+     "steps": [
+      "(AB)(ab) = 40 × 30 = 1,200.",
+      "(Ab)(aB) = 10 × 20 = 200.",
+      "Q = (1,200 − 200) ÷ (1,200 + 200) = 1,000 ÷ 1,400 = 0.71."
+     ],
+     "answer": "0.71 (positive association)"
+    }
+   },
+   {
+    "type": "partial-multiple",
+    "name": "Partial and multiple correlation",
+    "how": "r₁₂.₃ = (r₁₂ − r₁₃r₂₃) ÷ √[(1 − r₁₃²)(1 − r₂₃²)]. R₁.₂₃² = (r₁₂² + r₁₃² − 2r₁₂r₁₃r₂₃) ÷ (1 − r₂₃²).",
+    "example": {
+     "q": "r₁₂ = 0.7, r₁₃ = 0.5 and r₂₃ = 0.5. Find r₁₂.₃.",
+     "steps": [
+      "Numerator = 0.7 − 0.5 × 0.5 = 0.45.",
+      "Denominator = √(0.75 × 0.75) = 0.75.",
+      "r₁₂.₃ = 0.45 ÷ 0.75 = 0.6."
      ],
      "answer": "0.6"
     }
    }
   ],
   "tips": [
-   "r is the geometric mean of the two regression coefficients.",
-   "If r = ±1 the two regression lines coincide; if r = 0 they are perpendicular.",
-   "Check your guess of which line is y on x: if b_yx × b_xy &gt; 1, swap."
+   "r is the geometric mean of the two regression coefficients and has their sign.",
+   "The two regression lines meet at (x̄, ȳ): solve them as simultaneous equations to get the means.",
+   "If the product of the two slopes you read off comes out above 1, you have the lines the wrong way round.",
+   "For rank correlation, Σd is always 0; use it to check your ranks before squaring.",
+   "r² is the share of variation explained: r = 0.9 explains 81%.",
+   "Multiple correlation R₁.₂₃ is between 0 and 1 and never smaller than |r₁₂| or |r₁₃|."
   ],
   "traps": [
-   "r = 0 does not mean \"no relation\", only no linear relation.",
-   "Both regression coefficients and r always have the same sign.",
-   "In Spearman's formula the denominator is n(n² − 1), not n² − 1."
+   "r = 0 means no linear relation, not no relation at all.",
+   "Changing origin and scale does not change r, but it does change the regression coefficients (by scale).",
+   "byx uses σᵧ on top: byx = r σᵧ/σₓ. Mixing these up is the commonest slip.",
+   "Both regression coefficients cannot exceed 1 in size, and they cannot have opposite signs.",
+   "In Spearman's formula, n(n² − 1) is n³ − n, not n²(n − 1)."
   ]
  },
  "formulas": [
   {
-   "name": "Karl Pearson's r",
-   "expr": "r = Cov(x,y) / (σx σy)"
+   "name": "Covariance",
+   "expr": "Cov(x, y) = Σxy/n − x̄ȳ"
   },
   {
-   "name": "Spearman's rank",
-   "expr": "R = 1 − 6Σd² / (n(n² − 1))"
+   "name": "Karl Pearson r",
+   "expr": "r = Cov(x, y)/(σₓσᵧ) = Σdxdy/√(Σdx² Σdy²)"
+  },
+  {
+   "name": "Spearman rank correlation",
+   "expr": "ρ = 1 − 6Σd²/[n(n² − 1)];  ties: add m(m² − 1)/12 per tie group"
   },
   {
    "name": "Regression coefficients",
-   "expr": "byx = r σy/σx,  bxy = r σx/σy"
+   "expr": "byx = r σᵧ/σₓ,  bxy = r σₓ/σᵧ,  r² = byx × bxy"
   },
   {
-   "name": "r from coefficients",
-   "expr": "r = ±√(byx × bxy)"
+   "name": "Regression lines",
+   "expr": "y − ȳ = byx(x − x̄);  x − x̄ = bxy(y − ȳ)"
+  },
+  {
+   "name": "Probable error",
+   "expr": "PE = 0.6745 (1 − r²)/√n"
+  },
+  {
+   "name": "Yule's Q",
+   "expr": "Q = [(AB)(ab) − (Ab)(aB)] / [(AB)(ab) + (Ab)(aB)]"
+  },
+  {
+   "name": "Partial correlation",
+   "expr": "r₁₂.₃ = (r₁₂ − r₁₃r₂₃)/√[(1 − r₁₃²)(1 − r₂₃²)]"
+  },
+  {
+   "name": "Multiple correlation",
+   "expr": "R₁.₂₃² = (r₁₂² + r₁₃² − 2r₁₂r₁₃r₂₃)/(1 − r₂₃²)"
   }
  ],
  "questions": [
@@ -92,7 +195,7 @@
    "id": "st-correlation-001",
    "rev": 1,
    "topic": "st-correlation",
-   "type": "karl-pearson",
+   "type": "correlation-basics",
    "level": 1,
    "q": "Karl Pearson's coefficient of correlation always lies between:",
    "options": [
@@ -109,7 +212,7 @@
    "id": "st-correlation-002",
    "rev": 1,
    "topic": "st-correlation",
-   "type": "regression",
+   "type": "regression-coefficients",
    "level": 1,
    "q": "The two regression coefficients are b<sub>xy</sub> = 0.8 and b<sub>yx</sub> = 0.2. The correlation coefficient r is:",
    "options": [
@@ -126,7 +229,7 @@
    "id": "st-correlation-003",
    "rev": 1,
    "topic": "st-correlation",
-   "type": "rank",
+   "type": "rank-correlation",
    "level": 2,
    "q": "For 5 pairs of ranks, Σd² = 10. Spearman's rank correlation coefficient is:",
    "options": [
@@ -143,7 +246,7 @@
    "id": "st-correlation-004",
    "rev": 1,
    "topic": "st-correlation",
-   "type": "regression",
+   "type": "regression-coefficients",
    "level": 2,
    "q": "r = 0.6, σ<sub>x</sub> = 4 and σ<sub>y</sub> = 8. The regression coefficient of y on x is:",
    "options": [
@@ -160,7 +263,7 @@
    "id": "st-correlation-005",
    "rev": 1,
    "topic": "st-correlation",
-   "type": "regression",
+   "type": "regression-lines",
    "level": 3,
    "q": "The two regression lines are 3x + 2y = 26 and 6x + y = 31. The means x̄ and ȳ are:",
    "options": [
@@ -177,7 +280,7 @@
    "id": "st-correlation-006",
    "rev": 1,
    "topic": "st-correlation",
-   "type": "regression",
+   "type": "regression-lines",
    "level": 3,
    "q": "For the regression lines 3x + 2y = 26 and 6x + y = 31, the correlation coefficient r is:",
    "options": [

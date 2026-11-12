@@ -4,7 +4,7 @@ import { EXAMS, TOPIC_MAP, topicsOf } from '../core/syllabus';
 import { Rng } from '../core/rng';
 import type { ExamId, Level, Manifest, MockRecord, MockRules, MockSectionState, Question, SubjectId, TopicContent } from '../core/types';
 import { GEN_VERSION, generateQuestion, generatorsFor } from '../gen';
-import { getPyqManifest, loadPaper, loadPyqManifest, loadPyqTopic, registerPyqSink } from './pyq';
+import { getPyqManifest, loadPaper, loadPyqManifest, loadPyqTopic, pyqTopicOf, registerPyqSink } from './pyq';
 
 const BASE = `${import.meta.env?.BASE_URL ?? '/'}content/`;
 let manifest: Manifest | null = null;
@@ -71,7 +71,7 @@ export const remember = (q: Question) => byId.set(q.id, q);
 export async function ensureQuestions(ids: string[]) {
   const missing = ids.filter((id) => !byId.has(id) && !id.startsWith('gen:'));
   const curated = new Set(missing.filter((id) => !id.startsWith('pyq:')).map(topicOfId));
-  const pyq = new Set(missing.filter((id) => id.startsWith('pyq:')).map(topicOfId));
+  const pyq = new Set(await Promise.all(missing.filter((id) => id.startsWith('pyq:')).map(pyqTopicOf)));
   await Promise.all([...[...curated].filter((t) => TOPIC_MAP[t]).map(loadTopic), ...[...pyq].map(loadPyqTopic)]);
 }
 

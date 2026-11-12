@@ -1,69 +1,137 @@
 {
  "topic": "r-intelligence",
  "notes": {
-  "summary": "These Tier 2 questions test <b>critical thinking</b> (what logically follows, strong vs weak arguments) and <b>emotional and social intelligence</b> (the most mature response in a situation). Choose the calm, fair, constructive option.",
+  "summary": "This topic checks judgement rather than memory: how you act on duty, handle your own emotions, get along with people and think clearly about claims and rules. In most questions three options are clearly poor (ignoring the problem, losing temper, breaking rules, blaming others) and one is calm, fair, lawful and actually solves the problem. Logic and rule questions have exact answers, so check every condition.",
   "concepts": [
    {
-    "title": "Critical thinking",
-    "body": "Separate what is <b>stated</b> from what is <b>assumed</b>. \"All who trained got a bonus\" does not mean \"everyone with a bonus trained\". A strong argument is relevant, important and directly linked to the question."
+    "title": "How these questions are marked",
+    "body": "There is one best answer, chosen because it is the most responsible, balanced and effective. Ask of each option:<ul><li>Does it solve or reduce the problem?</li><li>Is it legal, fair and honest?</li><li>Is it calm and respectful?</li><li>Does it follow the proper channel (senior, rules, police, helpline)?</li></ul>The best option usually says yes to all four."
+   },
+   {
+    "title": "Options to reject",
+    "body": "<ul><li>Doing nothing or \"it is not my concern\".</li><li>Shouting, insulting, threatening or taking revenge.</li><li>Breaking a rule to help someone, or accepting a favour or bribe.</li><li>Gossiping, complaining to others instead of the right person.</li><li>Quitting, giving up or blaming luck, teachers or the system.</li><li>Extreme steps: suspending everyone, stopping all work.</li></ul>"
    },
    {
     "title": "Emotional intelligence",
-    "body": "Know and manage your own feelings: stay calm, accept mistakes, learn from failure, and respond rather than react."
+    "body": "Emotional intelligence means understanding and managing your own feelings. It has five parts:<table><thead><tr><th>Part</th><th>What it looks like</th></tr></thead><tbody><tr><td>Self-awareness</td><td>Knowing what you feel and why</td></tr><tr><td>Self-control</td><td>Staying calm under pressure or criticism</td></tr><tr><td>Motivation</td><td>Learning from failure and trying again</td></tr><tr><td>Empathy</td><td>Understanding how others feel</td></tr><tr><td>Social skill</td><td>Handling relationships and disagreements well</td></tr></tbody></table>The right answer stays calm, accepts feedback, learns from mistakes and talks things through in private."
    },
    {
     "title": "Social intelligence",
-    "body": "Understand others and work well with them: listen, include people, solve conflicts fairly and respect everyone."
+    "body": "Social intelligence means understanding other people and working well with them. Pick options that include others, listen to both sides, give credit, share information and settle disputes fairly. As a leader, the best answer listens, decides on the basis of the goal and explains the reason."
+   },
+   {
+    "title": "Situation reaction on duty",
+    "body": "When you are put in an official role, follow this order of priority:<ol><li>Safety of human life comes first (accident, fire, medical emergency).</li><li>Follow the law and the rules of the office; report wrongdoing to the proper authority.</li><li>Be fair and transparent; no favours, no bias.</li><li>Help the public, especially the poor or confused, within the rules.</li></ol>Example: a poor villager hands in an incomplete form. Best: explain what is missing and help them complete it, not reject it silently or bend the rules."
+   },
+   {
+    "title": "Critical thinking",
+    "body": "<ul><li><b>Fact or opinion</b>: a fact can be checked; an opinion uses words like best, should, beautiful.</li><li><b>Definitely true</b> means true in every case. \"All trained staff got a bonus; Ravi got a bonus\" does not prove Ravi was trained.</li><li><b>Reverse rule</b>: from \"If A then B\", you may conclude \"If not B, then not A\". You may not conclude \"If B, then A\".</li><li><b>Strengthen or weaken</b>: look for the option that directly supports or attacks the link between the reason and the claim.</li><li><b>Strong argument</b>: important, directly linked to the question and based on a clear result.</li></ul>"
+   },
+   {
+    "title": "Rule-based decisions",
+    "body": "Make a checklist of every condition, then tick each one for the case.<ul><li>If every condition is met, the person qualifies.</li><li>If one condition fails, the person does not qualify, even if all the others are met with room to spare.</li><li>Watch boundaries: \"between 18 and 28 years\" and \"at least 60%\" include the end values unless the rule says otherwise.</li></ul>"
+   },
+   {
+    "title": "Quick arithmetic",
+    "body": "Some reasoning papers include short arithmetic problems. Use the quant shortcuts:<ul><li>Percentage: if 80% is spent, 20% is saved; saving ÷ 20% gives income.</li><li>Ratio: split a sum in the ratio a : b as sum × a/(a + b) and sum × b/(a + b).</li><li>Unitary method: more machines, fewer days (inverse); more hours, more work (direct).</li><li>Speed in km/h = metres per second × 18/5.</li></ul>"
    }
   ],
   "varieties": [
    {
-    "type": "critical-thinking",
-    "name": "Logical inference and arguments",
-    "how": "Accept only what the facts guarantee; reject arguments based on likes, popularity or extremes.",
+    "type": "situation-reaction",
+    "name": "Situation reaction (on duty)",
+    "how": "Put life and safety first, then the law and rules, then fairness. Reject options that ignore, delay or break rules.",
     "example": {
-     "q": "All toppers revise daily. Asha revises daily. Is Asha a topper?",
+     "q": "You are a front-desk officer in a government building and the fire alarm rings. What should you do first?",
      "steps": [
-      "The rule goes one way only: topper → revises.",
-      "Revising daily does not prove she is a topper."
+      "Safety of people comes first, before files or finding the cause.",
+      "Panicking or running out alone helps nobody; ignoring the alarm is unsafe.",
+      "Guiding visitors calmly to the exits, as per the evacuation plan, protects everyone."
      ],
-     "answer": "Not necessarily"
+     "answer": "Calmly guide visitors to the nearest exit following the evacuation plan"
     }
    },
    {
     "type": "emotional-intelligence",
     "name": "Emotional intelligence",
-    "how": "Pick the option that is calm, honest and focused on improvement.",
+    "how": "Choose the response that stays calm, accepts the feeling, learns from it and deals with the issue privately and constructively.",
     "example": {
-     "q": "You get a low score in a mock test. Best response?",
+     "q": "Your manager criticises your report in front of the team. What is the best response?",
      "steps": [
-      "Avoid blame or giving up.",
-      "Analyse mistakes and plan."
+      "Arguing in the meeting or sulking would show poor self-control.",
+      "Ignoring the feedback means you do not improve.",
+      "Listening calmly, noting the points and discussing them privately later shows self-control and a wish to improve."
      ],
-     "answer": "Review mistakes and adjust your study plan"
+     "answer": "Stay calm, note the points and discuss improvements with the manager later"
     }
    },
    {
     "type": "social-intelligence",
     "name": "Social intelligence",
-    "how": "Pick the option that includes others, listens and solves the problem fairly.",
+    "how": "Pick the option that includes people, listens to all sides and keeps the group working together.",
     "example": {
-     "q": "A teammate is struggling with a task. Best action?",
+     "q": "A new teammate from another state does not speak the local language well and is left out of team discussions. What should you do?",
      "steps": [
-      "Do not ignore or mock.",
-      "Offer help respectfully."
+      "Leaving it to the manager or ignoring it keeps the teammate isolated.",
+      "Using a common language in meetings and helping the person settle includes them and helps the team."
      ],
-     "answer": "Offer help and share what you know"
+     "answer": "Use a language everyone understands and help the new teammate join in"
+    }
+   },
+   {
+    "type": "critical-thinking",
+    "name": "Critical thinking and logic",
+    "how": "Separate what must be true from what might be true. From \"If A then B\" you can conclude \"not B, so not A\", never \"B, so A\".",
+    "example": {
+     "q": "All students who scored above 90 got a scholarship. Meena did not get a scholarship. What is definitely true?",
+     "steps": [
+      "Rule: above 90 means scholarship.",
+      "Meena has no scholarship, so she cannot have scored above 90 (if she had, she would have one)."
+     ],
+     "answer": "Meena did not score above 90"
+    }
+   },
+   {
+    "type": "rule-based-decision",
+    "name": "Eligibility and rule-based decisions",
+    "how": "List every condition, tick each one for the case, and reject the case if even one condition fails.",
+    "example": {
+     "q": "Rules for a data-entry post: passed class 12 with at least 60% marks; typing speed of at least 40 words per minute; age 18 to 28 years. Raj passed class 12 with 65%, types 38 words per minute and is 22. Is Raj eligible?",
+     "steps": [
+      "Marks: 65% is at least 60%. Met.",
+      "Age: 22 is between 18 and 28. Met.",
+      "Typing: 38 is less than 40. Not met."
+     ],
+     "answer": "No, Raj is not eligible because his typing speed is below 40 words per minute"
+    }
+   },
+   {
+    "type": "numerical-reasoning",
+    "name": "Quick arithmetic puzzles",
+    "how": "Turn the words into one simple equation and use the quickest quant shortcut.",
+    "example": {
+     "q": "A person spends 80% of his income and saves ₹2,000. What is his income?",
+     "steps": [
+      "He saves 100% − 80% = 20% of his income.",
+      "20% = ₹2,000, so 100% = ₹2,000 × 5."
+     ],
+     "answer": "₹10,000"
     }
    }
   ],
   "tips": [
-   "Avoid extreme options (shouting, quitting, ignoring) in situation questions.",
-   "In argument questions, \"everyone likes it\" or \"it is fashionable\" is a weak argument."
+   "First cross out options that ignore the problem, lose temper, or break rules.",
+   "Life and safety come before property, paperwork or rules about timings.",
+   "Report wrongdoing through the proper channel, not through gossip or social media.",
+   "The best answer is usually calm, fair and active: it does something useful now.",
+   "In logic questions, \"definitely true\" means true in every possible case.",
+   "For eligibility, one failed condition is enough to reject a case."
   ],
   "traps": [
-   "Do not reverse a rule: \"If A then B\" does not give \"If B then A\".",
-   "The \"nicest\" option is not always right; the best option also solves the problem."
+   "An option that sounds kind but bends the rules (letting a friend skip the queue) is wrong.",
+   "From \"If A then B\" and \"B is true\", you cannot conclude A.",
+   "Avoid options that pass the problem to someone else when you can act yourself.",
+   "Boundary values: \"at least 60%\" includes exactly 60%."
   ]
  },
  "questions": [

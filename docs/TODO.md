@@ -52,13 +52,13 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 - [x] Challenge a friend: 6-letter code + share link (#/c/CODE), same paper and rules, first attempt only, leaderboard visible to participants and creator (local stack; hosted migration pending owner OK)
 - [ ] Report a mistake on every question (review queue)
 - [ ] Use real weightage from the bank (`manifest.weightage`) in syllabus text and mock allocation
-- [ ] **Sub-type classification of bank questions (needs a local model; owner will set up Ollama).** Today most bank questions carry the
-      source's broad type (e.g. "Mensuration": 627 questions; plus junk types like "Unidentified"), so "Practise by question type" can't
-      split them. Plan: new pipeline stage `pipeline/classify-types.ts`, provider-pluggable (`ollama` default, `anthropic` optional):
-      for each question, give the model the topic's variety list from our notes (e.g. q-mensuration → areas, volumes, surface areas,
-      circles…) and ask for one variety slug (JSON, constrained to the list; "other" allowed). Cache by question id + model + prompt hash
-      in `pipeline/.cache/types.jsonl` so reruns are free; spot-check a sample; build step reads the cache and writes `type`.
-      Also try the source's fine-grained `concept` field first (deterministic, free) and only send leftovers to the model.
+- [x] Question types for bank questions (local Gemma via Ollama): a taxonomy per topic (`pipeline/taxonomy/`), notes rewritten with one
+      variety per type, `classify-types.ts` (source concept first, model for the rest; 79% agreement with source labels on a sample),
+      `reroute-topics.ts` moves misfiled questions (758) to the right topic without changing ids. 4% of questions are typed "other".
+- [x] Maths renders (KaTeX at build time): delimited LaTeX, plain-text fractions "(1)/(3)", and LaTeX that lost its backslashes
+- [ ] Local-model solution rewrite (`pipeline/fix-solutions.ts`): paused by owner at 396 of ~4,460; resume later (cached, resumable)
+- [ ] Remaining maths residue in ~780 bank questions (garbled source like `frac{1)/(x)`): fix in the next pipeline pass
+- [ ] **(owner)** Spot-check the facts the note writers flagged (2025 events in GA, IT Act sections, SSC answer-key conventions)
 - [ ] Smaller ports: speed drills, revision sets, attempt-strategy report, accuracy-vs-speed chart, typing test (desktop), exam info page, video/reading links, current-affairs notebook
 
 ## M2: Accounts, sync, AI proxy

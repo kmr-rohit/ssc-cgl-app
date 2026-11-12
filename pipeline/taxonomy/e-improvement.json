@@ -1,0 +1,59 @@
+{
+  "topic": "e-improvement",
+  "types": [
+    {
+      "type": "tense",
+      "name": "Tense and time",
+      "description": "The underlined part has a verb whose tense does not fit the time shown or the other clause: since/for with perfect tenses (lives in a village since 2015), will vs simple present after if/when, present continuous for 'at the moment', a future result clause, or a past main verb followed by a present verb.",
+      "concepts": []
+    },
+    {
+      "type": "conditionals",
+      "name": "Conditionals and wishes",
+      "description": "The sentence has if, unless, had (inverted), wish or as if, and the underlined verb must match the conditional pattern: If I were, If + past ... would, Had he + V3 ... would have + V3, I wish I had.",
+      "concepts": []
+    },
+    {
+      "type": "subject-verb",
+      "name": "Subject-verb agreement",
+      "description": "The underlined verb does not agree with its subject: 'No one are supposed', 'there are so much misconception', 'each of them have', 'the number of ... are', or a singular/plural noun mismatch in the underlined part.",
+      "concepts": []
+    },
+    {
+      "type": "verb-patterns",
+      "name": "Infinitive, gerund and verb form",
+      "description": "The underlined part uses the wrong verb pattern: to + V1 vs -ing (plan to pursue, look forward to meeting, capable of doing, confident of winning, insisted that I take), do/did + V1, modal + V1, participles (Blinded by a dust storm), or the wrong form after has/had.",
+      "concepts": []
+    },
+    {
+      "type": "prepositions",
+      "name": "Prepositions and collocations",
+      "description": "The underlined part has a wrong preposition or word partner after a verb, noun or adjective: apologised to, depend on, different from, careless with, tattooed on, partake of, since two o'clock, died of fright, discussed the matter (no with/about).",
+      "concepts": []
+    },
+    {
+      "type": "comparison",
+      "name": "Adjectives, adverbs and comparison",
+      "description": "The underlined part is a comparison or modifier in the wrong degree or form: 'slow than' (slower than), 'tragic than' (less/more tragic than), 'as tall than', 'more better', superior than, adjective in place of adverb.",
+      "concepts": []
+    },
+    {
+      "type": "determiners-pronouns",
+      "name": "Nouns, pronouns and determiners",
+      "description": "The underlined part misuses much/many, few/little, some/any, so many/some more, each other/one another, among themselves/between them, a/an/the, or a pronoun/noun form (their selves, informations).",
+      "concepts": []
+    },
+    {
+      "type": "connectors-word-order",
+      "name": "Connectors, inversion and word order",
+      "description": "The underlined part has a wrong connector or word order: Hardly ... when, No sooner ... than, Scarcely had he sat, although vs while, question order inside a statement (Do you know where she resides?), or the position of adverbs like only, even, often.",
+      "concepts": []
+    },
+    {
+      "type": "word-choice",
+      "name": "Word choice and redundancy",
+      "description": "The underlined word or phrase is the wrong word for the meaning or has extra words: repeat again, return back, populated vs populous, every single day by walk (on foot), make fuss vs do, carry out assigned duties, personal view vs own image.",
+      "concepts": []
+    }
+  ]
+}

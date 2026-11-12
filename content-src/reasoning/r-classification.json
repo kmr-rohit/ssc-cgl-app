@@ -1,69 +1,135 @@
 {
  "topic": "r-classification",
  "notes": {
-  "summary": "Classification means finding the <b>odd one out</b>: three options follow one common rule and one does not. Expect 2–3 questions in Tier 1 with words, numbers or letter groups.",
+  "summary": "Classification means finding the <b>odd one out</b>. Three options follow one common rule and one does not. The options can be words, word-pairs, letter-clusters, numbers, number-pairs or figures. SSC asks 2 to 3 classification questions in Tier 1. Your job is to find the rule shared by three, not just something special about one.",
   "concepts": [
    {
-    "title": "Find the common rule",
-    "body": "Look for what <b>three</b> items share: same category (fruits, planets), same property (prime, perfect square), or same letter gap. The item that breaks the rule is the answer."
+    "title": "The basic method",
+    "body": "<ol><li>Look at all four options together and ask, \"What do <b>three</b> of these share?\"</li><li>Write the rule in a few words (\"all prime\", \"gap +3\", \"young ones of animals\").</li><li>Check that exactly three options follow it. The fourth is the answer.</li><li>If two options seem odd, your rule is too loose. Find a sharper rule that leaves only one out.</li></ol>Example: 13, 17, 21, 29. Rule: prime numbers. 13, 17, 29 are prime; 21 = 3 × 7 is not. Answer 21."
    },
    {
-    "title": "Number properties to test",
-    "body": "Prime / composite, even / odd, perfect square / cube, divisible by a number, sum of digits, n² + 1 type pairs."
+    "title": "Word groups to know",
+    "body": "<table><thead><tr><th>Group</th><th>Members</th><th>Common odd one</th></tr></thead><tbody><tr><td>Flowers</td><td>Rose, Lotus, Lily, Jasmine</td><td>Mango (fruit)</td></tr><tr><td>Cat family</td><td>Lion, Tiger, Leopard, Cheetah</td><td>Wolf (dog family)</td></tr><tr><td>Mammals that live in water</td><td>Whale, Dolphin, Seal</td><td>Shark (a fish)</td></tr><tr><td>Planets</td><td>Mercury, Venus, Mars, Jupiter</td><td>Moon (satellite), Sun (star)</td></tr><tr><td>String instruments</td><td>Sitar, Veena, Violin, Guitar</td><td>Flute (wind), Tabla (drum)</td></tr><tr><td>Units of length</td><td>Metre, Mile, Inch, Yard</td><td>Litre (volume)</td></tr><tr><td>Vegetables under the ground</td><td>Potato, Carrot, Radish, Beetroot</td><td>Tomato</td></tr><tr><td>Same meaning</td><td>Complex, Intricate, Elaborate</td><td>Simple (opposite)</td></tr><tr><td>Freedom fighters</td><td>Bhagat Singh, Gandhi, Subhas Bose</td><td>C. V. Raman (scientist)</td></tr><tr><td>Insects (6 legs)</td><td>Ant, Bee, Mosquito</td><td>Spider (8 legs)</td></tr></tbody></table>Common bases: category (fruit or flower), use (tools for cutting), place (rivers of the south), meaning (synonyms), and living or non-living."
    },
    {
-    "title": "Letter groups",
-    "body": "Write positions (A=1 … Z=26) and check the gap between letters. Example: BDF has gaps +2, +2."
+    "title": "Word-pair classification",
+    "body": "Each option is a pair, like an analogy. Make a sentence for each pair and see which three sentences match.<ul><li>Cow : Calf, Dog : Puppy, Cat : Kitten, Lion : Den. \"A young cow is a calf\" fits the first three. A den is a lion's home, so Lion : Den is odd.</li><li>Watch the order: Pen : Write and Read : Book are not the same pattern, even though both are about reading and writing.</li></ul>"
+   },
+   {
+    "title": "Number properties checklist",
+    "body": "Test single numbers against this list, in order:<ol><li>Even or odd.</li><li>Prime or not (primes below 100: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97).</li><li>Perfect square or cube (and squares of primes: 4, 9, 25, 49, 121, 169, 289).</li><li>n² ± 1, n³ ± 1, n(n + 1) forms.</li><li>Multiple of 3, 7, 11 or 13 (check divisibility).</li><li>Digit sum or digit product (only if the question does not forbid it).</li></ol>Divisibility shortcuts: 3 if the digit sum is a multiple of 3; 11 if the difference between alternate digit sums is 0 or a multiple of 11; 4 if the last two digits form a multiple of 4."
+   },
+   {
+    "title": "Number-pairs and number-sets",
+    "body": "The second number is made from the first. Try the same rules as in number analogy: n², n³, n² ± k, n³ ± k, n × k ± c, (n ± k)².<br>Example: 3 – 10, 5 – 26, 6 – 35, 7 – 50. Here 3² + 1 = 10, 5² + 1 = 26, 7² + 1 = 50, but 6² + 1 = 37, not 35. Odd pair: 6 – 35.<br><br>For sets of three, find one rule that links all three numbers (for example, third = first × second − 1, or middle = average of the other two).<br>When the question says \"operations should be performed on the whole numbers, without breaking them into digits\", do not use digit sums."
+   },
+   {
+    "title": "Letter-cluster patterns",
+    "body": "Write letter positions (A = 1 … Z = 26) and look at the gaps.<table><thead><tr><th>Pattern</th><th>Example</th></tr></thead><tbody><tr><td>Equal gap</td><td>BDF (+2, +2), CFI (+3, +3)</td></tr><tr><td>Growing gap</td><td>ACF (+2, +3), BDG</td></tr><tr><td>Mirror gap</td><td>ADB (+3, −2), EHF</td></tr><tr><td>Opposite letters</td><td>AZ, BY, CX (sum 27)</td></tr><tr><td>Consecutive then jump</td><td>ABD, PQS (+1, +2)</td></tr><tr><td>Same gap between pairs</td><td>AC-EG, KM-OQ</td></tr></tbody></table>SSC often adds a note: \"the odd one out is not based on the number of consonants or vowels or their position in the letter-cluster\". So only the gaps matter, not whether a letter is a vowel."
+   },
+   {
+    "title": "Odd figure out",
+    "body": "Check these, one at a time: the number of lines or sides, the number of dots, open or closed shapes, symmetry, shading, and rotation. In rotation sets, three figures are the same shape turned 90° or 180°, and the odd figure is its <b>mirror image</b>, which cannot be made by turning."
+   },
+   {
+    "title": "When two options look odd",
+    "body": "This means your rule is not the intended one. Try a sharper rule:<ul><li>121, 169, 289, 324: all are squares, so \"square\" does not help. Look at the roots: 11, 13, 17 are prime, 18 is not. Odd: 324.</li><li>Tiger, Lion, Leopard, Wolf: all are wild animals. Sharper rule: cat family. Odd: Wolf.</li></ul>The intended rule leaves <b>exactly one</b> option out."
    }
   ],
   "varieties": [
    {
     "type": "word-odd",
     "name": "Odd word out",
-    "how": "Name the group for each word; the one that does not fit is odd.",
+    "how": "Name the group that three words belong to (category, use, place, meaning). The word outside that group is the answer.",
     "example": {
-     "q": "Rose, Lotus, Mango, Lily",
+     "q": "Mercury, Venus, Moon, Mars",
      "steps": [
-      "Rose, Lotus, Lily are flowers.",
-      "Mango is a fruit."
+      "Mercury, Venus and Mars are planets.",
+      "The Moon is a satellite of the Earth, not a planet."
      ],
-     "answer": "Mango"
+     "answer": "Moon"
     }
    },
    {
-    "type": "number-odd",
-    "name": "Odd number / pair out",
-    "how": "Test prime, square, cube and simple rules like n² + 1.",
+    "type": "word-pair-odd",
+    "name": "Odd word-pair",
+    "how": "Make an exact sentence for each pair in the same order. Three sentences match; the pair whose sentence differs is the answer.",
     "example": {
-     "q": "11, 13, 15, 17",
+     "q": "Cow : Calf, Dog : Puppy, Cat : Kitten, Lion : Den",
      "steps": [
-      "11, 13, 17 are prime.",
-      "15 = 3 × 5 is not prime."
+      "\"A young cow is a calf\", \"a young dog is a puppy\", \"a young cat is a kitten\".",
+      "A den is a lion's home, not its young one."
      ],
-     "answer": "15"
+     "answer": "Lion : Den"
     }
    },
    {
     "type": "letter-odd",
-    "name": "Odd letter group out",
-    "how": "Write positions and compare the gaps.",
+    "name": "Odd letter-cluster",
+    "how": "Write the positions of the letters and the gaps between them. Three clusters have the same gaps; the fourth is odd.",
     "example": {
-     "q": "ACE, GIK, MOQ, RTW",
+     "q": "CFI, JMP, PSV, TWY",
      "steps": [
-      "A C E: +2, +2; G I K: +2, +2; M O Q: +2, +2",
-      "R T W: +2, +3"
+      "CFI: 3, 6, 9 (+3, +3).",
+      "JMP: 10, 13, 16 (+3, +3). PSV: 16, 19, 22 (+3, +3).",
+      "TWY: 20, 23, 25 (+3, +2)."
      ],
-     "answer": "RTW"
+     "answer": "TWY"
+    }
+   },
+   {
+    "type": "number-odd",
+    "name": "Odd number",
+    "how": "Run the checklist: even or odd, prime, square or cube, special forms, divisibility. If all four share a property, look deeper (for example at their square roots).",
+    "example": {
+     "q": "121, 169, 289, 324",
+     "steps": [
+      "All are perfect squares: 11², 13², 17², 18².",
+      "Roots 11, 13 and 17 are prime; 18 is not."
+     ],
+     "answer": "324"
+    }
+   },
+   {
+    "type": "number-pair-odd",
+    "name": "Odd number-pair or set",
+    "how": "Find how the second number comes from the first in most pairs (n², n² ± k, n³ ± k, × k). The pair that breaks the rule is the answer.",
+    "example": {
+     "q": "(12, 145), (9, 82), (15, 226), (11, 120)",
+     "steps": [
+      "12² + 1 = 145, 9² + 1 = 82, 15² + 1 = 226. Rule: n² + 1.",
+      "11² + 1 = 122, but the pair shows 120."
+     ],
+     "answer": "(11, 120)"
+    }
+   },
+   {
+    "type": "figure-odd",
+    "name": "Odd figure",
+    "how": "Compare one feature at a time: number of sides or lines, open or closed, shading, symmetry, rotation or mirror image.",
+    "example": {
+     "q": "Figures: a triangle, a square, a hexagon and a circle.",
+     "steps": [
+      "Triangle, square and hexagon are made of straight sides.",
+      "A circle has no straight sides."
+     ],
+     "answer": "The circle"
     }
    }
   ],
   "tips": [
-   "Try the simplest rule first (category, prime, square) before complex ones.",
-   "If two rules seem to work, pick the one that leaves exactly one item out."
+   "Find what three options share; do not hunt for something special about one option.",
+   "For numbers, check prime, square, cube and n² ± 1 first. They cover most questions.",
+   "For number-pairs, the same rules as number analogy work: squares, cubes and ± a fixed number.",
+   "For letter-clusters, write the gaps (+2, +3) under each cluster; the odd gap pattern stands out at once.",
+   "If two options look odd, your rule is too loose. Make it sharper.",
+   "For general-knowledge words, think of category first (planet, flower, instrument), then use and place."
   ],
   "traps": [
-   "1 is neither prime nor composite.",
-   "Do not pick an item just because it \"looks\" different; there must be a clear rule."
+   "Do not count vowels or letters when SSC says the odd one out is not based on them.",
+   "Do not split numbers into digits when the question note says to use whole numbers.",
+   "A rule that leaves two options out is wrong. The correct rule leaves exactly one.",
+   "In word-pairs, a reversed order (Calf : Cow) breaks the pattern even with the same words."
   ]
  },
  "questions": [
@@ -139,7 +205,7 @@
    "id": "r-classification-005",
    "rev": 1,
    "topic": "r-classification",
-   "type": "number-odd",
+   "type": "number-pair-odd",
    "level": 3,
    "q": "Select the number-pair in which the two numbers are NOT related in the same way as in the other pairs.",
    "options": [

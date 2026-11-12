@@ -1,217 +1,434 @@
 {
- "topic": "q-number-system",
- "notes": {
-  "summary": "Number System is the base of all Quant: types of numbers, divisibility, unit digits and remainders. SSC asks 1–2 questions in Tier 1 and 2–3 in Tier 2.",
-  "concepts": [
-   {
-    "title": "Types of numbers",
-    "body": "<ul><li><b>Natural</b>: 1, 2, 3, …</li><li><b>Whole</b>: 0, 1, 2, …</li><li><b>Prime</b>: exactly two factors. 2 is the only even prime; 1 is neither prime nor composite.</li><li><b>Co-prime</b>: HCF is 1, e.g. 8 and 15.</li></ul>"
-   },
-   {
-    "title": "Divisibility rules",
-    "body": "<b>3 / 9</b>: sum of digits divisible by 3 / 9. <b>4</b>: last two digits. <b>8</b>: last three digits. <b>11</b>: (sum of odd-place digits) − (sum of even-place digits) is 0 or a multiple of 11."
-   },
-   {
-    "title": "Unit digit cycles",
-    "body": "Unit digits repeat in cycles of 4: 2 → 2, 4, 8, 6; 3 → 3, 9, 7, 1; 7 → 7, 9, 3, 1; 8 → 8, 4, 2, 6. Digits 0, 1, 5, 6 never change. Divide the power by 4 and use the remainder (remainder 0 means the 4th term)."
-   }
-  ],
-  "varieties": [
-   {
-    "type": "unit-digit",
-    "name": "Unit digit of a power",
-    "how": "Find the remainder of the power ÷ 4 and pick that term of the cycle.",
-    "example": {
-     "q": "Find the unit digit of 2<sup>43</sup>.",
-     "steps": [
-      "Cycle of 2: 2, 4, 8, 6",
-      "43 ÷ 4 leaves remainder 3",
-      "3rd term = 8"
-     ],
-     "answer": "8"
+  "topic": "q-number-system",
+  "notes": {
+    "summary": "Number system covers kinds of numbers, divisibility, unit digits, remainders, factors and simple series. It is one of the most asked arithmetic topics: expect 1 to 2 questions in Tier 1 and 2 to 3 in Tier 2. Most questions test a single rule, so learning the rules below makes them 30-second questions.",
+    "concepts": [
+      {
+        "title": "Kinds of numbers",
+        "body": "<p>Every SSC question starts from these names, so know them exactly.</p>\n<table><thead><tr><th>Name</th><th>What it means</th><th>Examples</th></tr></thead><tbody>\n<tr><td>Natural numbers</td><td>Counting numbers</td><td>1, 2, 3, ...</td></tr>\n<tr><td>Whole numbers</td><td>Natural numbers and 0</td><td>0, 1, 2, ...</td></tr>\n<tr><td>Integers</td><td>Whole numbers and their negatives</td><td>..., −2, −1, 0, 1, 2, ...</td></tr>\n<tr><td>Rational numbers</td><td>Can be written as p/q with q ≠ 0; the decimal ends or repeats</td><td>3/4, −5, 0.333...</td></tr>\n<tr><td>Irrational numbers</td><td>Decimal never ends and never repeats</td><td>√2, √3, π</td></tr>\n<tr><td>Real numbers</td><td>All rational and irrational numbers</td><td>everything on the number line</td></tr>\n</tbody></table>\n<p>Even numbers are divisible by 2; odd numbers are not. Even ± even = even, odd ± odd = even, even ± odd = odd. Odd × odd = odd; anything × even = even.</p>"
+      },
+      {
+        "title": "Prime, composite and co-prime numbers",
+        "body": "<p>A <b>prime</b> has exactly two factors: 1 and itself. A <b>composite</b> number has more than two factors. <b>1 is neither</b> prime nor composite. <b>2 is the only even prime.</b></p>\n<p>There are <b>25 primes below 100</b>: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.</p>\n<p><b>Is n prime?</b> Find the square root of n. Test only the primes up to that root. If none divides n, it is prime.<br>Example: 127. √127 is a bit more than 11. 127 is not divisible by 2, 3, 5, 7 or 11, so 127 is prime.</p>\n<p><b>Co-prime</b> numbers have HCF 1, like 8 and 15 (neither need be prime). <b>Twin primes</b> differ by 2, like (11, 13). Every prime greater than 3 is of the form 6k ± 1, but not every 6k ± 1 is prime (25 = 6×4 + 1).</p>\n<p>Common traps: 91 = 7 × 13, 119 = 7 × 17, 133 = 7 × 19, 143 = 11 × 13, 161 = 7 × 23, 187 = 11 × 17, 209 = 11 × 19, 221 = 13 × 17. They look prime but are not.</p>"
+      },
+      {
+        "title": "Divisibility rules from 2 to 11",
+        "body": "<table><thead><tr><th>Divisor</th><th>Rule</th><th>Example</th></tr></thead><tbody>\n<tr><td>2</td><td>Last digit is even</td><td>3,58<b>4</b></td></tr>\n<tr><td>3</td><td>Sum of digits divisible by 3</td><td>471: 4 + 7 + 1 = 12</td></tr>\n<tr><td>4</td><td>Last two digits divisible by 4</td><td>9,3<b>16</b>: 16 ÷ 4 = 4</td></tr>\n<tr><td>5</td><td>Last digit 0 or 5</td><td>8,74<b>5</b></td></tr>\n<tr><td>6</td><td>Divisible by both 2 and 3</td><td>714</td></tr>\n<tr><td>8</td><td>Last three digits divisible by 8</td><td>61,<b>248</b>: 248 ÷ 8 = 31</td></tr>\n<tr><td>9</td><td>Sum of digits divisible by 9</td><td>7,182: 7 + 1 + 8 + 2 = 18</td></tr>\n<tr><td>10</td><td>Last digit 0</td><td>4,370</td></tr>\n<tr><td>11</td><td>(Sum of digits in odd places) − (sum in even places) is 0 or a multiple of 11</td><td>9,432,357: (7 + 3 + 3 + 9) − (5 + 2 + 4) = 11</td></tr>\n</tbody></table>\n<p>For 11, count places from the right: units place is place 1 (odd).</p>"
+      },
+      {
+        "title": "Rules for 7, 13, 17, 19 and big composite divisors",
+        "body": "<p><b>7, 11 and 13 together:</b> 1001 = 7 × 11 × 13. Split the number into groups of three digits from the right and take the alternating sum. If that result is divisible by 7, 11 or 13, so is the number.<br>Example: 2,002,286 gives 286 − 002 + 2 = 286 = 2 × 11 × 13, so it is divisible by 11 and 13 but not by 7.</p>\n<p><b>Quick 7 test:</b> double the last digit and subtract it from the rest. Repeat. 2,947: 294 − 14 = 280, and 280 = 7 × 40, so yes.</p>\n<p><b>Quick 13 test:</b> multiply the last digit by 4 and add it to the rest. 1,092: 109 + 8 = 117 = 9 × 13, so yes.<br><b>17:</b> rest − 5 × last digit. <b>19:</b> rest + 2 × last digit.</p>\n<p><b>Composite divisors:</b> break the divisor into <b>co-prime</b> parts and test each part.</p>\n<table><thead><tr><th>Divisor</th><th>Test for</th></tr></thead><tbody>\n<tr><td>12</td><td>3 and 4</td></tr><tr><td>15</td><td>3 and 5</td></tr><tr><td>18</td><td>2 and 9</td></tr><tr><td>24</td><td>3 and 8</td></tr><tr><td>36</td><td>4 and 9</td></tr><tr><td>45</td><td>5 and 9</td></tr><tr><td>72</td><td>8 and 9</td></tr><tr><td>88</td><td>8 and 11</td></tr><tr><td>99</td><td>9 and 11 (or: add the digits in pairs from the right; the total must be divisible by 99)</td></tr>\n</tbody></table>\n<p>Do not use 2 and 6 for 12, because they are not co-prime: 18 passes both tests but is not divisible by 12.</p>"
+      },
+      {
+        "title": "Unit digit and cyclicity",
+        "body": "<p>The unit digit of a power depends only on the unit digit of the base. Unit digits of powers repeat in short cycles.</p>\n<table><thead><tr><th>Unit digit of base</th><th>Cycle of unit digits</th><th>Cycle length</th></tr></thead><tbody>\n<tr><td>0, 1, 5, 6</td><td>always the same digit</td><td>1</td></tr>\n<tr><td>2</td><td>2, 4, 8, 6</td><td>4</td></tr>\n<tr><td>3</td><td>3, 9, 7, 1</td><td>4</td></tr>\n<tr><td>4</td><td>4, 6 (odd power 4, even power 6)</td><td>2</td></tr>\n<tr><td>7</td><td>7, 9, 3, 1</td><td>4</td></tr>\n<tr><td>8</td><td>8, 4, 2, 6</td><td>4</td></tr>\n<tr><td>9</td><td>9, 1 (odd power 9, even power 1)</td><td>2</td></tr>\n</tbody></table>\n<p><b>Method:</b> divide the power by 4 and take the remainder. Remainder 1, 2, 3 means the 1st, 2nd, 3rd digit of the cycle. <b>Remainder 0 means the 4th digit</b> (use power 4).<br>Example: 7<sup>95</sup>. 95 ÷ 4 leaves 3, so the unit digit is the 3rd in 7, 9, 3, 1, which is 3.</p>\n<p>For a product, multiply the unit digits only. For a sum, add the unit digits only. Any product with a factor ending in 5 and an even factor ends in 0.</p>\n<p>Perfect squares never end in 2, 3, 7 or 8. From 5! onwards every factorial ends in 0, so in 1! + 2! + ... + 50! only 1! to 4! matter: 1 + 2 + 6 + 24 = 33, unit digit 3.</p>"
+      },
+      {
+        "title": "Division and basic remainder rules",
+        "body": "<p><b>Dividend = Divisor × Quotient + Remainder</b>, with 0 ≤ remainder &lt; divisor.</p>\n<ul>\n<li>The remainder of a <b>sum</b> = remainder of the sum of the separate remainders.</li>\n<li>The remainder of a <b>product</b> = remainder of the product of the separate remainders.<br>Example: (23 × 34) ÷ 5. Remainders 3 and 4; 3 × 4 = 12, which leaves 2. Answer 2.</li>\n<li><b>Negative remainders</b> make work easy. 14 ÷ 15 leaves 14, which is the same as −1. So 14<sup>51</sup> ÷ 15 leaves (−1)<sup>51</sup> = −1, that is 15 − 1 = 14.</li>\n<li>If n leaves remainder r on division by d, then a × n + b leaves the remainder of (a × r + b). Example: n ÷ 8 leaves 3, so 6n − 1 leaves the remainder of 18 − 1 = 17, which is 1.</li>\n</ul>\n<p><b>Same number, two divisors.</b> A number divided by 357 leaves 39. Since 17 divides 357 exactly, divide the remainder 39 by 17: remainder 5. This works only when the second divisor is a factor of the first.</p>"
+      },
+      {
+        "title": "Remainders of large powers",
+        "body": "<p><b>Make the base 1 or −1.</b> Find a small power of the base that leaves 1 or −1.</p>\n<p>Example: 2<sup>100</sup> ÷ 7. 2<sup>3</sup> = 8 leaves 1. 2<sup>100</sup> = (2<sup>3</sup>)<sup>33</sup> × 2, so the remainder is 1 × 2 = 2.</p>\n<p><b>Binomial idea:</b> (d × k + 1)<sup>n</sup> leaves 1 on division by d; (d × k − 1)<sup>n</sup> leaves 1 if n is even and d − 1 if n is odd.</p>\n<p><b>Fermat's rule:</b> if p is prime and a is not a multiple of p, then a<sup>p−1</sup> leaves remainder 1 on division by p. Example: 3<sup>16</sup> ÷ 17 leaves 1.</p>\n<p><b>Algebra rules SSC loves:</b></p>\n<ul>\n<li>a<sup>n</sup> − b<sup>n</sup> is always divisible by (a − b), and by (a + b) when n is even.</li>\n<li>a<sup>n</sup> + b<sup>n</sup> is divisible by (a + b) when n is odd.</li>\n</ul>\n<p>Example: 17<sup>23</sup> + 23<sup>23</sup> is divisible by 17 + 23 = 40.</p>"
+      },
+      {
+        "title": "Factors: how many, their sum and product",
+        "body": "<p>Write the number as primes: N = p<sup>a</sup> × q<sup>b</sup> × r<sup>c</sup>.</p>\n<ul>\n<li><b>Number of factors</b> = (a + 1)(b + 1)(c + 1)</li>\n<li><b>Sum of factors</b> = (1 + p + ... + p<sup>a</sup>)(1 + q + ... + q<sup>b</sup>)(1 + r + ... + r<sup>c</sup>)</li>\n<li><b>Product of factors</b> = N<sup>(number of factors)/2</sup></li>\n<li><b>Odd factors:</b> ignore the power of 2. <b>Even factors</b> = total − odd.</li>\n<li>A number has an <b>odd</b> number of factors only if it is a perfect square.</li>\n</ul>\n<p>Example: 720 = 2<sup>4</sup> × 3<sup>2</sup> × 5. Factors = 5 × 3 × 2 = 30. Odd factors = 3 × 2 = 6, so even factors = 24. Sum = (1 + 2 + 4 + 8 + 16)(1 + 3 + 9)(1 + 5) = 31 × 13 × 6 = 2418.</p>\n<p><b>Ways to write N as a product of two factors</b> = (number of factors)/2, rounded up for a perfect square.</p>"
+      },
+      {
+        "title": "Highest power of a prime in a factorial and trailing zeros",
+        "body": "<p>n! = 1 × 2 × 3 × ... × n. To find the highest power of a prime p that divides n!, keep dividing n by p and add the whole-number quotients:</p>\n<p><b>[n/p] + [n/p<sup>2</sup>] + [n/p<sup>3</sup>] + ...</b> (ignore fractions; stop at 0)</p>\n<p><b>Trailing zeros</b> come from pairs of 2 and 5. There are always more 2s, so count the 5s.<br>Example: zeros at the end of 125! = 125/5 + 125/25 + 125/125 = 25 + 5 + 1 = <b>31</b>.</p>\n<p>For a non-prime like 6, use its largest prime (3). For 12 = 2<sup>2</sup> × 3, count the 2s, halve them, and compare with the count of 3s; the smaller one wins.</p>"
+      },
+      {
+        "title": "Largest or smallest number divisible by d",
+        "body": "<p><b>Largest n-digit number divisible by d:</b> take the largest n-digit number (999...9), find its remainder r on division by d, and subtract: <b>999...9 − r</b>.</p>\n<p><b>Smallest n-digit number divisible by d:</b> take 100...0, find remainder r, and add <b>(d − r)</b>. If r = 0, the number itself is the answer.</p>\n<p>Example: largest 4-digit number divisible by 88. 9999 ÷ 88 leaves 55, so 9999 − 55 = 9944.</p>\n<p><b>Nearest number:</b> if N leaves r on division by d, the least number to subtract is r, and the least number to add is d − r. Pick the smaller for \"nearest\".</p>\n<p>When the question gives several divisors, first take their LCM and use it as d.</p>"
+      },
+      {
+        "title": "Counting numbers in a range",
+        "body": "<p><b>Multiples of d from 1 to N</b> = [N/d] (whole part only).</p>\n<p><b>Multiples of d from A to B</b> (both included) = [B/d] − [(A − 1)/d].</p>\n<p><b>Divisible by a or b</b> = (by a) + (by b) − (by LCM of a and b).<br><b>Neither</b> = total numbers − (divisible by a or b). Total from A to B = B − A + 1.</p>\n<p>Example: 1 to 100, divisible by 2 or 3: 50 + 33 − 16 = 67. Neither: 100 − 67 = 33.</p>"
+      },
+      {
+        "title": "Recurring decimals into fractions",
+        "body": "<p><b>Pure recurring</b> (all digits after the point repeat): write the repeating block over as many 9s as it has digits.<br>0.<span>777...</span> = 7/9, 0.1212... = 12/99 = 4/33, 0.345345... = 345/999.</p>\n<p><b>Mixed recurring</b> (some digits do not repeat): numerator = (all digits after the point) − (non-repeating digits); denominator = one 9 for each repeating digit followed by one 0 for each non-repeating digit.<br>0.43636... = (436 − 4)/990 = 432/990 = 24/55.</p>\n<p>With a whole part, keep it aside: 2.333... = 2 + 3/9 = 7/3.</p>\n<p>A fraction in lowest terms gives a terminating decimal only if its denominator has no prime factors other than 2 and 5.</p>"
+      },
+      {
+        "title": "Consecutive numbers and standard sums",
+        "body": "<table><thead><tr><th>Sum</th><th>Formula</th></tr></thead><tbody>\n<tr><td>1 + 2 + ... + n</td><td>n(n + 1)/2</td></tr>\n<tr><td>1<sup>2</sup> + 2<sup>2</sup> + ... + n<sup>2</sup></td><td>n(n + 1)(2n + 1)/6</td></tr>\n<tr><td>1<sup>3</sup> + 2<sup>3</sup> + ... + n<sup>3</sup></td><td>[n(n + 1)/2]<sup>2</sup></td></tr>\n<tr><td>First n odd numbers</td><td>n<sup>2</sup></td></tr>\n<tr><td>First n even numbers</td><td>n(n + 1)</td></tr>\n<tr><td>Any AP with n terms</td><td>n/2 × (first + last)</td></tr>\n</tbody></table>\n<p><b>Consecutive numbers</b> are equally spaced, so their <b>average = middle term = (first + last)/2</b>. Take odd counts as x − 2, x, x + 2; for even counts, use the average directly.</p>\n<p>Example: 8 consecutive odd numbers have average 28. Smallest + largest = 2 × 28 = 56.</p>\n<p>The product of any 3 consecutive integers is divisible by 6 (= 3!); of any 4, by 24.</p>"
+      }
+    ],
+    "varieties": [
+      {
+        "type": "number-properties",
+        "name": "Types and properties of numbers",
+        "how": "Check each option against the definition. To test a prime, try primes up to its square root. Remember 1 is not prime and 2 is the only even prime.",
+        "example": {
+          "q": "Which of the following is a prime number: 91, 117, 143, 127?",
+          "steps": [
+            "91 = 7 × 13, not prime.",
+            "117 = 9 × 13, not prime.",
+            "143 = 11 × 13, not prime.",
+            "√127 is just over 11. 127 is not divisible by 2, 3, 5, 7 or 11."
+          ],
+          "answer": "127"
+        }
+      },
+      {
+        "type": "divisibility-test",
+        "name": "Is it divisible?",
+        "how": "Split the divisor into co-prime parts (88 = 8 × 11, 72 = 8 × 9, 99 = 9 × 11). Test each part with its rule. The number must pass every part.",
+        "example": {
+          "q": "Is 61,248 divisible by 88?",
+          "steps": [
+            "88 = 8 × 11, and 8 and 11 are co-prime.",
+            "Last three digits 248 = 8 × 31, so it is divisible by 8.",
+            "For 11, from the right: odd places 8 + 2 + 6 = 16, even places 4 + 1 = 5. 16 − 5 = 11, a multiple of 11.",
+            "Both tests pass. 61,248 = 88 × 696."
+          ],
+          "answer": "Yes, it is divisible by 88"
+        }
+      },
+      {
+        "type": "missing-digit",
+        "name": "Find the missing digit",
+        "how": "Write the rule as an equation in the missing digit. For 9 or 3 use the digit sum; for 11 use the alternating sum; for 8 use the last three digits. Choose the digit from 0 to 9 that works.",
+        "example": {
+          "q": "What digit should replace * in 94*2357 so that the number is divisible by 11?",
+          "steps": [
+            "From the right, odd places: 7, 3, *, 9. Sum = 19 + *.",
+            "Even places: 5, 2, 4. Sum = 11.",
+            "Difference = 8 + *. It must be 0 or 11.",
+            "8 + * = 11 gives * = 3. Check: 9,432,357 = 11 × 857,487."
+          ],
+          "answer": "3"
+        }
+      },
+      {
+        "type": "largest-smallest-divisible",
+        "name": "Largest or smallest number divisible by d",
+        "how": "Divide the extreme number (999...9 or 100...0) by d. For the largest, subtract the remainder. For the smallest, add (d − remainder).",
+        "example": {
+          "q": "What is the smallest 5-digit number exactly divisible by 41?",
+          "steps": [
+            "The smallest 5-digit number is 10,000.",
+            "10,000 ÷ 41 = 243, remainder 37.",
+            "Add 41 − 37 = 4.",
+            "10,000 + 4 = 10,004 = 41 × 244."
+          ],
+          "answer": "10,004"
+        }
+      },
+      {
+        "type": "unit-digit",
+        "name": "Unit digit of a power or product",
+        "how": "Keep only the unit digit of each base. Divide each power by 4 and use the remainder to pick from the cycle (remainder 0 means the 4th place). Multiply the resulting unit digits.",
+        "example": {
+          "q": "Find the unit digit of 137<sup>153</sup> × 34<sup>47</sup>.",
+          "steps": [
+            "137 ends in 7. 153 ÷ 4 leaves 1, so 7<sup>153</sup> ends in 7.",
+            "34 ends in 4. The power 47 is odd, so it ends in 4.",
+            "7 × 4 = 28, unit digit 8."
+          ],
+          "answer": "8"
+        }
+      },
+      {
+        "type": "remainder",
+        "name": "Remainders",
+        "how": "Replace each number by its remainder. For a power, find a small power that leaves 1 or −1, then write the big power in terms of it.",
+        "example": {
+          "q": "Find the remainder when 2<sup>100</sup> is divided by 7.",
+          "steps": [
+            "2<sup>3</sup> = 8 leaves remainder 1 on division by 7.",
+            "2<sup>100</sup> = (2<sup>3</sup>)<sup>33</sup> × 2<sup>1</sup>.",
+            "Remainder = 1<sup>33</sup> × 2 = 2."
+          ],
+          "answer": "2"
+        }
+      },
+      {
+        "type": "factors",
+        "name": "Number, sum and product of factors",
+        "how": "Write N = p<sup>a</sup> × q<sup>b</sup> × ... Number of factors = (a + 1)(b + 1)...; for odd factors drop the 2s; sum of factors = product of (1 + p + ... + p<sup>a</sup>).",
+        "example": {
+          "q": "How many factors does 720 have, and how many of them are even?",
+          "steps": [
+            "720 = 2<sup>4</sup> × 3<sup>2</sup> × 5<sup>1</sup>.",
+            "Total factors = (4 + 1)(2 + 1)(1 + 1) = 30.",
+            "Odd factors (no 2) = (2 + 1)(1 + 1) = 6.",
+            "Even factors = 30 − 6 = 24."
+          ],
+          "answer": "30 factors, 24 of them even"
+        }
+      },
+      {
+        "type": "factorial-zeros",
+        "name": "Trailing zeros and powers in a factorial",
+        "how": "Count the 5s: divide n by 5, 25, 125, ... and add the whole-number answers. For the power of any prime p, divide by p, p<sup>2</sup>, p<sup>3</sup>, ...",
+        "example": {
+          "q": "How many zeros are there at the end of 125!?",
+          "steps": [
+            "125 ÷ 5 = 25",
+            "125 ÷ 25 = 5",
+            "125 ÷ 125 = 1",
+            "25 + 5 + 1 = 31"
+          ],
+          "answer": "31"
+        }
+      },
+      {
+        "type": "count-in-range",
+        "name": "Counting numbers in a range",
+        "how": "Multiples of d from A to B = [B/d] − [(A − 1)/d]. For \"a or b\" add both counts and subtract the count for their LCM. For \"neither\", subtract that from the total.",
+        "example": {
+          "q": "How many numbers from 200 to 800 (both included) are divisible neither by 5 nor by 7?",
+          "steps": [
+            "Total = 800 − 200 + 1 = 601.",
+            "By 5: [800/5] − [199/5] = 160 − 39 = 121.",
+            "By 7: [800/7] − [199/7] = 114 − 28 = 86.",
+            "By 35: [800/35] − [199/35] = 22 − 5 = 17.",
+            "By 5 or 7 = 121 + 86 − 17 = 190. Neither = 601 − 190 = 411."
+          ],
+          "answer": "411"
+        }
+      },
+      {
+        "type": "recurring-decimals",
+        "name": "Recurring decimals as fractions",
+        "how": "Numerator: all digits after the point minus the non-repeating part. Denominator: a 9 for each repeating digit, then a 0 for each non-repeating digit. Simplify.",
+        "example": {
+          "q": "Express 0.43636... (36 repeating) as a fraction.",
+          "steps": [
+            "All digits after the point: 436. Non-repeating part: 4.",
+            "Numerator = 436 − 4 = 432.",
+            "Two repeating digits and one non-repeating digit: denominator 990.",
+            "432/990 = 24/55."
+          ],
+          "answer": "24/55"
+        }
+      },
+      {
+        "type": "consecutive-series",
+        "name": "Consecutive numbers and series sums",
+        "how": "For consecutive numbers, average = middle = (first + last)/2. Last − first = (count − 1) × gap. For sums, use the standard formulas.",
+        "example": {
+          "q": "The average of 18 consecutive integers is 22.5. What is the largest of them?",
+          "steps": [
+            "First + last = 2 × 22.5 = 45.",
+            "Last − first = 18 − 1 = 17.",
+            "Last = (45 + 17)/2 = 31.",
+            "Check: 14 to 31 has average (14 + 31)/2 = 22.5."
+          ],
+          "answer": "31"
+        }
+      }
+    ],
+    "tips": [
+      "For a divisibility option question, test the easy rules first (2, 3, 5, 9, 11) and strike out options fast.",
+      "For any composite divisor, split it into co-prime parts: 72 = 8 × 9, 88 = 8 × 11, 99 = 9 × 11.",
+      "In unit digit questions, divide the power by 4. If the remainder is 0, use the 4th term of the cycle, not the 0th.",
+      "Use negative remainders: a number just below the divisor behaves like −1.",
+      "For trailing zeros, count only the 5s.",
+      "Average of consecutive or equally spaced numbers is simply the middle term.",
+      "For \"how many from A to B\", always use A − 1 in the lower count."
+    ],
+    "traps": [
+      "1 is neither prime nor composite, and 2 is the only even prime.",
+      "Testing 2 and 6 does not prove divisibility by 12; the parts must be co-prime (3 and 4).",
+      "A remainder can be carried to a smaller divisor only if the smaller divisor is a factor of the bigger one.",
+      "Numbers like 91, 119, 143 and 221 look prime but are not.",
+      "In counting questions, check whether both limits are included."
+    ]
+  },
+  "formulas": [
+    {
+      "name": "Division",
+      "expr": "Dividend = Divisor × Quotient + Remainder"
+    },
+    {
+      "name": "Number of factors of p^a × q^b × r^c",
+      "expr": "(a + 1)(b + 1)(c + 1)"
+    },
+    {
+      "name": "Sum of factors",
+      "expr": "(1 + p + ... + p^a)(1 + q + ... + q^b)..."
+    },
+    {
+      "name": "Product of factors of N",
+      "expr": "N^(number of factors / 2)"
+    },
+    {
+      "name": "Highest power of prime p in n!",
+      "expr": "[n/p] + [n/p²] + [n/p³] + ..."
+    },
+    {
+      "name": "Trailing zeros in n!",
+      "expr": "[n/5] + [n/25] + [n/125] + ..."
+    },
+    {
+      "name": "Multiples of d from A to B",
+      "expr": "[B/d] − [(A − 1)/d]"
+    },
+    {
+      "name": "Sum of first n natural numbers",
+      "expr": "n(n + 1)/2"
+    },
+    {
+      "name": "Sum of first n squares",
+      "expr": "n(n + 1)(2n + 1)/6"
+    },
+    {
+      "name": "Sum of first n cubes",
+      "expr": "[n(n + 1)/2]²"
+    },
+    {
+      "name": "Sum of first n odd numbers",
+      "expr": "n²"
+    },
+    {
+      "name": "Sum of first n even numbers",
+      "expr": "n(n + 1)"
+    },
+    {
+      "name": "Fermat rule (p prime, a not a multiple of p)",
+      "expr": "a^(p − 1) leaves remainder 1 on division by p"
+    },
+    {
+      "name": "Divisibility of powers",
+      "expr": "aⁿ − bⁿ divisible by (a − b) always, by (a + b) if n even; aⁿ + bⁿ divisible by (a + b) if n odd"
+    },
+    {
+      "name": "Pure recurring decimal",
+      "expr": "0.abab... = ab/99"
     }
-   },
-   {
-    "type": "divisibility",
-    "name": "Missing digit for divisibility",
-    "how": "Apply the rule for the divisor and solve for the missing digit.",
-    "example": {
-     "q": "If 4x56 is divisible by 9, find x.",
-     "steps": [
-      "Digit sum = 4 + x + 5 + 6 = 15 + x",
-      "Next multiple of 9 is 18",
-      "x = 3"
-     ],
-     "answer": "3"
-    }
-   },
-   {
-    "type": "remainder",
-    "name": "Remainders",
-    "how": "Reduce the base using a small power that leaves remainder 1 (or −1), or use the divisor’s factor.",
-    "example": {
-     "q": "Remainder when 3<sup>21</sup> is divided by 8?",
-     "steps": [
-      "3<sup>2</sup> = 9 leaves 1 when divided by 8",
-      "3<sup>21</sup> = (3<sup>2</sup>)<sup>10</sup> × 3",
-      "Remainder = 1 × 3 = 3"
-     ],
-     "answer": "3"
-    }
-   }
   ],
-  "tips": [
-   "For unit digit of a product, multiply only the unit digits.",
-   "If N leaves remainder r with divisor D, and d is a factor of D, the remainder with d is r mod d.",
-   "Largest n-digit number divisible by k = 99…9 − (99…9 mod k)."
+  "questions": [
+    {
+      "id": "q-number-system-001",
+      "rev": 1,
+      "topic": "q-number-system",
+      "type": "unit-digit",
+      "level": 1,
+      "q": "What is the unit digit of 7<sup>95</sup>?",
+      "options": [
+        "3",
+        "7",
+        "9",
+        "1"
+      ],
+      "answer": 0,
+      "solution": "Cycle of 7: 7, 9, 3, 1 (length 4).<br>95 ÷ 4 leaves remainder 3.<br>3rd term of the cycle = 3.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-number-system-002",
+      "rev": 1,
+      "topic": "q-number-system",
+      "type": "missing-digit",
+      "level": 1,
+      "q": "If the number 5432x7 is divisible by 9, what is the value of x?",
+      "options": [
+        "3",
+        "0",
+        "6",
+        "9"
+      ],
+      "answer": 2,
+      "solution": "Sum of known digits = 5 + 4 + 3 + 2 + 7 = 21.<br>21 + x must be a multiple of 9 → 21 + x = 27.<br>x = 6.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-number-system-003",
+      "rev": 1,
+      "topic": "q-number-system",
+      "type": "remainder",
+      "level": 2,
+      "q": "What is the remainder when 2<sup>31</sup> is divided by 5?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "solution": "2<sup>4</sup> = 16 leaves remainder 1 when divided by 5.<br>2<sup>31</sup> = (2<sup>4</sup>)<sup>7</sup> × 2<sup>3</sup>.<br>Remainder = 1 × 8 = 8 → 8 ÷ 5 leaves 3.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-number-system-004",
+      "rev": 1,
+      "topic": "q-number-system",
+      "type": "unit-digit",
+      "level": 2,
+      "q": "What is the unit digit of 3<sup>65</sup> × 6<sup>59</sup> × 7<sup>71</sup>?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "solution": "3<sup>65</sup>: 65 ÷ 4 leaves 1 → unit digit 3.<br>6<sup>59</sup>: unit digit is always 6.<br>7<sup>71</sup>: 71 ÷ 4 leaves 3 → unit digit 3.<br>3 × 6 × 3 = 54 → unit digit 4.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-number-system-005",
+      "rev": 1,
+      "topic": "q-number-system",
+      "type": "remainder",
+      "level": 3,
+      "q": "A number when divided by 357 leaves a remainder of 39. What will be the remainder when the same number is divided by 17?",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "39"
+      ],
+      "answer": 1,
+      "solution": "357 = 17 × 21, so 17 divides 357 exactly.<br>N = 357k + 39, so the remainder with 17 = 39 mod 17.<br>39 = 2 × 17 + 5 → remainder 5.",
+      "source": "test-data"
+    },
+    {
+      "id": "q-number-system-006",
+      "rev": 1,
+      "topic": "q-number-system",
+      "type": "largest-smallest-divisible",
+      "level": 3,
+      "q": "What is the largest 4-digit number that is exactly divisible by 88?",
+      "options": [
+        "9988",
+        "9944",
+        "9966",
+        "9900"
+      ],
+      "answer": 1,
+      "solution": "Largest 4-digit number = 9999.<br>9999 ÷ 88 = 113, remainder 9999 − 88 × 113 = 9999 − 9944 = 55.<br>Required number = 9999 − 55 = 9944.",
+      "source": "test-data"
+    }
   ],
-  "traps": [
-   "When the power is a multiple of 4, use the 4th term of the cycle (e.g. 6 for base 2), not the 1st.",
-   "1 is not a prime number."
+  "flashcards": [
+    {
+      "id": "fc-ns-1",
+      "front": "Unit digit cycle of 7",
+      "back": "7, 9, 3, 1 (repeats every 4)",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-ns-2",
+      "front": "Divisibility rule for 11",
+      "back": "Difference of sums of alternate digits is 0 or a multiple of 11",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-ns-3",
+      "front": "Number of primes from 1 to 100",
+      "back": "25",
+      "deck": "formulas"
+    },
+    {
+      "id": "fc-ns-4",
+      "front": "Dividend formula",
+      "back": "Divisor × Quotient + Remainder",
+      "deck": "formulas"
+    }
   ]
- },
- "formulas": [
-  {
-   "name": "Dividend",
-   "expr": "Divisor × Quotient + Remainder"
-  },
-  {
-   "name": "Sum of first n natural numbers",
-   "expr": "n(n + 1)/2"
-  },
-  {
-   "name": "Sum of squares of first n natural numbers",
-   "expr": "n(n + 1)(2n + 1)/6"
-  }
- ],
- "questions": [
-  {
-   "id": "q-number-system-001",
-   "rev": 1,
-   "topic": "q-number-system",
-   "type": "unit-digit",
-   "level": 1,
-   "q": "What is the unit digit of 7<sup>95</sup>?",
-   "options": [
-    "3",
-    "7",
-    "9",
-    "1"
-   ],
-   "answer": 0,
-   "solution": "Cycle of 7: 7, 9, 3, 1 (length 4).<br>95 ÷ 4 leaves remainder 3.<br>3rd term of the cycle = 3.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-number-system-002",
-   "rev": 1,
-   "topic": "q-number-system",
-   "type": "divisibility",
-   "level": 1,
-   "q": "If the number 5432x7 is divisible by 9, what is the value of x?",
-   "options": [
-    "3",
-    "0",
-    "6",
-    "9"
-   ],
-   "answer": 2,
-   "solution": "Sum of known digits = 5 + 4 + 3 + 2 + 7 = 21.<br>21 + x must be a multiple of 9 → 21 + x = 27.<br>x = 6.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-number-system-003",
-   "rev": 1,
-   "topic": "q-number-system",
-   "type": "remainder",
-   "level": 2,
-   "q": "What is the remainder when 2<sup>31</sup> is divided by 5?",
-   "options": [
-    "1",
-    "2",
-    "3",
-    "4"
-   ],
-   "answer": 2,
-   "solution": "2<sup>4</sup> = 16 leaves remainder 1 when divided by 5.<br>2<sup>31</sup> = (2<sup>4</sup>)<sup>7</sup> × 2<sup>3</sup>.<br>Remainder = 1 × 8 = 8 → 8 ÷ 5 leaves 3.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-number-system-004",
-   "rev": 1,
-   "topic": "q-number-system",
-   "type": "unit-digit",
-   "level": 2,
-   "q": "What is the unit digit of 3<sup>65</sup> × 6<sup>59</sup> × 7<sup>71</sup>?",
-   "options": [
-    "2",
-    "4",
-    "6",
-    "8"
-   ],
-   "answer": 1,
-   "solution": "3<sup>65</sup>: 65 ÷ 4 leaves 1 → unit digit 3.<br>6<sup>59</sup>: unit digit is always 6.<br>7<sup>71</sup>: 71 ÷ 4 leaves 3 → unit digit 3.<br>3 × 6 × 3 = 54 → unit digit 4.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-number-system-005",
-   "rev": 1,
-   "topic": "q-number-system",
-   "type": "remainder",
-   "level": 3,
-   "q": "A number when divided by 357 leaves a remainder of 39. What will be the remainder when the same number is divided by 17?",
-   "options": [
-    "3",
-    "5",
-    "7",
-    "39"
-   ],
-   "answer": 1,
-   "solution": "357 = 17 × 21, so 17 divides 357 exactly.<br>N = 357k + 39, so the remainder with 17 = 39 mod 17.<br>39 = 2 × 17 + 5 → remainder 5.",
-   "source": "test-data"
-  },
-  {
-   "id": "q-number-system-006",
-   "rev": 1,
-   "topic": "q-number-system",
-   "type": "divisibility",
-   "level": 3,
-   "q": "What is the largest 4-digit number that is exactly divisible by 88?",
-   "options": [
-    "9988",
-    "9944",
-    "9966",
-    "9900"
-   ],
-   "answer": 1,
-   "solution": "Largest 4-digit number = 9999.<br>9999 ÷ 88 = 113, remainder 9999 − 88 × 113 = 9999 − 9944 = 55.<br>Required number = 9999 − 55 = 9944.",
-   "source": "test-data"
-  }
- ],
- "flashcards": [
-  {
-   "id": "fc-ns-1",
-   "front": "Unit digit cycle of 7",
-   "back": "7, 9, 3, 1 (repeats every 4)",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-ns-2",
-   "front": "Divisibility rule for 11",
-   "back": "Difference of sums of alternate digits is 0 or a multiple of 11",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-ns-3",
-   "front": "Number of primes from 1 to 100",
-   "back": "25",
-   "deck": "formulas"
-  },
-  {
-   "id": "fc-ns-4",
-   "front": "Dividend formula",
-   "back": "Divisor × Quotient + Remainder",
-   "deck": "formulas"
-  }
- ]
 }

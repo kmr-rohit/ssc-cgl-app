@@ -6,6 +6,7 @@ import '@fontsource/mukta/latin-500.css';
 import '@fontsource/mukta/latin-600.css';
 import '@fontsource/mukta/latin-700.css';
 import '@fontsource/kalam/latin-700.css';
+import 'katex/dist/katex.min.css';
 import './ui/styles.css';
 import { app } from './app/state';
 import { dispatch, route } from './app/router';

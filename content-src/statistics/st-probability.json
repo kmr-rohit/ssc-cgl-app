@@ -1,87 +1,182 @@
 {
  "topic": "st-probability",
  "notes": {
-  "summary": "Probability measures how likely an event is, from 0 (impossible) to 1 (certain). JSO questions use classical probability (coins, dice, cards), addition and multiplication theorems, conditional probability and Bayes' theorem.",
+  "summary": "Probability measures how likely an event is, on a scale from 0 (impossible) to 1 (certain). Paper 2 asks about the three definitions (classical, relative frequency, axiomatic), counting outcomes with combinations, the addition and multiplication rules, conditional probability, independence, and Bayes' theorem. Most questions are short calculations with coins, dice, cards and balls in a bag.",
   "concepts": [
    {
-    "title": "Basic ideas",
-    "body": "<ul><li>Classical: P(A) = favourable outcomes / total equally likely outcomes.</li><li>0 ≤ P(A) ≤ 1; P(A') = 1 − P(A).</li><li>Two coins: 4 outcomes; two dice: 36 outcomes; a deck: 52 cards (4 suits × 13; 4 aces, 12 face cards).</li><li><b>Mutually exclusive</b>: cannot happen together, P(A∩B) = 0. <b>Independent</b>: P(A∩B) = P(A)P(B).</li></ul>"
+    "title": "Basic words",
+    "body": "<ul><li><b>Random experiment</b>: an action whose result cannot be predicted in advance, such as tossing a coin.</li><li><b>Sample space</b> (S): the set of all possible outcomes. Tossing one coin: S = {H, T}. Throwing one die: S = {1, 2, 3, 4, 5, 6}.</li><li><b>Event</b>: any subset of S. \"Even number on a die\" = {2, 4, 6}.</li><li><b>Equally likely</b>: no outcome is more likely than another (a fair coin or die).</li><li><b>Mutually exclusive</b>: the events cannot happen together, so A∩B = ∅. Getting 1 and getting 6 on one throw.</li><li><b>Exhaustive</b>: together the events cover the whole sample space, so A∪B∪… = S.</li><li><b>Complement</b> A′ (or A<sup>c</sup>): \"A does not happen\". P(A′) = 1 − P(A).</li><li><b>Independent</b>: one event happening does not change the chance of the other.</li></ul>"
    },
    {
-    "title": "Theorems",
-    "body": "<ul><li><b>Addition</b>: P(A∪B) = P(A) + P(B) − P(A∩B).</li><li><b>Multiplication</b>: P(A∩B) = P(A) × P(B|A).</li><li><b>Conditional</b>: P(A|B) = P(A∩B)/P(B).</li><li><b>At least one</b> of independent events = 1 − P(none happens).</li><li><b>Bayes'</b>: P(E<sub>i</sub>|A) = P(E<sub>i</sub>)P(A|E<sub>i</sub>) / Σ P(E<sub>j</sub>)P(A|E<sub>j</sub>).</li></ul>"
+    "title": "Three definitions of probability",
+    "body": "<table><tr><th>Definition</th><th>Rule</th><th>Limitation</th></tr><tr><td>Classical (a priori, Laplace)</td><td>P(A) = favourable outcomes ÷ total equally likely outcomes</td><td>Needs a finite number of equally likely outcomes</td></tr><tr><td>Relative frequency (empirical, von Mises)</td><td>P(A) = limit of (times A happened ÷ number of trials) as trials grow very large</td><td>Needs the experiment to be repeated many times under the same conditions</td></tr><tr><td>Axiomatic (Kolmogorov)</td><td>Any rule P that obeys the three axioms below</td><td>Does not tell you how to find the actual value</td></tr></table><p><b>Kolmogorov's axioms</b>:</p><ol><li>P(A) ≥ 0 for every event A.</li><li>P(S) = 1.</li><li>For mutually exclusive A<sub>1</sub>, A<sub>2</sub>, …: P(A<sub>1</sub>∪A<sub>2</sub>∪…) = P(A<sub>1</sub>) + P(A<sub>2</sub>) + …</li></ol><p>From these follow: P(∅) = 0, 0 ≤ P(A) ≤ 1, and P(A′) = 1 − P(A).</p>"
+   },
+   {
+    "title": "Standard sample spaces",
+    "body": "<table><tr><th>Experiment</th><th>Total outcomes</th><th>Handy facts</th></tr><tr><td>n coins (or one coin n times)</td><td>2<sup>n</sup></td><td>P(exactly r heads) = <sup>n</sup>C<sub>r</sub> / 2<sup>n</sup></td></tr><tr><td>One die</td><td>6</td><td>3 even, 3 odd, 3 primes (2, 3, 5)</td></tr><tr><td>Two dice</td><td>36</td><td>Ways to get sum 2, 3, …, 7, …, 12: 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1. Doublets: 6</td></tr><tr><td>Pack of cards</td><td>52</td><td>4 suits of 13; 26 red, 26 black; 12 face cards (J, Q, K); 4 aces</td></tr></table><p>Example: two dice, P(sum = 7) = 6/36 = 1/6, the most likely sum.</p>"
+   },
+   {
+    "title": "Counting with combinations",
+    "body": "<p>When several items are drawn together (or one by one without caring about order), count with combinations: <sup>n</sup>C<sub>r</sub> = n! ÷ (r! (n − r)!).</p><ul><li><sup>n</sup>C<sub>0</sub> = <sup>n</sup>C<sub>n</sub> = 1, <sup>n</sup>C<sub>1</sub> = n, <sup>n</sup>C<sub>r</sub> = <sup>n</sup>C<sub>n−r</sub>.</li><li><sup>5</sup>C<sub>2</sub> = 10, <sup>8</sup>C<sub>2</sub> = 28, <sup>52</sup>C<sub>2</sub> = 1326.</li></ul><p>Example: a bag has 4 red and 6 white balls. Two are drawn. P(one of each) = (<sup>4</sup>C<sub>1</sub> × <sup>6</sup>C<sub>1</sub>) ÷ <sup>10</sup>C<sub>2</sub> = 24/45 = 8/15.</p>"
+   },
+   {
+    "title": "Addition rule",
+    "body": "<ul><li>Any two events: <b>P(A∪B) = P(A) + P(B) − P(A∩B)</b>. We subtract the overlap because it was counted twice.</li><li>Mutually exclusive: P(A∪B) = P(A) + P(B).</li><li>Three events: P(A∪B∪C) = ΣP(A) − ΣP(A∩B) + P(A∩B∩C).</li><li>\"Only A\" = P(A) − P(A∩B). \"Exactly one\" = P(A) + P(B) − 2P(A∩B).</li><li>\"Neither\" = 1 − P(A∪B) (De Morgan: (A∪B)′ = A′∩B′).</li></ul><p>Example: P(A) = 0.5, P(B) = 0.4, P(A∩B) = 0.2. P(A∪B) = 0.7, P(neither) = 0.3, P(exactly one) = 0.5.</p>"
+   },
+   {
+    "title": "Conditional probability and multiplication rule",
+    "body": "<ul><li><b>P(A|B) = P(A∩B) ÷ P(B)</b>, the chance of A once we know B has happened (P(B) &gt; 0).</li><li>Multiplication rule: P(A∩B) = P(A) × P(B|A) = P(B) × P(A|B).</li><li>Drawing <b>without replacement</b> changes the second probability. Two aces from 52 cards: (4/52) × (3/51) = 1/221.</li><li>Drawing <b>with replacement</b> keeps it the same: (4/52) × (4/52) = 1/169.</li></ul>"
+   },
+   {
+    "title": "Independent events",
+    "body": "<ul><li>A and B are independent if <b>P(A∩B) = P(A) × P(B)</b>, which is the same as P(A|B) = P(A).</li><li>If A, B are independent, so are A and B′, A′ and B, A′ and B′.</li><li>P(at least one) = 1 − P(A′) × P(B′). P(neither) = P(A′) × P(B′).</li><li>Independent is not the same as mutually exclusive. Two mutually exclusive events with non-zero probability can never be independent, because P(A∩B) = 0 but P(A)P(B) &gt; 0.</li><li>Three events are mutually independent only if every pair and the triple satisfy the product rule.</li></ul><p>Example: P(A) = 0.6, P(B) = 0.5, independent. P(both) = 0.3, P(neither) = 0.4 × 0.5 = 0.2, P(at least one) = 0.8.</p>"
+   },
+   {
+    "title": "Total probability and Bayes' theorem",
+    "body": "<p>Let E<sub>1</sub>, E<sub>2</sub>, …, E<sub>n</sub> be mutually exclusive and exhaustive (for example, which machine made an item).</p><ul><li><b>Total probability</b>: P(A) = Σ P(E<sub>i</sub>) P(A|E<sub>i</sub>).</li><li><b>Bayes' theorem</b>: P(E<sub>i</sub>|A) = P(E<sub>i</sub>) P(A|E<sub>i</sub>) ÷ Σ P(E<sub>j</sub>) P(A|E<sub>j</sub>).</li><li>P(E<sub>i</sub>) are <b>prior</b> probabilities; P(E<sub>i</sub>|A) are <b>posterior</b> probabilities.</li></ul><table><tr><th>Machine</th><th>Share</th><th>Defective rate</th><th>Product</th></tr><tr><td>A</td><td>0.6</td><td>0.02</td><td>0.012</td></tr><tr><td>B</td><td>0.4</td><td>0.03</td><td>0.012</td></tr><tr><td>Total</td><td></td><td></td><td>0.024</td></tr></table><p>P(A | defective) = 0.012 ÷ 0.024 = 0.5.</p>"
+   },
+   {
+    "title": "Odds",
+    "body": "<ul><li>Odds <b>in favour</b> of A = P(A) : P(A′) = favourable : unfavourable.</li><li>Odds <b>against</b> A = P(A′) : P(A).</li><li>If odds in favour are a : b, then P(A) = a ÷ (a + b).</li></ul><p>Example: odds against an event are 7 : 3, so P(event) = 3/10.</p>"
    }
   ],
   "varieties": [
    {
     "type": "classical",
     "name": "Coins, dice and cards",
-    "how": "Count the sample space and the favourable cases; use the complement for \"at least one\".",
+    "how": "List or count the sample space, count the favourable outcomes, and divide. Use the complement for \"at least one\".",
     "example": {
-     "q": "Two dice are thrown. Find P(sum = 7).",
+     "q": "Two fair dice are thrown. What is the probability that the sum is 8?",
      "steps": [
-      "Total = 36",
-      "Favourable: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6",
-      "P = 6/36 = 1/6"
+      "Total outcomes = 6 × 6 = 36.",
+      "Sum 8: (2,6), (3,5), (4,4), (5,3), (6,2), which is 5 outcomes.",
+      "P = 5/36."
      ],
-     "answer": "1/6"
+     "answer": "5/36"
     }
    },
    {
-    "type": "addition-multiplication",
-    "name": "Addition and multiplication theorems",
-    "how": "OR → add and subtract the overlap; AND → multiply (use conditional probability when drawing without replacement).",
+    "type": "combinations",
+    "name": "Drawing with combinations",
+    "how": "Favourable = product of <sup>n</sup>C<sub>r</sub> for each colour or group chosen; total = <sup>N</sup>C<sub>r</sub> for the whole draw.",
     "example": {
-     "q": "P(A) = 0.6, P(B) = 0.5, A and B independent. Find P(A∪B).",
+     "q": "A bag has 5 red and 3 blue balls. Two balls are drawn at random. Find the probability that both are red.",
      "steps": [
-      "P(A∩B) = 0.6 × 0.5 = 0.3",
-      "P(A∪B) = 0.6 + 0.5 − 0.3 = 0.8"
+      "Total ways = <sup>8</sup>C<sub>2</sub> = 28.",
+      "Ways to pick 2 red = <sup>5</sup>C<sub>2</sub> = 10.",
+      "P = 10/28 = 5/14."
      ],
-     "answer": "0.8"
+     "answer": "5/14"
     }
    },
    {
-    "type": "conditional-bayes",
-    "name": "Conditional probability and Bayes'",
-    "how": "Make a table of P(source) × P(event | source); the answer is one row divided by the total.",
+    "type": "addition-rule",
+    "name": "Addition rule and complements",
+    "how": "Use P(A∪B) = P(A) + P(B) − P(A∩B). Drop the overlap term only if the events are mutually exclusive.",
     "example": {
-     "q": "Bag I: 3 red, 2 black. Bag II: 2 red, 3 black. A bag is chosen at random and a red ball is drawn. Find P(Bag I | red).",
+     "q": "One card is drawn from a pack of 52. Find the probability that it is a king or a heart.",
      "steps": [
-      "Bag I: 1/2 × 3/5 = 3/10",
-      "Bag II: 1/2 × 2/5 = 2/10",
-      "P = (3/10)/(5/10) = 3/5"
+      "P(king) = 4/52, P(heart) = 13/52.",
+      "The king of hearts is in both: P(both) = 1/52.",
+      "P = 4/52 + 13/52 − 1/52 = 16/52 = 4/13."
+     ],
+     "answer": "4/13"
+    }
+   },
+   {
+    "type": "multiplication-rule",
+    "name": "Conditional probability and independence",
+    "how": "For \"given that\" use P(A|B) = P(A∩B)/P(B). For independent events multiply. Without replacement, reduce the counts for the second draw.",
+    "example": {
+     "q": "P(A) = 0.5 and P(A∩B) = 0.2. Find P(B|A).",
+     "steps": [
+      "P(B|A) = P(A∩B) ÷ P(A).",
+      "= 0.2 ÷ 0.5 = 0.4."
+     ],
+     "answer": "0.4"
+    }
+   },
+   {
+    "type": "bayes",
+    "name": "Total probability and Bayes' theorem",
+    "how": "Make a table: prior × likelihood for each source. Add the products for the total; the wanted row's product ÷ total is the answer.",
+    "example": {
+     "q": "Urn I has 3 white and 2 black balls; urn II has 2 white and 3 black. An urn is chosen at random and a ball drawn is white. Find the probability that it came from urn I.",
+     "steps": [
+      "Urn I: (1/2) × (3/5) = 3/10.",
+      "Urn II: (1/2) × (2/5) = 2/10.",
+      "Total P(white) = 5/10.",
+      "P(urn I | white) = (3/10) ÷ (5/10) = 3/5."
      ],
      "answer": "3/5"
+    }
+   },
+   {
+    "type": "definitions-odds",
+    "name": "Definitions, axioms and odds",
+    "how": "Match the words exactly: mutually exclusive means no overlap, exhaustive means they cover S, independent means the product rule holds. For odds a : b in favour, P = a/(a + b).",
+    "example": {
+     "q": "The odds in favour of an event are 3 : 5. What is its probability?",
+     "steps": [
+      "Favourable : unfavourable = 3 : 5, so total = 8.",
+      "P = 3/8."
+     ],
+     "answer": "3/8"
     }
    }
   ],
   "tips": [
-   "\"At least one\" problems are fastest with 1 − P(none).",
-   "Without replacement, the second draw's denominator falls by one.",
-   "In Bayes' questions, write the prior × likelihood products first; the denominator is their sum."
+   "\"At least one\" is almost always fastest as 1 − P(none).",
+   "Two dice: the number of ways to get sum s is 6 − |s − 7|.",
+   "Before using Bayes, check that the shares of the sources add to 1.",
+   "For independent events, P(at least one) = 1 − (1 − p<sub>1</sub>)(1 − p<sub>2</sub>)….",
+   "Probability is always between 0 and 1; any option outside this range can be struck off.",
+   "In Bayes questions the answer is usually a simple fraction once you clear the percentages."
   ],
   "traps": [
-   "Mutually exclusive events (with non-zero probabilities) are NOT independent.",
-   "Do not forget to subtract P(A∩B) in the addition theorem.",
-   "P(A|B) is not the same as P(B|A)."
+   "Mutually exclusive and independent are different ideas; do not use the product rule for mutually exclusive events.",
+   "Without replacement, the second draw has one item fewer in the total and possibly in the favourable count.",
+   "P(A|B) is not the same as P(B|A).",
+   "Odds of 3 : 5 give probability 3/8, not 3/5.",
+   "A pack has 12 face cards (J, Q, K); aces are not face cards."
   ]
  },
  "formulas": [
+  {
+   "name": "Classical probability",
+   "expr": "P(A) = favourable outcomes ÷ total equally likely outcomes"
+  },
+  {
+   "name": "Complement",
+   "expr": "P(A′) = 1 − P(A)"
+  },
   {
    "name": "Addition theorem",
    "expr": "P(A∪B) = P(A) + P(B) − P(A∩B)"
   },
   {
    "name": "Conditional probability",
-   "expr": "P(A|B) = P(A∩B) / P(B)"
+   "expr": "P(A|B) = P(A∩B) ÷ P(B)"
+  },
+  {
+   "name": "Multiplication theorem",
+   "expr": "P(A∩B) = P(A) × P(B|A)"
   },
   {
    "name": "Independent events",
-   "expr": "P(A∩B) = P(A) · P(B)"
+   "expr": "P(A∩B) = P(A) × P(B)"
+  },
+  {
+   "name": "Total probability",
+   "expr": "P(A) = Σ P(Eᵢ) P(A|Eᵢ)"
   },
   {
    "name": "Bayes' theorem",
-   "expr": "P(Eᵢ|A) = P(Eᵢ)P(A|Eᵢ) / Σ P(Eⱼ)P(A|Eⱼ)"
+   "expr": "P(Eᵢ|A) = P(Eᵢ)P(A|Eᵢ) ÷ Σ P(Eⱼ)P(A|Eⱼ)"
+  },
+  {
+   "name": "Odds",
+   "expr": "Odds in favour a : b ⇒ P = a ÷ (a + b)"
   }
  ],
  "questions": [
@@ -123,7 +218,7 @@
    "id": "st-probability-003",
    "rev": 1,
    "topic": "st-probability",
-   "type": "addition-multiplication",
+   "type": "addition-rule",
    "level": 2,
    "q": "P(A) = 0.5, P(B) = 0.4 and P(A∩B) = 0.2. Then P(A∪B) is:",
    "options": [
@@ -140,7 +235,7 @@
    "id": "st-probability-004",
    "rev": 1,
    "topic": "st-probability",
-   "type": "addition-multiplication",
+   "type": "multiplication-rule",
    "level": 2,
    "q": "Two cards are drawn one after another <b>without replacement</b> from a pack of 52. The probability that both are aces is:",
    "options": [
@@ -157,7 +252,7 @@
    "id": "st-probability-005",
    "rev": 1,
    "topic": "st-probability",
-   "type": "conditional-bayes",
+   "type": "bayes",
    "level": 3,
    "q": "Machines A and B make 60% and 40% of a factory's bolts. 2% of A's and 3% of B's bolts are defective. A bolt picked at random is defective. The probability it was made by A is:",
    "options": [
@@ -174,7 +269,7 @@
    "id": "st-probability-006",
    "rev": 1,
    "topic": "st-probability",
-   "type": "addition-multiplication",
+   "type": "multiplication-rule",
    "level": 3,
    "q": "A and B are independent with P(A) = 1/2 and P(B) = 1/3. The probability that at least one of them occurs is:",
    "options": [

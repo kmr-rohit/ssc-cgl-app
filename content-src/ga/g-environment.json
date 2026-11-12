@@ -1,72 +1,335 @@
 {
   "topic": "g-environment",
   "notes": {
-    "summary": "Environment usually gives <b>1 question</b>: ecosystem basics, pollution and its diseases, global environmental agreements, and India's national parks and wildlife projects.",
+    "summary": "Environment gives about <b>1 question</b> per paper, sometimes 2. Past papers ask about <b>protected areas and treaties</b>, <b>pollution and global warming</b>, and <b>ecosystem basics</b> (food chains, the 10% law, who coined which term). Learn national parks with their state and famous animal, and treaties with their year and purpose.",
     "concepts": [
       {
-        "title": "Ecosystem and food chain",
-        "body": "<ul><li><b>Producers</b> (green plants) make food by photosynthesis; <b>consumers</b> eat others; <b>decomposers</b> (bacteria, fungi) break down dead matter.</li><li>Energy flows in one direction: Sun → producers → herbivores → carnivores.</li><li><b>10% law</b> (Lindeman): only about 10% of energy passes to the next trophic level; the rest is lost mostly as heat. So food chains are short.</li><li>An <b>energy pyramid</b> is always upright.</li></ul>",
+        "title": "Ecology and ecosystems",
+        "body": "<ul><li><b>Ernst Haeckel</b> coined 'ecology' (1866). <b>A.G. Tansley</b> coined 'ecosystem' (1935). <b>Eugene P. Odum</b> is called the father of modern ecology; he treated the ecosystem as the basic unit of ecology.</li><li><b>Autecology</b> studies one species; <b>synecology</b> studies communities of many species.</li><li>Levels: organism, population, community, ecosystem, biome, biosphere.</li><li><b>Biotic</b> parts: producers (green plants), consumers (primary: herbivores; secondary and tertiary: carnivores), decomposers (bacteria, fungi). <b>Abiotic</b> parts: light, water, soil, air, temperature.</li><li><b>Food chain</b>: grass, grasshopper, frog, snake, eagle. Linked chains make a <b>food web</b>.</li><li><b>Lindeman's 10% law</b> (1942): only about 10% of energy passes to the next trophic level. So chains rarely have more than 4 or 5 links.</li><li><b>Ecological pyramids</b>: the energy pyramid is always upright. The pyramid of numbers is inverted for a single tree with many insects; the pyramid of biomass is inverted in the sea.</li><li><b>Biomagnification</b>: poisons like DDT and mercury build up at higher trophic levels.</li></ul>",
         "img": "ga/env-energy-pyramid.svg"
       },
       {
-        "title": "Pollution and global agreements",
-        "body": "<ul><li><b>Greenhouse gases</b>: carbon dioxide, methane, nitrous oxide, water vapour, CFCs.</li><li><b>Ozone depletion</b> is caused mainly by CFCs.</li><li><b>Acid rain</b>: sulphur dioxide and nitrogen oxides.</li></ul><table><thead><tr><th>Disease</th><th>Cause</th></tr></thead><tbody><tr><td>Minamata disease</td><td>Mercury</td></tr><tr><td>Itai-itai</td><td>Cadmium</td></tr><tr><td>Blue baby syndrome</td><td>Nitrate in water</td></tr></tbody></table><table><thead><tr><th>Agreement</th><th>Year</th><th>Subject</th></tr></thead><tbody><tr><td>Ramsar Convention</td><td>1971</td><td>Wetlands</td></tr><tr><td>Montreal Protocol</td><td>1987</td><td>Ozone-depleting substances</td></tr><tr><td>Earth Summit, Rio</td><td>1992</td><td>Climate (UNFCCC), biodiversity (CBD)</td></tr><tr><td>Kyoto Protocol</td><td>1997</td><td>Greenhouse gas cuts</td></tr><tr><td>Paris Agreement</td><td>2015</td><td>Limit warming well below 2 °C</td></tr></tbody></table>"
+        "title": "Succession, biomes and hotspots",
+        "body": "<ul><li><b>Ecological succession</b>: gradual change in a community. Primary succession starts on bare rock (pioneers: lichens); secondary succession starts where soil exists (after fire or farming). It ends in a stable <b>climax community</b>.</li><li><b>Ecotone</b>: a transition zone between two ecosystems (like a mangrove between land and sea). <b>Niche</b>: a species' role in its habitat.</li><li><b>Keystone species</b> have a large effect on their ecosystem (tiger, fig tree). <b>Indicator species</b> show environmental health (lichens are sensitive to sulphur dioxide). <b>Flagship species</b> draw public support (tiger, panda).</li><li><b>Biomes</b>: tropical rainforests have the richest biodiversity; others are deserts, grasslands, taiga (coniferous) and tundra.</li><li>India is one of 17 <b>megadiverse</b> countries and has parts of 4 of the world's biodiversity <b>hotspots</b>: the Himalaya, Indo-Burma, the Western Ghats and Sri Lanka, and Sundaland (Nicobar Islands).</li><li>Afforestation reduces floods and soil erosion and keeps the ecosystem in balance.</li></ul>"
       },
       {
-        "title": "Protected areas and wildlife projects",
-        "body": "<table><thead><tr><th>Place</th><th>Known for</th></tr></thead><tbody><tr><td>Jim Corbett NP (Uttarakhand)</td><td>India's first national park, 1936 (as Hailey NP)</td></tr><tr><td>Kaziranga NP (Assam)</td><td>One-horned rhinoceros</td></tr><tr><td>Gir NP (Gujarat)</td><td>Asiatic lion — Gir region is its only wild home</td></tr><tr><td>Sundarbans (West Bengal)</td><td>Mangroves, Royal Bengal tiger</td></tr><tr><td>Silent Valley (Kerala)</td><td>Tropical evergreen forest, lion-tailed macaque</td></tr></tbody></table><ul><li><b>Project Tiger</b>: 1973. <b>Project Elephant</b>: 1992.</li><li><b>Wildlife (Protection) Act</b>: 1972. <b>Environment (Protection) Act</b>: 1986, passed after the Bhopal gas tragedy (1984, methyl isocyanate).</li><li><b>Chipko Movement</b> (1973, Uttarakhand): people hugged trees to stop felling; linked with Sunderlal Bahuguna.</li><li>India has parts of <b>4 biodiversity hotspots</b>: Himalaya, Western Ghats–Sri Lanka, Indo-Burma, Sundaland.</li></ul>"
+        "title": "Biodiversity and threatened species",
+        "body": "<p><b>IUCN Red List</b> categories, from worst: Extinct, Extinct in the Wild, Critically Endangered, Endangered, Vulnerable, Near Threatened, Least Concern. The Red List is kept by the IUCN (Gland, Switzerland).</p><table><thead><tr><th>Species</th><th>Status or fact</th></tr></thead><tbody><tr><td>Great Indian Bustard</td><td>Critically Endangered; Rajasthan (Desert National Park)</td></tr><tr><td>Forest owlet</td><td>Endemic to central India; Endangered since 2018 (earlier Critically Endangered)</td></tr><tr><td>Tiger</td><td>Endangered; national animal</td></tr><tr><td>One-horned rhinoceros</td><td>Vulnerable; Kaziranga</td></tr><tr><td>Snow leopard</td><td>Vulnerable; Himalayas</td></tr><tr><td>Ganges river dolphin</td><td>Endangered; national aquatic animal</td></tr><tr><td>Nilgiri tahr; lion-tailed macaque</td><td>Endemic to the Western Ghats</td></tr><tr><td>Sangai (brow-antlered deer)</td><td>Endemic to Keibul Lamjao, Manipur</td></tr><tr><td>Hoolock gibbon</td><td>India's only ape; north-east India</td></tr><tr><td>Cheetah</td><td>Declared extinct in India in 1952; brought from Namibia to Kuno National Park (MP) in September 2022</td></tr></tbody></table><table><thead><tr><th>Project</th><th>Year</th></tr></thead><tbody><tr><td>Project Tiger</td><td>1 April 1973 (now run by the National Tiger Conservation Authority)</td></tr><tr><td>Crocodile Conservation Project</td><td>1975</td></tr><tr><td>Project Elephant</td><td>1992</td></tr><tr><td>Project Snow Leopard</td><td>2009</td></tr><tr><td>Project Dolphin</td><td>Announced 2020</td></tr><tr><td>Project Cheetah</td><td>2022</td></tr></tbody></table><p><b>In-situ</b> conservation protects species in their habitat (national parks, sacred groves). <b>Ex-situ</b> conservation is outside it (zoos, seed banks, botanical gardens).</p>"
+      },
+      {
+        "title": "Protected areas",
+        "body": "<ul><li><b>National park</b>: strict protection; no grazing or private rights. <b>Wildlife sanctuary</b>: some human activity allowed. <b>Conservation and community reserves</b> were added in 2002.</li><li><b>Biosphere reserve</b>: core, buffer and transition zones (UNESCO Man and the Biosphere programme, 1971). India's first: <b>Nilgiri (1986)</b>.</li><li>India's first national park: <b>Hailey National Park (1936)</b>, now <b>Jim Corbett</b> (Uttarakhand). Largest national park: Hemis (Ladakh). Largest tiger reserve: Nagarjunasagar-Srisailam (Andhra Pradesh).</li><li><b>Ramsar sites</b> (wetlands of international importance): India's first two (1981) were Chilika (Odisha) and Keoladeo (Rajasthan). The Sundarbans is India's largest Ramsar site. The number rises each year.</li></ul><table><thead><tr><th>Park or sanctuary</th><th>State</th><th>Known for</th></tr></thead><tbody><tr><td>Kaziranga</td><td>Assam</td><td>One-horned rhino</td></tr><tr><td>Manas</td><td>Assam</td><td>Tigers, pygmy hog, golden langur</td></tr><tr><td>Gir</td><td>Gujarat</td><td>Only home of the Asiatic lion</td></tr><tr><td>Little Rann of Kutch</td><td>Gujarat</td><td>Indian wild ass</td></tr><tr><td>Sundarbans</td><td>West Bengal</td><td>Royal Bengal tiger, mangroves</td></tr><tr><td>Ranthambore, Sariska</td><td>Rajasthan</td><td>Tigers</td></tr><tr><td>Keoladeo (Bharatpur)</td><td>Rajasthan</td><td>Birds; Siberian cranes once wintered here</td></tr><tr><td>Desert National Park</td><td>Rajasthan</td><td>Great Indian Bustard</td></tr><tr><td>Kanha</td><td>Madhya Pradesh</td><td>Barasingha (hard-ground swamp deer)</td></tr><tr><td>Bandhavgarh</td><td>Madhya Pradesh</td><td>Tigers</td></tr><tr><td>Kuno</td><td>Madhya Pradesh</td><td>Cheetahs</td></tr><tr><td>Periyar</td><td>Kerala</td><td>Elephants</td></tr><tr><td>Silent Valley</td><td>Kerala</td><td>Lion-tailed macaque</td></tr><tr><td>Eravikulam</td><td>Kerala</td><td>Nilgiri tahr</td></tr><tr><td>Bandipur, Nagarhole</td><td>Karnataka</td><td>Tigers, elephants</td></tr><tr><td>Dachigam</td><td>Jammu and Kashmir</td><td>Hangul (Kashmir stag)</td></tr><tr><td>Hemis</td><td>Ladakh</td><td>Snow leopard</td></tr><tr><td>Keibul Lamjao</td><td>Manipur</td><td>Floating park on Loktak lake; sangai deer</td></tr><tr><td>Namdapha</td><td>Arunachal Pradesh</td><td>Four big cats (tiger, leopard, snow leopard, clouded leopard)</td></tr><tr><td>Bhitarkanika</td><td>Odisha</td><td>Saltwater crocodiles, mangroves</td></tr><tr><td>Gahirmatha</td><td>Odisha</td><td>Olive ridley turtle nesting</td></tr><tr><td>Dudhwa</td><td>Uttar Pradesh</td><td>Swamp deer, tigers</td></tr><tr><td>Valley of Flowers, Nanda Devi</td><td>Uttarakhand</td><td>Alpine flowers; UNESCO site</td></tr></tbody></table>"
+      },
+      {
+        "title": "Pollution",
+        "body": "<ul><li><b>Air pollutants</b>: carbon monoxide, sulphur dioxide, nitrogen oxides, particulate matter (PM2.5, PM10), ground-level ozone, lead. India's Air Quality Index (2014) has six categories from good to severe.</li><li><b>Acid rain</b>: sulphur dioxide and nitrogen oxides form acids; rain with pH below about 5.6. It damages marble ('stone cancer' at the Taj Mahal).</li><li><b>Smog</b>: classical smog (smoke and fog, London type) and photochemical smog (ozone, PAN; sunny traffic-heavy cities).</li><li><b>Water</b>: high <b>BOD</b> (biological oxygen demand) means more organic pollution. <b>Eutrophication</b>: nitrates and phosphates cause algal blooms that use up oxygen.</li><li><b>Noise</b>: measured in decibels; long exposure above about 80 dB harms hearing.</li><li><b>Disasters</b>: Bhopal gas leak (methyl isocyanate, December 1984); Chernobyl nuclear accident (1986); Fukushima (2011).</li><li>India banned many single-use plastic items from 1 July 2022.</li></ul><table><thead><tr><th>Disease</th><th>Cause</th></tr></thead><tbody><tr><td>Minamata disease</td><td>Mercury (Japan)</td></tr><tr><td>Itai-itai disease</td><td>Cadmium (Japan)</td></tr><tr><td>Blue baby syndrome</td><td>Nitrates in drinking water</td></tr><tr><td>Fluorosis</td><td>Excess fluoride</td></tr><tr><td>Black foot disease</td><td>Arsenic in groundwater</td></tr><tr><td>Silicosis</td><td>Silica dust (mines, stone cutting)</td></tr><tr><td>Asbestosis</td><td>Asbestos fibres</td></tr></tbody></table>"
+      },
+      {
+        "title": "Climate change and the ozone layer",
+        "body": "<ul><li><b>Greenhouse gases</b>: carbon dioxide, methane, nitrous oxide, CFCs and water vapour. They trap heat and cause <b>global warming</b>, the long-term rise in Earth's surface temperature since pre-industrial times.</li><li><b>IPCC</b> (1988, set up by UNEP and WMO) assesses climate science.</li><li>The <b>ozone layer</b> is in the stratosphere and blocks ultraviolet rays. <b>CFCs</b> (from old fridges, ACs, sprays) are the main cause of ozone depletion; the 'ozone hole' forms over Antarctica. Ozone is measured in Dobson units.</li><li>India's <b>National Action Plan on Climate Change</b> (2008) has eight missions, including the National Solar Mission and the Green India Mission.</li><li>At COP26 (2021) India announced a target of <b>net zero by 2070</b>.</li><li>Carbon sequestration stores carbon (forests, oceans, soil); a carbon credit allows one tonne of CO<sub>2</sub> to be emitted.</li></ul>"
+      },
+      {
+        "title": "Conventions and summits",
+        "body": "<table><thead><tr><th>Convention or summit</th><th>Year</th><th>Purpose</th></tr></thead><tbody><tr><td>Ramsar Convention (Iran)</td><td>1971</td><td>Wetlands</td></tr><tr><td>Stockholm Conference</td><td>1972</td><td>First UN environment conference; UNEP set up</td></tr><tr><td>CITES</td><td>1973</td><td>Trade in endangered species</td></tr><tr><td>Vienna Convention</td><td>1985</td><td>Ozone layer framework</td></tr><tr><td>Montreal Protocol</td><td>1987</td><td>Phase out ozone-depleting substances; Kigali Amendment (2016) covers HFCs</td></tr><tr><td>Basel Convention</td><td>1989</td><td>Hazardous waste across borders</td></tr><tr><td>Rio Earth Summit</td><td>1992</td><td>UNFCCC (climate), Convention on Biological Diversity, Agenda 21</td></tr><tr><td>UNCCD</td><td>1994</td><td>Desertification</td></tr><tr><td>Kyoto Protocol</td><td>1997 (in force 2005)</td><td>Binding emission cuts for developed countries</td></tr><tr><td>Cartagena Protocol</td><td>2000</td><td>Biosafety (GM organisms)</td></tr><tr><td>Stockholm Convention</td><td>2001</td><td>Persistent organic pollutants</td></tr><tr><td>Nagoya Protocol</td><td>2010</td><td>Sharing benefits from genetic resources</td></tr><tr><td>Minamata Convention</td><td>2013</td><td>Mercury</td></tr><tr><td>Paris Agreement (COP21)</td><td>2015</td><td>Keep warming well below 2 °C, aim for 1.5 °C</td></tr><tr><td>Kunming-Montreal framework</td><td>2022</td><td>Protect 30% of land and sea by 2030</td></tr></tbody></table><p><b>Climate COPs</b> under the UNFCCC: first COP in Berlin (1995); COP26 Glasgow (2021); COP27 Sharm el-Sheikh (2022); COP28 Dubai (2023); COP29 Baku (2024); COP30 Belém, Brazil (2025).</p>"
+      },
+      {
+        "title": "Organisations",
+        "body": "<table><thead><tr><th>Body</th><th>Fact</th></tr></thead><tbody><tr><td>UNEP</td><td>1972; Nairobi</td></tr><tr><td>IUCN</td><td>1948; Gland, Switzerland; Red List</td></tr><tr><td>WWF</td><td>1961; Gland; giant panda logo</td></tr><tr><td>Greenpeace</td><td>Amsterdam</td></tr><tr><td>IPCC</td><td>1988; Geneva</td></tr><tr><td>International Solar Alliance</td><td>2015, launched by India and France; HQ Gurugram</td></tr><tr><td>National Green Tribunal</td><td>2010; New Delhi</td></tr><tr><td>Central Pollution Control Board</td><td>1974 (under the Water Act)</td></tr><tr><td>National Biodiversity Authority</td><td>2003; Chennai</td></tr><tr><td>Wildlife Institute of India; Forest Survey of India; Forest Research Institute</td><td>Dehradun</td></tr><tr><td>Bombay Natural History Society</td><td>1883; Mumbai</td></tr></tbody></table>"
+      },
+      {
+        "title": "Laws, movements and days",
+        "body": "<table><thead><tr><th>Indian law</th><th>Year</th></tr></thead><tbody><tr><td>Indian Forest Act</td><td>1927</td></tr><tr><td>Wildlife (Protection) Act</td><td>1972</td></tr><tr><td>Water (Prevention and Control of Pollution) Act</td><td>1974</td></tr><tr><td>Forest (Conservation) Act</td><td>1980</td></tr><tr><td>Air (Prevention and Control of Pollution) Act</td><td>1981</td></tr><tr><td>Environment (Protection) Act (after the Bhopal disaster)</td><td>1986</td></tr><tr><td>Biological Diversity Act</td><td>2002</td></tr><tr><td>Forest Rights Act</td><td>2006</td></tr><tr><td>National Green Tribunal Act</td><td>2010</td></tr></tbody></table><p>The Constitution: Article 48A (state shall protect the environment) and Article 51A(g) (citizens' duty), both added by the 42nd Amendment (1976).</p><table><thead><tr><th>Movement</th><th>Where, when, who</th></tr></thead><tbody><tr><td>Bishnoi sacrifice</td><td>Khejarli, Rajasthan, 1730; Amrita Devi</td></tr><tr><td>Chipko</td><td>Chamoli, Uttarakhand, 1973; Sunderlal Bahuguna, Chandi Prasad Bhatt, Gaura Devi</td></tr><tr><td>Silent Valley</td><td>Kerala, 1970s; stopped a dam; national park in 1984</td></tr><tr><td>Appiko</td><td>Karnataka, 1983; Panduranga Hegde</td></tr><tr><td>Narmada Bachao Andolan</td><td>1985; Medha Patkar, Baba Amte</td></tr></tbody></table><p><b>People</b>: Salim Ali, the 'Birdman of India'; Rachel Carson wrote <i>Silent Spring</i> (1962) on pesticides.</p><p><b>Days</b>: World Wetlands Day 2 February; World Wildlife Day 3 March; International Day of Forests 21 March; World Water Day 22 March; Earth Day 22 April; Biodiversity Day 22 May; World Environment Day 5 June; World Oceans Day 8 June; International Tiger Day 29 July; World Ozone Day 16 September; National Pollution Control Day 2 December; World Soil Day 5 December.</p>"
       }
     ],
     "varieties": [
       {
-        "type": "ecology-basics",
-        "name": "Ecology basics",
-        "how": "Place each organism at its trophic level and apply the 10% law.",
-        "example": { "q": "If plants trap 10,000 J, how much energy reaches the secondary consumer?", "steps": ["Primary consumer: 10% of 10,000 = 1,000 J", "Secondary consumer: 10% of 1,000 = 100 J"], "answer": "100 J" }
+        "type": "ecology-ecosystems",
+        "name": "Ecology and ecosystems",
+        "how": "Learn who coined which term, the trophic levels, and the 10% law. For 10% questions, divide by 10 for each step up.",
+        "example": {
+          "q": "Producers trap 20,000 J. By the 10% law, how much reaches secondary consumers?",
+          "steps": [
+            "Primary consumers get 10%: 2,000 J.",
+            "Secondary consumers get 10% of that: 200 J."
+          ],
+          "answer": "200 J"
+        }
       },
       {
-        "type": "pollution-conventions",
-        "name": "Pollution and conventions",
-        "how": "Link each pollutant to its effect and each agreement to its year and subject.",
-        "example": { "q": "The Montreal Protocol deals with:", "steps": ["1987 agreement", "Phases out CFCs and other ozone-depleting substances"], "answer": "Protection of the ozone layer" }
+        "type": "biodiversity-wildlife",
+        "name": "Biodiversity and wildlife",
+        "how": "Learn the Red List order and a few Indian species in each category, plus project names with years.",
+        "example": {
+          "q": "Which endemic owl of central India was moved to Endangered on the IUCN Red List in 2018?",
+          "steps": [
+            "The bird was thought extinct until it was found again in 1997.",
+            "It is the forest owlet, earlier Critically Endangered."
+          ],
+          "answer": "Forest owlet"
+        }
       },
       {
         "type": "protected-areas",
-        "name": "National parks and projects",
-        "how": "Pair each park with its state and star animal.",
-        "example": { "q": "Kaziranga National Park is famous for:", "steps": ["Kaziranga is in Assam", "Home of the one-horned rhinoceros"], "answer": "One-horned rhinoceros" }
+        "name": "National parks and protected areas",
+        "how": "Learn park, state and signature animal as a set. Lions only in Gir; rhinos in Kaziranga; hangul in Dachigam; sangai in Keibul Lamjao.",
+        "example": {
+          "q": "Gir National Park is famous for which animal?",
+          "steps": [
+            "Gir is in Gujarat.",
+            "It is the only wild home of the Asiatic lion."
+          ],
+          "answer": "Asiatic lion"
+        }
+      },
+      {
+        "type": "pollution-climate",
+        "name": "Pollution and climate change",
+        "how": "Link each pollutant to its source and effect. For pollution diseases, learn the metal or chemical behind each.",
+        "example": {
+          "q": "Minamata disease is caused by poisoning from:",
+          "steps": [
+            "The disease broke out in Minamata, Japan.",
+            "Factory waste put mercury into fish eaten by people."
+          ],
+          "answer": "Mercury"
+        }
+      },
+      {
+        "type": "conventions-bodies",
+        "name": "Environmental conventions and bodies",
+        "how": "Learn each treaty's year and one-word purpose: Ramsar wetlands, Montreal ozone, Kyoto emissions, Basel waste, Cartagena GMOs.",
+        "example": {
+          "q": "Which agreement protects the ozone layer?",
+          "steps": [
+            "Kyoto deals with greenhouse emissions.",
+            "The Montreal Protocol (1987) phases out ozone-depleting substances."
+          ],
+          "answer": "Montreal Protocol"
+        }
+      },
+      {
+        "type": "laws-movements",
+        "name": "Environmental laws and movements",
+        "how": "Learn each Act with its year and trigger, and each movement with place, year and leader.",
+        "example": {
+          "q": "The Environment (Protection) Act was passed in 1986 after which event?",
+          "steps": [
+            "It is an umbrella law passed soon after a major industrial disaster.",
+            "That disaster was the Bhopal gas leak of December 1984."
+          ],
+          "answer": "Bhopal gas tragedy"
+        }
       }
     ],
     "tips": [
-      "Agreements in year order: Ramsar 1971 → Montreal 1987 → Rio 1992 → Kyoto 1997 → Paris 2015.",
-      "Gir = lions, Kaziranga = rhinos, Sundarbans = tigers in mangroves.",
-      "Minamata = Mercury (both start with M)."
+      "Red List order: 'Every Elephant Can't Easily Visit New Lands' gives Extinct, Extinct in Wild, Critically Endangered, Endangered, Vulnerable, Near Threatened, Least Concern.",
+      "10% law: each step up the food chain, drop one zero.",
+      "Treaty hooks: Ramsar wetlands (1971), Montreal ozone (1987), Kyoto carbon (1997), Paris 1.5 °C (2015).",
+      "Pollution diseases: Minamata mercury (M-M), Itai-itai cadmium, blue baby nitrate.",
+      "Water Act 1974 comes before the Air Act 1981; EPA 1986 follows Bhopal 1984.",
+      "Corbett (Hailey, 1936) was India's first national park; Nilgiri (1986) was the first biosphere reserve."
     ],
     "traps": [
-      "Montreal is about ozone; Kyoto and Paris are about climate (greenhouse gases).",
-      "The energy pyramid is always upright; a pyramid of numbers or biomass may be inverted.",
-      "Jim Corbett, not Kaziranga, was India's first national park."
+      "The ozone layer is in the stratosphere; ground-level ozone is a pollutant.",
+      "Montreal Protocol is about the ozone layer, not climate; Kyoto and Paris are about climate.",
+      "A national park is stricter than a wildlife sanctuary.",
+      "The energy pyramid is never inverted, but number and biomass pyramids can be.",
+      "Haeckel coined 'ecology'; Tansley coined 'ecosystem'."
     ]
   },
   "questions": [
-    { "id": "g-environment-001", "rev": 1, "topic": "g-environment", "type": "protected-areas", "level": 1, "q": "Gir National Park is famous for which animal?", "options": ["Bengal tiger", "Asiatic lion", "One-horned rhinoceros", "Snow leopard"], "answer": 1, "solution": "Gir National Park and the surrounding Gir forest region of Gujarat form the only wild home of the Asiatic lion.<br><b>Memory hook:</b> Gir — 'Gir-r-r' is the lion's roar.", "source": "test-data" },
-    { "id": "g-environment-002", "rev": 1, "topic": "g-environment", "type": "ecology-basics", "level": 1, "q": "In an ecosystem, green plants are called:", "options": ["Producers", "Primary consumers", "Decomposers", "Secondary consumers"], "answer": 0, "solution": "Green plants make their own food by photosynthesis, so they are producers.<br><b>Memory hook:</b> Plants Produce.", "source": "test-data" },
-    { "id": "g-environment-003", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 1, "q": "Which gas is mainly responsible for depletion of the ozone layer?", "options": ["Carbon dioxide", "Methane", "Chlorofluorocarbons (CFCs)", "Nitrogen"], "answer": 2, "solution": "CFCs release chlorine in the stratosphere, which breaks down ozone. They were used in fridges and sprays.<br><b>Memory hook:</b> Chlorine from CFCs 'chews' ozone.", "source": "test-data" },
-    { "id": "g-environment-004", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 2, "q": "Minamata disease is caused by poisoning from:", "options": ["Lead", "Cadmium", "Arsenic", "Mercury"], "answer": 3, "solution": "Minamata disease (Japan) was caused by mercury in fish from polluted water. Itai-itai is due to cadmium.<br><b>Memory hook:</b> <b>M</b>inamata = <b>M</b>ercury.", "source": "test-data" },
-    { "id": "g-environment-005", "rev": 1, "topic": "g-environment", "type": "protected-areas", "level": 2, "q": "Which was the first national park of India?", "options": ["Jim Corbett National Park", "Kaziranga National Park", "Kanha National Park", "Gir National Park"], "answer": 0, "solution": "Jim Corbett National Park (Uttarakhand) was set up in 1936 as Hailey National Park — India's first. Project Tiger was launched here in 1973.<br><b>Memory hook:</b> Corbett: first park, first Project Tiger reserve.", "source": "test-data" },
-    { "id": "g-environment-006", "rev": 1, "topic": "g-environment", "type": "ecology-basics", "level": 2, "q": "According to Lindeman's 10% law, if producers trap 20,000 J of energy, how much will reach the secondary consumers?", "img": "ga/env-energy-pyramid.svg", "options": ["2,000 J", "200 J", "20 J", "10,000 J"], "answer": 1, "solution": "Primary consumers get 10% of 20,000 = 2,000 J. Secondary consumers get 10% of 2,000 = 200 J.<br><b>Memory hook:</b> Drop one zero at each step up the pyramid.", "source": "test-data" },
-    { "id": "g-environment-007", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 3, "q": "Which international agreement is specifically aimed at protecting the ozone layer?", "options": ["Kyoto Protocol", "Ramsar Convention", "Montreal Protocol", "Paris Agreement"], "answer": 2, "solution": "The Montreal Protocol (1987) phases out ozone-depleting substances such as CFCs. Kyoto and Paris deal with greenhouse gases; Ramsar with wetlands.<br><b>Memory hook:</b> 'O' in Ozone — the 'O' in mOntreal.", "source": "test-data" },
-    { "id": "g-environment-008", "rev": 1, "topic": "g-environment", "type": "pollution-conventions", "level": 3, "q": "The Environment (Protection) Act of India was passed in 1986 after which disaster?", "options": ["Chernobyl nuclear accident", "Bhopal gas tragedy", "Minamata poisoning", "Kedarnath floods"], "answer": 1, "solution": "The Bhopal gas tragedy (December 1984, methyl isocyanate leak from Union Carbide) led to the Environment (Protection) Act, 1986.<br><b>Memory hook:</b> Bhopal '84 → Act '86.", "source": "test-data" }
+    {
+      "id": "g-environment-001",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "protected-areas",
+      "level": 1,
+      "q": "Gir National Park is famous for which animal?",
+      "options": [
+        "Bengal tiger",
+        "Asiatic lion",
+        "One-horned rhinoceros",
+        "Snow leopard"
+      ],
+      "answer": 1,
+      "solution": "Gir National Park and the surrounding Gir forest region of Gujarat form the only wild home of the Asiatic lion.<br><b>Memory hook:</b> Gir — 'Gir-r-r' is the lion's roar.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-environment-002",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "ecology-ecosystems",
+      "level": 1,
+      "q": "In an ecosystem, green plants are called:",
+      "options": [
+        "Producers",
+        "Primary consumers",
+        "Decomposers",
+        "Secondary consumers"
+      ],
+      "answer": 0,
+      "solution": "Green plants make their own food by photosynthesis, so they are producers.<br><b>Memory hook:</b> Plants Produce.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-environment-003",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "pollution-climate",
+      "level": 1,
+      "q": "Which gas is mainly responsible for depletion of the ozone layer?",
+      "options": [
+        "Carbon dioxide",
+        "Methane",
+        "Chlorofluorocarbons (CFCs)",
+        "Nitrogen"
+      ],
+      "answer": 2,
+      "solution": "CFCs release chlorine in the stratosphere, which breaks down ozone. They were used in fridges and sprays.<br><b>Memory hook:</b> Chlorine from CFCs 'chews' ozone.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-environment-004",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "pollution-climate",
+      "level": 2,
+      "q": "Minamata disease is caused by poisoning from:",
+      "options": [
+        "Lead",
+        "Cadmium",
+        "Arsenic",
+        "Mercury"
+      ],
+      "answer": 3,
+      "solution": "Minamata disease (Japan) was caused by mercury in fish from polluted water. Itai-itai is due to cadmium.<br><b>Memory hook:</b> <b>M</b>inamata = <b>M</b>ercury.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-environment-005",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "protected-areas",
+      "level": 2,
+      "q": "Which was the first national park of India?",
+      "options": [
+        "Jim Corbett National Park",
+        "Kaziranga National Park",
+        "Kanha National Park",
+        "Gir National Park"
+      ],
+      "answer": 0,
+      "solution": "Jim Corbett National Park (Uttarakhand) was set up in 1936 as Hailey National Park — India's first. Project Tiger was launched here in 1973.<br><b>Memory hook:</b> Corbett: first park, first Project Tiger reserve.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-environment-006",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "ecology-ecosystems",
+      "level": 2,
+      "q": "According to Lindeman's 10% law, if producers trap 20,000 J of energy, how much will reach the secondary consumers?",
+      "img": "ga/env-energy-pyramid.svg",
+      "options": [
+        "2,000 J",
+        "200 J",
+        "20 J",
+        "10,000 J"
+      ],
+      "answer": 1,
+      "solution": "Primary consumers get 10% of 20,000 = 2,000 J. Secondary consumers get 10% of 2,000 = 200 J.<br><b>Memory hook:</b> Drop one zero at each step up the pyramid.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-environment-007",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "conventions-bodies",
+      "level": 3,
+      "q": "Which international agreement is specifically aimed at protecting the ozone layer?",
+      "options": [
+        "Kyoto Protocol",
+        "Ramsar Convention",
+        "Montreal Protocol",
+        "Paris Agreement"
+      ],
+      "answer": 2,
+      "solution": "The Montreal Protocol (1987) phases out ozone-depleting substances such as CFCs. Kyoto and Paris deal with greenhouse gases; Ramsar with wetlands.<br><b>Memory hook:</b> 'O' in Ozone — the 'O' in mOntreal.",
+      "source": "test-data"
+    },
+    {
+      "id": "g-environment-008",
+      "rev": 1,
+      "topic": "g-environment",
+      "type": "laws-movements",
+      "level": 3,
+      "q": "The Environment (Protection) Act of India was passed in 1986 after which disaster?",
+      "options": [
+        "Chernobyl nuclear accident",
+        "Bhopal gas tragedy",
+        "Minamata poisoning",
+        "Kedarnath floods"
+      ],
+      "answer": 1,
+      "solution": "The Bhopal gas tragedy (December 1984, methyl isocyanate leak from Union Carbide) led to the Environment (Protection) Act, 1986.<br><b>Memory hook:</b> Bhopal '84 → Act '86.",
+      "source": "test-data"
+    }
   ],
   "flashcards": [
-    { "id": "fc-g-environment-1", "front": "Kaziranga National Park — state and animal", "back": "Assam; one-horned rhinoceros", "deck": "ga-facts" },
-    { "id": "fc-g-environment-2", "front": "Project Tiger launched in", "back": "1973", "deck": "ga-facts" },
-    { "id": "fc-g-environment-3", "front": "Ramsar Convention is about", "back": "Wetlands (1971)", "deck": "ga-facts" },
-    { "id": "fc-g-environment-4", "front": "Gas leaked in the Bhopal tragedy", "back": "Methyl isocyanate (MIC)", "deck": "ga-facts" },
-    { "id": "fc-g-environment-5", "front": "Wildlife (Protection) Act year", "back": "1972", "deck": "ga-facts" },
-    { "id": "fc-g-environment-6", "front": "Gases causing acid rain", "back": "Sulphur dioxide and nitrogen oxides", "deck": "ga-facts" },
-    { "id": "fc-g-environment-7", "front": "Itai-itai disease is caused by", "back": "Cadmium", "deck": "ga-facts" },
-    { "id": "fc-g-environment-8", "front": "Chipko Movement", "back": "1973, Uttarakhand — tree-hugging to stop felling", "deck": "ga-facts" },
-    { "id": "fc-g-environment-9", "front": "Number of biodiversity hotspots with parts in India", "back": "4 (Himalaya, Western Ghats–Sri Lanka, Indo-Burma, Sundaland)", "deck": "ga-facts" }
+    {
+      "id": "fc-g-environment-1",
+      "front": "Kaziranga National Park — state and animal",
+      "back": "Assam; one-horned rhinoceros",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-2",
+      "front": "Project Tiger launched in",
+      "back": "1973",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-3",
+      "front": "Ramsar Convention is about",
+      "back": "Wetlands (1971)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-4",
+      "front": "Gas leaked in the Bhopal tragedy",
+      "back": "Methyl isocyanate (MIC)",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-5",
+      "front": "Wildlife (Protection) Act year",
+      "back": "1972",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-6",
+      "front": "Gases causing acid rain",
+      "back": "Sulphur dioxide and nitrogen oxides",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-7",
+      "front": "Itai-itai disease is caused by",
+      "back": "Cadmium",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-8",
+      "front": "Chipko Movement",
+      "back": "1973, Uttarakhand — tree-hugging to stop felling",
+      "deck": "ga-facts"
+    },
+    {
+      "id": "fc-g-environment-9",
+      "front": "Number of biodiversity hotspots with parts in India",
+      "back": "4 (Himalaya, Western Ghats–Sri Lanka, Indo-Burma, Sundaland)",
+      "deck": "ga-facts"
+    }
   ]
 }
