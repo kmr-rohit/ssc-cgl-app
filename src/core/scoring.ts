@@ -1,9 +1,9 @@
 // Mock scoring, pure functions.
 import { EXAMS } from './syllabus';
-import type { ExamId, MockScore, MockSectionState, Question } from './types';
+import type { ExamId, MockRules, MockScore, MockSectionState, Question } from './types';
 
-export function scoreSections(exam: ExamId, sections: MockSectionState[], lookup: (id: string) => Question | undefined): MockScore {
-  const e = EXAMS[exam];
+export function scoreSections(exam: ExamId, sections: MockSectionState[], lookup: (id: string) => Question | undefined, rules?: MockRules): MockScore {
+  const e = { ...EXAMS[exam], ...(rules ? { marks: rules.marks, negative: rules.negative } : {}) };
   const out: MockScore = { total: 0, max: 0, sections: [] };
   for (const s of sections) {
     const def = e.sections.find((x) => x.subject === s.subject);

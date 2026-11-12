@@ -93,3 +93,20 @@ export function confirmDialog(message: string, okLabel = 'Yes'): Promise<boolean
     d.showModal();
   });
 }
+
+/** Ask for a short piece of text (e.g. the name friends see). Resolves null if cancelled. */
+export function promptDialog(message: string, value = '', okLabel = 'OK'): Promise<string | null> {
+  return new Promise((resolve) => {
+    const d = document.createElement('dialog');
+    d.innerHTML = `<form method="dialog" class="stack"><label class="field"><span></span><input type="text" maxlength="40" required></label>
+      <div class="row" style="justify-content:flex-end"><button class="btn" value="no" formnovalidate>Cancel</button><button class="btn primary" value="yes"></button></div></form>`;
+    d.querySelector('span')!.textContent = message;
+    const input = d.querySelector('input')!;
+    input.value = value;
+    d.querySelector('.primary')!.textContent = okLabel;
+    d.addEventListener('close', () => { resolve(d.returnValue === 'yes' ? input.value.trim() || null : null); d.remove(); });
+    document.body.append(d);
+    d.showModal();
+    input.select();
+  });
+}

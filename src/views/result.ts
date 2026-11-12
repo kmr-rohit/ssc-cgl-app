@@ -7,12 +7,13 @@ import { go } from '../app/router';
 import { hydrateMock, lookup } from '../content/bank';
 import { dot, questionView } from '../ui/components';
 import { fmtMs, pct } from '../ui/html';
+import { challengePanel, hydrateChallengePanel } from './challenge';
 
 export default async function result(el: HTMLElement, [key]: string[]) {
   const m = app.mocks.get(key);
   if (!m?.score) { render(html`<div class="page"><h1>No result</h1><a class="btn" href="#/mocks">Back</a></div>`, el); return; }
   await hydrateMock(m);
-  const e = EXAMS[m.exam];
+  const e = { ...EXAMS[m.exam], ...(m.rules ? { marks: m.rules.marks, negative: m.rules.negative } : {}) };
   const sc = m.score;
   let filter: 'all' | 'wrong' | 'skipped' | 'marked' = 'wrong';
   let secIdx = 0;
@@ -41,7 +42,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
     const items = s.questionIds.map((id, i) => ({ id, i, q: lookup(id), a: s.answers[i] }))
       .filter((x) => x.q && (filter === 'all' || (filter === 'wrong' && x.a !== null && x.a !== x.q.answer) || (filter === 'skipped' && x.a === null) || (filter === 'marked' && s.marked[x.i])));
     render(html`<div class="page">
-      <div class="kicker">${e.name}, ${new Date(m.submittedAt!).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</div>
+      <div class="kicker">${m.title ?? e.name}, ${new Date(m.submittedAt!).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}</div>
       <h1><span class="hl">${sc.total.toFixed(1).replace(/\.0$/, '')}</span> / ${sc.max}</h1>
       <div class="grid" style="margin-bottom:1rem">
         ${sc.sections.map((x) => html`<div class="card">
@@ -53,7 +54,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
       </div>
       ${m.integrity && (m.integrity.leaves || m.integrity.fsExits) ? html`<p class="trap"><b>Exam discipline:</b> left the test ${m.integrity.leaves} time${m.integrity.leaves === 1 ? '' : 's'} (${Math.round(m.integrity.awayMs / 1000)}s away)${m.integrity.fsExits ? `, exited full screen ${m.integrity.fsExits} time${m.integrity.fsExits === 1 ? '' : 's'}` : ''}. In the real CBT this isn't possible, so practise staying on the screen.</p>`
         : m.integrity ? html`<p class="tip">Exam discipline: you stayed on the test the whole time.</p>` : nothing}
-      ${wrongTotal ? html`<p class="trap">Negative marking cost you <b>${(wrongTotal * e.negative).toFixed(1)}</b> marks (${wrongTotal} wrong answers).</p>` : nothing}
+      ${wrongTotal && e.negative ? html`<p class="trap">Negative marking cost you <b>${(wrongTotal * e.negative).toFixed(1)}</b> marks (${wrongTotal} wrong answers).</p>` : nothing}
       ${lostTopics.length ? html`<section class="paper" style="margin:1rem 0"><h2>Where the marks went</h2>
         ${lostTopics.map((x) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
           <a href="#/topic/${x.t}/learn">${TOPIC_MAP[x.t]?.name ?? x.t}</a>
@@ -63,6 +64,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
         <a class="btn" href="#/analysis">Full analysis</a>
         <a class="btn ghost" href="#/mocks">All mocks</a>
       </div>
+      ${challengePanel(m, () => { draw(); hydrateChallengePanel(el, m); })}
       <h2>Review answers</h2>
       <nav class="tabs">${m.sections.map((x, k) => html`<button class=${k === secIdx ? 'on' : ''} @click=${() => { secIdx = k; draw(); }}>${SUBJECTS[x.subject].short}</button>`)}</nav>
       <div class="seg" style="margin-bottom:1rem">${(['wrong', 'skipped', 'marked', 'all'] as const).map((f) => html`<button class=${filter === f ? 'on' : ''} @click=${() => { filter = f; draw(); }}>${f[0].toUpperCase() + f.slice(1)}</button>`)}</div>
@@ -72,4 +74,5 @@ export default async function result(el: HTMLElement, [key]: string[]) {
     </div>`, el);
   };
   draw();
+  hydrateChallengePanel(el, m);
 }

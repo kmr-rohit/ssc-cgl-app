@@ -73,3 +73,12 @@ describe('syllabus', () => {
     TOPICS.forEach((t) => expect(['high', 'medium', 'low']).toContain(topicPriority(t)));
   });
 });
+
+describe('scoring with custom rules', () => {
+  it('uses the mock\'s own marking when given', () => {
+    const bank: Record<string, Question> = { a: q('a', 0), b: q('b', 1) };
+    const s = scoreSections('pre', [sec('quant', ['a', 'b'], [0, 0])], (id) => bank[id], { timing: 'none', sectionMode: 'free', marks: 1, negative: 0, feedback: 'instant' });
+    expect(s.total).toBe(1);
+    expect(s.max).toBe(2);
+  });
+});

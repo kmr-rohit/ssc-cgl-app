@@ -132,14 +132,30 @@ export interface MockSectionState {
   visited: boolean[];
   msSpent: number[];
   remainingMs: number;
+  allottedMs?: number;   // time the section was given at the start (challenges reuse it)
   done: boolean;
+}
+
+/** How a mock is run. Absent = the real exam (sectional timers, locked sections, exam marking, answers at the end). */
+export interface MockRules {
+  timing: 'exam' | 'none' | 'perq';   // exam pace; no time limit; or seconds per question
+  perQSec?: number;
+  sectionMode: 'locked' | 'free';     // locked = SSC style; free = move between sections, one clock
+  marks: number;
+  negative: number;
+  feedback: 'end' | 'instant';        // instant = see the answer right after choosing
 }
 
 export interface MockRecord {
   key: string;           // e.g. "pre-2026-11-12" or "sec-quant-1731400000"
   exam: ExamId;
   kind: 'daily' | 'sectional' | 'custom';
-  title?: string;        // custom mocks
+  title?: string;        // custom mocks and challenges
+  rules?: MockRules;
+  clockMs?: number;      // free sections: time left overall; no timer: time used
+  challenge?: string;    // challenge code this mock belongs to
+  challengeOwner?: boolean;
+  challengePosted?: boolean; // my score reached the leaderboard
   seed: string;
   genVersion: number;
   status: MockStatus;

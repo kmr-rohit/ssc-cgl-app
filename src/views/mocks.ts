@@ -3,7 +3,8 @@ import { EXAMS, SUBJECTS } from '../core/syllabus';
 import { dayKey, addDays } from '../core/srs';
 import type { ExamId, MockRecord, SubjectId } from '../core/types';
 import { app } from '../app/state';
-import { go, toast } from '../app/router';
+import { dispatch, go, toast } from '../app/router';
+import { loadSavedTests, startDraft } from './builder';
 import { buildMock } from '../content/bank';
 import { confirmDialog } from '../ui/components';
 import { niceDate } from '../ui/html';
@@ -19,7 +20,8 @@ export async function openMock(key: string, make: () => Promise<MockRecord>) {
   go(`#/exam/${encodeURIComponent(key)}`);
 }
 
-export default function mocks(el: HTMLElement) {
+export default async function mocks(el: HTMLElement) {
+  const myTests = await loadSavedTests();
   const today = dayKey();
   const exams: ExamId[] = app.settings.paper2 ? ['pre', 'mains', 'stats'] : ['pre', 'mains'];
 
@@ -55,6 +57,14 @@ export default function mocks(el: HTMLElement) {
     <h2>Today's papers</h2>
     <div class="grid">${exams.map((x) => ticket(x, today))}</div>
 
+    <div class="spread" style="margin-top:1.5rem">
+      <h2 style="margin:0">Your own test</h2>
+      <a class="btn" href="#/build">Build a test</a>
+    </div>
+    <p class="small muted">Pick the subjects, topics, size and rules: weak topics only, your mistakes, no negative marking and more.</p>
+    ${myTests.length ? html`<div class="paper" style="padding:.3rem 1rem">${myTests.map((t) => html`<div class="spread" style="padding:.45rem 0;border-bottom:1px solid var(--rule)">
+      <span>${t.name}</span><button class="btn sm" @click=${() => startDraft(t.draft).catch((e) => toast((e as Error).message))}>Start</button></div>`)}</div>` : nothing}
+
     <h2 style="margin-top:1.5rem">Sectional tests</h2>
     <div class="paper">
       ${exams.map((x) => html`<div class="spread" style="padding:.4rem 0;border-bottom:1px solid var(--rule)">
@@ -73,11 +83,11 @@ export default function mocks(el: HTMLElement) {
 
     ${past.length ? html`<h2 style="margin-top:1.5rem">History</h2>
       <div class="paper">${past.map((m) => html`<div class="spread" style="padding:.45rem 0;border-bottom:1px solid var(--rule)">
-        <span><b>${EXAMS[m.exam].short}</b> ${m.kind === 'sectional' ? html`${SUBJECTS[m.sections[0]?.subject]?.short} sectional` : html`daily paper`} <span class="small muted">${niceDate(m.startedAt ?? m.updatedAt)}</span></span>
+        <span><b>${EXAMS[m.exam].short}</b> ${m.title ? m.title : m.kind === 'sectional' ? html`${SUBJECTS[m.sections[0]?.subject]?.short} sectional` : html`daily paper`} <span class="small muted">${niceDate(m.startedAt ?? m.updatedAt)}</span></span>
         <span class="row">
           ${m.status === 'submitted' ? html`<a class="btn sm" href="#/result/${encodeURIComponent(m.key)}">${m.score!.total.toFixed(1).replace(/\.0$/, '')}/${m.score!.max}</a>`
             : html`<a class="btn sm" href="#/exam/${encodeURIComponent(m.key)}">${m.status === 'in-progress' ? 'Resume' : 'Start'}</a>`}
-          ${m.status !== 'submitted' ? html`<button class="btn sm ghost" aria-label="Delete" @click=${async () => { if (await confirmDialog('Delete this unfinished mock?', 'Delete')) { await app.deleteMock(m.key); mocks(el); } }}>✕</button>` : nothing}
+          ${m.status !== 'submitted' ? html`<button class="btn sm ghost" aria-label="Delete" @click=${async () => { if (await confirmDialog('Delete this unfinished mock?', 'Delete')) { await app.deleteMock(m.key); dispatch(); } }}>✕</button>` : nothing}
         </span></div>`)}</div>` : nothing}
   </div>`, el);
 }

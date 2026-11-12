@@ -47,10 +47,18 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 ## Question bank + missing features (2026-11-12)
 - [x] Previous-year bank pipeline (`npm run pyq:build`, docs/QUESTION_BANK.md): 23,790 questions, 250 papers, images self-hosted
 - [x] Daily/sectional mocks draw from real past papers; topic practice mixes bank questions in (no separate PYQ section, owner decision)
-- [ ] Mock builder (from old app `builder.js`): what to test, which questions, rules, extras; save setups
-- [ ] Challenge a friend (Supabase: challenge code → same paper, compare scores)
+- [x] Mock builder: presets, what to test (paper/size/sections/topics), which questions (all/unseen/mistakes; exam/weak/equal spread), rules (exam pace/per-question/no timer; locked/free sections; exam/no-negative marking; answers at end/instant); save as my tests
+- [ ] Builder extras from the old app: rough sheet, exam-day mode, scheduled start, target score vs cut-off, difficulty mix, section order, pin a test to the weekly plan
+- [x] Challenge a friend: 6-letter code + share link (#/c/CODE), same paper and rules, first attempt only, leaderboard visible to participants and creator (local stack; hosted migration pending owner OK)
 - [ ] Report a mistake on every question (review queue)
 - [ ] Use real weightage from the bank (`manifest.weightage`) in syllabus text and mock allocation
+- [ ] **Sub-type classification of bank questions (needs a local model; owner will set up Ollama).** Today most bank questions carry the
+      source's broad type (e.g. "Mensuration": 627 questions; plus junk types like "Unidentified"), so "Practise by question type" can't
+      split them. Plan: new pipeline stage `pipeline/classify-types.ts`, provider-pluggable (`ollama` default, `anthropic` optional):
+      for each question, give the model the topic's variety list from our notes (e.g. q-mensuration → areas, volumes, surface areas,
+      circles…) and ask for one variety slug (JSON, constrained to the list; "other" allowed). Cache by question id + model + prompt hash
+      in `pipeline/.cache/types.jsonl` so reruns are free; spot-check a sample; build step reads the cache and writes `type`.
+      Also try the source's fine-grained `concept` field first (deterministic, free) and only send leftovers to the model.
 - [ ] Smaller ports: speed drills, revision sets, attempt-strategy report, accuracy-vs-speed chart, typing test (desktop), exam info page, video/reading links, current-affairs notebook
 
 ## M2: Accounts, sync, AI proxy

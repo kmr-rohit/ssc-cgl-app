@@ -19,7 +19,7 @@ export async function submitMock(m: MockRecord) {
   m.sections.forEach((s) => (s.done = true));
   m.status = 'submitted';
   m.submittedAt = new Date().toISOString();
-  m.score = scoreSections(m.exam, m.sections, lookup);
+  m.score = scoreSections(m.exam, m.sections, lookup, m.rules);
   const at = m.submittedAt;
   const attempts: Attempt[] = m.sections.flatMap((s) => s.questionIds.map((id, i): Attempt | null => {
     const q = lookup(id);
@@ -40,25 +40,34 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   render(html`<div class="page"><p class="muted">Loading paper…</p></div>`, el);
   await hydrateMock(m);
   const e = EXAMS[m.exam];
+  const rules = m.rules;
+  const marks = rules?.marks ?? e.marks, negative = rules?.negative ?? e.negative;
+  const free = rules?.sectionMode === 'free';
+  const untimed = rules?.timing === 'none';
+  const instant = rules?.feedback === 'instant';
+  const title = m.title ?? e.name;
+  const kindLabel = m.challenge ? 'challenge' : m.kind === 'daily' ? 'daily mock' : m.kind === 'sectional' ? 'sectional test' : 'your own test';
 
   // ---------------------------------------------------------------- instructions
   if (m.status === 'not-started') {
     await new Promise<void>((resolve) => render(html`<div class="page" style="max-width:720px">
       <div class="ticket">
-        <div class="kicker">Admit card, ${m.kind === 'daily' ? 'daily mock' : 'sectional test'}</div>
-        <h1>${e.name}</h1>
+        <div class="kicker">Admit card, ${kindLabel}</div>
+        <h1>${title}</h1>
         <dl>
           <dt>Sections</dt><dd>${m.sections.map((s) => html`${dot(s.subject)} ${SUBJECTS[s.subject].short} (${s.questionIds.length}) `)}</dd>
-          <dt>Time</dt><dd>${m.sections.map((s) => `${Math.round(s.remainingMs / 60000)} min`).join(' + ')}</dd>
-          <dt>Marking</dt><dd>+${e.marks} for correct, −${e.negative} for wrong, 0 for skipped</dd>
+          <dt>Time</dt><dd>${untimed ? 'No time limit' : free ? `${Math.round(m.sections.reduce((a, s) => a + s.remainingMs, 0) / 60000)} min in total` : m.sections.map((s) => `${Math.round(s.remainingMs / 60000)} min`).join(' + ')}</dd>
+          <dt>Marking</dt><dd>+${marks} for correct, ${negative ? `−${negative} for wrong` : 'no negative marking'}, 0 for skipped</dd>
         </dl>
         <ul class="small">
-          <li>Each section has its own timer. When it runs out, the next section starts automatically. You cannot return to a finished section.</li>
+          ${free ? html`<li>Move between sections freely. One clock for the whole test${untimed ? ', with no limit' : ''}.</li>`
+            : html`<li>Each section has its own ${untimed ? 'clock with no limit' : 'timer. When it runs out, the next section starts automatically'}. You cannot return to a finished section.</li>`}
+          ${instant ? html`<li>You see the answer and solution right after choosing. Your first choice is final.</li>` : nothing}
           <li>Palette colours: grey = not visited, red = not answered, green = answered, purple = marked for review.</li>
           <li>Questions marked for review <b>with</b> an answer are evaluated.</li>
           <li>You can pause; the timer stops and you resume from the same question.</li>
         </ul>
-        ${m.sections.some((s) => s.questionIds.length < (e.sections.find((x) => x.subject === s.subject)?.count ?? 0))
+        ${!rules && m.sections.some((s) => s.questionIds.length < (e.sections.find((x) => x.subject === s.subject)?.count ?? 0))
           ? html`<p class="chip medium">Test data is limited: some sections have fewer questions than the real paper.</p>` : nothing}
         ${app.settings.examMode ? html`<p class="small"><b>Exam mode is on:</b> the test opens full screen. Leaving the tab or full screen is counted and shown in your result. The timer keeps running while you are away.</p>` : nothing}
         <div class="row"><button class="btn primary" @click=${() => { if (app.settings.examMode) enterFullscreen(); resolve(); }}>I am ready to begin</button><a class="btn ghost" href="#/mocks">Not now</a></div>
@@ -78,20 +87,38 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   let last = performance.now();
   let dirty = false;
   const sec = () => m.sections[m.current.section];
+  // free sections share one clock; untimed tests count time used
+  if (untimed) m.clockMs ??= 0;
+  else if (free) m.clockMs ??= m.sections.reduce((a, s) => a + s.remainingMs, 0);
+  const clock = () => (untimed || free ? m.clockMs! : sec().remainingMs);
 
   const tick = () => {
     const now = performance.now();
     const d = now - last; last = now;
     const s = sec();
-    s.remainingMs -= d;
     s.msSpent[m.current.index] += d;
-    if (s.remainingMs <= 0) { s.remainingMs = 0; endSection(true); return; }
+    if (untimed) m.clockMs! += d;
+    else if (free) {
+      m.clockMs! -= d;
+      if (m.clockMs! <= 0) { m.clockMs = 0; finish(); return; }
+    } else {
+      s.remainingMs -= d;
+      if (s.remainingMs <= 0) { s.remainingMs = 0; endSection(true); return; }
+    }
     draw();
   };
   const save = () => { dirty = false; app.saveMock(m); };
   const visit = (i: number) => { m.current.index = i; sec().visited[i] = true; dirty = true; palOpen = false; draw(); };
 
+  async function finish() {
+    stop();
+    await submitMock(m);
+    go(`#/result/${encodeURIComponent(m.key)}`);
+  }
+  const switchSection = (i: number) => { if (i === m.current.section) return; m.current = { section: i, index: 0 }; sec().visited[0] = true; palOpen = false; dirty = true; draw(); };
+
   async function endSection(auto: boolean) {
+    if (free) { finish(); return; }
     const s = sec();
     s.done = true;
     if (m.current.section < m.sections.length - 1) {
@@ -101,18 +128,19 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
       save();
       toast(auto ? 'Time up. Next section started.' : 'Section submitted.');
       draw();
-    } else {
-      stop();
-      await submitMock(m);
-      go(`#/result/${encodeURIComponent(m.key)}`);
-    }
+    } else finish();
   }
 
-  const choose = (k: number) => { sec().answers[m.current.index] = k; dirty = true; draw(); };
+  const choose = (k: number) => {
+    if (instant && sec().answers[m.current.index] !== null) return;
+    sec().answers[m.current.index] = k; dirty = true;
+    if (instant) save();
+    draw();
+  };
   const next = () => { if (m.current.index < sec().questionIds.length - 1) visit(m.current.index + 1); else { palOpen = true; draw(); } };
   const saveNext = () => { save(); next(); };
   const markNext = () => { sec().marked[m.current.index] = true; save(); next(); };
-  const clear = () => { sec().answers[m.current.index] = null; sec().marked[m.current.index] = false; dirty = true; draw(); };
+  const clear = () => { if (instant) return; sec().answers[m.current.index] = null; sec().marked[m.current.index] = false; dirty = true; draw(); };
 
   const palClass = (i: number) => {
     const s = sec();
@@ -129,8 +157,10 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
         <span class="row">${examMode && !document.fullscreenElement && document.fullscreenEnabled ? html`<button class="btn sm" @click=${() => { enterFullscreen(); warning = null; draw(); }}>Full screen</button>` : nothing}
         <button class="btn sm" @click=${() => { warning = null; draw(); }}>Continue</button></span></div>` : nothing}
       <div class="exam-bar">
-        <span><b>${e.short}</b> ${SUBJECTS[s.subject].short} <span class="small">(section ${m.current.section + 1}/${m.sections.length})</span></span>
-        <span class="timer ${s.remainingMs < 60000 ? 'low' : ''}" role="timer" aria-label="Time left in section">${fmtMs(s.remainingMs)}</span>
+        ${free && m.sections.length > 1
+          ? html`<span class="sec-tabs" role="tablist">${m.sections.map((x, i) => html`<button role="tab" aria-selected=${i === m.current.section} class=${i === m.current.section ? 'on' : ''} @click=${() => switchSection(i)}>${SUBJECTS[x.subject].short}</button>`)}</span>`
+          : html`<span><b>${m.title ? '' : e.short}</b> ${SUBJECTS[s.subject].short} ${m.sections.length > 1 ? html`<span class="small">(section ${m.current.section + 1}/${m.sections.length})</span>` : nothing}</span>`}
+        <span class="timer ${!untimed && clock() < 60000 ? 'low' : ''}" role="timer" aria-label=${untimed ? 'Time used' : free ? 'Time left' : 'Time left in section'}>${untimed ? html`<span class="small">used </span>` : nothing}${fmtMs(clock())}</span>
         <span class="row">
           <button class="btn sm pal-toggle" @click=${() => { palOpen = !palOpen; draw(); }}>Palette ${answered}/${s.questionIds.length}</button>
           <button class="btn sm" @click=${pause}>Pause</button>
@@ -138,13 +168,13 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
       </div>
       <div class="exam">
         <section class="paper">
-          ${q ? questionView(q, { chosen: s.answers[m.current.index], reveal: false, onPick: choose,
-            head: html`<div class="q-head"><span>Question ${m.current.index + 1}</span><span>+${e.marks} / −${e.negative}</span></div>` })
+          ${q ? questionView(q, { chosen: s.answers[m.current.index], reveal: instant && s.answers[m.current.index] !== null, onPick: choose,
+            head: html`<div class="q-head"><span>Question ${m.current.index + 1}</span><span>+${marks}${negative ? ` / −${negative}` : ''}</span></div>` })
             : html`<p class="muted">This question could not be loaded.</p>`}
           <div class="exam-actions">
             <div class="row">
               <button class="btn" @click=${markNext}>Mark for review & next</button>
-              <button class="btn ghost" @click=${clear}>Clear response</button>
+              ${instant ? nothing : html`<button class="btn ghost" @click=${clear}>Clear response</button>`}
             </div>
             <div class="row">
               <button class="btn" ?disabled=${m.current.index === 0} @click=${() => visit(m.current.index - 1)}>Previous</button>
@@ -159,12 +189,12 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
             <span><i style="background:var(--green)"></i>Answered ${answered}</span>
             <span><i style="background:var(--red-wash);border-color:var(--red)"></i>Not answered ${s.visited.filter((v, i) => v && s.answers[i] === null).length}</span>
             <span><i></i>Not visited ${s.visited.filter((v) => !v).length}</span>
-            <span><i style="background:var(--violet)"></i>Marked ${s.marked.filter(Boolean).length}</span>
+            <span><i style="background:var(--stamp)"></i>Marked ${s.marked.filter(Boolean).length}</span>
           </div>
           <button class="btn danger" style="width:100%;margin-top:1rem" @click=${async () => {
-            const last = m.current.section === m.sections.length - 1;
+            const last = free || m.current.section === m.sections.length - 1;
             if (await confirmDialog(last ? `Submit the test? ${s.questionIds.length - answered} unanswered in this section.` : `Submit this section? You can't come back to it. ${s.questionIds.length - answered} unanswered.`, last ? 'Submit test' : 'Submit section')) endSection(false);
-          }}>${m.current.section === m.sections.length - 1 ? 'Submit test' : 'Submit section'}</button>
+          }}>${free || m.current.section === m.sections.length - 1 ? 'Submit test' : 'Submit section'}</button>
         </aside>
       </div>`, el);
   };

@@ -38,7 +38,15 @@ export function initAuth(sync: SyncedAdapter) {
   });
 }
 
-const remember = () => { try { sessionStorage.setItem(RETURN_KEY, location.hash || '#/account'); } catch { /* ignore */ } };
+/** Where to land after sign-in. A page that sends people to sign in (e.g. a challenge link) sets this first. */
+export const setReturnTo = (hash: string) => { try { sessionStorage.setItem(RETURN_KEY, hash); } catch { /* ignore */ } };
+const remember = () => {
+  try {
+    // signing in from the Account page keeps a return target set by the page that sent them there
+    if (location.hash === '#/account' && sessionStorage.getItem(RETURN_KEY)) return;
+    sessionStorage.setItem(RETURN_KEY, location.hash || '#/account');
+  } catch { /* ignore */ }
+};
 
 export async function signInWithGoogle() {
   remember();
