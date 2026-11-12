@@ -5,6 +5,12 @@ import type { ExamId, MockRecord } from '../core/types';
 import { app } from '../app/state';
 import { accBar, dot } from '../ui/components';
 import { niceDate, pct } from '../ui/html';
+import { mistakes } from '../core/mistakes';
+
+export const progressTabs = (on: 'overview' | 'mistakes') => {
+  const n = mistakes(app.attempts).length;
+  return html`<nav class="tabs"><a href="#/progress" class=${on === 'overview' ? 'on' : ''}>Overview</a><a href="#/mistakes" class=${on === 'mistakes' ? 'on' : ''}>My mistakes${n ? html` <span class="count">${n}</span>` : ''}</a></nav>`;
+};
 
 // Previous Tier 1 cut-off for reference (CGL 2025, UR, posts other than JSO/SI, normalised, out of 200).
 // Source: SSC revised Tier 1 result as reported by pw.live / careers360. Normalised marks are not directly comparable to raw mock scores.
@@ -41,7 +47,8 @@ export default function analysis(el: HTMLElement) {
     const avg = recent.length ? recent.reduce((a, m) => a + m.score!.total, 0) / recent.length : null;
 
     render(html`<div class="page">
-      <h1>Analysis</h1>
+      <h1>Progress</h1>
+      ${progressTabs('overview')}
       <div class="seg" style="margin-bottom:1rem">${(app.settings.paper2 ? ['pre', 'mains', 'stats'] : ['pre', 'mains']).map((x) => html`<button class=${exam === x ? 'on' : ''} @click=${() => { exam = x as ExamId; draw(); }}>${EXAMS[x as ExamId].short}</button>`)}</div>
       ${!app.attempts.length ? html`<div class="paper"><p>No data yet. Practise a topic or take a mock and your analysis will appear here.</p><a class="btn primary" href="#/mocks">Take a mock</a></div>` : html`
       <section class="paper" style="margin-bottom:1rem">

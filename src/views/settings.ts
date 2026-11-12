@@ -39,12 +39,12 @@ export default function settings(el: HTMLElement) {
   const draw = () => {
     const s = app.settings;
     render(html`<div class="page" style="max-width:720px">
-      <h1>Settings</h1>
+      <h1>Profile</h1>
       ${auth.enabled ? html`<a class="ticket" href="#/account" style="display:block;text-decoration:none;color:inherit;margin-bottom:1rem">
         <div class="kicker">Account & sync</div>
         <b>${auth.user ? auth.user.email : 'Sign in to sync your progress across devices'}</b></a>` : ''}
       <section class="paper stack">
-        <h2>You</h2>
+        <h2>Your exam</h2>
         <label class="field">Name<input type="text" .value=${s.name} @change=${(e: Event) => save({ name: (e.target as HTMLInputElement).value.trim().slice(0, 40) })} /></label>
         <label class="field">Main target
           <select @change=${(e: Event) => save({ target: (e.target as HTMLSelectElement).value as ExamId })}>
@@ -55,8 +55,8 @@ export default function settings(el: HTMLElement) {
         <label class="field">Exam date<input type="date" .value=${s.examDate ?? ''} @change=${(e: Event) => save({ examDate: (e.target as HTMLInputElement).value || null })} /></label>
         <label class="field">Study hours per day<input type="number" min="1" max="14" .value=${String(s.dailyHours)} @change=${(e: Event) => save({ dailyHours: Math.min(14, Math.max(1, Number((e.target as HTMLInputElement).value) || 3)) })} /></label>
         <label class="field">New flashcards per deck per day<input type="number" min="0" max="50" .value=${String(s.newWordsPerDay)} @change=${(e: Event) => save({ newWordsPerDay: Math.min(50, Math.max(0, Number((e.target as HTMLInputElement).value) || 0)) })} /></label>
-        <label class="row"><input type="checkbox" .checked=${s.examMode} @change=${(e: Event) => save({ examMode: (e.target as HTMLInputElement).checked })} /> Exam mode for mocks (full screen; leaving the test is counted and shown in results)</label>
-        <label class="row"><input type="checkbox" .checked=${s.paper2} @change=${(e: Event) => save({ paper2: (e.target as HTMLInputElement).checked })} /> Show Statistics (Paper 2, for JSO / SI Gr. II)</label>
+        <label class="check"><input type="checkbox" .checked=${s.examMode} @change=${(e: Event) => save({ examMode: (e.target as HTMLInputElement).checked })} /> Exam mode for mocks (full screen; leaving the test is counted and shown in results)</label>
+        <label class="check"><input type="checkbox" .checked=${s.paper2} @change=${(e: Event) => save({ paper2: (e.target as HTMLInputElement).checked })} /> Show Statistics (Paper 2, for JSO / SI Gr. II)</label>
       </section>
       <section class="paper stack" style="margin-top:1rem">
         <h2>Appearance</h2>

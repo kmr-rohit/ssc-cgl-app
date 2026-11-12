@@ -173,4 +173,5 @@ export interface Settings {
   paper2: boolean;
   newWordsPerDay: number;
   examMode: boolean;     // fullscreen + leave-tab warnings during full mocks
+  onboarded: boolean;    // finished the first-run setup
 }

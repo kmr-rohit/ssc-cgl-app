@@ -4,6 +4,7 @@ import type { Flashcard } from '../core/types';
 import { app } from '../app/state';
 import { getManifest, loadTopic } from '../content/bank';
 import { rich } from '../ui/html';
+import { setTitle } from '../app/router';
 
 const DECK_NAMES: Record<string, string> = {
   vocab: 'Vocabulary', idioms: 'Idioms & phrases', oneword: 'One-word substitution', spelling: 'Spellings',
@@ -49,6 +50,7 @@ export default async function revise(el: HTMLElement, [deckArg]: string[]) {
     return;
   }
 
+  setTitle(DECK_NAMES[deckArg] ?? 'Flashcards');
   const queue = queueFor(deckArg);
   let i = 0, flipped = false, done = 0;
   const grade = async (g: Grade) => {

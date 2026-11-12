@@ -4,25 +4,32 @@ import { render, html, svg, type TemplateResult } from 'lit-html';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type View = (el: HTMLElement, params: string[]) => any;
 
-interface Route { pattern: RegExp; nav: string; view: () => Promise<View> }
+interface Route { pattern: RegExp; nav: string; title: string; parent: string | null; view: () => Promise<View> }
 const routes: Route[] = [];
 let cleanup: (() => void) | void;
 
-export function route(path: string, nav: string, view: () => Promise<View>) {
+/**
+ * @param nav     which bottom tab is highlighted ('' = none, e.g. Profile)
+ * @param title   top-bar title (views may override with setTitle)
+ * @param parent  where Back goes when there is no history; null = a root tab (no Back button)
+ */
+export function route(path: string, nav: string, title: string, parent: string | null, view: () => Promise<View>) {
   const pattern = new RegExp('^' + path.replace(/:\w+\??/g, (m) => (m.endsWith('?') ? '?([^/]*)' : '([^/]+)')) + '/?$');
-  routes.push({ pattern, nav, view });
+  routes.push({ pattern, nav, title, parent, view });
 }
 
 export const go = (hash: string) => { location.hash = hash; };
 
+const I = (d: TemplateResult) => d;
 export const NAV: { id: string; label: string; href: string; icon: TemplateResult }[] = [
-  { id: 'today', label: 'Today', href: '#/', icon: svg`<path d="M4 10l8-6 8 6v10H4z" fill="none" stroke="currentColor" stroke-width="2"/>` },
-  { id: 'syllabus', label: 'Syllabus', href: '#/syllabus', icon: svg`<path d="M5 4h11l3 3v13H5z M9 9h7 M9 13h7 M9 17h4" fill="none" stroke="currentColor" stroke-width="2"/>` },
-  { id: 'mocks', label: 'Mocks', href: '#/mocks', icon: svg`<path d="M4 6h16v12H4z M4 10h16 M8 14h4" fill="none" stroke="currentColor" stroke-width="2"/>` },
-  { id: 'revise', label: 'Revise', href: '#/revise', icon: svg`<path d="M6 5h12v14H6z M9 3v4 M15 3v4 M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2"/>` },
-  { id: 'analysis', label: 'Analysis', href: '#/analysis', icon: svg`<path d="M4 20V10 M10 20V4 M16 20v-7 M22 20H2" fill="none" stroke="currentColor" stroke-width="2"/>` },
-  { id: 'settings', label: 'Settings', href: '#/settings', icon: svg`<circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3 M12 19v3 M2 12h3 M19 12h3 M5 5l2 2 M17 17l2 2 M5 19l2-2 M17 7l2-2" stroke="currentColor" stroke-width="2"/>` },
+  { id: 'today', label: 'Today', href: '#/', icon: I(svg`<path d="M4 10l8-6 8 6v10H4z M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>`) },
+  { id: 'roadmap', label: 'Roadmap', href: '#/roadmap', icon: I(svg`<path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2z M9 4v14 M15 6v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>`) },
+  { id: 'study', label: 'Study', href: '#/study', icon: I(svg`<path d="M4 5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4z M20 5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>`) },
+  { id: 'mocks', label: 'Mocks', href: '#/mocks', icon: I(svg`<path d="M5 3h14v18H5z M8 8h8 M8 12h8 M8 16h5" fill="none" stroke="currentColor" stroke-width="2"/>`) },
+  { id: 'progress', label: 'Progress', href: '#/progress', icon: I(svg`<path d="M4 20V10 M10 20V4 M16 20v-7 M22 20H2" fill="none" stroke="currentColor" stroke-width="2"/>`) },
 ];
+
+const AVATAR = svg`<circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2"/>`;
 
 function renderNav(active: string) {
   const t = html`${NAV.map((n) => html`<a href=${n.href} class=${n.id === active ? 'on' : ''} aria-current=${n.id === active ? 'page' : 'false'}>
@@ -30,6 +37,27 @@ function renderNav(active: string) {
   render(t, document.getElementById('rail-nav')!);
   render(t, document.getElementById('tabbar')!);
 }
+
+let current: Route | null = null;
+let titleOverride: string | null = null;
+let arrivedInApp = false; // true once we've navigated at least once inside the app (history.back is safe)
+
+function renderTopbar() {
+  const el = document.getElementById('topbar');
+  if (!el || !current) return;
+  const title = titleOverride ?? current.title;
+  const back = () => { if (arrivedInApp && history.length > 1) history.back(); else go(current!.parent ?? '#/'); };
+  render(html`
+    ${current.parent !== null
+      ? html`<button class="tb-back" aria-label="Back" @click=${back}><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`
+      : html`<span class="tb-brand">CGL <b>Prep</b></span>`}
+    <div class="tb-title" aria-hidden="true">${current.parent !== null ? title : ''}</div>
+    <a class="tb-avatar" href="#/profile" aria-label="Profile and settings"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">${AVATAR}</svg></a>`, el);
+  document.title = title === 'Today' ? 'CGL Prep' : `${title} · CGL Prep`;
+}
+
+/** Views call this to show a specific title (e.g. the topic name). */
+export function setTitle(t: string) { titleOverride = t; renderTopbar(); }
 
 export async function dispatch() {
   const main = document.getElementById('main')!;
@@ -39,7 +67,10 @@ export async function dispatch() {
   for (const r of routes) {
     const m = path.match(r.pattern);
     if (!m) continue;
+    if (current) arrivedInApp = true;
+    current = r; titleOverride = null;
     renderNav(r.nav);
+    renderTopbar();
     document.body.dataset.route = r.nav;
     window.scrollTo(0, 0);
     try {

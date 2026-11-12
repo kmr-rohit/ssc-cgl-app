@@ -4,6 +4,7 @@ import { TARGET_SEC } from '../core/analysis';
 import type { Attempt, Question } from '../core/types';
 import { app } from '../app/state';
 import { session } from '../app/session';
+import { setTitle } from '../app/router';
 import { lookup, practiceSet, topicOfId, loadTopic } from '../content/bank';
 import { uid } from '../data/storage';
 import { questionView, stamp } from '../ui/components';
@@ -13,6 +14,7 @@ export default async function practice(el: HTMLElement) {
   const cfg = session.practice;
   if (!cfg) { location.hash = '#/syllabus'; return; }
   const t = TOPIC_MAP[cfg.topic];
+  setTitle(cfg.title ?? t?.name ?? 'Practice');
   render(html`<div class="page"><p class="muted">Preparing questions…</p></div>`, el);
 
   let qs: Question[];

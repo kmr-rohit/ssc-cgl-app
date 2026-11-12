@@ -10,10 +10,10 @@ export function renderAccountBadge(sync: SyncedAdapter, auth: typeof Auth) {
     const u = auth.user;
     el.replaceChildren();
     const b = document.createElement('b');
-    b.textContent = u ? (u.email ?? 'Signed in') : 'Sign in';
+    b.textContent = u ? (u.email ?? 'Signed in') : 'Profile';
     const s = document.createElement('span');
     s.className = 'muted';
-    s.textContent = u ? syncText(sync.status) : 'to sync across devices';
+    s.textContent = u ? syncText(sync.status) : 'Sign in to sync · settings';
     el.append(b, s);
   };
   auth.onChange(draw);

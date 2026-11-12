@@ -2,7 +2,7 @@ import { html, render, nothing } from 'lit-html';
 import { LEVELS, SUBJECTS, TOPIC_MAP } from '../core/syllabus';
 import type { Level } from '../core/types';
 import { app } from '../app/state';
-import { go } from '../app/router';
+import { go, setTitle } from '../app/router';
 import { session } from '../app/session';
 import { loadTopic, typesOf } from '../content/bank';
 import { accBar, dot, priorityChip, weightChips } from '../ui/components';
@@ -12,6 +12,7 @@ export default async function topicView(el: HTMLElement, [id, tabArg]: string[])
   const t = TOPIC_MAP[id];
   if (!t) { render(html`<div class="page"><h1>Unknown topic</h1><a class="btn" href="#/syllabus">Back</a></div>`, el); return; }
   const tab = ['learn', 'practice', 'formulas'].includes(tabArg) ? tabArg : 'learn';
+  setTitle(t.name);
   render(html`<div class="page"><p class="muted">Loading…</p></div>`, el);
   const c = await loadTopic(id);
   const s = app.stats[id];

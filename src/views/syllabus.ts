@@ -5,15 +5,25 @@ import { app } from '../app/state';
 import { getManifest, hasGenerator } from '../content/bank';
 import { accBar, dot, priorityChip, weightChips } from '../ui/components';
 import { pct } from '../ui/html';
+import { isDue } from '../core/srs';
+import { mistakes } from '../core/mistakes';
 
 export default function syllabus(el: HTMLElement, [subj]: string[]) {
   const subject = (SUBJECTS[subj as SubjectId] ? subj : 'quant') as SubjectId;
   const subjects = SUBJECT_ORDER.filter((s) => s !== 'statistics' || app.settings.paper2);
   const m = getManifest();
   const stats = app.stats;
+  const dueCards = [...app.cards.values()].filter((c) => isDue(c)).length;
+  const nMistakes = mistakes(app.attempts).length;
   render(html`<div class="page">
-    <h1>Syllabus</h1>
-    <p class="muted">Topics ordered by section, tagged with the number of questions expected in each paper (from previous-year trends).</p>
+    <h1>Study</h1>
+    <div class="hub">
+      <a class="hub-tile" href="#/revise"><b>Flashcards</b><span>${dueCards ? `${dueCards} due today` : 'Vocab, GA facts, formulas'}</span></a>
+      <a class="hub-tile" href="#/formulas"><b>Formula sheets</b><span>Squares, cubes, trig, per topic</span></a>
+      <a class="hub-tile" href="#/mistakes"><b>My mistakes</b><span>${nMistakes ? `${nMistakes} to fix` : 'None yet'}</span></a>
+    </div>
+    <h2 style="margin-top:1.2rem">Syllabus</h2>
+    <p class="muted small">Every topic, with the number of questions expected in each paper (from previous-year trends). High-priority topics carry the most marks.</p>
     <nav class="tabs" aria-label="Subjects">
       ${subjects.map((s) => html`<a href="#/syllabus/${s}" class=${s === subject ? 'on' : ''}>${dot(s)} ${SUBJECTS[s].short}</a>`)}
     </nav>

@@ -20,10 +20,10 @@ export default function planView(el: HTMLElement) {
 
   render(html`<div class="page">
     <div class="kicker">${EXAMS[s.target].name}</div>
-    <h1>Study plan</h1>
+    <h1>Roadmap</h1>
     <p class="muted">${plan.weeks.length} week${plan.weeks.length === 1 ? '' : 's'} to ${niceDate(plan.examDate)} at ${s.dailyHours} h/day.
-      Topics are ordered by weightage and mixed across subjects; topics you already score well on get less time. <a href="#/settings">Change exam date or hours</a></p>
-    ${plan.assumedDate ? html`<p class="chip medium">No exam date set, so this assumes 12 weeks. Set your date in Settings.</p>` : nothing}
+      Topics are ordered by weightage and mixed across subjects; topics you already score well on get less time. <a href="#/profile">Change exam date or hours</a></p>
+    ${plan.assumedDate ? html`<p class="chip medium">No exam date set, so this assumes 12 weeks. Set your date in your profile.</p>` : nothing}
     ${plan.tight ? html`<p class="trap">The syllabus needs about <b>${Math.round(plan.neededHours)} h</b> but the learning weeks have about ${Math.round(plan.totalHours * 0.75)} h. Increase daily hours, or focus on high-priority topics first (they come first in the plan).</p>` : nothing}
 
     ${due.length ? html`<section class="paper" style="margin:1rem 0"><h2>Due for revision</h2>

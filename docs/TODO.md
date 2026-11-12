@@ -32,6 +32,17 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 - [ ] **(owner)** Send the original local folder (`server.js`, `tools/*`), for reference only
 - [ ] Later, when the owner enables version control: git init, CI (typecheck, unit, content validate, build, e2e)
 
+## UX pass (student-first), 2026-11-12
+- [x] 5 tabs: Today · Roadmap · Study · Mocks · Progress; Profile via avatar (top bar) / rail badge
+- [x] Mobile top bar with page title + Back (works in installed PWA without browser chrome)
+- [x] First-run setup (exam, date, hours, name) → roadmap
+- [x] Today = self-ticking checklist (roadmap topic, past mistakes, flashcards, mock on scheduled days) + Resume + countdown
+- [x] My mistakes (latest attempt wrong/skipped; retry; per-subject filter); Study hub tiles (flashcards, formulas, mistakes)
+- [ ] P1: mark topic done / "studied at coaching" → feeds roadmap
+- [ ] P1: topic search in Study
+- [ ] P1: bookmark questions
+- [ ] P2: Hindi, daily reminder notifications (Android), AI doubt box
+
 ## M2: Accounts, sync, AI proxy
 - [!] Blocked on D1, D2, D3 (see TECHNICAL_DESIGN §9)
 - [ ] **(owner)** Create a Supabase project (ap-south-1) and give MCP/CLI access

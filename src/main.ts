@@ -9,19 +9,27 @@ import { applyTheme } from './ui/theme';
 import { initAuth, auth } from './app/auth';
 import { renderAccountBadge } from './ui/account-badge';
 
-route('/', 'today', () => import('./views/today').then((m) => m.default));
-route('/syllabus/:subject?', 'syllabus', () => import('./views/syllabus').then((m) => m.default));
-route('/topic/:id/:tab?', 'syllabus', () => import('./views/topic').then((m) => m.default));
-route('/practice', 'syllabus', () => import('./views/practice').then((m) => m.default));
-route('/mocks', 'mocks', () => import('./views/mocks').then((m) => m.default));
-route('/exam/:key', 'mocks', () => import('./views/exam').then((m) => m.default));
-route('/result/:key', 'mocks', () => import('./views/result').then((m) => m.default));
-route('/analysis', 'analysis', () => import('./views/analysis').then((m) => m.default));
-route('/revise/:deck?', 'revise', () => import('./views/revise').then((m) => m.default));
-route('/formulas/:id?', 'revise', () => import('./views/formulas').then((m) => m.default));
-route('/plan', 'today', () => import('./views/plan').then((m) => m.default));
-route('/account', 'settings', () => import('./views/account').then((m) => m.default));
-route('/settings', 'settings', () => import('./views/settings').then((m) => m.default));
+// route(path, tab, title, parent-for-Back (null = root tab), view)
+const v = (f: () => Promise<{ default: unknown }>) => () => f().then((m) => m.default as never);
+route('/', 'today', 'Today', null, v(() => import('./views/today')));
+route('/welcome', '', 'Welcome', null, v(() => import('./views/welcome')));
+route('/roadmap', 'roadmap', 'Roadmap', null, v(() => import('./views/plan')));
+route('/plan', 'roadmap', 'Roadmap', null, v(() => import('./views/plan')));
+route('/study', 'study', 'Study', null, v(() => import('./views/syllabus')));
+route('/syllabus/:subject?', 'study', 'Study', null, v(() => import('./views/syllabus')));
+route('/topic/:id/:tab?', 'study', 'Topic', '#/study', v(() => import('./views/topic')));
+route('/practice', 'study', 'Practice', '#/study', v(() => import('./views/practice')));
+route('/revise/:deck?', 'study', 'Flashcards', '#/study', v(() => import('./views/revise')));
+route('/formulas/:id?', 'study', 'Formula sheets', '#/study', v(() => import('./views/formulas')));
+route('/mocks', 'mocks', 'Mocks', null, v(() => import('./views/mocks')));
+route('/exam/:key', 'mocks', 'Mock test', '#/mocks', v(() => import('./views/exam')));
+route('/result/:key', 'mocks', 'Result', '#/mocks', v(() => import('./views/result')));
+route('/progress', 'progress', 'Progress', null, v(() => import('./views/analysis')));
+route('/analysis', 'progress', 'Progress', null, v(() => import('./views/analysis')));
+route('/mistakes', 'progress', 'My mistakes', '#/progress', v(() => import('./views/mistakes')));
+route('/profile', '', 'Profile', '#/', v(() => import('./views/settings')));
+route('/settings', '', 'Profile', '#/', v(() => import('./views/settings')));
+route('/account', '', 'Account', '#/profile', v(() => import('./views/account')));
 
 
 async function boot() {
