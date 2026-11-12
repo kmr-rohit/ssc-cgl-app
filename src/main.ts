@@ -6,6 +6,7 @@ import { app } from './app/state';
 import { dispatch, route } from './app/router';
 import { loadManifest } from './content/bank';
 import { applyTheme } from './ui/theme';
+import { initInstall, registerServiceWorker } from './ui/install';
 import { initAuth, auth } from './app/auth';
 import { renderAccountBadge } from './ui/account-badge';
 
@@ -50,6 +51,24 @@ async function boot() {
 }
 boot();
 
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch((e) => console.warn('SW failed', e)));
+initInstall();
+if (import.meta.env.PROD) {
+  registerServiceWorker((apply) => {
+    // never reload in the middle of a mock; offer again when they leave the exam screen
+    const show = () => {
+      if (document.body.dataset.route === 'exam-live') { window.addEventListener('hashchange', show, { once: true }); return; }
+      updateBar(apply);
+    };
+    show();
+  });
+}
+
+function updateBar(apply: () => void) {
+  if (document.getElementById('update-bar')) return;
+  const bar = document.createElement('div');
+  bar.id = 'update-bar';
+  bar.setAttribute('role', 'status');
+  bar.innerHTML = '<span>A new version of CGL Prep is ready.</span><button class="btn sm primary">Update</button>';
+  bar.querySelector('button')!.addEventListener('click', () => { bar.remove(); apply(); });
+  document.body.append(bar);
 }

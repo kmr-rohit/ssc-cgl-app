@@ -6,11 +6,12 @@ import { buildPlan, currentWeek } from '../core/plan';
 import { buildTasks, type Task } from '../core/today';
 import { app } from '../app/state';
 import { session } from '../app/session';
-import { go } from '../app/router';
+import { dispatch, go } from '../app/router';
 import { buildMock } from '../content/bank';
 import { dot } from '../ui/components';
 import { dailyKey, openMock } from './mocks';
 import { startTour } from '../ui/tour';
+import { dismissInstall, installHelp, onInstallChange, shouldOfferInstall } from '../ui/install';
 
 export default async function today(el: HTMLElement) {
   const s = app.settings;
@@ -59,6 +60,12 @@ export default async function today(el: HTMLElement) {
       <span><b>Resume your ${EXAMS[resumable.exam].short} mock</b><span class="small">Question ${resumable.current.index + 1} of section ${resumable.current.section + 1}: the timer is paused</span></span>
       <span aria-hidden="true">→</span></button>` : nothing}
 
+    ${s.toured && shouldOfferInstall() ? html`<section class="install-banner" aria-label="Install the app">
+      <div><b>Install CGL Prep</b><span class="small"> for one-tap access from your home screen. Works offline.</span></div>
+      ${installHelp(true, () => dispatch())}
+      <button class="btn ghost sm close" aria-label="Dismiss" @click=${() => { dismissInstall(); dispatch(); }}>✕</button>
+    </section>` : nothing}
+
     <section class="paper tasks" aria-label="Today's tasks">
       <div class="spread"><h2>Today's plan</h2><span class="small muted">${done}/${tasks.length} done · ~${Math.round(tasks.filter((t) => !t.done).reduce((a, t) => a + t.minutes, 0) / 5) * 5} min left</span></div>
       <ol class="task-list">
@@ -81,10 +88,12 @@ export default async function today(el: HTMLElement) {
       <a class="card" href="#/roadmap"><div class="kicker">Roadmap</div><div class="big">Wk ${week.index}<span class="small muted"> / ${plan.weeks.length}</span></div></a>
     </div>
   </div>`, el);
+  const off = onInstallChange(() => dispatch());
   if (!s.toured) {
     // let the page paint first so the spotlight lands on real elements
     // mark as seen when it starts: closing the app mid-tour shouldn't bring it back (replay lives in Profile)
     app.saveSettings({ toured: true });
     requestAnimationFrame(() => startTour(() => {}));
   }
+  return () => { off(); };
 }

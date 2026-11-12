@@ -38,6 +38,7 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 - [x] First-run setup (exam, date, hours, name) → roadmap
 - [x] Today = self-ticking checklist (roadmap topic, past mistakes, flashcards, mock on scheduled days) + Resume + countdown
 - [x] My mistakes (latest attempt wrong/skipped; retry; per-subject filter); Study hub tiles (flashcards, formulas, mistakes)
+- [x] Installable web app: PNG icons (incl. iOS apple-touch-icon, maskable), iOS meta tags, full offline precache stamped per build, install button (Android/desktop) + Add to Home Screen steps (iOS), update bar (never mid-mock)
 - [ ] P1: mark topic done / "studied at coaching" → feeds roadmap
 - [ ] P1: topic search in Study
 - [ ] P1: bookmark questions

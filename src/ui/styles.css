@@ -293,6 +293,19 @@ table.sheet td, table.sheet th { text-align: center; }
   .paper, .card { box-shadow: none; border: 1px solid #ccc; }
 }
 
+/* ---------- install & update */
+.install-banner { display: grid; grid-template-columns: 1fr auto; gap: .5rem .8rem; align-items: center; background: var(--blue-wash); border: 1px solid var(--blue); border-radius: var(--r); padding: .7rem .9rem; margin-bottom: 1rem; }
+.install-banner > div:first-child { grid-column: 1; }
+.install-banner .close { grid-column: 2; grid-row: 1; align-self: start; min-height: 32px; }
+.install-banner .install-steps, .install-banner .row { grid-column: 1 / -1; }
+.install-steps { margin: .2rem 0 0; padding-left: 1.2rem; }
+.install-steps li { margin: .15rem 0; }
+#update-bar { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(var(--tabbar-h) + 16px + env(safe-area-inset-bottom)); z-index: 55; display: flex; gap: .8rem; align-items: center;
+  background: var(--ink); color: var(--paper); padding: .55rem .6rem .55rem 1rem; border-radius: var(--r); box-shadow: 0 10px 30px rgb(0 0 0 / .3); max-width: calc(100vw - 32px); }
+@media (min-width: 761px) { #update-bar { bottom: 20px; } }
+/* installed app: no rubber-band overscroll on the shell, no text-selection callouts on controls */
+@media (display-mode: standalone) { html, body { overscroll-behavior-y: none; } .btn, .opt, .nav a { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; } }
+
 /* ---------- guided tour */
 .tour { position: fixed; inset: 0; z-index: 60; }
 .tour-dim { position: fixed; inset: 0; background: rgb(15 19 27 / .6); }

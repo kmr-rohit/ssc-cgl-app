@@ -1,7 +1,7 @@
 // Small "signed in / sync" badge in the desktop rail.
 import type { SyncedAdapter } from '../data/sync';
 import type { auth as Auth } from '../app/auth';
-import { syncText } from '../views/account';
+import { syncText } from './sync-text';
 
 export function renderAccountBadge(sync: SyncedAdapter, auth: typeof Auth) {
   const el = document.getElementById('account-badge');

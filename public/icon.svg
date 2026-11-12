@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#1f3a5f"/><rect x="14" y="12" width="36" height="42" rx="3" fill="#fbf7ec"/><line x1="22" y1="12" x2="22" y2="54" stroke="#c0392b" stroke-width="2"/><circle cx="34" cy="26" r="5" fill="none" stroke="#1f3a5f" stroke-width="2.5"/><circle cx="34" cy="40" r="5" fill="#1f3a5f"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#1f3a5f"/>
+  <g transform="translate(0 0) scale(1)">
+    <rect x="112" y="84" width="288" height="344" rx="20" fill="#fbf7ec"/>
+    <line x1="176" y1="84" x2="176" y2="428" stroke="#c9433e" stroke-width="10"/>
+    <line x1="200" y1="150" x2="370" y2="150" stroke="#d9d3c3" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="232" cy="236" r="30" fill="none" stroke="#1f3a5f" stroke-width="12"/>
+    <circle cx="320" cy="236" r="30" fill="none" stroke="#1f3a5f" stroke-width="12"/>
+    <circle cx="232" cy="330" r="30" fill="#1f3a5f"/>
+    <circle cx="320" cy="330" r="30" fill="none" stroke="#1f3a5f" stroke-width="12"/>
+  </g></svg>

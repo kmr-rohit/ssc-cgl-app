@@ -7,6 +7,7 @@ import { confirmDialog } from '../ui/components';
 import { applyTheme } from '../ui/theme';
 import { auth } from '../app/auth';
 import { startTour } from '../ui/tour';
+import { installHelp, onInstallChange } from '../ui/install';
 import { go } from '../app/router';
 
 export default function settings(el: HTMLElement) {
@@ -61,6 +62,10 @@ export default function settings(el: HTMLElement) {
         <label class="check"><input type="checkbox" .checked=${s.paper2} @change=${(e: Event) => save({ paper2: (e.target as HTMLInputElement).checked })} /> Show Statistics (Paper 2, for JSO / SI Gr. II)</label>
       </section>
       <section class="paper stack" style="margin-top:1rem">
+        <h2>Install the app</h2>
+        ${installHelp(false, () => draw())}
+      </section>
+      <section class="paper stack" style="margin-top:1rem">
         <h2>Help</h2>
         <p class="small muted">A 30-second walkthrough of what each tab does.</p>
         <button class="btn" @click=${() => { go('#/'); setTimeout(() => startTour(() => app.saveSettings({ toured: true })), 300); }}>Take the app tour</button>
@@ -82,4 +87,6 @@ export default function settings(el: HTMLElement) {
     </div>`, el);
   };
   draw();
+  const off = onInstallChange(draw);
+  return () => { off(); };
 }
