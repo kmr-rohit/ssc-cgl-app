@@ -180,6 +180,8 @@ input:focus { border-color: var(--pen); outline: none; }
 .formula code { font-family: var(--f-body); font-weight: 600; color: var(--pen); }
 
 /* ---------- question */
+.q img, .opt img, .solution img { max-width: 100%; height: auto; background: #fff; border-radius: 2px; vertical-align: middle; }
+.opt img { max-height: 140px; }
 .q { font-size: 1.08rem; }
 .q-head { display: flex; justify-content: space-between; align-items: center; gap: .6rem; color: var(--ink-3); font-size: .88rem; margin-bottom: .5rem; }
 .passage { background: var(--paper-2); border-left: 3px solid var(--rule-2); padding: .8rem 1rem; margin-bottom: 1rem; max-height: 45vh; overflow: auto; font-size: .98rem; }

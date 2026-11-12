@@ -5,7 +5,7 @@ import type { Attempt, Question } from '../core/types';
 import { app } from '../app/state';
 import { session } from '../app/session';
 import { setTitle } from '../app/router';
-import { lookup, practiceSet, topicOfId, loadTopic } from '../content/bank';
+import { ensureQuestions, lookup, practiceSet } from '../content/bank';
 import { uid } from '../data/storage';
 import { questionView, stamp } from '../ui/components';
 import { fmtMs, pct } from '../ui/html';
@@ -19,7 +19,7 @@ export default async function practice(el: HTMLElement) {
 
   let qs: Question[];
   if (cfg.questionIds) {
-    await Promise.all([...new Set(cfg.questionIds.map(topicOfId))].map(loadTopic));
+    await ensureQuestions(cfg.questionIds);
     qs = cfg.questionIds.map(lookup).filter((q): q is Question => !!q);
   } else {
     qs = await practiceSet(cfg.topic, { level: cfg.level, type: cfg.type, n: cfg.n, seed: `p-${Date.now()}` });

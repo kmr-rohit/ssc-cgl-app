@@ -14,10 +14,11 @@ function pwaPrecache(): Plugin {
       const walk = (d: string) => readdirSync(d).forEach((n) => { const p = join(d, n); statSync(p).isDirectory() ? walk(p) : files.push(p); });
       walk(dist);
       const urls = files.map((f) => '/' + relative(dist, f).split('\\').join('/'))
-        .filter((u) => u !== '/sw.js' && !u.endsWith('.map') && !u.endsWith('.DS_Store'))
+        // the previous-year bank (/pyq) is large: fetched and cached on demand, never precached
+        .filter((u) => u !== '/sw.js' && !u.endsWith('.map') && !u.endsWith('.DS_Store') && !u.startsWith('/pyq/'))
         .map((u) => (u === '/index.html' ? '/' : u)).sort();
       const hash = createHash('sha256');
-      files.filter((f) => !f.endsWith('sw.js')).sort().forEach((f) => hash.update(readFileSync(f)));
+      files.filter((f) => !f.endsWith('sw.js') && !f.includes('/pyq/img/')).sort().forEach((f) => hash.update(readFileSync(f)));
       const version = hash.digest('hex').slice(0, 12);
       const sw = join(dist, 'sw.js');
       const out = readFileSync(sw, 'utf8')
@@ -34,5 +35,5 @@ export default defineConfig({
   plugins: [pwaPrecache()],
   server: { host: true, port: 5173 },
   build: { target: 'es2022', sourcemap: true },
-  test: { environment: 'node', include: ['src/**/*.test.ts', 'tools/**/*.test.ts'], exclude: ['e2e/**', 'node_modules/**', '**/*.int.test.ts'] },
+  test: { environment: 'node', include: ['src/**/*.test.ts', 'tools/**/*.test.ts', 'pipeline/**/*.test.ts'], exclude: ['e2e/**', 'node_modules/**', '**/*.int.test.ts'] },
 } as never);

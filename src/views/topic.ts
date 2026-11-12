@@ -1,10 +1,11 @@
 import { html, render, nothing } from 'lit-html';
 import { LEVELS, SUBJECTS, TOPIC_MAP } from '../core/syllabus';
-import type { Level } from '../core/types';
+import type { Level, Question } from '../core/types';
 import { app } from '../app/state';
 import { go, setTitle } from '../app/router';
 import { session } from '../app/session';
 import { loadTopic, typesOf } from '../content/bank';
+import { loadPyqTopic, pyqCount } from '../content/pyq';
 import { isImp, weightText } from '../ui/components';
 import { img, pct, rich } from '../ui/html';
 
@@ -15,6 +16,8 @@ export default async function topicView(el: HTMLElement, [id, tabArg]: string[])
   setTitle(t.name);
   render(html`<div class="page"><p class="muted">Loading…</p></div>`, el);
   const c = await loadTopic(id);
+  let pyq: Question[] = [];
+  let pyqLoading = false;
   const s = app.stats[id];
   let level: Level | 0 = 0;
   let mode: 'learn' | 'test' = 'learn';
@@ -42,7 +45,12 @@ export default async function topicView(el: HTMLElement, [id, tabArg]: string[])
     </article>`;
 
   const practice = () => {
-    const types = typesOf(id);
+    // past-paper questions for this topic load the first time the Practice tab is opened
+    if (pyqCount(id) && !pyq.length && !pyqLoading) {
+      pyqLoading = true;
+      loadPyqTopic(id).then((qs) => { pyq = qs; draw(); }).catch(() => { pyqLoading = false; });
+    }
+    const types = typesOf(id, pyq);
     return html`<div class="paper stack">
       <div><div class="kicker">Level</div>
         <div class="seg">${[{ id: 0, name: 'Mixed' }, ...LEVELS].map((l) => html`<button class=${level === l.id ? 'on' : ''} @click=${() => { level = l.id as Level | 0; draw(); }}>${l.name}</button>`)}</div></div>
@@ -56,8 +64,8 @@ export default async function topicView(el: HTMLElement, [id, tabArg]: string[])
         ${types.map((ty) => {
           const st = s?.byType[ty.type];
           return html`<div class="spread" style="border-bottom:1px solid var(--rule);padding:.5rem 0">
-            <span><b>${ty.name}</b> <span class="small muted">${ty.curated} questions${ty.generated ? ', plus unlimited new ones' : ''}${st ? `. You got ${pct(st.correct / st.attempts)} of ${st.attempts} right` : ''}</span></span>
-            <button class="btn sm" ?disabled=${!ty.curated && !ty.generated} @click=${() => start(ty.type)}>Practise</button></div>`;
+            <span><b>${ty.name}</b> <span class="small muted">${ty.pyq + ty.curated} questions${ty.generated ? ', plus unlimited new ones' : ''}${st ? `. You got ${pct(st.correct / st.attempts)} of ${st.attempts} right` : ''}</span></span>
+            <button class="btn sm" ?disabled=${!ty.curated && !ty.generated && !ty.pyq} @click=${() => start(ty.type)}>Practise</button></div>`;
         })}` : nothing}
     </div>`;
   };

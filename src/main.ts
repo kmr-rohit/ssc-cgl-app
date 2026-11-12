@@ -10,6 +10,7 @@ import './ui/styles.css';
 import { app } from './app/state';
 import { dispatch, route } from './app/router';
 import { loadManifest } from './content/bank';
+import { loadPyqManifest } from './content/pyq';
 import { applyTheme } from './ui/theme';
 import { initInstall, registerServiceWorker } from './ui/install';
 import { initAuth, auth } from './app/auth';
@@ -39,7 +40,7 @@ route('/account', '', 'Account', '#/profile', v(() => import('./views/account'))
 
 
 async function boot() {
-  await Promise.all([app.init(), loadManifest().catch((e) => console.error(e))]);
+  await Promise.all([app.init(), loadManifest().catch((e) => console.error(e)), loadPyqManifest()]);
   applyTheme(app.settings.theme);
   if (app.sync) {
     initAuth(app.sync);

@@ -7,13 +7,20 @@ import { assetUrl } from '../content/bank';
 const CONTENT_TAGS = ['b', 'i', 'em', 'strong', 'u', 'br', 'p', 'ul', 'ol', 'li', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'sub', 'sup', 'span', 'code', 'small', 'mark', 'div'];
 const SVG_TAGS = ['svg', 'g', 'path', 'line', 'rect', 'circle', 'ellipse', 'polygon', 'polyline', 'text', 'tspan', 'defs', 'marker', 'title'];
 
-/** Curated/generated content HTML (allows inline SVG figures from generators). */
+// Past-paper figures are the only images allowed inside content HTML, and only from our own /pyq/img/ folder.
+DOMPurify.addHook('uponSanitizeElement', (node, data) => {
+  if (data.tagName !== 'img') return;
+  const src = (node as Element).getAttribute?.('src') ?? '';
+  if (!/^\/pyq\/img\/[a-f0-9]{16}\.webp$/.test(src)) node.parentNode?.removeChild(node);
+});
+
+/** Curated/generated/past-paper content HTML (inline SVG figures from generators, past-paper figure images). */
 export function rich(s: string | undefined | null): TemplateResult {
   const clean = DOMPurify.sanitize(String(s ?? ''), {
-    ALLOWED_TAGS: [...CONTENT_TAGS, ...SVG_TAGS],
+    ALLOWED_TAGS: [...CONTENT_TAGS, ...SVG_TAGS, 'img'],
     ALLOWED_ATTR: ['class', 'colspan', 'rowspan', 'viewBox', 'width', 'height', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'r', 'rx', 'ry', 'd', 'points',
       'fill', 'stroke', 'stroke-width', 'stroke-dasharray', 'font-size', 'font-family', 'font-weight', 'text-anchor', 'dominant-baseline', 'transform', 'marker-end', 'id',
-      'refX', 'refY', 'markerWidth', 'markerHeight', 'orient', 'xmlns'],
+      'refX', 'refY', 'markerWidth', 'markerHeight', 'orient', 'xmlns', 'src', 'alt'],
   });
   return html`${unsafeHTML(clean)}`;
 }

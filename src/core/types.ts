@@ -22,9 +22,13 @@ export interface Question {
   answer: number;        // 0..3
   solution: string;      // non-empty, step-by-step
   passageId?: string;    // RC / cloze / DI set
-  source: 'curated' | 'generated' | 'test-data';
+  source: 'curated' | 'generated' | 'test-data' | 'pyq';
+  /** Previous-year question: every past paper (shift) it appeared in. */
+  pyq?: { asked: PyqAsked[] };
   tags?: string[];
 }
+
+export interface PyqAsked { tier: 'pre' | 'mains'; year: number; date: string; shift: string | null; paper: string }
 
 export interface Passage {
   id: string;
@@ -135,6 +139,7 @@ export interface MockRecord {
   key: string;           // e.g. "pre-2026-11-12" or "sec-quant-1731400000"
   exam: ExamId;
   kind: 'daily' | 'sectional' | 'custom';
+  title?: string;        // custom mocks
   seed: string;
   genVersion: number;
   status: MockStatus;

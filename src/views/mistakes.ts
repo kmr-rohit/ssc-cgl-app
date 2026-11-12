@@ -5,7 +5,7 @@ import type { SubjectId } from '../core/types';
 import { app } from '../app/state';
 import { session } from '../app/session';
 import { go } from '../app/router';
-import { loadTopic, lookup } from '../content/bank';
+import { ensureQuestions, lookup } from '../content/bank';
 import { dot } from '../ui/components';
 import { niceDate, rich } from '../ui/html';
 import { progressTabs } from './analysis';
@@ -15,7 +15,7 @@ export default async function mistakesView(el: HTMLElement) {
   let subject: SubjectId | 'all' = 'all';
   let shown = 30;
   render(html`<div class="page"><p class="muted">Loading your mistakes…</p></div>`, el);
-  await Promise.all([...new Set(all.map((m) => m.topic))].filter((t) => TOPIC_MAP[t]).map(loadTopic));
+  await ensureQuestions(all.map((m) => m.questionId));
 
   const retry = (ids: string[]) => {
     session.practice = { topic: all.find((m) => m.questionId === ids[0])?.topic ?? 'q-percentage', level: 0, mode: 'learn', n: ids.length, questionIds: ids, title: 'Retry my mistakes' };

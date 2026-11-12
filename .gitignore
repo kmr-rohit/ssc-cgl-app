@@ -11,3 +11,6 @@ playwright-report/
 *.log
 # old claude.ai artifact snapshot: reference only, not part of the new codebase
 reference/
+
+# question-bank pipeline: raw third-party data and intermediate outputs never go into git
+pipeline/.cache/

@@ -44,6 +44,15 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 - [ ] P1: bookmark questions
 - [ ] P2: Hindi, daily reminder notifications (Android), AI doubt box
 
+## Question bank + missing features (2026-11-12)
+- [x] Previous-year bank pipeline (`npm run pyq:build`, docs/QUESTION_BANK.md): 23,790 questions, 250 papers, images self-hosted
+- [x] Daily/sectional mocks draw from real past papers; topic practice mixes bank questions in (no separate PYQ section, owner decision)
+- [ ] Mock builder (from old app `builder.js`): what to test, which questions, rules, extras; save setups
+- [ ] Challenge a friend (Supabase: challenge code → same paper, compare scores)
+- [ ] Report a mistake on every question (review queue)
+- [ ] Use real weightage from the bank (`manifest.weightage`) in syllabus text and mock allocation
+- [ ] Smaller ports: speed drills, revision sets, attempt-strategy report, accuracy-vs-speed chart, typing test (desktop), exam info page, video/reading links, current-affairs notebook
+
 ## M2: Accounts, sync, AI proxy
 - [!] Blocked on D1, D2, D3 (see TECHNICAL_DESIGN §9)
 - [ ] **(owner)** Create a Supabase project (ap-south-1) and give MCP/CLI access

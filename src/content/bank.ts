@@ -4,12 +4,14 @@ import { EXAMS, TOPIC_MAP, topicsOf } from '../core/syllabus';
 import { Rng } from '../core/rng';
 import type { ExamId, Level, Manifest, MockRecord, MockSectionState, Question, SubjectId, TopicContent } from '../core/types';
 import { GEN_VERSION, generateQuestion, generatorsFor } from '../gen';
+import { getPyqManifest, loadPaper, loadPyqManifest, loadPyqTopic, registerPyqSink } from './pyq';
 
 const BASE = `${import.meta.env?.BASE_URL ?? '/'}content/`;
 let manifest: Manifest | null = null;
 const topics = new Map<string, TopicContent>();
 const inflight = new Map<string, Promise<TopicContent | null>>();
 const byId = new Map<string, Question>();
+registerPyqSink((q) => byId.set(q.id, q));
 
 export async function loadManifest(): Promise<Manifest> {
   if (manifest) return manifest;
@@ -45,7 +47,7 @@ export const hasGenerator = (topic: string) => generatorsFor(topic).length > 0;
 
 /** Topic id of a question id without loading anything. */
 export function topicOfId(id: string): string {
-  if (id.startsWith('gen:')) return id.split(':')[1];
+  if (id.startsWith('gen:') || id.startsWith('pyq:')) return id.split(':')[1];
   return id.replace(/-\d+$/, '');
 }
 
@@ -65,6 +67,14 @@ export function lookup(id: string): Question | undefined {
 }
 export const remember = (q: Question) => byId.set(q.id, q);
 
+/** Make sure every id can be looked up: loads our topic files and past-paper topic pages as needed. */
+export async function ensureQuestions(ids: string[]) {
+  const missing = ids.filter((id) => !byId.has(id) && !id.startsWith('gen:'));
+  const curated = new Set(missing.filter((id) => !id.startsWith('pyq:')).map(topicOfId));
+  const pyq = new Set(missing.filter((id) => id.startsWith('pyq:')).map(topicOfId));
+  await Promise.all([...[...curated].filter((t) => TOPIC_MAP[t]).map(loadTopic), ...[...pyq].map(loadPyqTopic)]);
+}
+
 export function passageOf(q: Question) {
   if (!q.passageId) return null;
   return topics.get(q.topic)?.passages?.find((p) => p.id === q.passageId) ?? null;
@@ -72,13 +82,17 @@ export function passageOf(q: Question) {
 
 // ------------------------------------------------------------------ practice
 
-export interface PracticeOpts { level: Level | 0; type?: string; n: number; seed: string; exclude?: Set<string> }
+export type QuestionSource = 'all' | 'pyq' | 'practice';
+export interface PracticeOpts { level: Level | 0; type?: string; n: number; seed: string; exclude?: Set<string>; source?: QuestionSource }
 
 export async function practiceSet(topic: string, o: PracticeOpts): Promise<Question[]> {
-  const c = await loadTopic(topic);
+  const source = o.source ?? 'all';
+  const [c, pyq] = await Promise.all([loadTopic(topic), source === 'practice' ? Promise.resolve([] as Question[]) : loadPyqTopic(topic)]);
   const rng = new Rng(o.seed);
-  const okLevel = (l: Level) => o.level === 0 || l === o.level;
-  const curated = rng.shuffle((c?.questions ?? []).filter((q) => okLevel(q.level) && (!o.type || q.type === o.type) && !o.exclude?.has(q.id)));
+  // past-paper questions are exam level: they count for every level filter except Beginner
+  const okLevel = (q: Question) => o.level === 0 || q.level === o.level || (q.source === 'pyq' && o.level !== 1);
+  const ours = source === 'pyq' ? [] : (c?.questions ?? []);
+  const curated = rng.shuffle([...ours, ...pyq].filter((q) => okLevel(q) && (!o.type || q.type === o.type) && !o.exclude?.has(q.id)));
   // passage questions stay together and in order
   const out: Question[] = [];
   const usedPassages = new Set<string>();
@@ -90,7 +104,7 @@ export async function practiceSet(topic: string, o: PracticeOpts): Promise<Quest
       out.push(...(c?.questions ?? []).filter((x) => x.passageId === q.passageId));
     } else out.push(q);
   }
-  const gens = generatorsFor(topic).filter((g) => !o.type || g.type === o.type);
+  const gens = source === 'pyq' ? [] : generatorsFor(topic).filter((g) => !o.type || g.type === o.type);
   for (let i = 0; out.length < o.n && gens.length && i < o.n * 4; i++) {
     const g = rng.pick(gens);
     const lv = (o.level || rng.pick(g.levels)) as Level;
@@ -102,19 +116,22 @@ export async function practiceSet(topic: string, o: PracticeOpts): Promise<Quest
   return out;
 }
 
-export function typesOf(topic: string): { type: string; name: string; curated: number; generated: boolean }[] {
+export interface TypeInfo { type: string; name: string; curated: number; pyq: number; generated: boolean }
+/** Question types of a topic: our notes' varieties, our questions, past-paper questions (pass them in) and generators. */
+export function typesOf(topic: string, pyq: Question[] = []): TypeInfo[] {
   const c = topics.get(topic);
-  const map = new Map<string, { type: string; name: string; curated: number; generated: boolean }>();
-  for (const v of c?.notes.varieties ?? []) map.set(v.type, { type: v.type, name: v.name, curated: 0, generated: false });
-  for (const q of c?.questions ?? []) {
-    const e = map.get(q.type) ?? { type: q.type, name: q.type.replace(/-/g, ' '), curated: 0, generated: false };
-    e.curated++; map.set(q.type, e);
-  }
-  for (const g of generatorsFor(topic)) {
-    const e = map.get(g.type) ?? { type: g.type, name: g.name, curated: 0, generated: false };
-    e.generated = true; map.set(g.type, e);
-  }
-  return [...map.values()];
+  const names = getPyqManifest()?.topics[topic]?.types ?? {};
+  const map = new Map<string, TypeInfo>();
+  const get = (type: string, name?: string) => {
+    let e = map.get(type);
+    if (!e) { e = { type, name: name ?? names[type] ?? type.replace(/-/g, ' '), curated: 0, pyq: 0, generated: false }; map.set(type, e); }
+    return e;
+  };
+  for (const v of c?.notes.varieties ?? []) get(v.type, v.name);
+  for (const q of c?.questions ?? []) get(q.type).curated++;
+  for (const q of pyq) get(q.type).pyq++;
+  for (const g of generatorsFor(topic)) get(g.type, g.name).generated = true;
+  return [...map.values()].sort((a, b) => (b.pyq + b.curated) - (a.pyq + a.curated));
 }
 
 // ------------------------------------------------------------------ mocks
@@ -133,7 +150,7 @@ export function allocate(weights: { id: string; w: number }[], count: number): R
   return out;
 }
 
-export async function buildSection(exam: ExamId, subject: SubjectId, count: number, rng: Rng, snapshot: Record<string, Question>): Promise<string[]> {
+export async function buildSection(exam: ExamId, subject: SubjectId, count: number, rng: Rng, snapshot: Record<string, Question>, pyqPool: Question[] = []): Promise<string[]> {
   await loadSubject(subject);
   const key = weightKey(exam);
   const list = topicsOf(subject).map((t) => ({ id: t.id, w: (t[key][0] + t[key][1]) / 2 || (exam === 'stats' ? 0 : 0.25) }));
@@ -156,6 +173,13 @@ export async function buildSection(exam: ExamId, subject: SubjectId, count: numb
   for (const { id } of list) {
     let need = alloc[id];
     if (!need) continue;
+    // real past-paper questions first
+    for (const q of rng.shuffle(pyqPool.filter((x) => x.topic === id))) {
+      if (need <= 0) break;
+      if (taken.has(q.id)) continue;
+      taken.add(q.id); snapshot[q.id] = q; groups.push([q]); need--;
+    }
+    if (!need) continue;
     const c = topics.get(id);
     const pool = rng.shuffle(c?.questions ?? []);
     const hasGen = generatorsFor(id).length > 0;
@@ -175,6 +199,7 @@ export async function buildSection(exam: ExamId, subject: SubjectId, count: numb
   }
   // fill any shortage from anything left in the subject
   if (shortage > 0) {
+    for (const q of rng.shuffle(pyqPool.filter((x) => !taken.has(x.id)))) { if (shortage <= 0) break; taken.add(q.id); snapshot[q.id] = q; groups.push([q]); shortage--; }
     const rest = rng.shuffle(topicsOf(subject).flatMap((t) => (topics.get(t.id)?.questions ?? []).filter((q) => !taken.has(q.id) && !q.passageId)));
     for (const q of rest) { if (shortage <= 0) break; taken.add(q.id); groups.push([q]); shortage--; }
     for (const t of rng.shuffle(topicsOf(subject))) { if (shortage <= 0) break; shortage -= genFill(t.id, shortage); }
@@ -183,16 +208,28 @@ export async function buildSection(exam: ExamId, subject: SubjectId, count: numb
   return rng.shuffle(groups).flat().slice(0, Math.max(count, 0)).map((q) => q.id);
 }
 
-export interface MockSpec { exam: ExamId; kind: MockRecord['kind']; key: string; seed: string; subjects?: SubjectId[] }
+export interface MockSpec { exam: ExamId; kind: MockRecord['kind']; key: string; seed: string; subjects?: SubjectId[]; usePyq?: boolean }
 
 export async function buildMock(spec: MockSpec): Promise<MockRecord> {
   const e = EXAMS[spec.exam];
   const rng = new Rng(spec.seed);
   const snapshot: Record<string, Question> = {};
   const sections: MockSectionState[] = [];
+  // Tier 1 / Tier 2 mocks draw from 4 real past papers of that tier (chosen by the seed), then our bank fills gaps
+  let pool: Question[] = [];
+  if (spec.usePyq !== false && spec.exam !== 'stats') {
+    const m = await loadPyqManifest();
+    const papers = (m?.papers ?? []).filter((p) => p.tier === spec.exam);
+    if (papers.length) {
+      const chosen = await Promise.all(rng.sample(papers, Math.min(4, papers.length)).map((p) => loadPaper(p.id).catch(() => null)));
+      const seen = new Set<string>();
+      pool = chosen.flatMap((p) => p?.questions ?? []).filter((q) => !seen.has(q.id) && seen.add(q.id));
+    }
+  }
   for (const s of e.sections) {
     if (spec.subjects && !spec.subjects.includes(s.subject)) continue;
-    const ids = await buildSection(spec.exam, s.subject, s.count, rng, snapshot);
+    const subjPool = pool.filter((q) => TOPIC_MAP[q.topic]?.subject === s.subject);
+    const ids = await buildSection(spec.exam, s.subject, s.count, rng, snapshot, subjPool);
     sections.push({
       subject: s.subject, questionIds: ids, answers: ids.map(() => null), marked: ids.map(() => false),
       visited: ids.map(() => false), msSpent: ids.map(() => 0), remainingMs: s.minutes * 60_000, done: false,
@@ -207,6 +244,5 @@ export async function buildMock(spec: MockSpec): Promise<MockRecord> {
 /** Make every question of a stored mock available to lookup(). */
 export async function hydrateMock(m: MockRecord) {
   for (const q of Object.values(m.snapshot ?? {})) remember(q);
-  const need = new Set(m.sections.flatMap((s) => s.questionIds).filter((id) => !byId.has(id)).map(topicOfId));
-  await Promise.all([...need].filter((t) => TOPIC_MAP[t]).map(loadTopic));
+  await ensureQuestions(m.sections.flatMap((s) => s.questionIds));
 }
