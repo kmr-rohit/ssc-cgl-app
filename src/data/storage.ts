@@ -7,6 +7,9 @@ export const DEFAULT_SETTINGS: Settings = {
   name: '', target: 'pre', examDate: null, dailyHours: 3, theme: 'light', paper2: false, newWordsPerDay: 10, examMode: true, onboarded: false, toured: false,
 };
 
+/** Internal sync bookkeeping (account, cursors, timestamps) lives in kv under `__sync*`; it never goes into a backup. */
+const isInternal = (k: string) => k.startsWith('__sync');
+
 export interface BackupFile {
   app: 'cgl-prep'; schema: 1; exportedAt: string;
   settings: Settings; attempts: Attempt[]; mocks: MockRecord[]; cards: CardState[]; kv: Record<string, unknown>;
@@ -54,7 +57,7 @@ export class LocalAdapter implements StorageAdapter {
     return {
       app: 'cgl-prep', schema: 1, exportedAt: new Date().toISOString(),
       settings: await this.getSettings(), attempts: await this.listAttempts(), mocks: await this.listMocks(),
-      cards: await this.listCards(), kv: Object.fromEntries(await entries<string, unknown>(this.s.kv)),
+      cards: await this.listCards(), kv: Object.fromEntries((await entries<string, unknown>(this.s.kv)).filter(([k]) => !isInternal(k))),
     };
   }
   async importAll(b: BackupFile) {
@@ -64,7 +67,7 @@ export class LocalAdapter implements StorageAdapter {
     await this.addAttempts(b.attempts || []);
     for (const m of b.mocks || []) await this.saveMock(m);
     await this.saveCards(b.cards || []);
-    await setMany(Object.entries(b.kv || {}), this.s.kv);
+    await setMany(Object.entries(b.kv || {}).filter(([k]) => !isInternal(k)), this.s.kv);
   }
   async wipe() { await Promise.all(Object.values(this.s).map((st) => clear(st))); }
 }

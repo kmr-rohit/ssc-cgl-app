@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { buildTasks, isMockDay } from './today';
 import { mistakes } from './mistakes';
-import { buildPlan } from './plan';
+import { buildPlan, currentWeek } from './plan';
+import { addDays } from './srs';
 import type { Attempt } from './types';
 
 const at = (q: string, correct: boolean, when: string, topic = 'q-percentage', chosen: number | null = correct ? 0 : 1): Attempt =>
@@ -47,5 +48,27 @@ describe('today tasks', () => {
     expect(t.action).toEqual({ kind: 'retry', questionIds: ['x1', 'x2'] });
     const retried = [...past, at('x1', true, '2026-01-05T11:00'), at('x2', false, '2026-01-05T11:00')];
     expect(buildTasks({ ...base, attempts: retried }).find((x) => x.id === 'mistakes')!.done).toBe(true);
+  });
+
+  it('does not count skipped questions as done or as mistakes', () => {
+    const first = week.topics[0].topic.id;
+    const skips = Array.from({ length: 10 }, (_, i) => at(`${first}-${i}`, false, '2026-01-05T09:00', first, null));
+    const t = buildTasks({ ...base, attempts: skips });
+    expect(t[0].done).toBe(false);
+    expect(t[0].detail).toContain('(0/10)');
+    const pastSkips = [at('s1', false, '2026-01-04T10:00', 'q-percentage', null)];
+    expect(buildTasks({ ...base, attempts: pastSkips }).find((x) => x.id === 'mistakes')).toBeUndefined();
+  });
+
+  it('puts exactly 2 mock days in any 7 consecutive days for a 2-mocks week, though the plan is rebuilt daily', () => {
+    for (const start of ['2026-01-05', '2026-03-11']) {
+      const days = [0, 1, 2, 3, 4, 5, 6].map((d) => addDays(start, d));
+      const mockDays = days.filter((today) => {
+        // as the Today screen does: rebuild the plan from today, so week.start === today
+        const week = { ...currentWeek(buildPlan({ exam: 'pre', examDate: '2026-06-01', dailyHours: 3, stats: {}, today }), today), mocks: 2 };
+        return buildTasks({ ...base, week, today, dailyMockKey: `pre-${today}`, attempts: [] }).some((t) => t.id === 'mock');
+      });
+      expect(mockDays.length).toBe(2);
+    }
   });
 });

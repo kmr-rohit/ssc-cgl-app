@@ -72,7 +72,7 @@ export async function verifyEmailCode(email: string, code: string) {
 export async function signOut(confirmLoss: () => Promise<boolean>) {
   const clean = await adapter!.beforeSignOut();
   if (!clean && !(await confirmLoss())) return false;
-  await supabase!.auth.signOut();
+  await supabase!.auth.signOut({ scope: 'local' }); // this device only; other devices stay signed in
   return true;
 }
 
@@ -80,5 +80,5 @@ export async function deleteAccount() {
   const { error } = await supabase!.functions.invoke('delete-account', { method: 'POST' });
   if (error) throw new Error('Could not delete your account. Check your connection and try again.');
   await supabase!.auth.signOut({ scope: 'local' });
-  await adapter!.local.wipe();
+  await adapter!.forgetDevice(); // local data + queued uploads, then the app reloads its state
 }

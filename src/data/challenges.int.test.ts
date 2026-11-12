@@ -3,7 +3,7 @@ import 'fake-indexeddb/auto';
 import { createClient } from '@supabase/supabase-js';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { uid } from './storage';
-import { createChallenge, getChallenge, getScores, mockFromChallenge, postScore, setChallengeClient } from './challenges';
+import { createChallenge, getChallenge, getScores, mockFromChallenge, postScore, revealChallengeKey, setChallengeClient } from './challenges';
 import { scoreSections } from '../core/scoring';
 import type { MockRecord, Question } from '../core/types';
 
@@ -47,30 +47,44 @@ describe('challenge a friend', () => {
     setChallengeClient(B.c);
     const ch = (await getChallenge(code))!;
     expect(ch.creator_name).toBe('Asha');
-    const theirs = mockFromChallenge(ch);
+    expect(ch.paper.questions.x1.answer).toBeUndefined(); // no answer key before taking it
+    const theirs = await mockFromChallenge(ch);
     expect(theirs.sections[0].questionIds).toEqual(['x1', 'x2', 'x3']);
     expect(theirs.sections[0].answers).toEqual([null, null, null]);
     expect(theirs.sections[0].remainingMs).toBe(120000);
     expect(theirs.rules?.negative).toBe(0.5);
     expect(Object.keys(theirs.snapshot!)).toHaveLength(3);
-    expect(await getScores(code)).toEqual([]); // not before taking it
+    expect(theirs.rules?.feedback).toBe('end');
+    await expect(getScores(code)).rejects.toThrow(/Take the challenge/); // not before taking it
 
     theirs.status = 'submitted';
     theirs.sections[0].answers = [0, 1, 2];
-    theirs.score = scoreSections('pre', theirs.sections, (id) => questions[id as keyof typeof questions], theirs.rules);
     await postScore(theirs, 'Ravi');
+    expect(await revealChallengeKey(theirs)).toBe(true); // key revealed after submitting, result rescored
+    expect(theirs.snapshot!.x3.answer).toBe(2);
+    expect(theirs.score!.total).toBe(6);
     const board = await getScores(code);
     expect(board.map((r) => r.display_name)).toEqual(['Ravi', 'Asha']); // 6 vs 3.5
     expect(board[0].score).toBe(6);
 
     // a second attempt doesn't overwrite the first
-    theirs.score = { ...theirs.score, total: 0 };
+    theirs.sections[0].answers = [3, 3, 3];
     await postScore(theirs, 'Ravi');
     expect((await getScores(code))[0].score).toBe(6);
 
     // a stranger with the code can see the challenge but no scores
     setChallengeClient(C.c);
     expect((await getChallenge(code))?.title).toBe('Percentage mini');
-    expect(await getScores(code)).toEqual([]);
+    await expect(getScores(code)).rejects.toThrow(/Take the challenge/);
+    // and can't list challenges or forge a score
+    expect((await C.c.from('challenges').select('code')).error).not.toBeNull();
+    expect((await C.c.from('challenge_scores').insert({ code, display_name: 'x', score: 999, max_score: 1, correct: 0, wrong: 0, time_ms: 0 })).error).not.toBeNull();
+  });
+
+  it('rejects a crafted paper before anything renders it', async () => {
+    setChallengeClient(A.c);
+    const bad = { code: 'ABCDEF', creator_name: 'x', title: 'x', exam: 'pre' as const, is_mine: false, taken: false, created_at: '',
+      paper: { kind: 'custom' as const, rules: null, questions: {}, sections: [{ subject: 'nope' as never, questionIds: ['x1'], allottedMs: 1000 }] } };
+    await expect(mockFromChallenge(bad)).rejects.toThrow(/damaged/);
   });
 });

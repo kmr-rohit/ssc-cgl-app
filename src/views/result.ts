@@ -1,6 +1,6 @@
 import { html, render, nothing } from 'lit-html';
 import { EXAMS, SUBJECTS, TOPIC_MAP } from '../core/syllabus';
-import { accuracy } from '../core/scoring';
+import { accuracy, isQualifying } from '../core/scoring';
 import { app } from '../app/state';
 import { session } from '../app/session';
 import { go } from '../app/router';
@@ -20,7 +20,8 @@ export default async function result(el: HTMLElement, [key]: string[]) {
 
   // per-topic breakdown inside this mock
   const byTopic = new Map<string, { c: number; w: number; s: number }>();
-  m.sections.forEach((s) => s.questionIds.forEach((id, i) => {
+  // qualifying sections are not in the total, so they are left out of the marks-lost figures too
+  m.sections.filter((s) => !isQualifying(m.exam, s.subject, m.rules)).forEach((s) => s.questionIds.forEach((id, i) => {
     const q = lookup(id); if (!q) return;
     const r = byTopic.get(q.topic) ?? { c: 0, w: 0, s: 0 };
     const a = s.answers[i];
@@ -29,7 +30,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
   }));
   const lostTopics = [...byTopic.entries()].map(([t, r]) => ({ t, r, lost: r.w * (e.marks + e.negative) + r.s * e.marks }))
     .filter((x) => x.lost > 0).sort((a, b) => b.lost - a.lost).slice(0, 6);
-  const wrongTotal = sc.sections.reduce((a, s) => a + s.wrong, 0);
+  const wrongTotal = sc.sections.filter((s) => !isQualifying(m.exam, s.subject, m.rules)).reduce((a, s) => a + s.wrong, 0);
 
   const retry = (kind: 'wrong' | 'all') => {
     const ids = m.sections.flatMap((s) => s.questionIds.filter((id, i) => kind === 'all' || s.answers[i] === null || s.answers[i] !== lookup(id)?.answer));
@@ -46,7 +47,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
       <h1><span class="hl">${sc.total.toFixed(1).replace(/\.0$/, '')}</span> / ${sc.max}</h1>
       <div class="grid" style="margin-bottom:1rem">
         ${sc.sections.map((x) => html`<div class="card">
-          <div class="kicker">${dot(x.subject)} ${SUBJECTS[x.subject].short}${EXAMS[m.exam].sections.find((y) => y.subject === x.subject)?.qualifying ? ' (qualifying)' : ''}</div>
+          <div class="kicker">${dot(x.subject)} ${SUBJECTS[x.subject].short}${isQualifying(m.exam, x.subject, m.rules) ? ' (qualifying)' : ''}</div>
           <div class="big">${x.score.toFixed(1).replace(/\.0$/, '')}<span class="small muted"> / ${x.max}</span></div>
           <div class="small">${x.correct} right, ${x.wrong} wrong, ${x.skipped} skipped. Accuracy ${pct(accuracy(x.correct, x.wrong))}</div>
           <div class="small muted">Time used ${fmtMs(m.sections.find((y) => y.subject === x.subject)!.msSpent.reduce((a, b) => a + b, 0))}</div>
@@ -58,7 +59,7 @@ export default async function result(el: HTMLElement, [key]: string[]) {
       ${lostTopics.length ? html`<section class="paper" style="margin:1rem 0"><h2>Where the marks went</h2>
         ${lostTopics.map((x) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
           <a href="#/topic/${x.t}/learn">${TOPIC_MAP[x.t]?.name ?? x.t}</a>
-          <span class="small">${x.r.w} wrong, ${x.r.s} skipped: <b>−${x.lost.toFixed(1)}</b> marks</span></div>`)}</section>` : nothing}
+          <span class="small">${x.r.w} wrong, ${x.r.s} skipped, <b>${x.lost.toFixed(1).replace(/\.0$/, '')}</b> marks missed</span></div>`)}</section>` : nothing}
       <div class="row" style="margin-bottom:1.5rem">
         <button class="btn primary" @click=${() => retry('wrong')}>Retry wrong & skipped</button>
         <a class="btn" href="#/analysis">Full analysis</a>

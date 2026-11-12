@@ -13,6 +13,14 @@ import { dailyKey, openMock } from './mocks';
 import { startTour } from '../ui/tour';
 import { dismissInstall, installHelp, onInstallChange, shouldOfferInstall } from '../ui/install';
 
+/** The topic most of these questions come from (practice uses it only for its title and Back link). */
+function commonTopic(ids: string[]): string {
+  const want = new Set(ids);
+  const n = new Map<string, number>();
+  for (const a of app.attempts) if (want.has(a.questionId)) { want.delete(a.questionId); n.set(a.topic, (n.get(a.topic) ?? 0) + 1); }
+  return [...n.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? app.attempts.find((a) => a.questionId === ids[0])?.topic ?? 'q-percentage';
+}
+
 export default async function today(el: HTMLElement) {
   const s = app.settings;
   if (!s.onboarded) {
@@ -32,12 +40,12 @@ export default async function today(el: HTMLElement) {
   const st = streak(app.attempts);
   const daysLeft = plan.assumedDate ? null : Math.max(0, Math.round((Date.parse(plan.examDate) - Date.parse(day)) / 86_400_000));
   const resumable = [...app.mocks.values()].filter((m) => m.status === 'in-progress').sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))[0];
-  const answeredToday = app.attempts.filter((a) => dayKey(new Date(a.at)) === day).length;
+  const answeredToday = app.attempts.filter((a) => a.chosen !== null && dayKey(new Date(a.at)) === day).length;
 
   const act = (t: Task) => {
     const a = t.action;
     if (a.kind === 'practice') { session.practice = { topic: a.topic, level: 0, mode: 'learn', n: 10 }; go(`#/topic/${a.topic}/learn`); }
-    else if (a.kind === 'retry') { session.practice = { topic: 'q-percentage', level: 0, mode: 'learn', n: a.questionIds.length, questionIds: a.questionIds, title: 'Fix past mistakes' }; go('#/practice'); }
+    else if (a.kind === 'retry') { session.practice = { topic: commonTopic(a.questionIds), level: 0, mode: 'learn', n: a.questionIds.length, questionIds: a.questionIds, title: 'Fix past mistakes' }; go('#/practice'); }
     else if (a.kind === 'mock') openMock(mockKey, () => buildMock({ exam: a.exam, kind: 'daily', key: mockKey, seed: mockKey }));
     else go(a.href);
   };

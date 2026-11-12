@@ -1,3 +1,4 @@
+import { amIAdmin } from '../data/admin';
 import { html, render } from 'lit-html';
 import type { ExamId, Settings } from '../core/types';
 import { app } from '../app/state';
@@ -11,6 +12,8 @@ import { installHelp, onInstallChange } from '../ui/install';
 import { go } from '../app/router';
 
 export default function settings(el: HTMLElement) {
+  let isAdmin = false;
+  amIAdmin().then((x) => { if (x) { isAdmin = true; draw(); } }).catch(() => {});
   const save = async (patch: Partial<Settings>) => {
     await app.saveSettings(patch);
     if (patch.theme) applyTheme(patch.theme);
@@ -31,7 +34,10 @@ export default function settings(el: HTMLElement) {
     if (!f) return;
     try {
       const data = JSON.parse(await f.text());
-      if (!(await confirmDialog('Replace all progress on this device with the backup?', 'Restore'))) return;
+      const ask = auth.user
+        ? 'Restore the backup? It replaces the progress on this device and is added to your account; answers and mocks already in your account stay, and the backup\'s settings replace your account settings.'
+        : 'Replace all progress on this device with the backup?';
+      if (!(await confirmDialog(ask, 'Restore'))) return;
       await app.importAll(data);
       applyTheme(app.settings.theme);
       toast('Backup restored');
@@ -46,6 +52,7 @@ export default function settings(el: HTMLElement) {
       ${auth.enabled ? html`<a class="ticket" href="#/account" style="display:block;text-decoration:none;color:inherit;margin-bottom:1rem">
         <div class="kicker">Account & sync</div>
         <b>${auth.user ? auth.user.email : 'Sign in to sync your progress across devices'}</b></a>` : ''}
+      ${isAdmin ? html`<p><a href="#/admin">Open the admin dashboard</a></p>` : ''}
       <section class="paper stack">
         <h2>Your exam</h2>
         <label class="field">Name<input type="text" .value=${s.name} @change=${(e: Event) => save({ name: (e.target as HTMLInputElement).value.trim().slice(0, 40) })} /></label>

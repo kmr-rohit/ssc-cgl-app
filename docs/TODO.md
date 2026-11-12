@@ -5,6 +5,33 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 
 ---
 
+## Launch v1: public beta with 50 students (review of 2026-11-12)
+Done in this pass (local; hosted DB changes wait for the owner):
+- [x] Report a mistake under every solution (`content_reports`, one per person per question version)
+- [x] Admin dashboard `#/admin`: usage in sentences + daily charts, report queue (show question, mark fixed / not a mistake),
+      "answer keys to check" (many answers, low accuracy or a shared wrong option), hardest topics. Admins listed in `private.admins`
+- [x] Challenge hardening: no listing, answers hidden until taken, server-side scoring, leaderboard without user ids, creation
+      limit, server-set expiry, paper shape check, crafted papers can't replace real questions; sanitiser narrowed (classes/styles)
+- [x] 18 code-review bugs (double submit, leaked timers, stale navigation, Today's mock, settings overwrite on new device,
+      account switch, mock deletes, backup restore, PYQ manifest caching, sign-out scope, scoring of custom papers, ...)
+- [x] CSP pinned to our Supabase project; HSTS includeSubDomains; object-src none
+Before inviting students:
+- [ ] **(owner)** Apply migrations `20261112150000_reports_admin` and `20261112160000_challenges_secure` to hosted, then add yourself to `private.admins`
+- [ ] **(owner)** Custom SMTP for sign-in emails (Supabase's built-in sender allows only a few emails an hour: a beta would hit it on day one)
+- [ ] **(owner)** Enable Google sign-in in the Supabase dashboard
+- [ ] **(owner)** Privacy notice + grievance contact (DPDP); draft in `docs/PRIVACY_DRAFT.md`
+- [ ] Error monitoring (Sentry free tier or similar); add its host to the CSP
+- [ ] Boot: don't wait for the past-paper manifest before the first screen (2.47 s on Fast 3G, budget 2.5 s)
+- [ ] Stable study-plan start date (the plan is rebuilt from today, so students are always in week 1)
+- [ ] Per-user row caps on mocks/kv/attempts (one account could fill the free database)
+- [ ] Server data export (`get_my_data`), to go with account deletion
+- [ ] Re-score custom mocks saved before the qualifying fix (they show 0/0)
+Soon after:
+- [ ] Resume the local-model solution rewrite; fix the remaining ~780 maths residue questions
+- [ ] Use `manifest.weightage` for the "N questions in Tier 1" text (notes and headers disagree today)
+- [ ] Trim fonts (7 files) and preload the first view chunk
+- [ ] Hosting: Vercel Hobby is non-commercial; move before charging money
+
 ## M0 + M1: Local web app on the new architecture (fresh build, owner chose local-only, no git)
 - [x] Node 22 installed (Homebrew, keg-only)
 - [x] Vite + TypeScript + lit-html scaffold (fresh code; `reference/` used for ideas only)
@@ -50,7 +77,7 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 - [x] Mock builder: presets, what to test (paper/size/sections/topics), which questions (all/unseen/mistakes; exam/weak/equal spread), rules (exam pace/per-question/no timer; locked/free sections; exam/no-negative marking; answers at end/instant); save as my tests
 - [ ] Builder extras from the old app: rough sheet, exam-day mode, scheduled start, target score vs cut-off, difficulty mix, section order, pin a test to the weekly plan
 - [x] Challenge a friend: 6-letter code + share link (#/c/CODE), same paper and rules, first attempt only, leaderboard visible to participants and creator (local stack; hosted migration pending owner OK)
-- [ ] Report a mistake on every question (review queue)
+- [x] Report a mistake on every question (review queue on `#/admin`)
 - [ ] Use real weightage from the bank (`manifest.weightage`) in syllabus text and mock allocation
 - [x] Question types for bank questions (local Gemma via Ollama): a taxonomy per topic (`pipeline/taxonomy/`), notes rewritten with one
       variety per type, `classify-types.ts` (source concept first, model for the rest; 79% agreement with source labels on a sample),
@@ -62,19 +89,17 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 - [ ] Smaller ports: speed drills, revision sets, attempt-strategy report, accuracy-vs-speed chart, typing test (desktop), exam info page, video/reading links, current-affairs notebook
 
 ## M2: Accounts, sync, AI proxy
-- [!] Blocked on D1, D2, D3 (see TECHNICAL_DESIGN §9)
-- [ ] **(owner)** Create a Supabase project (ap-south-1) and give MCP/CLI access
-- [ ] SQL migrations for the tables in design §3.3, with RLS policies
-- [ ] RLS tests (user A can't read or write user B), run in CI against a local Supabase
-- [ ] Auth: Google + email OTP on web
-- [ ] `SupabaseAdapter` implementing `StorageAdapter`; outbox sync with retry/backoff; conflict rules per table
-- [ ] First-login import of local progress into the account
+- [x] Supabase project `ssc-cgl-app` (Mumbai)
+- [x] SQL migrations with RLS policies; pgTAP tests (`npx supabase test db`)
+- [x] Auth: email OTP on web (Google pending owner: enable in dashboard)
+- [x] `SyncedAdapter` (outbox sync with retry) over the local IndexedDB adapter
+- [x] First-login import of local progress into the account
 - [ ] Edge Function `ai-doubt` (streaming, canonical question loaded server-side, quota)
 - [ ] Edge Function `ai-generate` (structured output, validation, sanitisation, quota)
 - [ ] Edge Function `ai-coach` (weekly limit)
 - [ ] `ai_usage` metering, global monthly spend cap, `AI_ENABLED` kill switch
 - [ ] Small eval: 50 real doubts across models before choosing a cheaper model (owner decides)
-- [ ] Data export (JSON) and account deletion (Edge Function plus UI)
+- [~] Account deletion done (Edge Function `delete-account` + UI); server data export still to do
 - [ ] Remove LAN server mode from the product build (keep `npm run dev`)
 
 ## M3: Public web beta
@@ -82,7 +107,7 @@ Rules: work top-down within the current milestone. One task per branch/PR. Tick 
 - [ ] Deploy pipeline: PR previews; `main` → staging; tag → production
 - [ ] Sentry (web), with source maps uploaded in CI
 - [ ] Privacy-respecting analytics (opt-in), with key events: signup, first mock, D7 retention
-- [ ] "Report a mistake" on every question → `content_reports`, plus an admin review query
+- [x] "Report a mistake" on every question → `content_reports`, plus the admin dashboard
 - [ ] **(owner)** Privacy policy, terms, grievance contact (DPDP)
 - [ ] **(owner/SME)** GA and English answer-key review: at least the top 20 topics by weightage
 - [ ] Remote content update: the client checks the manifest version and downloads only changed topics

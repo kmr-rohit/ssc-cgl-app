@@ -1,6 +1,6 @@
 // Service worker. The build step (vite.config.ts → pwaPrecache) stamps the version and the precache file list below.
 // - install: cache every file of this build (app code, content, figures) so the installed app works fully offline
-// - navigations + content manifest: network first (fresh when online), cache fallback
+// - navigations + content and past-paper manifests: network first (fresh when online), cache fallback
 // - everything else: cache first (files are content-hashed)
 const VERSION = '__VERSION__';
 const PRECACHE = __PRECACHE__;
@@ -29,7 +29,7 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== location.origin) return; // Supabase etc. go straight to the network
-  const networkFirst = req.mode === 'navigate' || url.pathname === '/content/manifest.json';
+  const networkFirst = req.mode === 'navigate' || url.pathname === '/content/manifest.json' || url.pathname === '/pyq/manifest.json';
   if (networkFirst) {
     e.respondWith((async () => {
       try {

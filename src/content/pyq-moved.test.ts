@@ -14,3 +14,21 @@ describe('past-paper questions moved to a corrected topic', () => {
     expect(await pyqTopicOf('pyq:q-ratio:zzz')).toBe('q-ratio');
   });
 });
+
+describe('past-paper manifest loading', () => {
+  afterEach(() => { vi.unstubAllGlobals(); vi.resetModules(); });
+  it('retries after a failed load instead of caching the failure', async () => {
+    const ok = { version: 'x', counts: { questions: 0, papers: 0 }, topics: {}, papers: [], weightage: {} };
+    const f = vi.fn()
+      .mockRejectedValueOnce(new Error('offline'))
+      .mockResolvedValueOnce(new Response('', { status: 503 }))
+      .mockImplementation(async () => new Response(JSON.stringify(ok)));
+    vi.stubGlobal('fetch', f);
+    const { loadPyqManifest } = await import('./pyq');
+    expect(await loadPyqManifest()).toBeNull();
+    expect(await loadPyqManifest()).toBeNull();
+    expect((await loadPyqManifest())?.version).toBe('x');
+    expect(await loadPyqManifest()).not.toBeNull();
+    expect(f).toHaveBeenCalledTimes(3); // a good manifest is cached
+  });
+});

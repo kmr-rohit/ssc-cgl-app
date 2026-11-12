@@ -14,6 +14,28 @@ DOMPurify.addHook('uponSanitizeElement', (node, data) => {
   if (!/^\/pyq\/img\/[a-f0-9]{16}\.webp$/.test(src)) node.parentNode?.removeChild(node);
 });
 
+// Content can come from another user (a challenge paper), so layout attributes are narrowed to what our content uses:
+// KaTeX's classes and its positioning styles. That rules out app classes or styles that could cover the screen.
+const CLASS_OK = /^(katex[\w-]*|m[a-z]+|vlist[\w-]*|pstrut|frac-line|nulldelimiter|sizing|reset-size\d+|size\d+|svg-align|sqrt|hide-tail|delim[\w-]*|accent[\w-]*|overline[\w-]*|underline[\w-]*|hbox|op-[\w-]+|large-op|small-op|root|arraycolsep|col-align-\w|newline|text|enclosing|fbox|tag|fig|figure)$/;
+const STYLE_PROPS = new Set(['height', 'width', 'min-width', 'vertical-align', 'top', 'bottom', 'left', 'right', 'margin-left', 'margin-right',
+  'margin-top', 'margin-bottom', 'padding-left', 'padding-right', 'border-bottom-width', 'border-top-width', 'border-right-width', 'color']);
+const STYLE_VALUE = /^-?[\w.%# ]{1,40}$/;               // no url(), calc(), expression(), quotes
+const bigLength = (v: string) => { const m = v.match(/^(-?[\d.]+)(em|ex|px)?$/); return !!m && Math.abs(Number(m[1])) > (m[2] === 'px' ? 600 : 40); };
+DOMPurify.addHook('uponSanitizeAttribute', (_node, data) => {
+  if (data.attrName === 'class') {
+    data.attrValue = data.attrValue.split(/\s+/).filter((c) => CLASS_OK.test(c)).join(' ');
+    if (!data.attrValue) data.keepAttr = false;
+  } else if (data.attrName === 'style') {
+    data.attrValue = data.attrValue.split(';').map((d) => d.trim()).filter((d) => {
+      const i = d.indexOf(':');
+      if (i < 0) return false;
+      const prop = d.slice(0, i).trim().toLowerCase(), val = d.slice(i + 1).trim();
+      return STYLE_PROPS.has(prop) && STYLE_VALUE.test(val) && !bigLength(val);
+    }).join(';');
+    if (!data.attrValue) data.keepAttr = false;
+  } else if (data.attrName === 'id') data.keepAttr = false;  // ids in content could collide with the app's
+});
+
 /** Curated/generated/past-paper content HTML (inline SVG figures from generators, past-paper figure images). */
 export function rich(s: string | undefined | null): TemplateResult {
   const clean = DOMPurify.sanitize(String(s ?? ''), {

@@ -84,7 +84,7 @@ export function buildContext() {
   const weak = weakTopics(app.stats, exam, 3);
   const weakWeights: Record<string, number> = {};
   for (const w of weak) weakWeights[w.topic.id] = w.lost !== null ? w.lost + 0.2 : w.weight * 0.3;
-  return { seen: new Set(app.attempts.map((a) => a.questionId)), mistakes: mistakes(app.attempts).map((m) => m.questionId), weakWeights };
+  return { seen: new Set(app.attempts.map((a) => a.questionId)), mistakes: mistakes(app.attempts).filter((m) => !m.skipped).map((m) => m.questionId), weakWeights };
 }
 
 export async function startDraft(d: Draft) {
@@ -99,7 +99,7 @@ export default async function builder(el: HTMLElement) {
   let saved = await loadSavedTests();
   let openTopics: SubjectId | null = null;
   let busy = false;
-  const nMistakes = mistakes(app.attempts).length;
+  const nMistakes = mistakes(app.attempts).filter((m) => !m.skipped).length;
 
   const setPaper = (p: Paper) => { d = newDraft(p, { name: d.name, source: d.source, weighting: d.weighting, timing: d.timing, perQSec: d.perQSec, sectionMode: d.sectionMode, marking: d.marking, feedback: d.feedback }); draw(); };
   const start = async () => {

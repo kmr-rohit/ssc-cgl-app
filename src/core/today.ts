@@ -12,9 +12,13 @@ export type TaskAction =
 
 export interface Task { id: string; label: string; detail: string; done: boolean; action: TaskAction; minutes: number }
 
-/** Spread `perWeek` mocks evenly over a 7-day week; dayIndex 0..6 from the week's start. */
+/** Spread `perWeek` mocks evenly over a 7-day week; dayIndex 0..6 within the week. */
 export const isMockDay = (perWeek: number, dayIndex: number) =>
   perWeek >= 7 || Math.floor(((dayIndex + 1) * perWeek) / 7) > Math.floor((dayIndex * perWeek) / 7);
+
+const EPOCH = Date.parse('1970-01-05'); // a Monday
+/** 0..6 for a YYYY-MM-DD day, stable across plan rebuilds (Monday = 0). */
+export const weekdayIndex = (day: string) => ((Math.round((Date.parse(day) - EPOCH) / 86_400_000) % 7) + 7) % 7;
 
 const localDay = (iso: string) => dayKey(new Date(iso));
 
@@ -23,7 +27,8 @@ export function buildTasks(o: {
   topicDone: (topic: string) => boolean; today?: string; dailyMockKey: string;
 }): Task[] {
   const today = o.today ?? dayKey();
-  const todays = o.attempts.filter((a) => localDay(a.at) === today);
+  // skipped questions (chosen === null) are not "done": they don't count towards any of today's goals
+  const todays = o.attempts.filter((a) => localDay(a.at) === today && a.chosen !== null);
   const tasks: Task[] = [];
 
   // 1. study the next roadmap topic (10 questions today in that topic = done)
@@ -41,7 +46,7 @@ export function buildTasks(o: {
 
   // 2. mistakes from before today (10 retried correctly or attempted today = done)
   const before = o.attempts.filter((a) => localDay(a.at) < today);
-  const open = mistakes(before).map((m) => m.questionId);
+  const open = mistakes(before).filter((m) => !m.skipped).map((m) => m.questionId); // wrong answers only; skips aren't mistakes
   if (open.length) {
     const retried = new Set(todays.filter((a) => open.includes(a.questionId)).map((a) => a.questionId)).size;
     const goal = Math.min(10, open.length);
@@ -63,8 +68,9 @@ export function buildTasks(o: {
     tasks.push({ id: 'cards', label: 'Learn new words', detail: '10 new vocabulary cards', done: false, action: { kind: 'link', href: '#/revise' }, minutes: 10 });
   }
 
-  // 4. mock on scheduled days
-  const dayIndex = Math.max(0, Math.round((Date.parse(today) - Date.parse(o.week.start)) / 86_400_000));
+  // 4. mock on scheduled days. The plan is rebuilt from today every day, so week.start is always today;
+  // anchor the day of the week to a fixed epoch instead, or every day would be day 0.
+  const dayIndex = weekdayIndex(today);
   if (isMockDay(o.week.mocks, dayIndex)) {
     const m = o.mocks.find((x) => x.key === o.dailyMockKey);
     tasks.push({

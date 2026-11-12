@@ -198,7 +198,7 @@ export async function buildSection(exam: ExamId, subject: SubjectId, count: numb
       if (curatedTarget <= 0 || skip(q.id)) continue;
       if (q.passageId) {
         const g = c!.questions.filter((x) => x.passageId === q.passageId);
-        if (g.length > need + 1) continue;
+        if (g.length > need) continue;
         g.forEach((x) => taken.add(x.id));
         groups.push(g); need -= g.length; curatedTarget -= g.length;
       } else { taken.add(q.id); groups.push([q]); need--; curatedTarget--; }

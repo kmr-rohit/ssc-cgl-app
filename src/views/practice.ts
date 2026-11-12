@@ -10,7 +10,40 @@ import { uid } from '../data/storage';
 import { questionView, stamp } from '../ui/components';
 import { fmtMs, pct } from '../ui/html';
 
+/**
+ * "New set" and "Retry" restart the run in place; each run's listeners and timer are
+ * cleaned before the next starts, and the current one when the route changes.
+ */
 export default async function practice(el: HTMLElement) {
+  let cleanup: (() => void) | void;
+  let gen = 0, gone = false;
+  const restart = async () => {
+    if (typeof cleanup === 'function') cleanup();
+    cleanup = undefined;
+    const mine = ++gen;
+    const live = () => !gone && mine === gen;
+    const c = await run(el, restart, live);
+    if (live()) cleanup = c; else if (typeof c === 'function') c();
+  };
+  await restart();
+  return () => { gone = true; if (typeof cleanup === 'function') cleanup(); };
+}
+
+/** "2 of 5 right, 1 wrong, 2 skipped": one statement of the result. */
+export function resultSentence(correct: number, wrong: number, skipped: number): string {
+  return [`${correct} of ${correct + wrong + skipped} right`, ...(wrong ? [`${wrong} wrong`] : []), ...(skipped ? [`${skipped} skipped`] : [])].join(', ');
+}
+/** Accuracy over answered questions, only when skips make it differ from the headline. */
+export function accuracyNote(correct: number, wrong: number, skipped: number): string {
+  const answered = correct + wrong;
+  return skipped && answered ? `Of the ${answered} you answered, ${pct(correct / answered)} were right. ` : '';
+}
+const fmtTime = (ms: number) => {
+  const sec = Math.round(ms / 1000);
+  return sec < 60 ? `${sec} seconds` : `${Math.floor(sec / 60)} min ${sec % 60} s`;
+};
+
+async function run(el: HTMLElement, restart: () => void, live: () => boolean): Promise<(() => void) | void> {
   const cfg = session.practice;
   if (!cfg) { location.hash = '#/syllabus'; return; }
   const t = TOPIC_MAP[cfg.topic];
@@ -24,6 +57,7 @@ export default async function practice(el: HTMLElement) {
   } else {
     qs = await practiceSet(cfg.topic, { level: cfg.level, type: cfg.type, n: cfg.n, seed: `p-${Date.now()}` });
   }
+  if (!live()) return; // a newer run started, or the route changed, while loading
   if (!qs.length) {
     render(html`<div class="page"><h1>No questions yet</h1><p class="muted">There are no questions for this selection.</p><a class="btn" href="#/topic/${cfg.topic}/practice">Back</a></div>`, el);
     return;
@@ -79,16 +113,12 @@ export default async function practice(el: HTMLElement) {
     const wrong = qs.filter((_, k) => answers[k] !== null && answers[k] !== qs[k].answer).length;
     const time = ms.reduce((a, b) => a + b, 0);
     return html`<div class="page">
-      <div class="kicker">${t?.name ?? 'Practice'} results</div>
-      <h1>${correct} / ${qs.length} correct</h1>
-      <div class="grid" style="margin-bottom:1rem">
-        <div class="card"><div class="kicker">Accuracy</div><div class="big">${pct(correct + wrong ? correct / (correct + wrong) : 0)}</div></div>
-        <div class="card"><div class="kicker">Time</div><div class="big">${fmtMs(time)}</div><div class="small muted">${Math.round(time / 1000 / qs.length)}s per question (target ${Math.round(totalMs / 1000 / qs.length)}s)</div></div>
-        <div class="card"><div class="kicker">Wrong / skipped</div><div class="big">${wrong} / ${qs.length - correct - wrong}</div></div>
-      </div>
+      <div class="kicker">${cfg.title ?? t?.name ?? 'Practice'} results</div>
+      <h1>${resultSentence(correct, wrong, qs.length - correct - wrong)}</h1>
+      <p class="result-line">${accuracyNote(correct, wrong, qs.length - correct - wrong)}You took ${fmtTime(time)}, about ${Math.round(time / 1000 / qs.length)} seconds a question against a target of ${Math.round(totalMs / 1000 / qs.length)}.</p>
       <div class="row" style="margin-bottom:1.5rem">
-        <button class="btn primary" @click=${() => { session.practice = { ...cfg, questionIds: undefined }; practice(el); }}>New set</button>
-        ${correct < qs.length ? html`<button class="btn" @click=${() => { session.practice = { ...cfg, mode: 'learn', questionIds: qs.filter((q, k) => answers[k] !== q.answer).map((q) => q.id) }; practice(el); }}>Retry wrong & skipped</button>` : nothing}
+        <button class="btn primary" @click=${() => { session.practice = { ...cfg, questionIds: undefined }; restart(); }}>New set</button>
+        ${correct < qs.length ? html`<button class="btn" @click=${() => { session.practice = { ...cfg, mode: 'learn', questionIds: qs.filter((q, k) => answers[k] !== q.answer).map((q) => q.id) }; restart(); }}>Retry wrong & skipped</button>` : nothing}
         <a class="btn ghost" href="#/topic/${cfg.topic}/learn">Back to notes</a>
       </div>
       <h2>Review</h2>
@@ -109,14 +139,14 @@ export default async function practice(el: HTMLElement) {
       <section class="paper">
         ${questionView(q, { chosen: answers[i], reveal: revealed[i], onPick: pick,
           head: html`<div class="q-head"><span>Level ${q.level}, ${q.type.replace(/-/g, ' ')}</span>${revealed[i] ? stamp(answers[i] === q.answer ? 'ok' : 'no') : nothing}</div>` })}
-        <div class="exam-actions">
+        <div class="exam-actions practice-actions">
           <button class="btn" ?disabled=${i === 0} @click=${() => move(-1)}>Previous</button>
           ${i < qs.length - 1
             ? html`<button class="btn primary" @click=${() => move(1)}>${answers[i] === null && !revealed[i] ? 'Skip' : 'Next'}</button>`
             : html`<button class="btn primary" @click=${finish}>Finish</button>`}
         </div>
       </section>
-      <p class="small muted" style="margin-top:.8rem">Keys: 1–4 or A–D to answer, ← → to move.</p>
+      <p class="small muted kbd-hint" style="margin-top:.8rem">Keyboard: press 1 to 4 or A to D to answer, and the left and right arrow keys to move.</p>
     </div>`, el);
   };
 

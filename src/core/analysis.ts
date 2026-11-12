@@ -7,6 +7,7 @@ import { dayKey } from './srs';
 export const TARGET_SEC: Record<SubjectId, number> = { quant: 54, reasoning: 36, english: 30, ga: 20, computer: 40, statistics: 72 };
 
 export interface TopicStat {
+  /** `attempts` counts ANSWERED questions only (chosen !== null); skips are in `skipped`. Accuracy and avgSec use answered ones. */
   topic: string; attempts: number; correct: number; wrong: number; skipped: number;
   accuracy: number; avgSec: number; slow: boolean; lastAt: string | null;
   byType: Record<string, { attempts: number; correct: number }>;
@@ -16,10 +17,11 @@ export function topicStats(attempts: Attempt[]): Record<string, TopicStat> {
   const m: Record<string, TopicStat> = {};
   for (const a of attempts) {
     const s = (m[a.topic] ||= { topic: a.topic, attempts: 0, correct: 0, wrong: 0, skipped: 0, accuracy: 0, avgSec: 0, slow: false, lastAt: null, byType: {} });
-    s.attempts++;
-    if (a.chosen === null) s.skipped++; else if (a.correct) s.correct++; else s.wrong++;
-    s.avgSec += a.ms / 1000;
     s.lastAt = a.at;
+    if (a.chosen === null) { s.skipped++; continue; } // a skip is not an attempt: no accuracy, time or progress from it
+    s.attempts++;
+    if (a.correct) s.correct++; else s.wrong++;
+    s.avgSec += a.ms / 1000;
     const t = (s.byType[a.type] ||= { attempts: 0, correct: 0 });
     t.attempts++; if (a.correct) t.correct++;
   }
@@ -33,8 +35,12 @@ export function topicStats(attempts: Attempt[]): Record<string, TopicStat> {
   return m;
 }
 
-/** Expected marks lost per paper = weight × (1 − accuracy) × marks + wrong-rate × negative. */
-export function weakTopics(stats: Record<string, TopicStat>, exam: ExamId, minAttempts = 4) {
+/**
+ * Expected marks lost per paper = weight × (1 − accuracy) × marks + wrong-rate × negative.
+ * Needs `minAttempts` ANSWERED questions in the topic before it claims anything (skips don't count).
+ */
+export const MIN_ANSWERED_FOR_LEAK = 10;
+export function weakTopics(stats: Record<string, TopicStat>, exam: ExamId, minAttempts = MIN_ANSWERED_FOR_LEAK) {
   const e = EXAMS[exam];
   const key = exam === 'pre' ? 'pre' : exam === 'mains' ? 'mains' : 'stats';
   return TOPICS.filter((t) => t[key][1] > 0)

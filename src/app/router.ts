@@ -7,6 +7,7 @@ export type View = (el: HTMLElement, params: string[]) => any;
 interface Route { pattern: RegExp; nav: string; title: string; parent: string | null; view: () => Promise<View> }
 const routes: Route[] = [];
 let cleanup: (() => void) | void;
+let navSeq = 0; // bumps on every dispatch; an older dispatch that resolves late must not mount
 
 /**
  * @param nav     which bottom tab is highlighted ('' = none, e.g. Profile)
@@ -62,6 +63,7 @@ export function setTitle(t: string) { titleOverride = t; renderTopbar(); }
 export async function dispatch() {
   const main = document.getElementById('main')!;
   const path = location.hash.replace(/^#/, '') || '/';
+  const seq = ++navSeq;
   if (typeof cleanup === 'function') cleanup();
   cleanup = undefined;
   for (const r of routes) {
@@ -75,19 +77,31 @@ export async function dispatch() {
     window.scrollTo(0, 0);
     try {
       const view = await r.view();
+      if (seq !== navSeq) return;
       // fresh host per route: lit-html keeps render state on the container
       const host = document.createElement('div');
       main.replaceChildren(host);
-      cleanup = await view(host, m.slice(1).map((x) => decodeURIComponent(x ?? '')));
+      const c = await view(host, m.slice(1).map((x) => decodeURIComponent(x ?? '')));
+      if (seq !== navSeq) { if (typeof c === 'function') c(); return; }
+      cleanup = c;
     } catch (e) {
       console.error(e);
+      if (seq !== navSeq) return;
       main.replaceChildren();
       render(html`<div class="page"><h1>Something went wrong</h1><p class="muted">${(e as Error).message}</p><a class="btn" href="#/">Go home</a></div>`, main);
     }
     return;
   }
+  // not found: no tab highlighted, its own title, and Back goes home
+  if (current) arrivedInApp = true;
+  current = { pattern: /$^/, nav: '', title: 'Page not found', parent: '#/', view: async () => () => {} };
+  titleOverride = null;
+  renderNav('');
+  renderTopbar();
+  document.body.dataset.route = 'not-found';
+  window.scrollTo(0, 0);
   main.replaceChildren();
-  render(html`<div class="page"><h1>Page not found</h1><a class="btn" href="#/">Go home</a></div>`, main);
+  render(html`<div class="page"><h1>Page not found</h1><p class="muted">This link doesn't lead anywhere in the app. It may be old or mistyped.</p><a class="btn primary" href="#/">Go to Today</a></div>`, main);
 }
 
 let toastTimer: number | undefined;

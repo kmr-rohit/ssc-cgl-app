@@ -13,7 +13,7 @@ const SHEET_SUBJECTS: SubjectId[] = ['quant', 'reasoning', 'statistics', 'comput
 const TABLES: Record<string, { name: string; view: () => unknown }> = {
   squares: { name: 'Squares 1–50', view: () => grid(squares().map((x) => [`${x.n}²`, x.v])) },
   cubes: { name: 'Cubes 1–25', view: () => grid(cubes().map((x) => [`${x.n}³`, x.v])) },
-  fractions: { name: 'Fractions ↔ percent', view: () => html`<table class="sheet"><thead><tr><th>Fraction</th><th>Percent</th><th>Decimal</th></tr></thead>
+  fractions: { name: 'Fractions and percentages', view: () => html`<table class="sheet"><thead><tr><th>Fraction</th><th>Percent</th><th>Decimal</th></tr></thead>
     <tbody>${fractionPercent().map((r) => html`<tr><td>${r.frac}</td><td>${r.pct}</td><td>${r.dec}</td></tr>`)}</tbody></table>` },
   tables: { name: 'Tables 11–20', view: () => html`<table class="sheet"><tbody>${multiplication().map((r) => html`<tr><th>${r.n}</th>${r.row.map((v) => html`<td>${v}</td>`)}</tr>`)}</tbody></table>` },
   powers: { name: 'Powers of 2', view: () => grid(powersOf2().map((x) => [`2^${x.n}`, x.v])) },
@@ -46,7 +46,7 @@ export default async function formulas(el: HTMLElement, [arg]: string[]) {
 
   if (arg) {
     render(html`<div class="page sheet-page" style="max-width:860px">
-      <div class="row no-print" style="margin-bottom:.6rem"><a class="btn sm ghost" href="#/formulas">← All sheets</a><button class="btn sm" @click=${() => window.print()}>Print</button></div>
+      <div class="row no-print" style="margin-bottom:.6rem"><a class="btn sm ghost" href="#/formulas">All sheets</a><button class="btn sm" @click=${() => window.print()}>Print</button></div>
       ${sheet(arg)}</div>`, el);
     return;
   }

@@ -33,7 +33,8 @@ export function loadPyqManifest(): Promise<PyqManifest | null> {
   return (manifestP ??= fetch(`${BASE}manifest.json`, { cache: 'no-cache' })
     .then((r) => (r.ok ? r.json() : null))
     .then((m) => (manifest = m))
-    .catch(() => null));
+    .catch(() => null)
+    .then((m) => { if (!m) manifestP = null; return m; })); // a failed load is retried on the next call
 }
 export const getPyqManifest = () => manifest;
 

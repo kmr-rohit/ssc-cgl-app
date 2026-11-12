@@ -15,7 +15,7 @@ export default function syllabus(el: HTMLElement, [subj]: string[]) {
   const m = getManifest();
   const stats = app.stats;
   const dueCards = [...app.cards.values()].filter((c) => isDue(c)).length;
-  const nMistakes = mistakes(app.attempts).length;
+  const nMistakes = mistakes(app.attempts).filter((m) => !m.skipped).length;
   const target = app.settings.target;
   const key = target === 'pre' ? 'pre' : target === 'mains' ? 'mains' : 'stats';
   const progress = (id: string, count: number) => {

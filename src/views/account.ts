@@ -24,7 +24,7 @@ export default async function account(el: HTMLElement) {
   const draw = () => {
     if (!auth.enabled) {
       render(html`<div class="page" style="max-width:640px"><h1>Account</h1>
-        <div class="paper"><p>Accounts aren't configured in this build. Your progress is saved on this device; use Settings → Download backup to move it.</p></div></div>`, el);
+        <div class="paper"><p>Accounts aren't configured in this build. Your progress is saved on this device. To move it to another device, open <a href="#/profile">Profile</a> and use Download backup.</p></div></div>`, el);
       return;
     }
     const u = auth.user;

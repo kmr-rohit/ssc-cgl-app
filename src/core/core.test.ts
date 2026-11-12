@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { addDays, newCard, review } from './srs';
-import { scoreSections } from './scoring';
+import { isQualifying, scoreSections } from './scoring';
 import { streak, topicStats, weakTopics } from './analysis';
 import type { Attempt, MockSectionState, Question } from './types';
 import { Rng, mcq } from './rng';
@@ -53,11 +53,19 @@ describe('analysis', () => {
   const at = (d: string, correct: boolean, topic = 'q-percentage'): Attempt =>
     ({ id: Math.random().toString(), questionId: 'x', rev: 1, topic, type: 'basic', level: 1, chosen: correct ? 0 : 1, correct, ms: 30000, mode: 'learn', at: new Date(d).toISOString() });
   it('computes accuracy and ranks weak topics by marks lost', () => {
-    const list = [...Array(5)].map(() => at('2026-01-01T10:00', false, 'q-geometry')).concat([...Array(5)].map(() => at('2026-01-01T10:00', true)));
+    const list = [...Array(10)].map(() => at('2026-01-01T10:00', false, 'q-geometry')).concat([...Array(10)].map(() => at('2026-01-01T10:00', true)));
     const st = topicStats(list);
     expect(st['q-geometry'].accuracy).toBe(0);
     expect(st['q-percentage'].accuracy).toBe(1);
     expect(weakTopics(st, 'pre')[0].topic.id).toBe('q-geometry');
+  });
+  it('ignores skipped questions for progress, accuracy and mark leaks', () => {
+    const skip = (topic: string): Attempt => ({ ...at('2026-01-01T10:00', false, topic), chosen: null });
+    const list = [...Array(12)].map(() => skip('e-cloze')).concat([...Array(3)].map(() => at('2026-01-01T10:00', false, 'e-cloze')));
+    const st = topicStats(list);
+    expect(st['e-cloze'].attempts).toBe(3);
+    expect(st['e-cloze'].skipped).toBe(12);
+    expect(weakTopics(st, 'pre').find((w) => w.topic.id === 'e-cloze')?.lost ?? null).toBeNull();
   });
   it('counts a streak of consecutive local days', () => {
     const list = [at('2026-03-10T09:00', true), at('2026-03-11T09:00', true), at('2026-03-12T09:00', true)];
@@ -80,5 +88,17 @@ describe('scoring with custom rules', () => {
     const s = scoreSections('pre', [sec('quant', ['a', 'b'], [0, 0])], (id) => bank[id], { timing: 'none', sectionMode: 'free', marks: 1, negative: 0, feedback: 'instant' });
     expect(s.total).toBe(1);
     expect(s.max).toBe(2);
+  });
+});
+
+describe('custom papers have no qualifying sections', () => {
+  it('counts a Computer-only custom test in the total', () => {
+    const bank: Record<string, Question> = { d: q('d', 3), e: q('e', 0) };
+    const rules = { timing: 'exam', sectionMode: 'locked', marks: 3, negative: 1, feedback: 'end' } as const;
+    const s = scoreSections('mains', [sec('computer', ['d', 'e'], [3, 1])], (id) => bank[id], rules);
+    expect(s.total).toBe(3 - 1);
+    expect(s.max).toBe(6);
+    expect(isQualifying('mains', 'computer', rules)).toBe(false);
+    expect(isQualifying('mains', 'computer')).toBe(true);
   });
 });

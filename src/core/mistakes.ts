@@ -6,7 +6,7 @@ export interface Mistake {
   topic: string;
   type: string;
   lastAt: string;
-  wrongCount: number;   // how many times it was got wrong / skipped in total
+  wrongCount: number;   // how many times it was answered wrong (skips not counted)
   skipped: boolean;     // latest attempt was a skip (vs a wrong answer)
 }
 
@@ -16,7 +16,7 @@ export function mistakes(attempts: Attempt[]): Mistake[] {
   for (const a of attempts) {
     const prev = latest.get(a.questionId);
     if (!prev || a.at >= prev.at) latest.set(a.questionId, a);
-    if (!a.correct) wrong.set(a.questionId, (wrong.get(a.questionId) ?? 0) + 1);
+    if (!a.correct && a.chosen !== null) wrong.set(a.questionId, (wrong.get(a.questionId) ?? 0) + 1);
   }
   return [...latest.values()]
     .filter((a) => !a.correct)

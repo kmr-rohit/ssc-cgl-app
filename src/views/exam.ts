@@ -5,7 +5,7 @@ import { scoreSections } from '../core/scoring';
 import type { Attempt, MockRecord } from '../core/types';
 import { app } from '../app/state';
 import { go, toast } from '../app/router';
-import { hydrateMock, lookup } from '../content/bank';
+import { assetUrl, hydrateMock, lookup, passageOf } from '../content/bank';
 import { uid } from '../data/storage';
 import { confirmDialog, dot, questionView } from '../ui/components';
 import { fmtMs } from '../ui/html';
@@ -13,6 +13,57 @@ import { fmtMs } from '../ui/html';
 function enterFullscreen() {
   // must run inside the click handler (user gesture); unsupported on iPhone Safari, which is fine
   document.documentElement.requestFullscreen?.({ navigationUI: 'hide' }).catch(() => {});
+}
+
+/**
+ * Fetch every figure this mock uses, in the background, so the service worker caches it (it caches /pyq/ and
+ * /content/ files on fetch). Then figures still show if the network drops mid-mock. Low priority, 3 at a time,
+ * errors ignored. Exported for tests.
+ */
+export function mockImageUrls(m: MockRecord): string[] {
+  const urls = new Set<string>();
+  const fromHtml = (h: string | undefined) => {
+    if (!h) return;
+    for (const x of h.matchAll(/<img\b[^>]*?\ssrc\s*=\s*["']([^"']+)["']/gi)) urls.add(x[1]);
+  };
+  const add = (p: string | undefined) => { if (p) urls.add(assetUrl(p)); };
+  for (const s of m.sections) for (const id of s.questionIds) {
+    const q = lookup(id);
+    if (!q) continue;
+    fromHtml(q.q); q.options.forEach(fromHtml); fromHtml(q.solution);
+    add(q.img); q.optionImgs?.forEach(add);
+    const p = passageOf(q);
+    if (p) { fromHtml(p.text); add(p.img); }
+  }
+  return [...urls].filter((u) => !u.startsWith('data:'));
+}
+
+/** SSC palette status, one per question: a = answered, v = not answered, m = marked (no answer), am = answered & marked, '' = not visited. */
+export type PaletteStatus = 'a' | 'v' | 'm' | 'am' | '';
+export function paletteStatus(s: Pick<MockRecord['sections'][number], 'answers' | 'marked' | 'visited'>, i: number): PaletteStatus {
+  const a = s.answers[i] !== null, mk = s.marked[i];
+  return a && mk ? 'am' : mk ? 'm' : a ? 'a' : s.visited[i] ? 'v' : '';
+}
+/** Counts per status; they always add up to the number of questions. */
+export function paletteCounts(s: Pick<MockRecord['sections'][number], 'answers' | 'marked' | 'visited'>): Record<PaletteStatus, number> {
+  const n: Record<PaletteStatus, number> = { a: 0, v: 0, m: 0, am: 0, '': 0 };
+  s.answers.forEach((_, i) => n[paletteStatus(s, i)]++);
+  return n;
+}
+
+const warmed = new Set<string>(); // mock keys already warmed in this page load
+function warmMockImages(m: MockRecord) {
+  if (warmed.has(m.key) || !navigator.onLine) return;
+  warmed.add(m.key);
+  const queue = mockImageUrls(m);
+  const worker = async () => {
+    for (let u = queue.shift(); u; u = queue.shift()) {
+      try { await fetch(u, { priority: 'low' } as RequestInit); } catch { /* offline or missing: the figure just won't be cached */ }
+    }
+  };
+  const start = () => { for (let i = 0; i < 3; i++) void worker(); };
+  // after the first question has painted
+  if ('requestIdleCallback' in window) requestIdleCallback(start, { timeout: 3000 }); else setTimeout(start, 1000);
 }
 
 export async function submitMock(m: MockRecord) {
@@ -39,6 +90,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   if (m.status === 'submitted') { go(`#/result/${encodeURIComponent(key)}`); return; }
   render(html`<div class="page"><p class="muted">Loading paper…</p></div>`, el);
   await hydrateMock(m);
+  warmMockImages(m); // on start and on resume: figures survive the network dropping mid-mock
   const e = EXAMS[m.exam];
   const rules = m.rules;
   const marks = rules?.marks ?? e.marks, negative = rules?.negative ?? e.negative;
@@ -63,7 +115,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
           ${free ? html`<li>Move between sections freely. One clock for the whole test${untimed ? ', with no limit' : ''}.</li>`
             : html`<li>Each section has its own ${untimed ? 'clock with no limit' : 'timer. When it runs out, the next section starts automatically'}. You cannot return to a finished section.</li>`}
           ${instant ? html`<li>You see the answer and solution right after choosing. Your first choice is final.</li>` : nothing}
-          <li>Palette colours: grey = not visited, red = not answered, green = answered, purple = marked for review.</li>
+          <li>Palette colours: grey is not visited, red is not answered, green is answered, a purple circle is marked for review, and a purple circle with a green ring is answered and marked.</li>
           <li>Questions marked for review <b>with</b> an answer are evaluated.</li>
           <li>You can pause; the timer stops and you resume from the same question.</li>
         </ul>
@@ -86,6 +138,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   let palOpen = false;
   let last = performance.now();
   let dirty = false;
+  let ended = false; // set by stop(): submitted, paused or left; nothing may submit after this
   const sec = () => m.sections[m.current.section];
   // free sections share one clock; untimed tests count time used
   if (untimed) m.clockMs ??= 0;
@@ -111,6 +164,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   const visit = (i: number) => { m.current.index = i; sec().visited[i] = true; dirty = true; palOpen = false; draw(); };
 
   async function finish() {
+    if (ended) return;
     stop();
     await submitMock(m);
     go(`#/result/${encodeURIComponent(m.key)}`);
@@ -118,6 +172,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   const switchSection = (i: number) => { if (i === m.current.section) return; m.current = { section: i, index: 0 }; sec().visited[0] = true; palOpen = false; dirty = true; draw(); };
 
   async function endSection(auto: boolean) {
+    if (ended) return;
     if (free) { finish(); return; }
     const s = sec();
     s.done = true;
@@ -142,11 +197,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   const markNext = () => { sec().marked[m.current.index] = true; save(); next(); };
   const clear = () => { if (instant) return; sec().answers[m.current.index] = null; sec().marked[m.current.index] = false; dirty = true; draw(); };
 
-  const palClass = (i: number) => {
-    const s = sec();
-    const a = s.answers[i] !== null, mk = s.marked[i];
-    return [a && mk ? 'am' : mk ? 'm' : a ? 'a' : s.visited[i] ? 'v' : '', i === m.current.index ? 'cur' : ''].join(' ');
-  };
+  const palClass = (i: number) => [paletteStatus(sec(), i), i === m.current.index ? 'cur' : ''].join(' ');
 
   const draw = () => {
     const s = sec();
@@ -186,14 +237,19 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
           <div class="spread"><h3>${SUBJECTS[s.subject].short}</h3><button class="btn sm pal-toggle" @click=${() => { palOpen = false; draw(); }}>Close</button></div>
           <div class="pal-grid">${s.questionIds.map((_, i) => html`<button class=${palClass(i)} @click=${() => visit(i)} aria-label="Question ${i + 1}">${i + 1}</button>`)}</div>
           <div class="legend">
-            <span><i style="background:var(--green)"></i>Answered ${answered}</span>
-            <span><i style="background:var(--red-wash);border-color:var(--red)"></i>Not answered ${s.visited.filter((v, i) => v && s.answers[i] === null).length}</span>
-            <span><i></i>Not visited ${s.visited.filter((v) => !v).length}</span>
-            <span><i style="background:var(--stamp)"></i>Marked ${s.marked.filter(Boolean).length}</span>
+            ${(() => { const n = paletteCounts(s); return html`
+            <span><i style="background:var(--green)"></i>Answered ${n.a}</span>
+            <span><i style="background:var(--red-wash);border-color:var(--red)"></i>Not answered ${n.v}</span>
+            <span><i></i>Not visited ${n['']}</span>
+            <span><i style="background:var(--stamp);border-radius:50%"></i>Marked for review ${n.m}</span>
+            <span class="wide"><i style="background:var(--stamp);border-radius:50%;box-shadow:inset 0 0 0 3px var(--green)"></i>Answered and marked (evaluated) ${n.am}</span>`; })()}
           </div>
           <button class="btn danger" style="width:100%;margin-top:1rem" @click=${async () => {
             const last = free || m.current.section === m.sections.length - 1;
-            if (await confirmDialog(last ? `Submit the test? ${s.questionIds.length - answered} unanswered in this section.` : `Submit this section? You can't come back to it. ${s.questionIds.length - answered} unanswered.`, last ? 'Submit test' : 'Submit section')) endSection(false);
+            const openedFor = m.current.section;
+            const ok = await confirmDialog(last ? `Submit the test? ${s.questionIds.length - answered} unanswered in this section.` : `Submit this section? You can't come back to it. ${s.questionIds.length - answered} unanswered.`, last ? 'Submit test' : 'Submit section');
+            // the timer may have moved on (or ended the test) while the dialog was open
+            if (ok && !ended && (free || m.current.section === openedFor)) endSection(false);
           }}>${free || m.current.section === m.sections.length - 1 ? 'Submit test' : 'Submit section'}</button>
         </aside>
       </div>`, el);
@@ -218,6 +274,7 @@ export default async function exam(el: HTMLElement, [key]: string[]) {
   if (examMode) document.addEventListener('fullscreenchange', onFs);
   document.addEventListener('visibilitychange', onHide);
   function stop() {
+    ended = true;
     clearInterval(timer); clearInterval(autosave);
     document.removeEventListener('visibilitychange', onHide);
     document.removeEventListener('fullscreenchange', onFs);

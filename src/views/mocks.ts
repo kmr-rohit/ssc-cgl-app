@@ -31,7 +31,7 @@ export default async function mocks(el: HTMLElement) {
     const e = EXAMS[exam];
     const status = !m ? 'Not started' : m.status === 'submitted' ? `Scored ${m.score!.total.toFixed(1).replace(/\.0$/, '')}/${m.score!.max}` : m.status === 'in-progress' ? 'In progress' : 'Ready';
     return html`<div class="ticket">
-      <div class="kicker">Admit card, ${day === today ? 'today' : niceDate(day)}</div>
+      ${day === today ? nothing : html`<div class="kicker">Admit card for ${niceDate(day)}</div>`}
       <h3>${e.name}</h3>
       <dl><dt>Questions</dt><dd>${e.sections.reduce((a, s) => a + s.count, 0)}</dd>
         <dt>Time</dt><dd>${e.sections.reduce((a, s) => a + s.minutes, 0)} min</dd>
@@ -49,7 +49,11 @@ export default async function mocks(el: HTMLElement) {
 
   const past = [...app.mocks.values()].filter((m) => !(m.kind === 'daily' && m.key.endsWith(today)))
     .sort((a, b) => (b.startedAt ?? b.updatedAt).localeCompare(a.startedAt ?? a.updatedAt));
-  const missed = [1, 2, 3].map((d) => addDays(today, -d));
+  // a day counts as missed only if the student was already using the app then: nothing before their first activity
+  const firstDay = [
+    ...app.attempts.map((a) => a.at), ...[...app.mocks.values()].map((m) => m.startedAt ?? m.updatedAt), ...[...app.cards.values()].map((c) => c.updatedAt),
+  ].filter(Boolean).map((x) => dayKey(new Date(x))).sort()[0];
+  const missed = firstDay ? [1, 2, 3].map((d) => addDays(today, -d)).filter((d) => d >= firstDay) : [];
 
   render(html`<div class="page">
     <h1>Mocks</h1>

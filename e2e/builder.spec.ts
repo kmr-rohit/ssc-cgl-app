@@ -20,18 +20,29 @@ test('preset: Advanced Maths sprint builds a 20-question Maths-only test on chos
     r.onsuccess = () => { const all = r.result.transaction('kv').objectStore('kv').getAll(); all.onsuccess = () => res(all.result.find((m: { title?: string }) => m.title === 'Advanced Maths sprint').sections.flatMap((s: { questionIds: string[] }) => s.questionIds)); };
   }));
   expect(ids).toHaveLength(20);
-  for (const id of ids) expect(id).toMatch(/q-(algebra|geometry|mensuration|trigonometry)/);
+  // a past-paper id keeps the topic it was first filed under; the manifest maps questions moved to a corrected topic
+  const moved: Record<string, string> = await page.evaluate(async () => {
+    const m = await (await fetch('/pyq/manifest.json')).json();
+    return Object.fromEntries(Object.entries(m.moved ?? {}).flatMap(([t, xs]) => (xs as string[]).map((x) => [x, t])));
+  });
+  for (const id of ids) expect(moved[id] ?? id).toMatch(/q-(algebra|geometry|mensuration|trigonometry)/);
   expect(errors).toEqual([]);
 });
 
 test('Second chance: only my mistakes, answer shown right after choosing, no timer', async ({ page }) => {
-  // make some mistakes: skip 5 questions in a timed practice set
+  // make some mistakes (wrong answers; skips don't count): answer A to learn-mode questions until one is wrong
   await page.goto('/#/topic/q-percentage/practice');
-  await page.getByRole('button', { name: 'Test (timed)' }).click();
-  await page.getByRole('button', { name: '5', exact: true }).click();
+  await page.getByRole('button', { name: '10', exact: true }).click();
   await page.getByRole('button', { name: 'Start practice' }).click();
-  for (let i = 0; i < 4; i++) await page.getByRole('button', { name: 'Skip' }).click();
-  await page.getByRole('button', { name: 'Finish' }).click();
+  let wrong = 0;
+  for (let i = 0; i < 10 && wrong < 2; i++) {
+    await page.locator('.opt').first().click();
+    await expect(page.locator('.solution')).toBeVisible();
+    if (await page.locator('.opt.wrong').count()) wrong++;
+    const next = page.getByRole('button', { name: 'Next' });
+    if (await next.count()) await next.click(); else break;
+  }
+  expect(wrong).toBeGreaterThan(0);
 
   await page.goto('/#/build');
   await page.getByRole('button', { name: /Second chance/ }).click();

@@ -1,6 +1,6 @@
 import { html, render, svg, nothing } from 'lit-html';
 import { EXAMS, SUBJECTS, SUBJECT_ORDER, TOPIC_MAP, topicsOf } from '../core/syllabus';
-import { TARGET_SEC, weakTopics } from '../core/analysis';
+import { MIN_ANSWERED_FOR_LEAK, TARGET_SEC, weakTopics } from '../core/analysis';
 import type { ExamId, MockRecord } from '../core/types';
 import { app } from '../app/state';
 import { accBar, dot } from '../ui/components';
@@ -8,7 +8,7 @@ import { niceDate, pct } from '../ui/html';
 import { mistakes } from '../core/mistakes';
 
 export const progressTabs = (on: 'overview' | 'mistakes') => {
-  const n = mistakes(app.attempts).length;
+  const n = mistakes(app.attempts).filter((m) => !m.skipped).length; // headline = wrong answers; skips have their own filter
   return html`<nav class="tabs"><a href="#/progress" class=${on === 'overview' ? 'on' : ''}>Overview</a><a href="#/mistakes" class=${on === 'mistakes' ? 'on' : ''}>My mistakes${n ? html` <span class="count">${n}</span>` : ''}</a></nav>`;
 };
 
@@ -52,7 +52,7 @@ export default function analysis(el: HTMLElement) {
       <div class="seg" style="margin-bottom:1rem">${(app.settings.paper2 ? ['pre', 'mains', 'stats'] : ['pre', 'mains']).map((x) => html`<button class=${exam === x ? 'on' : ''} @click=${() => { exam = x as ExamId; draw(); }}>${EXAMS[x as ExamId].short}</button>`)}</div>
       ${!app.attempts.length ? html`<div class="paper empty"><h2>Nothing to analyse yet</h2><p>Answer 10 questions in any topic, or take today's mock. Your accuracy, speed and the topics losing you marks will show up here.</p><div class="row"><a class="btn primary" href="#/mocks">Take today's mock</a><a class="btn" href="#/study">Practise a topic</a></div></div>` : html`
       <section class="paper" style="margin-bottom:1rem">
-        <div class="spread"><h2>Mock scores</h2>${avg !== null ? html`<span class="small">Estimated score band (last ${recent.length}): <b>${Math.max(0, avg - 8).toFixed(0)}–${(avg + 8).toFixed(0)}</b> <span class="muted">· an estimate, not a prediction</span></span>` : nothing}</div>
+        <div class="spread"><h2>Mock scores</h2>${avg !== null ? html`<span class="small">Estimated score band (last ${recent.length}): <b>${Math.max(0, avg - 8).toFixed(0)} to ${(avg + 8).toFixed(0)}</b>. <span class="muted">It is an estimate, not a prediction.</span></span>` : nothing}</div>
         ${done.length ? trendChart(done, exam) : html`<p class="muted small">Your score line starts after your first full mock. <a href="#/mocks">Take one</a></p>`}
       </section>
 
@@ -60,7 +60,7 @@ export default function analysis(el: HTMLElement) {
         <section class="paper"><h2>Biggest mark leaks</h2>
           ${weak.length ? weak.map((w) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
             <span>${dot(w.topic.subject)} <a href="#/topic/${w.topic.id}">${w.topic.name}</a></span>
-            <span class="small">${pct(w.stat!.accuracy)} correct, costs you <b>~${w.lost!.toFixed(1)}</b> marks a paper</span></div>`) : html`<p class="muted small">Answer at least 4 questions in a topic to see what it costs you.</p>`}
+            <span class="small">${pct(w.stat!.accuracy)} correct, costs you <b>~${w.lost!.toFixed(1)}</b> marks a paper</span></div>`) : html`<p class="muted small">Answer at least ${MIN_ANSWERED_FOR_LEAK} questions in a topic to see what it costs you. Skipped questions don't count.</p>`}
         </section>
         <section class="paper"><h2>Weakest question types</h2>
           ${types.length ? types.map((t) => html`<div class="spread" style="padding:.35rem 0;border-bottom:1px solid var(--rule)">
@@ -69,10 +69,10 @@ export default function analysis(el: HTMLElement) {
         </section>
       </div>
 
-      ${SUBJECT_ORDER.filter((s) => EXAMS[exam].sections.some((x) => x.subject === s) && topicsOf(s).some((t) => stats[t.id])).map((s) => html`
+      ${SUBJECT_ORDER.filter((s) => EXAMS[exam].sections.some((x) => x.subject === s) && topicsOf(s).some((t) => stats[t.id]?.attempts)).map((s) => html`
         <section class="paper" style="margin-bottom:1rem"><h2>${dot(s)} ${SUBJECTS[s].name}</h2>
           <table style="display:table;width:100%"><thead><tr><th>Topic</th><th>Done</th><th>Accuracy</th><th>Avg time</th></tr></thead><tbody>
-          ${topicsOf(s).filter((t) => stats[t.id]).map((t) => { const x = stats[t.id]; return html`<tr>
+          ${topicsOf(s).filter((t) => stats[t.id]?.attempts).map((t) => { const x = stats[t.id]; return html`<tr>
             <td><a href="#/topic/${t.id}">${t.name}</a></td><td>${x.attempts}</td>
             <td><span class="row">${accBar(x.accuracy)} ${pct(x.accuracy)}</span></td>
             <td class=${x.slow ? 'hand' : ''}>${Math.round(x.avgSec)}s <span class="muted small">/ ${TARGET_SEC[s]}s</span></td></tr>`; })}

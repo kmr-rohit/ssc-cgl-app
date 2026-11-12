@@ -34,6 +34,7 @@ export function startTour(onDone: () => void) {
 
   const finish = () => {
     window.removeEventListener('resize', draw);
+    window.removeEventListener('hashchange', finish);
     document.removeEventListener('keydown', onKey, true);
     host?.remove(); host = null;
     prevFocus?.focus?.();
@@ -94,6 +95,8 @@ export function startTour(onDone: () => void) {
   }
 
   window.addEventListener('resize', draw);
+  // the tour describes the Today screen: leaving it (a tab tap, a link, Back) ends the tour
+  window.addEventListener('hashchange', finish);
   document.addEventListener('keydown', onKey, true);
   draw();
 }

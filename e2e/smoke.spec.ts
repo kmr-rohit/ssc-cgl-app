@@ -142,7 +142,7 @@ test('skipped questions land in My mistakes and can be retried', async ({ page }
   for (let i = 0; i < 4; i++) await page.getByRole('button', { name: 'Skip' }).click();
   await page.getByRole('button', { name: 'Finish' }).click();
   await page.goto('/#/mistakes');
-  await expect(page.getByText(/5 questions to fix/)).toBeVisible();
+  await expect(page.getByText(/5 questions you skipped/)).toBeVisible();
   await page.getByRole('button', { name: /Retry 5 now/ }).click();
   await expect(page.locator('.opt').first()).toBeVisible();
 });
@@ -169,4 +169,21 @@ test('tour can be skipped with Escape and replayed from Profile', async ({ page 
   await expect(page.getByRole('dialog')).toContainText('Your roadmap is ready');
   await page.getByRole('button', { name: 'Skip tour' }).click();
   await expect(page.getByRole('dialog')).toHaveCount(0);
+});
+
+test('the tour closes when you leave Today', async ({ page }) => {
+  await page.goto('/#/welcome');
+  await page.getByRole('button', { name: 'Skip for now' }).click();
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await page.evaluate(() => { location.hash = '#/mocks'; });
+  await expect(page.getByRole('heading', { name: 'Mocks', exact: true })).toBeVisible();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+});
+
+test('404: own title, no active tab', async ({ page }) => {
+  await page.goto('/#/study');
+  await page.goto('/#/no-such-page');
+  await expect(page.getByRole('heading', { name: 'Page not found' })).toBeVisible();
+  await expect(page).toHaveTitle(/Page not found/);
+  await expect(page.locator('#tabbar a.on, #rail-nav a.on')).toHaveCount(0);
 });

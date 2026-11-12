@@ -401,3 +401,41 @@ dialog::backdrop { background: rgb(13 20 34 / .5); }
 .katex { font-size: 1.08em; }
 .katex .katex-base { padding: .16em 0; } /* gap between stacked fractions on neighbouring lines (inline-block, so it grows the line box) */
 .katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.15em 0; margin: 0.6em 0; }
+
+/* Report a mistake: a quiet link under the solution, and its dialog */
+.report-line { margin: .6rem 0 0; text-align: right; }
+.report-line .btn { color: var(--ink-3); }
+.report-dialog .choice-line { display: flex; gap: .6rem; align-items: center; min-height: 40px; font-weight: 500; }
+.report-dialog .stack > * + * { margin-top: .1rem; }
+
+/* Admin dashboard */
+.lead { font-size: 1.08rem; }
+.linkish { background: none; border: 0; padding: 0; color: var(--pen); text-decoration: underline; cursor: pointer; font: inherit; text-align: left; word-break: break-all; }
+.admin-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem 1.5rem; }
+.admin-chart { margin: 0; }
+.admin-chart figcaption { font-size: .9rem; color: var(--ink-2); margin-bottom: .3rem; }
+.admin-chart svg { width: 100%; height: 64px; display: block; border-bottom: 1px solid var(--rule-2); }
+.admin-chart rect { fill: var(--pen); }
+.admin-item { border-top: 1px solid var(--rule); padding-top: .8rem; }
+.admin-item code, .admin-table code { word-break: break-all; }
+.admin-notes { margin: .3rem 0 .6rem; padding-left: 1.1rem; }
+.admin-q { margin-top: .8rem; padding: .8rem; border: 1px dashed var(--rule-2); border-radius: var(--r); }
+.admin-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.admin-table th, .admin-table td { text-align: left; padding: .45rem .4rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.admin-table th { font-weight: 600; color: var(--ink-2); }
+.table-scroll { overflow-x: auto; }
+.admin-table { min-width: 420px; }
+.legend .wide { grid-column: 1 / -1; }
+/* topic notes: section list at the top, one next step at the end */
+.notes .on-this-page { border-left: 3px solid var(--rule-2); padding: .2rem 0 .2rem 1rem; margin: var(--line) 0; }
+.notes .on-this-page h2 { margin: 0 0 .3rem; font-size: 1rem; }
+.notes .on-this-page ol { margin: 0; padding-left: 1.2rem; line-height: 1.9; }
+.notes .notes-end { border-top: 1px solid var(--rule); margin-top: var(--line); padding-top: 1rem; }
+.notes [id] { scroll-margin-top: 64px; }
+/* keyboard hints only where there is a keyboard-and-mouse style pointer, never on phones */
+.kbd-hint { display: none; }
+@media (hover: hover) and (pointer: fine) { .kbd-hint { display: block; } span.kbd-hint { display: inline; } .touch-hint { display: none; } }
+/* practice: Previous / Next stay at the thumb while a long solution scrolls under them */
+.practice-actions { position: sticky; bottom: 0; z-index: 5; background: var(--paper); margin: 1rem -1.25rem -1.1rem; padding: .7rem 1.25rem; border-radius: 0 0 var(--r-paper) var(--r-paper); }
+@media (max-width: 760px) { .practice-actions { bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px)); } }
+.result-line { max-width: 60ch; }

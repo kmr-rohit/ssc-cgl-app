@@ -4,6 +4,8 @@ import type { Question, SubjectId } from '../core/types';
 import { topicPriority, type Topic, type Range } from '../core/syllabus';
 import { passageOf } from '../content/bank';
 import { LETTERS, img, rich } from './html';
+import { openReportDialog } from './report';
+import { reportsEnabled } from '../data/reports';
 
 export const dot = (s: SubjectId) => html`<span class="dot s-${s}" aria-hidden="true"></span>`;
 export const rangeText = (r: Range) => (r[1] === 0 ? '—' : r[0] === r[1] ? `${r[0]}` : `${r[0]}–${r[1]}`);
@@ -44,6 +46,8 @@ export interface QOpts {
   onPick?: (i: number) => void;  // omit for read-only
   head?: unknown;
   showPassage?: boolean;
+  /** reviewer view (admin): no right/wrong stamp, no report link */
+  review?: boolean;
 }
 
 export function questionView(q: Question, o: QOpts) {
@@ -73,8 +77,9 @@ export function questionView(q: Question, o: QOpts) {
         </button>`)}
     </div>
     ${o.reveal ? html`<div class="solution">
-      <h3>Solution ${stamp(o.chosen === null ? 'skip' : o.chosen === q.answer ? 'ok' : 'no')}</h3>
+      <h3>Solution ${o.review ? nothing : stamp(o.chosen === null ? 'skip' : o.chosen === q.answer ? 'ok' : 'no')}</h3>
       <div>${rich(q.solution)}</div>
+      ${reportsEnabled() && !o.review ? html`<p class="report-line"><button class="btn ghost sm" @click=${() => openReportDialog(q)}>Report a mistake</button></p>` : nothing}
     </div>` : nothing}`;
 }
 
