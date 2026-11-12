@@ -69,5 +69,14 @@ export class LocalAdapter implements StorageAdapter {
   async wipe() { await Promise.all(Object.values(this.s).map((st) => clear(st))); }
 }
 
-export const uid = (): string =>
-  (globalThis.crypto?.randomUUID?.() ?? `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`);
+/** UUIDv7: time-ordered, so server inserts stay sequential and ids sort by creation time. */
+export function uid(now = Date.now()): string {
+  const b = new Uint8Array(16);
+  globalThis.crypto.getRandomValues(b);
+  let t = now;
+  for (let i = 5; i >= 0; i--) { b[i] = t % 256; t = Math.floor(t / 256); }
+  b[6] = (b[6] & 0x0f) | 0x70; // version 7
+  b[8] = (b[8] & 0x3f) | 0x80; // RFC 4122 variant
+  const h = [...b].map((x) => x.toString(16).padStart(2, '0')).join('');
+  return `${h.slice(0, 8)}-${h.slice(8, 12)}-${h.slice(12, 16)}-${h.slice(16, 20)}-${h.slice(20)}`;
+}

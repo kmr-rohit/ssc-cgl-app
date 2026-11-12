@@ -6,6 +6,8 @@ import { app } from './app/state';
 import { dispatch, route } from './app/router';
 import { loadManifest } from './content/bank';
 import { applyTheme } from './ui/theme';
+import { initAuth, auth } from './app/auth';
+import { renderAccountBadge } from './ui/account-badge';
 
 route('/', 'today', () => import('./views/today').then((m) => m.default));
 route('/syllabus/:subject?', 'syllabus', () => import('./views/syllabus').then((m) => m.default));
@@ -18,12 +20,23 @@ route('/analysis', 'analysis', () => import('./views/analysis').then((m) => m.de
 route('/revise/:deck?', 'revise', () => import('./views/revise').then((m) => m.default));
 route('/formulas/:id?', 'revise', () => import('./views/formulas').then((m) => m.default));
 route('/plan', 'today', () => import('./views/plan').then((m) => m.default));
+route('/account', 'settings', () => import('./views/account').then((m) => m.default));
 route('/settings', 'settings', () => import('./views/settings').then((m) => m.default));
 
 
 async function boot() {
   await Promise.all([app.init(), loadManifest().catch((e) => console.error(e))]);
   applyTheme(app.settings.theme);
+  if (app.sync) {
+    initAuth(app.sync);
+    // server data arrived: reload in-memory state and redraw, unless the user is mid-test or mid-practice
+    app.sync.onPulled = async () => {
+      await app.init();
+      applyTheme(app.settings.theme);
+      if (!/^#\/(exam|practice)/.test(location.hash)) dispatch();
+    };
+    renderAccountBadge(app.sync, auth);
+  }
   window.addEventListener('hashchange', dispatch);
   await dispatch();
 }

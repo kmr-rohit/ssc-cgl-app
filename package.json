@@ -12,11 +12,14 @@
     "content:validate": "tsx tools/build-content.ts --check",
     "content:build": "tsx tools/build-content.ts",
     "check": "npm run typecheck && npm run content:validate && npm test",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "test:sync": "bash -c 'eval \"$(npx supabase status -o env 2>/dev/null | grep -E \"^(API_URL|PUBLISHABLE_KEY|SECRET_KEY)=\")\"; SB_URL=$API_URL SB_PUBLISHABLE_KEY=$PUBLISHABLE_KEY SB_SECRET_KEY=$SECRET_KEY npx vitest run --config vitest.int.config.ts'",
+    "test:db": "npx supabase test db"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "^5.3.0",
     "@fontsource/atkinson-hyperlegible": "^5.3.0",
+    "@supabase/supabase-js": "^2.119.0",
     "dompurify": "^3.4.17",
     "idb-keyval": "^6.3.0",
     "lit-html": "^3.3.3"
@@ -26,6 +29,7 @@
     "@types/dompurify": "^3.0.5",
     "@types/node": "^26.6.6",
     "fake-indexeddb": "^6.2.8",
+    "supabase": "^3.1.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.8",

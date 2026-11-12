@@ -1,13 +1,16 @@
 // In-memory app state backed by a StorageAdapter. Views read `app.*` and call the actions below.
 import type { Attempt, CardState, MockRecord, Settings } from '../core/types';
-import { DEFAULT_SETTINGS, LocalAdapter, type StorageAdapter, type BackupFile } from '../data/storage';
+import { DEFAULT_SETTINGS, type StorageAdapter, type BackupFile } from '../data/storage';
+import { SyncedAdapter } from '../data/sync';
 import { topicStats, type TopicStat } from '../core/analysis';
 import { newCard, review, type Grade } from '../core/srs';
 
 type Listener = () => void;
 
 class AppState {
-  db: StorageAdapter = new LocalAdapter();
+  /** Offline-first storage: IndexedDB + outbox sync to Supabase when signed in. */
+  sync: SyncedAdapter | null = new SyncedAdapter();
+  db: StorageAdapter = this.sync!;
   settings: Settings = { ...DEFAULT_SETTINGS };
   attempts: Attempt[] = [];
   mocks = new Map<string, MockRecord>();
@@ -16,7 +19,7 @@ class AppState {
   private listeners = new Set<Listener>();
 
   async init(db?: StorageAdapter) {
-    if (db) this.db = db;
+    if (db) { this.db = db; this.sync = db instanceof SyncedAdapter ? db : null; }
     const [s, a, m, c] = await Promise.all([this.db.getSettings(), this.db.listAttempts(), this.db.listMocks(), this.db.listCards()]);
     this.settings = s; this.attempts = a;
     this.mocks = new Map(m.map((x) => [x.key, x]));

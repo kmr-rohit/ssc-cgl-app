@@ -84,3 +84,12 @@ test('exam mode counts leaving the tab and shows it in the result', async ({ pag
   }
   await expect(page.getByText(/left the test 1 time/)).toBeVisible({ timeout: 15_000 });
 });
+
+test('account screen offers Google and email sign-in (no network calls made)', async ({ page }) => {
+  await page.goto('/#/account');
+  await expect(page.getByRole('button', { name: 'Continue with Google' })).toBeVisible();
+  await page.getByLabel('Email').fill('someone@gmail.com');
+  await expect(page.getByRole('button', { name: 'Email me a sign-in link' })).toBeEnabled();
+  await page.goto('/#/settings');
+  await expect(page.getByText('Sign in to sync your progress across devices')).toBeVisible();
+});

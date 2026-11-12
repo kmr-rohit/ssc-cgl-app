@@ -66,6 +66,10 @@ th { background: var(--paper-2); }
 .nav a { display: flex; align-items: center; gap: .7rem; padding: .55rem .7rem; border-radius: var(--r); text-decoration: none; color: var(--ink-2); font-weight: 600; }
 .nav a:hover { background: var(--paper-2); }
 .nav a.on { background: var(--blue-wash); color: var(--blue); }
+.account-badge { display: block; margin-top: auto; padding: .55rem .7rem; border-radius: var(--r); border: 1px solid var(--rule); font-size: .85rem; text-decoration: none; color: var(--ink-2); }
+.account-badge:empty { display: none; }
+.account-badge b { display: block; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.account-badge + .rail-foot { margin-top: .8rem; }
 .rail-foot { margin-top: auto; font-size: .78rem; color: var(--ink-3); padding: 0 .5rem; }
 main { min-width: 0; padding: 1.5rem clamp(1rem, 3vw, 2.5rem) 3rem; outline: none; }
 .page { max-width: 1040px; margin: 0 auto; }

@@ -5,6 +5,7 @@ import { toast } from '../app/router';
 import { getManifest } from '../content/bank';
 import { confirmDialog } from '../ui/components';
 import { applyTheme } from '../ui/theme';
+import { auth } from '../app/auth';
 
 export default function settings(el: HTMLElement) {
   const save = async (patch: Partial<Settings>) => {
@@ -39,6 +40,9 @@ export default function settings(el: HTMLElement) {
     const s = app.settings;
     render(html`<div class="page" style="max-width:720px">
       <h1>Settings</h1>
+      ${auth.enabled ? html`<a class="ticket" href="#/account" style="display:block;text-decoration:none;color:inherit;margin-bottom:1rem">
+        <div class="kicker">Account & sync</div>
+        <b>${auth.user ? auth.user.email : 'Sign in to sync your progress across devices'}</b></a>` : ''}
       <section class="paper stack">
         <h2>You</h2>
         <label class="field">Name<input type="text" .value=${s.name} @change=${(e: Event) => save({ name: (e.target as HTMLInputElement).value.trim().slice(0, 40) })} /></label>
@@ -60,11 +64,11 @@ export default function settings(el: HTMLElement) {
       </section>
       <section class="paper stack" style="margin-top:1rem">
         <h2>Your data</h2>
-        <p class="small muted">Progress is stored on this device only (${app.attempts.length} answers, ${app.mocks.size} mocks). Download a backup to move it to another device.</p>
+        <p class="small muted">${auth.user ? `Progress is saved on this device and synced to your account (${app.attempts.length} answers, ${app.mocks.size} mocks).` : `Progress is stored on this device only (${app.attempts.length} answers, ${app.mocks.size} mocks). Sign in to sync it, or download a backup.`}</p>
         <div class="row">
           <button class="btn" @click=${exportFile}>Download backup</button>
           <label class="btn">Restore from file<input type="file" accept="application/json" hidden @change=${importFile} /></label>
-          <button class="btn danger" @click=${async () => { if (await confirmDialog('Delete all progress on this device? This cannot be undone.', 'Delete everything')) { await app.wipe(); toast('All progress deleted'); draw(); } }}>Reset progress</button>
+          <button class="btn danger" @click=${async () => { if (await confirmDialog(auth.user ? 'Delete all progress on this device AND in your account on all devices? This cannot be undone.' : 'Delete all progress on this device? This cannot be undone.', 'Delete everything')) { await app.wipe(); toast('All progress deleted'); draw(); } }}>Reset progress</button>
         </div>
       </section>
       <p class="small muted" style="margin-top:1rem">Content version ${getManifest()?.version ?? '—'} · Test data, not yet reviewed by a subject expert.</p>
